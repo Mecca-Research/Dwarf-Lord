@@ -6,7 +6,15 @@ A 3D isometric colony-management game: ruined dwarf pit, exhausted workforce, an
 
 **[Play in the browser](https://mecca-research.github.io/Dwarf-Lord/)**
 
-Live build on GitHub Pages. Every push to `main` deploys a new copy (give the action a minute after a push).
+That URL is the GitHub Pages build. Every push to `main` deploys a new copy.
+
+If it 404s on first visit, GitHub still needs Pages switched on for this repo (one time):
+
+1. Open **[Pages settings](https://github.com/Mecca-Research/Dwarf-Lord/settings/pages)**
+2. Under **Build and deployment → Source**, choose **GitHub Actions**
+3. Re-run **[Deploy game](https://github.com/Mecca-Research/Dwarf-Lord/actions/workflows/deploy-pages.yml)** (Run workflow)
+
+After that the play link stays live.
 
 ## Play
 
