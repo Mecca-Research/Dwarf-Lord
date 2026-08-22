@@ -1,17 +1,23 @@
-name: Deploy game
+name: Build game
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+# Project Pages on this repo cannot be enabled with the GitHub App token
+# (missing `pages` permission), so the playable build is published to the
+# user site: https://mecca-research.github.io/Dwarf-Lord/
+# Source of that copy: Mecca-Research/Mecca-Research.github.io
+#
+# If Pages is later switched on for THIS repo (Settings → Pages → GitHub
+# Actions), restore the deploy-pages job below.
+
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: build-game
   cancel-in-progress: true
 
 jobs:
@@ -25,16 +31,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build:pages
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .output/public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Playable URL
+        run: echo "Play at https://mecca-research.github.io/Dwarf-Lord/"
