@@ -48,6 +48,7 @@ function hydrateRuntime(dwarves: Dwarf[], player = { x: -30, z: 11, yaw: -Math.P
   runtime.player.x = player.x;
   runtime.player.z = player.z;
   runtime.player.yaw = player.yaw;
+  runtime.player.facing = 3;
   runtime.player.dest = null;
   runtime.player.speed = 0;
   runtime.dwarves.clear();
@@ -56,6 +57,7 @@ function hydrateRuntime(dwarves: Dwarf[], player = { x: -30, z: 11, yaw: -Math.P
       x: d.x,
       z: d.z,
       yaw: d.yaw,
+      facing: 0,
       speed: 0,
       anim: d.anim,
       dest: null,

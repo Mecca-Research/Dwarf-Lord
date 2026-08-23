@@ -4,6 +4,7 @@ export interface Body {
   x: number;
   z: number;
   yaw: number;
+  facing: number;
   speed: number;
   anim: "idle" | "sit" | "walk" | "work" | "talk" | "sleep";
   dest: { x: number; z: number } | null;
@@ -22,6 +23,7 @@ export const runtime = {
     x: -30,
     z: 11,
     yaw: -Math.PI / 2,
+    facing: 3,
     speed: 0,
     anim: "idle" as Body["anim"],
     dest: null as Body["dest"],
@@ -123,10 +125,18 @@ export function camBasis(azimuth: number) {
 
 /** 0 front, 1 front-right, 2 right, 3 back-right, 4 back, 5 back-left, 6 left, 7 front-left */
 export function facingOctant(yaw: number, camAz: number) {
-  const tau = Math.PI * 2;
-  const rel = ((yaw - camAz) % tau + tau) % tau;
-  const oct = Math.round(rel / (Math.PI / 4)) % 8;
-  return (4 + oct) % 8;
+  return facingFromMove(-Math.sin(yaw), -Math.cos(yaw), camAz);
+}
+
+/** Screen-space octant from a world-space move vector. 0 = toward camera. */
+export function facingFromMove(mx: number, mz: number, camAz: number) {
+  const { forwardX, forwardZ, rightX, rightZ } = camBasis(camAz);
+  const sx = mx * rightX + mz * rightZ;
+  const sy = mx * forwardX + mz * forwardZ;
+  if (sx * sx + sy * sy < 1e-8) return -1;
+  const ang = Math.atan2(sx, sy);
+  const oct = Math.round(ang / (Math.PI / 4));
+  return ((4 - oct) % 8 + 8) % 8;
 }
 
 export function setPlayerDest(x: number, z: number) {
@@ -134,5 +144,10 @@ export function setPlayerDest(x: number, z: number) {
   p.dest = { x, z };
   const dx = x - p.x;
   const dz = z - p.z;
-  if (Math.hypot(dx, dz) > 0.12) p.yaw = Math.atan2(-dx, -dz);
+  const len = Math.hypot(dx, dz);
+  if (len > 0.12) {
+    p.yaw = Math.atan2(-dx, -dz);
+    const f = facingFromMove(dx / len, dz / len, runtime.cameraAzimuth);
+    if (f >= 0) p.facing = f;
+  }
 }

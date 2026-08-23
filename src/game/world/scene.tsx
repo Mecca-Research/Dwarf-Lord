@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import { JOBS, WORLD_STAGES } from "../data/catalog";
 import type { Dwarf } from "../types";
-import { camBasis, facingOctant, groundHeight, resolveMove, runtime, setPlayerDest, zoneAt } from "../runtime";
+import { camBasis, facingFromMove, groundHeight, resolveMove, runtime, setPlayerDest, zoneAt } from "../runtime";
 import { useGame } from "../store";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
@@ -45,7 +45,7 @@ function IsoCamera() {
     const p = runtime.player;
     const keys = runtime.keys;
     if (keys.has("KeyQ")) runtime.cameraAzimuth += 0.7 * d;
-    if (keys.has("KeyR")) runtime.cameraAzimuth -= 0.7 * d;
+    if (keys.has("KeyE") || keys.has("KeyR")) runtime.cameraAzimuth -= 0.7 * d;
 
     const zone = zoneAt(p.x, p.z);
     runtime.zone = zone;
@@ -93,7 +93,7 @@ function Systems() {
   useEffect(() => {
     const probe = {
       getYaw: () => runtime.player.yaw,
-      getFacing: () => facingOctant(runtime.player.yaw, runtime.cameraAzimuth),
+      getFacing: () => runtime.player.facing,
       getSpeed: () => runtime.player.speed,
       getPos: () => ({ x: runtime.player.x, z: runtime.player.z, zone: runtime.zone }),
       setKeys: (codes: string[]) => {
@@ -243,8 +243,22 @@ function Systems() {
       mx /= mag;
       mz /= mag;
       p.yaw = Math.atan2(-mx, -mz);
-      p.bob += dt * 3.8;
-      const speed = 2.85;
+      const nextFace = facingFromMove(mx, mz, runtime.cameraAzimuth);
+      if (nextFace >= 0 && nextFace !== p.facing) {
+        const curAng = ((4 - p.facing) * Math.PI) / 4;
+        const { forwardX, forwardZ, rightX, rightZ } = camBasis(runtime.cameraAzimuth);
+        const sx = mx * rightX + mz * rightZ;
+        const sy = mx * forwardX + mz * forwardZ;
+        const ang = Math.atan2(sx, sy);
+        let diff = ang - curAng;
+        while (diff > Math.PI) diff -= Math.PI * 2;
+        while (diff < -Math.PI) diff += Math.PI * 2;
+        if (Math.abs(diff) > 0.52) p.facing = nextFace;
+      } else if (nextFace >= 0) {
+        p.facing = nextFace;
+      }
+      p.bob += dt * 5.2;
+      const speed = 2.7;
       p.speed = speed;
       const moved = resolveMove(p.x, p.z, mx * speed * dt, mz * speed * dt, 0.5);
       p.x = moved.x;
@@ -253,6 +267,8 @@ function Systems() {
     } else {
       p.speed = 0;
       p.anim = "idle";
+      const idleFace = facingFromMove(-Math.sin(p.yaw), -Math.cos(p.yaw), runtime.cameraAzimuth);
+      if (idleFace >= 0) p.facing = idleFace;
     }
 
     for (const dw of dwarves) {
