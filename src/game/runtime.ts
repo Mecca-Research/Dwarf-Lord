@@ -56,7 +56,8 @@ export const OBSTACLES: Obstacle[] = [
 export function groundHeight(x: number, z: number) {
   const onRoad = x > -58 && x < -6 && z > 7.2 && z < 15.5;
   const onMine = x > 2 && x < 14 && z < -24 && z > -72;
-  const onCamp = x > -22 && x < 24 && z > -20 && z < 14;
+  const onCamp = x > -16.5 && x < 19.5 && z > -11.5 && z < 12.6;
+  const onWalk = x > -9 && x < 4.5 && z > 8 && z < 16.2;
   const onForest = x < -34 && z > 6 && z < 28;
 
   const basin = Math.max(0, Math.hypot(x, z + 2) - 28);
@@ -71,12 +72,12 @@ export function groundHeight(x: number, z: number) {
     h = Math.min(h, 0.15 + (1 - tunnel) * mountain * 0.3);
     return Math.max(0, h);
   }
-  if (onRoad || onCamp || onForest) return Math.max(0, h);
+  if (onRoad || onCamp || onForest || onWalk) return Math.max(0, h);
 
-  const dx = x < -22 ? -22 - x : x > 24 ? x - 24 : 0;
-  const dz = z < -20 ? -20 - z : z > 14 ? z - 14 : 0;
+  const dx = x < -16.5 ? -16.5 - x : x > 19.5 ? x - 19.5 : 0;
+  const dz = z < -11.5 ? -11.5 - z : z > 12.6 ? z - 12.6 : 0;
   const drop = Math.max(dx, dz);
-  return Math.max(-12, h - drop * 0.85);
+  return Math.max(-11, h - drop * 1.35 - 1.8);
 }
 
 export function zoneAt(x: number, z: number): ZoneId {

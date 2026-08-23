@@ -437,14 +437,14 @@ function DwarfActor({
 function Lights() {
   return (
     <>
-      <color attach="background" args={["#6a7382"]} />
-      <fog attach="fog" args={["#7a8490", 58, 145]} />
-      <hemisphereLight args={["#d8e0ec", "#5a4a3c", 1.05]} />
-      <ambientLight intensity={0.32} color="#c8bca8" />
+      <color attach="background" args={["#5c6574"]} />
+      <fog attach="fog" args={["#6a7382", 42, 125]} />
+      <hemisphereLight args={["#c8d2e2", "#4a4036", 0.92]} />
+      <ambientLight intensity={0.28} color="#c4b49a" />
       <directionalLight
         position={[-36, 38, 20]}
-        intensity={2.55}
-        color="#fff1d4"
+        intensity={2.15}
+        color="#ffdcb8"
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -471,13 +471,13 @@ export function GameCanvas() {
       camera={{ position: [28, 30, 28], zoom: 40, near: 0.1, far: 280 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
-        gl.setClearColor("#6a7382");
+        gl.setClearColor("#5c6574");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.22;
+        gl.toneMappingExposure = 1.16;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#7a8490", 58, 145);
+        scene.fog = new THREE.Fog("#6a7382", 42, 125);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -495,8 +495,8 @@ export function GameCanvas() {
       </Suspense>
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
-        <Bloom luminanceThreshold={0.7} intensity={0.42} mipmapBlur luminanceSmoothing={0.2} />
-        <Vignette eskil={false} offset={0.28} darkness={0.28} />
+        <Bloom luminanceThreshold={0.68} intensity={0.48} mipmapBlur luminanceSmoothing={0.2} />
+        <Vignette eskil={false} offset={0.22} darkness={0.38} />
       </EffectComposer>
     </Canvas>
   );

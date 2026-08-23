@@ -25,7 +25,7 @@ function makeTerrain() {
     const road = x > -58 && x < -8 && z > 7 && z < 15 && y < 1.4;
     const forest = x < -34 && z > 6;
     const cliff = y < -1.5;
-    const camp = x > -20 && x < 22 && z > -16 && z < 14;
+    const camp = x > -16.5 && x < 19.5 && z > -11.5 && z < 12.6;
     if (inTunnel) c.set("#2a2622");
     else if (cliff) c.set("#5a5248");
     else if (road) c.set("#b89a78");
@@ -106,6 +106,7 @@ export function Terrain() {
     mat.vertexColors = true;
     return mat;
   }, [m.forest]);
+  const cliffMat = useTiledMat(m.cliff, 2.2, 1.6);
   const rockMat = useTiledMat(m.rock, 2.4, 2.4);
   const cliffGeo = useMemo(() => rockGeo(1, 3), []);
 
@@ -123,18 +124,19 @@ export function Terrain() {
   const cliffs = useMemo(
     () =>
       [
-        { x: 18, z: 13, s: [7.2, 5.0, 6.0], ry: 0.4, y: -1.4 },
-        { x: 22, z: 3, s: [6.5, 5.4, 6.8], ry: 0.8, y: -1.6 },
-        { x: 20, z: -9, s: [7.5, 5.2, 5.6], ry: -0.3, y: -1.2 },
-        { x: 14, z: 15, s: [5.8, 4.0, 5.0], ry: 1.1, y: -1.0 },
-        { x: -16, z: 15, s: [6.8, 4.6, 5.6], ry: 0.2, y: -1.3 },
-        { x: -20, z: 6, s: [6.0, 5.0, 5.2], ry: -0.6, y: -1.5 },
-        { x: -18, z: -8, s: [6.8, 5.0, 6.0], ry: 0.5, y: -1.1 },
-        { x: 6, z: 16.5, s: [5.4, 3.8, 4.6], ry: 0.9, y: -0.9 },
-        { x: 24, z: -16, s: [8.4, 6.2, 6.8], ry: 0.15, y: -0.4 },
-        { x: -4, z: 16.5, s: [5.0, 3.6, 4.2], ry: -0.4, y: -1.2 },
-        { x: 12, z: -14, s: [6.2, 4.4, 5.2], ry: 0.3, y: -0.8 },
-        { x: -12, z: -13, s: [5.6, 4.2, 4.8], ry: 0.7, y: -1.0 },
+        { x: 8.5, z: 13.6, s: [6.8, 5.8, 4.2], ry: 0.15, y: -2.4 },
+        { x: 14.2, z: 11.4, s: [5.6, 6.2, 4.8], ry: 0.7, y: -2.6 },
+        { x: 18.6, z: 5.2, s: [5.2, 6.4, 6.2], ry: 0.35, y: -2.8 },
+        { x: 18.8, z: -4.5, s: [6.0, 6.0, 5.5], ry: -0.4, y: -2.5 },
+        { x: 15.5, z: -11.8, s: [6.4, 5.6, 4.8], ry: 0.2, y: -2.2 },
+        { x: 4.2, z: -12.6, s: [5.8, 5.2, 4.4], ry: 0.9, y: -2.0 },
+        { x: -8.5, z: -12.2, s: [6.2, 5.4, 4.6], ry: -0.3, y: -2.1 },
+        { x: -16.8, z: -6.0, s: [5.4, 6.0, 5.2], ry: 0.5, y: -2.4 },
+        { x: -17.4, z: 4.2, s: [5.0, 5.8, 5.6], ry: -0.55, y: -2.5 },
+        { x: -14.8, z: 13.2, s: [6.4, 5.6, 4.4], ry: 0.25, y: -2.3 },
+        { x: -4.2, z: 14.4, s: [5.2, 5.0, 3.8], ry: -0.2, y: -2.1 },
+        { x: 2.2, z: 14.8, s: [4.8, 4.8, 3.6], ry: 0.8, y: -2.0 },
+        { x: 11.2, z: 14.2, s: [5.0, 5.4, 4.0], ry: 0.4, y: -2.2 },
       ] as { x: number; z: number; s: number[]; ry: number; y: number }[],
     [],
   );
@@ -164,6 +166,10 @@ export function Terrain() {
   return (
     <group>
       <SkyDome />
+      <mesh position={[6, 16, -52]} rotation={[0.06, 0.08, 0]}>
+        <planeGeometry args={[120, 52]} />
+        <meshBasicMaterial map={m.sky} fog={false} depthWrite={false} toneMapped={false} />
+      </mesh>
       <mesh geometry={terrain} material={dirtMat} receiveShadow />
       <mesh geometry={mountains} position={[8, 2.2, -62]} material={rockMat} receiveShadow castShadow />
       <mesh position={[32, 14, -70]} rotation={[0.12, 0.5, -0.06]} scale={[1.5, 1.35, 1.2]} material={m.rock} castShadow>
@@ -183,11 +189,14 @@ export function Terrain() {
           position={[c.x, c.y, c.z]}
           scale={c.s as [number, number, number]}
           rotation-y={c.ry}
-          material={rockMat}
+          material={cliffMat}
           castShadow
           receiveShadow
         />
       ))}
+      <mesh position={[2, -8.2, 1]} rotation-x={-Math.PI / 2} material={m.stoneDark} receiveShadow>
+        <planeGeometry args={[90, 80]} />
+      </mesh>
 
       <mesh position={[-28, 0.04, 11.2]} rotation-x={-Math.PI / 2} material={m.dirtRoad} receiveShadow>
         <planeGeometry args={[46, 3.4]} />

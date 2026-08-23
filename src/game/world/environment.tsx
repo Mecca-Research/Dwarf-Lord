@@ -1,5 +1,4 @@
 import {
-  CanvasTent,
   Dorm,
   FloodedShaft,
   Forge,
@@ -25,6 +24,7 @@ import {
   TorchPost,
   Woodpile,
 } from "./kit";
+import { IllustratedProp } from "./sprites";
 import { PathClutter, Terrain } from "./terrain";
 import { useGame } from "../store";
 
@@ -44,8 +44,9 @@ export function Environment() {
       <Forge x={10} z={-7} rot={-0.2} condition={forge?.condition ?? 0.22} />
       <Office x={12.5} z={1.5} rot={0} />
       <StorageShed x={17} z={8} rot={0.4} condition={storage?.condition ?? 0.12} />
-      <CanvasTent x={-6} z={7} rot={0.35} />
-      <CanvasTent x={-3.2} z={10.2} rot={-0.55} scale={0.9} />
+      <IllustratedProp kind="tent" x={-5.8} z={8.15} height={1.72} />
+      <IllustratedProp kind="leanto" x={-2.2} z={10.4} height={1.42} />
+      <IllustratedProp kind="leanto" x={6.55} z={9.05} height={1.22} />
       <Kitchen x={2} z={6.5} />
       <MineCart x={4} z={-16} rot={0.6} condition={cart?.condition ?? 0.15} />
       <FloodedShaft x={14} z={-22} />
@@ -62,9 +63,15 @@ export function Environment() {
       <Barrel x={4.35} z={6.85} lying />
       <Barrel x={-7.8} z={8.6} />
 
-      <Crate x={5.4} z={4.8} s={0.65} rot={0.7} />
-      <Crate x={8.6} z={4.8} s={0.8} />
-      <Crate x={-8.8} z={6.2} s={0.7} rot={-0.2} />
+      <IllustratedProp kind="crate" x={5.15} z={4.55} height={0.82} />
+      <IllustratedProp kind="crate" x={5.55} z={4.95} height={0.68} />
+      <IllustratedProp kind="crate" x={8.65} z={4.65} height={0.9} />
+      <IllustratedProp kind="crate" x={-8.7} z={6.15} height={0.78} />
+      <IllustratedProp kind="crate" x={7.15} z={8.55} height={0.72} />
+      <IllustratedProp kind="crate" x={7.5} z={8.95} height={0.6} />
+      <IllustratedProp kind="barrel" x={3.95} z={6.28} height={0.95} />
+      <IllustratedProp kind="barrel" x={4.42} z={6.72} height={0.86} />
+      <IllustratedProp kind="barrel" x={-7.55} z={8.5} height={0.92} />
       <Crate x={7.2} z={-3.2} s={0.6} rot={0.5} />
       <Barrel x={-9.4} z={4.8} />
       <Barrel x={15.2} z={5.2} />

@@ -11,6 +11,7 @@ export type WorldMats = {
   stone: THREE.MeshStandardMaterial;
   stoneDark: THREE.MeshStandardMaterial;
   rock: THREE.MeshStandardMaterial;
+  cliff: THREE.MeshStandardMaterial;
   canvas: THREE.MeshStandardMaterial;
   roof: THREE.MeshStandardMaterial;
   iron: THREE.MeshStandardMaterial;
@@ -53,6 +54,7 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     wood: asset("/textures/wood.jpg"),
     stone: asset("/textures/stone.jpg"),
     rock: asset("/textures/rock.jpg"),
+    cliff: asset("/textures/cliff.jpg"),
     canvas: asset("/textures/canvas.jpg"),
     roof: asset("/textures/roof.jpg"),
     iron: asset("/textures/iron.jpg"),
@@ -69,6 +71,7 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     prep(maps.wood, 1, 1);
     prep(maps.stone, 1, 1);
     prep(maps.rock, 1, 1);
+    prep(maps.cliff, 1, 1);
     prep(maps.canvas, 1, 1);
     prep(maps.roof, 1, 1);
     prep(maps.iron, 1, 1);
@@ -97,6 +100,7 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
       stone: std(maps.stone, "#b8b0a4", 0.86, 0.04),
       stoneDark: std(maps.stone, "#7a7468", 0.9, 0.04),
       rock: std(maps.rock, "#8a8278", 0.92, 0.05),
+      cliff: std(maps.cliff, "#7a7468", 0.94, 0.04),
       canvas: Object.assign(std(maps.canvas, "#c8b898", 0.94), { side: THREE.DoubleSide }),
       roof: std(maps.roof, "#c4a888", 0.86),
       iron: std(maps.iron, "#9a948c", 0.38, 0.62),
