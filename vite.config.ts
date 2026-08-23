@@ -175,8 +175,7 @@ export default defineConfig(({ command, isPreview }) => ({
             // Auto-registers server/middleware/* (the PWA install page +
             // manifest + head-tag middleware). Nitro v3 defaults serverDir to
             // false, so removing this silently unwires /?install=1 on deploys.
-            // GitHub Pages is static — skip the Grok PWA server middleware there.
-            serverDir: process.env.NITRO_PRESET === "github_pages" ? false : "./server",
+            serverDir: "./server",
           }),
         ]
       : []),

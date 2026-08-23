@@ -45,7 +45,7 @@ function IsoCamera() {
     const p = runtime.player;
     const keys = runtime.keys;
     if (keys.has("KeyQ")) runtime.cameraAzimuth += 0.7 * d;
-    if (keys.has("KeyE") || keys.has("KeyR")) runtime.cameraAzimuth -= 0.7 * d;
+    if (keys.has("KeyR")) runtime.cameraAzimuth -= 0.7 * d;
 
     const zone = zoneAt(p.x, p.z);
     runtime.zone = zone;
