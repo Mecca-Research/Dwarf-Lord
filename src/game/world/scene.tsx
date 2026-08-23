@@ -437,14 +437,14 @@ function DwarfActor({
 function Lights() {
   return (
     <>
-      <color attach="background" args={["#1c1814"]} />
-      <fog attach="fog" args={["#1c1814", 52, 145]} />
-      <hemisphereLight args={["#c8b89a", "#2a2218", 0.55]} />
-      <ambientLight intensity={0.18} color="#c4b49a" />
+      <color attach="background" args={["#1a1c24"]} />
+      <fog attach="fog" args={["#2a2832", 38, 105]} />
+      <hemisphereLight args={["#c8d4e4", "#3a3228", 0.72]} />
+      <ambientLight intensity={0.14} color="#b8a890" />
       <directionalLight
-        position={[-38, 42, 22]}
-        intensity={2.35}
-        color="#ffd2a0"
+        position={[-40, 34, 18]}
+        intensity={2.15}
+        color="#ffd4a8"
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -457,7 +457,7 @@ function Lights() {
         shadow-camera-top={48}
         shadow-camera-bottom={-48}
       />
-      <directionalLight position={[28, 18, -16]} intensity={0.42} color="#8aa0c0" />
+      <directionalLight position={[26, 16, -22]} intensity={0.55} color="#7a8cb0" />
     </>
   );
 }
@@ -471,13 +471,13 @@ export function GameCanvas() {
       camera={{ position: [28, 30, 28], zoom: 40, near: 0.1, far: 280 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
-        gl.setClearColor("#1c1814");
+        gl.setClearColor("#1a1c24");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.18;
+        gl.toneMappingExposure = 1.08;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#1c1814", 52, 145);
+        scene.fog = new THREE.Fog("#2a2832", 38, 105);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -493,8 +493,8 @@ export function GameCanvas() {
       <Actors />
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
-        <Bloom luminanceThreshold={0.78} intensity={0.38} mipmapBlur luminanceSmoothing={0.2} />
-        <Vignette eskil={false} offset={0.22} darkness={0.42} />
+        <Bloom luminanceThreshold={0.62} intensity={0.55} mipmapBlur luminanceSmoothing={0.18} />
+        <Vignette eskil={false} offset={0.18} darkness={0.48} />
       </EffectComposer>
     </Canvas>
   );

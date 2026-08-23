@@ -27,6 +27,7 @@ export type WorldMats = {
   gold: THREE.MeshStandardMaterial;
   flame: THREE.Texture;
   smokeTex: THREE.Texture;
+  sky: THREE.Texture;
 };
 
 const Ctx = createContext<WorldMats | null>(null);
@@ -37,10 +38,11 @@ export function useMats(): WorldMats {
   return m;
 }
 
-function prep(t: THREE.Texture) {
+function prep(t: THREE.Texture, repeatX = 1, repeatY = 1) {
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
   t.colorSpace = THREE.SRGBColorSpace;
   t.anisotropy = 8;
+  t.repeat.set(repeatX, repeatY);
   t.needsUpdate = true;
   return t;
 }
@@ -59,76 +61,74 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     bark: asset("/textures/bark.jpg"),
     flame: asset("/textures/flame.png"),
     smoke: asset("/textures/smoke.png"),
+    sky: asset("/art/sky-dusk.jpg"),
   });
 
   const mats = useMemo(() => {
-    prep(maps.dirt);
-    prep(maps.wood);
-    prep(maps.stone);
-    prep(maps.rock);
-    prep(maps.canvas);
-    prep(maps.roof);
-    prep(maps.iron);
-    prep(maps.forest);
-    prep(maps.cobble);
-    prep(maps.bark);
+    prep(maps.dirt, 1, 1);
+    prep(maps.wood, 1, 1);
+    prep(maps.stone, 1, 1);
+    prep(maps.rock, 1, 1);
+    prep(maps.canvas, 1, 1);
+    prep(maps.roof, 1, 1);
+    prep(maps.iron, 1, 1);
+    prep(maps.forest, 1, 1);
+    prep(maps.cobble, 1, 1);
+    prep(maps.bark, 1, 1);
     maps.flame.colorSpace = THREE.SRGBColorSpace;
     maps.smoke.colorSpace = THREE.SRGBColorSpace;
+    maps.sky.colorSpace = THREE.SRGBColorSpace;
+    maps.sky.wrapS = maps.sky.wrapT = THREE.ClampToEdgeWrapping;
 
-    const std = (
-      map: THREE.Texture,
-      color: string,
-      roughness: number,
-      metalness = 0,
-    ) =>
+    const std = (map: THREE.Texture, color: string, roughness: number, metalness = 0) =>
       new THREE.MeshStandardMaterial({
         map,
         color,
         roughness,
         metalness,
+        envMapIntensity: 0.45,
       });
 
     const value: WorldMats = {
-      dirt: std(maps.dirt, "#e6d3b4", 0.96),
-      dirtRoad: std(maps.cobble, "#d8c4a4", 0.92),
-      wood: std(maps.wood, "#e2c49a", 0.84, 0.02),
-      woodDark: std(maps.wood, "#9a7350", 0.88, 0.02),
-      stone: std(maps.stone, "#ddd6c8", 0.8, 0.03),
-      stoneDark: std(maps.stone, "#9a9488", 0.84, 0.03),
-      rock: std(maps.rock, "#b8b0a6", 0.9, 0.04),
-      canvas: Object.assign(std(maps.canvas, "#e8d8b8", 0.92), { side: THREE.DoubleSide }),
+      dirt: std(maps.dirt, "#7a6550", 0.97),
+      dirtRoad: std(maps.cobble, "#8a7358", 0.94),
+      wood: std(maps.wood, "#c4ae8c", 0.82, 0.02),
+      woodDark: std(maps.wood, "#7a5a40", 0.88, 0.02),
+      stone: std(maps.stone, "#b8b0a4", 0.86, 0.04),
+      stoneDark: std(maps.stone, "#7a7468", 0.9, 0.04),
+      rock: std(maps.rock, "#8a8278", 0.92, 0.05),
+      canvas: Object.assign(std(maps.canvas, "#c8b898", 0.94), { side: THREE.DoubleSide }),
       roof: std(maps.roof, "#c4a888", 0.86),
-      iron: std(maps.iron, "#d0c8c0", 0.4, 0.58),
-      forest: std(maps.forest, "#9aaa78", 0.95),
-      bark: std(maps.bark, "#c4a888", 0.9),
+      iron: std(maps.iron, "#9a948c", 0.38, 0.62),
+      forest: std(maps.forest, "#6a7a52", 0.96),
+      bark: std(maps.bark, "#8a6e52", 0.92),
       moss: new THREE.MeshStandardMaterial({
         map: maps.forest,
-        color: "#3d4c32",
-        roughness: 0.96,
+        color: "#3a4a30",
+        roughness: 0.97,
         side: THREE.DoubleSide,
       }),
       water: new THREE.MeshPhysicalMaterial({
-        color: "#1a4a48",
+        color: "#1a3a3c",
         roughness: 0.08,
-        metalness: 0.12,
-        transmission: 0.15,
+        metalness: 0.1,
         transparent: true,
-        opacity: 0.82,
+        opacity: 0.78,
         thickness: 0.4,
       }),
       ember: new THREE.MeshStandardMaterial({
-        color: "#ff6a2a",
-        emissive: "#ff5418",
-        emissiveIntensity: 2.2,
-        roughness: 0.35,
+        color: "#ff6a28",
+        emissive: "#ff4a10",
+        emissiveIntensity: 2.6,
+        roughness: 0.32,
       }),
-      lime: std(maps.rock, "#e8dcc0", 0.86),
-      black: new THREE.MeshStandardMaterial({ color: "#080706", roughness: 1 }),
-      straw: std(maps.canvas, "#d4b56a", 0.95),
+      lime: std(maps.rock, "#c8bca0", 0.88),
+      black: new THREE.MeshStandardMaterial({ color: "#070605", roughness: 1 }),
+      straw: std(maps.canvas, "#c4a060", 0.96),
       needle: new THREE.MeshStandardMaterial({
         map: maps.forest,
-        color: "#3a4c30",
-        roughness: 0.94,
+        color: "#2e3c26",
+        roughness: 0.95,
       }),
       leather: new THREE.MeshStandardMaterial({ color: "#4a3020", roughness: 0.9 }),
       gold: new THREE.MeshStandardMaterial({
@@ -138,6 +138,7 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
       }),
       flame: maps.flame,
       smokeTex: maps.smoke,
+      sky: maps.sky,
     };
     return value;
   }, [maps]);

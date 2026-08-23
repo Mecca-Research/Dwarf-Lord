@@ -1,4 +1,6 @@
+import { useMemo } from "react";
 import { groundHeight } from "../runtime";
+import { plankWallGeo, sagCanvasGeo, useTiledMat } from "./geom";
 import {
   Anvil,
   Barrel,
@@ -47,126 +49,139 @@ function Wall({
 export function Dorm({ x, z, rot, condition }: { x: number; z: number; rot: number; condition: number }) {
   const m = useMats();
   const repaired = condition > 0.5;
+  const wallMat = useTiledMat(m.wood, 3.4, 1.15);
+  const wallDark = useTiledMat(m.woodDark, 3.2, 1.1);
+  const stoneMat = useTiledMat(m.stone, 2.8, 0.6);
+  const roofMat = useTiledMat(m.roof, 3.6, 1.4);
+  const frontPlanks = useMemo(() => plankWallGeo(3.05, 2.15, 0.12, 2), []);
+  const sidePlanks = useMemo(() => plankWallGeo(4.55, 2.15, 0.12, 5), []);
+  const backPlanks = useMemo(() => plankWallGeo(8.05, 2.15, 0.12, 8), []);
+
   return (
     <group position={[x, 0, z]} rotation-y={rot}>
-      {/* Stone foundation */}
-      <mesh position={[0, 0.28, 0]} material={m.stone} castShadow receiveShadow>
-        <boxGeometry args={[8.6, 0.56, 5.1]} />
+      <mesh position={[0, 0.32, 0]} material={stoneMat} castShadow receiveShadow>
+        <boxGeometry args={[8.7, 0.64, 5.2]} />
       </mesh>
-      <mesh position={[0, 0.58, 0]} material={m.woodDark} receiveShadow>
-        <boxGeometry args={[8.2, 0.1, 4.7]} />
-      </mesh>
-
-      {/* Corner posts */}
-      {(
-        [
-          [-3.95, -2.2],
-          [3.95, -2.2],
-          [-3.95, 2.2],
-          [3.95, 2.2],
-        ] as const
-      ).map(([px, pz]) => (
-        <mesh key={`${px}${pz}`} position={[px, 1.55, pz]} material={m.woodDark} castShadow>
-          <boxGeometry args={[0.22, 2.0, 0.22]} />
+      {([-3.8, -1.3, 1.3, 3.8] as const).map((px, i) => (
+        <mesh key={`st${i}`} position={[px, 0.18, 2.68]} material={m.stoneDark} castShadow>
+          <boxGeometry args={[1.6, 0.36, 0.28]} />
         </mesh>
       ))}
-
-      {/* Long beams */}
-      <mesh position={[0, 2.52, -2.2]} material={m.woodDark} castShadow>
-        <boxGeometry args={[8.2, 0.18, 0.18]} />
+      <mesh position={[0, 0.66, 0]} material={m.woodDark} receiveShadow>
+        <boxGeometry args={[8.15, 0.1, 4.7]} />
       </mesh>
-      <mesh position={[0, 2.52, 2.2]} material={m.woodDark} castShadow>
-        <boxGeometry args={[8.2, 0.18, 0.18]} />
+      {(
+        [
+          [-4.0, -2.25],
+          [4.0, -2.25],
+          [-4.0, 2.25],
+          [4.0, 2.25],
+        ] as const
+      ).map(([px, pz]) => (
+        <mesh key={`${px}${pz}`} position={[px, 1.7, pz]} material={m.woodDark} castShadow>
+          <boxGeometry args={[0.26, 2.15, 0.26]} />
+        </mesh>
+      ))}
+      <mesh position={[0, 0.7, -2.32]} material={wallDark} castShadow receiveShadow geometry={backPlanks} />
+      <mesh position={[-4.18, 0.7, 0]} rotation-y={Math.PI / 2} material={wallMat} castShadow receiveShadow geometry={sidePlanks} />
+      <mesh position={[4.18, 0.7, 0]} rotation-y={Math.PI / 2} material={wallMat} castShadow receiveShadow geometry={sidePlanks} />
+      <mesh position={[-2.52, 0.7, 2.32]} material={wallMat} castShadow receiveShadow geometry={frontPlanks} />
+      <mesh position={[2.52, 0.7, 2.32]} material={wallMat} castShadow receiveShadow geometry={frontPlanks} />
+      <mesh position={[0, 2.55, 2.34]} material={m.woodDark} castShadow>
+        <boxGeometry args={[1.45, 0.22, 0.2]} />
       </mesh>
-      <mesh position={[-3.95, 2.52, 0]} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.18, 0.18, 4.6]} />
+      <mesh position={[0, 1.55, 2.34]} material={m.woodDark} castShadow>
+        <boxGeometry args={[0.16, 1.85, 0.16]} />
       </mesh>
-      <mesh position={[3.95, 2.52, 0]} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.18, 0.18, 4.6]} />
+      <mesh position={[0.58, 1.45, 2.5]} rotation-y={repaired ? 0.18 : 0.72} material={m.woodDark} castShadow>
+        <boxGeometry args={[0.9, 1.75, 0.08]} />
       </mesh>
-
-      {/* Back + side walls */}
-      <Wall w={8.2} h={2.05} x={0} y={1.55} z={-2.28} dark />
-      <Wall w={4.7} h={2.05} d={0.18} x={-4.12} y={1.55} z={0} rot={Math.PI / 2} />
-      <Wall w={4.7} h={2.05} d={0.18} x={4.12} y={1.55} z={0} rot={Math.PI / 2} />
-
-      {/* Front wall with door gap */}
-      <Wall w={3.2} h={2.05} x={-2.5} y={1.55} z={2.28} />
-      <Wall w={3.2} h={2.05} x={2.5} y={1.55} z={2.28} />
-      <mesh position={[0, 2.4, 2.28]} material={m.woodDark} castShadow>
-        <boxGeometry args={[1.3, 0.35, 0.2]} />
+      <mesh position={[0, 1.35, 0]} material={m.black}>
+        <boxGeometry args={[6.6, 1.4, 3.1]} />
       </mesh>
-      {/* Door hanging crooked */}
-      <mesh position={[0.55, 1.35, 2.42]} rotation-y={repaired ? 0.15 : 0.7} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.85, 1.7, 0.08]} />
+      <mesh position={[-2.45, 1.85, 2.42]} material={m.black}>
+        <boxGeometry args={[0.72, 0.58, 0.1]} />
       </mesh>
-
-      {/* Windows (dark recesses) */}
-      <mesh position={[-2.4, 1.7, 2.38]} material={m.black}>
-        <boxGeometry args={[0.7, 0.55, 0.08]} />
+      <mesh position={[2.55, 1.85, 2.42]} material={m.black}>
+        <boxGeometry args={[0.72, 0.58, 0.1]} />
       </mesh>
-      <mesh position={[2.5, 1.7, 2.38]} material={m.black}>
-        <boxGeometry args={[0.7, 0.55, 0.08]} />
+      <mesh position={[-2.45, 2.18, 2.46]} material={m.woodDark}>
+        <boxGeometry args={[0.86, 0.08, 0.08]} />
       </mesh>
-      <mesh position={[-2.4, 1.7, 2.42]} material={m.woodDark}>
-        <boxGeometry args={[0.82, 0.08, 0.06]} />
+      <mesh position={[0, 2.72, -2.22]} material={m.woodDark} castShadow>
+        <boxGeometry args={[8.3, 0.2, 0.2]} />
       </mesh>
-
-      {/* Interior bunks */}
-      <mesh position={[-2.4, 0.85, -1.1]} material={m.wood} castShadow>
-        <boxGeometry args={[2.2, 0.45, 0.9]} />
+      <mesh position={[0, 2.72, 2.22]} material={m.woodDark} castShadow>
+        <boxGeometry args={[8.3, 0.2, 0.2]} />
       </mesh>
-      <mesh position={[2.2, 0.85, -1.1]} material={m.wood} castShadow>
-        <boxGeometry args={[2.2, 0.45, 0.9]} />
+      <mesh position={[0, 3.55, 0]} material={m.woodDark} castShadow>
+        <boxGeometry args={[8.4, 0.16, 0.16]} />
       </mesh>
-      <mesh position={[-2.4, 1.08, -1.1]} material={m.straw}>
-        <boxGeometry args={[2.0, 0.12, 0.8]} />
-      </mesh>
-
       {repaired ? (
         <>
-          <mesh position={[0, 3.35, 0]} rotation-z={0} material={m.roof} castShadow>
-            <boxGeometry args={[8.8, 0.14, 2.7]} />
+          <mesh position={[0, 4.05, -1.15]} rotation={[0.58, 0, 0]} material={roofMat} castShadow>
+            <boxGeometry args={[8.9, 0.13, 3.5]} />
           </mesh>
-          <mesh position={[0, 3.55, 0]} rotation={[0.55, 0, 0]} material={m.roof} castShadow>
-            <boxGeometry args={[8.8, 0.12, 2.9]} />
-          </mesh>
-          <mesh position={[0, 3.55, 0]} rotation={[-0.55, 0, 0]} material={m.roof} castShadow>
-            <boxGeometry args={[8.8, 0.12, 2.9]} />
+          <mesh position={[0, 4.05, 1.15]} rotation={[-0.58, 0, 0]} material={roofMat} castShadow>
+            <boxGeometry args={[8.9, 0.13, 3.5]} />
           </mesh>
         </>
       ) : (
         <>
-          {/* Sagging / missing roof */}
-          <mesh position={[-1.4, 3.15, -0.4]} rotation={[0.55, 0, 0.08]} material={m.roof} castShadow>
-            <boxGeometry args={[5.4, 0.12, 2.8]} />
+          <mesh position={[0, 4.0, -1.15]} rotation={[0.58, 0, 0]} material={roofMat} castShadow>
+            <boxGeometry args={[8.8, 0.13, 3.45]} />
           </mesh>
-          <mesh position={[2.6, 2.4, 0.8]} rotation={[0.95, -0.2, 0.4]} material={m.woodDark} castShadow>
-            <boxGeometry args={[3.4, 0.12, 1.6]} />
+          <mesh position={[-1.35, 3.85, 1.1]} rotation={[-0.56, 0, 0.05]} material={roofMat} castShadow>
+            <boxGeometry args={[5.8, 0.13, 3.1]} />
           </mesh>
-          <mesh position={[2.8, 0.72, 2.6]} rotation={[0.2, 0.4, 0.9]} material={m.woodDark} castShadow>
-            <boxGeometry args={[2.4, 0.1, 0.85]} />
+          <mesh position={[3.1, 1.15, 2.7]} rotation={[0.15, 0.45, 0.85]} material={m.woodDark} castShadow>
+            <boxGeometry args={[2.8, 0.1, 1.3]} />
           </mesh>
-          <mesh position={[0.2, 3.05, 0.2]} material={m.straw} rotation={[0.2, 0, 0.15]}>
-            <boxGeometry args={[2.2, 0.15, 1.4]} />
+          <mesh position={[2.35, 3.75, 0.85]} rotation={[-0.5, 0.18, 0.12]} material={m.canvas} castShadow>
+            <planeGeometry args={[2.4, 1.7]} />
           </mesh>
         </>
       )}
-
-      {/* Broken chimney */}
-      <mesh position={[-3.2, 2.9, -1.6]} material={m.stoneDark} castShadow>
-        <boxGeometry args={[0.7, 1.1, 0.7]} />
+      <mesh position={[-3.15, 3.15, -1.55]} material={m.stoneDark} castShadow>
+        <boxGeometry args={[0.72, 1.35, 0.72]} />
       </mesh>
-      {!repaired ? (
-        <mesh position={[-2.6, 0.45, -2.8]} rotation={[0.4, 0.2, 0.3]} material={m.stoneDark} castShadow>
-          <boxGeometry args={[0.45, 0.4, 0.4]} />
-        </mesh>
+      <mesh position={[-3.15, 3.9, -1.55]} material={m.stone} castShadow>
+        <boxGeometry args={[0.86, 0.16, 0.86]} />
+      </mesh>
+      {repaired ? (
+        <ChimneySmoke x={-3.15} y={4.1} z={-1.55} />
       ) : (
-        <ChimneySmoke x={-3.2} y={3.6} z={-1.6} />
+        <mesh position={[-2.55, 0.55, -2.85]} rotation={[0.4, 0.2, 0.3]} material={m.stoneDark} castShadow>
+          <boxGeometry args={[0.48, 0.42, 0.42]} />
+        </mesh>
       )}
-
-      <Rubble x={3.4} z={2.8} n={6} />
-      <PlankDebris x={4.2} z={1.4} rot={0.6} len={2.4} />
+      <mesh position={[0, 0.16, 2.95]} material={m.wood} castShadow receiveShadow>
+        <boxGeometry args={[1.7, 0.14, 0.55]} />
+      </mesh>
+      <mesh position={[0, 0.3, 2.72]} material={m.wood} castShadow receiveShadow>
+        <boxGeometry args={[1.55, 0.14, 0.42]} />
+      </mesh>
+      <mesh position={[0, 0.44, 2.52]} material={m.woodDark} castShadow receiveShadow>
+        <boxGeometry args={[1.4, 0.14, 0.32]} />
+      </mesh>
+      <mesh position={[-0.72, 0.55, 2.7]} material={m.woodDark} castShadow>
+        <boxGeometry args={[0.1, 0.7, 0.1]} />
+      </mesh>
+      <mesh position={[0.72, 0.55, 2.7]} material={m.woodDark} castShadow>
+        <boxGeometry args={[0.1, 0.7, 0.1]} />
+      </mesh>
+      <mesh position={[-4.6, 0.45, 1.6]} rotation={[0.4, 0.6, 0.3]} material={m.woodDark} castShadow>
+        <boxGeometry args={[2.2, 0.1, 0.32]} />
+      </mesh>
+      <mesh position={[-4.3, 0.55, 1.9]} rotation={[0.2, -0.4, 0.7]} material={m.wood} castShadow>
+        <boxGeometry args={[1.8, 0.1, 0.28]} />
+      </mesh>
+      <mesh position={[-4.9, 0.35, 2.3]} rotation={[0.1, 0.8, 0.15]} material={m.woodDark} castShadow>
+        <boxGeometry args={[1.5, 0.08, 0.24]} />
+      </mesh>
+      <Rubble x={3.6} z={2.9} n={7} />
+      <PlankDebris x={4.4} z={1.5} rot={0.55} len={2.6} />
+      <Crate x={-3.6} z={3.15} s={0.7} rot={0.3} />
     </group>
   );
 }
@@ -357,33 +372,33 @@ export function StorageShed({ x, z, rot, condition }: { x: number; z: number; ro
 export function CanvasTent({ x, z, rot, scale = 1 }: { x: number; z: number; rot: number; scale?: number }) {
   const m = useMats();
   const y = groundHeight(x, z);
+  const sag = useMemo(() => sagCanvasGeo(2.7, 2.05, 0.28), []);
   return (
     <group position={[x, y, z]} rotation-y={rot} scale={scale}>
-      {/* Ridge pole */}
-      <mesh position={[0, 1.55, 0]} rotation-z={Math.PI / 2} material={m.woodDark} castShadow>
-        <cylinderGeometry args={[0.035, 0.035, 2.5, 6]} />
+      <mesh position={[0, 1.62, 0]} rotation-z={Math.PI / 2} material={m.woodDark} castShadow>
+        <cylinderGeometry args={[0.04, 0.04, 2.65, 6]} />
       </mesh>
-      <mesh position={[-1.2, 0.8, 0]} material={m.woodDark} castShadow>
-        <cylinderGeometry args={[0.04, 0.05, 1.65, 6]} />
+      <mesh position={[-1.25, 0.82, 0]} material={m.woodDark} castShadow>
+        <cylinderGeometry args={[0.045, 0.055, 1.7, 6]} />
       </mesh>
-      <mesh position={[1.2, 0.8, 0]} material={m.woodDark} castShadow>
-        <cylinderGeometry args={[0.04, 0.05, 1.65, 6]} />
+      <mesh position={[1.25, 0.82, 0]} material={m.woodDark} castShadow>
+        <cylinderGeometry args={[0.045, 0.055, 1.7, 6]} />
       </mesh>
-      {/* Canvas A-frame */}
-      <mesh position={[0, 0.85, 0.55]} rotation-x={-0.72} material={m.canvas} castShadow receiveShadow>
-        <planeGeometry args={[2.55, 1.85]} />
+      <mesh position={[0, 0.92, 0.62]} rotation-x={-0.78} material={m.canvas} castShadow receiveShadow geometry={sag} />
+      <mesh position={[0, 0.92, -0.62]} rotation-x={0.78} material={m.canvas} castShadow receiveShadow geometry={sag} />
+      <mesh position={[1.28, 0.7, 0]} rotation-y={Math.PI / 2} material={m.canvas}>
+        <planeGeometry args={[1.15, 1.45]} />
       </mesh>
-      <mesh position={[0, 0.85, -0.55]} rotation-x={0.72} material={m.canvas} castShadow receiveShadow>
-        <planeGeometry args={[2.55, 1.85]} />
+      <mesh position={[-1.28, 0.78, 0.15]} rotation-y={-1.2} material={m.canvas}>
+        <planeGeometry args={[0.7, 1.3]} />
       </mesh>
-      {/* Guy lines */}
-      <mesh position={[1.55, 0.45, 0.7]} rotation-z={0.7} rotation-x={-0.3} material={m.iron}>
-        <cylinderGeometry args={[0.012, 0.012, 1.3, 4]} />
+      <mesh position={[1.7, 0.5, 0.75]} rotation-z={0.72} rotation-x={-0.28} material={m.iron}>
+        <cylinderGeometry args={[0.012, 0.012, 1.4, 4]} />
       </mesh>
-      <mesh position={[-1.55, 0.45, -0.7]} rotation-z={-0.7} rotation-x={0.3} material={m.iron}>
-        <cylinderGeometry args={[0.012, 0.012, 1.3, 4]} />
+      <mesh position={[-1.7, 0.5, -0.75]} rotation-z={-0.72} rotation-x={0.28} material={m.iron}>
+        <cylinderGeometry args={[0.012, 0.012, 1.4, 4]} />
       </mesh>
-      <Bedroll x={0} z={0.15} rot={1.57} />
+      <Bedroll x={0} z={0.12} rot={1.57} />
     </group>
   );
 }
@@ -393,46 +408,53 @@ export function Kitchen({ x, z }: { x: number; z: number }) {
   const y = groundHeight(x, z);
   return (
     <group position={[x, y, z]}>
-      <mesh position={[0, 0.12, 0]} rotation-x={-Math.PI / 2} material={m.stoneDark}>
-        <ringGeometry args={[0.55, 0.95, 14]} />
+      <mesh position={[0, 0.02, 0]} rotation-x={-Math.PI / 2} material={m.stoneDark}>
+        <circleGeometry args={[1.15, 16]} />
       </mesh>
-      {Array.from({ length: 8 }).map((_, i) => {
-        const a = (i / 8) * Math.PI * 2;
+      {Array.from({ length: 10 }).map((_, i) => {
+        const a = (i / 10) * Math.PI * 2;
         return (
-          <mesh key={i} position={[Math.cos(a) * 0.72, 0.16, Math.sin(a) * 0.72]} material={m.stone} castShadow>
-            <boxGeometry args={[0.28, 0.2, 0.2]} />
+          <mesh
+            key={i}
+            position={[Math.cos(a) * 0.82, 0.18, Math.sin(a) * 0.82]}
+            rotation-y={a}
+            material={i % 2 ? m.stone : m.stoneDark}
+            castShadow
+          >
+            <boxGeometry args={[0.34, 0.24, 0.22]} />
           </mesh>
         );
       })}
-      {/* Logs in fire */}
-      <mesh position={[0.08, 0.18, 0]} rotation-y={0.4} rotation-z={0.2} material={m.bark} castShadow>
+      <mesh position={[0.1, 0.2, 0.05]} rotation-y={0.5} rotation-z={0.25} material={m.bark} castShadow>
+        <cylinderGeometry args={[0.08, 0.09, 0.85, 6]} />
+      </mesh>
+      <mesh position={[-0.08, 0.18, 0]} rotation-y={-0.9} rotation-z={-0.18} material={m.bark} castShadow>
         <cylinderGeometry args={[0.07, 0.08, 0.7, 6]} />
       </mesh>
-      <mesh position={[-0.05, 0.16, 0.05]} rotation-y={-0.8} rotation-z={-0.15} material={m.bark} castShadow>
+      <mesh position={[0.02, 0.22, -0.12]} rotation-y={1.4} material={m.bark} castShadow>
         <cylinderGeometry args={[0.06, 0.07, 0.55, 6]} />
       </mesh>
-      <Campfire x={0} y={0.35} z={0} />
-      {/* Tripod */}
+      <Campfire x={0} y={0.42} z={0} />
       {(
         [
-          [0.45, 0.7, 0.3, 0.35],
-          [-0.4, 0.7, 0.25, -0.35],
-          [0.05, 0.7, -0.45, 0.15],
+          [0.5, 0.78, 0.32, 0.38],
+          [-0.45, 0.78, 0.28, -0.38],
+          [0.04, 0.78, -0.5, 0.12],
         ] as const
       ).map(([px, py, pz, rz], i) => (
         <mesh key={i} position={[px, py, pz]} rotation-z={rz} material={m.woodDark} castShadow>
-          <cylinderGeometry args={[0.03, 0.04, 1.45, 5]} />
+          <cylinderGeometry args={[0.032, 0.04, 1.55, 5]} />
         </mesh>
       ))}
-      <Kettle x={0} z={0} y={0.85} />
-      {/* Sitting logs */}
-      <mesh position={[1.35, 0.18, 0.4]} rotation-z={Math.PI / 2} rotation-y={0.3} material={m.bark} castShadow>
-        <cylinderGeometry args={[0.16, 0.18, 1.3, 7]} />
+      <Kettle x={0} z={0} y={0.95} />
+      <mesh position={[1.45, 0.2, 0.45]} rotation-z={Math.PI / 2} rotation-y={0.35} material={m.bark} castShadow>
+        <cylinderGeometry args={[0.18, 0.2, 1.45, 8]} />
       </mesh>
-      <mesh position={[-1.1, 0.16, 0.85]} rotation-z={Math.PI / 2} rotation-y={-0.5} material={m.bark} castShadow>
-        <cylinderGeometry args={[0.14, 0.16, 1.1, 7]} />
+      <mesh position={[-1.2, 0.18, 0.9]} rotation-z={Math.PI / 2} rotation-y={-0.55} material={m.bark} castShadow>
+        <cylinderGeometry args={[0.16, 0.18, 1.2, 8]} />
       </mesh>
-      <pointLight position={[0, 1.15, 0]} color="#ff8a42" intensity={9} distance={9} decay={2} />
+      <pointLight position={[0, 1.35, 0]} color="#ff8a3a" intensity={16} distance={14} decay={2} />
+      <pointLight position={[0, 0.7, 0]} color="#ff6a20" intensity={8} distance={6} decay={2} />
     </group>
   );
 }

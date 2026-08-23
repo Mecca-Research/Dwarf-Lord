@@ -21,13 +21,13 @@ export function FlameSprite({
     const t = state.clock.elapsedTime;
     const mesh = ref.current;
     if (!mesh) return;
-    mesh.scale.x = scale * (0.85 + Math.sin(t * 11.3) * 0.1);
-    mesh.scale.y = scale * (1 + Math.sin(t * 8.1) * 0.12);
+    mesh.scale.x = scale * (0.85 + Math.sin(t * 11.3) * 0.12);
+    mesh.scale.y = scale * (1 + Math.sin(t * 8.1) * 0.14);
   });
   return (
     <Billboard position={[x, y, z]} follow>
       <mesh ref={ref}>
-        <planeGeometry args={[0.7, 1.05]} />
+        <planeGeometry args={[1.05, 1.55]} />
         <meshBasicMaterial
           map={m.flame}
           transparent
@@ -47,19 +47,21 @@ export function Campfire({ x, y, z }: { x: number; y: number; z: number }) {
     const t = state.clock.elapsedTime;
     if (glow.current) {
       const mat = glow.current.material as THREE.MeshStandardMaterial;
-      mat.emissiveIntensity = 1.6 + Math.sin(t * 7) * 0.4;
-      glow.current.scale.setScalar(0.9 + Math.sin(t * 9) * 0.08);
+      mat.emissiveIntensity = 2.2 + Math.sin(t * 7) * 0.55;
+      glow.current.scale.setScalar(1.05 + Math.sin(t * 9) * 0.1);
     }
   });
   return (
     <group position={[x, y, z]}>
       <mesh ref={glow} material={m.ember}>
-        <sphereGeometry args={[0.16, 8, 6]} />
+        <sphereGeometry args={[0.22, 10, 8]} />
       </mesh>
-      <FlameSprite x={0} y={0.35} z={0} scale={0.9} />
-      <mesh position={[0.05, 0.08, 0.04]} material={m.ember}>
-        <sphereGeometry args={[0.08, 6, 5]} />
+      <FlameSprite x={0} y={0.55} z={0} scale={1.35} />
+      <FlameSprite x={0.08} y={0.35} z={0.05} scale={0.7} />
+      <mesh position={[0.06, 0.1, 0.04]} material={m.ember}>
+        <sphereGeometry args={[0.1, 6, 5]} />
       </mesh>
+      <ChimneySmoke x={0} y={0.9} z={0} />
     </group>
   );
 }

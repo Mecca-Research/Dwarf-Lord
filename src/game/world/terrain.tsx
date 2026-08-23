@@ -1,12 +1,14 @@
 import { useMemo } from "react";
 import * as THREE from "three";
 import { groundHeight } from "../runtime";
+import { rockGeo, useTiledMat } from "./geom";
+import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
 
 function makeTerrain() {
-  const w = 128;
-  const d = 110;
-  const geo = new THREE.PlaneGeometry(w, d, 96, 80);
+  const w = 108;
+  const d = 96;
+  const geo = new THREE.PlaneGeometry(w, d, 110, 90);
   geo.rotateX(-Math.PI / 2);
   const pos = geo.attributes.position;
   const uv = geo.attributes.uv;
@@ -19,17 +21,19 @@ function makeTerrain() {
     const inTunnel = x > 2.4 && x < 13.6 && z < -24 && z > -70;
     if (inTunnel) y = 0.02;
     pos.setY(i, y);
-    uv.setXY(i, x * 0.18, z * 0.18);
-    const road = x > -58 && x < -8 && z > 7 && z < 15 && y < 1.2;
+    uv.setXY(i, x * 0.12, z * 0.12);
+    const road = x > -58 && x < -8 && z > 7 && z < 15 && y < 1.4;
     const forest = x < -34 && z > 6;
+    const cliff = y < -1.5;
     if (inTunnel) c.set("#2a2622");
-    else if (road) c.set("#d8c4a8");
-    else if (y > 4) c.set("#b0aaa0");
-    else if (forest) c.set("#8a9a6c");
-    else if (z < -14) c.set("#c4b49a");
-    else c.set("#e0ccb0");
-    const n = (Math.sin(x * 2.1) * Math.cos(z * 1.7) + 1) * 0.05;
-    c.offsetHSL(0, 0, n - 0.04);
+    else if (cliff) c.set("#4a423c");
+    else if (road) c.set("#8a7358");
+    else if (y > 4) c.set("#7a746c");
+    else if (forest) c.set("#5a6a44");
+    else if (z < -14) c.set("#6a5a48");
+    else c.set("#6e5a46");
+    const n = (Math.sin(x * 1.7) * Math.cos(z * 1.4) + 1) * 0.04;
+    c.offsetHSL(0, 0, n - 0.06);
     colors[i * 3] = c.r;
     colors[i * 3 + 1] = c.g;
     colors[i * 3 + 2] = c.b;
@@ -40,27 +44,45 @@ function makeTerrain() {
 }
 
 function makeMountains() {
-  const geo = new THREE.PlaneGeometry(110, 55, 48, 24);
+  const geo = new THREE.PlaneGeometry(140, 70, 56, 28);
   geo.rotateX(-Math.PI / 2);
   const pos = geo.attributes.position;
   const uv = geo.attributes.uv;
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i);
     const z = pos.getZ(i);
-    const ridge = Math.exp(-((x - 8) * (x - 8)) / 900);
+    const ridge = Math.exp(-((x - 8) * (x - 8)) / 1100);
     const h =
-      10 +
-      ridge * 9 +
-      Math.abs(x) * 0.04 +
-      Math.sin(x * 0.18) * 2.4 +
-      Math.cos(z * 0.22 + x * 0.1) * 1.8 +
-      Math.sin(x * 0.51) * Math.sin(z * 0.4) * 1.4;
-    const bowl = Math.max(0, 12 - Math.hypot(x - 8, z + 8));
-    pos.setY(i, Math.max(0.2, h - bowl * 0.55));
-    uv.setXY(i, x * 0.07, z * 0.07);
+      14 +
+      ridge * 16 +
+      Math.abs(x) * 0.05 +
+      Math.sin(x * 0.14) * 3.2 +
+      Math.cos(z * 0.18 + x * 0.08) * 2.4 +
+      Math.sin(x * 0.45) * Math.sin(z * 0.35) * 2.0;
+    pos.setY(i, Math.max(0.4, h));
+    uv.setXY(i, x * 0.05, z * 0.05);
   }
   geo.computeVertexNormals();
   return geo;
+}
+
+function SkyDome() {
+  const m = useMats();
+  const mat = useMemo(() => {
+    const mm = new THREE.MeshBasicMaterial({
+      map: m.sky,
+      side: THREE.BackSide,
+      fog: false,
+      depthWrite: false,
+    });
+    return mm;
+  }, [m.sky]);
+  return (
+    <mesh scale={[-1, 1, 1]} position={[0, 8, -8]}>
+      <sphereGeometry args={[120, 40, 24]} />
+      <primitive object={mat} attach="material" />
+    </mesh>
+  );
 }
 
 export function Terrain() {
@@ -70,6 +92,11 @@ export function Terrain() {
   const dirtMat = useMemo(() => {
     const mat = m.dirt.clone();
     mat.vertexColors = true;
+    if (mat.map) {
+      mat.map = mat.map.clone();
+      mat.map.repeat.set(8, 7);
+      mat.map.wrapS = mat.map.wrapT = THREE.RepeatWrapping;
+    }
     return mat;
   }, [m.dirt]);
   const forestMat = useMemo(() => {
@@ -77,6 +104,8 @@ export function Terrain() {
     mat.vertexColors = true;
     return mat;
   }, [m.forest]);
+  const rockMat = useTiledMat(m.rock, 2.4, 2.4);
+  const cliffGeo = useMemo(() => rockGeo(1, 3), []);
 
   const pines = useMemo(() => {
     const pts: { x: number; z: number; s: number }[] = [];
@@ -89,54 +118,80 @@ export function Terrain() {
     return pts;
   }, []);
 
+  const cliffs = useMemo(
+    () =>
+      [
+        { x: 20, z: 12, s: [6.5, 4.2, 5.5], ry: 0.4, y: -1.6 },
+        { x: 24, z: 2, s: [5.5, 5.0, 6.2], ry: 0.8, y: -1.8 },
+        { x: 22, z: -10, s: [7.0, 4.8, 5.0], ry: -0.3, y: -1.4 },
+        { x: 16, z: 16, s: [5.2, 3.6, 4.4], ry: 1.1, y: -1.2 },
+        { x: -18, z: 16, s: [6.0, 4.0, 5.0], ry: 0.2, y: -1.5 },
+        { x: -22, z: 6, s: [5.4, 4.4, 4.8], ry: -0.6, y: -1.7 },
+        { x: -20, z: -8, s: [6.2, 4.6, 5.5], ry: 0.5, y: -1.3 },
+        { x: 8, z: 18, s: [4.8, 3.4, 4.2], ry: 0.9, y: -1.1 },
+        { x: 26, z: -18, s: [8.0, 6.0, 6.5], ry: 0.15, y: -0.6 },
+        { x: -6, z: 17, s: [4.2, 3.2, 3.8], ry: -0.4, y: -1.4 },
+      ] as { x: number; z: number; s: number[]; ry: number; y: number }[],
+    [],
+  );
+
   const rocks = useMemo(() => {
     const pts: { x: number; z: number; s: number; ry: number }[] = [];
-    for (let i = 0; i < 34; i++) {
+    for (let i = 0; i < 28; i++) {
       pts.push({
-        x: -8 + (i * 3.1) % 42,
-        z: -20 - (i * 2.4) % 24,
-        s: 0.45 + (i % 5) * 0.28,
+        x: -10 + (i * 3.4) % 40,
+        z: -18 - (i * 2.2) % 22,
+        s: 0.5 + (i % 5) * 0.32,
         ry: i * 0.7,
       });
     }
-    return pts;
-  }, []);
-
-  const grass = useMemo(() => {
-    const pts: { x: number; z: number; s: number; ry: number }[] = [];
-    for (let i = 0; i < 52; i++) {
-      const x = -18 + ((i * 5.17) % 38);
-      const z = -10 + ((i * 3.91) % 26);
-      if (Math.hypot(x + 11, z + 5) < 5.5) continue;
-      if (Math.hypot(x - 10, z + 7) < 4) continue;
-      if (Math.hypot(x - 12.5, z - 1.5) < 3) continue;
-      if (Math.hypot(x - 2, z - 6.5) < 2.2) continue;
-      pts.push({ x, z, s: 0.55 + (i % 4) * 0.12, ry: i * 0.8 });
-    }
+    // camp scatter
+    const camp = [
+      [-14.5, 1.2, 0.55],
+      [-9.2, 8.4, 0.4],
+      [6.8, 9.5, 0.45],
+      [15.5, 4.2, 0.7],
+      [-2.2, -10.5, 0.5],
+    ] as [number, number, number][];
+    camp.forEach(([x, z, s], i) => pts.push({ x, z, s, ry: i * 1.1 }));
     return pts;
   }, []);
 
   return (
     <group>
+      <SkyDome />
       <mesh geometry={terrain} material={dirtMat} receiveShadow />
-      <mesh geometry={mountains} position={[6, -0.4, -52]} material={m.rock} receiveShadow castShadow />
-      <mesh position={[26, 8, -56]} rotation={[0.15, 0.4, -0.08]} scale={[1.3, 1.1, 1.1]} material={m.rock} castShadow>
+      <mesh geometry={mountains} position={[8, 2.2, -62]} material={rockMat} receiveShadow castShadow />
+      <mesh position={[32, 14, -70]} rotation={[0.12, 0.5, -0.06]} scale={[1.5, 1.35, 1.2]} material={m.rock} castShadow>
+        <icosahedronGeometry args={[14, 1]} />
+      </mesh>
+      <mesh position={[-24, 11, -68]} rotation={[0.18, 1.0, 0]} scale={[1.6, 1.15, 1.3]} material={m.stoneDark} castShadow>
         <icosahedronGeometry args={[12, 1]} />
       </mesh>
-      <mesh position={[-18, 6.5, -54]} rotation={[0.2, 1.1, 0]} scale={[1.4, 1, 1.2]} material={m.stoneDark} castShadow>
-        <icosahedronGeometry args={[10, 1]} />
+      <mesh position={[4, 18, -78]} scale={[2.2, 1.6, 1.4]} material={m.rock} castShadow>
+        <icosahedronGeometry args={[11, 1]} />
       </mesh>
 
-      {/* Packed road ribbon */}
-      <mesh position={[-28, 0.03, 11.2]} rotation-x={-Math.PI / 2} material={m.dirtRoad} receiveShadow>
-        <planeGeometry args={[46, 3.2]} />
-      </mesh>
-      <mesh position={[-8, 0.035, 8]} rotation-x={-Math.PI / 2} rotation-z={-0.4} material={m.dirtRoad} receiveShadow>
-        <planeGeometry args={[14, 2.8]} />
-      </mesh>
+      {cliffs.map((c, i) => (
+        <mesh
+          key={`cl${i}`}
+          geometry={cliffGeo}
+          position={[c.x, c.y, c.z]}
+          scale={c.s as [number, number, number]}
+          rotation-y={c.ry}
+          material={rockMat}
+          castShadow
+          receiveShadow
+        />
+      ))}
 
-      {/* Forest floor patch */}
-      <mesh position={[-46, 0.04, 16]} rotation-x={-Math.PI / 2} material={forestMat} receiveShadow>
+      <mesh position={[-28, 0.04, 11.2]} rotation-x={-Math.PI / 2} material={m.dirtRoad} receiveShadow>
+        <planeGeometry args={[46, 3.4]} />
+      </mesh>
+      <mesh position={[-8, 0.045, 8]} rotation-x={-Math.PI / 2} rotation-z={-0.4} material={m.dirtRoad} receiveShadow>
+        <planeGeometry args={[14, 2.9]} />
+      </mesh>
+      <mesh position={[-46, 0.05, 16]} rotation-x={-Math.PI / 2} material={forestMat} receiveShadow>
         <planeGeometry args={[28, 22]} />
       </mesh>
 
@@ -146,7 +201,7 @@ export function Terrain() {
       {rocks.map((r, i) => (
         <mesh
           key={`rk${i}`}
-          position={[r.x, groundHeight(r.x, r.z) + r.s * 0.28, r.z]}
+          position={[r.x, Math.max(0, groundHeight(r.x, r.z)) + r.s * 0.28, r.z]}
           scale={[r.s, r.s * 0.62, r.s * 0.9]}
           rotation-y={r.ry}
           material={m.rock}
@@ -156,54 +211,37 @@ export function Terrain() {
           <icosahedronGeometry args={[1, 1]} />
         </mesh>
       ))}
-      {grass.map((g, i) => (
-        <group key={`gr${i}`} position={[g.x, groundHeight(g.x, g.z) + 0.12, g.z]} rotation-y={g.ry} scale={g.s}>
-          <mesh rotation-x={-0.35} material={m.moss}>
-            <planeGeometry args={[0.32, 0.34]} />
-          </mesh>
-          <mesh rotation-y={1.05} rotation-x={-0.32} material={m.moss}>
-            <planeGeometry args={[0.28, 0.3]} />
-          </mesh>
-        </group>
-      ))}
     </group>
   );
 }
 
 function Pine({ x, z, scale = 1 }: { x: number; z: number; scale?: number }) {
   const m = useMats();
-  const y = groundHeight(x, z);
-  const h = 3.1 * scale;
+  const y = Math.max(0, groundHeight(x, z));
+  const h = 3.4 * scale;
   return (
     <group position={[x, y, z]} scale={scale}>
       <mesh position={[0, h * 0.2, 0]} material={m.bark} castShadow>
-        <cylinderGeometry args={[0.11, 0.2, h * 0.42, 6]} />
+        <cylinderGeometry args={[0.12, 0.22, h * 0.42, 6]} />
       </mesh>
-      <mesh position={[0, h * 0.48, 0]} material={m.needle} castShadow>
-        <coneGeometry args={[1.2, h * 0.58, 7]} />
+      <mesh position={[0, h * 0.5, 0]} material={m.needle} castShadow>
+        <coneGeometry args={[1.25, h * 0.6, 7]} />
       </mesh>
-      <mesh position={[0, h * 0.72, 0]} material={m.needle} castShadow>
-        <coneGeometry args={[0.86, h * 0.46, 7]} />
+      <mesh position={[0, h * 0.74, 0]} material={m.needle} castShadow>
+        <coneGeometry args={[0.9, h * 0.48, 7]} />
       </mesh>
-      <mesh position={[0, h * 0.94, 0]} material={m.needle} castShadow>
-        <coneGeometry args={[0.5, h * 0.34, 7]} />
+      <mesh position={[0, h * 0.96, 0]} material={m.needle} castShadow>
+        <coneGeometry args={[0.52, h * 0.36, 7]} />
       </mesh>
     </group>
   );
 }
 
 export function PathClutter() {
-  const m = useMats();
   return (
     <group>
-      {[-44, -36, -28, -20].map((x) => (
-        <mesh key={x} position={[x, groundHeight(x, 13.5) + 0.75, 13.5]} material={m.woodDark} castShadow>
-          <cylinderGeometry args={[0.07, 0.09, 1.5, 6]} />
-        </mesh>
-      ))}
-      <mesh position={[-16, 0.06, 10.5]} rotation-y={0.08} material={m.wood} receiveShadow>
-        <boxGeometry args={[22, 0.1, 2.6]} />
-      </mesh>
+      <Boardwalk x={-18} z={11.0} len={22} rot={Math.PI / 2} width={1.55} />
+      <Boardwalk x={-7.2} z={8.4} len={10} rot={1.15} width={1.4} />
     </group>
   );
 }
