@@ -14,7 +14,8 @@ dist/
 screenshots/
 artifacts/
 attachments/
-.grok/
+.grok/*
+!.grok/app-env.json
 AGENTS.md
 AGENTS.project.md
 startup.sh
