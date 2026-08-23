@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import { JOBS, WORLD_STAGES } from "../data/catalog";
 import type { Dwarf } from "../types";
-import { camBasis, groundHeight, resolveMove, runtime, zoneAt } from "../runtime";
+import { camBasis, facingOctant, groundHeight, resolveMove, runtime, setPlayerDest, zoneAt } from "../runtime";
 import { useGame } from "../store";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
@@ -93,16 +93,20 @@ function Systems() {
   useEffect(() => {
     const probe = {
       getYaw: () => runtime.player.yaw,
+      getFacing: () => facingOctant(runtime.player.yaw, runtime.cameraAzimuth),
       getSpeed: () => runtime.player.speed,
       getPos: () => ({ x: runtime.player.x, z: runtime.player.z, zone: runtime.zone }),
       setKeys: (codes: string[]) => {
         runtime.keys.clear();
         for (const c of codes) runtime.keys.add(c);
       },
+      setDest: (x: number, z: number) => setPlayerDest(x, z),
       teleport: (x: number, z: number) => {
         runtime.player.x = x;
         runtime.player.z = z;
         runtime.player.dest = null;
+        runtime.player.speed = 0;
+        runtime.player.anim = "idle";
       },
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
@@ -235,7 +239,7 @@ function Systems() {
     }
 
     const mag = Math.hypot(mx, mz);
-    const speed = mag > 0.05 ? 5.8 : 0;
+    const speed = mag > 0.05 ? 3.25 : 0;
     p.speed = speed;
     if (mag > 0.05) {
       mx /= mag;
@@ -341,7 +345,7 @@ function GroundPick() {
           if (Math.hypot(p.x - (runtime.dwarves.get(dw.id)?.x ?? 0), p.z - (runtime.dwarves.get(dw.id)?.z ?? 0)) < 3) {
             useGame.getState().talk(dw.talkKey, dw.id);
           } else {
-            runtime.player.dest = { x: runtime.dwarves.get(dw.id)!.x, z: runtime.dwarves.get(dw.id)!.z };
+            setPlayerDest(runtime.dwarves.get(dw.id)!.x, runtime.dwarves.get(dw.id)!.z);
           }
         }
         return;
@@ -352,11 +356,11 @@ function GroundPick() {
         if (bld && Math.hypot(p.x - bld.x, p.z - bld.z) < 3.4) {
           useGame.getState().inspect(bld.id);
         } else if (bld) {
-          runtime.player.dest = { x: bld.x, z: bld.z };
+          setPlayerDest(bld.x, bld.z);
         }
         return;
       }
-      runtime.player.dest = { x: _hit.x, z: _hit.z };
+      setPlayerDest(_hit.x, _hit.z);
     };
     el.addEventListener("pointerdown", onClick);
     const onWheel = (ev: WheelEvent) => {
@@ -506,9 +510,11 @@ declare global {
   interface Window {
     __controlsTest?: {
       getYaw: () => number;
+      getFacing?: () => number;
       getSpeed: () => number;
       getPos?: () => { x: number; z: number; zone: string };
       setKeys?: (codes: string[]) => void;
+      setDest?: (x: number, z: number) => void;
       teleport?: (x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
     };

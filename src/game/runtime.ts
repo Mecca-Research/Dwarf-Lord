@@ -128,3 +128,11 @@ export function facingOctant(yaw: number, camAz: number) {
   const oct = Math.round(rel / (Math.PI / 4)) % 8;
   return (4 + oct) % 8;
 }
+
+export function setPlayerDest(x: number, z: number) {
+  const p = runtime.player;
+  p.dest = { x, z };
+  const dx = x - p.x;
+  const dz = z - p.z;
+  if (Math.hypot(dx, dz) > 0.12) p.yaw = Math.atan2(-dx, -dz);
+}
