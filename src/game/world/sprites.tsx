@@ -138,28 +138,60 @@ export function DwarfSprite({
   scale?: number;
 }) {
   const bank = useBank();
-  const mat = useRef<THREE.MeshBasicMaterial>(null);
-  const mesh = useRef<THREE.Mesh>(null);
 
   const sit = body.anim === "sit";
-  const h = (sit ? 0.84 : 1.1) * scale;
+  const h = (sit ? 0.84 : 1.08) * scale;
   const w = isPlayer ? h * (512 / 800) : h * 0.62;
+  const matA = useRef<THREE.MeshBasicMaterial>(null);
+  const matB = useRef<THREE.MeshBasicMaterial>(null);
+  const meshA = useRef<THREE.Mesh>(null);
+  const meshB = useRef<THREE.Mesh>(null);
 
   useFrame((_, dt) => {
     const moving = body.anim === "walk" || body.speed > 0.2;
-    if (!isPlayer) body.bob += Math.min(dt, 0.05) * (moving ? 5.5 : 1.2);
+    if (!isPlayer) body.bob += Math.min(dt, 0.05) * (moving ? 5.2 : 1.1);
 
-    const tex = pickTex(bank, dwarf, body, isPlayer);
-    if (mat.current && mat.current.map !== tex) {
-      mat.current.map = tex;
-      mat.current.needsUpdate = true;
+    let tex0 = pickTex(bank, dwarf, body, isPlayer);
+    let tex1 = tex0;
+    let mix = 0;
+    if (isPlayer && moving) {
+      const d = facingOctant(body.yaw, runtime.cameraAzimuth);
+      const cycle = bank.lordGait[d];
+      const n = 4;
+      const phase = ((body.bob % n) + n) % n;
+      const i0 = Math.floor(phase) % n;
+      const i1 = (i0 + 1) % n;
+      const t = phase - Math.floor(phase);
+      mix = t * t * (3 - 2 * t);
+      tex0 = cycle[i0];
+      tex1 = cycle[i1];
     }
-    const frame = Math.abs(Math.floor(body.bob)) % 4;
-    const passing = moving && frame % 2 === 1;
-    const bounce = passing ? 0.1 : 0;
-    if (mesh.current) {
-      mesh.current.scale.set(w, h * (passing ? 1.04 : 1), 1);
-      mesh.current.position.y = h * 0.5 + bounce;
+
+    if (matA.current && matA.current.map !== tex0) {
+      matA.current.map = tex0;
+      matA.current.needsUpdate = true;
+    }
+    if (matB.current && matB.current.map !== tex1) {
+      matB.current.map = tex1;
+      matB.current.needsUpdate = true;
+    }
+    if (matA.current) {
+      matA.current.opacity = 1 - mix;
+      matA.current.depthWrite = mix < 0.5;
+    }
+    if (matB.current) {
+      matB.current.opacity = mix;
+      matB.current.depthWrite = mix >= 0.5;
+    }
+    if (meshB.current) meshB.current.visible = mix > 0.03;
+    const y = h * 0.5;
+    if (meshA.current) {
+      meshA.current.scale.set(w, h, 1);
+      meshA.current.position.y = y;
+    }
+    if (meshB.current) {
+      meshB.current.scale.set(w, h, 1);
+      meshB.current.position.y = y;
     }
   });
 
@@ -172,14 +204,28 @@ export function DwarfSprite({
         <meshBasicMaterial color="#000000" transparent opacity={0.34} />
       </mesh>
       <Billboard follow>
-        <mesh ref={mesh} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={2}>
+        <mesh ref={meshA} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={2}>
           <planeGeometry args={[1, 1]} />
           <meshBasicMaterial
-            ref={mat}
+            ref={matA}
             map={start}
             transparent
-            alphaTest={0.36}
+            opacity={1}
+            alphaTest={0.32}
             depthWrite
+            toneMapped={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+        <mesh ref={meshB} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={3} visible={false}>
+          <planeGeometry args={[1, 1]} />
+          <meshBasicMaterial
+            ref={matB}
+            map={start}
+            transparent
+            opacity={0}
+            alphaTest={0.32}
+            depthWrite={false}
             toneMapped={false}
             side={THREE.DoubleSide}
           />
