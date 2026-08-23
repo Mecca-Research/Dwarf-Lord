@@ -239,17 +239,21 @@ function Systems() {
     }
 
     const mag = Math.hypot(mx, mz);
-    const speed = mag > 0.05 ? 3.25 : 0;
-    p.speed = speed;
     if (mag > 0.05) {
       mx /= mag;
       mz /= mag;
       p.yaw = Math.atan2(-mx, -mz);
+      p.bob += dt * 5.8;
+      const gaitFrame = Math.abs(Math.floor(p.bob)) % 4;
+      const contact = gaitFrame % 2 === 0;
+      const speed = contact ? 3.9 : 1.45;
+      p.speed = speed;
       const moved = resolveMove(p.x, p.z, mx * speed * dt, mz * speed * dt, 0.5);
       p.x = moved.x;
       p.z = moved.z;
       p.anim = "walk";
     } else {
+      p.speed = 0;
       p.anim = "idle";
     }
 

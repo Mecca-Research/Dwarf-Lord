@@ -16,10 +16,8 @@ export type SpriteBank = {
   standLord: THREE.Texture;
   standHelga: THREE.Texture;
   walk: THREE.Texture[];
-  lordWalk: THREE.Texture[];
   lordIdle: THREE.Texture[];
-  lordStep: THREE.Texture[];
-  lordStepR: THREE.Texture[];
+  lordGait: THREE.Texture[][];
   tent: THREE.Texture;
   leanto: THREE.Texture;
   crate: THREE.Texture;
@@ -27,6 +25,11 @@ export type SpriteBank = {
 };
 
 const Ctx = createContext<SpriteBank | null>(null);
+
+const gaitUrls: Record<string, string> = {};
+for (let d = 0; d < 8; d++) {
+  for (let f = 0; f < 4; f++) gaitUrls[`g${d}${f}`] = asset(`/sprites/lord-gait-${d}-${f}.png`);
+}
 
 export function SpriteBankProvider({ children }: { children: ReactNode }) {
   const maps = useTexture({
@@ -41,10 +44,6 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
     walk1: asset("/sprites/walk-1.png"),
     walk2: asset("/sprites/walk-2.png"),
     walk3: asset("/sprites/walk-3.png"),
-    lord0: asset("/sprites/lord-walk-0.png"),
-    lord1: asset("/sprites/lord-walk-1.png"),
-    lord2: asset("/sprites/lord-walk-2.png"),
-    lord3: asset("/sprites/lord-walk-3.png"),
     idle0: asset("/sprites/lord-idle-0.png"),
     idle1: asset("/sprites/lord-idle-1.png"),
     idle2: asset("/sprites/lord-idle-2.png"),
@@ -53,26 +52,11 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
     idle5: asset("/sprites/lord-idle-5.png"),
     idle6: asset("/sprites/lord-idle-6.png"),
     idle7: asset("/sprites/lord-idle-7.png"),
-    step0: asset("/sprites/lord-step-0.png"),
-    step1: asset("/sprites/lord-step-1.png"),
-    step2: asset("/sprites/lord-step-2.png"),
-    step3: asset("/sprites/lord-step-3.png"),
-    step4: asset("/sprites/lord-step-4.png"),
-    step5: asset("/sprites/lord-step-5.png"),
-    step6: asset("/sprites/lord-step-6.png"),
-    step7: asset("/sprites/lord-step-7.png"),
-    stepR0: asset("/sprites/lord-stepR-0.png"),
-    stepR1: asset("/sprites/lord-stepR-1.png"),
-    stepR2: asset("/sprites/lord-stepR-2.png"),
-    stepR3: asset("/sprites/lord-stepR-3.png"),
-    stepR4: asset("/sprites/lord-stepR-4.png"),
-    stepR5: asset("/sprites/lord-stepR-5.png"),
-    stepR6: asset("/sprites/lord-stepR-6.png"),
-    stepR7: asset("/sprites/lord-stepR-7.png"),
     tent: asset("/sprites/tent.png"),
     leanto: asset("/sprites/leanto.png"),
     crate: asset("/sprites/crate.png"),
     barrel: asset("/sprites/barrel.png"),
+    ...gaitUrls,
   });
 
   const bank = useMemo(() => {
@@ -83,6 +67,15 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
       t.premultiplyAlpha = false;
       t.needsUpdate = true;
     }
+    const lordGait: THREE.Texture[][] = [];
+    for (let d = 0; d < 8; d++) {
+      lordGait.push([
+        maps[`g${d}0` as keyof typeof maps] as THREE.Texture,
+        maps[`g${d}1` as keyof typeof maps] as THREE.Texture,
+        maps[`g${d}2` as keyof typeof maps] as THREE.Texture,
+        maps[`g${d}3` as keyof typeof maps] as THREE.Texture,
+      ]);
+    }
     return {
       sitBeard: maps.sitBeard,
       sitHelm: maps.sitHelm,
@@ -92,10 +85,8 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
       standLord: maps.standLord,
       standHelga: maps.standHelga,
       walk: [maps.walk0, maps.walk1, maps.walk2, maps.walk3],
-      lordWalk: [maps.lord0, maps.lord1, maps.lord2, maps.lord3],
       lordIdle: [maps.idle0, maps.idle1, maps.idle2, maps.idle3, maps.idle4, maps.idle5, maps.idle6, maps.idle7],
-      lordStep: [maps.step0, maps.step1, maps.step2, maps.step3, maps.step4, maps.step5, maps.step6, maps.step7],
-      lordStepR: [maps.stepR0, maps.stepR1, maps.stepR2, maps.stepR3, maps.stepR4, maps.stepR5, maps.stepR6, maps.stepR7],
+      lordGait,
       tent: maps.tent,
       leanto: maps.leanto,
       crate: maps.crate,
@@ -112,13 +103,6 @@ function useBank() {
   return b;
 }
 
-function lordCycle(bank: SpriteBank, d: number): THREE.Texture[] {
-  if (d === 0) return bank.lordWalk;
-  const l = bank.lordStep[d];
-  const r = bank.lordStepR[d];
-  return [l, r, l, r];
-}
-
 function pickTex(
   bank: SpriteBank,
   dwarf: Pick<Dwarf, "id" | "helmet" | "sitOnStart"> | undefined,
@@ -126,14 +110,11 @@ function pickTex(
   isPlayer?: boolean,
 ) {
   const sit = body.anim === "sit";
-  const walk = body.anim === "walk" || body.speed > 0.25;
+  const walk = body.anim === "walk" || body.speed > 0.2;
   const fi = Math.abs(Math.floor(body.bob)) % 4;
   if (isPlayer) {
     const d = facingOctant(body.yaw, runtime.cameraAzimuth);
-    if (walk) {
-      const cycle = lordCycle(bank, d);
-      return cycle[Math.abs(Math.floor(body.bob)) % cycle.length];
-    }
+    if (walk) return bank.lordGait[d][fi];
     return bank.lordIdle[d];
   }
   if (dwarf?.id === "borrin") return bank.sitBorrin;
@@ -157,115 +138,48 @@ export function DwarfSprite({
   scale?: number;
 }) {
   const bank = useBank();
-  const matA = useRef<THREE.MeshBasicMaterial>(null);
-  const matB = useRef<THREE.MeshBasicMaterial>(null);
-  const meshA = useRef<THREE.Mesh>(null);
-  const meshB = useRef<THREE.Mesh>(null);
-  const group = useRef<THREE.Group>(null);
+  const mat = useRef<THREE.MeshBasicMaterial>(null);
+  const mesh = useRef<THREE.Mesh>(null);
 
   const sit = body.anim === "sit";
-  const h = (sit ? 0.84 : 1.08) * scale;
+  const h = (sit ? 0.84 : 1.1) * scale;
   const w = isPlayer ? h * (512 / 800) : h * 0.62;
 
   useFrame((_, dt) => {
-    const moving = body.anim === "walk" || body.speed > 0.22;
-    const capped = Math.min(dt, 0.05);
-    if (isPlayer && moving) {
-      body.bob += capped * (4.2 + Math.max(body.speed, 1) * 1.7);
-    } else {
-      body.bob += capped * (moving ? 6 : 1.2);
-    }
+    const moving = body.anim === "walk" || body.speed > 0.2;
+    if (!isPlayer) body.bob += Math.min(dt, 0.05) * (moving ? 5.5 : 1.2);
 
-    const d = isPlayer ? facingOctant(body.yaw, runtime.cameraAzimuth) : 0;
-    let tex0: THREE.Texture;
-    let tex1: THREE.Texture;
-    let mix = 0;
-    if (isPlayer) {
-      if (moving) {
-        const cycle = lordCycle(bank, d);
-        const n = cycle.length;
-        const phase = ((body.bob % n) + n) % n;
-        const i0 = Math.floor(phase) % n;
-        const i1 = (i0 + 1) % n;
-        const t = phase - Math.floor(phase);
-        mix = t * t * (3 - 2 * t);
-        tex0 = cycle[i0];
-        tex1 = cycle[i1];
-      } else {
-        tex0 = tex1 = bank.lordIdle[d];
-        mix = 0;
-      }
-    } else {
-      tex0 = tex1 = pickTex(bank, dwarf, body, false);
-      mix = 0;
+    const tex = pickTex(bank, dwarf, body, isPlayer);
+    if (mat.current && mat.current.map !== tex) {
+      mat.current.map = tex;
+      mat.current.needsUpdate = true;
     }
-
-    if (matA.current && matA.current.map !== tex0) {
-      matA.current.map = tex0;
-      matA.current.needsUpdate = true;
-    }
-    if (matB.current && matB.current.map !== tex1) {
-      matB.current.map = tex1;
-      matB.current.needsUpdate = true;
-    }
-    if (matA.current) {
-      matA.current.opacity = 1 - mix;
-      matA.current.depthWrite = mix < 0.55;
-    }
-    if (matB.current) {
-      matB.current.opacity = mix;
-      matB.current.depthWrite = mix >= 0.55;
-    }
-    if (meshB.current) meshB.current.visible = mix > 0.02;
-
-    const plant = moving ? Math.abs(Math.sin(body.bob * Math.PI)) : 0;
-    const bounce = plant * 0.11;
-    const squash = moving ? 1 - plant * 0.06 : 1;
-    const stretch = moving ? 1 + plant * 0.04 : 1;
-    const hh = h * squash;
-    const ww = w * stretch;
-    const y = hh * 0.5 + bounce;
-    if (meshA.current) {
-      meshA.current.scale.set(ww, hh, 1);
-      meshA.current.position.y = y;
-    }
-    if (meshB.current) {
-      meshB.current.scale.set(ww, hh, 1);
-      meshB.current.position.y = y;
+    const frame = Math.abs(Math.floor(body.bob)) % 4;
+    const passing = moving && frame % 2 === 1;
+    const bounce = passing ? 0.1 : 0;
+    if (mesh.current) {
+      mesh.current.scale.set(w, h * (passing ? 1.04 : 1), 1);
+      mesh.current.position.y = h * 0.5 + bounce;
     }
   });
 
   const start = pickTex(bank, dwarf, body, isPlayer);
 
   return (
-    <group ref={group}>
+    <group>
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.02, 0]} receiveShadow>
-        <circleGeometry args={[0.28, 16]} />
+        <circleGeometry args={[0.26, 14]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.34} />
       </mesh>
-      <Billboard follow position={[0, 0, 0]}>
-        <mesh ref={meshA} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={2}>
+      <Billboard follow>
+        <mesh ref={mesh} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={2}>
           <planeGeometry args={[1, 1]} />
           <meshBasicMaterial
-            ref={matA}
+            ref={mat}
             map={start}
             transparent
-            opacity={1}
-            alphaTest={0.34}
+            alphaTest={0.36}
             depthWrite
-            toneMapped={false}
-            side={THREE.DoubleSide}
-          />
-        </mesh>
-        <mesh ref={meshB} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={3} visible={false}>
-          <planeGeometry args={[1, 1]} />
-          <meshBasicMaterial
-            ref={matB}
-            map={start}
-            transparent
-            opacity={0}
-            alphaTest={0.34}
-            depthWrite={false}
             toneMapped={false}
             side={THREE.DoubleSide}
           />
@@ -292,17 +206,17 @@ export function IllustratedProp({
   const tex = bank[kind];
   const img = tex.image as { width: number; height: number } | undefined;
   const aspect = img ? img.width / img.height : 1;
-  const w = height * aspect;
+  const ww = height * aspect;
   const y = groundHeight(x, z);
   return (
     <group position={[x, y, z]} rotation-y={rot}>
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.015, 0]} receiveShadow>
-        <circleGeometry args={[w * 0.22, 12]} />
+        <circleGeometry args={[ww * 0.22, 12]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.32} />
       </mesh>
       <Billboard follow>
         <mesh position={[0, height * 0.48, 0]} renderOrder={1}>
-          <planeGeometry args={[w, height]} />
+          <planeGeometry args={[ww, height]} />
           <meshBasicMaterial map={tex} transparent alphaTest={0.28} depthWrite toneMapped={false} />
         </mesh>
       </Billboard>
