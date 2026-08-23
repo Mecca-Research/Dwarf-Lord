@@ -12,7 +12,6 @@ import {
 import {
   Barrel,
   Bucket,
-  Chair,
   Crate,
   FencePost,
   Hammer,
@@ -44,7 +43,6 @@ export function Environment() {
       <Dorm x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
       <Forge x={10} z={-7} rot={-0.2} condition={forge?.condition ?? 0.22} />
       <Office x={12.5} z={1.5} rot={0} />
-      <Chair x={11.25} z={3.08} rot={0.35} />
       <StorageShed x={17} z={8} rot={0.4} condition={storage?.condition ?? 0.12} />
       <CanvasTent x={-6} z={7} rot={0.35} />
       <CanvasTent x={-3.2} z={10.2} rot={-0.55} scale={0.9} />

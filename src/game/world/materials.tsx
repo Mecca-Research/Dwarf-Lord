@@ -90,8 +90,8 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
       });
 
     const value: WorldMats = {
-      dirt: std(maps.dirt, "#7a6550", 0.97),
-      dirtRoad: std(maps.cobble, "#8a7358", 0.94),
+      dirt: std(maps.dirt, "#c4b49a", 0.97),
+      dirtRoad: std(maps.cobble, "#b49a78", 0.94),
       wood: std(maps.wood, "#c4ae8c", 0.82, 0.02),
       woodDark: std(maps.wood, "#7a5a40", 0.88, 0.02),
       stone: std(maps.stone, "#b8b0a4", 0.86, 0.04),

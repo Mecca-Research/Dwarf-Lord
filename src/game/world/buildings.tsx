@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import * as THREE from "three";
 import { groundHeight } from "../runtime";
 import { plankWallGeo, sagCanvasGeo, useTiledMat } from "./geom";
 import {
@@ -18,6 +19,30 @@ import {
 } from "./kit";
 import { useMats } from "./materials";
 import { Campfire, ChimneySmoke, FlameSprite } from "./fx";
+
+function Gable({
+  width,
+  height,
+  thick = 0.14,
+  mat,
+}: {
+  width: number;
+  height: number;
+  thick?: number;
+  mat: THREE.Material;
+}) {
+  const geo = useMemo(() => {
+    const s = new THREE.Shape();
+    s.moveTo(-width / 2, 0);
+    s.lineTo(width / 2, 0);
+    s.lineTo(0, height);
+    s.closePath();
+    const g = new THREE.ExtrudeGeometry(s, { depth: thick, bevelEnabled: false });
+    g.translate(0, 0, -thick / 2);
+    return g;
+  }, [width, height, thick]);
+  return <mesh geometry={geo} material={mat} castShadow receiveShadow />;
+}
 
 function Wall({
   w,
@@ -117,6 +142,12 @@ export function Dorm({ x, z, rot, condition }: { x: number; z: number; rot: numb
       <mesh position={[0, 3.55, 0]} material={m.woodDark} castShadow>
         <boxGeometry args={[8.4, 0.16, 0.16]} />
       </mesh>
+      <group position={[-4.2, 2.82, 0]} rotation-y={Math.PI / 2}>
+        <Gable width={4.7} height={1.85} mat={wallDark} />
+      </group>
+      <group position={[4.2, 2.82, 0]} rotation-y={Math.PI / 2}>
+        <Gable width={4.7} height={1.85} mat={wallMat} />
+      </group>
       {repaired ? (
         <>
           <mesh position={[0, 4.05, -1.15]} rotation={[0.58, 0, 0]} material={roofMat} castShadow>
@@ -386,6 +417,12 @@ export function CanvasTent({ x, z, rot, scale = 1 }: { x: number; z: number; rot
       </mesh>
       <mesh position={[0, 0.92, 0.62]} rotation-x={-0.78} material={m.canvas} castShadow receiveShadow geometry={sag} />
       <mesh position={[0, 0.92, -0.62]} rotation-x={0.78} material={m.canvas} castShadow receiveShadow geometry={sag} />
+      <mesh position={[0, 0.86, 0.58]} rotation-x={-0.78} material={m.canvas}>
+        <planeGeometry args={[2.55, 1.9]} />
+      </mesh>
+      <mesh position={[0, 0.86, -0.58]} rotation-x={0.78} material={m.canvas}>
+        <planeGeometry args={[2.55, 1.9]} />
+      </mesh>
       <mesh position={[1.28, 0.7, 0]} rotation-y={Math.PI / 2} material={m.canvas}>
         <planeGeometry args={[1.15, 1.45]} />
       </mesh>

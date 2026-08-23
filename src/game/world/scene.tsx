@@ -6,7 +6,7 @@ import { JOBS, WORLD_STAGES } from "../data/catalog";
 import type { Dwarf } from "../types";
 import { camBasis, groundHeight, resolveMove, runtime, zoneAt } from "../runtime";
 import { useGame } from "../store";
-import { DwarfRig } from "./dwarves";
+import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
 
@@ -392,11 +392,11 @@ function Actors() {
   return (
     <>
       <group ref={group}>
-        <DwarfRig
+        <DwarfSprite
           isPlayer
           scale={runtime.zone === "mine" ? spec.mineScale * 1.15 : spec.townScale}
           body={playerBody}
-          dwarf={{ clothes: "#241c18", beard: "#6a3a28", skin: "#c4a07a", helmet: false }}
+          dwarf={{ id: "player", clothes: "#241c18", beard: "#6a3a28", skin: "#c4a07a", helmet: false }}
         />
       </group>
       {dwarfNodes.map((d) => (
@@ -429,7 +429,7 @@ function DwarfActor({
   if (!body) return null;
   return (
     <group ref={ref}>
-      <DwarfRig dwarf={dwarf} body={body} scale={1} />
+      <DwarfSprite dwarf={dwarf} body={body} scale={1} />
     </group>
   );
 }
@@ -437,14 +437,14 @@ function DwarfActor({
 function Lights() {
   return (
     <>
-      <color attach="background" args={["#1a1c24"]} />
-      <fog attach="fog" args={["#2a2832", 38, 105]} />
-      <hemisphereLight args={["#c8d4e4", "#3a3228", 0.72]} />
-      <ambientLight intensity={0.14} color="#b8a890" />
+      <color attach="background" args={["#6a7382"]} />
+      <fog attach="fog" args={["#7a8490", 58, 145]} />
+      <hemisphereLight args={["#d8e0ec", "#5a4a3c", 1.05]} />
+      <ambientLight intensity={0.32} color="#c8bca8" />
       <directionalLight
-        position={[-40, 34, 18]}
-        intensity={2.15}
-        color="#ffd4a8"
+        position={[-36, 38, 20]}
+        intensity={2.55}
+        color="#fff1d4"
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -457,7 +457,7 @@ function Lights() {
         shadow-camera-top={48}
         shadow-camera-bottom={-48}
       />
-      <directionalLight position={[26, 16, -22]} intensity={0.55} color="#7a8cb0" />
+      <directionalLight position={[22, 18, -18]} intensity={0.62} color="#9aaccc" />
     </>
   );
 }
@@ -471,13 +471,13 @@ export function GameCanvas() {
       camera={{ position: [28, 30, 28], zoom: 40, near: 0.1, far: 280 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
-        gl.setClearColor("#1a1c24");
+        gl.setClearColor("#6a7382");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.08;
+        gl.toneMappingExposure = 1.22;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#2a2832", 38, 105);
+        scene.fog = new THREE.Fog("#7a8490", 58, 145);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -487,14 +487,16 @@ export function GameCanvas() {
       <GroundPick />
       <Suspense fallback={null}>
         <WorldMatsProvider>
-          <Environment />
+          <SpriteBankProvider>
+            <Environment />
+            <Actors />
+          </SpriteBankProvider>
         </WorldMatsProvider>
       </Suspense>
-      <Actors />
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
-        <Bloom luminanceThreshold={0.62} intensity={0.55} mipmapBlur luminanceSmoothing={0.18} />
-        <Vignette eskil={false} offset={0.18} darkness={0.48} />
+        <Bloom luminanceThreshold={0.7} intensity={0.42} mipmapBlur luminanceSmoothing={0.2} />
+        <Vignette eskil={false} offset={0.28} darkness={0.28} />
       </EffectComposer>
     </Canvas>
   );
