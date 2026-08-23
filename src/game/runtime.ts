@@ -120,3 +120,11 @@ export function camBasis(azimuth: number) {
   const rightZ = -Math.sin(azimuth);
   return { forwardX, forwardZ, rightX, rightZ };
 }
+
+/** 0 front, 1 front-right, 2 right, 3 back-right, 4 back, 5 back-left, 6 left, 7 front-left */
+export function facingOctant(yaw: number, camAz: number) {
+  const tau = Math.PI * 2;
+  const rel = ((yaw - camAz) % tau + tau) % tau;
+  const oct = Math.round(rel / (Math.PI / 4)) % 8;
+  return (4 + oct) % 8;
+}

@@ -384,7 +384,7 @@ function Actors() {
     if (!g) return;
     const y = groundHeight(playerBody.x, playerBody.z);
     g.position.set(playerBody.x, y, playerBody.z);
-    g.rotation.y = playerBody.yaw;
+    g.rotation.y = 0;
   });
 
   const dwarfNodes = useMemo(() => dwarves, [dwarves]);
