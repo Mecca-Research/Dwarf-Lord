@@ -26,14 +26,14 @@ function makeTerrain() {
     const forest = x < -34 && z > 6;
     const cliff = y < -1.5;
     const camp = x > -16.5 && x < 19.5 && z > -11.5 && z < 12.6;
-    if (inTunnel) c.set("#2a2622");
-    else if (cliff) c.set("#5a5248");
-    else if (road) c.set("#b89a78");
-    else if (y > 4) c.set("#8a847c");
-    else if (forest) c.set("#6a7a52");
-    else if (!camp) c.set("#5a5248");
-    else if (z < -14) c.set("#8a7a64");
-    else c.set("#c4b090");
+    if (inTunnel) c.set("#211f1e");
+    else if (cliff) c.set("#3f4142");
+    else if (road) c.set("#6d5c4c");
+    else if (y > 4) c.set("#515254");
+    else if (forest) c.set("#3f4937");
+    else if (!camp) c.set("#414344");
+    else if (z < -14) c.set("#5d554b");
+    else c.set("#756555");
     const n = (Math.sin(x * 1.7) * Math.cos(z * 1.4) + 1) * 0.04;
     c.offsetHSL(0, 0, n - 0.06);
     colors[i * 3] = c.r;
@@ -113,7 +113,7 @@ export function Terrain() {
   const pines = useMemo(() => {
     const pts: { x: number; z: number; s: number }[] = [];
     for (let i = 0; i < 46; i++) {
-      const x = -38 - (i % 8) * 2.8 - (i * 1.7) % 3;
+      const x = -38 - (i % 8) * 2.8 - ((i * 1.7) % 3);
       const z = 18 - Math.floor(i / 8) * 4.5 + (i % 3) * 1.4;
       if (z > 6 && z < 28 && x > -60 && x < -34) pts.push({ x, z, s: 0.85 + (i % 5) * 0.08 });
     }
@@ -145,8 +145,8 @@ export function Terrain() {
     const pts: { x: number; z: number; s: number; ry: number }[] = [];
     for (let i = 0; i < 28; i++) {
       pts.push({
-        x: -10 + (i * 3.4) % 40,
-        z: -18 - (i * 2.2) % 22,
+        x: -10 + ((i * 3.4) % 40),
+        z: -18 - ((i * 2.2) % 22),
         s: 0.5 + (i % 5) * 0.32,
         ry: i * 0.7,
       });
@@ -171,11 +171,29 @@ export function Terrain() {
         <meshBasicMaterial map={m.sky} fog={false} depthWrite={false} toneMapped={false} />
       </mesh>
       <mesh geometry={terrain} material={dirtMat} receiveShadow />
-      <mesh geometry={mountains} position={[8, 2.2, -62]} material={rockMat} receiveShadow castShadow />
-      <mesh position={[32, 14, -70]} rotation={[0.12, 0.5, -0.06]} scale={[1.5, 1.35, 1.2]} material={m.rock} castShadow>
+      <mesh
+        geometry={mountains}
+        position={[8, 2.2, -62]}
+        material={rockMat}
+        receiveShadow
+        castShadow
+      />
+      <mesh
+        position={[32, 14, -70]}
+        rotation={[0.12, 0.5, -0.06]}
+        scale={[1.5, 1.35, 1.2]}
+        material={m.rock}
+        castShadow
+      >
         <icosahedronGeometry args={[14, 1]} />
       </mesh>
-      <mesh position={[-24, 11, -68]} rotation={[0.18, 1.0, 0]} scale={[1.6, 1.15, 1.3]} material={m.stoneDark} castShadow>
+      <mesh
+        position={[-24, 11, -68]}
+        rotation={[0.18, 1.0, 0]}
+        scale={[1.6, 1.15, 1.3]}
+        material={m.stoneDark}
+        castShadow
+      >
         <icosahedronGeometry args={[12, 1]} />
       </mesh>
       <mesh position={[4, 18, -78]} scale={[2.2, 1.6, 1.4]} material={m.rock} castShadow>
@@ -198,10 +216,21 @@ export function Terrain() {
         <planeGeometry args={[90, 80]} />
       </mesh>
 
-      <mesh position={[-28, 0.04, 11.2]} rotation-x={-Math.PI / 2} material={m.dirtRoad} receiveShadow>
+      <mesh
+        position={[-28, 0.04, 11.2]}
+        rotation-x={-Math.PI / 2}
+        material={m.dirtRoad}
+        receiveShadow
+      >
         <planeGeometry args={[46, 3.4]} />
       </mesh>
-      <mesh position={[-8, 0.045, 8]} rotation-x={-Math.PI / 2} rotation-z={-0.4} material={m.dirtRoad} receiveShadow>
+      <mesh
+        position={[-8, 0.045, 8]}
+        rotation-x={-Math.PI / 2}
+        rotation-z={-0.4}
+        material={m.dirtRoad}
+        receiveShadow
+      >
         <planeGeometry args={[14, 2.9]} />
       </mesh>
       <mesh position={[-46, 0.05, 16]} rotation-x={-Math.PI / 2} material={forestMat} receiveShadow>
@@ -222,6 +251,65 @@ export function Terrain() {
           receiveShadow
         >
           <icosahedronGeometry args={[1, 1]} />
+        </mesh>
+      ))}
+      <CampGroundDetail />
+    </group>
+  );
+}
+
+function CampGroundDetail() {
+  const m = useMats();
+  const pebbles = useMemo(
+    () =>
+      Array.from({ length: 96 }, (_, i) => {
+        const x = -15 + ((i * 7.37) % 33);
+        const z = -10 + ((i * 11.13) % 21);
+        return {
+          x,
+          z,
+          size: 0.055 + (i % 6) * 0.025,
+          turn: (i * 1.91) % Math.PI,
+        };
+      }).filter(({ x, z }) => Math.hypot(x - 2, z - 6.5) > 1.6),
+    [],
+  );
+  const moss = useMemo(
+    () => [
+      { x: -14.1, z: 9.8, sx: 2.5, sz: 1.3, r: 0.2 },
+      { x: -13.7, z: -8.7, sx: 2.1, sz: 1.15, r: -0.4 },
+      { x: 15.4, z: 10.1, sx: 2.8, sz: 1.2, r: 0.55 },
+      { x: 17.4, z: -7.6, sx: 2.3, sz: 1.05, r: -0.25 },
+      { x: -3.5, z: 12.0, sx: 1.8, sz: 0.8, r: 0.1 },
+    ],
+    [],
+  );
+
+  return (
+    <group>
+      {moss.map((patch, i) => (
+        <mesh
+          key={`moss-${i}`}
+          position={[patch.x, groundHeight(patch.x, patch.z) + 0.025, patch.z]}
+          rotation={[-Math.PI / 2, 0, patch.r]}
+          scale={[patch.sx, patch.sz, 1]}
+          material={m.moss}
+          receiveShadow
+        >
+          <circleGeometry args={[1, 18]} />
+        </mesh>
+      ))}
+      {pebbles.map((stone, i) => (
+        <mesh
+          key={`pebble-${i}`}
+          position={[stone.x, groundHeight(stone.x, stone.z) + stone.size * 0.42, stone.z]}
+          rotation={[stone.turn * 0.2, stone.turn, stone.turn * 0.12]}
+          scale={[stone.size * 1.5, stone.size * 0.65, stone.size]}
+          material={i % 3 === 0 ? m.stone : m.stoneDark}
+          castShadow
+          receiveShadow
+        >
+          <icosahedronGeometry args={[1, 0]} />
         </mesh>
       ))}
     </group>
