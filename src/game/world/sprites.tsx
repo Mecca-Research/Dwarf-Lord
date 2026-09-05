@@ -64,6 +64,8 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
     for (const t of list) {
       t.colorSpace = THREE.SRGBColorSpace;
       t.anisotropy = 8;
+      t.minFilter = THREE.LinearMipmapLinearFilter;
+      t.magFilter = THREE.LinearFilter;
       t.premultiplyAlpha = false;
       t.needsUpdate = true;
     }
@@ -85,7 +87,16 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
       standLord: maps.standLord,
       standHelga: maps.standHelga,
       walk: [maps.walk0, maps.walk1, maps.walk2, maps.walk3],
-      lordIdle: [maps.idle0, maps.idle1, maps.idle2, maps.idle3, maps.idle4, maps.idle5, maps.idle6, maps.idle7],
+      lordIdle: [
+        maps.idle0,
+        maps.idle1,
+        maps.idle2,
+        maps.idle3,
+        maps.idle4,
+        maps.idle5,
+        maps.idle6,
+        maps.idle7,
+      ],
       lordGait,
       tent: maps.tent,
       leanto: maps.leanto,
@@ -126,6 +137,11 @@ function pickTex(
   return bank.standLabor;
 }
 
+function textureAspect(texture: THREE.Texture, fallback = 0.62) {
+  const image = texture.image as { width?: number; height?: number } | undefined;
+  return image?.width && image.height ? image.width / image.height : fallback;
+}
+
 export function DwarfSprite({
   dwarf,
   body,
@@ -141,7 +157,8 @@ export function DwarfSprite({
 
   const sit = body.anim === "sit";
   const h = (sit ? 0.84 : 1.08) * scale;
-  const w = isPlayer ? h * (512 / 800) : h * 0.62;
+  const start = pickTex(bank, dwarf, body, isPlayer);
+  const w = h * textureAspect(start);
   const mat = useRef<THREE.MeshBasicMaterial>(null);
   const mesh = useRef<THREE.Mesh>(null);
 
@@ -155,19 +172,23 @@ export function DwarfSprite({
       mat.current.needsUpdate = true;
     }
     if (mesh.current) {
-      mesh.current.scale.set(w, h, 1);
+      mesh.current.scale.set(h * textureAspect(tex), h, 1);
       mesh.current.position.y = h * 0.5;
     }
   });
 
-  const start = pickTex(bank, dwarf, body, isPlayer);
-
   return (
     <group>
-      <mesh rotation-x={-Math.PI / 2} position={[0, 0.02, 0]} receiveShadow>
-        <circleGeometry args={[0.26, 14]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.34} />
-      </mesh>
+      <group rotation-x={-Math.PI / 2} position={[0, 0.02, 0]}>
+        <mesh scale={[1, 0.48, 1]}>
+          <circleGeometry args={[0.32 * scale, 20]} />
+          <meshBasicMaterial color="#090604" transparent opacity={0.24} depthWrite={false} />
+        </mesh>
+        <mesh position={[0, 0, 0.001]} scale={[1, 0.42, 1]}>
+          <circleGeometry args={[0.21 * scale, 20]} />
+          <meshBasicMaterial color="#000000" transparent opacity={0.34} depthWrite={false} />
+        </mesh>
+      </group>
       <Billboard follow>
         <mesh ref={mesh} position={[0, h * 0.5, 0]} scale={[w, h, 1]} renderOrder={2}>
           <planeGeometry args={[1, 1]} />

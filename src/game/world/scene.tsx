@@ -4,7 +4,15 @@ import { Suspense, useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import { JOBS, WORLD_STAGES } from "../data/catalog";
 import type { Dwarf } from "../types";
-import { camBasis, facingFromMove, groundHeight, resolveMove, runtime, setPlayerDest, zoneAt } from "../runtime";
+import {
+  camBasis,
+  facingFromMove,
+  groundHeight,
+  resolveMove,
+  runtime,
+  setPlayerDest,
+  zoneAt,
+} from "../runtime";
 import { useGame } from "../store";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
@@ -20,7 +28,19 @@ const ndc = new THREE.Vector2();
 function bindKeys() {
   const down = (e: KeyboardEvent) => {
     runtime.keys.add(e.code);
-    if (["KeyW", "KeyA", "KeyS", "KeyD", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(e.code)) {
+    if (
+      [
+        "KeyW",
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "Space",
+      ].includes(e.code)
+    ) {
       e.preventDefault();
     }
   };
@@ -50,7 +70,8 @@ function IsoCamera() {
     const zone = zoneAt(p.x, p.z);
     runtime.zone = zone;
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
-    const targetZoom = (zone === "mine" ? spec.cameraZoom * 0.72 : spec.cameraZoom) + runtime.zoomBias;
+    const targetZoom =
+      (zone === "mine" ? spec.cameraZoom * 0.72 : spec.cameraZoom) + runtime.zoomBias;
     runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-d * 3));
 
     const dist = 38;
@@ -360,7 +381,12 @@ function GroundPick() {
         if (dw) {
           useGame.getState().setSelected(dw.id);
           const p = runtime.player;
-          if (Math.hypot(p.x - (runtime.dwarves.get(dw.id)?.x ?? 0), p.z - (runtime.dwarves.get(dw.id)?.z ?? 0)) < 3) {
+          if (
+            Math.hypot(
+              p.x - (runtime.dwarves.get(dw.id)?.x ?? 0),
+              p.z - (runtime.dwarves.get(dw.id)?.z ?? 0),
+            ) < 3
+          ) {
             useGame.getState().talk(dw.talkKey, dw.id);
           } else {
             setPlayerDest(runtime.dwarves.get(dw.id)!.x, runtime.dwarves.get(dw.id)!.z);
@@ -418,7 +444,13 @@ function Actors() {
           isPlayer
           scale={runtime.zone === "mine" ? spec.mineScale * 1.15 : spec.townScale}
           body={playerBody}
-          dwarf={{ id: "player", clothes: "#241c18", beard: "#6a3a28", skin: "#c4a07a", helmet: false }}
+          dwarf={{
+            id: "player",
+            clothes: "#241c18",
+            beard: "#6a3a28",
+            skin: "#c4a07a",
+            helmet: false,
+          }}
         />
       </group>
       {dwarfNodes.map((d) => (
@@ -459,14 +491,14 @@ function DwarfActor({
 function Lights() {
   return (
     <>
-      <color attach="background" args={["#5c6574"]} />
-      <fog attach="fog" args={["#6a7382", 42, 125]} />
-      <hemisphereLight args={["#c8d2e2", "#4a4036", 0.92]} />
-      <ambientLight intensity={0.28} color="#c4b49a" />
+      <color attach="background" args={["#202936"]} />
+      <fog attach="fog" args={["#252d39", 38, 112]} />
+      <hemisphereLight args={["#8290a2", "#2d251f", 0.62]} />
+      <ambientLight intensity={0.18} color="#8d8175" />
       <directionalLight
         position={[-36, 38, 20]}
-        intensity={2.15}
-        color="#ffdcb8"
+        intensity={1.45}
+        color="#d7b18c"
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -479,7 +511,7 @@ function Lights() {
         shadow-camera-top={48}
         shadow-camera-bottom={-48}
       />
-      <directionalLight position={[22, 18, -18]} intensity={0.62} color="#9aaccc" />
+      <directionalLight position={[22, 18, -18]} intensity={0.38} color="#74859f" />
     </>
   );
 }
@@ -493,13 +525,13 @@ export function GameCanvas() {
       camera={{ position: [28, 30, 28], zoom: 40, near: 0.1, far: 280 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
-        gl.setClearColor("#5c6574");
+        gl.setClearColor("#202936");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.16;
+        gl.toneMappingExposure = 0.94;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#6a7382", 42, 125);
+        scene.fog = new THREE.Fog("#252d39", 38, 112);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -517,8 +549,8 @@ export function GameCanvas() {
       </Suspense>
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
-        <Bloom luminanceThreshold={0.68} intensity={0.48} mipmapBlur luminanceSmoothing={0.2} />
-        <Vignette eskil={false} offset={0.22} darkness={0.38} />
+        <Bloom luminanceThreshold={0.58} intensity={0.62} mipmapBlur luminanceSmoothing={0.22} />
+        <Vignette eskil={false} offset={0.2} darkness={0.55} />
       </EffectComposer>
     </Canvas>
   );

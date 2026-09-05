@@ -32,7 +32,7 @@ export const runtime = {
   dwarves: new Map<string, Body>(),
   keys: new Set<string>(),
   cameraAzimuth: -0.92,
-  cameraElev: 0.82,
+  cameraElev: 0.92,
   zoom: 40,
   zoomBias: 0,
   zone: "road" as ZoneId,
@@ -136,7 +136,7 @@ export function facingFromMove(mx: number, mz: number, camAz: number) {
   if (sx * sx + sy * sy < 1e-8) return -1;
   const ang = Math.atan2(sx, sy);
   const oct = Math.round(ang / (Math.PI / 4));
-  return ((4 - oct) % 8 + 8) % 8;
+  return (((4 - oct) % 8) + 8) % 8;
 }
 
 export function setPlayerDest(x: number, z: number) {
