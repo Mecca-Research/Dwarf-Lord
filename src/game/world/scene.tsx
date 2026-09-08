@@ -57,7 +57,7 @@ function bindKeys() {
 }
 
 function IsoCamera() {
-  const { camera } = useThree();
+  const { camera, size } = useThree();
   const stage = useGame((s) => s.settlement);
 
   useFrame((_, dt) => {
@@ -79,14 +79,14 @@ function IsoCamera() {
     const el = runtime.cameraElev;
     _cam.set(
       p.x + dist * Math.sin(az) * Math.cos(el),
-      dist * Math.sin(el) + 5,
+      dist * Math.sin(el) + 2,
       p.z + dist * Math.cos(az) * Math.cos(el),
     );
     camera.position.lerp(_cam, 1 - Math.exp(-d * 4));
     _look.set(p.x, 1.15, p.z);
     camera.lookAt(_look);
     const cam = camera as THREE.OrthographicCamera;
-    cam.zoom = runtime.zoom;
+    cam.zoom = runtime.zoom * (size.height / 720);
     cam.near = 0.1;
     cam.far = 280;
     cam.updateProjectionMatrix();
@@ -108,6 +108,10 @@ function Systems() {
   const expedition = useGame((s) => s.expedition);
   const acc = useRef(0);
   const promptAcc = useRef(0);
+  const stepRef = useRef(step);
+  useEffect(() => {
+    stepRef.current = step;
+  });
 
   useEffect(() => bindKeys(), []);
 
@@ -134,8 +138,25 @@ function Systems() {
       },
     };
     window.__controlsTest = probe;
+    window.render_game_to_text = () =>
+      JSON.stringify({
+        coordinates: "x east, z south, y up",
+        player: runtime.player,
+        zone: runtime.zone,
+        prompt: useGame.getState().prompt,
+        dialogue: useGame.getState().dialogue,
+        dwarves: useGame
+          .getState()
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id) })),
+      });
+    window.advanceTime = (ms: number) => {
+      if (!useGame.getState().playing || useGame.getState().dialogue) return;
+      for (let i = 0; i < Math.max(1, Math.round(ms / (1000 / 60))); i++) stepRef.current(1 / 60);
+    };
     return () => {
       if (window.__controlsTest === probe) delete window.__controlsTest;
+      delete window.render_game_to_text;
+      delete window.advanceTime;
     };
   }, []);
 
@@ -492,13 +513,13 @@ function Lights() {
   return (
     <>
       <color attach="background" args={["#202936"]} />
-      <fog attach="fog" args={["#252d39", 38, 112]} />
-      <hemisphereLight args={["#8290a2", "#2d251f", 0.62]} />
-      <ambientLight intensity={0.18} color="#8d8175" />
+      <fog attach="fog" args={["#252d39", 65, 150]} />
+      <hemisphereLight args={["#b4c4d5", "#51463b", 1.25]} />
+      <ambientLight intensity={0.42} color="#8d8175" />
       <directionalLight
         position={[-36, 38, 20]}
-        intensity={1.45}
-        color="#d7b18c"
+        intensity={2.5}
+        color="#fff0d9"
         castShadow
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
@@ -506,12 +527,12 @@ function Lights() {
         shadow-normalBias={0.04}
         shadow-camera-near={2}
         shadow-camera-far={140}
-        shadow-camera-left={-48}
-        shadow-camera-right={48}
-        shadow-camera-top={48}
-        shadow-camera-bottom={-48}
+        shadow-camera-left={-32}
+        shadow-camera-right={32}
+        shadow-camera-top={32}
+        shadow-camera-bottom={-32}
       />
-      <directionalLight position={[22, 18, -18]} intensity={0.38} color="#74859f" />
+      <directionalLight position={[22, 18, -18]} intensity={0.65} color="#74859f" />
     </>
   );
 }
@@ -522,16 +543,16 @@ export function GameCanvas() {
       orthographic
       shadows
       dpr={[1, 1.6]}
-      camera={{ position: [28, 30, 28], zoom: 40, near: 0.1, far: 280 }}
+      camera={{ position: [-25.7, 23.45, 27.6], zoom: 34, near: 0.1, far: 280 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
         gl.setClearColor("#202936");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 0.94;
+        gl.toneMappingExposure = 1.08;
         gl.shadowMap.enabled = true;
-        gl.shadowMap.type = THREE.PCFShadowMap;
+        gl.shadowMap.type = THREE.PCFSoftShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#252d39", 38, 112);
+        scene.fog = new THREE.Fog("#252d39", 65, 150);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -549,8 +570,8 @@ export function GameCanvas() {
       </Suspense>
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
-        <Bloom luminanceThreshold={0.58} intensity={0.62} mipmapBlur luminanceSmoothing={0.22} />
-        <Vignette eskil={false} offset={0.2} darkness={0.55} />
+        <Bloom luminanceThreshold={0.58} intensity={0.35} mipmapBlur luminanceSmoothing={0.22} />
+        <Vignette eskil={false} offset={0.2} darkness={0.28} />
       </EffectComposer>
     </Canvas>
   );
@@ -558,6 +579,8 @@ export function GameCanvas() {
 
 declare global {
   interface Window {
+    render_game_to_text?: () => string;
+    advanceTime?: (ms: number) => void;
     __controlsTest?: {
       getYaw: () => number;
       getFacing?: () => number;

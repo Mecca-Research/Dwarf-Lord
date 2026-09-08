@@ -20,8 +20,8 @@ export interface Obstacle {
 export const runtime = {
   ready: false,
   player: {
-    x: -30,
-    z: 11,
+    x: -5,
+    z: 4,
     yaw: -Math.PI / 2,
     facing: 3,
     speed: 0,
@@ -31,8 +31,8 @@ export const runtime = {
   },
   dwarves: new Map<string, Body>(),
   keys: new Set<string>(),
-  cameraAzimuth: -0.92,
-  cameraElev: 0.92,
+  cameraAzimuth: -0.72,
+  cameraElev: 0.6,
   zoom: 40,
   zoomBias: 0,
   zone: "road" as ZoneId,

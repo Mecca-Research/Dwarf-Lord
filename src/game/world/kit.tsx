@@ -1,58 +1,11 @@
+import { WoodenCrate, StaveBarrel, GroundWalk } from "./reference-assets";
 import { useMemo } from "react";
-import * as THREE from "three";
 import { groundHeight } from "../runtime";
 import { useMats } from "./materials";
 
-export function Crate({
-  x,
-  z,
-  y = 0,
-  s = 0.72,
-  rot = 0,
-}: {
-  x: number;
-  z: number;
-  y?: number;
-  s?: number;
-  rot?: number;
-}) {
-  const m = useMats();
-  const h = y || groundHeight(x, z);
-  return (
-    <group position={[x, h, z]} rotation-y={rot} scale={s / 0.72}>
-      <mesh position={[0, 0.34, 0]} material={m.wood} castShadow receiveShadow>
-        <boxGeometry args={[0.7, 0.64, 0.7]} />
-      </mesh>
-      <mesh position={[0, 0.14, 0]} material={m.iron}>
-        <boxGeometry args={[0.74, 0.06, 0.74]} />
-      </mesh>
-      <mesh position={[0, 0.54, 0]} material={m.iron}>
-        <boxGeometry args={[0.74, 0.06, 0.74]} />
-      </mesh>
-      <mesh position={[0, 0.68, 0]} rotation-z={0.04} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.72, 0.07, 0.72]} />
-      </mesh>
-    </group>
-  );
-}
+export const Crate = WoodenCrate;
 
-export function Barrel({ x, z, y = 0, rot = 0, lying = false }: { x: number; z: number; y?: number; rot?: number; lying?: boolean }) {
-  const m = useMats();
-  const h = y || groundHeight(x, z);
-  return (
-    <group position={[x, h + (lying ? 0.32 : 0), z]} rotation-y={rot} rotation-z={lying ? Math.PI / 2 : 0}>
-      <mesh position={[0, 0.48, 0]} material={m.wood} castShadow receiveShadow>
-        <cylinderGeometry args={[0.3, 0.32, 0.92, 10]} />
-      </mesh>
-      <mesh position={[0, 0.18, 0]} material={m.iron}>
-        <cylinderGeometry args={[0.33, 0.33, 0.07, 10]} />
-      </mesh>
-      <mesh position={[0, 0.78, 0]} material={m.iron}>
-        <cylinderGeometry args={[0.32, 0.32, 0.07, 10]} />
-      </mesh>
-    </group>
-  );
-}
+export const Barrel = StaveBarrel;
 
 export function Sack({ x, z, rot = 0 }: { x: number; z: number; rot?: number }) {
   const m = useMats();
@@ -148,7 +101,13 @@ export function TorchPost({ x, z, lit = true }: { x: number; z: number; lit?: bo
           <mesh position={[0, 1.88, 0]} material={m.ember}>
             <sphereGeometry args={[0.07, 6, 6]} />
           </mesh>
-          <pointLight position={[0, 1.9, 0]} color="#ff8a3a" intensity={3.2} distance={7} decay={2} />
+          <pointLight
+            position={[0, 1.9, 0]}
+            color="#ff8a3a"
+            intensity={3.2}
+            distance={7}
+            decay={2}
+          />
         </>
       ) : null}
     </group>
@@ -173,7 +132,14 @@ export function Woodpile({ x, z, rot = 0 }: { x: number; z: number; rot?: number
   return (
     <group position={[x, h, z]} rotation-y={rot}>
       {logs.map(([lx, ly, lz, r], i) => (
-        <mesh key={i} position={[lx, ly, lz]} rotation-z={Math.PI / 2} rotation-y={r} material={m.bark} castShadow>
+        <mesh
+          key={i}
+          position={[lx, ly, lz]}
+          rotation-z={Math.PI / 2}
+          rotation-y={r}
+          material={m.bark}
+          castShadow
+        >
           <cylinderGeometry args={[0.09, 0.1, 1.15, 6]} />
         </mesh>
       ))}
@@ -181,7 +147,17 @@ export function Woodpile({ x, z, rot = 0 }: { x: number; z: number; rot?: number
   );
 }
 
-export function PlankDebris({ x, z, rot = 0, len = 2.2 }: { x: number; z: number; rot?: number; len?: number }) {
+export function PlankDebris({
+  x,
+  z,
+  rot = 0,
+  len = 2.2,
+}: {
+  x: number;
+  z: number;
+  rot?: number;
+  len?: number;
+}) {
   const m = useMats();
   const h = groundHeight(x, z);
   return (
@@ -217,7 +193,14 @@ export function Rubble({ x, z, n = 5 }: { x: number; z: number; n?: number }) {
   return (
     <group position={[x, h, z]}>
       {bits.map((b, i) => (
-        <mesh key={i} position={[b.x, b.s * 0.35, b.z]} scale={[b.s, b.s * 0.7, b.s]} rotation-y={b.ry} material={m.rock} castShadow>
+        <mesh
+          key={i}
+          position={[b.x, b.s * 0.35, b.z]}
+          scale={[b.s, b.s * 0.7, b.s]}
+          rotation-y={b.ry}
+          material={m.rock}
+          castShadow
+        >
           <icosahedronGeometry args={[1, 0]} />
         </mesh>
       ))}
@@ -225,7 +208,15 @@ export function Rubble({ x, z, n = 5 }: { x: number; z: number; n?: number }) {
   );
 }
 
-export function OrePile({ x, z, color = "lime" }: { x: number; z: number; color?: "lime" | "iron" }) {
+export function OrePile({
+  x,
+  z,
+  color = "lime",
+}: {
+  x: number;
+  z: number;
+  color?: "lime" | "iron";
+}) {
   const m = useMats();
   const h = groundHeight(x, z);
   const mat = color === "iron" ? m.iron : m.lime;
@@ -313,11 +304,26 @@ export function FencePost({ x, z }: { x: number; z: number }) {
   );
 }
 
-export function Pickaxe({ x, z, rot = 0, lying = true }: { x: number; z: number; rot?: number; lying?: boolean }) {
+export function Pickaxe({
+  x,
+  z,
+  rot = 0,
+  lying = true,
+}: {
+  x: number;
+  z: number;
+  rot?: number;
+  lying?: boolean;
+}) {
   const m = useMats();
   const h = groundHeight(x, z);
   return (
-    <group position={[x, h + (lying ? 0.08 : 0), z]} rotation-y={rot} rotation-z={lying ? Math.PI / 2.2 : 0} rotation-x={lying ? 0.15 : 0}>
+    <group
+      position={[x, h + (lying ? 0.08 : 0), z]}
+      rotation-y={rot}
+      rotation-z={lying ? Math.PI / 2.2 : 0}
+      rotation-x={lying ? 0.15 : 0}
+    >
       <mesh position={[0, 0.55, 0]} material={m.woodDark} castShadow>
         <cylinderGeometry args={[0.03, 0.038, 1.1, 6]} />
       </mesh>
@@ -331,11 +337,26 @@ export function Pickaxe({ x, z, rot = 0, lying = true }: { x: number; z: number;
   );
 }
 
-export function Shovel({ x, z, rot = 0, lying = true }: { x: number; z: number; rot?: number; lying?: boolean }) {
+export function Shovel({
+  x,
+  z,
+  rot = 0,
+  lying = true,
+}: {
+  x: number;
+  z: number;
+  rot?: number;
+  lying?: boolean;
+}) {
   const m = useMats();
   const h = groundHeight(x, z);
   return (
-    <group position={[x, h + (lying ? 0.07 : 0), z]} rotation-y={rot} rotation-z={lying ? 1.25 : 0} rotation-x={lying ? 0.1 : 0}>
+    <group
+      position={[x, h + (lying ? 0.07 : 0), z]}
+      rotation-y={rot}
+      rotation-z={lying ? 1.25 : 0}
+      rotation-x={lying ? 0.1 : 0}
+    >
       <mesh position={[0, 0.55, 0]} material={m.woodDark} castShadow>
         <cylinderGeometry args={[0.028, 0.034, 1.05, 6]} />
       </mesh>
@@ -364,56 +385,19 @@ export function Hammer({ x, z, rot = 0 }: { x: number; z: number; rot?: number }
   );
 }
 
-export function Boardwalk({
+export const Boardwalk = GroundWalk;
+
+export function LogSeat({
   x,
   z,
-  len = 12,
   rot = 0,
-  width = 1.45,
+  len = 1.4,
 }: {
   x: number;
   z: number;
-  len?: number;
   rot?: number;
-  width?: number;
+  len?: number;
 }) {
-  const m = useMats();
-  const h = groundHeight(x, z);
-  const n = Math.max(4, Math.round(len / 0.82));
-  return (
-    <group position={[x, h, z]} rotation-y={rot}>
-      {Array.from({ length: n }).map((_, i) => {
-        const zz = -len / 2 + 0.4 + i * 0.82;
-        return (
-          <mesh
-            key={i}
-            position={[(i % 3) * 0.02 - 0.02, 0.09, zz]}
-            rotation-y={(i % 2 === 0 ? 0.02 : -0.015)}
-            material={i % 3 === 0 ? m.woodDark : m.wood}
-            castShadow
-            receiveShadow
-          >
-            <boxGeometry args={[width, 0.09, 0.7]} />
-          </mesh>
-        );
-      })}
-      {Array.from({ length: n + 1 }).map((_, i) => (
-        <mesh key={`s${i}`} position={[0, 0.035, -len / 2 + i * 0.82]} material={m.woodDark} receiveShadow>
-          <boxGeometry args={[width + 0.28, 0.07, 0.14]} />
-        </mesh>
-      ))}
-      {[-width * 0.42, width * 0.42].map((px) =>
-        Array.from({ length: Math.ceil(n / 3) }).map((_, i) => (
-          <mesh key={`${px}${i}`} position={[px, 0.45, -len / 2 + 0.6 + i * 2.4]} material={m.woodDark} castShadow>
-            <cylinderGeometry args={[0.05, 0.07, 0.9, 6]} />
-          </mesh>
-        )),
-      )}
-    </group>
-  );
-}
-
-export function LogSeat({ x, z, rot = 0, len = 1.4 }: { x: number; z: number; rot?: number; len?: number }) {
   const m = useMats();
   const h = groundHeight(x, z);
   return (
@@ -430,7 +414,17 @@ export function LogSeat({ x, z, rot = 0, len = 1.4 }: { x: number; z: number; ro
   );
 }
 
-export function Rail({ x, z, len = 4, rot = 0 }: { x: number; z: number; len?: number; rot?: number }) {
+export function Rail({
+  x,
+  z,
+  len = 4,
+  rot = 0,
+}: {
+  x: number;
+  z: number;
+  len?: number;
+  rot?: number;
+}) {
   const m = useMats();
   const h = groundHeight(x, z);
   return (
@@ -449,4 +443,3 @@ export function Rail({ x, z, len = 4, rot = 0 }: { x: number; z: number; len?: n
     </group>
   );
 }
-

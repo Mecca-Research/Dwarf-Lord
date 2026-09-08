@@ -44,7 +44,7 @@ const emptyDiscoveries = (): Discoveries => ({
   firstHaul: false,
 });
 
-function hydrateRuntime(dwarves: Dwarf[], player = { x: -30, z: 11, yaw: -Math.PI / 2 }) {
+function hydrateRuntime(dwarves: Dwarf[], player = { x: -5, z: 4, yaw: -Math.PI / 2 }) {
   runtime.player.x = player.x;
   runtime.player.z = player.z;
   runtime.player.yaw = player.yaw;
@@ -168,7 +168,7 @@ export const useGame = create<GameStore>((set, get) => ({
   dialogue: null,
   selectedId: null,
   inspectId: null,
-  prompt: "Walk the road.",
+  prompt: "The camp. Find the old dwarf keeping the books.",
   muted: false,
   haulOpen: false,
   mobileJoy: { x: 0, y: 0 },
@@ -179,7 +179,7 @@ export const useGame = create<GameStore>((set, get) => ({
     set({
       playing: true,
       booted: true,
-      prompt: "This is the road. The smoke is the company.",
+      prompt: "You have arrived. The smoke is the company.",
       log: addLog([], 1, "Arrived on the outer road. The contract did not mention the smell."),
     });
   },
@@ -217,8 +217,8 @@ export const useGame = create<GameStore>((set, get) => ({
     clearSave();
     const dwarves = STARTING_DWARVES.map((d) => ({ ...d }));
     hydrateRuntime(dwarves);
-    runtime.player.x = -30;
-    runtime.player.z = 11;
+    runtime.player.x = -5;
+    runtime.player.z = 4;
     runtime.ready = true;
     set({
       playing: true,
@@ -243,7 +243,7 @@ export const useGame = create<GameStore>((set, get) => ({
       selectedId: null,
       inspectId: null,
       haulOpen: false,
-      prompt: "Walk the road.",
+      prompt: "The camp. Find the old dwarf keeping the books.",
     });
   },
 

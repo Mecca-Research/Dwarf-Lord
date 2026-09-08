@@ -56,7 +56,9 @@ export function Campfire({ x, y, z }: { x: number; y: number; z: number }) {
       <mesh ref={glow} material={m.ember}>
         <sphereGeometry args={[0.22, 10, 8]} />
       </mesh>
-      <FlameSprite x={0} y={0.55} z={0} scale={1.35} />
+      <FlameSprite x={0} y={0.42} z={0} scale={0.88} />
+      <FlameSprite x={-0.28} y={0.25} z={0.08} scale={0.64} />
+      <FlameSprite x={0.3} y={0.2} z={-0.08} scale={0.57} />
       <FlameSprite x={0.08} y={0.35} z={0.05} scale={0.7} />
       <mesh position={[0.06, 0.1, 0.04]} material={m.ember}>
         <sphereGeometry args={[0.1, 6, 5]} />

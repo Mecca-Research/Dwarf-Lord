@@ -15,7 +15,7 @@ export const WORLD_STAGES: WorldStage[] = [
     character: "Survival. A hole, broken carts, and a workforce sitting on crates.",
     townScale: 1.32,
     mineScale: 0.78,
-    cameraZoom: 40,
+    cameraZoom: 34,
     assetBrief:
       "Large camp props, close isometric camera. Collapsed timber, tents, crates, dying forge. Mine characters shrink; tunnels sprawl.",
     playable: true,

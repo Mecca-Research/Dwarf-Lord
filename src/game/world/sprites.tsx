@@ -156,7 +156,7 @@ export function DwarfSprite({
   const bank = useBank();
 
   const sit = body.anim === "sit";
-  const h = (sit ? 0.84 : 1.08) * scale;
+  const h = (sit ? 1.17 : 1.55) * scale;
   const start = pickTex(bank, dwarf, body, isPlayer);
   const w = h * textureAspect(start);
   const mat = useRef<THREE.MeshBasicMaterial>(null);
