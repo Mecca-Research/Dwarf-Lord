@@ -89,13 +89,13 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
         color,
         roughness,
         bumpMap: map,
-        bumpScale: 0.045,
+        bumpScale: 0.085,
         metalness,
         envMapIntensity: 0.45,
       });
 
     const value: WorldMats = {
-      dirt: std(maps.dirt, "#c2b6a5", 0.98),
+      dirt: std(maps.dirt, "#e0d2bd", 0.98),
       dirtRoad: std(maps.cobble, "#b6aa97", 0.96),
       wood: std(maps.wood, "#c9c4b6", 0.9, 0.01),
       woodDark: std(maps.wood, "#82796d", 0.94, 0.01),

@@ -4,6 +4,12 @@ This is an in-progress asset rebuild toward the supplied Dwarf Lord camp image. 
 
 ![Gameplay capture of the rebuilt camp](art-review.png)
 
+## Detailed dwarf follow-up — 2026-09-08
+
+Three new high-resolution characters now replace the seated workers and unhelmeted standing laborer: ginger and silver seated workers in a 1536×1024 two-cell atlas, plus a 1024×1536 standing laborer. Both files have verified alpha transparency (about 48% transparent pixels). Seated figures are 41% taller and standing figures 26% taller than the first pass. Existing player direction/gait frames and named specialist art are retained.
+
+Timber UVs now follow board length, the roof canvas patch sits above the boards, and bump relief plus ambient fill make the surfaces more readable. Asset origins and atlas layout are documented in `public/sprites/GENERATED-ASSETS.md`.
+
 ## Implemented
 
 - Timber hall built from individual boards, exposed rafters, cross braces, stone footings, open doorway and a canvas patch. Roof damage still responds to the existing repair condition.
@@ -26,4 +32,4 @@ The bundled web-game harness additionally reports the existing recoverable React
 
 ## Remaining art work
 
-The camp still has the game's wider layout and secondary buildings, rather than the reference's compact single-hall composition. Existing character illustrations were retained after the simplified 3D alternative proved visually inferior; the original directional/animation limitations remain. Secondary structures, cliff texture scale, lighting balance and hardware performance need further review before calling this reference-quality or merging it as final art.
+The camp still has the game's wider layout and secondary buildings, rather than the reference's compact single-hall composition. The seated and generic standing workers now use new detailed art; player directional animation and specialist variants still need a coherent replacement set. Secondary structures, cliff texture scale, lighting balance and hardware performance need further review before calling this reference-quality or merging it as final art.
