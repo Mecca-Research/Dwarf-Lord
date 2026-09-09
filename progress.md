@@ -26,3 +26,9 @@ Next priorities: a consistent eight-direction player idle/walk set, specialist c
 - Checkpoint: all nine new PNGs saved, typecheck/lint/146 tests/Pages build/gameplay movement/Borrin dialogue passed. Browser review inspected.
 - Resolved: user authorized local image processing. Cook checkerboard removed with a neutral-matte mask and cleaned edge alpha; original saved under work/checks/cook-original.png. All assets remain in public/sprites.
 - Final verification: all 12 designs pass browser alpha checks; corrected roster and gameplay screenshots inspected. Movement and Borrin dialogue pass with no page errors. Typecheck, 146 tests and Pages build pass. Review images refreshed in docs and user outputs.
+
+## 2026-09-09 — Comprehensive development roadmap
+- Reviewed the full 4,888-line user development notes and current code baseline ba36e50.
+- Added root `Dwarf Lord Development Roadmap.md`: 18 dependency-ordered phases, 144 actionable tasks, 22 gap resolutions, acceptance gates, complete content families, production graph and source coverage.
+- Incorporated the user's confirmed universal currency revision: 100 copper bits = 1 silver; 100 silver = 1 gold; 100 gold = 1 platinum. Opening road exports return coins; later silver/gold minting and platinum progression have material/accounting constraints. No runtime money changes made in this documentation task.
+- Validated phase/task order, uniqueness, Markdown tables, currency examples and diff whitespace. User-facing copy is in outputs. Next work follows DL-001 onward after roadmap review; PR #3 remains unmerged.
