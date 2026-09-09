@@ -3,19 +3,13 @@ import { Billboard, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { createContext, useContext, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
+import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
 import type { Dwarf } from "../types";
 
 export type SpriteBank = {
-  sitBeard: THREE.Texture;
-  sitHelm: THREE.Texture;
-  sitBorrin: THREE.Texture;
-  standHelm: THREE.Texture;
-  standLabor: THREE.Texture;
-  standLord: THREE.Texture;
-  standHelga: THREE.Texture;
-  walk: THREE.Texture[];
+  appearances: Record<DwarfAppearance, THREE.Texture>;
   lordIdle: THREE.Texture[];
   lordGait: THREE.Texture[][];
   tent: THREE.Texture;
@@ -33,15 +27,17 @@ for (let d = 0; d < 8; d++) {
 
 export function SpriteBankProvider({ children }: { children: ReactNode }) {
   const maps = useTexture({
+    elder: asset("/sprites/elder.png"),
+    helga: asset("/sprites/helga.png"),
+    femaleMiner: asset("/sprites/female-miner.png"),
+    blacksmith: asset("/sprites/blacksmith.png"),
+    redMiner: asset("/sprites/red-miner.png"),
+    quartermaster: asset("/sprites/quartermaster.png"),
+    stoneworker: asset("/sprites/stoneworker.png"),
+    cook: asset("/sprites/cook.png"),
+    veteran: asset("/sprites/veteran.png"),
     campWorkers: asset("/sprites/camp-workers-atlas.png"),
-    standHelm: asset("/sprites/stand-helm.png"),
     standLabor: asset("/sprites/laborer-detailed.png"),
-    standLord: asset("/sprites/stand-lord.png"),
-    standHelga: asset("/sprites/stand-helga.png"),
-    walk0: asset("/sprites/walk-0.png"),
-    walk1: asset("/sprites/walk-1.png"),
-    walk2: asset("/sprites/walk-2.png"),
-    walk3: asset("/sprites/walk-3.png"),
     idle0: asset("/sprites/lord-idle-0.png"),
     idle1: asset("/sprites/lord-idle-1.png"),
     idle2: asset("/sprites/lord-idle-2.png"),
@@ -87,14 +83,20 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
     const ginger = worker(0),
       silver = worker(1);
     return {
-      sitBeard: ginger,
-      sitHelm: silver,
-      sitBorrin: silver,
-      standHelm: maps.standHelm,
-      standLabor: maps.standLabor,
-      standLord: maps.standLord,
-      standHelga: maps.standHelga,
-      walk: [maps.walk0, maps.walk1, maps.walk2, maps.walk3],
+      appearances: {
+        ginger,
+        silver,
+        laborer: maps.standLabor,
+        elder: maps.elder,
+        helga: maps.helga,
+        femaleMiner: maps.femaleMiner,
+        blacksmith: maps.blacksmith,
+        redMiner: maps.redMiner,
+        quartermaster: maps.quartermaster,
+        stoneworker: maps.stoneworker,
+        cook: maps.cook,
+        veteran: maps.veteran,
+      },
       lordIdle: [
         maps.idle0,
         maps.idle1,
@@ -128,7 +130,6 @@ function pickTex(
   body: Body,
   isPlayer?: boolean,
 ) {
-  const sit = body.anim === "sit";
   const walk = body.anim === "walk" || body.speed > 0.2;
   const fi = Math.abs(Math.floor(body.bob)) % 4;
   if (isPlayer) {
@@ -136,13 +137,7 @@ function pickTex(
     if (walk) return bank.lordGait[d][fi];
     return bank.lordIdle[d];
   }
-  if (dwarf?.id === "borrin") return bank.sitBorrin;
-  if (sit && dwarf?.helmet) return bank.sitHelm;
-  if (sit) return body.x < 2 ? bank.sitBeard : bank.sitHelm;
-  if (walk && dwarf?.helmet) return bank.walk[fi];
-  if (dwarf?.id === "helga") return bank.standHelga;
-  if (dwarf?.helmet) return bank.standHelm;
-  return bank.standLabor;
+  return bank.appearances[dwarfAppearance(dwarf?.id)];
 }
 
 function textureAspect(texture: THREE.Texture, fallback = 0.62) {
@@ -165,7 +160,7 @@ export function DwarfSprite({
 }) {
   const bank = useBank();
 
-  const sit = body.anim === "sit";
+  const sit = isPlayer ? body.anim === "sit" : DWARF_ART[dwarfAppearance(dwarf?.id)].pose === "sit";
   const h = (sit ? 1.65 : 1.95) * scale;
   const start = pickTex(bank, dwarf, body, isPlayer);
   const w = h * textureAspect(start);

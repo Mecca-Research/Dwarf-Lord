@@ -17,3 +17,12 @@ Final browser pass succeeds for movement and Borrin interaction; bundled skill h
 Branch: codex/dwarf-art-detail-pass, based on merged PR #2 (6f962fc).
 Three new generated high-resolution characters integrated: camp-workers-atlas.png (two seated workers, separate UV cells) and laborer-detailed.png (standing worker). Alpha verified at ~48% transparent. Standing size 1.95 and seated 1.65 before stage scaling. New matching contact-shadow sizes. Timber UV grain alignment corrected, canvas patch lifted above roof, ambient fill and bump detail increased. Typecheck, 143 tests and Pages build pass. Browser screenshot and interaction checks rerun.
 Next priorities: a consistent eight-direction player idle/walk set, specialist character variants, a compact reference-like camp composition, then richer terrain and secondary-building models. Do not redo completed asset generation. New files are committed with provenance; active repo remains /opt/codex-work/dwarf-lord.
+
+## 2026-09-08 — Twelve dwarf designs
+- Expanded the three-design pass with nine individual generated sprites, including Borrin's elder and two beardless, long-haired, helmeted female designs.
+- Stable per-NPC appearance mapping in `src/game/world/dwarf-appearances.ts`; all twelve designs used. Player animation preserved. New NPC art has one authored pose per identity.
+- Removed superseded generic NPC texture loads. Added roster coverage tests and a browser alpha/contact-sheet check.
+- Continue from `/opt/codex-work/dwarf-lord`, branch `codex/dwarf-art-detail-pass`; PR #3 remains the active review.
+- Checkpoint: all nine new PNGs saved, typecheck/lint/146 tests/Pages build/gameplay movement/Borrin dialogue passed. Browser review inspected.
+- Resolved: user authorized local image processing. Cook checkerboard removed with a neutral-matte mask and cleaned edge alpha; original saved under work/checks/cook-original.png. All assets remain in public/sprites.
+- Final verification: all 12 designs pass browser alpha checks; corrected roster and gameplay screenshots inspected. Movement and Borrin dialogue pass with no page errors. Typecheck, 146 tests and Pages build pass. Review images refreshed in docs and user outputs.

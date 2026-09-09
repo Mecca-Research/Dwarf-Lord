@@ -33,3 +33,9 @@ The bundled web-game harness additionally reports the existing recoverable React
 ## Remaining art work
 
 The camp still has the game's wider layout and secondary buildings, rather than the reference's compact single-hall composition. The seated and generic standing workers now use new detailed art; player directional animation and specialist variants still need a coherent replacement set. Secondary structures, cliff texture scale, lighting balance and hardware performance need further review before calling this reference-quality or merging it as final art.
+
+## Twelve-design expansion
+
+The NPC roster now has twelve distinct designs, including dedicated Borrin elder art and two stocky female designs with long hair, metal helmets and no beards. The game assigns art by persistent NPC identity, so crossing the camp or changing activity cannot replace a female character with a generic bearded miner. All twelve designs occur in the starting roster; residents beyond twelve share designs. New assets are single-pose sprites; player direction and gait animation remains intact.
+
+The roster review sheet is `docs/dwarf-roster.png`. `scripts/dwarf-roster-check.mjs` verifies loaded dimensions and transparent alpha. Generation prompts and provenance are recorded in `docs/dwarf-sprite-prompts.md` and `public/sprites/GENERATED-ASSETS.md`.
