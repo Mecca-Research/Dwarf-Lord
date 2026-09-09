@@ -514,8 +514,8 @@ function Lights() {
     <>
       <color attach="background" args={["#202936"]} />
       <fog attach="fog" args={["#252d39", 65, 150]} />
-      <hemisphereLight args={["#b4c4d5", "#51463b", 1.25]} />
-      <ambientLight intensity={0.42} color="#8d8175" />
+      <hemisphereLight args={["#bbcbdc", "#665745", 1.65]} />
+      <ambientLight intensity={0.65} color="#8d8175" />
       <directionalLight
         position={[-36, 38, 20]}
         intensity={2.5}
@@ -548,7 +548,7 @@ export function GameCanvas() {
       onCreated={({ gl, scene }) => {
         gl.setClearColor("#202936");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.08;
+        gl.toneMappingExposure = 1.18;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFSoftShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;

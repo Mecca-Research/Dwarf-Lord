@@ -31,8 +31,16 @@ export function Parts({
         ? new THREE.CylinderGeometry(0.5, 0.5, 1, 12)
         : new THREE.BoxGeometry(1, 1, 1);
       const uv = g.attributes.uv;
-      for (let v = 0; v < uv.count; v++)
-        uv.setXY(v, uv.getX(v) * 0.75 + noise(i) * 0.2, uv.getY(v) * 0.075 + (i % 10) * 0.09);
+      for (let v = 0; v < uv.count; v++) {
+        const u = uv.getX(v),
+          t = uv.getY(v);
+        const along = p.s[1] > p.s[0] || p.s[2] > p.s[0];
+        uv.setXY(
+          v,
+          (along ? t : u) * 0.75 + noise(i) * 0.2,
+          (along ? u : t) * 0.075 + (i % 10) * 0.09,
+        );
+      }
       e.set(...(p.r ?? [0, 0, 0]));
       q.setFromEuler(e);
       matrix.compose(new THREE.Vector3(...p.p), q, new THREE.Vector3(...p.s));
@@ -188,7 +196,7 @@ export function TimberHall({
       </mesh>
       {!repaired && (
         <mesh
-          position={[-0.9, 4.2, 1.07]}
+          position={[-0.9, 4.42, 0.85]}
           rotation={[-0.91, 0, 0.09]}
           geometry={patch}
           material={m.canvas}
