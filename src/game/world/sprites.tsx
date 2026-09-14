@@ -22,30 +22,33 @@ const Ctx = createContext<SpriteBank | null>(null);
 
 const gaitUrls: Record<string, string> = {};
 for (let d = 0; d < 8; d++) {
-  for (let f = 0; f < 4; f++) gaitUrls[`g${d}${f}`] = asset(`/sprites/lord-gait-${d}-${f}.png`);
+  for (let f = 0; f < 4; f++)
+    gaitUrls[`g${d}${f}`] = asset(`/sprites/Lord/lord-gait-${d}-${f}.png`);
 }
 
 export function SpriteBankProvider({ children }: { children: ReactNode }) {
   const maps = useTexture({
-    elder: asset("/sprites/elder.png"),
-    helga: asset("/sprites/helga.png"),
-    femaleMiner: asset("/sprites/female-miner.png"),
-    blacksmith: asset("/sprites/blacksmith.png"),
-    redMiner: asset("/sprites/red-miner.png"),
-    quartermaster: asset("/sprites/quartermaster.png"),
-    stoneworker: asset("/sprites/stoneworker.png"),
-    cook: asset("/sprites/cook.png"),
-    veteran: asset("/sprites/veteran.png"),
-    campWorkers: asset("/sprites/camp-workers-atlas.png"),
-    standLabor: asset("/sprites/laborer-detailed.png"),
-    idle0: asset("/sprites/lord-idle-0.png"),
-    idle1: asset("/sprites/lord-idle-1.png"),
-    idle2: asset("/sprites/lord-idle-2.png"),
-    idle3: asset("/sprites/lord-idle-3.png"),
-    idle4: asset("/sprites/lord-idle-4.png"),
-    idle5: asset("/sprites/lord-idle-5.png"),
-    idle6: asset("/sprites/lord-idle-6.png"),
-    idle7: asset("/sprites/lord-idle-7.png"),
+    elder: asset("/sprites/Elder/idle.png"),
+    helga: asset("/sprites/Helga/stand.png"),
+    femaleMiner: asset("/sprites/Female Miner/stand.png"),
+    blacksmith: asset("/sprites/Blacksmith/stand.png"),
+    redMiner: asset("/sprites/Red Miner/stand.png"),
+    quartermaster: asset("/sprites/Quartermaster/stand.png"),
+    stoneworker: asset("/sprites/Stoneworker/stand.png"),
+    cook: asset("/sprites/Cook/idle.png"),
+    veteran: asset("/sprites/Veteran/idle.png"),
+    ginger: asset("/sprites/Ginger/idle.png"),
+    silver: asset("/sprites/Silver/idle.png"),
+    borrin: asset("/sprites/Borrin/idle.png"),
+    standLabor: asset("/sprites/Laborer/stand.png"),
+    idle0: asset("/sprites/Lord/lord-idle-0.png"),
+    idle1: asset("/sprites/Lord/lord-idle-1.png"),
+    idle2: asset("/sprites/Lord/lord-idle-2.png"),
+    idle3: asset("/sprites/Lord/lord-idle-3.png"),
+    idle4: asset("/sprites/Lord/lord-idle-4.png"),
+    idle5: asset("/sprites/Lord/lord-idle-5.png"),
+    idle6: asset("/sprites/Lord/lord-idle-6.png"),
+    idle7: asset("/sprites/Lord/lord-idle-7.png"),
     tent: asset("/sprites/tent.png"),
     leanto: asset("/sprites/leanto.png"),
     crate: asset("/sprites/crate.png"),
@@ -72,20 +75,11 @@ export function SpriteBankProvider({ children }: { children: ReactNode }) {
         maps[`g${d}3` as keyof typeof maps] as THREE.Texture,
       ]);
     }
-    const worker = (column: number) => {
-      const texture = maps.campWorkers.clone();
-      texture.repeat.set(0.5, 1);
-      texture.offset.set(column * 0.5, 0);
-      texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
-      texture.needsUpdate = true;
-      return texture;
-    };
-    const ginger = worker(0),
-      silver = worker(1);
     return {
       appearances: {
-        ginger,
-        silver,
+        ginger: maps.ginger,
+        silver: maps.silver,
+        borrin: maps.borrin,
         laborer: maps.standLabor,
         elder: maps.elder,
         helga: maps.helga,

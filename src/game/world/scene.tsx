@@ -316,7 +316,7 @@ function Systems() {
     for (const dw of dwarves) {
       const b = runtime.dwarves.get(dw.id);
       if (!b) continue;
-      if (dw.isSteward) {
+      if (dw.isSteward || dw.narrativeOnly) {
         b.anim = "sit";
         b.speed = 0;
         continue;

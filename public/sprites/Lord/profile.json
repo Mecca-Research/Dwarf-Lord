@@ -1,0 +1,13 @@
+{
+  "id": "lord",
+  "name": "Lord",
+  "species": "dwarf",
+  "role": "Owner and player character",
+  "ageOrder": "Adult; younger than Borrin",
+  "identity": "Swept-back auburn hair; stern angular face; intact broad nose and cheeks; long auburn braids with bronze cuffs; charcoal leather longcoat, brass fittings and broad boots.",
+  "mustNotChange": "Never change face, braid layout, coat or clasp between directions. Repair skin holes, never interpret them as scars.",
+  "master": "stand-lord.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

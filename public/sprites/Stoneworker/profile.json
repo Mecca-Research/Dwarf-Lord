@@ -1,0 +1,13 @@
+{
+  "id": "stoneworker",
+  "name": "Stoneworker",
+  "species": "dwarf",
+  "role": "Stoneworker design; Hob and Stig",
+  "ageOrder": "Adult",
+  "identity": "Tan skin, broken nose, short dark hair, black beard streaked grey; sleeveless slate-blue tunic and leather wrist wraps.",
+  "mustNotChange": "Not Silver: dark hair/beard and blue tunic without Silver apron.",
+  "master": "stand.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

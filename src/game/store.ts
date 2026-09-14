@@ -10,7 +10,7 @@ import {
 } from "./data/catalog";
 import { DIALOGUE } from "./data/dialogue";
 import { runtime } from "./runtime";
-import { clearSave, readSave, writeSave } from "./save";
+import { clearSave, readSave, writeSave, reconcileCharacterIdentities } from "./save";
 import { assignedCap, resolveExpedition, resolveJobs, restNight, workers } from "./sim";
 import { sting } from "./audio";
 import type {
@@ -168,7 +168,7 @@ export const useGame = create<GameStore>((set, get) => ({
   dialogue: null,
   selectedId: null,
   inspectId: null,
-  prompt: "The camp. Find the old dwarf keeping the books.",
+  prompt: "The camp. Find Borrin, the senior manager keeping the books.",
   muted: false,
   haulOpen: false,
   mobileJoy: { x: 0, y: 0 },
@@ -190,6 +190,7 @@ export const useGame = create<GameStore>((set, get) => ({
       get().begin();
       return;
     }
+    saved.dwarves = reconcileCharacterIdentities(saved.dwarves);
     hydrateRuntime(saved.dwarves);
     runtime.ready = true;
     set({
@@ -243,7 +244,7 @@ export const useGame = create<GameStore>((set, get) => ({
       selectedId: null,
       inspectId: null,
       haulOpen: false,
-      prompt: "The camp. Find the old dwarf keeping the books.",
+      prompt: "The camp. Find Borrin, the senior manager keeping the books.",
     });
   },
 
@@ -255,6 +256,7 @@ export const useGame = create<GameStore>((set, get) => ({
   setWages: (wages) => set({ wages: Math.max(0, Math.min(20, Math.round(wages)) ) }),
 
   talk: (key, speakerId) => {
+    if (key === "elder" && get().discoveries.firstHaul) key = "elder_after_haul";
     if (!DIALOGUE[key]) return;
     set({ dialogue: { key, step: 0, speakerId }, overlay: null });
   },
@@ -319,7 +321,7 @@ export const useGame = create<GameStore>((set, get) => ({
   assignJob: (dwarfId, jobId) => {
     const { dwarves } = get();
     const next = dwarves.map((d) => {
-      if (d.id !== dwarfId || d.isSteward) return d;
+      if (d.id !== dwarfId || d.isSteward || d.narrativeOnly) return d;
       return { ...d, assignedJobId: jobId };
     });
     const cap = assignedCap(next);
@@ -399,9 +401,10 @@ export const useGame = create<GameStore>((set, get) => ({
     const s = get();
     const ex = s.expedition;
     if (!ex || ex.dwarfIds.length === 0) return;
-    const crew = s.dwarves.filter((d) => ex.dwarfIds.includes(d.id));
+    const crew = workers(s.dwarves).filter((d) => ex.dwarfIds.includes(d.id));
+    if (!crew.length) return;
     const result = resolveExpedition(crew, ex.area, ex.tools, ex.food, s.wages, s.day);
-    for (const id of ex.dwarfIds) {
+    for (const { id } of crew) {
       const body = runtime.dwarves.get(id);
       if (body) {
         body.dest = { x: 8, z: -40 };
@@ -409,7 +412,7 @@ export const useGame = create<GameStore>((set, get) => ({
       }
     }
     set({
-      expedition: { ...ex, status: "out", result },
+      expedition: { ...ex, dwarfIds: crew.map((d) => d.id), status: "out", result },
       overlay: null,
       prompt: "The first expedition is underground. Watch, or keep walking.",
       log: addLog(s.log, s.day, `Expedition of ${crew.length} sent to the ${ex.area} face.`, "borrin"),

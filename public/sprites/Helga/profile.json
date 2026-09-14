@@ -1,0 +1,13 @@
+{
+  "id": "helga",
+  "name": "Helga",
+  "species": "dwarf",
+  "role": "Helga Ironvein; female miner",
+  "ageOrder": "Adult",
+  "identity": "Stocky woman; no beard or moustache; long thick copper-red braids; riveted steel helmet; teal tunic, leather apron and heavy boots.",
+  "mustNotChange": "Female face and figure; no male fallback in standing/walking/working or portraits.",
+  "master": "stand.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

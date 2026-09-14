@@ -1,32 +1,39 @@
-# Detailed camp dwarves
+# Character asset library
 
-Generated for Dwarf Lord with OpenAI image generation on 2026-09-08. These are new assets, not crops of the supplied reference image.
+## Current standard — 14 September 2026
 
-- `camp-workers-atlas.png`: 1536 × 1024 RGBA, two equal horizontal cells. Left: seated ginger-bearded laborer facing right. Right: seated silver-bearded laborer facing left. Rendered through texture repeat/offset; use cell aspect ratio 768/1024. Transparent alpha verified before integration.
-- `laborer-detailed.png`: standing brown-bearded laborer, rendered through the existing NPC sprite path.
+Use each character folder's `profile.json`, `README.md`, canonical image and derived `portrait.png`. The authoritative visual and narrative requirements are in [Character standards](../../docs/CHARACTER-STANDARDS.md). All runtime paths use these folders; no character identity is selected from an obsolete generic pose filename.
 
-Art brief: short broad dwarf anatomy, muscular forearms, large hands and boots, individual beard strands, worn linen and leather, orthographic downward view, neutral lighting and transparent background. Seated figures contain no seat geometry, allowing the game's crates and logs to remain three-dimensional.
-
-Player direction and gait frames, helmeted standing miners, and Helga retain the previous art in this pass. A coherent replacement directional animation set remains future work.
-
-## Twelve-design roster (2026-09-08)
-
-Nine additional individual transparent PNGs were generated with the built-in OpenAI image tool, using `laborer-detailed.png` as the style reference. Final prompts are in `docs/dwarf-sprite-prompts.md`. All source PNGs are preserved at their generated resolution.
-
-| Asset | Design | Primary NPC |
+| Folder | Canonical image | Identity / use |
 | --- | --- | --- |
-| elder.png | Elder, white beard, heavy wool coat, walking stick | Borrin |
-| helga.png | Stocky woman, no beard, long copper braids, riveted steel helmet | Helga |
-| female-miner.png | Stocky woman, no beard, long dark hair, iron helmet | Nessa |
-| blacksmith.png | Dark skin, black beard, charcoal smith apron | Grit |
-| red-miner.png | Auburn beard, iron helmet, rust-red tunic | Pip |
-| quartermaster.png | Forked blond beard, olive waistcoat, belt pouches | Fenn |
-| stoneworker.png | Grey-streaked black beard, sleeveless slate tunic | Hob |
-| cook.png | Round face, brown moustache, cream apron | Kori |
-| veteran.png | Iron-grey beard, nasal helmet, studded brigandine | Durgan |
+| Lord | stand-lord.png | Player; 60 additional direction and animation frames |
+| Borrin | idle.png | Second oldest; senior manager, consultant and ledger keeper |
+| Elder | idle.png | Oldest; separate conversation and evolving rumors |
+| Quartermaster | stand.png | Blond forked beard, olive waistcoat |
+| Red Miner | stand.png | Auburn beard, helmet, rust-red tunic |
+| Stoneworker | stand.png | Dark beard with grey streaks, slate tunic |
+| Laborer | stand.png | Broad bald dwarf, brown beard and vest |
+| Blacksmith | stand.png | Dark skin, black beard and smith apron |
+| Cook | idle.png | Round face, moustache, cream apron |
+| Female Miner | stand.png | Dark hair, metal helmet, stocky woman without beard |
+| Helga | stand.png | Copper braids, metal helmet, stocky woman without beard |
+| Ginger | idle.png | Curly copper hair, freckles, compact fan beard |
+| Silver | idle.png | Cropped grey hair, short square beard, muscular sleeveless worker |
+| Veteran | idle.png | Grey beard, nasal helmet, brigandine |
+| Human Laborer | stand.png | Preserved human-looking stand-labor; reserved for future human labor |
 
-Together with the original two atlas cells and standing laborer, this gives exactly 12 distinct NPC designs. Every design is used in the starting settlement. Additional residents share appropriate designs; identity selection uses NPC ID rather than position or movement. Borrin has dedicated elder art; female NPCs retain female art while moving or working. The new designs are single-pose sprites, not directional animation sheets. Player direction and gait frames are unchanged. `dwarf-appearances.ts` records each sprite's authored pose, avoiding standing art being squashed when simulation state says seated.
+`camp-workers-atlas.png` is now a 1024 × 800 RGBA compilation of the current Ginger (left) and Silver (right), with 512 × 800 cells. Runtime uses their individual files. Do not apply the old atlas dimensions to this version.
 
-Run `node scripts/dwarf-roster-check.mjs` against the production preview to check all images load, verify alpha, and render a review sheet.
+Barrel, crate, leanto and tent remain unchanged. The approved individual dwarf renders also retain their original pixels, except for their new paths; portraits are derived crops. The incorrect male stand-helga and old sit-borrin are replaced. Rejected sit-beard, sit-helm, stand-helm and walk-0 through walk-3 are removed. The distinct **lord-walk** set remains and is repaired. The five obsolete JPEG portraits are removed after all runtime references move to matching canonical crops in the character folders.
 
-Cook post-processing: the generated cook contained an opaque checkerboard. With explicit user authorization, local Python/Pillow/SciPy processing removed the neutral matte, retained the connected figure, and softened the silhouette edge. RGB character detail is preserved; the production PNG has real alpha. The built-in edit attempt had reached its usage limit.
+## Generation and repair provenance
+
+The September 8 approved NPC artwork was generated with the built-in OpenAI image tool; its original prompts remain in `docs/dwarf-sprite-prompts.md`. In that historical pass Elder artwork represented Borrin. That assignment is superseded by the separate identities above. Cook's painted checkerboard was removed locally with user authorization.
+
+The September 14 pass generated Borrin, Ginger and Silver with the built-in image tool, using the approved detailed dwarf artwork as reference and the identities recorded in their profiles. Borrin's generated checkerboard required local matte extraction. Ginger and Silver retained generated alpha. New source images were inspected before integration.
+
+Six same-direction Lord repair references were generated from the damaged standing/front/side artwork, instructing preservation of auburn hair, braid cuffs, coat and facial identity while reconstructing opaque nose, cheeks and hands. Local OpenCV feature registration aligned those corrected heads and hand patches with the intact clothing in the original frames. The body and leg animation remain original. Rear views retain their original heads. Remaining enclosed alpha defects were inpainted; transparent-edge RGB was decontaminated. Legacy step numbers do not always correspond to idle direction numbers, so their matching references were selected by image features and visually checked. `docs/lord-repair-results.json` records all 61 processed files.
+
+Local processing used Pillow, NumPy, SciPy and OpenCV under the user's existing authorization. No API-key fallback or paid external generation service was used. Reference sources and intermediate images remain in the local `work/identity` scratch directory; final assets, profiles, repair measurements and review images are committed.
+
+The NPC library contains 13 designs used across the existing named population. Some residents share an established design; these are not 18 separately rendered identities. NPC images remain single-pose artwork. This pass does not implement full directional NPC animation or human recruitment.

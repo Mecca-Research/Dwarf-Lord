@@ -13,27 +13,45 @@ const { DWARF_ART, dwarfAppearance } = await import(
   `data:text/javascript;base64,${Buffer.from(outputText).toString("base64")}`
 );
 
-test("12 distinct sprite cells exist on disk", () => {
-  assert.equal(Object.keys(DWARF_ART).length, 12);
+test("13 distinct sprite cells exist on disk", () => {
+  assert.equal(Object.keys(DWARF_ART).length, 13);
   assert.equal(
     new Set(Object.values(DWARF_ART).map((a) => `${a.file}:${a.column ?? ""}`)).size,
-    12,
+    13,
   );
   for (const a of Object.values(DWARF_ART))
     assert.ok(existsSync(new URL(`../public/sprites/${a.file}`, import.meta.url)), a.file);
 });
 test("elder and female identities have dedicated art, including helmeted Helga", () => {
-  assert.equal(dwarfAppearance("borrin"), "elder");
+  assert.equal(dwarfAppearance("borrin"), "borrin");
+  assert.equal(dwarfAppearance("elder"), "elder");
+  assert.notEqual(dwarfAppearance("borrin"), dwarfAppearance("elder"));
   assert.equal(dwarfAppearance("helga"), "helga");
   assert.equal(dwarfAppearance("nessa"), "femaleMiner");
   assert.notEqual(dwarfAppearance("helga"), dwarfAppearance("nessa"));
   assert.equal(dwarfAppearance("unknown-recruit"), "laborer");
 });
-test("all 12 designs are used by starting characters", () => {
+test("all 13 designs are used by starting characters", () => {
   const catalog = readFileSync(new URL("../src/game/data/catalog.ts", import.meta.url), "utf8");
   const start = catalog
     .split("export const STARTING_DWARVES")[1]
     .split("export const STARTING_BUILDINGS")[0];
   const ids = [...start.matchAll(/id: "([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(new Set(ids.map(dwarfAppearance)), new Set(Object.keys(DWARF_ART)));
+});
+
+test("every canonical design has a matching portrait and locked profile", () => {
+  for (const a of Object.values(DWARF_ART)) {
+    const folder = a.file.split('/')[0];
+    const profile = JSON.parse(readFileSync(new URL(`../public/sprites/${folder}/profile.json`, import.meta.url), 'utf8'));
+    assert.equal(`${folder}/${profile.master}`, a.file);
+    assert.ok(profile.identity && profile.mustNotChange && profile.futureRenderRule);
+    assert.ok(existsSync(new URL(`../public/sprites/${folder}/${profile.portrait}`, import.meta.url)));
+  }
+});
+test("rejected generic sprites cannot be reused accidentally", () => {
+  for (const file of ['sit-beard', 'sit-helm', 'stand-helm', 'walk-0', 'walk-1', 'walk-2', 'walk-3', 'stand-helga', 'sit-borrin', 'stand-labor']) {
+    assert.ok(!existsSync(new URL(`../public/sprites/${file}.png`, import.meta.url)), file);
+  }
+  assert.ok(existsSync(new URL('../public/sprites/Human Laborer/stand.png', import.meta.url)));
 });

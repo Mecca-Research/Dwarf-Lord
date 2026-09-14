@@ -1,0 +1,13 @@
+{
+  "id": "human-laborer",
+  "name": "Human Laborer",
+  "species": "human",
+  "role": "Preserved human worker asset for future imported labor",
+  "ageOrder": "Human adult",
+  "identity": "Use the preserved original stand-labor appearance and its taller human proportions.",
+  "mustNotChange": "Human, not dwarf. Asset/profile only: imported-worker recruitment is a future mechanic, not silently added here.",
+  "master": "stand.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

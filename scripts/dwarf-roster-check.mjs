@@ -32,7 +32,7 @@ try {
     .sprite{height:310px;width:207px;background-repeat:no-repeat;background-size:contain;background-position:center}
     .atlas{width:232.5px;background-size:200% 100%}
     h2{font-size:17px;margin:6px 0 2px}
-  </style><h1>Dwarf Lord · 12 character designs</h1><p>Three original designs + nine new sprites · Elder, two helmeted women, and distinct camp workers</p><main>${Object.entries(
+  </style><h1>Dwarf Lord · 13 character designs</h1><p>Distinct Borrin, Elder, Ginger and Silver · Approved detailed character library</p><main>${Object.entries(
     DWARF_ART,
   )
     .map(
@@ -77,7 +77,7 @@ try {
     assert(r.transparent > 0.1, `${r.id} has transparent background`);
     assert(r.opaque > 0.1, `${r.id} contains opaque figure`);
   }
-  console.log("PASS all 12 designs load with transparent alpha");
+  console.log("PASS all 13 designs load with transparent alpha");
 } finally {
   await browser.close();
 }

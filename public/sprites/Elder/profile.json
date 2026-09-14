@@ -1,0 +1,13 @@
+{
+  "id": "elder",
+  "name": "Elder",
+  "species": "dwarf",
+  "role": "Oldest resident; speaking/rumor NPC with evolving narrative roles",
+  "ageOrder": "Oldest dwarf",
+  "identity": "Bald crown, deeply wrinkled kindly face, long flowing white beard; heavy moss-brown wool coat; both hands resting on a walking stick.",
+  "mustNotChange": "Not the manager or ledger operator. Never assign ordinary labor/wages or use this art for Borrin.",
+  "master": "idle.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

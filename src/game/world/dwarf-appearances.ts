@@ -1,23 +1,25 @@
 /** Stable NPC identities. Player direction/gait frames are managed separately. */
 export const DWARF_ART = {
-  ginger: { file: "camp-workers-atlas.png", pose: "sit", column: 0 },
-  silver: { file: "camp-workers-atlas.png", pose: "sit", column: 1 },
-  laborer: { file: "laborer-detailed.png", pose: "stand" },
-  elder: { file: "elder.png", pose: "sit" },
-  helga: { file: "helga.png", pose: "stand" },
-  femaleMiner: { file: "female-miner.png", pose: "stand" },
-  blacksmith: { file: "blacksmith.png", pose: "stand" },
-  redMiner: { file: "red-miner.png", pose: "stand" },
-  quartermaster: { file: "quartermaster.png", pose: "stand" },
-  stoneworker: { file: "stoneworker.png", pose: "stand" },
-  cook: { file: "cook.png", pose: "sit" },
-  veteran: { file: "veteran.png", pose: "sit" },
+  ginger: { file: "Ginger/idle.png", pose: "sit" },
+  silver: { file: "Silver/idle.png", pose: "sit" },
+  laborer: { file: "Laborer/stand.png", pose: "stand" },
+  borrin: { file: "Borrin/idle.png", pose: "sit" },
+  elder: { file: "Elder/idle.png", pose: "sit" },
+  helga: { file: "Helga/stand.png", pose: "stand" },
+  femaleMiner: { file: "Female Miner/stand.png", pose: "stand" },
+  blacksmith: { file: "Blacksmith/stand.png", pose: "stand" },
+  redMiner: { file: "Red Miner/stand.png", pose: "stand" },
+  quartermaster: { file: "Quartermaster/stand.png", pose: "stand" },
+  stoneworker: { file: "Stoneworker/stand.png", pose: "stand" },
+  cook: { file: "Cook/idle.png", pose: "sit" },
+  veteran: { file: "Veteran/idle.png", pose: "sit" },
 } as const;
 
 export type DwarfAppearance = keyof typeof DWARF_ART;
 
 const NPC_APPEARANCE: Record<string, DwarfAppearance> = {
-  borrin: "elder",
+  borrin: "borrin",
+  elder: "elder",
   durgan: "veteran",
   helga: "helga",
   brokk: "ginger",
@@ -38,4 +40,12 @@ const NPC_APPEARANCE: Record<string, DwarfAppearance> = {
 
 export function dwarfAppearance(id?: string): DwarfAppearance {
   return (id && NPC_APPEARANCE[id]) || "laborer";
+}
+
+/** Sprite and dialogue portrait always resolve to the same canonical character. */
+export function characterPortraitPath(id?: string): string {
+  const folder = id === "player" || id === "lord"
+    ? "Lord"
+    : DWARF_ART[dwarfAppearance(id)].file.split("/")[0];
+  return `/sprites/${folder}/portrait.png`;
 }
