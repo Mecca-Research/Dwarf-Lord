@@ -1,0 +1,13 @@
+{
+  "id": "cook",
+  "name": "Cook",
+  "species": "dwarf",
+  "role": "Camp cook design; Kori",
+  "ageOrder": "Adult",
+  "identity": "Ruddy round face, thinning brown hair, bushy moustache and shorter brown beard; stout belly, burgundy shirt and stained cream apron.",
+  "mustNotChange": "Preserve apron and round silhouette; alpha must not contain painted checkerboard.",
+  "master": "idle.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

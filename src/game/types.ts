@@ -39,6 +39,7 @@ export interface Dwarf {
   name: string;
   title: string;
   isSteward?: boolean;
+  narrativeOnly?: boolean;
   capability: number;
   skills: Skills;
   energy: number;

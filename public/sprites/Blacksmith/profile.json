@@ -1,0 +1,13 @@
+{
+  "id": "blacksmith",
+  "name": "Blacksmith",
+  "species": "dwarf",
+  "role": "Blacksmith design; Grit",
+  "ageOrder": "Adult",
+  "identity": "Deep brown skin, broad nose, thick black beard with bronze cuffs, bald head; charcoal smith apron and cream sleeves.",
+  "mustNotChange": "Keep skin tone, facial structure and black beard; not a recolored dwarf laborer.",
+  "master": "stand.png",
+  "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
+  "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
+  "portrait": "portrait.png"
+}

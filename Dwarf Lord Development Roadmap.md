@@ -59,7 +59,7 @@ The defaults below make the plan executable without pretending the source has al
 
 | ID | Gap or conflict | Proposed default | Resolve by |
 | --- | --- | --- | --- |
-| D01 | Twelve founders, twelve plus elder, sixteen workers and current seventeen residents appear in different places | Retain current **16 workers + Borrin** as the baseline; treat twelve as the art-design count. Do not delete named residents to fit sprite count. A smaller founder scenario can be separate later. | Phase 00 |
+| D01 | Twelve founders, twelve plus elder, sixteen workers and current seventeen residents appear in different places | Retain **16 workers + Borrin + the separate narrative Elder** as the baseline; the current library contains thirteen NPC art designs. Do not delete named residents to fit sprite count. A smaller founder scenario can be separate later. | Phase 00 |
 | D02 | Six picks in dialogue, seven in item list, four good + two cracked in code | Canonical new-game manifest: **7 picks: 4 serviceable, 3 poor**. Crew size does not guarantee safe equipment; six-person first expedition is optional. Update dialogue and UI from that manifest. | Phase 00 |
 | D03 | Starting cash 73.60 versus current 180; several incompatible haul examples | Retire the old currency naming. Use **73 silver + 60 copper bits (7,360 bits)** only as a proposed opening test fixture, not an approved balance value or immediate code change. Validate at least several viable opening strategies before adopting it. Preserve existing saves through explicit migration. | Phases 00, 07 |
 | D04 | “Capability points” mix staffing potential and daily production | Derive task-specific baseline capability from six attributes. Actual productive hours and modifiers determine work; nominal capability is a planning estimate, not spendable currency. | Phase 01 |
@@ -259,7 +259,7 @@ Minting is allowed to be profitable—that is part of the reward for discovering
 ### Phase 06 — Complete characters, animation and sound
 
 - [ ] **06.1** Create a character sheet for each named founder: visual identity, age band, voice/tone, role, background, existing relationships and potential growth. Keep their careers open.
-- [ ] **06.2** Maintain the twelve-design library, including Borrin and the two requested female designs. Add identity variation for shared residents through controlled hair/clothes/face variants, not random changes on movement.
+- [ ] **06.2** Maintain the thirteen-design library with separate Borrin and Elder, distinct Ginger and Silver, and the two requested female designs. Follow each character folder profile and canonical render. Add identity variation for shared residents through controlled hair/clothes/face variants, not random changes on movement.
 - [ ] **06.3** Create matching portraits and eight-direction idle/walk sets; prioritize founders visible in the first loop. Avoid generic male fallbacks for female NPCs.
 - [ ] **06.4** Build required actions: sit/stand, talk, eat, sleep, pick, chop, shovel, hammer/repair, survey, carry light/heavy loads, push cart, climb, operate equipment and assist an injured worker.
 - [ ] **06.5** Add state transitions, interruption recovery, tool sockets, carried goods, synchronized foot contact and work-event markers. Later add teach, study, trade and specialist machine actions when their systems arrive.
@@ -582,7 +582,7 @@ Cooking and basic labor remain valid occupations while their detailed skills are
 
 ### C2. Founder identity mapping
 
-Preserve current residents: **Borrin, Durgan, Helga, Brokk, Nessa, Tam, Pip, Mora, Grit, Fenn, Kori, Bram, Ulla, Stig, Yara, Hob and Dunwold**. Confirm names, dialogue and intended identities against the existing catalog before expanding biographies. Names such as Torvek, Fenri, Bromm, Garrick, Hilda and Marek in the notes are illustrative worker examples, not automatic extra starting residents.
+Preserve current residents: **Elder, Borrin, Durgan, Helga, Brokk, Nessa, Tam, Pip, Mora, Grit, Fenn, Kori, Bram, Ulla, Stig, Yara, Hob and Dunwold**. Confirm names, dialogue and intended identities against the existing catalog before expanding biographies. Names such as Torvek, Fenri, Bromm, Garrick, Hilda and Marek in the notes are illustrative worker examples, not automatic extra starting residents.
 
 Borrin holds institutional memory and teaches early managers. Give each founder at least one useful strength, one limitation, initial skill/history and a recognizable personal goal. Avoid reducing “enthusiastic idiot” flavor into a permanently unusable worker. Promotion, entrepreneurship and master craft are equally valid outcomes. The original crew's achievements remain visible in later reports and historical places.
 
@@ -730,3 +730,10 @@ Do not begin late-game economy code or generate hundreds of unrelated sprites ne
 10. **DL-010:** Deliver Phase 07's complete repeatable opening loop, including goods going down the road and silver/gold returning, correcting cash/haul/work/time accounting before expansion. Depends on the earlier visual gates and Phase 01 simulation contracts.
 
 Each session should finish with a small reviewable commit or a precise local checkpoint. Keep the source-inspired full scope above intact while completing these milestones one at a time.
+
+
+## Character identity revision — 14 September 2026
+
+Borrin is the second oldest dwarf and the previous owner's remaining senior manager. He serves as consultant and ledger keeper. Elder is the oldest, a separate primarily conversational rumor NPC whose dialogue can evolve with progress; he is not a labor or payroll slot. Their visual identities and those of Ginger and Silver are locked in `public/sprites/*/profile.json` and `docs/CHARACTER-STANDARDS.md`.
+
+Preserve the former stand-labor as Human Laborer. Future imported human labor should be designed alongside recruitment, housing, pay, skill differences and settlement relations, with clear species identity. The asset's preservation does not imply these mechanics are already implemented.

@@ -30,7 +30,7 @@ try {
     Math.hypot(movement.after.x - movement.before.x, movement.after.z - movement.before.z) > 0.5,
     "WASD moves the player",
   );
-  await page.evaluate(() => window.__controlsTest.teleport(10.3, 3.05));
+  await page.evaluate(() => window.__controlsTest.teleport(10, 11.1));
   await page.waitForTimeout(2500);
   await page.keyboard.press("KeyE");
   await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dialogue, null, {

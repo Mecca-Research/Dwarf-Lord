@@ -1,3 +1,4 @@
+import { characterPortraitPath } from "../world/dwarf-appearances";
 import {
   BookOpen,
   Coins,
@@ -195,7 +196,7 @@ export function Hud() {
             )}
           </div>
         ) : (
-          <p className="text-xs text-fg-subtle">Find the old dwarf in the chair. Nobody else is keeping books.</p>
+          <p className="text-xs text-fg-subtle">Find Borrin, the senior manager. He keeps the books.</p>
         )}
       </div>
 
@@ -242,7 +243,7 @@ function DialogueBox() {
   const line = lines[dialogue.step];
   if (!line) return null;
   const dwarf = dwarves.find((d) => d.id === dialogue.speakerId);
-  const portrait = line.portrait ?? dwarf?.portrait ?? asset("/portraits/laborer.jpg");
+  const portrait = dwarf ? asset(characterPortraitPath(dwarf.id)) : line.portrait ?? asset("/sprites/Laborer/portrait.png");
   const replies = line.replies ?? [{ label: "Continue" }];
 
   return (

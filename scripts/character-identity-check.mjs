@@ -1,0 +1,36 @@
+import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import { mkdirSync, writeFileSync } from 'node:fs';
+const output = process.env.REVIEW_OUTPUT || 'work/checks/identity';
+mkdirSync(output, { recursive: true });
+const browser = await chromium.launch({ headless: true, args: ['--enable-unsafe-swiftshader'] });
+try {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  const errors = [], missing = [];
+  page.on('pageerror', e => errors.push(e.message));
+  page.on('response', r => { if (r.status() >= 400 && r.url().includes('/sprites/')) missing.push(r.url()); });
+  await page.goto(process.env.REVIEW_URL || 'http://localhost:8081/Dwarf-Lord/');
+  await page.getByRole('button', { name: 'Walk the road' }).click();
+  await page.waitForFunction(() => window.__controlsTest?.teleport);
+  await page.waitForTimeout(9000);
+  const roster = await page.evaluate(() => JSON.parse(window.render_game_to_text()).dwarves);
+  assert.equal(roster.filter(d => d.id === 'elder').length, 1);
+  assert.equal(roster.length, 18);
+  await page.evaluate(() => window.__controlsTest.teleport(-7, 1.1));
+  await page.waitForTimeout(1500);
+  await page.keyboard.press('KeyE');
+  await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dialogue?.key === 'elder');
+  assert.ok(await page.locator('img[src*="Elder/portrait.png"]').evaluate(img => img.complete && img.naturalWidth > 0));
+  await page.screenshot({ path: `${output}/elder-dialogue.png` });
+  await page.getByRole('button', { name: "I'll find Borrin. Tell me more another day." }).click();
+  await page.evaluate(() => window.__controlsTest.teleport(10, 11.1));
+  await page.waitForTimeout(1500);
+  await page.keyboard.press('KeyE');
+  await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dialogue?.speakerId === 'borrin');
+  assert.ok(await page.locator('img[src*="Borrin/portrait.png"]').evaluate(img => img.complete && img.naturalWidth > 0));
+  await page.screenshot({ path: `${output}/borrin-dialogue.png` });
+  assert.deepEqual(missing, []);
+  assert.deepEqual(errors, []);
+  writeFileSync(`${output}/results.json`, JSON.stringify({ residents: roster.length, elderCount: 1, portraits: ['Elder', 'Borrin'], missing, errors }, null, 2));
+  console.log('PASS separate Elder/Borrin dialogue, matching portraits, 18 residents, no missing sprites or runtime errors');
+} finally { await browser.close(); }

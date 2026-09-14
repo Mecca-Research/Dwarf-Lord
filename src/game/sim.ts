@@ -18,11 +18,11 @@ export function range(seed: number, a: number, b: number) {
 }
 
 export function assignedCap(dwarves: Dwarf[]) {
-  return dwarves.filter((d) => d.assignedJobId && !d.isSteward).reduce((s, d) => s + d.capability, 0);
+  return dwarves.filter((d) => d.assignedJobId && !d.isSteward && !d.narrativeOnly).reduce((s, d) => s + d.capability, 0);
 }
 
 export function workers(dwarves: Dwarf[]) {
-  return dwarves.filter((d) => !d.isSteward);
+  return dwarves.filter((d) => !d.isSteward && !d.narrativeOnly);
 }
 
 export function resolveJobs(
@@ -41,7 +41,7 @@ export function resolveJobs(
   const notes: string[] = [];
   let morale = 0;
 
-  const next = dwarves.map((d) => ({ ...d, assignedJobId: assigned[d.id] ?? null }));
+  const next = dwarves.map((d) => ({ ...d, assignedJobId: d.isSteward || d.narrativeOnly ? null : assigned[d.id] ?? null }));
 
   for (const job of JOBS) {
     const crew = next.filter((d) => d.assignedJobId === job.id);
@@ -79,7 +79,7 @@ export function resolveJobs(
   }
 
   for (const d of next) {
-    if (d.isSteward) continue;
+    if (d.isSteward || d.narrativeOnly) continue;
     if (!d.assignedJobId) {
       d.motivation = Math.max(0.08, d.motivation - 0.03);
       d.energy = Math.min(1, d.energy + 0.12);
@@ -137,7 +137,7 @@ export function resolveExpedition(
 
 export function restNight(dwarves: Dwarf[], housing: number, fed: boolean, wagesFair: number) {
   return dwarves.map((d) => {
-    if (d.isSteward) {
+    if (d.isSteward || d.narrativeOnly) {
       return { ...d, energy: Math.min(1, d.energy + 0.2) };
     }
     const energy = Math.min(1, 0.35 + housing * 0.45 + (fed ? 0.12 : 0) + d.condition * 0.1);
