@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "examine-pickaxe-crack",
+  "title": "Examine pickaxe crack",
+  "reference": "../../work-references/05-examine-pickaxe-crack.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d8dfaba1e802b56a98d3493cec92b2d29900682bb7c084c8cbd4297618b1e157",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0331588132635252,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold cracked pickaxe near eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        91,
+        19,
+        569,
+        592
+      ],
+      "sourceAnchor": [
+        246.0,
+        573
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        66,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "bring damaged joint closer",
+      "durationMs": 250,
+      "sourceBounds": [
+        676,
+        37,
+        1157,
+        592
+      ],
+      "sourceAnchor": [
+        246.5,
+        555
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        65,
+        43
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "trace crack with index finger",
+      "durationMs": 250,
+      "sourceBounds": [
+        90,
+        643,
+        591,
+        1210
+      ],
+      "sourceAnchor": [
+        247.0,
+        567
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        65,
+        30
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tilt pickaxe away to inspect another side",
+      "durationMs": 250,
+      "sourceBounds": [
+        676,
+        639,
+        1182,
+        1210
+      ],
+      "sourceAnchor": [
+        249.5,
+        571
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        26
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

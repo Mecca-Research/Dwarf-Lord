@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "stand-watch",
+  "title": "Stand watch",
+  "reference": "../../work-references/00-stand-watch.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "072cf9bf342031fbaa50d0d39595a5efba0bb27159be680b5a340c8314848f29",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.011965811965812,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "spear grounded and shield held",
+      "durationMs": 250,
+      "sourceBounds": [
+        161,
+        9,
+        571,
+        593
+      ],
+      "sourceAnchor": [
+        210.5,
+        584
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        107,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "glance slightly left",
+      "durationMs": 250,
+      "sourceBounds": [
+        753,
+        9,
+        1163,
+        594
+      ],
+      "sourceAnchor": [
+        211.0,
+        585
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "glance slightly right",
+      "durationMs": 250,
+      "sourceBounds": [
+        161,
+        644,
+        576,
+        1229
+      ],
+      "sourceAnchor": [
+        212.5,
+        585
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return to watch forward with same feet position",
+      "durationMs": 250,
+      "sourceBounds": [
+        751,
+        644,
+        1165,
+        1229
+      ],
+      "sourceAnchor": [
+        213.5,
+        585
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        104,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

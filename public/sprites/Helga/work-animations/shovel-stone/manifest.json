@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "shovel-stone",
+  "title": "Shovel stone",
+  "reference": "../../work-references/03-shovel-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b71aff7c9697a1105a66738c83a3266aaf7b6a8b9eabc2162546bb0757eac948",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9850249584026622,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shovel at rubble pile",
+      "durationMs": 250,
+      "sourceBounds": [
+        22,
+        27,
+        616,
+        616
+      ],
+      "sourceAnchor": [
+        296.5,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        36
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "scoop stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        645,
+        42,
+        1240,
+        616
+      ],
+      "sourceAnchor": [
+        297.5,
+        574
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        27,
+        51
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift loaded shovel",
+      "durationMs": 250,
+      "sourceBounds": [
+        22,
+        632,
+        620,
+        1214
+      ],
+      "sourceAnchor": [
+        297.5,
+        582
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        27,
+        43
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tip stone beside pile",
+      "durationMs": 250,
+      "sourceBounds": [
+        646,
+        643,
+        1242,
+        1214
+      ],
+      "sourceAnchor": [
+        298.0,
+        571
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        54
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

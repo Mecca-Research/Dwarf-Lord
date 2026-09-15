@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "repair-shield-strap",
+  "title": "Repair shield strap",
+  "reference": "../../work-references/05-repair-shield-strap.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "4667d902afc09c9a36ee4bbbd464cc264efadc0568a4f76afa0c23963e616de8",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9689034369885434,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold shield strap against shield",
+      "durationMs": 250,
+      "sourceBounds": [
+        55,
+        17,
+        614,
+        627
+      ],
+      "sourceAnchor": [
+        266.5,
+        610
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "pull repair cord through strap",
+      "durationMs": 250,
+      "sourceBounds": [
+        682,
+        18,
+        1240,
+        627
+      ],
+      "sourceAnchor": [
+        266.0,
+        609
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "tighten cord",
+      "durationMs": 250,
+      "sourceBounds": [
+        55,
+        641,
+        614,
+        1251
+      ],
+      "sourceAnchor": [
+        266.5,
+        610
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "press repaired strap and reset hands",
+      "durationMs": 250,
+      "sourceBounds": [
+        682,
+        641,
+        1240,
+        1252
+      ],
+      "sourceAnchor": [
+        266.0,
+        611
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

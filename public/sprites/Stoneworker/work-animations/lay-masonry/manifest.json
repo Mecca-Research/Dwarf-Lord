@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "lay-masonry",
+  "title": "Lay masonry",
+  "reference": "../../work-references/04-lay-masonry.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "1cd6bad0470b0b3c8accd40aa354b2c99f7b78622199bf5fad8e677f4d9ef1f9",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9949579831932773,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold masonry block above mortar bed",
+      "durationMs": 250,
+      "sourceBounds": [
+        24,
+        56,
+        612,
+        600
+      ],
+      "sourceAnchor": [
+        297.5,
+        544
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        75
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lower block halfway",
+      "durationMs": 250,
+      "sourceBounds": [
+        650,
+        85,
+        1234,
+        600
+      ],
+      "sourceAnchor": [
+        295.5,
+        515
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        104
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "set block on mortar",
+      "durationMs": 250,
+      "sourceBounds": [
+        25,
+        696,
+        612,
+        1196
+      ],
+      "sourceAnchor": [
+        296.5,
+        500
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        119
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "press and align block with both hands",
+      "durationMs": 250,
+      "sourceBounds": [
+        651,
+        695,
+        1237,
+        1197
+      ],
+      "sourceAnchor": [
+        296.0,
+        502
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        117
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

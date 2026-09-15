@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "laugh-seated",
+  "title": "Laugh seated",
+  "reference": "../../work-references/02-laugh-seated.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "1cf7398e322ba0cb2d78948566bee52d3d631300d9723d7b95eac00b8a71f4d7",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0154373927958833,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "sit relaxed mouth smiling",
+      "durationMs": 250,
+      "sourceBounds": [
+        102,
+        25,
+        544,
+        602
+      ],
+      "sourceAnchor": [
+        241.0,
+        577
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        75,
+        30
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "shoulders lift and mouth opens laughing",
+      "durationMs": 250,
+      "sourceBounds": [
+        725,
+        21,
+        1171,
+        602
+      ],
+      "sourceAnchor": [
+        243.0,
+        581
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lean back in hearty laugh",
+      "durationMs": 250,
+      "sourceBounds": [
+        103,
+        645,
+        598,
+        1228
+      ],
+      "sourceAnchor": [
+        271.5,
+        583
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "settle forward smiling",
+      "durationMs": 250,
+      "sourceBounds": [
+        727,
+        657,
+        1171,
+        1229
+      ],
+      "sourceAnchor": [
+        242.0,
+        572
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        74,
+        35
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

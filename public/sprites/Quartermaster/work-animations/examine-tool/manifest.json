@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "examine-tool",
+  "title": "Examine tool",
+  "reference": "../../work-references/02-examine-tool.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2655f5b50b669938c728d6fa5d6522530bc57349cb7049af309a343046b12235",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9916247906197655,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool horizontally",
+      "durationMs": 250,
+      "sourceBounds": [
+        122,
+        20,
+        578,
+        613
+      ],
+      "sourceAnchor": [
+        214.5,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        107,
+        28
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise head toward eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        732,
+        18,
+        1192,
+        615
+      ],
+      "sourceAnchor": [
+        218.0,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        104,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate tool to inspect underside",
+      "durationMs": 250,
+      "sourceBounds": [
+        127,
+        626,
+        581,
+        1222
+      ],
+      "sourceAnchor": [
+        213.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        109,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower tool to starting height",
+      "durationMs": 250,
+      "sourceBounds": [
+        741,
+        628,
+        1193,
+        1225
+      ],
+      "sourceAnchor": [
+        213.5,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        108,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "record-inventory",
+  "title": "Record inventory",
+  "reference": "../../work-references/00-record-inventory.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "1849493a840e39ef9b66ae7eb68b95d23aec22224ac15ecaca60ed1b50a2c867",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9817578772802653,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "quill over inventory ledger",
+      "durationMs": 250,
+      "sourceBounds": [
+        35,
+        29,
+        613,
+        632
+      ],
+      "sourceAnchor": [
+        289.5,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "write short line",
+      "durationMs": 250,
+      "sourceBounds": [
+        657,
+        33,
+        1235,
+        632
+      ],
+      "sourceAnchor": [
+        289.5,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "glance from ledger to supplies",
+      "durationMs": 250,
+      "sourceBounds": [
+        35,
+        632,
+        613,
+        1232
+      ],
+      "sourceAnchor": [
+        289.0,
+        600
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return quill and write next line",
+      "durationMs": 250,
+      "sourceBounds": [
+        657,
+        642,
+        1235,
+        1233
+      ],
+      "sourceAnchor": [
+        289.0,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        36
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

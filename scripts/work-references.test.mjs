@@ -16,7 +16,7 @@ test('14 characters have six static work references with complete provenance and
   for(const f of m.frames){const png=readFileSync(new URL(f.file,url));assert.equal(png.readUInt32BE(16),640);assert.equal(png.readUInt32BE(20),640);assert.equal(png[25],6);assert.equal(f.staticReference,true);assert.ok(f.title&&f.description);hashes.add(createHash('sha256').update(png).digest('hex'))}
   assert.equal(hashes.size,6);
   const profile=JSON.parse(readFileSync(new URL('../profile.json',url)));
-  assert.equal(profile.workReferences.count,6);assert.equal(profile.workReferences.animationVariationsComplete,false);
+  assert.equal(profile.workReferences.count,6);assert.equal(profile.workReferences.animationVariationsComplete,true);assert.equal(profile.workAnimations.actionCount,6);assert.equal(profile.workAnimations.frameCount,24);assert.equal(profile.workAnimations.productionReady,false);
  }
 });
 test('Borrin legacy writing now references the open-ledger desk composition',()=>{

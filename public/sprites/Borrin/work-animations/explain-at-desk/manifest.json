@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "explain-at-desk",
+  "title": "Explain at desk",
+  "reference": "../../work-references/03-explain-at-desk.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5846eb1c9d8f9b3347c03e231da281dfb282a305cbb2c9124fa0460e7c631629",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9396825396825397,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "point at OPEN ledger",
+      "durationMs": 250,
+      "sourceBounds": [
+        28,
+        27,
+        615,
+        622
+      ],
+      "sourceAnchor": [
+        294.5,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        57
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift free hand toward listener",
+      "durationMs": 250,
+      "sourceBounds": [
+        655,
+        27,
+        1242,
+        622
+      ],
+      "sourceAnchor": [
+        294.0,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        57
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "open palm outward while speaking",
+      "durationMs": 250,
+      "sourceBounds": [
+        28,
+        647,
+        637,
+        1248
+      ],
+      "sourceAnchor": [
+        294.0,
+        601
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        51
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return hand toward open ledger",
+      "durationMs": 250,
+      "sourceBounds": [
+        655,
+        646,
+        1242,
+        1248
+      ],
+      "sourceAnchor": [
+        294.0,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        50
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

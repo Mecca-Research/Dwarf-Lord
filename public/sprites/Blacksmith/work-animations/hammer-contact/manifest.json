@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "hammer-contact",
+  "title": "Hammer contact",
+  "reference": "../../work-references/02-hammer-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f8c3e6e98543480d49d4b9c6b75c1c6244971ff19d0d44f2b5912f83c4543e2f",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9866666666666667,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer touching billet",
+      "durationMs": 250,
+      "sourceBounds": [
+        124,
+        35,
+        587,
+        634
+      ],
+      "sourceAnchor": [
+        216.0,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        107,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift hammer slightly off billet",
+      "durationMs": 250,
+      "sourceBounds": [
+        730,
+        34,
+        1199,
+        634
+      ],
+      "sourceAnchor": [
+        221.5,
+        600
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        101,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "short controlled tap onto billet",
+      "durationMs": 250,
+      "sourceBounds": [
+        147,
+        644,
+        587,
+        1237
+      ],
+      "sourceAnchor": [
+        192.0,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        131,
+        31
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rebound a short distance",
+      "durationMs": 250,
+      "sourceBounds": [
+        736,
+        646,
+        1200,
+        1237
+      ],
+      "sourceAnchor": [
+        214.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        108,
+        33
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

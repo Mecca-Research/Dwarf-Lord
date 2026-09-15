@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "explain-allocations",
+  "title": "Explain allocations",
+  "reference": "../../work-references/01-explain-allocations.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c35998a9e120e2bece40ba21ebc2f4bfa199da478e3be0dfde757f03c6a8ca05",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0154373927958833,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "point at allocation paper",
+      "durationMs": 250,
+      "sourceBounds": [
+        63,
+        20,
+        583,
+        596
+      ],
+      "sourceAnchor": [
+        260.0,
+        576
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        31
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift hand to explain",
+      "durationMs": 250,
+      "sourceBounds": [
+        689,
+        19,
+        1209,
+        597
+      ],
+      "sourceAnchor": [
+        260.0,
+        578
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        29
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "gesture toward supplies",
+      "durationMs": 250,
+      "sourceBounds": [
+        63,
+        640,
+        592,
+        1223
+      ],
+      "sourceAnchor": [
+        261.5,
+        583
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return finger to paper",
+      "durationMs": 250,
+      "sourceBounds": [
+        689,
+        643,
+        1210,
+        1223
+      ],
+      "sourceAnchor": [
+        260.5,
+        580
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        55,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

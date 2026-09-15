@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "bind-tool-handle",
+  "title": "Bind tool handle",
+  "reference": "../../work-references/05-bind-tool-handle.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9e31f813e0c1856adc0a53aa2f97603340042bcf51eed7b4d0d7f51e4534803f",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.988313856427379,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool handle and binding",
+      "durationMs": 250,
+      "sourceBounds": [
+        45,
+        21,
+        598,
+        620
+      ],
+      "sourceAnchor": [
+        264.5,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "wrap binding around joint",
+      "durationMs": 250,
+      "sourceBounds": [
+        672,
+        21,
+        1225,
+        620
+      ],
+      "sourceAnchor": [
+        264.5,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "pull binding taut",
+      "durationMs": 250,
+      "sourceBounds": [
+        45,
+        648,
+        598,
+        1229
+      ],
+      "sourceAnchor": [
+        264.0,
+        581
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        42
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "press wrap into place",
+      "durationMs": 250,
+      "sourceBounds": [
+        672,
+        649,
+        1225,
+        1229
+      ],
+      "sourceAnchor": [
+        264.5,
+        580
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        43
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

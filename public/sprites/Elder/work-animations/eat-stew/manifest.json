@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "eat-stew",
+  "title": "Eat stew",
+  "reference": "../../work-references/00-eat-stew.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9a232342993b19290f0d3d331ab4e2922cc7303e8fc82b60f875984e1547f648",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0367775831873904,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "spoon in stew bowl",
+      "durationMs": 250,
+      "sourceBounds": [
+        90,
+        26,
+        566,
+        594
+      ],
+      "sourceAnchor": [
+        238.0,
+        568
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift spoon halfway toward mouth",
+      "durationMs": 250,
+      "sourceBounds": [
+        708,
+        26,
+        1185,
+        593
+      ],
+      "sourceAnchor": [
+        238.5,
+        567
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "spoon reaches mouth for bite",
+      "durationMs": 250,
+      "sourceBounds": [
+        87,
+        646,
+        570,
+        1217
+      ],
+      "sourceAnchor": [
+        241.5,
+        571
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        70,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower spoon toward bowl",
+      "durationMs": 250,
+      "sourceBounds": [
+        710,
+        647,
+        1189,
+        1217
+      ],
+      "sourceAnchor": [
+        239.5,
+        570
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        72,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

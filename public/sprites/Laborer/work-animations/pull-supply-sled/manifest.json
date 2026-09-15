@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "pull-supply-sled",
+  "title": "Pull supply sled",
+  "reference": "../../work-references/03-pull-supply-sled.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "3342f73158dad23e70e6a9c52db1909250df7fd2f50e7540a6c45cca42811bb5",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9293563579277865,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "lean forward gripping sled rope left foot ahead",
+      "durationMs": 250,
+      "sourceBounds": [
+        18,
+        93,
+        617,
+        596
+      ],
+      "sourceAnchor": [
+        299.5,
+        503
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        42,
+        149
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under body rope taut",
+      "durationMs": 250,
+      "sourceBounds": [
+        645,
+        88,
+        1223,
+        596
+      ],
+      "sourceAnchor": [
+        259.5,
+        508
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        144
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot ahead pulling sled",
+      "durationMs": 250,
+      "sourceBounds": [
+        18,
+        704,
+        627,
+        1220
+      ],
+      "sourceAnchor": [
+        304.5,
+        516
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        136
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under body again",
+      "durationMs": 250,
+      "sourceBounds": [
+        645,
+        709,
+        1238,
+        1219
+      ],
+      "sourceAnchor": [
+        287.5,
+        510
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        142
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

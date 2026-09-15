@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Human Laborer",
+  "action": "shovel-soil",
+  "title": "Shovel soil",
+  "reference": "../../work-references/04-shovel-soil.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5764e970025e9bd632ac4206ce5769d46d634d03ccec2d4c3550313cdb947a57",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0189328743545611,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shovel blade at soil",
+      "durationMs": 250,
+      "sourceBounds": [
+        33,
+        91,
+        614,
+        631
+      ],
+      "sourceAnchor": [
+        290.5,
+        540
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        66
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push blade in",
+      "durationMs": 250,
+      "sourceBounds": [
+        665,
+        111,
+        1233,
+        631
+      ],
+      "sourceAnchor": [
+        284.0,
+        520
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        86
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift soil",
+      "durationMs": 250,
+      "sourceBounds": [
+        112,
+        663,
+        613,
+        1200
+      ],
+      "sourceAnchor": [
+        250.5,
+        537
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        65,
+        69
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tip soil beside work area",
+      "durationMs": 250,
+      "sourceBounds": [
+        673,
+        657,
+        1233,
+        1204
+      ],
+      "sourceAnchor": [
+        280.0,
+        547
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        59
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

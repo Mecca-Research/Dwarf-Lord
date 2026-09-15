@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "inspect-pickaxe-in-lap",
+  "title": "Inspect pickaxe in lap",
+  "reference": "../../work-references/04-inspect-pickaxe-in-lap.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "7cf3ca0897ccae3bc90819701fb0e5b112bf52505fcdaffb1c27d2cc0a97791d",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9801324503311258,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe rests across lap held in both hands",
+      "durationMs": 250,
+      "sourceBounds": [
+        81,
+        17,
+        575,
+        615
+      ],
+      "sourceAnchor": [
+        270.0,
+        598
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        55,
+        30
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift pick head slightly",
+      "durationMs": 250,
+      "sourceBounds": [
+        701,
+        19,
+        1190,
+        614
+      ],
+      "sourceAnchor": [
+        253.0,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        72,
+        33
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate pick to examine edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        106,
+        634,
+        590,
+        1238
+      ],
+      "sourceAnchor": [
+        256.0,
+        604
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return pick across lap",
+      "durationMs": 250,
+      "sourceBounds": [
+        693,
+        634,
+        1193,
+        1238
+      ],
+      "sourceAnchor": [
+        276.5,
+        604
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

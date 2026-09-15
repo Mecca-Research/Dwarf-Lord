@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "sharpen-utility-knife",
+  "title": "Sharpen utility knife",
+  "reference": "../../work-references/04-sharpen-utility-knife.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "4db845745d8c89156ddecd8852d83dd655efc65b4006eac41d53685377d8347c",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9736842105263158,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "knife edge at near side of whetstone",
+      "durationMs": 250,
+      "sourceBounds": [
+        36,
+        19,
+        595,
+        621
+      ],
+      "sourceAnchor": [
+        267.0,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        30
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw blade across stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        663,
+        19,
+        1221,
+        621
+      ],
+      "sourceAnchor": [
+        266.5,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        30
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "blade reaches far edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        36,
+        640,
+        595,
+        1248
+      ],
+      "sourceAnchor": [
+        267.0,
+        608
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift and return blade to near edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        663,
+        642,
+        1221,
+        1248
+      ],
+      "sourceAnchor": [
+        266.5,
+        606
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        26
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

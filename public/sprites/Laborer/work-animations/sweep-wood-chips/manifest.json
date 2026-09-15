@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "title": "Sweep wood chips",
+  "reference": "../../work-references/05-sweep-wood-chips.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "16a57e62b32c744c0bed7df721becc1754e762bf52dab28d8948e1d196b3485e",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.8604651162790697,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "broom at near edge of wood chips",
+      "durationMs": 250,
+      "sourceBounds": [
+        23,
+        55,
+        627,
+        602
+      ],
+      "sourceAnchor": [
+        302.0,
+        547
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        145
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push broom forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        689,
+        57,
+        1248,
+        605
+      ],
+      "sourceAnchor": [
+        279.5,
+        548
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        144
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "broom reaches far edge gathering chips",
+      "durationMs": 250,
+      "sourceBounds": [
+        38,
+        676,
+        726,
+        1209
+      ],
+      "sourceAnchor": [
+        344.0,
+        533
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        157
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift slightly and return broom",
+      "durationMs": 250,
+      "sourceBounds": [
+        677,
+        666,
+        1250,
+        1213
+      ],
+      "sourceAnchor": [
+        286.5,
+        547
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        145
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

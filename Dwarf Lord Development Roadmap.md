@@ -748,3 +748,13 @@ The next character-animation milestone is full directional gait authoring: compl
 ## Asset production checkpoint — 2026-09-15
 
 The NPC library now includes 84 static occupational compositions (14 characters × 6 scenes), in addition to the 168 angle/stance references. See [Character work references](docs/CHARACTER-WORK-REFERENCES.md) for the action roster and review workflow. These are reference milestones, not completed production animation. Next: approve individual work compositions, register camera/scale/station coordinates, generate motion variations, validate seamless loops and tool contact, then integrate occupation state and workstation placement with gameplay.
+
+## 2026-09-15: Occupational animation keyframes
+
+- [x] Expand all 84 occupational action references across 14 characters into four authored variations each (336 transparent frames).
+- [x] Organize per-character/action sources, individual frames, atlases, animated previews and manifests; provide a dedicated review player.
+- [ ] Correct remaining workstation redraw drift and complete opposite-foot carrying/cart/patrol gait contacts.
+- [ ] Add in-between poses, refine contact/hold/recovery timing and additional directional coverage.
+- [ ] Integrate approved loops and one-shot transitions with gameplay actions, navigation and inventory events.
+
+See `docs/WORK-ANIMATION-VARIATIONS.md` for coverage, review findings and production limits.

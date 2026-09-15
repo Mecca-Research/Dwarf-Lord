@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "carry-sack",
+  "title": "Carry sack",
+  "reference": "../../work-references/01-carry-sack.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "42652ad2be015d3347f7979138282de9df7ebfc82bb3f1062776a679696ffec2",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0016920473773265,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward with sack",
+      "durationMs": 250,
+      "sourceBounds": [
+        169,
+        28,
+        544,
+        619
+      ],
+      "sourceAnchor": [
+        166.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        153,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under body",
+      "durationMs": 250,
+      "sourceBounds": [
+        762,
+        27,
+        1136,
+        606
+      ],
+      "sourceAnchor": [
+        153.0,
+        579
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        167,
+        36
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        182,
+        644,
+        555,
+        1232
+      ],
+      "sourceAnchor": [
+        172.0,
+        588
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        148,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under body with sack held consistently",
+      "durationMs": 250,
+      "sourceBounds": [
+        763,
+        647,
+        1140,
+        1227
+      ],
+      "sourceAnchor": [
+        162.0,
+        580
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        158,
+        35
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

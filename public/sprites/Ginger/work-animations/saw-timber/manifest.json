@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "saw-timber",
+  "title": "Saw timber",
+  "reference": "../../work-references/00-saw-timber.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "df0f91ec49ad14ee7fe813313bd4beab56729910e363bf7511f7bb0ed83c746c",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9563812600969306,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "saw against timber close to body",
+      "durationMs": 250,
+      "sourceBounds": [
+        35,
+        16,
+        612,
+        635
+      ],
+      "sourceAnchor": [
+        288.5,
+        619
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push saw forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        663,
+        16,
+        1240,
+        635
+      ],
+      "sourceAnchor": [
+        288.5,
+        619
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "saw at full extension",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        643,
+        626,
+        1241
+      ],
+      "sourceAnchor": [
+        287.0,
+        598
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        44
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "pull saw back along same cut",
+      "durationMs": 250,
+      "sourceBounds": [
+        675,
+        644,
+        1241,
+        1241
+      ],
+      "sourceAnchor": [
+        283.0,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        45
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "haul-firewood",
+  "title": "Haul firewood",
+  "reference": "../../work-references/03-haul-firewood.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5a4a9524f144c9f5fa9404647bd401426cdfbe994324e13209c5de0b62971eb7",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9563812600969306,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward hauling firewood",
+      "durationMs": 250,
+      "sourceBounds": [
+        16,
+        55,
+        629,
+        586
+      ],
+      "sourceAnchor": [
+        306.5,
+        531
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        27,
+        108
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass beneath body",
+      "durationMs": 250,
+      "sourceBounds": [
+        630,
+        56,
+        1179,
+        586
+      ],
+      "sourceAnchor": [
+        269.5,
+        530
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        109
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        16,
+        656,
+        635,
+        1186
+      ],
+      "sourceAnchor": [
+        309.5,
+        530
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        109
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass beneath body returning to first step",
+      "durationMs": 250,
+      "sourceBounds": [
+        631,
+        656,
+        1192,
+        1186
+      ],
+      "sourceAnchor": [
+        280.5,
+        530
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        109
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

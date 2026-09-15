@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "eat-bread",
+  "title": "Eat bread",
+  "reference": "../../work-references/01-eat-bread.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "81c7c30b8c2b76f5ef47ccbc1ebaede3a764d3062ca36b1feed4a92a40d02bb0",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold bread near chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        106,
+        31,
+        588,
+        623
+      ],
+      "sourceAnchor": [
+        243.5,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        76,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift bread toward mouth",
+      "durationMs": 250,
+      "sourceBounds": [
+        738,
+        32,
+        1215,
+        623
+      ],
+      "sourceAnchor": [
+        238.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "take small bite",
+      "durationMs": 250,
+      "sourceBounds": [
+        111,
+        658,
+        588,
+        1250
+      ],
+      "sourceAnchor": [
+        238.5,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower bread and chew",
+      "durationMs": 250,
+      "sourceBounds": [
+        735,
+        659,
+        1215,
+        1250
+      ],
+      "sourceAnchor": [
+        241.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

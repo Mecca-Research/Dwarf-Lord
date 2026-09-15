@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "push-stone-barrow",
+  "title": "Push stone barrow",
+  "reference": "../../work-references/02-push-stone-barrow.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f99a9bbeb6d9104196d49251b78dc31c4cd6c2f4c5613dd1666ce6b50b8e17cd",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.965742251223491,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward pushing stone barrow",
+      "durationMs": 250,
+      "sourceBounds": [
+        31,
+        95,
+        644,
+        587
+      ],
+      "sourceAnchor": [
+        306.5,
+        492
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        141
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under body",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        93,
+        1243,
+        587
+      ],
+      "sourceAnchor": [
+        277.5,
+        494
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        139
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        54,
+        673,
+        645,
+        1169
+      ],
+      "sourceAnchor": [
+        296.0,
+        496
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        137
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under body with hands gripping handles",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        675,
+        1242,
+        1169
+      ],
+      "sourceAnchor": [
+        276.5,
+        494
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        139
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

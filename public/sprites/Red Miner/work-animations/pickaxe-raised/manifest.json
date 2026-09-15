@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Red Miner",
+  "action": "pickaxe-raised",
+  "title": "Pickaxe raised",
+  "reference": "../../work-references/00-pickaxe-raised.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "bd70fcec01bf9a0297e57d923125d3466f32deb494687af29e1f8486979eac8c",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9801324503311258,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe held raised",
+      "durationMs": 250,
+      "sourceBounds": [
+        48,
+        11,
+        604,
+        615
+      ],
+      "sourceAnchor": [
+        278.0,
+        604
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "begin downswing",
+      "durationMs": 250,
+      "sourceBounds": [
+        661,
+        76,
+        1207,
+        615
+      ],
+      "sourceAnchor": [
+        273.0,
+        539
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        88
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "pick contacts rock",
+      "durationMs": 250,
+      "sourceBounds": [
+        51,
+        743,
+        607,
+        1206
+      ],
+      "sourceAnchor": [
+        278.0,
+        463
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        162
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "draw pickaxe back toward raised position",
+      "durationMs": 250,
+      "sourceBounds": [
+        661,
+        630,
+        1208,
+        1206
+      ],
+      "sourceAnchor": [
+        273.5,
+        576
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        51
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

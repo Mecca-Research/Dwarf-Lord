@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "serve-stew",
+  "title": "Serve stew",
+  "reference": "../../work-references/05-serve-stew.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5e9960008d0a0a270bec32887a833bb9a2d8b31a20a937473170c1b7b6665069",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9426751592356688,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "ladle in stew pot and empty bowl ready",
+      "durationMs": 250,
+      "sourceBounds": [
+        78,
+        12,
+        579,
+        640
+      ],
+      "sourceAnchor": [
+        248.0,
+        628
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift filled ladle",
+      "durationMs": 250,
+      "sourceBounds": [
+        692,
+        12,
+        1195,
+        640
+      ],
+      "sourceAnchor": [
+        248.5,
+        628
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "tilt ladle over bowl pouring stew",
+      "durationMs": 250,
+      "sourceBounds": [
+        77,
+        633,
+        591,
+        1254
+      ],
+      "sourceAnchor": [
+        251.0,
+        621
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        31
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower ladle back toward pot",
+      "durationMs": 250,
+      "sourceBounds": [
+        692,
+        636,
+        1200,
+        1254
+      ],
+      "sourceAnchor": [
+        251.0,
+        618
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        33
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

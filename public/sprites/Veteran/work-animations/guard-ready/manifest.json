@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "guard-ready",
+  "title": "Guard ready",
+  "reference": "../../work-references/01-guard-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "fe28f9968d4d65b1f6be105ff6aacd2fa98b8c0e05eef9f147f7aa516b2d6ace",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.7810026385224275,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shield held forward and weapon ready",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        14,
+        622,
+        605
+      ],
+      "sourceAnchor": [
+        304.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        154
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "shift weight onto back foot",
+      "durationMs": 250,
+      "sourceBounds": [
+        684,
+        18,
+        1230,
+        604
+      ],
+      "sourceAnchor": [
+        274.0,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        158
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise shield slightly and angle weapon forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        78,
+        640,
+        688,
+        1233
+      ],
+      "sourceAnchor": [
+        231.0,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        153
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "settle into original guard",
+      "durationMs": 250,
+      "sourceBounds": [
+        678,
+        643,
+        1244,
+        1232
+      ],
+      "sourceAnchor": [
+        302.5,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        156
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

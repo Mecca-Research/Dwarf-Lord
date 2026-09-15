@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "repair-satchel",
+  "title": "Repair satchel",
+  "reference": "../../work-references/04-repair-satchel.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b8d43b0a7034943d1796a600b08316bc54391371b0919ff8a909c5b65c6c97fc",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0016920473773265,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold leather satchel steady on bench",
+      "durationMs": 250,
+      "sourceBounds": [
+        69,
+        22,
+        585,
+        613
+      ],
+      "sourceAnchor": [
+        247.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        72,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "pull needle through strap seam",
+      "durationMs": 250,
+      "sourceBounds": [
+        696,
+        22,
+        1212,
+        613
+      ],
+      "sourceAnchor": [
+        247.0,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "draw thread taut",
+      "durationMs": 250,
+      "sourceBounds": [
+        67,
+        650,
+        585,
+        1240
+      ],
+      "sourceAnchor": [
+        249.0,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        71,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return needle to next stitch",
+      "durationMs": 250,
+      "sourceBounds": [
+        696,
+        649,
+        1212,
+        1240
+      ],
+      "sourceAnchor": [
+        247.0,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

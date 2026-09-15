@@ -1,0 +1,1266 @@
+{
+  "version": 1,
+  "framesPerAction": 4,
+  "entries": [
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "title": "Anvil ready",
+      "reference": "public/sprites/Blacksmith/work-references/00-anvil-ready.png",
+      "destination": "public/sprites/Blacksmith/work-animations/anvil-ready",
+      "beats": [
+        "rest hammer low",
+        "slight inhale and draw hammer hand back at hip",
+        "adjust tongs on billet",
+        "settle into ready stance"
+      ],
+      "prompt": "Use case: identity-preserve. Create a production animation keyframe sprite sheet based on the supplied Blacksmith ANVIL READY reference. Exactly FOUR frames in a strict TWO columns by TWO rows equal grid, transparent RGBA background, no labels or grid. Each cell shows the entire SAME dwarf, SAME anvil and stump, same view, same lighting, same scale, same foot placement and prop locations. 2048x2048 preferred. Generous empty margins. Keep the anvil/stump identical and locked to the same local pixel position in all cells. Animate only a small ready-to-work motion: top-left resting with hammer low by right hip, tongs holding billet; top-right subtle inhale, hammer hand draws slightly back at hip; bottom-left slight shoulder shift and tighten grip, tongs adjust billet a few centimeters; bottom-right settles back toward first ready stance. This is a restrained ready loop, NOT a hammer strike. Preserve exact face, bald head, black braided beard, clothing, hands holding real tools and complete furniture. Full silhouettes with no clipping, NO character duplicates within a cell, no background, no motion blur. Semi-realistic high detail pre-rendered game sprites.",
+      "status": "exported"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "title": "Hammer raised",
+      "reference": "public/sprites/Blacksmith/work-references/01-hammer-raised.png",
+      "destination": "public/sprites/Blacksmith/work-animations/hammer-raised",
+      "beats": [
+        "hammer held overhead",
+        "hammer descends halfway",
+        "hammer contacts billet on anvil",
+        "hammer rebounds and begins recovery"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Hammer raised. FOUR frames in order: 1. hammer held overhead | 2. hammer descends halfway | 3. hammer contacts billet on anvil | 4. hammer rebounds and begins recovery. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "title": "Hammer contact",
+      "reference": "public/sprites/Blacksmith/work-references/02-hammer-contact.png",
+      "destination": "public/sprites/Blacksmith/work-animations/hammer-contact",
+      "beats": [
+        "hammer touching billet",
+        "lift hammer slightly off billet",
+        "short controlled tap onto billet",
+        "rebound a short distance"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Hammer contact. FOUR frames in order: 1. hammer touching billet | 2. lift hammer slightly off billet | 3. short controlled tap onto billet | 4. rebound a short distance. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "title": "Inspect tool",
+      "reference": "public/sprites/Blacksmith/work-references/03-inspect-tool.png",
+      "destination": "public/sprites/Blacksmith/work-animations/inspect-tool",
+      "beats": [
+        "hold tool at chest height",
+        "raise tool toward eyes",
+        "rotate wrist to inspect opposite edge",
+        "lower tool toward chest"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Inspect tool. FOUR frames in order: 1. hold tool at chest height | 2. raise tool toward eyes | 3. rotate wrist to inspect opposite edge | 4. lower tool toward chest. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "title": "File tool edge",
+      "reference": "public/sprites/Blacksmith/work-references/04-file-tool-edge.png",
+      "destination": "public/sprites/Blacksmith/work-animations/file-tool-edge",
+      "beats": [
+        "file at near edge of clamped tool",
+        "push file forward along metal",
+        "file reaches far end",
+        "lift slightly and draw file back"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: File tool edge. FOUR frames in order: 1. file at near edge of clamped tool | 2. push file forward along metal | 3. file reaches far end | 4. lift slightly and draw file back. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "title": "Repair pickaxe handle",
+      "reference": "public/sprites/Blacksmith/work-references/05-repair-pickaxe-handle.png",
+      "destination": "public/sprites/Blacksmith/work-animations/repair-pickaxe-handle",
+      "beats": [
+        "hammer held beside pickaxe joint; left hand grips shaft",
+        "raise hammer above joint with shaft held steady",
+        "tap fastening wedge on pickaxe head",
+        "hammer rebounds while shaft remains supported"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Blacksmith repairs pickaxe handle while seated at same bench. CRITICAL ANATOMY: exactly TWO ARMS and exactly TWO HANDS total on the dwarf in EVERY frame. His LEFT arm goes from his left shoulder to ONE hand gripping the vertical wooden pickaxe shaft at waist level. His RIGHT arm goes from right shoulder to ONE hand holding the small hammer. No additional hand touching pick head, no floating hand, no extra wrist. Keep the small hammer in right hand for all four frames. Four frames: 1 right hammer held beside pickaxe joint, left hand grips shaft. 2 right hammer raised 15cm above joint, left hand unchanged. 3 right hammer taps fastening wedge on top of pickaxe head, left hand unchanged. 4 right hammer rebounds slightly, left hand unchanged. Complete identical bench and seated legs. Four frames 2x2 transparent. Preserve reference face, beard, apron, tools. ",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "title": "Desk writing",
+      "reference": "public/sprites/Borrin/work-references/00-desk-writing.png",
+      "destination": "public/sprites/Borrin/work-animations/desk-writing",
+      "beats": [
+        "quill poised over OPEN ledger",
+        "write short stroke left to right",
+        "lift quill and move to next line",
+        "write second stroke while left hand steadies open page"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Desk writing. FOUR frames in order: 1. quill poised over OPEN ledger | 2. write short stroke left to right | 3. lift quill and move to next line | 4. write second stroke while left hand steadies open page. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "title": "Review open ledger",
+      "reference": "public/sprites/Borrin/work-references/01-review-open-ledger.png",
+      "destination": "public/sprites/Borrin/work-animations/review-open-ledger",
+      "beats": [
+        "index finger at top of OPEN ledger page",
+        "finger traces line down page",
+        "lean forward and examine entry",
+        "lean back and return finger to start"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Review open ledger. FOUR frames in order: 1. index finger at top of OPEN ledger page | 2. finger traces line down page | 3. lean forward and examine entry | 4. lean back and return finger to start. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "title": "Turn ledger page",
+      "reference": "public/sprites/Borrin/work-references/02-turn-ledger-page.png",
+      "destination": "public/sprites/Borrin/work-animations/turn-ledger-page",
+      "beats": [
+        "hand pinches corner of OPEN ledger page",
+        "lift page halfway upright",
+        "page passes across book spine",
+        "smooth page onto other side keeping book OPEN"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Turn ledger page. FOUR frames in order: 1. hand pinches corner of OPEN ledger page | 2. lift page halfway upright | 3. page passes across book spine | 4. smooth page onto other side keeping book OPEN. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "title": "Explain at desk",
+      "reference": "public/sprites/Borrin/work-references/03-explain-at-desk.png",
+      "destination": "public/sprites/Borrin/work-animations/explain-at-desk",
+      "beats": [
+        "point at OPEN ledger",
+        "lift free hand toward listener",
+        "open palm outward while speaking",
+        "return hand toward open ledger"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Explain at desk. FOUR frames in order: 1. point at OPEN ledger | 2. lift free hand toward listener | 3. open palm outward while speaking | 4. return hand toward open ledger. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "title": "Count coins",
+      "reference": "public/sprites/Borrin/work-references/04-count-coins.png",
+      "destination": "public/sprites/Borrin/work-animations/count-coins",
+      "beats": [
+        "hand reaches for copper coin stack",
+        "pick up one coin",
+        "place coin beside counted silver stack",
+        "return hand toward uncounted coins"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Count coins. FOUR frames in order: 1. hand reaches for copper coin stack | 2. pick up one coin | 3. place coin beside counted silver stack | 4. return hand toward uncounted coins. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "title": "Stamp paperwork",
+      "reference": "public/sprites/Borrin/work-references/05-stamp-paperwork.png",
+      "destination": "public/sprites/Borrin/work-animations/stamp-paperwork",
+      "beats": [
+        "stamp poised above paperwork beside OPEN ledger",
+        "lower stamp halfway",
+        "press stamp on paper",
+        "lift stamp and examine impression"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Stamp paperwork. FOUR frames in order: 1. stamp poised above paperwork beside OPEN ledger | 2. lower stamp halfway | 3. press stamp on paper | 4. lift stamp and examine impression. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "title": "Chop vegetables",
+      "reference": "public/sprites/Cook/work-references/00-chop-vegetables.png",
+      "destination": "public/sprites/Cook/work-animations/chop-vegetables",
+      "beats": [
+        "knife poised above vegetables on wooden cutting block",
+        "lift knife a little",
+        "chop down onto vegetable with other hand safely clear",
+        "lift knife and nudge next slice into position"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Chop vegetables. FOUR frames in order: 1. knife poised above vegetables on wooden cutting block | 2. lift knife a little | 3. chop down onto vegetable with other hand safely clear | 4. lift knife and nudge next slice into position. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "title": "Peel potatoes",
+      "reference": "public/sprites/Cook/work-references/01-peel-potatoes.png",
+      "destination": "public/sprites/Cook/work-animations/peel-potatoes",
+      "beats": [
+        "hold potato over bowl with knife against peel",
+        "draw knife down potato",
+        "thin peel curls away into bowl",
+        "rotate potato for next stroke"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Peel potatoes. FOUR frames in order: 1. hold potato over bowl with knife against peel | 2. draw knife down potato | 3. thin peel curls away into bowl | 4. rotate potato for next stroke. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "title": "Knead dough",
+      "reference": "public/sprites/Cook/work-references/02-knead-dough.png",
+      "destination": "public/sprites/Cook/work-animations/knead-dough",
+      "beats": [
+        "palms rest on dough",
+        "lean forward pressing dough",
+        "fold dough back over itself",
+        "pull hands back to kneading start"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Knead dough. FOUR frames in order: 1. palms rest on dough | 2. lean forward pressing dough | 3. fold dough back over itself | 4. pull hands back to kneading start. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "title": "Stir cauldron",
+      "reference": "public/sprites/Cook/work-references/03-stir-cauldron.png",
+      "destination": "public/sprites/Cook/work-animations/stir-cauldron",
+      "beats": [
+        "spoon at near side of cauldron",
+        "stir spoon to right",
+        "stir spoon to far side",
+        "stir spoon to left completing circular motion"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Stir cauldron. FOUR frames in order: 1. spoon at near side of cauldron | 2. stir spoon to right | 3. stir spoon to far side | 4. stir spoon to left completing circular motion. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "title": "Mix ingredients",
+      "reference": "public/sprites/Cook/work-references/04-mix-ingredients.png",
+      "destination": "public/sprites/Cook/work-animations/mix-ingredients",
+      "beats": [
+        "bowl held steady and spoon at near edge",
+        "mix ingredients toward right",
+        "stir through far side of bowl",
+        "return spoon toward near edge"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Mix ingredients. FOUR frames in order: 1. bowl held steady and spoon at near edge | 2. mix ingredients toward right | 3. stir through far side of bowl | 4. return spoon toward near edge. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "title": "Serve stew",
+      "reference": "public/sprites/Cook/work-references/05-serve-stew.png",
+      "destination": "public/sprites/Cook/work-animations/serve-stew",
+      "beats": [
+        "ladle in stew pot and empty bowl ready",
+        "lift filled ladle",
+        "tilt ladle over bowl pouring stew",
+        "lower ladle back toward pot"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Serve stew. FOUR frames in order: 1. ladle in stew pot and empty bowl ready | 2. lift filled ladle | 3. tilt ladle over bowl pouring stew | 4. lower ladle back toward pot. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-stew",
+      "title": "Eat stew",
+      "reference": "public/sprites/Elder/work-references/00-eat-stew.png",
+      "destination": "public/sprites/Elder/work-animations/eat-stew",
+      "beats": [
+        "spoon in stew bowl",
+        "lift spoon halfway toward mouth",
+        "spoon reaches mouth for bite",
+        "lower spoon toward bowl"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Eat stew. FOUR frames in order: 1. spoon in stew bowl | 2. lift spoon halfway toward mouth | 3. spoon reaches mouth for bite | 4. lower spoon toward bowl. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-bread",
+      "title": "Eat bread",
+      "reference": "public/sprites/Elder/work-references/01-eat-bread.png",
+      "destination": "public/sprites/Elder/work-animations/eat-bread",
+      "beats": [
+        "hold bread near chest",
+        "lift bread toward mouth",
+        "take small bite",
+        "lower bread and chew"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Eat bread. FOUR frames in order: 1. hold bread near chest | 2. lift bread toward mouth | 3. take small bite | 4. lower bread and chew. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-seated",
+      "title": "Laugh seated",
+      "reference": "public/sprites/Elder/work-references/02-laugh-seated.png",
+      "destination": "public/sprites/Elder/work-animations/laugh-seated",
+      "beats": [
+        "sit relaxed mouth smiling",
+        "shoulders lift and mouth opens laughing",
+        "lean back in hearty laugh",
+        "settle forward smiling"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Laugh seated. FOUR frames in order: 1. sit relaxed mouth smiling | 2. shoulders lift and mouth opens laughing | 3. lean back in hearty laugh | 4. settle forward smiling. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-and-gesture",
+      "title": "Laugh and gesture",
+      "reference": "public/sprites/Elder/work-references/03-laugh-and-gesture.png",
+      "destination": "public/sprites/Elder/work-animations/laugh-and-gesture",
+      "beats": [
+        "smile with hand resting",
+        "laugh and raise open hand",
+        "gesture outward with open palm",
+        "lower hand while smile settles"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Laugh and gesture. FOUR frames in order: 1. smile with hand resting | 2. laugh and raise open hand | 3. gesture outward with open palm | 4. lower hand while smile settles. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "inspect-pickaxe-in-lap",
+      "title": "Inspect pickaxe in lap",
+      "reference": "public/sprites/Elder/work-references/04-inspect-pickaxe-in-lap.png",
+      "destination": "public/sprites/Elder/work-animations/inspect-pickaxe-in-lap",
+      "beats": [
+        "pickaxe rests across lap held in both hands",
+        "lift pick head slightly",
+        "rotate pick to examine edge",
+        "return pick across lap"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Inspect pickaxe in lap. FOUR frames in order: 1. pickaxe rests across lap held in both hands | 2. lift pick head slightly | 3. rotate pick to examine edge | 4. return pick across lap. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Elder",
+      "action": "examine-pickaxe-crack",
+      "title": "Examine pickaxe crack",
+      "reference": "public/sprites/Elder/work-references/05-examine-pickaxe-crack.png",
+      "destination": "public/sprites/Elder/work-animations/examine-pickaxe-crack",
+      "beats": [
+        "hold cracked pickaxe near eyes",
+        "bring damaged joint closer",
+        "trace crack with index finger",
+        "tilt pickaxe away to inspect another side"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Examine pickaxe crack. FOUR frames in order: 1. hold cracked pickaxe near eyes | 2. bring damaged joint closer | 3. trace crack with index finger | 4. tilt pickaxe away to inspect another side. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "record-inventory",
+      "title": "Record inventory",
+      "reference": "public/sprites/Quartermaster/work-references/00-record-inventory.png",
+      "destination": "public/sprites/Quartermaster/work-animations/record-inventory",
+      "beats": [
+        "quill over inventory ledger",
+        "write short line",
+        "glance from ledger to supplies",
+        "return quill and write next line"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Record inventory. FOUR frames in order: 1. quill over inventory ledger | 2. write short line | 3. glance from ledger to supplies | 4. return quill and write next line. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "explain-allocations",
+      "title": "Explain allocations",
+      "reference": "public/sprites/Quartermaster/work-references/01-explain-allocations.png",
+      "destination": "public/sprites/Quartermaster/work-animations/explain-allocations",
+      "beats": [
+        "point at allocation paper",
+        "lift hand to explain",
+        "gesture toward supplies",
+        "return finger to paper"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Explain allocations. FOUR frames in order: 1. point at allocation paper | 2. lift hand to explain | 3. gesture toward supplies | 4. return finger to paper. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "examine-tool",
+      "title": "Examine tool",
+      "reference": "public/sprites/Quartermaster/work-references/02-examine-tool.png",
+      "destination": "public/sprites/Quartermaster/work-animations/examine-tool",
+      "beats": [
+        "hold tool horizontally",
+        "raise head toward eyes",
+        "rotate tool to inspect underside",
+        "lower tool to starting height"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Examine tool. FOUR frames in order: 1. hold tool horizontally | 2. raise head toward eyes | 3. rotate tool to inspect underside | 4. lower tool to starting height. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "count-supplies",
+      "title": "Count supplies",
+      "reference": "public/sprites/Quartermaster/work-references/03-count-supplies.png",
+      "destination": "public/sprites/Quartermaster/work-animations/count-supplies",
+      "beats": [
+        "hand reaches into supply crate",
+        "lift small supply item",
+        "inspect and count item",
+        "place item onto counted stack"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Count supplies. FOUR frames in order: 1. hand reaches into supply crate | 2. lift small supply item | 3. inspect and count item | 4. place item onto counted stack. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "repair-satchel",
+      "title": "Repair satchel",
+      "reference": "public/sprites/Quartermaster/work-references/04-repair-satchel.png",
+      "destination": "public/sprites/Quartermaster/work-animations/repair-satchel",
+      "beats": [
+        "hold leather satchel steady on bench",
+        "pull needle through strap seam",
+        "draw thread taut",
+        "return needle to next stitch"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Repair satchel. FOUR frames in order: 1. hold leather satchel steady on bench | 2. pull needle through strap seam | 3. draw thread taut | 4. return needle to next stitch. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Quartermaster",
+      "action": "check-weights",
+      "title": "Check weights",
+      "reference": "public/sprites/Quartermaster/work-references/05-check-weights.png",
+      "destination": "public/sprites/Quartermaster/work-animations/check-weights",
+      "beats": [
+        "hold small weight above balance pan",
+        "place weight on pan",
+        "watch balance settle with hands clear",
+        "reach toward next weight"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Check weights. FOUR frames in order: 1. hold small weight above balance pan | 2. place weight on pan | 3. watch balance settle with hands clear | 4. reach toward next weight. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "chisel-ready",
+      "title": "Chisel ready",
+      "reference": "public/sprites/Stoneworker/work-references/00-chisel-ready.png",
+      "destination": "public/sprites/Stoneworker/work-animations/chisel-ready",
+      "beats": [
+        "chisel braced on stone and mallet low",
+        "reposition chisel tip slightly",
+        "raise mallet to shoulder",
+        "settle mallet into ready position without striking"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Chisel ready. FOUR frames in order: 1. chisel braced on stone and mallet low | 2. reposition chisel tip slightly | 3. raise mallet to shoulder | 4. settle mallet into ready position without striking. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "chisel-contact",
+      "title": "Chisel contact",
+      "reference": "public/sprites/Stoneworker/work-references/01-chisel-contact.png",
+      "destination": "public/sprites/Stoneworker/work-animations/chisel-contact",
+      "beats": [
+        "mallet resting near chisel head",
+        "lift mallet halfway",
+        "strike chisel head on stone",
+        "rebound mallet with chisel kept steady"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Chisel contact. FOUR frames in order: 1. mallet resting near chisel head | 2. lift mallet halfway | 3. strike chisel head on stone | 4. rebound mallet with chisel kept steady. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "measure-stone",
+      "title": "Measure stone",
+      "reference": "public/sprites/Stoneworker/work-references/02-measure-stone.png",
+      "destination": "public/sprites/Stoneworker/work-animations/measure-stone",
+      "beats": [
+        "measuring tool along stone edge",
+        "slide tool to corner",
+        "lean in and read measurement",
+        "mark measured point on stone"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Measure stone. FOUR frames in order: 1. measuring tool along stone edge | 2. slide tool to corner | 3. lean in and read measurement | 4. mark measured point on stone. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "dress-stone",
+      "title": "Dress stone",
+      "reference": "public/sprites/Stoneworker/work-references/03-dress-stone.png",
+      "destination": "public/sprites/Stoneworker/work-animations/dress-stone",
+      "beats": [
+        "stone rasp rests at near edge of stone",
+        "push rasp forward across rough stone face with both hands",
+        "rasp reaches far end smoothing the stone",
+        "lift rasp slightly and return toward near edge"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Dress stone. FOUR frames in order: 1. stone rasp rests at near edge of stone | 2. push rasp forward across rough stone face with both hands | 3. rasp reaches far end smoothing the stone | 4. lift rasp slightly and return toward near edge. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "lay-masonry",
+      "title": "Lay masonry",
+      "reference": "public/sprites/Stoneworker/work-references/04-lay-masonry.png",
+      "destination": "public/sprites/Stoneworker/work-animations/lay-masonry",
+      "beats": [
+        "hold masonry block above mortar bed",
+        "lower block halfway",
+        "set block on mortar",
+        "press and align block with both hands"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Lay masonry. FOUR frames in order: 1. hold masonry block above mortar bed | 2. lower block halfway | 3. set block on mortar | 4. press and align block with both hands. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "carry-stone",
+      "title": "Carry stone",
+      "reference": "public/sprites/Stoneworker/work-references/05-carry-stone.png",
+      "destination": "public/sprites/Stoneworker/work-animations/carry-stone",
+      "beats": [
+        "hold heavy stone against torso with left foot forward",
+        "shift weight through center",
+        "right foot forward carrying same stone",
+        "shift weight back through center"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry stone. Correct WALK CYCLE anatomy, not four stationary stances. Four frames 2x2. Frame1 CONTACT A: camera-near leg extended FORWARD toward direction of travel (image right), far leg extended BACK. Frame2 PASSING A: far knee raised and moving forward past planted near leg. Frame3 CONTACT B: camera-near leg extended BACK toward image left, far leg extended FORWARD image right. Frame4 PASSING B: near knee raised and moving forward past planted far leg. The near-leg boot must move from rightmost to leftmost between frames1 and3. Do NOT repeat the same front-leg silhouette in both contact frames. Keep torso and cargo/equipment stable, camera unchanged. Carry the SAME heavy rectangular stone supported securely by BOTH hands in ALL frames. Show the entire character, both legs and boots clearly.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "stand-watch",
+      "title": "Stand watch",
+      "reference": "public/sprites/Veteran/work-references/00-stand-watch.png",
+      "destination": "public/sprites/Veteran/work-animations/stand-watch",
+      "beats": [
+        "spear grounded and shield held",
+        "glance slightly left",
+        "glance slightly right",
+        "return to watch forward with same feet position"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Stand watch. FOUR frames in order: 1. spear grounded and shield held | 2. glance slightly left | 3. glance slightly right | 4. return to watch forward with same feet position. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "guard-ready",
+      "title": "Guard ready",
+      "reference": "public/sprites/Veteran/work-references/01-guard-ready.png",
+      "destination": "public/sprites/Veteran/work-animations/guard-ready",
+      "beats": [
+        "shield held forward and weapon ready",
+        "shift weight onto back foot",
+        "raise shield slightly and angle weapon forward",
+        "settle into original guard"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Guard ready. FOUR frames in order: 1. shield held forward and weapon ready | 2. shift weight onto back foot | 3. raise shield slightly and angle weapon forward | 4. settle into original guard. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "patrol",
+      "title": "Patrol",
+      "reference": "public/sprites/Veteran/work-references/02-patrol.png",
+      "destination": "public/sprites/Veteran/work-animations/patrol",
+      "beats": [
+        "left foot forward during patrol",
+        "feet pass under hips",
+        "right foot forward",
+        "feet pass under hips returning to left step with shield and spear consistent"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Patrol. Correct WALK CYCLE anatomy, not four stationary stances. Four frames 2x2. Frame1 CONTACT A: camera-near leg extended FORWARD toward direction of travel (image right), far leg extended BACK. Frame2 PASSING A: far knee raised and moving forward past planted near leg. Frame3 CONTACT B: camera-near leg extended BACK toward image left, far leg extended FORWARD image right. Frame4 PASSING B: near knee raised and moving forward past planted far leg. The near-leg boot must move from rightmost to leftmost between frames1 and3. Do NOT repeat the same front-leg silhouette in both contact frames. Keep torso and cargo/equipment stable, camera unchanged. Keep spear in same hand, helmet, gray braided beard and shield on back identical. Show the entire character, both legs and boots clearly.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "inspect-hammer",
+      "title": "Inspect hammer",
+      "reference": "public/sprites/Veteran/work-references/03-inspect-hammer.png",
+      "destination": "public/sprites/Veteran/work-animations/inspect-hammer",
+      "beats": [
+        "hold small hammer at chest",
+        "lift head to eye level",
+        "rotate hammer to inspect joint",
+        "lower hammer"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Inspect hammer. FOUR frames in order: 1. hold small hammer at chest | 2. lift head to eye level | 3. rotate hammer to inspect joint | 4. lower hammer. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "sharpen-utility-knife",
+      "title": "Sharpen utility knife",
+      "reference": "public/sprites/Veteran/work-references/04-sharpen-utility-knife.png",
+      "destination": "public/sprites/Veteran/work-animations/sharpen-utility-knife",
+      "beats": [
+        "knife edge at near side of whetstone",
+        "draw blade across stone",
+        "blade reaches far edge",
+        "lift and return blade to near edge"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Sharpen utility knife. FOUR frames in order: 1. knife edge at near side of whetstone | 2. draw blade across stone | 3. blade reaches far edge | 4. lift and return blade to near edge. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Veteran",
+      "action": "repair-shield-strap",
+      "title": "Repair shield strap",
+      "reference": "public/sprites/Veteran/work-references/05-repair-shield-strap.png",
+      "destination": "public/sprites/Veteran/work-animations/repair-shield-strap",
+      "beats": [
+        "hold shield strap against shield",
+        "pull repair cord through strap",
+        "tighten cord",
+        "press repaired strap and reset hands"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Action: Repair shield strap. FOUR frames in order: 1. hold shield strap against shield | 2. pull repair cord through strap | 3. tighten cord | 4. press repaired strap and reset hands. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "reference": "public/sprites/Female Miner/work-references/00-pickaxe-ready.png",
+      "destination": "public/sprites/Female Miner/work-animations/pickaxe-ready",
+      "beats": [
+        "pickaxe held low ready",
+        "adjust grip",
+        "lift pickaxe a little and lean toward ore",
+        "return to ready"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe ready. FOUR frames in order: 1. pickaxe held low ready | 2. adjust grip | 3. lift pickaxe a little and lean toward ore | 4. return to ready. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "reference": "public/sprites/Female Miner/work-references/01-pickaxe-contact.png",
+      "destination": "public/sprites/Female Miner/work-animations/pickaxe-contact",
+      "beats": [
+        "pickaxe head at rock contact",
+        "draw pickaxe back",
+        "lift into short swing",
+        "strike same point on rock"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe contact. FOUR frames in order: 1. pickaxe head at rock contact | 2. draw pickaxe back | 3. lift into short swing | 4. strike same point on rock. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-ore",
+      "title": "Shovel ore",
+      "reference": "public/sprites/Female Miner/work-references/02-shovel-ore.png",
+      "destination": "public/sprites/Female Miner/work-animations/shovel-ore",
+      "beats": [
+        "shovel blade in ore pile",
+        "push blade into ore",
+        "lift loaded shovel",
+        "tip ore into adjacent container"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Shovel ore. FOUR frames in order: 1. shovel blade in ore pile | 2. push blade into ore | 3. lift loaded shovel | 4. tip ore into adjacent container. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "title": "Examine sample",
+      "reference": "public/sprites/Female Miner/work-references/03-examine-sample.png",
+      "destination": "public/sprites/Female Miner/work-animations/examine-sample",
+      "beats": [
+        "hold sample at chest",
+        "raise sample toward eyes",
+        "rotate sample in fingers",
+        "lower sample"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Examine sample. FOUR frames in order: 1. hold sample at chest | 2. raise sample toward eyes | 3. rotate sample in fingers | 4. lower sample. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "push-ore-barrow",
+      "title": "Push ore barrow",
+      "reference": "public/sprites/Female Miner/work-references/04-push-ore-barrow.png",
+      "destination": "public/sprites/Female Miner/work-animations/push-ore-barrow",
+      "beats": [
+        "left foot forward hands on barrow handles",
+        "feet pass under body",
+        "right foot forward pushing barrow",
+        "feet pass under body again with wheel and tray consistent"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Push ore barrow. Four motion beats: left foot forward hands on barrow handles | feet pass under body | right foot forward pushing barrow | feet pass under body again with wheel and tray consistent. Make the left and right leg forward poses visibly different. Preserve wheelbarrow shape, cargo, helmet and long brown hair.",
+      "status": "exported"
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "title": "Repair pickaxe",
+      "reference": "public/sprites/Female Miner/work-references/05-repair-pickaxe.png",
+      "destination": "public/sprites/Female Miner/work-animations/repair-pickaxe",
+      "beats": [
+        "pickaxe across repair bench",
+        "brace handle and press head",
+        "tap fastening wedge",
+        "inspect repaired joint"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Repair pickaxe. FOUR frames in order: 1. pickaxe across repair bench | 2. brace handle and press head | 3. tap fastening wedge | 4. inspect repaired joint. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "pickaxe-raised",
+      "title": "Pickaxe raised",
+      "reference": "public/sprites/Red Miner/work-references/00-pickaxe-raised.png",
+      "destination": "public/sprites/Red Miner/work-animations/pickaxe-raised",
+      "beats": [
+        "pickaxe held raised",
+        "begin downswing",
+        "pick contacts rock",
+        "draw pickaxe back toward raised position"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe raised. FOUR frames in order: 1. pickaxe held raised | 2. begin downswing | 3. pick contacts rock | 4. draw pickaxe back toward raised position. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "reference": "public/sprites/Red Miner/work-references/01-pickaxe-contact.png",
+      "destination": "public/sprites/Red Miner/work-animations/pickaxe-contact",
+      "beats": [
+        "pick head at rock",
+        "pull head free",
+        "raise pickaxe for short stroke",
+        "strike rock at same contact point"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe contact. FOUR frames in order: 1. pick head at rock | 2. pull head free | 3. raise pickaxe for short stroke | 4. strike rock at same contact point. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "load-ore-cart",
+      "title": "Load ore cart",
+      "reference": "public/sprites/Red Miner/work-references/02-load-ore-cart.png",
+      "destination": "public/sprites/Red Miner/work-animations/load-ore-cart",
+      "beats": [
+        "shovel in ore pile beside cart",
+        "lift loaded shovel",
+        "turn torso toward cart",
+        "tip ore into cart and start return"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Load ore cart. FOUR frames in order: 1. shovel in ore pile beside cart | 2. lift loaded shovel | 3. turn torso toward cart | 4. tip ore into cart and start return. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "sort-iron-ore",
+      "title": "Sort iron ore",
+      "reference": "public/sprites/Red Miner/work-references/03-sort-iron-ore.png",
+      "destination": "public/sprites/Red Miner/work-animations/sort-iron-ore",
+      "beats": [
+        "hand over ore sorting surface",
+        "lift iron ore chunk",
+        "rotate and inspect chunk",
+        "place chunk on sorted pile"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Sort iron ore. FOUR frames in order: 1. hand over ore sorting surface | 2. lift iron ore chunk | 3. rotate and inspect chunk | 4. place chunk on sorted pile. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "carry-ore-buckets",
+      "title": "Carry ore buckets",
+      "reference": "public/sprites/Red Miner/work-references/04-carry-ore-buckets.png",
+      "destination": "public/sprites/Red Miner/work-animations/carry-ore-buckets",
+      "beats": [
+        "left foot forward with two ore buckets",
+        "feet pass beneath body",
+        "right foot forward",
+        "feet pass back under body buckets swinging subtly"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry ore buckets. FOUR frames in order: 1. left foot forward with two ore buckets | 2. feet pass beneath body | 3. right foot forward | 4. feet pass back under body buckets swinging subtly. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Red Miner",
+      "action": "check-timber-support",
+      "title": "Check timber support",
+      "reference": "public/sprites/Red Miner/work-references/05-check-timber-support.png",
+      "destination": "public/sprites/Red Miner/work-animations/check-timber-support",
+      "beats": [
+        "hand on timber support joint",
+        "lean in to inspect joint",
+        "press brace to check stability",
+        "tap fastening with tool"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Check timber support. FOUR frames in order: 1. hand on timber support joint | 2. lean in to inspect joint | 3. press brace to check stability | 4. tap fastening with tool. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "reference": "public/sprites/Helga/work-references/00-pickaxe-ready.png",
+      "destination": "public/sprites/Helga/work-animations/pickaxe-ready",
+      "beats": [
+        "pickaxe held ready",
+        "shift grip on handle",
+        "lift head slightly with shoulders preparing",
+        "return to ready"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe ready. FOUR frames in order: 1. pickaxe held ready | 2. shift grip on handle | 3. lift head slightly with shoulders preparing | 4. return to ready. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "reference": "public/sprites/Helga/work-references/01-pickaxe-contact.png",
+      "destination": "public/sprites/Helga/work-animations/pickaxe-contact",
+      "beats": [
+        "pickaxe touching rock",
+        "draw pickaxe back",
+        "lift into short swing",
+        "strike rock at same point"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pickaxe contact. FOUR frames in order: 1. pickaxe touching rock | 2. draw pickaxe back | 3. lift into short swing | 4. strike rock at same point. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "title": "Inspect mineral",
+      "reference": "public/sprites/Helga/work-references/02-inspect-mineral.png",
+      "destination": "public/sprites/Helga/work-animations/inspect-mineral",
+      "beats": [
+        "mineral held near chest",
+        "lift toward eyes",
+        "rotate stone toward light",
+        "lower mineral"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Inspect mineral. FOUR frames in order: 1. mineral held near chest | 2. lift toward eyes | 3. rotate stone toward light | 4. lower mineral. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "shovel-stone",
+      "title": "Shovel stone",
+      "reference": "public/sprites/Helga/work-references/03-shovel-stone.png",
+      "destination": "public/sprites/Helga/work-animations/shovel-stone",
+      "beats": [
+        "shovel at rubble pile",
+        "scoop stone",
+        "lift loaded shovel",
+        "tip stone beside pile"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Shovel stone. FOUR frames in order: 1. shovel at rubble pile | 2. scoop stone | 3. lift loaded shovel | 4. tip stone beside pile. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "title": "Carry mine timber",
+      "reference": "public/sprites/Helga/work-references/04-carry-mine-timber.png",
+      "destination": "public/sprites/Helga/work-animations/carry-mine-timber",
+      "beats": [
+        "left foot forward carrying mine timber",
+        "feet pass under torso",
+        "right foot forward",
+        "feet pass under torso with same timber"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry mine timber. FOUR frames in order: 1. left foot forward carrying mine timber | 2. feet pass under torso | 3. right foot forward | 4. feet pass under torso with same timber. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "title": "Bind tool handle",
+      "reference": "public/sprites/Helga/work-references/05-bind-tool-handle.png",
+      "destination": "public/sprites/Helga/work-animations/bind-tool-handle",
+      "beats": [
+        "hold tool handle and binding",
+        "wrap binding around joint",
+        "pull binding taut",
+        "press wrap into place"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Bind tool handle. FOUR frames in order: 1. hold tool handle and binding | 2. wrap binding around joint | 3. pull binding taut | 4. press wrap into place. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "saw-timber",
+      "title": "Saw timber",
+      "reference": "public/sprites/Human Laborer/work-references/00-saw-timber.png",
+      "destination": "public/sprites/Human Laborer/work-animations/saw-timber",
+      "beats": [
+        "saw teeth against timber near body",
+        "push saw forward",
+        "saw at full extension",
+        "pull saw back along same cut"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Saw timber. FOUR frames in order: 1. saw teeth against timber near body | 2. push saw forward | 3. saw at full extension | 4. pull saw back along same cut. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "nail-planks",
+      "title": "Nail planks",
+      "reference": "public/sprites/Human Laborer/work-references/01-nail-planks.png",
+      "destination": "public/sprites/Human Laborer/work-animations/nail-planks",
+      "beats": [
+        "hammer just above nail in plank",
+        "lift hammer",
+        "strike nail squarely",
+        "rebound hammer for next tap"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Nail planks. FOUR frames in order: 1. hammer just above nail in plank | 2. lift hammer | 3. strike nail squarely | 4. rebound hammer for next tap. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "push-supply-barrow",
+      "title": "Push supply barrow",
+      "reference": "public/sprites/Human Laborer/work-references/02-push-supply-barrow.png",
+      "destination": "public/sprites/Human Laborer/work-animations/push-supply-barrow",
+      "beats": [
+        "left foot forward pushing supply barrow",
+        "feet pass under body",
+        "right foot forward",
+        "feet pass under body returning to left step"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Push supply barrow. FOUR frames in order: 1. left foot forward pushing supply barrow | 2. feet pass under body | 3. right foot forward | 4. feet pass under body returning to left step. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "carry-timber",
+      "title": "Carry timber",
+      "reference": "public/sprites/Human Laborer/work-references/03-carry-timber.png",
+      "destination": "public/sprites/Human Laborer/work-animations/carry-timber",
+      "beats": [
+        "left foot forward carrying timber",
+        "feet pass under body",
+        "right foot forward",
+        "feet pass back under body timber stays supported"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry timber. FOUR frames in order: 1. left foot forward carrying timber | 2. feet pass under body | 3. right foot forward | 4. feet pass back under body timber stays supported. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "shovel-soil",
+      "title": "Shovel soil",
+      "reference": "public/sprites/Human Laborer/work-references/04-shovel-soil.png",
+      "destination": "public/sprites/Human Laborer/work-animations/shovel-soil",
+      "beats": [
+        "shovel blade at soil",
+        "push blade in",
+        "lift soil",
+        "tip soil beside work area"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Shovel soil. FOUR frames in order: 1. shovel blade at soil | 2. push blade in | 3. lift soil | 4. tip soil beside work area. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Human Laborer",
+      "action": "repair-harness",
+      "title": "Repair harness",
+      "reference": "public/sprites/Human Laborer/work-references/05-repair-harness.png",
+      "destination": "public/sprites/Human Laborer/work-animations/repair-harness",
+      "beats": [
+        "hold harness on bench",
+        "thread needle through leather",
+        "pull thread taut",
+        "return needle to next stitch"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Repair harness. FOUR frames in order: 1. hold harness on bench | 2. thread needle through leather | 3. pull thread taut | 4. return needle to next stitch. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "lift-crate",
+      "title": "Lift crate",
+      "reference": "public/sprites/Laborer/work-references/00-lift-crate.png",
+      "destination": "public/sprites/Laborer/work-animations/lift-crate",
+      "beats": [
+        "bend with hands gripping crate sides",
+        "lift crate to knee height",
+        "straighten with crate at waist",
+        "settle weight while holding crate"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Lift crate. FOUR frames in order: 1. bend with hands gripping crate sides | 2. lift crate to knee height | 3. straighten with crate at waist | 4. settle weight while holding crate. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "title": "Carry sack",
+      "reference": "public/sprites/Laborer/work-references/01-carry-sack.png",
+      "destination": "public/sprites/Laborer/work-animations/carry-sack",
+      "beats": [
+        "left foot forward with sack",
+        "feet pass under body",
+        "right foot forward",
+        "feet pass under body with sack held consistently"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry sack. FOUR frames in order: 1. left foot forward with sack | 2. feet pass under body | 3. right foot forward | 4. feet pass under body with sack held consistently. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "push-stone-barrow",
+      "title": "Push stone barrow",
+      "reference": "public/sprites/Laborer/work-references/02-push-stone-barrow.png",
+      "destination": "public/sprites/Laborer/work-animations/push-stone-barrow",
+      "beats": [
+        "left foot forward pushing stone barrow",
+        "feet pass under body",
+        "right foot forward",
+        "feet pass under body with hands gripping handles"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Push stone barrow. FOUR frames in order: 1. left foot forward pushing stone barrow | 2. feet pass under body | 3. right foot forward | 4. feet pass under body with hands gripping handles. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "pull-supply-sled",
+      "title": "Pull supply sled",
+      "reference": "public/sprites/Laborer/work-references/03-pull-supply-sled.png",
+      "destination": "public/sprites/Laborer/work-animations/pull-supply-sled",
+      "beats": [
+        "lean forward gripping sled rope left foot ahead",
+        "feet pass under body rope taut",
+        "right foot ahead pulling sled",
+        "feet pass under body again"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Pull supply sled. FOUR frames in order: 1. lean forward gripping sled rope left foot ahead | 2. feet pass under body rope taut | 3. right foot ahead pulling sled | 4. feet pass under body again. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "title": "Build crate",
+      "reference": "public/sprites/Laborer/work-references/04-build-crate.png",
+      "destination": "public/sprites/Laborer/work-animations/build-crate",
+      "beats": [
+        "hammer above crate plank nail",
+        "raise hammer",
+        "strike nail",
+        "rebound hammer slightly"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Build crate. FOUR frames in order: 1. hammer above crate plank nail | 2. raise hammer | 3. strike nail | 4. rebound hammer slightly. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "title": "Sweep wood chips",
+      "reference": "public/sprites/Laborer/work-references/05-sweep-wood-chips.png",
+      "destination": "public/sprites/Laborer/work-animations/sweep-wood-chips",
+      "beats": [
+        "broom at near edge of wood chips",
+        "push broom forward",
+        "broom reaches far edge gathering chips",
+        "lift slightly and return broom"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Sweep wood chips. FOUR frames in order: 1. broom at near edge of wood chips | 2. push broom forward | 3. broom reaches far edge gathering chips | 4. lift slightly and return broom. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "dress-stone",
+      "title": "Dress stone",
+      "reference": "public/sprites/Silver/work-references/00-dress-stone.png",
+      "destination": "public/sprites/Silver/work-animations/dress-stone",
+      "beats": [
+        "hold two-handed stone rasp on block",
+        "push rasp across block",
+        "rasp reaches end of forward stroke",
+        "pull rasp back across block"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Dress stone. FOUR frames in order: 1. hold two-handed stone rasp on block | 2. push rasp across block | 3. rasp reaches end of forward stroke | 4. pull rasp back across block. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "lift-stone",
+      "title": "Lift stone",
+      "reference": "public/sprites/Silver/work-references/01-lift-stone.png",
+      "destination": "public/sprites/Silver/work-animations/lift-stone",
+      "beats": [
+        "hands grip stone at low height knees bent",
+        "lift stone to knees",
+        "straighten raising stone toward waist",
+        "hold stone steady against torso"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Lift stone. FOUR frames in order: 1. hands grip stone at low height knees bent | 2. lift stone to knees | 3. straighten raising stone toward waist | 4. hold stone steady against torso. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "carry-ore-tub",
+      "title": "Carry ore tub",
+      "reference": "public/sprites/Silver/work-references/02-carry-ore-tub.png",
+      "destination": "public/sprites/Silver/work-animations/carry-ore-tub",
+      "beats": [
+        "left foot forward holding ore tub",
+        "feet pass beneath body",
+        "right foot forward",
+        "feet pass beneath body again"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry ore tub. FOUR frames in order: 1. left foot forward holding ore tub | 2. feet pass beneath body | 3. right foot forward | 4. feet pass beneath body again. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "push-stone-cart",
+      "title": "Push stone cart",
+      "reference": "public/sprites/Silver/work-references/03-push-stone-cart.png",
+      "destination": "public/sprites/Silver/work-animations/push-stone-cart",
+      "beats": [
+        "left foot forward pushing stone cart",
+        "feet pass beneath torso",
+        "right foot forward",
+        "feet pass beneath torso again"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Push stone cart. FOUR frames in order: 1. left foot forward pushing stone cart | 2. feet pass beneath torso | 3. right foot forward | 4. feet pass beneath torso again. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "inspect-shovel-handle",
+      "title": "Inspect shovel handle",
+      "reference": "public/sprites/Silver/work-references/04-inspect-shovel-handle.png",
+      "destination": "public/sprites/Silver/work-animations/inspect-shovel-handle",
+      "beats": [
+        "hold shovel handle at chest",
+        "rotate cracked section toward eyes",
+        "trace joint with finger",
+        "lower handle slightly"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated.  Action: inspect broken wooden shovel handle. EXACTLY TWO HANDS in every cell, no exceptions. LEFT hand always supports the lower wooden shaft. RIGHT hand holds its upper cracked end in frames1,2,4; in frame3 ONLY RIGHT hand releases the shaft and points its index finger at the crack. No other hand remains at the top in frame3. Four poses: 1 hold and look; 2 lift close and inspect; 3 left hand alone supports shaft while right index points at crack; 4 both hands lower shaft. Same seated Silver and workbench as reference.",
+      "status": "exported"
+    },
+    {
+      "character": "Silver",
+      "action": "fit-tool-head",
+      "title": "Fit tool head",
+      "reference": "public/sprites/Silver/work-references/05-fit-tool-head.png",
+      "destination": "public/sprites/Silver/work-animations/fit-tool-head",
+      "beats": [
+        "hold tool head above handle",
+        "seat head onto handle",
+        "tap fastening wedge",
+        "inspect secured head"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Fit tool head. FOUR frames in order: 1. hold tool head above handle | 2. seat head onto handle | 3. tap fastening wedge | 4. inspect secured head. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "title": "Saw timber",
+      "reference": "public/sprites/Ginger/work-references/00-saw-timber.png",
+      "destination": "public/sprites/Ginger/work-animations/saw-timber",
+      "beats": [
+        "saw against timber close to body",
+        "push saw forward",
+        "saw at full extension",
+        "pull saw back along same cut"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Saw timber. FOUR frames in order: 1. saw against timber close to body | 2. push saw forward | 3. saw at full extension | 4. pull saw back along same cut. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "title": "Build timber crate",
+      "reference": "public/sprites/Ginger/work-references/01-build-timber-crate.png",
+      "destination": "public/sprites/Ginger/work-animations/build-timber-crate",
+      "beats": [
+        "hammer above timber crate nail",
+        "raise hammer",
+        "strike nail",
+        "rebound hammer"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Build timber crate. FOUR frames in order: 1. hammer above timber crate nail | 2. raise hammer | 3. strike nail | 4. rebound hammer. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "title": "Stack firewood",
+      "reference": "public/sprites/Ginger/work-references/02-stack-firewood.png",
+      "destination": "public/sprites/Ginger/work-animations/stack-firewood",
+      "beats": [
+        "hold log above stack",
+        "lower log halfway",
+        "place log onto stack",
+        "adjust log securely with hands"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Stack firewood. FOUR frames in order: 1. hold log above stack | 2. lower log halfway | 3. place log onto stack | 4. adjust log securely with hands. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "haul-firewood",
+      "title": "Haul firewood",
+      "reference": "public/sprites/Ginger/work-references/03-haul-firewood.png",
+      "destination": "public/sprites/Ginger/work-animations/haul-firewood",
+      "beats": [
+        "left foot forward hauling firewood",
+        "feet pass beneath body",
+        "right foot forward",
+        "feet pass beneath body returning to first step"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Haul firewood. FOUR frames in order: 1. left foot forward hauling firewood | 2. feet pass beneath body | 3. right foot forward | 4. feet pass beneath body returning to first step. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "title": "Sharpen hatchet",
+      "reference": "public/sprites/Ginger/work-references/04-sharpen-hatchet.png",
+      "destination": "public/sprites/Ginger/work-animations/sharpen-hatchet",
+      "beats": [
+        "hatchet edge against whetstone",
+        "slide edge forward across stone",
+        "edge reaches end of stone",
+        "lift and reset hatchet"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Sharpen hatchet. FOUR frames in order: 1. hatchet edge against whetstone | 2. slide edge forward across stone | 3. edge reaches end of stone | 4. lift and reset hatchet. Return only the complete four-frame sheet.",
+      "status": "exported"
+    },
+    {
+      "character": "Ginger",
+      "action": "carry-supplies",
+      "title": "Carry supplies",
+      "reference": "public/sprites/Ginger/work-references/05-carry-supplies.png",
+      "destination": "public/sprites/Ginger/work-animations/carry-supplies",
+      "beats": [
+        "left foot forward carrying supplies",
+        "feet pass beneath body",
+        "right foot forward",
+        "feet pass beneath body with supplies held securely"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: semi-realistic pre-rendered fantasy game animation KEYFRAME SPRITE SHEET. Input image is the exact character AND workstation reference. Create exactly FOUR distinct sequential keyframes in a strict TWO columns by TWO rows equal-cell grid, row-major order. Transparent RGBA background; NO text, labels, grid, scenery, blur or extra characters. Prefer 2048x2048. Full body and all tools/furniture fit entirely inside EACH cell with generous transparent margins. Keep EXACT same identity, face, hair, beard, costume, proportions, material detail, lighting, camera angle, scale and direction. Furniture/station/rock positions MUST remain fixed at identical local coordinates in every cell. Feet stay planted except specified walking/lifting. Do not rotate camera or redesign tools. Show physically plausible gripping hands; no extra limbs. Each frame must visibly depict its specified motion beat, not duplicate the same pose. For walking/hauling animate in place without moving composition across canvas. Preserve open books and tool-to-station contact. Anatomy: exactly TWO arms and TWO hands per character, with clear shoulder-to-elbow-to-wrist connections; never add a helper hand. Female Miner and Helga are beardless women with long hair and the reference helmets. For walking/carrying steps: clearly alternate the leg silhouettes. In frame 1 left leg forward and right leg behind; in frame 3 RIGHT leg forward and LEFT leg behind, not the same stance repeated. Action: Carry supplies. FOUR frames in order: 1. left foot forward carrying supplies | 2. feet pass beneath body | 3. right foot forward | 4. feet pass beneath body with supplies held securely. Return only the complete four-frame sheet.",
+      "status": "exported"
+    }
+  ]
+}

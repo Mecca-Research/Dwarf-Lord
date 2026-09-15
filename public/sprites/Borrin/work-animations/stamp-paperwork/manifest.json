@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "stamp-paperwork",
+  "title": "Stamp paperwork",
+  "reference": "../../work-references/05-stamp-paperwork.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "3ec30c7346b5266fce204a8db9de744267d929f19c7f564b85f1345ebb0571a6",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9704918032786886,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "stamp poised above paperwork beside OPEN ledger",
+      "durationMs": 250,
+      "sourceBounds": [
+        16,
+        36,
+        618,
+        612
+      ],
+      "sourceAnchor": [
+        305.0,
+        576
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        57
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lower stamp halfway",
+      "durationMs": 250,
+      "sourceBounds": [
+        643,
+        39,
+        1245,
+        612
+      ],
+      "sourceAnchor": [
+        305.0,
+        573
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        60
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "press stamp on paper",
+      "durationMs": 250,
+      "sourceBounds": [
+        16,
+        670,
+        618,
+        1239
+      ],
+      "sourceAnchor": [
+        305.0,
+        569
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        64
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift stamp and examine impression",
+      "durationMs": 250,
+      "sourceBounds": [
+        643,
+        644,
+        1245,
+        1239
+      ],
+      "sourceAnchor": [
+        305.0,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        39
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

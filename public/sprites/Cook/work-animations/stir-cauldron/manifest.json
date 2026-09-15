@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "stir-cauldron",
+  "title": "Stir cauldron",
+  "reference": "../../work-references/03-stir-cauldron.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "61193ccc3f3aae330c086e7bb6630c5d8f836d9593d34a0af853d168e6047495",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9932885906040269,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "spoon at near side of cauldron",
+      "durationMs": 250,
+      "sourceBounds": [
+        136,
+        17,
+        521,
+        609
+      ],
+      "sourceAnchor": [
+        184.0,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        28
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "stir spoon to right",
+      "durationMs": 250,
+      "sourceBounds": [
+        757,
+        17,
+        1139,
+        609
+      ],
+      "sourceAnchor": [
+        183.5,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        138,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "stir spoon to far side",
+      "durationMs": 250,
+      "sourceBounds": [
+        137,
+        631,
+        524,
+        1227
+      ],
+      "sourceAnchor": [
+        185.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        136,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "stir spoon to left completing circular motion",
+      "durationMs": 250,
+      "sourceBounds": [
+        757,
+        633,
+        1147,
+        1228
+      ],
+      "sourceAnchor": [
+        184.5,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

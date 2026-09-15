@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Red Miner",
+  "action": "load-ore-cart",
+  "title": "Load ore cart",
+  "reference": "../../work-references/02-load-ore-cart.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "549ed4f1651152cd60a957523d374e8a35ceb397db2210a2886042a681104b2c",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.049645390070922,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shovel in ore pile beside cart",
+      "durationMs": 250,
+      "sourceBounds": [
+        43,
+        64,
+        607,
+        581
+      ],
+      "sourceAnchor": [
+        282.0,
+        517
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        73
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift loaded shovel",
+      "durationMs": 250,
+      "sourceBounds": [
+        670,
+        63,
+        1234,
+        582
+      ],
+      "sourceAnchor": [
+        282.0,
+        519
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        71
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "turn torso toward cart",
+      "durationMs": 250,
+      "sourceBounds": [
+        61,
+        661,
+        608,
+        1171
+      ],
+      "sourceAnchor": [
+        273.5,
+        510
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        81
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tip ore into cart and start return",
+      "durationMs": 250,
+      "sourceBounds": [
+        677,
+        660,
+        1234,
+        1171
+      ],
+      "sourceAnchor": [
+        278.5,
+        511
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        80
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

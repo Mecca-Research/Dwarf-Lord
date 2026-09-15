@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "inspect-hammer",
+  "title": "Inspect hammer",
+  "reference": "../../work-references/03-inspect-hammer.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "084345d978e7a51ea3edd923a9e350c5a7f01f608d8a336a91c24fcc97ddd749",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9833887043189369,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold small hammer at chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        48,
+        31,
+        621,
+        625
+      ],
+      "sourceAnchor": [
+        275.0,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        32
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift head to eye level",
+      "durationMs": 250,
+      "sourceBounds": [
+        674,
+        23,
+        1245,
+        625
+      ],
+      "sourceAnchor": [
+        274.5,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate hammer to inspect joint",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        636,
+        625,
+        1227
+      ],
+      "sourceAnchor": [
+        275.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        35
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower hammer",
+      "durationMs": 250,
+      "sourceBounds": [
+        673,
+        642,
+        1243,
+        1227
+      ],
+      "sourceAnchor": [
+        274.0,
+        585
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        41
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

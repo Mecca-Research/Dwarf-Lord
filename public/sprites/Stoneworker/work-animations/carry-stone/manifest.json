@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "carry-stone",
+  "title": "Carry stone",
+  "reference": "../../work-references/05-carry-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c78cdbbfe2da9ace9a8a8d2b32704c3a626c93d06c0772339a30448263054bc3",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0206896551724138,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold heavy stone against torso with left foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        107,
+        34,
+        534,
+        614
+      ],
+      "sourceAnchor": [
+        213.5,
+        580
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        102,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "shift weight through center",
+      "durationMs": 250,
+      "sourceBounds": [
+        797,
+        36,
+        1140,
+        603
+      ],
+      "sourceAnchor": [
+        139.0,
+        567
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        37
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward carrying same stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        102,
+        646,
+        610,
+        1211
+      ],
+      "sourceAnchor": [
+        254.0,
+        565
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        39
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "shift weight back through center",
+      "durationMs": 250,
+      "sourceBounds": [
+        784,
+        645,
+        1138,
+        1224
+      ],
+      "sourceAnchor": [
+        141.0,
+        579
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "file-tool-edge",
+  "title": "File tool edge",
+  "reference": "../../work-references/04-file-tool-edge.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "08ef14cd9ab0c0483e768966c7d3469e126fc7a734a18f1a8e0e2197d6987759",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0068027210884354,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "file at near edge of clamped tool",
+      "durationMs": 250,
+      "sourceBounds": [
+        93,
+        18,
+        595,
+        606
+      ],
+      "sourceAnchor": [
+        249.0,
+        588
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push file forward along metal",
+      "durationMs": 250,
+      "sourceBounds": [
+        732,
+        20,
+        1222,
+        606
+      ],
+      "sourceAnchor": [
+        237.0,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "file reaches far end",
+      "durationMs": 250,
+      "sourceBounds": [
+        105,
+        646,
+        595,
+        1233
+      ],
+      "sourceAnchor": [
+        237.0,
+        587
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift slightly and draw file back",
+      "durationMs": 250,
+      "sourceBounds": [
+        720,
+        645,
+        1222,
+        1233
+      ],
+      "sourceAnchor": [
+        249.0,
+        588
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

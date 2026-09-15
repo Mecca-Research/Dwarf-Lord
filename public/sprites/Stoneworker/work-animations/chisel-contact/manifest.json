@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "chisel-contact",
+  "title": "Chisel contact",
+  "reference": "../../work-references/01-chisel-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2101acbba925a6c9283d9cdfa248d63ceafd956ba920f957885346b4eb163602",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9966329966329966,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "mallet resting near chisel head",
+      "durationMs": 250,
+      "sourceBounds": [
+        47,
+        29,
+        581,
+        622
+      ],
+      "sourceAnchor": [
+        262.5,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift mallet halfway",
+      "durationMs": 250,
+      "sourceBounds": [
+        674,
+        29,
+        1207,
+        622
+      ],
+      "sourceAnchor": [
+        262.0,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "strike chisel head on stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        47,
+        657,
+        581,
+        1248
+      ],
+      "sourceAnchor": [
+        262.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rebound mallet with chisel kept steady",
+      "durationMs": 250,
+      "sourceBounds": [
+        674,
+        654,
+        1207,
+        1248
+      ],
+      "sourceAnchor": [
+        262.0,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

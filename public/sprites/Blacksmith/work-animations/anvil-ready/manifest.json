@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "anvil-ready",
+  "title": "Anvil ready",
+  "reference": "../../work-references/00-anvil-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "20f29e0843ebde745228b817c83d86cf7bbe59ed98845f1236eec4cce5d76426",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9817578772802653,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "rest hammer low",
+      "durationMs": 250,
+      "sourceBounds": [
+        125,
+        23,
+        587,
+        626
+      ],
+      "sourceAnchor": [
+        239.5,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        85,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "slight inhale and draw hammer hand back at hip",
+      "durationMs": 250,
+      "sourceBounds": [
+        716,
+        23,
+        1200,
+        626
+      ],
+      "sourceAnchor": [
+        260.0,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        65,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "adjust tongs on billet",
+      "durationMs": 250,
+      "sourceBounds": [
+        127,
+        637,
+        588,
+        1236
+      ],
+      "sourceAnchor": [
+        238.0,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "settle into ready stance",
+      "durationMs": 250,
+      "sourceBounds": [
+        738,
+        636,
+        1202,
+        1238
+      ],
+      "sourceAnchor": [
+        239.5,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        85,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Red Miner",
+  "action": "carry-ore-buckets",
+  "title": "Carry ore buckets",
+  "reference": "../../work-references/04-carry-ore-buckets.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "22fd7a0066b8f2859ad336b9999d1395d157c24d01e12dfa29613b3cf2e8f403",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0136986301369864,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward with two ore buckets",
+      "durationMs": 250,
+      "sourceBounds": [
+        83,
+        32,
+        578,
+        613
+      ],
+      "sourceAnchor": [
+        249.5,
+        581
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        67,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass beneath body",
+      "durationMs": 250,
+      "sourceBounds": [
+        641,
+        33,
+        1124,
+        610
+      ],
+      "sourceAnchor": [
+        243.5,
+        577
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        31
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        70,
+        635,
+        557,
+        1219
+      ],
+      "sourceAnchor": [
+        245.5,
+        584
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        71,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass back under body buckets swinging subtly",
+      "durationMs": 250,
+      "sourceBounds": [
+        646,
+        633,
+        1136,
+        1201
+      ],
+      "sourceAnchor": [
+        247.0,
+        568
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        70,
+        40
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

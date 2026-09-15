@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "dress-stone",
+  "title": "Dress stone",
+  "reference": "../../work-references/00-dress-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9c6be59dfbab09f146410c82b6e408e94a6c1b3143eeb799842f2b53879b4142",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0136986301369864,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold two-handed stone rasp on block",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        16,
+        581,
+        600
+      ],
+      "sourceAnchor": [
+        267.5,
+        584
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push rasp across block",
+      "durationMs": 250,
+      "sourceBounds": [
+        678,
+        20,
+        1208,
+        599
+      ],
+      "sourceAnchor": [
+        268.0,
+        579
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        29
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rasp reaches end of forward stroke",
+      "durationMs": 250,
+      "sourceBounds": [
+        51,
+        646,
+        610,
+        1216
+      ],
+      "sourceAnchor": [
+        268.0,
+        570
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        38
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "pull rasp back across block",
+      "durationMs": 250,
+      "sourceBounds": [
+        678,
+        638,
+        1207,
+        1216
+      ],
+      "sourceAnchor": [
+        268.0,
+        578
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        30
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

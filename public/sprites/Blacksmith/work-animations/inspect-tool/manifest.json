@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "inspect-tool",
+  "title": "Inspect tool",
+  "reference": "../../work-references/03-inspect-tool.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "e62f7d7070fe1513bd0616f5b1b0900364320b91ed189589fff15de315fc320a",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9932885906040269,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool at chest height",
+      "durationMs": 250,
+      "sourceBounds": [
+        150,
+        35,
+        610,
+        631
+      ],
+      "sourceAnchor": [
+        234.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise tool toward eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        752,
+        37,
+        1211,
+        631
+      ],
+      "sourceAnchor": [
+        233.0,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate wrist to inspect opposite edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        154,
+        643,
+        608,
+        1233
+      ],
+      "sourceAnchor": [
+        229.0,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        30
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower tool toward chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        757,
+        643,
+        1211,
+        1233
+      ],
+      "sourceAnchor": [
+        228.0,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        30
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

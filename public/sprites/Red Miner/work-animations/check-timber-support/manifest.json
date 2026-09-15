@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Red Miner",
+  "action": "check-timber-support",
+  "title": "Check timber support",
+  "reference": "../../work-references/05-check-timber-support.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "6b3844774438efd5dec8964725e4602641a2873563676242857540caa20fddcd",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.961038961038961,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hand on timber support joint",
+      "durationMs": 250,
+      "sourceBounds": [
+        44,
+        27,
+        616,
+        560
+      ],
+      "sourceAnchor": [
+        264.0,
+        533
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        66,
+        104
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lean in to inspect joint",
+      "durationMs": 250,
+      "sourceBounds": [
+        665,
+        26,
+        1226,
+        561
+      ],
+      "sourceAnchor": [
+        260.5,
+        535
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        70,
+        102
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "press brace to check stability",
+      "durationMs": 250,
+      "sourceBounds": [
+        62,
+        633,
+        616,
+        1173
+      ],
+      "sourceAnchor": [
+        249.0,
+        540
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        97
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tap fastening with tool",
+      "durationMs": 250,
+      "sourceBounds": [
+        664,
+        634,
+        1228,
+        1175
+      ],
+      "sourceAnchor": [
+        264.0,
+        541
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        66,
+        96
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

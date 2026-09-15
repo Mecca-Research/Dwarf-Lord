@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "count-coins",
+  "title": "Count coins",
+  "reference": "../../work-references/04-count-coins.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "e5ad698c6d9b672f1c711074f8443feee596f78275d83170734d16a709f38a64",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.961038961038961,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hand reaches for copper coin stack",
+      "durationMs": 250,
+      "sourceBounds": [
+        15,
+        41,
+        622,
+        619
+      ],
+      "sourceAnchor": [
+        307.5,
+        578
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        61
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "pick up one coin",
+      "durationMs": 250,
+      "sourceBounds": [
+        641,
+        41,
+        1248,
+        619
+      ],
+      "sourceAnchor": [
+        308.0,
+        578
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        61
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "place coin beside counted silver stack",
+      "durationMs": 250,
+      "sourceBounds": [
+        15,
+        661,
+        622,
+        1240
+      ],
+      "sourceAnchor": [
+        307.5,
+        579
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        60
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return hand toward uncounted coins",
+      "durationMs": 250,
+      "sourceBounds": [
+        642,
+        660,
+        1248,
+        1241
+      ],
+      "sourceAnchor": [
+        307.0,
+        581
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        58
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

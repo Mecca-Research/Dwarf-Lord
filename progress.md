@@ -42,3 +42,13 @@ Validation: 153 tests pass, typecheck and Pages build pass. Browser review loads
 ## 2026-09-15 — Static occupational work references
 
 Added 84 static work scenes for all 14 NPC identities, including complete anvils, administrative desks with open ledgers, cutting blocks, mining and repair equipment. New manifests, reproducible export script, profile links, review sheets and static review mode. Corrected Borrin seated-ledger export using the new open-ledger desk composition. Canonical masters and live game renderer unchanged. See docs/CHARACTER-WORK-REFERENCES.md for roster, evidence and next animation pass requirements. Typecheck, 155 tests, Pages build, 84 work/168 stance browser checks, transparent-margin QA and bundled web-game navigation pass. Next request should generate registered animation variations from selected static references, not cycle through unrelated work scenes.
+
+## Work animation variations — active checkpoint
+
+User requests animation variations for every one of the 84 static actions. Active branch codex/work-action-variations from merged PR6 / origin main 42dcdb4. Planned four authored keyframes per action (336 frames). First 30 source sheets generated for Blacksmith, Borrin, Cook, Elder, Quartermaster; Blacksmith repair regenerated to fix extra hands. Exporter creates per-action 640px frames, atlas, APNG and review sheet with shared scale and lower-ground registration. Public work-animation-review.html added with action selector and playback. Browser verification of first18 actions/72frames passes. Remaining generation tracked in docs/work-animation-plan.json; generation records are in docs/work-animation-generation.json. No gameplay integration yet. Full coverage test intentionally requires all84 actions before final commit. Continue all remaining generation, export and inspect, then final tests/build/browser and PR.
+
+### 2026-09-15 completed work-action variation export
+
+All 84 source sheets are saved and exported: 336 individual 640x640 RGBA keyframes across 14 characters, plus per-action atlases, APNGs, source sheets, review sheets, prompts and manifests. Work animation review player is linked from the character viewer. No gameplay renderer change. Known gait and station redraw limitations are documented; productionReady remains false.
+
+Validation: typecheck, all 156 tests, Pages build, browser review of all 84 actions/336 images including keyboard/race/mobile controls, independent web-game harness, and transparent-border check for all 336 frames passed. Work remains isolated on codex/work-action-variations; scratch output is under work/ and must not be committed.

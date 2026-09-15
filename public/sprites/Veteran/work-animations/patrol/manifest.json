@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Veteran",
+  "action": "patrol",
+  "title": "Patrol",
+  "reference": "../../work-references/02-patrol.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "73923ba0a4f42109e7e3db7fb235e6b35fe3bc797846f6c5c5de57e5cf381bff",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0242214532871972,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward during patrol",
+      "durationMs": 250,
+      "sourceBounds": [
+        170,
+        22,
+        534,
+        597
+      ],
+      "sourceAnchor": [
+        182.0,
+        575
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        134,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under hips",
+      "durationMs": 250,
+      "sourceBounds": [
+        811,
+        18,
+        1100,
+        596
+      ],
+      "sourceAnchor": [
+        150.5,
+        578
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        166,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        142,
+        645,
+        557,
+        1215
+      ],
+      "sourceAnchor": [
+        207.5,
+        570
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        107,
+        32
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under hips returning to left step with shield and spear consistent",
+      "durationMs": 250,
+      "sourceBounds": [
+        819,
+        646,
+        1117,
+        1215
+      ],
+      "sourceAnchor": [
+        169.0,
+        569
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        147,
+        33
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}
