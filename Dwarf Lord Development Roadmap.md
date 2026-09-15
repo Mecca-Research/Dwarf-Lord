@@ -737,3 +737,10 @@ Each session should finish with a small reviewable commit or a precise local che
 Borrin is the second oldest dwarf and the previous owner's remaining senior manager. He serves as consultant and ledger keeper. Elder is the oldest, a separate primarily conversational rumor NPC whose dialogue can evolve with progress; he is not a labor or payroll slot. Their visual identities and those of Ginger and Silver are locked in `public/sprites/*/profile.json` and `docs/CHARACTER-STANDARDS.md`.
 
 Preserve the former stand-labor as Human Laborer. Future imported human labor should be designed alongside recruitment, housing, pay, skill differences and settlement relations, with clear species identity. The asset's preservation does not imply these mechanics are already implemented.
+
+
+## Animation source library — 15 September 2026
+
+All 13 established dwarf NPC designs and Human Laborer now have eight standing angles and four role-specific stance references, totaling 168 exported PNGs. Each profile links its frame manifest and canonical master. `public/character-animation-review.html` supports comparison, pose selection and turnaround playback. See `docs/NPC-ANIMATION-LIBRARY.md` for the frame contract and generation provenance.
+
+The next character-animation milestone is full directional gait authoring: complete the contact/down/passing/up phases for both legs in each required direction, validate fixed-foot timing against movement speed, and integrate camera-relative direction selection. Borrin and Elder require separate ledger/conversation loops. These source poses do not complete Phase 06's runtime animation gate.
