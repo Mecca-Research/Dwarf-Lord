@@ -1,0 +1,127 @@
+{
+  "character": "Silver",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "61482dcc2eebdad4b0bf43f55990aebc054151a915f9fa2908e754c956ee9c25",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "dress-stone",
+      "title": "Dress stone",
+      "file": "00-dress-stone.png",
+      "description": "Front-right, behind a sturdy low bench, dressing a squared stone with a broad rasp held in both hands. Cropped grey hair, short SQUARE grey beard, muscular sleeveless grey shirt and brown apron, never long elder beard.",
+      "sourceBounds": [
+        42,
+        5,
+        487,
+        504
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "lift-stone",
+      "title": "Lift stone",
+      "file": "01-lift-stone.png",
+      "description": "Front-left, lifting a squared stone block with both hands from a small ground pile, knees bent.",
+      "sourceBounds": [
+        598,
+        40,
+        1006,
+        511
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-ore-tub",
+      "title": "Carry ore tub",
+      "file": "02-carry-ore-tub.png",
+      "description": "Right-side, carrying a full wooden ore tub at waist height with both hands, entire tub and boots visible.",
+      "sourceBounds": [
+        104,
+        488,
+        471,
+        980
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "push-stone-cart",
+      "title": "Push stone cart",
+      "file": "03-push-stone-cart.png",
+      "description": "Rear-right, pushing a timber handcart stacked with a few stone blocks, full handcart within cell.",
+      "sourceBounds": [
+        524,
+        527,
+        983,
+        983
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "inspect-shovel-handle",
+      "title": "Inspect shovel handle",
+      "file": "04-inspect-shovel-handle.png",
+      "description": "Front-right, seated at low repair bench inspecting a cracked wooden shovel handle, short knife and leather binding lying nearby.",
+      "sourceBounds": [
+        20,
+        979,
+        512,
+        1523
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "fit-tool-head",
+      "title": "Fit tool head",
+      "file": "05-fit-tool-head.png",
+      "description": "Front-left, tightening a replacement metal tool head onto a wooden handle at repair bench with a small mallet, both forearms visible.",
+      "sourceBounds": [
+        553,
+        981,
+        1012,
+        1522
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

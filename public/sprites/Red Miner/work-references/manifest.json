@@ -1,0 +1,127 @@
+{
+  "character": "Red Miner",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "sourceSha256": "f0b0801df4678eccf2c013b36b3211115b81cc3316fb51c3222451239bd043f1",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "pickaxe-raised",
+      "title": "Pickaxe raised",
+      "file": "00-pickaxe-raised.png",
+      "description": "Front-left, beside low isolated ore-rich rock fragment. Two-handed pickaxe held high ready to strike, helmet and red tunic unchanged.",
+      "sourceBounds": [
+        43,
+        4,
+        496,
+        524
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "file": "01-pickaxe-contact.png",
+      "description": "Same front-left and rock fragment. Pickaxe tip contacting rock at bottom of swing, feet planted, no blur.",
+      "sourceBounds": [
+        576,
+        100,
+        1022,
+        523
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "load-ore-cart",
+      "title": "Load ore cart",
+      "file": "02-load-ore-cart.png",
+      "description": "Right-side, using a shovel to load broken ore into a short open wooden ore cart with two visible wheels.",
+      "sourceBounds": [
+        57,
+        518,
+        541,
+        941
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "sort-iron-ore",
+      "title": "Sort iron ore",
+      "file": "03-sort-iron-ore.png",
+      "description": "Front-right, standing behind a low timber ore sorting bench, separating reddish iron-rich rocks from pale waste by hand.",
+      "sourceBounds": [
+        575,
+        491,
+        1046,
+        945
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-ore-buckets",
+      "title": "Carry ore buckets",
+      "file": "04-carry-ore-buckets.png",
+      "description": "Rear-left three-quarter, carrying a filled wooden ore bucket in each hand, full body and both buckets visible.",
+      "sourceBounds": [
+        79,
+        924,
+        475,
+        1400
+      ],
+      "sourceComponent": 7,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "check-timber-support",
+      "title": "Check timber support",
+      "file": "05-check-timber-support.png",
+      "description": "Front-left, crouching and examining a timber mine support joint with small mallet held low, isolated short timber assembly only.",
+      "sourceBounds": [
+        580,
+        961,
+        1052,
+        1404
+      ],
+      "sourceComponent": 8,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

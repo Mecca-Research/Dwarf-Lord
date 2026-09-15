@@ -37,11 +37,17 @@ for src in root.glob('*/animation/source-sheet.png'):
    # Match the normalised standing height while preserving the replacement's body proportions.
    replacement=replacement.resize((round((y1-y0)*replacement.width/replacement.height),y1-y0),Image.LANCZOS);crop=replacement
   target=Image.new('RGBA',(384,640));scale=common_scale
+  if name=='Borrin' and idx==8:
+   override='../work-references/00-desk-writing.png'
+   replacement=Image.open(src.parent/override).convert('RGBA');ra=np.array(replacement);ys,xs=np.where(ra[:,:,3]>128)
+   x0,y0,x1,y1=int(xs.min()),int(ys.min()),int(xs.max()+1),int(ys.max()+1)
+   crop=replacement.crop((x0,y0,x1,y1));scale=min(350/crop.width,590/crop.height)
   # Retain authored seated/standing height difference instead of stretching every stance to full height.
   # All poses use the same pixels-per-character-unit scale.
   crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS);target.alpha_composite(crop,((384-crop.width)//2,620-crop.height))
   filename=f'{idx:02d}-{frame_labels[idx]}.png';target.save(src.parent/filename)
   frames.append({'id':frame_labels[idx],'file':filename,'sourceBounds':[x0,y0,x1,y1],'anchor':[192,620],'sourceOverride':override})
+  if name=='Borrin' and idx==8:frames[-1].update({'title':'Seated writing at desk','description':'Writing in a visibly open ledger at the administrative desk. Replaces the closed-cover legacy writing pose.'})
   thumb=target.copy();thumb.thumbnail((250,400));out.paste(thumb,((idx%4)*256,(idx//4)*430),thumb);draw.text(((idx%4)*256+8,(idx//4)*430+405),frame_labels[idx],fill='white')
  manifest={'character':name,'canonical':'../'+json.loads((src.parent.parent/'profile.json').read_text())['master'],'source':'source-sheet.png','frameSize':[384,640],'scaleFromSource':common_scale,'frames':frames,'status':'animation-source','note':'Direction and stance references. Contact poses are not a completed eight-direction gait cycle.'}
  (src.parent/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');out.save(src.parent/'review.jpg');library.append({'name':name,'manifest':f'{name}/animation/manifest.json'})

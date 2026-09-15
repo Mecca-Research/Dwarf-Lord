@@ -1,0 +1,127 @@
+{
+  "character": "Borrin",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "sourceSha256": "3e5dcaa79d9281da672868527692af9b36ac68058e7e0e05360390693f6e919b",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "desk-writing",
+      "title": "Desk writing",
+      "file": "00-desk-writing.png",
+      "description": "Seated BEHIND a small sturdy administrative wooden desk, front-right view. Large ledger visibly OPEN FLAT on desk, left hand on left page and right hand writing with quill on right page. Include chair, desk legs, inkpot. Book spine between clearly visible cream pages; never closed cover.",
+      "sourceBounds": [
+        31,
+        8,
+        523,
+        517
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "review-open-ledger",
+      "title": "Review open ledger",
+      "file": "01-review-open-ledger.png",
+      "description": "Same desk and chair, front-left view. Reviewing the OPEN ledger, one finger following entries and spectacles worn, quill resting in inkpot.",
+      "sourceBounds": [
+        580,
+        7,
+        1071,
+        511
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "turn-ledger-page",
+      "title": "Turn ledger page",
+      "file": "02-turn-ledger-page.png",
+      "description": "Same desk front-right view. Turning ONE page of the open ledger, other pages lie flat. Free hand holds remaining pages.",
+      "sourceBounds": [
+        37,
+        481,
+        524,
+        981
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "explain-at-desk",
+      "title": "Explain at desk",
+      "file": "03-explain-at-desk.png",
+      "description": "Same desk front-left view. Explaining to someone off-frame with one hand open palm up, other hand points into the OPEN ledger.",
+      "sourceBounds": [
+        574,
+        484,
+        1066,
+        990
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "count-coins",
+      "title": "Count coins",
+      "file": "04-count-coins.png",
+      "description": "Same desk, three-quarter right. Counting a small set of copper and silver coins into neat groups beside the OPEN ledger, hands on desk.",
+      "sourceBounds": [
+        14,
+        956,
+        527,
+        1448
+      ],
+      "sourceComponent": 11,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "stamp-paperwork",
+      "title": "Stamp paperwork",
+      "file": "05-stamp-paperwork.png",
+      "description": "Same desk viewed from right side, seated stamping a loose administrative paper beside the OPEN ledger. Include inkpot, a few rolled papers, no readable text.",
+      "sourceBounds": [
+        574,
+        969,
+        1076,
+        1448
+      ],
+      "sourceComponent": 12,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

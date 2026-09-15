@@ -1,0 +1,285 @@
+{
+  "template": "Create a high-detail STATIC WORK REFERENCE SHEET for the EXACT character in the supplied canonical image. Six full-body scenes, exactly TWO columns by THREE rows, equal rectangular cells, row-major order. Keep generous transparent gutters: every character, piece of furniture and tool wholly within its own cell with 10% empty margins. Prefer 1536x2048 or highest available portrait resolution. True transparent RGBA background, no scenery or room, no text or grid lines. Semi-realistic pre-rendered fantasy game art matching the canonical image, neutral lighting, orthographic camera looking down about 25 degrees. Preserve the SAME face, hair, beard, proportions, skin tone and costume in all SIX scenes. Show physically plausible hands gripping tools. Include the specified work station in each appropriate scene, complete legs/base visible. Static reference compositions, not a sprite animation loop. Each scene below specifies its pose and props: ",
+  "characters": [
+    {
+      "name": "Blacksmith",
+      "reference": "public/sprites/Blacksmith/stand.png",
+      "scenes": [
+        "Front-right three-quarter. Standing behind a heavy iron anvil on a stout wooden stump, tongs in left hand hold a short billet on anvil, right hand grips hammer LOW beside hip, ready to work.",
+        "Same camera, same anvil and stump and billet positions. Right hand raises hammer ABOVE shoulder, left tongs hold billet. Full raised hammer fits cell.",
+        "Same camera and station. Hammer head rests ON billet at the bottom of the strike, elbow flexed, left hand holding tongs safely clear. No motion blur.",
+        "Left-side view at same anvil, carefully examining the billet held in tongs at eye level, hammer resting on anvil.",
+        "Front-left view, filing the edge of a metal tool clamped in a small bench vise on a compact wooden workbench.",
+        "Front-right view, seated at low repair bench tightening the metal head of a pickaxe onto its wooden handle, hammer and tongs laid on bench."
+      ],
+      "titles": [
+        "Anvil ready",
+        "Hammer raised",
+        "Hammer contact",
+        "Inspect tool",
+        "File tool edge",
+        "Repair pickaxe handle"
+      ]
+    },
+    {
+      "name": "Borrin",
+      "reference": "public/sprites/Borrin/idle.png",
+      "scenes": [
+        "Seated BEHIND a small sturdy administrative wooden desk, front-right view. Large ledger visibly OPEN FLAT on desk, left hand on left page and right hand writing with quill on right page. Include chair, desk legs, inkpot. Book spine between clearly visible cream pages; never closed cover.",
+        "Same desk and chair, front-left view. Reviewing the OPEN ledger, one finger following entries and spectacles worn, quill resting in inkpot.",
+        "Same desk front-right view. Turning ONE page of the open ledger, other pages lie flat. Free hand holds remaining pages.",
+        "Same desk front-left view. Explaining to someone off-frame with one hand open palm up, other hand points into the OPEN ledger.",
+        "Same desk, three-quarter right. Counting a small set of copper and silver coins into neat groups beside the OPEN ledger, hands on desk.",
+        "Same desk viewed from right side, seated stamping a loose administrative paper beside the OPEN ledger. Include inkpot, a few rolled papers, no readable text."
+      ],
+      "titles": [
+        "Desk writing",
+        "Review open ledger",
+        "Turn ledger page",
+        "Explain at desk",
+        "Count coins",
+        "Stamp paperwork"
+      ]
+    },
+    {
+      "name": "Cook",
+      "reference": "public/sprites/Cook/idle.png",
+      "scenes": [
+        "Front-right view. Standing behind a thick wooden butcher cutting block on sturdy legs, chopping carrots with a kitchen knife in right hand, left hand safely curled around carrot. Vegetables and bowl on block.",
+        "Same cutting block front-left view. Peeling a potato above a small bowl with short peeling knife, vegetable skins on block.",
+        "Same block right-side view. Kneading a mound of dough with both hands, flour and a small bowl on block.",
+        "Front-right view. Stirring a stew in a cauldron on a low iron stand with a long wooden spoon, one hand steadying handle with cloth. No fire needed.",
+        "Same wooden cutting block front-right view. Mixing ingredients in a large wooden bowl with spoon, eggs and flour nearby.",
+        "Front-left view at cutting block, ladling stew from a pot into a wooden serving bowl held in the other hand."
+      ],
+      "titles": [
+        "Chop vegetables",
+        "Peel potatoes",
+        "Knead dough",
+        "Stir cauldron",
+        "Mix ingredients",
+        "Serve stew"
+      ]
+    },
+    {
+      "name": "Elder",
+      "reference": "public/sprites/Elder/idle.png",
+      "scenes": [
+        "Front-right three-quarter, seated on a simple low wooden stool, eating stew from a wooden bowl with a spoon. Walking stick leans safely against stool.",
+        "Front-left view, seated holding a piece of bread in one hand and bowl in lap, taking a small bite. Same stool and clothing.",
+        "Front-right view, seated on stool laughing warmly, mouth open, eyes crinkled, one hand on belly and other on knee. No food in hands.",
+        "Left-side view, seated chuckling with head tipped back slightly and hand raised, walking stick beside stool.",
+        "Front-right view, seated carefully inspecting an old pickaxe laid ACROSS his lap; one hand touches iron head and other holds handle.",
+        "Front-left view, seated pointing at a crack in the pickaxe head on a small low table while holding its handle. He is examining, never swinging or mining."
+      ],
+      "titles": [
+        "Eat stew",
+        "Eat bread",
+        "Laugh seated",
+        "Laugh and gesture",
+        "Inspect pickaxe in lap",
+        "Examine pickaxe crack"
+      ]
+    },
+    {
+      "name": "Quartermaster",
+      "reference": "public/sprites/Quartermaster/stand.png",
+      "scenes": [
+        "Front-right, standing behind a small administrative table recording supply counts in an OPEN inventory ledger with quill, inkpot and stacked paper present.",
+        "Front-left, standing beside same table explaining allocation with an open-hand gesture while other hand indicates a supply list.",
+        "Right-side, examining a metal tool head closely in one hand, with tools neatly laid on compact wooden bench.",
+        "Front-right, counting sacks and small boxes on a wooden supply table, tally stick in hand and open ledger nearby.",
+        "Front-left, repairing the buckle on a leather satchel at a small wooden bench with awl and needle, both hands engaged.",
+        "Front-right, checking weights on a small balance scale on administrative table beside a pouch of coins and OPEN ledger."
+      ],
+      "titles": [
+        "Record inventory",
+        "Explain allocations",
+        "Examine tool",
+        "Count supplies",
+        "Repair satchel",
+        "Check weights"
+      ]
+    },
+    {
+      "name": "Stoneworker",
+      "reference": "public/sprites/Stoneworker/stand.png",
+      "scenes": [
+        "Front-right, behind a stout low wooden stoneworking bench. Left hand holds chisel on a limestone block and right hand raises a small stone mason hammer, safe controlled ready pose.",
+        "Same bench front-right, hammer lowered to meet chisel on limestone block, chips scattered on tabletop. No motion blur.",
+        "Left-side, measuring and marking a squared stone block with a wooden square and charcoal on stoneworking bench.",
+        "Front-left, dressing a rough stone block with a toothed stone rasp held in both hands on low bench.",
+        "Front-right, kneeling to set a dressed stone into a short two-course masonry sample with a small trowel, mortar in a wooden tub nearby.",
+        "Front-left, lifting and carrying a heavy squared stone at waist height with both forearms, knees bent, full body and stone visible."
+      ],
+      "titles": [
+        "Chisel ready",
+        "Chisel contact",
+        "Measure stone",
+        "Dress stone",
+        "Lay masonry",
+        "Carry stone"
+      ]
+    },
+    {
+      "name": "Veteran",
+      "reference": "public/sprites/Veteran/idle.png",
+      "scenes": [
+        "Front-right, standing watch with feet braced, holding a short wooden-shafted spear upright and a small round worn iron-rimmed shield resting by left leg. Helmet and brigandine unchanged.",
+        "Front-left, alert guard stance, shield raised across torso and spear angled low forward. Full spear within cell; no attack or victim.",
+        "Right-side, patrolling at a measured step with spear upright and shield slung close to arm.",
+        "Front-right, seated on a simple stool at low tool bench inspecting a small worn hammer head and handle for damage.",
+        "Front-left, seated at same bench carefully sharpening a small utility knife on a flat whetstone, hands away from edge.",
+        "Front-right, seated at same bench repairing a leather strap or buckle on shield with awl, small tools laid out neatly."
+      ],
+      "titles": [
+        "Stand watch",
+        "Guard ready",
+        "Patrol",
+        "Inspect hammer",
+        "Sharpen utility knife",
+        "Repair shield strap"
+      ]
+    },
+    {
+      "name": "Female Miner",
+      "reference": "public/sprites/Female Miner/stand.png",
+      "scenes": [
+        "Front-right, beside a low isolated rock face fragment on ground. Both hands hold pickaxe raised over right shoulder, knees bent, ready to mine. Long dark hair, helmet, ochre tunic, NO beard.",
+        "Same front-right view and rock fragment. Pickaxe lowered with metal point contacting stone, torso leaned forward, no motion blur.",
+        "Left-side view, shoveling loose ore from a small ground pile into a wooden ore tub.",
+        "Front-left, crouching by a low wooden sorting tray examining a mineral sample held up in one hand, other hand on tray.",
+        "Rear-right three-quarter, pushing a small single-wheel wooden barrow partly filled with ore, whole barrow and boots visible.",
+        "Front-right, seated at a low bench checking and tightening the head of a pickaxe with a small hammer, helmet kept on."
+      ],
+      "titles": [
+        "Pickaxe ready",
+        "Pickaxe contact",
+        "Shovel ore",
+        "Examine sample",
+        "Push ore barrow",
+        "Repair pickaxe"
+      ]
+    },
+    {
+      "name": "Red Miner",
+      "reference": "public/sprites/Red Miner/stand.png",
+      "scenes": [
+        "Front-left, beside low isolated ore-rich rock fragment. Two-handed pickaxe held high ready to strike, helmet and red tunic unchanged.",
+        "Same front-left and rock fragment. Pickaxe tip contacting rock at bottom of swing, feet planted, no blur.",
+        "Right-side, using a shovel to load broken ore into a short open wooden ore cart with two visible wheels.",
+        "Front-right, standing behind a low timber ore sorting bench, separating reddish iron-rich rocks from pale waste by hand.",
+        "Rear-left three-quarter, carrying a filled wooden ore bucket in each hand, full body and both buckets visible.",
+        "Front-left, crouching and examining a timber mine support joint with small mallet held low, isolated short timber assembly only."
+      ],
+      "titles": [
+        "Pickaxe raised",
+        "Pickaxe contact",
+        "Load ore cart",
+        "Sort iron ore",
+        "Carry ore buckets",
+        "Check timber support"
+      ]
+    },
+    {
+      "name": "Helga",
+      "reference": "public/sprites/Helga/stand.png",
+      "scenes": [
+        "Front-right, mining beside an isolated low rock fragment, both hands hold pickaxe high over shoulder in a balanced ready stance. Stocky woman with copper braids, helmet, teal tunic, leather apron, NO beard.",
+        "Same camera and rock fragment, pickaxe lowered so tip touches stone at end of strike, feet remain planted, complete pickaxe and both hands visible.",
+        "Left-side, kneeling at a low wooden mineral sorting table examining a small ore sample with a magnifying lens, helmet still on.",
+        "Front-left, shoveling loose stone from a small pile into a wooden bucket, weight shifted onto front foot.",
+        "Rear-right, carrying a short stout timber support on one shoulder with two hands steadying it, entire timber and boots visible.",
+        "Front-right, behind a low repair bench binding a replacement pickaxe handle with a leather strap, tool head and small hammer on bench."
+      ],
+      "titles": [
+        "Pickaxe ready",
+        "Pickaxe contact",
+        "Inspect mineral",
+        "Shovel stone",
+        "Carry mine timber",
+        "Bind tool handle"
+      ]
+    },
+    {
+      "name": "Human Laborer",
+      "reference": "public/sprites/Human Laborer/stand.png",
+      "scenes": [
+        "Front-right, sawing a thick timber laid on two low wooden sawhorses, one hand drives hand saw and other steadies timber. Preserve HUMAN taller lean proportions, brown hair and beard, plain linen shirt, not a dwarf.",
+        "Front-left, kneeling to hammer an iron nail into a short plank assembly, small toolbox beside him.",
+        "Right-side, pushing a single-wheel wooden barrow carrying sacks, full wheel and handles and boots visible.",
+        "Rear-left, carrying a short timber beam across shoulder, both hands steady it, full timber fits cell.",
+        "Front-right, shoveling loose soil from a small pile, both hands on shovel and feet braced.",
+        "Left-side, seated at low bench repairing a leather harness with awl and thread, tools neatly arranged. Same HUMAN identity and proportions."
+      ],
+      "titles": [
+        "Saw timber",
+        "Nail planks",
+        "Push supply barrow",
+        "Carry timber",
+        "Shovel soil",
+        "Repair harness"
+      ]
+    },
+    {
+      "name": "Laborer",
+      "reference": "public/sprites/Laborer/stand.png",
+      "scenes": [
+        "Front-right, lifting a framed wooden crate from ground with both hands and bent knees. Same bald stocky dwarf with brown beard, cream shirt and brown waistcoat.",
+        "Front-left, carrying a heavy sack over one shoulder while steadying it with both hands.",
+        "Right-side, pushing a wooden wheelbarrow loaded with small stones, complete wheel and handles.",
+        "Rear-right, pulling a rope tied around a short timber sled holding a crate, whole rope and sled within cell.",
+        "Front-right, behind a low wooden bench driving nails into a framed crate with small hammer while other hand steadies board.",
+        "Front-left, kneeling and sweeping wood chips into a pile with a short stiff broom near a small toolbox."
+      ],
+      "titles": [
+        "Lift crate",
+        "Carry sack",
+        "Push stone barrow",
+        "Pull supply sled",
+        "Build crate",
+        "Sweep wood chips"
+      ]
+    },
+    {
+      "name": "Silver",
+      "reference": "public/sprites/Silver/idle.png",
+      "scenes": [
+        "Front-right, behind a sturdy low bench, dressing a squared stone with a broad rasp held in both hands. Cropped grey hair, short SQUARE grey beard, muscular sleeveless grey shirt and brown apron, never long elder beard.",
+        "Front-left, lifting a squared stone block with both hands from a small ground pile, knees bent.",
+        "Right-side, carrying a full wooden ore tub at waist height with both hands, entire tub and boots visible.",
+        "Rear-right, pushing a timber handcart stacked with a few stone blocks, full handcart within cell.",
+        "Front-right, seated at low repair bench inspecting a cracked wooden shovel handle, short knife and leather binding lying nearby.",
+        "Front-left, tightening a replacement metal tool head onto a wooden handle at repair bench with a small mallet, both forearms visible."
+      ],
+      "titles": [
+        "Dress stone",
+        "Lift stone",
+        "Carry ore tub",
+        "Push stone cart",
+        "Inspect shovel handle",
+        "Fit tool head"
+      ]
+    },
+    {
+      "name": "Ginger",
+      "reference": "public/sprites/Ginger/idle.png",
+      "scenes": [
+        "Front-right, sawing a short timber across two stout wooden sawhorses with a hand saw, one hand steadying wood. Curly copper hair, freckled broad face, compact ginger fan beard, cream sleeves, brown vest, green trousers.",
+        "Front-left, hammering nails into a timber crate on a low bench, other hand bracing the corner.",
+        "Right-side, stacking split firewood neatly into a short timber rack, two pieces held in both arms.",
+        "Rear-left, hauling a small wooden sled loaded with firewood using a rope held in both hands, whole sled and rope fit cell.",
+        "Front-right, seated on a low stool sharpening a hatchet on a whetstone atop a compact bench, hatchet held safely.",
+        "Front-left, carrying a sack of supplies over one shoulder and a small bucket in the free hand, full body and props visible."
+      ],
+      "titles": [
+        "Saw timber",
+        "Build timber crate",
+        "Stack firewood",
+        "Haul firewood",
+        "Sharpen hatchet",
+        "Carry supplies"
+      ]
+    }
+  ]
+}

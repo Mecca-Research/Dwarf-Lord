@@ -13,3 +13,7 @@ Canonical image: `idle.png`. Machine-readable contract: `profile.json`. All futu
 ## Angle and stance library
 
 Eight standing angles and four role-specific key poses are exported in `animation/`. See `animation/manifest.json` for names, source bounds and the common foot anchor. `animation/review.jpg` shows the final exports. Compare all future frames with this profile and canonical master. These are animation source poses; a complete directional gait loop requires contact, passing and recovery frames with verified timing.
+
+## Static work references
+
+Six additional character-and-workstation compositions are in `work-references/`. Review `work-references/review.jpg` and `work-references/manifest.json`. Actions: Desk writing, Review open ledger, Turn ledger page, Explain at desk, Count coins, Stamp paperwork. These are static references; animation variations are the next pass.

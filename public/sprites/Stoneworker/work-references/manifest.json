@@ -1,0 +1,127 @@
+{
+  "character": "Stoneworker",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "4c604a5c9bac7bb978a57644306a305b2e6eac129e06f0b254f03aac91effc21",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "chisel-ready",
+      "title": "Chisel ready",
+      "file": "00-chisel-ready.png",
+      "description": "Front-right, behind a stout low wooden stoneworking bench. Left hand holds chisel on a limestone block and right hand raises a small stone mason hammer, safe controlled ready pose.",
+      "sourceBounds": [
+        58,
+        2,
+        500,
+        520
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "chisel-contact",
+      "title": "Chisel contact",
+      "file": "01-chisel-contact.png",
+      "description": "Same bench front-right, hammer lowered to meet chisel on limestone block, chips scattered on tabletop. No motion blur.",
+      "sourceBounds": [
+        539,
+        27,
+        980,
+        521
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "measure-stone",
+      "title": "Measure stone",
+      "file": "02-measure-stone.png",
+      "description": "Left-side, measuring and marking a squared stone block with a wooden square and charcoal on stoneworking bench.",
+      "sourceBounds": [
+        50,
+        504,
+        501,
+        1010
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "dress-stone",
+      "title": "Dress stone",
+      "file": "03-dress-stone.png",
+      "description": "Front-left, dressing a rough stone block with a toothed stone rasp held in both hands on low bench.",
+      "sourceBounds": [
+        548,
+        513,
+        987,
+        1018
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "lay-masonry",
+      "title": "Lay masonry",
+      "file": "04-lay-masonry.png",
+      "description": "Front-right, kneeling to set a dressed stone into a short two-course masonry sample with a small trowel, mortar in a wooden tub nearby.",
+      "sourceBounds": [
+        27,
+        1045,
+        598,
+        1472
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-stone",
+      "title": "Carry stone",
+      "file": "05-carry-stone.png",
+      "description": "Front-left, lifting and carrying a heavy squared stone at waist height with both forearms, knees bent, full body and stone visible.",
+      "sourceBounds": [
+        650,
+        992,
+        960,
+        1514
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

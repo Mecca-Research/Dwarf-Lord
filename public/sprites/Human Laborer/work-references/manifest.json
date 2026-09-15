@@ -1,0 +1,127 @@
+{
+  "character": "Human Laborer",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "sourceSha256": "d3c256267ae53e7729a1957d7636337c2e1011c514c40395f14e243a920de93f",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "saw-timber",
+      "title": "Saw timber",
+      "file": "00-saw-timber.png",
+      "description": "Front-right, sawing a thick timber laid on two low wooden sawhorses, one hand drives hand saw and other steadies timber. Preserve HUMAN taller lean proportions, brown hair and beard, plain linen shirt, not a dwarf.",
+      "sourceBounds": [
+        41,
+        3,
+        530,
+        506
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "nail-planks",
+      "title": "Nail planks",
+      "file": "01-nail-planks.png",
+      "description": "Front-left, kneeling to hammer an iron nail into a short plank assembly, small toolbox beside him.",
+      "sourceBounds": [
+        627,
+        69,
+        1079,
+        480
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "push-supply-barrow",
+      "title": "Push supply barrow",
+      "file": "02-push-supply-barrow.png",
+      "description": "Right-side, pushing a single-wheel wooden barrow carrying sacks, full wheel and handles and boots visible.",
+      "sourceBounds": [
+        91,
+        433,
+        572,
+        962
+      ],
+      "sourceComponent": 24,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-timber",
+      "title": "Carry timber",
+      "file": "03-carry-timber.png",
+      "description": "Rear-left, carrying a short timber beam across shoulder, both hands steady it, full timber fits cell.",
+      "sourceBounds": [
+        660,
+        480,
+        1005,
+        953
+      ],
+      "sourceComponent": 25,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "shovel-soil",
+      "title": "Shovel soil",
+      "file": "04-shovel-soil.png",
+      "description": "Front-right, shoveling loose soil from a small pile, both hands on shovel and feet braced.",
+      "sourceBounds": [
+        69,
+        946,
+        621,
+        1440
+      ],
+      "sourceComponent": 26,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "repair-harness",
+      "title": "Repair harness",
+      "file": "05-repair-harness.png",
+      "description": "Left-side, seated at low bench repairing a leather harness with awl and thread, tools neatly arranged. Same HUMAN identity and proportions.",
+      "sourceBounds": [
+        657,
+        964,
+        1078,
+        1433
+      ],
+      "sourceComponent": 27,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

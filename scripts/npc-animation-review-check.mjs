@@ -8,7 +8,9 @@ try {
  const page=await browser.newPage({viewport:{width:1280,height:1050}});const errors=[];
  page.on('pageerror', e=>errors.push(e.message));
  await page.goto(process.env.REVIEW_URL || 'http://localhost:8081/Dwarf-Lord/character-animation-review.html');
- await page.waitForFunction(()=>window.render_game_to_text && JSON.parse(window.render_game_to_text()).frameCount===12);
+ await page.waitForFunction(()=>window.render_game_to_text && JSON.parse(window.render_game_to_text()).frameCount===6);
+ await page.selectOption('#library','poses');
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).frameCount===12);
  const options=await page.locator('#character option').allTextContents();assert.equal(options.length,14);
  const results=[];
  for (const name of options) {
