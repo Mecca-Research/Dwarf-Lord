@@ -5,7 +5,7 @@ from scipy import ndimage as nd
 root=Path('public/sprites');library=[]
 labels=['front','front-right','right','back-right','back','back-left','left','front-left','rest','stride-a','stride-b','work']
 for src in root.glob('*/animation/source-sheet.png'):
- 
+
  for old in src.parent.glob('[0-9][0-9]-*.png'):old.unlink()
  name=src.parent.parent.name;frame_labels=list(labels)
  if name=='Borrin':frame_labels[8:]=['seated-ledger','consult-ledger','step-ledger','explain']
