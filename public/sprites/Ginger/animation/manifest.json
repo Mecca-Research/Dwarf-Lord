@@ -1,0 +1,194 @@
+{
+  "character": "Ginger",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "frameSize": [
+    384,
+    640
+  ],
+  "scaleFromSource": 1.2688172043010753,
+  "frames": [
+    {
+      "id": "front",
+      "file": "00-front.png",
+      "sourceBounds": [
+        6,
+        38,
+        279,
+        499
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "front-right",
+      "file": "01-front-right.png",
+      "sourceBounds": [
+        278,
+        38,
+        537,
+        502
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "right",
+      "file": "02-right.png",
+      "sourceBounds": [
+        567,
+        40,
+        732,
+        505
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back-right",
+      "file": "03-back-right.png",
+      "sourceBounds": [
+        773,
+        43,
+        1017,
+        505
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back",
+      "file": "04-back.png",
+      "sourceBounds": [
+        6,
+        532,
+        275,
+        988
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back-left",
+      "file": "05-back-left.png",
+      "sourceBounds": [
+        287,
+        534,
+        526,
+        988
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "left",
+      "file": "06-left.png",
+      "sourceBounds": [
+        566,
+        532,
+        728,
+        992
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "front-left",
+      "file": "07-front-left.png",
+      "sourceBounds": [
+        761,
+        533,
+        1018,
+        989
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "rest",
+      "file": "08-rest.png",
+      "sourceBounds": [
+        4,
+        1064,
+        272,
+        1449
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "stride-a",
+      "file": "09-stride-a.png",
+      "sourceBounds": [
+        272,
+        1014,
+        523,
+        1453
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "stride-b",
+      "file": "10-stride-b.png",
+      "sourceBounds": [
+        526,
+        1016,
+        772,
+        1454
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "work",
+      "file": "11-work.png",
+      "sourceBounds": [
+        754,
+        1030,
+        1020,
+        1451
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    }
+  ],
+  "status": "animation-source",
+  "note": "Direction and stance references. Contact poses are not a completed eight-direction gait cycle."
+}

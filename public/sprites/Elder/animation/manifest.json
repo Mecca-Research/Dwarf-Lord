@@ -1,0 +1,194 @@
+{
+  "character": "Elder",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "frameSize": [
+    384,
+    640
+  ],
+  "scaleFromSource": 1.2065439672801637,
+  "frames": [
+    {
+      "id": "front",
+      "file": "00-front.png",
+      "sourceBounds": [
+        13,
+        19,
+        272,
+        503
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "front-right",
+      "file": "01-front-right.png",
+      "sourceBounds": [
+        279,
+        19,
+        539,
+        508
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "right",
+      "file": "02-right.png",
+      "sourceBounds": [
+        535,
+        19,
+        770,
+        508
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back-right",
+      "file": "03-back-right.png",
+      "sourceBounds": [
+        780,
+        19,
+        1018,
+        501
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back",
+      "file": "04-back.png",
+      "sourceBounds": [
+        9,
+        516,
+        262,
+        985
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "back-left",
+      "file": "05-back-left.png",
+      "sourceBounds": [
+        270,
+        520,
+        516,
+        986
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "left",
+      "file": "06-left.png",
+      "sourceBounds": [
+        524,
+        518,
+        763,
+        991
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "front-left",
+      "file": "07-front-left.png",
+      "sourceBounds": [
+        764,
+        521,
+        1013,
+        996
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "seated-listen",
+      "file": "08-seated-listen.png",
+      "sourceBounds": [
+        2,
+        1026,
+        268,
+        1469
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "seated-speak",
+      "file": "09-seated-speak.png",
+      "sourceBounds": [
+        264,
+        1024,
+        528,
+        1462
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "stand-stick",
+      "file": "10-stand-stick.png",
+      "sourceBounds": [
+        524,
+        1002,
+        750,
+        1452
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    },
+    {
+      "id": "step-stick",
+      "file": "11-step-stick.png",
+      "sourceBounds": [
+        761,
+        1005,
+        1018,
+        1453
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null
+    }
+  ],
+  "status": "animation-source",
+  "note": "Direction and stance references. Contact poses are not a completed eight-direction gait cycle."
+}

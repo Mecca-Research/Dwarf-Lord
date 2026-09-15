@@ -32,3 +32,9 @@ Next priorities: a consistent eight-direction player idle/walk set, specialist c
 - Added root `Dwarf Lord Development Roadmap.md`: 18 dependency-ordered phases, 144 actionable tasks, 22 gap resolutions, acceptance gates, complete content families, production graph and source coverage.
 - Incorporated the user's confirmed universal currency revision: 100 copper bits = 1 silver; 100 silver = 1 gold; 100 gold = 1 platinum. Opening road exports return coins; later silver/gold minting and platinum progression have material/accounting constraints. No runtime money changes made in this documentation task.
 - Validated phase/task order, uniqueness, Markdown tables, currency examples and diff whitespace. User-facing copy is in outputs. Next work follows DL-001 onward after roadmap review; PR #3 remains unmerged.
+
+## 2026-09-15 NPC angle and stance expansion
+
+User request: expand character profiles with different angles and stances like Lord so they can be animated. Branch codex/npc-animation-profiles starts from merged PR #4. All 14 non-player canonical designs now have eight turnaround views plus four role-specific stance references (168 normalized frames), source sheets, manifests, updated profiles and an interactive public/character-animation-review.html viewer. Two incorrect facing views were regenerated. Exporter isolates neighboring silhouettes instead of clipping regular grid cells. Full production gait loops and runtime NPC animation are subsequent work; this pass does not label two contact poses a finished gait.
+
+Validation: 153 tests pass, typecheck and Pages build pass. Browser review loads all 168 transparent images, checks 14 character selectors, pose controls, turnaround playback and mobile overflow with no runtime errors. Bundled web-game client exercised keyboard navigation; screenshot and state inspected. No game renderer or canonical master changes.

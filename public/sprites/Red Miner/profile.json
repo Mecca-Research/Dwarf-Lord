@@ -9,5 +9,20 @@
   "master": "stand.png",
   "renderStyle": "Semi-realistic, high-detail pre-rendered fantasy game art; neutral lighting, orthographic downward view; genuine alpha outside body; opaque skin.",
   "futureRenderRule": "Reference this master and profile for every pose/direction. Reject identity drift; do not generate an unrelated person per frame.",
-  "portrait": "portrait.png"
+  "portrait": "portrait.png",
+  "animation": {
+    "manifest": "animation/manifest.json",
+    "angles": 8,
+    "stanceReferences": 4,
+    "frameSize": [
+      384,
+      640
+    ],
+    "groundAnchor": [
+      192,
+      620
+    ],
+    "status": "source-poses",
+    "gaitComplete": false
+  }
 }
