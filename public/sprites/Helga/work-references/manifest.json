@@ -1,0 +1,127 @@
+{
+  "character": "Helga",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "34c0c88a4cb568d78115c7a81d23f17583fc53b8cf3acaa4cb6e943d1e6a763e",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "file": "00-pickaxe-ready.png",
+      "description": "Front-right, mining beside an isolated low rock fragment, both hands hold pickaxe high over shoulder in a balanced ready stance. Stocky woman with copper braids, helmet, teal tunic, leather apron, NO beard.",
+      "sourceBounds": [
+        91,
+        3,
+        534,
+        553
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "file": "01-pickaxe-contact.png",
+      "description": "Same camera and rock fragment, pickaxe lowered so tip touches stone at end of strike, feet remain planted, complete pickaxe and both hands visible.",
+      "sourceBounds": [
+        588,
+        44,
+        1005,
+        554
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "inspect-mineral",
+      "title": "Inspect mineral",
+      "file": "02-inspect-mineral.png",
+      "description": "Left-side, kneeling at a low wooden mineral sorting table examining a small ore sample with a magnifying lens, helmet still on.",
+      "sourceBounds": [
+        27,
+        532,
+        502,
+        981
+      ],
+      "sourceComponent": 17,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "shovel-stone",
+      "title": "Shovel stone",
+      "file": "03-shovel-stone.png",
+      "description": "Front-left, shoveling loose stone from a small pile into a wooden bucket, weight shifted onto front foot.",
+      "sourceBounds": [
+        516,
+        504,
+        1003,
+        1025
+      ],
+      "sourceComponent": 16,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-mine-timber",
+      "title": "Carry mine timber",
+      "file": "04-carry-mine-timber.png",
+      "description": "Rear-right, carrying a short stout timber support on one shoulder with two hands steadying it, entire timber and boots visible.",
+      "sourceBounds": [
+        87,
+        992,
+        450,
+        1502
+      ],
+      "sourceComponent": 34,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "bind-tool-handle",
+      "title": "Bind tool handle",
+      "file": "05-bind-tool-handle.png",
+      "description": "Front-right, behind a low repair bench binding a replacement pickaxe handle with a leather strap, tool head and small hammer on bench.",
+      "sourceBounds": [
+        532,
+        985,
+        1011,
+        1518
+      ],
+      "sourceComponent": 35,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

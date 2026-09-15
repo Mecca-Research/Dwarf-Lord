@@ -1,0 +1,127 @@
+{
+  "character": "Quartermaster",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "ed671fa7a1e0d4f85863ba3d1d17e5d09e2fa6bc0d69310a1aad45893564d653",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "record-inventory",
+      "title": "Record inventory",
+      "file": "00-record-inventory.png",
+      "description": "Front-right, standing behind a small administrative table recording supply counts in an OPEN inventory ledger with quill, inkpot and stacked paper present.",
+      "sourceBounds": [
+        43,
+        12,
+        489,
+        491
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "explain-allocations",
+      "title": "Explain allocations",
+      "file": "01-explain-allocations.png",
+      "description": "Front-left, standing beside same table explaining allocation with an open-hand gesture while other hand indicates a supply list.",
+      "sourceBounds": [
+        555,
+        10,
+        981,
+        498
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "examine-tool",
+      "title": "Examine tool",
+      "file": "02-examine-tool.png",
+      "description": "Right-side, examining a metal tool head closely in one hand, with tools neatly laid on compact wooden bench.",
+      "sourceBounds": [
+        75,
+        497,
+        479,
+        1009
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "count-supplies",
+      "title": "Count supplies",
+      "file": "03-count-supplies.png",
+      "description": "Front-right, counting sacks and small boxes on a wooden supply table, tally stick in hand and open ledger nearby.",
+      "sourceBounds": [
+        530,
+        494,
+        1005,
+        999
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "repair-satchel",
+      "title": "Repair satchel",
+      "file": "04-repair-satchel.png",
+      "description": "Front-left, repairing the buckle on a leather satchel at a small wooden bench with awl and needle, both hands engaged.",
+      "sourceBounds": [
+        60,
+        1004,
+        494,
+        1503
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "check-weights",
+      "title": "Check weights",
+      "file": "05-check-weights.png",
+      "description": "Front-right, checking weights on a small balance scale on administrative table beside a pouch of coins and OPEN ledger.",
+      "sourceBounds": [
+        518,
+        990,
+        994,
+        1494
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

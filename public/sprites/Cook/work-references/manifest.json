@@ -1,0 +1,127 @@
+{
+  "character": "Cook",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "9403bd3208d2884cb4df146ac58b575fb93d6820a6a8de5d43e62ea8e3ad5e0a",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "chop-vegetables",
+      "title": "Chop vegetables",
+      "file": "00-chop-vegetables.png",
+      "description": "Front-right view. Standing behind a thick wooden butcher cutting block on sturdy legs, chopping carrots with a kitchen knife in right hand, left hand safely curled around carrot. Vegetables and bowl on block.",
+      "sourceBounds": [
+        84,
+        10,
+        493,
+        514
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "peel-potatoes",
+      "title": "Peel potatoes",
+      "file": "01-peel-potatoes.png",
+      "description": "Same cutting block front-left view. Peeling a potato above a small bowl with short peeling knife, vegetable skins on block.",
+      "sourceBounds": [
+        596,
+        10,
+        977,
+        512
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "knead-dough",
+      "title": "Knead dough",
+      "file": "02-knead-dough.png",
+      "description": "Same block right-side view. Kneading a mound of dough with both hands, flour and a small bowl on block.",
+      "sourceBounds": [
+        101,
+        507,
+        510,
+        1001
+      ],
+      "sourceComponent": 28,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "stir-cauldron",
+      "title": "Stir cauldron",
+      "file": "03-stir-cauldron.png",
+      "description": "Front-right view. Stirring a stew in a cauldron on a low iron stand with a long wooden spoon, one hand steadying handle with cloth. No fire needed.",
+      "sourceBounds": [
+        629,
+        514,
+        941,
+        1005
+      ],
+      "sourceComponent": 29,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "mix-ingredients",
+      "title": "Mix ingredients",
+      "file": "04-mix-ingredients.png",
+      "description": "Same wooden cutting block front-right view. Mixing ingredients in a large wooden bowl with spoon, eggs and flour nearby.",
+      "sourceBounds": [
+        76,
+        1009,
+        495,
+        1533
+      ],
+      "sourceComponent": 30,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "serve-stew",
+      "title": "Serve stew",
+      "file": "05-serve-stew.png",
+      "description": "Front-left view at cutting block, ladling stew from a pot into a wooden serving bowl held in the other hand.",
+      "sourceBounds": [
+        588,
+        1009,
+        980,
+        1515
+      ],
+      "sourceComponent": 31,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

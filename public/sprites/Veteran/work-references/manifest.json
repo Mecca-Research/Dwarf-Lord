@@ -1,0 +1,127 @@
+{
+  "character": "Veteran",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "2bee5133f78dc915d75e329680e8cd0e783306ee367ed0188e775fc1e0196179",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "stand-watch",
+      "title": "Stand watch",
+      "file": "00-stand-watch.png",
+      "description": "Front-right, standing watch with feet braced, holding a short wooden-shafted spear upright and a small round worn iron-rimmed shield resting by left leg. Helmet and brigandine unchanged.",
+      "sourceBounds": [
+        96,
+        0,
+        465,
+        517
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "guard-ready",
+      "title": "Guard ready",
+      "file": "01-guard-ready.png",
+      "description": "Front-left, alert guard stance, shield raised across torso and spear angled low forward. Full spear within cell; no attack or victim.",
+      "sourceBounds": [
+        547,
+        45,
+        1002,
+        519
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "patrol",
+      "title": "Patrol",
+      "file": "02-patrol.png",
+      "description": "Right-side, patrolling at a measured step with spear upright and shield slung close to arm.",
+      "sourceBounds": [
+        139,
+        509,
+        404,
+        997
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "inspect-hammer",
+      "title": "Inspect hammer",
+      "file": "03-inspect-hammer.png",
+      "description": "Front-right, seated on a simple stool at low tool bench inspecting a small worn hammer head and handle for damage.",
+      "sourceBounds": [
+        572,
+        544,
+        1009,
+        996
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "sharpen-utility-knife",
+      "title": "Sharpen utility knife",
+      "file": "04-sharpen-utility-knife.png",
+      "description": "Front-left, seated at same bench carefully sharpening a small utility knife on a flat whetstone, hands away from edge.",
+      "sourceBounds": [
+        62,
+        1013,
+        509,
+        1497
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "repair-shield-strap",
+      "title": "Repair shield strap",
+      "file": "05-repair-shield-strap.png",
+      "description": "Front-right, seated at same bench repairing a leather strap or buckle on shield with awl, small tools laid out neatly.",
+      "sourceBounds": [
+        568,
+        1015,
+        1010,
+        1517
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

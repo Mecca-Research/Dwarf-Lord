@@ -1,0 +1,127 @@
+{
+  "character": "Ginger",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "b7aadaa8b037f7c4565499a99b79c750753eac806f5c92457bcb5eb184da4943",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "saw-timber",
+      "title": "Saw timber",
+      "file": "00-saw-timber.png",
+      "description": "Front-right, sawing a short timber across two stout wooden sawhorses with a hand saw, one hand steadying wood. Curly copper hair, freckled broad face, compact ginger fan beard, cream sleeves, brown vest, green trousers.",
+      "sourceBounds": [
+        45,
+        15,
+        494,
+        518
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "build-timber-crate",
+      "title": "Build timber crate",
+      "file": "01-build-timber-crate.png",
+      "description": "Front-left, hammering nails into a timber crate on a low bench, other hand bracing the corner.",
+      "sourceBounds": [
+        543,
+        25,
+        988,
+        526
+      ],
+      "sourceComponent": 7,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "stack-firewood",
+      "title": "Stack firewood",
+      "file": "02-stack-firewood.png",
+      "description": "Right-side, stacking split firewood neatly into a short timber rack, two pieces held in both arms.",
+      "sourceBounds": [
+        38,
+        525,
+        482,
+        952
+      ],
+      "sourceComponent": 72,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "haul-firewood",
+      "title": "Haul firewood",
+      "file": "03-haul-firewood.png",
+      "description": "Rear-left, hauling a small wooden sled loaded with firewood using a rope held in both hands, whole sled and rope fit cell.",
+      "sourceBounds": [
+        519,
+        546,
+        990,
+        953
+      ],
+      "sourceComponent": 73,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "sharpen-hatchet",
+      "title": "Sharpen hatchet",
+      "file": "04-sharpen-hatchet.png",
+      "description": "Front-right, seated on a low stool sharpening a hatchet on a whetstone atop a compact bench, hatchet held safely.",
+      "sourceBounds": [
+        87,
+        970,
+        511,
+        1456
+      ],
+      "sourceComponent": 80,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-supplies",
+      "title": "Carry supplies",
+      "file": "05-carry-supplies.png",
+      "description": "Front-left, carrying a sack of supplies over one shoulder and a small bucket in the free hand, full body and props visible.",
+      "sourceBounds": [
+        609,
+        948,
+        976,
+        1462
+      ],
+      "sourceComponent": 79,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

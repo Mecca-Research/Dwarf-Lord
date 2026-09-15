@@ -1,0 +1,127 @@
+{
+  "character": "Elder",
+  "canonical": "../idle.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "38cce6a0c4f6b9e54524e8b67066c717b3d49fbd6ed503e7d5c81871bf3ebf53",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "eat-stew",
+      "title": "Eat stew",
+      "file": "00-eat-stew.png",
+      "description": "Front-right three-quarter, seated on a simple low wooden stool, eating stew from a wooden bowl with a spoon. Walking stick leans safely against stool.",
+      "sourceBounds": [
+        56,
+        13,
+        458,
+        505
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "eat-bread",
+      "title": "Eat bread",
+      "file": "01-eat-bread.png",
+      "description": "Front-left view, seated holding a piece of bread in one hand and bowl in lap, taking a small bite. Same stool and clothing.",
+      "sourceBounds": [
+        594,
+        13,
+        990,
+        508
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "laugh-seated",
+      "title": "Laugh seated",
+      "file": "02-laugh-seated.png",
+      "description": "Front-right view, seated on stool laughing warmly, mouth open, eyes crinkled, one hand on belly and other on knee. No food in hands.",
+      "sourceBounds": [
+        73,
+        507,
+        456,
+        1012
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "laugh-and-gesture",
+      "title": "Laugh and gesture",
+      "file": "03-laugh-and-gesture.png",
+      "description": "Left-side view, seated chuckling with head tipped back slightly and hand raised, walking stick beside stool.",
+      "sourceBounds": [
+        573,
+        514,
+        980,
+        1005
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "inspect-pickaxe-in-lap",
+      "title": "Inspect pickaxe in lap",
+      "file": "04-inspect-pickaxe-in-lap.png",
+      "description": "Front-right view, seated carefully inspecting an old pickaxe laid ACROSS his lap; one hand touches iron head and other holds handle.",
+      "sourceBounds": [
+        69,
+        1002,
+        466,
+        1504
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "examine-pickaxe-crack",
+      "title": "Examine pickaxe crack",
+      "file": "05-examine-pickaxe-crack.png",
+      "description": "Front-left view, seated pointing at a crack in the pickaxe head on a small low table while holding its handle. He is examining, never swinging or mining.",
+      "sourceBounds": [
+        526,
+        1000,
+        991,
+        1509
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

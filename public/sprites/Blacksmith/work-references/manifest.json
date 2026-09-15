@@ -1,0 +1,127 @@
+{
+  "character": "Blacksmith",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "d5dbb3b0eb8c78e82709122fab7fec314e99308f595ded8a60627c3ee42f9690",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "anvil-ready",
+      "title": "Anvil ready",
+      "file": "00-anvil-ready.png",
+      "description": "Front-right three-quarter. Standing behind a heavy iron anvil on a stout wooden stump, tongs in left hand hold a short billet on anvil, right hand grips hammer LOW beside hip, ready to work.",
+      "sourceBounds": [
+        112,
+        20,
+        482,
+        510
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "hammer-raised",
+      "title": "Hammer raised",
+      "file": "01-hammer-raised.png",
+      "description": "Same camera, same anvil and stump and billet positions. Right hand raises hammer ABOVE shoulder, left tongs hold billet. Full raised hammer fits cell.",
+      "sourceBounds": [
+        581,
+        3,
+        960,
+        513
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "hammer-contact",
+      "title": "Hammer contact",
+      "file": "02-hammer-contact.png",
+      "description": "Same camera and station. Hammer head rests ON billet at the bottom of the strike, elbow flexed, left hand holding tongs safely clear. No motion blur.",
+      "sourceBounds": [
+        122,
+        525,
+        478,
+        1006
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "inspect-tool",
+      "title": "Inspect tool",
+      "file": "03-inspect-tool.png",
+      "description": "Left-side view at same anvil, carefully examining the billet held in tongs at eye level, hammer resting on anvil.",
+      "sourceBounds": [
+        608,
+        518,
+        974,
+        1006
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "file-tool-edge",
+      "title": "File tool edge",
+      "file": "04-file-tool-edge.png",
+      "description": "Front-left view, filing the edge of a metal tool clamped in a small bench vise on a compact wooden workbench.",
+      "sourceBounds": [
+        72,
+        1004,
+        501,
+        1512
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "repair-pickaxe-handle",
+      "title": "Repair pickaxe handle",
+      "file": "05-repair-pickaxe-handle.png",
+      "description": "Front-right view, seated at low repair bench tightening the metal head of a pickaxe onto its wooden handle, hammer and tongs laid on bench.",
+      "sourceBounds": [
+        590,
+        1015,
+        958,
+        1522
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

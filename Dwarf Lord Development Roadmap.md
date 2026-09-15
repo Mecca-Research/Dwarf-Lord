@@ -744,3 +744,7 @@ Preserve the former stand-labor as Human Laborer. Future imported human labor sh
 All 13 established dwarf NPC designs and Human Laborer now have eight standing angles and four role-specific stance references, totaling 168 exported PNGs. Each profile links its frame manifest and canonical master. `public/character-animation-review.html` supports comparison, pose selection and turnaround playback. See `docs/NPC-ANIMATION-LIBRARY.md` for the frame contract and generation provenance.
 
 The next character-animation milestone is full directional gait authoring: complete the contact/down/passing/up phases for both legs in each required direction, validate fixed-foot timing against movement speed, and integrate camera-relative direction selection. Borrin and Elder require separate ledger/conversation loops. These source poses do not complete Phase 06's runtime animation gate.
+
+## Asset production checkpoint — 2026-09-15
+
+The NPC library now includes 84 static occupational compositions (14 characters × 6 scenes), in addition to the 168 angle/stance references. See [Character work references](docs/CHARACTER-WORK-REFERENCES.md) for the action roster and review workflow. These are reference milestones, not completed production animation. Next: approve individual work compositions, register camera/scale/station coordinates, generate motion variations, validate seamless loops and tool contact, then integrate occupation state and workstation placement with gameplay.

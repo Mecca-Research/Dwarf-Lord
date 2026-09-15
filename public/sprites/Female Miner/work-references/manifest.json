@@ -1,0 +1,127 @@
+{
+  "character": "Female Miner",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceSha256": "d91b23cb5c86e4284920f396f26bc49e593337239539e0f7fd7b2e8b1b4625c4",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "file": "00-pickaxe-ready.png",
+      "description": "Front-right, beside a low isolated rock face fragment on ground. Both hands hold pickaxe raised over right shoulder, knees bent, ready to mine. Long dark hair, helmet, ochre tunic, NO beard.",
+      "sourceBounds": [
+        49,
+        10,
+        512,
+        557
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "file": "01-pickaxe-contact.png",
+      "description": "Same front-right view and rock fragment. Pickaxe lowered with metal point contacting stone, torso leaned forward, no motion blur.",
+      "sourceBounds": [
+        550,
+        43,
+        1002,
+        560
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "shovel-ore",
+      "title": "Shovel ore",
+      "file": "02-shovel-ore.png",
+      "description": "Left-side view, shoveling loose ore from a small ground pile into a wooden ore tub.",
+      "sourceBounds": [
+        47,
+        543,
+        515,
+        1012
+      ],
+      "sourceComponent": 12,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "examine-sample",
+      "title": "Examine sample",
+      "file": "03-examine-sample.png",
+      "description": "Front-left, crouching by a low wooden sorting tray examining a mineral sample held up in one hand, other hand on tray.",
+      "sourceBounds": [
+        586,
+        564,
+        995,
+        1010
+      ],
+      "sourceComponent": 15,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "push-ore-barrow",
+      "title": "Push ore barrow",
+      "file": "04-push-ore-barrow.png",
+      "description": "Rear-right three-quarter, pushing a small single-wheel wooden barrow partly filled with ore, whole barrow and boots visible.",
+      "sourceBounds": [
+        30,
+        1010,
+        553,
+        1481
+      ],
+      "sourceComponent": 25,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "repair-pickaxe",
+      "title": "Repair pickaxe",
+      "file": "05-repair-pickaxe.png",
+      "description": "Front-right, seated at a low bench checking and tightening the head of a pickaxe with a small hammer, helmet kept on.",
+      "sourceBounds": [
+        568,
+        1000,
+        1007,
+        1484
+      ],
+      "sourceComponent": 24,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}

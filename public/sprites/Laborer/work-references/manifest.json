@@ -1,0 +1,127 @@
+{
+  "character": "Laborer",
+  "canonical": "../stand.png",
+  "source": "source-sheet.png",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "sourceSha256": "aab83284cb763ffa23c3ecd0b4e27804ea71b2b73380597d77bd8ef8260693cc",
+  "frameSize": [
+    640,
+    640
+  ],
+  "status": "static-work-reference",
+  "playback": false,
+  "frames": [
+    {
+      "id": "lift-crate",
+      "title": "Lift crate",
+      "file": "00-lift-crate.png",
+      "description": "Front-right, lifting a framed wooden crate from ground with both hands and bent knees. Same bald stocky dwarf with brown beard, cream shirt and brown waistcoat.",
+      "sourceBounds": [
+        78,
+        22,
+        492,
+        478
+      ],
+      "sourceComponent": 2,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "carry-sack",
+      "title": "Carry sack",
+      "file": "01-carry-sack.png",
+      "description": "Front-left, carrying a heavy sack over one shoulder while steadying it with both hands.",
+      "sourceBounds": [
+        692,
+        5,
+        998,
+        488
+      ],
+      "sourceComponent": 1,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "push-stone-barrow",
+      "title": "Push stone barrow",
+      "file": "02-push-stone-barrow.png",
+      "description": "Right-side, pushing a wooden wheelbarrow loaded with small stones, complete wheel and handles.",
+      "sourceBounds": [
+        32,
+        490,
+        562,
+        923
+      ],
+      "sourceComponent": 3,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "pull-supply-sled",
+      "title": "Pull supply sled",
+      "file": "03-pull-supply-sled.png",
+      "description": "Rear-right, pulling a rope tied around a short timber sled holding a crate, whole rope and sled within cell.",
+      "sourceBounds": [
+        570,
+        491,
+        1052,
+        918
+      ],
+      "sourceComponent": 4,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "build-crate",
+      "title": "Build crate",
+      "file": "04-build-crate.png",
+      "description": "Front-right, behind a low wooden bench driving nails into a framed crate with small hammer while other hand steadies board.",
+      "sourceBounds": [
+        89,
+        914,
+        532,
+        1440
+      ],
+      "sourceComponent": 5,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    },
+    {
+      "id": "sweep-wood-chips",
+      "title": "Sweep wood chips",
+      "file": "05-sweep-wood-chips.png",
+      "description": "Front-left, kneeling and sweeping wood chips into a pile with a short stiff broom near a small toolbox.",
+      "sourceBounds": [
+        602,
+        970,
+        1078,
+        1419
+      ],
+      "sourceComponent": 6,
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "staticReference": true
+    }
+  ],
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+}
