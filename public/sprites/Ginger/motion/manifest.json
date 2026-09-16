@@ -1,0 +1,101 @@
+{
+  "character": "Ginger",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "saw-timber-reference",
+      "title": "Saw timber \u00b7 reference",
+      "manifest": "saw-timber/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "build-timber-crate-reference",
+      "title": "Build timber crate \u00b7 reference",
+      "manifest": "build-timber-crate/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "stack-firewood-reference",
+      "title": "Stack firewood \u00b7 reference",
+      "manifest": "stack-firewood/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "haul-firewood-reference",
+      "title": "Haul firewood \u00b7 reference",
+      "manifest": "haul-firewood/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "sharpen-hatchet-reference",
+      "title": "Sharpen hatchet \u00b7 reference",
+      "manifest": "sharpen-hatchet/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "carry-supplies-reference",
+      "title": "Carry supplies \u00b7 reference",
+      "manifest": "carry-supplies/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "fell-tree-reference",
+      "title": "Fell tree \u00b7 reference",
+      "manifest": "fell-tree/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "chop-downed-log-reference",
+      "title": "Chop downed log \u00b7 reference",
+      "manifest": "chop-downed-log/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "load-logs-cart-reference",
+      "title": "Load logs into cart \u00b7 reference",
+      "manifest": "load-logs-cart/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "sharpen-axe-reference",
+      "title": "Sharpen axe \u00b7 reference",
+      "manifest": "sharpen-axe/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "build-barrel-reference",
+      "title": "Build barrel \u00b7 reference",
+      "manifest": "build-barrel/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    }
+  ]
+}

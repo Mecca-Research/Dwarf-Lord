@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "build-crate",
+  "title": "Build crate",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-build-crate.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "872a786d1fb39b862c4e4816624f353642785ff58ed1d0c8eb32004e23ec1b61",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3577981651376148,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer above crate plank nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        74,
+        29,
+        424,
+        442
+      ],
+      "sourceAnchor": [
+        166.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        55
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hammer above crate plank nail toward raise hammer",
+      "durationMs": 125,
+      "sourceBounds": [
+        518,
+        29,
+        867,
+        442
+      ],
+      "sourceAnchor": [
+        166.0,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        55
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise hammer",
+      "durationMs": 125,
+      "sourceBounds": [
+        961,
+        6,
+        1311,
+        442
+      ],
+      "sourceAnchor": [
+        166.5,
+        436
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from raise hammer toward strike nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        1404,
+        30,
+        1754,
+        442
+      ],
+      "sourceAnchor": [
+        166.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        57
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "strike nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        74,
+        473,
+        424,
+        886
+      ],
+      "sourceAnchor": [
+        166.0,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        55
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from strike nail toward rebound hammer slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        518,
+        473,
+        867,
+        885
+      ],
+      "sourceAnchor": [
+        166.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        57
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "rebound hammer slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        962,
+        473,
+        1311,
+        886
+      ],
+      "sourceAnchor": [
+        165.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        55
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from rebound hammer slightly toward hammer above crate plank nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        1405,
+        473,
+        1754,
+        885
+      ],
+      "sourceAnchor": [
+        166.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        57
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Opaque pixels touch source edges (bottom); inspect and repair cropped tools or props."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

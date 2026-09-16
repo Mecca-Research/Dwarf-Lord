@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "repair-boardwalk",
+  "title": "Repair boardwalk",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.468982630272953,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "kneel beside loose board",
+      "durationMs": 125,
+      "sourceBounds": [
+        24,
+        130,
+        425,
+        431
+      ],
+      "sourceAnchor": [
+        200.5,
+        301
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        174
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "align board with left hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        467,
+        127,
+        868,
+        431
+      ],
+      "sourceAnchor": [
+        200.5,
+        304
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        169
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "position nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        911,
+        127,
+        1312,
+        431
+      ],
+      "sourceAnchor": [
+        200.5,
+        304
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        169
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "raise hammer in right hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        1354,
+        28,
+        1755,
+        431
+      ],
+      "sourceAnchor": [
+        200.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "strike nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        24,
+        553,
+        425,
+        872
+      ],
+      "sourceAnchor": [
+        200.5,
+        319
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        147
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "rebound",
+      "durationMs": 125,
+      "sourceBounds": [
+        467,
+        548,
+        868,
+        872
+      ],
+      "sourceAnchor": [
+        200.5,
+        324
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        140
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "check board",
+      "durationMs": 125,
+      "sourceBounds": [
+        911,
+        567,
+        1312,
+        872
+      ],
+      "sourceAnchor": [
+        200.5,
+        305
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        168
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "ready next nail",
+      "durationMs": 125,
+      "sourceBounds": [
+        1355,
+        526,
+        1755,
+        872
+      ],
+      "sourceAnchor": [
+        200.0,
+        346
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        108
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

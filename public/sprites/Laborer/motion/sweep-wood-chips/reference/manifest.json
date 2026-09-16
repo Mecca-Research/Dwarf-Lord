@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "title": "Sweep wood chips",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-sweep-wood-chips.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.2758620689655173,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "broom at near edge of wood chips",
+      "durationMs": 125,
+      "sourceBounds": [
+        21,
+        31,
+        461,
+        417
+      ],
+      "sourceAnchor": [
+        220.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        39,
+        124
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from broom at near edge of wood chips toward push broom forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        460,
+        34,
+        906,
+        417
+      ],
+      "sourceAnchor": [
+        223.0,
+        383
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        127
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "push broom forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        905,
+        36,
+        1324,
+        414
+      ],
+      "sourceAnchor": [
+        209.5,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        134
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from push broom forward toward broom reaches far edge gathering chips",
+      "durationMs": 125,
+      "sourceBounds": [
+        1390,
+        38,
+        1766,
+        415
+      ],
+      "sourceAnchor": [
+        188.0,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        135
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "broom reaches far edge gathering chips",
+      "durationMs": 125,
+      "sourceBounds": [
+        47,
+        473,
+        494,
+        857
+      ],
+      "sourceAnchor": [
+        223.5,
+        384
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        126
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from broom reaches far edge gathering chips toward lift slightly and return broom",
+      "durationMs": 125,
+      "sourceBounds": [
+        484,
+        467,
+        948,
+        858
+      ],
+      "sourceAnchor": [
+        232.0,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        117
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift slightly and return broom",
+      "durationMs": 125,
+      "sourceBounds": [
+        941,
+        465,
+        1324,
+        859
+      ],
+      "sourceAnchor": [
+        191.5,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        76,
+        113
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift slightly and return broom toward broom at near edge of wood chips",
+      "durationMs": 125,
+      "sourceBounds": [
+        1349,
+        476,
+        1766,
+        861
+      ],
+      "sourceAnchor": [
+        208.5,
+        385
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        125
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

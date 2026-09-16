@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "examine-pickaxe-crack",
+  "title": "Examine pickaxe crack",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-examine-pickaxe-crack.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "25829dd8cdeb7facb122c32934a9f6438d6e06f03e90316f5a8e95eeb58dcea3",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4334140435835352,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold cracked pickaxe near eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        61,
+        9,
+        386,
+        422
+      ],
+      "sourceAnchor": [
+        159.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        91,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold cracked pickaxe near eyes toward bring damaged joint closer",
+      "durationMs": 125,
+      "sourceBounds": [
+        503,
+        16,
+        830,
+        422
+      ],
+      "sourceAnchor": [
+        161.0,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        34
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "bring damaged joint closer",
+      "durationMs": 125,
+      "sourceBounds": [
+        946,
+        29,
+        1273,
+        422
+      ],
+      "sourceAnchor": [
+        161.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        53
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from bring damaged joint closer toward trace crack with index finger",
+      "durationMs": 125,
+      "sourceBounds": [
+        1390,
+        11,
+        1717,
+        422
+      ],
+      "sourceAnchor": [
+        161.0,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "trace crack with index finger",
+      "durationMs": 125,
+      "sourceBounds": [
+        60,
+        457,
+        391,
+        866
+      ],
+      "sourceAnchor": [
+        161.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        30
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from trace crack with index finger toward tilt pickaxe away to inspect another side",
+      "durationMs": 125,
+      "sourceBounds": [
+        503,
+        454,
+        837,
+        866
+      ],
+      "sourceAnchor": [
+        161.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "tilt pickaxe away to inspect another side",
+      "durationMs": 125,
+      "sourceBounds": [
+        946,
+        453,
+        1274,
+        866
+      ],
+      "sourceAnchor": [
+        161.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from tilt pickaxe away to inspect another side toward hold cracked pickaxe near eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        1390,
+        453,
+        1717,
+        866
+      ],
+      "sourceAnchor": [
+        161.0,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

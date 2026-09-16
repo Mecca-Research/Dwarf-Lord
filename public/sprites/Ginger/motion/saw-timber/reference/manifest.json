@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "saw-timber",
+  "title": "Saw timber",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-saw-timber.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.440389294403893,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "saw against timber close to body",
+      "durationMs": 125,
+      "sourceBounds": [
+        26,
+        22,
+        410,
+        432
+      ],
+      "sourceAnchor": [
+        192.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from saw against timber close to body toward push saw forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        470,
+        23,
+        857,
+        432
+      ],
+      "sourceAnchor": [
+        193.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "push saw forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        913,
+        23,
+        1301,
+        431
+      ],
+      "sourceAnchor": [
+        194.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from push saw forward toward saw at full extension",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        26,
+        1743,
+        432
+      ],
+      "sourceAnchor": [
+        193.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        31
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "saw at full extension",
+      "durationMs": 125,
+      "sourceBounds": [
+        26,
+        464,
+        412,
+        872
+      ],
+      "sourceAnchor": [
+        193.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        42,
+        28
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from saw at full extension toward pull saw back along same cut",
+      "durationMs": 125,
+      "sourceBounds": [
+        469,
+        463,
+        855,
+        872
+      ],
+      "sourceAnchor": [
+        193.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        42,
+        27
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "pull saw back along same cut",
+      "durationMs": 125,
+      "sourceBounds": [
+        913,
+        463,
+        1298,
+        873
+      ],
+      "sourceAnchor": [
+        192.5,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from pull saw back along same cut toward saw against timber close to body",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        461,
+        1741,
+        872
+      ],
+      "sourceAnchor": [
+        192.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

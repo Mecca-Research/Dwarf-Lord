@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "eat-bread",
+  "title": "Eat bread",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-eat-bread.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9aab34babae337c1bf3f9a5c0493c6c54225ccf419e610998615553c74c8f7ea",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4545454545454546,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold bread near chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        87,
+        19,
+        415,
+        426
+      ],
+      "sourceAnchor": [
+        164.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold bread near chest toward lift bread toward mouth",
+      "durationMs": 125,
+      "sourceBounds": [
+        531,
+        19,
+        857,
+        426
+      ],
+      "sourceAnchor": [
+        163.0,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift bread toward mouth",
+      "durationMs": 125,
+      "sourceBounds": [
+        975,
+        19,
+        1301,
+        426
+      ],
+      "sourceAnchor": [
+        163.0,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift bread toward mouth toward take small bite",
+      "durationMs": 125,
+      "sourceBounds": [
+        1415,
+        19,
+        1743,
+        426
+      ],
+      "sourceAnchor": [
+        165.0,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "take small bite",
+      "durationMs": 125,
+      "sourceBounds": [
+        88,
+        463,
+        414,
+        869
+      ],
+      "sourceAnchor": [
+        163.0,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        25
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from take small bite toward lower bread and chew",
+      "durationMs": 125,
+      "sourceBounds": [
+        530,
+        463,
+        858,
+        869
+      ],
+      "sourceAnchor": [
+        164.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower bread and chew",
+      "durationMs": 125,
+      "sourceBounds": [
+        974,
+        463,
+        1301,
+        869
+      ],
+      "sourceAnchor": [
+        164.0,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower bread and chew toward hold bread near chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        1417,
+        463,
+        1744,
+        869
+      ],
+      "sourceAnchor": [
+        163.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

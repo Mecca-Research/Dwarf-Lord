@@ -123,5 +123,25 @@
       "staticReference": true
     }
   ],
-  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop.",
+  "supplementalReferences": [
+    {
+      "id": "cut-boar-meat",
+      "title": "Cut boar meat",
+      "description": "Initial authored pose for Cut boar meat. Animation candidate requires visual review.",
+      "file": "../motion/cut-boar-meat/reference/00.png",
+      "staticReference": true,
+      "origin": "expanded-motion",
+      "productionReady": false
+    },
+    {
+      "id": "fillet-fish",
+      "title": "Fillet fish",
+      "description": "Initial authored pose for Fillet fish. Animation candidate requires visual review.",
+      "file": "../motion/fillet-fish/reference/00.png",
+      "staticReference": true,
+      "origin": "expanded-motion",
+      "productionReady": false
+    }
+  ]
 }

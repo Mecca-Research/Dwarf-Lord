@@ -1,0 +1,24 @@
+{
+  "character": "Blacksmith",
+  "action": "file-tool-edge",
+  "title": "File tool edge",
+  "reference": "public/sprites/Blacksmith/work-references/04-file-tool-edge.png",
+  "beats": [
+    "file at near edge of clamped tool",
+    "continuous midway transition from file at near edge of clamped tool toward push file forward along metal",
+    "push file forward along metal",
+    "continuous midway transition from push file forward along metal toward file reaches far end",
+    "file reaches far end",
+    "continuous midway transition from file reaches far end toward lift slightly and draw file back",
+    "lift slightly and draw file back",
+    "continuous midway transition from lift slightly and draw file back toward file at near edge of clamped tool"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: File tool edge. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. file at near edge of clamped tool | 2. continuous midway transition from file at near edge of clamped tool toward push file forward along metal | 3. push file forward along metal | 4. continuous midway transition from push file forward along metal toward file reaches far end | 5. file reaches far end | 6. continuous midway transition from file reaches far end toward lift slightly and draw file back | 7. lift slightly and draw file back | 8. continuous midway transition from lift slightly and draw file back toward file at near edge of clamped tool",
+  "sourceName": "exec-0a977f2c-b1ed-476f-805f-27215390f578.png"
+}

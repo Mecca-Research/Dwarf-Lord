@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "chop-vegetables",
+  "title": "Chop vegetables",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-chop-vegetables.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.50253807106599,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "knife poised above vegetables on wooden cutting block",
+      "durationMs": 125,
+      "sourceBounds": [
+        76,
+        25,
+        400,
+        418
+      ],
+      "sourceAnchor": [
+        150.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        26
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from knife poised above vegetables on wooden cutting block toward lift knife a little",
+      "durationMs": 125,
+      "sourceBounds": [
+        520,
+        25,
+        843,
+        419
+      ],
+      "sourceAnchor": [
+        149.0,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        96,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift knife a little",
+      "durationMs": 125,
+      "sourceBounds": [
+        963,
+        25,
+        1287,
+        418
+      ],
+      "sourceAnchor": [
+        150.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        26
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift knife a little toward chop down onto vegetable with other hand safely clear",
+      "durationMs": 125,
+      "sourceBounds": [
+        1406,
+        25,
+        1729,
+        418
+      ],
+      "sourceAnchor": [
+        150.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        26
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "chop down onto vegetable with other hand safely clear",
+      "durationMs": 125,
+      "sourceBounds": [
+        76,
+        469,
+        399,
+        863
+      ],
+      "sourceAnchor": [
+        149.5,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from chop down onto vegetable with other hand safely clear toward lift knife and nudge next slice into position",
+      "durationMs": 125,
+      "sourceBounds": [
+        519,
+        469,
+        843,
+        862
+      ],
+      "sourceAnchor": [
+        149.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        96,
+        26
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift knife and nudge next slice into position",
+      "durationMs": 125,
+      "sourceBounds": [
+        963,
+        470,
+        1287,
+        863
+      ],
+      "sourceAnchor": [
+        150.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        26
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift knife and nudge next slice into position toward knife poised above vegetables on wooden cutting block",
+      "durationMs": 125,
+      "sourceBounds": [
+        1406,
+        469,
+        1729,
+        862
+      ],
+      "sourceAnchor": [
+        149.5,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        26
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

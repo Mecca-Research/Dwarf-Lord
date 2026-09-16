@@ -1,0 +1,24 @@
+{
+  "character": "Ginger",
+  "action": "sharpen-hatchet",
+  "title": "Sharpen hatchet",
+  "reference": "public/sprites/Ginger/work-references/04-sharpen-hatchet.png",
+  "beats": [
+    "hatchet edge against whetstone",
+    "continuous midway transition from hatchet edge against whetstone toward slide edge forward across stone",
+    "slide edge forward across stone",
+    "continuous midway transition from slide edge forward across stone toward edge reaches end of stone",
+    "edge reaches end of stone",
+    "continuous midway transition from edge reaches end of stone toward lift and reset hatchet",
+    "lift and reset hatchet",
+    "continuous midway transition from lift and reset hatchet toward hatchet edge against whetstone"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Ginger. Action: Sharpen hatchet. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hatchet edge against whetstone | 2. continuous midway transition from hatchet edge against whetstone toward slide edge forward across stone | 3. slide edge forward across stone | 4. continuous midway transition from slide edge forward across stone toward edge reaches end of stone | 5. edge reaches end of stone | 6. continuous midway transition from edge reaches end of stone toward lift and reset hatchet | 7. lift and reset hatchet | 8. continuous midway transition from lift and reset hatchet toward hatchet edge against whetstone",
+  "sourceName": "exec-349b3617-b2ad-4496-8355-27c6dae6e4df.png"
+}

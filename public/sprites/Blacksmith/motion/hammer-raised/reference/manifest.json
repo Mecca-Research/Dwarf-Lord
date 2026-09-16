@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "hammer-raised",
+  "title": "Hammer raised",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-hammer-raised.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4028436018957346,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer held overhead",
+      "durationMs": 125,
+      "sourceBounds": [
+        111,
+        10,
+        402,
+        424
+      ],
+      "sourceAnchor": [
+        137.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        128,
+        35
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hammer held overhead toward hammer descends halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        564,
+        29,
+        842,
+        423
+      ],
+      "sourceAnchor": [
+        125.0,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        145,
+        63
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "hammer descends halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        1007,
+        70,
+        1281,
+        423
+      ],
+      "sourceAnchor": [
+        121.0,
+        353
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        150,
+        121
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from hammer descends halfway toward hammer contacts billet on anvil",
+      "durationMs": 125,
+      "sourceBounds": [
+        1452,
+        72,
+        1722,
+        423
+      ],
+      "sourceAnchor": [
+        117.5,
+        351
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        155,
+        124
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "hammer contacts billet on anvil",
+      "durationMs": 125,
+      "sourceBounds": [
+        130,
+        512,
+        402,
+        867
+      ],
+      "sourceAnchor": [
+        117.5,
+        355
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        155,
+        118
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery",
+      "durationMs": 125,
+      "sourceBounds": [
+        572,
+        506,
+        845,
+        867
+      ],
+      "sourceAnchor": [
+        118.5,
+        361
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        154,
+        110
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "hammer rebounds and begins recovery",
+      "durationMs": 125,
+      "sourceBounds": [
+        997,
+        478,
+        1288,
+        868
+      ],
+      "sourceAnchor": [
+        136.5,
+        390
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        129,
+        69
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from hammer rebounds and begins recovery toward hammer held overhead",
+      "durationMs": 125,
+      "sourceBounds": [
+        1435,
+        446,
+        1731,
+        868
+      ],
+      "sourceAnchor": [
+        141.5,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        121,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

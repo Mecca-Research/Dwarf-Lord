@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "stack-firewood",
+  "title": "Stack firewood",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-stack-firewood.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.510204081632653,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold log above stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        23,
+        29,
+        395,
+        414
+      ],
+      "sourceAnchor": [
+        186.0,
+        385
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        39,
+        35
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold log above stack toward lower log halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        466,
+        33,
+        839,
+        414
+      ],
+      "sourceAnchor": [
+        186.5,
+        381
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        41
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lower log halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        909,
+        44,
+        1283,
+        413
+      ],
+      "sourceAnchor": [
+        187.0,
+        369
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        59
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lower log halfway toward place log onto stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        1353,
+        48,
+        1726,
+        413
+      ],
+      "sourceAnchor": [
+        186.5,
+        365
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        65
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "place log onto stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        23,
+        482,
+        395,
+        857
+      ],
+      "sourceAnchor": [
+        186.0,
+        375
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        39,
+        50
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from place log onto stack toward adjust log securely with hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        466,
+        485,
+        839,
+        857
+      ],
+      "sourceAnchor": [
+        186.5,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        54
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "adjust log securely with hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        909,
+        486,
+        1282,
+        857
+      ],
+      "sourceAnchor": [
+        186.5,
+        371
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        56
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from adjust log securely with hands toward hold log above stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        1353,
+        465,
+        1726,
+        857
+      ],
+      "sourceAnchor": [
+        186.5,
+        392
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

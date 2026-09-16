@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "shovel-cycle",
+  "title": "Isolated shovel cycle",
+  "direction": "front-right",
+  "kind": "directional",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "3617bd888cccea8aca816ae5396c79f13b4a6b47d0a127d6e76ae81b395e8ad6",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0763636363636364,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "empty shovel low",
+      "durationMs": 125,
+      "sourceBounds": [
+        79,
+        16,
+        375,
+        418
+      ],
+      "sourceAnchor": [
+        148.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        161,
+        183
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "press blade forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        513,
+        30,
+        881,
+        416
+      ],
+      "sourceAnchor": [
+        184.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        201
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lever blade upward",
+      "durationMs": 125,
+      "sourceBounds": [
+        959,
+        27,
+        1284,
+        416
+      ],
+      "sourceAnchor": [
+        162.5,
+        389
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        145,
+        197
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift imaginary load",
+      "durationMs": 125,
+      "sourceBounds": [
+        1405,
+        7,
+        1734,
+        419
+      ],
+      "sourceAnchor": [
+        165.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        142,
+        173
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "turn torso toward deposit",
+      "durationMs": 125,
+      "sourceBounds": [
+        66,
+        462,
+        418,
+        859
+      ],
+      "sourceAnchor": [
+        128.5,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        182,
+        189
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "extend shovel",
+      "durationMs": 125,
+      "sourceBounds": [
+        499,
+        462,
+        895,
+        857
+      ],
+      "sourceAnchor": [
+        121.0,
+        395
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        190,
+        191
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "tip blade to deposit",
+      "durationMs": 125,
+      "sourceBounds": [
+        937,
+        459,
+        1301,
+        858
+      ],
+      "sourceAnchor": [
+        119.5,
+        399
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        191,
+        187
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "return empty blade",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        462,
+        1705,
+        861
+      ],
+      "sourceAnchor": [
+        147.0,
+        399
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        162,
+        187
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

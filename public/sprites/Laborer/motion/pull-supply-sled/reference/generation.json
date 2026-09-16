@@ -1,0 +1,24 @@
+{
+  "character": "Laborer",
+  "action": "pull-supply-sled",
+  "title": "Pull supply sled",
+  "reference": "public/sprites/Laborer/work-references/03-pull-supply-sled.png",
+  "beats": [
+    "lean forward gripping sled rope left foot ahead",
+    "continuous midway transition from lean forward gripping sled rope left foot ahead toward feet pass under body rope taut",
+    "feet pass under body rope taut",
+    "continuous midway transition from feet pass under body rope taut toward right foot ahead pulling sled",
+    "right foot ahead pulling sled",
+    "continuous midway transition from right foot ahead pulling sled toward feet pass under body again",
+    "feet pass under body again",
+    "continuous midway transition from feet pass under body again toward lean forward gripping sled rope left foot ahead"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Laborer/motion/pull-supply-sled/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Laborer. Action: Pull supply sled. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. lean forward gripping sled rope left foot ahead | 2. continuous midway transition from lean forward gripping sled rope left foot ahead toward feet pass under body rope taut | 3. feet pass under body rope taut | 4. continuous midway transition from feet pass under body rope taut toward right foot ahead pulling sled | 5. right foot ahead pulling sled | 6. continuous midway transition from right foot ahead pulling sled toward feet pass under body again | 7. feet pass under body again | 8. continuous midway transition from feet pass under body again toward lean forward gripping sled rope left foot ahead",
+  "sourceName": "exec-2d11c8de-2a79-4209-968d-bc804be4ec57.png"
+}

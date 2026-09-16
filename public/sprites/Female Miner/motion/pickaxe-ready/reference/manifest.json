@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "pickaxe-ready",
+  "title": "Pickaxe ready",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-pickaxe-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3703703703703705,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe held low ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        38,
+        34,
+        397,
+        422
+      ],
+      "sourceAnchor": [
+        178.0,
+        388
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        76,
+        84
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from pickaxe held low ready toward adjust grip",
+      "durationMs": 125,
+      "sourceBounds": [
+        484,
+        33,
+        790,
+        422
+      ],
+      "sourceAnchor": [
+        153.0,
+        389
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        110,
+        83
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "adjust grip",
+      "durationMs": 125,
+      "sourceBounds": [
+        930,
+        34,
+        1234,
+        422
+      ],
+      "sourceAnchor": [
+        152.5,
+        388
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        111,
+        84
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore",
+      "durationMs": 125,
+      "sourceBounds": [
+        1398,
+        26,
+        1700,
+        424
+      ],
+      "sourceAnchor": [
+        151.0,
+        398
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        71
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift pickaxe a little and lean toward ore",
+      "durationMs": 125,
+      "sourceBounds": [
+        54,
+        436,
+        357,
+        868
+      ],
+      "sourceAnchor": [
+        151.5,
+        432
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        499,
+        461,
+        798,
+        868
+      ],
+      "sourceAnchor": [
+        149.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        115,
+        58
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return to ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        942,
+        492,
+        1249,
+        867
+      ],
+      "sourceAnchor": [
+        153.5,
+        375
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        110,
+        102
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from return to ready toward pickaxe held low ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        1370,
+        494,
+        1726,
+        867
+      ],
+      "sourceAnchor": [
+        177.0,
+        373
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        105
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

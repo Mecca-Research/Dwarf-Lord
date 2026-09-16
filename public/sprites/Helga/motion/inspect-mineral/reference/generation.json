@@ -1,0 +1,24 @@
+{
+  "character": "Helga",
+  "action": "inspect-mineral",
+  "title": "Inspect mineral",
+  "reference": "public/sprites/Helga/work-references/02-inspect-mineral.png",
+  "beats": [
+    "mineral held near chest",
+    "continuous midway transition from mineral held near chest toward lift toward eyes",
+    "lift toward eyes",
+    "continuous midway transition from lift toward eyes toward rotate stone toward light",
+    "rotate stone toward light",
+    "continuous midway transition from rotate stone toward light toward lower mineral",
+    "lower mineral",
+    "continuous midway transition from lower mineral toward mineral held near chest"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Helga/motion/inspect-mineral/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Helga. Action: Inspect mineral. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. mineral held near chest | 2. continuous midway transition from mineral held near chest toward lift toward eyes | 3. lift toward eyes | 4. continuous midway transition from lift toward eyes toward rotate stone toward light | 5. rotate stone toward light | 6. continuous midway transition from rotate stone toward light toward lower mineral | 7. lower mineral | 8. continuous midway transition from lower mineral toward mineral held near chest",
+  "sourceName": "exec-d77e375a-e456-42cb-bc89-16919d6c62c0.png"
+}

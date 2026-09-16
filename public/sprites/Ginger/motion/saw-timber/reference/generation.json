@@ -1,0 +1,24 @@
+{
+  "character": "Ginger",
+  "action": "saw-timber",
+  "title": "Saw timber",
+  "reference": "public/sprites/Ginger/work-references/00-saw-timber.png",
+  "beats": [
+    "saw against timber close to body",
+    "continuous midway transition from saw against timber close to body toward push saw forward",
+    "push saw forward",
+    "continuous midway transition from push saw forward toward saw at full extension",
+    "saw at full extension",
+    "continuous midway transition from saw at full extension toward pull saw back along same cut",
+    "pull saw back along same cut",
+    "continuous midway transition from pull saw back along same cut toward saw against timber close to body"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Ginger/motion/saw-timber/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Ginger. Action: Saw timber. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. saw against timber close to body | 2. continuous midway transition from saw against timber close to body toward push saw forward | 3. push saw forward | 4. continuous midway transition from push saw forward toward saw at full extension | 5. saw at full extension | 6. continuous midway transition from saw at full extension toward pull saw back along same cut | 7. pull saw back along same cut | 8. continuous midway transition from pull saw back along same cut toward saw against timber close to body",
+  "sourceName": "exec-4b298d29-5dff-4eac-bc2b-0668e5e27a63.png"
+}

@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "pull-supply-sled",
+  "title": "Pull supply sled",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-pull-supply-sled.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2a918f36d30057620ac32ed26bba292f69bf2b071f2ea1271671fb8583b8e6d2",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.181636726546906,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "lean forward gripping sled rope left foot ahead",
+      "durationMs": 125,
+      "sourceBounds": [
+        2,
+        71,
+        453,
+        428
+      ],
+      "sourceAnchor": [
+        200.5,
+        357
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        194
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from lean forward gripping sled rope left foot ahead toward feet pass under body rope taut",
+      "durationMs": 125,
+      "sourceBounds": [
+        445,
+        41,
+        879,
+        427
+      ],
+      "sourceAnchor": [
+        195.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        160
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass under body rope taut",
+      "durationMs": 125,
+      "sourceBounds": [
+        887,
+        50,
+        1307,
+        427
+      ],
+      "sourceAnchor": [
+        176.5,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        111,
+        171
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass under body rope taut toward right foot ahead pulling sled",
+      "durationMs": 125,
+      "sourceBounds": [
+        1329,
+        49,
+        1754,
+        425
+      ],
+      "sourceAnchor": [
+        178.0,
+        376
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        110,
+        172
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot ahead pulling sled",
+      "durationMs": 125,
+      "sourceBounds": [
+        4,
+        486,
+        450,
+        868
+      ],
+      "sourceAnchor": [
+        211.0,
+        382
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        71,
+        165
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot ahead pulling sled toward feet pass under body again",
+      "durationMs": 125,
+      "sourceBounds": [
+        445,
+        491,
+        875,
+        868
+      ],
+      "sourceAnchor": [
+        197.0,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        171
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass under body again",
+      "durationMs": 125,
+      "sourceBounds": [
+        887,
+        490,
+        1307,
+        868
+      ],
+      "sourceAnchor": [
+        181.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        169
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass under body again toward lean forward gripping sled rope left foot ahead",
+      "durationMs": 125,
+      "sourceBounds": [
+        1325,
+        499,
+        1761,
+        866
+      ],
+      "sourceAnchor": [
+        196.0,
+        367
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        182
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

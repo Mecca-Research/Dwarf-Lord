@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "explain-open-ledger",
+  "title": "Explain with open ledger",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../work-references/consult-ledger.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4474327628361858,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "support open ledger with left hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        26,
+        39,
+        420,
+        421
+      ],
+      "sourceAnchor": [
+        204.0,
+        382
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        63
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "look down at page",
+      "durationMs": 125,
+      "sourceBounds": [
+        470,
+        49,
+        863,
+        421
+      ],
+      "sourceAnchor": [
+        203.5,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        78
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "point to entry with right finger",
+      "durationMs": 125,
+      "sourceBounds": [
+        913,
+        47,
+        1307,
+        421
+      ],
+      "sourceAnchor": [
+        204.5,
+        374
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        75
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "trace entry along page",
+      "durationMs": 125,
+      "sourceBounds": [
+        1357,
+        48,
+        1751,
+        421
+      ],
+      "sourceAnchor": [
+        204.0,
+        373
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        76
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "look up to listener",
+      "durationMs": 125,
+      "sourceBounds": [
+        26,
+        479,
+        420,
+        865
+      ],
+      "sourceAnchor": [
+        204.5,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        57
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "raise right palm explaining",
+      "durationMs": 125,
+      "sourceBounds": [
+        470,
+        476,
+        864,
+        865
+      ],
+      "sourceAnchor": [
+        204.0,
+        389
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        53
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return finger to entry",
+      "durationMs": 125,
+      "sourceBounds": [
+        913,
+        488,
+        1307,
+        865
+      ],
+      "sourceAnchor": [
+        204.5,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        70
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "settle open ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        1357,
+        482,
+        1750,
+        865
+      ],
+      "sourceAnchor": [
+        203.5,
+        383
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        62
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

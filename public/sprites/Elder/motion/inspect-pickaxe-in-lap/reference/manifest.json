@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "inspect-pickaxe-in-lap",
+  "title": "Inspect pickaxe in lap",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-inspect-pickaxe-in-lap.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5e861d50eee0abf19628adba8a54a5ca859ded276ca0934e323484e9bf84270d",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.50253807106599,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe rests across lap held in both hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        76,
+        19,
+        381,
+        411
+      ],
+      "sourceAnchor": [
+        162.0,
+        392
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from pickaxe rests across lap held in both hands toward lift pick head slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        521,
+        17,
+        821,
+        411
+      ],
+      "sourceAnchor": [
+        161.0,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift pick head slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        965,
+        17,
+        1277,
+        411
+      ],
+      "sourceAnchor": [
+        160.5,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift pick head slightly toward rotate pick to examine edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        19,
+        1707,
+        411
+      ],
+      "sourceAnchor": [
+        159.0,
+        392
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "rotate pick to examine edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        80,
+        461,
+        377,
+        855
+      ],
+      "sourceAnchor": [
+        157.5,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from rotate pick to examine edge toward return pick across lap",
+      "durationMs": 125,
+      "sourceBounds": [
+        520,
+        465,
+        825,
+        855
+      ],
+      "sourceAnchor": [
+        162.0,
+        390
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        30
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return pick across lap",
+      "durationMs": 125,
+      "sourceBounds": [
+        964,
+        465,
+        1265,
+        855
+      ],
+      "sourceAnchor": [
+        161.5,
+        390
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        30
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from return pick across lap toward pickaxe rests across lap held in both hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        1408,
+        464,
+        1711,
+        855
+      ],
+      "sourceAnchor": [
+        160.0,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        29
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

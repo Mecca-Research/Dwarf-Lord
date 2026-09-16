@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "sharpen-axe",
+  "title": "Sharpen axe",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.491183879093199,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "axe edge on whetstone",
+      "durationMs": 125,
+      "sourceBounds": [
+        53,
+        31,
+        390,
+        418
+      ],
+      "sourceAnchor": [
+        168.5,
+        387
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        39
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push edge across stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        496,
+        32,
+        846,
+        418
+      ],
+      "sourceAnchor": [
+        174.5,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        40
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "continue edge pass",
+      "durationMs": 125,
+      "sourceBounds": [
+        939,
+        32,
+        1291,
+        418
+      ],
+      "sourceAnchor": [
+        175.5,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        40
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "reach end of stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        1387,
+        32,
+        1742,
+        418
+      ],
+      "sourceAnchor": [
+        177.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        40
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift blade slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        53,
+        467,
+        391,
+        862
+      ],
+      "sourceAnchor": [
+        169.0,
+        395
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        27
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "return to start",
+      "durationMs": 125,
+      "sourceBounds": [
+        496,
+        465,
+        844,
+        862
+      ],
+      "sourceAnchor": [
+        173.5,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "set edge angle",
+      "durationMs": 125,
+      "sourceBounds": [
+        939,
+        476,
+        1277,
+        862
+      ],
+      "sourceAnchor": [
+        169.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        40
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "begin next pass",
+      "durationMs": 125,
+      "sourceBounds": [
+        1384,
+        477,
+        1734,
+        862
+      ],
+      "sourceAnchor": [
+        175.0,
+        385
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        42
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

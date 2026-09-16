@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "chop-downed-log",
+  "title": "Chop downed log",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3546910755148742,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "axe low over log",
+      "durationMs": 125,
+      "sourceBounds": [
+        74,
+        103,
+        441,
+        440
+      ],
+      "sourceAnchor": [
+        183.5,
+        337
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        71,
+        159
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "grip axe securely",
+      "durationMs": 125,
+      "sourceBounds": [
+        515,
+        102,
+        884,
+        440
+      ],
+      "sourceAnchor": [
+        184.5,
+        338
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        70,
+        158
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise axe overhead",
+      "durationMs": 125,
+      "sourceBounds": [
+        956,
+        3,
+        1327,
+        440
+      ],
+      "sourceAnchor": [
+        185.5,
+        437
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "begin downward swing",
+      "durationMs": 125,
+      "sourceBounds": [
+        1391,
+        113,
+        1770,
+        440
+      ],
+      "sourceAnchor": [
+        189.5,
+        327
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        173
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "strike log",
+      "durationMs": 125,
+      "sourceBounds": [
+        67,
+        543,
+        441,
+        874
+      ],
+      "sourceAnchor": [
+        187.0,
+        331
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        67,
+        168
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "pull head free",
+      "durationMs": 125,
+      "sourceBounds": [
+        512,
+        536,
+        884,
+        874
+      ],
+      "sourceAnchor": [
+        186.0,
+        338
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        158
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "recover axe",
+      "durationMs": 125,
+      "sourceBounds": [
+        950,
+        535,
+        1327,
+        874
+      ],
+      "sourceAnchor": [
+        188.5,
+        339
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        65,
+        157
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "ready next strike",
+      "durationMs": 125,
+      "sourceBounds": [
+        1403,
+        547,
+        1770,
+        883
+      ],
+      "sourceAnchor": [
+        183.5,
+        336
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        71,
+        161
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "stack-crates",
+  "title": "Stack crates",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "159ff022258616a8418905777268641225fa76138fe7e11816a82a1d78d6877e",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.5179487179487179,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold crate at waist",
+      "durationMs": 125,
+      "sourceBounds": [
+        64,
+        58,
+        454,
+        408
+      ],
+      "sourceAnchor": [
+        195.0,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        85
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "bend knees slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        521,
+        97,
+        897,
+        408
+      ],
+      "sourceAnchor": [
+        188.0,
+        311
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        144
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift toward stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        968,
+        53,
+        1341,
+        408
+      ],
+      "sourceAnchor": [
+        186.5,
+        355
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        77
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "extend arms over stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        1399,
+        45,
+        1774,
+        408
+      ],
+      "sourceAnchor": [
+        187.5,
+        363
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        65
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lower crate onto stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        66,
+        495,
+        449,
+        851
+      ],
+      "sourceAnchor": [
+        191.5,
+        356
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        76
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "release weight",
+      "durationMs": 125,
+      "sourceBounds": [
+        514,
+        498,
+        893,
+        851
+      ],
+      "sourceAnchor": [
+        189.5,
+        353
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        32,
+        80
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "align crate edges",
+      "durationMs": 125,
+      "sourceBounds": [
+        968,
+        501,
+        1334,
+        851
+      ],
+      "sourceAnchor": [
+        183.0,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        42,
+        85
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "withdraw hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        1399,
+        497,
+        1772,
+        851
+      ],
+      "sourceAnchor": [
+        189.5,
+        354
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        32,
+        79
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "character": "Cook",
+  "action": "peel-potatoes",
+  "title": "Peel potatoes",
+  "reference": "public/sprites/Cook/work-references/01-peel-potatoes.png",
+  "beats": [
+    "hold potato over bowl with knife against peel",
+    "continuous midway transition from hold potato over bowl with knife against peel toward draw knife down potato",
+    "draw knife down potato",
+    "continuous midway transition from draw knife down potato toward thin peel curls away into bowl",
+    "thin peel curls away into bowl",
+    "continuous midway transition from thin peel curls away into bowl toward rotate potato for next stroke",
+    "rotate potato for next stroke",
+    "continuous midway transition from rotate potato for next stroke toward hold potato over bowl with knife against peel"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Cook/motion/peel-potatoes/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Peel potatoes. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hold potato over bowl with knife against peel | 2. continuous midway transition from hold potato over bowl with knife against peel toward draw knife down potato | 3. draw knife down potato | 4. continuous midway transition from draw knife down potato toward thin peel curls away into bowl | 5. thin peel curls away into bowl | 6. continuous midway transition from thin peel curls away into bowl toward rotate potato for next stroke | 7. rotate potato for next stroke | 8. continuous midway transition from rotate potato for next stroke toward hold potato over bowl with knife against peel",
+  "sourceName": "exec-f41c1bbc-94ed-4dc3-8127-28cf2742cf20.png"
+}

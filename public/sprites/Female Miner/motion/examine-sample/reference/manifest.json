@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "examine-sample",
+  "title": "Examine sample",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-examine-sample.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4028436018957346,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold sample at chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        49,
+        16,
+        431,
+        438
+      ],
+      "sourceAnchor": [
+        191.0,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold sample at chest toward raise sample toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        484,
+        17,
+        866,
+        438
+      ],
+      "sourceAnchor": [
+        191.0,
+        421
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise sample toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        919,
+        16,
+        1302,
+        438
+      ],
+      "sourceAnchor": [
+        191.5,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from raise sample toward eyes toward rotate sample in fingers",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        17,
+        1740,
+        438
+      ],
+      "sourceAnchor": [
+        192.0,
+        421
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        25
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "rotate sample in fingers",
+      "durationMs": 125,
+      "sourceBounds": [
+        49,
+        456,
+        433,
+        878
+      ],
+      "sourceAnchor": [
+        192.0,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from rotate sample in fingers toward lower sample",
+      "durationMs": 125,
+      "sourceBounds": [
+        484,
+        456,
+        868,
+        878
+      ],
+      "sourceAnchor": [
+        192.0,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower sample",
+      "durationMs": 125,
+      "sourceBounds": [
+        919,
+        457,
+        1303,
+        878
+      ],
+      "sourceAnchor": [
+        192.0,
+        421
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        51,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower sample toward hold sample at chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        1354,
+        457,
+        1739,
+        878
+      ],
+      "sourceAnchor": [
+        192.5,
+        421
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

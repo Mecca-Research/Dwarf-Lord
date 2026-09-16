@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "repair-pickaxe",
+  "title": "Repair pickaxe",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-repair-pickaxe.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4837092731829573,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe across repair bench",
+      "durationMs": 125,
+      "sourceBounds": [
+        51,
+        17,
+        407,
+        414
+      ],
+      "sourceAnchor": [
+        180.0,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from pickaxe across repair bench toward brace handle and press head",
+      "durationMs": 125,
+      "sourceBounds": [
+        497,
+        17,
+        851,
+        414
+      ],
+      "sourceAnchor": [
+        178.5,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        55,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "brace handle and press head",
+      "durationMs": 125,
+      "sourceBounds": [
+        940,
+        18,
+        1294,
+        414
+      ],
+      "sourceAnchor": [
+        179.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from brace handle and press head toward tap fastening wedge",
+      "durationMs": 125,
+      "sourceBounds": [
+        1384,
+        17,
+        1738,
+        414
+      ],
+      "sourceAnchor": [
+        179.0,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "tap fastening wedge",
+      "durationMs": 125,
+      "sourceBounds": [
+        51,
+        461,
+        407,
+        857
+      ],
+      "sourceAnchor": [
+        180.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from tap fastening wedge toward inspect repaired joint",
+      "durationMs": 125,
+      "sourceBounds": [
+        497,
+        459,
+        851,
+        857
+      ],
+      "sourceAnchor": [
+        178.5,
+        398
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        55,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "inspect repaired joint",
+      "durationMs": 125,
+      "sourceBounds": [
+        940,
+        458,
+        1294,
+        857
+      ],
+      "sourceAnchor": [
+        179.0,
+        399
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from inspect repaired joint toward pickaxe across repair bench",
+      "durationMs": 125,
+      "sourceBounds": [
+        1382,
+        461,
+        1738,
+        857
+      ],
+      "sourceAnchor": [
+        180.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

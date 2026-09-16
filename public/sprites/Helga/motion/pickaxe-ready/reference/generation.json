@@ -1,0 +1,24 @@
+{
+  "character": "Helga",
+  "action": "pickaxe-ready",
+  "title": "Pickaxe ready",
+  "reference": "public/sprites/Helga/work-references/00-pickaxe-ready.png",
+  "beats": [
+    "pickaxe held ready",
+    "continuous midway transition from pickaxe held ready toward shift grip on handle",
+    "shift grip on handle",
+    "continuous midway transition from shift grip on handle toward lift head slightly with shoulders preparing",
+    "lift head slightly with shoulders preparing",
+    "continuous midway transition from lift head slightly with shoulders preparing toward return to ready",
+    "return to ready",
+    "continuous midway transition from return to ready toward pickaxe held ready"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Helga/motion/pickaxe-ready/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Helga. Action: Pickaxe ready. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. pickaxe held ready | 2. continuous midway transition from pickaxe held ready toward shift grip on handle | 3. shift grip on handle | 4. continuous midway transition from shift grip on handle toward lift head slightly with shoulders preparing | 5. lift head slightly with shoulders preparing | 6. continuous midway transition from lift head slightly with shoulders preparing toward return to ready | 7. return to ready | 8. continuous midway transition from return to ready toward pickaxe held ready",
+  "sourceName": "exec-6bb3b164-89e8-44d8-ac7e-e34c6d165fdc.png"
+}

@@ -123,5 +123,16 @@
       "staticReference": true
     }
   ],
-  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop.",
+  "supplementalReferences": [
+    {
+      "id": "fix-wheelbarrow",
+      "title": "Fix wheelbarrow",
+      "description": "Initial authored pose for Fix wheelbarrow. Animation candidate requires visual review.",
+      "file": "../motion/fix-wheelbarrow/reference/00.png",
+      "staticReference": true,
+      "origin": "expanded-motion",
+      "productionReady": false
+    }
+  ]
 }

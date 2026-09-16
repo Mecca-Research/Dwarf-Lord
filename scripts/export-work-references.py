@@ -78,6 +78,8 @@ for spec in SPECS['characters']:
         'playback': False, 'frames': frames,
         'note': 'Character and work props are composed together. These six scenes are independent static references, not an animation loop.'
     }
+    previous = json.loads((folder / 'manifest.json').read_text()) if (folder / 'manifest.json').exists() else {}
+    if previous.get('supplementalReferences'): manifest['supplementalReferences'] = previous['supplementalReferences']
     (folder / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
     review.save(folder / 'review.jpg', quality=92)
     profile['workReferences'] = {
@@ -85,6 +87,7 @@ for spec in SPECS['characters']:
         'status': 'static-reference', 'animationVariationsComplete': profile.get('workAnimations', {}).get('actionCount', 0) == 6,
         'nextPass': ('Polish keyframe transitions, workstation registration, contact timing and directional coverage before gameplay integration.' if profile.get('workAnimations') else 'Select one scene, lock identity, camera and workstation, then author action-specific motion variations.')
     }
+    if manifest.get('supplementalReferences'): profile['workReferences']['supplementalCount'] = len(manifest['supplementalReferences'])
     profile_path.write_text(json.dumps(profile, indent=2)+'\n')
     library.append({'name': name, 'manifest': f'{name}/work-references/manifest.json'})
 (ROOT / 'work-reference-library.json').write_text(json.dumps(library, indent=2)+'\n')

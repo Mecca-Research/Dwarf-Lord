@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "explain-closed-ledger",
+  "title": "Explain with closed ledger",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/11-explain.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4162679425837321,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold closed ledger under left arm",
+      "durationMs": 125,
+      "sourceBounds": [
+        18,
+        46,
+        436,
+        424
+      ],
+      "sourceAnchor": [
+        209.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        81
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise right hand palm up",
+      "durationMs": 125,
+      "sourceBounds": [
+        461,
+        46,
+        879,
+        424
+      ],
+      "sourceAnchor": [
+        209.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        81
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "extend palm to listener",
+      "durationMs": 125,
+      "sourceBounds": [
+        905,
+        46,
+        1323,
+        424
+      ],
+      "sourceAnchor": [
+        209.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        81
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "curl fingers emphasizing point",
+      "durationMs": 125,
+      "sourceBounds": [
+        1348,
+        46,
+        1766,
+        424
+      ],
+      "sourceAnchor": [
+        209.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        81
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "gesture outward",
+      "durationMs": 125,
+      "sourceBounds": [
+        18,
+        491,
+        435,
+        869
+      ],
+      "sourceAnchor": [
+        208.5,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        81
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "bring hand toward chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        461,
+        491,
+        879,
+        869
+      ],
+      "sourceAnchor": [
+        209.0,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        81
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "nod toward listener",
+      "durationMs": 125,
+      "sourceBounds": [
+        905,
+        496,
+        1322,
+        869
+      ],
+      "sourceAnchor": [
+        208.5,
+        373
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        88
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "lower hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        1348,
+        490,
+        1766,
+        869
+      ],
+      "sourceAnchor": [
+        209.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        79
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "pickaxe-ready",
+  "title": "Pickaxe ready",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-pickaxe-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3799533799533799,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe held ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        71,
+        12,
+        372,
+        436
+      ],
+      "sourceAnchor": [
+        150.5,
+        424
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        31
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from pickaxe held ready toward shift grip on handle",
+      "durationMs": 125,
+      "sourceBounds": [
+        527,
+        45,
+        828,
+        436
+      ],
+      "sourceAnchor": [
+        150.5,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        76
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "shift grip on handle",
+      "durationMs": 125,
+      "sourceBounds": [
+        965,
+        46,
+        1263,
+        436
+      ],
+      "sourceAnchor": [
+        149.0,
+        390
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        114,
+        78
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from shift grip on handle toward lift head slightly with shoulders preparing",
+      "durationMs": 125,
+      "sourceBounds": [
+        1414,
+        28,
+        1716,
+        436
+      ],
+      "sourceAnchor": [
+        151.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        53
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift head slightly with shoulders preparing",
+      "durationMs": 125,
+      "sourceBounds": [
+        71,
+        450,
+        375,
+        879
+      ],
+      "sourceAnchor": [
+        152.0,
+        429
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        110,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lift head slightly with shoulders preparing toward return to ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        527,
+        467,
+        823,
+        879
+      ],
+      "sourceAnchor": [
+        148.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        116,
+        47
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return to ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        960,
+        452,
+        1262,
+        878
+      ],
+      "sourceAnchor": [
+        151.0,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        28
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from return to ready toward pickaxe held ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        450,
+        1712,
+        879
+      ],
+      "sourceAnchor": [
+        150.5,
+        429
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

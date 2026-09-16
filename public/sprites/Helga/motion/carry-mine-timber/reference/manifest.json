@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "carry-mine-timber",
+  "title": "Carry mine timber",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-carry-mine-timber.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "85869d177aff25e761f8b900bc8dfd9153cb35ce599f585e5ce208bcb48d0bf7",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.429951690821256,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward carrying mine timber",
+      "durationMs": 125,
+      "sourceBounds": [
+        116,
+        17,
+        411,
+        431
+      ],
+      "sourceAnchor": [
+        126.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from left foot forward carrying mine timber toward feet pass under torso",
+      "durationMs": 125,
+      "sourceBounds": [
+        534,
+        16,
+        824,
+        419
+      ],
+      "sourceAnchor": [
+        121.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        40
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass under torso",
+      "durationMs": 125,
+      "sourceBounds": [
+        970,
+        16,
+        1261,
+        420
+      ],
+      "sourceAnchor": [
+        128.0,
+        404
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        38
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass under torso toward right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1398,
+        15,
+        1690,
+        420
+      ],
+      "sourceAnchor": [
+        134.5,
+        405
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        128,
+        37
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        100,
+        456,
+        402,
+        864
+      ],
+      "sourceAnchor": [
+        130.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        133,
+        33
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot forward toward feet pass under torso with same timber",
+      "durationMs": 125,
+      "sourceBounds": [
+        529,
+        455,
+        824,
+        861
+      ],
+      "sourceAnchor": [
+        117.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        152,
+        35
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass under torso with same timber",
+      "durationMs": 125,
+      "sourceBounds": [
+        969,
+        459,
+        1266,
+        870
+      ],
+      "sourceAnchor": [
+        132.0,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        131,
+        28
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass under torso with same timber toward left foot forward carrying mine timber",
+      "durationMs": 125,
+      "sourceBounds": [
+        1399,
+        456,
+        1701,
+        869
+      ],
+      "sourceAnchor": [
+        133.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        129,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

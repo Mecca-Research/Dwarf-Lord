@@ -1,0 +1,117 @@
+{
+  "character": "Elder",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-right",
+      "title": "Walking cycle \u00b7 front-right",
+      "manifest": "walk/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-right",
+      "title": "Walking cycle \u00b7 right",
+      "manifest": "walk/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-right",
+      "title": "Walking cycle \u00b7 back-right",
+      "manifest": "walk/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back",
+      "title": "Walking cycle \u00b7 back",
+      "manifest": "walk/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-left",
+      "title": "Walking cycle \u00b7 back-left",
+      "manifest": "walk/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-left",
+      "title": "Walking cycle \u00b7 left",
+      "manifest": "walk/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-left",
+      "title": "Walking cycle \u00b7 front-left",
+      "manifest": "walk/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "walk"
+    },
+    {
+      "id": "eat-stew-reference",
+      "title": "Eat stew \u00b7 reference",
+      "manifest": "eat-stew/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "eat-bread-reference",
+      "title": "Eat bread \u00b7 reference",
+      "manifest": "eat-bread/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "laugh-seated-reference",
+      "title": "Laugh seated \u00b7 reference",
+      "manifest": "laugh-seated/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "laugh-and-gesture-reference",
+      "title": "Laugh and gesture \u00b7 reference",
+      "manifest": "laugh-and-gesture/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "inspect-pickaxe-in-lap-reference",
+      "title": "Inspect pickaxe in lap \u00b7 reference",
+      "manifest": "inspect-pickaxe-in-lap/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "examine-pickaxe-crack-reference",
+      "title": "Examine pickaxe crack \u00b7 reference",
+      "manifest": "examine-pickaxe-crack/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "character": "Female Miner",
+  "action": "examine-sample",
+  "title": "Examine sample",
+  "reference": "public/sprites/Female Miner/work-references/03-examine-sample.png",
+  "beats": [
+    "hold sample at chest",
+    "continuous midway transition from hold sample at chest toward raise sample toward eyes",
+    "raise sample toward eyes",
+    "continuous midway transition from raise sample toward eyes toward rotate sample in fingers",
+    "rotate sample in fingers",
+    "continuous midway transition from rotate sample in fingers toward lower sample",
+    "lower sample",
+    "continuous midway transition from lower sample toward hold sample at chest"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Female Miner/motion/examine-sample/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Female Miner. Action: Examine sample. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hold sample at chest | 2. continuous midway transition from hold sample at chest toward raise sample toward eyes | 3. raise sample toward eyes | 4. continuous midway transition from raise sample toward eyes toward rotate sample in fingers | 5. rotate sample in fingers | 6. continuous midway transition from rotate sample in fingers toward lower sample | 7. lower sample | 8. continuous midway transition from lower sample toward hold sample at chest",
+  "sourceName": "exec-9babc976-afe2-4435-8e6e-eca769bcabb5.png"
+}

@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "carry-sack",
+  "title": "Carry sack",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-carry-sack.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4028436018957346,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward with sack",
+      "durationMs": 125,
+      "sourceBounds": [
+        125,
+        7,
+        386,
+        429
+      ],
+      "sourceAnchor": [
+        97.5,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        183,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from left foot forward with sack toward feet pass under body",
+      "durationMs": 125,
+      "sourceBounds": [
+        561,
+        8,
+        819,
+        427
+      ],
+      "sourceAnchor": [
+        100.5,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        179,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass under body",
+      "durationMs": 125,
+      "sourceBounds": [
+        997,
+        7,
+        1253,
+        413
+      ],
+      "sourceAnchor": [
+        107.0,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        170,
+        46
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass under body toward right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1439,
+        7,
+        1696,
+        429
+      ],
+      "sourceAnchor": [
+        103.0,
+        422
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        110,
+        453,
+        373,
+        869
+      ],
+      "sourceAnchor": [
+        108.5,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        168,
+        32
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot forward toward feet pass under body with sack held consistently",
+      "durationMs": 125,
+      "sourceBounds": [
+        561,
+        449,
+        825,
+        867
+      ],
+      "sourceAnchor": [
+        107.0,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        170,
+        30
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass under body with sack held consistently",
+      "durationMs": 125,
+      "sourceBounds": [
+        996,
+        450,
+        1259,
+        850
+      ],
+      "sourceAnchor": [
+        103.5,
+        400
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        175,
+        55
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass under body with sack held consistently toward left foot forward with sack",
+      "durationMs": 125,
+      "sourceBounds": [
+        1436,
+        448,
+        1699,
+        868
+      ],
+      "sourceAnchor": [
+        110.0,
+        420
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        166,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

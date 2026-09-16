@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "mix-ingredients",
+  "title": "Mix ingredients",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-mix-ingredients.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3864168618266979,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "bowl held steady and spoon at near edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        76,
+        10,
+        417,
+        437
+      ],
+      "sourceAnchor": [
+        168.5,
+        427
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from bowl held steady and spoon at near edge toward mix ingredients toward right",
+      "durationMs": 125,
+      "sourceBounds": [
+        520,
+        10,
+        860,
+        437
+      ],
+      "sourceAnchor": [
+        167.5,
+        427
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "mix ingredients toward right",
+      "durationMs": 125,
+      "sourceBounds": [
+        964,
+        10,
+        1304,
+        437
+      ],
+      "sourceAnchor": [
+        168.0,
+        427
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from mix ingredients toward right toward stir through far side of bowl",
+      "durationMs": 125,
+      "sourceBounds": [
+        1407,
+        10,
+        1748,
+        437
+      ],
+      "sourceAnchor": [
+        168.0,
+        427
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "stir through far side of bowl",
+      "durationMs": 125,
+      "sourceBounds": [
+        77,
+        455,
+        417,
+        881
+      ],
+      "sourceAnchor": [
+        167.5,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        25
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from stir through far side of bowl toward return spoon toward near edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        520,
+        455,
+        860,
+        881
+      ],
+      "sourceAnchor": [
+        167.5,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return spoon toward near edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        964,
+        455,
+        1304,
+        881
+      ],
+      "sourceAnchor": [
+        167.5,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from return spoon toward near edge toward bowl held steady and spoon at near edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        1407,
+        455,
+        1748,
+        881
+      ],
+      "sourceAnchor": [
+        168.0,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

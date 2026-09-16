@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "explain-at-desk",
+  "title": "Explain at desk",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-explain-at-desk.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3896713615023475,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "point at OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        25,
+        10,
+        436,
+        429
+      ],
+      "sourceAnchor": [
+        206.0,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        34
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from point at OPEN ledger toward lift free hand toward listener",
+      "durationMs": 125,
+      "sourceBounds": [
+        468,
+        10,
+        880,
+        430
+      ],
+      "sourceAnchor": [
+        206.5,
+        420
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        32
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift free hand toward listener",
+      "durationMs": 125,
+      "sourceBounds": [
+        912,
+        10,
+        1323,
+        429
+      ],
+      "sourceAnchor": [
+        206.0,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        34
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift free hand toward listener toward open palm outward while speaking",
+      "durationMs": 125,
+      "sourceBounds": [
+        1355,
+        10,
+        1766,
+        430
+      ],
+      "sourceAnchor": [
+        206.0,
+        420
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        32
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "open palm outward while speaking",
+      "durationMs": 125,
+      "sourceBounds": [
+        25,
+        456,
+        444,
+        874
+      ],
+      "sourceAnchor": [
+        206.0,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        35
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from open palm outward while speaking toward return hand toward open ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        469,
+        456,
+        880,
+        874
+      ],
+      "sourceAnchor": [
+        205.5,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        35
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return hand toward open ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        912,
+        457,
+        1323,
+        874
+      ],
+      "sourceAnchor": [
+        206.0,
+        417
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        37
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from return hand toward open ledger toward point at OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        457,
+        1766,
+        873
+      ],
+      "sourceAnchor": [
+        205.0,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        38
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

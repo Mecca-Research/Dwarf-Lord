@@ -1,0 +1,125 @@
+{
+  "character": "Blacksmith",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-right",
+      "title": "Walking cycle \u00b7 front-right",
+      "manifest": "walk/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-right",
+      "title": "Walking cycle \u00b7 right",
+      "manifest": "walk/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-right",
+      "title": "Walking cycle \u00b7 back-right",
+      "manifest": "walk/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back",
+      "title": "Walking cycle \u00b7 back",
+      "manifest": "walk/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-left",
+      "title": "Walking cycle \u00b7 back-left",
+      "manifest": "walk/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-left",
+      "title": "Walking cycle \u00b7 left",
+      "manifest": "walk/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-left",
+      "title": "Walking cycle \u00b7 front-left",
+      "manifest": "walk/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "walk"
+    },
+    {
+      "id": "anvil-ready-reference",
+      "title": "Anvil ready \u00b7 reference",
+      "manifest": "anvil-ready/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "hammer-raised-reference",
+      "title": "Hammer raised \u00b7 reference",
+      "manifest": "hammer-raised/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "hammer-contact-reference",
+      "title": "Hammer contact \u00b7 reference",
+      "manifest": "hammer-contact/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "inspect-tool-reference",
+      "title": "Inspect tool \u00b7 reference",
+      "manifest": "inspect-tool/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "file-tool-edge-reference",
+      "title": "File tool edge \u00b7 reference",
+      "manifest": "file-tool-edge/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "repair-pickaxe-handle-reference",
+      "title": "Repair pickaxe handle \u00b7 reference",
+      "manifest": "repair-pickaxe-handle/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "fix-wheelbarrow-reference",
+      "title": "Fix wheelbarrow \u00b7 reference",
+      "manifest": "fix-wheelbarrow/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    }
+  ]
+}

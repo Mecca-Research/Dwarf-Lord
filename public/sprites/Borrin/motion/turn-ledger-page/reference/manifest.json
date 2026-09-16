@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "turn-ledger-page",
+  "title": "Turn ledger page",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-turn-ledger-page.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "376c9e58003ad398d906d9c991ec17b024ee655fb0ecbd5f07f941d39a4eec85",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4368932038834952,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hand pinches corner of OPEN ledger page",
+      "durationMs": 125,
+      "sourceBounds": [
+        34,
+        18,
+        430,
+        430
+      ],
+      "sourceAnchor": [
+        197.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hand pinches corner of OPEN ledger page toward lift page halfway upright",
+      "durationMs": 125,
+      "sourceBounds": [
+        477,
+        18,
+        873,
+        430
+      ],
+      "sourceAnchor": [
+        198.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift page halfway upright",
+      "durationMs": 125,
+      "sourceBounds": [
+        921,
+        18,
+        1317,
+        430
+      ],
+      "sourceAnchor": [
+        198.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift page halfway upright toward page passes across book spine",
+      "durationMs": 125,
+      "sourceBounds": [
+        1364,
+        18,
+        1759,
+        430
+      ],
+      "sourceAnchor": [
+        198.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "page passes across book spine",
+      "durationMs": 125,
+      "sourceBounds": [
+        34,
+        462,
+        430,
+        873
+      ],
+      "sourceAnchor": [
+        198.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        25
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from page passes across book spine toward smooth page onto other side keeping book OPEN",
+      "durationMs": 125,
+      "sourceBounds": [
+        477,
+        461,
+        873,
+        873
+      ],
+      "sourceAnchor": [
+        198.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "smooth page onto other side keeping book OPEN",
+      "durationMs": 125,
+      "sourceBounds": [
+        921,
+        462,
+        1317,
+        873
+      ],
+      "sourceAnchor": [
+        197.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from smooth page onto other side keeping book OPEN toward hand pinches corner of OPEN ledger page",
+      "durationMs": 125,
+      "sourceBounds": [
+        1364,
+        461,
+        1759,
+        873
+      ],
+      "sourceAnchor": [
+        198.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

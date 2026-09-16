@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "desk-writing",
+  "title": "Desk writing",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-desk-writing.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.419664268585132,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "quill poised over OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        17,
+        19,
+        424,
+        435
+      ],
+      "sourceAnchor": [
+        201.5,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from quill poised over OPEN ledger toward write short stroke left to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        460,
+        19,
+        868,
+        435
+      ],
+      "sourceAnchor": [
+        202.5,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "write short stroke left to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        904,
+        19,
+        1310,
+        435
+      ],
+      "sourceAnchor": [
+        201.5,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from write short stroke left to right toward lift quill and move to next line",
+      "durationMs": 125,
+      "sourceBounds": [
+        1346,
+        19,
+        1754,
+        435
+      ],
+      "sourceAnchor": [
+        203.0,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        32,
+        25
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift quill and move to next line",
+      "durationMs": 125,
+      "sourceBounds": [
+        17,
+        460,
+        424,
+        877
+      ],
+      "sourceAnchor": [
+        202.5,
+        417
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lift quill and move to next line toward write second stroke while left hand steadies open page",
+      "durationMs": 125,
+      "sourceBounds": [
+        461,
+        462,
+        868,
+        877
+      ],
+      "sourceAnchor": [
+        202.0,
+        415
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        27
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "write second stroke while left hand steadies open page",
+      "durationMs": 125,
+      "sourceBounds": [
+        904,
+        462,
+        1311,
+        877
+      ],
+      "sourceAnchor": [
+        202.0,
+        415
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        27
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from write second stroke while left hand steadies open page toward quill poised over OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        1347,
+        461,
+        1754,
+        877
+      ],
+      "sourceAnchor": [
+        202.5,
+        416
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

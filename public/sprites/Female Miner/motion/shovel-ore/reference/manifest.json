@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "shovel-ore",
+  "title": "Shovel ore",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-shovel-ore.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "842114385eacc49ac37df831102773848e4210f38b7aae4cca35733505d62682",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.03859649122807,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shovel blade in ore pile",
+      "durationMs": 125,
+      "sourceBounds": [
+        26,
+        31,
+        407,
+        419
+      ],
+      "sourceAnchor": [
+        190.5,
+        388
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        213
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from shovel blade in ore pile toward push blade into ore",
+      "durationMs": 125,
+      "sourceBounds": [
+        483,
+        32,
+        866,
+        419
+      ],
+      "sourceAnchor": [
+        191.5,
+        387
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        121,
+        214
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "push blade into ore",
+      "durationMs": 125,
+      "sourceBounds": [
+        947,
+        40,
+        1341,
+        419
+      ],
+      "sourceAnchor": [
+        197.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        115,
+        222
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from push blade into ore toward lift loaded shovel",
+      "durationMs": 125,
+      "sourceBounds": [
+        1413,
+        17,
+        1747,
+        419
+      ],
+      "sourceAnchor": [
+        167.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        147,
+        198
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift loaded shovel",
+      "durationMs": 125,
+      "sourceBounds": [
+        37,
+        440,
+        401,
+        848
+      ],
+      "sourceAnchor": [
+        137.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        177,
+        192
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lift loaded shovel toward tip ore into adjacent container",
+      "durationMs": 125,
+      "sourceBounds": [
+        483,
+        445,
+        905,
+        847
+      ],
+      "sourceAnchor": [
+        137.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        198
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "tip ore into adjacent container",
+      "durationMs": 125,
+      "sourceBounds": [
+        945,
+        446,
+        1349,
+        848
+      ],
+      "sourceAnchor": [
+        201.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        111,
+        198
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from tip ore into adjacent container toward shovel blade in ore pile",
+      "durationMs": 125,
+      "sourceBounds": [
+        1331,
+        480,
+        1768,
+        855
+      ],
+      "sourceAnchor": [
+        218.5,
+        375
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        227
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Loose ore remains on and around the shovel; remove it for the isolated tool template."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

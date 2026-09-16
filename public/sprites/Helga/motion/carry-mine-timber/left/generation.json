@@ -1,0 +1,28 @@
+{
+  "character": "Helga",
+  "action": "carry-mine-timber",
+  "title": "Carry mine timber",
+  "reference": "public/sprites/Helga/animation/06-left.png",
+  "beats": [
+    "left heel contact, right toe behind",
+    "left weight down, right heel lifts",
+    "right foot airborne passing left support leg",
+    "right leg extends forward, left heel rises",
+    "right heel contact, left toe behind",
+    "right weight down, left heel lifts",
+    "left foot airborne passing right support leg",
+    "left leg extends forward, right heel rises"
+  ],
+  "kind": "directional",
+  "direction": "left",
+  "notes": "ONLY character and held timber log. No rocks, ore, particles, ground, buildings, carts or surrounding items. Same tool grip and camera direction throughout; tool rotates through correct elevation. Eight independent directions, never mirror asymmetrical gear.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Helga/motion/carry-mine-timber/left",
+  "prompt": "Use case: identity-preserve. Create an eight-frame game animation sprite sheet, transparent background, exactly FOUR columns and TWO rows. Image 1 is Helga's canonical carrying pose: stocky female dwarf, NO beard, long copper braids, riveted iron helmet, teal embroidered tunic, brown belt and boots, heavy log resting on her RIGHT SHOULDER. Image 2 defines the camera: strict LEFT profile, nose pointing screen LEFT. All EIGHT poses face SCREEN LEFT without turning, including bottom row. Carry the same log on the same right shoulder in every pose, never waist carry. Walk in place: top row left foot contact, left loading, right foot passing, right advancing; bottom row right foot contact, right loading, left foot passing, left advancing. Clearly alternating lead feet, body stable. Same face/clothes/proportions/lighting/camera and log dimensions in every frame. Semi realistic detailed painted 3D game sprite as references. Fit each entire dwarf AND entire log comfortably inside its own cell with generous transparent margin on ALL four sides. No cropped objects, no labels, no scenery, no ground, no shadows, no extra limbs.",
+  "sourceName": "exec-166a06ba-a471-41b5-a012-0a59c1cf5ce0.png",
+  "referenceInputs": [
+    "public/sprites/Helga/work-references/04-carry-mine-timber.png",
+    "public/sprites/Helga/animation/06-left.png"
+  ]
+}

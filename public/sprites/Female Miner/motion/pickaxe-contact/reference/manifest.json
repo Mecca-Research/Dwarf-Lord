@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "pickaxe-contact",
+  "title": "Pickaxe contact",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-pickaxe-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b7e1c2b4a7719e235d9e6030c00c66dbb388bd3c676ce302973539efe7c5feda",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3214285714285714,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe head at rock contact",
+      "durationMs": 125,
+      "sourceBounds": [
+        63,
+        18,
+        384,
+        409
+      ],
+      "sourceAnchor": [
+        160.5,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        108,
+        99
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from pickaxe head at rock contact toward draw pickaxe back",
+      "durationMs": 125,
+      "sourceBounds": [
+        517,
+        15,
+        850,
+        409
+      ],
+      "sourceAnchor": [
+        166.5,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        100,
+        95
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "draw pickaxe back",
+      "durationMs": 125,
+      "sourceBounds": [
+        949,
+        16,
+        1238,
+        408
+      ],
+      "sourceAnchor": [
+        144.0,
+        392
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        130,
+        98
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from draw pickaxe back toward lift into short swing",
+      "durationMs": 125,
+      "sourceBounds": [
+        1361,
+        14,
+        1668,
+        410
+      ],
+      "sourceAnchor": [
+        167.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        99,
+        93
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift into short swing",
+      "durationMs": 125,
+      "sourceBounds": [
+        65,
+        409,
+        349,
+        857
+      ],
+      "sourceAnchor": [
+        142.0,
+        448
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        132,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lift into short swing toward strike same point on rock",
+      "durationMs": 125,
+      "sourceBounds": [
+        513,
+        471,
+        843,
+        857
+      ],
+      "sourceAnchor": [
+        165.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        102,
+        106
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "strike same point on rock",
+      "durationMs": 125,
+      "sourceBounds": [
+        947,
+        471,
+        1270,
+        857
+      ],
+      "sourceAnchor": [
+        161.5,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        107,
+        106
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from strike same point on rock toward pickaxe head at rock contact",
+      "durationMs": 125,
+      "sourceBounds": [
+        1391,
+        470,
+        1725,
+        856
+      ],
+      "sourceAnchor": [
+        167.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        99,
+        106
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}
