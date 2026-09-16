@@ -1,0 +1,133 @@
+{
+  "character": "Borrin",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-right",
+      "title": "Walking cycle \u00b7 front-right",
+      "manifest": "walk/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-right",
+      "title": "Walking cycle \u00b7 right",
+      "manifest": "walk/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-right",
+      "title": "Walking cycle \u00b7 back-right",
+      "manifest": "walk/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back",
+      "title": "Walking cycle \u00b7 back",
+      "manifest": "walk/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-left",
+      "title": "Walking cycle \u00b7 back-left",
+      "manifest": "walk/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-left",
+      "title": "Walking cycle \u00b7 left",
+      "manifest": "walk/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-left",
+      "title": "Walking cycle \u00b7 front-left",
+      "manifest": "walk/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "walk"
+    },
+    {
+      "id": "desk-writing-reference",
+      "title": "Desk writing \u00b7 reference",
+      "manifest": "desk-writing/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "review-open-ledger-reference",
+      "title": "Review open ledger \u00b7 reference",
+      "manifest": "review-open-ledger/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "turn-ledger-page-reference",
+      "title": "Turn ledger page \u00b7 reference",
+      "manifest": "turn-ledger-page/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "explain-at-desk-reference",
+      "title": "Explain at desk \u00b7 reference",
+      "manifest": "explain-at-desk/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "count-coins-reference",
+      "title": "Count coins \u00b7 reference",
+      "manifest": "count-coins/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "stamp-paperwork-reference",
+      "title": "Stamp paperwork \u00b7 reference",
+      "manifest": "stamp-paperwork/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "explain-closed-ledger-reference",
+      "title": "Explain with closed ledger \u00b7 reference",
+      "manifest": "explain-closed-ledger/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "explain-open-ledger-reference",
+      "title": "Explain with open ledger \u00b7 reference",
+      "manifest": "explain-open-ledger/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    }
+  ]
+}

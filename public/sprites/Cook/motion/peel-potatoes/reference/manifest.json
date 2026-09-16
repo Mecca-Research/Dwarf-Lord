@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "peel-potatoes",
+  "title": "Peel potatoes",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-peel-potatoes.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4653465346534653,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold potato over bowl with knife against peel",
+      "durationMs": 125,
+      "sourceBounds": [
+        98,
+        22,
+        405,
+        424
+      ],
+      "sourceAnchor": [
+        146.5,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold potato over bowl with knife against peel toward draw knife down potato",
+      "durationMs": 125,
+      "sourceBounds": [
+        541,
+        21,
+        847,
+        425
+      ],
+      "sourceAnchor": [
+        146.0,
+        404
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "draw knife down potato",
+      "durationMs": 125,
+      "sourceBounds": [
+        984,
+        22,
+        1290,
+        425
+      ],
+      "sourceAnchor": [
+        146.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from draw knife down potato toward thin peel curls away into bowl",
+      "durationMs": 125,
+      "sourceBounds": [
+        1427,
+        22,
+        1734,
+        425
+      ],
+      "sourceAnchor": [
+        146.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        25
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "thin peel curls away into bowl",
+      "durationMs": 125,
+      "sourceBounds": [
+        98,
+        458,
+        405,
+        861
+      ],
+      "sourceAnchor": [
+        146.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        25
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from thin peel curls away into bowl toward rotate potato for next stroke",
+      "durationMs": 125,
+      "sourceBounds": [
+        541,
+        458,
+        847,
+        861
+      ],
+      "sourceAnchor": [
+        146.0,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "rotate potato for next stroke",
+      "durationMs": 125,
+      "sourceBounds": [
+        984,
+        458,
+        1290,
+        861
+      ],
+      "sourceAnchor": [
+        146.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from rotate potato for next stroke toward hold potato over bowl with knife against peel",
+      "durationMs": 125,
+      "sourceBounds": [
+        1427,
+        458,
+        1734,
+        861
+      ],
+      "sourceAnchor": [
+        146.5,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

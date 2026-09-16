@@ -1,0 +1,24 @@
+{
+  "character": "Female Miner",
+  "action": "shovel-cycle",
+  "title": "Isolated shovel cycle",
+  "reference": "public/sprites/Female Miner/animation/07-front-left.png",
+  "beats": [
+    "empty shovel low",
+    "press blade forward",
+    "lever blade upward",
+    "lift imaginary load",
+    "turn torso toward deposit",
+    "extend shovel",
+    "tip blade to deposit",
+    "return empty blade"
+  ],
+  "kind": "directional",
+  "direction": "front-left",
+  "notes": "ONLY character and held shovel. No rocks, ore, particles, ground, buildings, carts or surrounding items. Same tool grip and camera direction throughout; tool rotates through correct elevation. Eight independent directions, never mirror asymmetrical gear.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Female Miner/motion/shovel-cycle/front-left",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Female Miner. Action: Isolated shovel cycle. Direction: front-left. ONLY character and held shovel. No rocks, ore, particles, ground, buildings, carts or surrounding items. Same tool grip and camera direction throughout; tool rotates through correct elevation. Eight independent directions, never mirror asymmetrical gear. Eight poses: 1. empty shovel low | 2. press blade forward | 3. lever blade upward | 4. lift imaginary load | 5. turn torso toward deposit | 6. extend shovel | 7. tip blade to deposit | 8. return empty blade",
+  "sourceName": "exec-c91be6a2-266a-4a09-9907-8f83716b2c00.png"
+}

@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "review-open-ledger",
+  "title": "Review open ledger",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/01-review-open-ledger.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4837092731829573,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "index finger at top of OPEN ledger page",
+      "durationMs": 125,
+      "sourceBounds": [
+        32,
+        18,
+        423,
+        416
+      ],
+      "sourceAnchor": [
+        195.5,
+        398
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        30,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from index finger at top of OPEN ledger page toward finger traces line down page",
+      "durationMs": 125,
+      "sourceBounds": [
+        476,
+        21,
+        866,
+        416
+      ],
+      "sourceAnchor": [
+        195.0,
+        395
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        30
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "finger traces line down page",
+      "durationMs": 125,
+      "sourceBounds": [
+        919,
+        24,
+        1309,
+        416
+      ],
+      "sourceAnchor": [
+        195.0,
+        392
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        34
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from finger traces line down page toward lean forward and examine entry",
+      "durationMs": 125,
+      "sourceBounds": [
+        1361,
+        50,
+        1753,
+        416
+      ],
+      "sourceAnchor": [
+        196.0,
+        366
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        73
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lean forward and examine entry",
+      "durationMs": 125,
+      "sourceBounds": [
+        32,
+        513,
+        423,
+        858
+      ],
+      "sourceAnchor": [
+        195.5,
+        345
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        30,
+        104
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lean forward and examine entry toward lean back and return finger to start",
+      "durationMs": 125,
+      "sourceBounds": [
+        476,
+        467,
+        866,
+        858
+      ],
+      "sourceAnchor": [
+        195.0,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        36
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lean back and return finger to start",
+      "durationMs": 125,
+      "sourceBounds": [
+        919,
+        462,
+        1309,
+        858
+      ],
+      "sourceAnchor": [
+        195.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        28
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lean back and return finger to start toward index finger at top of OPEN ledger page",
+      "durationMs": 125,
+      "sourceBounds": [
+        1362,
+        459,
+        1753,
+        858
+      ],
+      "sourceAnchor": [
+        195.5,
+        399
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        30,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

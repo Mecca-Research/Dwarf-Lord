@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "walk",
+  "title": "Walking cycle",
+  "direction": "back-right",
+  "kind": "walk",
+  "reference": "../../../animation/03-back-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f84918c306504367081bad7939d99ac7c3d1b72639eca2e1b5893cb5a2343d88",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.472636815920398,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left heel contact, right toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        145,
+        27,
+        351,
+        429
+      ],
+      "sourceAnchor": [
+        98.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "left weight down, right heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        561,
+        25,
+        770,
+        426
+      ],
+      "sourceAnchor": [
+        101.0,
+        401
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        171,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot airborne passing left support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        993,
+        24,
+        1202,
+        424
+      ],
+      "sourceAnchor": [
+        101.0,
+        400
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        171,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "right leg extends forward, left heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        1428,
+        24,
+        1637,
+        426
+      ],
+      "sourceAnchor": [
+        116.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right heel contact, left toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        125,
+        467,
+        334,
+        865
+      ],
+      "sourceAnchor": [
+        107.0,
+        398
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        162,
+        30
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "right weight down, left heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        551,
+        467,
+        762,
+        863
+      ],
+      "sourceAnchor": [
+        115.0,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        151,
+        33
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "left foot airborne passing right support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        992,
+        467,
+        1202,
+        863
+      ],
+      "sourceAnchor": [
+        97.5,
+        396
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        33
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "left leg extends forward, right heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        1428,
+        465,
+        1638,
+        865
+      ],
+      "sourceAnchor": [
+        116.0,
+        400
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

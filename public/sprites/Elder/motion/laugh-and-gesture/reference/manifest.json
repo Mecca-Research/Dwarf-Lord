@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "laugh-and-gesture",
+  "title": "Laugh and gesture",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-laugh-and-gesture.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "61ae68cae34420d13d26f28f1eb1ade78c4715fce4c63e853298fa23b0791d25",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.339366515837104,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "smile with hand resting",
+      "durationMs": 125,
+      "sourceBounds": [
+        64,
+        20,
+        418,
+        438
+      ],
+      "sourceAnchor": [
+        177.0,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        56
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from smile with hand resting toward laugh and raise open hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        498,
+        21,
+        845,
+        438
+      ],
+      "sourceAnchor": [
+        173.5,
+        417
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        57
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "laugh and raise open hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        937,
+        20,
+        1284,
+        438
+      ],
+      "sourceAnchor": [
+        173.5,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        88,
+        56
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from laugh and raise open hand toward gesture outward with open palm",
+      "durationMs": 125,
+      "sourceBounds": [
+        1381,
+        21,
+        1759,
+        438
+      ],
+      "sourceAnchor": [
+        172.5,
+        417
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        57
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "gesture outward with open palm",
+      "durationMs": 125,
+      "sourceBounds": [
+        62,
+        461,
+        459,
+        880
+      ],
+      "sourceAnchor": [
+        176.0,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        55
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from gesture outward with open palm toward lower hand while smile settles",
+      "durationMs": 125,
+      "sourceBounds": [
+        502,
+        461,
+        853,
+        879
+      ],
+      "sourceAnchor": [
+        175.5,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        85,
+        56
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower hand while smile settles",
+      "durationMs": 125,
+      "sourceBounds": [
+        943,
+        462,
+        1296,
+        880
+      ],
+      "sourceAnchor": [
+        176.5,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        56
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower hand while smile settles toward smile with hand resting",
+      "durationMs": 125,
+      "sourceBounds": [
+        1388,
+        461,
+        1738,
+        880
+      ],
+      "sourceAnchor": [
+        175.0,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        55
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

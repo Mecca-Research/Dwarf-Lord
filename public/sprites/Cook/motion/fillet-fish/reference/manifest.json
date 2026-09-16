@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "fillet-fish",
+  "title": "Fillet fish",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4474327628361858,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold fish on cutting block with left hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        27,
+        48,
+        418,
+        424
+      ],
+      "sourceAnchor": [
+        191.5,
+        376
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        72
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "place fillet knife behind head",
+      "durationMs": 125,
+      "sourceBounds": [
+        471,
+        14,
+        861,
+        423
+      ],
+      "sourceAnchor": [
+        191.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "draw blade along spine",
+      "durationMs": 125,
+      "sourceBounds": [
+        914,
+        55,
+        1305,
+        423
+      ],
+      "sourceAnchor": [
+        191.5,
+        368
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        83
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continue controlled slicing",
+      "durationMs": 125,
+      "sourceBounds": [
+        1358,
+        54,
+        1748,
+        423
+      ],
+      "sourceAnchor": [
+        191.0,
+        369
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        82
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lift fillet edge with left hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        28,
+        491,
+        418,
+        868
+      ],
+      "sourceAnchor": [
+        191.0,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        70
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "separate fillet with knife",
+      "durationMs": 125,
+      "sourceBounds": [
+        471,
+        491,
+        861,
+        868
+      ],
+      "sourceAnchor": [
+        191.5,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        70
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lay fillet on board",
+      "durationMs": 125,
+      "sourceBounds": [
+        914,
+        493,
+        1305,
+        868
+      ],
+      "sourceAnchor": [
+        191.5,
+        375
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        73
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "reset fish for next side",
+      "durationMs": 125,
+      "sourceBounds": [
+        1358,
+        491,
+        1748,
+        868
+      ],
+      "sourceAnchor": [
+        191.0,
+        377
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        70
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

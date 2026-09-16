@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "load-logs-cart",
+  "title": "Load logs into cart",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "cd449344877a3f4199e5a287765203b5a2f2642f9b01f1ea24a34b977e0db067",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.098330241187384,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "crouch grasping log",
+      "durationMs": 125,
+      "sourceBounds": [
+        13,
+        165,
+        432,
+        419
+      ],
+      "sourceAnchor": [
+        209.5,
+        254
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        337
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift log toward knees",
+      "durationMs": 125,
+      "sourceBounds": [
+        457,
+        112,
+        875,
+        419
+      ],
+      "sourceAnchor": [
+        209.0,
+        307
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        279
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise log to waist",
+      "durationMs": 125,
+      "sourceBounds": [
+        900,
+        69,
+        1266,
+        419
+      ],
+      "sourceAnchor": [
+        163.5,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        232
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "turn toward cart",
+      "durationMs": 125,
+      "sourceBounds": [
+        1223,
+        67,
+        1762,
+        419
+      ],
+      "sourceAnchor": [
+        269.5,
+        352
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        229
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "raise log over side rail",
+      "durationMs": 125,
+      "sourceBounds": [
+        13,
+        502,
+        432,
+        863
+      ],
+      "sourceAnchor": [
+        209.5,
+        361
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        220
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "lower log onto stack",
+      "durationMs": 125,
+      "sourceBounds": [
+        456,
+        513,
+        875,
+        863
+      ],
+      "sourceAnchor": [
+        209.5,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        232
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "release log",
+      "durationMs": 125,
+      "sourceBounds": [
+        900,
+        515,
+        1319,
+        863
+      ],
+      "sourceAnchor": [
+        209.5,
+        348
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        234
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "hands withdraw",
+      "durationMs": 125,
+      "sourceBounds": [
+        1344,
+        513,
+        1762,
+        863
+      ],
+      "sourceAnchor": [
+        209.0,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        232
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

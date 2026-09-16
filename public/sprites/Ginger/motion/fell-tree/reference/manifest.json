@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "fell-tree",
+  "title": "Fell tree",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5ec41d8dc769fc9a57ec2062b6953a7e6da18218c8edb503a5007afc7439eedc",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.5063613231552162,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "axe low beside tree trunk",
+      "durationMs": 125,
+      "sourceBounds": [
+        30,
+        37,
+        417,
+        416
+      ],
+      "sourceAnchor": [
+        193.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        45
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw axe backward",
+      "durationMs": 125,
+      "sourceBounds": [
+        471,
+        37,
+        861,
+        416
+      ],
+      "sourceAnchor": [
+        196.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        45
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise axe to shoulder",
+      "durationMs": 125,
+      "sourceBounds": [
+        918,
+        37,
+        1304,
+        416
+      ],
+      "sourceAnchor": [
+        193.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        45
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "accelerate toward trunk",
+      "durationMs": 125,
+      "sourceBounds": [
+        1361,
+        36,
+        1747,
+        416
+      ],
+      "sourceAnchor": [
+        193.0,
+        380
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        44
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "axe contacts notch",
+      "durationMs": 125,
+      "sourceBounds": [
+        31,
+        481,
+        417,
+        860
+      ],
+      "sourceAnchor": [
+        193.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        45
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "pull axe free",
+      "durationMs": 125,
+      "sourceBounds": [
+        474,
+        481,
+        860,
+        860
+      ],
+      "sourceAnchor": [
+        193.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        45
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "recover axe to side",
+      "durationMs": 125,
+      "sourceBounds": [
+        918,
+        481,
+        1304,
+        860
+      ],
+      "sourceAnchor": [
+        193.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        45
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "ready next swing",
+      "durationMs": 125,
+      "sourceBounds": [
+        1358,
+        481,
+        1746,
+        860
+      ],
+      "sourceAnchor": [
+        195.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        45
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "roll-barrel",
+  "title": "Roll barrel",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.468982630272953,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hands brace horizontal barrel",
+      "durationMs": 125,
+      "sourceBounds": [
+        47,
+        74,
+        418,
+        426
+      ],
+      "sourceAnchor": [
+        185.5,
+        352
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        99
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push barrel forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        478,
+        90,
+        871,
+        427
+      ],
+      "sourceAnchor": [
+        196.5,
+        337
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        31,
+        121
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "hands follow rolling staves",
+      "durationMs": 125,
+      "sourceBounds": [
+        935,
+        95,
+        1312,
+        427
+      ],
+      "sourceAnchor": [
+        188.5,
+        332
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        128
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "shift weight forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1346,
+        96,
+        1749,
+        427
+      ],
+      "sourceAnchor": [
+        201.5,
+        331
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        130
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "regrip upper staves",
+      "durationMs": 125,
+      "sourceBounds": [
+        49,
+        506,
+        416,
+        852
+      ],
+      "sourceAnchor": [
+        183.5,
+        346
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        108
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "push again",
+      "durationMs": 125,
+      "sourceBounds": [
+        496,
+        515,
+        881,
+        853
+      ],
+      "sourceAnchor": [
+        192.0,
+        338
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        119
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "barrel rolls under hands",
+      "durationMs": 125,
+      "sourceBounds": [
+        931,
+        517,
+        1314,
+        853
+      ],
+      "sourceAnchor": [
+        190.5,
+        336
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        40,
+        122
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "settle grip",
+      "durationMs": 125,
+      "sourceBounds": [
+        1393,
+        512,
+        1749,
+        852
+      ],
+      "sourceAnchor": [
+        178.0,
+        340
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        117
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

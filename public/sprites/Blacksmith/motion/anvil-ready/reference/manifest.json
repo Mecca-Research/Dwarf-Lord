@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "anvil-ready",
+  "title": "Anvil ready",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-anvil-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3214285714285714,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "rest hammer low",
+      "durationMs": 125,
+      "sourceBounds": [
+        90,
+        18,
+        398,
+        427
+      ],
+      "sourceAnchor": [
+        156.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        114,
+        76
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from rest hammer low toward slight inhale and draw hammer hand back at hip",
+      "durationMs": 125,
+      "sourceBounds": [
+        507,
+        17,
+        840,
+        427
+      ],
+      "sourceAnchor": [
+        176.5,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        74
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "slight inhale and draw hammer hand back at hip",
+      "durationMs": 125,
+      "sourceBounds": [
+        952,
+        17,
+        1282,
+        427
+      ],
+      "sourceAnchor": [
+        175.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        74
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from slight inhale and draw hammer hand back at hip toward adjust tongs on billet",
+      "durationMs": 125,
+      "sourceBounds": [
+        1434,
+        18,
+        1726,
+        427
+      ],
+      "sourceAnchor": [
+        136.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        76
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "adjust tongs on billet",
+      "durationMs": 125,
+      "sourceBounds": [
+        98,
+        463,
+        398,
+        871
+      ],
+      "sourceAnchor": [
+        142.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        132,
+        77
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from adjust tongs on billet toward settle into ready stance",
+      "durationMs": 125,
+      "sourceBounds": [
+        530,
+        463,
+        840,
+        871
+      ],
+      "sourceAnchor": [
+        153.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        117,
+        77
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "settle into ready stance",
+      "durationMs": 125,
+      "sourceBounds": [
+        952,
+        423,
+        1283,
+        871
+      ],
+      "sourceAnchor": [
+        174.5,
+        448
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from settle into ready stance toward rest hammer low",
+      "durationMs": 125,
+      "sourceBounds": [
+        1419,
+        463,
+        1726,
+        871
+      ],
+      "sourceAnchor": [
+        156.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        77
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

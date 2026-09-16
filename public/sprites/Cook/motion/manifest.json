@@ -1,0 +1,133 @@
+{
+  "character": "Cook",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-right",
+      "title": "Walking cycle \u00b7 front-right",
+      "manifest": "walk/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-right",
+      "title": "Walking cycle \u00b7 right",
+      "manifest": "walk/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-right",
+      "title": "Walking cycle \u00b7 back-right",
+      "manifest": "walk/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back",
+      "title": "Walking cycle \u00b7 back",
+      "manifest": "walk/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-back-left",
+      "title": "Walking cycle \u00b7 back-left",
+      "manifest": "walk/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-left",
+      "title": "Walking cycle \u00b7 left",
+      "manifest": "walk/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "walk"
+    },
+    {
+      "id": "walk-front-left",
+      "title": "Walking cycle \u00b7 front-left",
+      "manifest": "walk/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "walk"
+    },
+    {
+      "id": "chop-vegetables-reference",
+      "title": "Chop vegetables \u00b7 reference",
+      "manifest": "chop-vegetables/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "peel-potatoes-reference",
+      "title": "Peel potatoes \u00b7 reference",
+      "manifest": "peel-potatoes/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "knead-dough-reference",
+      "title": "Knead dough \u00b7 reference",
+      "manifest": "knead-dough/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "stir-cauldron-reference",
+      "title": "Stir cauldron \u00b7 reference",
+      "manifest": "stir-cauldron/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "mix-ingredients-reference",
+      "title": "Mix ingredients \u00b7 reference",
+      "manifest": "mix-ingredients/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "serve-stew-reference",
+      "title": "Serve stew \u00b7 reference",
+      "manifest": "serve-stew/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "cut-boar-meat-reference",
+      "title": "Cut boar meat \u00b7 reference",
+      "manifest": "cut-boar-meat/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "fillet-fish-reference",
+      "title": "Fillet fish \u00b7 reference",
+      "manifest": "fillet-fish/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    }
+  ]
+}

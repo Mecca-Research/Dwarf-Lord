@@ -1,0 +1,24 @@
+{
+  "character": "Elder",
+  "action": "walk",
+  "title": "Walking cycle",
+  "reference": "public/sprites/Elder/animation/04-back.png",
+  "beats": [
+    "left heel contact, right toe behind",
+    "left weight down, right heel lifts",
+    "right foot airborne passing left support leg",
+    "right leg extends forward, left heel rises",
+    "right heel contact, left toe behind",
+    "right weight down, left heel lifts",
+    "left foot airborne passing right support leg",
+    "left leg extends forward, right heel rises"
+  ],
+  "kind": "walk",
+  "direction": "back",
+  "notes": "No workstation or scenery. Natural full-body walk in place with opposite-leg contact poses and counter-swinging arms. Walk carefully supported by wooden walking stick in right hand; coordinate stick plant, weight transfer and recovery.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Elder/motion/walk/back",
+  "prompt": "Generate a transparent game sprite sheet: exactly EIGHT separate full-body sprites in FOUR columns and TWO rows, no text, no environment. Preserve this reference dwarf's identity, clothes, materials, proportions, semi-realistic rendering and EXACT camera orientation across every frame. All eight figures face back as in the reference, no turnarounds. Animate a full alternating-leg walk in place with his wooden walking stick in RIGHT hand. Show substantial leg articulation, not eight copies of one stride. Row 1: anatomical LEFT foot contact, left weight down, right foot passes planted left leg, right foot reaches ahead. Row 2: anatomical RIGHT foot contact (opposite leading foot from row1), right weight down, left passes planted right leg, left reaches ahead. Stick plants and lifts with weight transfer, same hand throughout. Exactly two legs, two arms, one stick. Fixed camera, constant character size and light, distinct poses, all feet and whole stick visible with generous transparent gutters. Actual alpha transparency, no painted background.",
+  "sourceName": "exec-0c79bfff-0347-47f7-a1fa-ab79a72ad76c.png"
+}

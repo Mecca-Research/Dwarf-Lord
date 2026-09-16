@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "file-tool-edge",
+  "title": "File tool edge",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-file-tool-edge.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "77c059ab3c11da539ef6105586f0eef5d3075e977d3b5312ff845d6694183c54",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4368932038834952,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "file at near edge of clamped tool",
+      "durationMs": 125,
+      "sourceBounds": [
+        58,
+        17,
+        405,
+        425
+      ],
+      "sourceAnchor": [
+        169.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        30
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from file at near edge of clamped tool toward push file forward along metal",
+      "durationMs": 125,
+      "sourceBounds": [
+        503,
+        18,
+        849,
+        425
+      ],
+      "sourceAnchor": [
+        167.0,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        31
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "push file forward along metal",
+      "durationMs": 125,
+      "sourceBounds": [
+        947,
+        18,
+        1292,
+        425
+      ],
+      "sourceAnchor": [
+        166.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        31
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from push file forward along metal toward file reaches far end",
+      "durationMs": 125,
+      "sourceBounds": [
+        1390,
+        18,
+        1735,
+        425
+      ],
+      "sourceAnchor": [
+        166.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        31
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "file reaches far end",
+      "durationMs": 125,
+      "sourceBounds": [
+        59,
+        465,
+        405,
+        869
+      ],
+      "sourceAnchor": [
+        167.5,
+        404
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        35
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from file reaches far end toward lift slightly and draw file back",
+      "durationMs": 125,
+      "sourceBounds": [
+        503,
+        457,
+        849,
+        869
+      ],
+      "sourceAnchor": [
+        167.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift slightly and draw file back",
+      "durationMs": 125,
+      "sourceBounds": [
+        945,
+        457,
+        1292,
+        869
+      ],
+      "sourceAnchor": [
+        168.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift slightly and draw file back toward file at near edge of clamped tool",
+      "durationMs": 125,
+      "sourceBounds": [
+        1389,
+        459,
+        1735,
+        869
+      ],
+      "sourceAnchor": [
+        167.5,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

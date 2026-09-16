@@ -1,0 +1,189 @@
+{
+  "character": "Female Miner",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "pickaxe-ready-reference",
+      "title": "Pickaxe ready \u00b7 reference",
+      "manifest": "pickaxe-ready/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "pickaxe-contact-reference",
+      "title": "Pickaxe contact \u00b7 reference",
+      "manifest": "pickaxe-contact/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "shovel-ore-reference",
+      "title": "Shovel ore \u00b7 reference",
+      "manifest": "shovel-ore/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "examine-sample-reference",
+      "title": "Examine sample \u00b7 reference",
+      "manifest": "examine-sample/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "push-ore-barrow-reference",
+      "title": "Push ore barrow \u00b7 reference",
+      "manifest": "push-ore-barrow/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "repair-pickaxe-reference",
+      "title": "Repair pickaxe \u00b7 reference",
+      "manifest": "repair-pickaxe/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "pickaxe-swing-front",
+      "title": "Isolated pickaxe swing \u00b7 front",
+      "manifest": "pickaxe-swing/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-front-right",
+      "title": "Isolated pickaxe swing \u00b7 front-right",
+      "manifest": "pickaxe-swing/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-right",
+      "title": "Isolated pickaxe swing \u00b7 right",
+      "manifest": "pickaxe-swing/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-back-right",
+      "title": "Isolated pickaxe swing \u00b7 back-right",
+      "manifest": "pickaxe-swing/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-back",
+      "title": "Isolated pickaxe swing \u00b7 back",
+      "manifest": "pickaxe-swing/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-back-left",
+      "title": "Isolated pickaxe swing \u00b7 back-left",
+      "manifest": "pickaxe-swing/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-left",
+      "title": "Isolated pickaxe swing \u00b7 left",
+      "manifest": "pickaxe-swing/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "directional"
+    },
+    {
+      "id": "pickaxe-swing-front-left",
+      "title": "Isolated pickaxe swing \u00b7 front-left",
+      "manifest": "pickaxe-swing/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-front",
+      "title": "Isolated shovel cycle \u00b7 front",
+      "manifest": "shovel-cycle/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-front-right",
+      "title": "Isolated shovel cycle \u00b7 front-right",
+      "manifest": "shovel-cycle/front-right/manifest.json",
+      "frameCount": 8,
+      "direction": "front-right",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-right",
+      "title": "Isolated shovel cycle \u00b7 right",
+      "manifest": "shovel-cycle/right/manifest.json",
+      "frameCount": 8,
+      "direction": "right",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-back-right",
+      "title": "Isolated shovel cycle \u00b7 back-right",
+      "manifest": "shovel-cycle/back-right/manifest.json",
+      "frameCount": 8,
+      "direction": "back-right",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-back",
+      "title": "Isolated shovel cycle \u00b7 back",
+      "manifest": "shovel-cycle/back/manifest.json",
+      "frameCount": 8,
+      "direction": "back",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-back-left",
+      "title": "Isolated shovel cycle \u00b7 back-left",
+      "manifest": "shovel-cycle/back-left/manifest.json",
+      "frameCount": 8,
+      "direction": "back-left",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-left",
+      "title": "Isolated shovel cycle \u00b7 left",
+      "manifest": "shovel-cycle/left/manifest.json",
+      "frameCount": 8,
+      "direction": "left",
+      "kind": "directional"
+    },
+    {
+      "id": "shovel-cycle-front-left",
+      "title": "Isolated shovel cycle \u00b7 front-left",
+      "manifest": "shovel-cycle/front-left/manifest.json",
+      "frameCount": 8,
+      "direction": "front-left",
+      "kind": "directional"
+    }
+  ]
+}

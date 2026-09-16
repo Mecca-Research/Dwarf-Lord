@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "stamp-paperwork",
+  "title": "Stamp paperwork",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-stamp-paperwork.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.429951690821256,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "stamp poised above paperwork beside OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        21,
+        13,
+        423,
+        422
+      ],
+      "sourceAnchor": [
+        204.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        31
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from stamp poised above paperwork beside OPEN ledger toward lower stamp halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        465,
+        14,
+        864,
+        422
+      ],
+      "sourceAnchor": [
+        203.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        33
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lower stamp halfway",
+      "durationMs": 125,
+      "sourceBounds": [
+        908,
+        14,
+        1307,
+        422
+      ],
+      "sourceAnchor": [
+        204.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        33
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lower stamp halfway toward press stamp on paper",
+      "durationMs": 125,
+      "sourceBounds": [
+        1352,
+        14,
+        1750,
+        422
+      ],
+      "sourceAnchor": [
+        203.5,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        33
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "press stamp on paper",
+      "durationMs": 125,
+      "sourceBounds": [
+        21,
+        465,
+        424,
+        867
+      ],
+      "sourceAnchor": [
+        204.5,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        41
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from press stamp on paper toward lift stamp and examine impression",
+      "durationMs": 125,
+      "sourceBounds": [
+        465,
+        460,
+        867,
+        866
+      ],
+      "sourceAnchor": [
+        203.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        35
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift stamp and examine impression",
+      "durationMs": 125,
+      "sourceBounds": [
+        908,
+        452,
+        1310,
+        866
+      ],
+      "sourceAnchor": [
+        204.5,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift stamp and examine impression toward stamp poised above paperwork beside OPEN ledger",
+      "durationMs": 125,
+      "sourceBounds": [
+        1352,
+        460,
+        1753,
+        866
+      ],
+      "sourceAnchor": [
+        203.5,
+        406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        35
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "fix-wheelbarrow",
+  "title": "Fix wheelbarrow",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3243847874720358,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "inspect wheel axle",
+      "durationMs": 125,
+      "sourceBounds": [
+        15,
+        60,
+        443,
+        407
+      ],
+      "sourceAnchor": [
+        205.0,
+        347
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        156
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "grip loose axle with left hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        458,
+        60,
+        887,
+        407
+      ],
+      "sourceAnchor": [
+        205.5,
+        347
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        156
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "position hammer in right hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        902,
+        51,
+        1330,
+        407
+      ],
+      "sourceAnchor": [
+        205.5,
+        356
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        145
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "raise hammer slightly",
+      "durationMs": 125,
+      "sourceBounds": [
+        1345,
+        28,
+        1774,
+        407
+      ],
+      "sourceAnchor": [
+        205.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        114
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "tap securing wedge",
+      "durationMs": 125,
+      "sourceBounds": [
+        15,
+        505,
+        443,
+        850
+      ],
+      "sourceAnchor": [
+        205.0,
+        345
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        159
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "rebound hammer",
+      "durationMs": 125,
+      "sourceBounds": [
+        458,
+        496,
+        886,
+        851
+      ],
+      "sourceAnchor": [
+        205.5,
+        355
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        146
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "turn wheel by hand to test",
+      "durationMs": 125,
+      "sourceBounds": [
+        902,
+        496,
+        1330,
+        851
+      ],
+      "sourceAnchor": [
+        205.5,
+        355
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        146
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "inspect repaired hub",
+      "durationMs": 125,
+      "sourceBounds": [
+        1345,
+        472,
+        1774,
+        851
+      ],
+      "sourceAnchor": [
+        205.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        114
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
+      "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

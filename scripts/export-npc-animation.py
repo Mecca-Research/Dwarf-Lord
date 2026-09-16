@@ -45,11 +45,11 @@ for src in root.glob('*/animation/source-sheet.png'):
   # Retain authored seated/standing height difference instead of stretching every stance to full height.
   # All poses use the same pixels-per-character-unit scale.
   crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS);target.alpha_composite(crop,((384-crop.width)//2,620-crop.height))
-  filename=f'{idx:02d}-{frame_labels[idx]}.png';target.save(src.parent/filename)
+  filename=f'../work-references/{frame_labels[idx]}.png' if name=='Borrin' and idx in (8,9) else f'{idx:02d}-{frame_labels[idx]}.png';target.save(src.parent/filename)
   frames.append({'id':frame_labels[idx],'file':filename,'sourceBounds':[x0,y0,x1,y1],'anchor':[192,620],'sourceOverride':override})
   if name=='Borrin' and idx==8:frames[-1].update({'title':'Seated writing at desk','description':'Writing in a visibly open ledger at the administrative desk. Replaces the closed-cover legacy writing pose.'})
   thumb=target.copy();thumb.thumbnail((250,400));out.paste(thumb,((idx%4)*256,(idx//4)*430),thumb);draw.text(((idx%4)*256+8,(idx//4)*430+405),frame_labels[idx],fill='white')
- manifest={'character':name,'canonical':'../'+json.loads((src.parent.parent/'profile.json').read_text())['master'],'source':'source-sheet.png','frameSize':[384,640],'scaleFromSource':common_scale,'frames':frames,'status':'animation-source','note':'Direction and stance references. Contact poses are not a completed eight-direction gait cycle.'}
+ manifest={'character':name,'canonical':'../'+json.loads((src.parent.parent/'profile.json').read_text())['master'],'source':'source-sheet.png','frameSize':[384,640],'scaleFromSource':common_scale,'frames':[f for f in frames if not (name=='Borrin' and f['id'] in ('seated-ledger','consult-ledger'))],'status':'animation-source','note':'Direction and stance references. Contact poses are not a completed eight-direction gait cycle.'}
  (src.parent/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');out.save(src.parent/'review.jpg');library.append({'name':name,'manifest':f'{name}/animation/manifest.json'})
 Path('public/sprites/animation-library.json').write_text(json.dumps(library,indent=2)+'\n')
 print('Exported',len(library),'characters')

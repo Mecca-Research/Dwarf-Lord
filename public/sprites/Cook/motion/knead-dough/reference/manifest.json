@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "knead-dough",
+  "title": "Knead dough",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-knead-dough.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.429951690821256,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "palms rest on dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        68,
+        10,
+        408,
+        422
+      ],
+      "sourceAnchor": [
+        159.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from palms rest on dough toward lean forward pressing dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        513,
+        15,
+        854,
+        422
+      ],
+      "sourceAnchor": [
+        159.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        34
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lean forward pressing dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        958,
+        31,
+        1298,
+        422
+      ],
+      "sourceAnchor": [
+        159.0,
+        391
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        57
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lean forward pressing dough toward fold dough back over itself",
+      "durationMs": 125,
+      "sourceBounds": [
+        1399,
+        10,
+        1735,
+        422
+      ],
+      "sourceAnchor": [
+        158.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "fold dough back over itself",
+      "durationMs": 125,
+      "sourceBounds": [
+        68,
+        456,
+        408,
+        866
+      ],
+      "sourceAnchor": [
+        159.5,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        30
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from fold dough back over itself toward pull hands back to kneading start",
+      "durationMs": 125,
+      "sourceBounds": [
+        512,
+        456,
+        854,
+        866
+      ],
+      "sourceAnchor": [
+        160.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        91,
+        30
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "pull hands back to kneading start",
+      "durationMs": 125,
+      "sourceBounds": [
+        958,
+        452,
+        1299,
+        866
+      ],
+      "sourceAnchor": [
+        159.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from pull hands back to kneading start toward palms rest on dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        1399,
+        457,
+        1739,
+        866
+      ],
+      "sourceAnchor": [
+        159.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        31
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

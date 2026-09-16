@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "build-barrel",
+  "title": "Build barrel",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3672055427251733,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "brace staves in barrel jig",
+      "durationMs": 125,
+      "sourceBounds": [
+        20,
+        43,
+        435,
+        407
+      ],
+      "sourceAnchor": [
+        207.5,
+        364
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        36,
+        118
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "position stave",
+      "durationMs": 125,
+      "sourceBounds": [
+        460,
+        35,
+        874,
+        407
+      ],
+      "sourceAnchor": [
+        207.0,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        107
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "seat stave in ring",
+      "durationMs": 125,
+      "sourceBounds": [
+        901,
+        54,
+        1315,
+        407
+      ],
+      "sourceAnchor": [
+        207.0,
+        353
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        133
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "grip mallet",
+      "durationMs": 125,
+      "sourceBounds": [
+        1343,
+        47,
+        1757,
+        407
+      ],
+      "sourceAnchor": [
+        207.0,
+        360
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        124
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "raise mallet",
+      "durationMs": 125,
+      "sourceBounds": [
+        21,
+        424,
+        435,
+        857
+      ],
+      "sourceAnchor": [
+        207.0,
+        433
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "tap hoop downward",
+      "durationMs": 125,
+      "sourceBounds": [
+        461,
+        505,
+        874,
+        857
+      ],
+      "sourceAnchor": [
+        206.5,
+        352
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        135
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "rebound mallet",
+      "durationMs": 125,
+      "sourceBounds": [
+        901,
+        475,
+        1314,
+        857
+      ],
+      "sourceAnchor": [
+        206.5,
+        382
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        94
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "inspect hoop fit",
+      "durationMs": 125,
+      "sourceBounds": [
+        1343,
+        507,
+        1757,
+        857
+      ],
+      "sourceAnchor": [
+        207.0,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        137
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

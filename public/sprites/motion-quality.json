@@ -1,0 +1,1822 @@
+{
+  "version": 1,
+  "plannedSequences": 153,
+  "counts": {
+    "needs-visual-review": 125,
+    "missing-source": 28
+  },
+  "productionReady": false,
+  "sequences": [
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "ad321634921518e1be62fd9a2465dfe8efc98bb16650dd202ee259814b386c90"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "d9a382f24753de4585426671210eb2089846b871cfd17fc65281d352327878ca"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "8d72d1ab048c3e7713702a68b3aaedd866aa69946bde3c47a43338f9091b61ad"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2d784590c763213857fff79bf91271bd99f1b23e81a9f7d791bec447675699a3"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b2bdd951f481beea4c778549fdd1adcf351c748137b7eef63b4ebdfbe7c44847"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9944f416ebd5280326f51106bf5ebd2e7a3629780ec578709a1621cb1bf0a195"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f272365eb53d359bd32e13be4efc1f19ab24f3ab1cf5f2ab68ea8a4a96d03471"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Blacksmith/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "c1e39ede7569248a4d0d5e80cfc305e786a439cc016746658b5cb3f957d32c4d"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "a71e233e1fd1d0484ebe12343ba1d64264f965e2a77260ffcaa10485e84555f2"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "5ebca460586fa8e041109c48b1f390b6329c1174db5dc61619a9f8cca05eb40f"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9c0e271bf3d7d61ef972c0f7a0eafc8f2aae092d21babcfd4baecf589033f52b"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f84918c306504367081bad7939d99ac7c3d1b72639eca2e1b5893cb5a2343d88"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "cafc143d3609ebf9416f9f881bc50f37a77c2eedecc0ffc3048926fb4140aa69"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "cb889a5a2fea37a841426034e52e12aa980618c140c99e1a5633eff40fc101be"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "ca6ece6f980b01002284dd7841379411d78d570e1cbab123fb916544e29497b4"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Borrin/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "d6788b5f65e41d4114c99f28a508f054c8a99cbcafb880d7fcea1fe88781a7f7"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "d810a2cc852555c85c880a9745ea11a4d6191d94a754414f7e80f53d1bf6491f"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f71e94fed49509e6fd25077be15643ee56850af829534ad3b09f4f2b39fa1bc9"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "18e2141da17f94c1054541bb63fd520de7e82f43e5001359ef73ff8eda06fb2d"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "33e35a53de7ad7c6a7eab8ee8f9635801dda2f543ed894eb430119a70ee907b0"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "cd1a819e3d3d7eaca3a116003582f21340f97c159173f8f2b0be030914a4a44c"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "7ebf60684f5df92166ba5b61aa9c71ba0ef5d98f49fa9766dddf0ba85af64b53"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "519ad17ac0b12f2a59b12ba1069d0b2bf5ce9709c8167ec4519b746218b587c4"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Cook/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "36c23e60e1a3ed7a598110b62bddec26f628630a8a97c99595549d1e40bc9f45"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "699a338c4fcd9a174f192643e33e86a2141f40520d05078384ea8685a66efb5f"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "ac1cdbfdf24609b11f0602bb55eeb9b186e9120a6cf3ca2d7eab073cd42b1b27"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "5fd010994d857f880313fa8cb20cef5353f02f07de09a4c33ffba264ac4620cd"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "e15aa52bf54e5416517de53da10881aa6c4afa610e16db49f2d1d3746f5a87c1"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+        "Walking stick changes hands between rows; preserve the anatomical right hand throughout."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1e987ca0533f0f44c182b741dcf74f4a4391212fb2e657c43e8e6c27b47231de"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "61b53bc0428381e22deef137994807d02a8b4958f17937847bbc535cccc25093"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "ecfe3b563b2669f98df03cbcd9c04d7604349877964bf43aebf41f7ed7ebdc93"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Elder/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f26be338085abeb8a0281ccdecbc9d5f50c4dfca30b3059ab9ab90ba5e39867c"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+        "Leading foot repeats across much of the cycle; replacement gait required."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1f9126fda4cfe4196ad562f3a757dc8b95efcf942b1fc581843f5414f5ddbbc9"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Female Miner/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2696b3882f4476ad24edd06ba85b1e0fbfd3490cc1746a5808ed59cc1861da99"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Ginger/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "3cf36b3881311df76043784e327d52088af5a63b26ab82bd34876079cb144a10"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Helga/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/front",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "22f9655792667499f22a74c12717781201eac194b74fc126be75093e38c1b4e4"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front-right",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/front-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "right",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back-right",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/back-right",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/back",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back-left",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/back-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "left",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front-left",
+      "kind": "walk",
+      "destination": "public/sprites/Laborer/motion/walk/front-left",
+      "issues": [
+        "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      ],
+      "status": "missing-source"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/anvil-ready/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/hammer-raised/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/hammer-contact/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/inspect-tool/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "77c059ab3c11da539ef6105586f0eef5d3075e977d3b5312ff845d6694183c54"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d"
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/desk-writing/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe"
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/review-open-ledger/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c"
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/turn-ledger-page/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "376c9e58003ad398d906d9c991ec17b024ee655fb0ecbd5f07f941d39a4eec85"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/explain-at-desk/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc"
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/count-coins/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109"
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Borrin/motion/stamp-paperwork/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5"
+    },
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/chop-vegetables/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09"
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/peel-potatoes/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7"
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/knead-dough/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab"
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/stir-cauldron/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42"
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/mix-ingredients/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa"
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Cook/motion/serve-stew/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "e16349a9f29ffdf790722475b1aa2acc28eb22a0ef35fdd68a5ee2aeba4485b3"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-stew",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/eat-stew/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "794736354cc68dec859ec90060b552476962b55883af7594a0283eadcf8a2e30"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-bread",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/eat-bread/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9aab34babae337c1bf3f9a5c0493c6c54225ccf419e610998615553c74c8f7ea"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-seated",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/laugh-seated/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "6e6e628038fdb1ae8e1e8a93eb944648f46e1a2219a260759317d856cdde422b"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-and-gesture",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/laugh-and-gesture/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "61ae68cae34420d13d26f28f1eb1ade78c4715fce4c63e853298fa23b0791d25"
+    },
+    {
+      "character": "Elder",
+      "action": "inspect-pickaxe-in-lap",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "5e861d50eee0abf19628adba8a54a5ca859ded276ca0934e323484e9bf84270d"
+    },
+    {
+      "character": "Elder",
+      "action": "examine-pickaxe-crack",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Elder/motion/examine-pickaxe-crack/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "25829dd8cdeb7facb122c32934a9f6438d6e06f03e90316f5a8e95eeb58dcea3"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-ready",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-contact",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-contact/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b7e1c2b4a7719e235d9e6030c00c66dbb388bd3c676ce302973539efe7c5feda"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-ore",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/shovel-ore/reference",
+      "issues": [
+        "Loose ore remains on and around the shovel; remove it for the isolated tool template."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "842114385eacc49ac37df831102773848e4210f38b7aae4cca35733505d62682"
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/examine-sample/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372"
+    },
+    {
+      "character": "Female Miner",
+      "action": "push-ore-barrow",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/push-ore-barrow/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "472b0557edf045628321bc4caa5cd2c067fa4cdae14a79c8b252ac3e6e07c4c2"
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-ready",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/pickaxe-ready/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-contact",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/pickaxe-contact/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4d716d9a32b5d2ed0ee4ac478213f37e3ec7da6dc92d8b362dc3fc6705cbde75"
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/inspect-mineral/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be"
+    },
+    {
+      "character": "Helga",
+      "action": "shovel-stone",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/shovel-stone/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "fafd7766e54adbf7c0af975d23035b026eda234a3e281026b7a9e55f99e96a31"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/reference",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "85869d177aff25e761f8b900bc8dfd9153cb35ce599f585e5ce208bcb48d0bf7"
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Helga/motion/bind-tool-handle/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b912762dbc5747fd48f546f1dd8a30f0329ebd48536c992ff3505cc7e285b2a5"
+    },
+    {
+      "character": "Laborer",
+      "action": "lift-crate",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/lift-crate/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "947ba76025489dfe54e6a05199b89c51f2bf9eced8b190d1009827d1f62f3f35"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/carry-sack/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1"
+    },
+    {
+      "character": "Laborer",
+      "action": "push-stone-barrow",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/push-stone-barrow/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "a443d0c9f2dad4cb3cd7b8098b29389655bf5ed649cc1dd32b8ccd9e98843f02"
+    },
+    {
+      "character": "Laborer",
+      "action": "pull-supply-sled",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/pull-supply-sled/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2a918f36d30057620ac32ed26bba292f69bf2b071f2ea1271671fb8583b8e6d2"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/build-crate/reference",
+      "issues": [
+        "Opaque pixels touch source edges (bottom); inspect and repair cropped tools or props."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "872a786d1fb39b862c4e4816624f353642785ff58ed1d0c8eb32004e23ec1b61"
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335"
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/saw-timber/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/build-timber-crate/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993"
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/stack-firewood/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb"
+    },
+    {
+      "character": "Ginger",
+      "action": "haul-firewood",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/haul-firewood/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b9119f578e66cd9d48ff189d162524d6dac0267be99fe0bf89c4c2ed9dd36d22"
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "087df31fd02b2a5718bbf0af8816580d98495f4c99d3ab49b8b2e249c52526e1"
+    },
+    {
+      "character": "Ginger",
+      "action": "carry-supplies",
+      "direction": "reference",
+      "kind": "work",
+      "destination": "public/sprites/Ginger/motion/carry-supplies/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b1329fd5f3c7a04724dd5eaa91d8e1d17f1e8230a95d5f4a14f4594b31d5701e"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "fix-wheelbarrow",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
+        "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-open-ledger",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Borrin/motion/explain-open-ledger/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6"
+    },
+    {
+      "character": "Cook",
+      "action": "cut-boar-meat",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Cook/motion/cut-boar-meat/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad"
+    },
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566"
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Ginger/motion/fell-tree/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "5ec41d8dc769fc9a57ec2062b6953a7e6da18218c8edb503a5007afc7439eedc"
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Ginger/motion/chop-downed-log/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc"
+    },
+    {
+      "character": "Ginger",
+      "action": "load-logs-cart",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Ginger/motion/load-logs-cart/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "cd449344877a3f4199e5a287765203b5a2f2642f9b01f1ea24a34b977e0db067"
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-axe",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Ginger/motion/sharpen-axe/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-barrel",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Ginger/motion/build-barrel/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf"
+    },
+    {
+      "character": "Laborer",
+      "action": "roll-barrel",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/roll-barrel/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-crate",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/carry-crate/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "afb43b17681cdb11b593fac6a2cab6c5152a113e869a8ffc6b715077e2240bcf"
+    },
+    {
+      "character": "Laborer",
+      "action": "stack-crates",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/stack-crates/reference",
+      "issues": [
+        "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "159ff022258616a8418905777268641225fa76138fe7e11816a82a1d78d6877e"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-barrel",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/build-barrel/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "14fdd05b224291bca562ef0874a1be9391a87974bd8c8f8d49fb9d95e8e7dbe7"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-large-stone-ore",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/carry-large-stone-ore/reference",
+      "issues": [
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2505d95187c025e4e03e0a31dfb56a78cef001641889e4efa24926f36a637ac0"
+    },
+    {
+      "character": "Laborer",
+      "action": "shovel-rubble",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/shovel-rubble/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7"
+    },
+    {
+      "character": "Laborer",
+      "action": "repair-boardwalk",
+      "direction": "reference",
+      "kind": "new-work",
+      "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/front",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "78b37940e71af099ab18893ed57bd9b407212e2e679c4476ede69f5c943d74fe"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front-right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/front-right",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "dad04f248bcccca8e4105da42ec3abb1c14bf5de3519c24bd52680451044cd82"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/right",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "0093aeb90a6d5dbc3020dd71bfe56710e37762c08861477b3825f82301741fa7"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back-right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/back-right",
+      "issues": [
+        "Opaque pixels touch source edges (top); inspect and repair cropped tools or props."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "e70731db8453f4b8e51911661916ebcd2ca424ff34482a53bb9846282b7212d2"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/back",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4428ffde77b0a2222a3806b4fd4920c90b9d5c6131333210d78b9d1fff13929e"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back-left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/back-left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "fc8f9333b4b8dac02269347afceb033692b778d0d93cfa60b85b2cbdba3fd80d"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "237eb58fda11c79b0dd8d007686de56c43a71f68685fdaed219bc274fcf613e7"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front-left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-swing/front-left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "a331d9ee7bca973af28c66cf16ee1847b2de5c3955c820cf611cf0a83d5e1244"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/front",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "920279200b41da14f7c35d57a7db9e76b1b01f7b4676d4de75d71ece13984f53"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front-right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/front-right",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "3617bd888cccea8aca816ae5396c79f13b4a6b47d0a127d6e76ae81b395e8ad6"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/right",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "10cbcdb50cb27ff82b3f4c673ae60e93e91fb5e0cd1887b2af6db94d9699c0b4"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back-right",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/back-right",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "80ff58b128d178f97cb8f4ae0b66a9f6c4dc1d2bef89c4a7aebb8c2167327b7e"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/back",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4788b74106448db0e3cae4f0bba86b33e05086453310d50a8cdff2a20289fd6a"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back-left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/back-left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "5d8997687f93908651317875f44013b4f9e56bed336ce21f453c056e9f569997"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1609e162491f88167cb59eab0026075a3e9c1f47514821e28ebe8fe3ac8c8efd"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front-left",
+      "kind": "directional",
+      "destination": "public/sprites/Female Miner/motion/shovel-cycle/front-left",
+      "issues": [],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "653833f8d6fa04af336756d4aa0e835272f7d2f252235b7d26c2970f15b8a4da"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/front",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "c1258d50ebca5a5b7c275296486db3fd1a178ec8cba4455d3dcbfa53c77cd4cc"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front-right",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/front-right",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "e69163f06aae14d250ba4364b1f0b239631d6148a81ceb0f69084e85ea120387"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "right",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/right",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2ef736c19e5eb5f02ab81d5ef69e70c28a6f8f10adba74082eb5422281dabc2a"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back-right",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/back-right",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "22a023cd34ea446f9227d971ef03f6f043395bc84b5403b71b5b991b14d980a2"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/back",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "844a2ff415cb2303aecb1091ecd35f22563403a8da039b1498ea8b58624a18f9"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back-left",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/back-left",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "aaf407c7908b553e1c92426e495b9b4a6e69324f49744823d0224d0ee63b806d"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "left",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/left",
+      "issues": [
+        "Facing and shoulder placement corrected; lead-foot alternation and shoulder grip still need refinement.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "44f69a47f0c1ed6f3b3e4f2c30b542bb1e6737eb845ee8e8c340c64a47697a76"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front-left",
+      "kind": "directional",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/front-left",
+      "issues": [
+        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      ],
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "772af28b684497701ec877610c5ed9cb37d2c5810caa71ebf9d8c6122da70088"
+    }
+  ]
+}

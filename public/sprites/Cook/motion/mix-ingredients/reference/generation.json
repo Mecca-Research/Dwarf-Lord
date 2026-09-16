@@ -1,0 +1,24 @@
+{
+  "character": "Cook",
+  "action": "mix-ingredients",
+  "title": "Mix ingredients",
+  "reference": "public/sprites/Cook/work-references/04-mix-ingredients.png",
+  "beats": [
+    "bowl held steady and spoon at near edge",
+    "continuous midway transition from bowl held steady and spoon at near edge toward mix ingredients toward right",
+    "mix ingredients toward right",
+    "continuous midway transition from mix ingredients toward right toward stir through far side of bowl",
+    "stir through far side of bowl",
+    "continuous midway transition from stir through far side of bowl toward return spoon toward near edge",
+    "return spoon toward near edge",
+    "continuous midway transition from return spoon toward near edge toward bowl held steady and spoon at near edge"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Cook/motion/mix-ingredients/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Mix ingredients. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. bowl held steady and spoon at near edge | 2. continuous midway transition from bowl held steady and spoon at near edge toward mix ingredients toward right | 3. mix ingredients toward right | 4. continuous midway transition from mix ingredients toward right toward stir through far side of bowl | 5. stir through far side of bowl | 6. continuous midway transition from stir through far side of bowl toward return spoon toward near edge | 7. return spoon toward near edge | 8. continuous midway transition from return spoon toward near edge toward bowl held steady and spoon at near edge",
+  "sourceName": "exec-1364305a-cc94-42ab-8e12-71e2316391ab.png"
+}

@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "stir-cauldron",
+  "title": "Stir cauldron",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-stir-cauldron.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.440389294403893,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "spoon at near side of cauldron",
+      "durationMs": 125,
+      "sourceBounds": [
+        80,
+        16,
+        345,
+        425
+      ],
+      "sourceAnchor": [
+        124.5,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from spoon at near side of cauldron toward stir spoon to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        523,
+        16,
+        788,
+        426
+      ],
+      "sourceAnchor": [
+        125.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        25
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "stir spoon to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        966,
+        16,
+        1232,
+        425
+      ],
+      "sourceAnchor": [
+        125.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from stir spoon to right toward stir spoon to far side",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        16,
+        1677,
+        425
+      ],
+      "sourceAnchor": [
+        125.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "stir spoon to far side",
+      "durationMs": 125,
+      "sourceBounds": [
+        79,
+        459,
+        345,
+        869
+      ],
+      "sourceAnchor": [
+        125.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        25
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from stir spoon to far side toward stir spoon to left completing circular motion",
+      "durationMs": 125,
+      "sourceBounds": [
+        523,
+        459,
+        788,
+        870
+      ],
+      "sourceAnchor": [
+        125.0,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "stir spoon to left completing circular motion",
+      "durationMs": 125,
+      "sourceBounds": [
+        966,
+        459,
+        1232,
+        869
+      ],
+      "sourceAnchor": [
+        125.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from stir spoon to left completing circular motion toward spoon at near side of cauldron",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        460,
+        1677,
+        869
+      ],
+      "sourceAnchor": [
+        125.0,
+        409
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

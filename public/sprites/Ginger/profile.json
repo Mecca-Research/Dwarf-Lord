@@ -30,13 +30,21 @@
     "count": 6,
     "status": "static-reference",
     "animationVariationsComplete": true,
-    "nextPass": "Polish keyframe transitions, workstation registration, contact timing and directional coverage before gameplay integration."
+    "nextPass": "Polish keyframe transitions, workstation registration, contact timing and directional coverage before gameplay integration.",
+    "supplementalCount": 5
   },
   "workAnimations": {
     "manifest": "work-animations/manifest.json",
     "actionCount": 6,
     "frameCount": 24,
     "status": "authored-keyframe-variations",
+    "productionReady": false
+  },
+  "expandedMotion": {
+    "manifest": "motion/manifest.json",
+    "availableCycles": 12,
+    "plannedCycles": 19,
+    "frameCount": 96,
     "productionReady": false
   }
 }

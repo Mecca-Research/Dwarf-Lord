@@ -1,0 +1,24 @@
+{
+  "character": "Blacksmith",
+  "action": "hammer-raised",
+  "title": "Hammer raised",
+  "reference": "public/sprites/Blacksmith/work-references/01-hammer-raised.png",
+  "beats": [
+    "hammer held overhead",
+    "continuous midway transition from hammer held overhead toward hammer descends halfway",
+    "hammer descends halfway",
+    "continuous midway transition from hammer descends halfway toward hammer contacts billet on anvil",
+    "hammer contacts billet on anvil",
+    "continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery",
+    "hammer rebounds and begins recovery",
+    "continuous midway transition from hammer rebounds and begins recovery toward hammer held overhead"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Blacksmith/motion/hammer-raised/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: Hammer raised. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hammer held overhead | 2. continuous midway transition from hammer held overhead toward hammer descends halfway | 3. hammer descends halfway | 4. continuous midway transition from hammer descends halfway toward hammer contacts billet on anvil | 5. hammer contacts billet on anvil | 6. continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery | 7. hammer rebounds and begins recovery | 8. continuous midway transition from hammer rebounds and begins recovery toward hammer held overhead",
+  "sourceName": "exec-3ec98432-3180-405b-8d51-5e4d6b6a0d70.png"
+}

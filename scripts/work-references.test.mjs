@@ -19,8 +19,9 @@ test('14 characters have six static work references with complete provenance and
   assert.equal(profile.workReferences.count,6);assert.equal(profile.workReferences.animationVariationsComplete,true);assert.equal(profile.workAnimations.actionCount,6);assert.equal(profile.workAnimations.frameCount,24);assert.equal(profile.workAnimations.productionReady,false);
  }
 });
-test('Borrin legacy writing now references the open-ledger desk composition',()=>{
- const url=new URL('Borrin/animation/manifest.json',root);const m=JSON.parse(readFileSync(url));
- assert.equal(m.frames[8].id,'seated-ledger');assert.equal(m.frames[8].sourceOverride,'../work-references/00-desk-writing.png');assert.match(m.frames[8].description,/open ledger/);
- assert.ok(existsSync(new URL(m.frames[8].sourceOverride,url)));
+test('Borrin ledger poses belong to work references',()=>{
+ const url=new URL('Borrin/work-references/manifest.json',root);const m=JSON.parse(readFileSync(url));
+ assert.deepEqual(m.supplementalReferences.filter(f=>f.origin!=='expanded-motion').map(f=>f.id),['seated-ledger','consult-ledger']);
+ for(const f of m.supplementalReferences)assert.ok(existsSync(new URL(f.file,url)));
+ assert.match(m.supplementalReferences[0].description,/open ledger/);
 });

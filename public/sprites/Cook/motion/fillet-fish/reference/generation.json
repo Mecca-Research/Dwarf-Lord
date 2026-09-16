@@ -1,0 +1,24 @@
+{
+  "character": "Cook",
+  "action": "fillet-fish",
+  "title": "Fillet fish",
+  "reference": "public/sprites/Cook/animation/01-front-right.png",
+  "beats": [
+    "hold fish on cutting block with left hand",
+    "place fillet knife behind head",
+    "draw blade along spine",
+    "continue controlled slicing",
+    "lift fillet edge with left hand",
+    "separate fillet with knife",
+    "lay fillet on board",
+    "reset fish for next side"
+  ],
+  "kind": "new-work",
+  "direction": "reference",
+  "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Fillet fish. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. hold fish on cutting block with left hand | 2. place fillet knife behind head | 3. draw blade along spine | 4. continue controlled slicing | 5. lift fillet edge with left hand | 6. separate fillet with knife | 7. lay fillet on board | 8. reset fish for next side",
+  "sourceName": "exec-6dc8d248-f10c-433f-a0cd-52e40540f58b.png"
+}

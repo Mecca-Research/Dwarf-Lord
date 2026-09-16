@@ -1,0 +1,24 @@
+{
+  "character": "Helga",
+  "action": "bind-tool-handle",
+  "title": "Bind tool handle",
+  "reference": "public/sprites/Helga/work-references/05-bind-tool-handle.png",
+  "beats": [
+    "hold tool handle and binding",
+    "continuous midway transition from hold tool handle and binding toward wrap binding around joint",
+    "wrap binding around joint",
+    "continuous midway transition from wrap binding around joint toward pull binding taut",
+    "pull binding taut",
+    "continuous midway transition from pull binding taut toward press wrap into place",
+    "press wrap into place",
+    "continuous midway transition from press wrap into place toward hold tool handle and binding"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Helga/motion/bind-tool-handle/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Helga. Action: Bind tool handle. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hold tool handle and binding | 2. continuous midway transition from hold tool handle and binding toward wrap binding around joint | 3. wrap binding around joint | 4. continuous midway transition from wrap binding around joint toward pull binding taut | 5. pull binding taut | 6. continuous midway transition from pull binding taut toward press wrap into place | 7. press wrap into place | 8. continuous midway transition from press wrap into place toward hold tool handle and binding",
+  "sourceName": "exec-38f86b4c-3ad9-453e-85f3-2d09e1dc3a6a.png"
+}

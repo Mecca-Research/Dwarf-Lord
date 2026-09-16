@@ -1,0 +1,24 @@
+{
+  "character": "Cook",
+  "action": "stir-cauldron",
+  "title": "Stir cauldron",
+  "reference": "public/sprites/Cook/work-references/03-stir-cauldron.png",
+  "beats": [
+    "spoon at near side of cauldron",
+    "continuous midway transition from spoon at near side of cauldron toward stir spoon to right",
+    "stir spoon to right",
+    "continuous midway transition from stir spoon to right toward stir spoon to far side",
+    "stir spoon to far side",
+    "continuous midway transition from stir spoon to far side toward stir spoon to left completing circular motion",
+    "stir spoon to left completing circular motion",
+    "continuous midway transition from stir spoon to left completing circular motion toward spoon at near side of cauldron"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Cook/motion/stir-cauldron/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Stir cauldron. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. spoon at near side of cauldron | 2. continuous midway transition from spoon at near side of cauldron toward stir spoon to right | 3. stir spoon to right | 4. continuous midway transition from stir spoon to right toward stir spoon to far side | 5. stir spoon to far side | 6. continuous midway transition from stir spoon to far side toward stir spoon to left completing circular motion | 7. stir spoon to left completing circular motion | 8. continuous midway transition from stir spoon to left completing circular motion toward spoon at near side of cauldron",
+  "sourceName": "exec-d30aa7b4-f6bd-4070-9b7d-6e797045a1ab.png"
+}

@@ -1,0 +1,23 @@
+{
+  "character": "Ginger",
+  "action": "haul-firewood",
+  "title": "Haul firewood",
+  "reference": "public/sprites/Ginger/work-references/03-haul-firewood.png",
+  "beats": [
+    "left foot forward hauling firewood",
+    "continuous midway transition from left foot forward hauling firewood toward feet pass beneath body",
+    "feet pass beneath body",
+    "continuous midway transition from feet pass beneath body toward right foot forward",
+    "right foot forward",
+    "continuous midway transition from right foot forward toward feet pass beneath body returning to first step",
+    "feet pass beneath body returning to first step",
+    "continuous midway transition from feet pass beneath body returning to first step toward left foot forward hauling firewood"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Ginger/motion/haul-firewood/reference",
+  "prompt": "Create eight animation keyframes of EXACTLY the reference red-haired dwarf Ginger hauling the same rope-bound bundle of cut firewood on the same wooden sled. Preserve his broad stocky dwarf figure, curly ginger hair, long pointed orange beard, ivory sleeves, brown vest, green trousers and tall boots. Keep exactly this back-right three-quarter camera: he walks toward screen RIGHT and away, sled trailing screen LEFT. Never turn around. Exactly FOUR columns TWO rows on fully transparent background, each cell contains BOTH full dwarf AND entire sled with a generous margin, no cropped runners or feet. Eight time-ordered poses: left step contact; body leans against taut tow ropes and weight shifts down; right knee passes; right leg reaches; right step contact; right weight down with left heel raised; left leg passes; left foot reaches for next step. Hands keep firm consistent grip on both ropes and ropes remain attached to same two sled anchors. Sled logs and lashings remain identical, sled glides level, no jumping props. Full cycle with clearly opposite lead feet, stable upper body, no camera or costume changes. Semi realistic high-detail game sprites matching reference. No added ground, scenery, text, smoke or effects."
+}

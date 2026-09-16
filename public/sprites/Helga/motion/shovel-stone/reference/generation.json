@@ -1,0 +1,24 @@
+{
+  "character": "Helga",
+  "action": "shovel-stone",
+  "title": "Shovel stone",
+  "reference": "public/sprites/Helga/work-references/03-shovel-stone.png",
+  "beats": [
+    "shovel at rubble pile",
+    "continuous midway transition from shovel at rubble pile toward scoop stone",
+    "scoop stone",
+    "continuous midway transition from scoop stone toward lift loaded shovel",
+    "lift loaded shovel",
+    "continuous midway transition from lift loaded shovel toward tip stone beside pile",
+    "tip stone beside pile",
+    "continuous midway transition from tip stone beside pile toward shovel at rubble pile"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Helga/motion/shovel-stone/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Helga. Action: Shovel stone. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. shovel at rubble pile | 2. continuous midway transition from shovel at rubble pile toward scoop stone | 3. scoop stone | 4. continuous midway transition from scoop stone toward lift loaded shovel | 5. lift loaded shovel | 6. continuous midway transition from lift loaded shovel toward tip stone beside pile | 7. tip stone beside pile | 8. continuous midway transition from tip stone beside pile toward shovel at rubble pile",
+  "sourceName": "exec-ad2a58c2-0da6-4263-ac40-63b1d28edd36.png"
+}

@@ -1,0 +1,24 @@
+{
+  "character": "Female Miner",
+  "action": "repair-pickaxe",
+  "title": "Repair pickaxe",
+  "reference": "public/sprites/Female Miner/work-references/05-repair-pickaxe.png",
+  "beats": [
+    "pickaxe across repair bench",
+    "continuous midway transition from pickaxe across repair bench toward brace handle and press head",
+    "brace handle and press head",
+    "continuous midway transition from brace handle and press head toward tap fastening wedge",
+    "tap fastening wedge",
+    "continuous midway transition from tap fastening wedge toward inspect repaired joint",
+    "inspect repaired joint",
+    "continuous midway transition from inspect repaired joint toward pickaxe across repair bench"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Female Miner. Action: Repair pickaxe. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. pickaxe across repair bench | 2. continuous midway transition from pickaxe across repair bench toward brace handle and press head | 3. brace handle and press head | 4. continuous midway transition from brace handle and press head toward tap fastening wedge | 5. tap fastening wedge | 6. continuous midway transition from tap fastening wedge toward inspect repaired joint | 7. inspect repaired joint | 8. continuous midway transition from inspect repaired joint toward pickaxe across repair bench",
+  "sourceName": "exec-9dcf1e9a-87bf-49f7-b8cd-05e1c12dc948.png"
+}

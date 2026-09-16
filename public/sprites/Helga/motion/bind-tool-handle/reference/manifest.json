@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "bind-tool-handle",
+  "title": "Bind tool handle",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-bind-tool-handle.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b912762dbc5747fd48f546f1dd8a30f0329ebd48536c992ff3505cc7e285b2a5",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4265060240963856,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool handle and binding",
+      "durationMs": 125,
+      "sourceBounds": [
+        33,
+        18,
+        427,
+        430
+      ],
+      "sourceAnchor": [
+        187.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold tool handle and binding toward wrap binding around joint",
+      "durationMs": 125,
+      "sourceBounds": [
+        476,
+        18,
+        871,
+        430
+      ],
+      "sourceAnchor": [
+        187.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "wrap binding around joint",
+      "durationMs": 125,
+      "sourceBounds": [
+        920,
+        18,
+        1314,
+        430
+      ],
+      "sourceAnchor": [
+        187.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from wrap binding around joint toward pull binding taut",
+      "durationMs": 125,
+      "sourceBounds": [
+        1363,
+        18,
+        1757,
+        430
+      ],
+      "sourceAnchor": [
+        187.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "pull binding taut",
+      "durationMs": 125,
+      "sourceBounds": [
+        33,
+        461,
+        427,
+        873
+      ],
+      "sourceAnchor": [
+        187.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from pull binding taut toward press wrap into place",
+      "durationMs": 125,
+      "sourceBounds": [
+        476,
+        461,
+        871,
+        873
+      ],
+      "sourceAnchor": [
+        187.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "press wrap into place",
+      "durationMs": 125,
+      "sourceBounds": [
+        920,
+        460,
+        1314,
+        873
+      ],
+      "sourceAnchor": [
+        187.0,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        27
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from press wrap into place toward hold tool handle and binding",
+      "durationMs": 125,
+      "sourceBounds": [
+        1363,
+        461,
+        1757,
+        873
+      ],
+      "sourceAnchor": [
+        187.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        28
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

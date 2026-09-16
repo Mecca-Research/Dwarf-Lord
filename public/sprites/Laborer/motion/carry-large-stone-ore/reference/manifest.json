@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "carry-large-stone-ore",
+  "title": "Carry large stone ore",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "2505d95187c025e4e03e0a31dfb56a78cef001641889e4efa24926f36a637ac0",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.1276190476190475,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left heel contact, right toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        37,
+        51,
+        438,
+        401
+      ],
+      "sourceAnchor": [
+        200.5,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        221
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "left weight down, right heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        491,
+        50,
+        882,
+        400
+      ],
+      "sourceAnchor": [
+        195.5,
+        350
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        100,
+        221
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot airborne passing left support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        979,
+        48,
+        1288,
+        400
+      ],
+      "sourceAnchor": [
+        146.0,
+        352
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        155,
+        219
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "right leg extends forward, left heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        1243,
+        47,
+        1768,
+        402
+      ],
+      "sourceAnchor": [
+        262.5,
+        355
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        216
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right heel contact, left toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        43,
+        495,
+        437,
+        844
+      ],
+      "sourceAnchor": [
+        197.0,
+        349
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        98,
+        222
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "right weight down, left heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        486,
+        495,
+        882,
+        844
+      ],
+      "sourceAnchor": [
+        198.0,
+        349
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        97,
+        222
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "left foot airborne passing right support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        967,
+        490,
+        1325,
+        844
+      ],
+      "sourceAnchor": [
+        179.0,
+        354
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        118,
+        217
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "left leg extends forward, right heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        1394,
+        487,
+        1768,
+        844
+      ],
+      "sourceAnchor": [
+        187.0,
+        357
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        109,
+        213
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

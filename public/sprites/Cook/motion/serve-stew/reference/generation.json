@@ -1,0 +1,24 @@
+{
+  "character": "Cook",
+  "action": "serve-stew",
+  "title": "Serve stew",
+  "reference": "public/sprites/Cook/work-references/05-serve-stew.png",
+  "beats": [
+    "ladle in stew pot and empty bowl ready",
+    "continuous midway transition from ladle in stew pot and empty bowl ready toward lift filled ladle",
+    "lift filled ladle",
+    "continuous midway transition from lift filled ladle toward tilt ladle over bowl pouring stew",
+    "tilt ladle over bowl pouring stew",
+    "continuous midway transition from tilt ladle over bowl pouring stew toward lower ladle back toward pot",
+    "lower ladle back toward pot",
+    "continuous midway transition from lower ladle back toward pot toward ladle in stew pot and empty bowl ready"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Cook/motion/serve-stew/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Serve stew. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. ladle in stew pot and empty bowl ready | 2. continuous midway transition from ladle in stew pot and empty bowl ready toward lift filled ladle | 3. lift filled ladle | 4. continuous midway transition from lift filled ladle toward tilt ladle over bowl pouring stew | 5. tilt ladle over bowl pouring stew | 6. continuous midway transition from tilt ladle over bowl pouring stew toward lower ladle back toward pot | 7. lower ladle back toward pot | 8. continuous midway transition from lower ladle back toward pot toward ladle in stew pot and empty bowl ready",
+  "sourceName": "exec-38655750-e9df-4123-9767-d134d864b63f.png"
+}

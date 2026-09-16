@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "repair-pickaxe-handle",
+  "title": "Repair pickaxe handle",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-repair-pickaxe-handle.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4061757719714965,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer held beside pickaxe joint; left hand grips shaft",
+      "durationMs": 125,
+      "sourceBounds": [
+        106,
+        31,
+        397,
+        424
+      ],
+      "sourceAnchor": [
+        142.0,
+        393
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        120,
+        63
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hammer held beside pickaxe joint; left hand grips shaft toward raise hammer above joint with shaft held steady",
+      "durationMs": 125,
+      "sourceBounds": [
+        546,
+        30,
+        838,
+        424
+      ],
+      "sourceAnchor": [
+        143.0,
+        394
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        119,
+        62
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise hammer above joint with shaft held steady",
+      "durationMs": 125,
+      "sourceBounds": [
+        972,
+        3,
+        1263,
+        424
+      ],
+      "sourceAnchor": [
+        146.0,
+        421
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        115,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from raise hammer above joint with shaft held steady toward tap fastening wedge on pickaxe head",
+      "durationMs": 125,
+      "sourceBounds": [
+        1407,
+        39,
+        1695,
+        424
+      ],
+      "sourceAnchor": [
+        141.0,
+        385
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        75
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "tap fastening wedge on pickaxe head",
+      "durationMs": 125,
+      "sourceBounds": [
+        107,
+        472,
+        396,
+        869
+      ],
+      "sourceAnchor": [
+        141.0,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        58
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from tap fastening wedge on pickaxe head toward hammer rebounds while shaft remains supported",
+      "durationMs": 125,
+      "sourceBounds": [
+        545,
+        471,
+        838,
+        869
+      ],
+      "sourceAnchor": [
+        143.0,
+        398
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        119,
+        56
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "hammer rebounds while shaft remains supported",
+      "durationMs": 125,
+      "sourceBounds": [
+        975,
+        472,
+        1264,
+        869
+      ],
+      "sourceAnchor": [
+        140.5,
+        397
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        58
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from hammer rebounds while shaft remains supported toward hammer held beside pickaxe joint; left hand grips shaft",
+      "durationMs": 125,
+      "sourceBounds": [
+        1405,
+        474,
+        1693,
+        869
+      ],
+      "sourceAnchor": [
+        141.5,
+        395
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        121,
+        61
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

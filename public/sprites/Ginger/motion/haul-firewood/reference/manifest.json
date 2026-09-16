@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "haul-firewood",
+  "title": "Haul firewood",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/03-haul-firewood.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b9119f578e66cd9d48ff189d162524d6dac0267be99fe0bf89c4c2ed9dd36d22",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.264957264957265,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward hauling firewood",
+      "durationMs": 125,
+      "sourceBounds": [
+        9,
+        44,
+        442,
+        428
+      ],
+      "sourceAnchor": [
+        216.5,
+        384
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        130
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from left foot forward hauling firewood toward feet pass beneath body",
+      "durationMs": 125,
+      "sourceBounds": [
+        448,
+        45,
+        876,
+        428
+      ],
+      "sourceAnchor": [
+        195.0,
+        383
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        73,
+        132
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass beneath body",
+      "durationMs": 125,
+      "sourceBounds": [
+        889,
+        46,
+        1309,
+        427
+      ],
+      "sourceAnchor": [
+        186.5,
+        381
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        134
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass beneath body toward right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1322,
+        48,
+        1772,
+        428
+      ],
+      "sourceAnchor": [
+        225.0,
+        380
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        135
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        8,
+        489,
+        431,
+        868
+      ],
+      "sourceAnchor": [
+        211.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        137
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot forward toward feet pass beneath body returning to first step",
+      "durationMs": 125,
+      "sourceBounds": [
+        448,
+        486,
+        868,
+        867
+      ],
+      "sourceAnchor": [
+        191.5,
+        381
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        134
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass beneath body returning to first step",
+      "durationMs": 125,
+      "sourceBounds": [
+        888,
+        484,
+        1308,
+        868
+      ],
+      "sourceAnchor": [
+        186.0,
+        384
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        85,
+        130
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass beneath body returning to first step toward left foot forward hauling firewood",
+      "durationMs": 125,
+      "sourceBounds": [
+        1322,
+        488,
+        1768,
+        868
+      ],
+      "sourceAnchor": [
+        223.0,
+        380
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        135
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

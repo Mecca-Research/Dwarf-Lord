@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "laugh-seated",
+  "title": "Laugh seated",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-laugh-seated.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "6e6e628038fdb1ae8e1e8a93eb944648f46e1a2219a260759317d856cdde422b",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4265060240963856,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "sit relaxed mouth smiling",
+      "durationMs": 125,
+      "sourceBounds": [
+        70,
+        20,
+        379,
+        422
+      ],
+      "sourceAnchor": [
+        169.0,
+        402
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        43
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from sit relaxed mouth smiling toward shoulders lift and mouth opens laughing",
+      "durationMs": 125,
+      "sourceBounds": [
+        518,
+        17,
+        826,
+        422
+      ],
+      "sourceAnchor": [
+        167.5,
+        405
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        38
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "shoulders lift and mouth opens laughing",
+      "durationMs": 125,
+      "sourceBounds": [
+        966,
+        13,
+        1275,
+        423
+      ],
+      "sourceAnchor": [
+        168.0,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        31
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from shoulders lift and mouth opens laughing toward lean back in hearty laugh",
+      "durationMs": 125,
+      "sourceBounds": [
+        1411,
+        13,
+        1723,
+        423
+      ],
+      "sourceAnchor": [
+        169.5,
+        410
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        31
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lean back in hearty laugh",
+      "durationMs": 125,
+      "sourceBounds": [
+        75,
+        450,
+        398,
+        865
+      ],
+      "sourceAnchor": [
+        175.5,
+        415
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        70,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from lean back in hearty laugh toward settle forward smiling",
+      "durationMs": 125,
+      "sourceBounds": [
+        519,
+        457,
+        830,
+        865
+      ],
+      "sourceAnchor": [
+        170.0,
+        408
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        34
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "settle forward smiling",
+      "durationMs": 125,
+      "sourceBounds": [
+        962,
+        458,
+        1273,
+        865
+      ],
+      "sourceAnchor": [
+        170.0,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        35
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from settle forward smiling toward sit relaxed mouth smiling",
+      "durationMs": 125,
+      "sourceBounds": [
+        1406,
+        459,
+        1716,
+        866
+      ],
+      "sourceAnchor": [
+        169.5,
+        407
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        35
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

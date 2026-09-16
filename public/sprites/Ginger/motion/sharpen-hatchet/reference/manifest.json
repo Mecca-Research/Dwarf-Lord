@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "sharpen-hatchet",
+  "title": "Sharpen hatchet",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/04-sharpen-hatchet.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "087df31fd02b2a5718bbf0af8816580d98495f4c99d3ab49b8b2e249c52526e1",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3995271867612293,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hatchet edge against whetstone",
+      "durationMs": 125,
+      "sourceBounds": [
+        40,
+        18,
+        411,
+        432
+      ],
+      "sourceAnchor": [
+        184.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        37
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hatchet edge against whetstone toward slide edge forward across stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        484,
+        18,
+        855,
+        432
+      ],
+      "sourceAnchor": [
+        184.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        37
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "slide edge forward across stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        928,
+        18,
+        1298,
+        432
+      ],
+      "sourceAnchor": [
+        183.5,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        37
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from slide edge forward across stone toward edge reaches end of stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        1371,
+        18,
+        1741,
+        432
+      ],
+      "sourceAnchor": [
+        183.5,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        37
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "edge reaches end of stone",
+      "durationMs": 125,
+      "sourceBounds": [
+        41,
+        461,
+        411,
+        876
+      ],
+      "sourceAnchor": [
+        183.5,
+        415
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        35
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from edge reaches end of stone toward lift and reset hatchet",
+      "durationMs": 125,
+      "sourceBounds": [
+        485,
+        456,
+        854,
+        876
+      ],
+      "sourceAnchor": [
+        183.0,
+        420
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        28
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift and reset hatchet",
+      "durationMs": 125,
+      "sourceBounds": [
+        929,
+        453,
+        1298,
+        876
+      ],
+      "sourceAnchor": [
+        183.0,
+        423
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift and reset hatchet toward hatchet edge against whetstone",
+      "durationMs": 125,
+      "sourceBounds": [
+        1372,
+        459,
+        1741,
+        876
+      ],
+      "sourceAnchor": [
+        183.0,
+        417
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        32
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

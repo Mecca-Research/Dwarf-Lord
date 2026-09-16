@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "inspect-mineral",
+  "title": "Inspect mineral",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-inspect-mineral.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3864168618266979,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "mineral held near chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        24,
+        42,
+        434,
+        421
+      ],
+      "sourceAnchor": [
+        196.5,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        91
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from mineral held near chest toward lift toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        469,
+        41,
+        878,
+        421
+      ],
+      "sourceAnchor": [
+        195.5,
+        380
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        89
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        912,
+        38,
+        1321,
+        421
+      ],
+      "sourceAnchor": [
+        196.0,
+        383
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        85
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift toward eyes toward rotate stone toward light",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        40,
+        1765,
+        421
+      ],
+      "sourceAnchor": [
+        195.5,
+        381
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        88
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "rotate stone toward light",
+      "durationMs": 125,
+      "sourceBounds": [
+        24,
+        478,
+        434,
+        864
+      ],
+      "sourceAnchor": [
+        196.5,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        81
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from rotate stone toward light toward lower mineral",
+      "durationMs": 125,
+      "sourceBounds": [
+        469,
+        484,
+        878,
+        864
+      ],
+      "sourceAnchor": [
+        195.5,
+        380
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        89
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower mineral",
+      "durationMs": 125,
+      "sourceBounds": [
+        912,
+        485,
+        1321,
+        864
+      ],
+      "sourceAnchor": [
+        196.0,
+        379
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        91
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower mineral toward mineral held near chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        1356,
+        486,
+        1764,
+        864
+      ],
+      "sourceAnchor": [
+        195.5,
+        378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        92
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

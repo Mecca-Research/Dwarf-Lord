@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "cut-boar-meat",
+  "title": "Cut boar meat",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3962264150943395,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold boneless boar meat on cutting block",
+      "durationMs": 125,
+      "sourceBounds": [
+        20,
+        56,
+        428,
+        428
+      ],
+      "sourceAnchor": [
+        196.5,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        97
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "position cleaver in right hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        463,
+        54,
+        871,
+        428
+      ],
+      "sourceAnchor": [
+        196.5,
+        374
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        94
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise cleaver",
+      "durationMs": 125,
+      "sourceBounds": [
+        906,
+        17,
+        1315,
+        428
+      ],
+      "sourceAnchor": [
+        198.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        42
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "begin downstroke",
+      "durationMs": 125,
+      "sourceBounds": [
+        1350,
+        61,
+        1758,
+        428
+      ],
+      "sourceAnchor": [
+        196.5,
+        367
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        104
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "cut meat on block",
+      "durationMs": 125,
+      "sourceBounds": [
+        20,
+        500,
+        428,
+        872
+      ],
+      "sourceAnchor": [
+        196.5,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        97
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "lift cleaver",
+      "durationMs": 125,
+      "sourceBounds": [
+        463,
+        498,
+        871,
+        872
+      ],
+      "sourceAnchor": [
+        196.5,
+        374
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        94
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "move cut portion aside",
+      "durationMs": 125,
+      "sourceBounds": [
+        907,
+        500,
+        1315,
+        872
+      ],
+      "sourceAnchor": [
+        196.0,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        97
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "position next cut",
+      "durationMs": 125,
+      "sourceBounds": [
+        1349,
+        500,
+        1758,
+        872
+      ],
+      "sourceAnchor": [
+        197.0,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        45,
+        97
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

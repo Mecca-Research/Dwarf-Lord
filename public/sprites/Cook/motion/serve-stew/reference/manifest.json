@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "serve-stew",
+  "title": "Serve stew",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-serve-stew.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "e16349a9f29ffdf790722475b1aa2acc28eb22a0ef35fdd68a5ee2aeba4485b3",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.429951690821256,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "ladle in stew pot and empty bowl ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        67,
+        15,
+        373,
+        427
+      ],
+      "sourceAnchor": [
+        152.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from ladle in stew pot and empty bowl ready toward lift filled ladle",
+      "durationMs": 125,
+      "sourceBounds": [
+        511,
+        15,
+        815,
+        427
+      ],
+      "sourceAnchor": [
+        151.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift filled ladle",
+      "durationMs": 125,
+      "sourceBounds": [
+        954,
+        16,
+        1260,
+        427
+      ],
+      "sourceAnchor": [
+        152.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        102,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift filled ladle toward tilt ladle over bowl pouring stew",
+      "durationMs": 125,
+      "sourceBounds": [
+        1398,
+        15,
+        1706,
+        427
+      ],
+      "sourceAnchor": [
+        153.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        101,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "tilt ladle over bowl pouring stew",
+      "durationMs": 125,
+      "sourceBounds": [
+        67,
+        456,
+        373,
+        870
+      ],
+      "sourceAnchor": [
+        151.5,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from tilt ladle over bowl pouring stew toward lower ladle back toward pot",
+      "durationMs": 125,
+      "sourceBounds": [
+        510,
+        457,
+        814,
+        870
+      ],
+      "sourceAnchor": [
+        152.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        102,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower ladle back toward pot",
+      "durationMs": 125,
+      "sourceBounds": [
+        954,
+        458,
+        1258,
+        870
+      ],
+      "sourceAnchor": [
+        152.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        102,
+        27
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower ladle back toward pot toward ladle in stew pot and empty bowl ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        1398,
+        458,
+        1702,
+        870
+      ],
+      "sourceAnchor": [
+        151.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -123,5 +123,63 @@
       "staticReference": true
     }
   ],
-  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop."
+  "note": "Character and work props are composed together. These six scenes are independent static references, not an animation loop.",
+  "supplementalReferences": [
+    {
+      "id": "seated-ledger",
+      "file": "seated-ledger.png",
+      "sourceBounds": [
+        37,
+        27,
+        602,
+        612
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": "../work-references/00-desk-writing.png",
+      "title": "Seated ledger at desk",
+      "description": "Writing in a visibly open ledger at the administrative desk. Replaces the closed-cover legacy writing pose.",
+      "staticReference": true,
+      "category": "sitting-work"
+    },
+    {
+      "id": "consult-ledger",
+      "file": "consult-ledger.png",
+      "sourceBounds": [
+        271,
+        999,
+        524,
+        1475
+      ],
+      "anchor": [
+        192,
+        620
+      ],
+      "sourceOverride": null,
+      "staticReference": true,
+      "category": "standing-work",
+      "title": "Consult open ledger",
+      "description": "Standing consultation with open ledger"
+    },
+    {
+      "id": "explain-closed-ledger",
+      "title": "Explain with closed ledger",
+      "description": "Initial authored pose for Explain with closed ledger. Animation candidate requires visual review.",
+      "file": "../motion/explain-closed-ledger/reference/00.png",
+      "staticReference": true,
+      "origin": "expanded-motion",
+      "productionReady": false
+    },
+    {
+      "id": "explain-open-ledger",
+      "title": "Explain with open ledger",
+      "description": "Initial authored pose for Explain with open ledger. Animation candidate requires visual review.",
+      "file": "../motion/explain-open-ledger/reference/00.png",
+      "staticReference": true,
+      "origin": "expanded-motion",
+      "productionReady": false
+    }
+  ]
 }

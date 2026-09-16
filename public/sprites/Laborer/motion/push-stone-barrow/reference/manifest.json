@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "push-stone-barrow",
+  "title": "Push stone barrow",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/02-push-stone-barrow.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a443d0c9f2dad4cb3cd7b8098b29389655bf5ed649cc1dd32b8ccd9e98843f02",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3896713615023475,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward pushing stone barrow",
+      "durationMs": 125,
+      "sourceBounds": [
+        12,
+        82,
+        438,
+        409
+      ],
+      "sourceAnchor": [
+        213.0,
+        327
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        162
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from left foot forward pushing stone barrow toward feet pass under body",
+      "durationMs": 125,
+      "sourceBounds": [
+        520,
+        80,
+        885,
+        409
+      ],
+      "sourceAnchor": [
+        186.0,
+        329
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        159
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass under body",
+      "durationMs": 125,
+      "sourceBounds": [
+        968,
+        81,
+        1331,
+        409
+      ],
+      "sourceAnchor": [
+        197.5,
+        328
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        160
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass under body toward right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1379,
+        80,
+        1771,
+        409
+      ],
+      "sourceAnchor": [
+        196.0,
+        329
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        159
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        20,
+        514,
+        441,
+        849
+      ],
+      "sourceAnchor": [
+        211.5,
+        335
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        150
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot forward toward feet pass under body with hands gripping handles",
+      "durationMs": 125,
+      "sourceBounds": [
+        497,
+        515,
+        885,
+        848
+      ],
+      "sourceAnchor": [
+        194.0,
+        333
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        153
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass under body with hands gripping handles",
+      "durationMs": 125,
+      "sourceBounds": [
+        965,
+        515,
+        1332,
+        849
+      ],
+      "sourceAnchor": [
+        193.0,
+        334
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        152
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass under body with hands gripping handles toward left foot forward pushing stone barrow",
+      "durationMs": 125,
+      "sourceBounds": [
+        1368,
+        515,
+        1771,
+        848
+      ],
+      "sourceAnchor": [
+        201.5,
+        333
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        40,
+        153
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

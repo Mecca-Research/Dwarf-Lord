@@ -1,0 +1,117 @@
+{
+  "character": "Laborer",
+  "actions": [
+    {
+      "id": "walk-front",
+      "title": "Walking cycle \u00b7 front",
+      "manifest": "walk/front/manifest.json",
+      "frameCount": 8,
+      "direction": "front",
+      "kind": "walk"
+    },
+    {
+      "id": "lift-crate-reference",
+      "title": "Lift crate \u00b7 reference",
+      "manifest": "lift-crate/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "carry-sack-reference",
+      "title": "Carry sack \u00b7 reference",
+      "manifest": "carry-sack/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "push-stone-barrow-reference",
+      "title": "Push stone barrow \u00b7 reference",
+      "manifest": "push-stone-barrow/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "pull-supply-sled-reference",
+      "title": "Pull supply sled \u00b7 reference",
+      "manifest": "pull-supply-sled/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "build-crate-reference",
+      "title": "Build crate \u00b7 reference",
+      "manifest": "build-crate/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "sweep-wood-chips-reference",
+      "title": "Sweep wood chips \u00b7 reference",
+      "manifest": "sweep-wood-chips/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "work"
+    },
+    {
+      "id": "roll-barrel-reference",
+      "title": "Roll barrel \u00b7 reference",
+      "manifest": "roll-barrel/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "carry-crate-reference",
+      "title": "Carry crate \u00b7 reference",
+      "manifest": "carry-crate/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "stack-crates-reference",
+      "title": "Stack crates \u00b7 reference",
+      "manifest": "stack-crates/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "build-barrel-reference",
+      "title": "Build barrel \u00b7 reference",
+      "manifest": "build-barrel/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "carry-large-stone-ore-reference",
+      "title": "Carry large stone ore \u00b7 reference",
+      "manifest": "carry-large-stone-ore/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "shovel-rubble-reference",
+      "title": "Shovel rubble \u00b7 reference",
+      "manifest": "shovel-rubble/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    },
+    {
+      "id": "repair-boardwalk-reference",
+      "title": "Repair boardwalk \u00b7 reference",
+      "manifest": "repair-boardwalk/reference/manifest.json",
+      "frameCount": 8,
+      "direction": "reference",
+      "kind": "new-work"
+    }
+  ]
+}

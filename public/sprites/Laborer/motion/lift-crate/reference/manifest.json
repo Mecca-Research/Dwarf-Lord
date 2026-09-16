@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "lift-crate",
+  "title": "Lift crate",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/00-lift-crate.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "947ba76025489dfe54e6a05199b89c51f2bf9eced8b190d1009827d1f62f3f35",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.4128878281622912,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "bend with hands gripping crate sides",
+      "durationMs": 125,
+      "sourceBounds": [
+        82,
+        104,
+        381,
+        430
+      ],
+      "sourceAnchor": [
+        149.0,
+        326
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        109,
+        155
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from bend with hands gripping crate sides toward lift crate to knee height",
+      "durationMs": 125,
+      "sourceBounds": [
+        531,
+        68,
+        821,
+        409
+      ],
+      "sourceAnchor": [
+        145.0,
+        341
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        115,
+        134
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift crate to knee height",
+      "durationMs": 125,
+      "sourceBounds": [
+        979,
+        35,
+        1265,
+        407
+      ],
+      "sourceAnchor": [
+        143.0,
+        372
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        118,
+        90
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift crate to knee height toward straighten with crate at waist",
+      "durationMs": 125,
+      "sourceBounds": [
+        1427,
+        7,
+        1712,
+        410
+      ],
+      "sourceAnchor": [
+        142.0,
+        403
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        119,
+        47
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "straighten with crate at waist",
+      "durationMs": 125,
+      "sourceBounds": [
+        101,
+        440,
+        369,
+        859
+      ],
+      "sourceAnchor": [
+        114.0,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        159,
+        24
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from straighten with crate at waist toward settle weight while holding crate",
+      "durationMs": 125,
+      "sourceBounds": [
+        555,
+        440,
+        814,
+        859
+      ],
+      "sourceAnchor": [
+        113.5,
+        419
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        160,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "settle weight while holding crate",
+      "durationMs": 125,
+      "sourceBounds": [
+        1004,
+        441,
+        1258,
+        859
+      ],
+      "sourceAnchor": [
+        114.0,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        159,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from settle weight while holding crate toward bend with hands gripping crate sides",
+      "durationMs": 125,
+      "sourceBounds": [
+        1414,
+        550,
+        1712,
+        868
+      ],
+      "sourceAnchor": [
+        148.5,
+        318
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        110,
+        167
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "title": "Sweep wood chips",
+  "reference": "public/sprites/Laborer/work-references/05-sweep-wood-chips.png",
+  "beats": [
+    "broom at near edge of wood chips",
+    "continuous midway transition from broom at near edge of wood chips toward push broom forward",
+    "push broom forward",
+    "continuous midway transition from push broom forward toward broom reaches far edge gathering chips",
+    "broom reaches far edge gathering chips",
+    "continuous midway transition from broom reaches far edge gathering chips toward lift slightly and return broom",
+    "lift slightly and return broom",
+    "continuous midway transition from lift slightly and return broom toward broom at near edge of wood chips"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Laborer. Action: Sweep wood chips. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. broom at near edge of wood chips | 2. continuous midway transition from broom at near edge of wood chips toward push broom forward | 3. push broom forward | 4. continuous midway transition from push broom forward toward broom reaches far edge gathering chips | 5. broom reaches far edge gathering chips | 6. continuous midway transition from broom reaches far edge gathering chips toward lift slightly and return broom | 7. lift slightly and return broom | 8. continuous midway transition from lift slightly and return broom toward broom at near edge of wood chips",
+  "sourceName": "exec-883e74e9-7132-44a5-9aeb-61472532dc80.png"
+}

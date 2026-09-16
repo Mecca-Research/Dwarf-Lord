@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "carry-supplies",
+  "title": "Carry supplies",
+  "direction": "reference",
+  "kind": "work",
+  "reference": "../../../work-references/05-carry-supplies.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b1329fd5f3c7a04724dd5eaa91d8e1d17f1e8230a95d5f4a14f4594b31d5701e",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.429951690821256,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward carrying supplies",
+      "durationMs": 125,
+      "sourceBounds": [
+        84,
+        20,
+        400,
+        433
+      ],
+      "sourceAnchor": [
+        183.0,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from left foot forward carrying supplies toward feet pass beneath body",
+      "durationMs": 125,
+      "sourceBounds": [
+        529,
+        21,
+        844,
+        433
+      ],
+      "sourceAnchor": [
+        189.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        50,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "feet pass beneath body",
+      "durationMs": 125,
+      "sourceBounds": [
+        957,
+        22,
+        1258,
+        434
+      ],
+      "sourceAnchor": [
+        193.5,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from feet pass beneath body toward right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        1385,
+        21,
+        1704,
+        433
+      ],
+      "sourceAnchor": [
+        191.0,
+        412
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        47,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right foot forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        72,
+        456,
+        392,
+        867
+      ],
+      "sourceAnchor": [
+        183.5,
+        411
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        28
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from right foot forward toward feet pass beneath body with supplies held securely",
+      "durationMs": 125,
+      "sourceBounds": [
+        526,
+        455,
+        847,
+        868
+      ],
+      "sourceAnchor": [
+        189.5,
+        413
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        25
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "feet pass beneath body with supplies held securely",
+      "durationMs": 125,
+      "sourceBounds": [
+        949,
+        455,
+        1257,
+        869
+      ],
+      "sourceAnchor": [
+        200.5,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        24
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from feet pass beneath body with supplies held securely toward left foot forward carrying supplies",
+      "durationMs": 125,
+      "sourceBounds": [
+        1393,
+        454,
+        1713,
+        868
+      ],
+      "sourceAnchor": [
+        190.0,
+        414
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        48,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+    ],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}

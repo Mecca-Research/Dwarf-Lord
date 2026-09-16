@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "pickaxe-swing",
+  "title": "Isolated pickaxe swing",
+  "direction": "right",
+  "kind": "directional",
+  "reference": "../../../animation/02-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "0093aeb90a6d5dbc3020dd71bfe56710e37762c08861477b3825f82301741fa7",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3896713615023475,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe low ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        124,
+        46,
+        374,
+        432
+      ],
+      "sourceAnchor": [
+        124.0,
+        386
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        148,
+        80
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw tool back",
+      "durationMs": 125,
+      "sourceBounds": [
+        513,
+        59,
+        750,
+        433
+      ],
+      "sourceAnchor": [
+        149.0,
+        374
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        96
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise pickaxe above shoulder",
+      "durationMs": 125,
+      "sourceBounds": [
+        989,
+        14,
+        1208,
+        432
+      ],
+      "sourceAnchor": [
+        130.5,
+        418
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        139,
+        35
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "apex overhead",
+      "durationMs": 125,
+      "sourceBounds": [
+        1421,
+        7,
+        1666,
+        433
+      ],
+      "sourceAnchor": [
+        152.5,
+        426
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        108,
+        24
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "accelerate downward",
+      "durationMs": 125,
+      "sourceBounds": [
+        107,
+        468,
+        401,
+        856
+      ],
+      "sourceAnchor": [
+        91.5,
+        388
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        193,
+        77
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "contact at ground height",
+      "durationMs": 125,
+      "sourceBounds": [
+        538,
+        540,
+        856,
+        855
+      ],
+      "sourceAnchor": [
+        160.0,
+        315
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        98,
+        178
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "follow through",
+      "durationMs": 125,
+      "sourceBounds": [
+        976,
+        532,
+        1349,
+        854
+      ],
+      "sourceAnchor": [
+        181.5,
+        322
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        169
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "recover to ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        1455,
+        493,
+        1704,
+        875
+      ],
+      "sourceAnchor": [
+        123.5,
+        382
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        148,
+        85
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "review": {
+    "status": "needs-visual-review",
+    "issues": [],
+    "poseCaptions": "intended-poses-not-verified",
+    "requiredChecks": [
+      "character identity",
+      "frame order and loop seam",
+      "foot and hand contacts",
+      "prop continuity",
+      "direction and scale continuity"
+    ]
+  }
+}
