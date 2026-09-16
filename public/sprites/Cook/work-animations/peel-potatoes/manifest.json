@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "peel-potatoes",
+  "title": "Peel potatoes",
+  "reference": "../../work-references/01-peel-potatoes.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "28f693240f4205f74fe63a3390da0fa81db141a6b071ed23a315929621d6f638",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9850249584026622,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold potato over bowl with knife against peel",
+      "durationMs": 250,
+      "sourceBounds": [
+        129,
+        27,
+        594,
+        626
+      ],
+      "sourceAnchor": [
+        222.5,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        101,
+        26
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw knife down potato",
+      "durationMs": 250,
+      "sourceBounds": [
+        727,
+        25,
+        1198,
+        626
+      ],
+      "sourceAnchor": [
+        226.5,
+        601
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        97,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "thin peel curls away into bowl",
+      "durationMs": 250,
+      "sourceBounds": [
+        127,
+        638,
+        596,
+        1235
+      ],
+      "sourceAnchor": [
+        225.0,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        98,
+        28
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rotate potato for next stroke",
+      "durationMs": 250,
+      "sourceBounds": [
+        731,
+        635,
+        1200,
+        1234
+      ],
+      "sourceAnchor": [
+        225.5,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        98,
+        26
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

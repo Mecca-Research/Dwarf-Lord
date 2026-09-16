@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "repair-pickaxe",
+  "title": "Repair pickaxe",
+  "reference": "../../work-references/05-repair-pickaxe.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d373cfb5e93d9893826307427d2ecba9182f6adba9bbac582a2916dc0d27c8d6",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0050933786078098,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe across repair bench",
+      "durationMs": 250,
+      "sourceBounds": [
+        85,
+        26,
+        607,
+        601
+      ],
+      "sourceAnchor": [
+        263.0,
+        575
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        38
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "brace handle and press head",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        25,
+        1234,
+        601
+      ],
+      "sourceAnchor": [
+        263.0,
+        576
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        37
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "tap fastening wedge",
+      "durationMs": 250,
+      "sourceBounds": [
+        85,
+        646,
+        607,
+        1228
+      ],
+      "sourceAnchor": [
+        263.0,
+        582
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        31
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "inspect repaired joint",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        639,
+        1234,
+        1228
+      ],
+      "sourceAnchor": [
+        263.0,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

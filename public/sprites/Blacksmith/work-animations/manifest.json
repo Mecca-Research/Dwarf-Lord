@@ -1,0 +1,42 @@
+{
+  "character": "Blacksmith",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "anvil-ready",
+      "title": "Anvil ready",
+      "manifest": "anvil-ready/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "hammer-raised",
+      "title": "Hammer raised",
+      "manifest": "hammer-raised/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "hammer-contact",
+      "title": "Hammer contact",
+      "manifest": "hammer-contact/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "inspect-tool",
+      "title": "Inspect tool",
+      "manifest": "inspect-tool/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "file-tool-edge",
+      "title": "File tool edge",
+      "manifest": "file-tool-edge/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "repair-pickaxe-handle",
+      "title": "Repair pickaxe handle",
+      "manifest": "repair-pickaxe-handle/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

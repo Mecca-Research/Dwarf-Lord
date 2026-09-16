@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "desk-writing",
+  "title": "Desk writing",
+  "reference": "../../work-references/00-desk-writing.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "970ba55a0dd845d10fd8fe6223d815323dd5d2f4afd41679f96eb659cfad7f18",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9966329966329966,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "quill poised over OPEN ledger",
+      "durationMs": 250,
+      "sourceBounds": [
+        49,
+        25,
+        620,
+        614
+      ],
+      "sourceAnchor": [
+        287.0,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        29
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "write short stroke left to right",
+      "durationMs": 250,
+      "sourceBounds": [
+        647,
+        24,
+        1219,
+        614
+      ],
+      "sourceAnchor": [
+        287.0,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift quill and move to next line",
+      "durationMs": 250,
+      "sourceBounds": [
+        49,
+        637,
+        620,
+        1231
+      ],
+      "sourceAnchor": [
+        287.0,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        34,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "write second stroke while left hand steadies open page",
+      "durationMs": 250,
+      "sourceBounds": [
+        647,
+        638,
+        1219,
+        1231
+      ],
+      "sourceAnchor": [
+        287.5,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

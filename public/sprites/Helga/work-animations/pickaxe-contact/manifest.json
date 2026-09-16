@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "pickaxe-contact",
+  "title": "Pickaxe contact",
+  "reference": "../../work-references/01-pickaxe-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5ad970d3a1c17ef132d331c024a7b5ee736db6791f8651bdbf1fb8de93eb09d8",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9051987767584098,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe touching rock",
+      "durationMs": 250,
+      "sourceBounds": [
+        88,
+        33,
+        604,
+        639
+      ],
+      "sourceAnchor": [
+        258.0,
+        606
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        67
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw pickaxe back",
+      "durationMs": 250,
+      "sourceBounds": [
+        664,
+        31,
+        1206,
+        639
+      ],
+      "sourceAnchor": [
+        282.5,
+        608
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        66
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift into short swing",
+      "durationMs": 250,
+      "sourceBounds": [
+        83,
+        584,
+        606,
+        1238
+      ],
+      "sourceAnchor": [
+        261.5,
+        654
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        83,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "strike rock at same point",
+      "durationMs": 250,
+      "sourceBounds": [
+        693,
+        666,
+        1211,
+        1237
+      ],
+      "sourceAnchor": [
+        259.0,
+        571
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        99
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

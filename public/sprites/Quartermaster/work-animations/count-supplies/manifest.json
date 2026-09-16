@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "count-supplies",
+  "title": "Count supplies",
+  "reference": "../../work-references/03-count-supplies.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "289f4f75cc1a8e453e3c929cc3b5bf951664175e83094e64214f62d2a73bb1ab",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9916247906197655,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hand reaches into supply crate",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        23,
+        620,
+        612
+      ],
+      "sourceAnchor": [
+        284.0,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        32
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift small supply item",
+      "durationMs": 250,
+      "sourceBounds": [
+        647,
+        18,
+        1216,
+        612
+      ],
+      "sourceAnchor": [
+        284.5,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "inspect and count item",
+      "durationMs": 250,
+      "sourceBounds": [
+        55,
+        630,
+        626,
+        1227
+      ],
+      "sourceAnchor": [
+        285.5,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "place item onto counted stack",
+      "durationMs": 250,
+      "sourceBounds": [
+        648,
+        641,
+        1218,
+        1227
+      ],
+      "sourceAnchor": [
+        285.0,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        35
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

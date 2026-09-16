@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "carry-mine-timber",
+  "title": "Carry mine timber",
+  "reference": "../../work-references/04-carry-mine-timber.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "8f719bdc7636f5c1acdf3e4956e7f934652529afe83fffb756a3e00645896ca4",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0102389078498293,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward carrying mine timber",
+      "durationMs": 250,
+      "sourceBounds": [
+        164,
+        17,
+        580,
+        603
+      ],
+      "sourceAnchor": [
+        182.5,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        136,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under torso",
+      "durationMs": 250,
+      "sourceBounds": [
+        729,
+        17,
+        1143,
+        592
+      ],
+      "sourceAnchor": [
+        194.5,
+        575
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        124,
+        35
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        148,
+        633,
+        573,
+        1216
+      ],
+      "sourceAnchor": [
+        181.0,
+        583
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under torso with same timber",
+      "durationMs": 250,
+      "sourceBounds": [
+        736,
+        632,
+        1153,
+        1205
+      ],
+      "sourceAnchor": [
+        200.5,
+        573
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        117,
+        37
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

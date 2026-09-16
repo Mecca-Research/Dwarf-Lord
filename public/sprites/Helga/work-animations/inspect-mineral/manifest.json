@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Helga",
+  "action": "inspect-mineral",
+  "title": "Inspect mineral",
+  "reference": "../../work-references/02-inspect-mineral.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "35a35651a0da270829e3c550323b19eb830cba0ae113e46bbd2dda9484c2b7e0",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9801324503311258,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "mineral held near chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        36,
+        61,
+        617,
+        617
+      ],
+      "sourceAnchor": [
+        279.5,
+        556
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        71
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift toward eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        650,
+        58,
+        1234,
+        617
+      ],
+      "sourceAnchor": [
+        282.0,
+        559
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        68
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate stone toward light",
+      "durationMs": 250,
+      "sourceBounds": [
+        57,
+        657,
+        618,
+        1219
+      ],
+      "sourceAnchor": [
+        269.0,
+        562
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        65
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower mineral",
+      "durationMs": 250,
+      "sourceBounds": [
+        671,
+        659,
+        1234,
+        1218
+      ],
+      "sourceAnchor": [
+        271.5,
+        559
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        68
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

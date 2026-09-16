@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "fit-tool-head",
+  "title": "Fit tool head",
+  "reference": "../../work-references/05-fit-tool-head.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "c29a27a307bdfbc3e05fecbd46ad26a8841ddb1b26f04a14ecdc0c63916c4712",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9626016260162602,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool head above handle",
+      "durationMs": 250,
+      "sourceBounds": [
+        90,
+        37,
+        611,
+        645
+      ],
+      "sourceAnchor": [
+        268.5,
+        608
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        31
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "seat head onto handle",
+      "durationMs": 250,
+      "sourceBounds": [
+        706,
+        40,
+        1232,
+        645
+      ],
+      "sourceAnchor": [
+        271.5,
+        605
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        34
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "tap fastening wedge",
+      "durationMs": 250,
+      "sourceBounds": [
+        89,
+        625,
+        611,
+        1240
+      ],
+      "sourceAnchor": [
+        269.5,
+        615
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "inspect secured head",
+      "durationMs": 250,
+      "sourceBounds": [
+        707,
+        654,
+        1234,
+        1240
+      ],
+      "sourceAnchor": [
+        272.0,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        52
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

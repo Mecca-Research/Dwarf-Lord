@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "review-open-ledger",
+  "title": "Review open ledger",
+  "reference": "../../work-references/01-review-open-ledger.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "dd12721fa72c9df35ab2b80a30aee607d20270b9e4701bf2579747d589eae829",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9983136593591906,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "index finger at top of OPEN ledger page",
+      "durationMs": 250,
+      "sourceBounds": [
+        33,
+        22,
+        619,
+        613
+      ],
+      "sourceAnchor": [
+        294.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        26
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "finger traces line down page",
+      "durationMs": 250,
+      "sourceBounds": [
+        660,
+        31,
+        1245,
+        612
+      ],
+      "sourceAnchor": [
+        294.0,
+        581
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        36
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lean forward and examine entry",
+      "durationMs": 250,
+      "sourceBounds": [
+        33,
+        703,
+        619,
+        1239
+      ],
+      "sourceAnchor": [
+        295.0,
+        536
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        81
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lean back and return finger to start",
+      "durationMs": 250,
+      "sourceBounds": [
+        660,
+        646,
+        1246,
+        1239
+      ],
+      "sourceAnchor": [
+        294.0,
+        593
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

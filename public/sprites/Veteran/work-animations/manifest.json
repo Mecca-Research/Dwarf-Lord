@@ -1,0 +1,42 @@
+{
+  "character": "Veteran",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "stand-watch",
+      "title": "Stand watch",
+      "manifest": "stand-watch/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "guard-ready",
+      "title": "Guard ready",
+      "manifest": "guard-ready/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "patrol",
+      "title": "Patrol",
+      "manifest": "patrol/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "inspect-hammer",
+      "title": "Inspect hammer",
+      "manifest": "inspect-hammer/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "sharpen-utility-knife",
+      "title": "Sharpen utility knife",
+      "manifest": "sharpen-utility-knife/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "repair-shield-strap",
+      "title": "Repair shield strap",
+      "manifest": "repair-shield-strap/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

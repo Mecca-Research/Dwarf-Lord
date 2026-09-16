@@ -1,0 +1,42 @@
+{
+  "character": "Laborer",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "lift-crate",
+      "title": "Lift crate",
+      "manifest": "lift-crate/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "carry-sack",
+      "title": "Carry sack",
+      "manifest": "carry-sack/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "push-stone-barrow",
+      "title": "Push stone barrow",
+      "manifest": "push-stone-barrow/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "pull-supply-sled",
+      "title": "Pull supply sled",
+      "manifest": "pull-supply-sled/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "build-crate",
+      "title": "Build crate",
+      "manifest": "build-crate/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "sweep-wood-chips",
+      "title": "Sweep wood chips",
+      "manifest": "sweep-wood-chips/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

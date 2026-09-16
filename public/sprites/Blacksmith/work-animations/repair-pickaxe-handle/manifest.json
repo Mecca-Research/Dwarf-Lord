@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Blacksmith",
+  "action": "repair-pickaxe-handle",
+  "title": "Repair pickaxe handle",
+  "reference": "../../work-references/05-repair-pickaxe-handle.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "72e9aceef6ddd61621ccbd92d5211c022aeb57f1124ef40d76e5be78e868ac83",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0016920473773265,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer held beside pickaxe joint; left hand grips shaft",
+      "durationMs": 250,
+      "sourceBounds": [
+        144,
+        34,
+        577,
+        620
+      ],
+      "sourceAnchor": [
+        214.5,
+        586
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        105,
+        29
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise hammer above joint with shaft held steady",
+      "durationMs": 250,
+      "sourceBounds": [
+        702,
+        37,
+        1134,
+        621
+      ],
+      "sourceAnchor": [
+        213.5,
+        584
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        106,
+        31
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "tap fastening wedge on pickaxe head",
+      "durationMs": 250,
+      "sourceBounds": [
+        144,
+        635,
+        581,
+        1225
+      ],
+      "sourceAnchor": [
+        216.5,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "hammer rebounds while shaft remains supported",
+      "durationMs": 250,
+      "sourceBounds": [
+        702,
+        635,
+        1138,
+        1226
+      ],
+      "sourceAnchor": [
+        216.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        103,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,42 @@
+{
+  "character": "Ginger",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "saw-timber",
+      "title": "Saw timber",
+      "manifest": "saw-timber/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "build-timber-crate",
+      "title": "Build timber crate",
+      "manifest": "build-timber-crate/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "stack-firewood",
+      "title": "Stack firewood",
+      "manifest": "stack-firewood/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "haul-firewood",
+      "title": "Haul firewood",
+      "manifest": "haul-firewood/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "sharpen-hatchet",
+      "title": "Sharpen hatchet",
+      "manifest": "sharpen-hatchet/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "carry-supplies",
+      "title": "Carry supplies",
+      "manifest": "carry-supplies/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

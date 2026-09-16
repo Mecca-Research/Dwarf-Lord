@@ -17,3 +17,7 @@ Eight standing angles and four role-specific key poses are exported in `animatio
 ## Static work references
 
 Six additional character-and-workstation compositions are in `work-references/`. Review `work-references/review.jpg` and `work-references/manifest.json`. Actions: Dress stone, Lift stone, Carry ore tub, Push stone cart, Inspect shovel handle, Fit tool head. These are static references; animation variations are the next pass.
+
+## Work animation variations
+
+Six occupational actions now have four authored keyframes each (24 transparent frames), with source sheets, atlases, animated PNG previews and manifests in `work-animations/`. Review them using `/work-animation-review.html`. These are motion variations awaiting transition, registration and gait polish before gameplay integration.

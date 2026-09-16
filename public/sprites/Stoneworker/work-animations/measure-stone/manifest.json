@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "measure-stone",
+  "title": "Measure stone",
+  "reference": "../../work-references/02-measure-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a63edbc977c54dbfff1026f750ba7b1dbfe6080afc8d78737a386323d7a23e60",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9381933438985737,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "measuring tool along stone edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        50,
+        20,
+        619,
+        651
+      ],
+      "sourceAnchor": [
+        279.5,
+        631
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "slide tool to corner",
+      "durationMs": 250,
+      "sourceBounds": [
+        659,
+        29,
+        1229,
+        651
+      ],
+      "sourceAnchor": [
+        280.5,
+        622
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        57,
+        32
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lean in and read measurement",
+      "durationMs": 250,
+      "sourceBounds": [
+        52,
+        677,
+        619,
+        1238
+      ],
+      "sourceAnchor": [
+        279.0,
+        561
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        90
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "mark measured point on stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        659,
+        634,
+        1229,
+        1239
+      ],
+      "sourceAnchor": [
+        281.0,
+        605
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        48
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

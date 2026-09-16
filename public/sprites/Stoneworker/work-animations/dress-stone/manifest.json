@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "dress-stone",
+  "title": "Dress stone",
+  "reference": "../../work-references/03-dress-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "56e4da4fd9698dfefca148f1ff1ca997a35b6f160b2e18b98e4894b2b6eb3b2b",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9641693811074918,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "stone rasp rests at near edge of stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        57,
+        20,
+        593,
+        634
+      ],
+      "sourceAnchor": [
+        265.5,
+        614
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push rasp forward across rough stone face with both hands",
+      "durationMs": 250,
+      "sourceBounds": [
+        684,
+        31,
+        1220,
+        634
+      ],
+      "sourceAnchor": [
+        265.5,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        35
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rasp reaches far end smoothing the stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        57,
+        658,
+        604,
+        1235
+      ],
+      "sourceAnchor": [
+        265.5,
+        577
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        60
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift rasp slightly and return toward near edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        684,
+        639,
+        1220,
+        1235
+      ],
+      "sourceAnchor": [
+        265.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        64,
+        41
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

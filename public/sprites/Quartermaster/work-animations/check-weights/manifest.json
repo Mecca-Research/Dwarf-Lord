@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Quartermaster",
+  "action": "check-weights",
+  "title": "Check weights",
+  "reference": "../../work-references/05-check-weights.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "5f17130e22679af34d3e2cfcfba103cc10dc161c3ebfaeb3e51c332f9fcc0ea0",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9916247906197655,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold small weight above balance pan",
+      "durationMs": 250,
+      "sourceBounds": [
+        44,
+        27,
+        612,
+        622
+      ],
+      "sourceAnchor": [
+        281.5,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        26
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "place weight on pan",
+      "durationMs": 250,
+      "sourceBounds": [
+        670,
+        30,
+        1239,
+        622
+      ],
+      "sourceAnchor": [
+        282.0,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        40,
+        29
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "watch balance settle with hands clear",
+      "durationMs": 250,
+      "sourceBounds": [
+        44,
+        646,
+        613,
+        1243
+      ],
+      "sourceAnchor": [
+        281.5,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "reach toward next weight",
+      "durationMs": 250,
+      "sourceBounds": [
+        671,
+        652,
+        1239,
+        1243
+      ],
+      "sourceAnchor": [
+        281.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        30
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

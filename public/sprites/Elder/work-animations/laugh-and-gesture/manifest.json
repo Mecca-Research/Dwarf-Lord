@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Elder",
+  "action": "laugh-and-gesture",
+  "title": "Laugh and gesture",
+  "reference": "../../work-references/03-laugh-and-gesture.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "99f9be55e44f3ace36b3a51f582fa343501825e7e2ef5fd45c6c6a840d0e0b72",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9916247906197655,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "smile with hand resting",
+      "durationMs": 250,
+      "sourceBounds": [
+        110,
+        33,
+        576,
+        591
+      ],
+      "sourceAnchor": [
+        233.0,
+        558
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        63
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "laugh and raise open hand",
+      "durationMs": 250,
+      "sourceBounds": [
+        713,
+        36,
+        1178,
+        591
+      ],
+      "sourceAnchor": [
+        232.5,
+        555
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        66
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "gesture outward with open palm",
+      "durationMs": 250,
+      "sourceBounds": [
+        107,
+        652,
+        640,
+        1212
+      ],
+      "sourceAnchor": [
+        234.5,
+        560
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        87,
+        61
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower hand while smile settles",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        652,
+        1177,
+        1212
+      ],
+      "sourceAnchor": [
+        232.5,
+        560
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        89,
+        61
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

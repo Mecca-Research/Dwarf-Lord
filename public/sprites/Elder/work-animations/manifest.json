@@ -1,0 +1,42 @@
+{
+  "character": "Elder",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "eat-stew",
+      "title": "Eat stew",
+      "manifest": "eat-stew/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "eat-bread",
+      "title": "Eat bread",
+      "manifest": "eat-bread/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "laugh-seated",
+      "title": "Laugh seated",
+      "manifest": "laugh-seated/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "laugh-and-gesture",
+      "title": "Laugh and gesture",
+      "manifest": "laugh-and-gesture/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "inspect-pickaxe-in-lap",
+      "title": "Inspect pickaxe in lap",
+      "manifest": "inspect-pickaxe-in-lap/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "examine-pickaxe-crack",
+      "title": "Examine pickaxe crack",
+      "manifest": "examine-pickaxe-crack/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

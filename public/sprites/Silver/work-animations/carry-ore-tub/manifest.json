@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "carry-ore-tub",
+  "title": "Carry ore tub",
+  "reference": "../../work-references/02-carry-ore-tub.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "015cf9cb62aea132e6f9990f322dd51b8369cfaf0405b7faafd832a798cc9abc",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0295652173913044,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward holding ore tub",
+      "durationMs": 250,
+      "sourceBounds": [
+        124,
+        27,
+        569,
+        601
+      ],
+      "sourceAnchor": [
+        216.5,
+        574
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        97,
+        25
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass beneath body",
+      "durationMs": 250,
+      "sourceBounds": [
+        792,
+        33,
+        1143,
+        608
+      ],
+      "sourceAnchor": [
+        137.5,
+        575
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        114,
+        652,
+        569,
+        1218
+      ],
+      "sourceAnchor": [
+        227.5,
+        566
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        33
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass beneath body again",
+      "durationMs": 250,
+      "sourceBounds": [
+        796,
+        657,
+        1143,
+        1229
+      ],
+      "sourceAnchor": [
+        133.0,
+        572
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        183,
+        27
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

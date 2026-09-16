@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "examine-sample",
+  "title": "Examine sample",
+  "reference": "../../work-references/03-examine-sample.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "19359fdfee861759a405c89a6aebdef359a55aaaa0d67275da866f89e8542fec",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9916247906197655,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold sample at chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        86,
+        19,
+        618,
+        602
+      ],
+      "sourceAnchor": [
+        266.0,
+        583
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        38
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise sample toward eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        669,
+        18,
+        1205,
+        602
+      ],
+      "sourceAnchor": [
+        268.0,
+        584
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        37
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "rotate sample in fingers",
+      "durationMs": 250,
+      "sourceBounds": [
+        82,
+        614,
+        620,
+        1211
+      ],
+      "sourceAnchor": [
+        269.0,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower sample",
+      "durationMs": 250,
+      "sourceBounds": [
+        669,
+        621,
+        1208,
+        1212
+      ],
+      "sourceAnchor": [
+        269.5,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        53,
+        30
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

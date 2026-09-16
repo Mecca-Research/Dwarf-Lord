@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "build-crate",
+  "title": "Build crate",
+  "reference": "../../work-references/04-build-crate.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f30d3b897934937e06a5fb0a45a927e098011c899d179d519e1cbf4211b0fe1e",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9736842105263158,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer above crate plank nail",
+      "durationMs": 250,
+      "sourceBounds": [
+        118,
+        67,
+        593,
+        619
+      ],
+      "sourceAnchor": [
+        224.5,
+        552
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        101,
+        79
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise hammer",
+      "durationMs": 250,
+      "sourceBounds": [
+        702,
+        11,
+        1178,
+        619
+      ],
+      "sourceAnchor": [
+        226.0,
+        608
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        100,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "strike nail",
+      "durationMs": 250,
+      "sourceBounds": [
+        105,
+        668,
+        602,
+        1218
+      ],
+      "sourceAnchor": [
+        236.5,
+        550
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        90,
+        80
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rebound hammer slightly",
+      "durationMs": 250,
+      "sourceBounds": [
+        699,
+        662,
+        1179,
+        1216
+      ],
+      "sourceAnchor": [
+        228.0,
+        554
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        98,
+        77
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

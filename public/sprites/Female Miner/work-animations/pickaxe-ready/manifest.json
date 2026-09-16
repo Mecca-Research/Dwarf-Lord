@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "pickaxe-ready",
+  "title": "Pickaxe ready",
+  "reference": "../../work-references/00-pickaxe-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "94018ce6d27ef2ee006a5a9e01a08b5bc999af0a834eb372569dc1d7ea20afee",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9720853858784894,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "pickaxe held low ready",
+      "durationMs": 250,
+      "sourceBounds": [
+        51,
+        68,
+        614,
+        637
+      ],
+      "sourceAnchor": [
+        281.5,
+        569
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        63
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "adjust grip",
+      "durationMs": 250,
+      "sourceBounds": [
+        705,
+        34,
+        1234,
+        636
+      ],
+      "sourceAnchor": [
+        264.5,
+        602
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        31
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift pickaxe a little and lean toward ore",
+      "durationMs": 250,
+      "sourceBounds": [
+        88,
+        628,
+        619,
+        1237
+      ],
+      "sourceAnchor": [
+        265.5,
+        609
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return to ready",
+      "durationMs": 250,
+      "sourceBounds": [
+        675,
+        690,
+        1240,
+        1243
+      ],
+      "sourceAnchor": [
+        282.5,
+        553
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        45,
+        78
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

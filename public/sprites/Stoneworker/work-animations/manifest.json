@@ -1,0 +1,42 @@
+{
+  "character": "Stoneworker",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "chisel-ready",
+      "title": "Chisel ready",
+      "manifest": "chisel-ready/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "chisel-contact",
+      "title": "Chisel contact",
+      "manifest": "chisel-contact/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "measure-stone",
+      "title": "Measure stone",
+      "manifest": "measure-stone/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "dress-stone",
+      "title": "Dress stone",
+      "manifest": "dress-stone/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "lay-masonry",
+      "title": "Lay masonry",
+      "manifest": "lay-masonry/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "carry-stone",
+      "title": "Carry stone",
+      "manifest": "carry-stone/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

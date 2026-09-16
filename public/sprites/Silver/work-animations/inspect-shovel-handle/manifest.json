@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "inspect-shovel-handle",
+  "title": "Inspect shovel handle",
+  "reference": "../../work-references/04-inspect-shovel-handle.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "329d0ef44f234bc6144115c235b2b6ce53810a7f41d669ffbfd62f91736b5173",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.976897689768977,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold shovel handle at chest",
+      "durationMs": 250,
+      "sourceBounds": [
+        61,
+        28,
+        627,
+        634
+      ],
+      "sourceAnchor": [
+        283.5,
+        606
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        43,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "rotate cracked section toward eyes",
+      "durationMs": 250,
+      "sourceBounds": [
+        644,
+        31,
+        1214,
+        635
+      ],
+      "sourceAnchor": [
+        286.0,
+        604
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        41,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "trace joint with finger",
+      "durationMs": 250,
+      "sourceBounds": [
+        58,
+        641,
+        633,
+        1231
+      ],
+      "sourceAnchor": [
+        301.5,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        25,
+        40
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lower handle slightly",
+      "durationMs": 250,
+      "sourceBounds": [
+        659,
+        638,
+        1225,
+        1235
+      ],
+      "sourceAnchor": [
+        290.0,
+        597
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        33
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

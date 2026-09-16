@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "stack-firewood",
+  "title": "Stack firewood",
+  "reference": "../../work-references/02-stack-firewood.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "edfa3ac375cb343195003e4e055315504d04adb94494974a451f515be50a6d29",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0224525043177892,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold log above stack",
+      "durationMs": 250,
+      "sourceBounds": [
+        30,
+        35,
+        603,
+        590
+      ],
+      "sourceAnchor": [
+        286.5,
+        555
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        27,
+        49
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lower log halfway",
+      "durationMs": 250,
+      "sourceBounds": [
+        654,
+        41,
+        1230,
+        590
+      ],
+      "sourceAnchor": [
+        288.0,
+        549
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        55
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "place log onto stack",
+      "durationMs": 250,
+      "sourceBounds": [
+        40,
+        665,
+        603,
+        1190
+      ],
+      "sourceAnchor": [
+        281.5,
+        525
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        32,
+        79
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "adjust log securely with hands",
+      "durationMs": 250,
+      "sourceBounds": [
+        651,
+        663,
+        1230,
+        1190
+      ],
+      "sourceAnchor": [
+        289.5,
+        527
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        77
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "shovel-ore",
+  "title": "Shovel ore",
+  "reference": "../../work-references/02-shovel-ore.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "11408eb7f40db6cebde77d5b2ff262e75b7640c274bdf1bba4762f181025c898",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0242214532871972,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "shovel blade in ore pile",
+      "durationMs": 250,
+      "sourceBounds": [
+        45,
+        55,
+        619,
+        602
+      ],
+      "sourceAnchor": [
+        285.0,
+        547
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        56
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "push blade into ore",
+      "durationMs": 250,
+      "sourceBounds": [
+        672,
+        77,
+        1245,
+        602
+      ],
+      "sourceAnchor": [
+        284.5,
+        525
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        29,
+        78
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift loaded shovel",
+      "durationMs": 250,
+      "sourceBounds": [
+        45,
+        641,
+        619,
+        1204
+      ],
+      "sourceAnchor": [
+        285.0,
+        563
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        39
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "tip ore into adjacent container",
+      "durationMs": 250,
+      "sourceBounds": [
+        672,
+        643,
+        1245,
+        1204
+      ],
+      "sourceAnchor": [
+        285.0,
+        561
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        41
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

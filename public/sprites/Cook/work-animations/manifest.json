@@ -1,0 +1,42 @@
+{
+  "character": "Cook",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "chop-vegetables",
+      "title": "Chop vegetables",
+      "manifest": "chop-vegetables/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "peel-potatoes",
+      "title": "Peel potatoes",
+      "manifest": "peel-potatoes/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "knead-dough",
+      "title": "Knead dough",
+      "manifest": "knead-dough/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "stir-cauldron",
+      "title": "Stir cauldron",
+      "manifest": "stir-cauldron/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "mix-ingredients",
+      "title": "Mix ingredients",
+      "manifest": "mix-ingredients/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "serve-stew",
+      "title": "Serve stew",
+      "manifest": "serve-stew/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

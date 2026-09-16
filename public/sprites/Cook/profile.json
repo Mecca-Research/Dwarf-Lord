@@ -29,7 +29,14 @@
     "manifest": "work-references/manifest.json",
     "count": 6,
     "status": "static-reference",
-    "animationVariationsComplete": false,
-    "nextPass": "Select one scene, lock identity, camera and workstation, then author action-specific motion variations."
+    "animationVariationsComplete": true,
+    "nextPass": "Polish keyframe transitions, workstation registration, contact timing and directional coverage before gameplay integration."
+  },
+  "workAnimations": {
+    "manifest": "work-animations/manifest.json",
+    "actionCount": 6,
+    "frameCount": 24,
+    "status": "authored-keyframe-variations",
+    "productionReady": false
   }
 }

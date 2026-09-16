@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "build-timber-crate",
+  "title": "Build timber crate",
+  "reference": "../../work-references/01-build-timber-crate.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a1598a134fca29944fe49a3804281b1703fd77c7a26688d70d962950d81acfb7",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9720853858784894,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer above timber crate nail",
+      "durationMs": 250,
+      "sourceBounds": [
+        79,
+        61,
+        589,
+        618
+      ],
+      "sourceAnchor": [
+        255.0,
+        557
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        72,
+        75
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise hammer",
+      "durationMs": 250,
+      "sourceBounds": [
+        677,
+        9,
+        1187,
+        618
+      ],
+      "sourceAnchor": [
+        255.0,
+        609
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        72,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "strike nail",
+      "durationMs": 250,
+      "sourceBounds": [
+        76,
+        677,
+        604,
+        1222
+      ],
+      "sourceAnchor": [
+        264.0,
+        545
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        63,
+        86
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rebound hammer",
+      "durationMs": 250,
+      "sourceBounds": [
+        677,
+        660,
+        1193,
+        1222
+      ],
+      "sourceAnchor": [
+        258.0,
+        562
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        70
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

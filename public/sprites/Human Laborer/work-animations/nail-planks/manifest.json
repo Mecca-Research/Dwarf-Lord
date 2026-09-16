@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Human Laborer",
+  "action": "nail-planks",
+  "title": "Nail planks",
+  "reference": "../../work-references/01-nail-planks.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "bee33cc2989e85da50cf7956f1ef9cafe8c0aabb6e09c86c47cc804b93b1ee6b",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9817578772802653,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer just above nail in plank",
+      "durationMs": 250,
+      "sourceBounds": [
+        48,
+        66,
+        629,
+        611
+      ],
+      "sourceAnchor": [
+        290.5,
+        545
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        35,
+        81
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift hammer",
+      "durationMs": 250,
+      "sourceBounds": [
+        676,
+        8,
+        1253,
+        611
+      ],
+      "sourceAnchor": [
+        288.5,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        37,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "strike nail squarely",
+      "durationMs": 250,
+      "sourceBounds": [
+        45,
+        672,
+        629,
+        1217
+      ],
+      "sourceAnchor": [
+        292.0,
+        545
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        33,
+        81
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "rebound hammer for next tap",
+      "durationMs": 250,
+      "sourceBounds": [
+        679,
+        672,
+        1253,
+        1217
+      ],
+      "sourceAnchor": [
+        287.0,
+        545
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        81
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

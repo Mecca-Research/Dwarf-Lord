@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "action": "lift-crate",
+  "title": "Lift crate",
+  "reference": "../../work-references/00-lift-crate.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "1f5448b17274508eca2ce47c5d3fa302786ec9ad1ac65763a9d58f98109bdf1f",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0050933786078098,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "bend with hands gripping crate sides",
+      "durationMs": 250,
+      "sourceBounds": [
+        113,
+        118,
+        562,
+        585
+      ],
+      "sourceAnchor": [
+        224.0,
+        467
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        95,
+        147
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift crate to knee height",
+      "durationMs": 250,
+      "sourceBounds": [
+        754,
+        43,
+        1146,
+        569
+      ],
+      "sourceAnchor": [
+        196.0,
+        526
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        123,
+        87
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "straighten with crate at waist",
+      "durationMs": 250,
+      "sourceBounds": [
+        132,
+        611,
+        536,
+        1190
+      ],
+      "sourceAnchor": [
+        201.5,
+        579
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        117,
+        34
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "settle weight while holding crate",
+      "durationMs": 250,
+      "sourceBounds": [
+        767,
+        611,
+        1144,
+        1200
+      ],
+      "sourceAnchor": [
+        188.5,
+        589
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        131,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

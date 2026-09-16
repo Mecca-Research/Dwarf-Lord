@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Borrin",
+  "action": "turn-ledger-page",
+  "title": "Turn ledger page",
+  "reference": "../../work-references/02-turn-ledger-page.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "753396e5be778df7b1b587124a9b6b9de733abf3fc5f94009f4b475f78f1373b",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.03859649122807,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hand pinches corner of OPEN ledger page",
+      "durationMs": 250,
+      "sourceBounds": [
+        33,
+        31,
+        596,
+        599
+      ],
+      "sourceAnchor": [
+        283.0,
+        568
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        26
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift page halfway upright",
+      "durationMs": 250,
+      "sourceBounds": [
+        661,
+        31,
+        1224,
+        599
+      ],
+      "sourceAnchor": [
+        283.0,
+        568
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        26
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "page passes across book spine",
+      "durationMs": 250,
+      "sourceBounds": [
+        33,
+        657,
+        596,
+        1226
+      ],
+      "sourceAnchor": [
+        283.5,
+        569
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "smooth page onto other side keeping book OPEN",
+      "durationMs": 250,
+      "sourceBounds": [
+        661,
+        656,
+        1224,
+        1226
+      ],
+      "sourceAnchor": [
+        283.0,
+        570
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        26,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

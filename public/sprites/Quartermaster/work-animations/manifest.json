@@ -1,0 +1,42 @@
+{
+  "character": "Quartermaster",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "record-inventory",
+      "title": "Record inventory",
+      "manifest": "record-inventory/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "explain-allocations",
+      "title": "Explain allocations",
+      "manifest": "explain-allocations/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "examine-tool",
+      "title": "Examine tool",
+      "manifest": "examine-tool/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "count-supplies",
+      "title": "Count supplies",
+      "manifest": "count-supplies/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "repair-satchel",
+      "title": "Repair satchel",
+      "manifest": "repair-satchel/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "check-weights",
+      "title": "Check weights",
+      "manifest": "check-weights/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

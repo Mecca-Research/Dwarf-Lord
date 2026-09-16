@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Female Miner",
+  "action": "push-ore-barrow",
+  "title": "Push ore barrow",
+  "reference": "../../work-references/04-push-ore-barrow.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "a54375d5429a81ff776f73534ea53a4f1a08ec68aca2a48dc7a96b88d64ffae8",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9472,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward hands on barrow handles",
+      "durationMs": 250,
+      "sourceBounds": [
+        37,
+        60,
+        662,
+        589
+      ],
+      "sourceAnchor": [
+        312.5,
+        529
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        115
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass under body",
+      "durationMs": 250,
+      "sourceBounds": [
+        687,
+        66,
+        1254,
+        589
+      ],
+      "sourceAnchor": [
+        291.5,
+        523
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        44,
+        121
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward pushing barrow",
+      "durationMs": 250,
+      "sourceBounds": [
+        50,
+        667,
+        667,
+        1189
+      ],
+      "sourceAnchor": [
+        308.5,
+        522
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        28,
+        122
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass under body again with wheel and tray consistent",
+      "durationMs": 250,
+      "sourceBounds": [
+        712,
+        666,
+        1254,
+        1194
+      ],
+      "sourceAnchor": [
+        286.5,
+        528
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        49,
+        116
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

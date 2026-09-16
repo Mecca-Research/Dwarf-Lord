@@ -82,8 +82,8 @@ for spec in SPECS['characters']:
     review.save(folder / 'review.jpg', quality=92)
     profile['workReferences'] = {
         'manifest': 'work-references/manifest.json', 'count': 6,
-        'status': 'static-reference', 'animationVariationsComplete': False,
-        'nextPass': 'Select one scene, lock identity, camera and workstation, then author action-specific motion variations.'
+        'status': 'static-reference', 'animationVariationsComplete': profile.get('workAnimations', {}).get('actionCount', 0) == 6,
+        'nextPass': ('Polish keyframe transitions, workstation registration, contact timing and directional coverage before gameplay integration.' if profile.get('workAnimations') else 'Select one scene, lock identity, camera and workstation, then author action-specific motion variations.')
     }
     profile_path.write_text(json.dumps(profile, indent=2)+'\n')
     library.append({'name': name, 'manifest': f'{name}/work-references/manifest.json'})

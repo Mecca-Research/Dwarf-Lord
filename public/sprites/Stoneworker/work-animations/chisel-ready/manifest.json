@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Stoneworker",
+  "action": "chisel-ready",
+  "title": "Chisel ready",
+  "reference": "../../work-references/00-chisel-ready.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b4aa9be2105ee0cee7ed353a66f9cf4a86b71bcc941b66ce5438939a9ca19baa",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9932885906040269,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "chisel braced on stone and mallet low",
+      "durationMs": 250,
+      "sourceBounds": [
+        57,
+        56,
+        574,
+        607
+      ],
+      "sourceAnchor": [
+        254.5,
+        551
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        67,
+        69
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "reposition chisel tip slightly",
+      "durationMs": 250,
+      "sourceBounds": [
+        684,
+        58,
+        1200,
+        607
+      ],
+      "sourceAnchor": [
+        254.0,
+        549
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        71
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise mallet to shoulder",
+      "durationMs": 250,
+      "sourceBounds": [
+        57,
+        638,
+        574,
+        1234
+      ],
+      "sourceAnchor": [
+        254.5,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        67,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "settle mallet into ready position without striking",
+      "durationMs": 250,
+      "sourceBounds": [
+        684,
+        639,
+        1200,
+        1234
+      ],
+      "sourceAnchor": [
+        254.0,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

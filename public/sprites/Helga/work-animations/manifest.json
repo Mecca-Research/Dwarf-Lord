@@ -1,0 +1,42 @@
+{
+  "character": "Helga",
+  "expectedActions": 6,
+  "actions": [
+    {
+      "id": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "manifest": "pickaxe-ready/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "pickaxe-contact",
+      "title": "Pickaxe contact",
+      "manifest": "pickaxe-contact/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "inspect-mineral",
+      "title": "Inspect mineral",
+      "manifest": "inspect-mineral/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "shovel-stone",
+      "title": "Shovel stone",
+      "manifest": "shovel-stone/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "carry-mine-timber",
+      "title": "Carry mine timber",
+      "manifest": "carry-mine-timber/manifest.json",
+      "frameCount": 4
+    },
+    {
+      "id": "bind-tool-handle",
+      "title": "Bind tool handle",
+      "manifest": "bind-tool-handle/manifest.json",
+      "frameCount": 4
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Human Laborer",
+  "action": "repair-harness",
+  "title": "Repair harness",
+  "reference": "../../work-references/05-repair-harness.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "6e03fb4714276a7127c74f95b7800746ff93a850a49cabef2cdae61aa4bd76e2",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.988313856427379,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold harness on bench",
+      "durationMs": 250,
+      "sourceBounds": [
+        75,
+        25,
+        603,
+        620
+      ],
+      "sourceAnchor": [
+        255.0,
+        595
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        28
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "thread needle through leather",
+      "durationMs": 250,
+      "sourceBounds": [
+        702,
+        24,
+        1230,
+        620
+      ],
+      "sourceAnchor": [
+        255.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        68,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "pull thread taut",
+      "durationMs": 250,
+      "sourceBounds": [
+        69,
+        647,
+        603,
+        1246
+      ],
+      "sourceAnchor": [
+        261.0,
+        599
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return needle to next stitch",
+      "durationMs": 250,
+      "sourceBounds": [
+        703,
+        652,
+        1230,
+        1246
+      ],
+      "sourceAnchor": [
+        254.0,
+        594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        69,
+        29
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

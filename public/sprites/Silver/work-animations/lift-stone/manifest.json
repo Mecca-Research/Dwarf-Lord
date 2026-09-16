@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "lift-stone",
+  "title": "Lift stone",
+  "reference": "../../work-references/01-lift-stone.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "8ead4553e2123c0083104811a88232ddfd3a7a09e980314a2448acb46940cc68",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9472,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hands grip stone at low height knees bent",
+      "durationMs": 250,
+      "sourceBounds": [
+        81,
+        109,
+        576,
+        601
+      ],
+      "sourceAnchor": [
+        247.5,
+        492
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        150
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift stone to knees",
+      "durationMs": 250,
+      "sourceBounds": [
+        683,
+        27,
+        1164,
+        601
+      ],
+      "sourceAnchor": [
+        240.5,
+        574
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        72
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "straighten raising stone toward waist",
+      "durationMs": 250,
+      "sourceBounds": [
+        139,
+        639,
+        577,
+        1235
+      ],
+      "sourceAnchor": [
+        219.0,
+        596
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        51
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "hold stone steady against torso",
+      "durationMs": 250,
+      "sourceBounds": [
+        743,
+        612,
+        1145,
+        1237
+      ],
+      "sourceAnchor": [
+        201.0,
+        625
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        130,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

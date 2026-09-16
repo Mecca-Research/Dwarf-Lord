@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "mix-ingredients",
+  "title": "Mix ingredients",
+  "reference": "../../work-references/04-mix-ingredients.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "3640a31f8e4704cc83531c77ad9cab539fab215b84315c0b1d6c3f9399d0a1d2",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9720853858784894,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "bowl held steady and spoon at near edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        96,
+        21,
+        589,
+        627
+      ],
+      "sourceAnchor": [
+        245.0,
+        606
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "mix ingredients toward right",
+      "durationMs": 250,
+      "sourceBounds": [
+        723,
+        22,
+        1216,
+        627
+      ],
+      "sourceAnchor": [
+        245.0,
+        605
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        28
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "stir through far side of bowl",
+      "durationMs": 250,
+      "sourceBounds": [
+        96,
+        646,
+        589,
+        1254
+      ],
+      "sourceAnchor": [
+        245.0,
+        608
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        25
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "return spoon toward near edge",
+      "durationMs": 250,
+      "sourceBounds": [
+        723,
+        645,
+        1216,
+        1254
+      ],
+      "sourceAnchor": [
+        245.0,
+        609
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        82,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

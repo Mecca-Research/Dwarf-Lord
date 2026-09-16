@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Ginger",
+  "action": "sharpen-hatchet",
+  "title": "Sharpen hatchet",
+  "reference": "../../work-references/04-sharpen-hatchet.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "56408b00bc6e7394ee711d45c079ed5d773bc38a294b8825f0538e9fd19a16b3",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9689034369885434,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hatchet edge against whetstone",
+      "durationMs": 250,
+      "sourceBounds": [
+        69,
+        21,
+        608,
+        627
+      ],
+      "sourceAnchor": [
+        268.5,
+        606
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        29
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "slide edge forward across stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        696,
+        24,
+        1235,
+        627
+      ],
+      "sourceAnchor": [
+        268.0,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        32
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "edge reaches end of stone",
+      "durationMs": 250,
+      "sourceBounds": [
+        70,
+        643,
+        609,
+        1246
+      ],
+      "sourceAnchor": [
+        267.5,
+        603
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        32
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift and reset hatchet",
+      "durationMs": 250,
+      "sourceBounds": [
+        697,
+        635,
+        1235,
+        1246
+      ],
+      "sourceAnchor": [
+        267.5,
+        611
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

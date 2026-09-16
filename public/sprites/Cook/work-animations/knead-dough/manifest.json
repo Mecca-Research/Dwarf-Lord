@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "knead-dough",
+  "title": "Knead dough",
+  "reference": "../../work-references/02-knead-dough.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "0181c150109d9c077985d43be237c379997b6fc21b6abeb4fb5d58af1a7ab22a",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "palms rest on dough",
+      "durationMs": 250,
+      "sourceBounds": [
+        101,
+        17,
+        587,
+        609
+      ],
+      "sourceAnchor": [
+        228.0,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lean forward pressing dough",
+      "durationMs": 250,
+      "sourceBounds": [
+        727,
+        40,
+        1215,
+        609
+      ],
+      "sourceAnchor": [
+        229.0,
+        569
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        91,
+        47
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "fold dough back over itself",
+      "durationMs": 250,
+      "sourceBounds": [
+        101,
+        640,
+        587,
+        1232
+      ],
+      "sourceAnchor": [
+        227.5,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "pull hands back to kneading start",
+      "durationMs": 250,
+      "sourceBounds": [
+        728,
+        641,
+        1215,
+        1232
+      ],
+      "sourceAnchor": [
+        228.0,
+        591
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        25
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

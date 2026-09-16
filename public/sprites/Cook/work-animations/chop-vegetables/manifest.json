@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Cook",
+  "action": "chop-vegetables",
+  "title": "Chop vegetables",
+  "reference": "../../work-references/00-chop-vegetables.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "250cf301a1d9d3f602ecd58ecfae13c34e6287e510bac3119e17e724a8de754b",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9899665551839465,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "knife poised above vegetables on wooden cutting block",
+      "durationMs": 250,
+      "sourceBounds": [
+        100,
+        22,
+        610,
+        620
+      ],
+      "sourceAnchor": [
+        238.5,
+        598
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        24
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift knife a little",
+      "durationMs": 250,
+      "sourceBounds": [
+        685,
+        22,
+        1193,
+        620
+      ],
+      "sourceAnchor": [
+        236.5,
+        598
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        86,
+        24
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "chop down onto vegetable with other hand safely clear",
+      "durationMs": 250,
+      "sourceBounds": [
+        101,
+        633,
+        612,
+        1223
+      ],
+      "sourceAnchor": [
+        238.0,
+        590
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        84,
+        32
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lift knife and nudge next slice into position",
+      "durationMs": 250,
+      "sourceBounds": [
+        685,
+        632,
+        1196,
+        1224
+      ],
+      "sourceAnchor": [
+        237.0,
+        592
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        85,
+        30
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

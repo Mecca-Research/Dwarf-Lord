@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "character": "Silver",
+  "action": "push-stone-cart",
+  "title": "Push stone cart",
+  "reference": "../../work-references/03-push-stone-cart.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "fdbd5abd0f135424f02f9abe6565b700a516a520748ddfaa232ce878be27c3e8",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.9206842923794712,
+  "frameCount": 4,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left foot forward pushing stone cart",
+      "durationMs": 250,
+      "sourceBounds": [
+        14,
+        49,
+        639,
+        590
+      ],
+      "sourceAnchor": [
+        321.5,
+        541
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        118
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "feet pass beneath torso",
+      "durationMs": 250,
+      "sourceBounds": [
+        641,
+        48,
+        1193,
+        590
+      ],
+      "sourceAnchor": [
+        284.5,
+        542
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        117
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot forward",
+      "durationMs": 250,
+      "sourceBounds": [
+        14,
+        675,
+        621,
+        1214
+      ],
+      "sourceAnchor": [
+        312.5,
+        539
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        32,
+        120
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "feet pass beneath torso again",
+      "durationMs": 250,
+      "sourceBounds": [
+        641,
+        675,
+        1193,
+        1217
+      ],
+      "sourceAnchor": [
+        284.5,
+        542
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        117
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 4,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "repeat-preview",
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fps": 4
+  },
+  "note": "Four authored keyframes for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}
