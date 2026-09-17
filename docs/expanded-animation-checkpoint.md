@@ -62,3 +62,9 @@ PR #8 was merged at the 125-sequence checkpoint. Follow-up draft PR: https://git
 The asset directory contains high-resolution sources and redundant PNG review exports. Plan production delivery/packing before publishing the entire library. The current repository workflow builds but does not upload a Pages artifact. For this large binary push, git -c pack.window=0 -c pack.compression=0 push avoids lengthy delta compression; allow the upload to finish rather than restarting it.
 
 The machine-readable `public/sprites/directional-motion-templates.json` links all 24 directional sequences and records view angles, intended phase order and prop rules for future characters. These are explicitly review templates until motion/scale approval.
+
+## Motion-polish checkpoint: PR #9 follow-up
+
+See [motion-polish.md](motion-polish.md) for exact changes, registration/playback contracts and remaining acceptance tasks. This pass redraws two front gaits, calibrates all 88 directional sequences (64 walks, 16 tools, eight carries), registers nine fixed-station sequences, gives the Blacksmith authored strike timing, and prevents automatic one-shot state resets. All 153 sequences have version-2 manifests with explicit timing and registration metadata.
+
+The review page now supports synchronized direction comparison, previous-pose overlays, root/body guides and last-to-first seam mode. Contact and direction approval remains separate from structural tests. Do not describe the complete motion-polish request as finished: remaining gait phases, tool/log grip/shape continuity, physical action scale and gameplay movement coupling still need review and correction. The earlier uncalibrated-export descriptions above are historical; the new motion-polish document describes the current export behavior.

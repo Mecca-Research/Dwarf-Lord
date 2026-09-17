@@ -57,3 +57,47 @@ test('new task references resolve to their exported initial pose without duplica
   assert.equal(resolve(dirname(refs),item.file),resolve(e.destination,'00.png'));
  }
 });
+
+test('registered motion stays inside its canvas and preserves authored timing in APNG',()=>{
+ const plan=json('docs/expanded-animation-plan.json');
+ for(const entry of plan.entries){
+  const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
+  assert.equal(m.registration.exportVersion,2,entry.destination);
+  assert.equal(m.playback.loopApproved,false);
+  assert.equal(m.playback.durationMs,m.frames.reduce((n,f)=>n+f.durationMs,0));
+  const configPath=resolve(folder,'motion-polish.json');
+  if(existsSync(configPath)){
+   const config=json(configPath);
+   assert.equal(config.sourceSha256,m.sourceSha256,'recalibrate changed source');
+   if(config.bodyHeight)assert.ok(Math.abs(m.sharedScale*config.bodyHeight-config.targetBodyHeight)<.001);
+  }
+  for(const f of m.frames){
+   const [x,y]=f.placement,[x0,y0,x1,y1]=f.sourceBounds;
+   assert.ok(x>=0&&y>=0&&x+Math.round((x1-x0)*m.sharedScale)<=640&&y+Math.round((y1-y0)*m.sharedScale)<=640,entry.destination);
+   assert.ok(Math.abs(x+f.sourceAnchor[0]*m.sharedScale-f.groundAnchor[0])<=.501);
+   assert.ok(Math.abs(y+f.sourceAnchor[1]*m.sharedScale-f.groundAnchor[1])<=.501);
+  }
+  const bytes=readFileSync(resolve(folder,m.preview)),durations=[];let repeats;
+  for(let pos=8;pos<bytes.length;){
+   const len=bytes.readUInt32BE(pos),type=bytes.toString('ascii',pos+4,pos+8),data=pos+8;
+   if(type==='acTL')repeats=bytes.readUInt32BE(data+4);
+   if(type==='fcTL')durations.push(bytes.readUInt16BE(data+20)*1000/(bytes.readUInt16BE(data+22)||100));
+   pos+=len+12;
+  }
+  assert.deepEqual(durations,m.frames.map(f=>f.durationMs));
+  assert.equal(repeats,m.playback.mode==='once-hold'?1:0);
+ }
+});
+
+test('direction families use a common body target instead of independently fitting tool reach',()=>{
+ const entries=json('docs/expanded-animation-plan.json').entries,groups=new Map();
+ for(const e of entries.filter(e=>e.kind==='walk'||e.direction!=='reference')){
+  const m=json(resolve(e.destination,'manifest.json')),key=e.character+'/'+e.action;
+  if(!groups.has(key))groups.set(key,[]);groups.get(key).push(m);
+ }
+ for(const [key,views] of groups){
+  assert.equal(views.length,8,key);
+  assert.equal(new Set(views.map(m=>m.registration.targetBodyHeight)).size,1,key);
+  assert.ok(views.every(m=>m.registration.targetBodyHeight>0&&m.registration.scaleScope==='directional-body-height'),key);
+ }
+});

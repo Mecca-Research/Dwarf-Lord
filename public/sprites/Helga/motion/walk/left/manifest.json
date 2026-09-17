@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Helga",
   "action": "walk",
   "title": "Walking cycle",
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.215605749486653,
+  "sharedScale": 1.0912906610703044,
   "frameCount": 8,
   "frames": [
     {
@@ -31,16 +31,16 @@
         495
       ],
       "sourceAnchor": [
-        157.0,
-        479
+        161.0,
+        483.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        129,
-        34
+        144,
+        88
       ]
     },
     {
@@ -55,16 +55,16 @@
         501
       ],
       "sourceAnchor": [
-        109.5,
-        487
+        93.0,
+        485.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        187,
-        24
+        219,
+        86
       ]
     },
     {
@@ -79,16 +79,16 @@
         500
       ],
       "sourceAnchor": [
-        108.5,
-        486
+        105.0,
+        485.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        188,
-        25
+        205,
+        86
       ]
     },
     {
@@ -103,16 +103,16 @@
         499
       ],
       "sourceAnchor": [
-        158.5,
-        485
+        164.0,
+        485.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        127,
-        26
+        141,
+        86
       ]
     },
     {
@@ -127,16 +127,16 @@
         989
       ],
       "sourceAnchor": [
-        161.5,
-        468
+        168.0,
+        473.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        124,
-        47
+        137,
+        99
       ]
     },
     {
@@ -151,16 +151,16 @@
         995
       ],
       "sourceAnchor": [
-        116.0,
-        474
+        98.0,
+        473.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        179,
-        40
+        213,
+        99
       ]
     },
     {
@@ -175,16 +175,16 @@
         994
       ],
       "sourceAnchor": [
-        112.0,
-        473
+        120.0,
+        473.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        184,
-        41
+        189,
+        99
       ]
     },
     {
@@ -199,18 +199,28 @@
         995
       ],
       "sourceAnchor": [
-        168.5,
-        474
+        172.0,
+        473.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        115,
-        40
+        132,
+        99
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "loop-candidate",
     "order": [
       0,
       1,
@@ -232,13 +242,40 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external"
+  },
+  "registration": {
+    "method": "torso-median-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

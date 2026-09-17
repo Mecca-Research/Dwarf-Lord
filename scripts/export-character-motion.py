@@ -1,4 +1,4 @@
-"""Export authored eight-frame sheets with one shared scale per action.
+"""Export authored eight-frame sheets with shared sequence scale and calibrated directional body height.
 Requires Pillow, NumPy and SciPy. Run from repository root. Missing sources stay pending.
 """
 import argparse
@@ -9,6 +9,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as nd
+from motion_registration import VERSION, polish_settings, settings_hash, playback_settings, register
 
 ROOT = Path('public/sprites')
 PLAN = Path('docs/expanded-animation-plan.json')
@@ -55,22 +56,23 @@ def export(entry):
         lower_x = np.where(lower)[1]
         anchor_x = float((lower_x.min()+lower_x.max()+1)/2)
         crops.append((Image.fromarray(crop),box,anchor_x))
-    left=max(a for _,_,a in crops)
-    right=max(c.width-a for c,_,a in crops)
-    height=max(c.height for c,_,_ in crops)
-    scale=min(296/max(left,right),592/height)
+    settings=polish_settings(folder)
+    if settings.get('sourceSha256') and settings['sourceSha256']!=hashlib.sha256(source.read_bytes()).hexdigest():
+        raise ValueError(f'{source}: source changed; recalibrate motion-polish.json')
+    playback=playback_settings(entry,settings)
+    scale,anchors,placements,registration=register(crops,entry,settings,frame_order)
     outputs=[]; frames=[]
     review=Image.new('RGB',(2560,1400),(48,55,54)); draw=ImageDraw.Draw(review)
     for i,(crop,box,ax) in enumerate(crops):
         crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
         output=Image.new('RGBA',(640,640))
-        position=(round(320-ax*scale),616-crop.height)
+        position=tuple(placements[i])
         output.alpha_composite(crop,position)
         filename=f'{i:02d}.png'; output.save(folder/filename)
         outputs.append(output)
         frames.append({'id':f'key-{i:02d}','file':filename,'description':entry['beats'][i],
-                       'durationMs':125,'sourceBounds':list(box),'sourceAnchor':[ax,box[3]-box[1]],
-                       'groundAnchor':[320,616],'placement':list(position)})
+                       'durationMs':playback['durationsMs'][i],'sourceBounds':list(box),'sourceAnchor':anchors[i],
+                       'groundAnchor':registration['targetAnchor'],'placement':list(position)})
         x,y=(i%4)*640,(i//4)*700
         review.paste(output,(x,y),output)
         words=entry['beats'][i].split(); lines=['']
@@ -81,17 +83,17 @@ def export(entry):
         if len(lines)>1:draw.text((x+16,y+665),lines[1],font=FONT,fill='white')
     review.save(folder/'review.jpg',quality=90)
     # APNG keeps alpha and the same exact eight authored images; no synthetic motion.
-    outputs[0].save(folder/'preview.png',save_all=True,append_images=outputs[1:],duration=125,loop=0,disposal=0,blend=0)
+    outputs[0].save(folder/'preview.png',save_all=True,append_images=outputs[1:],duration=playback['durationsMs'],loop=1 if playback['mode']=='once-hold' else 0,disposal=0,blend=0)
     atlas=Image.new('RGBA',(5120,640))
     for i,output in enumerate(outputs):atlas.alpha_composite(output,(i*640,0))
     atlas.save(folder/'atlas.png')
-    manifest={'version':1,'character':entry['character'],'action':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],
+    manifest={'version':2,'character':entry['character'],'action':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],
               'reference':os.path.relpath(entry['reference'],folder),'source':'source-sheet.png',
               'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'sourceSize':list(im.size),
               'frameSize':[640,640],'sharedScale':scale,'frameCount':8,'frames':frames,'sourceFrameOrder':frame_order,
               'atlas':{'file':'atlas.png','columns':8,'rows':1},'preview':'preview.png',
               'status':'authored-keyframe-variations','productionReady':False,
-              'playback':{'mode':'repeat-preview','order':list(range(8)),'fps':8},
+              'playback':playback,'registration':registration,
               'note':'Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.'}
     (folder/'prompt.txt').write_text(json.loads((folder/'generation.json').read_text())['prompt']+'\n')
     (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
@@ -99,7 +101,7 @@ def export(entry):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--force',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--action');parser.add_argument('--direction');parser.add_argument('--force',action='store_true');args=parser.parse_args()
     plan=json.loads(PLAN.read_text());by_character={};count=0
     for entry in plan['entries']:
         folder=Path(entry['destination']); manifest=folder/'manifest.json'
@@ -107,7 +109,11 @@ def main():
         stale=manifest.exists() and (not (folder/'prompt.txt').exists() or (source.exists() and json.loads(manifest.read_text()).get('sourceSha256')!=hashlib.sha256(source.read_bytes()).hexdigest()))
         if manifest.exists() and (folder/'generation.json').exists():
             stale=stale or json.loads(manifest.read_text()).get('sourceFrameOrder',list(range(8)))!=json.loads((folder/'generation.json').read_text()).get('frameOrder',list(range(8)))
-        if (not args.character or args.character==entry['character']) and (args.force or stale or not manifest.exists()):
+        if manifest.exists():
+            registration=json.loads(manifest.read_text()).get('registration',{})
+            stale=stale or registration.get('exportVersion')!=VERSION or registration.get('settingsSha256')!=settings_hash(polish_settings(folder))
+        selected=(not args.character or args.character==entry['character']) and (not args.action or args.action==entry['action']) and (not args.direction or args.direction==entry['direction'])
+        if selected and (args.force or stale or not manifest.exists()):
             result=export(entry)
             if result:entry['status']='exported';count+=1
         if manifest.exists():

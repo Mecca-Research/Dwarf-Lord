@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Blacksmith",
   "action": "hammer-raised",
   "title": "Hammer raised",
@@ -23,7 +23,7 @@
       "id": "key-00",
       "file": "00.png",
       "description": "hammer held overhead",
-      "durationMs": 125,
+      "durationMs": 160,
       "sourceBounds": [
         111,
         10,
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         137.0,
-        414
+        414.0
       ],
       "groundAnchor": [
         320,
@@ -47,7 +47,7 @@
       "id": "key-01",
       "file": "01.png",
       "description": "continuous midway transition from hammer held overhead toward hammer descends halfway",
-      "durationMs": 125,
+      "durationMs": 100,
       "sourceBounds": [
         564,
         29,
@@ -55,23 +55,23 @@
         423
       ],
       "sourceAnchor": [
-        125.0,
-        394
+        125.71283783783784,
+        394.7128378378378
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        145,
-        63
+        144,
+        62
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
       "description": "hammer descends halfway",
-      "durationMs": 125,
+      "durationMs": 80,
       "sourceBounds": [
         1007,
         70,
@@ -79,23 +79,23 @@
         423
       ],
       "sourceAnchor": [
-        121.0,
-        353
+        120.28716216216216,
+        353.7128378378378
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        150,
-        121
+        151,
+        120
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
       "description": "continuous midway transition from hammer descends halfway toward hammer contacts billet on anvil",
-      "durationMs": 125,
+      "durationMs": 60,
       "sourceBounds": [
         1452,
         72,
@@ -104,7 +104,7 @@
       ],
       "sourceAnchor": [
         117.5,
-        351
+        351.0
       ],
       "groundAnchor": [
         320,
@@ -119,7 +119,7 @@
       "id": "key-04",
       "file": "04.png",
       "description": "hammer contacts billet on anvil",
-      "durationMs": 125,
+      "durationMs": 90,
       "sourceBounds": [
         130,
         512,
@@ -127,32 +127,8 @@
         867
       ],
       "sourceAnchor": [
-        117.5,
-        355
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        155,
-        118
-      ]
-    },
-    {
-      "id": "key-05",
-      "file": "05.png",
-      "description": "continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery",
-      "durationMs": 125,
-      "sourceBounds": [
-        572,
-        506,
-        845,
-        867
-      ],
-      "sourceAnchor": [
-        118.5,
-        361
+        118.21283783783784,
+        355.7128378378378
       ],
       "groundAnchor": [
         320,
@@ -160,14 +136,38 @@
       ],
       "placement": [
         154,
-        110
+        117
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery",
+      "durationMs": 100,
+      "sourceBounds": [
+        572,
+        506,
+        845,
+        867
+      ],
+      "sourceAnchor": [
+        119.21283783783784,
+        361.7128378378378
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        153,
+        109
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
       "description": "hammer rebounds and begins recovery",
-      "durationMs": 125,
+      "durationMs": 150,
       "sourceBounds": [
         997,
         478,
@@ -175,15 +175,15 @@
         868
       ],
       "sourceAnchor": [
-        136.5,
-        390
+        137.21283783783784,
+        390.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        129,
+        128,
         69
       ]
     },
@@ -191,7 +191,7 @@
       "id": "key-07",
       "file": "07.png",
       "description": "continuous midway transition from hammer rebounds and begins recovery toward hammer held overhead",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
         1435,
         446,
@@ -200,7 +200,7 @@
       ],
       "sourceAnchor": [
         141.5,
-        422
+        421.2871621621622
       ],
       "groundAnchor": [
         320,
@@ -208,9 +208,19 @@
       ],
       "placement": [
         121,
-        24
+        25
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "loop-candidate",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 880,
+    "durationsMs": [
+      160,
+      100,
+      80,
+      60,
+      90,
+      100,
+      150,
+      140
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "b849e5f441e7eaed5c72e9bf1626e3ce558db0d7072a28044363c51e23eff2f8",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        210,
+        410,
+        510,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.0,
+            -0.0
+          ]
+        },
+        {
+          "correlation": 0.9827,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.77,
+            -1.01
+          ]
+        },
+        {
+          "correlation": 0.9854,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.56,
+            -0.85
+          ]
+        },
+        {
+          "correlation": 0.9762,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.19,
+            -0.24
+          ]
+        },
+        {
+          "correlation": 0.9876,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.56,
+            -0.6
+          ]
+        },
+        {
+          "correlation": 0.985,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.88,
+            -0.89
+          ]
+        },
+        {
+          "correlation": 0.9882,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -1.26,
+            0.47
+          ]
+        },
+        {
+          "correlation": 0.9813,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.02,
+            0.66
+          ]
+        }
+      ],
+      "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

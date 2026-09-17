@@ -19,7 +19,7 @@ def known_issues(entry):
     if entry['kind'] == 'walk':
         issues.append('Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.')
     if character == 'Female Miner' and action == 'walk' and direction == 'front':
-        issues.append('Opposite contact poses corrected and source poses reordered; refine arm counter-swing and foot-contact stability.')
+        issues.append('Front gait redrawn with opposite arm swing; source phases reordered and torso/ground landmarks calibrated. Validate support contacts against actual travel speed.')
     if character == 'Elder' and action == 'walk' and direction == 'back':
         issues.append('Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows.')
     if character == 'Female Miner' and action == 'shovel-ore':
@@ -55,6 +55,13 @@ def main():
                 record['issues'].append('Opaque pixels touch source edges ('+', '.join(touched)+'); inspect and repair cropped tools or props.')
             if hashlib.sha256(source.read_bytes()).hexdigest() != m['sourceSha256']:
                 record['issues'].append('Export is stale after source replacement; rerun exporter.')
+            registration=m.get('registration',{})
+            if registration.get('scaleScope')=='directional-body-height':
+                record['issues'].append('Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval.')
+            if registration.get('stationRegistration'):
+                record['issues'].append('Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.')
+            if m.get('playback',{}).get('mode')=='once-hold':
+                record['issues'].append('One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition.')
             record['status'] = 'needs-visual-review'
             record['frameCount'] = m['frameCount']
             record['sourceSha256'] = m['sourceSha256']

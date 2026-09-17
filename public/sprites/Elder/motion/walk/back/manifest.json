@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Elder",
   "action": "walk",
   "title": "Walking cycle",
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.2786177105831533,
+  "sharedScale": 1.1255411255411256,
   "frameCount": 8,
   "frames": [
     {
@@ -31,16 +31,16 @@
         485
       ],
       "sourceAnchor": [
-        198.0,
-        463
+        151.0,
+        463.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        67,
-        24
+        150,
+        95
       ]
     },
     {
@@ -55,16 +55,16 @@
         485
       ],
       "sourceAnchor": [
-        197.0,
-        463
+        151.0,
+        463.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        68,
-        24
+        150,
+        95
       ]
     },
     {
@@ -79,16 +79,16 @@
         485
       ],
       "sourceAnchor": [
-        203.5,
-        463
+        150.0,
+        463.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        60,
-        24
+        151,
+        95
       ]
     },
     {
@@ -103,16 +103,16 @@
         485
       ],
       "sourceAnchor": [
-        202.5,
-        463
+        150.0,
+        463.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        61,
-        24
+        151,
+        95
       ]
     },
     {
@@ -127,16 +127,16 @@
         995
       ],
       "sourceAnchor": [
-        189.0,
-        461
+        152.0,
+        458.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        78,
-        27
+        149,
+        101
       ]
     },
     {
@@ -151,16 +151,16 @@
         995
       ],
       "sourceAnchor": [
-        196.5,
-        461
+        155.0,
+        458.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        69,
-        27
+        146,
+        101
       ]
     },
     {
@@ -175,16 +175,16 @@
         986
       ],
       "sourceAnchor": [
-        196.5,
-        452
+        156.0,
+        458.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        69,
-        38
+        144,
+        101
       ]
     },
     {
@@ -199,18 +199,28 @@
         989
       ],
       "sourceAnchor": [
-        197.5,
-        455
+        155.0,
+        458.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        67,
-        34
+        146,
+        101
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "loop-candidate",
     "order": [
       0,
       1,
@@ -232,14 +242,41 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external"
+  },
+  "registration": {
+    "method": "torso-median-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
       "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-      "Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows."
+      "Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows.",
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

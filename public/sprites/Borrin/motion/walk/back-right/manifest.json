@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Borrin",
   "action": "walk",
   "title": "Walking cycle",
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.472636815920398,
+  "sharedScale": 1.3,
   "frameCount": 8,
   "frames": [
     {
@@ -32,15 +32,15 @@
       ],
       "sourceAnchor": [
         98.0,
-        402
+        399.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        176,
-        24
+        193,
+        97
       ]
     },
     {
@@ -55,16 +55,16 @@
         426
       ],
       "sourceAnchor": [
-        101.0,
-        401
+        103.0,
+        401.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        171,
-        25
+        186,
+        95
       ]
     },
     {
@@ -79,16 +79,16 @@
         424
       ],
       "sourceAnchor": [
-        101.0,
-        400
+        103.0,
+        402.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        171,
-        27
+        186,
+        93
       ]
     },
     {
@@ -103,16 +103,16 @@
         426
       ],
       "sourceAnchor": [
-        116.0,
-        402
+        103.0,
+        402.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        149,
-        24
+        186,
+        93
       ]
     },
     {
@@ -127,16 +127,16 @@
         865
       ],
       "sourceAnchor": [
-        107.0,
-        398
+        103.0,
+        397.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        162,
-        30
+        186,
+        100
       ]
     },
     {
@@ -151,16 +151,16 @@
         863
       ],
       "sourceAnchor": [
-        115.0,
-        396
+        107.0,
+        397.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        151,
-        33
+        181,
+        100
       ]
     },
     {
@@ -175,16 +175,16 @@
         863
       ],
       "sourceAnchor": [
-        97.5,
-        396
+        103.0,
+        397.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        176,
-        33
+        186,
+        100
       ]
     },
     {
@@ -199,18 +199,28 @@
         865
       ],
       "sourceAnchor": [
-        116.0,
-        400
+        102.0,
+        399.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        149,
-        27
+        187,
+        97
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "loop-candidate",
     "order": [
       0,
       1,
@@ -232,13 +242,40 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external"
+  },
+  "registration": {
+    "method": "torso-median-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
+      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

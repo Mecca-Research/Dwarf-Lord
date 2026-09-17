@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Helga",
   "action": "carry-mine-timber",
   "title": "Carry mine timber",
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.440389294403893,
+  "sharedScale": 1.2776412776412776,
   "frameCount": 8,
   "frames": [
     {
@@ -31,16 +31,16 @@
         418
       ],
       "sourceAnchor": [
-        131.5,
-        407
+        116.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        131,
-        30
+        172,
+        87
       ]
     },
     {
@@ -55,16 +55,16 @@
         421
       ],
       "sourceAnchor": [
-        134.5,
-        411
+        116.0,
+        409.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        126,
-        24
+        172,
+        85
       ]
     },
     {
@@ -79,16 +79,16 @@
         418
       ],
       "sourceAnchor": [
-        131.5,
-        407
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        131,
-        30
+        171,
+        87
       ]
     },
     {
@@ -103,16 +103,16 @@
         420
       ],
       "sourceAnchor": [
-        133.0,
-        409
+        113.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        128,
-        27
+        176,
+        87
       ]
     },
     {
@@ -127,16 +127,16 @@
         860
       ],
       "sourceAnchor": [
-        135.0,
-        408
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        126,
-        28
+        171,
+        87
       ]
     },
     {
@@ -151,16 +151,16 @@
         862
       ],
       "sourceAnchor": [
-        137.5,
-        410
+        118.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        122,
-        25
+        169,
+        87
       ]
     },
     {
@@ -175,16 +175,16 @@
         858
       ],
       "sourceAnchor": [
-        130.0,
-        406
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        133,
-        31
+        171,
+        87
       ]
     },
     {
@@ -199,16 +199,16 @@
         860
       ],
       "sourceAnchor": [
-        134.5,
-        408
+        119.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        126,
-        28
+        168,
+        87
       ]
     }
   ],
@@ -231,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -242,14 +242,42 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "body-height-and-row-ground-calibration",
+    "targetAnchor": [
+      320,
+      608
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "a37b0604fe09035990b664c71d966af5764189eade91bbe3188ecd645ee2f55c",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
       "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
-      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

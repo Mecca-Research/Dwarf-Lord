@@ -24,6 +24,15 @@ for(let c=0;c<characters.length;c++){
   report.push({character:characters[c],action:before.action,frames:8});
  }
 }
+// Contact timing, synchronized views, overlays and last-to-first seam inspection.
+await page.selectOption('#character','0');await ready();
+const timing=await page.evaluate(()=>{document.querySelector('#restart').click();document.querySelector('#play').click();window.advanceTime(139);const a=JSON.parse(window.render_game_to_text()).index;window.advanceTime(1);const b=JSON.parse(window.render_game_to_text()).index;document.querySelector('#play').click();return [a,b]});assert.deepEqual(timing,[0,1]);
+const comparisonValue=await page.locator('#compare option').nth(1).getAttribute('value');await page.selectOption('#compare',comparisonValue);await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).comparison!==null);
+await page.check('#onion');await page.check('#guides');await page.check('#seam');
+const seam=await page.evaluate(()=>{document.querySelector('#play').click();const seen=[];for(let i=0;i<8;i++){window.advanceTime(160);seen.push(JSON.parse(window.render_game_to_text()).index)}document.querySelector('#play').click();return seen});assert.ok(seam.includes(0)&&seam.includes(7)&&seam.every(i=>i===0||i===7));
+await page.screenshot({path:`${out}/polish-comparison.png`,fullPage:true});
+await page.uncheck('#seam');await page.uncheck('#onion');await page.uncheck('#guides');
+await page.selectOption('#compare','');assert.equal((await state()).comparison,null);
 await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await page.screenshot({path:`${out}/mobile.png`,fullPage:true});
 await page.setViewportSize({width:1280,height:1050});
 // Rapid character changes must not display an older response or stale action list.
