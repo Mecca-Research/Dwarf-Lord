@@ -32,8 +32,14 @@ def main():
             return cv2.cvtColor(rgba[:, :, :3]*rgba[:, :, 3:4], cv2.COLOR_RGB2GRAY)[y0:y1, x0:x1]
 
         reference = gray(Image.open(folder/'00.png'))
-        data = {}
+        baseline_manifest = json.loads(subprocess.check_output(['git', 'show', commit+':'+str(folder/'manifest.json')]))
+        current_manifest = json.loads((folder/'manifest.json').read_text())
+        comparable = baseline_manifest['sourceSha256'] == current_manifest['sourceSha256']
+        data = {'baselineComparable': comparable, 'sourceSha256': current_manifest['sourceSha256'], 'settingsSha256': current_manifest['registration']['settingsSha256']}
         for version in ['before', 'after']:
+            if version == 'before' and not comparable:
+                data[version] = None
+                continue
             shifts = []
             for i in range(1, 8):
                 frame = folder/f'{i:02d}.png'
@@ -43,7 +49,7 @@ def main():
                 shifts.append(float(np.linalg.norm(warp[:, 2])))
             data[version] = {'meanTranslationPx': round(float(np.mean(shifts)), 3), 'maxTranslationPx': round(max(shifts), 3)}
         results.append({'character': path.parts[2], 'action': path.parts[4], **data})
-    report = {'method': 'Fixed station region translation against pose 0, measured with ECC. This does not measure redraw, anatomy or hand-contact quality.',
+    report = {'method': 'Fixed station region translation against pose 0, measured with ECC. Before is omitted when the source art changed. This does not measure redraw, anatomy or hand-contact quality.',
               'baselineCommit': commit, 'sequences': results}
     Path(args.out).write_text(json.dumps(report, indent=2)+'\n')
     for result in results:

@@ -74,3 +74,8 @@ The review page now supports synchronized direction comparison, previous-pose ov
 All eight front views now have corrected pose/order candidates. Borrin, Cook, Elder, Ginger and Helga use source-traceable authored-pose assemblies; Laborer uses an identity-preserving pose-template transfer. See assembly.json and authoring-inputs in each relevant front/walk folder. The assembler does not synthesize in-betweens or mirror characters. Borrin's left passing pose was corrected again to preserve his original head/body proportions. Non-front gait phase approval and remaining hand/tool/log continuity are still pending; keep productionReady false.
 
 Validation after the front-walk continuation: 163 Node tests and seven Python registration tests passed; TypeScript checking and the Pages build passed. The station registration report remains valid because this continuation changes only front walks and provenance handling.
+
+
+## 2026-09-17 follow-up
+
+Added 25 fixed-workstation registrations (34 total, <0.7 px residual), targeted Ginger/Elder/Helga redraws, displacement-driven walking/carry review, turn/pause phase preservation and calibrated body display. Source inputs/prompts and repeatable measurement are preserved. Full motion acceptance and gameplay integration remain open; see `motion-polish.md` and `progress.md`.

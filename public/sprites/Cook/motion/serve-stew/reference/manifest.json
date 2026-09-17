@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         152.0,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -56,7 +56,7 @@
       ],
       "sourceAnchor": [
         151.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -80,7 +80,7 @@
       ],
       "sourceAnchor": [
         152.5,
-        411
+        411.0
       ],
       "groundAnchor": [
         320,
@@ -103,15 +103,15 @@
         427
       ],
       "sourceAnchor": [
-        153.5,
-        412
+        152.10135135135135,
+        412.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        101,
+        103,
         27
       ]
     },
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         151.5,
-        414
+        414.0
       ],
       "groundAnchor": [
         320,
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         152.5,
-        413
+        413.0
       ],
       "groundAnchor": [
         320,
@@ -175,16 +175,16 @@
         870
       ],
       "sourceAnchor": [
-        152.5,
-        412
+        151.80067567567568,
+        411.3006756756757
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        102,
-        27
+        103,
+        28
       ]
     },
     {
@@ -200,7 +200,7 @@
       ],
       "sourceAnchor": [
         151.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -267,13 +267,91 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "9af207cb0c2535ce43688905f6e1cf9de50af280ae0f73d3bdac3ee0a8293f84",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        100,
+        435,
+        570,
+        595
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            1.1397945698377043e-08,
+            -1.2900235901724955e-07
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99349,
+          "measuredCorrectionPx": [
+            0.42268943786621094,
+            0.16270992159843445
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9962,
+          "measuredCorrectionPx": [
+            0.48892661929130554,
+            0.2046130895614624
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97708,
+          "measuredCorrectionPx": [
+            2.3834805488586426,
+            -0.29856401681900024
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99264,
+          "measuredCorrectionPx": [
+            0.16760842502117157,
+            0.30676212906837463
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98284,
+          "measuredCorrectionPx": [
+            0.16700299084186554,
+            0.4510841369628906
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98973,
+          "measuredCorrectionPx": [
+            0.6945486068725586,
+            0.5202078223228455
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98304,
+          "measuredCorrectionPx": [
+            0.44461384415626526,
+            0.40264418721199036
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
       "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",

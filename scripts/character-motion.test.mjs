@@ -6,6 +6,24 @@ import { createHash } from 'node:crypto';
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const png=p=>{const b=readFileSync(p);assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');return [b.readUInt32BE(16),b.readUInt32BE(20),b[25]]};
+test('station residual evidence matches the current sources and calibration',()=>{
+ const report=json('docs/motion-station-followup-results.json');
+ assert.equal(report.sequences.length,34);
+ for(const result of report.sequences){
+  const m=json(`public/sprites/${result.character}/motion/${result.action}/reference/manifest.json`);
+  assert.equal(result.sourceSha256,m.sourceSha256);
+  assert.equal(result.settingsSha256,m.registration.settingsSha256);
+  assert.ok(result.after.maxTranslationPx<=.71,`${result.character}/${result.action}`);
+  if(!result.baselineComparable)assert.equal(result.before,null,'changed art cannot be compared to old pixels');
+ }
+});
+test('targeted motion redraws retain their exact edit references and prompts',()=>{
+ for(const folder of ['Ginger/motion/fell-tree/reference','Elder/motion/walk/back','Helga/motion/carry-mine-timber/left']){
+  const root=resolve('public/sprites',folder),g=json(resolve(root,'generation.json'));
+  const inputs=g.editHistory??[{...g.editInput,input:g.editInput.file,prompt:g.prompt}];
+  for(const input of inputs){assert.equal(hash(resolve(root,input.input)),input.sha256);assert.ok(input.prompt.length>100)}
+ }
+});
 test('directional authoring templates resolve every view to the correct eight-frame family',()=>{
  const templates=json('public/sprites/directional-motion-templates.json').templates;
  assert.equal(templates.length,3);

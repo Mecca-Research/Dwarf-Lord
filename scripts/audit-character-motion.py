@@ -21,12 +21,12 @@ def known_issues(entry):
     if character == 'Female Miner' and action == 'walk' and direction == 'front':
         issues.append('Front gait redrawn with opposite arm swing; source phases reordered and torso/ground landmarks calibrated. Validate support contacts against actual travel speed.')
     if character == 'Elder' and action == 'walk' and direction == 'back':
-        issues.append('Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows.')
+        issues.append('Rear-view cane grip and shaft length corrected across rows; down poses reordered to match contact legs. Verify cane-ground contact during travel.')
     if character == 'Female Miner' and action == 'shovel-ore':
         issues.append('Loose ore removed; inspect empty-blade continuity and the work contact phase.')
     if character == 'Helga' and action == 'carry-mine-timber':
         if direction == 'left':
-            issues.append('Facing and shoulder placement corrected; lead-foot alternation and shoulder grip still need refinement.')
+            issues.append('Left-view free-arm counter-swing and passing poses redrawn; log remains on the far right shoulder. Verify opposite-leg phase and grip through travel.')
         else:
             issues.append('Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.')
     if any(word in action for word in ('barrow', 'sled', 'carry', 'haul')):

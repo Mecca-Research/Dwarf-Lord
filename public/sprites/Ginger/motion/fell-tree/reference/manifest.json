@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "5ec41d8dc769fc9a57ec2062b6953a7e6da18218c8edb503a5007afc7439eedc",
+  "sourceSha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab",
   "sourceSize": [
     1774,
     887
@@ -16,191 +16,47 @@
     640,
     640
   ],
-  "sharedScale": 1.5063613231552162,
+  "sharedScale": 1.3184855233853006,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "axe low beside tree trunk",
-      "durationMs": 125,
+      "description": "axe withdrawn low, ready to draw back",
+      "durationMs": 150,
       "sourceBounds": [
-        30,
-        37,
-        417,
-        416
+        26,
+        32,
+        421,
+        421
       ],
       "sourceAnchor": [
-        193.5,
-        379
+        197.5,
+        389.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        29,
-        45
+        60,
+        103
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "draw axe backward",
-      "durationMs": 125,
+      "description": "draw axe backward at waist height",
+      "durationMs": 120,
       "sourceBounds": [
-        471,
-        37,
-        861,
-        416
+        443,
+        32,
+        865,
+        421
       ],
       "sourceAnchor": [
-        196.5,
-        379
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        24,
-        45
-      ]
-    },
-    {
-      "id": "key-02",
-      "file": "02.png",
-      "description": "raise axe to shoulder",
-      "durationMs": 125,
-      "sourceBounds": [
-        918,
-        37,
-        1304,
-        416
-      ],
-      "sourceAnchor": [
-        193.0,
-        379
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        29,
-        45
-      ]
-    },
-    {
-      "id": "key-03",
-      "file": "03.png",
-      "description": "accelerate toward trunk",
-      "durationMs": 125,
-      "sourceBounds": [
-        1361,
-        36,
-        1747,
-        416
-      ],
-      "sourceAnchor": [
-        193.0,
-        380
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        29,
-        44
-      ]
-    },
-    {
-      "id": "key-04",
-      "file": "04.png",
-      "description": "axe contacts notch",
-      "durationMs": 125,
-      "sourceBounds": [
-        31,
-        481,
-        417,
-        860
-      ],
-      "sourceAnchor": [
-        193.0,
-        379
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        29,
-        45
-      ]
-    },
-    {
-      "id": "key-05",
-      "file": "05.png",
-      "description": "pull axe free",
-      "durationMs": 125,
-      "sourceBounds": [
-        474,
-        481,
-        860,
-        860
-      ],
-      "sourceAnchor": [
-        193.0,
-        379
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        29,
-        45
-      ]
-    },
-    {
-      "id": "key-06",
-      "file": "06.png",
-      "description": "recover axe to side",
-      "durationMs": 125,
-      "sourceBounds": [
-        918,
-        481,
-        1304,
-        860
-      ],
-      "sourceAnchor": [
-        193.0,
-        379
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        29,
-        45
-      ]
-    },
-    {
-      "id": "key-07",
-      "file": "07.png",
-      "description": "ready next swing",
-      "durationMs": 125,
-      "sourceBounds": [
-        1358,
-        481,
-        1746,
-        860
-      ],
-      "sourceAnchor": [
-        195.5,
-        379
+        222.9831081081081,
+        389.0
       ],
       "groundAnchor": [
         320,
@@ -208,7 +64,151 @@
       ],
       "placement": [
         26,
-        45
+        103
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise axe across shoulder",
+      "durationMs": 120,
+      "sourceBounds": [
+        912,
+        32,
+        1308,
+        421
+      ],
+      "sourceAnchor": [
+        197.24155405405406,
+        389.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        60,
+        103
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "apex of backswing, weight on rear leg",
+      "durationMs": 160,
+      "sourceBounds": [
+        1357,
+        32,
+        1753,
+        421
+      ],
+      "sourceAnchor": [
+        195.72466216216216,
+        389.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        103
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "start downward swing from shoulder",
+      "durationMs": 65,
+      "sourceBounds": [
+        27,
+        477,
+        422,
+        865
+      ],
+      "sourceAnchor": [
+        196.74155405405406,
+        388.75844594594594
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        103
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "blade reaches tree notch",
+      "durationMs": 110,
+      "sourceBounds": [
+        471,
+        477,
+        866,
+        865
+      ],
+      "sourceAnchor": [
+        195.9831081081081,
+        388.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        104
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "recoil and pull blade out",
+      "durationMs": 100,
+      "sourceBounds": [
+        913,
+        477,
+        1307,
+        865
+      ],
+      "sourceAnchor": [
+        195.4831081081081,
+        388.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        62,
+        104
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "lower axe toward ready position",
+      "durationMs": 175,
+      "sourceBounds": [
+        1357,
+        476,
+        1752,
+        866
+      ],
+      "sourceAnchor": [
+        196.74155405405406,
+        389.24155405405406
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        61,
+        103
       ]
     }
   ],
@@ -245,14 +245,14 @@
     "fps": 8,
     "durationMs": 1000,
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      150,
+      120,
+      120,
+      160,
+      65,
+      110,
+      100,
+      175
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
@@ -267,13 +267,92 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "e52087b28dee20af501697039cb2d51a8c1a6b6751ac5842fa5ca914ff5500b9",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        470,
+        100,
+        530,
+        370
+      ],
+      "minimumCorrelation": 0.94,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -2.0156133473392401e-07,
+            4.955851551358137e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96052,
+          "measuredCorrectionPx": [
+            2.0951688289642334,
+            0.10927838832139969
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96002,
+          "measuredCorrectionPx": [
+            1.4154114723205566,
+            0.07108261436223984
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96113,
+          "measuredCorrectionPx": [
+            3.0107829570770264,
+            0.23688769340515137
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95641,
+          "measuredCorrectionPx": [
+            0.9792795181274414,
+            -0.5135365128517151
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.94124,
+          "measuredCorrectionPx": [
+            2.489323854446411,
+            0.01614690199494362
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95578,
+          "measuredCorrectionPx": [
+            1.9160487651824951,
+            -0.014355206862092018
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.94627,
+          "measuredCorrectionPx": [
+            1.3877214193344116,
+            0.5584726333618164
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
       "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",

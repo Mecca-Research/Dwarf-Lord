@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         139.0,
-        337
+        337.0
       ],
       "groundAnchor": [
         320,
@@ -56,7 +56,7 @@
       ],
       "sourceAnchor": [
         139.5,
-        336
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
@@ -64,7 +64,7 @@
       ],
       "placement": [
         91,
-        63
+        62
       ]
     },
     {
@@ -79,15 +79,15 @@
         401
       ],
       "sourceAnchor": [
-        139.0,
-        360
+        138.3918918918919,
+        360.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        91,
+        92,
         24
       ]
     },
@@ -104,7 +104,7 @@
       ],
       "sourceAnchor": [
         139.5,
-        336
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
@@ -112,7 +112,7 @@
       ],
       "placement": [
         91,
-        63
+        62
       ]
     },
     {
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         139.0,
-        336
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
@@ -136,7 +136,7 @@
       ],
       "placement": [
         91,
-        63
+        62
       ]
     },
     {
@@ -151,16 +151,16 @@
         844
       ],
       "sourceAnchor": [
-        139.0,
-        336
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        91,
-        63
+        92,
+        62
       ]
     },
     {
@@ -175,16 +175,16 @@
         844
       ],
       "sourceAnchor": [
-        139.0,
-        336
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        91,
-        63
+        92,
+        62
       ]
     },
     {
@@ -199,16 +199,16 @@
         844
       ],
       "sourceAnchor": [
-        139.0,
-        336
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        91,
-        63
+        92,
+        62
       ]
     }
   ],
@@ -267,13 +267,91 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        85,
+        420,
+        565,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            4.005891618419355e-09,
+            -6.886882886192325e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98872,
+          "measuredCorrectionPx": [
+            -0.4848312735557556,
+            -1.2211121320724487
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99371,
+          "measuredCorrectionPx": [
+            0.9063175320625305,
+            0.31173649430274963
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98859,
+          "measuredCorrectionPx": [
+            -0.052571602165699005,
+            -1.3031494617462158
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99182,
+          "measuredCorrectionPx": [
+            -0.15319958329200745,
+            -1.0418895483016968
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98729,
+          "measuredCorrectionPx": [
+            1.2592527866363525,
+            -1.0094122886657715
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99139,
+          "measuredCorrectionPx": [
+            0.820347249507904,
+            -1.2223061323165894
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98603,
+          "measuredCorrectionPx": [
+            1.2337249517440796,
+            -1.0495444536209106
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
       "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
