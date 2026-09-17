@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/04-back.png",
   "source": "source-sheet.png",
-  "sourceSha256": "1e987ca0533f0f44c182b741dcf74f4a4391212fb2e657c43e8e6c27b47231de",
+  "sourceSha256": "142b4bc585820708198f8ee09ac17658635bd532a39b2f897e2135b79c1da1c2",
   "sourceSize": [
     1536,
     1024
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.2841648590021693,
+  "sharedScale": 1.2786177105831533,
   "frameCount": 8,
   "frames": [
     {
@@ -25,21 +25,21 @@
       "description": "left heel contact, right toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        41,
-        23,
-        364,
-        484
+        38,
+        22,
+        367,
+        485
       ],
       "sourceAnchor": [
-        194.0,
-        461
+        198.0,
+        463
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        71,
+        67,
         24
       ]
     },
@@ -49,21 +49,21 @@
       "description": "left weight down, right heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        425,
-        23,
-        750,
-        484
+        422,
+        22,
+        751,
+        485
       ],
       "sourceAnchor": [
-        193.5,
-        461
+        197.0,
+        463
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        72,
+        68,
         24
       ]
     },
@@ -73,21 +73,21 @@
       "description": "right foot airborne passing left support leg",
       "durationMs": 125,
       "sourceBounds": [
-        806,
-        23,
-        1130,
-        484
+        804,
+        22,
+        1135,
+        485
       ],
       "sourceAnchor": [
-        199.5,
-        461
+        203.5,
+        463
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        64,
+        60,
         24
       ]
     },
@@ -97,14 +97,14 @@
       "description": "right leg extends forward, left heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1189,
-        23,
+        1187,
+        22,
         1519,
-        484
+        485
       ],
       "sourceAnchor": [
-        201.5,
-        461
+        202.5,
+        463
       ],
       "groundAnchor": [
         320,
@@ -121,22 +121,22 @@
       "description": "right heel contact, left toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        38,
-        536,
-        343,
-        994
+        45,
+        534,
+        360,
+        995
       ],
       "sourceAnchor": [
-        118.0,
-        458
+        189.0,
+        461
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        168,
-        28
+        78,
+        27
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "right weight down, left heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        413,
-        536,
-        727,
-        994
+        424,
+        534,
+        744,
+        995
       ],
       "sourceAnchor": [
-        124.0,
-        458
+        196.5,
+        461
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        161,
-        28
+        69,
+        27
       ]
     },
     {
@@ -169,21 +169,21 @@
       "description": "left foot airborne passing right support leg",
       "durationMs": 125,
       "sourceBounds": [
-        788,
-        536,
-        1112,
+        807,
+        534,
+        1129,
         986
       ],
       "sourceAnchor": [
-        122.0,
-        450
+        196.5,
+        452
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        163,
+        69,
         38
       ]
     },
@@ -193,22 +193,22 @@
       "description": "left leg extends forward, right heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1183,
-        536,
-        1493,
-        988
+        1191,
+        534,
+        1511,
+        989
       ],
       "sourceAnchor": [
-        122.0,
-        452
+        197.5,
+        455
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        163,
-        36
+        67,
+        34
       ]
     }
   ],
@@ -239,7 +239,7 @@
     "status": "needs-visual-review",
     "issues": [
       "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-      "Walking stick changes hands between rows; preserve the anatomical right hand throughout."
+      "Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

@@ -2,8 +2,7 @@
   "version": 1,
   "plannedSequences": 153,
   "counts": {
-    "needs-visual-review": 125,
-    "missing-source": 28
+    "needs-visual-review": 153
   },
   "productionReady": false,
   "sequences": [
@@ -379,11 +378,11 @@
       "destination": "public/sprites/Elder/motion/walk/back",
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-        "Walking stick changes hands between rows; preserve the anatomical right hand throughout."
+        "Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "1e987ca0533f0f44c182b741dcf74f4a4391212fb2e657c43e8e6c27b47231de"
+      "sourceSha256": "142b4bc585820708198f8ee09ac17658635bd532a39b2f897e2135b79c1da1c2"
     },
     {
       "character": "Elder",
@@ -432,11 +431,11 @@
       "destination": "public/sprites/Female Miner/motion/walk/front",
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-        "Leading foot repeats across much of the cycle; replacement gait required."
+        "Opposite contact poses corrected and source poses reordered; refine arm counter-swing and foot-contact stability."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "1f9126fda4cfe4196ad562f3a757dc8b95efcf942b1fc581843f5414f5ddbbc9"
+      "sourceSha256": "9fe8d12976020d27f5b24eb4549920c77f17adbf2be4a393f58b209d08c48f0c"
     },
     {
       "character": "Female Miner",
@@ -447,7 +446,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "88717b5b52cf58b5428afb1a278f596a08effbcdd04afe6099f3ec96122843da"
     },
     {
       "character": "Female Miner",
@@ -458,7 +459,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "723baa5a910a3ff213e783ddd6646acdf0cee90458f929b3a0fca45158128736"
     },
     {
       "character": "Female Miner",
@@ -469,7 +472,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1d163c0db6c2bb9823389c0113c05cad377e539eafea399eb094625db7bd1318"
     },
     {
       "character": "Female Miner",
@@ -480,7 +485,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "8bb3e56dd9e4603c3b0ef677fe5d8b093fcd9bbe59305431ab595e8fa624718a"
     },
     {
       "character": "Female Miner",
@@ -491,7 +498,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "0c7edb483ea869f1f97c0e2c3185bada38cb0186578a2fde959ce6211e968710"
     },
     {
       "character": "Female Miner",
@@ -502,7 +511,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "39e109a7af7231640fc5f07087b468dcdee8fde86372576229a2e734a03d8926"
     },
     {
       "character": "Female Miner",
@@ -513,7 +524,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "965632de60b1f3af7126d3b038b804804a896aa72c324af36a4ab5c49ede2d1a"
     },
     {
       "character": "Ginger",
@@ -537,7 +550,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "7392509d451d36e96cf239df138108751d03862e2a8112903b2ac84204fc0060"
     },
     {
       "character": "Ginger",
@@ -548,7 +563,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "0cf64e2d16bd4d2d7564ffff8a908c25958a5a84c3cf6052e6fa9eb0831f8a01"
     },
     {
       "character": "Ginger",
@@ -559,7 +576,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2301b204f5aa93648443cbc8054e09b155b0459e0b734685493a7374c2d43cd5"
     },
     {
       "character": "Ginger",
@@ -570,7 +589,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "2bd408994658df148edb883abb1828ef79227b746d7ed10e433d47eec5850f33"
     },
     {
       "character": "Ginger",
@@ -581,7 +602,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "d2d1a6ea20aff2174db6d3989204391c397231779cc2defafc83d87e34b36487"
     },
     {
       "character": "Ginger",
@@ -592,7 +615,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "856e55a59ba1f480809bdcbc0f22353bf753b2ddb1e6cb220998a999c8aa99b4"
     },
     {
       "character": "Ginger",
@@ -603,7 +628,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "19cfd1481b16b4955c1ec42777388717a700c18987ed3c9f12b4bf8e19e4c76a"
     },
     {
       "character": "Helga",
@@ -627,7 +654,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "823e02afcd70a1acaae93c0e14e1fb4da2ad9234b237f749fa33b216088f6867"
     },
     {
       "character": "Helga",
@@ -638,7 +667,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "8c633505aa8ce997b678db58fc8761fc90a0100b157d97c7fdd78e61d179c7d1"
     },
     {
       "character": "Helga",
@@ -649,7 +680,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "333641065d632cad3a2c4b740e4639132a553d3976d6cdeaff760e15e9f651ef"
     },
     {
       "character": "Helga",
@@ -660,7 +693,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b506384bbc95dcf606621ca86e7ad871791ac46ae6c0853f33f3e8a56aca19f5"
     },
     {
       "character": "Helga",
@@ -671,7 +706,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "00ac7beb1d9a29f2e6a6cfc91ee4e17a9d39083ec0dde50f81b17e3dd859475c"
     },
     {
       "character": "Helga",
@@ -682,7 +719,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "b7b9caf89292fc8cdda5eeba6d3c929115fe07b03e05eb3c577d98486d2a3265"
     },
     {
       "character": "Helga",
@@ -693,7 +732,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "bb3ff34758d261dbee81dd07419ef0d6e640fdccbfa745fe2d481721d4483230"
     },
     {
       "character": "Laborer",
@@ -717,7 +758,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "9a5770b80630e11be758cd6c5a0641fe49718d5c5313493e6b4882f843c927be"
     },
     {
       "character": "Laborer",
@@ -728,7 +771,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "52cd11b32d9b4226dc42e0e543a30fa113fed3af824ce97361c9916529faed82"
     },
     {
       "character": "Laborer",
@@ -739,7 +784,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "1859935a7be0e3bd7f62cd5ea766ae5ca3fcfa631b05951b6f1ef4dd070c3324"
     },
     {
       "character": "Laborer",
@@ -750,7 +797,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "89e5971d6ec37b01fb3e0c7ed55bc74e71ed028bc7e7bfa0f2180036f947dc26"
     },
     {
       "character": "Laborer",
@@ -761,7 +810,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "14a85862d3875cd09013336a15d999699d6ebd4733cc04103a0555c0966f2240"
     },
     {
       "character": "Laborer",
@@ -772,7 +823,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "4f65668f3643c4a1fb7a009a66bfc516fb243daaaa5a253cfc9eec0dcba264d3"
     },
     {
       "character": "Laborer",
@@ -783,7 +836,9 @@
       "issues": [
         "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses."
       ],
-      "status": "missing-source"
+      "status": "needs-visual-review",
+      "frameCount": 8,
+      "sourceSha256": "0a9880dd4dcc8eb3113a2a0bac49b48e8ba86902ce8885ec8a3d09329084272c"
     },
     {
       "character": "Blacksmith",

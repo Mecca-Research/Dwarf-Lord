@@ -26,6 +26,7 @@ test('every exported motion has eight transparent frames, atlas, source and anim
    assert.equal(m.frames.length,8);assert.equal(m.frameCount,8);assert.equal(m.productionReady,false);
    assert.deepEqual(m.playback.order,[0,1,2,3,4,5,6,7]);
    assert.equal(hash(resolve(folder,m.source)),m.sourceSha256,'stale export after source replacement');
+   assert.deepEqual(m.sourceFrameOrder??[0,1,2,3,4,5,6,7],json(resolve(folder,'generation.json')).frameOrder??[0,1,2,3,4,5,6,7]);
    assert.ok(existsSync(resolve(folder,m.reference)));assert.deepEqual(png(resolve(folder,m.atlas.file)),[5120,640,6]);
    const apng=readFileSync(resolve(folder,m.preview));const offset=apng.indexOf(Buffer.from('acTL'));assert.ok(offset>0);assert.equal(apng.readUInt32BE(offset+4),8);
    const hashes=new Set();for(const frame of m.frames){assert.deepEqual(png(resolve(folder,frame.file)),[640,640,6]);hashes.add(hash(resolve(folder,frame.file)));total++;}

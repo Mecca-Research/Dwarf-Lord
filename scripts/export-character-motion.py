@@ -36,6 +36,11 @@ def export(entry):
     centers = [(int(k), *reversed(nd.center_of_mass(solid, labels, int(k)))) for k in main]
     centers.sort(key=lambda c: c[2])
     ordered = sorted(centers[:4], key=lambda c:c[1])+sorted(centers[4:], key=lambda c:c[1])
+    generation=json.loads((folder/'generation.json').read_text())
+    frame_order=generation.get('frameOrder',list(range(8)))
+    if sorted(frame_order)!=list(range(8)):
+        raise ValueError(f'{source}: frameOrder must use each of the eight source poses once')
+    ordered=[ordered[i] for i in frame_order]
     crops = []
     # Register ground plus lower-body/station center, never moving hands or raised tools.
     for k, _, _ in ordered:
@@ -83,7 +88,7 @@ def export(entry):
     manifest={'version':1,'character':entry['character'],'action':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],
               'reference':os.path.relpath(entry['reference'],folder),'source':'source-sheet.png',
               'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'sourceSize':list(im.size),
-              'frameSize':[640,640],'sharedScale':scale,'frameCount':8,'frames':frames,
+              'frameSize':[640,640],'sharedScale':scale,'frameCount':8,'frames':frames,'sourceFrameOrder':frame_order,
               'atlas':{'file':'atlas.png','columns':8,'rows':1},'preview':'preview.png',
               'status':'authored-keyframe-variations','productionReady':False,
               'playback':{'mode':'repeat-preview','order':list(range(8)),'fps':8},
@@ -100,6 +105,8 @@ def main():
         folder=Path(entry['destination']); manifest=folder/'manifest.json'
         source=folder/'source-sheet.png'
         stale=manifest.exists() and (not (folder/'prompt.txt').exists() or (source.exists() and json.loads(manifest.read_text()).get('sourceSha256')!=hashlib.sha256(source.read_bytes()).hexdigest()))
+        if manifest.exists() and (folder/'generation.json').exists():
+            stale=stale or json.loads(manifest.read_text()).get('sourceFrameOrder',list(range(8)))!=json.loads((folder/'generation.json').read_text()).get('frameOrder',list(range(8)))
         if (not args.character or args.character==entry['character']) and (args.force or stale or not manifest.exists()):
             result=export(entry)
             if result:entry['status']='exported';count+=1

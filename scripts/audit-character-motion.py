@@ -19,9 +19,9 @@ def known_issues(entry):
     if entry['kind'] == 'walk':
         issues.append('Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.')
     if character == 'Female Miner' and action == 'walk' and direction == 'front':
-        issues.append('Leading foot repeats across much of the cycle; replacement gait required.')
+        issues.append('Opposite contact poses corrected and source poses reordered; refine arm counter-swing and foot-contact stability.')
     if character == 'Elder' and action == 'walk' and direction == 'back':
-        issues.append('Walking stick changes hands between rows; preserve the anatomical right hand throughout.')
+        issues.append('Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows.')
     if character == 'Female Miner' and action == 'shovel-ore':
         issues.append('Loose ore remains on and around the shovel; remove it for the isolated tool template.')
     if character == 'Helga' and action == 'carry-mine-timber':

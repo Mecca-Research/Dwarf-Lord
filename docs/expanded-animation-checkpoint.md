@@ -31,7 +31,7 @@ The plan covers 64 directional walks, 48 expanded existing work sequences, 17 ad
 
 ## Quality corrections still required
 
-- Female Miner's front walk repeats the leading foot. Generate genuinely opposite contacts and passing poses; do not mirror the sprite or manufacture motion by shifting a static image.
+- Female Miner's front walk now has opposite contacts and reordered passing poses. Refine arm counter-swing and foot-contact stability without mirroring the sprite or shifting a static image.
 - Helga's carry views disagree about waist versus shoulder placement. Standardize the family on her canonical right-shoulder carry, preserving tool handedness under all camera angles. The replacement left sheet now maintains left facing and shoulder carry, but its gait and grip need further refinement.
 - Female Miner's shovel-ore reference cycle retains loose ore. Remove surrounding material for the isolated tool template.
 - Inspect source-edge clipping, especially Female Miner's back-right pickaxe, Laborer's build-crate and stack-crates, and Blacksmith's wheelbarrow repair. See the generated report for current edge checks.
@@ -49,10 +49,14 @@ Helga's timber carry uses the same log on the same anatomical shoulder, with con
 
 Export uses 640 × 640 RGBA frames, a 5120 × 640 atlas and an eight-frame APNG at 8 fps. Ground registration is x=320, y=616. Playback speed is a review default, not final gameplay timing. Production acceptance requires manual motion review and cross-direction calibration in addition to file validation.
 
-## Verified checkpoint: 2026-09-16
+## Verified checkpoint: 2026-09-17
 
-125 of 153 sequences are exported: 1,000 individual frames. Blacksmith, Borrin, Cook and Elder have all eight planned walking views available as candidates. Female Miner, Ginger, Helga and Laborer still need seven walking views each (28 missing sheets total). Ginger's haul-firewood sequence is now exported. All 17 additional work-task sequences are exported and indexed as supplemental static references.
+All 153 planned sequences are exported: 1,224 individual frames. All eight characters have eight walking views. All 48 existing work cycles and 17 new work tasks have eight-frame candidates. Female Miner's pickaxe/shovel and Helga's carry families each cover eight directions.
 
-Validation: 159 Node tests passed; TypeScript checking and the Pages build passed. The browser check passed all 124 sequences / 992 images before the final firewood-hauling sequence was added. No gameplay integration or production-readiness claim is made.
+Validation: 159 Node tests passed after full export. TypeScript checking and the Pages build passed earlier in this change. Browser validation covered the first 125 sequences; rerun full coverage for the 28 latest walking views and subsequent corrections.
 
-The asset directory is approximately 2 GB with high-resolution sources and redundant PNG review exports. Plan production delivery/packing before publishing the entire library to the game host. The current repository workflow builds but does not upload a Pages artifact.
+Corrections saved: Elder's back-view walk keeps the stick in the right hand; Female Miner's front walk now has opposite lead-foot poses, reordered using generation.json frameOrder; Helga's left carry keeps a constant left-facing view and shoulder carry. These still require contact, grip and gait polish. The remaining Helga carry directions need consistent shoulder placement. Other known issues are recorded in motion-quality.json.
+
+Draft PR: https://github.com/Mecca-Research/Dwarf-Lord/pull/8 . Resume on the existing branch and update this PR.
+
+The asset directory contains high-resolution sources and redundant PNG review exports. Plan production delivery/packing before publishing the entire library. The current repository workflow builds but does not upload a Pages artifact. For this large binary push, git -c pack.window=0 -c pack.compression=0 push avoids lengthy delta compression; allow the upload to finish rather than restarting it.
