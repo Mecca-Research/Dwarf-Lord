@@ -57,7 +57,7 @@ Validation: 160 Node tests passed after the final corrections. TypeScript checki
 
 Corrections saved: Elder's back-view walk keeps the stick in the right hand; Female Miner's front walk now has opposite lead-foot poses, reordered using generation.json frameOrder; Helga's left carry keeps a constant left-facing view and shoulder carry. These still require contact, grip and gait polish. All Helga carry directions now use shoulder carries, including corrected rear-view handedness; log dimensions, grip and gait still need cross-view polish. Other known issues are recorded in motion-quality.json.
 
-Draft PR: https://github.com/Mecca-Research/Dwarf-Lord/pull/8 . Resume on the existing branch and update this PR.
+PR #8 was merged at the 125-sequence checkpoint. Follow-up draft PR: https://github.com/Mecca-Research/Dwarf-Lord/pull/9 . Resume on the existing branch and update PR #9 for the remaining motion polish.
 
 The asset directory contains high-resolution sources and redundant PNG review exports. Plan production delivery/packing before publishing the entire library. The current repository workflow builds but does not upload a Pages artifact. For this large binary push, git -c pack.window=0 -c pack.compression=0 push avoids lengthy delta compression; allow the upload to finish rather than restarting it.
 
