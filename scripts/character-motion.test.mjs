@@ -101,3 +101,21 @@ test('direction families use a common body target instead of independently fitti
   assert.ok(views.every(m=>m.registration.targetBodyHeight>0&&m.registration.scaleScope==='directional-body-height'),key);
  }
 });
+
+test('reviewed front gait assemblies preserve traceable, distinct authored source poses',()=>{
+ for(const name of ['Borrin','Cook','Elder','Ginger','Helga']){
+  const folder=resolve('public/sprites',name,'motion/walk/front'),path=resolve(folder,'assembly.json');
+  const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
+  assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
+  assert.equal(assembly.poses.length,8);
+  assert.equal(new Set(assembly.poses.map(p=>`${p.input}:${p.pose}`)).size,8);
+  for(const source of assembly.inputs){
+   assert.equal(source.sha256,hash(resolve(folder,source.file)));
+   if(source.reference)assert.equal(source.referenceSha256,hash(resolve(folder,source.reference)));
+  }
+  for(const pose of assembly.poses){
+   const source=assembly.inputs.find(s=>s.id===pose.input);assert.ok(source);
+   assert.ok(Number.isInteger(pose.pose)&&pose.pose>=0&&pose.pose<source.poseCount);
+  }
+ }
+});

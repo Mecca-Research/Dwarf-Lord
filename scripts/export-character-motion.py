@@ -59,6 +59,8 @@ def export(entry):
     settings=polish_settings(folder)
     if settings.get('sourceSha256') and settings['sourceSha256']!=hashlib.sha256(source.read_bytes()).hexdigest():
         raise ValueError(f'{source}: source changed; recalibrate motion-polish.json')
+    if settings.get('assemblySha256') and settings['assemblySha256']!=hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest():
+        raise ValueError(f'{folder}: selections changed; rerun assemble-reviewed-motion.py')
     playback=playback_settings(entry,settings)
     scale,anchors,placements,registration=register(crops,entry,settings,frame_order)
     outputs=[]; frames=[]

@@ -68,3 +68,9 @@ The machine-readable `public/sprites/directional-motion-templates.json` links al
 See [motion-polish.md](motion-polish.md) for exact changes, registration/playback contracts and remaining acceptance tasks. This pass redraws two front gaits, calibrates all 88 directional sequences (64 walks, 16 tools, eight carries), registers nine fixed-station sequences, gives the Blacksmith authored strike timing, and prevents automatic one-shot state resets. All 153 sequences have version-2 manifests with explicit timing and registration metadata.
 
 The review page now supports synchronized direction comparison, previous-pose overlays, root/body guides and last-to-first seam mode. Contact and direction approval remains separate from structural tests. Do not describe the complete motion-polish request as finished: remaining gait phases, tool/log grip/shape continuity, physical action scale and gameplay movement coupling still need review and correction. The earlier uncalibrated-export descriptions above are historical; the new motion-polish document describes the current export behavior.
+
+### Front-walk continuation
+
+All eight front views now have corrected pose/order candidates. Borrin, Cook, Elder, Ginger and Helga use source-traceable authored-pose assemblies; Laborer uses an identity-preserving pose-template transfer. See assembly.json and authoring-inputs in each relevant front/walk folder. The assembler does not synthesize in-betweens or mirror characters. Borrin's left passing pose was corrected again to preserve his original head/body proportions. Non-front gait phase approval and remaining hand/tool/log continuity are still pending; keep productionReady false.
+
+Validation after the front-walk continuation: 163 Node tests and seven Python registration tests passed; TypeScript checking and the Pages build passed. The station registration report remains valid because this continuation changes only front walks and provenance handling.

@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/00-front.png",
   "source": "source-sheet.png",
-  "sourceSha256": "22f9655792667499f22a74c12717781201eac194b74fc126be75093e38c1b4e4",
+  "sourceSha256": "616f239cd2c34ae7f9a9013f67c30fd920f33da8670374bb009caef4e0f14b9b",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.2919254658385093,
+  "sharedScale": 1.2470023980815348,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "left heel contact, right toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        104,
-        19,
-        332,
-        425
+        94,
+        14,
+        349,
+        432
       ],
       "sourceAnchor": [
-        113.0,
-        402.5
+        128.0,
+        418.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        174,
-        96
+        160,
+        94
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "left weight down, right heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        551,
-        19,
-        780,
-        424
+        548,
+        14,
+        807,
+        433
       ],
       "sourceAnchor": [
-        114.0,
-        402.5
+        129.0,
+        418.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        96
+        159,
+        94
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "right foot airborne passing left support leg",
       "durationMs": 125,
       "sourceBounds": [
-        996,
-        19,
-        1227,
-        419
+        981,
+        14,
+        1232,
+        422
       ],
       "sourceAnchor": [
-        115.0,
-        402.5
+        124.0,
+        418.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        171,
-        96
+        165,
+        94
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "right leg extends forward, left heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1440,
-        18,
-        1665,
-        417
+        1425,
+        14,
+        1680,
+        435
       ],
       "sourceAnchor": [
-        114.0,
-        403.5
+        123.0,
+        418.5
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        95
+        167,
+        94
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "right heel contact, left toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        108,
-        463,
-        335,
-        865
+        92,
+        455,
+        351,
+        872
       ],
       "sourceAnchor": [
-        113.0,
-        402.0
+        125.0,
+        415.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        174,
-        97
+        164,
+        98
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "right weight down, left heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        552,
-        462,
-        779,
-        866
+        541,
+        454,
+        803,
+        869
       ],
       "sourceAnchor": [
-        114.0,
-        403.0
+        130.0,
+        416.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        95
+        158,
+        97
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "left foot airborne passing right support leg",
       "durationMs": 125,
       "sourceBounds": [
-        996,
-        462,
-        1222,
-        856
+        979,
+        454,
+        1236,
+        858
       ],
       "sourceAnchor": [
-        114.0,
-        403.0
+        126.0,
+        416.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        95
+        163,
+        97
       ]
     },
     {
@@ -193,22 +193,22 @@
       "description": "left leg extends forward, right heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1441,
-        462,
-        1667,
-        865
+        1427,
+        454,
+        1685,
+        871
       ],
       "sourceAnchor": [
-        114.0,
-        403.0
+        131.0,
+        416.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        95
+        157,
+        97
       ]
     }
   ],
@@ -268,7 +268,8 @@
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
     "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {

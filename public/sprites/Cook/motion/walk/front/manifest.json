@@ -7,87 +7,87 @@
   "kind": "walk",
   "reference": "../../../animation/00-front.png",
   "source": "source-sheet.png",
-  "sourceSha256": "d810a2cc852555c85c880a9745ea11a4d6191d94a754414f7e80f53d1bf6491f",
+  "sourceSha256": "746f8715b6b396eaea5ad9045be14f7552c5a7bab18bf2c1bf970d62fa5f613b",
   "sourceSize": [
-    1774,
-    887
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.2807881773399015,
+  "sharedScale": 1.04,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
       "description": "left heel contact, right toe behind",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        130,
-        13,
-        351,
-        422
+        183,
+        100,
+        457,
+        600
       ],
       "sourceAnchor": [
-        107.0,
-        407.0
+        137.0,
+        500.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        183,
-        95
+        178,
+        96
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
       "description": "left weight down, right heel lifts",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        542,
-        13,
-        762,
-        420
+        825,
+        100,
+        1091,
+        600
       ],
       "sourceAnchor": [
-        108.0,
-        407.0
+        135.0,
+        500.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        182,
-        95
+        180,
+        96
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
       "description": "right foot airborne passing left support leg",
-      "durationMs": 125,
+      "durationMs": 105,
       "sourceBounds": [
-        983,
-        13,
-        1206,
-        420
+        1459,
+        99,
+        1745,
+        601
       ],
       "sourceAnchor": [
-        110.0,
-        407.0
+        141.0,
+        501.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        179,
+        173,
         95
       ]
     },
@@ -95,120 +95,120 @@
       "id": "key-03",
       "file": "03.png",
       "description": "right leg extends forward, left heel rises",
-      "durationMs": 125,
+      "durationMs": 115,
       "sourceBounds": [
-        1423,
-        13,
-        1643,
-        419
+        2100,
+        102,
+        2382,
+        602
       ],
       "sourceAnchor": [
-        110.0,
-        407.0
+        140.0,
+        498.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        179,
-        95
+        174,
+        98
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
       "description": "right heel contact, left toe behind",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        117,
-        454,
-        340,
-        860
+        179,
+        739,
+        460,
+        1237
       ],
       "sourceAnchor": [
-        110.0,
-        406.0
+        141.0,
+        501.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        179,
-        96
+        173,
+        95
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
       "description": "right weight down, left heel lifts",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        544,
-        454,
-        760,
-        860
+        814,
+        737,
+        1100,
+        1239
       ],
       "sourceAnchor": [
-        109.0,
-        406.0
+        146.0,
+        503.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        180,
-        96
+        168,
+        93
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
       "description": "left foot airborne passing right support leg",
-      "durationMs": 125,
+      "durationMs": 105,
       "sourceBounds": [
-        968,
-        454,
-        1191,
-        860
+        1463,
+        739,
+        1738,
+        1239
       ],
       "sourceAnchor": [
-        112.0,
-        406.0
+        137.0,
+        501.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        177,
-        96
+        178,
+        95
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
       "description": "left leg extends forward, right heel rises",
-      "durationMs": 125,
+      "durationMs": 115,
       "sourceBounds": [
-        1422,
-        454,
-        1641,
-        860
+        2101,
+        738,
+        2383,
+        1245
       ],
       "sourceAnchor": [
-        109.0,
-        406.0
+        139.0,
+        502.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        180,
-        96
+        175,
+        94
       ]
     }
   ],
@@ -245,21 +245,21 @@
     "fps": 8,
     "durationMs": 1000,
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
     ],
     "loopApproved": false,
     "endBehavior": "review-seam",
     "rootMotion": "external"
   },
   "registration": {
-    "method": "torso-median-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
@@ -267,8 +267,9 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "8ce2d05591e8dbade36cd3863edf0d13cdcfa8a02bec2df5a47bfa38cbfbac2e",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
