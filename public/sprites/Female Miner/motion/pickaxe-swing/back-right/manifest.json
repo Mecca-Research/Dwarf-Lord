@@ -7,7 +7,7 @@
   "kind": "directional",
   "reference": "../../../animation/03-back-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "e70731db8453f4b8e51911661916ebcd2ca424ff34482a53bb9846282b7212d2",
+  "sourceSha256": "723db23d8ca98a5b630497b773ce81374293ac71adbde2852e22a7b8f913326c",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3640552995391706,
+  "sharedScale": 1.667605633802817,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "pickaxe low ready",
       "durationMs": 125,
       "sourceBounds": [
-        86,
-        38,
-        385,
-        433
+        125,
+        104,
+        364,
+        405
       ],
       "sourceAnchor": [
-        147.0,
-        395
+        117.0,
+        301
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        119,
-        77
+        125,
+        114
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "draw tool back",
       "durationMs": 125,
       "sourceBounds": [
-        540,
-        57,
-        811,
-        434
+        567,
+        114,
+        780,
+        406
       ],
       "sourceAnchor": [
-        98.5,
-        377
+        78.5,
+        292
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        186,
-        102
+        189,
+        129
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "raise pickaxe above shoulder",
       "durationMs": 125,
       "sourceBounds": [
-        964,
-        5,
-        1190,
-        434
+        1010,
+        77,
+        1189,
+        409
       ],
       "sourceAnchor": [
-        121.5,
-        429
+        94.5,
+        332
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        154,
-        31
+        162,
+        62
       ]
     },
     {
@@ -97,21 +97,21 @@
       "description": "apex overhead",
       "durationMs": 125,
       "sourceBounds": [
-        1437,
-        0,
-        1639,
-        434
+        1477,
+        52,
+        1637,
+        407
       ],
       "sourceAnchor": [
-        101.0,
-        434
+        80.0,
+        355
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        182,
+        187,
         24
       ]
     },
@@ -121,22 +121,22 @@
       "description": "accelerate downward",
       "durationMs": 125,
       "sourceBounds": [
-        88,
-        495,
-        373,
-        867
+        123,
+        542,
+        357,
+        820
       ],
       "sourceAnchor": [
-        130.0,
-        372
+        109.0,
+        278
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        143,
-        109
+        138,
+        152
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "contact at ground height",
       "durationMs": 125,
       "sourceBounds": [
-        516,
-        541,
-        852,
-        866
+        553,
+        570,
+        819,
+        821
       ],
       "sourceAnchor": [
-        165.0,
-        325
+        131.5,
+        251
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        173
+        101,
+        197
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "follow through",
       "durationMs": 125,
       "sourceBounds": [
-        950,
-        525,
-        1279,
-        867
+        1006,
+        555,
+        1270,
+        820
       ],
       "sourceAnchor": [
-        160.0,
-        342
+        129.0,
+        265
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        102,
-        149
+        105,
+        174
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "recover to ready",
       "durationMs": 125,
       "sourceBounds": [
-        1422,
-        482,
-        1720,
-        873
+        1467,
+        529,
+        1705,
+        823
       ],
       "sourceAnchor": [
-        146.5,
-        391
+        117.0,
+        294
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        120,
-        83
+        125,
+        126
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -237,9 +247,7 @@
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [
-      "Opaque pixels touch source edges (top); inspect and repair cropped tools or props."
-    ],
+    "issues": [],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

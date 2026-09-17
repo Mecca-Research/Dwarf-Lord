@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "note": "Asset-authoring templates, not gameplay-ready clips. Angles enumerate views relative to front; calibrate world headings, body scale, anchors, contact phases and loop seams before reuse. Phase descriptions are intended poses requiring visual verification.",
+  "templates": [
+    {
+      "sourceCharacter": "Female Miner",
+      "action": "pickaxe-swing",
+      "frameCount": 8,
+      "productionReady": false,
+      "status": "review-template",
+      "rules": "Character and held pickaxe only; preserve grip, tool length, swing plane and contact phase across views.",
+      "intendedPhases": [
+        "pickaxe low ready",
+        "draw tool back",
+        "raise pickaxe above shoulder",
+        "apex overhead",
+        "accelerate downward",
+        "contact at ground height",
+        "follow through",
+        "recover to ready"
+      ],
+      "directions": [
+        {
+          "id": "front",
+          "angleFromFrontDegrees": 0,
+          "manifest": "Female Miner/motion/pickaxe-swing/front/manifest.json"
+        },
+        {
+          "id": "front-right",
+          "angleFromFrontDegrees": 45,
+          "manifest": "Female Miner/motion/pickaxe-swing/front-right/manifest.json"
+        },
+        {
+          "id": "right",
+          "angleFromFrontDegrees": 90,
+          "manifest": "Female Miner/motion/pickaxe-swing/right/manifest.json"
+        },
+        {
+          "id": "back-right",
+          "angleFromFrontDegrees": 135,
+          "manifest": "Female Miner/motion/pickaxe-swing/back-right/manifest.json"
+        },
+        {
+          "id": "back",
+          "angleFromFrontDegrees": 180,
+          "manifest": "Female Miner/motion/pickaxe-swing/back/manifest.json"
+        },
+        {
+          "id": "back-left",
+          "angleFromFrontDegrees": 225,
+          "manifest": "Female Miner/motion/pickaxe-swing/back-left/manifest.json"
+        },
+        {
+          "id": "left",
+          "angleFromFrontDegrees": 270,
+          "manifest": "Female Miner/motion/pickaxe-swing/left/manifest.json"
+        },
+        {
+          "id": "front-left",
+          "angleFromFrontDegrees": 315,
+          "manifest": "Female Miner/motion/pickaxe-swing/front-left/manifest.json"
+        }
+      ]
+    },
+    {
+      "sourceCharacter": "Female Miner",
+      "action": "shovel-cycle",
+      "frameCount": 8,
+      "productionReady": false,
+      "status": "review-template",
+      "rules": "Character and empty shovel only; terrain, ore and particles belong to separate world assets.",
+      "intendedPhases": [
+        "empty shovel low",
+        "press blade forward",
+        "lever blade upward",
+        "lift imaginary load",
+        "turn torso toward deposit",
+        "extend shovel",
+        "tip blade to deposit",
+        "return empty blade"
+      ],
+      "directions": [
+        {
+          "id": "front",
+          "angleFromFrontDegrees": 0,
+          "manifest": "Female Miner/motion/shovel-cycle/front/manifest.json"
+        },
+        {
+          "id": "front-right",
+          "angleFromFrontDegrees": 45,
+          "manifest": "Female Miner/motion/shovel-cycle/front-right/manifest.json"
+        },
+        {
+          "id": "right",
+          "angleFromFrontDegrees": 90,
+          "manifest": "Female Miner/motion/shovel-cycle/right/manifest.json"
+        },
+        {
+          "id": "back-right",
+          "angleFromFrontDegrees": 135,
+          "manifest": "Female Miner/motion/shovel-cycle/back-right/manifest.json"
+        },
+        {
+          "id": "back",
+          "angleFromFrontDegrees": 180,
+          "manifest": "Female Miner/motion/shovel-cycle/back/manifest.json"
+        },
+        {
+          "id": "back-left",
+          "angleFromFrontDegrees": 225,
+          "manifest": "Female Miner/motion/shovel-cycle/back-left/manifest.json"
+        },
+        {
+          "id": "left",
+          "angleFromFrontDegrees": 270,
+          "manifest": "Female Miner/motion/shovel-cycle/left/manifest.json"
+        },
+        {
+          "id": "front-left",
+          "angleFromFrontDegrees": 315,
+          "manifest": "Female Miner/motion/shovel-cycle/front-left/manifest.json"
+        }
+      ]
+    },
+    {
+      "sourceCharacter": "Helga",
+      "action": "carry-mine-timber",
+      "frameCount": 8,
+      "productionReady": false,
+      "status": "review-template",
+      "rules": "Carry the same log on the anatomical right shoulder, supported by the right hand; keep the left arm free and preserve log perspective.",
+      "intendedPhases": [
+        "left heel contact, right toe behind",
+        "left weight down, right heel lifts",
+        "right foot airborne passing left support leg",
+        "right leg extends forward, left heel rises",
+        "right heel contact, left toe behind",
+        "right weight down, left heel lifts",
+        "left foot airborne passing right support leg",
+        "left leg extends forward, right heel rises"
+      ],
+      "directions": [
+        {
+          "id": "front",
+          "angleFromFrontDegrees": 0,
+          "manifest": "Helga/motion/carry-mine-timber/front/manifest.json"
+        },
+        {
+          "id": "front-right",
+          "angleFromFrontDegrees": 45,
+          "manifest": "Helga/motion/carry-mine-timber/front-right/manifest.json"
+        },
+        {
+          "id": "right",
+          "angleFromFrontDegrees": 90,
+          "manifest": "Helga/motion/carry-mine-timber/right/manifest.json"
+        },
+        {
+          "id": "back-right",
+          "angleFromFrontDegrees": 135,
+          "manifest": "Helga/motion/carry-mine-timber/back-right/manifest.json"
+        },
+        {
+          "id": "back",
+          "angleFromFrontDegrees": 180,
+          "manifest": "Helga/motion/carry-mine-timber/back/manifest.json"
+        },
+        {
+          "id": "back-left",
+          "angleFromFrontDegrees": 225,
+          "manifest": "Helga/motion/carry-mine-timber/back-left/manifest.json"
+        },
+        {
+          "id": "left",
+          "angleFromFrontDegrees": 270,
+          "manifest": "Helga/motion/carry-mine-timber/left/manifest.json"
+        },
+        {
+          "id": "front-left",
+          "angleFromFrontDegrees": 315,
+          "manifest": "Helga/motion/carry-mine-timber/front-left/manifest.json"
+        }
+      ]
+    }
+  ]
+}

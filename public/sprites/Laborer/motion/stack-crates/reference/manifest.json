@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "159ff022258616a8418905777268641225fa76138fe7e11816a82a1d78d6877e",
+  "sourceSha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.5179487179487179,
+  "sharedScale": 1.7259475218658893,
   "frameCount": 8,
   "frames": [
     {
@@ -25,14 +25,14 @@
       "description": "hold crate at waist",
       "durationMs": 125,
       "sourceBounds": [
-        64,
-        58,
-        454,
-        408
+        78,
+        93,
+        421,
+        390
       ],
       "sourceAnchor": [
-        195.0,
-        350
+        171.5,
+        297
       ],
       "groundAnchor": [
         320,
@@ -40,7 +40,7 @@
       ],
       "placement": [
         24,
-        85
+        103
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "bend knees slightly",
       "durationMs": 125,
       "sourceBounds": [
-        521,
-        97,
-        897,
-        408
+        529,
+        129,
+        858,
+        390
       ],
       "sourceAnchor": [
-        188.0,
-        311
+        164.5,
+        261
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        35,
-        144
+        36,
+        166
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "lift toward stack",
       "durationMs": 125,
       "sourceBounds": [
-        968,
-        53,
-        1341,
-        408
+        957,
+        87,
+        1283,
+        390
       ],
       "sourceAnchor": [
-        186.5,
-        355
+        163.0,
+        303
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        77
+        39,
+        93
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "extend arms over stack",
       "durationMs": 125,
       "sourceBounds": [
-        1399,
-        45,
-        1774,
-        408
+        1410,
+        81,
+        1731,
+        390
       ],
       "sourceAnchor": [
-        187.5,
-        363
+        160.5,
+        309
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        35,
-        65
+        43,
+        83
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "lower crate onto stack",
       "durationMs": 125,
       "sourceBounds": [
-        66,
-        495,
-        449,
-        851
+        73,
+        514,
+        401,
+        809
       ],
       "sourceAnchor": [
-        191.5,
-        356
+        164.0,
+        295
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        29,
-        76
+        37,
+        107
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "release weight",
       "durationMs": 125,
       "sourceBounds": [
-        514,
-        498,
-        893,
-        851
+        526,
+        513,
+        858,
+        809
       ],
       "sourceAnchor": [
-        189.5,
-        353
+        166.0,
+        296
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        32,
-        80
+        33,
+        105
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "align crate edges",
       "durationMs": 125,
       "sourceBounds": [
-        968,
-        501,
-        1334,
-        851
+        962,
+        510,
+        1295,
+        809
       ],
       "sourceAnchor": [
-        183.0,
-        350
+        166.5,
+        299
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        42,
-        85
+        33,
+        100
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "withdraw hands",
       "durationMs": 125,
       "sourceBounds": [
-        1399,
-        497,
-        1772,
-        851
+        1416,
+        512,
+        1737,
+        809
       ],
       "sourceAnchor": [
-        189.5,
-        354
+        160.5,
+        297
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        32,
-        79
+        43,
+        103
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -237,9 +247,7 @@
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [
-      "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
-    ],
+    "issues": [],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

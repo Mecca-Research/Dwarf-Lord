@@ -1133,11 +1133,11 @@
       "kind": "work",
       "destination": "public/sprites/Female Miner/motion/shovel-ore/reference",
       "issues": [
-        "Loose ore remains on and around the shovel; remove it for the isolated tool template."
+        "Loose ore removed; inspect empty-blade continuity and the work contact phase."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "842114385eacc49ac37df831102773848e4210f38b7aae4cca35733505d62682"
+      "sourceSha256": "7be2a3402b9d63cf9bffbdcef35600f138940bb6f62e64449648df230c64e8d8"
     },
     {
       "character": "Female Miner",
@@ -1225,7 +1225,7 @@
       "kind": "work",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/reference",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
@@ -1299,12 +1299,10 @@
       "direction": "reference",
       "kind": "work",
       "destination": "public/sprites/Laborer/motion/build-crate/reference",
-      "issues": [
-        "Opaque pixels touch source edges (bottom); inspect and repair cropped tools or props."
-      ],
+      "issues": [],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "872a786d1fb39b862c4e4816624f353642785ff58ed1d0c8eb32004e23ec1b61"
+      "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861"
     },
     {
       "character": "Laborer",
@@ -1394,12 +1392,11 @@
       "kind": "new-work",
       "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
       "issues": [
-        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
-        "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+        "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b"
+      "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402"
     },
     {
       "character": "Borrin",
@@ -1530,12 +1527,10 @@
       "direction": "reference",
       "kind": "new-work",
       "destination": "public/sprites/Laborer/motion/stack-crates/reference",
-      "issues": [
-        "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
-      ],
+      "issues": [],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "159ff022258616a8418905777268641225fa76138fe7e11816a82a1d78d6877e"
+      "sourceSha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e"
     },
     {
       "character": "Laborer",
@@ -1622,12 +1617,10 @@
       "direction": "back-right",
       "kind": "directional",
       "destination": "public/sprites/Female Miner/motion/pickaxe-swing/back-right",
-      "issues": [
-        "Opaque pixels touch source edges (top); inspect and repair cropped tools or props."
-      ],
+      "issues": [],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "e70731db8453f4b8e51911661916ebcd2ca424ff34482a53bb9846282b7212d2"
+      "sourceSha256": "723db23d8ca98a5b630497b773ce81374293ac71adbde2852e22a7b8f913326c"
     },
     {
       "character": "Female Miner",
@@ -1768,12 +1761,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/front",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "c1258d50ebca5a5b7c275296486db3fd1a178ec8cba4455d3dcbfa53c77cd4cc"
+      "sourceSha256": "74f2479d8eb06bb04d2edd60312113cb545e95217cbee0a02acf1c1bbb9d9929"
     },
     {
       "character": "Helga",
@@ -1782,12 +1775,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/front-right",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "e69163f06aae14d250ba4364b1f0b239631d6148a81ceb0f69084e85ea120387"
+      "sourceSha256": "f86161b643f4b3035ec777eb0a49dd3b44593ce370901e532e757ebe4eb50871"
     },
     {
       "character": "Helga",
@@ -1796,12 +1789,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/right",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "2ef736c19e5eb5f02ab81d5ef69e70c28a6f8f10adba74082eb5422281dabc2a"
+      "sourceSha256": "e6469f704d5a19d8b6805ae3d69113a441d4533402bd57d0633ff9e0f5aa3b4f"
     },
     {
       "character": "Helga",
@@ -1810,12 +1803,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/back-right",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "22a023cd34ea446f9227d971ef03f6f043395bc84b5403b71b5b991b14d980a2"
+      "sourceSha256": "004c9090382921fb485b8fe6b3164af174527c7c26f5cd843307d66522e54228"
     },
     {
       "character": "Helga",
@@ -1824,12 +1817,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/back",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "844a2ff415cb2303aecb1091ecd35f22563403a8da039b1498ea8b58624a18f9"
+      "sourceSha256": "0858112c6f922eba6925f4263b66775127580d6ca6c914e8b498596382ee4e2d"
     },
     {
       "character": "Helga",
@@ -1838,12 +1831,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/back-left",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "aaf407c7908b553e1c92426e495b9b4a6e69324f49744823d0224d0ee63b806d"
+      "sourceSha256": "5a1ba5da0c0675e7b69975646a544315b2c7357f8f2d1545440d7a03a002d701"
     },
     {
       "character": "Helga",
@@ -1866,12 +1859,12 @@
       "kind": "directional",
       "destination": "public/sprites/Helga/motion/carry-mine-timber/front-left",
       "issues": [
-        "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+        "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
         "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
       ],
       "status": "needs-visual-review",
       "frameCount": 8,
-      "sourceSha256": "772af28b684497701ec877610c5ed9cb37d2c5810caa71ebf9d8c6122da70088"
+      "sourceSha256": "77e08cc2c9dcb947c72f67378bfdfaa1a1f34462d72b1f09a6b3e60737fd0d89"
     }
   ]
 }

@@ -32,9 +32,9 @@ The plan covers 64 directional walks, 48 expanded existing work sequences, 17 ad
 ## Quality corrections still required
 
 - Female Miner's front walk now has opposite contacts and reordered passing poses. Refine arm counter-swing and foot-contact stability without mirroring the sprite or shifting a static image.
-- Helga's carry views disagree about waist versus shoulder placement. Standardize the family on her canonical right-shoulder carry, preserving tool handedness under all camera angles. The replacement left sheet now maintains left facing and shoulder carry, but its gait and grip need further refinement.
-- Female Miner's shovel-ore reference cycle retains loose ore. Remove surrounding material for the isolated tool template.
-- Inspect source-edge clipping, especially Female Miner's back-right pickaxe, Laborer's build-crate and stack-crates, and Blacksmith's wheelbarrow repair. See the generated report for current edge checks.
+- Helga's carry views now use right-shoulder carrying, including rear-view handedness corrections. Further refine grip, log dimensions and gait across views.
+- Female Miner's shovel-ore cycle has been cleaned to an empty shovel in every frame.
+- Clipped source edges were repaired for Female Miner's back-right pickaxe, Laborer's build-crate and stack-crates, and Blacksmith's wheelbarrow repair. See the generated report for current edge checks.
 - Review newly generated work cycles for station redraw drift and prop contacts. Verify all walks for alternating feet, consistent direction, phase ordering and planted-foot stability.
 - Eight authored poses alone are not a smooth loop. Review the last-to-first seam and preserve identity, scale, equipment and handedness through every frame and direction.
 - Current registration shares scale within a sequence, not across an entire directional family. Calibrate cross-direction body scale and anchors before gameplay integration.
@@ -53,10 +53,12 @@ Export uses 640 × 640 RGBA frames, a 5120 × 640 atlas and an eight-frame APNG 
 
 All 153 planned sequences are exported: 1,224 individual frames. All eight characters have eight walking views. All 48 existing work cycles and 17 new work tasks have eight-frame candidates. Female Miner's pickaxe/shovel and Helga's carry families each cover eight directions.
 
-Validation: 159 Node tests passed after full export. TypeScript checking and the Pages build passed earlier in this change. Browser validation covered the first 125 sequences; rerun full coverage for the 28 latest walking views and subsequent corrections.
+Validation: 160 Node tests passed after the final corrections. TypeScript checking and the Pages build passed. Browser validation passed for all 153 sequences / 1,224 images, including decoding, playback controls, selection races and mobile layout. The source-edge audit reports no edge warnings.
 
-Corrections saved: Elder's back-view walk keeps the stick in the right hand; Female Miner's front walk now has opposite lead-foot poses, reordered using generation.json frameOrder; Helga's left carry keeps a constant left-facing view and shoulder carry. These still require contact, grip and gait polish. The remaining Helga carry directions need consistent shoulder placement. Other known issues are recorded in motion-quality.json.
+Corrections saved: Elder's back-view walk keeps the stick in the right hand; Female Miner's front walk now has opposite lead-foot poses, reordered using generation.json frameOrder; Helga's left carry keeps a constant left-facing view and shoulder carry. These still require contact, grip and gait polish. All Helga carry directions now use shoulder carries, including corrected rear-view handedness; log dimensions, grip and gait still need cross-view polish. Other known issues are recorded in motion-quality.json.
 
 Draft PR: https://github.com/Mecca-Research/Dwarf-Lord/pull/8 . Resume on the existing branch and update this PR.
 
 The asset directory contains high-resolution sources and redundant PNG review exports. Plan production delivery/packing before publishing the entire library. The current repository workflow builds but does not upload a Pages artifact. For this large binary push, git -c pack.window=0 -c pack.compression=0 push avoids lengthy delta compression; allow the upload to finish rather than restarting it.
+
+The machine-readable `public/sprites/directional-motion-templates.json` links all 24 directional sequences and records view angles, intended phase order and prop rules for future characters. These are explicitly review templates until motion/scale approval.

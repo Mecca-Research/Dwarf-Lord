@@ -7,7 +7,7 @@
   "kind": "directional",
   "reference": "../../../animation/07-front-left.png",
   "source": "source-sheet.png",
-  "sourceSha256": "772af28b684497701ec877610c5ed9cb37d2c5810caa71ebf9d8c6122da70088",
+  "sourceSha256": "77e08cc2c9dcb947c72f67378bfdfaa1a1f34462d72b1f09a6b3e60737fd0d89",
   "sourceSize": [
     1774,
     887
@@ -25,22 +25,22 @@
       "description": "left heel contact, right toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        75,
+        66,
         8,
-        386,
-        438
+        360,
+        439
       ],
       "sourceAnchor": [
-        160.5,
-        430
+        169.0,
+        431
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        101,
-        29
+        89,
+        28
       ]
     },
     {
@@ -49,13 +49,13 @@
       "description": "left weight down, right heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        506,
-        7,
-        825,
-        441
+        484,
+        6,
+        800,
+        440
       ],
       "sourceAnchor": [
-        170.5,
+        192.5,
         434
       ],
       "groundAnchor": [
@@ -63,7 +63,7 @@
         616
       ],
       "placement": [
-        87,
+        57,
         24
       ]
     },
@@ -73,22 +73,22 @@
       "description": "right foot airborne passing left support leg",
       "durationMs": 125,
       "sourceBounds": [
-        941,
+        934,
         8,
-        1260,
-        436
+        1251,
+        433
       ],
       "sourceAnchor": [
-        174.5,
-        428
+        190.0,
+        425
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        82,
-        32
+        61,
+        36
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "right leg extends forward, left heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1381,
-        8,
-        1707,
-        437
+        1391,
+        6,
+        1701,
+        438
       ],
       "sourceAnchor": [
-        162.5,
-        429
+        186.0,
+        432
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        98,
-        31
+        66,
+        27
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "right heel contact, left toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        77,
-        450,
-        390,
-        873
+        65,
+        448,
+        373,
+        874
       ],
       "sourceAnchor": [
-        149.5,
-        423
+        162.0,
+        426
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        116,
-        39
+        99,
+        35
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "right weight down, left heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        513,
-        450,
-        828,
-        871
+        489,
+        447,
+        803,
+        869
       ],
       "sourceAnchor": [
-        162.5,
-        421
+        185.5,
+        422
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        98,
-        42
+        67,
+        40
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "left foot airborne passing right support leg",
       "durationMs": 125,
       "sourceBounds": [
-        957,
-        450,
-        1275,
-        872
+        946,
+        447,
+        1261,
+        873
       ],
       "sourceAnchor": [
-        166.5,
-        422
+        182.5,
+        426
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        93,
-        40
+        71,
+        35
       ]
     },
     {
@@ -194,23 +194,33 @@
       "durationMs": 125,
       "sourceBounds": [
         1395,
-        450,
-        1709,
-        876
+        448,
+        1706,
+        877
       ],
       "sourceAnchor": [
-        160.0,
-        426
+        175.5,
+        429
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        102,
-        35
+        81,
+        31
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -238,7 +248,7 @@
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
+      "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
       "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
     ],
     "poseCaptions": "intended-poses-not-verified",

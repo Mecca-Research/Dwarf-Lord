@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b",
+  "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3243847874720358,
+  "sharedScale": 1.491183879093199,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "inspect wheel axle",
       "durationMs": 125,
       "sourceBounds": [
-        15,
-        60,
-        443,
-        407
+        50,
+        95,
+        426,
+        404
       ],
       "sourceAnchor": [
-        205.0,
-        347
+        182.5,
+        309
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
-        156
+        48,
+        155
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "grip loose axle with left hand",
       "durationMs": 125,
       "sourceBounds": [
-        458,
-        60,
-        887,
-        407
+        490,
+        95,
+        867,
+        403
       ],
       "sourceAnchor": [
-        205.5,
-        347
+        183.5,
+        308
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        156
+        46,
+        157
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "position hammer in right hand",
       "durationMs": 125,
       "sourceBounds": [
-        902,
-        51,
-        1330,
-        407
+        927,
+        92,
+        1299,
+        404
       ],
       "sourceAnchor": [
-        205.5,
-        356
+        182.0,
+        312
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        145
+        49,
+        151
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "raise hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        1345,
-        28,
-        1774,
-        407
+        1372,
+        63,
+        1748,
+        404
       ],
       "sourceAnchor": [
-        205.5,
-        379
+        182.0,
+        341
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        114
+        49,
+        108
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "tap securing wedge",
       "durationMs": 125,
       "sourceBounds": [
-        15,
-        505,
-        443,
-        850
+        48,
+        522,
+        430,
+        832
       ],
       "sourceAnchor": [
-        205.0,
-        345
+        186.5,
+        310
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
-        159
+        42,
+        154
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "rebound hammer",
       "durationMs": 125,
       "sourceBounds": [
-        458,
-        496,
-        886,
-        851
+        487,
+        512,
+        869,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        355
+        185.5,
+        321
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        146
+        43,
+        137
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "turn wheel by hand to test",
       "durationMs": 125,
       "sourceBounds": [
-        902,
-        496,
-        1330,
-        851
+        927,
+        520,
+        1307,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        355
+        184.5,
+        313
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        146
+        45,
+        149
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "inspect repaired hub",
       "durationMs": 125,
       "sourceBounds": [
-        1345,
-        472,
-        1774,
-        851
+        1369,
+        508,
+        1751,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        379
+        183.5,
+        325
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        114
+        46,
+        131
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -238,8 +248,7 @@
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
-      "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

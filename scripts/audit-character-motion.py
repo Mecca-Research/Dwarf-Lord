@@ -23,12 +23,12 @@ def known_issues(entry):
     if character == 'Elder' and action == 'walk' and direction == 'back':
         issues.append('Stick handedness corrected to the right hand; refine grip height and stick contact timing between rows.')
     if character == 'Female Miner' and action == 'shovel-ore':
-        issues.append('Loose ore remains on and around the shovel; remove it for the isolated tool template.')
+        issues.append('Loose ore removed; inspect empty-blade continuity and the work contact phase.')
     if character == 'Helga' and action == 'carry-mine-timber':
         if direction == 'left':
             issues.append('Facing and shoulder placement corrected; lead-foot alternation and shoulder grip still need refinement.')
         else:
-            issues.append('Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.')
+            issues.append('Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.')
     if any(word in action for word in ('barrow', 'sled', 'carry', 'haul')):
         issues.append('Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.')
     return issues

@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/04-build-crate.png",
   "source": "source-sheet.png",
-  "sourceSha256": "872a786d1fb39b862c4e4816624f353642785ff58ed1d0c8eb32004e23ec1b61",
+  "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3577981651376148,
+  "sharedScale": 1.6444444444444444,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "hammer above crate plank nail",
       "durationMs": 125,
       "sourceBounds": [
-        74,
-        29,
-        424,
-        442
+        110,
+        64,
+        402,
+        401
       ],
       "sourceAnchor": [
-        166.5,
-        413
+        139.0,
+        337
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
-        55
+        91,
+        62
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "continuous midway transition from hammer above crate plank nail toward raise hammer",
       "durationMs": 125,
       "sourceBounds": [
-        518,
-        29,
-        867,
-        442
+        553,
+        64,
+        846,
+        400
       ],
       "sourceAnchor": [
-        166.0,
-        413
+        139.5,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        91,
+        63
       ]
     },
     {
@@ -73,21 +73,21 @@
       "description": "raise hammer",
       "durationMs": 125,
       "sourceBounds": [
-        961,
-        6,
-        1311,
-        442
+        998,
+        41,
+        1290,
+        401
       ],
       "sourceAnchor": [
-        166.5,
-        436
+        139.0,
+        360
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
+        91,
         24
       ]
     },
@@ -97,22 +97,22 @@
       "description": "continuous midway transition from raise hammer toward strike nail",
       "durationMs": 125,
       "sourceBounds": [
-        1404,
-        30,
-        1754,
-        442
+        1440,
+        64,
+        1732,
+        400
       ],
       "sourceAnchor": [
-        166.5,
-        412
+        139.5,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
-        57
+        91,
+        63
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "strike nail",
       "durationMs": 125,
       "sourceBounds": [
-        74,
-        473,
-        424,
-        886
+        110,
+        508,
+        402,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        413
+        139.0,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        91,
+        63
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "continuous midway transition from strike nail toward rebound hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        518,
-        473,
-        867,
-        885
+        554,
+        508,
+        846,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        412
+        139.0,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        57
+        91,
+        63
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "rebound hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        962,
-        473,
-        1311,
-        886
+        998,
+        508,
+        1290,
+        844
       ],
       "sourceAnchor": [
-        165.5,
-        413
+        139.0,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        91,
+        63
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "continuous midway transition from rebound hammer slightly toward hammer above crate plank nail",
       "durationMs": 125,
       "sourceBounds": [
-        1405,
-        473,
-        1754,
-        885
+        1441,
+        508,
+        1732,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        412
+        139.0,
+        336
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        57
+        91,
+        63
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -237,9 +247,7 @@
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [
-      "Opaque pixels touch source edges (bottom); inspect and repair cropped tools or props."
-    ],
+    "issues": [],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

@@ -6,6 +6,19 @@ import { createHash } from 'node:crypto';
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const png=p=>{const b=readFileSync(p);assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');return [b.readUInt32BE(16),b.readUInt32BE(20),b[25]]};
+test('directional authoring templates resolve every view to the correct eight-frame family',()=>{
+ const templates=json('public/sprites/directional-motion-templates.json').templates;
+ assert.equal(templates.length,3);
+ for(const template of templates){
+  assert.equal(template.productionReady,false);assert.equal(template.intendedPhases.length,8);
+  assert.deepEqual(template.directions.map(d=>d.angleFromFrontDegrees),[0,45,90,135,180,225,270,315]);
+  for(const direction of template.directions){
+   const m=json(resolve('public/sprites',direction.manifest));
+   assert.equal(m.character,template.sourceCharacter);assert.equal(m.action,template.action);
+   assert.equal(m.direction,direction.id);assert.equal(m.frameCount,8);
+  }
+ }
+});
 test('expanded motion plan preserves the requested character and directional coverage',()=>{
  const p=json('docs/expanded-animation-plan.json');
  assert.equal(p.entries.length,153);
