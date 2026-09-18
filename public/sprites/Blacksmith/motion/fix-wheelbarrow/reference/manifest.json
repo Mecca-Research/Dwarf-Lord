@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Blacksmith",
   "action": "fix-wheelbarrow",
   "title": "Fix wheelbarrow",
@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b",
+  "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3243847874720358,
+  "sharedScale": 1.491183879093199,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "inspect wheel axle",
       "durationMs": 125,
       "sourceBounds": [
-        15,
-        60,
-        443,
-        407
+        50,
+        95,
+        426,
+        404
       ],
       "sourceAnchor": [
-        205.0,
-        347
+        182.5,
+        309.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
-        156
+        48,
+        155
       ]
     },
     {
@@ -49,14 +49,14 @@
       "description": "grip loose axle with left hand",
       "durationMs": 125,
       "sourceBounds": [
-        458,
-        60,
-        887,
-        407
+        490,
+        95,
+        867,
+        403
       ],
       "sourceAnchor": [
-        205.5,
-        347
+        182.15878378378378,
+        308.6706081081081
       ],
       "groundAnchor": [
         320,
@@ -73,22 +73,22 @@
       "description": "position hammer in right hand",
       "durationMs": 125,
       "sourceBounds": [
-        902,
-        51,
-        1330,
-        407
+        927,
+        92,
+        1299,
+        404
       ],
       "sourceAnchor": [
-        205.5,
-        356
+        178.64695945945945,
+        312.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        145
+        54,
+        151
       ]
     },
     {
@@ -97,14 +97,14 @@
       "description": "raise hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        1345,
-        28,
-        1774,
-        407
+        1372,
+        63,
+        1748,
+        404
       ],
       "sourceAnchor": [
-        205.5,
-        379
+        182.6706081081081,
+        340.3293918918919
       ],
       "groundAnchor": [
         320,
@@ -112,7 +112,7 @@
       ],
       "placement": [
         48,
-        114
+        109
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "tap securing wedge",
       "durationMs": 125,
       "sourceBounds": [
-        15,
-        505,
-        443,
-        850
+        48,
+        522,
+        430,
+        832
       ],
       "sourceAnchor": [
-        205.0,
-        345
+        187.1706081081081,
+        310.6706081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
-        159
+        41,
+        153
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "rebound hammer",
       "durationMs": 125,
       "sourceBounds": [
-        458,
-        496,
-        886,
-        851
+        487,
+        512,
+        869,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        355
+        188.18243243243242,
+        320.3293918918919
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        146
+        39,
+        138
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "turn wheel by hand to test",
       "durationMs": 125,
       "sourceBounds": [
-        902,
-        496,
-        1330,
-        851
+        927,
+        520,
+        1307,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        355
+        187.18243243243242,
+        313.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        146
+        41,
+        149
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "inspect repaired hub",
       "durationMs": 125,
       "sourceBounds": [
-        1345,
-        472,
-        1774,
-        851
+        1369,
+        508,
+        1751,
+        833
       ],
       "sourceAnchor": [
-        205.5,
-        379
+        189.53547297297297,
+        325.6706081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        114
+        37,
+        130
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,14 +242,119 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        455,
+        300,
+        565,
+        450
+      ],
+      "minimumCorrelation": 0.93,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            3.637423873215084e-08,
+            3.357946454229932e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97784,
+          "measuredCorrectionPx": [
+            1.6158318519592285,
+            -0.7439188957214355
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98697,
+          "measuredCorrectionPx": [
+            5.019732475280762,
+            -0.29708972573280334
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98087,
+          "measuredCorrectionPx": [
+            -0.9594030380249023,
+            0.8385468125343323
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.93219,
+          "measuredCorrectionPx": [
+            -1.2636456489562988,
+            -1.4111850261688232
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97031,
+          "measuredCorrectionPx": [
+            -3.5489139556884766,
+            0.7215408086776733
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97063,
+          "measuredCorrectionPx": [
+            -4.469050884246826,
+            0.46269840002059937
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96845,
+          "measuredCorrectionPx": [
+            -8.755480766296387,
+            -0.8266808390617371
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
       "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
-      "Opaque pixels touch source edges (right); inspect and repair cropped tools or props."
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

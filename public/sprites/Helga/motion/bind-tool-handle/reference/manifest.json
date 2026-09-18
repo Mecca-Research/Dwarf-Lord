@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Helga",
   "action": "bind-tool-handle",
   "title": "Bind tool handle",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         187.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -56,7 +56,7 @@
       ],
       "sourceAnchor": [
         187.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -80,7 +80,7 @@
       ],
       "sourceAnchor": [
         187.0,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -104,7 +104,7 @@
       ],
       "sourceAnchor": [
         187.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         187.0,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         187.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -176,7 +176,7 @@
       ],
       "sourceAnchor": [
         187.0,
-        413
+        413.0
       ],
       "groundAnchor": [
         320,
@@ -200,7 +200,7 @@
       ],
       "sourceAnchor": [
         187.5,
-        412
+        412.0
       ],
       "groundAnchor": [
         320,
@@ -212,6 +212,16 @@
       ]
     }
   ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
   "atlas": {
     "file": "atlas.png",
     "columns": 8,
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "33b928f37cd02d863265beea3bfd1d251295ca4baab590248392db454079efe8",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        90,
+        415,
+        580,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            7.636897336738002e-09,
+            3.153955674406461e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99251,
+          "measuredCorrectionPx": [
+            -0.44660934805870056,
+            0.30529725551605225
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99523,
+          "measuredCorrectionPx": [
+            0.05148916691541672,
+            0.38316330313682556
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99119,
+          "measuredCorrectionPx": [
+            -0.24181686341762543,
+            0.38316795229911804
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99397,
+          "measuredCorrectionPx": [
+            0.14989575743675232,
+            -0.4202723503112793
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99117,
+          "measuredCorrectionPx": [
+            -0.3898374140262604,
+            -0.3065418601036072
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9934,
+          "measuredCorrectionPx": [
+            0.1736443191766739,
+            -0.31863653659820557
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98868,
+          "measuredCorrectionPx": [
+            -0.07985462248325348,
+            -0.28283295035362244
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

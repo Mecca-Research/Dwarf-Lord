@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Laborer",
   "action": "build-crate",
   "title": "Build crate",
@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/04-build-crate.png",
   "source": "source-sheet.png",
-  "sourceSha256": "872a786d1fb39b862c4e4816624f353642785ff58ed1d0c8eb32004e23ec1b61",
+  "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3577981651376148,
+  "sharedScale": 1.6444444444444444,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "hammer above crate plank nail",
       "durationMs": 125,
       "sourceBounds": [
-        74,
-        29,
-        424,
-        442
+        110,
+        64,
+        402,
+        401
       ],
       "sourceAnchor": [
-        166.5,
-        413
+        139.0,
+        337.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
-        55
+        91,
+        62
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "continuous midway transition from hammer above crate plank nail toward raise hammer",
       "durationMs": 125,
       "sourceBounds": [
-        518,
-        29,
-        867,
-        442
+        553,
+        64,
+        846,
+        400
       ],
       "sourceAnchor": [
-        166.0,
-        413
+        139.5,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        91,
+        62
       ]
     },
     {
@@ -73,21 +73,21 @@
       "description": "raise hammer",
       "durationMs": 125,
       "sourceBounds": [
-        961,
-        6,
-        1311,
-        442
+        998,
+        41,
+        1290,
+        401
       ],
       "sourceAnchor": [
-        166.5,
-        436
+        138.3918918918919,
+        360.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
+        92,
         24
       ]
     },
@@ -97,22 +97,22 @@
       "description": "continuous midway transition from raise hammer toward strike nail",
       "durationMs": 125,
       "sourceBounds": [
-        1404,
-        30,
-        1754,
-        442
+        1440,
+        64,
+        1732,
+        400
       ],
       "sourceAnchor": [
-        166.5,
-        412
+        139.5,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        94,
-        57
+        91,
+        62
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "strike nail",
       "durationMs": 125,
       "sourceBounds": [
-        74,
-        473,
-        424,
-        886
+        110,
+        508,
+        402,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        413
+        139.0,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        91,
+        62
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "continuous midway transition from strike nail toward rebound hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        518,
-        473,
-        867,
-        885
+        554,
+        508,
+        846,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        412
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        57
+        92,
+        62
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "rebound hammer slightly",
       "durationMs": 125,
       "sourceBounds": [
-        962,
-        473,
-        1311,
-        886
+        998,
+        508,
+        1290,
+        844
       ],
       "sourceAnchor": [
-        165.5,
-        413
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        55
+        92,
+        62
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "continuous midway transition from rebound hammer slightly toward hammer above crate plank nail",
       "durationMs": 125,
       "sourceBounds": [
-        1405,
-        473,
-        1754,
-        885
+        1441,
+        508,
+        1732,
+        844
       ],
       "sourceAnchor": [
-        166.0,
-        412
+        138.3918918918919,
+        336.6081081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        95,
-        57
+        92,
+        62
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,13 +242,117 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        85,
+        420,
+        565,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            4.005891618419355e-09,
+            -6.886882886192325e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98872,
+          "measuredCorrectionPx": [
+            -0.4848312735557556,
+            -1.2211121320724487
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99371,
+          "measuredCorrectionPx": [
+            0.9063175320625305,
+            0.31173649430274963
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98859,
+          "measuredCorrectionPx": [
+            -0.052571602165699005,
+            -1.3031494617462158
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99182,
+          "measuredCorrectionPx": [
+            -0.15319958329200745,
+            -1.0418895483016968
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98729,
+          "measuredCorrectionPx": [
+            1.2592527866363525,
+            -1.0094122886657715
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99139,
+          "measuredCorrectionPx": [
+            0.820347249507904,
+            -1.2223061323165894
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98603,
+          "measuredCorrectionPx": [
+            1.2337249517440796,
+            -1.0495444536209106
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Opaque pixels touch source edges (bottom); inspect and repair cropped tools or props."
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [

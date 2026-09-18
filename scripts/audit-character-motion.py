@@ -19,16 +19,16 @@ def known_issues(entry):
     if entry['kind'] == 'walk':
         issues.append('Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.')
     if character == 'Female Miner' and action == 'walk' and direction == 'front':
-        issues.append('Leading foot repeats across much of the cycle; replacement gait required.')
+        issues.append('Front gait redrawn with opposite arm swing; source phases reordered and torso/ground landmarks calibrated. Validate support contacts against actual travel speed.')
     if character == 'Elder' and action == 'walk' and direction == 'back':
-        issues.append('Walking stick changes hands between rows; preserve the anatomical right hand throughout.')
+        issues.append('Rear-view cane grip and shaft length corrected across rows; down poses reordered to match contact legs. Verify cane-ground contact during travel.')
     if character == 'Female Miner' and action == 'shovel-ore':
-        issues.append('Loose ore remains on and around the shovel; remove it for the isolated tool template.')
+        issues.append('Loose ore removed; inspect empty-blade continuity and the work contact phase.')
     if character == 'Helga' and action == 'carry-mine-timber':
         if direction == 'left':
-            issues.append('Facing and shoulder placement corrected; lead-foot alternation and shoulder grip still need refinement.')
+            issues.append('Left-view free-arm counter-swing and passing poses redrawn; log remains on the far right shoulder. Verify opposite-leg phase and grip through travel.')
         else:
-            issues.append('Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.')
+            issues.append('Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.')
     if any(word in action for word in ('barrow', 'sled', 'carry', 'haul')):
         issues.append('Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.')
     return issues
@@ -55,6 +55,13 @@ def main():
                 record['issues'].append('Opaque pixels touch source edges ('+', '.join(touched)+'); inspect and repair cropped tools or props.')
             if hashlib.sha256(source.read_bytes()).hexdigest() != m['sourceSha256']:
                 record['issues'].append('Export is stale after source replacement; rerun exporter.')
+            registration=m.get('registration',{})
+            if registration.get('scaleScope')=='directional-body-height':
+                record['issues'].append('Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval.')
+            if registration.get('stationRegistration'):
+                record['issues'].append('Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.')
+            if m.get('playback',{}).get('mode')=='once-hold':
+                record['issues'].append('One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition.')
             record['status'] = 'needs-visual-review'
             record['frameCount'] = m['frameCount']
             record['sourceSha256'] = m['sourceSha256']

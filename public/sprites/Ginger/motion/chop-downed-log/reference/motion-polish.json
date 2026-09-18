@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      -4,
+      1
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      -1
+    ]
+  ],
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      310,
+      480,
+      580,
+      610
+    ],
+    "minimumCorrelation": 0.93,
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "measuredCorrectionPx": [
+          2.0041483139721095e-08,
+          -6.41819930535803e-09
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.96789,
+        "measuredCorrectionPx": [
+          -1.2501717805862427,
+          -0.1205965206027031
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.96312,
+        "measuredCorrectionPx": [
+          -4.803552627563477,
+          -0.27695661783218384
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.95093,
+        "measuredCorrectionPx": [
+          -8.227466583251953,
+          -0.2959461212158203
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.96087,
+        "measuredCorrectionPx": [
+          -6.246875762939453,
+          0.07979301363229752
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9446,
+        "measuredCorrectionPx": [
+          -4.236002445220947,
+          0.7078591585159302
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.93901,
+        "measuredCorrectionPx": [
+          -8.762506484985352,
+          0.11302994191646576
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.95936,
+        "measuredCorrectionPx": [
+          -0.11836312711238861,
+          -0.5717741250991821
+        ],
+        "accepted": true
+      }
+    ]
+  },
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions."
+}

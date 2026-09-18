@@ -1,0 +1,513 @@
+{
+  "method": "Fixed station region translation against pose 0, measured with ECC. Before is omitted when the source art changed. This does not measure redraw, anatomy or hand-contact quality.",
+  "baselineCommit": "d85a6f5166b46e7281181c6557f2034e0325e566",
+  "sequences": [
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "baselineComparable": true,
+      "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+      "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+      "before": {
+        "meanTranslationPx": 0.363,
+        "maxTranslationPx": 0.443
+      },
+      "after": {
+        "meanTranslationPx": 0.363,
+        "maxTranslationPx": 0.443
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "baselineComparable": true,
+      "sourceSha256": "77c059ab3c11da539ef6105586f0eef5d3075e977d3b5312ff845d6694183c54",
+      "settingsSha256": "47b9d0e14cf1bb458f3298eee571e72df42cba7f684d21cb395a2b2a11e06fd2",
+      "before": {
+        "meanTranslationPx": 0.762,
+        "maxTranslationPx": 1.526
+      },
+      "after": {
+        "meanTranslationPx": 0.481,
+        "maxTranslationPx": 0.664
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "fix-wheelbarrow",
+      "baselineComparable": true,
+      "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
+      "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+      "before": {
+        "meanTranslationPx": 3.841,
+        "maxTranslationPx": 8.794
+      },
+      "after": {
+        "meanTranslationPx": 0.396,
+        "maxTranslationPx": 0.623
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "baselineComparable": true,
+      "sourceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727",
+      "settingsSha256": "1f9f0be3edb9345e4d5a9728448ae3b2e1d6bd9216d5ab2a3e59f1bb7ea39530",
+      "before": {
+        "meanTranslationPx": 0.411,
+        "maxTranslationPx": 0.699
+      },
+      "after": {
+        "meanTranslationPx": 0.411,
+        "maxTranslationPx": 0.699
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "baselineComparable": true,
+      "sourceSha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c",
+      "settingsSha256": "b849e5f441e7eaed5c72e9bf1626e3ce558db0d7072a28044363c51e23eff2f8",
+      "before": {
+        "meanTranslationPx": 0.38,
+        "maxTranslationPx": 0.6
+      },
+      "after": {
+        "meanTranslationPx": 0.38,
+        "maxTranslationPx": 0.6
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "baselineComparable": true,
+      "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+      "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+      "before": {
+        "meanTranslationPx": 0.446,
+        "maxTranslationPx": 0.766
+      },
+      "after": {
+        "meanTranslationPx": 0.307,
+        "maxTranslationPx": 0.502
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "baselineComparable": true,
+      "sourceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+      "settingsSha256": "4af8af157f27645afecbaaabff5d19bd33434f833055c136a0c827db8314d03c",
+      "before": {
+        "meanTranslationPx": 1.984,
+        "maxTranslationPx": 4.644
+      },
+      "after": {
+        "meanTranslationPx": 0.405,
+        "maxTranslationPx": 0.562
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "baselineComparable": true,
+      "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+      "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+      "before": {
+        "meanTranslationPx": 0.385,
+        "maxTranslationPx": 0.506
+      },
+      "after": {
+        "meanTranslationPx": 0.385,
+        "maxTranslationPx": 0.506
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "baselineComparable": true,
+      "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe",
+      "settingsSha256": "f1af109284b66f04f72535c7af80b8719e7ac5bc865720603be25e7cbb753ac3",
+      "before": {
+        "meanTranslationPx": 0.376,
+        "maxTranslationPx": 0.49
+      },
+      "after": {
+        "meanTranslationPx": 0.376,
+        "maxTranslationPx": 0.49
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "baselineComparable": true,
+      "sourceSha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc",
+      "settingsSha256": "45173a937bb80599a8fe0b5f0eac43226a80a352cd5ca51c184b56279bfd8a4f",
+      "before": {
+        "meanTranslationPx": 0.433,
+        "maxTranslationPx": 0.561
+      },
+      "after": {
+        "meanTranslationPx": 0.433,
+        "maxTranslationPx": 0.561
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "baselineComparable": true,
+      "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435",
+      "settingsSha256": "367fe7a2c2e1c72476bba8a5ee4c53e4252fad63f6b0f473c6e00d93dcab837b",
+      "before": {
+        "meanTranslationPx": 0.933,
+        "maxTranslationPx": 1.57
+      },
+      "after": {
+        "meanTranslationPx": 0.31,
+        "maxTranslationPx": 0.464
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-open-ledger",
+      "baselineComparable": true,
+      "sourceSha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6",
+      "settingsSha256": "797d1f799d50bcfa6efb25e2d05137dc1ac3d090e64d9af5b6c5fc67fde5fb28",
+      "before": {
+        "meanTranslationPx": 0.581,
+        "maxTranslationPx": 1.108
+      },
+      "after": {
+        "meanTranslationPx": 0.469,
+        "maxTranslationPx": 0.688
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "baselineComparable": true,
+      "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c",
+      "settingsSha256": "44574eb48a734cf6b51c349cb8a613fb44e6e1437d214bcaea67692e4e984eb1",
+      "before": {
+        "meanTranslationPx": 0.406,
+        "maxTranslationPx": 0.511
+      },
+      "after": {
+        "meanTranslationPx": 0.406,
+        "maxTranslationPx": 0.511
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "baselineComparable": true,
+      "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+      "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+      "before": {
+        "meanTranslationPx": 0.358,
+        "maxTranslationPx": 0.616
+      },
+      "after": {
+        "meanTranslationPx": 0.358,
+        "maxTranslationPx": 0.616
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "baselineComparable": true,
+      "sourceSha256": "376c9e58003ad398d906d9c991ec17b024ee655fb0ecbd5f07f941d39a4eec85",
+      "settingsSha256": "f7232394e6f920d00ea49d1744edfc0c30a36c92743c0ca00347fba06f9de914",
+      "before": {
+        "meanTranslationPx": 0.341,
+        "maxTranslationPx": 0.499
+      },
+      "after": {
+        "meanTranslationPx": 0.341,
+        "maxTranslationPx": 0.499
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "baselineComparable": true,
+      "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+      "settingsSha256": "e5af7f172d845c6a983d96771a59651ab24031e0db560456cd060471bb0469a4",
+      "before": {
+        "meanTranslationPx": 1.007,
+        "maxTranslationPx": 1.799
+      },
+      "after": {
+        "meanTranslationPx": 0.282,
+        "maxTranslationPx": 0.522
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "cut-boar-meat",
+      "baselineComparable": true,
+      "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad",
+      "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+      "before": {
+        "meanTranslationPx": 0.91,
+        "maxTranslationPx": 2.765
+      },
+      "after": {
+        "meanTranslationPx": 0.376,
+        "maxTranslationPx": 0.524
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "baselineComparable": true,
+      "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+      "settingsSha256": "6c130a04f801d95671bc72bcc123af1e89b28618fbb206fc4af12d22bb1841b8",
+      "before": {
+        "meanTranslationPx": 1.229,
+        "maxTranslationPx": 1.883
+      },
+      "after": {
+        "meanTranslationPx": 0.526,
+        "maxTranslationPx": 0.636
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "baselineComparable": true,
+      "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab",
+      "settingsSha256": "574f81dd2f67282348ddff9907811db70e91561e30e031005845d4e95675d3aa",
+      "before": {
+        "meanTranslationPx": 1.081,
+        "maxTranslationPx": 1.429
+      },
+      "after": {
+        "meanTranslationPx": 0.392,
+        "maxTranslationPx": 0.577
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "baselineComparable": true,
+      "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa",
+      "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+      "before": {
+        "meanTranslationPx": 0.773,
+        "maxTranslationPx": 0.971
+      },
+      "after": {
+        "meanTranslationPx": 0.481,
+        "maxTranslationPx": 0.566
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "baselineComparable": true,
+      "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7",
+      "settingsSha256": "56f086c10cf039331b4843ef77ba0bb9786f1d406b92a94c2be55a1bc19e0035",
+      "before": {
+        "meanTranslationPx": 0.985,
+        "maxTranslationPx": 1.767
+      },
+      "after": {
+        "meanTranslationPx": 0.407,
+        "maxTranslationPx": 0.676
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "baselineComparable": true,
+      "sourceSha256": "e16349a9f29ffdf790722475b1aa2acc28eb22a0ef35fdd68a5ee2aeba4485b3",
+      "settingsSha256": "9af207cb0c2535ce43688905f6e1cf9de50af280ae0f73d3bdac3ee0a8293f84",
+      "before": {
+        "meanTranslationPx": 0.812,
+        "maxTranslationPx": 2.402
+      },
+      "after": {
+        "meanTranslationPx": 0.492,
+        "maxTranslationPx": 0.6
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "baselineComparable": true,
+      "sourceSha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42",
+      "settingsSha256": "5f0f99fb63f4edfebfe01b53e5f5013e7d8f1f142e029999eec4a1782b538559",
+      "before": {
+        "meanTranslationPx": 1.174,
+        "maxTranslationPx": 2.463
+      },
+      "after": {
+        "meanTranslationPx": 0.36,
+        "maxTranslationPx": 0.594
+      }
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "baselineComparable": true,
+      "sourceSha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372",
+      "settingsSha256": "e6de65c09ac7b13b90680fa76f3a5a17ff477a924373dc8cb9815ad98f6cf0dc",
+      "before": {
+        "meanTranslationPx": 1.24,
+        "maxTranslationPx": 2.209
+      },
+      "after": {
+        "meanTranslationPx": 0.42,
+        "maxTranslationPx": 0.593
+      }
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "baselineComparable": true,
+      "sourceSha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287",
+      "settingsSha256": "7d08e2f7ce56c764f4a96bdfd18a5a59eaa350372336b0166075b6d97e8ab410",
+      "before": {
+        "meanTranslationPx": 1.266,
+        "maxTranslationPx": 2.376
+      },
+      "after": {
+        "meanTranslationPx": 0.408,
+        "maxTranslationPx": 0.563
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "baselineComparable": true,
+      "sourceSha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993",
+      "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+      "before": {
+        "meanTranslationPx": 2.235,
+        "maxTranslationPx": 3.214
+      },
+      "after": {
+        "meanTranslationPx": 0.478,
+        "maxTranslationPx": 0.541
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "baselineComparable": true,
+      "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+      "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+      "before": {
+        "meanTranslationPx": 4.884,
+        "maxTranslationPx": 8.763
+      },
+      "after": {
+        "meanTranslationPx": 0.339,
+        "maxTranslationPx": 0.517
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "baselineComparable": false,
+      "sourceSha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab",
+      "settingsSha256": "e52087b28dee20af501697039cb2d51a8c1a6b6751ac5842fa5ca914ff5500b9",
+      "before": null,
+      "after": {
+        "meanTranslationPx": 0.333,
+        "maxTranslationPx": 0.551
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "baselineComparable": true,
+      "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2",
+      "settingsSha256": "acce516e7cac6dcbba6b15f853653bd14eee2c6df5391a2b2a62a6c12b7e0c3d",
+      "before": {
+        "meanTranslationPx": 4.498,
+        "maxTranslationPx": 6.696
+      },
+      "after": {
+        "meanTranslationPx": 0.39,
+        "maxTranslationPx": 0.556
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-axe",
+      "baselineComparable": true,
+      "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51",
+      "settingsSha256": "0247612b1f1749051fa226c7ef8d5d83c11e3b118770ff5629e24a904091f381",
+      "before": {
+        "meanTranslationPx": 5.891,
+        "maxTranslationPx": 9.623
+      },
+      "after": {
+        "meanTranslationPx": 0.443,
+        "maxTranslationPx": 0.518
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "baselineComparable": true,
+      "sourceSha256": "087df31fd02b2a5718bbf0af8816580d98495f4c99d3ab49b8b2e249c52526e1",
+      "settingsSha256": "3a9495328a4b53bf375443b02c6a650016800860a0f1cf75d5114d2e31a132e3",
+      "before": {
+        "meanTranslationPx": 0.752,
+        "maxTranslationPx": 1.083
+      },
+      "after": {
+        "meanTranslationPx": 0.374,
+        "maxTranslationPx": 0.483
+      }
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "baselineComparable": true,
+      "sourceSha256": "b912762dbc5747fd48f546f1dd8a30f0329ebd48536c992ff3505cc7e285b2a5",
+      "settingsSha256": "33b928f37cd02d863265beea3bfd1d251295ca4baab590248392db454079efe8",
+      "before": {
+        "meanTranslationPx": 0.426,
+        "maxTranslationPx": 0.541
+      },
+      "after": {
+        "meanTranslationPx": 0.426,
+        "maxTranslationPx": 0.541
+      }
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "baselineComparable": true,
+      "sourceSha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be",
+      "settingsSha256": "ba8e55a41a37fca41f7cf03a3400e89ee8ddfe1a183becbc51d8975b32bbd2bc",
+      "before": {
+        "meanTranslationPx": 0.561,
+        "maxTranslationPx": 0.871
+      },
+      "after": {
+        "meanTranslationPx": 0.377,
+        "maxTranslationPx": 0.458
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "baselineComparable": true,
+      "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861",
+      "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+      "before": {
+        "meanTranslationPx": 1.334,
+        "maxTranslationPx": 1.62
+      },
+      "after": {
+        "meanTranslationPx": 0.298,
+        "maxTranslationPx": 0.55
+      }
+    }
+  ]
+}

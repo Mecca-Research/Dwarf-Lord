@@ -52,3 +52,27 @@ User requests animation variations for every one of the 84 static actions. Activ
 All 84 source sheets are saved and exported: 336 individual 640x640 RGBA keyframes across 14 characters, plus per-action atlases, APNGs, source sheets, review sheets, prompts and manifests. Work animation review player is linked from the character viewer. No gameplay renderer change. Known gait and station redraw limitations are documented; productionReady remains false.
 
 Validation: typecheck, all 156 tests, Pages build, browser review of all 84 actions/336 images including keyboard/race/mobile controls, independent web-game harness, and transparent-border check for all 336 frames passed. Work remains isolated on codex/work-action-variations; scratch output is under work/ and must not be committed.
+
+
+## 2026-09-17 — PR #9 motion-polish follow-up
+
+Active checkout `/opt/codex-work/dwarf-lord`, branch `codex/expanded-character-cycles`. PR9 remains open/draft. Continue here; do not restart asset generation.
+
+Added 25 fixed-station registrations (34 total, measured maximum translation below 0.7 px). Reproducible region config, source/settings-bound residual report and registration helper are checked in. Redrew Ginger tree chopping, Elder rear cane/phase order, and Helga left carry counter-swing/passing poses with original edit inputs and exact prompts retained. Built-in image generation used; exporter only extracts/registers authored poses.
+
+New shared motion playback controller is exercised by the review UI: displacement-driven walking/carry, fractional phase retained on turns and pauses, one-shot completion hold, physical body-size normalization, bounded large time steps. Ground-travel stride is a review estimate. Live game still uses static NPC art; no unapproved production flags were changed.
+
+Remaining: inspect/redraw other non-front gait issues, final cane/tool/log contact and shape continuity, production loop acceptance, workstation physical body calibration and live renderer/task integration. The whole motion-polish request is not complete. See docs/motion-polish.md for precise delivered scope and acceptance work. Scratch logs and browser evidence are in work/expanded-cycles; do not commit work/ or __pycache__/.
+
+Validation for this checkpoint: 173 Node tests, seven Python registration tests, TypeScript check, Pages build, all 153-sequence/1,224-frame browser checks including fractional pause/resume, zero source-edge warnings, and diff whitespace checks pass. Station residual evidence binds to the current source and calibration hashes.
+
+
+## 2026-09-18 — Live NPC walking integration
+
+Integrated the eight expanded characters' authored walking atlases into the game renderer. Fixed missing NPC facing updates and nominal speed while blocked. Displacement-driven phase includes parent world scale, preserves turns, freezes at collisions, ignores teleports and resets to contact when a new walk begins. Shared lazy GPU atlases are repacked to 1280x640; per-actor UVs prevent actors affecting one another. Six unused atlases retained; active leases and stale async requests handled explicitly.
+
+Shared controller source moved to src/game/motion-playback.ts with generated standalone public/motion-playback.mjs and predev/prebuild sync hooks. Do not directly import public modules from game source: Vite rejects this (caught and fixed in browser). Test guards generated copy consistency.
+
+Validation: 176 Node tests, TypeScript and Pages build pass. New live-game browser test passes in dev AND /Dwarf-Lord/ production: loading, walk progression, turn, collision freeze, arrival/idle fallback. Screenshots inspected under work/expanded-cycles/runtime-browser. Production still emits the pre-existing recoverable React hydration warning documented in prior visual reviews; no page errors from the new motion code.
+
+Art acceptance still open: remaining non-front phase/pose issues, tool/log/cane geometry/contact continuity, workstation physical scales and work-action renderer/task mapping. Full motion-polish task remains incomplete. All existing approval flags remain false; do not infer approval from the successful runtime checks.

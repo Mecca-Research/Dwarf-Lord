@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Borrin",
   "action": "stamp-paperwork",
   "title": "Stamp paperwork",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         204.5,
-        409
+        409.0
       ],
       "groundAnchor": [
         320,
@@ -56,7 +56,7 @@
       ],
       "sourceAnchor": [
         203.5,
-        408
+        408.0
       ],
       "groundAnchor": [
         320,
@@ -80,7 +80,7 @@
       ],
       "sourceAnchor": [
         204.0,
-        408
+        408.0
       ],
       "groundAnchor": [
         320,
@@ -103,15 +103,15 @@
         422
       ],
       "sourceAnchor": [
-        203.5,
-        408
+        202.80067567567568,
+        408.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        29,
+        30,
         33
       ]
     },
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         204.5,
-        402
+        400.60135135135135
       ],
       "groundAnchor": [
         320,
@@ -136,7 +136,7 @@
       ],
       "placement": [
         28,
-        41
+        43
       ]
     },
     {
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         203.5,
-        406
+        406.0
       ],
       "groundAnchor": [
         320,
@@ -176,7 +176,7 @@
       ],
       "sourceAnchor": [
         204.5,
-        414
+        414.0
       ],
       "groundAnchor": [
         320,
@@ -199,18 +199,28 @@
         866
       ],
       "sourceAnchor": [
-        203.5,
-        406
+        202.80067567567568,
+        406.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        29,
+        30,
         35
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,119 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        40,
+        370,
+        595,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.0,
+            0.0
+          ]
+        },
+        {
+          "correlation": 0.9946,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.17,
+            -0.12
+          ]
+        },
+        {
+          "correlation": 0.9964,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.32,
+            -0.26
+          ]
+        },
+        {
+          "correlation": 0.9931,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.8,
+            -0.14
+          ]
+        },
+        {
+          "correlation": 0.994,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.09,
+            1.77
+          ]
+        },
+        {
+          "correlation": 0.9893,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.17,
+            0.35
+          ]
+        },
+        {
+          "correlation": 0.9922,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.24,
+            0.3
+          ]
+        },
+        {
+          "correlation": 0.9869,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.53,
+            0.42
+          ]
+        }
+      ],
+      "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

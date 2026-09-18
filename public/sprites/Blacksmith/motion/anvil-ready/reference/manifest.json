@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Blacksmith",
   "action": "anvil-ready",
   "title": "Anvil ready",
@@ -23,7 +23,7 @@
       "id": "key-00",
       "file": "00.png",
       "description": "rest hammer low",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
         90,
         18,
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         156.0,
-        409
+        409.0
       ],
       "groundAnchor": [
         320,
@@ -47,7 +47,7 @@
       "id": "key-01",
       "file": "01.png",
       "description": "continuous midway transition from rest hammer low toward slight inhale and draw hammer hand back at hip",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         507,
         17,
@@ -55,15 +55,15 @@
         427
       ],
       "sourceAnchor": [
-        176.5,
-        410
+        181.7972972972973,
+        410.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        87,
+        80,
         74
       ]
     },
@@ -71,7 +71,7 @@
       "id": "key-02",
       "file": "02.png",
       "description": "slight inhale and draw hammer hand back at hip",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         952,
         17,
@@ -79,15 +79,15 @@
         427
       ],
       "sourceAnchor": [
-        175.0,
-        410
+        178.78378378378378,
+        410.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        89,
+        84,
         74
       ]
     },
@@ -95,7 +95,7 @@
       "id": "key-03",
       "file": "03.png",
       "description": "continuous midway transition from slight inhale and draw hammer hand back at hip toward adjust tongs on billet",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         1434,
         18,
@@ -103,15 +103,15 @@
         427
       ],
       "sourceAnchor": [
-        136.5,
-        409
+        141.04054054054055,
+        409.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        140,
+        134,
         76
       ]
     },
@@ -119,7 +119,7 @@
       "id": "key-04",
       "file": "04.png",
       "description": "adjust tongs on billet",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         98,
         463,
@@ -127,15 +127,15 @@
         871
       ],
       "sourceAnchor": [
-        142.0,
-        408
+        146.54054054054055,
+        408.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        132,
+        126,
         77
       ]
     },
@@ -143,7 +143,7 @@
       "id": "key-05",
       "file": "05.png",
       "description": "continuous midway transition from adjust tongs on billet toward settle into ready stance",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         530,
         463,
@@ -151,15 +151,15 @@
         871
       ],
       "sourceAnchor": [
-        153.5,
-        408
+        158.7972972972973,
+        408.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        117,
+        110,
         77
       ]
     },
@@ -167,7 +167,7 @@
       "id": "key-06",
       "file": "06.png",
       "description": "settle into ready stance",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
         952,
         423,
@@ -175,15 +175,15 @@
         871
       ],
       "sourceAnchor": [
-        174.5,
-        448
+        178.28378378378378,
+        448.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        89,
+        84,
         24
       ]
     },
@@ -191,7 +191,7 @@
       "id": "key-07",
       "file": "07.png",
       "description": "continuous midway transition from settle into ready stance toward rest hammer low",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
         1419,
         463,
@@ -199,18 +199,28 @@
         871
       ],
       "sourceAnchor": [
-        156.5,
-        408
+        157.25675675675674,
+        408.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        113,
+        112,
         77
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "loop-candidate",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      140
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        210,
+        410,
+        510,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "accepted": true,
+          "measuredTranslationPx": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "correlation": 0.9644,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -6.63,
+            0.23
+          ]
+        },
+        {
+          "correlation": 0.972,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -5.23,
+            0.19
+          ]
+        },
+        {
+          "correlation": 0.9665,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -5.99,
+            0.25
+          ]
+        },
+        {
+          "correlation": 0.9621,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -6.23,
+            -0.28
+          ]
+        },
+        {
+          "correlation": 0.9603,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -6.63,
+            -0.23
+          ]
+        },
+        {
+          "correlation": 0.9672,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -5.39,
+            -0.19
+          ]
+        },
+        {
+          "correlation": 0.9859,
+          "accepted": true,
+          "measuredTranslationPx": [
+            -0.66,
+            0.0
+          ]
+        }
+      ],
+      "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

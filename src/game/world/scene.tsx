@@ -7,6 +7,7 @@ import type { Dwarf } from "../types";
 import {
   camBasis,
   facingFromMove,
+  facingOctant,
   groundHeight,
   resolveMove,
   runtime,
@@ -14,6 +15,7 @@ import {
   zoneAt,
 } from "../runtime";
 import { useGame } from "../store";
+import { npcMotionDiagnostics } from "./npc-motion";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
@@ -133,6 +135,14 @@ function Systems() {
         runtime.player.speed = 0;
         runtime.player.anim = "idle";
       },
+      setDwarfDest: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) body.dest = { x, z };
+      },
+      teleportDwarf: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) { body.x = x; body.z = z; body.dest = null; body.anim = "idle"; body.speed = 0; }
+      },
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
       },
@@ -147,7 +157,7 @@ function Systems() {
         dialogue: useGame.getState().dialogue,
         dwarves: useGame
           .getState()
-          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id) })),
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
       });
     window.advanceTime = (ms: number) => {
       if (!useGame.getState().playing || useGame.getState().dialogue) return;
@@ -316,6 +326,7 @@ function Systems() {
     for (const dw of dwarves) {
       const b = runtime.dwarves.get(dw.id);
       if (!b) continue;
+      b.facing = facingOctant(b.yaw, runtime.cameraAzimuth);
       if (dw.isSteward || dw.narrativeOnly) {
         b.anim = "sit";
         b.speed = 0;
@@ -340,11 +351,12 @@ function Systems() {
           const vx = dx / dist;
           const vz = dz / dist;
           const moved = resolveMove(b.x, b.z, vx * 2.4 * dt, vz * 2.4 * dt, 0.45);
+          b.speed = Math.hypot(moved.x - b.x, moved.z - b.z) / Math.max(dt, 1e-6);
           b.x = moved.x;
           b.z = moved.z;
           b.yaw = Math.atan2(-vx, -vz);
+          b.facing = facingFromMove(vx, vz, runtime.cameraAzimuth);
           b.anim = "walk";
-          b.speed = 2.4;
         }
       } else if (dw.sitOnStart) {
         b.anim = "sit";
@@ -589,6 +601,8 @@ declare global {
       setKeys?: (codes: string[]) => void;
       setDest?: (x: number, z: number) => void;
       teleport?: (x: number, z: number) => void;
+      setDwarfDest?: (id: string, x: number, z: number) => void;
+      teleportDwarf?: (id: string, x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
     };
   }

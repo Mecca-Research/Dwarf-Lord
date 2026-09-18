@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Ginger",
   "action": "build-timber-crate",
   "title": "Build timber crate",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         178.0,
-        411
+        411.0
       ],
       "groundAnchor": [
         320,
@@ -55,16 +55,16 @@
         435
       ],
       "sourceAnchor": [
-        177.0,
-        411
+        176.27027027027026,
+        410.27027027027026
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        77,
-        53
+        78,
+        54
       ]
     },
     {
@@ -79,16 +79,16 @@
         435
       ],
       "sourceAnchor": [
-        171.5,
-        432
+        170.77027027027026,
+        433.4594594594595
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        85,
-        24
+        86,
+        22
       ]
     },
     {
@@ -103,16 +103,16 @@
         435
       ],
       "sourceAnchor": [
-        177.0,
-        406
+        176.27027027027026,
+        405.27027027027026
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        77,
-        60
+        78,
+        61
       ]
     },
     {
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         178.0,
-        415
+        412.81081081081084
       ],
       "groundAnchor": [
         320,
@@ -136,7 +136,7 @@
       ],
       "placement": [
         76,
-        47
+        50
       ]
     },
     {
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         178.0,
-        414
+        412.5405405405405
       ],
       "groundAnchor": [
         320,
@@ -160,7 +160,7 @@
       ],
       "placement": [
         76,
-        49
+        51
       ]
     },
     {
@@ -175,16 +175,16 @@
         881
       ],
       "sourceAnchor": [
-        178.5,
-        411
+        177.04054054054055,
+        409.5405405405405
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        75,
-        53
+        77,
+        55
       ]
     },
     {
@@ -199,18 +199,28 @@
         881
       ],
       "sourceAnchor": [
-        177.5,
-        415
+        176.77027027027026,
+        412.81081081081084
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        77,
-        47
+        78,
+        50
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        155,
+        460,
+        470,
+        595
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -4.108202489305768e-08,
+            -3.668817072366437e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99453,
+          "measuredCorrectionPx": [
+            0.8720181584358215,
+            0.5257211923599243
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96082,
+          "measuredCorrectionPx": [
+            1.4873666763305664,
+            -1.8653349876403809
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99386,
+          "measuredCorrectionPx": [
+            1.3438299894332886,
+            0.6730087399482727
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99499,
+          "measuredCorrectionPx": [
+            0.1288674771785736,
+            2.5627593994140625
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99095,
+          "measuredCorrectionPx": [
+            0.4144124686717987,
+            2.299128532409668
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98954,
+          "measuredCorrectionPx": [
+            2.15183687210083,
+            2.3869214057922363
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99308,
+          "measuredCorrectionPx": [
+            0.7840907573699951,
+            2.505256175994873
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

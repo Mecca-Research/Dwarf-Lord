@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Female Miner",
   "action": "shovel-ore",
   "title": "Shovel ore",
@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/02-shovel-ore.png",
   "source": "source-sheet.png",
-  "sourceSha256": "842114385eacc49ac37df831102773848e4210f38b7aae4cca35733505d62682",
+  "sourceSha256": "7be2a3402b9d63cf9bffbdcef35600f138940bb6f62e64449648df230c64e8d8",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.03859649122807,
+  "sharedScale": 1.025996533795494,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "shovel blade in ore pile",
       "durationMs": 125,
       "sourceBounds": [
-        26,
-        31,
+        23,
+        29,
         407,
-        419
+        421
       ],
       "sourceAnchor": [
-        190.5,
-        388
+        192.0,
+        392
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        122,
-        213
+        123,
+        214
       ]
     },
     {
@@ -49,14 +49,14 @@
       "description": "continuous midway transition from shovel blade in ore pile toward push blade into ore",
       "durationMs": 125,
       "sourceBounds": [
-        483,
-        32,
-        866,
-        419
+        481,
+        30,
+        869,
+        421
       ],
       "sourceAnchor": [
-        191.5,
-        387
+        194.0,
+        391
       ],
       "groundAnchor": [
         320,
@@ -64,7 +64,7 @@
       ],
       "placement": [
         121,
-        214
+        215
       ]
     },
     {
@@ -73,14 +73,14 @@
       "description": "push blade into ore",
       "durationMs": 125,
       "sourceBounds": [
-        947,
-        40,
-        1341,
-        419
+        944,
+        38,
+        1344,
+        422
       ],
       "sourceAnchor": [
-        197.0,
-        379
+        200.0,
+        384
       ],
       "groundAnchor": [
         320,
@@ -97,22 +97,22 @@
       "description": "continuous midway transition from push blade into ore toward lift loaded shovel",
       "durationMs": 125,
       "sourceBounds": [
-        1413,
-        17,
-        1747,
-        419
+        1409,
+        16,
+        1760,
+        422
       ],
       "sourceAnchor": [
-        167.0,
-        402
+        175.5,
+        406
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        147,
-        198
+        140,
+        199
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "lift loaded shovel",
       "durationMs": 125,
       "sourceBounds": [
-        37,
-        440,
-        401,
-        848
+        34,
+        438,
+        402,
+        852
       ],
       "sourceAnchor": [
-        137.5,
-        408
+        140.5,
+        414
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        177,
-        192
+        176,
+        191
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "continuous midway transition from lift loaded shovel toward tip ore into adjacent container",
       "durationMs": 125,
       "sourceBounds": [
-        483,
-        445,
-        905,
-        847
+        481,
+        443,
+        909,
+        852
       ],
       "sourceAnchor": [
-        137.0,
-        402
+        139.5,
+        409
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        178,
-        198
+        177,
+        196
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "tip ore into adjacent container",
       "durationMs": 125,
       "sourceBounds": [
-        945,
-        446,
-        1349,
-        848
+        942,
+        444,
+        1350,
+        852
       ],
       "sourceAnchor": [
-        201.0,
-        402
+        139.5,
+        408
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        111,
-        198
+        177,
+        197
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "continuous midway transition from tip ore into adjacent container toward shovel blade in ore pile",
       "durationMs": 125,
       "sourceBounds": [
-        1331,
-        480,
-        1768,
+        1409,
+        478,
+        1772,
         855
       ],
       "sourceAnchor": [
-        218.5,
-        375
+        181.5,
+        377
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        93,
-        227
+        134,
+        229
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,13 +242,40 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Loose ore remains on and around the shovel; remove it for the isolated tool template."
+      "Loose ore removed; inspect empty-blade continuity and the work contact phase.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
