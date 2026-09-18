@@ -1,9 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { compiledPlayback } from './sync-motion-playback.mjs';
 import { MotionPlayback, motionPlacement, reviewTravelVector } from '../public/motion-playback.mjs';
 const motion = (overrides = {}) => ({ character: 'Helga', action: 'walk', kind: 'walk',
   frames: [140, 140, 105, 115, 140, 140, 105, 115].map(durationMs => ({ durationMs })),
   registration: { targetBodyHeight: 520, targetAnchor: [320, 616] }, frameSize: [640, 640], ...overrides });
+
+test('standalone review and game use the same compiled controller', () => {
+  assert.equal(readFileSync(new URL('../public/motion-playback.mjs', import.meta.url), 'utf8'), compiledPlayback());
+});
 
 test('walking advances from actual travel and freezes against an obstacle', () => {
   const p = new MotionPlayback(motion());

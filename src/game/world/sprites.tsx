@@ -1,9 +1,10 @@
 import { asset } from "@/lib/asset";
 import { Billboard, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { createContext, useContext, useMemo, useRef, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
 import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
+import { NpcWalkMotion, setMotionUv } from "./npc-motion";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
 import type { Dwarf } from "../types";
@@ -160,19 +161,39 @@ export function DwarfSprite({
   const w = h * textureAspect(start);
   const mat = useRef<THREE.MeshBasicMaterial>(null);
   const mesh = useRef<THREE.Mesh>(null);
+  const motion = useRef<NpcWalkMotion | null>(null);
+  const parentScale = useMemo(() => new THREE.Vector3(1, 1, 1), []);
+  const uvFrame = useRef<number | null>(null);
+  useEffect(() => {
+    if (isPlayer) return;
+    const driver = new NpcWalkMotion(dwarf?.id ?? "unknown", dwarfAppearance(dwarf?.id));
+    motion.current = driver;
+    return () => { driver.dispose(); motion.current = null; };
+  }, [isPlayer, dwarf?.id]);
+
 
   useFrame((_, dt) => {
     const moving = body.anim === "walk" || body.speed > 0.2;
     if (!isPlayer) body.bob += Math.min(dt, 0.05) * (moving ? 5.2 : 1.1);
 
-    const tex = pickTex(bank, dwarf, body, isPlayer);
+    mesh.current?.parent?.getWorldScale(parentScale);
+    const walkMotion = motion.current?.update(body, 1.95 * scale, Math.max(.01, parentScale.y));
+    const tex = walkMotion?.texture ?? pickTex(bank, dwarf, body, isPlayer);
     if (mat.current && mat.current.map !== tex) {
       mat.current.map = tex;
       mat.current.needsUpdate = true;
     }
     if (mesh.current) {
-      mesh.current.scale.set(h * textureAspect(tex), h, 1);
-      mesh.current.position.y = h * 0.5;
+      const frame = walkMotion?.frame ?? null;
+      if (uvFrame.current !== frame) { setMotionUv(mesh.current.geometry, frame); uvFrame.current = frame; }
+      if (walkMotion) {
+        const p = walkMotion.placement;
+        mesh.current.scale.set(p.width, p.height, 1);
+        mesh.current.position.set(p.left + p.width / 2, -p.top - p.height / 2, 0);
+      } else {
+        mesh.current.scale.set(h * textureAspect(tex), h, 1);
+        mesh.current.position.set(0, h * 0.5, 0);
+      }
     }
   });
 

@@ -65,3 +65,14 @@ New shared motion playback controller is exercised by the review UI: displacemen
 Remaining: inspect/redraw other non-front gait issues, final cane/tool/log contact and shape continuity, production loop acceptance, workstation physical body calibration and live renderer/task integration. The whole motion-polish request is not complete. See docs/motion-polish.md for precise delivered scope and acceptance work. Scratch logs and browser evidence are in work/expanded-cycles; do not commit work/ or __pycache__/.
 
 Validation for this checkpoint: 173 Node tests, seven Python registration tests, TypeScript check, Pages build, all 153-sequence/1,224-frame browser checks including fractional pause/resume, zero source-edge warnings, and diff whitespace checks pass. Station residual evidence binds to the current source and calibration hashes.
+
+
+## 2026-09-18 — Live NPC walking integration
+
+Integrated the eight expanded characters' authored walking atlases into the game renderer. Fixed missing NPC facing updates and nominal speed while blocked. Displacement-driven phase includes parent world scale, preserves turns, freezes at collisions, ignores teleports and resets to contact when a new walk begins. Shared lazy GPU atlases are repacked to 1280x640; per-actor UVs prevent actors affecting one another. Six unused atlases retained; active leases and stale async requests handled explicitly.
+
+Shared controller source moved to src/game/motion-playback.ts with generated standalone public/motion-playback.mjs and predev/prebuild sync hooks. Do not directly import public modules from game source: Vite rejects this (caught and fixed in browser). Test guards generated copy consistency.
+
+Validation: 176 Node tests, TypeScript and Pages build pass. New live-game browser test passes in dev AND /Dwarf-Lord/ production: loading, walk progression, turn, collision freeze, arrival/idle fallback. Screenshots inspected under work/expanded-cycles/runtime-browser. Production still emits the pre-existing recoverable React hydration warning documented in prior visual reviews; no page errors from the new motion code.
+
+Art acceptance still open: remaining non-front phase/pose issues, tool/log/cane geometry/contact continuity, workstation physical scales and work-action renderer/task mapping. Full motion-polish task remains incomplete. All existing approval flags remain false; do not infer approval from the successful runtime checks.

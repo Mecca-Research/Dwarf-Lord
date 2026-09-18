@@ -23,7 +23,11 @@ This pass improves the existing 153-sequence library. It does not add synthetic 
 - Added `public/motion-playback.mjs`, a renderer-independent controller used by the review page. Walking and directional timber carrying advance from **actual supplied displacement** and a stride length. Zero displacement freezes the gait. Direction changes retain both the frame index and its fractional phase even when frame durations differ. One-shot completion fires once and holds the final state until explicitly restarted. Large time steps are bounded.
 - Added a ground travel test with speed and stride controls, plus common physical body-height display for calibrated actions. The default stride is an adjustable inspection estimate, not a measured foot-lock guarantee. The controller rejects missing body calibration rather than silently resizing a character around its tools.
 
-The live game renderer still uses its existing NPC art. This controller and stage are a tested integration foundation, not a claim that runtime NPC locomotion or all visual acceptance work is finished.
+The live game now uses the eight requested character families' walking atlases while NPCs travel. The renderer loads only needed character/direction atlases, repacks them to 1280x640 for GPU texture limits, shares texture pixels between actors, keeps per-actor frame UVs and phase, and retains at most six unused loaded atlases. Unmounts and stale async loads release their leases. Stationary and unsupported character art still uses the existing canonical sprites.
+
+Walking phase is driven by resolved world displacement, normalized for the actor's actual world scale. Blocked NPCs freeze their feet; teleports do not count as strides. Facing is updated for NPC motion and camera orientation. Turns preserve phase; a new walk after idle starts at contact. The stride/body ratio of 1.2 is still a review estimate, not a per-character planted-foot calibration.
+
+`src/game/motion-playback.ts` is the shared controller source. `scripts/sync-motion-playback.mjs` compiles the standalone review copy during dev/build startup; a regression test prevents divergence. This fixes Vite's restriction on importing modules directly from public/.
 
 ## Selected-pose assemblies
 
@@ -69,7 +73,7 @@ To export just one changed sequence, use `--character`, `--action` and `--direct
 The changes above fix export registration, selected authored gait poses, timing and preview state transitions. **The full motion-polish request is not yet complete.** All sequences retain `productionReady: false` and `loopApproved: false`:
 
 1. Visually approve and, where necessary, redraw the remaining walk phases. Common body scale does not establish correct opposite-foot passing poses or phase agreement across directions.
-2. Match planted-foot travel to runtime movement speed and verify the Elder's cane grip/contact. The current changes are asset exports and review tooling; gameplay has not been switched to this library.
+2. Calibrate each gait's stride against planted-foot travel and verify the Elder's cane-ground contact. Live NPC walking is now integrated and collision-tested; its stride/body ratio still needs art-specific tuning.
 3. Inspect and correct remaining tool grip/length changes and Helga's log shape/shoulder contact across all phases. Translation registration cannot repair an inconsistent painted grip or changing prop geometry.
 4. Review every last-to-first transition before promoting a loop candidate. One-shot actions need explicit gameplay completion/reset transitions rather than forced circular playback.
 5. Calibrate body/world scale for workstation actions and register any remaining stationary props outside the 34 measured sequences. Preserve each character's asymmetric equipment; never mirror images to invent a direction.
