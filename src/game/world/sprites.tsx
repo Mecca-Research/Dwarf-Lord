@@ -4,7 +4,8 @@ import { useFrame } from "@react-three/fiber";
 import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
 import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
-import { NpcWalkMotion, setMotionUv } from "./npc-motion";
+import { NpcWalkMotion, NpcWorkMotion, setMotionUv } from "./npc-motion";
+import { useGame } from "../store";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
 import type { Dwarf } from "../types";
@@ -162,13 +163,16 @@ export function DwarfSprite({
   const mat = useRef<THREE.MeshBasicMaterial>(null);
   const mesh = useRef<THREE.Mesh>(null);
   const motion = useRef<NpcWalkMotion | null>(null);
+  const workMotion = useRef<NpcWorkMotion | null>(null);
   const parentScale = useMemo(() => new THREE.Vector3(1, 1, 1), []);
   const uvFrame = useRef<number | null>(null);
   useEffect(() => {
     if (isPlayer) return;
     const driver = new NpcWalkMotion(dwarf?.id ?? "unknown", dwarfAppearance(dwarf?.id));
     motion.current = driver;
-    return () => { driver.dispose(); motion.current = null; };
+    const worker = new NpcWorkMotion(dwarf?.id ?? "unknown", dwarfAppearance(dwarf?.id));
+    workMotion.current = worker;
+    return () => { driver.dispose(); worker.dispose(); motion.current = null; workMotion.current = null; };
   }, [isPlayer, dwarf?.id]);
 
 
@@ -177,7 +181,12 @@ export function DwarfSprite({
     if (!isPlayer) body.bob += Math.min(dt, 0.05) * (moving ? 5.2 : 1.1);
 
     mesh.current?.parent?.getWorldScale(parentScale);
-    const walkMotion = motion.current?.update(body, 1.95 * scale, Math.max(.01, parentScale.y));
+    const gait = motion.current?.update(body, 1.95 * scale, Math.max(.01, parentScale.y));
+    const state = useGame.getState();
+    const job = state.dwarves.find(d => d.id === dwarf?.id)?.assignedJobId ?? null;
+    const work = workMotion.current?.update(body, job, state.day, state.dayResolved,
+      state.dialogue || !state.playing ? 0 : dt, 1.95 * scale);
+    const walkMotion = work ?? gait;
     const tex = walkMotion?.texture ?? pickTex(bank, dwarf, body, isPlayer);
     if (mat.current && mat.current.map !== tex) {
       mat.current.map = tex;

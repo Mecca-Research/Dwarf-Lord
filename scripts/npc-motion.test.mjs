@@ -8,7 +8,7 @@ const moduleUrl = new URL('../public/motion-playback.mjs', import.meta.url).href
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
 outputText = outputText.replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
-const { NpcWalkMotion, setMotionUv, npcMotionDiagnostics } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+const { NpcWalkMotion, NpcWorkMotion, setMotionUv, npcMotionDiagnostics, npcWorkDiagnostics } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
 test('atlas UVs select one cell per actor and restore canonical full-image UVs', () => {
   const a = new THREE.PlaneGeometry(), b = new THREE.PlaneGeometry();
@@ -57,5 +57,57 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
   } finally {
     a.dispose(); b.dispose();
     for (const [key, value] of Object.entries(saved)) { if (value === undefined) delete globalThis[key]; else globalThis[key] = value; }
+  }
+});
+
+
+test('workstations hold one completion and reset only on task lifecycle changes', async () => {
+  const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
+  const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/reference/manifest.json', 'utf8'));
+  const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
+  assert.equal(calibration.actions['chop-vegetables'].sourceSha256, manifest.sourceSha256);
+  globalThis.location = { href: 'https://motion.test/' };
+  globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
+  globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
+  globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration : manifest, blob: async () => new Blob() });
+  const driver = new NpcWorkMotion('cook-test', 'cook');
+  const body = { x: 0, z: 0, facing: 0, anim: 'work' };
+  const update = (dt = .1, job = 'meals', day = 1, resolved = false) => driver.update(body, job, day, resolved, dt, 1.95);
+  const ready = async (day = 1) => {
+    for (let i=0; i<50; i++) { const r=update(0,'meals',day); if(r)return r; await new Promise(r=>setTimeout(r,1)); }
+    throw new Error('work atlas failed to load');
+  };
+  try {
+    const first = await ready();
+    assert.ok(Math.abs(first.placement.height - 1.95*640/540) < 1e-10);
+    update(0); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'pause freezes work');
+    for(let i=0;i<40;i++)update();
+    assert.deepEqual(npcWorkDiagnostics.get('cook-test'), {action:'chop-vegetables',direction:'reference',frame:7,completed:true,completions:1});
+    for(let i=0;i<40;i++)update();
+    assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'holding never repeats');
+    assert.equal(update(0,null),null); assert.equal(npcWorkDiagnostics.has('cook-test'),false);
+    await ready(); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'reassignment restarts');
+    update(.1,'meals',1,true); assert.equal(npcWorkDiagnostics.has('cook-test'),false);
+    await ready(2); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'new day restarts');
+    body.anim='walk'; assert.equal(update(),null,'travel releases workstation');
+    const toolManifest = JSON.parse(readFileSync('public/sprites/Female Miner/motion/pickaxe-swing/front/manifest.json', 'utf8'));
+    globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });
+    const miner = new NpcWorkMotion('miner-test','femaleMiner');
+    const minerBody = {...body,anim:'work'};
+    async function toolReady() {
+      for(let i=0;i<50;i++) { const r=miner.update(minerBody,'limestone',1,false,0,1.95); if(r)return r; await new Promise(r=>setTimeout(r,1)); }
+      throw new Error('tool atlas failed to load');
+    }
+    try {
+      const tool=await toolReady();assert.ok(Math.abs(tool.placement.height-1.95*640/340)<1e-10);
+      miner.update(minerBody,'limestone',1,false,100,1.95);
+      assert.equal(npcWorkDiagnostics.get('miner-test').completed,true);
+      minerBody.facing=4;await toolReady();
+      assert.equal(npcWorkDiagnostics.get('miner-test').completed,true,'camera turn preserves completed tool state');
+      assert.equal(npcWorkDiagnostics.get('miner-test').completions,1);
+    } finally {miner.dispose();}
+  } finally {
+    driver.dispose();
+    for (const [key,value] of Object.entries(saved)) { if(value===undefined)delete globalThis[key];else globalThis[key]=value; }
   }
 });

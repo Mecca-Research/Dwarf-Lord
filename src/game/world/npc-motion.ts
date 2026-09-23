@@ -11,9 +11,10 @@ const folders: Partial<Record<DwarfAppearance, string>> = {
 const directions = ["front", "front-right", "right", "back-right", "back", "back-left", "left", "front-left"];
 type Manifest = { character: string; action: string; kind: string; frames: { durationMs: number }[];
   frameSize: [number, number]; registration: { targetBodyHeight: number; targetAnchor: [number, number] };
-  atlas: { file: string } };
+  atlas: { file: string }; sourceSha256?: string };
 type Playback = { index: number; phase: number; setMotion(m: Manifest, options: { preservePhase: boolean }): void;
-  travel(distance: number, stride: number): void; restart(): void };
+  travel(distance: number, stride: number): void; restart(): void;
+  advance(ms: number): boolean; ended: boolean; completions: number };
 type Placement = { width: number; height: number; left: number; top: number };
 type PlaybackModule = { MotionPlayback: new(m: Manifest) => Playback; motionPlacement(m: Manifest, h: number): Placement };
 type Loaded = { texture: THREE.CanvasTexture; manifest: Manifest; module: PlaybackModule };
@@ -28,19 +29,32 @@ function trim() {
   for (const [key, entry] of idle.slice(6)) { entry.value!.texture.dispose(); cache.delete(key); }
 }
 
-function acquire(folder: string, direction: string) {
-  const key = `${folder}/${direction}`;
+function acquire(folder: string, direction: string, action = "walk") {
+  const key = `${folder}/${action}/${direction}`;
   let entry = cache.get(key);
   if (!entry) {
     const item: Entry = { users: 0, touched: ++clock, promise: Promise.resolve(null as unknown as Loaded) };
     item.promise = (async () => {
-      const url = new URL(asset(`/sprites/${folder}/motion/walk/${direction}/manifest.json`), location.href);
+      const url = new URL(asset(`/sprites/${folder}/motion/${action}/${direction}/manifest.json`), location.href);
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Motion manifest: ${response.status}`);
       const manifest: Manifest = await response.json();
-      if (manifest.kind !== "walk" || manifest.frames.length !== 8 || manifest.registration.targetBodyHeight !== 520) {
-        throw new Error("Unsupported NPC walking manifest");
+      if (manifest.frames.length !== 8 || manifest.frameSize?.[0] !== 640 || manifest.frameSize?.[1] !== 640 ||
+          (action === "walk" && (manifest.kind !== "walk" || manifest.registration.targetBodyHeight !== 520))) {
+        throw new Error("Unsupported NPC motion manifest");
       }
+      if (action !== "walk" && manifest.kind !== "directional") {
+        const calibrationResponse = await fetch(new URL("../../render-calibration.json", url));
+        if (!calibrationResponse.ok) throw new Error("Missing work body calibration");
+        const calibration = await calibrationResponse.json();
+        const placement = calibration.actions?.[action];
+        if (manifest.kind !== "work" || calibration.character !== manifest.character ||
+            !placement || placement.sourceSha256 !== manifest.sourceSha256) throw new Error("Stale work body calibration");
+        manifest.registration = { ...manifest.registration, targetBodyHeight: placement.targetBodyHeight, targetAnchor: placement.targetAnchor };
+        motionPlacement(manifest, 1); // Validate before allocating a GPU texture.
+      }
+      // Directional tools already carry body-only calibration from the exporter.
+      if (action !== "walk") motionPlacement(manifest, 1);
       const imageResponse = await fetch(new URL(manifest.atlas.file, url));
       if (!imageResponse.ok) throw new Error(`Motion atlas: ${imageResponse.status}`);
       const bitmap = await createImageBitmap(await imageResponse.blob());
@@ -139,4 +153,56 @@ export function setMotionUv(geometry: THREE.BufferGeometry, frame: number | null
   const columns = frame === null ? 1 : 4, rows = frame === null ? 1 : 2;
   for (let i = 0; i < 4; i++) uv.setXY(i, (column + i % 2) / columns, 1 - (row + Math.floor(i / 2)) / rows);
   uv.needsUpdate = true;
+}
+
+
+export const npcWorkDiagnostics = new Map<string, { action: string; direction: string; frame: number; completed: boolean; completions: number }>();
+
+/** Task-owned one-shot playback. Rendering never awards economic output. */
+export class NpcWorkMotion {
+  private key = "";
+  private lease?: ReturnType<typeof acquire>;
+  private loaded?: Loaded;
+  private player?: Playback;
+  private token = 0;
+  private retryAt = 0;
+  private view = "";
+  constructor(private id: string, private appearance: DwarfAppearance) {}
+
+  update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
+    const action = this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
+      this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" : null;
+    if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
+    const key = `${day}:${job}:${action}`;
+    if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
+    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "reference";
+    if (direction !== this.view) {
+      ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
+      this.view = direction; this.retryAt = 0;
+    }
+    if (!this.lease && performance.now() >= this.retryAt) {
+      const token = ++this.token;
+      this.lease = acquire(folders[this.appearance]!, direction, action);
+      this.lease.promise.then(value => {
+        if (token !== this.token) return;
+        this.loaded = value;
+        if (this.player) this.player.setMotion(value.manifest, { preservePhase: true });
+        else this.player = new value.module.MotionPlayback(value.manifest);
+      }).catch(error => {
+        if (token !== this.token) return;
+        this.lease?.release(); this.lease = undefined; this.retryAt = performance.now() + 5000;
+        console.warn("NPC work motion unavailable", action, error);
+      });
+    }
+    this.player?.advance((Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000);
+    if (!this.loaded || !this.player) return null;
+    npcWorkDiagnostics.set(this.id, { action, direction, frame: this.player.index, completed: this.player.ended, completions: this.player.completions });
+    return { texture: this.loaded.texture, frame: this.player.index, placement: motionPlacement(this.loaded.manifest, bodyHeight) };
+  }
+
+  private reset() {
+    ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
+    this.player = undefined; this.key = ""; this.view = ""; npcWorkDiagnostics.delete(this.id);
+  }
+  dispose() { this.reset(); }
 }

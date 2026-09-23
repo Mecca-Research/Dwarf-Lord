@@ -128,11 +128,11 @@ function Mountains() {
   }, []);
   return (
     <group>
-      <mesh geometry={g} position={[0, -7, -67]}>
-        <meshStandardMaterial color="#323f4b" roughness={1} />
+      <mesh geometry={g} position={[0, -7, -67]} renderOrder={-10}>
+        <meshStandardMaterial color="#323f4b" roughness={1} depthWrite={false} />
       </mesh>
-      <mesh geometry={g} position={[-38, -6, -91]} scale={[1.4, 1.5, 1.2]}>
-        <meshStandardMaterial color="#53616d" roughness={1} />
+      <mesh geometry={g} position={[-38, -6, -91]} scale={[1.4, 1.5, 1.2]} renderOrder={-10}>
+        <meshStandardMaterial color="#53616d" roughness={1} depthWrite={false} />
       </mesh>
     </group>
   );
@@ -154,7 +154,7 @@ export function Terrain() {
   }, [m.cliff]);
   return (
     <group>
-      <mesh position={[0, 8, 0]}>
+      <mesh position={[0, 8, 0]} renderOrder={-20}>
         <sphereGeometry args={[125, 48, 24]} />
         <meshBasicMaterial map={m.sky} side={THREE.BackSide} fog={false} depthWrite={false} />
       </mesh>

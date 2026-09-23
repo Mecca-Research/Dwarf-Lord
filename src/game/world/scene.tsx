@@ -15,7 +15,7 @@ import {
   zoneAt,
 } from "../runtime";
 import { useGame } from "../store";
-import { npcMotionDiagnostics } from "./npc-motion";
+import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
@@ -161,7 +161,7 @@ function Systems() {
         dialogue: useGame.getState().dialogue,
         dwarves: useGame
           .getState()
-          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), workMotion: npcWorkDiagnostics.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
       });
     window.advanceTime = (ms: number) => {
       if (!useGame.getState().playing || useGame.getState().dialogue) return;
