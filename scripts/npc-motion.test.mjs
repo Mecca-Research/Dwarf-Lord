@@ -43,9 +43,13 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
     body.x = .3; a.update(body, 2, .5);
     const phase = npcMotionDiagnostics.get('a').phase; assert.equal(phase, 2);
     a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, phase, 'blocked feet freeze');
-    body.facing = 3; a.update(body, 2, .5); await ready(a);
-    assert.equal(npcMotionDiagnostics.get('a').phase, phase, 'turn does not restart gait');
-    body.x = 100; a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, phase, 'teleport is not a stride');
+    body.facing = 3; a.update(body, 2, .5);
+    body.x += .15; a.update(body, 2, .5);
+    assert.ok(Math.abs(npcMotionDiagnostics.get('a').phase - (phase + 1)) < 1e-10, 'travel continues during atlas load');
+    await ready(a);
+    const turnedPhase = npcMotionDiagnostics.get('a').phase;
+    assert.ok(Math.abs(turnedPhase - (phase + 1)) < 1e-10, 'loaded direction retains travel phase');
+    body.x = 100; a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, turnedPhase, 'teleport is not a stride');
     body.anim = 'idle'; assert.equal(a.update(body, 2, .5), null); assert.equal(npcMotionDiagnostics.has('a'), false);
     body.anim = 'walk'; a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, 0, 'new walk starts at contact');
     const cancelled = new NpcWalkMotion('cancelled', 'laborer'); cancelled.update(body, 2); cancelled.dispose();

@@ -76,3 +76,12 @@ Shared controller source moved to src/game/motion-playback.ts with generated sta
 Validation: 176 Node tests, TypeScript and Pages build pass. New live-game browser test passes in dev AND /Dwarf-Lord/ production: loading, walk progression, turn, collision freeze, arrival/idle fallback. Screenshots inspected under work/expanded-cycles/runtime-browser. Production still emits the pre-existing recoverable React hydration warning documented in prior visual reviews; no page errors from the new motion code.
 
 Art acceptance still open: remaining non-front phase/pose issues, tool/log/cane geometry/contact continuity, workstation physical scales and work-action renderer/task mapping. Full motion-polish task remains incomplete. All existing approval flags remain false; do not infer approval from the successful runtime checks.
+
+
+## 2026-09-23 — Loading continuity, task reset and contact correction
+
+PR9 remains the active branch. Fixed gait phase freezing during atlas loads; first-load displacement is accumulated in stride units. Idle releases leases and invalidates async responses; failed loads retry after five seconds. Fixed canceled job destinations/work state, protected/invalid assignment movement, and work stopping at day resolution (including immediate runtime reset before save).
+
+Saved and exported an accepted single-pose Blacksmith right-view contact arm correction using built-in imagegen. Source pose 0 now has near right arm forward opposite trailing near leg. Traceable whole-pose assembly retains the original source sheet, generation record and exact edit input/prompt. Other seven poses and final loop remain unapproved. Do not treat this one correction as a complete gait.
+
+Validation: 176 Node tests passed before the final art update; all 11 affected motion tests passed afterward. Typecheck passed. Expanded live-game browser test passed walking, turns, blocked freeze, arrival, job assignment/arrival/cancellation/reassignment/day resolution/next morning. Browser and rendered art screenshots inspected. Full task still incomplete: non-front gait corrections, measured foot/cane contact, tool/log continuity, approved loops and calibrated workstation rendering remain. Job state transitions are implemented; workstation animation mapping is not.

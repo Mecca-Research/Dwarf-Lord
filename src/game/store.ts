@@ -319,7 +319,10 @@ export const useGame = create<GameStore>((set, get) => ({
   },
 
   assignJob: (dwarfId, jobId) => {
-    const { dwarves } = get();
+    const { dwarves, dayResolved } = get();
+    const worker = dwarves.find((d) => d.id === dwarfId);
+    const job = JOBS.find((j) => j.id === jobId);
+    if (!worker || worker.isSteward || worker.narrativeOnly || dayResolved || (jobId !== null && !job)) return;
     const next = dwarves.map((d) => {
       if (d.id !== dwarfId || d.isSteward || d.narrativeOnly) return d;
       return { ...d, assignedJobId: jobId };
@@ -328,8 +331,11 @@ export const useGame = create<GameStore>((set, get) => ({
     if (cap > TOTAL_CAPABILITY) return;
     set({ dwarves: next });
     const body = runtime.dwarves.get(dwarfId);
-    const job = JOBS.find((j) => j.id === jobId);
-    if (body && job) body.dest = { x: job.targetX, z: job.targetZ };
+    if (body) {
+      body.dest = job ? { x: job.targetX, z: job.targetZ } : null;
+      body.speed = 0;
+      body.anim = worker.sitOnStart ? "sit" : "idle";
+    }
   },
 
   resolveDay: () => {
@@ -368,6 +374,11 @@ export const useGame = create<GameStore>((set, get) => ({
     }
 
     const rested = restNight(dwarves, dorm, inventory.food > 0, s.wages / 8);
+    for (const dwarf of dwarves) {
+      if (!dwarf.assignedJobId || (s.expedition?.status === "out" && s.expedition.dwarfIds.includes(dwarf.id))) continue;
+      const body = runtime.dwarves.get(dwarf.id);
+      if (body) { body.dest = null; body.speed = 0; body.anim = dwarf.sitOnStart ? "sit" : "idle"; }
+    }
     set({
       dwarves: rested,
       buildings,

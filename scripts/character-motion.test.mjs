@@ -120,9 +120,9 @@ test('direction families use a common body target instead of independently fitti
  }
 });
 
-test('reviewed front gait assemblies preserve traceable, distinct authored source poses',()=>{
- for(const name of ['Borrin','Cook','Elder','Ginger','Helga']){
-  const folder=resolve('public/sprites',name,'motion/walk/front'),path=resolve(folder,'assembly.json');
+test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right']]){
+  const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
   const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
   assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
   assert.equal(assembly.poses.length,8);

@@ -36,7 +36,21 @@ try {
   await page.evaluate(() => { const t = window.__controlsTest; t.teleportDwarf('tam', -8, 3); t.setDwarfDest('tam', -7, 3); });
   await page.waitForFunction(() => { const d = JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam'); return d && d.anim !== 'walk' && !d.motion; });
   await page.screenshot({ path: `${output}/arrived.png` });
+  // A work assignment must release its route and visual state on cancellation/completion.
+  await page.evaluate(() => {
+    const t = window.__controlsTest; t.teleportDwarf('tam', -40, 18); t.assignJob('tam', 'timber');
+  });
+  await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam')?.anim === 'work');
+  await page.evaluate(() => window.__controlsTest.assignJob('tam', null));
+  await page.waitForFunction(() => { const d = JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam'); return d?.anim === 'idle' && !d.dest; });
+  await page.evaluate(() => window.__controlsTest.assignJob('tam', 'timber'));
+  await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam')?.anim === 'work');
+  await page.evaluate(() => window.__controlsTest.resolveDay());
+  await page.waitForFunction(() => { const d = JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam'); return d?.anim === 'idle' && !d.dest; });
+  await page.evaluate(() => window.__controlsTest.nextMorning());
+  await page.waitForTimeout(200);
+  assert.equal((await sample()).anim, 'idle', 'morning does not restore completed work');
   assert.deepEqual(errors, []);
   await writeFile(`${output}/results.json`, JSON.stringify({ before, after, turned, blocked, held, assets, errors }, null, 2));
-  console.log('PASS NPC atlas loading, displacement-driven walking, turning, collision freeze and idle fallback');
+  console.log('PASS NPC atlas loading, displacement-driven walking, turning, collision freeze, idle fallback, work cancellation and day completion');
 } finally { await browser.close(); }

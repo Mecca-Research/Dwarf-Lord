@@ -77,6 +77,8 @@ export class NpcWalkMotion {
   private previous?: [number, number];
   private moving = false;
   private distance = 0;
+  private pendingTravel = 0;
+  private retryAt = 0;
   private disposed = false;
   constructor(private id: string, private appearance: DwarfAppearance) {}
 
@@ -86,11 +88,17 @@ export class NpcWalkMotion {
     const walking = body.anim === "walk";
     const folder = folders[this.appearance];
     if (this.disposed || !folder) return null;
-    if (!walking) { this.moving = false; npcMotionDiagnostics.delete(this.id); return null; }
+    if (!walking) {
+      if (this.moving) {
+        ++this.token; this.lease?.release(); this.lease = undefined;
+        this.loaded = undefined; this.direction = ""; this.pendingTravel = 0;
+      }
+      this.moving = false; npcMotionDiagnostics.delete(this.id); return null;
+    }
     const direction = directions[((body.facing % 8) + 8) % 8];
     if (!this.moving) this.player?.restart();
     this.moving = true;
-    if (direction !== this.direction) {
+    if (direction !== this.direction || (!this.lease && performance.now() >= this.retryAt)) {
       this.direction = direction; this.loaded = undefined; this.lease?.release();
       const token = ++this.token; this.lease = acquire(folder, direction);
       this.lease.promise.then(value => {
@@ -98,11 +106,22 @@ export class NpcWalkMotion {
         this.loaded = value;
         if (this.player) this.player.setMotion(value.manifest, { preservePhase: true });
         else this.player = new value.module.MotionPlayback(value.manifest);
-      }).catch(error => { if (token === this.token && !this.disposed) console.warn("NPC motion unavailable", folder, direction, error); });
+        // Travel accumulated before the first atlas arrived is expressed in strides.
+        if (this.pendingTravel) { this.player.travel(this.pendingTravel, 1); this.pendingTravel = 0; }
+      }).catch(error => {
+        if (token !== this.token || this.disposed) return;
+        this.lease?.release(); this.lease = undefined;
+        this.retryAt = performance.now() + 5000;
+        console.warn("NPC motion unavailable", folder, direction, error);
+      });
     }
     // Actual resolved displacement freezes blocked feet. Ignore teleports, not low FPS.
-    if (this.loaded && this.player && distance <= bodyHeight * worldScale) {
-      this.player.travel(distance, bodyHeight * worldScale * 1.2); this.distance += distance;
+    if (distance <= bodyHeight * worldScale) {
+      const strides = distance / (bodyHeight * worldScale * 1.2);
+      // Keep logical phase moving while a different view is loading.
+      if (this.player) this.player.travel(strides, 1);
+      else this.pendingTravel = (this.pendingTravel + strides) % 1;
+      this.distance += distance;
     }
     npcMotionDiagnostics.set(this.id, { loaded: Boolean(this.loaded), direction, frame: this.player?.index ?? 0,
       phase: this.player?.phase ?? 0, distance: this.distance });

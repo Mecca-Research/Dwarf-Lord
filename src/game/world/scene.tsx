@@ -108,6 +108,7 @@ function Systems() {
   const buildings = useGame((s) => s.buildings);
   const playing = useGame((s) => s.playing);
   const expedition = useGame((s) => s.expedition);
+  const dayResolved = useGame((s) => s.dayResolved);
   const acc = useRef(0);
   const promptAcc = useRef(0);
   const stepRef = useRef(step);
@@ -135,6 +136,9 @@ function Systems() {
         runtime.player.speed = 0;
         runtime.player.anim = "idle";
       },
+      assignJob: (id: string, job: string | null) => useGame.getState().assignJob(id, job),
+      resolveDay: () => useGame.getState().resolveDay(),
+      nextMorning: () => useGame.getState().nextMorning(),
       setDwarfDest: (id: string, x: number, z: number) => {
         const body = runtime.dwarves.get(id);
         if (body) body.dest = { x, z };
@@ -332,6 +336,10 @@ function Systems() {
         b.speed = 0;
         continue;
       }
+      if (dayResolved && dw.assignedJobId && !(expedition?.status === "out" && expedition.dwarfIds.includes(dw.id))) {
+        b.dest = null; b.speed = 0; b.anim = dw.sitOnStart ? "sit" : "idle";
+        continue;
+      }
       if (expedition?.status === "out" && expedition.dwarfIds.includes(dw.id)) {
         b.dest = { x: 8, z: -42 };
       }
@@ -365,7 +373,7 @@ function Systems() {
         b.anim = "work";
         b.speed = 0;
       } else {
-        b.anim = b.anim === "walk" ? "idle" : b.anim;
+        b.anim = b.anim === "walk" || b.anim === "work" ? "idle" : b.anim;
         b.speed = 0;
       }
     }

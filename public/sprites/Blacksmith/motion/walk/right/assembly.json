@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "generation": "authoring-inputs/original-generation.json",
+      "sha256": "8d72d1ab048c3e7713702a68b3aaedd866aa69946bde3c47a43338f9091b61ad"
+    },
+    {
+      "id": "contact",
+      "file": "authoring-inputs/contact-corrected.png",
+      "poseCount": 1,
+      "prompt": "Edit this one Blacksmith dwarf sprite to correct walking counter-swing. Keep head, face, beard, stocky body, outfit, BOTH LEGS, boots, exact right-facing camera and overall scale unchanged. Change ONLY arms: the NEAR anatomical RIGHT arm, currently hanging back on the screen-left side, must swing FORWARD toward screen RIGHT, elbow gently bent, hand in front of apron at waist height. The FAR left arm must swing BACK toward screen LEFT, mostly occluded behind torso. This is left-foot-forward heel contact: near right leg trails behind to screen left, so near right arm must reach ahead to screen right. Preserve one hand per arm, no tools. Exact same detailed semi-realistic style. One full-body isolated sprite on genuine transparent alpha, centered with margins, no text, no scenery.",
+      "sha256": "6e900337d56961fbdc16a3889c2669c7bd77af14f2022338cd89a39e15e7aa50",
+      "reference": "authoring-inputs/contact-reference.png",
+      "referenceSha256": "82e6a2be9c828078532497275b4d0ce393b207d31171f326c57b89f34388ad62"
+    }
+  ],
+  "poses": [
+    {
+      "input": "contact",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "original",
+      "pose": 4
+    },
+    {
+      "input": "original",
+      "pose": 5
+    },
+    {
+      "input": "original",
+      "pose": 6
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "review": "Contact pose near arm now swings forward opposite trailing near leg. Other phases and seam remain unapproved."
+}
