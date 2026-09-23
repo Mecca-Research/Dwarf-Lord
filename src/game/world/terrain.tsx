@@ -1,11 +1,13 @@
 import { useMemo, useLayoutEffect, useRef } from "react";
 import * as THREE from "three";
 import { groundHeight } from "../runtime";
+import { JOBS } from "../data/catalog";
 import { rockGeo } from "./geom";
 import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
 const N = 128,
   R = 28;
+const timberSite = JOBS.find(job => job.id === "timber")!;
 const rand = (i: number) => {
   const n = Math.sin(i * 127.1 + 311.7) * 43758.5453;
   return n - Math.floor(n);
@@ -172,7 +174,10 @@ export function Terrain() {
       </mesh>
       <Dressing />
       <Dressing moss />
-      {Array.from({ length: 28 }, (_, i) => (
+      {/* Leave room for the timber worker, authored tree and axe swing. */}
+      {Array.from({ length: 28 }, (_, i) => i).filter(i =>
+        Math.hypot(-38 - (i % 7) * 3.2 - timberSite.targetX, 18 + Math.floor(i / 7) * 3.1 - timberSite.targetZ) >= 5
+      ).map(i => (
         <Pine
           key={i}
           x={-38 - (i % 7) * 3.2}

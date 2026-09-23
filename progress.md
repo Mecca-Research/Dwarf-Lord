@@ -96,3 +96,17 @@ Female Miner limestone/iron jobs now use all eight pickaxe-swing directions with
 Two generated Blacksmith passing candidates were rejected after assembled review due to changed proportions. Existing committed walking art retained. Scratch candidates/prompts under work/expanded-cycles. Do not integrate them as approved art.
 
 Validation so far: 177 Node tests and typecheck/build passed; Cook production browser passed arrival, calibrated station, final hold, cancel/reassign and day completion. Extended production browser passed Female Miner camera turns and retained completion. Screenshot inspection exposed mine shell and backdrop occlusion; added interior shell cutaway and background depth ordering so tool work can be seen. Final production browser rerun passed; inspected Cook and unobstructed mining screenshots. Final 177 Node tests, TypeScript, Pages build and whitespace checks pass. The skill keyboard harness also ran; its only console error was the previously documented recoverable React hydration warning. Remaining full request: non-front gait corrections, measured foot/cane travel, tool/log contact corrections, loop approvals, other workstation mappings and persistent station separation.
+
+## 2026-09-23 — Additional work mappings and rear-view contact diagnostics
+
+Added calibrated Laborer stack-crates/storage and Ginger fell-tree/timber work playback. Loader now accepts calibrated new-work sequences. Moved storage approach outside building collision. Unit coverage exercises both real manifests, physical scale, completion and cancellation.
+
+Added reproducible source/frame-bound Elder back cane/boot silhouette diagnostic. Narrowed boot regions after visual overlay exposed contamination from neighboring boots. Overlay now isolates all three landmarks. Current first-half planted-cane hypothesis predicts 133.696 atlas-pixel drift; do not adopt a stride or claim contact approval from this model. All loop and production approval flags remain false.
+
+Validation: 177 Node tests, nine Python tests, TypeScript and Pages build pass. Live workstation browser validation in progress. Full art/contact/loop acceptance remains unfinished.
+
+A full Blacksmith right-view replacement sheet was generated and rejected: closer passing silhouettes still did not establish alternating anatomical support legs. Candidate/prompt kept under work/expanded-cycles/rejected-blacksmith-right-full.*; committed art unchanged.
+
+Live production browser passed all four work mappings, final holds, cancellation and the mining camera turn. Screenshots inspected; added a clearing around the timber job so decorative pines do not obscure the authored tree/axe work. Rechecking that final presentation change.
+
+Final targeted production check passed Laborer/Ginger arrival, completion and cancellation after the clearing change; inspected final forest screenshot and confirmed visible axe/tree. Final typecheck, Pages build, 177 Node tests, nine Python tests and whitespace check passed. Existing recoverable React hydration warning persists. No new loop approvals.

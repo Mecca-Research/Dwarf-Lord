@@ -8,7 +8,7 @@ try {
  const page=await browser.newPage({viewport:{width:1280,height:800}}), errors=[];
  page.on('console',m=>{if(m.type()==='warning'||m.type()==='error')console.log(m.type(),m.text());});
  page.on('pageerror',e=>errors.push(e.message));
- page.on('response',r=>{if(r.url().includes('/Cook/motion/')&&r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
+ page.on('response',r=>{if(r.url().includes('/motion/')&&r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
  await page.goto(process.env.REVIEW_URL??'http://localhost:8080/');
  await page.getByRole('button',{name:'Walk the road'}).waitFor();
  await page.waitForTimeout(1500);
@@ -41,7 +41,18 @@ try {
  await page.keyboard.up('q');
  const turned = await page.evaluate(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='nessa').workMotion);
  assert.equal(turned.completed,true);assert.equal(turned.completions,1);
+ const addedWorkers=[];
+ for(const [id,job,action,x,z] of [['tam','storage','stack-crates',12,8],['brokk','timber','fell-tree',-42,18]]) {
+  await page.evaluate(({id,job,x,z})=>{const t=window.__controlsTest;t.teleport(x,z+3);t.teleportDwarf(id,x-2,z);t.assignJob(id,job);},{id,job,x,z});
+  await page.waitForFunction(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion?.completed,id,{timeout:60000});
+  const worker=await page.evaluate(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id),id);
+  assert.equal(worker.workMotion.action,action);assert.equal(worker.workMotion.completions,1);
+  await page.screenshot({path:`${output}/${action}.png`});
+  addedWorkers.push(worker);
+  await page.evaluate(id=>window.__controlsTest.assignJob(id,null),id);
+  await page.waitForFunction(id=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion,id);
+ }
  assert.deepEqual(errors,[]);
- await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,errors},null,2));
- console.log('PASS Cook workstation lifecycle and Female Miner directional tool playback with completed-state camera turn');
+ await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,addedWorkers,errors},null,2));
+ console.log('PASS Cook workstation lifecycle and Female Miner directional tool playback with completed-state camera turn; Laborer and Ginger work/cancellation');
 } finally {await browser.close();}

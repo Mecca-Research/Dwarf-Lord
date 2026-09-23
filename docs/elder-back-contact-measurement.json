@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "config": {
+    "folder": "public/sprites/Elder/motion/walk/back",
+    "sourceSha256": "09f09b428609269b11785b4a336d46619707c4501ea9fb3e47a4164abda71b45",
+    "regions": {
+      "cane": [
+        450,
+        450,
+        560,
+        640
+      ],
+      "leftBoot": [
+        190,
+        475,
+        310,
+        640
+      ],
+      "rightBoot": [
+        340,
+        475,
+        440,
+        640
+      ]
+    },
+    "cameraElevationRadians": 0.6,
+    "strideBodyRatio": 1.2,
+    "assumptions": "Back-facing straight travel; current runtime stride/body ratio. Cane planted in frames 0-3 is a diagnostic hypothesis, not an approved contact schedule. Regions isolate visible cane ferrule and boot silhouette bottoms; these are not skeletal joint measurements. Left boot support in frames 0-3 and right boot support in frames 4-7 are diagnostic hypotheses only. Boot-bottom proxies change with sole rotation; do not infer physical stride from them."
+  },
+  "manifestSha256": "0fa9837d86e53b9999133e95841b0acbc2f5baa2d374f4e975dd4277a65e2008",
+  "samples": [
+    {
+      "frame": 0,
+      "frameSha256": "ad4b3df79a2d56d63f46a483b1b13ee3b71dcbe838adaff2450f7df48f7086ed",
+      "timeMs": 0,
+      "contacts": {
+        "cane": [
+          502.0,
+          589
+        ],
+        "leftBoot": [
+          280.0,
+          614
+        ],
+        "rightBoot": [
+          381.0,
+          615
+        ]
+      },
+      "projectedRootY": 0.0
+    },
+    {
+      "frame": 1,
+      "frameSha256": "c17a844d768f6ccf46ffb215e69fad96e1e3518c492594351ce34797c3d89c04",
+      "timeMs": 140,
+      "contacts": {
+        "cane": [
+          497.0,
+          588
+        ],
+        "leftBoot": [
+          281.5,
+          593
+        ],
+        "rightBoot": [
+          371.0,
+          620
+        ]
+      },
+      "projectedRootY": -49.327
+    },
+    {
+      "frame": 2,
+      "frameSha256": "fca2b71e99a0dca3d430eb90c928d1ac190aa916f9492a81a91dc061e8d961e7",
+      "timeMs": 280,
+      "contacts": {
+        "cane": [
+          507.0,
+          591
+        ],
+        "leftBoot": [
+          294.0,
+          616
+        ],
+        "rightBoot": [
+          366.0,
+          575
+        ]
+      },
+      "projectedRootY": -98.654
+    },
+    {
+      "frame": 3,
+      "frameSha256": "ebf731726da38d99652dbfa7bf9849f44e562c70347efbb554d4e0c740e0293e",
+      "timeMs": 385,
+      "contacts": {
+        "cane": [
+          505.5,
+          591
+        ],
+        "leftBoot": [
+          289.0,
+          615
+        ],
+        "rightBoot": [
+          367.0,
+          570
+        ]
+      },
+      "projectedRootY": -135.65
+    },
+    {
+      "frame": 4,
+      "frameSha256": "88e922aa55bf64a5450a542254dea3946b7d7a25921f2ec0c293be2e8562f2f8",
+      "timeMs": 500,
+      "contacts": {
+        "cane": [
+          495.5,
+          588
+        ],
+        "leftBoot": [
+          260.5,
+          618
+        ],
+        "rightBoot": [
+          355.0,
+          604
+        ]
+      },
+      "projectedRootY": -176.168
+    },
+    {
+      "frame": 5,
+      "frameSha256": "17729b5394c904bf1950386fd7b0cfaad2577145922a2b2414dc3931647d62cb",
+      "timeMs": 640,
+      "contacts": {
+        "cane": [
+          504.0,
+          589
+        ],
+        "leftBoot": [
+          262.0,
+          615
+        ],
+        "rightBoot": [
+          359.0,
+          594
+        ]
+      },
+      "projectedRootY": -225.496
+    },
+    {
+      "frame": 6,
+      "frameSha256": "bf8ed5ed889f12e3cd667bc86be526e51aaa4cb3359d703e057846d13585f930",
+      "timeMs": 780,
+      "contacts": {
+        "cane": [
+          497.0,
+          588
+        ],
+        "leftBoot": [
+          274.5,
+          578
+        ],
+        "rightBoot": [
+          351.0,
+          610
+        ]
+      },
+      "projectedRootY": -274.823
+    },
+    {
+      "frame": 7,
+      "frameSha256": "5c3e28d944ccdeba3757bfd9d4043a2578e534b35f1ef73bb5e19ecfdb902992",
+      "timeMs": 885,
+      "contacts": {
+        "cane": [
+          495.0,
+          587
+        ],
+        "leftBoot": [
+          280.0,
+          574
+        ],
+        "rightBoot": [
+          366.0,
+          613
+        ]
+      },
+      "projectedRootY": -311.818
+    }
+  ],
+  "firstHalfCaneDriftPx": [
+    0.0,
+    50.575,
+    96.783,
+    133.696
+  ],
+  "maxFirstHalfCaneDriftPx": 133.696,
+  "hypotheticalSupportFootDriftPx": {
+    "leftBoot": [
+      0.0,
+      70.343,
+      97.663,
+      134.95
+    ],
+    "rightBoot": [
+      0.0,
+      59.463,
+      92.741,
+      127.127
+    ]
+  },
+  "units": "640-pixel atlas projection; boot silhouette proxies, not tracked material points",
+  "approval": false,
+  "conclusion": "Cane needs authored plant/lift/travel correction. No measured stride is adopted from this invalid contact sequence."
+}

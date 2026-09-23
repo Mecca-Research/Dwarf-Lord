@@ -106,6 +106,25 @@ test('workstations hold one completion and reset only on task lifecycle changes'
       assert.equal(npcWorkDiagnostics.get('miner-test').completed,true,'camera turn preserves completed tool state');
       assert.equal(npcWorkDiagnostics.get('miner-test').completions,1);
     } finally {miner.dispose();}
+    for (const [appearance,character,action,job,height] of [
+      ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',380],
+    ]) {
+      const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/reference/manifest.json`,'utf8'));
+      const placement = JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8'));
+      assert.equal(placement.actions[action].sourceSha256,work.sourceSha256);
+      globalThis.fetch = async url => ({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?placement:work,blob:async()=>new Blob()});
+      const worker=new NpcWorkMotion(character,appearance), workerBody={...body,anim:'work'};
+      try {
+        let result;
+        for(let i=0;i<50&&!result;i++){result=worker.update(workerBody,job,1,false,0,1.95);await new Promise(r=>setTimeout(r,1));}
+        assert.ok(result,`${character} workstation loaded`);
+        assert.ok(Math.abs(result.placement.height-1.95*640/height)<1e-10);
+        worker.update(workerBody,job,1,false,100,1.95);
+        assert.equal(npcWorkDiagnostics.get(character).completions,1);
+        assert.equal(worker.update(workerBody,null,1,false,1,1.95),null);
+        assert.equal(npcWorkDiagnostics.has(character),false);
+      } finally {worker.dispose();}
+    }
   } finally {
     driver.dispose();
     for (const [key,value] of Object.entries(saved)) { if(value===undefined)delete globalThis[key];else globalThis[key]=value; }

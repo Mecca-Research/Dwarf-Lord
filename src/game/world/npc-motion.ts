@@ -48,7 +48,7 @@ function acquire(folder: string, direction: string, action = "walk") {
         if (!calibrationResponse.ok) throw new Error("Missing work body calibration");
         const calibration = await calibrationResponse.json();
         const placement = calibration.actions?.[action];
-        if (manifest.kind !== "work" || calibration.character !== manifest.character ||
+        if (!["work", "new-work"].includes(manifest.kind) || calibration.character !== manifest.character ||
             !placement || placement.sourceSha256 !== manifest.sourceSha256) throw new Error("Stale work body calibration");
         manifest.registration = { ...manifest.registration, targetBodyHeight: placement.targetBodyHeight, targetAnchor: placement.targetAnchor };
         motionPlacement(manifest, 1); // Validate before allocating a GPU texture.
@@ -171,7 +171,9 @@ export class NpcWorkMotion {
 
   update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
     const action = this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
-      this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" : null;
+      this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
+      this.appearance === "laborer" && job === "storage" ? "stack-crates" :
+      this.appearance === "ginger" && job === "timber" ? "fell-tree" : null;
     if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
