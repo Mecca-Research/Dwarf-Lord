@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "title": "Chop vegetables",
+      "reference": "public/sprites/Cook/work-references/00-chop-vegetables.png",
+      "beats": [
+        "knife poised above vegetables on wooden cutting block",
+        "continuous midway transition from knife poised above vegetables on wooden cutting block toward lift knife a little",
+        "lift knife a little",
+        "continuous midway transition from lift knife a little toward chop down onto vegetable with other hand safely clear",
+        "chop down onto vegetable with other hand safely clear",
+        "continuous midway transition from chop down onto vegetable with other hand safely clear toward lift knife and nudge next slice into position",
+        "lift knife and nudge next slice into position",
+        "continuous midway transition from lift knife and nudge next slice into position toward knife poised above vegetables on wooden cutting block"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/chop-vegetables/actor"
+    }
+  ]
+}

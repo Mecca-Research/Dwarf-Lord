@@ -389,14 +389,15 @@ export function MineAdit({ x, z }: { x: number; z: number }) {
   const m = useMats();
   const rockShell = useRef<Group>(null), tunnelShell = useRef<Group>(null);
   useFrame(() => {
-    const exterior = zoneAt(runtime.player.x, runtime.player.z) !== "mine";
+    const atEntrance = Math.hypot(runtime.player.x - x, runtime.player.z - z) < 9;
+    const exterior = zoneAt(runtime.player.x, runtime.player.z) !== "mine" && !atEntrance;
     if (rockShell.current) rockShell.current.visible = exterior;
     if (tunnelShell.current) tunnelShell.current.visible = exterior;
   });
   return (
     <group position={[x, 0, z]}>
       <group ref={rockShell}>
-        {/* The exterior shell cuts away inside the mine for overhead work visibility. */}
+        {/* Cut away near the entrance too, so shaft-clearing workers remain visible. */}
         <mesh
           position={[-2.2, 3.2, -1.4]}
           scale={[3.4, 2.8, 2.2]}

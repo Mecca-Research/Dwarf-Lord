@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
 import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
-import { NpcWalkMotion, NpcWorkMotion, setMotionUv } from "./npc-motion";
+import { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry } from "./npc-motion";
 import { useGame } from "../store";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
@@ -162,10 +162,14 @@ export function DwarfSprite({
   const w = h * textureAspect(start);
   const mat = useRef<THREE.MeshBasicMaterial>(null);
   const mesh = useRef<THREE.Mesh>(null);
+  const upperMesh = useRef<THREE.Mesh>(null);
+  const upperMat = useRef<THREE.MeshBasicMaterial>(null);
+  const foregroundGeometry = useRef<THREE.BufferGeometry | null>(null);
+  useEffect(() => () => { foregroundGeometry.current?.dispose(); }, []);
   const motion = useRef<NpcWalkMotion | null>(null);
   const workMotion = useRef<NpcWorkMotion | null>(null);
   const parentScale = useMemo(() => new THREE.Vector3(1, 1, 1), []);
-  const uvFrame = useRef<number | null>(null);
+  const uvFrame = useRef("");
   useEffect(() => {
     if (isPlayer) return;
     const driver = new NpcWalkMotion(dwarf?.id ?? "unknown", dwarfAppearance(dwarf?.id));
@@ -192,13 +196,29 @@ export function DwarfSprite({
       mat.current.map = tex;
       mat.current.needsUpdate = true;
     }
+    if (upperMat.current && upperMat.current.map !== tex) { upperMat.current.map = tex; upperMat.current.needsUpdate = true; }
+    const polygons = work?.foregroundPolygons;
+    if (upperMesh.current) upperMesh.current.visible = Boolean(polygons);
     if (mesh.current) {
       const frame = walkMotion?.frame ?? null;
-      if (uvFrame.current !== frame) { setMotionUv(mesh.current.geometry, frame); uvFrame.current = frame; }
+      const uvKey = `${frame}:${Boolean(polygons)}`;
+      if (uvFrame.current !== uvKey) {
+        setMotionUv(mesh.current.geometry, frame);
+        if (upperMesh.current && polygons && frame !== null) {
+          foregroundGeometry.current?.dispose();
+          foregroundGeometry.current = motionForegroundGeometry(polygons, frame);
+          upperMesh.current.geometry = foregroundGeometry.current;
+        }
+        uvFrame.current = uvKey;
+      }
       if (walkMotion) {
         const p = walkMotion.placement;
         mesh.current.scale.set(p.width, p.height, 1);
         mesh.current.position.set(p.left + p.width / 2, -p.top - p.height / 2, 0);
+        if (polygons && upperMesh.current) {
+          upperMesh.current.scale.set(p.width, p.height, 1);
+          upperMesh.current.position.set(p.left + p.width / 2, -p.top - p.height / 2, .01);
+        }
       } else {
         mesh.current.scale.set(h * textureAspect(tex), h, 1);
         mesh.current.position.set(0, h * 0.5, 0);
@@ -230,6 +250,10 @@ export function DwarfSprite({
             toneMapped={false}
             side={THREE.DoubleSide}
           />
+        </mesh>
+        <mesh ref={upperMesh} visible={false} renderOrder={3}>
+          <planeGeometry args={[1, 1]} />
+          <meshBasicMaterial ref={upperMat} map={start} transparent alphaTest={0.34} depthWrite toneMapped={false} side={THREE.DoubleSide} />
         </mesh>
       </Billboard>
     </group>

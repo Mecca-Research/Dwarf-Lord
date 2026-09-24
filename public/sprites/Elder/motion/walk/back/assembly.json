@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/pre-recovery-sheet.png",
+      "poseCount": 8,
+      "sha256": "09f09b428609269b11785b4a336d46619707c4501ea9fb3e47a4164abda71b45",
+      "generation": "authoring-inputs/pre-recovery-generation.json"
+    },
+    {
+      "id": "recovery",
+      "file": "authoring-inputs/cane-recovery-sheet.png",
+      "poseCount": 8,
+      "sha256": "cec4afacfd8170a0f85dec5cbd78ab26acdc9bdb71e0e5eef43edc9cb15bb8ab",
+      "prompt": "Edit target: Elder dwarf rear-view eight-pose walking sheet. Preserve this exact elderly stocky dwarf, head, coat, straps, pouch on screen RIGHT, legs, boots, eight-cell FOUR-column TWO-row layout, camera and scale. Correct ONLY right-arm and cane motion. All figures face away. One fixed-length wooden walking stick in anatomical RIGHT hand (screen RIGHT) throughout. Top row: cane planted ahead, weight bears on it, right shoulder passes the planted tip, cane tilts backward as character advances. Bottom row: author a CLEAR CANE RECOVERY ARC. Bottom-left figure lifts its cane ferrule OFF the floor, bent right elbow raising entire cane. Second bottom figure swings the intact cane forward, shaft tilted, ferrule visibly high beside the knee. Third bottom figure extends the right arm forward away from viewer with tip still elevated, shaft foreshortened by perspective rather than shortened. Bottom-right figure lowers the ferrule toward a new plant ahead, matching first top-row pose for a natural return. Do not show eight planted vertical sticks. Cane rigid wood same physical length and curved grip in all poses; connected natural wrist/hand; no detached prop, extra limb, cloned hand. Preserve all leg poses, face direction, individual sprite locations and body proportions unchanged. Detailed semi-realistic game rendering. Genuine transparent background, no brown matte, no shadow, no text. Generous gutter around every complete figure and cane.",
+      "reference": "authoring-inputs/pre-recovery-sheet.png",
+      "referenceSha256": "09f09b428609269b11785b4a336d46619707c4501ea9fb3e47a4164abda71b45"
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 5
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "original",
+      "pose": 4
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 6
+    },
+    {
+      "input": "recovery",
+      "pose": 7
+    }
+  ],
+  "review": "Retain seven support/passing poses; final pose adds modest cane lift before replant. Reject generated shortened recovery shaft in source pose 6. Full recovery arc and planted contact remain unapproved."
+}

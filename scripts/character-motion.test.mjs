@@ -121,7 +121,7 @@ test('direction families use a common body target instead of independently fitti
 });
 
 test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
- for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right']]){
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Elder','back']]){
   const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
   const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
   assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
@@ -136,4 +136,20 @@ test('reviewed gait assemblies preserve traceable, distinct authored source pose
    assert.ok(Number.isInteger(pose.pose)&&pose.pose>=0&&pose.pose<source.poseCount);
   }
  }
+});
+
+test('runtime actor layers and persistent stations retain source provenance and calibration',()=>{
+ for(const entry of json('docs/runtime-motion-layers.json').entries){
+  const root=resolve(entry.destination),m=json(resolve(root,'manifest.json')),assembly=json(resolve(root,'assembly.json'));
+  assert.equal(hash(resolve(root,'source-sheet.png')),m.sourceSha256);
+  assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
+  for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
+  const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
+  assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,false);
+  for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
+ }
+ const root=resolve('public/sprites/workstations/cutting-block'),g=json(resolve(root,'generation.json'));
+ assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
+ assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
 });

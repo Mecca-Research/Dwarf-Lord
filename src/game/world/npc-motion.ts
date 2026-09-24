@@ -17,7 +17,7 @@ type Playback = { index: number; phase: number; setMotion(m: Manifest, options: 
   advance(ms: number): boolean; ended: boolean; completions: number };
 type Placement = { width: number; height: number; left: number; top: number };
 type PlaybackModule = { MotionPlayback: new(m: Manifest) => Playback; motionPlacement(m: Manifest, h: number): Placement };
-type Loaded = { texture: THREE.CanvasTexture; manifest: Manifest; module: PlaybackModule };
+type Loaded = { foregroundPolygons?: number[][][][]; texture: THREE.CanvasTexture; manifest: Manifest; module: PlaybackModule };
 type Entry = { promise: Promise<Loaded>; value?: Loaded; users: number; touched: number };
 const cache = new Map<string, Entry>();
 let clock = 0;
@@ -39,6 +39,7 @@ function acquire(folder: string, direction: string, action = "walk") {
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Motion manifest: ${response.status}`);
       const manifest: Manifest = await response.json();
+      let foregroundPolygons: number[][][][] | undefined;
       if (manifest.frames.length !== 8 || manifest.frameSize?.[0] !== 640 || manifest.frameSize?.[1] !== 640 ||
           (action === "walk" && (manifest.kind !== "walk" || manifest.registration.targetBodyHeight !== 520))) {
         throw new Error("Unsupported NPC motion manifest");
@@ -47,10 +48,19 @@ function acquire(folder: string, direction: string, action = "walk") {
         const calibrationResponse = await fetch(new URL("../../render-calibration.json", url));
         if (!calibrationResponse.ok) throw new Error("Missing work body calibration");
         const calibration = await calibrationResponse.json();
-        const placement = calibration.actions?.[action];
+        const placement = calibration.actions?.[`${action}/${direction}`] ?? calibration.actions?.[action];
         if (!["work", "new-work"].includes(manifest.kind) || calibration.character !== manifest.character ||
             !placement || placement.sourceSha256 !== manifest.sourceSha256) throw new Error("Stale work body calibration");
         manifest.registration = { ...manifest.registration, targetBodyHeight: placement.targetBodyHeight, targetAnchor: placement.targetAnchor };
+        if (placement.foregroundPolygons !== undefined) {
+          const polygons = placement.foregroundPolygons;
+          if (!Array.isArray(polygons) || polygons.length !== 8 || polygons.some((frame: number[][][]) =>
+            !Array.isArray(frame) || frame.some(poly => !Array.isArray(poly) || poly.length < 3 || poly.some(point =>
+              !Array.isArray(point) || point.length !== 2 || point.some(n => !Number.isFinite(n) || n < 0 || n > 640))))) {
+            throw new Error("Invalid foreground contours");
+          }
+          foregroundPolygons = polygons;
+        }
         motionPlacement(manifest, 1); // Validate before allocating a GPU texture.
       }
       // Directional tools already carry body-only calibration from the exporter.
@@ -69,7 +79,7 @@ function acquire(folder: string, direction: string, action = "walk") {
       const texture = new THREE.CanvasTexture(canvas);
       texture.colorSpace = THREE.SRGBColorSpace; texture.minFilter = THREE.LinearFilter;
       texture.magFilter = THREE.LinearFilter; texture.generateMipmaps = false;
-      item.value = { texture, manifest, module }; trim(); return item.value;
+      item.value = { texture, manifest, module, foregroundPolygons }; trim(); return item.value;
     })().catch(error => { if (cache.get(key) === item) cache.delete(key); throw error; });
     cache.set(key, item); entry = item;
   }
@@ -172,12 +182,14 @@ export class NpcWorkMotion {
   update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
     const action = this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
       this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
+      this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
+      this.appearance === "blacksmith" && job === "forge" ? "hammer-contact" :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
       this.appearance === "ginger" && job === "timber" ? "fell-tree" : null;
     if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
-    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "reference";
+    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : this.appearance === "cook" ? "actor" : "reference";
     if (direction !== this.view) {
       ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
       this.view = direction; this.retryAt = 0;
@@ -199,7 +211,7 @@ export class NpcWorkMotion {
     this.player?.advance((Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000);
     if (!this.loaded || !this.player) return null;
     npcWorkDiagnostics.set(this.id, { action, direction, frame: this.player.index, completed: this.player.ended, completions: this.player.completions });
-    return { texture: this.loaded.texture, frame: this.player.index, placement: motionPlacement(this.loaded.manifest, bodyHeight) };
+    return { texture: this.loaded.texture, frame: this.player.index, foregroundPolygons: this.loaded.foregroundPolygons?.[this.player.index], placement: motionPlacement(this.loaded.manifest, bodyHeight) };
   }
 
   private reset() {
@@ -207,4 +219,16 @@ export class NpcWorkMotion {
     this.player = undefined; this.key = ""; this.view = ""; npcWorkDiagnostics.delete(this.id);
   }
   dispose() { this.reset(); }
+}
+
+/** Foreground contours reuse original atlas pixels; no duplicated station pixels. */
+export function motionForegroundGeometry(polygons: number[][][], frame: number) {
+  const shapes = polygons.map(points => new THREE.Shape(points.map(([x, y]) => new THREE.Vector2(x / 640 - .5, .5 - y / 640))));
+  const geometry = new THREE.ShapeGeometry(shapes);
+  const position = geometry.getAttribute("position"), uv = geometry.getAttribute("uv");
+  for (let i = 0; i < position.count; i++) uv.setXY(i,
+    (frame % 4 + position.getX(i) + .5) / 4,
+    1 - (Math.floor(frame / 4) + .5 - position.getY(i)) / 2);
+  uv.needsUpdate = true;
+  return geometry;
 }

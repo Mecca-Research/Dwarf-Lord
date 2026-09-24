@@ -197,6 +197,18 @@ export const JOBS: JobDef[] = [
     repair: 0.8,
   },
   {
+    id: "forge",
+    name: "Repair forge fittings",
+    capabilityRequired: 12,
+    skill: "craft",
+    description: "Reforge bent fittings and bring the cold workshop back into service.",
+    zone: "camp",
+    targetX: 6,
+    targetZ: -7,
+    buildingId: "forge",
+    repair: 0.35,
+  },
+  {
     id: "shaft2",
     name: "Clear Shaft Two entrance",
     capabilityRequired: 25,

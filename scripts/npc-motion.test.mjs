@@ -8,7 +8,7 @@ const moduleUrl = new URL('../public/motion-playback.mjs', import.meta.url).href
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
 outputText = outputText.replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
-const { NpcWalkMotion, NpcWorkMotion, setMotionUv, npcMotionDiagnostics, npcWorkDiagnostics } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, npcMotionDiagnostics, npcWorkDiagnostics } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
 test('atlas UVs select one cell per actor and restore canonical full-image UVs', () => {
   const a = new THREE.PlaneGeometry(), b = new THREE.PlaneGeometry();
@@ -63,9 +63,9 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
 
 test('workstations hold one completion and reset only on task lifecycle changes', async () => {
   const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
-  const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/reference/manifest.json', 'utf8'));
+  const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/actor/manifest.json', 'utf8'));
   const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
-  assert.equal(calibration.actions['chop-vegetables'].sourceSha256, manifest.sourceSha256);
+  assert.equal(calibration.actions['chop-vegetables/actor'].sourceSha256, manifest.sourceSha256);
   globalThis.location = { href: 'https://motion.test/' };
   globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
   globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
@@ -79,10 +79,11 @@ test('workstations hold one completion and reset only on task lifecycle changes'
   };
   try {
     const first = await ready();
-    assert.ok(Math.abs(first.placement.height - 1.95*640/540) < 1e-10);
+    assert.ok(Math.abs(first.placement.height - 1.95*640/520) < 1e-10);
+    assert.equal(first.foregroundPolygons.length,2);
     update(0); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'pause freezes work');
     for(let i=0;i<40;i++)update();
-    assert.deepEqual(npcWorkDiagnostics.get('cook-test'), {action:'chop-vegetables',direction:'reference',frame:7,completed:true,completions:1});
+    assert.deepEqual(npcWorkDiagnostics.get('cook-test'), {action:'chop-vegetables',direction:'actor',frame:7,completed:true,completions:1});
     for(let i=0;i<40;i++)update();
     assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'holding never repeats');
     assert.equal(update(0,null),null); assert.equal(npcWorkDiagnostics.has('cook-test'),false);
@@ -94,8 +95,8 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });
     const miner = new NpcWorkMotion('miner-test','femaleMiner');
     const minerBody = {...body,anim:'work'};
-    async function toolReady() {
-      for(let i=0;i<50;i++) { const r=miner.update(minerBody,'limestone',1,false,0,1.95); if(r)return r; await new Promise(r=>setTimeout(r,1)); }
+    async function toolReady(job = "limestone") {
+      for(let i=0;i<50;i++) { const r=miner.update(minerBody,job,1,false,0,1.95); if(r)return r; await new Promise(r=>setTimeout(r,1)); }
       throw new Error('tool atlas failed to load');
     }
     try {
@@ -105,8 +106,17 @@ test('workstations hold one completion and reset only on task lifecycle changes'
       minerBody.facing=4;await toolReady();
       assert.equal(npcWorkDiagnostics.get('miner-test').completed,true,'camera turn preserves completed tool state');
       assert.equal(npcWorkDiagnostics.get('miner-test').completions,1);
+      const shovel=JSON.parse(readFileSync('public/sprites/Female Miner/motion/shovel-cycle/back/manifest.json','utf8'));
+      globalThis.fetch=async()=>({ok:true,json:async()=>shovel,blob:async()=>new Blob()});
+      await toolReady('shaft2');
+      assert.equal(npcWorkDiagnostics.get('miner-test').action,'shovel-cycle');
+      assert.equal(npcWorkDiagnostics.get('miner-test').completed,false,'new task restarts tool work');
+      miner.update(minerBody,'shaft2',1,false,100,1.95);
+      assert.equal(npcWorkDiagnostics.get('miner-test').completions,1);
+
     } finally {miner.dispose();}
     for (const [appearance,character,action,job,height] of [
+      ['blacksmith','Blacksmith','hammer-contact','forge',564],
       ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',380],
     ]) {
       const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/reference/manifest.json`,'utf8'));
@@ -128,5 +138,18 @@ test('workstations hold one completion and reset only on task lifecycle changes'
   } finally {
     driver.dispose();
     for (const [key,value] of Object.entries(saved)) { if(value===undefined)delete globalThis[key];else globalThis[key]=value; }
+  }
+});
+
+test('foreground contours preserve source pixels within the selected atlas frame', () => {
+  const contours=JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json','utf8')).actions['chop-vegetables/actor'].foregroundPolygons;
+  for(let frame=0;frame<8;frame++) {
+    const geometry=motionForegroundGeometry(contours[frame],frame),position=geometry.getAttribute('position'),uv=geometry.getAttribute('uv');
+    assert.ok(geometry.index.count>0);
+    for(let i=0;i<position.count;i++) {
+      assert.ok(Math.abs(uv.getX(i)*4-frame%4-(position.getX(i)+.5))<1e-6);
+      assert.ok(Math.abs((1-uv.getY(i))*2-Math.floor(frame/4)-(.5-position.getY(i)))<1e-6);
+    }
+    geometry.dispose();
   }
 });

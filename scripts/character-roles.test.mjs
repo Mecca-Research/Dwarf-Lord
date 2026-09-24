@@ -43,3 +43,14 @@ test('legacy character upgrade is repeatable and preserves worker progression', 
   assert.equal(twice.find(d => d.id === 'helga').energy, .23);
   assert.deepEqual(legacy.map(d => d.id), once.filter(d => d.id !== 'elder').map(d => d.id));
 });
+
+test('forge assignment repairs the existing building through daily resolution', () => {
+  const smith=catalog.STARTING_DWARVES.find(d=>d.id==='grit');
+  const job=catalog.JOBS.find(j=>j.id==='forge');
+  assert.equal(job.buildingId,'forge');assert.equal(job.skill,'craft');
+  assert.ok(Math.hypot(job.targetX-10,job.targetZ+7)>3.55,'approach clears forge collision');
+  const idle=sim.resolveJobs([smith],{},1),worked=sim.resolveJobs([smith],{grit:'forge'},1);
+  assert.equal(idle.buildingRepair.forge,undefined);
+  assert.ok(worked.buildingRepair.forge>0);
+  assert.deepEqual(worked.inventoryDelta,{},'repair animation does not mint resource output');
+});

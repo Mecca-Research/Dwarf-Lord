@@ -110,3 +110,21 @@ A full Blacksmith right-view replacement sheet was generated and rejected: close
 Live production browser passed all four work mappings, final holds, cancellation and the mining camera turn. Screenshots inspected; added a clearing around the timber job so decorative pines do not obscure the authored tree/axe work. Rechecking that final presentation change.
 
 Final targeted production check passed Laborer/Ginger arrival, completion and cancellation after the clearing change; inspected final forest screenshot and confirmed visible axe/tree. Final typecheck, Pages build, 177 Node tests, nine Python tests and whitespace check passed. Existing recoverable React hydration warning persists. No new loop approvals.
+
+## 2026-09-23 — Persistent cooking station, actor-only motion and shovel integration
+
+Generated Cook actor-only chopping sheet and separate empty cutting block via built-in imagegen, preserving source/prompt/provenance. Exported eight actor frames under Cook/motion/chop-vegetables/actor. Original combined work references retained. Runtime renders independent persistent table; actor-only body behind it and source-bound triangulated forearm/knife contours in front. Common body calibration/root and working visual-root registration preserve station contact despite approach tolerance. Station remains after cancellation/day completion. Fixed-view billboards remain; other independent stations are unfinished.
+
+Mapped Female Miner shaft2 to directional shovel-cycle. Unit tests cover reset from pickaxe to shovel, actor placement and foreground UV mapping; provenance tests cover runtime layer and prop exports.
+
+Elder back assembled seven retained poses plus a modest final cane lift. Rejected full-sheet pose 6 (shortened shaft) and additional single-pose edit (unnatural high arm). Full support contact/recovery arc remains unapproved. Contact report regenerated AFTER audit to bind final manifest; first-half drift hypothesis remains 133.696 pixels. Still no verified stride or final loop approvals.
+
+Validation in progress: 179 Node tests, nine Python tests, typecheck passed. Production workstation browser checks running. Runtime layer exporter: scripts/export-runtime-motion-layers.py; plan docs/runtime-motion-layers.json. Render occlusion polygons are in Cook/motion/render-calibration.json and tied to source SHA.
+
+Added Blacksmith hammer-contact mapping through a new Repair forge fittings job (existing daily repair mechanism; no animation-triggered output). Calibration 564-pixel visible body, root [280,592], source-bound. New economy regression verifies idle gives no repair and assignment repairs forge without resource output. 180 Node tests now pass.
+
+First production run passed persistent cooking prop after cancel, shovel completion, mining view turns and previous Laborer/Ginger work. Inspected screenshots and found entrance shell hiding shovel work from the approach; expanded cutaway to nine units around MineAdit. Final browser rerun includes forge assignment and cutaway fix. No loop approval or measured stride adopted.
+
+## 2026-09-24 — Resume and publish verified checkpoint
+
+Recovered the completed validation outputs after usage interruption. Final production browser passed all six mappings: Cook, mining, shoveling, Blacksmith forge, Laborer storage and Ginger timber; cancellation/completion, persistent empty table and mining camera turns verified. Inspected final Cook/empty-table, forge and unobstructed shaft-clearing screenshots. Keyboard skill harness captured gameplay/state; its only error was the previously documented recoverable React #418 hydration warning. TypeScript, Pages build, 180 Node tests, nine Python tests and whitespace checks passed. No additional code changes after validation. Full non-front gait/contact/stride/loop acceptance and independent stations beyond cooking remain unfinished.

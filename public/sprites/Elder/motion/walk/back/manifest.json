@@ -7,16 +7,16 @@
   "kind": "walk",
   "reference": "../../../animation/04-back.png",
   "source": "source-sheet.png",
-  "sourceSha256": "09f09b428609269b11785b4a336d46619707c4501ea9fb3e47a4164abda71b45",
+  "sourceSha256": "025f5f267fc833d27282c40c9ac9bd0d5c81604c971814c587b5b39ec7a472c5",
   "sourceSize": [
-    1536,
-    1024
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.1158798283261802,
+  "sharedScale": 1.04,
   "frameCount": 8,
   "frames": [
     {
@@ -25,14 +25,14 @@
       "description": "left heel contact, right toe behind",
       "durationMs": 140,
       "sourceBounds": [
-        36,
-        19,
-        369,
-        486
+        154,
+        99,
+        511,
+        600
       ],
       "sourceAnchor": [
-        155.0,
-        467.0
+        166.0,
+        501.0
       ],
       "groundAnchor": [
         320,
@@ -49,22 +49,22 @@
       "description": "left weight down, right heel lifts",
       "durationMs": 140,
       "sourceBounds": [
-        421,
-        531,
-        752,
-        996
+        795,
+        105,
+        1150,
+        604
       ],
       "sourceAnchor": [
-        156.0,
-        461.0
+        165.0,
+        495.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        146,
-        102
+        148,
+        101
       ]
     },
     {
@@ -73,21 +73,21 @@
       "description": "right foot airborne passing left support leg",
       "durationMs": 105,
       "sourceBounds": [
-        801,
-        19,
-        1137,
-        487
+        1435,
+        99,
+        1796,
+        601
       ],
       "sourceAnchor": [
-        153.0,
-        467.0
+        165.0,
+        501.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        149,
+        148,
         95
       ]
     },
@@ -97,21 +97,21 @@
       "description": "right leg extends forward, left heel rises",
       "durationMs": 115,
       "sourceBounds": [
-        1184,
-        19,
-        1520,
-        486
+        2075,
+        99,
+        2435,
+        600
       ],
       "sourceAnchor": [
-        153.0,
-        467.0
+        165.0,
+        501.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        149,
+        148,
         95
       ]
     },
@@ -121,22 +121,22 @@
       "description": "right heel contact, left toe behind",
       "durationMs": 140,
       "sourceBounds": [
-        42,
-        531,
-        368,
-        994
+        156,
+        745,
+        506,
+        1242
       ],
       "sourceAnchor": [
-        154.0,
-        461.0
+        164.0,
+        495.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        148,
-        102
+        149,
+        101
       ]
     },
     {
@@ -145,14 +145,14 @@
       "description": "right weight down, left heel lifts",
       "durationMs": 140,
       "sourceBounds": [
-        420,
-        19,
-        754,
-        486
+        795,
+        739,
+        1153,
+        1240
       ],
       "sourceAnchor": [
-        154.0,
-        467.0
+        165.0,
+        501.0
       ],
       "groundAnchor": [
         320,
@@ -169,22 +169,22 @@
       "description": "left foot airborne passing right support leg",
       "durationMs": 105,
       "sourceBounds": [
-        803,
-        531,
-        1134,
-        987
+        1434,
+        745,
+        1789,
+        1234
       ],
       "sourceAnchor": [
-        156.0,
-        461.0
+        166.0,
+        495.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        146,
-        102
+        147,
+        101
       ]
     },
     {
@@ -193,32 +193,32 @@
       "description": "left leg extends forward, right heel rises",
       "durationMs": 115,
       "sourceBounds": [
-        1188,
-        531,
-        1516,
-        990
+        2076,
+        744,
+        2431,
+        1238
       ],
       "sourceAnchor": [
-        155.0,
-        461.0
+        164.0,
+        496.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        147,
-        102
+        149,
+        100
       ]
     }
   ],
   "sourceFrameOrder": [
     0,
-    5,
+    1,
     2,
     3,
     4,
-    1,
+    5,
     6,
     7
   ],
@@ -259,7 +259,7 @@
     "rootMotion": "external"
   },
   "registration": {
-    "method": "torso-median-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
@@ -267,7 +267,7 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "e6d12a292cf8757c7cfb9ac014877d640a5de8679afb5a63b50cfc087e5a4fd6",
+    "settingsSha256": "12b0d1147b755d0a8875b79758f1040b789bdc9b860c4b0bdbbf9787b90513ed",
     "exportVersion": 2,
     "stationRegistration": null
   },

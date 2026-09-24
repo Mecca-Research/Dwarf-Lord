@@ -26,6 +26,11 @@ try {
  await page.waitForTimeout(500);assert.equal((await sample()).workMotion.completions,1);
  await page.evaluate(()=>window.__controlsTest.assignJob('kori',null));
  await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion);
+ const stationAfterCancel=await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations);
+ assert.equal(stationAfterCancel.some(s=>s.id==='cutting-block'&&s.persistent),true);
+ await page.evaluate(()=>window.__controlsTest.teleportDwarf('kori',-5,4.5));
+ await page.screenshot({path:`${output}/empty-cutting-block.png`});
+ await page.evaluate(()=>window.__controlsTest.teleportDwarf('kori',-2,4.5));
  await page.evaluate(()=>window.__controlsTest.assignJob('kori','meals'));
  await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion?.completed);
  await page.evaluate(()=>window.__controlsTest.resolveDay());
@@ -42,7 +47,7 @@ try {
  const turned = await page.evaluate(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='nessa').workMotion);
  assert.equal(turned.completed,true);assert.equal(turned.completions,1);
  const addedWorkers=[];
- for(const [id,job,action,x,z] of [['tam','storage','stack-crates',12,8],['brokk','timber','fell-tree',-42,18]]) {
+ for(const [id,job,action,x,z] of [['grit','forge','hammer-contact',6,-7],['nessa','shaft2','shovel-cycle',14,-32],['tam','storage','stack-crates',12,8],['brokk','timber','fell-tree',-42,18]]) {
   await page.evaluate(({id,job,x,z})=>{const t=window.__controlsTest;t.teleport(x,z+3);t.teleportDwarf(id,x-2,z);t.assignJob(id,job);},{id,job,x,z});
   await page.waitForFunction(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion?.completed,id,{timeout:60000});
   const worker=await page.evaluate(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id),id);
@@ -53,6 +58,6 @@ try {
   await page.waitForFunction(id=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion,id);
  }
  assert.deepEqual(errors,[]);
- await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,addedWorkers,errors},null,2));
- console.log('PASS Cook workstation lifecycle and Female Miner directional tool playback with completed-state camera turn; Laborer and Ginger work/cancellation');
+ await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,stationAfterCancel,addedWorkers,errors},null,2));
+ console.log('PASS persistent Cook station, directional mining and shoveling, Blacksmith forging, Laborer/Ginger work lifecycle');
 } finally {await browser.close();}
