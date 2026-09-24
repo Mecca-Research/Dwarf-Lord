@@ -116,18 +116,21 @@ test('workstations hold one completion and reset only on task lifecycle changes'
 
     } finally {miner.dispose();}
     for (const [appearance,character,action,job,height] of [
-      ['blacksmith','Blacksmith','hammer-contact','forge',564],
+      ['blacksmith','Blacksmith','hammer-contact','forge',520],
       ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',380],
     ]) {
-      const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/reference/manifest.json`,'utf8'));
+      const direction = appearance === 'blacksmith' ? 'actor' : 'reference';
+      const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/${direction}/manifest.json`,'utf8'));
       const placement = JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8'));
-      assert.equal(placement.actions[action].sourceSha256,work.sourceSha256);
+      assert.equal(placement.actions[direction==='actor'?`${action}/actor`:action].sourceSha256,work.sourceSha256);
       globalThis.fetch = async url => ({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?placement:work,blob:async()=>new Blob()});
       const worker=new NpcWorkMotion(character,appearance), workerBody={...body,anim:'work'};
       try {
         let result;
         for(let i=0;i<50&&!result;i++){result=worker.update(workerBody,job,1,false,0,1.95);await new Promise(r=>setTimeout(r,1));}
         assert.ok(result,`${character} workstation loaded`);
+        assert.equal(npcWorkDiagnostics.get(character).direction,direction);
+        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,3);
         assert.ok(Math.abs(result.placement.height-1.95*640/height)<1e-10);
         worker.update(workerBody,job,1,false,100,1.95);
         assert.equal(npcWorkDiagnostics.get(character).completions,1);
@@ -142,7 +145,8 @@ test('workstations hold one completion and reset only on task lifecycle changes'
 });
 
 test('foreground contours preserve source pixels within the selected atlas frame', () => {
-  const contours=JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json','utf8')).actions['chop-vegetables/actor'].foregroundPolygons;
+  for(const [character,action] of [['Cook','chop-vegetables'],['Blacksmith','hammer-contact']]) {
+  const contours=JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8')).actions[`${action}/actor`].foregroundPolygons;
   for(let frame=0;frame<8;frame++) {
     const geometry=motionForegroundGeometry(contours[frame],frame),position=geometry.getAttribute('position'),uv=geometry.getAttribute('uv');
     assert.ok(geometry.index.count>0);
@@ -151,5 +155,6 @@ test('foreground contours preserve source pixels within the selected atlas frame
       assert.ok(Math.abs((1-uv.getY(i))*2-Math.floor(frame/4)-(.5-position.getY(i)))<1e-6);
     }
     geometry.dispose();
+  }
   }
 });

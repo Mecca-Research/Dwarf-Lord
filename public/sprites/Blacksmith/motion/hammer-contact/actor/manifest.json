@@ -1,0 +1,275 @@
+{
+  "version": 2,
+  "character": "Blacksmith",
+  "action": "hammer-contact",
+  "title": "Hammer contact",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/02-hammer-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hammer touching billet",
+      "durationMs": 140,
+      "sourceBounds": [
+        170,
+        101,
+        481,
+        600
+      ],
+      "sourceAnchor": [
+        150.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        164,
+        97
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hammer touching billet toward lift hammer slightly off billet",
+      "durationMs": 140,
+      "sourceBounds": [
+        804,
+        101,
+        1123,
+        600
+      ],
+      "sourceAnchor": [
+        156.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        158,
+        97
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift hammer slightly off billet",
+      "durationMs": 105,
+      "sourceBounds": [
+        1445,
+        101,
+        1761,
+        600
+      ],
+      "sourceAnchor": [
+        155.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        159,
+        97
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift hammer slightly off billet toward short controlled tap onto billet",
+      "durationMs": 115,
+      "sourceBounds": [
+        2087,
+        101,
+        2402,
+        600
+      ],
+      "sourceAnchor": [
+        153.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        161,
+        97
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "short controlled tap onto billet",
+      "durationMs": 140,
+      "sourceBounds": [
+        172,
+        739,
+        482,
+        1240
+      ],
+      "sourceAnchor": [
+        148.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        166,
+        95
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from short controlled tap onto billet toward rebound a short distance",
+      "durationMs": 140,
+      "sourceBounds": [
+        805,
+        739,
+        1124,
+        1240
+      ],
+      "sourceAnchor": [
+        155.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        159,
+        95
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "rebound a short distance",
+      "durationMs": 105,
+      "sourceBounds": [
+        1447,
+        739,
+        1763,
+        1240
+      ],
+      "sourceAnchor": [
+        153.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        161,
+        95
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from rebound a short distance toward hammer touching billet",
+      "durationMs": 115,
+      "sourceBounds": [
+        2090,
+        739,
+        2401,
+        1240
+      ],
+      "sourceAnchor": [
+        150.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        164,
+        95
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "a272f6d59b97353951acd7c2e7e7a7ddc7ca30bd925d49faaad00d934f035df5",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

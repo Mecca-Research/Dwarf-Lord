@@ -53,9 +53,16 @@ try {
   const worker=await page.evaluate(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id),id);
   assert.equal(worker.workMotion.action,action);assert.equal(worker.workMotion.completions,1);
   await page.screenshot({path:`${output}/${action}.png`});
+  if(job==='forge')assert.equal(worker.workMotion.direction,'actor');
   addedWorkers.push(worker);
   await page.evaluate(id=>window.__controlsTest.assignJob(id,null),id);
   await page.waitForFunction(id=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion,id);
+  if(job==='forge') {
+   assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='anvil'&&s.persistent)));
+   await page.evaluate(()=>window.__controlsTest.teleportDwarf('grit',2,-7));
+   await page.waitForTimeout(300);
+   await page.screenshot({path:`${output}/empty-anvil.png`});
+  }
  }
  assert.deepEqual(errors,[]);
  await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,stationAfterCancel,addedWorkers,errors},null,2));

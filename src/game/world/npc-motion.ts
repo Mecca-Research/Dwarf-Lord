@@ -189,7 +189,7 @@ export class NpcWorkMotion {
     if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
-    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : this.appearance === "cook" ? "actor" : "reference";
+    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : (this.appearance === "cook" || this.appearance === "blacksmith") ? "actor" : "reference";
     if (direction !== this.view) {
       ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
       this.view = direction; this.retryAt = 0;

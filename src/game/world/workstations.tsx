@@ -2,26 +2,30 @@ import { Billboard, useTexture } from "@react-three/drei";
 import { useEffect } from "react";
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
-import { JOBS } from "../data/catalog";
+import { workstationSites } from "./workstation-sites";
 import { groundHeight } from "../runtime";
 
-export const cookingSite = JOBS.find(job => job.id === "meals")!;
 
 export const workstationDiagnostics = new Map<string, { id: string; x: number; z: number; persistent: boolean }>();
 
-/** Persistent world prop, independently owned from the Cook's actor atlas. */
-export function CookingWorkstation({ scale }: { scale: number }) {
-  const texture = useTexture(asset("/sprites/workstations/cutting-block/sprite.png"));
+/** Persistent world props, independently owned from actor animation atlases. */
+export function Workstations({ scale }: { scale: number }) {
+  return <>{workstationSites.map(site => <Workstation key={site.id} site={site} scale={scale} />)}</>;
+}
+
+function Workstation({ site, scale }: { site: typeof workstationSites[number]; scale: number }) {
+  const texture = useTexture(asset(`/sprites/workstations/${site.id}/sprite.png`));
   texture.colorSpace = THREE.SRGBColorSpace;
-  const pixel = 1.95 / 520;
+  const pixel = 1.95 / site.bodyHeight;
+  const { targetX: x, targetZ: z } = site.target;
   useEffect(() => {
-    workstationDiagnostics.set("cutting-block", { id: "cutting-block", x: cookingSite.targetX, z: cookingSite.targetZ, persistent: true });
-    return () => { workstationDiagnostics.delete("cutting-block"); };
-  }, []);
+    workstationDiagnostics.set(site.id, { id: site.id, x, z, persistent: true });
+    return () => { workstationDiagnostics.delete(site.id); };
+  }, [site, x, z]);
   return (
-    <group position={[cookingSite.targetX, groundHeight(cookingSite.targetX, cookingSite.targetZ), cookingSite.targetZ]} scale={scale}>
+    <group position={[x, groundHeight(x, z), z]} scale={scale}>
       <Billboard follow>
-        <mesh position={[0, (616 - 320) * pixel, .005]} scale={[640 * pixel, 640 * pixel, 1]} renderOrder={2}>
+        <mesh position={[(320 - site.anchor[0]) * pixel, (site.anchor[1] - 320) * pixel, .005]} scale={[640 * pixel, 640 * pixel, 1]} renderOrder={2}>
           <planeGeometry args={[1, 1]} />
           <meshBasicMaterial map={texture} transparent alphaTest={.34} depthWrite toneMapped={false} side={THREE.DoubleSide} />
         </mesh>

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "actor",
+      "file": "authoring-inputs/actor-sheet.png",
+      "poseCount": 8,
+      "sha256": "ae407ace87004b7be580bc63de393be1c3adacced983a3a4664e76b75aaeb25a",
+      "prompt": "Edit this exact eight-frame Blacksmith hammer-contact sprite sheet into an ACTOR-ONLY animation layer, same 4 columns by 2 rows. Remove all eight anvils and wooden stump bases completely to transparent alpha. Keep the dwarf's face, black beard, cream shirt, dark leather apron, brass fittings, hammer, tongs and orange metal billet held in tongs. Keep exact original upper body, arm, hammer and tong poses in each corresponding frame. Reconstruct missing lower apron, short stocky legs and both boots formerly hidden behind anvil, naturally anatomically coherent. Do not lower or reposition hands/tools after removing anvil: billet stays at original anvil surface elevation. Same scale, camera, lighting, proportions, head and grounded foot location across all eight frames. Exactly two arms, two hands, two feet. Genuine transparent background including removed anvil areas, no ground shadow, no labels, no scenery. Full bodies with generous transparent gutters. High detail semi-realistic game sprite quality matching source.",
+      "reference": "../reference/source-sheet.png",
+      "referenceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727"
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor",
+      "pose": 0
+    },
+    {
+      "input": "actor",
+      "pose": 1
+    },
+    {
+      "input": "actor",
+      "pose": 2
+    },
+    {
+      "input": "actor",
+      "pose": 3
+    },
+    {
+      "input": "actor",
+      "pose": 4
+    },
+    {
+      "input": "actor",
+      "pose": 5
+    },
+    {
+      "input": "actor",
+      "pose": 6
+    },
+    {
+      "input": "actor",
+      "pose": 7
+    }
+  ],
+  "review": "Actor-only hammer/tongs/billet layer; independent anvil required. Contact and loop review pending."
+}

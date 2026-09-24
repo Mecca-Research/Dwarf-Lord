@@ -20,7 +20,31 @@
       "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
       "frameCount": 8,
       "status": "exported",
-      "destination": "public/sprites/Cook/motion/chop-vegetables/actor"
+      "destination": "public/sprites/Cook/motion/chop-vegetables/actor",
+      "station": "cutting-block"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "title": "Hammer contact",
+      "reference": "public/sprites/Blacksmith/work-references/02-hammer-contact.png",
+      "beats": [
+        "hammer touching billet",
+        "continuous midway transition from hammer touching billet toward lift hammer slightly off billet",
+        "lift hammer slightly off billet",
+        "continuous midway transition from lift hammer slightly off billet toward short controlled tap onto billet",
+        "short controlled tap onto billet",
+        "continuous midway transition from short controlled tap onto billet toward rebound a short distance",
+        "rebound a short distance",
+        "continuous midway transition from rebound a short distance toward hammer touching billet"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/hammer-contact/actor",
+      "station": "anvil"
     }
   ]
 }

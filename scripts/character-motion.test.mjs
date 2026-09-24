@@ -149,7 +149,9 @@ test('runtime actor layers and persistent stations retain source provenance and 
   assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,false);
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
- const root=resolve('public/sprites/workstations/cutting-block'),g=json(resolve(root,'generation.json'));
+ for(const id of ['cutting-block','anvil']) {
+ const root=resolve('public/sprites/workstations',id),g=json(resolve(root,'generation.json'));
  assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
  assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
+ }
 });

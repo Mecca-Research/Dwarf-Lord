@@ -128,3 +128,13 @@ First production run passed persistent cooking prop after cancel, shovel complet
 ## 2026-09-24 — Resume and publish verified checkpoint
 
 Recovered the completed validation outputs after usage interruption. Final production browser passed all six mappings: Cook, mining, shoveling, Blacksmith forge, Laborer storage and Ginger timber; cancellation/completion, persistent empty table and mining camera turns verified. Inspected final Cook/empty-table, forge and unobstructed shaft-clearing screenshots. Keyboard skill harness captured gameplay/state; its only error was the previously documented recoverable React #418 hydration warning. TypeScript, Pages build, 180 Node tests, nine Python tests and whitespace checks passed. No additional code changes after validation. Full non-front gait/contact/stride/loop acceptance and independent stations beyond cooking remain unfinished.
+
+## 2026-09-24 — Independent forge, contact measurement and layered review
+
+Added Blacksmith actor-only eight-frame hammer/tongs/billet sheet and separate persistent anvil/stump using built-in imagegen. Source inputs, prompts, hashes and whole-pose assembly are retained. Actor and prop use shared 520-pixel scale/root; per-frame foreground tool contours render over the station. Generalized station root registration from Cook-only to Cook and Blacksmith. Anvil remains when Grit leaves or cancels. Corrected cutting-block exporter crop fringe/clipping while preserving its apparent placement.
+
+Added reproducible layered APNG/contact-sheet previews and workstation-review.html with scrubbing, layer toggles and once-hold/seam playback. Browser checks cover both stations/all frames. New source-bound projected billet/anvil measurement: maximum outside working face 0.233 atlas pixels; not a physical contact or loop approval. Python regressions reject stale actor/prop calibration.
+
+Rejected Blacksmith right eight-frame pose-guide output (wrong support sequence, opaque background) and Elder rear full cane recovery output (apparent cane shortening). Existing gait assets retained. Local rejected images/prompts saved; full non-front gait redraws, tracked-foot stride calibration, cane recovery, log/tool consistency, loops and other independent stations remain unfinished.
+
+Validation: 181 Node tests and 11 Python tests pass; typecheck, production build and layered-review browser checks pass. First full gameplay browser run passed all six mappings, persistent empty anvil/table, cancellation and day completion. Final rerun with adjusted anvil/cutting-block placement also passed; inspected the final eight-frame anvil composite and cooking/forge/empty-anvil screenshots. Existing recoverable React #418 hydration warning remains.

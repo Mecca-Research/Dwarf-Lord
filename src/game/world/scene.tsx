@@ -17,7 +17,8 @@ import {
 import { useGame } from "../store";
 import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
-import { CookingWorkstation, cookingSite, workstationDiagnostics } from "./workstations";
+import { Workstations, workstationDiagnostics } from "./workstations";
+import { activeWorkstation } from "./workstation-sites";
 import { dwarfAppearance } from "./dwarf-appearances";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
@@ -497,7 +498,7 @@ function Actors() {
           }}
         />
       </group>
-      <CookingWorkstation scale={spec.townScale} />
+      <Workstations scale={spec.townScale} />
       {dwarfNodes.map((d) => (
         <DwarfActor key={d.id} dwarf={d} specScale={spec} />
       ))}
@@ -519,11 +520,11 @@ function DwarfActor({
     if (!b || !g) return;
     const y = groundHeight(b.x, b.z);
     const state = useGame.getState();
-    const cooking = dwarfAppearance(dwarf.id) === "cook" && b.anim === "work" && !state.dayResolved &&
-      state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId === "meals";
+    const station = activeWorkstation(dwarfAppearance(dwarf.id),
+      state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId, b.anim === "work", state.dayResolved)?.target;
     // Register the actor to the persistent station, independent of approach tolerance.
-    g.position.set(cooking ? cookingSite.targetX : b.x, cooking ? groundHeight(cookingSite.targetX, cookingSite.targetZ) : y,
-      cooking ? cookingSite.targetZ : b.z);
+    g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
+      station ? station.targetZ : b.z);
     g.rotation.y = b.yaw;
     const mine = zoneAt(b.x, b.z) === "mine";
     const s = mine ? specScale.mineScale : specScale.townScale;
