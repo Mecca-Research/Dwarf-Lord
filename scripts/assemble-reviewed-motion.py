@@ -43,13 +43,18 @@ def main():
         poses,height,floors=inputs[selection['input']];source_index=selection['pose']
         if not isinstance(source_index,int) or not 0<=source_index<len(poses):raise ValueError('Invalid source pose index')
         crop,box,head=poses[source_index]
-        scale=500/height;crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
+        source_config=next(s for s in assembly['inputs'] if s['id']==selection['input'])
+        # Raised tools must not become the actor's horizontal registration point.
+        if 'rootXs' in source_config:
+            if len(source_config['rootXs'])!=source_config['poseCount']:raise ValueError('One root x required per source pose')
+            head=source_config['rootXs'][source_index]-box[0]
+        scale=assembly.get('normalizedHeight',500)/height;crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
         x=i%4*640+320-round(head*scale);ground=floors[source_index//4]
         y=i//4*640+600-round((ground-box[1])*scale)
         if x<i%4*640 or x+crop.width>(i%4+1)*640 or y<i//4*640 or y+crop.height>(i//4+1)*640:raise ValueError('Authored pose exceeds its source cell')
         sheet.alpha_composite(crop,(x,y));marks.append({'root':[i%4*640+320,i//4*640+600],'bodyHeight':500})
     sheet.save(folder/'source-sheet.png')
-    settings={'version':1,'assemblySha256':hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256((folder/'source-sheet.png').read_bytes()).hexdigest(),'targetBodyHeight':520,'targetAnchor':[320,616],'landmarks':marks,'landmarksVerified':False,'durationsMs':[140,140,105,115]*2,'note':'Selected authored full-body poses assembled without limb editing or synthetic in-betweens. Source cell roots preserve the original row floor and calibrated body size.'}
+    settings={'version':1,'assemblySha256':hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256((folder/'source-sheet.png').read_bytes()).hexdigest(),'targetBodyHeight':assembly.get('targetBodyHeight',520),'targetAnchor':assembly.get('targetAnchor',[320,616]),'landmarks':marks,'landmarksVerified':False,'durationsMs':[140,140,105,115]*2,'note':'Selected authored full-body poses assembled without limb editing or synthetic in-betweens. Source cell roots preserve the original row floor and calibrated body size.'}
     (folder/'motion-polish.json').write_text(json.dumps(settings,indent=2)+'\n')
 
 if __name__=='__main__':main()

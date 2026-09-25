@@ -2,7 +2,7 @@
   "version": 1,
   "config": {
     "folder": "public/sprites/Elder/motion/walk/back",
-    "sourceSha256": "025f5f267fc833d27282c40c9ac9bd0d5c81604c971814c587b5b39ec7a472c5",
+    "sourceSha256": "afd1679f8cacdafa3b08768525613c556de3d29c4829479441969830fc9ca862",
     "regions": {
       "cane": [
         450,
@@ -27,7 +27,7 @@
     "strideBodyRatio": 1.2,
     "assumptions": "Back-facing straight travel; current runtime stride/body ratio. Cane planted in frames 0-3 is a diagnostic hypothesis, not an approved contact schedule. Regions isolate visible cane ferrule and boot silhouette bottoms; these are not skeletal joint measurements. Left boot support in frames 0-3 and right boot support in frames 4-7 are diagnostic hypotheses only. Boot-bottom proxies change with sole rotation; do not infer physical stride from them."
   },
-  "manifestSha256": "d83688055d986a6c309550c99dd0805a2ebc3353ee4cc60e72b8167f0e77f632",
+  "manifestSha256": "73e321a1454e91cafb5fb8c1b9b38bc357d396ea4f546e78c832a6c9ba61bd06",
   "samples": [
     {
       "frame": 0,
@@ -151,20 +151,20 @@
     },
     {
       "frame": 6,
-      "frameSha256": "3f4767eb23444ed1dbb571f9be20f67865d97553a4488ef6f1a5c868121b714f",
+      "frameSha256": "0bbcbe7c9e6dcd39e35df3c431e48884a54284d2786289f938282733aa3d4744",
       "timeMs": 780,
       "contacts": {
         "cane": [
-          498.0,
-          587
+          499.5,
+          573
         ],
         "leftBoot": [
-          275.0,
-          577
+          272.0,
+          583
         ],
         "rightBoot": [
-          352.0,
-          609
+          353.0,
+          615
         ]
       },
       "projectedRootY": -274.823
@@ -207,7 +207,7 @@
     "rightBoot": [
       0.0,
       58.405,
-      92.741,
+      86.707,
       126.428
     ]
   },

@@ -45,6 +45,29 @@
       "status": "exported",
       "destination": "public/sprites/Blacksmith/motion/hammer-contact/actor",
       "station": "anvil"
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "title": "Fell tree",
+      "reference": "public/sprites/Ginger/animation/01-front-right.png",
+      "beats": [
+        "axe withdrawn low, ready to draw back",
+        "draw axe backward at waist height",
+        "raise axe across shoulder",
+        "apex of backswing, weight on rear leg",
+        "start downward swing from shoulder",
+        "blade reaches tree notch",
+        "recoil and pull blade out",
+        "lower axe toward ready position"
+      ],
+      "kind": "new-work",
+      "direction": "actor",
+      "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Ginger/motion/fell-tree/actor",
+      "station": "forestry-trunk"
     }
   ]
 }

@@ -17,6 +17,15 @@
       "prompt": "Edit target: Elder dwarf rear-view eight-pose walking sheet. Preserve this exact elderly stocky dwarf, head, coat, straps, pouch on screen RIGHT, legs, boots, eight-cell FOUR-column TWO-row layout, camera and scale. Correct ONLY right-arm and cane motion. All figures face away. One fixed-length wooden walking stick in anatomical RIGHT hand (screen RIGHT) throughout. Top row: cane planted ahead, weight bears on it, right shoulder passes the planted tip, cane tilts backward as character advances. Bottom row: author a CLEAR CANE RECOVERY ARC. Bottom-left figure lifts its cane ferrule OFF the floor, bent right elbow raising entire cane. Second bottom figure swings the intact cane forward, shaft tilted, ferrule visibly high beside the knee. Third bottom figure extends the right arm forward away from viewer with tip still elevated, shaft foreshortened by perspective rather than shortened. Bottom-right figure lowers the ferrule toward a new plant ahead, matching first top-row pose for a natural return. Do not show eight planted vertical sticks. Cane rigid wood same physical length and curved grip in all poses; connected natural wrist/hand; no detached prop, extra limb, cloned hand. Preserve all leg poses, face direction, individual sprite locations and body proportions unchanged. Detailed semi-realistic game rendering. Genuine transparent background, no brown matte, no shadow, no text. Generous gutter around every complete figure and cane.",
       "reference": "authoring-inputs/pre-recovery-sheet.png",
       "referenceSha256": "09f09b428609269b11785b4a336d46619707c4501ea9fb3e47a4164abda71b45"
+    },
+    {
+      "id": "small-recovery",
+      "file": "authoring-inputs/small-recovery.png",
+      "poseCount": 1,
+      "sha256": "f62b6980931b98aaffe8b913638bfe4702655140d8c808f88278f57ac7d1e19c",
+      "prompt": "Make a tiny walking cane recovery edit to this exact rear-view Elder dwarf sprite. Keep everything except right wrist/forearm and cane identical. Lift the ENTIRE cane rigidly up just 15 pixels in this 640x640 image, so metal ferrule bottom moves y589 to y574. Cane must keep exactly its current length (about 270 pixels from hidden grip to ferrule); do not shorten shaft. Right hand moves upward only 15 pixels together with cane, by a very small elbow flex. Keep elbow DOWN near his waist, wrist below chest, absolutely no arm raised near shoulder or head. Keep feet and legs, torso, robe, head, belt and left arm exactly as original. Cane remains nearly vertical, same lean and screen x499. Same stocky body and camera, full body, true transparent background. Minimal difference between frames, not a different pose.",
+      "reference": "authoring-inputs/small-recovery-reference.png",
+      "referenceSha256": "3f4767eb23444ed1dbb571f9be20f67865d97553a4488ef6f1a5c868121b714f"
     }
   ],
   "poses": [
@@ -45,13 +54,13 @@
       "pose": 1
     },
     {
-      "input": "original",
-      "pose": 6
+      "input": "small-recovery",
+      "pose": 0
     },
     {
       "input": "recovery",
       "pose": 7
     }
   ],
-  "review": "Retain seven support/passing poses; final pose adds modest cane lift before replant. Reject generated shortened recovery shaft in source pose 6. Full recovery arc and planted contact remain unapproved."
+  "review": "Retain six support/passing poses, authored small cane lift in frame 6 followed by final lift in frame 7. Right elbow stays below chest; projected shaft length retained within visual tolerance. Full recovery/replant arc and planted contact remain unapproved."
 }

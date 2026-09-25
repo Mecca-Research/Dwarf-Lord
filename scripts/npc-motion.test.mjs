@@ -117,9 +117,9 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     } finally {miner.dispose();}
     for (const [appearance,character,action,job,height] of [
       ['blacksmith','Blacksmith','hammer-contact','forge',520],
-      ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',380],
+      ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',376],
     ]) {
-      const direction = appearance === 'blacksmith' ? 'actor' : 'reference';
+      const direction = ['blacksmith','ginger'].includes(appearance) ? 'actor' : 'reference';
       const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/${direction}/manifest.json`,'utf8'));
       const placement = JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8'));
       assert.equal(placement.actions[direction==='actor'?`${action}/actor`:action].sourceSha256,work.sourceSha256);
@@ -130,7 +130,7 @@ test('workstations hold one completion and reset only on task lifecycle changes'
         for(let i=0;i<50&&!result;i++){result=worker.update(workerBody,job,1,false,0,1.95);await new Promise(r=>setTimeout(r,1));}
         assert.ok(result,`${character} workstation loaded`);
         assert.equal(npcWorkDiagnostics.get(character).direction,direction);
-        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,3);
+        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,appearance === 'ginger' ? 1 : 3);
         assert.ok(Math.abs(result.placement.height-1.95*640/height)<1e-10);
         worker.update(workerBody,job,1,false,100,1.95);
         assert.equal(npcWorkDiagnostics.get(character).completions,1);

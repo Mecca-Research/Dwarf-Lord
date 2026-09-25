@@ -5,6 +5,7 @@ import type { DwarfAppearance } from "./dwarf-appearances";
 export const workstationSites = [
   { id: "cutting-block", appearance: "cook", job: "meals", bodyHeight: 520, anchor: [320, 616] },
   { id: "anvil", appearance: "blacksmith", job: "forge", bodyHeight: 520, anchor: [320, 616] },
+  { id: "forestry-trunk", appearance: "ginger", job: "timber", bodyHeight: 376, anchor: [240, 616] },
 ].map(site => ({ ...site, target: JOBS.find(job => job.id === site.job)! }));
 
 export function activeWorkstation(appearance: DwarfAppearance, job: string | null | undefined, working: boolean, resolved: boolean) {

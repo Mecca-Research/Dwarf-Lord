@@ -8,7 +8,7 @@ try {
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
  await page.goto(process.env.REVIEW_URL??'http://localhost:8081/Dwarf-Lord/workstation-review.html');
  const ready=()=>page.waitForFunction(()=>window.render_game_to_text&&!JSON.parse(window.render_game_to_text()).loading);
- await ready();const count=await page.locator('#station option').count();assert.equal(count,2);
+ await ready();const count=await page.locator('#station option').count();assert.equal(count,3);
  const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()));
  const pixels=()=>page.evaluate(()=>document.querySelector('canvas').toDataURL());
  for(let i=0;i<count;i++) {
@@ -32,5 +32,5 @@ try {
   await page.click('#play');await page.uncheck('#repeat');results.push(completed);
  }
  assert.deepEqual(errors,[]);await writeFile(`${output}/results.json`,JSON.stringify({results,errors},null,2));
- console.log('PASS eight-frame Cook/Blacksmith layered review, fixed props, tool occlusion, once-hold and repeat playback');
+ console.log('PASS eight-frame Cook/Blacksmith/Ginger layered review, fixed props, tool occlusion, once-hold and repeat playback');
 } finally {await browser.close()}
