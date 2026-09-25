@@ -54,7 +54,7 @@ def main():
         if x<i%4*640 or x+crop.width>(i%4+1)*640 or y<i//4*640 or y+crop.height>(i//4+1)*640:raise ValueError('Authored pose exceeds its source cell')
         sheet.alpha_composite(crop,(x,y));marks.append({'root':[i%4*640+320,i//4*640+600],'bodyHeight':500})
     sheet.save(folder/'source-sheet.png')
-    settings={'version':1,'assemblySha256':hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256((folder/'source-sheet.png').read_bytes()).hexdigest(),'targetBodyHeight':assembly.get('targetBodyHeight',520),'targetAnchor':assembly.get('targetAnchor',[320,616]),'landmarks':marks,'landmarksVerified':False,'durationsMs':[140,140,105,115]*2,'note':'Selected authored full-body poses assembled without limb editing or synthetic in-betweens. Source cell roots preserve the original row floor and calibrated body size.'}
+    settings={'version':1,'assemblySha256':hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256((folder/'source-sheet.png').read_bytes()).hexdigest(),'targetBodyHeight':assembly.get('targetBodyHeight',520),'targetAnchor':assembly.get('targetAnchor',[320,616]),'landmarks':marks,'landmarksVerified':False,'durationsMs':assembly.get('durationsMs',[140,140,105,115]*2),'note':'Selected authored full-body poses assembled without limb editing or synthetic in-betweens. Source cell roots preserve the original row floor and calibrated body size.'}
     (folder/'motion-polish.json').write_text(json.dumps(settings,indent=2)+'\n')
 
 if __name__=='__main__':main()

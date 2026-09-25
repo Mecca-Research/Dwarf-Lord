@@ -62,6 +62,24 @@
       "prompt": "Edit ONLY the arms in this exact right-facing Blacksmith walking sprite. Keep head, face, beard, broad torso, apron, ALL leg and boot pixels/poses, camera, scale and lighting unchanged. The NEAR anatomical RIGHT arm currently hangs behind the body on screen left. Move this near right arm slightly FORWARD to screen right, hand in front of hip at low waist height, elbow gently bent. Less forward reach than a full contact pose: this arm is returning toward neutral for the next passing pose. FAR LEFT arm swings slightly BACK toward screen left and is mostly hidden by torso. One hand per arm, empty hands. Preserve exact body proportions, clothes, head size, original two legs and ground baseline. One full sprite on genuine transparent alpha. No additional objects, shadows, floor or text.",
       "reference": "authoring-inputs/left-down-reference.png",
       "referenceSha256": "7af31e06fa08112b797c9144f295f76a2b8ac30db54491dfc7900d7494ec525f"
+    },
+    {
+      "id": "support-a",
+      "file": "authoring-inputs/support-a.png",
+      "poseCount": 1,
+      "sha256": "0d27ebf3c04f0354345bd44d3203b115b7993afc422de8aa7a5c66ec461edfa4",
+      "prompt": "Make a VERY SMALL correction to this exact right-facing dwarf passing pose. Move ONLY the grounded far boot about one sixth of its boot length forward/right (20 pixels at the supplied image scale). The lifted near foot stays in its exact place in front. Preserve supporting boot length and sole floor height; adjust supporting shin naturally to its unchanged hip. Preserve all other pixels in appearance: head, shoulders, arms, apron, lifted leg, camera, proportions, scale. One complete dwarf with exactly two boots, transparent alpha background. Do not advance the supporting boot all the way in front of the lifted toe; supporting toe should finish only very slightly beyond the lifted toe. This is a small spacing correction, not a new pose.",
+      "reference": "authoring-inputs/support-a-reference.png",
+      "referenceSha256": "ea8dc1b8b99d7ad9f740d7b2fc73ecf0e53f60812bb6d70832cdce9b87c70e88"
+    },
+    {
+      "id": "support-b",
+      "file": "authoring-inputs/support-b.png",
+      "poseCount": 1,
+      "sha256": "b6366270c6070b617d99f078262d3b269711b7f084719ad70272a091549e6666",
+      "prompt": "Create the opposite-leg passing phase from this exact right-facing Blacksmith sprite, changing ONLY leg overlap/depth. Preserve the planted boot's exact position and silhouette at bottom (heel x215, toe x345, flat sole y615), do NOT move that supporting boot forward. This grounded supporting leg now becomes the NEAR anatomical right leg: show its outside boot buckles and shin in front. The bent raised leg now becomes the FAR left leg: its raised boot must pass BEHIND the planted shin and be partly occluded by it, without moving the planted boot. Keep supporting knee and ankle slant backward toward heel just like this reference; do not straighten supporting shin into a vertical leg. Head, torso, arms, apron, camera, stocky proportions, scale, lighting all identical. Exactly two legs/two boots, one grounded and one raised. No arm swing in passing pose. Genuine transparent alpha background.",
+      "reference": "authoring-inputs/support-b-reference.png",
+      "referenceSha256": "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07"
     }
   ],
   "poses": [
@@ -74,7 +92,7 @@
       "pose": 0
     },
     {
-      "input": "near-passing",
+      "input": "support-a",
       "pose": 0
     },
     {
@@ -90,7 +108,7 @@
       "pose": 5
     },
     {
-      "input": "far-passing",
+      "input": "support-b",
       "pose": 0
     },
     {
@@ -98,5 +116,15 @@
       "pose": 0
     }
   ],
-  "review": "Five new whole-pose edits: frames 2/6 distinguish near-in-front and far-behind passing legs with neutral arms; frames 3/7 add opposite arm swing during forward recovery; frame 1 fixes early near-arm counter-swing. Existing contact correction retained. Support travel, remaining contact/down poses and seam are not approved."
+  "review": "Passing frames 2 and 6 redraw supporting leg spacing, preserving opposite depth order. Timing follows reviewed flat-sole keyframe travel. Whole-cycle foot identities, heel/toe transitions and loop seam remain unapproved.",
+  "durationsMs": [
+    140,
+    130,
+    100,
+    130,
+    140,
+    89,
+    173,
+    98
+  ]
 }

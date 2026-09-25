@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/02-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "ad2ff4159d7d57cdc302deae7d7b5a07910e8e2b7a249e1cf27c3df40987d6ac",
+  "sourceSha256": "e30d137d5b76acec2eb96b96e46203956bd269dba51de9d291b1e1df247ceef5",
   "sourceSize": [
     2560,
     1280
@@ -47,7 +47,7 @@
       "id": "key-01",
       "file": "01.png",
       "description": "left weight down, right heel lifts",
-      "durationMs": 140,
+      "durationMs": 130,
       "sourceBounds": [
         790,
         100,
@@ -71,15 +71,15 @@
       "id": "key-02",
       "file": "02.png",
       "description": "right foot airborne passing left support leg",
-      "durationMs": 105,
+      "durationMs": 100,
       "sourceBounds": [
-        1492,
+        1490,
         100,
-        1682,
+        1686,
         600
       ],
       "sourceAnchor": [
-        108.0,
+        110.0,
         500.0
       ],
       "groundAnchor": [
@@ -87,7 +87,7 @@
         616
       ],
       "placement": [
-        208,
+        206,
         96
       ]
     },
@@ -95,7 +95,7 @@
       "id": "key-03",
       "file": "03.png",
       "description": "right leg extends forward, left heel rises",
-      "durationMs": 115,
+      "durationMs": 130,
       "sourceBounds": [
         2090,
         100,
@@ -143,7 +143,7 @@
       "id": "key-05",
       "file": "05.png",
       "description": "right weight down, left heel lifts",
-      "durationMs": 140,
+      "durationMs": 89,
       "sourceBounds": [
         791,
         743,
@@ -167,15 +167,15 @@
       "id": "key-06",
       "file": "06.png",
       "description": "left foot airborne passing right support leg",
-      "durationMs": 105,
+      "durationMs": 173,
       "sourceBounds": [
-        1491,
+        1486,
         740,
-        1689,
+        1690,
         1240
       ],
       "sourceAnchor": [
-        109.0,
+        114.0,
         500.0
       ],
       "groundAnchor": [
@@ -183,7 +183,7 @@
         616
       ],
       "placement": [
-        207,
+        201,
         96
       ]
     },
@@ -191,7 +191,7 @@
       "id": "key-07",
       "file": "07.png",
       "description": "left leg extends forward, right heel rises",
-      "durationMs": 115,
+      "durationMs": 98,
       "sourceBounds": [
         2076,
         740,
@@ -246,13 +246,13 @@
     "durationMs": 1000,
     "durationsMs": [
       140,
+      130,
+      100,
+      130,
       140,
-      105,
-      115,
-      140,
-      140,
-      105,
-      115
+      89,
+      173,
+      98
     ],
     "loopApproved": false,
     "endBehavior": "review-seam",
@@ -267,7 +267,7 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "79aebdef576abecb1f568ab8134a6b340ea8d82e95ad98855c39e1bdf8e76252",
+    "settingsSha256": "5415a9a9bbbb3996a0de3c08786c51d9a02f62540619f4539ad9fc25971c202c",
     "exportVersion": 2,
     "stationRegistration": null
   },

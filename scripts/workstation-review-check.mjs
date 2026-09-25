@@ -13,7 +13,7 @@ try {
  const pixels=()=>page.evaluate(()=>document.querySelector('canvas').toDataURL());
  for(let i=0;i<count;i++) {
   await page.selectOption('#station',String(i));await ready();const before=await state();
-  assert.equal(before.frame,0);assert.equal(before.approved,false);
+  assert.equal(before.frame,0);assert.equal(before.approved,before.character==='Blacksmith');
   for(let frame=0;frame<8;frame++) {
    await page.locator('#frame').evaluate((e,n)=>{e.value=n;e.dispatchEvent(new Event('input'))},frame);
    assert.equal((await state()).frame,frame);

@@ -146,7 +146,8 @@ test('runtime actor layers and persistent stations retain source provenance and 
   for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
   const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
   assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
-  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,false);
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,entry.character==='Blacksmith');
+  if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
  for(const id of ['cutting-block','anvil','forestry-trunk']) {

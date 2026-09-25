@@ -254,7 +254,7 @@
       105,
       115
     ],
-    "loopApproved": false,
+    "loopApproved": true,
     "endBehavior": "hold-last",
     "rootMotion": "stationary-or-task-driven"
   },
@@ -271,5 +271,10 @@
     "exportVersion": 2,
     "stationRegistration": null
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+  "note": "Visual loop review recorded for the exact artifacts and scope in loop-approval.json. Task playback and overall production readiness are unchanged.",
+  "loopReview": {
+    "status": "approved",
+    "record": "loop-approval.json",
+    "scope": "Fixed-view independent anvil tapping cycle only. Visual loop approval; task playback remains once-hold. Does not approve other forge actions, hidden geometry, walking, or all-direction contacts."
+  }
 }

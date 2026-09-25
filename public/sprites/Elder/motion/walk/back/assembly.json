@@ -26,6 +26,15 @@
       "prompt": "Make a tiny walking cane recovery edit to this exact rear-view Elder dwarf sprite. Keep everything except right wrist/forearm and cane identical. Lift the ENTIRE cane rigidly up just 15 pixels in this 640x640 image, so metal ferrule bottom moves y589 to y574. Cane must keep exactly its current length (about 270 pixels from hidden grip to ferrule); do not shorten shaft. Right hand moves upward only 15 pixels together with cane, by a very small elbow flex. Keep elbow DOWN near his waist, wrist below chest, absolutely no arm raised near shoulder or head. Keep feet and legs, torso, robe, head, belt and left arm exactly as original. Cane remains nearly vertical, same lean and screen x499. Same stocky body and camera, full body, true transparent background. Minimal difference between frames, not a different pose.",
       "reference": "authoring-inputs/small-recovery-reference.png",
       "referenceSha256": "3f4767eb23444ed1dbb571f9be20f67865d97553a4488ef6f1a5c868121b714f"
+    },
+    {
+      "id": "replant",
+      "file": "authoring-inputs/replant.png",
+      "poseCount": 1,
+      "sha256": "59fcfcf6081029361a9f6a6d72664d634ba519cb0b5f36f4cf20f1b72780a64e",
+      "prompt": "Edit this exact rear-view Elder dwarf walk sprite, final recovery pose BEFORE cane replant. Lower the whole cane and its gripping right hand slightly, so the metal cane ferrule finishes just above the supporting LEFT boot sole, about 8 pixels above it. Current cane tip is too high. Keep cane the same physical length, shaft thickness and wood pattern, move the hand with it by a small natural elbow extension, arm low alongside waist. Left supporting boot sole is near y573; target cane tip near y565 in this 640x640 image. Preserve original legs/boots (right leg reaching ahead away from camera), torso, robe, head, belt, left arm, camera, scale and light exactly. Do not stretch the shaft or move entire dwarf. Genuine transparent alpha background, one complete dwarf, no labels/scenery.",
+      "reference": "authoring-inputs/replant-reference.png",
+      "referenceSha256": "72f7ec15267f24f3a4fdcfd08150a4d896f1f1298bd144eb74952149cf2afadb"
     }
   ],
   "poses": [
@@ -58,9 +67,9 @@
       "pose": 0
     },
     {
-      "input": "recovery",
-      "pose": 7
+      "input": "replant",
+      "pose": 0
     }
   ],
-  "review": "Retain six support/passing poses, authored small cane lift in frame 6 followed by final lift in frame 7. Right elbow stays below chest; projected shaft length retained within visual tolerance. Full recovery/replant arc and planted contact remain unapproved."
+  "review": "Frames 6/7 now lift then lower cane before frame 0 replant, with low elbow and complete shaft. Keep six original body poses. Review source-normalized outputs rather than prompt leg labels. Projected recovery transition improved; world-space plant travel, rear leg phases and full loop still unapproved."
 }
