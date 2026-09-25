@@ -1,0 +1,275 @@
+{
+  "version": 2,
+  "character": "Ginger",
+  "action": "fell-tree",
+  "title": "Fell tree",
+  "direction": "actor",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d3ec703c0e45e05ec2ad9599acca465eb5a4484c1a5d48ea9be1660b38dff468",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 0.84,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "axe withdrawn low, ready to draw back",
+      "durationMs": 140,
+      "sourceBounds": [
+        176,
+        155,
+        540,
+        600
+      ],
+      "sourceAnchor": [
+        144.0,
+        445.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        119,
+        242
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "draw axe backward at waist height",
+      "durationMs": 140,
+      "sourceBounds": [
+        696,
+        149,
+        1119,
+        600
+      ],
+      "sourceAnchor": [
+        264.0,
+        451.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        18,
+        237
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise axe across shoulder",
+      "durationMs": 105,
+      "sourceBounds": [
+        1451,
+        62,
+        1756,
+        600
+      ],
+      "sourceAnchor": [
+        149.0,
+        538.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        115,
+        164
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "apex of backswing, weight on rear leg",
+      "durationMs": 115,
+      "sourceBounds": [
+        2092,
+        88,
+        2409,
+        601
+      ],
+      "sourceAnchor": [
+        148.0,
+        512.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        116,
+        186
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "start downward swing from shoulder",
+      "durationMs": 140,
+      "sourceBounds": [
+        166,
+        735,
+        490,
+        1240
+      ],
+      "sourceAnchor": [
+        154.0,
+        505.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        111,
+        192
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "blade reaches tree notch",
+      "durationMs": 140,
+      "sourceBounds": [
+        818,
+        791,
+        1237,
+        1240
+      ],
+      "sourceAnchor": [
+        142.0,
+        449.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        121,
+        239
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "recoil and pull blade out",
+      "durationMs": 105,
+      "sourceBounds": [
+        1443,
+        794,
+        1836,
+        1240
+      ],
+      "sourceAnchor": [
+        157.0,
+        446.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        108,
+        241
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "lower axe toward ready position",
+      "durationMs": 115,
+      "sourceBounds": [
+        2087,
+        794,
+        2464,
+        1240
+      ],
+      "sourceAnchor": [
+        153.0,
+        446.0
+      ],
+      "groundAnchor": [
+        240,
+        616
+      ],
+      "placement": [
+        111,
+        241
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      240,
+      616
+    ],
+    "targetBodyHeight": 420,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "8ea45eff1657e15828e29223d4ee9ccdd8fe13c34f7f0ff552e5b12fa5f52d6f",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

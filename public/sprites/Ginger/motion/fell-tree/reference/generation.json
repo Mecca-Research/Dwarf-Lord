@@ -4,14 +4,14 @@
   "title": "Fell tree",
   "reference": "public/sprites/Ginger/animation/01-front-right.png",
   "beats": [
-    "axe low beside tree trunk",
-    "draw axe backward",
-    "raise axe to shoulder",
-    "accelerate toward trunk",
-    "axe contacts notch",
-    "pull axe free",
-    "recover axe to side",
-    "ready next swing"
+    "axe withdrawn low, ready to draw back",
+    "draw axe backward at waist height",
+    "raise axe across shoulder",
+    "apex of backswing, weight on rear leg",
+    "start downward swing from shoulder",
+    "blade reaches tree notch",
+    "recoil and pull blade out",
+    "lower axe toward ready position"
   ],
   "kind": "new-work",
   "direction": "reference",
@@ -19,6 +19,19 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Ginger/motion/fell-tree/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Ginger. Action: Fell tree. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. axe low beside tree trunk | 2. draw axe backward | 3. raise axe to shoulder | 4. accelerate toward trunk | 5. axe contacts notch | 6. pull axe free | 7. recover axe to side | 8. ready next swing",
-  "sourceName": "exec-3ed90af8-f09c-4b43-a78e-7d321b4d500b.png"
+  "prompt": "Edit target: supplied 4x2 transparent Ginger tree-chopping sprite sheet. Make ONE precise correction: bottom row FIRST figure (animation frame5) is wrongly at contact. Change ONLY HIS ARMS AND AXE to a clearly intermediate DOWNSTROKE: axe head at his face/chest height, halfway between the raised axe in preceding top-right frame and the waist-high tree notch in bottom-row second frame. His two hands grip the lower end of the same LONG wooden shaft, shaft diagonal from hands near his shoulder toward axe head above and left of the notch. Maintain same head size/shape and shaft length as other frames, correct natural anatomy. Keep fixed tree, bark, notch, roots, planted feet, body position, same character costume and face. Preserve the other seven cells unchanged. Retain exact 4-column 2-row layout and genuine transparent background, no labels, do not crop any object.",
+  "sourceName": "exec-dd1d12a8-7bdd-465c-bc5b-1680bee109bf.png",
+  "previousGenerationPrompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Ginger. Action: Fell tree. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. axe low beside tree trunk | 2. draw axe backward | 3. raise axe to shoulder | 4. accelerate toward trunk | 5. axe contacts notch | 6. pull axe free | 7. recover axe to side | 8. ready next swing",
+  "editHistory": [
+    {
+      "input": "authoring-inputs/original-sheet.png",
+      "sha256": "5ec41d8dc769fc9a57ec2062b6953a7e6da18218c8edb503a5007afc7439eedc",
+      "prompt": "Use case: precise-object-edit. Edit the supplied eight-frame Ginger dwarf tree-chopping sprite sheet into a mechanically coherent animation. Preserve the EXACT character identity, very stocky dwarf proportions, curly vivid ginger hair and pointed full beard, cream rolled sleeves, brown vest and green trousers, boots, semirealistic detailed rendering. Output ONE 4-column by 2-row sheet, all eight complete scenes on genuine transparent background, generous margins, no captions. Fixed three-quarter view facing screen right as reference. SAME stationary tree, trunk diameter, bark, notch location, roots and floor chips IN EVERY CELL; same camera, lighting, character scale and two fixed planted boots throughout. One unchanged steel axe head and same wooden handle length throughout; BOTH hands remain gripping the SAME handle, no extra fingers/arms. Animate one full swing with EIGHT DISTINCT chronological poses: 1 axe withdrawn low away from notch with handle angled down-left, ready; 2 draw axe backward to left at waist height, torso rotates left; 3 lift axe across left shoulder, head high left; 4 apex of backswing high behind shoulder, weight on back leg; 5 halfway downstroke with axe at chest height BETWEEN raised and contact, torso rotates toward tree; 6 blade edge actually embedded horizontally into the fixed notch at waist height, arms extended; 7 recoil pulling blade 15 cm out of notch, hands follow, knees absorb impact; 8 axe lowers back toward original low-ready pose, close to pose1 but not a duplicate. IMPORTANT do not repeat reference's discontinuous poses; add the missing halfway downstroke and actual return trajectory. Tree remains intact; notch does not jump or change size. NO motion streaks, no floating tools, no multiple axe heads, no pasted labels, no change of stance or viewpoint. Each entire figure, tree and axe must fit its own separate cell without touching edges."
+    },
+    {
+      "input": "authoring-inputs/swing-correction.png",
+      "sha256": "6d679c0bccacf01390477d37e1d954284c0e1f2690b2fece89778b240fc1ea67",
+      "prompt": "Edit target: supplied 4x2 transparent Ginger tree-chopping sprite sheet. Make ONE precise correction: bottom row FIRST figure (animation frame5) is wrongly at contact. Change ONLY HIS ARMS AND AXE to a clearly intermediate DOWNSTROKE: axe head at his face/chest height, halfway between the raised axe in preceding top-right frame and the waist-high tree notch in bottom-row second frame. His two hands grip the lower end of the same LONG wooden shaft, shaft diagonal from hands near his shoulder toward axe head above and left of the notch. Maintain same head size/shape and shaft length as other frames, correct natural anatomy. Keep fixed tree, bark, notch, roots, planted feet, body position, same character costume and face. Preserve the other seven cells unchanged. Retain exact 4-column 2-row layout and genuine transparent background, no labels, do not crop any object."
+    }
+  ]
 }

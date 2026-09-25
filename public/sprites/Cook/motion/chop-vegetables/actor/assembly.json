@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "actor",
+      "file": "authoring-inputs/actor-sheet.png",
+      "poseCount": 8,
+      "sha256": "91feac7a9fe9001e8e5c2619e4b5f766560024613100da0638caf8322909a5ad",
+      "prompt": "Edit target is this eight-frame Cook dwarf chopping animation sprite sheet. Create the ACTOR-ONLY animation layer. Remove every wooden table/cutting block, bowl, vegetable, onion, garlic and loose food completely from every cell, leaving transparent alpha there. Preserve ALL EIGHT characters and their exact head, torso, hand/knife positions, facial identity, burgundy shirt, dirty beige apron, arm poses, character size, 4-column 2-row positions, isometric camera and lighting. Reconstruct the normally occluded lower apron, short stocky dwarf legs and two boots behind the removed table naturally. The right hand holds the same chopping knife throughout; the left hand rests flat at the original tabletop height, poised to stabilize food on a separately rendered table. Do not lower arms after removing table. Full body, two hands, two feet per figure. Same grounded foot level across all eight poses. This is layer separation for compositing with a separate fixed workstation, not a new pose redesign. EXACT original detailed semi-realistic art quality. Genuine transparent background throughout removed table space, no scenery, props except knife, labels or shadows. Eight nonoverlapping full-body sprites in four columns/two rows.",
+      "reference": "../reference/source-sheet.png",
+      "referenceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09"
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor",
+      "pose": 0
+    },
+    {
+      "input": "actor",
+      "pose": 1
+    },
+    {
+      "input": "actor",
+      "pose": 2
+    },
+    {
+      "input": "actor",
+      "pose": 3
+    },
+    {
+      "input": "actor",
+      "pose": 4
+    },
+    {
+      "input": "actor",
+      "pose": 5
+    },
+    {
+      "input": "actor",
+      "pose": 6
+    },
+    {
+      "input": "actor",
+      "pose": 7
+    }
+  ],
+  "review": "Actor-only layer; knife retained, independent table required. Contact and loop approval pending."
+}

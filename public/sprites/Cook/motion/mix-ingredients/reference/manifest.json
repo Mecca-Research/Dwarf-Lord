@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Cook",
   "action": "mix-ingredients",
   "title": "Mix ingredients",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         168.5,
-        427
+        427.0
       ],
       "groundAnchor": [
         320,
@@ -55,15 +55,15 @@
         437
       ],
       "sourceAnchor": [
-        167.5,
-        427
+        168.22128378378378,
+        427.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        88,
+        87,
         24
       ]
     },
@@ -80,7 +80,7 @@
       ],
       "sourceAnchor": [
         168.0,
-        427
+        427.0
       ],
       "groundAnchor": [
         320,
@@ -103,15 +103,15 @@
         437
       ],
       "sourceAnchor": [
-        168.0,
-        427
+        168.72128378378378,
+        427.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        87,
+        86,
         24
       ]
     },
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         167.5,
-        426
+        426.0
       ],
       "groundAnchor": [
         320,
@@ -151,15 +151,15 @@
         881
       ],
       "sourceAnchor": [
-        167.5,
-        426
+        168.22128378378378,
+        426.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        88,
+        87,
         25
       ]
     },
@@ -175,16 +175,16 @@
         881
       ],
       "sourceAnchor": [
-        167.5,
-        426
+        168.22128378378378,
+        425.2787162162162
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        88,
-        25
+        87,
+        26
       ]
     },
     {
@@ -199,18 +199,28 @@
         881
       ],
       "sourceAnchor": [
-        168.0,
-        426
+        168.72128378378378,
+        426.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        87,
+        86,
         25
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        100,
+        435,
+        570,
+        595
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            1.5416128817946628e-08,
+            2.396969023266138e-07
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9939,
+          "measuredCorrectionPx": [
+            -0.7357139587402344,
+            0.2988557517528534
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99387,
+          "measuredCorrectionPx": [
+            0.2806544899940491,
+            0.38692590594291687
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99224,
+          "measuredCorrectionPx": [
+            -0.882234513759613,
+            0.37846216559410095
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99355,
+          "measuredCorrectionPx": [
+            -0.3310006558895111,
+            0.3653590977191925
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99057,
+          "measuredCorrectionPx": [
+            -0.7244405746459961,
+            0.47421544790267944
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99435,
+          "measuredCorrectionPx": [
+            -0.6029764413833618,
+            0.6008631587028503
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98949,
+          "measuredCorrectionPx": [
+            -0.8549366593360901,
+            0.45969173312187195
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

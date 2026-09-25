@@ -1,0 +1,73 @@
+{
+  "entries": [
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "title": "Chop vegetables",
+      "reference": "public/sprites/Cook/work-references/00-chop-vegetables.png",
+      "beats": [
+        "knife poised above vegetables on wooden cutting block",
+        "continuous midway transition from knife poised above vegetables on wooden cutting block toward lift knife a little",
+        "lift knife a little",
+        "continuous midway transition from lift knife a little toward chop down onto vegetable with other hand safely clear",
+        "chop down onto vegetable with other hand safely clear",
+        "continuous midway transition from chop down onto vegetable with other hand safely clear toward lift knife and nudge next slice into position",
+        "lift knife and nudge next slice into position",
+        "continuous midway transition from lift knife and nudge next slice into position toward knife poised above vegetables on wooden cutting block"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/chop-vegetables/actor",
+      "station": "cutting-block"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "title": "Hammer contact",
+      "reference": "public/sprites/Blacksmith/work-references/02-hammer-contact.png",
+      "beats": [
+        "hammer touching billet",
+        "continuous midway transition from hammer touching billet toward lift hammer slightly off billet",
+        "lift hammer slightly off billet",
+        "continuous midway transition from lift hammer slightly off billet toward short controlled tap onto billet",
+        "short controlled tap onto billet",
+        "continuous midway transition from short controlled tap onto billet toward rebound a short distance",
+        "rebound a short distance",
+        "continuous midway transition from rebound a short distance toward hammer touching billet"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/hammer-contact/actor",
+      "station": "anvil"
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "title": "Fell tree",
+      "reference": "public/sprites/Ginger/animation/01-front-right.png",
+      "beats": [
+        "axe withdrawn low, ready to draw back",
+        "draw axe backward at waist height",
+        "raise axe across shoulder",
+        "apex of backswing, weight on rear leg",
+        "start downward swing from shoulder",
+        "blade reaches tree notch",
+        "recoil and pull blade out",
+        "lower axe toward ready position"
+      ],
+      "kind": "new-work",
+      "direction": "actor",
+      "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Ginger/motion/fell-tree/actor",
+      "station": "forestry-trunk"
+    }
+  ]
+}

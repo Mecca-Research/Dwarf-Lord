@@ -1,5 +1,8 @@
 import { TimberHall, RidgeTent } from "./reference-assets";
-import { groundHeight } from "../runtime";
+import { groundHeight, runtime, zoneAt } from "../runtime";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import type { Group } from "three";
 import {
   Anvil,
   Barrel,
@@ -384,56 +387,65 @@ export function FloodedShaft({ x, z }: { x: number; z: number }) {
 
 export function MineAdit({ x, z }: { x: number; z: number }) {
   const m = useMats();
+  const rockShell = useRef<Group>(null), tunnelShell = useRef<Group>(null);
+  useFrame(() => {
+    const atEntrance = Math.hypot(runtime.player.x - x, runtime.player.z - z) < 9;
+    const exterior = zoneAt(runtime.player.x, runtime.player.z) !== "mine" && !atEntrance;
+    if (rockShell.current) rockShell.current.visible = exterior;
+    if (tunnelShell.current) tunnelShell.current.visible = exterior;
+  });
   return (
     <group position={[x, 0, z]}>
-      {/* Irregular cliff instead of a single slab */}
-      <mesh
-        position={[-2.2, 3.2, -1.4]}
-        scale={[3.4, 2.8, 2.2]}
-        rotation={[0.15, 0.4, -0.1]}
-        material={m.rock}
-        castShadow
-        receiveShadow
-      >
-        <icosahedronGeometry args={[2.2, 1]} />
-      </mesh>
-      <mesh
-        position={[2.6, 3.0, -1.6]}
-        scale={[3.2, 2.6, 2.4]}
-        rotation={[0.1, -0.5, 0.08]}
-        material={m.rock}
-        castShadow
-        receiveShadow
-      >
-        <icosahedronGeometry args={[2.3, 1]} />
-      </mesh>
-      <mesh
-        position={[0.2, 5.2, -2.2]}
-        scale={[4.2, 2.2, 2.6]}
-        rotation={[0.2, 0.2, 0]}
-        material={m.rock}
-        castShadow
-      >
-        <icosahedronGeometry args={[2.4, 1]} />
-      </mesh>
-      <mesh
-        position={[-5.4, 4.2, -1.2]}
-        rotation-y={0.4}
-        scale={[2.2, 2.8, 1.8]}
-        material={m.rock}
-        castShadow
-      >
-        <icosahedronGeometry args={[2.1, 1]} />
-      </mesh>
-      <mesh
-        position={[5.6, 3.8, -1]}
-        rotation-y={-0.35}
-        scale={[2.4, 2.6, 1.7]}
-        material={m.rock}
-        castShadow
-      >
-        <icosahedronGeometry args={[2.0, 1]} />
-      </mesh>
+      <group ref={rockShell}>
+        {/* Cut away near the entrance too, so shaft-clearing workers remain visible. */}
+        <mesh
+          position={[-2.2, 3.2, -1.4]}
+          scale={[3.4, 2.8, 2.2]}
+          rotation={[0.15, 0.4, -0.1]}
+          material={m.rock}
+          castShadow
+          receiveShadow
+        >
+          <icosahedronGeometry args={[2.2, 1]} />
+        </mesh>
+        <mesh
+          position={[2.6, 3.0, -1.6]}
+          scale={[3.2, 2.6, 2.4]}
+          rotation={[0.1, -0.5, 0.08]}
+          material={m.rock}
+          castShadow
+          receiveShadow
+        >
+          <icosahedronGeometry args={[2.3, 1]} />
+        </mesh>
+        <mesh
+          position={[0.2, 5.2, -2.2]}
+          scale={[4.2, 2.2, 2.6]}
+          rotation={[0.2, 0.2, 0]}
+          material={m.rock}
+          castShadow
+        >
+          <icosahedronGeometry args={[2.4, 1]} />
+        </mesh>
+        <mesh
+          position={[-5.4, 4.2, -1.2]}
+          rotation-y={0.4}
+          scale={[2.2, 2.8, 1.8]}
+          material={m.rock}
+          castShadow
+        >
+          <icosahedronGeometry args={[2.1, 1]} />
+        </mesh>
+        <mesh
+          position={[5.6, 3.8, -1]}
+          rotation-y={-0.35}
+          scale={[2.4, 2.6, 1.7]}
+          material={m.rock}
+          castShadow
+        >
+          <icosahedronGeometry args={[2.0, 1]} />
+        </mesh>
+      </group>
       {/* Tunnel mouth */}
       <mesh position={[0, 1.7, 0.15]} material={m.black}>
         <boxGeometry args={[3.4, 3.5, 2.8]} />
@@ -516,16 +528,18 @@ export function MineAdit({ x, z }: { x: number; z: number }) {
           </group>
         );
       })}
-      {/* Tunnel ceiling / walls */}
-      <mesh position={[0, 3.5, -22]} material={m.rock}>
-        <boxGeometry args={[6.2, 0.8, 36]} />
-      </mesh>
-      <mesh position={[-2.4, 1.6, -22]} material={m.rock}>
-        <boxGeometry args={[0.8, 3.6, 36]} />
-      </mesh>
-      <mesh position={[2.4, 1.6, -22]} material={m.rock}>
-        <boxGeometry args={[0.8, 3.6, 36]} />
-      </mesh>
+      <group ref={tunnelShell}>
+        {/* Tunnel ceiling / walls */}
+        <mesh position={[0, 3.5, -22]} material={m.rock}>
+          <boxGeometry args={[6.2, 0.8, 36]} />
+        </mesh>
+        <mesh position={[-2.4, 1.6, -22]} material={m.rock}>
+          <boxGeometry args={[0.8, 3.6, 36]} />
+        </mesh>
+        <mesh position={[2.4, 1.6, -22]} material={m.rock}>
+          <boxGeometry args={[0.8, 3.6, 36]} />
+        </mesh>
+      </group>
     </group>
   );
 }

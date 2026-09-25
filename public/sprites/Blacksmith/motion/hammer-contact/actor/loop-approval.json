@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+    "settingsSha256": "a272f6d59b97353951acd7c2e7e7a7ddc7ca30bd925d49faaad00d934f035df5",
+    "frameSha256": [
+      "ad06a7c99e18f787db6a5f0cac209081f983cecfe585eab488f27a96e8bf40ee",
+      "63f1faba9c79a1430645692cf34217ddeb733749da5472621e7daf7ab2349d4e",
+      "6771fff7b9156ed3f0a69210ab62a67f9e7f92236b12a9fb2f6cf59ed63f2ff8",
+      "29be0df96cc2e8eefe478779e1df760fcef134be0ce83647dcf7d76764872453",
+      "8b77fdac93295aef2f88f0a09d33cc3972356ce432e70b7c02e96cb288f098dc",
+      "827ba2345896889f88e6d5e730c92e32a478edc896b9b360dbd61801cc1ccdc5",
+      "68b37ef7d11e4736b012c86e94375d0d4b91ac650c2e0890faace702ff19a779",
+      "2555b38e986d9813ebceb5b4e6a28f50c8f6d99bf82b647e8e7cf1855a856ee5"
+    ],
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-contact",
+    "direction": "actor"
+  },
+  "scope": "Fixed-view independent anvil tapping cycle only. Visual loop approval; task playback remains once-hold. Does not approve other forge actions, hidden geometry, walking, or all-direction contacts.",
+  "checks": {
+    "identity-and-scale": "Reviewed all eight layered poses: same head, beard, apron, camera and body scale; no direction change.",
+    "station-and-foot-contact": "Independent anvil stays fixed. Visible supporting boot stays on the same ground plane. Far foot is occluded by the station and is not separately certified.",
+    "hand-and-tool-contact": "Both hands retain their hammer/tong grips through lift, tap and rebound; source-bound projected billet measurement stays within 0.233 pixels of the working face.",
+    "prop-continuity": "Same separate anvil/stump throughout; hammer, tongs and billet remain present, with no workpiece exchange or completion-state reset.",
+    "last-to-first-transition": "Frame 7 returns the hammer to the billet at the contact pose used by frame 0. Reviewed all layered keyframes and repeat/seam playback; no material reset at the seam."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "df8812c82193c2230992e6b2e30841c8e57a53ceb2efe9124f24e046c571c368"
+    },
+    {
+      "file": "../../../../workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "../../../../workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "../../../../../../docs/forge-contact-regions.json",
+      "sha256": "bb11940b23c285b885dc7ebb3739ed1e82848e513b59c7de667ef5e48801c833"
+    },
+    {
+      "file": "../../../../../../docs/forge-contact-measurement.json",
+      "sha256": "9c87e2426a0869ec1af2ece1737179597eac42c99492bb366ca451b92267f882"
+    }
+  ]
+}

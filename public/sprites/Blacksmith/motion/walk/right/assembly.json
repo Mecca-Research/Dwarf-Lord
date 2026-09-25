@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "generation": "authoring-inputs/original-generation.json",
+      "sha256": "8d72d1ab048c3e7713702a68b3aaedd866aa69946bde3c47a43338f9091b61ad"
+    },
+    {
+      "id": "contact",
+      "file": "authoring-inputs/contact-corrected.png",
+      "poseCount": 1,
+      "prompt": "Edit this one Blacksmith dwarf sprite to correct walking counter-swing. Keep head, face, beard, stocky body, outfit, BOTH LEGS, boots, exact right-facing camera and overall scale unchanged. Change ONLY arms: the NEAR anatomical RIGHT arm, currently hanging back on the screen-left side, must swing FORWARD toward screen RIGHT, elbow gently bent, hand in front of apron at waist height. The FAR left arm must swing BACK toward screen LEFT, mostly occluded behind torso. This is left-foot-forward heel contact: near right leg trails behind to screen left, so near right arm must reach ahead to screen right. Preserve one hand per arm, no tools. Exact same detailed semi-realistic style. One full-body isolated sprite on genuine transparent alpha, centered with margins, no text, no scenery.",
+      "sha256": "6e900337d56961fbdc16a3889c2669c7bd77af14f2022338cd89a39e15e7aa50",
+      "reference": "authoring-inputs/contact-reference.png",
+      "referenceSha256": "82e6a2be9c828078532497275b4d0ce393b207d31171f326c57b89f34388ad62"
+    },
+    {
+      "id": "near-passing",
+      "file": "authoring-inputs/near-passing.png",
+      "poseCount": 1,
+      "sha256": "3b31c34a4bb091a5cfc9f7768b27527ee6982bb7cf29e6a5e29d85bb88ad69f8",
+      "prompt": "Edit this exact sprite IN PLACE. Preserve the broad stocky body, exact large head and head position, upper torso shape, leather apron length, clothes and textures, camera perspective and boot-ground baseline. Make this a narrow central WALK PASSING pose instead of the wide stride. Anatomical RIGHT leg is the NEAR leg, currently extended backward on screen left: bring that near right bent knee forward under the hip, with near right boot lifted about half a boot height above ground, beside the far support ankle, pointing right. The FAR LEFT leg now plants its boot flat directly underneath the pelvis, almost vertical. Near raised shin must cross in front of far support shin. Bring the NEAR right arm from extended forward to neutral hanging beneath shoulder; far arm also approaches neutral. Keep body bulk, belly, chest, head size, shoulder breadth and height EXACTLY as supplied. Do not slim or elongate dwarf, shorten boots, lengthen apron, change angle or redraw face. Single full body game sprite on genuine transparent alpha; no ground, shadows, text, duplicate or other objects.",
+      "reference": "authoring-inputs/near-passing-reference.png",
+      "referenceSha256": "8e8246e1ed5454c0be47152a71a51f40cddab52281cb9d72c6b6f44336c82b08"
+    },
+    {
+      "id": "far-passing",
+      "file": "authoring-inputs/far-passing.png",
+      "poseCount": 1,
+      "sha256": "9dbecd887edbf225493d646e0021f86f7e11e060f2a3dab55bd5507c76fc0fea",
+      "prompt": "Edit this exact sprite to the OPPOSITE walk passing phase. Keep the entire head, torso, broad chest/belly, apron, face, hair, clothing textures and both neutral arms EXACTLY unchanged. Same camera, head size, shoulder width and height. Change ONLY the two legs: the NEAR anatomical RIGHT leg, currently bent and airborne crossing in FRONT, must now be planted almost vertically below the hip with its boot flat on the same ground baseline. The FAR anatomical LEFT leg must be bent and passing forward with its boot lifted next to the support ankle, partly HIDDEN BEHIND the near supporting shin. This reverses the two legs' roles and which shin is in front; do not merely repeat the input pose. Narrow mid-stride passing stance, not a wide stride. Dwarf remains facing screen right; preserve exact overall stocky proportions. One complete full body with genuine transparent alpha, no floor/shadow/text.",
+      "reference": "authoring-inputs/near-passing.png",
+      "referenceSha256": "3b31c34a4bb091a5cfc9f7768b27527ee6982bb7cf29e6a5e29d85bb88ad69f8"
+    },
+    {
+      "id": "near-high",
+      "file": "authoring-inputs/near-high.png",
+      "poseCount": 1,
+      "sha256": "abe98705bda140399c86d483076fc1fbf39bc34a927efde252895ab15477d94b",
+      "prompt": "Edit this exact right-facing dwarf sprite into the NEXT walk phase after this passing pose. Preserve exact head, head height, broad torso, camera, apron/clothing details, lighting and stocky proportions. NEAR anatomical RIGHT leg now reaches FORWARD to screen right, knee almost extended, heel just above the ground ready for the next heel strike; its boot is about one boot-length ahead of hip. FAR LEFT supporting leg trails behind screen left, heel lifting and toe still on ground. Near RIGHT arm swings BACK toward screen left opposite near leg; FAR LEFT arm swings forward to right, naturally partly hidden behind torso. Clear coherent two-leg two-arm counter-swing. This is high/up phase before right heel contact, not planted contact. Full body, same size and ground level as input, transparent alpha, no shadows or objects.",
+      "reference": "authoring-inputs/near-passing.png",
+      "referenceSha256": "3b31c34a4bb091a5cfc9f7768b27527ee6982bb7cf29e6a5e29d85bb88ad69f8"
+    },
+    {
+      "id": "far-high",
+      "file": "authoring-inputs/far-high.png",
+      "poseCount": 1,
+      "sha256": "0ab0a67457cc48dbfaa4d59ab8f1b0acf6a56e6f603d3b02e8b5093a7698c03d",
+      "prompt": "Edit this exact right-facing dwarf sprite into the NEXT walk phase after this passing pose. Preserve exact head, head height, broad torso, camera, apron/clothing details, lighting and stocky proportions. FAR anatomical LEFT leg now reaches FORWARD to screen right, knee almost extended, heel just above the ground ready for the next heel strike, boot about one boot-length ahead of hip. NEAR anatomical RIGHT supporting leg trails behind screen left, heel lifting and toe still on ground. Near RIGHT arm swings FORWARD toward screen right opposite the trailing near leg; FAR LEFT arm swings back to left, naturally partly hidden behind torso. The NEAR supporting thigh/shin passes IN FRONT of far leading thigh where they cross; keep anatomical sides consistent. Clear coherent two-leg two-arm counter-swing. High/up phase before LEFT heel contact, not planted contact. Full body, same size and ground level as input, genuine transparent alpha, no shadows or objects.",
+      "reference": "authoring-inputs/far-passing.png",
+      "referenceSha256": "9dbecd887edbf225493d646e0021f86f7e11e060f2a3dab55bd5507c76fc0fea"
+    },
+    {
+      "id": "left-down-arm",
+      "file": "authoring-inputs/left-down-arm.png",
+      "poseCount": 1,
+      "sha256": "42b23c102733677fc43759ae0e2d5a80f491bc37f2b6f83b15435ecfca43177f",
+      "prompt": "Edit ONLY the arms in this exact right-facing Blacksmith walking sprite. Keep head, face, beard, broad torso, apron, ALL leg and boot pixels/poses, camera, scale and lighting unchanged. The NEAR anatomical RIGHT arm currently hangs behind the body on screen left. Move this near right arm slightly FORWARD to screen right, hand in front of hip at low waist height, elbow gently bent. Less forward reach than a full contact pose: this arm is returning toward neutral for the next passing pose. FAR LEFT arm swings slightly BACK toward screen left and is mostly hidden by torso. One hand per arm, empty hands. Preserve exact body proportions, clothes, head size, original two legs and ground baseline. One full sprite on genuine transparent alpha. No additional objects, shadows, floor or text.",
+      "reference": "authoring-inputs/left-down-reference.png",
+      "referenceSha256": "7af31e06fa08112b797c9144f295f76a2b8ac30db54491dfc7900d7494ec525f"
+    },
+    {
+      "id": "support-a",
+      "file": "authoring-inputs/support-a.png",
+      "poseCount": 1,
+      "sha256": "0d27ebf3c04f0354345bd44d3203b115b7993afc422de8aa7a5c66ec461edfa4",
+      "prompt": "Make a VERY SMALL correction to this exact right-facing dwarf passing pose. Move ONLY the grounded far boot about one sixth of its boot length forward/right (20 pixels at the supplied image scale). The lifted near foot stays in its exact place in front. Preserve supporting boot length and sole floor height; adjust supporting shin naturally to its unchanged hip. Preserve all other pixels in appearance: head, shoulders, arms, apron, lifted leg, camera, proportions, scale. One complete dwarf with exactly two boots, transparent alpha background. Do not advance the supporting boot all the way in front of the lifted toe; supporting toe should finish only very slightly beyond the lifted toe. This is a small spacing correction, not a new pose.",
+      "reference": "authoring-inputs/support-a-reference.png",
+      "referenceSha256": "ea8dc1b8b99d7ad9f740d7b2fc73ecf0e53f60812bb6d70832cdce9b87c70e88"
+    },
+    {
+      "id": "support-b",
+      "file": "authoring-inputs/support-b.png",
+      "poseCount": 1,
+      "sha256": "b6366270c6070b617d99f078262d3b269711b7f084719ad70272a091549e6666",
+      "prompt": "Create the opposite-leg passing phase from this exact right-facing Blacksmith sprite, changing ONLY leg overlap/depth. Preserve the planted boot's exact position and silhouette at bottom (heel x215, toe x345, flat sole y615), do NOT move that supporting boot forward. This grounded supporting leg now becomes the NEAR anatomical right leg: show its outside boot buckles and shin in front. The bent raised leg now becomes the FAR left leg: its raised boot must pass BEHIND the planted shin and be partly occluded by it, without moving the planted boot. Keep supporting knee and ankle slant backward toward heel just like this reference; do not straighten supporting shin into a vertical leg. Head, torso, arms, apron, camera, stocky proportions, scale, lighting all identical. Exactly two legs/two boots, one grounded and one raised. No arm swing in passing pose. Genuine transparent alpha background.",
+      "reference": "authoring-inputs/support-b-reference.png",
+      "referenceSha256": "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07"
+    }
+  ],
+  "poses": [
+    {
+      "input": "contact",
+      "pose": 0
+    },
+    {
+      "input": "left-down-arm",
+      "pose": 0
+    },
+    {
+      "input": "support-a",
+      "pose": 0
+    },
+    {
+      "input": "near-high",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 4
+    },
+    {
+      "input": "original",
+      "pose": 5
+    },
+    {
+      "input": "support-b",
+      "pose": 0
+    },
+    {
+      "input": "far-high",
+      "pose": 0
+    }
+  ],
+  "review": "Passing frames 2 and 6 redraw supporting leg spacing, preserving opposite depth order. Timing follows reviewed flat-sole keyframe travel. Whole-cycle foot identities, heel/toe transitions and loop seam remain unapproved.",
+  "durationsMs": [
+    140,
+    130,
+    100,
+    130,
+    140,
+    89,
+    173,
+    98
+  ]
+}

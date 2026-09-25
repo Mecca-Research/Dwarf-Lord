@@ -7,6 +7,7 @@ import type { Dwarf } from "../types";
 import {
   camBasis,
   facingFromMove,
+  facingOctant,
   groundHeight,
   resolveMove,
   runtime,
@@ -14,7 +15,11 @@ import {
   zoneAt,
 } from "../runtime";
 import { useGame } from "../store";
+import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
+import { Workstations, workstationDiagnostics } from "./workstations";
+import { activeWorkstation } from "./workstation-sites";
+import { dwarfAppearance } from "./dwarf-appearances";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
 
@@ -106,6 +111,7 @@ function Systems() {
   const buildings = useGame((s) => s.buildings);
   const playing = useGame((s) => s.playing);
   const expedition = useGame((s) => s.expedition);
+  const dayResolved = useGame((s) => s.dayResolved);
   const acc = useRef(0);
   const promptAcc = useRef(0);
   const stepRef = useRef(step);
@@ -133,6 +139,17 @@ function Systems() {
         runtime.player.speed = 0;
         runtime.player.anim = "idle";
       },
+      assignJob: (id: string, job: string | null) => useGame.getState().assignJob(id, job),
+      resolveDay: () => useGame.getState().resolveDay(),
+      nextMorning: () => useGame.getState().nextMorning(),
+      setDwarfDest: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) body.dest = { x, z };
+      },
+      teleportDwarf: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) { body.x = x; body.z = z; body.dest = null; body.anim = "idle"; body.speed = 0; }
+      },
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
       },
@@ -140,6 +157,7 @@ function Systems() {
     window.__controlsTest = probe;
     window.render_game_to_text = () =>
       JSON.stringify({
+        workstations: [...workstationDiagnostics.values()],
         coordinates: "x east, z south, y up",
         player: runtime.player,
         zone: runtime.zone,
@@ -147,7 +165,7 @@ function Systems() {
         dialogue: useGame.getState().dialogue,
         dwarves: useGame
           .getState()
-          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id) })),
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), workMotion: npcWorkDiagnostics.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
       });
     window.advanceTime = (ms: number) => {
       if (!useGame.getState().playing || useGame.getState().dialogue) return;
@@ -316,9 +334,14 @@ function Systems() {
     for (const dw of dwarves) {
       const b = runtime.dwarves.get(dw.id);
       if (!b) continue;
+      b.facing = facingOctant(b.yaw, runtime.cameraAzimuth);
       if (dw.isSteward || dw.narrativeOnly) {
         b.anim = "sit";
         b.speed = 0;
+        continue;
+      }
+      if (dayResolved && dw.assignedJobId && !(expedition?.status === "out" && expedition.dwarfIds.includes(dw.id))) {
+        b.dest = null; b.speed = 0; b.anim = dw.sitOnStart ? "sit" : "idle";
         continue;
       }
       if (expedition?.status === "out" && expedition.dwarfIds.includes(dw.id)) {
@@ -340,11 +363,12 @@ function Systems() {
           const vx = dx / dist;
           const vz = dz / dist;
           const moved = resolveMove(b.x, b.z, vx * 2.4 * dt, vz * 2.4 * dt, 0.45);
+          b.speed = Math.hypot(moved.x - b.x, moved.z - b.z) / Math.max(dt, 1e-6);
           b.x = moved.x;
           b.z = moved.z;
           b.yaw = Math.atan2(-vx, -vz);
+          b.facing = facingFromMove(vx, vz, runtime.cameraAzimuth);
           b.anim = "walk";
-          b.speed = 2.4;
         }
       } else if (dw.sitOnStart) {
         b.anim = "sit";
@@ -353,7 +377,7 @@ function Systems() {
         b.anim = "work";
         b.speed = 0;
       } else {
-        b.anim = b.anim === "walk" ? "idle" : b.anim;
+        b.anim = b.anim === "walk" || b.anim === "work" ? "idle" : b.anim;
         b.speed = 0;
       }
     }
@@ -474,6 +498,7 @@ function Actors() {
           }}
         />
       </group>
+      <Workstations scale={spec.townScale} />
       {dwarfNodes.map((d) => (
         <DwarfActor key={d.id} dwarf={d} specScale={spec} />
       ))}
@@ -494,7 +519,12 @@ function DwarfActor({
     const g = ref.current;
     if (!b || !g) return;
     const y = groundHeight(b.x, b.z);
-    g.position.set(b.x, y, b.z);
+    const state = useGame.getState();
+    const station = activeWorkstation(dwarfAppearance(dwarf.id),
+      state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId, b.anim === "work", state.dayResolved)?.target;
+    // Register the actor to the persistent station, independent of approach tolerance.
+    g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
+      station ? station.targetZ : b.z);
     g.rotation.y = b.yaw;
     const mine = zoneAt(b.x, b.z) === "mine";
     const s = mine ? specScale.mineScale : specScale.townScale;
@@ -589,6 +619,8 @@ declare global {
       setKeys?: (codes: string[]) => void;
       setDest?: (x: number, z: number) => void;
       teleport?: (x: number, z: number) => void;
+      setDwarfDest?: (id: string, x: number, z: number) => void;
+      teleportDwarf?: (id: string, x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
     };
   }

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Helga",
   "action": "inspect-mineral",
   "title": "Inspect mineral",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         196.5,
-        379
+        379.0
       ],
       "groundAnchor": [
         320,
@@ -55,15 +55,15 @@
         421
       ],
       "sourceAnchor": [
-        195.5,
-        380
+        194.77871621621622,
+        380.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
+        50,
         89
       ]
     },
@@ -80,7 +80,7 @@
       ],
       "sourceAnchor": [
         196.0,
-        383
+        383.0
       ],
       "groundAnchor": [
         320,
@@ -104,7 +104,7 @@
       ],
       "sourceAnchor": [
         195.5,
-        381
+        381.0
       ],
       "groundAnchor": [
         320,
@@ -127,15 +127,15 @@
         864
       ],
       "sourceAnchor": [
-        196.5,
-        386
+        197.22128378378378,
+        386.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
+        47,
         81
       ]
     },
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         195.5,
-        380
+        380.0
       ],
       "groundAnchor": [
         320,
@@ -175,15 +175,15 @@
         864
       ],
       "sourceAnchor": [
-        196.0,
-        379
+        195.27871621621622,
+        379.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
+        49,
         91
       ]
     },
@@ -199,18 +199,28 @@
         864
       ],
       "sourceAnchor": [
-        195.5,
-        378
+        194.77871621621622,
+        378.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        49,
+        50,
         92
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "ba8e55a41a37fca41f7cf03a3400e89ee8ddfe1a183becbc51d8975b32bbd2bc",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        140,
+        425,
+        580,
+        600
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -3.8006024993819665e-09,
+            1.4852484575555991e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99236,
+          "measuredCorrectionPx": [
+            0.5950911045074463,
+            0.17535001039505005
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99065,
+          "measuredCorrectionPx": [
+            0.20610180497169495,
+            0.3899073004722595
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98177,
+          "measuredCorrectionPx": [
+            0.292192280292511,
+            0.30994388461112976
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98894,
+          "measuredCorrectionPx": [
+            -0.5560191869735718,
+            0.027541374787688255
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99025,
+          "measuredCorrectionPx": [
+            0.2833644449710846,
+            0.13517309725284576
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99236,
+          "measuredCorrectionPx": [
+            0.6873291730880737,
+            0.09949004650115967
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99019,
+          "measuredCorrectionPx": [
+            0.8579745292663574,
+            0.15057912468910217
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

@@ -52,3 +52,117 @@ User requests animation variations for every one of the 84 static actions. Activ
 All 84 source sheets are saved and exported: 336 individual 640x640 RGBA keyframes across 14 characters, plus per-action atlases, APNGs, source sheets, review sheets, prompts and manifests. Work animation review player is linked from the character viewer. No gameplay renderer change. Known gait and station redraw limitations are documented; productionReady remains false.
 
 Validation: typecheck, all 156 tests, Pages build, browser review of all 84 actions/336 images including keyboard/race/mobile controls, independent web-game harness, and transparent-border check for all 336 frames passed. Work remains isolated on codex/work-action-variations; scratch output is under work/ and must not be committed.
+
+
+## 2026-09-17 — PR #9 motion-polish follow-up
+
+Active checkout `/opt/codex-work/dwarf-lord`, branch `codex/expanded-character-cycles`. PR9 remains open/draft. Continue here; do not restart asset generation.
+
+Added 25 fixed-station registrations (34 total, measured maximum translation below 0.7 px). Reproducible region config, source/settings-bound residual report and registration helper are checked in. Redrew Ginger tree chopping, Elder rear cane/phase order, and Helga left carry counter-swing/passing poses with original edit inputs and exact prompts retained. Built-in image generation used; exporter only extracts/registers authored poses.
+
+New shared motion playback controller is exercised by the review UI: displacement-driven walking/carry, fractional phase retained on turns and pauses, one-shot completion hold, physical body-size normalization, bounded large time steps. Ground-travel stride is a review estimate. Live game still uses static NPC art; no unapproved production flags were changed.
+
+Remaining: inspect/redraw other non-front gait issues, final cane/tool/log contact and shape continuity, production loop acceptance, workstation physical body calibration and live renderer/task integration. The whole motion-polish request is not complete. See docs/motion-polish.md for precise delivered scope and acceptance work. Scratch logs and browser evidence are in work/expanded-cycles; do not commit work/ or __pycache__/.
+
+Validation for this checkpoint: 173 Node tests, seven Python registration tests, TypeScript check, Pages build, all 153-sequence/1,224-frame browser checks including fractional pause/resume, zero source-edge warnings, and diff whitespace checks pass. Station residual evidence binds to the current source and calibration hashes.
+
+
+## 2026-09-18 — Live NPC walking integration
+
+Integrated the eight expanded characters' authored walking atlases into the game renderer. Fixed missing NPC facing updates and nominal speed while blocked. Displacement-driven phase includes parent world scale, preserves turns, freezes at collisions, ignores teleports and resets to contact when a new walk begins. Shared lazy GPU atlases are repacked to 1280x640; per-actor UVs prevent actors affecting one another. Six unused atlases retained; active leases and stale async requests handled explicitly.
+
+Shared controller source moved to src/game/motion-playback.ts with generated standalone public/motion-playback.mjs and predev/prebuild sync hooks. Do not directly import public modules from game source: Vite rejects this (caught and fixed in browser). Test guards generated copy consistency.
+
+Validation: 176 Node tests, TypeScript and Pages build pass. New live-game browser test passes in dev AND /Dwarf-Lord/ production: loading, walk progression, turn, collision freeze, arrival/idle fallback. Screenshots inspected under work/expanded-cycles/runtime-browser. Production still emits the pre-existing recoverable React hydration warning documented in prior visual reviews; no page errors from the new motion code.
+
+Art acceptance still open: remaining non-front phase/pose issues, tool/log/cane geometry/contact continuity, workstation physical scales and work-action renderer/task mapping. Full motion-polish task remains incomplete. All existing approval flags remain false; do not infer approval from the successful runtime checks.
+
+
+## 2026-09-23 — Loading continuity, task reset and contact correction
+
+PR9 remains the active branch. Fixed gait phase freezing during atlas loads; first-load displacement is accumulated in stride units. Idle releases leases and invalidates async responses; failed loads retry after five seconds. Fixed canceled job destinations/work state, protected/invalid assignment movement, and work stopping at day resolution (including immediate runtime reset before save).
+
+Saved and exported an accepted single-pose Blacksmith right-view contact arm correction using built-in imagegen. Source pose 0 now has near right arm forward opposite trailing near leg. Traceable whole-pose assembly retains the original source sheet, generation record and exact edit input/prompt. Other seven poses and final loop remain unapproved. Do not treat this one correction as a complete gait.
+
+Validation: 176 Node tests passed before the final art update; all 11 affected motion tests passed afterward. Typecheck passed. Expanded live-game browser test passed walking, turns, blocked freeze, arrival, job assignment/arrival/cancellation/reassignment/day resolution/next morning. Browser and rendered art screenshots inspected. Full task still incomplete: non-front gait corrections, measured foot/cane contact, tool/log continuity, approved loops and calibrated workstation rendering remain. Job state transitions are implemented; workstation animation mapping is not.
+
+
+## 2026-09-23 — Calibrated work playback integration
+
+Cook meals now renders the eight-frame chop-vegetables character/workstation atlas. Separate source-hash-bound render calibration uses projected head-to-visible-boot height 540 and root [320,600]; table width does not control character size. Meal approach moved from inside fire collision to [-0.5,4.5]. NpcWorkMotion shares the atlas cache/repacking path, runs once and holds, pauses for dialogue, and releases/resets on cancellation, movement, reassignment, day change and resolution. No animation reward callbacks: economy remains once per day. Removed per-render-frame time cap after software-rendering browser test exposed work taking excessive wall time.
+
+Female Miner limestone/iron jobs now use all eight pickaxe-swing directions with the existing tool-independent 340-pixel calibration. Direction changes preserve fractional work phase and completion state. Full character/station sprites still billboard; persistent standalone stations and remaining job/character mappings are not implemented. No loops promoted and no contact-quality approvals claimed.
+
+Two generated Blacksmith passing candidates were rejected after assembled review due to changed proportions. Existing committed walking art retained. Scratch candidates/prompts under work/expanded-cycles. Do not integrate them as approved art.
+
+Validation so far: 177 Node tests and typecheck/build passed; Cook production browser passed arrival, calibrated station, final hold, cancel/reassign and day completion. Extended production browser passed Female Miner camera turns and retained completion. Screenshot inspection exposed mine shell and backdrop occlusion; added interior shell cutaway and background depth ordering so tool work can be seen. Final production browser rerun passed; inspected Cook and unobstructed mining screenshots. Final 177 Node tests, TypeScript, Pages build and whitespace checks pass. The skill keyboard harness also ran; its only console error was the previously documented recoverable React hydration warning. Remaining full request: non-front gait corrections, measured foot/cane travel, tool/log contact corrections, loop approvals, other workstation mappings and persistent station separation.
+
+## 2026-09-23 — Additional work mappings and rear-view contact diagnostics
+
+Added calibrated Laborer stack-crates/storage and Ginger fell-tree/timber work playback. Loader now accepts calibrated new-work sequences. Moved storage approach outside building collision. Unit coverage exercises both real manifests, physical scale, completion and cancellation.
+
+Added reproducible source/frame-bound Elder back cane/boot silhouette diagnostic. Narrowed boot regions after visual overlay exposed contamination from neighboring boots. Overlay now isolates all three landmarks. Current first-half planted-cane hypothesis predicts 133.696 atlas-pixel drift; do not adopt a stride or claim contact approval from this model. All loop and production approval flags remain false.
+
+Validation: 177 Node tests, nine Python tests, TypeScript and Pages build pass. Live workstation browser validation in progress. Full art/contact/loop acceptance remains unfinished.
+
+A full Blacksmith right-view replacement sheet was generated and rejected: closer passing silhouettes still did not establish alternating anatomical support legs. Candidate/prompt kept under work/expanded-cycles/rejected-blacksmith-right-full.*; committed art unchanged.
+
+Live production browser passed all four work mappings, final holds, cancellation and the mining camera turn. Screenshots inspected; added a clearing around the timber job so decorative pines do not obscure the authored tree/axe work. Rechecking that final presentation change.
+
+Final targeted production check passed Laborer/Ginger arrival, completion and cancellation after the clearing change; inspected final forest screenshot and confirmed visible axe/tree. Final typecheck, Pages build, 177 Node tests, nine Python tests and whitespace check passed. Existing recoverable React hydration warning persists. No new loop approvals.
+
+## 2026-09-23 — Persistent cooking station, actor-only motion and shovel integration
+
+Generated Cook actor-only chopping sheet and separate empty cutting block via built-in imagegen, preserving source/prompt/provenance. Exported eight actor frames under Cook/motion/chop-vegetables/actor. Original combined work references retained. Runtime renders independent persistent table; actor-only body behind it and source-bound triangulated forearm/knife contours in front. Common body calibration/root and working visual-root registration preserve station contact despite approach tolerance. Station remains after cancellation/day completion. Fixed-view billboards remain; other independent stations are unfinished.
+
+Mapped Female Miner shaft2 to directional shovel-cycle. Unit tests cover reset from pickaxe to shovel, actor placement and foreground UV mapping; provenance tests cover runtime layer and prop exports.
+
+Elder back assembled seven retained poses plus a modest final cane lift. Rejected full-sheet pose 6 (shortened shaft) and additional single-pose edit (unnatural high arm). Full support contact/recovery arc remains unapproved. Contact report regenerated AFTER audit to bind final manifest; first-half drift hypothesis remains 133.696 pixels. Still no verified stride or final loop approvals.
+
+Validation in progress: 179 Node tests, nine Python tests, typecheck passed. Production workstation browser checks running. Runtime layer exporter: scripts/export-runtime-motion-layers.py; plan docs/runtime-motion-layers.json. Render occlusion polygons are in Cook/motion/render-calibration.json and tied to source SHA.
+
+Added Blacksmith hammer-contact mapping through a new Repair forge fittings job (existing daily repair mechanism; no animation-triggered output). Calibration 564-pixel visible body, root [280,592], source-bound. New economy regression verifies idle gives no repair and assignment repairs forge without resource output. 180 Node tests now pass.
+
+First production run passed persistent cooking prop after cancel, shovel completion, mining view turns and previous Laborer/Ginger work. Inspected screenshots and found entrance shell hiding shovel work from the approach; expanded cutaway to nine units around MineAdit. Final browser rerun includes forge assignment and cutaway fix. No loop approval or measured stride adopted.
+
+## 2026-09-24 — Resume and publish verified checkpoint
+
+Recovered the completed validation outputs after usage interruption. Final production browser passed all six mappings: Cook, mining, shoveling, Blacksmith forge, Laborer storage and Ginger timber; cancellation/completion, persistent empty table and mining camera turns verified. Inspected final Cook/empty-table, forge and unobstructed shaft-clearing screenshots. Keyboard skill harness captured gameplay/state; its only error was the previously documented recoverable React #418 hydration warning. TypeScript, Pages build, 180 Node tests, nine Python tests and whitespace checks passed. No additional code changes after validation. Full non-front gait/contact/stride/loop acceptance and independent stations beyond cooking remain unfinished.
+
+## 2026-09-24 — Independent forge, contact measurement and layered review
+
+Added Blacksmith actor-only eight-frame hammer/tongs/billet sheet and separate persistent anvil/stump using built-in imagegen. Source inputs, prompts, hashes and whole-pose assembly are retained. Actor and prop use shared 520-pixel scale/root; per-frame foreground tool contours render over the station. Generalized station root registration from Cook-only to Cook and Blacksmith. Anvil remains when Grit leaves or cancels. Corrected cutting-block exporter crop fringe/clipping while preserving its apparent placement.
+
+Added reproducible layered APNG/contact-sheet previews and workstation-review.html with scrubbing, layer toggles and once-hold/seam playback. Browser checks cover both stations/all frames. New source-bound projected billet/anvil measurement: maximum outside working face 0.233 atlas pixels; not a physical contact or loop approval. Python regressions reject stale actor/prop calibration.
+
+Rejected Blacksmith right eight-frame pose-guide output (wrong support sequence, opaque background) and Elder rear full cane recovery output (apparent cane shortening). Existing gait assets retained. Local rejected images/prompts saved; full non-front gait redraws, tracked-foot stride calibration, cane recovery, log/tool consistency, loops and other independent stations remain unfinished.
+
+Validation: 181 Node tests and 11 Python tests pass; typecheck, production build and layered-review browser checks pass. First full gameplay browser run passed all six mappings, persistent empty anvil/table, cancellation and day completion. Final rerun with adjusted anvil/cutting-block placement also passed; inspected the final eight-frame anvil composite and cooking/forge/empty-anvil screenshots. Existing recoverable React #418 hydration warning remains.
+
+## 2026-09-24 — Resume: five Blacksmith right gait pose edits
+
+Confirmed forge checkpoint 4a772a4 pushed to PR #9 and updated PR description. Generated individual passing/recovery/arm edits instead of another whole-sheet gait. Rejected two static-profile-based passing candidates due to narrower body/camera appearance. Five selected walk-reference edits now replace right frames 1,2,3,6,7: early near-arm transition, two distinct narrow passing poses, two opposite counter-swing recovery poses. Exact references/prompts/source hashes retained in authoring-inputs and assembly.json. Contact frames and frame 5 retained. Regenerated complete eight-frame atlas/APNG/review; all source changes are reproducible through whole-pose assembly.
+
+Validation passed: 181 Node tests, 11 Python tests, Pages build, whitespace check and targeted production browser review (new source hash, all eight frame controls, repeat, seam, no page/asset errors). Inspected normalized contact sheet and passing frames. Nonuniform support-point spacing still prevents verified foot travel/stride calibration or loop approval; all flags remain false. Full remaining scope is not complete. Useful next checkpoint is the down/contact/high support-foot trajectory for this right gait, then other non-front views, cane recovery and tool/log grips. Independent cooking and forging are integrated; other independent stations remain outstanding.
+
+## 2026-09-25 — Resume: independent forestry station and smaller Elder cane recovery
+
+Added Ginger actor-only eight-frame axe cycle and persistent forestry-trunk station for timber. Runtime mapping, registration, foreground layering, source provenance, review library, previews and lifecycle browser assertions updated. Whole-pose assembly supports source rootXs and explicit shared scale/export registration; new Python reproduction regression covers raised-tool registration. Elder rear frame 6 adopts a modest cane lift with low elbow; source-bound contact report regenerated. Cane first-half drift still 133.696px, so full recovery/stride/loops remain unapproved.
+
+Retried high-arm Elder and Blacksmith support-spacing attempts. High-arm candidate rejected; smaller Elder candidate accepted. Blacksmith support edits failed requested spacing (backward overshoot, forward overshoot, opposite leg insufficient correction), so current right gait retained. Candidate files remain under work/expanded-cycles and generated image originals, not runtime.
+
+Validation so far: typecheck and Pages build passed; 181 Node and 12 Python tests pass; all three independent station browser reviews pass. Full gameplay validation subsequently passed all six jobs, including forestry completion/cancellation and persistent empty tree. Skill client smoke passed movement/rendering; its only recorded console error is the existing recoverable React #418 hydration warning. Inspected forestry working/empty-station screenshots and skill-client game screenshot. Local server started alone was terminated during two browser attempts; keep server and browser run in the same shell lifetime. Remaining full-motion work is explicitly not complete.
+Final Pages rebuild and targeted Elder rear review passed (new source hash, all eight frames, repeat/seam controls). Three-station review passed again against final build. No loop approval was granted. Validation complete for the changes delivered in this checkpoint.
+
+## 2026-09-25 — Support spacing and first scoped visual loop approval
+
+Adopted two Blacksmith right passing edits (2/6), with complete authoring-input provenance. Assembly now retains authored durations. Six reviewed sole-seam samples plus tuned timing produce a 1.176428-body-height sampled stance fit, max residual 2.363px. New gait_calibration.py and measure-gait-contacts.py bind observations to source/settings/all frames/timing and reject stale, transparent or insufficient samples. Anatomical contact transitions remain unverified, so no runtime stride adopted and gait loop remains unapproved.
+
+Adopted Elder final recovery frame 7 with lower cane. New local ferrule sequence6/7/0:573,578,589, reducing final seam jump from30px to11px. Existing first-half drift133.696px remains invalid. Rejected another Blacksmith back-right opposite-half attempt for repeating the same trailing leg; no new direction approval.
+
+Reviewed Helga64 log-carry upper-body poses; exact evidence in docs/helga-log-contact-review.json. Visible right-shoulder hand contact continuous; hidden back-left grip and geometry/gait approval pending.
+
+Added source/dependency-bound loop-approval.json for independent Blacksmith hammer-contact/actor. Reviewed all8 layered poses and seam plus existing measured billet contact. One fixed-view visual loop approved; task once-hold and productionReady false unchanged. Export invalidates stale records. Review UI now reads approval status, no longer hardcoded false. Added regression tests for changed frames/props/timing/source and sampled gait failure.
+
+Validation:181 Node/21 Python tests, typecheck and production build pass. Final browser checks running for corrected right/Elder views, three station reviews including approved forge, and skill client. Library-wide requested completion remains unfinished; do not describe sampled stance fitting or this one forge approval as complete motion polish.
+Final validation complete: 181 Node tests and 21 Python tests pass; typecheck, Pages build and whitespace pass. Corrected Blacksmith right/Elder rear browser checks load the current source hashes, scrub all frames, and exercise repeat/seam controls without page/asset errors. All three workstation layer reviews pass, including forge approval status and once-hold completion unchanged. Inspected final forge review and game smoke screenshots. Skill client reports only the existing recoverable React #418 warning.

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dwarf Lord · Workstation review</title>
+<style>
+body{margin:0;background:#20282b;color:#eee;font:16px system-ui}main{max-width:1000px;margin:24px auto;padding:0 20px}h1{font-size:25px}fieldset{border:1px solid #62716f;border-radius:8px;padding:12px;display:flex;gap:16px;flex-wrap:wrap;margin:16px 0}button,select{font:inherit;padding:7px;background:#35423f;color:white;border:1px solid #788d83;border-radius:4px}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f2c376}canvas{width:min(100%,640px);height:auto;background:#343c40;border:1px solid #62716f}#status{color:#f2c376}#error{color:#ffa5a5}#frame{width:240px}a{color:#a4d9c2}
+</style></head><body><main>
+<h1>Independent workstation motion</h1><p>Check tool contact and occlusion against a stationary prop. Recorded loop approval applies only to the reviewed assets and viewing angle; playback alone grants no approval.</p>
+<label>Station <select id="station" aria-label="Station"></select></label>
+<fieldset><legend>Playback</legend><button id="play">Play</button><button id="restart">Restart</button><label><input id="repeat" type="checkbox"> Repeat for seam review</label><label>Frame <input id="frame" type="range" min="0" max="7" value="0"><output id="number">1 / 8</output></label></fieldset>
+<fieldset><legend>Layers</legend><label><input id="actor" type="checkbox" checked> Actor</label><label><input id="prop" type="checkbox" checked> Station</label><label><input id="foreground" type="checkbox" checked> Tools in front</label><label><input id="contours" type="checkbox"> Show tool contours</label></fieldset>
+<canvas id="canvas" width="640" height="640" aria-label="Layered workstation animation"></canvas>
+<p id="status" role="status">Loading…</p><p id="error" role="alert"></p><p><a href="motion-review.html">Full motion library</a></p>
+</main><script type="module">
+import { MotionPlayback } from './motion-playback.mjs';
+const $=id=>document.getElementById(id),ctx=$('canvas').getContext('2d');
+let library=[],selected,manifest,placement,frames=[],prop,player,playing=false,loading=true,request=0;
+async function json(url){const r=await fetch(url);if(!r.ok)throw Error(`${r.status} ${url}`);return r.json()}
+function image(url){return new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=()=>reject(Error(`Image failed: ${url}`));i.src=url})}
+function play(value){playing=value;$('play').textContent=value?'Pause':'Play'}
+function draw(){
+ if(loading||!player)return;const n=player.index;ctx.clearRect(0,0,640,640);
+ if($('actor').checked)ctx.drawImage(frames[n],0,0);
+ if($('prop').checked)ctx.drawImage(prop,0,0);
+ const polygons=placement.foregroundPolygons[n];
+ for(const polygon of polygons){ctx.save();ctx.beginPath();polygon.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.closePath();
+  if($('foreground').checked&&$('actor').checked){ctx.save();ctx.clip();ctx.drawImage(frames[n],0,0);ctx.restore()}
+  if($('contours').checked){ctx.strokeStyle='#67ffe2';ctx.lineWidth=1;ctx.stroke()}ctx.restore()}
+ $('frame').value=n;$('number').textContent=`${n+1} / 8`;
+ $('status').textContent=`${selected.character} · ${selected.action} · ${manifest.frames[n].durationMs} ms · ${player.ended?'Completed; last pose held':'Frame review'} · ${manifest.playback.loopApproved?'Fixed-view visual loop approved; task playback remains once-hold':'Contact and loop approval pending'}`;
+}
+async function choose(){const token=++request;loading=true;play(false);$('error').textContent='';selected=library[Number($('station').value)];
+ const base=new URL(selected.actor,location.href);const [m,c,g]=await Promise.all([json(base),json(selected.calibration),json(selected.station)]);
+ const p=c.actions[`${m.action}/${m.direction}`];
+ if(p?.sourceSha256!==m.sourceSha256||p.foregroundPolygons?.length!==8)throw Error('Actor calibration is stale or incomplete');
+ if(p.targetBodyHeight!==g.targetBodyHeight||JSON.stringify(p.targetAnchor)!==JSON.stringify(g.targetAnchor))throw Error('Station and actor registration differ');
+ const [loaded,station]=await Promise.all([Promise.all(m.frames.map(f=>image(new URL(f.file,base)))),image(new URL('sprite.png',new URL(selected.station,location.href)))]);
+ if(token!==request)return;manifest=m;placement=p;frames=loaded;prop=station;player=new MotionPlayback(m);loading=false;draw();
+}
+function fail(e){loading=true;play(false);$('error').textContent=e.message;$('status').textContent='Unable to load station'}
+$('station').onchange=()=>choose().catch(fail);$('play').onclick=()=>{if(!player||loading)return;if(player.ended)player.restart();play(!playing);draw()};$('restart').onclick=()=>{play(false);player?.restart();draw()};
+$('frame').oninput=()=>{play(false);player?.seekPhase(Number($('frame').value));draw()};
+for(const id of ['actor','prop','foreground','contours'])$(id).onchange=draw;
+function tick(ms){if(!playing||loading)return;player.advance(Math.max(0,ms),{repeat:$('repeat').checked});if(player.ended)play(false);draw()}
+let last=performance.now();function loop(now){tick(Math.min(100,now-last));last=now;requestAnimationFrame(loop)}requestAnimationFrame(loop);
+window.advanceTime=tick;window.render_game_to_text=()=>JSON.stringify({loading,playing,character:manifest?.character,frame:player?.index,completed:player?.ended,completions:player?.completions,actor:$('actor').checked,station:$('prop').checked,foreground:$('foreground').checked,approved:Boolean(manifest?.playback?.loopApproved)});
+try{library=await json('workstation-library.json');library.forEach((e,i)=>$('station').append(new Option(e.character,String(i))));await choose()}catch(e){fail(e)}
+</script></body></html>

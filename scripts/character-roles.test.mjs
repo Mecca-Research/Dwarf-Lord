@@ -43,3 +43,27 @@ test('legacy character upgrade is repeatable and preserves worker progression', 
   assert.equal(twice.find(d => d.id === 'helga').energy, .23);
   assert.deepEqual(legacy.map(d => d.id), once.filter(d => d.id !== 'elder').map(d => d.id));
 });
+
+test('forge assignment repairs the existing building through daily resolution', () => {
+  const smith=catalog.STARTING_DWARVES.find(d=>d.id==='grit');
+  const job=catalog.JOBS.find(j=>j.id==='forge');
+  assert.equal(job.buildingId,'forge');assert.equal(job.skill,'craft');
+  assert.ok(Math.hypot(job.targetX-10,job.targetZ+7)>3.55,'approach clears forge collision');
+  const idle=sim.resolveJobs([smith],{},1),worked=sim.resolveJobs([smith],{grit:'forge'},1);
+  assert.equal(idle.buildingRepair.forge,undefined);
+  assert.ok(worked.buildingRepair.forge>0);
+  assert.deepEqual(worked.inventoryDelta,{},'repair animation does not mint resource output');
+});
+
+const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog });
+test('persistent workstation registration only captures its assigned working actor', () => {
+  for(const [appearance,job,id] of [['cook','meals','cutting-block'],['blacksmith','forge','anvil']]) {
+    const station=stations.activeWorkstation(appearance,job,true,false);
+    assert.equal(station.id,id);
+    assert.equal(station.target,catalog.JOBS.find(j=>j.id===job));
+    assert.equal(stations.activeWorkstation(appearance,job,false,false),undefined,'walking root stays mobile');
+    assert.equal(stations.activeWorkstation(appearance,job,true,true),undefined,'resolved day releases root');
+    assert.equal(stations.activeWorkstation(appearance,null,true,false),undefined,'cancel releases root');
+    assert.equal(stations.activeWorkstation('laborer',job,true,false),undefined,'other characters are not snapped to station');
+  }
+});

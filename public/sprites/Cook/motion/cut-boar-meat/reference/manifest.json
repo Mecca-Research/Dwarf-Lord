@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Cook",
   "action": "cut-boar-meat",
   "title": "Cut boar meat",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         196.5,
-        372
+        372.0
       ],
       "groundAnchor": [
         320,
@@ -56,7 +56,7 @@
       ],
       "sourceAnchor": [
         196.5,
-        374
+        374.0
       ],
       "groundAnchor": [
         320,
@@ -79,16 +79,16 @@
         428
       ],
       "sourceAnchor": [
-        198.5,
-        411
+        196.35135135135135,
+        411.7162162162162
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        42
+        46,
+        41
       ]
     },
     {
@@ -103,15 +103,15 @@
         428
       ],
       "sourceAnchor": [
-        196.5,
-        367
+        195.78378378378378,
+        367.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        46,
+        47,
         104
       ]
     },
@@ -128,7 +128,7 @@
       ],
       "sourceAnchor": [
         196.5,
-        372
+        372.0
       ],
       "groundAnchor": [
         320,
@@ -152,7 +152,7 @@
       ],
       "sourceAnchor": [
         196.5,
-        374
+        374.0
       ],
       "groundAnchor": [
         320,
@@ -175,15 +175,15 @@
         872
       ],
       "sourceAnchor": [
-        196.0,
-        372
+        195.28378378378378,
+        372.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        46,
+        47,
         97
       ]
     },
@@ -199,18 +199,28 @@
         872
       ],
       "sourceAnchor": [
-        197.0,
-        372
+        196.28378378378378,
+        372.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        45,
+        46,
         97
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,118 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        100,
+        435,
+        570,
+        595
+      ],
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -4.13965111079051e-08,
+            1.429193208224433e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98305,
+          "measuredCorrectionPx": [
+            0.43870818614959717,
+            -0.10584166646003723
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97781,
+          "measuredCorrectionPx": [
+            2.699437379837036,
+            -0.5993518829345703
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98506,
+          "measuredCorrectionPx": [
+            0.8435728549957275,
+            -0.24850931763648987
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97984,
+          "measuredCorrectionPx": [
+            0.24455004930496216,
+            -0.1754651814699173
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97743,
+          "measuredCorrectionPx": [
+            0.39725053310394287,
+            -0.1021464467048645
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98123,
+          "measuredCorrectionPx": [
+            0.890095591545105,
+            0.1114533394575119
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98266,
+          "measuredCorrectionPx": [
+            0.5852857828140259,
+            -0.3176131248474121
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "e30d137d5b76acec2eb96b96e46203956bd269dba51de9d291b1e1df247ceef5",
+    "settingsSha256": "5415a9a9bbbb3996a0de3c08786c51d9a02f62540619f4539ad9fc25971c202c",
+    "frameSha256": [
+      "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
+      "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
+      "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
+      "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
+      "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
+      "ef45df34c74abe2c58e18ce69d818a599b629208a1b468dca262e6ac452c1fee"
+    ],
+    "durationsMs": [
+      140,
+      130,
+      100,
+      130,
+      140,
+      89,
+      173,
+      98
+    ]
+  },
+  "strideBodyRatio": 1.176428,
+  "projectedTravelAxis": [
+    1.0,
+    0.0
+  ],
+  "tracks": [
+    {
+      "foot": "left",
+      "frames": [
+        1,
+        2,
+        3
+      ],
+      "maxResidualPx": 2.363
+    },
+    {
+      "foot": "right",
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "maxResidualPx": 0.697
+    }
+  ],
+  "maxResidualPx": 2.363,
+  "measurementPassed": true,
+  "correspondenceReviewed": false,
+  "strideApproved": false,
+  "loopApproved": false,
+  "scope": "Sampled flat-sole stance keyframes only; no inter-frame, heel-roll, cane or loop approval"
+}

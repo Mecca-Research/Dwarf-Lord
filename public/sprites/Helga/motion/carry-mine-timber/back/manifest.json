@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Helga",
   "action": "carry-mine-timber",
   "title": "Carry mine timber",
@@ -7,7 +7,7 @@
   "kind": "directional",
   "reference": "../../../animation/04-back.png",
   "source": "source-sheet.png",
-  "sourceSha256": "844a2ff415cb2303aecb1091ecd35f22563403a8da039b1498ea8b58624a18f9",
+  "sourceSha256": "0858112c6f922eba6925f4263b66775127580d6ca6c914e8b498596382ee4e2d",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.510204081632653,
+  "sharedScale": 1.2776412776412776,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "left heel contact, right toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        56,
-        22,
-        392,
-        414
+        107,
+        11,
+        383,
+        418
       ],
       "sourceAnchor": [
-        167.5,
-        392
+        116.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        67,
-        24
+        172,
+        87
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "left weight down, right heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        501,
-        22,
-        837,
-        413
+        528,
+        10,
+        800,
+        421
       ],
       "sourceAnchor": [
-        167.0,
-        391
+        116.0,
+        409.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        68,
-        26
+        172,
+        85
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "right foot airborne passing left support leg",
       "durationMs": 125,
       "sourceBounds": [
-        943,
-        22,
-        1279,
-        413
+        993,
+        11,
+        1269,
+        418
       ],
       "sourceAnchor": [
-        167.5,
-        391
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        67,
-        26
+        171,
+        87
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "right leg extends forward, left heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1385,
-        22,
-        1722,
-        413
+        1417,
+        11,
+        1687,
+        420
       ],
       "sourceAnchor": [
-        170.0,
-        391
+        113.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        63,
-        26
+        176,
+        87
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "right heel contact, left toe behind",
       "durationMs": 125,
       "sourceBounds": [
-        53,
-        466,
-        392,
-        851
+        107,
+        452,
+        382,
+        860
       ],
       "sourceAnchor": [
-        166.0,
-        385
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        69,
-        35
+        171,
+        87
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "right weight down, left heel lifts",
       "durationMs": 125,
       "sourceBounds": [
-        499,
-        468,
-        838,
-        854
+        527,
+        452,
+        801,
+        862
       ],
       "sourceAnchor": [
-        166.5,
-        386
+        118.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        69,
-        33
+        169,
+        87
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "left foot airborne passing right support leg",
       "durationMs": 125,
       "sourceBounds": [
-        941,
-        468,
-        1280,
-        847
+        994,
+        452,
+        1270,
+        858
       ],
       "sourceAnchor": [
-        167.0,
-        379
+        117.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        68,
-        44
+        171,
+        87
       ]
     },
     {
@@ -193,24 +193,34 @@
       "description": "left leg extends forward, right heel rises",
       "durationMs": 125,
       "sourceBounds": [
-        1385,
-        469,
-        1724,
-        854
+        1418,
+        452,
+        1693,
+        860
       ],
       "sourceAnchor": [
-        166.5,
-        385
+        119.0,
+        408.0
       ],
       "groundAnchor": [
         320,
-        616
+        608
       ],
       "placement": [
-        69,
-        35
+        168,
+        87
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,14 +242,42 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "body-height-and-row-ground-calibration",
+    "targetAnchor": [
+      320,
+      608
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "a37b0604fe09035990b664c71d966af5764189eade91bbe3188ecd645ee2f55c",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
-      "Carry position varies between directional sheets. Match the canonical right-shoulder carry before using this family as a template.",
-      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait."
+      "Shoulder-carry replacement saved. Verify anatomical shoulder, grip, log perspective and gait across directions before template approval.",
+      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
     ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
