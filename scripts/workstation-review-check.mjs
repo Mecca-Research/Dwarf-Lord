@@ -8,12 +8,12 @@ try {
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
  await page.goto(process.env.REVIEW_URL??'http://localhost:8081/Dwarf-Lord/workstation-review.html');
  const ready=()=>page.waitForFunction(()=>window.render_game_to_text&&!JSON.parse(window.render_game_to_text()).loading);
- await ready();const count=await page.locator('#station option').count();assert.equal(count,3);
+ await ready();const count=await page.locator('#station option').count();assert.equal(count,4);
  const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()));
  const pixels=()=>page.evaluate(()=>document.querySelector('canvas').toDataURL());
  for(let i=0;i<count;i++) {
   await page.selectOption('#station',String(i));await ready();const before=await state();
-  assert.equal(before.frame,0);assert.equal(before.approved,before.character==='Blacksmith');
+  assert.equal(before.frame,0);assert.equal(before.approved,['Blacksmith','Ginger'].includes(before.character));
   for(let frame=0;frame<8;frame++) {
    await page.locator('#frame').evaluate((e,n)=>{e.value=n;e.dispatchEvent(new Event('input'))},frame);
    assert.equal((await state()).frame,frame);
@@ -27,10 +27,17 @@ try {
   const completed=await state();assert.equal(completed.frame,7);assert.equal(completed.completed,true);assert.equal(completed.completions,1);assert.equal(completed.playing,false);
   await page.evaluate(()=>window.advanceTime(5000));assert.equal((await state()).completions,1);
   await page.screenshot({path:`${output}/${before.character}-layered.png`});
+  if(before.character==='Laborer') {
+   await page.uncheck('#actor');assert.equal((await state()).completedProp,true);
+   assert.notEqual(await pixels(),propOnly,'released crate remains after completed actor leaves');
+   await page.screenshot({path:`${output}/Laborer-completed-station.png`});
+   await page.click('#restart');assert.equal((await state()).completedProp,false,'new task resets visual staging');
+   await page.check('#actor');
+  }
   await page.click('#restart');await page.check('#repeat');await page.click('#play');await page.evaluate(()=>window.advanceTime(2200));
   assert.equal((await state()).completed,false);assert.equal((await state()).playing,true);
   await page.click('#play');await page.uncheck('#repeat');results.push(completed);
  }
  assert.deepEqual(errors,[]);await writeFile(`${output}/results.json`,JSON.stringify({results,errors},null,2));
- console.log('PASS eight-frame Cook/Blacksmith/Ginger layered review, fixed props, tool occlusion, once-hold and repeat playback');
+ console.log('PASS four eight-frame workstation layers, fixed props, tool occlusion, once-hold, released crate and repeat playback');
 } finally {await browser.close()}

@@ -1,6 +1,7 @@
 """Carry an explicit visual loop review forward only for identical artifacts."""
 import hashlib
 import json
+from motion_registration import polish_settings, settings_hash
 
 REQUIRED = {'identity-and-scale', 'station-and-foot-contact', 'hand-and-tool-contact',
             'prop-continuity', 'last-to-first-transition'}
@@ -14,6 +15,8 @@ def binding(folder, manifest):
     return {'sourceSha256': digest(folder / 'source-sheet.png'),
             'settingsSha256': manifest['registration']['settingsSha256'],
             'frameSha256': [digest(folder / f['file']) for f in manifest['frames']],
+            'atlasSha256': digest(folder / manifest['atlas']['file']),
+            'registration': manifest['registration'],
             'durationsMs': [f['durationMs'] for f in manifest['frames']],
             'character': manifest['character'], 'action': manifest['action'],
             'direction': manifest['direction']}
@@ -21,11 +24,13 @@ def binding(folder, manifest):
 
 def apply(folder, manifest):
     manifest['playback']['loopApproved'] = False
+    manifest.pop('loopReview', None)
     path = folder / 'loop-approval.json'
     if not path.exists():
         return
     review = json.loads(path.read_text())
     valid = (manifest['sourceSha256'] == digest(folder / 'source-sheet.png')
+             and manifest['registration']['settingsSha256'] == settings_hash(polish_settings(folder))
              and review.get('binding') == binding(folder, manifest)
              and set(review.get('checks', {})) == REQUIRED
              and all(isinstance(note, str) and note.strip() for note in review['checks'].values())

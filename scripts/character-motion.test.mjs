@@ -146,13 +146,14 @@ test('runtime actor layers and persistent stations retain source provenance and 
   for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
   const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
   assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
-  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,entry.character==='Blacksmith');
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,['Blacksmith','Ginger'].includes(entry.character));
   if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
- for(const id of ['cutting-block','anvil','forestry-trunk']) {
+ for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet']) {
  const root=resolve('public/sprites/workstations',id),g=json(resolve(root,'generation.json'));
  assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
  assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
+ if(g.completionLayer){assert.equal(hash(resolve(root,g.completionLayer.source)),g.completionLayer.sourceSha256);assert.equal(hash(resolve(root,g.completionLayer.file)),g.completionLayer.sha256);}
  }
 });

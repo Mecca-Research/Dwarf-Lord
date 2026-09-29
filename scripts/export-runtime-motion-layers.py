@@ -27,5 +27,16 @@ for metadata in Path('public/sprites/workstations').glob('*/generation.json'):
     out=Image.new('RGBA',tuple(p['canvas']));out.alpha_composite(im,(p['x'],p['y']));out.save(folder/'sprite.png')
     if hashlib.sha256((folder/'sprite.png').read_bytes()).hexdigest()!=config['spriteSha256']:
         raise ValueError('Workstation export differs from reviewed output')
+    completion=config.get('completionLayer')
+    if completion:
+        source=folder/completion['source']
+        if hashlib.sha256(source.read_bytes()).hexdigest()!=completion['sourceSha256']:
+            raise ValueError('Completion prop needs review after final actor changes')
+        bounds=completion['bounds'];im=Image.open(source).convert('RGBA')
+        if len(bounds)!=4 or not 0<=bounds[0]<bounds[2]<=im.width or not 0<=bounds[1]<bounds[3]<=im.height:
+            raise ValueError('Invalid completion prop bounds')
+        out=Image.new('RGBA',im.size);out.alpha_composite(im.crop(bounds),tuple(bounds[:2]));out.save(folder/completion['file'])
+        if hashlib.sha256((folder/completion['file']).read_bytes()).hexdigest()!=completion['sha256']:
+            raise ValueError('Completion prop export differs from reviewed output')
 Path('public/workstation-library.json').write_text(json.dumps([{'character':e['character'],'action':e['action'],'actor':str(Path(e['destination']).relative_to('public')/'manifest.json'),'calibration':f"sprites/{e['character']}/motion/render-calibration.json",'station':f"sprites/workstations/{e['station']}/generation.json"} for e in entries],indent=2)+'\n')
 print('Exported runtime actor layers and independent workstation props')

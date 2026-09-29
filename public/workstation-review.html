@@ -12,7 +12,7 @@ body{margin:0;background:#20282b;color:#eee;font:16px system-ui}main{max-width:1
 </main><script type="module">
 import { MotionPlayback } from './motion-playback.mjs';
 const $=id=>document.getElementById(id),ctx=$('canvas').getContext('2d');
-let library=[],selected,manifest,placement,frames=[],prop,player,playing=false,loading=true,request=0;
+let library=[],selected,manifest,placement,frames=[],prop,completionProp,player,playing=false,loading=true,request=0;
 async function json(url){const r=await fetch(url);if(!r.ok)throw Error(`${r.status} ${url}`);return r.json()}
 function image(url){return new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=()=>reject(Error(`Image failed: ${url}`));i.src=url})}
 function play(value){playing=value;$('play').textContent=value?'Pause':'Play'}
@@ -20,6 +20,7 @@ function draw(){
  if(loading||!player)return;const n=player.index;ctx.clearRect(0,0,640,640);
  if($('actor').checked)ctx.drawImage(frames[n],0,0);
  if($('prop').checked)ctx.drawImage(prop,0,0);
+ if($('prop').checked&&!$('actor').checked&&player.ended&&completionProp)ctx.drawImage(completionProp,0,0);
  const polygons=placement.foregroundPolygons[n];
  for(const polygon of polygons){ctx.save();ctx.beginPath();polygon.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.closePath();
   if($('foreground').checked&&$('actor').checked){ctx.save();ctx.clip();ctx.drawImage(frames[n],0,0);ctx.restore()}
@@ -32,8 +33,8 @@ async function choose(){const token=++request;loading=true;play(false);$('error'
  const p=c.actions[`${m.action}/${m.direction}`];
  if(p?.sourceSha256!==m.sourceSha256||p.foregroundPolygons?.length!==8)throw Error('Actor calibration is stale or incomplete');
  if(p.targetBodyHeight!==g.targetBodyHeight||JSON.stringify(p.targetAnchor)!==JSON.stringify(g.targetAnchor))throw Error('Station and actor registration differ');
- const [loaded,station]=await Promise.all([Promise.all(m.frames.map(f=>image(new URL(f.file,base)))),image(new URL('sprite.png',new URL(selected.station,location.href)))]);
- if(token!==request)return;manifest=m;placement=p;frames=loaded;prop=station;player=new MotionPlayback(m);loading=false;draw();
+ const [loaded,station,completion]=await Promise.all([Promise.all(m.frames.map(f=>image(new URL(f.file,base)))),image(new URL('sprite.png',new URL(selected.station,location.href))),g.completionLayer?image(new URL(g.completionLayer.file,new URL(selected.station,location.href))):null]);
+ if(token!==request)return;manifest=m;placement=p;frames=loaded;prop=station;completionProp=completion;player=new MotionPlayback(m);loading=false;draw();
 }
 function fail(e){loading=true;play(false);$('error').textContent=e.message;$('status').textContent='Unable to load station'}
 $('station').onchange=()=>choose().catch(fail);$('play').onclick=()=>{if(!player||loading)return;if(player.ended)player.restart();play(!playing);draw()};$('restart').onclick=()=>{play(false);player?.restart();draw()};
@@ -41,6 +42,6 @@ $('frame').oninput=()=>{play(false);player?.seekPhase(Number($('frame').value));
 for(const id of ['actor','prop','foreground','contours'])$(id).onchange=draw;
 function tick(ms){if(!playing||loading)return;player.advance(Math.max(0,ms),{repeat:$('repeat').checked});if(player.ended)play(false);draw()}
 let last=performance.now();function loop(now){tick(Math.min(100,now-last));last=now;requestAnimationFrame(loop)}requestAnimationFrame(loop);
-window.advanceTime=tick;window.render_game_to_text=()=>JSON.stringify({loading,playing,character:manifest?.character,frame:player?.index,completed:player?.ended,completions:player?.completions,actor:$('actor').checked,station:$('prop').checked,foreground:$('foreground').checked,approved:Boolean(manifest?.playback?.loopApproved)});
+window.advanceTime=tick;window.render_game_to_text=()=>JSON.stringify({loading,playing,character:manifest?.character,frame:player?.index,completed:player?.ended,completions:player?.completions,actor:$('actor').checked,station:$('prop').checked,completedProp:Boolean($('prop').checked&&!$('actor').checked&&player?.ended&&completionProp),foreground:$('foreground').checked,approved:Boolean(manifest?.playback?.loopApproved)});
 try{library=await json('workstation-library.json');library.forEach((e,i)=>$('station').append(new Option(e.character,String(i))));await choose()}catch(e){fail(e)}
 </script></body></html>

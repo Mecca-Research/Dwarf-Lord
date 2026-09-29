@@ -8,7 +8,7 @@ const moduleUrl = new URL('../public/motion-playback.mjs', import.meta.url).href
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
 outputText = outputText.replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
-const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, npcMotionDiagnostics, npcWorkDiagnostics } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
 test('atlas UVs select one cell per actor and restore canonical full-image UVs', () => {
   const a = new THREE.PlaneGeometry(), b = new THREE.PlaneGeometry();
@@ -117,9 +117,9 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     } finally {miner.dispose();}
     for (const [appearance,character,action,job,height] of [
       ['blacksmith','Blacksmith','hammer-contact','forge',520],
-      ['laborer','Laborer','stack-crates','storage',510], ['ginger','Ginger','fell-tree','timber',376],
+      ['laborer','Laborer','stack-crates','storage',370], ['ginger','Ginger','fell-tree','timber',376],
     ]) {
-      const direction = ['blacksmith','ginger'].includes(appearance) ? 'actor' : 'reference';
+      const direction = 'actor';
       const work = JSON.parse(readFileSync(`public/sprites/${character}/motion/${action}/${direction}/manifest.json`,'utf8'));
       const placement = JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8'));
       assert.equal(placement.actions[direction==='actor'?`${action}/actor`:action].sourceSha256,work.sourceSha256);
@@ -130,12 +130,24 @@ test('workstations hold one completion and reset only on task lifecycle changes'
         for(let i=0;i<50&&!result;i++){result=worker.update(workerBody,job,1,false,0,1.95);await new Promise(r=>setTimeout(r,1));}
         assert.ok(result,`${character} workstation loaded`);
         assert.equal(npcWorkDiagnostics.get(character).direction,direction);
-        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,appearance === 'ginger' ? 1 : 3);
+        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,appearance === 'blacksmith' ? 3 : 1);
         assert.ok(Math.abs(result.placement.height-1.95*640/height)<1e-10);
         worker.update(workerBody,job,1,false,100,1.95);
         assert.equal(npcWorkDiagnostics.get(character).completions,1);
         assert.equal(worker.update(workerBody,null,1,false,1,1.95),null);
         assert.equal(npcWorkDiagnostics.has(character),false);
+        if (appearance === 'laborer') {
+          assert.equal(workstationTaskStates.get('storage-pallet').completed,true,'released crate survives actor departure');
+          assert.equal(workstationTaskStates.get('storage-pallet').active,false);
+          for(let i=0;i<50;i++) {
+            if(worker.update(workerBody,job,2,false,0,1.95))break;
+            await new Promise(r=>setTimeout(r,1));
+          }
+          assert.equal(workstationTaskStates.get('storage-pallet').completed,false,'explicit new task starts a fresh visual cycle');
+          worker.update(workerBody,null,2,false,0,1.95);
+          assert.equal(workstationTaskStates.get('storage-pallet').completed,false,'cancel before release does not create a crate');
+          assert.equal(workstationTaskStates.get('storage-pallet').active,false);
+        }
       } finally {worker.dispose();}
     }
   } finally {

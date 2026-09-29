@@ -68,6 +68,29 @@
       "status": "exported",
       "destination": "public/sprites/Ginger/motion/fell-tree/actor",
       "station": "forestry-trunk"
+    },
+    {
+      "character": "Laborer",
+      "action": "stack-crates",
+      "title": "Stack crates",
+      "reference": "public/sprites/Laborer/animation/01-front-right.png",
+      "beats": [
+        "hold crate at waist",
+        "bend knees slightly",
+        "lift toward stack",
+        "extend arms over stack",
+        "lower crate onto stack",
+        "release weight",
+        "align crate edges",
+        "withdraw hands"
+      ],
+      "kind": "new-work",
+      "direction": "actor",
+      "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Laborer/motion/stack-crates/actor",
+      "station": "storage-pallet"
     }
   ]
 }

@@ -132,7 +132,7 @@ export const JOBS: JobDef[] = [
     skill: "labor",
     description: "Sort the junk piles. You cannot manage what you cannot count.",
     zone: "periphery",
-    targetX: 12,
+    targetX: 8,
     targetZ: 8,
     buildingId: "storage",
     repair: 0.45,

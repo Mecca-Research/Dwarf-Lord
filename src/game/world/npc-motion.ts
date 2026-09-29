@@ -167,6 +167,8 @@ export function setMotionUv(geometry: THREE.BufferGeometry, frame: number | null
 
 
 export const npcWorkDiagnostics = new Map<string, { action: string; direction: string; frame: number; completed: boolean; completions: number }>();
+/** Cosmetic station handoff only: animation never writes inventory or rewards. */
+export const workstationTaskStates = new Map<string, { owner: string; task: string; active: boolean; completed: boolean }>();
 
 /** Task-owned one-shot playback. Rendering never awards economic output. */
 export class NpcWorkMotion {
@@ -189,7 +191,7 @@ export class NpcWorkMotion {
     if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
-    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : (this.appearance === "cook" || this.appearance === "blacksmith" || this.appearance === "ginger") ? "actor" : "reference";
+    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "actor";
     if (direction !== this.view) {
       ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
       this.view = direction; this.retryAt = 0;
@@ -210,11 +212,16 @@ export class NpcWorkMotion {
     }
     this.player?.advance((Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000);
     if (!this.loaded || !this.player) return null;
+    if (this.appearance === "laborer" && job === "storage") {
+      workstationTaskStates.set("storage-pallet", { owner: this.id, task: key, active: true, completed: this.player.ended });
+    }
     npcWorkDiagnostics.set(this.id, { action, direction, frame: this.player.index, completed: this.player.ended, completions: this.player.completions });
     return { texture: this.loaded.texture, frame: this.player.index, foregroundPolygons: this.loaded.foregroundPolygons?.[this.player.index], placement: motionPlacement(this.loaded.manifest, bodyHeight) };
   }
 
   private reset() {
+    const station = workstationTaskStates.get("storage-pallet");
+    if (station?.owner === this.id) station.active = false;
     ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
     this.player = undefined; this.key = ""; this.view = ""; npcWorkDiagnostics.delete(this.id);
   }

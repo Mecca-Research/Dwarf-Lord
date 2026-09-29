@@ -11,8 +11,29 @@ from PIL import Image
 from scipy import ndimage as nd
 
 
-def extract(path, count):
+def extract(path, count, cells=None):
     pixels=np.array(Image.open(path).convert('RGBA'));solid=pixels[:,:,3]>128
+    if cells is not None:
+        # Explicit authored cell boundaries retain detached carried/placed props.
+        # Nearest-component ownership can otherwise give a released crate to the
+        # actor above it. This crops whole poses; it never redraws their pixels.
+        if len(cells)!=count:raise ValueError('One source cell required per pose')
+        result=[]
+        for i,cell in enumerate(cells):
+            if len(cell)!=4 or any(not isinstance(v,int) for v in cell):raise ValueError('Integer cell bounds required')
+            x0,y0,x1,y1=cell
+            if not 0<=x0<x1<=pixels.shape[1] or not 0<=y0<y1<=pixels.shape[0]:raise ValueError('Cell outside source')
+            for a,b,c,d in cells[:i]:
+                if max(a,x0)<min(c,x1) and max(b,y0)<min(d,y1):raise ValueError('Source cells overlap')
+            yy,xx=np.where(solid[y0:y1,x0:x1])
+            if len(xx)<1000:raise ValueError('Missing full-body input pose')
+            box=(x0+int(xx.min()),y0+int(yy.min()),x0+int(xx.max()+1),y0+int(yy.max()+1))
+            a,b,c,d=box;crop=pixels[b:d,a:c].copy();crop[:,:,:3][crop[:,:,3]==0]=0
+            head_x=np.where(crop[:max(1,int((d-b)*.2)),:,3]>128)[1]
+            result.append((Image.fromarray(crop),box,float(np.median(head_x))))
+        height=float(np.median([c.height for c,_,_ in result]))
+        floors=[float(np.median([b[3] for _,b,_ in result[i:i+4]])) for i in range(0,count,4)]
+        return result,height,floors
     labels,_=nd.label(solid);sizes=np.bincount(labels.ravel());main=np.argsort(sizes[1:])[-count:]+1
     if len(main)!=count or min(sizes[main])<1000:raise ValueError('Missing full-body input pose')
     _,nearest=nd.distance_transform_edt(~np.isin(labels,main),return_indices=True);owner=labels[tuple(nearest)]
@@ -36,7 +57,7 @@ def main():
         if source['poseCount'] not in (1,8):raise ValueError('Inputs must contain one or eight poses')
         path=folder/source['file']
         if hashlib.sha256(path.read_bytes()).hexdigest()!=source['sha256']:raise ValueError('Assembly input changed')
-        inputs[source['id']]=extract(path,source['poseCount'])
+        inputs[source['id']]=extract(path,source['poseCount'],source.get('cells'))
     if len(assembly['poses'])!=8 or len({(p['input'],p['pose']) for p in assembly['poses']})!=8:raise ValueError('Exactly eight distinct authored poses required')
     sheet=Image.new('RGBA',(2560,1280));marks=[]
     for i,selection in enumerate(assembly['poses']):
