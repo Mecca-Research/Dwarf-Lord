@@ -35,20 +35,107 @@
       "prompt": "Edit this exact rear-view Elder dwarf walk sprite, final recovery pose BEFORE cane replant. Lower the whole cane and its gripping right hand slightly, so the metal cane ferrule finishes just above the supporting LEFT boot sole, about 8 pixels above it. Current cane tip is too high. Keep cane the same physical length, shaft thickness and wood pattern, move the hand with it by a small natural elbow extension, arm low alongside waist. Left supporting boot sole is near y573; target cane tip near y565 in this 640x640 image. Preserve original legs/boots (right leg reaching ahead away from camera), torso, robe, head, belt, left arm, camera, scale and light exactly. Do not stretch the shaft or move entire dwarf. Genuine transparent alpha background, one complete dwarf, no labels/scenery.",
       "reference": "authoring-inputs/replant-reference.png",
       "referenceSha256": "72f7ec15267f24f3a4fdcfd08150a4d896f1f1298bd144eb74952149cf2afadb"
+    },
+    {
+      "id": "plant-recovery-forward",
+      "file": "authoring-inputs/plant-recovery-forward.png",
+      "poseCount": 1,
+      "sha256": "b17a4a74df7ca7ece91d38b7ef5f541bde46497304c3e0c58d13bf96ac2d6972",
+      "prompt": "Edit image1 only, image2 is an annotation guide. Keep exact Elder body, clothes, head, both leg and boot poses, scale and rear camera. Replace cane placement with a FORWARD ground plant as Elder walks away: the metal ferrule must finish exactly at the red guide circle, around x492 y512 of original640 canvas, about80pixels above its old position. Red marks must NOT appear in result. This is cane leaning forward AWAY from camera, so its projected shaft is foreshortened, not physically cut shorter. Adjust gripping right wrist and low elbow naturally with the same physically rigid walking stick; hand must hold cane top, not float. Preserve same cane wood and thick metal ferrule, realistic 3D tilt and perspective. No raised arm beside head. Ground point is farther away than the planted boot, giving a tripod stance before body approaches the cane. Remove old shaft/ferrule below target. One full-body transparent sprite, no ground or labels. Exact old character and proportions.",
+      "reference": "authoring-inputs/plant-recovery-reference-0.png",
+      "referenceSha256": "a548fe8d5d55899c33a8c560179f712e0dab91ea8c75956e04a0e4fdcd1bae1a",
+      "editInputs": [
+        {
+          "file": "authoring-inputs/plant-recovery-forward-input-0.png",
+          "sha256": "a548fe8d5d55899c33a8c560179f712e0dab91ea8c75956e04a0e4fdcd1bae1a"
+        },
+        {
+          "file": "authoring-inputs/plant-recovery-forward-input-1.png",
+          "sha256": "d9c74d6e7b36a8b1c5560418a71dd3f0497a67ab01b85df34d5b65d813c6d10a"
+        }
+      ]
+    },
+    {
+      "id": "plant-recovery-mid",
+      "file": "authoring-inputs/plant-recovery-mid.png",
+      "poseCount": 1,
+      "sha256": "3bff4a57949c57c67832d382d4eed71c0abf54a18673f9b12e3e122527299e8c",
+      "prompt": "Minimal edit to this exact Elder rear sprite: keep whole dwarf and boots, camera and size identical. Cane tip leans too far RIGHT. Pivot same complete wooden cane about its gripping hand slightly LEFT, so ferrule at x~984 instead of x1044 in this1280px image, retain bottom y~1100. Preserve shaft physical length and wood/ferrule shape; natural wrist, low elbow, no raised arm. Full body unchanged with genuine transparency. One sprite, no scenery/text.",
+      "reference": "authoring-inputs/plant-recovery-reference-1.png",
+      "referenceSha256": "53d5c51b6e540e3428514c995ecf5c5ba38f58317c7026229f75a92258742da6",
+      "editInputs": [
+        {
+          "file": "authoring-inputs/plant-recovery-mid-input-0.png",
+          "sha256": "fcd64cd582817f1b0ce5cadce19f0c4e73d613454264547aeb7ba4d885f30a93"
+        }
+      ]
+    },
+    {
+      "id": "plant-recovery-late",
+      "file": "authoring-inputs/plant-recovery-late.png",
+      "poseCount": 1,
+      "sha256": "216978c8bb123595bcf41f6e33305a07c4a21e1b9d209be3d69924240e3b92d1",
+      "prompt": "Minimal edit to this exact Elder rear sprite: preserve entire dwarf and boots, camera and scale. The cane is too far left. Pivot same intact rigid wooden cane at gripping right hand slightly toward screen RIGHT, so ferrule finishes x~984 instead of x920 in this1280px image. Bottom remains y~1138. Top of cane and natural hand stay near right waist, low elbow. Retain exactly same shaft length, wood pattern, thickness and ferrule. No other body changes. True transparent background, no scene/text.",
+      "reference": "authoring-inputs/plant-recovery-reference-2.png",
+      "referenceSha256": "9bf1a073ee96da5fdef0c14612044c0aaa0637fb8b3a6b6044be9f156e92f84c",
+      "editInputs": [
+        {
+          "file": "authoring-inputs/plant-recovery-late-input-0.png",
+          "sha256": "3c5d19b86af600f5903733d310f52304b8565166ebad242afcfd89005366d97a"
+        }
+      ]
+    },
+    {
+      "id": "plant-recovery-recovery",
+      "file": "authoring-inputs/plant-recovery-recovery.png",
+      "poseCount": 1,
+      "sha256": "ed4d82880e4c757a85c4299f95b5f712c9f32834e9917874216c45f8f6a04eb7",
+      "prompt": "Target FIRST image Elder rear-view walk pose; second image only cane recovery style reference. Preserve exact first-image legs, boots, body, head, costume and camera. Author intermediate cane recovery: right gripping wrist kept LOW AT WAIST, elbow alongside torso unchanged; tilt complete rigid cane gently FORWARD away from viewer in depth, so projected metal ferrule moves from y573 to about y530 in normalized640px body export. This is modest foreshortening toward second reference's final recovery, not chopping or brandishing. NO ARM RAISED, no horizontal shaft, no hand above waist. Same actual physical cane length, visible wood thickness and brass ferrule. Full body centered, genuine transparent background, no scenery or labels.",
+      "reference": "authoring-inputs/plant-recovery-reference-6.png",
+      "referenceSha256": "0bbcbe7c9e6dcd39e35df3c431e48884a54284d2786289f938282733aa3d4744",
+      "editInputs": [
+        {
+          "file": "authoring-inputs/plant-recovery-recovery-input-0.png",
+          "sha256": "0bbcbe7c9e6dcd39e35df3c431e48884a54284d2786289f938282733aa3d4744"
+        },
+        {
+          "file": "authoring-inputs/plant-recovery-recovery-input-1.png",
+          "sha256": "5f287d3ab7a67066577176a91bef1f75dbdb3f90f791a25f6b20c36fbb06bc79"
+        }
+      ]
+    },
+    {
+      "id": "plant-recovery-settle",
+      "file": "authoring-inputs/plant-recovery-settle.png",
+      "poseCount": 1,
+      "sha256": "5f287d3ab7a67066577176a91bef1f75dbdb3f90f791a25f6b20c36fbb06bc79",
+      "prompt": "Edit this exact rear-view Elder dwarf full-body sprite, only the right forearm/wrist and cane. LOWERING AHEAD for next plant: whole rigid cane extends ahead away from viewer; foreshortened by depth, not a shortened stick; metal ferrule at guide circle x492 y488 normalized640. Low elbow, right gripping hand at waist. The second reference is an annotation guide: red circle marks target ferrule location; remove all annotations in output. Keep the EXACT stocky elderly dwarf, clothing, straps, pouches, torso, head, both legs and boot placement from first image unchanged. True three-dimensional rotation/foreshortening of same physical stick, preserve thickness and brass ferrule, natural hand tightly grips top, no floating cane or extra hand. Wrist below chest and elbow down. Entire full body with generous margins, consistent original camera and light, genuine transparency, no text or scenery.",
+      "reference": "authoring-inputs/plant-recovery-reference-7.png",
+      "referenceSha256": "74c68315cb46a1659a4133f684bf8c811a877a233d169bf39868aa4ce68db342",
+      "editInputs": [
+        {
+          "file": "authoring-inputs/plant-recovery-settle-input-0.png",
+          "sha256": "74c68315cb46a1659a4133f684bf8c811a877a233d169bf39868aa4ce68db342"
+        },
+        {
+          "file": "authoring-inputs/plant-recovery-settle-input-1.png",
+          "sha256": "65d5895f19790cbbba40a9cc0d84a43cb09f74b60837ccc565939f8cd1e0a2fb"
+        }
+      ]
     }
   ],
   "poses": [
     {
-      "input": "original",
+      "input": "plant-recovery-forward",
       "pose": 0
     },
     {
-      "input": "original",
-      "pose": 5
+      "input": "plant-recovery-mid",
+      "pose": 0
     },
     {
-      "input": "original",
-      "pose": 2
+      "input": "plant-recovery-late",
+      "pose": 0
     },
     {
       "input": "original",
@@ -63,13 +150,13 @@
       "pose": 1
     },
     {
-      "input": "small-recovery",
+      "input": "plant-recovery-recovery",
       "pose": 0
     },
     {
-      "input": "replant",
+      "input": "plant-recovery-settle",
       "pose": 0
     }
   ],
-  "review": "Frames 6/7 now lift then lower cane before frame 0 replant, with low elbow and complete shaft. Keep six original body poses. Review source-normalized outputs rather than prompt leg labels. Projected recovery transition improved; world-space plant travel, rear leg phases and full loop still unapproved."
+  "review": "New authored forward cane plant, body-approach poses and complete forward recovery with low elbow; original release poses 3-5 retained. Exact physical length and planted world travel still require measurement/acceptance. High-arm attempt rejected."
 }

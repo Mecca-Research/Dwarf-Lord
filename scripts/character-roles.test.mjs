@@ -57,7 +57,7 @@ test('forge assignment repairs the existing building through daily resolution', 
 
 const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog });
 test('persistent workstation registration only captures its assigned working actor', () => {
-  for(const [appearance,job,id] of [['cook','meals','cutting-block'],['blacksmith','forge','anvil']]) {
+  for(const [appearance,job,id] of [['cook','meals','cutting-block'],['blacksmith','forge','anvil'],['stoneworker','limestone','masonry-bench']]) {
     const station=stations.activeWorkstation(appearance,job,true,false);
     assert.equal(station.id,id);
     assert.equal(station.target,catalog.JOBS.find(j=>j.id===job));

@@ -1,6 +1,6 @@
 {
   "folder": "public/sprites/Elder/motion/walk/back",
-  "sourceSha256": "34ffb526c8b3c70167dc8b2768810acbe2775f4c0939aa3501d1f772950fa87a",
+  "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
   "regions": {
     "cane": [
       450,
@@ -23,5 +23,10 @@
   },
   "cameraElevationRadians": 0.6,
   "strideBodyRatio": 1.2,
-  "assumptions": "Back-facing straight travel; current runtime stride/body ratio. Cane planted in frames 0-3 is a diagnostic hypothesis, not an approved contact schedule. Regions isolate visible cane ferrule and boot silhouette bottoms; these are not skeletal joint measurements. Left boot support in frames 0-3 and right boot support in frames 4-7 are diagnostic hypotheses only. Boot-bottom proxies change with sole rotation; do not infer physical stride from them."
+  "assumptions": "Back-facing straight travel at runtime ratio1.2. Cane plant hypothesized in frames0-2; frames3-5 release/trailing,6-7 forward airborne recovery. Exact rigid-length and ground-height correspondence remain unreviewed. Boot silhouette proxies are diagnostic only; changing heel/toe roll cannot establish material correspondence. No stride/loop approval.",
+  "caneSupportFrames": [
+    0,
+    1,
+    2
+  ]
 }

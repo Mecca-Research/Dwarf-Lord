@@ -498,7 +498,7 @@ function Actors() {
           }}
         />
       </group>
-      <Workstations scale={spec.townScale} />
+      <Workstations scale={spec.townScale} mineScale={spec.mineScale} />
       {dwarfNodes.map((d) => (
         <DwarfActor key={d.id} dwarf={d} specScale={spec} />
       ))}

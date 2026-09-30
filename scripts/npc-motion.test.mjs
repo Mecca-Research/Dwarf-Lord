@@ -127,6 +127,7 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     } finally {miner.dispose();}
     for (const [appearance,character,action,job,height] of [
       ['blacksmith','Blacksmith','hammer-contact','forge',520],
+      ['stoneworker','Stoneworker','chisel-contact','limestone',520],
       ['laborer','Laborer','stack-crates','storage',370], ['ginger','Ginger','fell-tree','timber',376],
     ]) {
       const direction = 'actor';
@@ -140,7 +141,7 @@ test('workstations hold one completion and reset only on task lifecycle changes'
         for(let i=0;i<50&&!result;i++){result=worker.update(workerBody,job,1,false,0,1.95);await new Promise(r=>setTimeout(r,1));}
         assert.ok(result,`${character} workstation loaded`);
         assert.equal(npcWorkDiagnostics.get(character).direction,direction);
-        if(direction === 'actor') assert.equal(result.foregroundPolygons.length,appearance === 'blacksmith' ? 3 : 1);
+        if(direction === 'actor') assert.deepEqual(result.foregroundPolygons,placement.actions[`${action}/actor`].foregroundPolygons[0]);
         assert.ok(Math.abs(result.placement.height-1.95*640/height)<1e-10);
         worker.update(workerBody,job,1,false,100,1.95);
         assert.equal(npcWorkDiagnostics.get(character).completions,1);
@@ -212,4 +213,12 @@ test('visual ground correction survives every direction, parent scale and terrai
   const world=local.applyMatrix4(matrix);
   assert.ok(world.distanceTo(new THREE.Vector3(offset[0],heightDelta,offset[1]))<1e-10,'parent rotation cannot turn foot lock into sideways drift');
  }
+});
+
+test('work-only Stoneworker keeps static walking fallback without requesting absent atlases',()=>{
+ const driver=new NpcWalkMotion('stone-fallback','stoneworker');
+ try {
+  assert.equal(driver.update({x:0,z:0,anim:'walk',facing:3,speed:2.4},1.95),null);
+  assert.equal(npcMotionDiagnostics.has('stone-fallback'),false);
+ } finally {driver.dispose();}
 });

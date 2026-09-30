@@ -8,12 +8,12 @@ try {
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
  await page.goto(process.env.REVIEW_URL??'http://localhost:8081/Dwarf-Lord/workstation-review.html');
  const ready=()=>page.waitForFunction(()=>window.render_game_to_text&&!JSON.parse(window.render_game_to_text()).loading);
- await ready();const count=await page.locator('#station option').count();assert.equal(count,5);
+ await ready();const count=await page.locator('#station option').count();assert.equal(count,6);
  const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()));
  const pixels=()=>page.evaluate(()=>document.querySelector('canvas').toDataURL());
  for(let i=0;i<count;i++) {
   await page.selectOption('#station',String(i));await ready();const before=await state();
-  assert.equal(before.frame,0);assert.equal(before.approved,['Blacksmith','Ginger'].includes(before.character));
+  assert.equal(before.frame,0);assert.equal(before.approved,['Blacksmith','Ginger','Stoneworker'].includes(before.character));
   for(let frame=0;frame<8;frame++) {
    await page.locator('#frame').evaluate((e,n)=>{e.value=n;e.dispatchEvent(new Event('input'))},frame);
    assert.equal((await state()).frame,frame);
@@ -39,5 +39,5 @@ try {
   await page.click('#play');await page.uncheck('#repeat');results.push(completed);
  }
  assert.deepEqual(errors,[]);await writeFile(`${output}/results.json`,JSON.stringify({results,errors},null,2));
- console.log('PASS five eight-frame workstation layers, fixed props, tool occlusion, once-hold, released crate and repeat playback');
+ console.log('PASS six eight-frame workstation layers, fixed props, tool occlusion, once-hold, released crate and repeat playback');
 } finally {await browser.close()}

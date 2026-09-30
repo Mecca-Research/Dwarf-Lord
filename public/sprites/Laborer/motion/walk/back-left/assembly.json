@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "sha256": "14a85862d3875cd09013336a15d999699d6ebd4733cc04103a0555c0966f2240"
+    },
+    {
+      "id": "corrected",
+      "file": "authoring-inputs/corrected-sheet.png",
+      "poseCount": 8,
+      "sha256": "cdc37c3686195d60252361ab8132abb81cd28c06ef702f47a6a01adbb971cda9",
+      "prompt": "Edit this exact Laborer rear-left eight-pose walking sheet. Preserve exact bald stocky dwarf, dark beard, brown leather waistcoat, cream rolled sleeves, trousers and boots, camera facing upper-left, scale and 4-column2-row layout. Top row unchanged. Correct bottom row's repeated leading leg: bottom-left near anatomical LEFT leg reaches forward upper-left and plants heel, far RIGHT leg trails lower-right; bottom-second near LEFT supports weight while far RIGHT heel lifts; bottom-third far RIGHT foot recovers airborne past near LEFT support leg; bottom-right far RIGHT reaches forward upper-left before next top-left right contact. Arms counter-swing opposite the leading leg, small natural arc. Eight distinct full-body poses, same identity/proportions, genuine transparent background, no tools/labels/scenery.",
+      "reference": "authoring-inputs/original-sheet.png",
+      "referenceSha256": "14a85862d3875cd09013336a15d999699d6ebd4733cc04103a0555c0966f2240"
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "original",
+      "pose": 4
+    },
+    {
+      "input": "corrected",
+      "pose": 5
+    },
+    {
+      "input": "corrected",
+      "pose": 6
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "review": "Adopt opposite-half support and far-leg airborne recovery (5/6). Generated contact4 failed forward placement and was not selected. Contact4, reach7, counter-swing and whole-stride/loop remain unapproved.",
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ]
+}

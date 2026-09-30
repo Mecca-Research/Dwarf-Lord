@@ -1,0 +1,32 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {mkdir,writeFile} from 'node:fs/promises';
+const output='work/expanded-cycles/masonry-browser';await mkdir(output,{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader']});
+try {
+ const page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
+ await page.goto(process.env.REVIEW_URL??'http://localhost:8081/Dwarf-Lord/');
+ await page.getByRole('button',{name:'Walk the road'}).click();
+ await page.waitForFunction(()=>window.__controlsTest?.teleportDwarf);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.teleport(8,-35);t.setZoomBias(18);t.teleportDwarf('stig',7,-38);t.assignJob('stig','limestone');});
+ const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()));
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='stig')?.workMotion?.completed,null,{timeout:90000});
+ const completed=await state(),worker=completed.dwarves.find(d=>d.id==='stig');
+ assert.equal(worker.workMotion.action,'chisel-contact');assert.equal(worker.workMotion.direction,'actor');assert.equal(worker.workMotion.completions,1);
+ assert.equal(completed.workstations.find(s=>s.id==='masonry-bench')?.persistent,true);
+ await page.waitForTimeout(800);await page.screenshot({path:`${output}/working.png`});
+ await page.waitForTimeout(600);assert.equal((await state()).dwarves.find(d=>d.id==='stig').workMotion.completions,1);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.assignJob('stig',null);t.teleportDwarf('stig',4,-38);});
+ await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='stig')?.workMotion);
+ await page.waitForTimeout(1000);await page.screenshot({path:`${output}/empty-bench.png`});
+ const empty=await state();assert.equal(empty.workstations.find(s=>s.id==='masonry-bench')?.persistent,true);
+ assert.equal(empty.dwarves.filter(d=>d.anim==='work').length,0,'review isolates the bench from other workers');
+ await page.evaluate(()=>{const t=window.__controlsTest;t.teleportDwarf('stig',8,-38);t.assignJob('stig','limestone');});
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='stig')?.workMotion?.completed);
+ await page.evaluate(()=>window.__controlsTest.resolveDay());
+ await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='stig')?.workMotion);
+ assert.deepEqual(errors,[]);await writeFile(`${output}/results.json`,JSON.stringify({completed,empty,errors},null,2));
+ console.log('PASS isolated masonry task arrival, once-hold, cancellation, independent empty bench and day completion');
+} finally {await browser.close();}

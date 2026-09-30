@@ -8,6 +8,8 @@ const folders: Partial<Record<DwarfAppearance, string>> = {
   blacksmith: "Blacksmith", borrin: "Borrin", cook: "Cook", elder: "Elder",
   femaleMiner: "Female Miner", ginger: "Ginger", helga: "Helga", laborer: "Laborer",
 };
+// Work-only specialists do not yet have eight-direction walking atlases.
+const workFolders: Partial<Record<DwarfAppearance, string>> = { ...folders, stoneworker: "Stoneworker" };
 const directions = ["front", "front-right", "right", "back-right", "back", "back-left", "left", "front-left"];
 type Manifest = { character: string; action: string; kind: string; frames: { durationMs: number }[];
   frameSize: [number, number]; registration: { targetBodyHeight: number; targetAnchor: [number, number] };
@@ -217,7 +219,8 @@ export class NpcWorkMotion {
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? "hammer-contact" :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
-      this.appearance === "ginger" && job === "timber" ? "fell-tree" : null;
+      this.appearance === "ginger" && job === "timber" ? "fell-tree" :
+      this.appearance === "stoneworker" && job === "limestone" ? "chisel-contact" : null;
     if (!action || (!consulting && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
@@ -228,7 +231,7 @@ export class NpcWorkMotion {
     }
     if (!this.lease && performance.now() >= this.retryAt) {
       const token = ++this.token;
-      this.lease = acquire(folders[this.appearance]!, direction, action);
+      this.lease = acquire(workFolders[this.appearance]!, direction, action);
       this.lease.promise.then(value => {
         if (token !== this.token) return;
         this.loaded = value;

@@ -47,14 +47,16 @@ try {
  await page.keyboard.up('q');
  const turned = await page.evaluate(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='nessa').workMotion);
  assert.equal(turned.completed,true);assert.equal(turned.completions,1);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.assignJob("nessa",null);t.teleportDwarf("nessa",12,-35);});
+ await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==="nessa")?.workMotion);
  const addedWorkers=[];
- for(const [id,job,action,x,z] of [['grit','forge','hammer-contact',6,-7],['nessa','shaft2','shovel-cycle',14,-32],['tam','storage','stack-crates',8,8],['brokk','timber','fell-tree',-42,18]]) {
+ for(const [id,job,action,x,z] of [['stig','limestone','chisel-contact',8,-38],['grit','forge','hammer-contact',6,-7],['nessa','shaft2','shovel-cycle',14,-32],['tam','storage','stack-crates',8,8],['brokk','timber','fell-tree',-42,18]]) {
   await page.evaluate(({id,job,x,z})=>{const t=window.__controlsTest;t.teleport(x,z+3);t.teleportDwarf(id,x-2,z);t.assignJob(id,job);},{id,job,x,z});
   await page.waitForFunction(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion?.completed,id,{timeout:60000});
   const worker=await page.evaluate(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id),id);
   assert.equal(worker.workMotion.action,action);assert.equal(worker.workMotion.completions,1);
   await page.screenshot({path:`${output}/${action}.png`});
-  if(job==='forge'||job==='timber'||job==='storage')assert.equal(worker.workMotion.direction,'actor');
+  if(action==='chisel-contact'||job==='forge'||job==='timber'||job==='storage')assert.equal(worker.workMotion.direction,'actor');
   addedWorkers.push(worker);
   await page.evaluate(id=>window.__controlsTest.assignJob(id,null),id);
   await page.waitForFunction(id=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion,id);
@@ -69,6 +71,12 @@ try {
    await page.waitForTimeout(300);
    await page.screenshot({path:`${output}/empty-forestry-trunk.png`});
   }
+  if(action==='chisel-contact') {
+   assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='masonry-bench'&&s.persistent)));
+   await page.evaluate(()=>window.__controlsTest.teleportDwarf('stig',4,-38));
+   await page.waitForTimeout(700);
+   await page.screenshot({path:`${output}/empty-masonry-bench.png`});
+  }
   if(job==='forge') {
    assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='anvil'&&s.persistent)));
    await page.evaluate(()=>window.__controlsTest.teleportDwarf('grit',2,-7));
@@ -78,5 +86,5 @@ try {
  }
  assert.deepEqual(errors,[]);
  await writeFile(`${output}/results.json`,JSON.stringify({completed,miner,turned,stationAfterCancel,addedWorkers,errors},null,2));
- console.log('PASS persistent Cook station, directional mining and shoveling, Blacksmith forging, Laborer/Ginger work lifecycle');
+ console.log('PASS persistent Cook station, directional mining and shoveling, Blacksmith forging, Laborer/Ginger/Stoneworker work lifecycle');
 } finally {await browser.close();}

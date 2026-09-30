@@ -114,6 +114,26 @@
       "status": "exported",
       "destination": "public/sprites/Borrin/motion/desk-writing/actor",
       "station": "ledger-desk"
+    },
+    {
+      "character": "Stoneworker",
+      "action": "chisel-contact",
+      "title": "Dress limestone at masonry bench",
+      "direction": "actor",
+      "kind": "work",
+      "reference": "public/sprites/Stoneworker/work-references/01-chisel-contact.png",
+      "destination": "public/sprites/Stoneworker/motion/chisel-contact/actor",
+      "station": "masonry-bench",
+      "beats": [
+        "ready",
+        "lift",
+        "raised",
+        "downstroke",
+        "contact",
+        "rebound",
+        "settle",
+        "ready return"
+      ]
     }
   ]
 }

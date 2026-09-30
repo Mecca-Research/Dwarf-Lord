@@ -1,8 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "config": {
     "folder": "public/sprites/Elder/motion/walk/back",
-    "sourceSha256": "34ffb526c8b3c70167dc8b2768810acbe2775f4c0939aa3501d1f772950fa87a",
+    "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
     "regions": {
       "cane": [
         450,
@@ -25,25 +25,54 @@
     },
     "cameraElevationRadians": 0.6,
     "strideBodyRatio": 1.2,
-    "assumptions": "Back-facing straight travel; current runtime stride/body ratio. Cane planted in frames 0-3 is a diagnostic hypothesis, not an approved contact schedule. Regions isolate visible cane ferrule and boot silhouette bottoms; these are not skeletal joint measurements. Left boot support in frames 0-3 and right boot support in frames 4-7 are diagnostic hypotheses only. Boot-bottom proxies change with sole rotation; do not infer physical stride from them."
+    "assumptions": "Back-facing straight travel at runtime ratio1.2. Cane plant hypothesized in frames0-2; frames3-5 release/trailing,6-7 forward airborne recovery. Exact rigid-length and ground-height correspondence remain unreviewed. Boot silhouette proxies are diagnostic only; changing heel/toe roll cannot establish material correspondence. No stride/loop approval.",
+    "caneSupportFrames": [
+      0,
+      1,
+      2
+    ]
   },
-  "manifestSha256": "c2bf4ef255141456a9dd2746b98d740e4f31584d83e600a78e0684894cf34ad8",
+  "manifestSha256": "29151cef6318a4975fe98039252330ff1a89d2f7e822f1287243daa79177a86e",
+  "binding": {
+    "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
+    "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+    "frameSha256": [
+      "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
+      "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+      "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
+      "6c1acf566d33754ec554ecee65c216ee08cd7fc97a477d93c2516daa1b589053",
+      "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
+      "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+      "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
+      "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46"
+    ],
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ]
+  },
   "samples": [
     {
       "frame": 0,
-      "frameSha256": "a548fe8d5d55899c33a8c560179f712e0dab91ea8c75956e04a0e4fdcd1bae1a",
+      "frameSha256": "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
       "timeMs": 0,
       "contacts": {
         "cane": [
           501.0,
-          589
+          496
         ],
         "leftBoot": [
-          280.0,
+          282.0,
           614
         ],
         "rightBoot": [
-          380.5,
+          382.0,
           615
         ]
       },
@@ -51,39 +80,39 @@
     },
     {
       "frame": 1,
-      "frameSha256": "53d5c51b6e540e3428514c995ecf5c5ba38f58317c7026229f75a92258742da6",
+      "frameSha256": "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
       "timeMs": 140,
       "contacts": {
         "cane": [
-          499.0,
-          587
+          492.0,
+          564
         ],
         "leftBoot": [
           283.5,
-          592
+          587
         ],
         "rightBoot": [
           373.0,
-          619
+          615
         ]
       },
       "projectedRootY": -49.327
     },
     {
       "frame": 2,
-      "frameSha256": "9bf1a073ee96da5fdef0c14612044c0aaa0637fb8b3a6b6044be9f156e92f84c",
+      "frameSha256": "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
       "timeMs": 280,
       "contacts": {
         "cane": [
-          506.0,
-          591
+          511.0,
+          582
         ],
         "leftBoot": [
-          293.0,
-          616
+          292.0,
+          615
         ],
         "rightBoot": [
-          365.0,
+          366.0,
           575
         ]
       },
@@ -151,19 +180,19 @@
     },
     {
       "frame": 6,
-      "frameSha256": "0bbcbe7c9e6dcd39e35df3c431e48884a54284d2786289f938282733aa3d4744",
+      "frameSha256": "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
       "timeMs": 780,
       "contacts": {
         "cane": [
-          499.5,
-          573
+          512.0,
+          480
         ],
         "leftBoot": [
-          272.0,
+          273.0,
           583
         ],
         "rightBoot": [
-          353.0,
+          352.0,
           615
         ]
       },
@@ -171,44 +200,250 @@
     },
     {
       "frame": 7,
-      "frameSha256": "74c68315cb46a1659a4133f684bf8c811a877a233d169bf39868aa4ce68db342",
+      "frameSha256": "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46",
       "timeMs": 885,
       "contacts": {
         "cane": [
-          499.0,
-          578
+          501.5,
+          484
         ],
         "leftBoot": [
-          282.0,
-          575
+          280.0,
+          576
         ],
         "rightBoot": [
-          369.0,
+          368.0,
           615
         ]
       },
       "projectedRootY": -311.818
     }
   ],
-  "firstHalfCaneDriftPx": [
+  "canePlantDriftPx": [
     0.0,
-    51.366,
-    96.783,
-    133.696
+    20.729,
+    16.128
   ],
-  "maxFirstHalfCaneDriftPx": 133.696,
+  "maxCanePlantDriftPx": 20.729,
+  "contactWindows": {
+    "cane": {
+      "supportFrames": [
+        0,
+        1,
+        2
+      ],
+      "projectedContacts": [
+        [
+          501.0,
+          496.0
+        ],
+        [
+          492.0,
+          514.673
+        ],
+        [
+          511.0,
+          483.346
+        ]
+      ],
+      "heldPoseWithinFrameDriftPx": 0,
+      "baselineContinuousRootWithinFrameDriftPx": [
+        49.327,
+        49.327,
+        36.995
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "contactJumpPx": 20.729
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "contactJumpPx": 36.639
+        }
+      ],
+      "maxBoundaryContactDriftPx": 20.729,
+      "materialCorrespondenceReviewed": false,
+      "contactApproved": false
+    },
+    "leftBoot": {
+      "supportFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "projectedContacts": [
+        [
+          282.0,
+          614.0
+        ],
+        [
+          283.5,
+          537.673
+        ],
+        [
+          292.0,
+          516.346
+        ],
+        [
+          288.0,
+          479.35
+        ]
+      ],
+      "heldPoseWithinFrameDriftPx": 0,
+      "baselineContinuousRootWithinFrameDriftPx": [
+        49.327,
+        49.327,
+        36.995,
+        40.519
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "contactJumpPx": 76.342
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "contactJumpPx": 22.959
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "contactJumpPx": 37.211
+        }
+      ],
+      "maxBoundaryContactDriftPx": 134.783,
+      "materialCorrespondenceReviewed": false,
+      "contactApproved": false
+    },
+    "rightBoot": {
+      "supportFrames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "projectedContacts": [
+        [
+          356.0,
+          426.832
+        ],
+        [
+          359.0,
+          368.504
+        ],
+        [
+          352.0,
+          340.177
+        ],
+        [
+          368.0,
+          303.182
+        ]
+      ],
+      "heldPoseWithinFrameDriftPx": 0,
+      "baselineContinuousRootWithinFrameDriftPx": [
+        49.327,
+        49.327,
+        36.995,
+        40.519
+      ],
+      "transitions": [
+        {
+          "from": 4,
+          "to": 5,
+          "contactJumpPx": 58.404
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "contactJumpPx": 29.179
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "contactJumpPx": 40.307
+        }
+      ],
+      "maxBoundaryContactDriftPx": 124.231,
+      "materialCorrespondenceReviewed": false,
+      "contactApproved": false
+    }
+  },
+  "caneOnlyTimingCandidate": {
+    "durationsMs": [
+      193,
+      51,
+      141,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "measurement": {
+      "supportFrames": [
+        0,
+        1,
+        2
+      ],
+      "projectedContacts": [
+        [
+          501.0,
+          496.0
+        ],
+        [
+          492.0,
+          495.999
+        ],
+        [
+          511.0,
+          496.03
+        ]
+      ],
+      "heldPoseWithinFrameDriftPx": 0,
+      "baselineContinuousRootWithinFrameDriftPx": [
+        68.001,
+        17.969,
+        49.68
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "contactJumpPx": 9.0
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "contactJumpPx": 19.0
+        }
+      ],
+      "maxBoundaryContactDriftPx": 10.0,
+      "materialCorrespondenceReviewed": false,
+      "contactApproved": false
+    },
+    "adopted": false,
+    "reason": "Cane-only timing cannot approve or calibrate simultaneous foot support. Remaining lateral travel also exceeds the contact target."
+  },
+  "runtimeSha256": "a0c83af99f7487660a890e1049d89695a86d39953b18dd18dd339f463db01401",
   "hypotheticalSupportFootDriftPx": {
     "leftBoot": [
       0.0,
-      71.413,
-      97.524,
-      134.887
+      76.342,
+      98.165,
+      134.784
     ],
     "rightBoot": [
       0.0,
       58.405,
-      86.707,
-      124.332
+      86.747,
+      124.231
     ]
   },
   "units": "640-pixel atlas projection; boot silhouette proxies, not tracked material points",

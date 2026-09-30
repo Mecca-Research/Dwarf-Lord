@@ -7,6 +7,8 @@ import math
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw
+from contact_playback import evaluate
+from gait_calibration import binding
 
 
 def tip(image, region):
@@ -37,9 +39,11 @@ def measure(config):
             px=x+point[0]/2;py=y+point[1]/2
             draw.ellipse((px-3,py-3,px+3,py+3),fill='cyan' if name=='cane' else 'yellow')
         draw.text((x+4,y+326),f'{i}: cane {contacts["cane"]}',fill='white');time+=frame['durationMs']
-    # Assume cane planted during the left-support first half, as a diagnostic only.
+    # Contact windows are explicit hypotheses; a release pose is not a plant.
     first=samples[0];drifts=[]
-    for sample in samples[:4]:
+    cane_frames=config.get('caneSupportFrames',[0,1,2,3])
+    for index in cane_frames:
+        sample=samples[index]
         local=np.subtract(sample['contacts']['cane'],first['contacts']['cane'])
         world=local+np.array([0,sample['projectedRootY']])
         drifts.append(round(float(np.linalg.norm(world)),3))
@@ -51,8 +55,20 @@ def measure(config):
                 [0,sample['projectedRootY']-base['projectedRootY']])),3)
             for sample in samples[start:end]
         ]
-    return {'version':1,'config':config,'manifestSha256':digest(folder/'manifest.json'),
-            'samples':samples,'firstHalfCaneDriftPx':drifts,'maxFirstHalfCaneDriftPx':max(drifts),
+    windows={name:evaluate([f['durationMs'] for f in manifest['frames']],
+                          [s['contacts'][name] for s in samples],indices,
+                          [0,-math.sin(config['cameraElevationRadians'])],body_height*config['strideBodyRatio'])
+             for name,indices in [('cane',cane_frames),('leftBoot',list(range(4))),('rightBoot',list(range(4,8)))]}
+    candidate_durations=[193,51,141,115,140,140,105,115]
+    cane_only=evaluate(candidate_durations,[s['contacts']['cane'] for s in samples],cane_frames,
+                       [0,-math.sin(config['cameraElevationRadians'])],body_height*config['strideBodyRatio'])
+    return {'version':2,'config':config,'manifestSha256':digest(folder/'manifest.json'),
+            'binding':binding(folder,manifest),
+            'samples':samples,'canePlantDriftPx':drifts,'maxCanePlantDriftPx':max(drifts),
+            'contactWindows':windows,
+            'caneOnlyTimingCandidate':{'durationsMs':candidate_durations,'measurement':cane_only,
+                                      'adopted':False,'reason':'Cane-only timing cannot approve or calibrate simultaneous foot support. Remaining lateral travel also exceeds the contact target.'},
+            'runtimeSha256':digest(Path('src/game/world/npc-motion.ts')),
             'hypotheticalSupportFootDriftPx':foot_drift,'units':'640-pixel atlas projection; boot silhouette proxies, not tracked material points',
             'approval':False,'conclusion':'Cane needs authored plant/lift/travel correction. No measured stride is adopted from this invalid contact sequence.'},board
 
@@ -62,4 +78,4 @@ if __name__=='__main__':
     result,board=measure(config)
     Path('docs/elder-back-contact-measurement.json').write_text(json.dumps(result,indent=2)+'\n')
     output=Path('work/expanded-cycles/elder-contact-measurement.png');output.parent.mkdir(parents=True,exist_ok=True);board.save(output)
-    print(json.dumps({'maxFirstHalfCaneDriftPx':result['maxFirstHalfCaneDriftPx'],'overlay':str(output),'approval':False}))
+    print(json.dumps({'maxCanePlantDriftPx':result['maxCanePlantDriftPx'],'overlay':str(output),'approval':False}))

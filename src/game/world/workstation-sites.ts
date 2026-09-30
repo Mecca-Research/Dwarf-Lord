@@ -7,6 +7,7 @@ export const workstationSites = [
   { id: "anvil", appearance: "blacksmith", job: "forge", bodyHeight: 520, anchor: [320, 616] },
   { id: "forestry-trunk", appearance: "ginger", job: "timber", bodyHeight: 376, anchor: [240, 616] },
   { id: "storage-pallet", appearance: "laborer", job: "storage", bodyHeight: 370, anchor: [180, 616], completionLayer: "completed-crate.png" },
+  { id: "masonry-bench", appearance: "stoneworker", job: "limestone", bodyHeight: 520, anchor: [320, 616] },
   { id: "ledger-desk", appearance: "borrin", job: null, bodyHeight: 650, anchor: [320, 616], passive: true },
 ].map(site => {
   const consultant = STARTING_DWARVES.find(dwarf => dwarf.id === "borrin")!;

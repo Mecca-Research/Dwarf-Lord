@@ -1,0 +1,35 @@
+{
+  "sourceSha256": "0ea573ee039bb91a81acf2160fb8fc8ddde07d291d8cd1412c3137d5695db2ca",
+  "spriteSha256": "2a861206fefd929e98f39968ca13a6c0ae7a0cf1336b7740d2a4de5c8704f4aa",
+  "prompt": "Edit FIRST image only into a much LOWER squat masonry bench that fits SECOND image Stoneworker actor's tool height. Do not include any character. Current bench too tall: its stone sits near chest rather than under chisel. Keep EXACT width, timber quality, four legs, braces, left tray/tools/cloth, camera, complete prop and ground baseline. Shorten all wooden legs substantially, about HALF current leg height, and reduce limestone block vertical height about HALF while retaining its footprint. Lower bench top and stone to where actor's chisel tip reaches (about y410 on actor640 canvas). Goal complete bench+stone height about250px rather389px at570px width, with feet at616: low working top and stone crown near y390. Move entire tabletop and stone DOWN while feet stay on ground; don't move stone independently to floor. Maintain natural undistorted hand-crafted squat workbench geometry; do NOT merely rescale whole image, keep original horizontal width and same perspective. True transparent background, one full low bench plus stone, no dwarf, no text.",
+  "reference": "../../Stoneworker/work-references/01-chisel-contact.png",
+  "referenceSha256": "7c6e7616f34285fda519e9c9391b6ce32998956563d405e64715d2269ca11738",
+  "placement": {
+    "crop": "alpha >=128 bounds",
+    "width": 570,
+    "x": 35,
+    "y": 376,
+    "canvas": [
+      640,
+      640
+    ],
+    "alphaThreshold": 128
+  },
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "editInputs": [
+    {
+      "file": "authoring-inputs/tall-sprite.png",
+      "sha256": "d89756b0bd2603c0e3a9f2825e902017f0edad27e5236aa61860ebfee8280d10"
+    },
+    {
+      "file": "authoring-inputs/actor-reference.png",
+      "sha256": "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457"
+    }
+  ],
+  "review": "Squat bench corrects earlier excessive work height; exact chisel-to-stone contact and full loop still require acceptance."
+}

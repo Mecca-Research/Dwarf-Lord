@@ -121,7 +121,7 @@ test('direction families use a common body target instead of independently fitti
 });
 
 test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
- for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','back-right'],['Ginger','back-right'],['Elder','back']]){
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','back-right'],['Ginger','back-right'],['Laborer','back-left'],['Elder','back']]){
   const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
   const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
   assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
@@ -146,11 +146,11 @@ test('runtime actor layers and persistent stations retain source provenance and 
   for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
   const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
   assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
-  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,['Blacksmith','Ginger'].includes(entry.character));
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,['Blacksmith','Ginger','Stoneworker'].includes(entry.character));
   if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
- for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet','ledger-desk']) {
+ for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet','ledger-desk','masonry-bench']) {
  const root=resolve('public/sprites/workstations',id),g=json(resolve(root,'generation.json'));
  assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
  assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
@@ -167,4 +167,21 @@ test('log contact review binds all views and accepts only visible rear occlusion
  }
  const rear=review.entries.find(e=>e.direction==='back-left');assert.equal(rear.visibleContact,'accepted-visible-occlusion');
  assert.match(review.occlusionReview.scope,/No hidden-anatomy/);
+});
+
+test('Borrin foreground contours keep his vest off the open ledger',()=>{
+ const c=json('public/sprites/Borrin/motion/render-calibration.json').actions['desk-writing/actor'];
+ function contains(poly,[x,y]) {
+  let inside=false;
+  for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+   const [a,b]=poly[i],[d,e]=poly[j];
+   if(((b>y)!==(e>y))&&x<(d-a)*(y-b)/(e-b)+a)inside=!inside;
+  }
+  return inside;
+ }
+ for(const polygons of c.foregroundPolygons){
+  assert.equal(polygons.some(p=>contains(p,[260,330])),false,'vest behind quill must not cover paper');
+  assert.equal(polygons.some(p=>contains(p,[360,370])),false,'pants below hand stay behind desk');
+  assert.equal(polygons.some(p=>contains(p,[430,340])),true,'resting hand remains above paper');
+ }
 });

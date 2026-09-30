@@ -105,7 +105,18 @@ def export(entry):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--action');parser.add_argument('--direction');parser.add_argument('--force',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--action');parser.add_argument('--direction');parser.add_argument('--force',action='store_true')
+    parser.add_argument('--runtime-layers',action='store_true',help='Export independent actor layers without rewriting the main character library')
+    args=parser.parse_args()
+    if args.runtime_layers:
+        count=0
+        for entry in json.loads(Path('docs/runtime-motion-layers.json').read_text())['entries']:
+            if ((not args.character or args.character==entry['character']) and
+                (not args.action or args.action==entry['action']) and
+                (not args.direction or args.direction==entry['direction'])):
+                if export(entry):count+=1
+        print(f'Exported {count} independent runtime actor layers; main library unchanged')
+        return
     plan=json.loads(PLAN.read_text());by_character={};count=0
     for entry in plan['entries']:
         folder=Path(entry['destination']); manifest=folder/'manifest.json'

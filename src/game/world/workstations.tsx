@@ -4,16 +4,16 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
 import { workstationSites } from "./workstation-sites";
-import { groundHeight } from "../runtime";
+import { groundHeight, zoneAt } from "../runtime";
 import { workstationTaskStates } from "./npc-motion";
 
 
 export const workstationDiagnostics = new Map<string, { id: string; x: number; z: number; persistent: boolean; completedProp?: boolean }>();
 
 /** Persistent world props, independently owned from actor animation atlases. */
-export function Workstations({ scale }: { scale: number }) {
+export function Workstations({ scale, mineScale = scale }: { scale: number; mineScale?: number }) {
   useEffect(() => () => { workstationTaskStates.clear(); }, []);
-  return <>{workstationSites.map(site => <Workstation key={site.id} site={site} scale={scale} />)}</>;
+  return <>{workstationSites.map(site => <Workstation key={site.id} site={site} scale={zoneAt(site.target.targetX, site.target.targetZ) === "mine" ? mineScale : scale} />)}</>;
 }
 
 function Workstation({ site, scale }: { site: typeof workstationSites[number]; scale: number }) {
