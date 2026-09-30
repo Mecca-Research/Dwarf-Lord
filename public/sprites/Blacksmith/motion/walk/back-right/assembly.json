@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "sha256": "2d784590c763213857fff79bf91271bd99f1b23e81a9f7d791bec447675699a3"
+    },
+    {
+      "id": "opposite-contact",
+      "file": "authoring-inputs/opposite-contact.png",
+      "poseCount": 1,
+      "sha256": "dae2639e0637468a2e918979766f825c4510c94a561b03475f2fc833cfbd91e6",
+      "prompt": "Reverse near right leg to leading heel contact, far left leg trailing; same back-right camera and character.",
+      "reference": "authoring-inputs/opposite-contact-reference.png",
+      "referenceSha256": "a8cf155b845b5e9f65c6ac3f2eacf13d139089cc67e193c2ea5c81550556f61c"
+    },
+    {
+      "id": "right-support",
+      "file": "authoring-inputs/right-support.png",
+      "poseCount": 1,
+      "sha256": "af249b716ee34ca71cd0cc71543ab5cba8ef2ce3e7ea800a4136d4299b63943c",
+      "prompt": "Near right leg planted weight-down, far left heel lifts behind; same view and character.",
+      "reference": "authoring-inputs/opposite-contact.png",
+      "referenceSha256": "dae2639e0637468a2e918979766f825c4510c94a561b03475f2fc833cfbd91e6"
+    },
+    {
+      "id": "left-recovery",
+      "file": "authoring-inputs/left-recovery.png",
+      "poseCount": 1,
+      "sha256": "4fca81a88b36014a841202d0a68bb41aecabb7f4a6da3b4b453501146aebfbea",
+      "prompt": "Near right leg supports under right hip; far left leg bends and lifts for recovery; same view and character.",
+      "reference": "authoring-inputs/opposite-contact.png",
+      "referenceSha256": "dae2639e0637468a2e918979766f825c4510c94a561b03475f2fc833cfbd91e6"
+    },
+    {
+      "id": "counter-swing",
+      "file": "authoring-inputs/counter-swing-sheet.png",
+      "poseCount": 8,
+      "sha256": "763a272f03bb0108acdf54ecd84011449e9c73f7db61b97c060550b640fc96ab",
+      "reference": "authoring-inputs/counter-swing-reference.png",
+      "referenceSha256": "7ac26d6f00e9c19c7075ad7f2202e74a919783549a802e3e5664341febc0ba72",
+      "prompt": "Preserve all eight leg poses and body registration. Correct bottom-row right arm backward nearer hip, left arm forward, partial return in third bottom pose. Same character, camera, 4x2 transparent sheet."
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "counter-swing",
+      "pose": 4
+    },
+    {
+      "input": "counter-swing",
+      "pose": 5
+    },
+    {
+      "input": "counter-swing",
+      "pose": 6
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "review": "Second half near-right lead/support and far-left recovery corrected. Authored reduced near-arm extension on poses4-6. Forward passing distance, full opposite-arm swing and planted-foot travel remain unapproved."
+}

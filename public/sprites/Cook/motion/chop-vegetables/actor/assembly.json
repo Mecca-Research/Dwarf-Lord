@@ -21,6 +21,15 @@
       "referenceSha256": "9150e692e8feff96bdeaba4d51231116313bd50822b8f76d5102934918075333",
       "guide": "authoring-inputs/clear-hand-guide.png",
       "guideSha256": "4968a174852f2e18f4161a20005fcf57a7b718d4623d15b2badce2059cd81eb0"
+    },
+    {
+      "id": "contact-level",
+      "file": "authoring-inputs/contact-level.png",
+      "poseCount": 1,
+      "sha256": "d940a638b36950e325afd08a8ec84749dd7b7ad9fcb980be18eb51302723bd38",
+      "reference": "authoring-inputs/contact-level-reference.png",
+      "referenceSha256": "d992512f93c42d20758ccaa6921de275ecffa008d837f3de83e497b55f52cba4",
+      "prompt": "Edit exact Cook actor contact pose: raise cooking wrist and knife about 40 pixels from the original 640px image, cutting edge near y355. Preserve identity, other hand, clothing, feet, view. Actor only, transparent background."
     }
   ],
   "poses": [
@@ -41,8 +50,8 @@
       "pose": 3
     },
     {
-      "input": "clear-hand",
-      "pose": 4
+      "input": "contact-level",
+      "pose": 0
     },
     {
       "input": "clear-hand",
@@ -57,5 +66,5 @@
       "pose": 7
     }
   ],
-  "review": "Authored empty-hand clearance correction across all eight poses; requires renewed workstation composition review."
+  "review": "New authored horizontal knife contact pose; evaluate against fixed cutting block and neighboring phases before loop approval."
 }

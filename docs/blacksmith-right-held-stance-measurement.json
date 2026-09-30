@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "e30d137d5b76acec2eb96b96e46203956bd269dba51de9d291b1e1df247ceef5",
+    "settingsSha256": "5415a9a9bbbb3996a0de3c08786c51d9a02f62540619f4539ad9fc25971c202c",
+    "frameSha256": [
+      "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
+      "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
+      "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
+      "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
+      "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
+      "ef45df34c74abe2c58e18ce69d818a599b629208a1b468dca262e6ac452c1fee"
+    ],
+    "durationsMs": [
+      140,
+      130,
+      100,
+      130,
+      140,
+      89,
+      173,
+      98
+    ]
+  },
+  "playbackModel": "Discrete atlas frame held while world root moves continuously; no per-foot compensation.",
+  "measurements": [
+    {
+      "calibration": "runtime-estimate",
+      "strideBodyRatio": 1.2,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 130,
+              "projectedTravelPx": [
+                81.12,
+                0.0
+              ],
+              "withinHoldDriftPx": 81.12
+            },
+            {
+              "frame": 2,
+              "durationMs": 100,
+              "projectedTravelPx": [
+                62.4,
+                0.0
+              ],
+              "withinHoldDriftPx": 62.4
+            },
+            {
+              "frame": 3,
+              "durationMs": 130,
+              "projectedTravelPx": [
+                81.12,
+                0.0
+              ],
+              "withinHoldDriftPx": 81.12
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 89,
+              "projectedTravelPx": [
+                55.536,
+                0.0
+              ],
+              "withinHoldDriftPx": 55.536
+            },
+            {
+              "frame": 6,
+              "durationMs": 173,
+              "projectedTravelPx": [
+                107.952,
+                0.0
+              ],
+              "withinHoldDriftPx": 107.952
+            },
+            {
+              "frame": 7,
+              "durationMs": 98,
+              "projectedTravelPx": [
+                61.152,
+                0.0
+              ],
+              "withinHoldDriftPx": 61.152
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 107.952
+    },
+    {
+      "calibration": "sampled-keyframe-fit",
+      "strideBodyRatio": 1.176428,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 130,
+              "projectedTravelPx": [
+                79.527,
+                0.0
+              ],
+              "withinHoldDriftPx": 79.527
+            },
+            {
+              "frame": 2,
+              "durationMs": 100,
+              "projectedTravelPx": [
+                61.174,
+                0.0
+              ],
+              "withinHoldDriftPx": 61.174
+            },
+            {
+              "frame": 3,
+              "durationMs": 130,
+              "projectedTravelPx": [
+                79.527,
+                0.0
+              ],
+              "withinHoldDriftPx": 79.527
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 89,
+              "projectedTravelPx": [
+                54.445,
+                0.0
+              ],
+              "withinHoldDriftPx": 54.445
+            },
+            {
+              "frame": 6,
+              "durationMs": 173,
+              "projectedTravelPx": [
+                105.831,
+                0.0
+              ],
+              "withinHoldDriftPx": 105.831
+            },
+            {
+              "frame": 7,
+              "durationMs": 98,
+              "projectedTravelPx": [
+                59.951,
+                0.0
+              ],
+              "withinHoldDriftPx": 59.951
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 105.831
+    }
+  ],
+  "correspondenceReviewed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Projected root travel during sampled intended flat-sole support frames; does not certify anatomical identity, heel-roll, unsampled contacts, terrain or cane.",
+  "remaining": "A whole-stride approval requires contact tracking through held-frame intervals and frame transitions, not only the six keyframe samples."
+}
