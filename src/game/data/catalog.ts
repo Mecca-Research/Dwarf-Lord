@@ -460,7 +460,7 @@ export const STARTING_DWARVES: Dwarf[] = [
   dwarf({
     id: "fenn",
     name: "Fenn Mossbeard",
-    title: "Laborer",
+    title: "Quartermaster",
     capability: 5,
     skills: mediocre,
     energy: 0.52,

@@ -5,8 +5,17 @@ import ts from 'typescript';
 import * as THREE from 'three';
 const source = readFileSync(new URL('../src/game/world/npc-motion.ts', import.meta.url), 'utf8');
 const moduleUrl = new URL('../public/motion-playback.mjs', import.meta.url).href;
+function loadCommonJs(path, dependencies = {}) {
+  const {outputText} = ts.transpileModule(readFileSync(path,'utf8'), {compilerOptions:{module:ts.ModuleKind.CommonJS}});
+  const exports={};new Function('exports','require',outputText)(exports,id=>{assert.ok(id in dependencies,id);return dependencies[id]});return exports;
+}
+const appearances=loadCommonJs('src/game/world/dwarf-appearances.ts');
+const catalog=loadCommonJs('src/game/data/catalog.ts', {'../world/dwarf-appearances':appearances,'@/lib/asset':{asset:p=>p}});
+let stationSource=ts.transpileModule(readFileSync('src/game/world/workstation-sites.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
+stationSource=stationSource.replace('import { JOBS, STARTING_DWARVES } from "../data/catalog";',`const JOBS=${JSON.stringify(catalog.JOBS)},STARTING_DWARVES=${JSON.stringify(catalog.STARTING_DWARVES)};`);
+const stationUrl=`data:text/javascript;base64,${Buffer.from(stationSource).toString('base64')}`;
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
-outputText = outputText.replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
+outputText = outputText.replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
 const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
@@ -204,6 +213,28 @@ test('Borrin reviews the ledger as a seated consultant without a production assi
   }finally{worker.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 
+test('Quartermaster inspects weights once at his table and releases for travel or a job', async () => {
+ const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
+ const manifest=JSON.parse(readFileSync('public/sprites/Quartermaster/motion/check-weights/actor/manifest.json','utf8'));
+ const calibration=JSON.parse(readFileSync('public/sprites/Quartermaster/motion/render-calibration.json','utf8'));
+ globalThis.location={href:'https://motion.test/'};
+ globalThis.document={createElement:()=>({getContext:()=>({drawImage(){}})})};
+ globalThis.createImageBitmap=async()=>({width:5120,height:640,close(){}});
+ globalThis.fetch=async url=>({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?calibration:manifest,blob:async()=>new Blob()});
+ const worker=new NpcWorkMotion('quartermaster-test','quartermaster'),body={x:-28,z:12,anim:'idle',facing:0,speed:0};
+ const update=(dt=0,day=1,job=null)=>worker.update(body,job,day,true,dt,1.95);
+ async function ready(day=1){for(let i=0;i<50;i++){const pose=update(0,day);if(pose)return pose;await new Promise(r=>setTimeout(r,1));}throw new Error('weighing actor did not load');}
+ try {
+  await ready();update(.14);const paused=npcWorkDiagnostics.get('quartermaster-test').frame;
+  update(0);assert.equal(npcWorkDiagnostics.get('quartermaster-test').frame,paused);
+  update(10);update(10);assert.equal(npcWorkDiagnostics.get('quartermaster-test').completions,1);
+  assert.equal(update(0,1,'storage'),null,'production assignment releases passive action');
+  await ready(2);assert.equal(npcWorkDiagnostics.get('quartermaster-test').frame,0);
+  body.anim='walk';assert.equal(update(),null);
+  body.anim='idle';body.x=-24;assert.equal(update(),null,'table work requires physical proximity');
+ } finally {worker.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v}}
+});
+
 test('visual ground correction survives every direction, parent scale and terrain height',()=>{
  for(let direction=0;direction<8;direction++)for(const scalar of [.5,1,2.3]){
   const yaw=direction*Math.PI/4,scale=new THREE.Vector3(scalar,scalar,scalar);
@@ -215,10 +246,12 @@ test('visual ground correction survives every direction, parent scale and terrai
  }
 });
 
-test('work-only Stoneworker keeps static walking fallback without requesting absent atlases',()=>{
- const driver=new NpcWalkMotion('stone-fallback','stoneworker');
+test('work-only specialists keep static walking fallback without requesting absent atlases',()=>{
+ for(const appearance of ['stoneworker','quartermaster']){
+ const id=`${appearance}-fallback`,driver=new NpcWalkMotion(id,appearance);
  try {
   assert.equal(driver.update({x:0,z:0,anim:'walk',facing:3,speed:2.4},1.95),null);
-  assert.equal(npcMotionDiagnostics.has('stone-fallback'),false);
+  assert.equal(npcMotionDiagnostics.has(id),false);
  } finally {driver.dispose();}
+ }
 });

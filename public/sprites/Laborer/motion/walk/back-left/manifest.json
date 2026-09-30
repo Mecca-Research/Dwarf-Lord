@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/05-back-left.png",
   "source": "source-sheet.png",
-  "sourceSha256": "3bddbbf5fbcbc8454054f3b203e8a0311fb9ed1d2895460ab3affa85da4f1ba8",
+  "sourceSha256": "bdcf576e9df060e4b51d37080dcf5224c1a4c3b4f9b502c82f9e4c82cfea996f",
   "sourceSize": [
     2560,
     1280
@@ -22,7 +22,7 @@
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "left heel contact, right toe behind",
+      "description": "retained first contact; leg identity needs review",
       "durationMs": 125,
       "sourceBounds": [
         180,
@@ -46,7 +46,7 @@
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "left weight down, right heel lifts",
+      "description": "retained first support pose",
       "durationMs": 125,
       "sourceBounds": [
         841,
@@ -70,7 +70,7 @@
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "right foot airborne passing left support leg",
+      "description": "retained first recovery pose",
       "durationMs": 125,
       "sourceBounds": [
         1520,
@@ -94,7 +94,7 @@
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "right leg extends forward, left heel rises",
+      "description": "retained first reach; correction pending",
       "durationMs": 125,
       "sourceBounds": [
         2089,
@@ -118,31 +118,31 @@
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "right heel contact, left toe behind",
+      "description": "near-left heel contact; far-right toe trailing",
       "durationMs": 125,
       "sourceBounds": [
-        181,
-        744,
-        492,
-        1241
+        130,
+        740,
+        525,
+        1240
       ],
       "sourceAnchor": [
-        139.0,
-        496.0
+        190.0,
+        500.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        175,
-        100
+        122,
+        96
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "right weight down, left heel lifts",
+      "description": "near-left support; far-right heel lifts",
       "durationMs": 125,
       "sourceBounds": [
         810,
@@ -166,7 +166,7 @@
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "left foot airborne passing right support leg",
+      "description": "far-right airborne recovery; near-left supports",
       "durationMs": 125,
       "sourceBounds": [
         1440,
@@ -190,25 +190,25 @@
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "left leg extends forward, right heel rises",
+      "description": "far-right airborne reach; near-left toe trails",
       "durationMs": 125,
       "sourceBounds": [
-        2124,
-        746,
-        2397,
-        1243
+        2066,
+        740,
+        2450,
+        1240
       ],
       "sourceAnchor": [
-        116.0,
-        494.0
+        174.0,
+        500.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        199,
-        102
+        139,
+        96
       ]
     }
   ],
@@ -267,7 +267,7 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "a2462065dbf8a34652bf8e901a414af7d4fbac29fb7e18c0a82342ad56495fd8",
+    "settingsSha256": "722ea9da2603407db0b436ba04ac4609fc36db18f51d10738484ce50399f9317",
     "exportVersion": 2,
     "stationRegistration": null
   },

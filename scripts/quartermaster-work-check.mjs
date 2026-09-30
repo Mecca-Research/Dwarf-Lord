@@ -1,0 +1,31 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {mkdir,writeFile} from 'node:fs/promises';
+const output='work/expanded-cycles/quartermaster-browser';await mkdir(output,{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader']});
+try {
+ const page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
+ page.setDefaultTimeout(90000);
+ page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
+ await page.goto(process.env.REVIEW_URL??'http://localhost:8081/Dwarf-Lord/');
+ await page.getByRole('button',{name:'Walk the road'}).click();
+ await page.waitForFunction(()=>window.__controlsTest?.teleportDwarf);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.teleport(-28,15);t.setZoomBias(18);t.teleportDwarf('fenn',-28,12)});
+ const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()));
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='fenn')?.workMotion?.completed);
+ const completed=await state();assert.equal(completed.dwarves.find(d=>d.id==='fenn').workMotion.action,'check-weights');
+ await page.waitForTimeout(800);assert.equal((await state()).dwarves.find(d=>d.id==='fenn').workMotion.completions,1);
+ await page.screenshot({path:`${output}/working.png`});
+ await page.evaluate(()=>window.__controlsTest.teleportDwarf('fenn',-24,12));
+ await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='fenn')?.workMotion);
+ assert.equal((await state()).workstations.find(s=>s.id==='weighing-table').persistent,true);
+ await page.waitForTimeout(500);await page.screenshot({path:`${output}/empty-table.png`});
+ await page.evaluate(()=>{const t=window.__controlsTest;t.teleportDwarf('fenn',-28,12);t.assignJob('fenn','storage')});
+ await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='fenn')?.workMotion);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.assignJob('fenn',null);t.teleportDwarf('fenn',-28,12)});
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='fenn')?.workMotion?.completed);
+ await page.evaluate(()=>{const t=window.__controlsTest;t.resolveDay();t.nextMorning();t.teleportDwarf('fenn',-28,12)});
+ await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='fenn')?.workMotion?.completed);
+ assert.deepEqual(errors,[]);await writeFile(`${output}/results.json`,JSON.stringify({completed,errors},null,2));
+ console.log('PASS Quartermaster passive inspection, once-hold, departure, independent table, assignment release and next day');
+} finally {await browser.close()}

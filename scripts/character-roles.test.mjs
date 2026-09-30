@@ -56,6 +56,16 @@ test('forge assignment repairs the existing building through daily resolution', 
 });
 
 const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog });
+test('passive weighing requires Fenn at his home table without a job',()=>{
+ const fenn=catalog.STARTING_DWARVES.find(d=>d.id==='fenn');
+ const body={x:fenn.x,z:fenn.z,anim:'idle'};
+ const site=stations.passiveWorkstation('quartermaster',null,body);
+ assert.equal(site.id,'weighing-table');assert.equal(site.action,'check-weights');
+ assert.deepEqual(site.target,{targetX:fenn.x,targetZ:fenn.z});
+ assert.equal(stations.passiveWorkstation('quartermaster','storage',body),undefined);
+ for(const anim of ['walk','work','talk','sleep','sit'])assert.equal(stations.passiveWorkstation('quartermaster',null,{...body,anim}),undefined);
+ assert.equal(stations.passiveWorkstation('quartermaster',null,{...body,x:body.x+2}),undefined);
+});
 test('persistent workstation registration only captures its assigned working actor', () => {
   for(const [appearance,job,id] of [['cook','meals','cutting-block'],['blacksmith','forge','anvil'],['stoneworker','limestone','masonry-bench']]) {
     const station=stations.activeWorkstation(appearance,job,true,false);

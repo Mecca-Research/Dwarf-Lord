@@ -3,13 +3,14 @@ import { asset } from "@/lib/asset";
 import { MotionPlayback, motionPlacement } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
+import { passiveWorkstation } from "./workstation-sites";
 
 const folders: Partial<Record<DwarfAppearance, string>> = {
   blacksmith: "Blacksmith", borrin: "Borrin", cook: "Cook", elder: "Elder",
   femaleMiner: "Female Miner", ginger: "Ginger", helga: "Helga", laborer: "Laborer",
 };
 // Work-only specialists do not yet have eight-direction walking atlases.
-const workFolders: Partial<Record<DwarfAppearance, string>> = { ...folders, stoneworker: "Stoneworker" };
+const workFolders: Partial<Record<DwarfAppearance, string>> = { ...folders, stoneworker: "Stoneworker", quartermaster: "Quartermaster" };
 const directions = ["front", "front-right", "right", "back-right", "back", "back-left", "left", "front-left"];
 type Manifest = { character: string; action: string; kind: string; frames: { durationMs: number }[];
   frameSize: [number, number]; registration: { targetBodyHeight: number; targetAnchor: [number, number] };
@@ -213,15 +214,15 @@ export class NpcWorkMotion {
 
   update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
     // Consultant desk work is cosmetic; Borrin remains excluded from production jobs.
-    const consulting = this.appearance === "borrin" && job === null && body.anim === "sit" && Math.hypot(body.x - 10, body.z - 10) < 1;
-    const action = consulting ? "desk-writing" : this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
+    const passive = passiveWorkstation(this.appearance, job, body);
+    const action = passive ? passive.action! : this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
       this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? "hammer-contact" :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
       this.appearance === "ginger" && job === "timber" ? "fell-tree" :
       this.appearance === "stoneworker" && job === "limestone" ? "chisel-contact" : null;
-    if (!action || (!consulting && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
+    if (!action || (!passive && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
     const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "actor";

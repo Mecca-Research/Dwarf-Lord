@@ -28,6 +28,15 @@ class LoopApprovalTests(unittest.TestCase):
         self.assertFalse(manifest['productionReady'])
         self.assertIn('not a tree-fall', manifest['loopReview']['scope'])
 
+    def test_weight_inspection_review_does_not_approve_weighing_or_walking(self):
+        folder = Path('public/sprites/Quartermaster/motion/check-weights/actor')
+        manifest = json.loads((folder / 'manifest.json').read_text())
+        apply(folder, manifest)
+        self.assertTrue(manifest['playback']['loopApproved'])
+        self.assertEqual(manifest['playback']['mode'], 'once-hold')
+        self.assertFalse(manifest['productionReady'])
+        self.assertIn('not weight placement', manifest['loopReview']['scope'])
+
     def test_changed_source_registration_or_timing_revokes_review(self):
         for mutate in [lambda m: m.update(sourceSha256='changed'),
                        lambda m: m['registration'].update(settingsSha256='changed'),

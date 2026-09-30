@@ -134,6 +134,26 @@
         "settle",
         "ready return"
       ]
+    },
+    {
+      "character": "Quartermaster",
+      "action": "check-weights",
+      "title": "Inspect calibration weight",
+      "kind": "work",
+      "direction": "actor",
+      "reference": "public/sprites/Quartermaster/work-references/05-check-weights.png",
+      "destination": "public/sprites/Quartermaster/motion/check-weights/actor",
+      "station": "weighing-table",
+      "beats": [
+        "ready",
+        "lift",
+        "inspect underside",
+        "lower",
+        "near pan",
+        "reconsider",
+        "settle",
+        "ready return"
+      ]
     }
   ]
 }

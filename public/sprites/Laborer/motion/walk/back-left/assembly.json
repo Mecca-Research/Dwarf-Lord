@@ -16,6 +16,24 @@
       "prompt": "Edit this exact Laborer rear-left eight-pose walking sheet. Preserve exact bald stocky dwarf, dark beard, brown leather waistcoat, cream rolled sleeves, trousers and boots, camera facing upper-left, scale and 4-column2-row layout. Top row unchanged. Correct bottom row's repeated leading leg: bottom-left near anatomical LEFT leg reaches forward upper-left and plants heel, far RIGHT leg trails lower-right; bottom-second near LEFT supports weight while far RIGHT heel lifts; bottom-third far RIGHT foot recovers airborne past near LEFT support leg; bottom-right far RIGHT reaches forward upper-left before next top-left right contact. Arms counter-swing opposite the leading leg, small natural arc. Eight distinct full-body poses, same identity/proportions, genuine transparent background, no tools/labels/scenery.",
       "reference": "authoring-inputs/original-sheet.png",
       "referenceSha256": "14a85862d3875cd09013336a15d999699d6ebd4733cc04103a0555c0966f2240"
+    },
+    {
+      "id": "contact32",
+      "file": "authoring-inputs/contact32.png",
+      "poseCount": 1,
+      "sha256": "6fb1388550f301c095b9a44e21e2303b6fe3780e06b22b29f3e0646342ac05d0",
+      "prompt": "Use case precise-object-edit. Edit exact input dwarf into opposite-leg heel contact. IMPORTANT input wrong: the LARGE NEAR buckle boot currently at lower-RIGHT must move to upper-LEFT ahead of torso. The SMALL FAR boot currently at lower-LEFT must move to lower-RIGHT behind torso. Swap the two anatomical legs' forward/back extensions WITHOUT mirroring upper body. One single full-body sprite, same rear-left view and head facing upper-left. Keep torso/head/vest identity pixel-faithful. Near LEFT thigh swings FORWARD toward image LEFT, near shin extends upper-left, its large buckle boot clearly left of torso, heel touching and toe up. Far RIGHT thigh extends BACK toward image RIGHT, far shin drops lower-right, far boot behind with heel lifted. The large NEAR boot belongs on LEFT SIDE of image now, not on right. Feet visibly separated left versus right. Arms opposite lead: near left arm swings backward image-right, far right arm forward image-left. True transparent background, no shadow, no scene, full dwarf with all boots visible, same detailed render.",
+      "reference": "authoring-inputs/contact32-reference.png",
+      "referenceSha256": "d13d616e8fb18c931e93746da1659466253a771cce6a29fb2701612ad5945921"
+    },
+    {
+      "id": "reach32",
+      "file": "authoring-inputs/reach32.png",
+      "poseCount": 1,
+      "sha256": "6ebd75737d17b051b5b91fbcb89a8bb9885b48a48e987f4337377afe78831534",
+      "prompt": "Use case identity-preserve. Edit this exact rear-left dwarf Laborer whole pose into final far-leg forward reach BEFORE landing. Preserve exact dwarf/head/torso/materials/view; not mirrored. Far anatomical RIGHT leg, whose smaller boot is toward image LEFT in reference, reaches forward upper-left and its heel stays visibly AIRBORNE, lifted about half a boot height above rear supporting toe ground. Toe slightly up. Near anatomical LEFT leg with larger buckle boot at image RIGHT trails lower-right; heel raised while toe supports on ground. This is an airborne reaching pose, not another heel-contact; forward smaller left-edge boot must be visibly higher than the trailing right-edge toe. Near left arm naturally forward upper-left, far right arm back; subtle opposite-leg swing. Full body and both boots, one pose, exact detailed semi-realistic dwarf identity, true alpha transparency, no ground shadow/scenery/tools/text.",
+      "reference": "authoring-inputs/reach32-reference.png",
+      "referenceSha256": "1672219918aa25a4f2480839efa6361df9a795a7999e8d7d901a8ea40e46cd29"
     }
   ],
   "poses": [
@@ -36,8 +54,8 @@
       "pose": 3
     },
     {
-      "input": "original",
-      "pose": 4
+      "input": "contact32",
+      "pose": 0
     },
     {
       "input": "corrected",
@@ -48,11 +66,11 @@
       "pose": 6
     },
     {
-      "input": "original",
-      "pose": 7
+      "input": "reach32",
+      "pose": 0
     }
   ],
-  "review": "Adopt opposite-half support and far-leg airborne recovery (5/6). Generated contact4 failed forward placement and was not selected. Contact4, reach7, counter-swing and whole-stride/loop remain unapproved.",
+  "review": "Adopt near-left leading heel contact4 and far-right airborne reach7 alongside support5/recovery6. Original first half retained. Source labels had leg identity ambiguity; anatomical correspondence and full-stride/arm/loop approval remain open.",
   "durationsMs": [
     125,
     125,
