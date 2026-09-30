@@ -67,3 +67,12 @@ test('persistent workstation registration only captures its assigned working act
     assert.equal(stations.activeWorkstation('laborer',job,true,false),undefined,'other characters are not snapped to station');
   }
 });
+
+test('Borrin has a persistent consultation desk without becoming a production worker',()=>{
+ const site=stations.activeWorkstation('borrin',null,true,true);
+ assert.equal(site.id,'ledger-desk');assert.equal(site.passive,true);
+ const borrin=catalog.STARTING_DWARVES.find(d=>d.id==='borrin');
+ assert.deepEqual(site.target,{targetX:borrin.x,targetZ:borrin.z});
+ assert.equal(stations.activeWorkstation('borrin',null,false,false),undefined);
+ assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
+});

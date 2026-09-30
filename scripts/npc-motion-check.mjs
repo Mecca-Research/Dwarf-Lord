@@ -19,11 +19,42 @@ try {
   await page.evaluate(() => {
     const t = window.__controlsTest;
     t.teleport(0, 3); t.teleportDwarf('tam', -8, 3); t.setDwarfDest('tam', 8, 3);
+    // Software WebGL can finish the first route before its asynchronous atlas
+    // decode returns. Keep a route available while warming that same view.
+    window.__motionWarmRoute=setInterval(()=>{
+      const dwarf=JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='tam');
+      if(dwarf?.motion?.loaded){clearInterval(window.__motionWarmRoute);return;}
+      if(dwarf?.anim==='idle'){t.teleportDwarf('tam',-8,3);t.setDwarfDest('tam',8,3);}
+    },1000);
   });
-  try { await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam')?.motion?.loaded, null, { timeout: 30000 }); } catch(e) { console.log(await page.evaluate(() => window.render_game_to_text())); await page.screenshot({path: `${output}/failure.png`}); throw e; }
+  try { await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam')?.motion?.loaded, null, { timeout: 90000 }); } catch(e) { console.log(await page.evaluate(() => window.render_game_to_text())); await page.screenshot({path: `${output}/failure.png`}); throw e; }
   const sample = () => page.evaluate(() => JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam'));
   const before = await sample(); await page.waitForTimeout(450); const after = await sample();
   assert.ok(after.motion.distance > before.motion.distance); assert.notEqual(after.motion.phase, before.motion.phase);
+  // Start the measurement with a fresh full-length route after warming the atlas.
+  // Otherwise a slow first decode can leave too little travel for 32 samples.
+  await page.evaluate(()=>{const t=window.__controlsTest;t.teleportDwarf('tam',-8,3);t.setDwarfDest('tam',8,3);});
+  await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='tam')?.motion?.loaded);
+  const plantSamples = await page.evaluate(() => new Promise(resolve => {
+    const samples=[];
+    const timeout=setTimeout(()=>resolve(samples),60000);
+    function sample() {
+      const dwarf=JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='tam');
+      if(dwarf?.motion?.loaded)samples.push({x:dwarf.x,z:dwarf.z,...dwarf.motion});
+      if(samples.length>=32){clearTimeout(timeout);resolve(samples);}else if(samples.length<32)requestAnimationFrame(sample);
+    }
+    requestAnimationFrame(sample);
+  }));
+  assert.equal(plantSamples.length,32,'held-pose review needs a full sample window');
+  let movingHolds=0;
+  for(let i=1;i<plantSamples.length;i++){
+    const previous=plantSamples[i-1],current=plantSamples[i];
+    if(previous.frame===current.frame&&previous.direction===current.direction){
+      assert.deepEqual(current.visualRoot,previous.visualRoot,'visible walking pose stays planted during a held frame');
+      if(Math.hypot(current.x-previous.x,current.z-previous.z)>1e-6)movingHolds++;
+    }
+  }
+  assert.ok(movingHolds>0,'probe covers actual physical movement inside a held frame');
   await page.screenshot({ path: `${output}/walking.png` });
   await page.evaluate(() => window.__controlsTest.setDwarfDest('tam', -10, 3));
   await page.waitForFunction(old => { const m = JSON.parse(window.render_game_to_text()).dwarves.find(d => d.id === 'tam')?.motion; return m?.loaded && m.direction !== old; }, before.motion.direction);
@@ -50,7 +81,16 @@ try {
   await page.evaluate(() => window.__controlsTest.nextMorning());
   await page.waitForTimeout(200);
   assert.equal((await sample()).anim, 'idle', 'morning does not restore completed work');
+  await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin')?.workMotion?.completed);
+  const consultant=await page.evaluate(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin'));
+  assert.equal(consultant.workMotion.action,'desk-writing');assert.equal(consultant.workMotion.completions,1);
+  await page.evaluate(()=>window.__controlsTest.teleport(10,13));await page.waitForTimeout(1600);
+  await page.screenshot({path:`${output}/borrin-desk.png`});
+  await page.evaluate(()=>window.__controlsTest.teleportDwarf('borrin',20,10));
+  await page.waitForFunction(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin')?.workMotion);
+  assert.equal(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.find(s=>s.id==='ledger-desk')?.persistent),true);
+  await page.screenshot({path:`${output}/borrin-empty-desk.png`});
   assert.deepEqual(errors, []);
-  await writeFile(`${output}/results.json`, JSON.stringify({ before, after, turned, blocked, held, assets, errors }, null, 2));
+  await writeFile(`${output}/results.json`, JSON.stringify({ before, after, turned, blocked, held, consultant, plantSamples, movingHolds, assets, errors }, null, 2));
   console.log('PASS NPC atlas loading, displacement-driven walking, turning, collision freeze, idle fallback, work cancellation and day completion');
 } finally { await browser.close(); }

@@ -4,7 +4,7 @@ This diagnostic does not assert that unreviewed landmarks are corresponding.
 """
 import json
 from pathlib import Path
-from gait_calibration import binding, measure
+from gait_calibration import binding, measure, digest
 import numpy as np
 
 observations=json.loads(Path('docs/blacksmith-right-gait-observations.json').read_text())
@@ -25,7 +25,12 @@ for name,ratio in [('runtime-estimate',1.2),('sampled-keyframe-fit',fit['strideB
         tracks.append({'foot':track['foot'],'holds':holds})
     reports.append({'calibration':name,'strideBodyRatio':ratio,'tracks':tracks,
                     'maxWithinHoldDriftPx':max(h['withinHoldDriftPx'] for t in tracks for h in t['holds'])})
-report={'version':1,'binding':binding(folder,manifest),'playbackModel':'Discrete atlas frame held while world root moves continuously; no per-foot compensation.',
+report={'version':2,'binding':binding(folder,manifest),'playbackModel':'Baseline without pose synchronization: discrete atlas frame held while physical world root moves continuously.',
+        'poseSynchronization':{'runtimeSha256':digest('src/game/world/npc-motion.ts'),
+                               'rendererSha256':digest('src/game/world/sprites.tsx'),
+                               'modelWithinHoldRootDriftPx':0,
+                               'scope':'Visible whole-pose root held at the last authored frame boundary. No limb deformation. Camera/view changes and anatomical/contact transitions require separate review.',
+                               'tradeoff':'Visible body translation advances at authored pose boundaries; this is stepped sprite movement, not continuous skeletal interpolation.'},
         'measurements':reports,'correspondenceReviewed':observations.get('correspondenceReviewed') is True,
         'wholeStrideApproved':False,'loopApproved':False,
         'scope':'Projected root travel during sampled intended flat-sole support frames; does not certify anatomical identity, heel-roll, unsampled contacts, terrain or cane.',

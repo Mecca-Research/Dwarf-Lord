@@ -89,7 +89,14 @@ function acquire(folder: string, direction: string, action = "walk") {
   return { promise: entry.promise, release() { if (!released) { released = true; held.users--; held.touched = ++clock; trim(); } } };
 }
 
-export const npcMotionDiagnostics = new Map<string, { loaded: boolean; direction: string; frame: number; phase: number; distance: number }>();
+export const npcMotionDiagnostics = new Map<string, { loaded: boolean; direction: string; frame: number; phase: number; distance: number; visualRoot?: [number, number] }>();
+
+/** Convert resolved root displacement into a rotated/scaled sprite parent's space. */
+export function motionRootTranslation(offset: [number, number], yaw: number, scale: THREE.Vector3, heightDelta: number): [number, number, number] {
+  const cosine = Math.cos(yaw), sine = Math.sin(yaw);
+  return [(cosine * offset[0] - sine * offset[1]) / Math.max(.01, scale.x),
+    heightDelta / Math.max(.01, scale.y), (sine * offset[0] + cosine * offset[1]) / Math.max(.01, scale.z)];
+}
 
 /** One actor's phase/UV state. Atlas pixels are shared; offsets are never shared. */
 export class NpcWalkMotion {
@@ -104,9 +111,13 @@ export class NpcWalkMotion {
   private pendingTravel = 0;
   private retryAt = 0;
   private disposed = false;
+  private poseRoot?: [number, number];
+  private poseKey = "";
   constructor(private id: string, private appearance: DwarfAppearance) {}
 
   update(body: Body, bodyHeight: number, worldScale = 1) {
+    const dx = this.previous ? body.x - this.previous[0] : 0;
+    const dz = this.previous ? body.z - this.previous[1] : 0;
     const distance = this.previous ? Math.hypot(body.x - this.previous[0], body.z - this.previous[1]) : 0;
     this.previous = [body.x, body.z];
     const walking = body.anim === "walk";
@@ -117,7 +128,7 @@ export class NpcWalkMotion {
         ++this.token; this.lease?.release(); this.lease = undefined;
         this.loaded = undefined; this.direction = ""; this.pendingTravel = 0;
       }
-      this.moving = false; npcMotionDiagnostics.delete(this.id); return null;
+      this.moving = false; this.poseRoot = undefined; this.poseKey = ""; npcMotionDiagnostics.delete(this.id); return null;
     }
     const direction = directions[((body.facing % 8) + 8) % 8];
     if (!this.moving) this.player?.restart();
@@ -146,11 +157,28 @@ export class NpcWalkMotion {
       if (this.player) this.player.travel(strides, 1);
       else this.pendingTravel = (this.pendingTravel + strides) % 1;
       this.distance += distance;
+    } else {
+      // A teleport cannot keep a stale pose planted at the old location.
+      this.poseRoot = undefined; this.poseKey = "";
+    }
+    if (this.loaded && this.player) {
+      const key = `${direction}:${this.player.index}:${this.player.completions}`;
+      if (key !== this.poseKey || !this.poseRoot) {
+        const durations = this.loaded.manifest.frames.map(frame => frame.durationMs);
+        const fraction = this.player.phase - this.player.index;
+        const frameTravel = bodyHeight * worldScale * 1.2 * durations[this.player.index] / durations.reduce((a, b) => a + b, 0);
+        // Reconstruct the last boundary from resolved travel, including low-FPS
+        // updates crossing several frames. No image pixels or limb positions change.
+        const back = distance > 0 && distance <= bodyHeight * worldScale ? Math.min(distance, fraction * frameTravel) : 0;
+        this.poseRoot = [body.x - (distance ? dx / distance * back : 0), body.z - (distance ? dz / distance * back : 0)];
+        this.poseKey = key;
+      }
     }
     npcMotionDiagnostics.set(this.id, { loaded: Boolean(this.loaded), direction, frame: this.player?.index ?? 0,
-      phase: this.player?.phase ?? 0, distance: this.distance });
+      phase: this.player?.phase ?? 0, distance: this.distance, ...(this.poseRoot ? { visualRoot: this.poseRoot } : {}) });
     if (!this.loaded || !this.player) return null;
     return { texture: this.loaded.texture, frame: this.player.index,
+      rootOffset: this.poseRoot ? [this.poseRoot[0] - body.x, this.poseRoot[1] - body.z] as [number, number] : [0, 0] as [number, number],
       placement: this.loaded.module.motionPlacement(this.loaded.manifest, bodyHeight) };
   }
 
@@ -182,13 +210,15 @@ export class NpcWorkMotion {
   constructor(private id: string, private appearance: DwarfAppearance) {}
 
   update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
-    const action = this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
+    // Consultant desk work is cosmetic; Borrin remains excluded from production jobs.
+    const consulting = this.appearance === "borrin" && job === null && body.anim === "sit" && Math.hypot(body.x - 10, body.z - 10) < 1;
+    const action = consulting ? "desk-writing" : this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
       this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? "hammer-contact" :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
       this.appearance === "ginger" && job === "timber" ? "fell-tree" : null;
-    if (!action || body.anim !== "work" || resolved) { if (this.key) this.reset(); return null; }
+    if (!action || (!consulting && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
     if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
     const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "actor";

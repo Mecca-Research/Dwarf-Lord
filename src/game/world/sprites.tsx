@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
 import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
-import { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry } from "./npc-motion";
+import { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation } from "./npc-motion";
 import { useGame } from "../store";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
@@ -167,6 +167,7 @@ export function DwarfSprite({
   const foregroundGeometry = useRef<THREE.BufferGeometry | null>(null);
   useEffect(() => () => { foregroundGeometry.current?.dispose(); }, []);
   const motion = useRef<NpcWalkMotion | null>(null);
+  const visualRoot = useRef<THREE.Group>(null);
   const workMotion = useRef<NpcWorkMotion | null>(null);
   const parentScale = useMemo(() => new THREE.Vector3(1, 1, 1), []);
   const uvFrame = useRef("");
@@ -186,6 +187,12 @@ export function DwarfSprite({
 
     mesh.current?.parent?.getWorldScale(parentScale);
     const gait = motion.current?.update(body, 1.95 * scale, Math.max(.01, parentScale.y));
+    if (visualRoot.current) {
+      const offset = gait?.rootOffset ?? [0, 0];
+      // The NPC parent rotates and scales; offsets are in resolved world units.
+      visualRoot.current.position.set(...motionRootTranslation(offset as [number, number], body.yaw, parentScale,
+        groundHeight(body.x + offset[0], body.z + offset[1]) - groundHeight(body.x, body.z)));
+    }
     const state = useGame.getState();
     const job = state.dwarves.find(d => d.id === dwarf?.id)?.assignedJobId ?? null;
     const work = workMotion.current?.update(body, job, state.day, state.dayResolved,
@@ -227,7 +234,7 @@ export function DwarfSprite({
   });
 
   return (
-    <group>
+    <group ref={visualRoot}>
       <group rotation-x={-Math.PI / 2} position={[0, 0.02, 0]}>
         <mesh scale={[1, 0.48, 1]}>
           <circleGeometry args={[0.42 * scale, 20]} />

@@ -121,7 +121,7 @@ test('direction families use a common body target instead of independently fitti
 });
 
 test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
- for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Elder','back']]){
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','back-right'],['Ginger','back-right'],['Elder','back']]){
   const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
   const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
   assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
@@ -150,10 +150,21 @@ test('runtime actor layers and persistent stations retain source provenance and 
   if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
- for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet']) {
+ for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet','ledger-desk']) {
  const root=resolve('public/sprites/workstations',id),g=json(resolve(root,'generation.json'));
  assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
  assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
  if(g.completionLayer){assert.equal(hash(resolve(root,g.completionLayer.source)),g.completionLayer.sourceSha256);assert.equal(hash(resolve(root,g.completionLayer.file)),g.completionLayer.sha256);}
  }
+});
+
+test('log contact review binds all views and accepts only visible rear occlusion',()=>{
+ const review=json('docs/helga-log-contact-review.json');assert.equal(review.entries.length,8);assert.equal(review.loopApproved,false);
+ for(const entry of review.entries){
+  const root=resolve(entry.folder),m=json(resolve(root,'manifest.json'));
+  assert.deepEqual(entry.binding,{sourceSha256:hash(resolve(root,'source-sheet.png')),settingsSha256:m.registration.settingsSha256,frameSha256:m.frames.map(f=>hash(resolve(root,f.file))),durationsMs:m.frames.map(f=>f.durationMs)});
+  assert.deepEqual(entry.reviewedFrames,[0,1,2,3,4,5,6,7]);
+ }
+ const rear=review.entries.find(e=>e.direction==='back-left');assert.equal(rear.visibleContact,'accepted-visible-occlusion');
+ assert.match(review.occlusionReview.scope,/No hidden-anatomy/);
 });

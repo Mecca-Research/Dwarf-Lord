@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "binding": {
     "sourceSha256": "e30d137d5b76acec2eb96b96e46203956bd269dba51de9d291b1e1df247ceef5",
     "settingsSha256": "5415a9a9bbbb3996a0de3c08786c51d9a02f62540619f4539ad9fc25971c202c",
@@ -24,7 +24,14 @@
       98
     ]
   },
-  "playbackModel": "Discrete atlas frame held while world root moves continuously; no per-foot compensation.",
+  "playbackModel": "Baseline without pose synchronization: discrete atlas frame held while physical world root moves continuously.",
+  "poseSynchronization": {
+    "runtimeSha256": "9fefa8258f01097b2ea1c80bbe7e22c5f5f75108c1724101f6f9fc0759097597",
+    "rendererSha256": "7f5ab3f67c1b2623a33902d07fd8cbb91d0a8c63da7eb7fda8c26ca9871b0f81",
+    "modelWithinHoldRootDriftPx": 0,
+    "scope": "Visible whole-pose root held at the last authored frame boundary. No limb deformation. Camera/view changes and anatomical/contact transitions require separate review.",
+    "tradeoff": "Visible body translation advances at authored pose boundaries; this is stepped sprite movement, not continuous skeletal interpolation."
+  },
   "measurements": [
     {
       "calibration": "runtime-estimate",

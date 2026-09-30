@@ -7,39 +7,39 @@
   "kind": "walk",
   "reference": "../../../animation/03-back-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "2301b204f5aa93648443cbc8054e09b155b0459e0b734685493a7374c2d43cd5",
+  "sourceSha256": "2ac185eddf32442f5c107b1d02a3345b1e44999c1862d8410a3599eec904e9e7",
   "sourceSize": [
-    1536,
-    1024
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.1087420042643923,
+  "sharedScale": 1.04,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
       "description": "left heel contact, right toe behind",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        63,
-        20,
-        381,
-        500
+        142,
+        89,
+        481,
+        601
       ],
       "sourceAnchor": [
-        146.0,
-        479.0
+        178.0,
+        511.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        158,
+        135,
         85
       ]
     },
@@ -47,23 +47,23 @@
       "id": "key-01",
       "file": "01.png",
       "description": "left weight down, right heel lifts",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        445,
-        20,
-        761,
-        498
+        780,
+        89,
+        1117,
+        599
       ],
       "sourceAnchor": [
-        147.0,
-        479.0
+        180.0,
+        511.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        157,
+        133,
         85
       ]
     },
@@ -71,47 +71,47 @@
       "id": "key-02",
       "file": "02.png",
       "description": "right foot airborne passing left support leg",
-      "durationMs": 125,
+      "durationMs": 105,
       "sourceBounds": [
-        850,
-        23,
-        1070,
-        493
+        1452,
+        93,
+        1687,
+        594
       ],
       "sourceAnchor": [
-        116.0,
-        476.0
+        148.0,
+        507.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        191,
-        88
+        166,
+        89
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
       "description": "right leg extends forward, left heel rises",
-      "durationMs": 125,
+      "durationMs": 115,
       "sourceBounds": [
-        1217,
-        20,
-        1526,
-        500
+        2068,
+        89,
+        2397,
+        600
       ],
       "sourceAnchor": [
-        141.0,
-        479.0
+        172.0,
+        511.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        164,
+        141,
         85
       ]
     },
@@ -119,23 +119,23 @@
       "id": "key-04",
       "file": "04.png",
       "description": "right heel contact, left toe behind",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        55,
-        534,
-        369,
-        1000
+        126,
+        743,
+        483,
+        1240
       ],
       "sourceAnchor": [
-        142.0,
-        466.0
+        194.0,
+        497.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        163,
+        118,
         99
       ]
     },
@@ -143,71 +143,71 @@
       "id": "key-05",
       "file": "05.png",
       "description": "right weight down, left heel lifts",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        455,
-        532,
-        740,
-        1000
+        784,
+        745,
+        1110,
+        1240
       ],
       "sourceAnchor": [
-        133.0,
-        468.0
+        176.0,
+        495.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        173,
-        97
+        137,
+        101
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
       "description": "left foot airborne passing right support leg",
-      "durationMs": 125,
+      "durationMs": 105,
       "sourceBounds": [
-        847,
-        532,
-        1068,
-        994
+        1432,
+        743,
+        1715,
+        1237
       ],
       "sourceAnchor": [
-        121.0,
-        468.0
+        168.0,
+        497.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        186,
-        97
+        145,
+        99
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
       "description": "left leg extends forward, right heel rises",
-      "durationMs": 125,
+      "durationMs": 115,
       "sourceBounds": [
-        1211,
-        533,
-        1518,
-        1001
+        2066,
+        742,
+        2393,
+        1240
       ],
       "sourceAnchor": [
-        141.0,
-        467.0
+        174.0,
+        498.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        164,
+        139,
         98
       ]
     }
@@ -245,21 +245,21 @@
     "fps": 8,
     "durationMs": 1000,
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
     ],
     "loopApproved": false,
     "endBehavior": "review-seam",
     "rootMotion": "external"
   },
   "registration": {
-    "method": "torso-median-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
@@ -267,8 +267,9 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "bb79ed86afd66aa6300ca6be7971e40ee95d68cc9cf36104d98a30f3f316f575",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {

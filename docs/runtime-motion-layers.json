@@ -91,6 +91,29 @@
       "status": "exported",
       "destination": "public/sprites/Laborer/motion/stack-crates/actor",
       "station": "storage-pallet"
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "title": "Desk writing",
+      "reference": "public/sprites/Borrin/work-references/00-desk-writing.png",
+      "beats": [
+        "quill poised over OPEN ledger",
+        "continuous midway transition from quill poised over OPEN ledger toward write short stroke left to right",
+        "write short stroke left to right",
+        "continuous midway transition from write short stroke left to right toward lift quill and move to next line",
+        "lift quill and move to next line",
+        "continuous midway transition from lift quill and move to next line toward write second stroke while left hand steadies open page",
+        "write second stroke while left hand steadies open page",
+        "continuous midway transition from write second stroke while left hand steadies open page toward quill poised over OPEN ledger"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/desk-writing/actor",
+      "station": "ledger-desk"
     }
   ]
 }

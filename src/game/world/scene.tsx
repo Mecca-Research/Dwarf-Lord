@@ -520,8 +520,9 @@ function DwarfActor({
     if (!b || !g) return;
     const y = groundHeight(b.x, b.z);
     const state = useGame.getState();
+    const consulting = dwarf.id === "borrin" && b.anim === "sit" && Math.hypot(b.x - 10, b.z - 10) < 1;
     const station = activeWorkstation(dwarfAppearance(dwarf.id),
-      state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId, b.anim === "work", state.dayResolved)?.target;
+      state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId, b.anim === "work" || consulting, state.dayResolved)?.target;
     // Register the actor to the persistent station, independent of approach tolerance.
     g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
       station ? station.targetZ : b.z);

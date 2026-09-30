@@ -3,7 +3,6 @@
   "scope": "Visual hand/log contact continuity across 64 exported poses. Not a physical length, gait, direction-transition or loop approval.",
   "loopApproved": false,
   "remaining": [
-    "Back-left grip is occluded and unverified",
     "Directional projected log geometry needs final acceptance",
     "Opposite-leg phases and support travel remain unapproved"
   ],
@@ -251,8 +250,8 @@
         7
       ],
       "anatomicalShoulder": "right",
-      "visibleContact": "occluded-unverified",
-      "notes": "Far carrying hand is hidden behind body/log; visible right-shoulder placement is consistent, but the hidden grip cannot be approved."
+      "visibleContact": "accepted-visible-occlusion",
+      "notes": "Reviewed all eight exported back-left poses: small fingertips remain visible along the upper log edge behind the helmet; palm and inner fingers are naturally hidden by head/log. Visible carrying forearm reaches the log underside. Accept this camera occlusion for the visible silhouette only, without certifying hidden palm geometry or gait."
     },
     {
       "folder": "public/sprites/Helga/motion/carry-mine-timber/left",
@@ -336,5 +335,10 @@
       "visibleContact": "no-visible-detachment",
       "notes": "Reviewed all eight upper-body poses. Log stays on anatomical right shoulder; visible carrying hand/palm remains against log without a visible gap. This does not approve hidden finger geometry or gait."
     }
-  ]
+  ],
+  "occlusionReview": {
+    "direction": "back-left",
+    "status": "accepted-visible-occlusion",
+    "scope": "Natural far-hand occlusion across these eight exact bound frames. No hidden-anatomy, physical-length, direction-transition or loop approval."
+  }
 }

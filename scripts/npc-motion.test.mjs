@@ -8,7 +8,7 @@ const moduleUrl = new URL('../public/motion-playback.mjs', import.meta.url).href
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
 outputText = outputText.replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
-const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
 test('atlas UVs select one cell per actor and restore canonical full-image UVs', () => {
   const a = new THREE.PlaneGeometry(), b = new THREE.PlaneGeometry();
@@ -41,7 +41,16 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
     assert.equal(first.texture.image.width, 1280); assert.equal(first.texture.image.height, 640);
     assert.equal(draws.length, 8); assert.equal(closed, 1);
     body.x = .3; a.update(body, 2, .5);
-    const phase = npcMotionDiagnostics.get('a').phase; assert.equal(phase, 2);
+    let phase = npcMotionDiagnostics.get('a').phase; assert.equal(phase, 2);
+    const planted = npcMotionDiagnostics.get('a').visualRoot;
+    for (let step = 0; step < 3; step++) {
+      body.x += .01;
+      const pose = a.update(body, 2, .5);
+      assert.equal(pose.frame, 2);
+      assert.deepEqual(npcMotionDiagnostics.get('a').visualRoot, planted, 'held pose does not slide with the physical root');
+      assert.ok(Math.abs(body.x + pose.rootOffset[0] - planted[0]) < 1e-10);
+    }
+    phase = npcMotionDiagnostics.get('a').phase;
     a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, phase, 'blocked feet freeze');
     body.facing = 3; a.update(body, 2, .5);
     body.x += .15; a.update(body, 2, .5);
@@ -49,7 +58,8 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
     await ready(a);
     const turnedPhase = npcMotionDiagnostics.get('a').phase;
     assert.ok(Math.abs(turnedPhase - (phase + 1)) < 1e-10, 'loaded direction retains travel phase');
-    body.x = 100; a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, turnedPhase, 'teleport is not a stride');
+    body.x = 100; const teleported = a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, turnedPhase, 'teleport is not a stride');
+    assert.deepEqual(teleported.rootOffset,[0,0],'teleport releases the old visual plant');
     body.anim = 'idle'; assert.equal(a.update(body, 2, .5), null); assert.equal(npcMotionDiagnostics.has('a'), false);
     body.anim = 'walk'; a.update(body, 2, .5); assert.equal(npcMotionDiagnostics.get('a').phase, 0, 'new walk starts at contact');
     const cancelled = new NpcWalkMotion('cancelled', 'laborer'); cancelled.update(body, 2); cancelled.dispose();
@@ -169,4 +179,37 @@ test('foreground contours preserve source pixels within the selected atlas frame
     geometry.dispose();
   }
   }
+});
+
+test('Borrin reviews the ledger as a seated consultant without a production assignment', async () => {
+  const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
+  const manifest=JSON.parse(readFileSync('public/sprites/Borrin/motion/desk-writing/actor/manifest.json','utf8'));
+  const calibration=JSON.parse(readFileSync('public/sprites/Borrin/motion/render-calibration.json','utf8'));
+  globalThis.location={href:'https://motion.test/'};
+  globalThis.document={createElement:()=>({width:0,height:0,getContext:()=>({drawImage(){}})})};
+  globalThis.createImageBitmap=async()=>({width:5120,height:640,close(){}});
+  globalThis.fetch=async url=>({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?calibration:manifest,blob:async()=>new Blob()});
+  const worker=new NpcWorkMotion('borrin-consultant-test','borrin'),body={x:10,z:10,facing:3,anim:'sit',speed:0};
+  const update=(dt=0,day=1)=>worker.update(body,null,day,true,dt,1.95);
+  async function ready(day=1){for(let i=0;i<50;i++){const pose=update(0,day);if(pose)return pose;await new Promise(r=>setTimeout(r,1));}throw new Error('consultant desk did not load');}
+  try{
+    const pose=await ready();assert.ok(Math.abs(pose.placement.height-1.95*640/650)<1e-10);
+    update(0);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').frame,0,'dialogue pause keeps writing pose');
+    update(10);update(10);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').completions,1,'completed desk action holds even after day resolution');
+    body.anim='walk';assert.equal(update(),null,'walking releases the seated desk action');
+    body.anim='sit';body.x=20;assert.equal(update(),null,'a seated consultant away from the desk cannot write at it');
+    body.x=10;await ready(2);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').frame,0,'next day restarts the review');
+    assert.equal(worker.update(body,'forge',2,false,0,1.95),null,'production assignment cannot activate consultant motion');
+  }finally{worker.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
+});
+
+test('visual ground correction survives every direction, parent scale and terrain height',()=>{
+ for(let direction=0;direction<8;direction++)for(const scalar of [.5,1,2.3]){
+  const yaw=direction*Math.PI/4,scale=new THREE.Vector3(scalar,scalar,scalar);
+  const offset=[-.14,.09],heightDelta=.08;
+  const local=new THREE.Vector3(...motionRootTranslation(offset,yaw,scale,heightDelta));
+  const matrix=new THREE.Matrix4().compose(new THREE.Vector3(),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),yaw),scale);
+  const world=local.applyMatrix4(matrix);
+  assert.ok(world.distanceTo(new THREE.Vector3(offset[0],heightDelta,offset[1]))<1e-10,'parent rotation cannot turn foot lock into sideways drift');
+ }
 });
