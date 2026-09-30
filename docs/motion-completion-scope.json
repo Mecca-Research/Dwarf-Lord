@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "frozenAt": "2026-09-30",
+  "purpose": "Finish the existing animation library; additions require an explicit scope revision. Counts are review obligations, never presumed redraws.",
+  "mainDestinations": [
+    "public/sprites/Blacksmith/motion/walk/front",
+    "public/sprites/Blacksmith/motion/walk/front-right",
+    "public/sprites/Blacksmith/motion/walk/right",
+    "public/sprites/Blacksmith/motion/walk/back-right",
+    "public/sprites/Blacksmith/motion/walk/back",
+    "public/sprites/Blacksmith/motion/walk/back-left",
+    "public/sprites/Blacksmith/motion/walk/left",
+    "public/sprites/Blacksmith/motion/walk/front-left",
+    "public/sprites/Borrin/motion/walk/front",
+    "public/sprites/Borrin/motion/walk/front-right",
+    "public/sprites/Borrin/motion/walk/right",
+    "public/sprites/Borrin/motion/walk/back-right",
+    "public/sprites/Borrin/motion/walk/back",
+    "public/sprites/Borrin/motion/walk/back-left",
+    "public/sprites/Borrin/motion/walk/left",
+    "public/sprites/Borrin/motion/walk/front-left",
+    "public/sprites/Cook/motion/walk/front",
+    "public/sprites/Cook/motion/walk/front-right",
+    "public/sprites/Cook/motion/walk/right",
+    "public/sprites/Cook/motion/walk/back-right",
+    "public/sprites/Cook/motion/walk/back",
+    "public/sprites/Cook/motion/walk/back-left",
+    "public/sprites/Cook/motion/walk/left",
+    "public/sprites/Cook/motion/walk/front-left",
+    "public/sprites/Elder/motion/walk/front",
+    "public/sprites/Elder/motion/walk/front-right",
+    "public/sprites/Elder/motion/walk/right",
+    "public/sprites/Elder/motion/walk/back-right",
+    "public/sprites/Elder/motion/walk/back",
+    "public/sprites/Elder/motion/walk/back-left",
+    "public/sprites/Elder/motion/walk/left",
+    "public/sprites/Elder/motion/walk/front-left",
+    "public/sprites/Female Miner/motion/walk/front",
+    "public/sprites/Female Miner/motion/walk/front-right",
+    "public/sprites/Female Miner/motion/walk/right",
+    "public/sprites/Female Miner/motion/walk/back-right",
+    "public/sprites/Female Miner/motion/walk/back",
+    "public/sprites/Female Miner/motion/walk/back-left",
+    "public/sprites/Female Miner/motion/walk/left",
+    "public/sprites/Female Miner/motion/walk/front-left",
+    "public/sprites/Ginger/motion/walk/front",
+    "public/sprites/Ginger/motion/walk/front-right",
+    "public/sprites/Ginger/motion/walk/right",
+    "public/sprites/Ginger/motion/walk/back-right",
+    "public/sprites/Ginger/motion/walk/back",
+    "public/sprites/Ginger/motion/walk/back-left",
+    "public/sprites/Ginger/motion/walk/left",
+    "public/sprites/Ginger/motion/walk/front-left",
+    "public/sprites/Helga/motion/walk/front",
+    "public/sprites/Helga/motion/walk/front-right",
+    "public/sprites/Helga/motion/walk/right",
+    "public/sprites/Helga/motion/walk/back-right",
+    "public/sprites/Helga/motion/walk/back",
+    "public/sprites/Helga/motion/walk/back-left",
+    "public/sprites/Helga/motion/walk/left",
+    "public/sprites/Helga/motion/walk/front-left",
+    "public/sprites/Laborer/motion/walk/front",
+    "public/sprites/Laborer/motion/walk/front-right",
+    "public/sprites/Laborer/motion/walk/right",
+    "public/sprites/Laborer/motion/walk/back-right",
+    "public/sprites/Laborer/motion/walk/back",
+    "public/sprites/Laborer/motion/walk/back-left",
+    "public/sprites/Laborer/motion/walk/left",
+    "public/sprites/Laborer/motion/walk/front-left",
+    "public/sprites/Blacksmith/motion/anvil-ready/reference",
+    "public/sprites/Blacksmith/motion/hammer-raised/reference",
+    "public/sprites/Blacksmith/motion/hammer-contact/reference",
+    "public/sprites/Blacksmith/motion/inspect-tool/reference",
+    "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference",
+    "public/sprites/Borrin/motion/desk-writing/reference",
+    "public/sprites/Borrin/motion/review-open-ledger/reference",
+    "public/sprites/Borrin/motion/turn-ledger-page/reference",
+    "public/sprites/Borrin/motion/explain-at-desk/reference",
+    "public/sprites/Borrin/motion/count-coins/reference",
+    "public/sprites/Borrin/motion/stamp-paperwork/reference",
+    "public/sprites/Cook/motion/chop-vegetables/reference",
+    "public/sprites/Cook/motion/peel-potatoes/reference",
+    "public/sprites/Cook/motion/knead-dough/reference",
+    "public/sprites/Cook/motion/stir-cauldron/reference",
+    "public/sprites/Cook/motion/mix-ingredients/reference",
+    "public/sprites/Cook/motion/serve-stew/reference",
+    "public/sprites/Elder/motion/eat-stew/reference",
+    "public/sprites/Elder/motion/eat-bread/reference",
+    "public/sprites/Elder/motion/laugh-seated/reference",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference",
+    "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+    "public/sprites/Female Miner/motion/pickaxe-contact/reference",
+    "public/sprites/Female Miner/motion/shovel-ore/reference",
+    "public/sprites/Female Miner/motion/examine-sample/reference",
+    "public/sprites/Female Miner/motion/push-ore-barrow/reference",
+    "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+    "public/sprites/Helga/motion/pickaxe-ready/reference",
+    "public/sprites/Helga/motion/pickaxe-contact/reference",
+    "public/sprites/Helga/motion/inspect-mineral/reference",
+    "public/sprites/Helga/motion/shovel-stone/reference",
+    "public/sprites/Helga/motion/carry-mine-timber/reference",
+    "public/sprites/Helga/motion/bind-tool-handle/reference",
+    "public/sprites/Laborer/motion/lift-crate/reference",
+    "public/sprites/Laborer/motion/carry-sack/reference",
+    "public/sprites/Laborer/motion/push-stone-barrow/reference",
+    "public/sprites/Laborer/motion/pull-supply-sled/reference",
+    "public/sprites/Laborer/motion/build-crate/reference",
+    "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+    "public/sprites/Ginger/motion/saw-timber/reference",
+    "public/sprites/Ginger/motion/build-timber-crate/reference",
+    "public/sprites/Ginger/motion/stack-firewood/reference",
+    "public/sprites/Ginger/motion/haul-firewood/reference",
+    "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+    "public/sprites/Ginger/motion/carry-supplies/reference",
+    "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+    "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+    "public/sprites/Borrin/motion/explain-open-ledger/reference",
+    "public/sprites/Cook/motion/cut-boar-meat/reference",
+    "public/sprites/Cook/motion/fillet-fish/reference",
+    "public/sprites/Ginger/motion/fell-tree/reference",
+    "public/sprites/Ginger/motion/chop-downed-log/reference",
+    "public/sprites/Ginger/motion/load-logs-cart/reference",
+    "public/sprites/Ginger/motion/sharpen-axe/reference",
+    "public/sprites/Ginger/motion/build-barrel/reference",
+    "public/sprites/Laborer/motion/roll-barrel/reference",
+    "public/sprites/Laborer/motion/carry-crate/reference",
+    "public/sprites/Laborer/motion/stack-crates/reference",
+    "public/sprites/Laborer/motion/build-barrel/reference",
+    "public/sprites/Laborer/motion/carry-large-stone-ore/reference",
+    "public/sprites/Laborer/motion/shovel-rubble/reference",
+    "public/sprites/Laborer/motion/repair-boardwalk/reference",
+    "public/sprites/Female Miner/motion/pickaxe-swing/front",
+    "public/sprites/Female Miner/motion/pickaxe-swing/front-right",
+    "public/sprites/Female Miner/motion/pickaxe-swing/right",
+    "public/sprites/Female Miner/motion/pickaxe-swing/back-right",
+    "public/sprites/Female Miner/motion/pickaxe-swing/back",
+    "public/sprites/Female Miner/motion/pickaxe-swing/back-left",
+    "public/sprites/Female Miner/motion/pickaxe-swing/left",
+    "public/sprites/Female Miner/motion/pickaxe-swing/front-left",
+    "public/sprites/Female Miner/motion/shovel-cycle/front",
+    "public/sprites/Female Miner/motion/shovel-cycle/front-right",
+    "public/sprites/Female Miner/motion/shovel-cycle/right",
+    "public/sprites/Female Miner/motion/shovel-cycle/back-right",
+    "public/sprites/Female Miner/motion/shovel-cycle/back",
+    "public/sprites/Female Miner/motion/shovel-cycle/back-left",
+    "public/sprites/Female Miner/motion/shovel-cycle/left",
+    "public/sprites/Female Miner/motion/shovel-cycle/front-left",
+    "public/sprites/Helga/motion/carry-mine-timber/front",
+    "public/sprites/Helga/motion/carry-mine-timber/front-right",
+    "public/sprites/Helga/motion/carry-mine-timber/right",
+    "public/sprites/Helga/motion/carry-mine-timber/back-right",
+    "public/sprites/Helga/motion/carry-mine-timber/back",
+    "public/sprites/Helga/motion/carry-mine-timber/back-left",
+    "public/sprites/Helga/motion/carry-mine-timber/left",
+    "public/sprites/Helga/motion/carry-mine-timber/front-left"
+  ],
+  "actorDestinations": [
+    "public/sprites/Cook/motion/chop-vegetables/actor",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor",
+    "public/sprites/Ginger/motion/fell-tree/actor",
+    "public/sprites/Laborer/motion/stack-crates/actor",
+    "public/sprites/Borrin/motion/desk-writing/actor",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor",
+    "public/sprites/Quartermaster/motion/check-weights/actor"
+  ],
+  "directionFamilies": [
+    {
+      "id": "Blacksmith/walk",
+      "destinations": [
+        "public/sprites/Blacksmith/motion/walk/front",
+        "public/sprites/Blacksmith/motion/walk/front-right",
+        "public/sprites/Blacksmith/motion/walk/right",
+        "public/sprites/Blacksmith/motion/walk/back-right",
+        "public/sprites/Blacksmith/motion/walk/back",
+        "public/sprites/Blacksmith/motion/walk/back-left",
+        "public/sprites/Blacksmith/motion/walk/left",
+        "public/sprites/Blacksmith/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Borrin/walk",
+      "destinations": [
+        "public/sprites/Borrin/motion/walk/front",
+        "public/sprites/Borrin/motion/walk/front-right",
+        "public/sprites/Borrin/motion/walk/right",
+        "public/sprites/Borrin/motion/walk/back-right",
+        "public/sprites/Borrin/motion/walk/back",
+        "public/sprites/Borrin/motion/walk/back-left",
+        "public/sprites/Borrin/motion/walk/left",
+        "public/sprites/Borrin/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Cook/walk",
+      "destinations": [
+        "public/sprites/Cook/motion/walk/front",
+        "public/sprites/Cook/motion/walk/front-right",
+        "public/sprites/Cook/motion/walk/right",
+        "public/sprites/Cook/motion/walk/back-right",
+        "public/sprites/Cook/motion/walk/back",
+        "public/sprites/Cook/motion/walk/back-left",
+        "public/sprites/Cook/motion/walk/left",
+        "public/sprites/Cook/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Elder/walk",
+      "destinations": [
+        "public/sprites/Elder/motion/walk/front",
+        "public/sprites/Elder/motion/walk/front-right",
+        "public/sprites/Elder/motion/walk/right",
+        "public/sprites/Elder/motion/walk/back-right",
+        "public/sprites/Elder/motion/walk/back",
+        "public/sprites/Elder/motion/walk/back-left",
+        "public/sprites/Elder/motion/walk/left",
+        "public/sprites/Elder/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Female Miner/walk",
+      "destinations": [
+        "public/sprites/Female Miner/motion/walk/front",
+        "public/sprites/Female Miner/motion/walk/front-right",
+        "public/sprites/Female Miner/motion/walk/right",
+        "public/sprites/Female Miner/motion/walk/back-right",
+        "public/sprites/Female Miner/motion/walk/back",
+        "public/sprites/Female Miner/motion/walk/back-left",
+        "public/sprites/Female Miner/motion/walk/left",
+        "public/sprites/Female Miner/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Ginger/walk",
+      "destinations": [
+        "public/sprites/Ginger/motion/walk/front",
+        "public/sprites/Ginger/motion/walk/front-right",
+        "public/sprites/Ginger/motion/walk/right",
+        "public/sprites/Ginger/motion/walk/back-right",
+        "public/sprites/Ginger/motion/walk/back",
+        "public/sprites/Ginger/motion/walk/back-left",
+        "public/sprites/Ginger/motion/walk/left",
+        "public/sprites/Ginger/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Helga/walk",
+      "destinations": [
+        "public/sprites/Helga/motion/walk/front",
+        "public/sprites/Helga/motion/walk/front-right",
+        "public/sprites/Helga/motion/walk/right",
+        "public/sprites/Helga/motion/walk/back-right",
+        "public/sprites/Helga/motion/walk/back",
+        "public/sprites/Helga/motion/walk/back-left",
+        "public/sprites/Helga/motion/walk/left",
+        "public/sprites/Helga/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Laborer/walk",
+      "destinations": [
+        "public/sprites/Laborer/motion/walk/front",
+        "public/sprites/Laborer/motion/walk/front-right",
+        "public/sprites/Laborer/motion/walk/right",
+        "public/sprites/Laborer/motion/walk/back-right",
+        "public/sprites/Laborer/motion/walk/back",
+        "public/sprites/Laborer/motion/walk/back-left",
+        "public/sprites/Laborer/motion/walk/left",
+        "public/sprites/Laborer/motion/walk/front-left"
+      ]
+    },
+    {
+      "id": "Female Miner/pickaxe-swing",
+      "destinations": [
+        "public/sprites/Female Miner/motion/pickaxe-swing/front",
+        "public/sprites/Female Miner/motion/pickaxe-swing/front-right",
+        "public/sprites/Female Miner/motion/pickaxe-swing/right",
+        "public/sprites/Female Miner/motion/pickaxe-swing/back-right",
+        "public/sprites/Female Miner/motion/pickaxe-swing/back",
+        "public/sprites/Female Miner/motion/pickaxe-swing/back-left",
+        "public/sprites/Female Miner/motion/pickaxe-swing/left",
+        "public/sprites/Female Miner/motion/pickaxe-swing/front-left"
+      ]
+    },
+    {
+      "id": "Female Miner/shovel-cycle",
+      "destinations": [
+        "public/sprites/Female Miner/motion/shovel-cycle/front",
+        "public/sprites/Female Miner/motion/shovel-cycle/front-right",
+        "public/sprites/Female Miner/motion/shovel-cycle/right",
+        "public/sprites/Female Miner/motion/shovel-cycle/back-right",
+        "public/sprites/Female Miner/motion/shovel-cycle/back",
+        "public/sprites/Female Miner/motion/shovel-cycle/back-left",
+        "public/sprites/Female Miner/motion/shovel-cycle/left",
+        "public/sprites/Female Miner/motion/shovel-cycle/front-left"
+      ]
+    },
+    {
+      "id": "Helga/carry-mine-timber",
+      "destinations": [
+        "public/sprites/Helga/motion/carry-mine-timber/front",
+        "public/sprites/Helga/motion/carry-mine-timber/front-right",
+        "public/sprites/Helga/motion/carry-mine-timber/right",
+        "public/sprites/Helga/motion/carry-mine-timber/back-right",
+        "public/sprites/Helga/motion/carry-mine-timber/back",
+        "public/sprites/Helga/motion/carry-mine-timber/back-left",
+        "public/sprites/Helga/motion/carry-mine-timber/left",
+        "public/sprites/Helga/motion/carry-mine-timber/front-left"
+      ]
+    }
+  ],
+  "mappedReferenceActions": [
+    {
+      "character": "Cook",
+      "action": "chop-vegetables"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact"
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree"
+    },
+    {
+      "character": "Laborer",
+      "action": "stack-crates"
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing"
+    }
+  ],
+  "runtimeCoverageBinding": {
+    "file": "src/game/world/npc-motion.ts",
+    "sha256": "c4040d925ced9190d9390e8be79b59daff50bce8fe141314ac37eb5735b19984"
+  },
+  "retryPolicy": {
+    "maxAttemptsPerPosePerCheckpoint": 2,
+    "onRepeatedFailure": "Do not keep regenerating the same pose. Record the exact failed constraint and switch to authored or rigged poses before another checkpoint.",
+    "closureUnit": "A source-bound passed review, not a generated image or passing build."
+  },
+  "familyReviews": []
+}

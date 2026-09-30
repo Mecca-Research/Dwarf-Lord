@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "folder": "public/sprites/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "64f268534a6682f02cb6b5e74fec249f326068cceda396c0b3d8e6f2cf8a2a96",
+    "settingsSha256": "d1fcd34e71334562bfcd0d6a29c8236edb4689b7a01a81b7f934e7b583d9c8ab",
+    "frameSha256": [
+      "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+      "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
+      "c98144fd29ca4f854c51ded6446233603ad378c38df87d25dee5137dacbe4886",
+      "76e86131f7f44dafc6deec618b5748f730c19dbaa9e64d0c7b633a5184368910",
+      "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
+      "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+      "f0afb45147fc09aaa4e4eafc0dff991424fb3dafd05a11b0252d0b6755a05432",
+      "6a594ae9883eedc3a698311dbcd445f227466c8a06d3b203f665e292e6f322dd"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ]
+  },
+  "scope": "Local authored support-pose inspection only; not a sole calibration, full stride, scale or loop approval.",
+  "observations": [
+    {
+      "frame": 1,
+      "status": "local-pose-correction-selected",
+      "legs": "Far anatomical right boot planted; near left heel lifted and trailing. Replaces repeated near-left support in the first half.",
+      "arms": "Near left arm advances in a small arc opposite right support; far right arm trails.",
+      "remaining": "Verify body-width continuity and corresponding sole points through neighboring contact and passing poses."
+    },
+    {
+      "frame": 2,
+      "status": "needs-correction",
+      "legs": "Retained near-left support repeats the opposite half; the near-left airborne passing phase after far-right support is missing.",
+      "attempt": "New candidate still trails its lifted boot and was rejected; see motion33-rejected-attempts.json."
+    },
+    {
+      "frame": 3,
+      "status": "review-required",
+      "remaining": "Confirm anatomical reach and counter-swing after corrected passing2."
+    },
+    {
+      "frame": 0,
+      "status": "review-required",
+      "remaining": "Confirm initial contact anatomy and transition from7 before treating caption as a verified contact."
+    },
+    {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "partial-corrections-retained",
+      "remaining": "Selected opposite-half legs are retained; arm phase, corresponding sole travel and loop return remain unapproved."
+    }
+  ],
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "productionReady": false
+}

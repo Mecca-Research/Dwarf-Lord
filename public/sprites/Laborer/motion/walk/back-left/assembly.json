@@ -34,6 +34,15 @@
       "prompt": "Use case identity-preserve. Edit this exact rear-left dwarf Laborer whole pose into final far-leg forward reach BEFORE landing. Preserve exact dwarf/head/torso/materials/view; not mirrored. Far anatomical RIGHT leg, whose smaller boot is toward image LEFT in reference, reaches forward upper-left and its heel stays visibly AIRBORNE, lifted about half a boot height above rear supporting toe ground. Toe slightly up. Near anatomical LEFT leg with larger buckle boot at image RIGHT trails lower-right; heel raised while toe supports on ground. This is an airborne reaching pose, not another heel-contact; forward smaller left-edge boot must be visibly higher than the trailing right-edge toe. Near left arm naturally forward upper-left, far right arm back; subtle opposite-leg swing. Full body and both boots, one pose, exact detailed semi-realistic dwarf identity, true alpha transparency, no ground shadow/scenery/tools/text.",
       "reference": "authoring-inputs/reach32-reference.png",
       "referenceSha256": "1672219918aa25a4f2480839efa6361df9a795a7999e8d7d901a8ea40e46cd29"
+    },
+    {
+      "id": "support33",
+      "file": "authoring-inputs/support33.png",
+      "poseCount": 1,
+      "sha256": "1a8cfdbfcbe52a98d0ba0a81a0edf734b7b21c5a670df532aa2fa6334dbfef4c",
+      "prompt": "Edit this exact full-body Laborer dwarf sprite to the OPPOSITE single-support walking phase, keeping the identical rear-left isometric camera, bald head, dark beard, muscular stocky build, ornate worn brown leather vest, cream rolled sleeves, trousers and buckled boots. He walks toward upper-left. The FAR anatomical RIGHT leg is now the weight-bearing straight leg: its boot is planted flat ahead toward upper-left, visibly on the far side of his pelvis. The NEAR anatomical LEFT leg, whose buckle/outer calf we see clearly on the left side of the image, is behind and beginning recovery: bend this LEFT knee, raise its heel, and show this LEFT boot's sole lifted off the ground trailing toward lower-right. This is the opposite of the attached image's left planted/right lifted pose. The near LEFT arm swings slightly forward toward upper-left (small relaxed arc), while the far RIGHT arm swings slightly backward toward lower-right; opposite arm to planted right leg. Preserve hands, natural limb anatomy, proportions, semi-realistic high-detail rendered texture, framing with clear margin around the whole dwarf. ONE full-body sprite only, no contact shadow, no ground, no props, true transparent background. Do not mirror the character or swap clothing details. Clear readable far-right support and near-left raised trailing boot.",
+      "reference": "authoring-inputs/support33-reference.png",
+      "referenceSha256": "58bd4808bb32414d089d0734bf71008e97f864f3a70acb99e6981236629e822b"
     }
   ],
   "poses": [
@@ -42,8 +51,8 @@
       "pose": 0
     },
     {
-      "input": "original",
-      "pose": 1
+      "input": "support33",
+      "pose": 0
     },
     {
       "input": "original",
