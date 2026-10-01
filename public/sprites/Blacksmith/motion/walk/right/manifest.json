@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/02-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "e30d137d5b76acec2eb96b96e46203956bd269dba51de9d291b1e1df247ceef5",
+  "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
   "sourceSize": [
     2560,
     1280
@@ -193,13 +193,13 @@
       "description": "left leg extends forward, right heel rises",
       "durationMs": 98,
       "sourceBounds": [
-        2076,
+        2100,
         740,
-        2439,
+        2440,
         1240
       ],
       "sourceAnchor": [
-        164.0,
+        140.0,
         500.0
       ],
       "groundAnchor": [
@@ -207,7 +207,7 @@
         616
       ],
       "placement": [
-        149,
+        174,
         96
       ]
     }
@@ -267,7 +267,7 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "5415a9a9bbbb3996a0de3c08786c51d9a02f62540619f4539ad9fc25971c202c",
+    "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
     "exportVersion": 2,
     "stationRegistration": null
   },
@@ -276,6 +276,7 @@
     "status": "needs-visual-review",
     "issues": [
       "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+      "Return7 trailing support narrowed. Whole-boundary numerical calibration candidate is not adopted: material correspondence, registered re-export, live travel and loop review are still required.",
       "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
     ],
     "poseCaptions": "intended-poses-not-verified",

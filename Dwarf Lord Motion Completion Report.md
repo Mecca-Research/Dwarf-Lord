@@ -1,8 +1,8 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: 30 September 2026. PR #9 remains a draft. This report covers the existing expanded library and its seven independent workstation actor variants.
+Checkpoint: 1 October 2026. PR #9 remains a draft. This report covers the existing expanded library and its seven independent workstation actor variants.
 
-**The full motion-polish work is not complete, and it is not just a few final touches away.** The artwork export and playback infrastructure are substantially built. The visual and physical acceptance work is still open. Previous checkpoints added useful corrections, stations and diagnostics, but did not close the main-library acceptance gates. Repeating the same broad remaining-work list concealed that distinction.
+**Neither the Laborer rear-left stride nor the Blacksmith right stride has full contact approval. PR #9 is not all green to merge.** This checkpoint selects five local pose corrections, measures all eight contact boundaries for each pilot, fixes the ground-review display, and verifies that both exact updated atlases run through every pose and a logical cycle return in the game. It closes zero final cycle approvals. The distinction between delivery, local artwork correction and whole-stride acceptance is explicit below.
 
 ## What is actually left
 
@@ -39,33 +39,69 @@ The five mapped fixed-reference actions are Cook/chop-vegetables, Blacksmith/ham
 
 There are seven independent stations: cutting block, anvil, forestry trunk, storage pallet, ledger desk, masonry bench and weighing table. Blacksmith, Ginger, Stoneworker and Quartermaster have scoped actor review records. The 60 unmapped reference actions do **not** imply 60 new workstation models: desk, anvil, cutting block and other props can be shared. Each action needs a deliberate activation rule, suitable actor/prop separation where furniture must persist, and completion/reset behavior. Preview availability alone is not gameplay integration.
 
-## Demonstrated blockers and limits of the measurements
+## Pilot results and exact remaining work
 
-| Evidence | What it establishes | What remains |
-| --- | --- | --- |
-| Laborer rear-left phase review | Frame 1 now has far-right support with near-left lift and a small opposing arm swing; opposite-half selected corrections are retained | Retained frame 2 still supports the wrong leg for that half. Initial contact, reach, other arms, sole correspondence, body-width continuity and the seam need review/correction |
-| Blacksmith right-view sole sample fit | Six sampled points fit an estimated stride/body ratio of 1.176428 with maximum residual 2.363 px | Anatomical material-point correspondence is unapproved; heel/toe rolls, contact changes and the full cycle are not covered. Runtime still uses the estimated 1.2 ratio |
-| Elder rear-view cane diagnostic | The tested cane support window has 20.729 px maximum displacement from its first sampled point; its largest adjacent jump is 36.639 px | Foot/cane coordination is not solved. Existing silhouette proxies show 95.579 px disagreement between simultaneous required root motions; this is a diagnostic, not verified anatomical sole tracking |
-| Held-pose runtime test | The rendered root remains fixed inside a held image while physical movement continues | Sprite travel advances at pose boundaries. Boundary contacts, new support/replant, turns and loop return still need calibration |
-| Helga visible contact review | All 64 directional carrying poses have a recorded visible hand/log inspection without visible detachment | Hidden anatomy, projected log geometry/length, gait, sole travel and view transitions remain unapproved |
-| Fixed-prop translation measurements | 34 combined work sequences have measured station translation residual below 0.7 px | Painted prop shape, hand/tool contact, material continuity and loop quality are separate checks |
+All frame indices below are zero based. The marked heel/toe edges are **candidate material landmarks**, not approved sole-contact tracking. Some overlap/occlusion still needs anatomical confirmation. Pixel residuals describe a flat-ground model at elevation 0.6 radians and the runtime's estimated stride ratio 1.2. They are diagnostics, not verified gameplay foot-slip distances.
 
-Other known open cases include Blacksmith and Ginger rear-right first-half/return phases, Cook blade-to-food/block contact, Borrin quill-to-paper contact, and Laborer crate release/reset continuity. These are specific correction or review targets; the rest of the library has not received equivalent final scrutiny.
+### Laborer rear-left
+
+Four locally inspected authored replacements are selected: passing pose 2 (near-left airborne, far-right support), reach pose 3 (near-left airborne forward reach with the rear-left camera retained), passing pose 6 (far-right boot passes close behind near-left support), and return pose 7 (near-left supporting toe brought under the pelvis). Their sources, prompts, input/reference hashes and selections are retained. Three other contact/reach/support candidates were excluded for camera/torso drift; the arm-only support attempt was excluded for repeating the wrong counter-swing. The larger guide sheet contributed only its locally correct passing pose.
+
+**Still required:**
+
+1. Correct near-left arm counter-swing in reach pose 3, contact pose 4 and support pose 5. The arm still advances with the same-side leading/support leg in these poses.
+2. Redraw the contact pose 4/support pose 5 foot geometry using controlled projected support positions. Candidate heel handoff 4-to 5 has 110.265 px residual, including 81.281 px perpendicular disagreement. Retiming cannot remove the perpendicular error.
+3. Resolve support spacing through 6-to 7 and registration through the initial heel roll 0-to 1. The current marked path would require a 6-to 7 hold below the allowed 40 ms. Its smallest cyclic perpendicular registration solution still needs 25.136 px; allowed registration shifts are at most 12 px.
+4. Confirm actual corresponding heel/toe material points through **all eight** boundaries, including occluded passing contacts. Register/re-export, then verify both full world travel and the last-to-first visual transition. The narrower return pose 7 no longer reverses the marked support travel; it is not a final loop approval.
+
+A single stride-ratio fit still leaves 118.314 px maximum residual. There is no acceptable whole-stride calibration to adopt from the current landmark candidates. The largest current-model residual is 110.265 px. All eight candidate boundaries are covered:
+
+| Boundary | Laborer candidate residual (px) | Blacksmith candidate residual (px) |
+| --- | ---: | ---: |
+|0 to 1|46.807|33.108|
+|1 to 2|33.336|2.344|
+|2 to 3|18.112|3.027|
+|3 to 4|28.611|60.128|
+|4 to 5|110.265|12.400|
+|5 to 6|40.668|1.833|
+|6 to 7|55.426|55.034|
+|7 to 0|48.314|8.692|
+
+### Blacksmith right
+
+Return 7 now has a narrower near-right trailing support leg. The new whole-boundary audit shows that the earlier six-point fit did not cover the complete contact cycle. Its old frame 7 toe coordinate is no longer the corresponding toe after the redraw. The old 2.363 px sampled fit is archived as historical; the corrected current six-point observation gives 17.504 px residual and **fails**. Updating hashes without updating that material point would have falsely preserved the old green result.
+
+**A bounded numerical candidate is available**, with stride/body ratio 0.875, durations `[121,174,136,46,165,119,116,123]` ms, and vertical registration shifts no larger than 5.75 px. It predicts 1.269 px maximum handoff residual for the marked material candidates. Its shortest pose is 46 ms, so it respects the 40 ms minimum. It has not changed the runtime stride, which remains 1.2.
+
+**Still required:** confirm material/anatomical foot correspondence; apply the candidate registration and timing to a reviewed re-export; bind and adopt the verified stride in the game; repeat actual travel/contact tracking across every held pose and boundary; approve identity/scale, counter-swing and the visual loop return. A numerical proposal is not a completed calibration or final motion approval. The current runtime model still has 60.128 px maximum candidate boundary residual; merely changing its single ratio leaves 35.679 px.
+
+### What was verified live
+
+Both exact current atlases were checked against the served source and atlas hashes. Each pilot has 64 live movement samples covering all eight frame selections and a logical phase return. Laborer has 52 moving same-frame intervals and Blacksmith 51; rendered x/z roots move 0 world units inside those holds. Screenshots were inspected. This proves current asset delivery and the held-pose mechanism; it does not establish that the correct anatomical sole stays on the terrain or that the visual loop is seamless.
+
+The review page previously moved the floor under a fixed sprite. It now offsets the whole pose to hold its projected root while the floor advances, and uses the same 0.6 radian flat-ground projection as the diagnostic. Source-generated playback is shared with the game. Turning, camera offsets and real terrain are outside this review-floor model.
+
+### Other recorded blockers
+
+- Elder: all eight joint foot/cane approvals remain open. The previously recorded rear cane diagnostic has 20.729 px maximum displacement and 36.639 px largest adjacent jump; silhouette proxies are not verified anatomical contacts.
+- Directional tools/logs: all 24 final cycle reviews and three direction-family reviews remain open. Helga's recorded visible grip inspections do not approve hidden grip geometry, foot travel, projected log length or view transitions.
+- Workstations: four of seven independent actor variants retain scoped reviews. Cook blade/food/block contact, Borrin quill/paper contact and Laborer crate release/reset remain outstanding.
+- Known other walking targets include Blacksmith and Ginger rear-right first-half/return phases. The remaining library has not received equivalent final contact scrutiny.
 
 ## Changes in this checkpoint
 
-1. Selected one new authored Laborer rear-left support pose, replacing the repeated support leg in frame 1. Its exact input, reference and prompt are archived. The export preserves the 520-pixel body target, registration origin and eight 125 ms durations. This is a local pose correction, **not** an approved stride.
-2. Rejected the following passing-pose attempt because its lifted boot stayed behind the supporting calf instead of passing under the pelvis. The image and exact failure record are saved. The failed image is not selected for playback. No repeated recovery-pose retries were made in this checkpoint.
-3. Added a frozen scope inventory with stable paths for all 160 existing cycles and all 11 direction families. A changed plan, missing scope entry or duplicate destination cannot silently enlarge or shrink the completion denominator.
-4. Added a reproducible completion audit. It recalculates review validity against actual source, exported frames, atlas, registration, timing and workstation dependencies. A cached approval flag cannot close an item. If runtime selection code changes, the old activation count becomes unknown until that coverage audit is refreshed.
-5. Added a full per-cycle inventory and the exact 60 unmapped reference action names so the next run can resume from named items rather than another vague phase of polishing.
+1. Selected four local Laborer leg-phase/spacing corrections and one Blacksmith return support correction. Both still have eight authored frames and the 520-pixel body target. No synthetic limb interpolation, canvas warping or automatic production approval was added.
+2. Added a source-bound eight-boundary measurement/checker, annotated sole-edge review sheets, bounded calibration proposals and 13 Python regression tests. Missing 7-to 0, transparent/out-of-canvas points, changed source/frames/atlas/actual settings/timing/runtime, unreviewed correspondence, reversed stance, invalid hold times and oversized registration cannot silently pass.
+3. Replaced the obsolete current Blacksmith sampled measurement after identifying its moved toe landmark. The old fit remains explicitly historical.
+4. Fixed the held-pose ground-review display and projection, with three additional Node tests. Added browser checks for both the review model and both exact live pilot atlases.
+5. Updated the named phase review, excluded-attempt records and pilot status. Frozen scope remains 160 existing cycles; no new workstation family or main cycle was added.
 
-This checkpoint closes **one local support-pose correction**. It closes **zero final cycle approvals**, **zero full-stride calibrations**, **zero Elder joint-contact approvals**, **zero cross-direction family approvals**, and **zero new runtime activation rows**. The remaining cycle-review count is still 156. Recording that explicitly prevents counting generated pictures as completed motion work.
+**This checkpoint closes five local pose corrections and zero final cycle approvals, verified whole strides, Elder joint-contact approvals, direction-family reviews or new work activation rows.** Remaining cycle-review obligations stay 156. The next art work is the named Laborer arm/contact geometry, rather than another unnamed polish pass. Persistent projected-contact failures need an authored support-plane reference or a rig with ground constraints before rendering another candidate; the repository currently has no editable rig/model asset for these rendered characters.
 
 ## Finite completion order
 
 1. **Finish one Laborer rear-left pilot cycle.** Resolve its remaining contact/passing/reach and arm phases, inspect all eight poses at game size, identify corresponding sole landmarks, measure the whole stride including support changes and 7-to-0, then record a source-bound final review. Stop adding stations while this pilot remains unaccepted.
-2. **Finish Blacksmith right-view stride calibration.** Extend the existing sampled fit to reviewed material contacts across the whole cycle, validate the chosen stride in live travel, and adopt it only after the contact and transition checks pass. These two pilot closures establish a repeatable method before processing the remaining walking views.
+2. **Finish Blacksmith right-view stride calibration.** Review the marked material contacts, apply the bounded whole-cycle candidate to a registered export, validate it in live travel, and adopt it only after every held-pose and transition contact passes. These two pilot closures establish a repeatable method before processing the remaining walking views.
 3. **Close the 64-view walking matrix by character.** Eight front views are already correction candidates, not accepted gaits. Audit the remaining 56 non-front views, redraw only failed phases, then calibrate each accepted view. Preserve asymmetrical equipment and anatomical handedness.
 4. **Close Elder's shared support in all eight views.** Measure foot and cane from the same poses and runtime movement. Verify plant, lift, recovery and replant; independent timing fits that make the cane and foot disagree do not count. The rear view is the first pilot.
 5. **Close the 24 tool/carry cycles and their three direction families.** Review handle/log landmarks, anatomical hand/shoulder grip, projected geometry, tool elevations/contact phase and carrying gait. Reuse a proven template only after it passes all eight views.
@@ -86,13 +122,18 @@ These steps share work; Elder and Helga support checks overlap the walking/carry
 
 ## Files and reproducibility
 
-- `docs/motion-completion-scope.json`: explicit frozen scope, direction families, runtime coverage binding and retry policy.
-- `docs/motion-completion-status.json`: current per-cycle bindings, valid scoped review counts and unmapped actions.
-- `docs/motion-completion-inventory.md`: readable list of all 160 cycles, 11 family review obligations and 60 unmapped actions.
-- `docs/laborer-back-left-phase-review.json`: exact-frame local correction and remaining phase findings.
-- `docs/motion33-rejected-attempts.json`: rejected recovery candidate, exact prompt/reference hashes and reason.
-- Run `python3 scripts/motion_completion.py` from the repository root to regenerate the status and readable inventory. It does not promote sprite manifests or mark production readiness.
+- `docs/motion-completion-scope.json`: frozen 160-cycle scope, 11 direction families and runtime coverage binding.
+- `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`: current full per-cycle obligations and exact 60 unmapped action names.
+- `docs/motion-pilot-status.json`: selected corrections, open pilot gates and unchanged completion counts.
+- `docs/laborer-back-left-phase-review.json`: exact current phase findings.
+- `docs/laborer-back-left-whole-stride-observations.json` and `docs/blacksmith-right-whole-stride-observations.json`: source-bound eight-boundary candidate points. Correspondence is explicitly unapproved.
+- Matching `*-whole-stride-measurement.json`, `*-whole-stride-candidate.json` and `*-whole-stride-review.jpg` files: numerical failures/proposals and annotated actual exported frames.
+- `docs/motion34-runtime-review.json`: current source/atlas bindings and 64 live samples per pilot; narrow delivery/held-root/phase scope.
+- `docs/motion34-rejected-attempts.json`: excluded inputs, exact generation records and reasons.
+- `docs/blacksmith-right-gait-before-motion34.json`: historical sampled fit, superseded after the return redraw.
 
-**Merge decision:** full-motion acceptance is still blocked. A green build verifies that the game builds and the tests pass; it does not prove the motion library is finished. Keep PR #9 draft until the named acceptance and integration gates close, or explicitly agree on a smaller separately labeled deliverable.
+Reproduce contact diagnostics with `python3 scripts/whole_stride.py docs/laborer-back-left-whole-stride-observations.json --out docs/laborer-back-left-whole-stride-measurement.json --candidate docs/laborer-back-left-whole-stride-candidate.json --overlay docs/laborer-back-left-whole-stride-review.jpg`, then the equivalent Blacksmith paths. Run `python3 scripts/motion_completion.py` for the frozen inventory. These tools never manufacture an anatomical/loop approval.
 
-Validation for this checkpoint: 189 Node tests, 43 Python tests, type checking, Pages build and whitespace checks pass. Browser validation passes for all 153 cycles / 1,224 images and the updated Laborer support pose. A headed gameplay movement capture shows the camp and characters; the existing recoverable React #418 hydration warning remains. No new asset/page errors occurred in the motion-library review. These checks verify delivery and playback, not the open anatomical contact gates.
+**Merge decision:** keep PR #9 draft. Neither pilot is fully verified, and the full motion library has 156 remaining cycle-review obligations, 11 direction-family reviews and 60 unmapped work actions. These are overlapping acceptance/integration obligations, not 156 presumed redraws. A passing build cannot turn the numerical/contact failures into a merge approval.
+
+Validation: 192 Node tests, 56 Python tests, type checking, Pages build and whitespace checks pass. Browser review passes for 153 cycles/1,224 images, both pilot review controls and both current live atlases. The bundled web-game client exercised movement; gameplay and pilot screenshots were inspected. The existing recoverable React #418 hydration warning remains; no new motion-page/asset errors or live page exceptions were recorded. No final anatomical foot, full-stride or visual loop acceptance is claimed.

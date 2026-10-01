@@ -80,6 +80,16 @@
       "prompt": "Create the opposite-leg passing phase from this exact right-facing Blacksmith sprite, changing ONLY leg overlap/depth. Preserve the planted boot's exact position and silhouette at bottom (heel x215, toe x345, flat sole y615), do NOT move that supporting boot forward. This grounded supporting leg now becomes the NEAR anatomical right leg: show its outside boot buckles and shin in front. The bent raised leg now becomes the FAR left leg: its raised boot must pass BEHIND the planted shin and be partly occluded by it, without moving the planted boot. Keep supporting knee and ankle slant backward toward heel just like this reference; do not straighten supporting shin into a vertical leg. Head, torso, arms, apron, camera, stocky proportions, scale, lighting all identical. Exactly two legs/two boots, one grounded and one raised. No arm swing in passing pose. Genuine transparent alpha background.",
       "reference": "authoring-inputs/support-b-reference.png",
       "referenceSha256": "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07"
+    },
+    {
+      "id": "return34",
+      "file": "authoring-inputs/return34.png",
+      "poseCount": 1,
+      "sha256": "d3932e493bf3da2c4d4663b5b60e84c61cc08fd14fcf8a6ce9bc8f7929f2df45",
+      "prompt": "Use case: precise-object-edit. This exact Blacksmith rear-left-facing RIGHT SIDE walk sprite must keep all head, torso, both arms, costume, camera and the forward airborne FAR LEFT boot at image-RIGHT unchanged. Correct only the trailing weight-bearing anatomical NEAR RIGHT leg, currently stretched far behind to image-LEFT. Bring its knee, shin and planted toe forward toward image-RIGHT about HALF A BOOT LENGTH, so its toe is directly below the pelvis rather than far behind it. The near-right trailing toe moves approximately 50 pixels right in this 640 pixel reference, from x258 to x308, stays at the SAME ground height around y603. Heel remains raised for toe-off. Keep actual sole/boot size and exact material, buckle and hip connectivity; knee naturally bends a little to place the foot under the hip. The far-left airborne leading boot must remain in place with toe slightly raised, no weight on it. Do not move/mirror/rotate character or change upper-body scale. This is a narrower pre-contact reach pose with the trailing support toe less extended back, allowing the last stance handoff before next cycle. Single whole dwarf, true transparency, no ground or shadow, no labels or props; high-detail semi-realistic render. Preserve all identity/clothing asymmetry.",
+      "reference": "authoring-inputs/return34-reference.png",
+      "referenceSha256": "ef45df34c74abe2c58e18ce69d818a599b629208a1b468dca262e6ac452c1fee",
+      "selectionReview": "Local narrower trailing right-leg toe support; contact calibration and camera/scale approval remain separate."
     }
   ],
   "poses": [
@@ -112,11 +122,11 @@
       "pose": 0
     },
     {
-      "input": "far-high",
+      "input": "return34",
       "pose": 0
     }
   ],
-  "review": "Passing frames 2 and 6 redraw supporting leg spacing, preserving opposite depth order. Timing follows reviewed flat-sole keyframe travel. Whole-cycle foot identities, heel/toe transitions and loop seam remain unapproved.",
+  "review": "Return pose7 narrows trailing near-right support. Re-measure all eight boundaries before any timing/stride adoption.",
   "durationsMs": [
     140,
     130,

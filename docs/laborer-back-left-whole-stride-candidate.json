@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "folder": "public/sprites/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
+    "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+    "frameSha256": [
+      "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+      "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
+      "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "052f86031ca3752f2b83a4916ff3322c96a63c361ee91fbed40773053f87bfd3",
+      "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
+      "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+      "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "29b194e5d39a4e8af0abc8631ee79f948c74aa4f09e079d6caf2a828b0422046"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+    "atlasSha256": "19d1e24581fc59818cde0004c648c71aee5af14d840cc5b92b6b158f1b1cc72d",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "c4040d925ced9190d9390e8be79b59daff50bce8fe141314ac37eb5735b19984",
+  "adoptedByRuntime": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Numerical candidate from unapproved material landmarks. Requires visual contact correspondence, registered re-export and live travel proof before adoption.",
+  "candidateAvailable": false,
+  "reason": "Required timing exceeds valid pose hold bounds; redraw the affected contact phase. Required perpendicular registration exceeds 12px; authored contact geometry must change.",
+  "blockingReasons": [
+    "Required timing exceeds valid pose hold bounds; redraw the affected contact phase.",
+    "Required perpendicular registration exceeds 12px; authored contact geometry must change."
+  ],
+  "invalidHoldBoundaries": [
+    6
+  ],
+  "maxRequiredPerpendicularOffsetPx": 25.136
+}

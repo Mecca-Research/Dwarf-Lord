@@ -96,11 +96,30 @@ export function motionPlacement(manifest, bodyHeight) {
         left: -root[0] * scale, top: -root[1] * scale };
 }
 /** Projection for the review floor only; not a replacement for the game camera. */
-export function reviewTravelVector(direction) {
+export function reviewTravelVector(direction, elevation = .6) {
     const directions = ['front', 'front-right', 'right', 'back-right', 'back', 'back-left', 'left', 'front-left'];
     const index = directions.indexOf(direction);
     if (index < 0)
         throw new Error('Travel requires a directional walking view');
     const angle = index * Math.PI / 4;
-    return [Math.sin(angle), Math.cos(angle) * 0.45];
+    if (!Number.isFinite(elevation) || elevation <= 0 || elevation >= Math.PI / 2) {
+        throw new Error('Review projection needs a valid camera elevation');
+    }
+    return [Math.sin(angle), Math.cos(angle) * Math.sin(elevation)];
+}
+/** Camera-relative offset while a discrete pose remains planted in the world.
+ * This flat-ground review model does not approve anatomical foot contacts.
+ */
+export function reviewHeldRootOffset(manifest, phase, strideBodyRatio, bodyHeight, elevation = .6) {
+    if (!isTravelMotion(manifest) || !Number.isFinite(phase) || phase < 0 ||
+        phase >= manifest.frames.length || !Number.isFinite(strideBodyRatio) || strideBodyRatio <= 0 ||
+        !Number.isFinite(bodyHeight) || bodyHeight <= 0 ||
+        manifest.frames.some(frame => !Number.isFinite(frame.durationMs) || frame.durationMs <= 0)) {
+        throw new Error('Invalid held-root review input');
+    }
+    const index = Math.floor(phase);
+    const total = manifest.frames.reduce((sum, frame) => sum + frame.durationMs, 0);
+    const travel = (phase - index) * manifest.frames[index].durationMs / total * strideBodyRatio * bodyHeight;
+    const axis = reviewTravelVector(manifest.direction ?? '', elevation);
+    return [-travel * axis[0], -travel * axis[1]];
 }

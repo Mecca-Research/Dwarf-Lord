@@ -11,11 +11,11 @@ class GaitCalibrationTests(unittest.TestCase):
         self.folder = Path(self.observations['folder'])
         self.manifest = json.loads((self.folder / 'manifest.json').read_text())
 
-    def test_reviewed_sample_fit_reproduces_without_whole_stride_approval(self):
+    def test_updated_return_landmark_revokes_the_old_sample_fit(self):
         report = measure(self.folder, self.manifest, self.observations)
         self.assertEqual(report, json.loads(Path('docs/blacksmith-right-gait-measurement.json').read_text()))
-        self.assertLess(report['maxResidualPx'], 3)
-        self.assertTrue(report['measurementPassed'])
+        self.assertGreater(report['maxResidualPx'], 3)
+        self.assertFalse(report['measurementPassed'])
         self.assertFalse(report['strideApproved'])
         self.assertFalse(report['loopApproved'])
 

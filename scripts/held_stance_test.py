@@ -13,11 +13,14 @@ class HeldStanceTests(unittest.TestCase):
         report=json.loads(reviewed)
         self.assertFalse(report['wholeStrideApproved'])
         self.assertFalse(report['loopApproved'])
-        # Flat-stance keyframe fit can pass while the sprite slides between keys.
+        # The narrowed return invalidates the old sampled fit. Neither sampled
+        # fitting nor the held-root model can approve anatomical contacts.
         keyfit=json.loads(Path('docs/blacksmith-right-gait-measurement.json').read_text())
-        self.assertTrue(keyfit['measurementPassed'])
+        self.assertFalse(keyfit['measurementPassed'])
         for measurement in report['measurements']:
-            self.assertGreater(measurement['maxWithinHoldDriftPx'],100)
+            self.assertGreater(measurement['maxWithinHoldDriftPx'], 0)
+            if measurement['calibration'] == 'runtime-estimate':
+                self.assertGreater(measurement['maxWithinHoldDriftPx'], 100)
             self.assertEqual({t['foot'] for t in measurement['tracks']},{'left','right'})
             for track in measurement['tracks']:
                 for hold in track['holds']:

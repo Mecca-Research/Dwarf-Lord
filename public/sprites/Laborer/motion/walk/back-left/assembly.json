@@ -43,6 +43,92 @@
       "prompt": "Edit this exact full-body Laborer dwarf sprite to the OPPOSITE single-support walking phase, keeping the identical rear-left isometric camera, bald head, dark beard, muscular stocky build, ornate worn brown leather vest, cream rolled sleeves, trousers and buckled boots. He walks toward upper-left. The FAR anatomical RIGHT leg is now the weight-bearing straight leg: its boot is planted flat ahead toward upper-left, visibly on the far side of his pelvis. The NEAR anatomical LEFT leg, whose buckle/outer calf we see clearly on the left side of the image, is behind and beginning recovery: bend this LEFT knee, raise its heel, and show this LEFT boot's sole lifted off the ground trailing toward lower-right. This is the opposite of the attached image's left planted/right lifted pose. The near LEFT arm swings slightly forward toward upper-left (small relaxed arc), while the far RIGHT arm swings slightly backward toward lower-right; opposite arm to planted right leg. Preserve hands, natural limb anatomy, proportions, semi-realistic high-detail rendered texture, framing with clear margin around the whole dwarf. ONE full-body sprite only, no contact shadow, no ground, no props, true transparent background. Do not mirror the character or swap clothing details. Clear readable far-right support and near-left raised trailing boot.",
       "reference": "authoring-inputs/support33-reference.png",
       "referenceSha256": "58bd4808bb32414d089d0734bf71008e97f864f3a70acb99e6981236629e822b"
+    },
+    {
+      "id": "guide34",
+      "file": "authoring-inputs/guide34-sheet.png",
+      "poseCount": 8,
+      "sha256": "71f01044c79e3ad13b31aab9f3282e12236544e70b58d5758090e216b8e9bbec",
+      "prompt": "Use case: stylized-concept. Create a semi-realistic rendered eight-pose WALK sprite sheet. Image1 is the EXACT Laborer identity and rear-left camera: bald stocky broad dwarf, dark beard, ornate worn brown leather waistcoat, cream rolled sleeves, dirty trousers and buckled boots. Image2 is a POSE/FOOT-SPACING GUIDE ONLY: use its eight different limb phases, but replace every schematic body with the exact dwarf from image1. Do not render guide colors, lines, text or background. Four columns two rows, eight distinct whole dwarfs, transparent alpha. Fixed rear-left view facing upper-left throughout, no camera changes. BLUE guide limb is near anatomical LEFT; ORANGE guide limb is far anatomical RIGHT. Follow both rows; first half RIGHT support, second half LEFT support. 1 far RIGHT foot leads upper-left, near LEFT trails lower-right, near LEFT arm forward and far RIGHT arm back. 2 far RIGHT planted flat; near LEFT boot lifted trailing. 3 far RIGHT planted, near LEFT knee/boot passes beside its calf: lifted near LEFT boot lies IMAGE-LEFT of the right support shin, not behind toward image-right. Arms near neutral. 4 near LEFT boot reaches ahead IMAGE-LEFT airborne; far RIGHT toe supports trailing IMAGE-RIGHT; near LEFT arm back, far RIGHT arm forward. 5 near LEFT heel lands ahead image-left, far RIGHT trails image-right, same counter arms. 6 near LEFT planted flat; far RIGHT heel lifts behind. 7 near LEFT planted, far RIGHT airborne knee/boot passes close beside it. 8 far RIGHT boot reaches ahead image-left airborne, near LEFT toe trails image-right, near LEFT arm forward and far RIGHT arm back. Moderate consistent step lengths exactly like guide; no splits or giant steps. Identical torso width, limb lengths, clothing, head size in all8. Natural knee bends, small arm arc, readable boots, slight weight bob. Same detailed lighting/materials as image1. Eight separated whole figures with generous transparent cell margins; no props, tools, ground, shadows, labels or scenery. This is a coherent two-support-half cycle; do not repeat one leading leg in both rows or duplicate poses.",
+      "references": [
+        {
+          "file": "authoring-inputs/guide34-identity.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        },
+        {
+          "file": "authoring-inputs/gait-guide34.png",
+          "sha256": "830f190fbb9e299e8e86db107f1d009e3f35ce8aac25fac19e7f587d55e130ba"
+        }
+      ],
+      "selectionReview": "Select only pose2: near-left airborne passing beside far-right supporting calf. Other repeated support/reach phases excluded."
+    },
+    {
+      "id": "contact34",
+      "file": "authoring-inputs/contact34.png",
+      "poseCount": 1,
+      "sha256": "f43ffb9fb7c988c0452cf68e071816f5b922f82bcddeac84c059394b887bbb5f",
+      "prompt": "Use case: precise-object-edit. Correct this exact Laborer rear-left LEFT heel-contact pose. Preserve exact dwarf identity, broad muscular stocky proportions, bald head, beard, ornate leather vest, cream rolled sleeves, trousers, buckled boots, isometric upper-left-facing camera and detailed render. The near anatomical LEFT leg remains the leading leg to image-left. The far RIGHT leg remains trailing image-right. Change TWO things: (1) reduce the excessive split stance to a moderate natural step, bringing the trailing right boot much closer under its right hip and the leading left boot moderately closer under its left hip; full boot-to-boot spacing should be about the torso width, not almost twice it. LEFT heel lands ahead with toe slightly raised; RIGHT toe stays behind with heel lifted. Preserve which hip connects to each boot, never mirror. (2) Correct the arms: the leading near LEFT leg requires near LEFT arm swinging BACK. Move the currently outstretched image-left fist back beside the rear edge of the LEFT hip toward IMAGE-RIGHT, elbow bent slightly, hand close to the vest/hip, no exaggerated extension. The far RIGHT arm swings forward toward upper-left, partly occluded behind torso as expected. This must have opposite arm/leg motion, not the left arm reaching forward with the left leg. Small relaxed arm arcs, unchanged torso and head. One exact full-body sprite, same clothing/skin, transparent background, no scene/shadow/props/text, generous margins, both full boots readable.",
+      "reference": "authoring-inputs/contact34-reference.png",
+      "referenceSha256": "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
+      "selectionReview": "Excluded from playback: local arm/leg changes are useful, but torso/head camera rotates toward side view relative to first-half rear-left poses. Cannot certify direction continuity."
+    },
+    {
+      "id": "reach34",
+      "file": "authoring-inputs/reach34.png",
+      "poseCount": 1,
+      "sha256": "6606820bd77e5bae12b9d33292c3f1866efac5eb3b9ff93772ba68100e391b88",
+      "prompt": "Use case: precise-object-edit. Edit this exact whole dwarf pose into the PRECEDING near-LEFT airborne forward reach immediately before this heel contact. Keep the exact same bald muscular stocky Laborer, vest details, sleeve folds, beard, trousers, boots, camera and the newly correct counter-swing arms: near LEFT arm back beside hip, far RIGHT arm forward partly occluded. Keep the supporting far RIGHT toe behind, heel lifted. The near anatomical LEFT boot at image-LEFT must rise visibly off the ground by about a quarter boot height with its toe up as the LEFT knee advances a little; it has NOT landed yet. Both thighs/knees remain anatomically connected and step width stays moderate. Do not swap legs and do not plant the left boot. Same weight, torso width/head scale, full-body semi-realistic render, genuine transparency with no ground/shadow/props/labels. ONE whole sprite. This is a subtle but distinct pre-contact reach; preserve the entire upper body and hand positions.",
+      "selectionReview": "Excluded from playback: local arm/leg changes are useful, but torso/head camera rotates toward side view relative to first-half rear-left poses. Cannot certify direction continuity.",
+      "reference": "authoring-inputs/contact34.png",
+      "referenceSha256": "f43ffb9fb7c988c0452cf68e071816f5b922f82bcddeac84c059394b887bbb5f"
+    },
+    {
+      "id": "support34",
+      "file": "authoring-inputs/support34.png",
+      "poseCount": 1,
+      "sha256": "d4f41c79c14f15da0d6d859cda2abc8acd0c056ebc8799517735fc2fc249ae68",
+      "prompt": "Use case: precise-object-edit. This is the correct Laborer LEFT-contact upper body. Preserve its ENTIRE head, torso, waistcoat and BOTH ARMS exactly in appearance and pose. Especially retain near LEFT hand BACK beside left hip and far RIGHT hand FORWARD partly occluded. Create the immediately following LEFT single-support/down phase by changing ONLY legs: near anatomical LEFT foot at image-LEFT comes back under its own hip and plants FLAT, left knee slightly compresses under body weight. Far anatomical RIGHT leg behind at image-RIGHT bends its knee and lifts its heel/boot trailing, starting airborne recovery. The near-left boot is the only weight-bearing flat support. Narrow natural walking stance, not wide split contact; do not reverse legs. Keep head and broad chest height/width, dwarf stockiness, belt position and lighting; only very slight weight-down bob. Both hands must stay as in input, not migrate to a same-side forward swing. Whole body and boots visible, exact rear-left camera, one high-quality semi-realistic sprite, genuine alpha, no ground/shadow/props/text. This is a leg-only next-phase edit from an already-correct counter-swing torso.",
+      "selectionReview": "Excluded from playback: local arm/leg changes are useful, but torso/head camera rotates toward side view relative to first-half rear-left poses. Cannot certify direction continuity.",
+      "reference": "authoring-inputs/contact34.png",
+      "referenceSha256": "f43ffb9fb7c988c0452cf68e071816f5b922f82bcddeac84c059394b887bbb5f"
+    },
+    {
+      "id": "passing34",
+      "file": "authoring-inputs/passing34.png",
+      "poseCount": 1,
+      "sha256": "1074dd25a3d21ceb82064dcd230a0e8c9c7fab0942464a4aaef8939b68f3da48",
+      "prompt": "Use case: precise-object-edit. Correct this exact Laborer rear-left opposite PASSING pose. Preserve head, torso, camera, vest, stocky build and the LARGE near anatomical LEFT planted boot/shin exactly in their current position. This left leg is the straight weight-bearing support. The SMALL far anatomical RIGHT boot is now too far forward on IMAGE-LEFT with toe up. Bring that far RIGHT boot BACK inward beside the support calf: its airborne ankle should be directly under the far right hip, on IMAGE-RIGHT of the planted left shin, about half a boot height ABOVE the planted boot. Bend far RIGHT knee forward under pelvis and angle its toe slightly down. The far right shin/boot is partly hidden BEHIND the near left support shin, never in front of it. Exactly two separate boots, one near left planted and one far right airborne passing; no huge stride. Change arms to neutral beside torso at the midpoint: near LEFT hand hangs below its shoulder beside near hip, instead of extending to image-left; far RIGHT hand mostly naturally occluded. Small relaxed arms. Keep exact identity, body/head size, sleeves, trousers, boot materials, source camera and detailed rendering. Full body single sprite, true transparent alpha, no shadows/ground/props/text. Do not move the supporting boot or repeat the existing far-forward reach.",
+      "selectionReview": "Far-right airborne foot passes close behind near-left supporting calf; neutral midpoint arms.",
+      "reference": "authoring-inputs/passing34-reference.png",
+      "referenceSha256": "f0afb45147fc09aaa4e4eafc0dff991424fb3dafd05a11b0252d0b6755a05432"
+    },
+    {
+      "id": "rejected-support34",
+      "file": "authoring-inputs/rejected-support34.png",
+      "poseCount": 1,
+      "sha256": "dbb865272360258495a3b005ff95abc32aef686e1d6fe437071192f660a46acf",
+      "prompt": "Use case: precise-object-edit. Image1 is the exact Laborer LEFT-support pose to edit. Image2 shows the correct near-left-arm BACK/far-right-arm FORWARD counter-swing for this half of his stride. Preserve Image1 legs, boots, torso position, camera, head, dwarf proportions and vest exactly. Change ONLY the arms from Image1's same-side forward swing to the slightly relaxing version of Image2 arms. The near anatomical LEFT arm comes from the image-left shoulder; its fist must now sit BACK beside the rear edge of the left hip toward IMAGE-RIGHT, elbow slightly bent, not outstretched toward image-left. Far anatomical RIGHT arm moves FORWARD toward upper-left and is naturally partially hidden by torso. Small natural arc, relaxed hands. The near LEFT boot remains the flat planted weight-bearing boot; far RIGHT heel starts recovering behind. Do not alter/support-swap the legs or invent a new stance. Preserve identity, sleeve/skin/material detail, upper body width and exact rear-left view. One full-body high-quality semi-realistic sprite, transparent alpha, no shadows/ground/props/text.",
+      "selectionReview": "Rejected: near-left arm still swings forward with near-left support instead of counter-swing. Not selected."
+    },
+    {
+      "id": "rear-reach34",
+      "file": "authoring-inputs/rear-reach34.png",
+      "poseCount": 1,
+      "sha256": "b6126ed2f9c57b2406b1bc0f192e60d24189a1a72aeef2b8ad699bd133a93df5",
+      "prompt": "Use case precise-object-edit. Edit this EXACT whole Laborer rear-left passing pose into the immediately NEXT walk phase, keeping entire head, chest, waistcoat, clothing detail, shoulder width and EXACT CAMERA unchanged. He faces diagonally UPPER LEFT and remains viewed mostly FROM BEHIND, with broad back of waistcoat visible just like input; do NOT rotate him toward a side view. Near anatomical LEFT leg is the raised bent leg with buckle and sole visible in front of the supporting calf: extend that LEFT knee forward so its airborne boot reaches toward IMAGE LEFT ahead of the hip, heel still raised above ground, toe slightly up. Far anatomical RIGHT leg is the straight planted leg at IMAGE RIGHT: it now trails image-right, heel lifting with toe still grounded. Keep the right supporting boot roughly under/behind right hip, NOT at image-left. This changes passing to an airborne left forward reach, not another right-foot-leading stance. Arm counter-swing stays subtle: near LEFT arm moves backward toward image-right beside hip, far RIGHT arm forward upper-left mostly hidden. Preserve broad stocky dwarf body, bald head silhouette, dark beard, ornate leather vest, cream sleeves, body height and camera pitch/yaw exactly. Single full body sprite, authentic transparent background, no scene, floor, ground shadow, tools or text. EXACT same rear-left upper body and identity as input, both full boots visible.",
+      "reference": "authoring-inputs/rear-reach34-reference.png",
+      "referenceSha256": "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "selectionReview": "Locally selected near-left airborne reach with far-right trailing support and retained rear-left back/camera. Near-left arm still forward rather than backward; counter-swing and full contact remain unapproved."
+    },
+    {
+      "id": "return34",
+      "file": "authoring-inputs/return34.png",
+      "poseCount": 1,
+      "sha256": "78a4791ff98b0ceb9b820e70b9fa084e4b742cccd8ae30710bd6e4a9bf1754be",
+      "prompt": "Use case precise-object-edit. Correct ONLY the overextended trailing anatomical NEAR LEFT supporting leg of this exact Laborer rear-left sprite. Keep entire head, bald face/beard, broad torso, decorated vest, both counter-swinging arms, camera, source framing and forward airborne FAR RIGHT boot toward image-left unchanged. The NEAR LEFT leg currently stretches far toward lower-right, its large boot toe at approximately x428 y604 in the 640px reference. Bring that near-left planted boot up and left underneath its own hip: toe contact should be around x300 y575 in the reference, not far right. Flex that near-left knee naturally so the supporting calf is under the pelvis, not extending far backward. Preserve boot size, ankle anatomy and near/far depth: near LEFT support shin is in front, far RIGHT reaching foot remains airborne ahead upper-left. LEFT heel stays lifted for toe-off, LEFT toe is the only support. This narrows the trailing stance, preserving the existing forward-reaching right leg and exactly the same mostly-rear camera and upper-body silhouette. This is a support-foot position correction immediately before the next far-right heel contact; DO NOT plant both boots, mirror, rotate or change costume/head/arm pose. Entire whole dwarf with both boots, transparent alpha, no ground/shadow/scene/tools/text; same detailed semi-realistic render.",
+      "reference": "authoring-inputs/return34-reference.png",
+      "referenceSha256": "6a594ae9883eedc3a698311dbcd445f227466c8a06d3b203f665e292e6f322dd",
+      "selectionReview": "Near-left supporting toe brought closer under pelvis; retains far-right airborne reach and rear-left upper body. Ground-plane/contact continuity remains unapproved."
     }
   ],
   "poses": [
@@ -55,12 +141,12 @@
       "pose": 0
     },
     {
-      "input": "original",
+      "input": "guide34",
       "pose": 2
     },
     {
-      "input": "original",
-      "pose": 3
+      "input": "rear-reach34",
+      "pose": 0
     },
     {
       "input": "contact32",
@@ -71,15 +157,15 @@
       "pose": 5
     },
     {
-      "input": "corrected",
-      "pose": 6
+      "input": "passing34",
+      "pose": 0
     },
     {
-      "input": "reach32",
+      "input": "return34",
       "pose": 0
     }
   ],
-  "review": "Adopt near-left leading heel contact4 and far-right airborne reach7 alongside support5/recovery6. Original first half retained. Source labels had leg identity ambiguity; anatomical correspondence and full-stride/arm/loop approval remain open.",
+  "review": "Selected local leg corrections passing2, near-left reach3, opposite passing6 and narrow near-left support/return7. Reach3 and contact/support4-5 arm phases plus support material contacts and ground geometry remain unapproved. No full-stride or final loop approval.",
   "durationsMs": [
     125,
     125,

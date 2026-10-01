@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { compiledPlayback } from './sync-motion-playback.mjs';
-import { MotionPlayback, motionPlacement, reviewTravelVector } from '../public/motion-playback.mjs';
+import { MotionPlayback, motionPlacement, reviewTravelVector, reviewHeldRootOffset } from '../public/motion-playback.mjs';
 const motion = (overrides = {}) => ({ character: 'Helga', action: 'walk', kind: 'walk',
   frames: [140, 140, 105, 115, 140, 140, 105, 115].map(durationMs => ({ durationMs })),
   registration: { targetBodyHeight: 520, targetAnchor: [320, 616] }, frameSize: [640, 640], ...overrides });
@@ -52,10 +52,40 @@ test('invalid motion input cannot hang playback or produce NaN geometry', () => 
   assert.throws(() => new MotionPlayback(motion({ kind: 'work' })).travel(1, 2));
 });
 test('review travel follows authored directions without mirroring sprites', () => {
-  assert.deepEqual(reviewTravelVector('front'), [0, .45]);
+  assert.deepEqual(reviewTravelVector('front'), [0, Math.sin(.6)]);
   assert.ok(reviewTravelVector('right')[0] > .99);
   assert.ok(reviewTravelVector('left')[0] < -.99);
   assert.ok(reviewTravelVector('back')[1] < 0);
+});
+
+test('review uses the measurement projection and rejects invalid elevation', () => {
+  const axis = reviewTravelVector('back-left');
+  assert.ok(Math.abs(axis[0] + Math.SQRT1_2) < 1e-12);
+  assert.ok(Math.abs(axis[1] + Math.SQRT1_2 * Math.sin(.6)) < 1e-12);
+  for (const value of [NaN, 0, Math.PI / 2]) assert.throws(() => reviewTravelVector('front', value));
+});
+
+test('held review root stays fixed in world space through every pose', () => {
+  const m = motion({ direction: 'back-left' });
+  const axis = reviewTravelVector(m.direction);
+  let elapsed = 0;
+  for (let i = 0; i < 8; i++) {
+    let expected;
+    for (const fraction of [.05, .35, .75, .99]) {
+      const distance = (elapsed + fraction * m.frames[i].durationMs) / 1000 * 1.2 * 380;
+      const offset = reviewHeldRootOffset(m, i + fraction, 1.2, 380);
+      const root = axis.map((v, j) => v * distance + offset[j]);
+      if (expected) root.forEach((v, j) => assert.ok(Math.abs(v - expected[j]) < 1e-9));
+      expected = root;
+    }
+    elapsed += m.frames[i].durationMs;
+  }
+});
+
+test('held review rejects non-travel actions and invalid phase or scale', () => {
+  for (const phase of [-1, 8, NaN]) assert.throws(() => reviewHeldRootOffset(motion({ direction: 'right' }), phase, 1.2, 380));
+  assert.throws(() => reviewHeldRootOffset(motion({ kind: 'work' }), 1, 1.2, 380));
+  assert.throws(() => reviewHeldRootOffset(motion({ direction: 'right' }), 1, 0, 380));
 });
 
 test('directional timber carrying follows travel without replaying stationary tool work', () => {

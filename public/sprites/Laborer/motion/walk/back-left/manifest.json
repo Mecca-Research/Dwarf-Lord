@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/05-back-left.png",
   "source": "source-sheet.png",
-  "sourceSha256": "64f268534a6682f02cb6b5e74fec249f326068cceda396c0b3d8e6f2cf8a2a96",
+  "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
   "sourceSize": [
     2560,
     1280
@@ -70,55 +70,55 @@
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "retained near-left support, wrong first-half leg; passing correction pending",
+      "description": "near-left airborne passing beside far-right support calf; sole calibration pending",
       "durationMs": 125,
       "sourceBounds": [
-        1520,
-        96,
-        1745,
-        599
+        1464,
+        102,
+        1739,
+        594
       ],
       "sourceAnchor": [
-        80.0,
-        504.0
+        136.0,
+        498.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        237,
-        92
+        179,
+        98
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "retained first reach; correction pending",
+      "description": "near-left airborne reach, far-right trailing support; near-left arm correction pending",
       "durationMs": 125,
       "sourceBounds": [
-        2089,
-        96,
-        2411,
-        601
+        2061,
+        100,
+        2396,
+        600
       ],
       "sourceAnchor": [
-        151.0,
-        504.0
+        179.0,
+        500.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        163,
-        92
+        134,
+        96
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "near-left heel contact; far-right toe trailing",
+      "description": "retained near-left contact; opposing arms and direction correction pending",
       "durationMs": 125,
       "sourceBounds": [
         130,
@@ -142,7 +142,7 @@
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "near-left support; far-right heel lifts",
+      "description": "retained near-left support; arm counter-swing correction pending",
       "durationMs": 125,
       "sourceBounds": [
         810,
@@ -166,16 +166,16 @@
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "far-right airborne recovery; near-left supports",
+      "description": "far-right airborne passing beside near-left supporting calf; neutral arms",
       "durationMs": 125,
       "sourceBounds": [
-        1440,
+        1504,
         740,
-        1775,
-        1238
+        1735,
+        1240
       ],
       "sourceAnchor": [
-        160.0,
+        96.0,
         500.0
       ],
       "groundAnchor": [
@@ -183,23 +183,23 @@
         616
       ],
       "placement": [
-        154,
+        220,
         96
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "far-right airborne reach; near-left toe trails",
+      "description": "far-right airborne reach; near-left support narrowed under hip; contact review pending",
       "durationMs": 125,
       "sourceBounds": [
-        2066,
+        2063,
         740,
-        2450,
+        2454,
         1240
       ],
       "sourceAnchor": [
-        174.0,
+        177.0,
         500.0
       ],
       "groundAnchor": [
@@ -207,7 +207,7 @@
         616
       ],
       "placement": [
-        139,
+        136,
         96
       ]
     }
@@ -267,7 +267,7 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "d1fcd34e71334562bfcd0d6a29c8236edb4689b7a01a81b7f934e7b583d9c8ab",
+    "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
     "exportVersion": 2,
     "stationRegistration": null
   },
@@ -276,6 +276,7 @@
     "status": "needs-visual-review",
     "issues": [
       "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
+      "Passing2/reach3/opposite passing6 locally corrected. Reach3 and contact/support4-5 arm phases, projected sole geometry and 7-to-0 support return still fail final acceptance. See source-bound whole-stride diagnostics.",
       "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
     ],
     "poseCaptions": "intended-poses-not-verified",

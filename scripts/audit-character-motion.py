@@ -18,6 +18,10 @@ def known_issues(entry):
     issues = []
     if entry['kind'] == 'walk':
         issues.append('Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.')
+    if character == 'Laborer' and action == 'walk' and direction == 'back-left':
+        issues.append('Passing2/reach3/opposite passing6 locally corrected. Reach3 and contact/support4-5 arm phases, projected sole geometry and 7-to-0 support return still fail final acceptance. See source-bound whole-stride diagnostics.')
+    if character == 'Blacksmith' and action == 'walk' and direction == 'right':
+        issues.append('Return7 trailing support narrowed. Whole-boundary numerical calibration candidate is not adopted: material correspondence, registered re-export, live travel and loop review are still required.')
     if character == 'Female Miner' and action == 'walk' and direction == 'front':
         issues.append('Front gait redrawn with opposite arm swing; source phases reordered and torso/ground landmarks calibrated. Validate support contacts against actual travel speed.')
     if character == 'Elder' and action == 'walk' and direction == 'back':

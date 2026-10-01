@@ -254,3 +254,16 @@ Laborer rear-left frame1 now adopts one authored far-right support/near-left hee
 The next closure target is one complete pilot stride. Do not silently expand the station count while that contact method remains unaccepted. Limit repeated same-pose attempts to two per checkpoint, then change authoring method. The report explains when authored/rigged pose references are required instead of another broad raster-generation retry. This is an explicit execution policy, not evidence that the remaining art is easy or almost finished.
 
 Validation:189 Node/43 Python tests, type checking, Pages build and whitespace pass. All153 main cycles/1,224images pass browser controls/loading checks; updated Laborer support and headed gameplay screenshots inspected. Existing React418 hydration warning remains. Full motion acceptance stays incomplete and PR9 remains draft.
+
+
+### Motion 34: explicit pilot contact failures and held-root review (1 October 2026)
+
+Selected Laborer rear-left passing pose 2, airborne reach pose 3, opposite passing pose 6 and narrowed support/return pose 7, plus Blacksmith right return pose 7. Local anatomical pose improvements do not approve the full stride. Excluded camera-drifting and wrong-arm candidates are archived.
+
+New whole-stride diagnostics cover all eight boundaries, including heel roll/support handoffs and 7-to 0. Candidate material correspondence remains unapproved. Laborer has 110.265 px maximum candidate residual and its bounded proposal is rejected for 6-to 7 timing and 25.136 px required perpendicular registration. Reach 3/contact pose 4/support pose 5 arm counter-swing and contact pose 4/support pose 5 ground geometry still require correction.
+
+Blacksmith's current eight-boundary model has 60.128 px maximum candidate residual. Its bounded 0.875-body stride/timing proposal predicts 1.269 px, but has not been applied or adopted. Redrawn return pose 7 also moves the earlier toe landmark: the old 2.363 px sampled fit is historical; the corrected current sample fit fails at 17.504 px. Old evidence is not kept green by refreshing hashes.
+
+The ground-review renderer now holds each pose's projected root while the floor moves, using elevation 0.6 rather than the former arbitrary 0.45 projection factor. Both exact live atlases cover all eight poses and logical cycle returns.64 samples per pilot include 52 Laborer/51 Blacksmith moving holds with zero visible x/z root movement. This is delivery and within-hold root proof, not anatomical sole tracking.
+
+192 Node tests,56 Python tests, type checking, Pages build,153-cycle browser review, pilot review/runtime checks and inspected gameplay screenshots pass. PR 9 remains Draft. Zero final cycle or stride approvals close;156 cycle reviews,11 family reviews and 60 work activation rows remain. See the root motion completion report and source-bound diagnostics for the next named corrections.
