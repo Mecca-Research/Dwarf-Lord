@@ -1,6 +1,21 @@
 {
   "version": 1,
   "scopeDate": "2026-09-30",
+  "reviewGatesComplete": false,
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 154
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 54
+    }
+  ],
   "counts": {
     "mainCycles": 153,
     "mainFrames": 1224,
@@ -10,13 +25,15 @@
     "fixedWorkCycles": 65,
     "actorCycles": 7,
     "actorFrames": 56,
-    "mainScopedReviewsApproved": 0,
+    "mainScopedReviewsApproved": 2,
     "actorScopedReviewsApproved": 4,
-    "cycleReviewsRemaining": 156,
+    "cycleReviewsRemaining": 154,
     "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 5,
-    "referenceActionsWithoutMapping": 60
+    "referenceActionsMapped": 11,
+    "referenceActionsWithoutMapping": 54
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -5721,8 +5738,8 @@
       "destination": "public/sprites/Elder/motion/laugh-seated/reference",
       "id": "Elder/laugh-seated/reference",
       "frameCount": 8,
-      "reviewStatus": "not-reviewed",
-      "scope": null,
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Fixed-view seated Elder laugh-seated cycle and once-hold playback at the home camp only. No moving foot/cane, 360-degree pose transition, pickaxe work, or seamless change between different camp activities is approved.",
       "binding": {
         "sourceSha256": "6e6e628038fdb1ae8e1e8a93eb944648f46e1a2219a260759317d856cdde422b",
         "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
@@ -5772,8 +5789,8 @@
       "destination": "public/sprites/Elder/motion/laugh-and-gesture/reference",
       "id": "Elder/laugh-and-gesture/reference",
       "frameCount": 8,
-      "reviewStatus": "not-reviewed",
-      "scope": null,
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Fixed-view seated Elder laugh-and-gesture cycle and once-hold playback at the home camp only. No moving foot/cane, 360-degree pose transition, pickaxe work, or seamless change between different camp activities is approved.",
       "binding": {
         "sourceSha256": "61ae68cae34420d13d26f28f1eb1ade78c4715fce4c63e853298fa23b0791d25",
         "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
@@ -10838,47 +10855,47 @@
   "families": [
     {
       "id": "Blacksmith/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Borrin/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Cook/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Elder/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Female Miner/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Ginger/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Helga/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Laborer/walk",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Female Miner/pickaxe-swing",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Female Miner/shovel-cycle",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     },
     {
       "id": "Helga/carry-mine-timber",
-      "status": "not-reviewed"
+      "status": "reviewed-changes-required"
     }
   ],
   "referenceActionsWithoutMapping": [
@@ -10956,36 +10973,6 @@
       "character": "Cook",
       "action": "serve-stew",
       "destination": "public/sprites/Cook/motion/serve-stew/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "eat-stew",
-      "destination": "public/sprites/Elder/motion/eat-stew/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "eat-bread",
-      "destination": "public/sprites/Elder/motion/eat-bread/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "laugh-seated",
-      "destination": "public/sprites/Elder/motion/laugh-seated/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "laugh-and-gesture",
-      "destination": "public/sprites/Elder/motion/laugh-and-gesture/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "inspect-pickaxe-in-lap",
-      "destination": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference"
-    },
-    {
-      "character": "Elder",
-      "action": "examine-pickaxe-crack",
-      "destination": "public/sprites/Elder/motion/examine-pickaxe-crack/reference"
     },
     {
       "character": "Female Miner",
@@ -11183,5 +11170,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "3444c8483c57870edccf8125c3208ca33c14b27b0dd0695051af30e437313576"
+  "scopeSha256": "2ab32143dd096427f9a1a341b8b3a35af04600e5abb15d2168bc7624489ed2cc"
 }

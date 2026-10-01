@@ -331,16 +331,3737 @@
     {
       "character": "Borrin",
       "action": "desk-writing"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-stew"
+    },
+    {
+      "character": "Elder",
+      "action": "eat-bread"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-seated"
+    },
+    {
+      "character": "Elder",
+      "action": "laugh-and-gesture"
+    },
+    {
+      "character": "Elder",
+      "action": "inspect-pickaxe-in-lap"
+    },
+    {
+      "character": "Elder",
+      "action": "examine-pickaxe-crack"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "c4040d925ced9190d9390e8be79b59daff50bce8fe141314ac37eb5735b19984"
+    "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
     "onRepeatedFailure": "Do not keep regenerating the same pose. Record the exact failed constraint and switch to authored or rigged poses before another checkpoint.",
     "closureUnit": "A source-bound passed review, not a generated image or passing build."
   },
-  "familyReviews": []
+  "familyReviews": [
+    {
+      "id": "Blacksmith/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Right-view contact handoff still has60.128px candidate residual. Rear-right0/4 contact halves and2/6 passing poses need anatomical support-side confirmation and contact correction before turns can pass.",
+        "body-scale": "All views target520px, but the right-view registration/timing candidate has not been adopted.",
+        "direction-transitions": "Right/back-right turn preserves logical index, not the marked material foot contact; rear-right first-half to opposite support is not a passed transition.",
+        "equipment-geometry": "Apron, bald crown, beard and boots are recognizable; rear-right arm/leg opposition remains a correction."
+      },
+      "bindings": {
+        "public/sprites/Blacksmith/motion/walk/front": {
+          "sourceSha256": "8dc40926c069876202723bbe3a669f922d8c0c0bd9f974a110820a80a975c333",
+          "settingsSha256": "962481e9a1e5dac5e9e6315e8673f81fa24ce4b1ec3a9bff88035f34af52045e",
+          "frameSha256": [
+            "60a870cc9ef5f0ff0262d359d7a6ecb56b8893c2cd13161074dc5f4eeaf16cad",
+            "94a48602b2bfde853b9c931619dab522852cb165de269e44996de618d91aae5e",
+            "9c6c3353c1df24a571f37b87fe2f63ba7d4bf43b8df79cfad8351e47ad93fe4b",
+            "4303d1a42072a558ba60e666f7db39a0c1de30f62b641ee5d8223474cc95f779",
+            "833b14dc9c0b15712aec6ce0403998ef4eed3ad6b27a7a213926ba7829fa925b",
+            "4e4be576429009ca138748103bf72b19587c2eeab03accd71060450c3c83da1b",
+            "1586635ce8d44f59b61541d43030dac5ec138fc149e409e5e2d13fabc34ed58c",
+            "7369883b064ff89ca54ea24e677a643cca67ba98708adea5b28789dac785ad5a"
+          ],
+          "atlasSha256": "fe91679995d9707a4bba86c75daf65cd764436a326fff9863970f669dc1132e4",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "962481e9a1e5dac5e9e6315e8673f81fa24ce4b1ec3a9bff88035f34af52045e",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Blacksmith/motion/walk/front-right": {
+          "sourceSha256": "d9a382f24753de4585426671210eb2089846b871cfd17fc65281d352327878ca",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "917612965be76fda9fc9aa618077dc0b35db14eeb8b2a5dc764110b7f37467c7",
+            "4e58cc19a085282dda379ac779aa6827165888affa74c2a8f90e919fa194fd8d",
+            "8d5c15c7bc23cb978c6f362f557b0d6dc1806f75ef93cc52c311f388610c1425",
+            "190fe4864fbca8efe43ee69dc08b90489789f2fb52fd68cb13b34bb1150061cb",
+            "10c3f6e5d5898f0e1fb176c2dae4635c1c7b28819ec2f428f9566c827a9bdb6e",
+            "6945e3852fab12a38ee0d597cdfc9250d39141d450c78d43426e39ec252aab58",
+            "302476da52a6b3efd42a93cbf9da03c923e0f2e67e7fe5c85f992fd196d87592",
+            "50f4cd9082b1888f695395e0cdb66fbf866be86140d47d1ef93e94028e498aa8"
+          ],
+          "atlasSha256": "3130f5d0397718f6d63b5b8ebb8952f6aa68980bd5efb632b9e60affb7a95d61",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Blacksmith/motion/walk/right": {
+          "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
+          "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+          "frameSha256": [
+            "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
+            "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
+            "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+            "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+            "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
+            "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
+            "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
+            "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+          ],
+          "atlasSha256": "5d0a7e4fe2211cc81fcd060a5b32291daa778d5e38cd73d3be599b09446284b9",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            130,
+            100,
+            130,
+            140,
+            89,
+            173,
+            98
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Blacksmith/motion/walk/back-right": {
+          "sourceSha256": "c493c348f69abd48002f092c6cd32635751020326b616db6507833f9d1a80f53",
+          "settingsSha256": "7dd16564b2d907c1c190b4b65cac67b181a37eb44241a9ff57df8fcf88d88a15",
+          "frameSha256": [
+            "a9a23c14da11a5a0d773bf5efa49094726bd47208e127061ffcb06016b2a1b59",
+            "68637ee890a945c62859d74789a5628ef8ec40a89ceb4b8a3cdc170783b0b732",
+            "2f7ce7a9d6a9c2051b8716c0f0acc47bde745b713e4fa66f954ce074a89204e0",
+            "e18b455fc1a3855a8b14cc46448d575915e54b052b8a6f031ca4dd8a26165045",
+            "1b5f3cd7812d3679118f5a37a8efe3a6d363495678086790e455381bcdf40cf5",
+            "22bd246fca4d37a7046d78fb91558755333e664e8636ab191a12e4b7ad5c29b2",
+            "2c8ed87cc4e043467ca0216095f17b3d69f117c4e70d6749af6e19fa794137a6",
+            "b3b2d7c5ec233fd1390b55867897d9b1ac1304e2600e754dba0ec5ca9d644549"
+          ],
+          "atlasSha256": "8b6b234f4b89c6f66631012f84f420d966cbd1f1bea59ff7d26878f7ccbbf586",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "7dd16564b2d907c1c190b4b65cac67b181a37eb44241a9ff57df8fcf88d88a15",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Blacksmith/motion/walk/back": {
+          "sourceSha256": "b2bdd951f481beea4c778549fdd1adcf351c748137b7eef63b4ebdfbe7c44847",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "b7c9f17cf5b45f4ff7e4553281d1dc17341c59a7ecff226930cdf42b9a20d37d",
+            "e1c18ef0b53f6cb830c801f0dae2f19029e0d483f455f266975468453f2d02fa",
+            "08f963980b259f3ecdb6ef00eb99109c9da4133d6ee006c4442452fd73554c8a",
+            "fcda3d0d61e7ecfce6b065df9e67a48fbc0693a6c32bc0d5e2defacf8e694ba3",
+            "592c5b843e5c5f09b1a8d7e9d42094956206a2588415359529a2243c0abe0700",
+            "d50c0b4fe143b54d3b8e421f9edc6015a935a5967fc0c1f8adfc23035c7f554c",
+            "734108ad5eff67c8ffeab6eb90c28360e4a0e90cd2e82ff5cac5229bf038918f",
+            "acc05f8369381e3a430ba26353323f9da6e1aa591172f9831ef5eb916deff3b6"
+          ],
+          "atlasSha256": "9fda35c9823a2c416f941f2b8cb778d3ac342af24c92958dead7ac513f4e3505",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Blacksmith/motion/walk/back-left": {
+          "sourceSha256": "9944f416ebd5280326f51106bf5ebd2e7a3629780ec578709a1621cb1bf0a195",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "7ae054d8a44d35958146957937779397b45db0db91074705d9f427d43dad6250",
+            "fe193fcb77ed0df29428c50886910cc7699711ff3c635e821ad4fe1c8d0b2e11",
+            "be825a196ab77fa874896c41197d4da4aa6c75ecca6bbbbaa8da650f958ce45c",
+            "27b7270789bc4ad1f2c6a3937eae4078f0870c2f8b28c85d585ab0e4b20e6c3c",
+            "9d61f2970c6872fce77efb2404473334b2b140fe2a40120dc816ffbc3c708078",
+            "358f3e180b324e81b40e45814509b071c4814385d158ad3c2c6a8a6dcf760bb9",
+            "775cc30335e8fed3c0d65210c910c620dd13be3518d401b256b17a76821aa06b",
+            "ba8488f50ad14739a0473bb4427bb65cde44c91b57d8e98e4bf40b8c1c51cdbe"
+          ],
+          "atlasSha256": "a62dfe69c4454f4874527a5397635199b5776b0583809b29a5c18c032775e911",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Blacksmith/motion/walk/left": {
+          "sourceSha256": "f272365eb53d359bd32e13be4efc1f19ab24f3ab1cf5f2ab68ea8a4a96d03471",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7",
+            "59992e26db3ce0bd3b1fa490197030a9aaaf294da495dbd8c886229478ebc69e",
+            "db9505b2acdc7da83e2f24d902d2592536b4803ee73a834878c5c703d0e70bde",
+            "561a6dfe07ae31bdbf54485dda7099f8a9ab23ae87a0232ac6841df5b93bbac1",
+            "e8aaaa33985d35ace2e3e0254c2cae87bd56b83ded449c7f06b13ae9ea9a0cb1",
+            "b9bc9a99f893700027f880c8945595a937de89e8e009282d48c99a6acb1952bb",
+            "cf05e6538cc5f830291e70887b211e669d0409f26720c4b5631e6915646d9b0a",
+            "86ed16f8283c5d61ed57156fa54cf149bbc57741f97c5bceb4a3b1decf07c53f"
+          ],
+          "atlasSha256": "28d421fea75005bd513e4307cdd8b67ebeeaa70e06fff77b113eb4f675208c71",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Blacksmith/motion/walk/front-left": {
+          "sourceSha256": "c1e39ede7569248a4d0d5e80cfc305e786a439cc016746658b5cb3f957d32c4d",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "4d564f81a1b1b7b6c5f6d6e9c9bf2b17968497990eaa8792a02055757197c181",
+            "8c46d016c5e1d2816135bfeec3012fe93fb4f3f43a5e264db2a0e9a18980a728",
+            "a6d6cbe1990854fd6e8ad0ba8e2a8c470687972b6b824ac82f438ae95c8f275d",
+            "936c12d8dda6761b8007ff97bfcfcc29d1f2934efbe578abad1f2dd593ef047b",
+            "8d33e4c2e70dfb5f549b1816dd49bfea075cf96c435d2cdeef8bf5fe12a01e73",
+            "fa6d4ad92b9ecc5003ee39210ce5f6eaf1a49abb58898f8ad7a02a79764b9a55",
+            "bad1de3bedcf5eab6b983689718422170c4bab9b748c0d96312b68a13c395b63",
+            "7b80e2a0f36c766395e3d9c6e5160e0da363150f4183b7e50f5eedd1fe620858"
+          ],
+          "atlasSha256": "a6eb3d06e4257f2bae4b6ff49b053ef51d959e9303e73e578db70f6ec042d945",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Blacksmith",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Borrin/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Right/rear0/4 contacts and2/6 passing poses need anatomical side confirmation. Reaching3 and touchdown4 may share the advancing foot; that alone is not a phase defect. A verified opposite support exchange is still missing.",
+        "body-scale": "Body target520px across views; projected body proportions are recognizable, but support-root material tracking is outstanding.",
+        "direction-transitions": "Front/right/rear phase correspondence needs anatomical landmark confirmation; poses with the ledger restrict arm movement.",
+        "equipment-geometry": "Ledger must remain in the same anatomical hand as the actor turns; obscured rear grips are not verified by these images."
+      },
+      "bindings": {
+        "public/sprites/Borrin/motion/walk/front": {
+          "sourceSha256": "415c491c98bab18d2af0ea677b698a7629b21c0f827ee7d90254319c440a9f34",
+          "settingsSha256": "6a2091de01cf5fd2eba6a47424be33eeb25b23bcaa24d21c0902f498c274aea2",
+          "frameSha256": [
+            "2769ef8381a26d58cd4814aa6685bf91339d29bd3dcbf768c23a1524c148ae10",
+            "0d028006053956af8df75f966ca646ee6a48ad363c3cab8171849e892b596e1a",
+            "140632fe7f10441deaa5abfc2a2658e111749838dfcc4bf2ff0b3e202d3c8f93",
+            "0dc8e1f0afbcd3dee60bf8a0ec0775850f09535228597e0c4f21ec5c8c01951c",
+            "7e36bf7fbfede9efdfd5dcce46fed8a712373fff847acc4a56590857639a5c59",
+            "362126713a36a0005089bbbb3da0ae9f76e09c28ffbfe880dd5b68f99a4d3705",
+            "dbbed6cdb215184a4b90b1afa1f6f6925a094f47bffd1f114495637188ff2df4",
+            "8f6b415741e993581d773a3f4749c516bb38c9d717a17d1a5216d286a3d20f85"
+          ],
+          "atlasSha256": "ce9c9defd91f57795d2f60752d67bcbe8eb95dd2c273f7060b907450099ddd9f",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "6a2091de01cf5fd2eba6a47424be33eeb25b23bcaa24d21c0902f498c274aea2",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Borrin/motion/walk/front-right": {
+          "sourceSha256": "5ebca460586fa8e041109c48b1f390b6329c1174db5dc61619a9f8cca05eb40f",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "d6e2ce51103ab1ed1469e98009dcfbf2d87a815f974ad6aaaaf50ebeb364ad2b",
+            "4cb67d6488457ae92ef4ec66876b95d22cfad59677a28899f1fd9d3eba5d51e0",
+            "6fc91f329f768d236ea2a9a098275a58a66b05e2a9ce232afe421a1d83cad698",
+            "e188fb9a738201b1248cbbe283d57d3dd257ae182564dea5dca8739a8cc33382",
+            "b49cf9f7abc4aec1996bc168b4f175fc30794912904edc66c9421d7876be4116",
+            "a686e83eb585d295c7b3e39f019a9946908ed86229acd1ebbcf4c39fe2721fd8",
+            "57bcf501d41baa9c08d0f149d765016fae37e165ab3716947b13c20c474cee42",
+            "c213d7ebaec8aa7280abc12e6c02387c0d89dd56a79d1a91779ebf56a3e38d7a"
+          ],
+          "atlasSha256": "718ae3fd478401081e13b79c5477fa96df14f6e5e1138638ace47b8ddfbd0c24",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Borrin/motion/walk/right": {
+          "sourceSha256": "9c0e271bf3d7d61ef972c0f7a0eafc8f2aae092d21babcfd4baecf589033f52b",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "e50822bd3b03837f3f73373080388d3a85d5d27e91e2ad1a67cc521b3957ab66",
+            "38261fb84d0ab989da582a453f7252d636b76dd69c934914e79423bfd8b84f13",
+            "e06fadf87ef4dadffd0cd4a8d58696f82bcf3029c4b95f1390bd1e71d88feb96",
+            "243d03b06c3ad24d6be68e3610014823885c374c633d968bd375ebaabc296271",
+            "d7110f21d4981c1bdb9c700aed22150e3ffb577bd9ccbedf62faf6814c592bbc",
+            "69991ad1bb148fa2199fba735796d38e93017cd7feaea911f2964250c12c3ba5",
+            "b5518e7168015134e957158742f76689b3c023be6172e7946007ec10552562b1",
+            "2f90a32b2e778a6d660e87e8b4b90fdbdee8d03ac0b67e12091d492b9130dc3c"
+          ],
+          "atlasSha256": "154569f7551636c8c97fa121230d2339baf7142cee50052046573b103db6ada8",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Borrin/motion/walk/back-right": {
+          "sourceSha256": "f84918c306504367081bad7939d99ac7c3d1b72639eca2e1b5893cb5a2343d88",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "c8f48a5e5baf85738118dc78f51963a9922328299046bd8d24fad46b38d37aed",
+            "f3c1832e28003861baa9c10db1cff29f44907135275766914734308127a348d9",
+            "14600f70584d9ab4480ba35deaec45290b6b91724bd3ee82f9c4aaa7233694fe",
+            "bb1257fdc2df5817a9a8b6d76d6a0649a1007f3c42d4e9bc7f453fda382fd6a3",
+            "b5503dc72bcc9c5461eb572baa7563ac2802220af325a41b5df1202214fb218a",
+            "e22e8ebcef862d87d781d3e79e451b87238306371338f10b3e8f0f733ed31821",
+            "0a1911bff008c364d7c1c8388c3ad41a92649ab9e2f623a1e0161bee4eff7a64",
+            "9da1f9b6eec7a7c0d549392933abc9b2e8d6406d350a733d33cf80d1540a27b4"
+          ],
+          "atlasSha256": "f5c5c7c8eec98340558ea4670a1fc0f16669772a7294e27d322eb735e78bd5b9",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Borrin/motion/walk/back": {
+          "sourceSha256": "cafc143d3609ebf9416f9f881bc50f37a77c2eedecc0ffc3048926fb4140aa69",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "38dc4b629a2769ec6c4c6efd59ab90ab591719ac12f0d0f12210b9ce68a0c7bf",
+            "370dbaa820294d5ee8d2bdebb1c53b2a5909b5017dbcfd4270e45d3f0a7c9de3",
+            "221293bd9f00e1f4c164086a03b79f44862ac40e0ed55f20ac88171ccbb4430d",
+            "29efa9a5bf312f04e3da9f17731ebde615f1b8af9f27d6df4420418c3e503be6",
+            "c4d597cdee8a82e549ab4ebcb05746d71f14a6d3c2b9327cacd90b26fec24e54",
+            "e56549e355bfe718133c89dbe80e3811fb287b7d55f899bfeb807d86f69d9f0c",
+            "5e7774c569eedf4d57cb5ee88423640d08add48956bfb5be2cc276d49025bb26",
+            "9c2d5ab350a02194de54c00619cb894e94bf50139fde40e98d14d20a4730e817"
+          ],
+          "atlasSha256": "bcf23d20e249cacf027f3a97bd7d3d5c2805b9def19e2c7d8ed65c1d7b813a36",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Borrin/motion/walk/back-left": {
+          "sourceSha256": "cb889a5a2fea37a841426034e52e12aa980618c140c99e1a5633eff40fc101be",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "d55bb3659a6143beb72d3d25d96ea374f5f61b4ce7ce847ca69ac93c176759fd",
+            "42797c79e538592c978e943b25aedab163aa56ddb7d0f135a4a059ef0932ce30",
+            "3bf2ac6cb5bf94abf21c9b74cf24ed87362bb1431b2e9358b4d8597675808f18",
+            "2d1a697def687cb0acab67d99d6566fbdec1146bc2799a49fee72caca2aff31d",
+            "ebc914d959910b198eca85771da29f53271b7e3d00fd4b7c6e4935692b891a47",
+            "e0c03fc21076e20c0805a08369d570b89e5f5694114bc1974c4e1960ade3c9ee",
+            "6f81d5d2664b1438a099317a8907baf054e76feaa353d001f0378dc8b53adbca",
+            "736a19b13a4af11c1536f788244402c4a787fdfbce1099008ec4f3c5c7374860"
+          ],
+          "atlasSha256": "0901d2131d0e84ea61407e3d6fcc696b4b56235b3b13466107fa7a80d74eaa5b",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Borrin/motion/walk/left": {
+          "sourceSha256": "ca6ece6f980b01002284dd7841379411d78d570e1cbab123fb916544e29497b4",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "e554cf8ae165c3a7c406972f55592e6021547dc9da6fc3dda9782954ab52483b",
+            "d191590b1ecab865c847b4979df297e04f669751db7844096f24a396e684ac64",
+            "fedd0373115dcc414015cdf199acded5a519e831a2095b92586d83393f909ccf",
+            "45204c8b46d7892d1c5e082089284c9624bf5e9367395bd8c388b87875297f93",
+            "6fe060d165368716521e9c952a67590ac154daf4c5facc581fbd2bd9ff21b853",
+            "cfca0b53f32fae83e3c5881a7f81d4a83839d810941a9d00318452b1d3b2934c",
+            "18b54f9dd429a562e9824f20c3416499a2cb17e9ffa6ab14e0b706635e83972b",
+            "1f36827cd702b61564de948562f53ff27e55fd8919a7c936e77b4745a017a902"
+          ],
+          "atlasSha256": "47dc6dbfdcfab136bddb4ddd31e54e6c2a973ac15abd1a13f4f99b1d7491fd8a",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Borrin/motion/walk/front-left": {
+          "sourceSha256": "d6788b5f65e41d4114c99f28a508f054c8a99cbcafb880d7fcea1fe88781a7f7",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "7f587cb6fb41d3c3d70042f41b5cf411d7542d9ae22c744e2ed07245ce4c4f56",
+            "22ed9265925d7920927bd711d5d74f79c69c82b19ade76633762866b4ecabc73",
+            "d7589527f692b498935bc4c42a3249e61c62177eae8b707959dcaa8203589380",
+            "b86ebb0a622d861b9fb466c0fe71e49d84e9e978d447183aa9e6827d53ec5a6c",
+            "b70e2f095e23bf62dc8856418dd27b5130ed10a32c679446ed5c9838eef48333",
+            "597e37c45b82fcf26cb3db4f39682a92567fbd9b34c051de07b3097bd80bceb8",
+            "f9ef5b0bbb82fc26f11e9239816a70cad53823ce94069ded42d23bc2773e679e",
+            "47e5d00f3051b008203d68ba0681518f2c17a93462f0356ddb47dfad8d2d0ae4"
+          ],
+          "atlasSha256": "34627b02e76b3167eca6e738e00104d7b3d35d1563ff1abf3038b62d410a60e5",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Borrin",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Cook/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Rear-right0/4 support exchange and2/6 airborne passing feet need anatomical landmark review against the front phase convention. The held silhouettes do not establish which material sole is planted.",
+        "body-scale": "Shared520px registration; apron/body silhouette retained. Direction-specific sole placement is uncalibrated.",
+        "direction-transitions": "Right/back-right/back transitions need measured sole handoffs; matching image indices are insufficient.",
+        "equipment-geometry": "Apron, shirt and beard retain identity. Arm swing through side/rear poses still needs anatomical comparison against the support leg."
+      },
+      "bindings": {
+        "public/sprites/Cook/motion/walk/front": {
+          "sourceSha256": "746f8715b6b396eaea5ad9045be14f7552c5a7bab18bf2c1bf970d62fa5f613b",
+          "settingsSha256": "8ce2d05591e8dbade36cd3863edf0d13cdcfa8a02bec2df5a47bfa38cbfbac2e",
+          "frameSha256": [
+            "226773e399dd56e7ceb2816a5448cdbb410e1dffdc18f950a1bfe4348ef7c2bd",
+            "fae5f2c234671bf8a70b6bf7d3786b3361a672d8cfa65855978e59e6d4b05a3f",
+            "3c405541f42d2d1b6342d4fd82ba1e7cdbfee00dc5e690435b10400c8a791ba5",
+            "22e13d05f2934d1221a04c77a7816f8f74af8fd0840f04369194ab3f94aea61e",
+            "9a431c946cfb934f04887d9d32b5506a63e25d83311dbec62b4bcec48069041c",
+            "3b530b25c41fc2ca88ccfc6cc9122f173f73338590be135b46a150188d0b32b0",
+            "8f462ba46c15915c2eaebede168ca81835cf6a023e167fcdae94005388a0e2a9",
+            "455257331a54a7393b81a1c08e2148e21ec7b3e35ff25844c3b9e95e52014810"
+          ],
+          "atlasSha256": "95e60a369b0c6431aad0541e19892a0e0a80440e0503adb6cf2004dbefdf68c1",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "8ce2d05591e8dbade36cd3863edf0d13cdcfa8a02bec2df5a47bfa38cbfbac2e",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Cook/motion/walk/front-right": {
+          "sourceSha256": "f71e94fed49509e6fd25077be15643ee56850af829534ad3b09f4f2b39fa1bc9",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "6f279897ea20c665662a97db4ea361fe098f4610ef48744425ffd2ed498dd78b",
+            "a9794792e993f051f6971e7d49ff79beb96c070989fb65ad56a8d4b6f7258639",
+            "277dd24208b4b4cdcf251ae074559a5c6c5497312b79cf3ce437b9a24aa6a098",
+            "c0be9a026d6497edf5e4fb7c47d5484ddd29c1f704a9398ec75fb314fd5a8052",
+            "535a433b882703fab5f9f3f517c320bc521651fe708e9af1cbfcc46720a97b20",
+            "17575f77a6081a640c7865580ba28035445939456c864d9862a4ff2b4d74e895",
+            "50463cb6cb1eb0e4ecf42eba98889f3ae8e2e9336a1fe6e9d1ccf107e46dae58",
+            "8cf5a5fdcaf658cca9f3229c9119c6dc9e1e0c9c82d8fa6a06d5c78b8016b6c4"
+          ],
+          "atlasSha256": "d600fda0fb64e9e00e352015fec43477bb4d0ede41bef766977efe65928bb1ea",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Cook/motion/walk/right": {
+          "sourceSha256": "18e2141da17f94c1054541bb63fd520de7e82f43e5001359ef73ff8eda06fb2d",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "e52624f1fa5432d2224f8fe4c4c079325e29f55606f52412675b1070b66caca5",
+            "537121fd966697ca9bc21e52dd10abc92ec02bd82948953472b76c6ad928fbdc",
+            "6ccf977b919180132bd2e06852890a1a407f3f5090f470372dbcccc46eb09aae",
+            "096385fbcc23027d72e71ae60475cb1f9bc1ea9cf809ad7ce4dd2cb701b96b73",
+            "faecf8e9de2da148fbcb646897f5b42f5ac8214d5932e2ce1fcdb8839c6b1f28",
+            "d5060202e629a7a990942a09659efa434a87c06452dce76ce4387ccbae84d113",
+            "5f86375a95f32245cfd683f1f9782d4155ac2733a8db61297b82eed26e59e254",
+            "33ce6190f620ce831bf7d7b28df31f822e9ed7a08f871537703377cc2cde9d34"
+          ],
+          "atlasSha256": "0f75131dfa787cb73598e601e59991196e59329c353394559ee6117f147e6254",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Cook/motion/walk/back-right": {
+          "sourceSha256": "33e35a53de7ad7c6a7eab8ee8f9635801dda2f543ed894eb430119a70ee907b0",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "088e84d83145eb8723e9502479c27ed4fef3a9accd4929331f6f049774d9e730",
+            "9e66fb46df3204ef720b249f2aed77d77ff6994f266a885238fd171a82e8ada6",
+            "5bdcff3e8f9015fe5ea7fe6149eeff99e6bb1d6b0865b46f1977dc6d412237f7",
+            "781f5bc3161ddb057b38f74fe4b91a9384890f7c6335a06c690bae9a279b3246",
+            "4fcaea99acf83759606d01c5740b915ce964556bb0a7f21065f3a6d341968f79",
+            "6a427e7375d640510b739808707f2b0dc021439b6cd605c3fdcb62406570b011",
+            "df91c8d02997931ea95b45ac55b23efca50e52a18ff59acebd1a9e92968dae17",
+            "f6184411def0c179869139d19a90753fbb3c7b2fcedd5b11dd31af151eac473a"
+          ],
+          "atlasSha256": "327d2a303e4afeb44de993583f29859318e8835e55484df0fd1b609f6822bc63",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Cook/motion/walk/back": {
+          "sourceSha256": "cd1a819e3d3d7eaca3a116003582f21340f97c159173f8f2b0be030914a4a44c",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "d305316d1612814b9f419b77853fb4aca8e5415ff7537d3fedcac0cf41c5dd2b",
+            "4900290f6e426d6d56bb4d864b6f5b7cd5385d84e724379102a6471ff5241339",
+            "ae27bc77786af2b29e0a9597e8bb55bdb378b5fc4c5dbc0eb872f6e4365437f3",
+            "4c92eb065b94cb101d057cadf10c6624b0becc6984bb63dd3929d31682eb7cdf",
+            "862ca1ac94b439d82c7ce8e38c87600966697c2fc055ff92c86a19da5dc07d9c",
+            "6625a2ec74bd46ca96442173d8f918f9f8193438c18264ec4cd60b01f9ab6d10",
+            "1cd911c45059f8779d223a648f249659ce8e19ad71e2529db13b05c635d29cb1",
+            "cd00acf144689ef70656717e57ebe740cfd8ddd11be3533e27a034d8c0cf9b2b"
+          ],
+          "atlasSha256": "996143b7baab17ca5fe7bd33754fe18ef34326e5be3d03d1a531db18de14d76a",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Cook/motion/walk/back-left": {
+          "sourceSha256": "7ebf60684f5df92166ba5b61aa9c71ba0ef5d98f49fa9766dddf0ba85af64b53",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "4d59979ebf901d841450946f8a63429d36bf95e3b94be9189e7440f1dd10b161",
+            "a960ea7d900f99a089a56e5df3c220f07d3944a8c736d4bf7197f9055e289535",
+            "07bf12ce17e85f9e4103ba49c8d7642ea5b9b34ce523287654fd9ddc74f581fd",
+            "d0ef79cc2075cf18ad0c216291fc16073e75a1e384a19e816ba64e646896aab2",
+            "fa367ab814dd9ff298478635db37fb9e37ab67bd055f2f86cf638066b51b2336",
+            "146a36b4d46cc6c29e7e2bebef7aa0d8164cfcdec6550fac4867fe493d9210b0",
+            "416d85f3fcb3b0449631b29a4f604550d59c6af822c8d22968189ba8b480ace4",
+            "fad4a05e118b21486deb81b4c56e1ce8e570131e34bf6ba1bc4534ca4aff0cd0"
+          ],
+          "atlasSha256": "e56939d21f4089373eedd05ef0a8e4bfdfe9b4a8db7ea67749b26ffa4971a4d8",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Cook/motion/walk/left": {
+          "sourceSha256": "519ad17ac0b12f2a59b12ba1069d0b2bf5ce9709c8167ec4519b746218b587c4",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "2b91cff5797a1fc8c954d44449153e7b36e055da3e3c07f73aabbe52af748980",
+            "44d46b900eff4bd5840add3bca19b74470d88feb26a72c9e320286256e50fa86",
+            "145542322a393e52db0f18225706df07ec148f78094cf2f2223d3c3a8c5720ad",
+            "53606d3aeae424283de2355761d04e38324de0359a7dececb650f1659d61c87c",
+            "ab7149aa8ea7671d20ff24fd7bf4919c72fe70a2bfd1c8d6a3b32830b1965e43",
+            "b81ad47dd7d7bfc58a74ecaa147ca038ca44b1bcec86884216b02cd30b02975a",
+            "86f57ab4259f584a7ed60c748ab88a9709165c04fdf0469a69f2504c23bf2033",
+            "7687adcc58847135e4b4fe81147adee2c0e85a35c7c7c8c0167ab8045d55312f"
+          ],
+          "atlasSha256": "8953c785d3e12d544a19f1f684f9d1c5b40deac2439afd16eb9b0c06c4b57073",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Cook/motion/walk/front-left": {
+          "sourceSha256": "36c23e60e1a3ed7a598110b62bddec26f628630a8a97c99595549d1e40bc9f45",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "d04cc2295f398a5b889b627b21909085810a2281bebb0490c93394fbe58ce7e0",
+            "1730a2b390e666220b4d9acce460f2b7a4ef4e8935cbde5102d47d9a2b9b74d9",
+            "c3a8db3cc4c61db10d126ceb4172164a3fed10ec024b1ce05b4bbe966efe14f7",
+            "aa531732a39e9f91a5307df7bd33e84fc49f1dbc9999e403afd86c50fe963e78",
+            "3a39c24356f51455ab4f4750c7e68d283fa02a9cbbcc2386891b14726eed2b90",
+            "f1bbcba2eceb52a9df112c9547598b808cf7ce71b109092f0347d3461adfee86",
+            "9c45990e539079e4fd632a9d9f93356f714382a684571405c94074996fca433a",
+            "6d94e42d3a6b3449ef789f2a5c66494f0c1449009c74a7621fb27aef95ecb164"
+          ],
+          "atlasSha256": "70552f38306f46ee8bed408fad0f825f76247fa20ce26857e6a3d2d20fc3f7e7",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Cook",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Elder/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Back view fails simultaneous foot/cane root constraints. Front-right/right0/4 support exchange and2/6 passing phases still need verified anatomical identity and joint cane support windows.",
+        "body-scale": "520px body target does not prove rigid cane length or correct ground height.",
+        "direction-transitions": "Rear-to-side transitions switch cane projection without an approved recovery/replant. All eight direction contacts remain open.",
+        "equipment-geometry": "The cane appears vertical in rear-right/rear-left holds; rigid length, hand grip and simultaneous sole support need coordinated authored correction."
+      },
+      "bindings": {
+        "public/sprites/Elder/motion/walk/front": {
+          "sourceSha256": "8c0ddc69572271bd76e076f027c8a0a5e720211a2d80888cd8d1e8a596f0ad0f",
+          "settingsSha256": "9df0f6ec58d953a432343d134e9ce0ee31a7fc74541e42f265e90944a59c92e1",
+          "frameSha256": [
+            "630c1506351cbfbbafe4c85dc77f180453841bd12ee2bba68fd9e607b37601c2",
+            "7b3a1fe54c99813d8e9d60a35a2761c72f1a6a38cf4054657a80faa62e4d62dd",
+            "61875126baa35f6d3761eeb6b00bd6f2032fb0147d0d4b7886e98a0d7b44acda",
+            "fff62d8127f4f479c7b7267fc578d1992ac8dff784859e7c20504b3f839ce036",
+            "69313baa225b1ec475dabf7d25efb50c71aa1859a51c3d689221227f9042669d",
+            "75c6e63e45cf44dbe09f1de956340686828aabc7dce372f82d64b537eeb45ce3",
+            "3cfbff2aef94fe9b7fbdb022403ab1a5aca22819a67f12099c90ad689033f2dd",
+            "b70c1ebac4d169d4ec9110054cb69dce4edc7f8ddfa3b46dd7c60d9437298129"
+          ],
+          "atlasSha256": "9c15311257da229a2c9d6e3d4080da630e3330aadf183cebb2f8505a62b76b43",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "9df0f6ec58d953a432343d134e9ce0ee31a7fc74541e42f265e90944a59c92e1",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Elder/motion/walk/front-right": {
+          "sourceSha256": "ac1cdbfdf24609b11f0602bb55eeb9b186e9120a6cf3ca2d7eab073cd42b1b27",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "a3ae42f89e33381b5c7f969bad0429504a5115e0ee03bd474f5f6a8ed7a4a456",
+            "e62e4c037fa56bddacf78923f4c9df5d19cf00d28f6ff490bb41ea1aa0fd2ae6",
+            "1e988dddf38d9f605de1acc638e44abff9d09c3e550c0053a9858d2534299794",
+            "a9f6b9aaf9b610568e78edfb6c09664a2eb3e2fe31ffe263b7da01f90f4094cf",
+            "f6b0b3b1c477b896b2a730412ca52c8f800dc17aa88b67fd7d02f49717934b0f",
+            "a59a69b80f6a1ddf3d6f11351e7c4a50761d06061a0e2fd8e0b0149456e69cd7",
+            "b967bf47b37d8e3e93ad98b4ce94d98ce87ada58839c0b16c3929ba22421b11a",
+            "a43d2b55e6cecd4331809c4df6b8effdb52de60729b324f37dca0bb51c51b6c5"
+          ],
+          "atlasSha256": "92759683e9e932806a2e890ceaef11106b30675ed5499ab5d64b81d917572fe6",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Elder/motion/walk/right": {
+          "sourceSha256": "5fd010994d857f880313fa8cb20cef5353f02f07de09a4c33ffba264ac4620cd",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "d2e42aabfc028407b097fdd4624484bb7d91ed317e59e6fc83d5d82cee760605",
+            "58a8a04ecf8f66175a05a4e4e03d554a5b18f9b28d9ea90786538e28761014a0",
+            "b432a5e5cf2201f382776a2591e553146efa6afbc34c6f7aa786af82b997f4b3",
+            "d28938b7a088b6ce88693f33c38ec3af21f28f5be5a7ae5bd50c63ddb2124b82",
+            "aae43ee9c79f28b06fcb2d76965d221cee0ee604807d3cd77c623da55d20025f",
+            "98dc325eeaa6b6e4a8d2f1b111c863f3285842a8e2a232d6f9f409a7afb0b40f",
+            "36fc0b30823c39173a315fd9140d6c4608f87bd223cffa74321c67679776793e",
+            "944725a6005466900bf7c010acaa7675ac74e66ab7887d20cca2d925be3961e6"
+          ],
+          "atlasSha256": "2a6baed4d75b8fe357d4a8dda2f1bf6115fe90899fac9b484fd5ab5b3ec0f095",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Elder/motion/walk/back-right": {
+          "sourceSha256": "e15aa52bf54e5416517de53da10881aa6c4afa610e16db49f2d1d3746f5a87c1",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "9fee094d273b2f6367a8b744419f46d9b5c52797dd6a3b606d028a338898b71c",
+            "c8cb1c7b57214f02678415052fde3f695b1d7f9d874514b6ecffcc9af3971c6d",
+            "0d874a81765a1255a0183aaa7aa65a8ec1aa14b3a275983923d3682b02bc1278",
+            "d30f1e063e6d3578b9de81c40edcb5ca115dab433b7af74bdca1a0bafa8f5fe5",
+            "e7cd28293c10a585afe14f047a3792580b067d74959862d1355c4f413bd6f661",
+            "316dea21c0718c8d6d8ccaad952780d84ad0133b170afb48d46493f282a8c844",
+            "38ff1049f78faa50dd1851a13219703cffec83c60b8b8e12657d7eac2230642a",
+            "11fb13d660d5424fa3b7fab7dea62982f35157f80777e3b126643b64117f3805"
+          ],
+          "atlasSha256": "5821bc5fc8adb45050de95ab78aa510cfbd31dc60494c84cd70558257a991f23",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Elder/motion/walk/back": {
+          "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
+          "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+          "frameSha256": [
+            "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
+            "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+            "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
+            "6c1acf566d33754ec554ecee65c216ee08cd7fc97a477d93c2516daa1b589053",
+            "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
+            "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+            "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
+            "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46"
+          ],
+          "atlasSha256": "3252e10a199e771e74778a1145b3a5645782d92f20c997fdcfbe6aebf1769bf2",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Elder/motion/walk/back-left": {
+          "sourceSha256": "61b53bc0428381e22deef137994807d02a8b4958f17937847bbc535cccc25093",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "2d4afc98f02f5b773d297fa01b88418501c92af4a9718d31dd5cfde7d4511519",
+            "c9e85b9cb88b2258e37a4be43cd56d23b7dbd76ab0cf4d613bc10f332530b6d4",
+            "eb4bd8e75678c0415f228bd23a8dcadbb066cedb5f43dccc2972ca2ebbe26695",
+            "b55140b8216b1a9f998db9d6717b193f4d60c2e471aa7fca322adcaef44019c2",
+            "369cb4332822862631e39eb6f95e6426202c9cf9ee783c3d9402640d83fb8511",
+            "f94019337fac28b5c976058967a80aa3a319401dc8d835e89a3beb909ef25393",
+            "50b7c14754615e2365e59ecaf121d7cffbe3ba4874cf69da9eb8a6c03664ca7b",
+            "f5c4cba108417e023c5eb62dafad1e98a0e2e989f1535dd2c01e12908f17932b"
+          ],
+          "atlasSha256": "db3f706d4696661ce6de92d709db02360bb92b79cd5544793b3c5348ac8bb289",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Elder/motion/walk/left": {
+          "sourceSha256": "ecfe3b563b2669f98df03cbcd9c04d7604349877964bf43aebf41f7ed7ebdc93",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "501f2a62e7e53b4c2283cf4263f4f591fb10dd7c2d5a12110ed020561e24c468",
+            "d29ef4183f872799890382f749c7b3bda8ce6a21e9869c229676f01eb874af32",
+            "9116b67cb6df3659fc2eadb31eea92a9fe658c87f590dc9e5a6d5ce423272239",
+            "c18ddea7540b6ba47c222fa56b9074df7fed7b001041279e61a883cbf74ec34b",
+            "f39130ab188d9f8e78a85afd872917a6b1a72ac0beca2570239268a70ba0b66f",
+            "8928c6ccddfa9068a8859b8658508cfb6d4b3d1803ae23afd1e72a5eaec47684",
+            "f76fa1e2c2520648da58eb284bb905a220dc5db9a81aa5bd8455d727f5e03d43",
+            "2cd403dbf406c6b38195386d7765d76d261b970e5eb3056cdd651e9ac97c4512"
+          ],
+          "atlasSha256": "410ac0c11a9683e02e90453815169afb5de69ad34f8f0610560da6b24922898b",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Elder/motion/walk/front-left": {
+          "sourceSha256": "f26be338085abeb8a0281ccdecbc9d5f50c4dfca30b3059ab9ab90ba5e39867c",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "9dd588a051821cba4f81b9b3390b7fc2f0c1569f050ccce5620ee3b6b6da2306",
+            "08b425b09c42823d961e0187bab1cd1ad5d09d4f472fb57fb5cb8545c51be62b",
+            "9f9939b8ba789d6b4f1ef51f7ccd8716f9550bf5893a8f08ffe62da7abc2823a",
+            "14324c6fa9b070344b229d56f7f18f7004904d60a2c65f8f713fe1a23f787395",
+            "61178633ecf289a0f613c6d363cda181e8e03eb3ba7fecfebae51e9b9b9139c6",
+            "d60627ac621ad3e81bea79238bcd14cb9871fda12a1087ebba993e96d4d035e1",
+            "9b8f4c5e672ff392ba8e04ef280841ff0fada60fe2a57d9bc7b81184fff28625",
+            "fc5502e9cee613f57e303303c03ce33cdc9e17be8f9e11e85cadf307c1340a1f"
+          ],
+          "atlasSha256": "452b46d5525636d7c26d974e9493b45a6020cc925836d8973721e31bf935bec1",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Elder",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Female Miner/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Rear-right/right0/4 support exchange and2/6 airborne passing phases need anatomical side identification; captions and matching indices do not establish the correct planted sole.",
+        "body-scale": "Shared520px body target retains helmet, long hair and stocky body, but sole-root offsets require measurement.",
+        "direction-transitions": "Right/rear-right/back pose changes require material-contact review before phase continuity approval.",
+        "equipment-geometry": "No carried tool in walk. Arm counter-swing and occluded boot identity remain the equipment/anatomy checks."
+      },
+      "bindings": {
+        "public/sprites/Female Miner/motion/walk/front": {
+          "sourceSha256": "d828fa348067406ff14fe259d0f53dffd46396f27ae224eae71adfff82e5d6d4",
+          "settingsSha256": "e7c6ef59be6f0411c361ff63f80a411b81076ebfebd36225661509cff9db10a1",
+          "frameSha256": [
+            "852d2fcf75f2c53e5559b283f812ce91cc767376e7f5347f1507dc4d5b14a11f",
+            "83fd45d0eab714432c76777924f827f13390db96ddfa865e0b98dab2dfde5157",
+            "3ebe28735a4a704d3703092b8e03583f2b91154df6c17fa4d4cc933673f7ef4f",
+            "e30840922f86903ce194621b6abe7f84eb3c9bc8cbb08c23450376a92c3f33f3",
+            "21e7f362d2ee929b28c620ec83078d2c7d6c0cd7e860c9c309858e70eb544025",
+            "f4dd5923ae1b69ed1fe1a1c068993e4af645076a9d3da87acb2e834eab290958",
+            "04c65f633a5e5015b2308ab3745faac5ae92680c1cfe48f29d530f52b5adb4a6",
+            "0cdd0758a6dc69929205f4a8bdea89c5ef18339d61faa60ce658c0b636a53bc0"
+          ],
+          "atlasSha256": "f84fa031d86de3a984a52a80735d9198cbad4e5e68e2328438860f7e1902e690",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "e7c6ef59be6f0411c361ff63f80a411b81076ebfebd36225661509cff9db10a1",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Female Miner/motion/walk/front-right": {
+          "sourceSha256": "88717b5b52cf58b5428afb1a278f596a08effbcdd04afe6099f3ec96122843da",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "75d802862d9c1b1be6344cf0f5406a2e8eb14a85e89ed575920de43e59dc77d5",
+            "207a59c600e27c3630505a0ba6efbd25189d9efb636d7cbe7c3a10be8b776e6f",
+            "9a068e1d9fb12e5b1f776564b95a26ad75766ee0a3a61bd90b663e4b8ed63d75",
+            "39ce25833fa1cedf1bbdcc0a961a87258a76dddc4e7e035dcea6cd4f5a7559b6",
+            "c5538ba3ef8a4fe4f601beda05a5fc1d3530782b69cb17dd1635e9b9cdbc7b95",
+            "e5cc0f770e40ba8aa3a4ee4aa3f4d8a4cd73fe28646106e2136f6597725e65d2",
+            "ba89c32d2f7b34ad5a056161fc65dd51167efdf347b854bc2a0605f81d140074",
+            "687840009c2b0d1d624fe2b48a7e93deeed4d8f4f3dfceca35334ff529dfeace"
+          ],
+          "atlasSha256": "7a8bccd1ec91c2a8a3a87dccb39ac52dc3dd015f1f9371fb6d465a7304f43b6e",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Female Miner/motion/walk/right": {
+          "sourceSha256": "723baa5a910a3ff213e783ddd6646acdf0cee90458f929b3a0fca45158128736",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "feec75ed48e9dc2983731ba9532d152bd90881902ac6cbd5d9b083e664a8b929",
+            "6f53ca0e37c5e5fdfd2f653c13258675aac9b2acc01aa79f221d834e6985e41d",
+            "124c281cf9e5cea9f5e41a5a49c93ee47a20b0ce40a760e7b9ebb3b6cd240635",
+            "a85354e5ba0d81e7731bfebbed0289bb62456c093fbcb4fed520ae6877d2fde7",
+            "4e6cac0a5c28322feebccb91722a67ca991cfacd93cf17e1094e3ec0cdb27cca",
+            "4a10e8f892d280e716cef39c4e82a908831b4916ec34255f46c5dd765d63ad82",
+            "ec61080f4950722ae23cac4ef69fa0a701c405cf6d31efd4e96a3b56637dbce3",
+            "39dba5259480ed8604ce09c8620dc0fc4b413cea27ab95b716ea7ad0c6a22abd"
+          ],
+          "atlasSha256": "d7c7483563a8dd4fdb55c06eda27958b65027bdb90c38b60debc326a50c59734",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Female Miner/motion/walk/back-right": {
+          "sourceSha256": "1d163c0db6c2bb9823389c0113c05cad377e539eafea399eb094625db7bd1318",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "2879e79cae226d231a36384c8ac3379d0818b3ee694e5b030b21403d16b34171",
+            "0c75ebc70c1df1301fdd764580d5e942f6f528e038a248c626144fd5d365913e",
+            "85e7f8e44fed84db644ea8fc6cff2181c9186b6d09b2e9dd9aebb206a2d9b7c7",
+            "57bffb3f6d47b7c2daa55de81f0b684fd4fb368f82ee5741bfe480265b421b4c",
+            "a138db9f86f16945436788675f50eace1baaf0da3d0bcdb57e74988e4301a5a1",
+            "62ecccf20cf8ee0ce7567bbde9419043f2ea6301f9bd3dbe91a8617cc6d23185",
+            "c878a0df4cac151f557e66ae39c2754ff5838ee9e6470f2be378ab5237477fec",
+            "1e8fad6ac751e6862c02d7930c2e04aa0f89198bb8919f232925851c479eebe5"
+          ],
+          "atlasSha256": "e26a82e3f9740c4ad50a4d2de173e9680e1fa609f65b86ed8b2ff8d7743f2544",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Female Miner/motion/walk/back": {
+          "sourceSha256": "8bb3e56dd9e4603c3b0ef677fe5d8b093fcd9bbe59305431ab595e8fa624718a",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "4da6efa73f80fc389832d0f9fc104385cdc001d0d79e3cb9f6f91c530d3209d1",
+            "85ad7a634c53248b3ddae8d07a2a9c7b51e3ef00b8234d899f277ec7dcb20f5e",
+            "f02f3bef7370c1e826cd7c1370e64d8d993fb99d6016d0369de0567f232b60d0",
+            "2eb75c5d6feef3e81a0a39136881bd32432d0803ee5a15bf4cb422359f3c7e81",
+            "813f6c71ef074f13262b38cab131c7d47e3d803c0a3accc960627a77b5755d49",
+            "2ff0a7e2d98472c959d33270ad87f5b75370ba559b943dc68d6e9a0d0ae72aaa",
+            "d7ed6bae14b03e19d1d3807f40173d2ac9f76cc34abf89042569cf07bfa28960",
+            "6263b3618616df70f4b9ba4bd20861a2d3ee4ade2e7b9ba90e592820eaec40fb"
+          ],
+          "atlasSha256": "abc5a26ac1e036c06f3eab070c3cc384ef60ad5f78fea1349f9ee7e1e5e07da0",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Female Miner/motion/walk/back-left": {
+          "sourceSha256": "0c7edb483ea869f1f97c0e2c3185bada38cb0186578a2fde959ce6211e968710",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "42494b0def5707f5cf1aaace46d1332ea54955de9496bc447202169e91428650",
+            "db85a751c14bd3355ab3948ccf88a7074beb47438044d6da6e2f5870ce633adf",
+            "a5aaa8161173edcd603021bdd762215da00ef15c6620a7759502b590c9d0da17",
+            "17cd6bc2705b0b1bcaa357a01cbbde148170bf7e2062fa3fece1d4f77b3a7bd3",
+            "18bada1c2c6a60ebbac6206d1b767765d6d6d835fa5e85f986ae5d0ef0741aed",
+            "93465daeda20137c6ee52c112729c58443ecba6946c55ecc9fde6c79d8700a9a",
+            "16583ba6b3bb98fbdf735cd35287768370bff63ad510947843774cf3ba265c1d",
+            "b61471f83b61be47bbf344ecbc611005f6874514463f1a1ed9972199eb6889e0"
+          ],
+          "atlasSha256": "400ae2272b2fc6517e1ec1eff1ec4cfa42cabaf2d48f3bee0ab86f319a9f320c",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Female Miner/motion/walk/left": {
+          "sourceSha256": "39e109a7af7231640fc5f07087b468dcdee8fde86372576229a2e734a03d8926",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "94fc250d14287c9eddfabe4f1e5fb9b22cfde7a2d976d853e43c9e814c375f77",
+            "bb4862cc9e5e65fa317a5ec36bfe639613d77c1472260e2f862bf2292a1873bd",
+            "51ab20df8a8a0ebae274532953a2d8a8285149fb767c9af743cd85a3c6d6b171",
+            "9fe0f738a04b32548d8e71b7a759f7e0b0673bd2e8efa9d812d9063779df842c",
+            "705d010eae3e797f86674770218bde3945e71141c0f2fa1e7b117695ad370506",
+            "118c66f684d6857d7cdc5c568445076e286c0d5357cf970b7417df6221490388",
+            "1130a3aa0051d4196c8feccbcc013a7ad4c2ff1801466338562cfa706b92017b",
+            "5bc968f446660f61d471d9e3cf2f943f6d795f499cb3bfe476b45ced09acedf9"
+          ],
+          "atlasSha256": "585069f4827a35635378507a323d6bdc74ba345878e90a45a090bf5687a21eb3",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Female Miner/motion/walk/front-left": {
+          "sourceSha256": "965632de60b1f3af7126d3b038b804804a896aa72c324af36a4ab5c49ede2d1a",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "f00174d1056965de2a1ea2434fb79edf2f50d47b7bda46b7c645a19fe05cbd71",
+            "2701ddb392056cadd8a27d8b56ec2bb6de342f1248a9bf8f558882211bcee4d5",
+            "1c043049e45c6a78ca612b89439c011c1d08bb932eb19b55345bfa8446f71b78",
+            "c2eee19265fe986312a468d297f650b08c2ec55e1b5d1fb20e594ee10f0378e9",
+            "70cc18df70886e40d1bf2cc7b7142d4a4c39d0a2fb8df8f1d94f7ad104ef7cac",
+            "756d931b78f26c0e721f2514431317b50a7d6bf719c74667a3b6281a9d6c77d3",
+            "34b0c0df1fb9fa231fb5a2865028d1f67c8b7a837b5843e0773a68dda407f049",
+            "7162ac42c295ab74b3444aa00974a02a9e988dc63e5a91ec13aebd4bcfd472c5"
+          ],
+          "atlasSha256": "a7b7e4ee6c5191f1bc0038a7a05dd7d3829c9a60ab6119ca6d7e12d891febe9b",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Ginger/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Rear-right0/4 contact halves and2/6 passing poses need correction/confirmation of the advancing versus supporting anatomical leg. Reach3/contact4 is one advancing-leg sequence, not a required leg swap.",
+        "body-scale": "Shared520px target; red hair, green trousers and stocky figure remain distinct. Whole-stride contact calibration is outstanding.",
+        "direction-transitions": "Side/rear transition changes support projection without verified same-material sole correspondence.",
+        "equipment-geometry": "No carried prop in walk; rear/right arm opposition requires a passing/reach review."
+      },
+      "bindings": {
+        "public/sprites/Ginger/motion/walk/front": {
+          "sourceSha256": "9ed16e0032abb073e62613d8c71a7f44c6dcf28ad02b3c54503871578ac42a26",
+          "settingsSha256": "41fc49f3d2166fac492c83163cada331e1d1dae79bf7cf2d3c1ad4d9217f8c77",
+          "frameSha256": [
+            "3ded45dd2b56c225b118101a14c6d0aca52a3a8f7607c8dd7b62279ff66fc643",
+            "564af87971da1acd43873f507d043144e013cbbfe82de0392b1a0be551780540",
+            "fa0394114727235f297df092b91cd12341ab4610d6fafec0f4d94f02627c71f7",
+            "140e3e29c7f32b5bde819b9a8108611a338c20a122e9f05194469790173d3705",
+            "b511fe2c11192f9a109477eaef37994a46df90b4f97db8ef77418908d64df480",
+            "6957313aa879eb2b841cdaaabc7d3f6ded4ec941c6194f868fb5af178b86142c",
+            "42c9ad4f32e7417fe0ac3b41f0b4023aef922d5e3c6b26504fec2a9d0f02e57a",
+            "eef10430a904a6833e14dd126fe609bee9e729f85cabc9daaf422645d465175c"
+          ],
+          "atlasSha256": "4f00c3daf9aca1f4fce7940b8ce3a87c1af9c7b960ded1c1f729ed27c766a4e1",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "41fc49f3d2166fac492c83163cada331e1d1dae79bf7cf2d3c1ad4d9217f8c77",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Ginger/motion/walk/front-right": {
+          "sourceSha256": "7392509d451d36e96cf239df138108751d03862e2a8112903b2ac84204fc0060",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "67d8379cb2113a4efb48e2d77f6971a5d177c3a383c5383d1595ae0d2684680b",
+            "5322bf297f3d6e8a09fb3e52c42781caeada8363f07f4c373ec411e114a1a3ad",
+            "203e371b99d156e511cf20fbf8fc78639a377fd3a1c4391dbba492f47730b31e",
+            "fbb54b73ebf0f2fdcc51a5c3aef91b82ac4999ab29f23021ef36ec88f668c177",
+            "d24e500087fac7ec206b355d4038111cfeb98e4323393960bbb2bc85c1a4822f",
+            "82932d3fb4ea009b9fc2a18bea445f6ea3ef338357ca2cad7cac6eb4fe2864f1",
+            "b2518da92a29e3a5c87e83d020b449021b5bb7bc408c288ac6383c60a38e907a",
+            "9618fc0c9ca34de2f89650b91e021f99ad3a0e1cdf92b1c251537de4fd59877f"
+          ],
+          "atlasSha256": "344361b90580ad27096ea41a42f6f00135eeea9ee18aa5c0d461e42ca38357c5",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Ginger/motion/walk/right": {
+          "sourceSha256": "0cf64e2d16bd4d2d7564ffff8a908c25958a5a84c3cf6052e6fa9eb0831f8a01",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "7513900820408e9a28c574521829b206565c9af6cef328509b9544f8fc7e06f7",
+            "bad4a7b12f67dddbcf80b8fa0b4d490822db3ef5c7820e36686b38b9c695ca34",
+            "68cfcdca83fa1744332102f253860221caa0ce952ff81bb12745abe7bb8fb9f9",
+            "62d3aae58db188da9c90675b34584cb73905aa35afc2a34b2d58b566dbc7d3c3",
+            "c1c928d4adadee695eb79e9b4b7ac7b16cc691987cec2a7e711a444b09116ae9",
+            "9e87f64754a103b426f9ec18ca01d24d88fe977a69dc890e78cd2b36b27ad9ed",
+            "b2d2779a5dfd652c1fcebf66334f6396b86ad14bd82dc909837410d405f6bbf9",
+            "74bf55ae80cfb90f53670a718df594deecc8cc1cad0afcd232b75e8dda387cb2"
+          ],
+          "atlasSha256": "986d537bbb1041136c4f059b0df63f071dda4c552e14647f6219c3b3c70d0bd2",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Ginger/motion/walk/back-right": {
+          "sourceSha256": "2ac185eddf32442f5c107b1d02a3345b1e44999c1862d8410a3599eec904e9e7",
+          "settingsSha256": "bb79ed86afd66aa6300ca6be7971e40ee95d68cc9cf36104d98a30f3f316f575",
+          "frameSha256": [
+            "ea53b7c2cc2bb7a25fafedbb154dbdb68154a7e163a1c48e8dc350873b5fe5f5",
+            "3d6eeaa76d54a27a9c49914af3f5ce3269d605132ccef6a238bfb063733c78bc",
+            "32060c631d2a1369c2f6e4ebe519d4ff23297039f96af52646379c42efe862c7",
+            "fdd6c1b1fcb18040b3455a89f876606a280f55dd3de101d62115cc30eb2e9c1c",
+            "01ee9571eb343594338521f5024eb3c51e6cc352759c8a31efbc15d16b467483",
+            "77f39229115ee3e55c5be078402c159e2fed0b4c7ea0b7565a25213fc88535e3",
+            "5da39bcce27fb026c4af65d05d6de9b53448451ecbae0181bdb44d7a7ed7a265",
+            "3474790117d83e2927d22645bfe87b43fe17cf884b27082f368988ac030d6c11"
+          ],
+          "atlasSha256": "443611c4865dc581ca3ccd8b9cfc7b933b80985e2c36cf9e4f3c8a318a9b1d45",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "bb79ed86afd66aa6300ca6be7971e40ee95d68cc9cf36104d98a30f3f316f575",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Ginger/motion/walk/back": {
+          "sourceSha256": "2bd408994658df148edb883abb1828ef79227b746d7ed10e433d47eec5850f33",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "58cc90d68894933b325a2255e4f7844325f4d3914335e4e0114ddadccdca9eee",
+            "a1f418ca43b868ee58b4c492d55b30e3565bfc54b0f54dbbee2603d6e26dac99",
+            "3ddad235ab3c106083be3d149adf0138ae6cc71fe9fa7c56370c642cc779dd85",
+            "c0cf4e9be880a6f516b9916d121c27d1e93916481456180e25623dc4b0d61931",
+            "c4bb98304b9ebcaa88fcd2d0468f6555582dae5a39d26d18166897e4391bd864",
+            "e53893a692004d6cd5c834feb98b5d4ef1160ecd148dbaad652849a6392648b9",
+            "fcf8a2994bc83b3c4aea2bbb2eabe09d9a907de0a3eda6763d13820e3a47df1d",
+            "8249e6b3d5b1decbdb2b3704f42ad0370d69af01a3650d3fd2952ee77c18fdbb"
+          ],
+          "atlasSha256": "5d0852754f3a17444e246c6bdffec8fbebcc59650f26045f7b9a1b7945be0a28",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Ginger/motion/walk/back-left": {
+          "sourceSha256": "d2d1a6ea20aff2174db6d3989204391c397231779cc2defafc83d87e34b36487",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "98ec7684db4db8383b91415da8f6f722bf959b1384b3403d2b182378d7668f75",
+            "b151f1009b86cd44a7a6fb8b3dd39c13bcec309a43eb4a2bd02d4484f7cefa7f",
+            "a008971e99685d686d49b80c8a6297d14d1f45889d7094a88fe904faf236e4d8",
+            "5ee8e5a59aa76715f043353a77a77c4cc6fffda83c0142f729b4dac6883036c1",
+            "8c69dcb14dbd88f9c0b096e890c8c5ac6c31a40096eaaa65740fb7d554d6e927",
+            "d627738c9baaf563ec7578a3099a8eed91a6f23d97936f36c1673e5ae381b0f9",
+            "0adcd52a3bb354d3cfe838216e14e444c15b307a9a631c069014a7c2a69762ae",
+            "26582018a9924330aec0b38afcbaffd91b8aeaf48de0f94ebdfa3d164cc5006b"
+          ],
+          "atlasSha256": "6fba6186880b81e6177ff847b3186de991ec854273fa5620504e751513123ac3",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Ginger/motion/walk/left": {
+          "sourceSha256": "856e55a59ba1f480809bdcbc0f22353bf753b2ddb1e6cb220998a999c8aa99b4",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "7f35ba0318e7f1842dcbe211023e932900ec4f0712ac5e68897d75dec08e2449",
+            "58d9b7bfc2cff595d7b1d2dcc500afa62da34a4df5d5b61a8fb9443ce7061acd",
+            "dc5244078463d260725a7209648d49a160a779dd3692c8a8d9b3aae2a1f18eb0",
+            "eac8c46fb4f046a22e9a464d1a95ca1228ba3b47fa4f3d32bba84af8e33272bd",
+            "d1c3b04356ccd4124f2c6943ec123214308300b6ed7c6d888a26318d5c6dcd6e",
+            "432ae545dfaf416f9bd23a14133c296fb3c892f6f0960b0d2abcf1d9fbeb07e4",
+            "04a889ea37481adc80e63df062d3132ca10bce47eed0179bf949177ee5730f7c",
+            "bb323b3f523fbde8a5b04652f4b162e0823b60604a7198a3bfacff38cf43591a"
+          ],
+          "atlasSha256": "c6b8b878d4a9d7b2ee082d7b373e8a969aae88034df8049d6644283c50dee4b4",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Ginger/motion/walk/front-left": {
+          "sourceSha256": "19cfd1481b16b4955c1ec42777388717a700c18987ed3c9f12b4bf8e19e4c76a",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "1045085be85c33f1f7ac7bf08a8fdbaeafb78723bffe9e938a25df4bad07fa09",
+            "cfed966b356b22a559af2af5a64789ab927be2fa1754bb5bb75e103125507b66",
+            "8dc4159f2aaf4216be4f6f0549a54a432681118a88240e5540e8a495e8a3b802",
+            "fbbbf3c6f2edb555b2277af3e100f45de0fbfbab910e181459e8f39088296714",
+            "ed777dc68f132536608ce6950c2f44e5d94d47a7d322db7d1aca2bd8fb2b828d",
+            "f70314eae29498537de5b5ecd86b81081b22311b32d0f15a54215ead0b6894cb",
+            "1af6e9a44b9bfebc10a9a86b0162124d4d77fa728b3d4211cfe0456b9ac1a751",
+            "994b27bb0bdaed8ec3d0aa751c3d7d1cd4c79554ba717054d301b671ed9bf775"
+          ],
+          "atlasSha256": "df6ceb55883f584d5dcceb6a18c875ead9beeeba1a09d0bbfcd35ea40b53b00a",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Ginger",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Helga/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Rear-right/right0/4 contact halves and2/6 passing feet need anatomical side confirmation and contact calibration against the front phase convention.",
+        "body-scale": "Shared520px target preserves helmet, red braids and blue tunic. Exact support plane remains uncalibrated.",
+        "direction-transitions": "Side/rear turn must preserve the same supporting foot; eight authored indices alone do not establish this.",
+        "equipment-geometry": "No carried tool in walk; rear arm counter-swing needs verified anatomical boot pairing."
+      },
+      "bindings": {
+        "public/sprites/Helga/motion/walk/front": {
+          "sourceSha256": "e2b3cf337847f2bfd23cefc33ef7dd46345a1494303510a1484c847940339de5",
+          "settingsSha256": "be0a5a5471f372854d04408e245e4f56d151e668f57bbbf6dce078da87cb0092",
+          "frameSha256": [
+            "c4c54022962453c5b480d1f2391eef558c0ea4be7fedb9eef29c47a05aadc8fd",
+            "8bb3613b00c373798f6c5798b94aaff1ce77d0750b998e43a063ed14e08489b6",
+            "5ab2b053b3466475fb2d8ca3bbd73f61e16f8f40c556596b1968ab8ef4969731",
+            "289c58b0e87c81e7a84bb5f6f603bb4cbb5b6a2a04e8b278f4b8d8500ab881b5",
+            "381f6762ce0fa12bde3abe563254409c886405e7d728d3cc0879162a97755668",
+            "f000906b1e87a9a082a07e6f1445250f15cd2162f9a259186f1f8e949aef0985",
+            "3c9d22db8288a6a132fa5502e5afcd9ff9c83a26849750bbebfe0bb729004bdf",
+            "371c4406f8628d26c7e5f571a97be1613882531acc91b5adf6aaa04ddcec1bd0"
+          ],
+          "atlasSha256": "02bccdf5600a7fc1d189b0a8474e5a9fdca91481da45f18e5fb3d7495e94dd34",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "be0a5a5471f372854d04408e245e4f56d151e668f57bbbf6dce078da87cb0092",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Helga/motion/walk/front-right": {
+          "sourceSha256": "823e02afcd70a1acaae93c0e14e1fb4da2ad9234b237f749fa33b216088f6867",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "635b06bc8f674d57f1bc21dae4fec098b3e2140ce85d3ca6a295dc69ff8a302e",
+            "fca055a21b7afac199412115937fa884b8e1450477def8ee81fea35d2eaba6c3",
+            "7b96919d6241cf1ff4e86191c8c6eebbc2c29100a9fdb1b3ebc020d14584a11d",
+            "2a9f5ee5c20b09f6b62708998ce5850b4541e6c0bcbcf4f106727c919ebe5a31",
+            "935b6b65431ff5453c69c06ed659d03fc851b8c2c50435be7a88f059511595fa",
+            "0801f2762b139a45c7de3f739a2fc651a003b140b7a8e34e93387f45c6a23e48",
+            "d19a3643181077690a4e63071e89506fcf041a5db3677d353e16cd09d68907b2",
+            "021547b07bba68d9d1c021d3e6232069f628f11b9368a21f0571209e6721dd44"
+          ],
+          "atlasSha256": "8d8ffd6940fde7f8e0bddc2f653a3b3dcfe8b6e9e8ab1a291cdc9956349855cf",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Helga/motion/walk/right": {
+          "sourceSha256": "8c633505aa8ce997b678db58fc8761fc90a0100b157d97c7fdd78e61d179c7d1",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "79d7ddec6fc0afc3f6b265dc18f8f25223d76fa9469a9b876678e74360e94ad4",
+            "b292b2bdd6df5eb7b60fbca79d57dd2e7eec23ff0ab59640a357222221cc455d",
+            "76235e21f28bba4b105288a3d6b301140956e2803622b4dface7b958b36acea0",
+            "9984f7274729dce26c46da9a6cbbda41358334960d1f729101307a4871398af7",
+            "d15ddac9ac2104f067ce905410730dd451a645083a6313cf0655fd907650039c",
+            "ee6c7a83778ea9ebf8faff8f827f8661f920b5e64bd1038044fa3fb053e34dfc",
+            "357e271e565e0431aa5095ea6b6017fff321b5f84ff788904efae02f1ddcc8d8",
+            "86a93e669c1209e8c2b25be01d8718966e608f6a2d6ff20418cf57e695d70ba5"
+          ],
+          "atlasSha256": "10ac3e6d903988e9d50e672e36ba0cc240d6ad6b5498be8d5a5ee85e6bf05445",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Helga/motion/walk/back-right": {
+          "sourceSha256": "333641065d632cad3a2c4b740e4639132a553d3976d6cdeaff760e15e9f651ef",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "3e4e259dba1aa9e2b6c639d6dfc3bf2f1751b5c1bccca0068302b4b657e3ce18",
+            "392cdab68571c25d6cb83bd1660e130dfd26ab504bd4c61dd317a80e5291005c",
+            "6e68b2e094361900cd5c9a0e5607f2032c52b1245719c9110931d03095349f31",
+            "bc869816cf431c1c80433d1fc04036a13218ce01dd32674366e69ed18df2d284",
+            "a12a7f5c5a83a5d7aeafafca42a3db827d50c24365470562f01d2094bb0146f8",
+            "cc5b57485614d8d3634b113d0f9874c00fd42ee7120a6bd47dfc1652a2502cb3",
+            "8d9ee637b4b69234876f402a1c7608b8c17db52233dfa4ea44282fff62461f2a",
+            "c155655c423a9b538f92fbd1f61372832f677419d255ee71d14fbf9e5e1b8d0c"
+          ],
+          "atlasSha256": "cb26834210544b79ba12143d36c8fc4955277b557ccb13146211937187a9c3ae",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Helga/motion/walk/back": {
+          "sourceSha256": "b506384bbc95dcf606621ca86e7ad871791ac46ae6c0853f33f3e8a56aca19f5",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "52f615beaa49b96082cbb9493504febfb4868c2c762477895ecdee9670d55c23",
+            "50b023a46a015baf7606d9ee549de38d2be160d3a5efbb4ae289bab14d6e3b48",
+            "a1f036834ca36bad1cc108afdecc38a0e81f6d832ef573145575ef3035da0571",
+            "e0e85b6c9e2fd299a809d90d1e0ca2118af78ddf57d873d78988e80271a48198",
+            "c9759a2c1dcbbb18dbaec15780777b8f890c9b1a94f1f116c1ccc03103248465",
+            "bc89ae51ad2192afa22393050a3ef12c61a70385a3a4b3757368278b18ed87e9",
+            "d5a4607539d95bf281fca41936b9e9cb0b3ee9e9c5332fab1fedbf7a08c722f5",
+            "4ed66cdb426b8816b340293c27773f8159ac6c0b45043c5aaf23413faa40d52e"
+          ],
+          "atlasSha256": "1e238ab2c8d870ca526d409ec0c0be6d3dd65f1acbc175403f0c5728d2e44903",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Helga/motion/walk/back-left": {
+          "sourceSha256": "00ac7beb1d9a29f2e6a6cfc91ee4e17a9d39083ec0dde50f81b17e3dd859475c",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "0858d6f187e09bba93e9f971252e75fbbfb268e9027c46358c48841601729317",
+            "22a798c3f6fb94612852f1d716c3139d4caa096361f82bf79bd2bc1002626c9c",
+            "cb46a3b7e74484bf2fb232fadf3ed143eef1533a9212252d05ee467adfd64fcf",
+            "78ba253e885a9897864a8324888733f73696398cbb275c16f617771deb311877",
+            "f6d6f4b35a450d35dd6e7df18d96b7f11df361779158620108e48e8aad0bb95c",
+            "2ab0535306c99b715d9fb14882e2c79ca8c9b16c41285e4fbea84d9f93af64f6",
+            "c99dd31b3764daa76c27ba3718fe7b4d5ca1e8fddb46bc577158ff1d823cea9d",
+            "b304e6b3852b24e6967e296b3190ba69ed5aa3875fa106c48fda093898c61f28"
+          ],
+          "atlasSha256": "d1de3763bf31a32012124a32b9d939095ab287d2e4aa802f7943ed890cf24bbc",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Helga/motion/walk/left": {
+          "sourceSha256": "b7b9caf89292fc8cdda5eeba6d3c929115fe07b03e05eb3c577d98486d2a3265",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "208e450d53fd46d0db37e3b6ea5662100281fa25777e21158d15208bc3187114",
+            "8b12a4eac7705fafbab7d57e59e972531b6865e51115e4ac2708582f1af37c95",
+            "a060f86dad6ff3f0bced1ef3841075c5662a71e8d8a34e4a2e6593763a067ada",
+            "127e5ac6bd0b7a5dd8f49594239f89d7d0cf9437fe0d3fa6c23e814a937acb3a",
+            "b5acedf720c6511fb7a6d107adc8c965f8fb83985f3ccb3f6f114537fe0efae5",
+            "db721979f686c1b55ebc2d653b83cb5d0eef6f5f60f5283089efb8d7ba9fe7a0",
+            "337cc2278d41f8b2aa5baa47f31e3d1e89c28e0d056c6a60058a7b9b4886fc4d",
+            "61c634eba76cfaf943b42f09937e79e616d3e47cf8a3199ac38beaf4d35a06a0"
+          ],
+          "atlasSha256": "a693665941f30ea58f99ba3b5f90aefa86e2dae9cdc171f32f0d2d16b1b461ee",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Helga/motion/walk/front-left": {
+          "sourceSha256": "bb3ff34758d261dbee81dd07419ef0d6e640fdccbfa745fe2d481721d4483230",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "0810060d90dbe9cbce4f7daaf4defad18dba3d5976863f21c6c021fb09d2d391",
+            "cfe616d88b9e4907c603e7c65e09883a074723a75e972b1560b08d8f089c9600",
+            "0b053292f2f5ad5437ac90e94a689f6b0520e3791e0345dd78ab0354c2e5ae84",
+            "cd32bdf2ed6854b094a87e95096f8bd1b74552482c3dc8efab6e3fc871f22b95",
+            "2dd5e50e5db439aa30315882fc34e27b26b6b014364b5df555cd9da728f7939d",
+            "8628cf0d1c8a814cdd0e00689780bd09a3495e96794f40996109b8526d552d98",
+            "8317556776b9d0c813671ce33fa28788d403335eea824cebc5ad77249834b940",
+            "68c59c005ad5ebeca0e7d3ab79788055d7fec60802d93f094648130bd2150db4"
+          ],
+          "atlasSha256": "c90e9d91d3f819ea7e28931ad734ad44021f2aac0d0ffe99e844a20eee848732",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Laborer/walk",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Rear-left locally corrected2/3/6/7 still leaves arm3-5 and support contact4/5. Whole-boundary residual reaches110.265px.",
+        "body-scale": "Shared520px target; the rear-left candidate needs25.136px perpendicular shift and cannot be adopted within12px.",
+        "direction-transitions": "Rear-left/right/rear phase correspondence remains blocked by failed contact registration, including7-to0.",
+        "equipment-geometry": "Same-side arm advance in rear-left3-5 conflicts with counter-swing. Other back-right/non-front poses require equivalent sole tracking."
+      },
+      "bindings": {
+        "public/sprites/Laborer/motion/walk/front": {
+          "sourceSha256": "616f239cd2c34ae7f9a9013f67c30fd920f33da8670374bb009caef4e0f14b9b",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "57b4849e6b5d768120fb48faf155c88f6a684ef88438ea45409eb71bf2519e9d",
+            "d25426576a9e29fb681a953d50a163456b8c538a5fbb4719b7eec76adaa8987f",
+            "5c1292d0d993ac0812208841e720e32c1444aa233ce19561e6eb068c6b183bec",
+            "ea43d3a5cf7e1e944c5146265514b30e16d39a3c16056ad13dd36c0a355c14c6",
+            "98a6dd329227501f0fbe4f94a1e8b843d0c2c823109731793041b2aa0fa91ea2",
+            "db9670c9b9aae87f83155f03f37aade40a4c626a8db26136a07ab8a12ea14928",
+            "6b0a9304ecd401bad314ab6df49928f799d934a9426a2017920f5be8523e989c",
+            "b37d9e6b5bc0e06a5ca678dda3e34732fdc583752718cece404bbeb543917410"
+          ],
+          "atlasSha256": "b2a4436de1e058ba75a54146c1b0c759d7ca8a014a36be534d1327834aea0386",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "front"
+        },
+        "public/sprites/Laborer/motion/walk/front-right": {
+          "sourceSha256": "9a5770b80630e11be758cd6c5a0641fe49718d5c5313493e6b4882f843c927be",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "ecb7f8f0ad92a278698ca6449917ecf7f945397365b841d3cd533af698f4125e",
+            "bbde04389c78c4344afa99bcdda5d7020e5717e0dc63bf300a5c044c615411ac",
+            "60f8677845f1fb5de960837f80de5e24feb43437d9a8e33edafd0968c661d386",
+            "a32af2137d06af11ebc395b2707488f8d5eda99fc5fcf6c2d6543dc02238c545",
+            "b4f3c832a5279687a1235c4bea14253eb50ab7a98449930bb41fdfd0a269fdfd",
+            "d66e7ca06f46c42218217ec7e4927f173da14d08f63c193795fef4035c90eb33",
+            "e6404de1d31fbc826915da0dd56f448d6e458282a07676f3fb3c3391f4a6c769",
+            "38cf8d7cbae01f4245cb694d7c57e15ad88e4e0e99901eb334934847ac51e69f"
+          ],
+          "atlasSha256": "ad89cbb2372b2be45ee0ffc408589cd126af70618bb36457fc36f02217a5f00d",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "front-right"
+        },
+        "public/sprites/Laborer/motion/walk/right": {
+          "sourceSha256": "52cd11b32d9b4226dc42e0e543a30fa113fed3af824ce97361c9916529faed82",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "ec8ea74f1e889c03b2007b1de6f5cb4fdb1a2a064e9cdb5e4975f474c8b8e96d",
+            "a741065b741f85a15bc7572fb196d9556c7c92c0662263df6adf5172f6958eff",
+            "a18ef16db873382cf1aa06cd1ed5ff43f1f89e74d000d18d744d1854445822b8",
+            "a5fcd19da9ad0f5518fcd3292a9b2d826a9dd67c5c751ec52cc197c8d1589a21",
+            "49de80efdaff472cfab441fa8f0c0c81c26d17fb5c5b5533eb36d0c2f7650c25",
+            "10849bbb2ad1dd2b81e0da058c11ce02fc7695e2647a3a0b4737ce500d51bd20",
+            "9f45912fb8ca9c9f5f9d5e6c47b77f711dd08dad0758a125e883dc86ab7d88e1",
+            "9185c7a6c3b031a9f3fccd62f03afc2181b36562c4f6d0f087474c1da76b5f20"
+          ],
+          "atlasSha256": "ea8805464536db635daef4dcca97269c028351fe8c30b1a7c44ea551b7335b6e",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "right"
+        },
+        "public/sprites/Laborer/motion/walk/back-right": {
+          "sourceSha256": "1859935a7be0e3bd7f62cd5ea766ae5ca3fcfa631b05951b6f1ef4dd070c3324",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "415e429c90b16c8aa5a0650481b572963a16659459790e3a60299b25e763c5f7",
+            "3c00d99d9d0c278dae22676a3db3e5b9f59532c11b7d1a8441bf345404aa7846",
+            "f2056e7eade6789279d308b4be9cfa9cf4e698030167eb5e9a894bdd55775e88",
+            "d5a61dbf0931c3d4d3b868077207150c8482438eae24fda1769a0aa6fce25f79",
+            "b8cff463d0efc87317d727397ac406056b8ee5d331c5a6a362cf4143f185efe9",
+            "fdb2154304167c6b8366b0641afc9c0696b17bd1112be3433a5c23140bf08dd1",
+            "c1b68012d80b69e8d9c84ac3ee00d75464f332296e4e50fc766756aa3a9eee4b",
+            "8bc6beb5e7ac90c573ab8ee771c662c8994cc67821ab531a81ea0a88628f49bb"
+          ],
+          "atlasSha256": "bd21b56090cbbfd74feb620642ab1b001fe875797bfef71acd3efc68e22d9c66",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "back-right"
+        },
+        "public/sprites/Laborer/motion/walk/back": {
+          "sourceSha256": "89e5971d6ec37b01fb3e0c7ed55bc74e71ed028bc7e7bfa0f2180036f947dc26",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "aed26d2e1da80dcfb8a80a7278c9820a4e38d38b05be59a2227dc6df2dc2df47",
+            "18fc1bf7de8e82dfd97fa2bc3e240353b7f8a62ea745cbae4e7cd7a95ef672e1",
+            "8e38fe8dc0c7ab779a741d2c6b60309d2693a79f02147554c7b502a062cbe8bc",
+            "5d5a810f79279b6dc8ad42c4064c2a26640794207f8b67fffff1121f0a0499b0",
+            "2df2b24dcee7a5c3a07061b07cd861d16f81fd3f9651241302f45606b23a8796",
+            "6c787cfbc6dec4ad4361a1eefbb3ace15312fbf883db6554fac51ca8b6414a1a",
+            "6d40200b2b59bfcd8b8b57c840608b5ce252e365009bd5816ba5ec4b3b09d979",
+            "1e325de84c383466f0b2742195f093a593ee6970f78071d600669c28f2d9ce1a"
+          ],
+          "atlasSha256": "10760fbdeb0b59b2dad3d9dcb4cef347bc0587f6f83c81afdaabc7d1cb1653c1",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "back"
+        },
+        "public/sprites/Laborer/motion/walk/back-left": {
+          "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
+          "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+          "frameSha256": [
+            "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+            "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
+            "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+            "052f86031ca3752f2b83a4916ff3322c96a63c361ee91fbed40773053f87bfd3",
+            "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
+            "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+            "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+            "29b194e5d39a4e8af0abc8631ee79f948c74aa4f09e079d6caf2a828b0422046"
+          ],
+          "atlasSha256": "19d1e24581fc59818cde0004c648c71aee5af14d840cc5b92b6b158f1b1cc72d",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "back-left"
+        },
+        "public/sprites/Laborer/motion/walk/left": {
+          "sourceSha256": "4f65668f3643c4a1fb7a009a66bfc516fb243daaaa5a253cfc9eec0dcba264d3",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "f6023761a8a6a8b6c392b3a87e6687f4b2cfed7d40633666f7202728e5aa33ac",
+            "42b7ca8447faaca799a67a3fe78127ccef0dfe7414d083e2e2e84b74143ab404",
+            "c38ed4b9e49975f14934a847c3ca5b53794825d8acad0567bc85da2937675eb9",
+            "b27ae6edbdf5f8e1eb706dc08caccab7955a4aca201adfaaede3db36286e4fec",
+            "078404323b9c1a3e7d58d708eb750e1feef41e3c5da1b2aca151214d34d39606",
+            "75eb7870c30cf63212dc887f896ac6e88a4f6afaa359dc4e6ae9f8e34719c3ea",
+            "be8c4abb8fbee45526e2d8623794838b7aac9636d54871de351ec5ea99981052",
+            "055f28a8700bf3a6144cb994082bd8ae8eaa229ba3f34544d33a7ad493b161a1"
+          ],
+          "atlasSha256": "f5b4a7c9e4feda3ebd9d047ddf5395ba9b9ac8d8b88acba3437de7feabaf2f21",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "left"
+        },
+        "public/sprites/Laborer/motion/walk/front-left": {
+          "sourceSha256": "0a9880dd4dcc8eb3113a2a0bac49b48e8ba86902ce8885ec8a3d09329084272c",
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "frameSha256": [
+            "3e20f5d3b2cae8231341df05d8c45f151f0d21665a93a47b6843e1555eefc80a",
+            "e9dc6bf776300e32ad6cb830e0e809b392b36ba7fc5c51487cfbcaba37f420ca",
+            "b63ae0121710af83f4c6376d99c5fa1527a35cfeb6619ab55ff7531e1a890bfb",
+            "b30d679a1f73e4f55f41dcb4a99aa6b7c31dac8a02d7001a09f4e368e40afbf4",
+            "aaa4a7f22224854c6cc5c7c59d28c6eda2e589ee7d199834e5bf51e43df6b47b",
+            "39d24461a7b3195d0150b3bb7167e5e64788f554e0427e3a48f5658c25351f3b",
+            "2bd7095d53ac5e23a9e0eef0ea85b549d66dbf8143d81da38ce5799ae1ee4459",
+            "6c405919d87f0576084e263cb2862b825932e39cb8f8d9f394930ff3856ac464"
+          ],
+          "atlasSha256": "5edc95c3e6811acc99ea88a7b7fe49e51da634ef19f40f4468dc27d657b84025",
+          "registration": {
+            "method": "torso-median-estimate",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Laborer",
+          "action": "walk",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Female Miner/pickaxe-swing",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Front view5 holds a vertically centered tool while side/rear5 strikes forward; intended strike direction must be aligned across views.",
+        "body-scale": "Nominal body calibration is present, but tool elevation and forward reach change with projected view.",
+        "direction-transitions": "Adjacent direction changes during raised3/contact5 need matched impact planes and hidden-hand geometry.",
+        "equipment-geometry": "Pickaxe shaft, head and two-hand grip need explicit corresponding geometry at raised3, impact5 and recovery6; pose captions are not geometry verification."
+      },
+      "bindings": {
+        "public/sprites/Female Miner/motion/pickaxe-swing/front": {
+          "sourceSha256": "78b37940e71af099ab18893ed57bd9b407212e2e679c4476ede69f5c943d74fe",
+          "settingsSha256": "15cd18ec44643f2df8b10ed8fdca4e34490d4ead14a8d5bb776c1fe94c0d2961",
+          "frameSha256": [
+            "c98043bd628c4cc948184b03219381037491f186f906827c6ffbb3a61ead15c2",
+            "b4e99e59b6029f664ca4e8970048d2ca8580c11aa83430f64e36e3203210ceb4",
+            "9dbae5ab73c9fef620d56179067ccd94977cfe53fb328f5ec55601b8fa231726",
+            "c03424fe0175e169249995c5d8d6ad5b9398d017b1ae1f091ad8dba9e997f899",
+            "0a85901bb7ea4294af08fb53e5aa8779ef78a6220c5589c3b101a30359dbed30",
+            "27db4259ed081f29663047c380c28c8c8a57f63f91a89618dbca9693c323befd",
+            "8e0f8e666cdbcde5288d0aee04575b2bf119157dc4ce0ee51724a5435e541cd4",
+            "f9751ec7c54cb018f0e36c84099282d345ac2cc07dd100e0742dd3cd089995c0"
+          ],
+          "atlasSha256": "a9d8a453b5a1bc057bae586f4dfb7466d6439ef399bd91a007fe0fb0eced5f83",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "15cd18ec44643f2df8b10ed8fdca4e34490d4ead14a8d5bb776c1fe94c0d2961",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "front"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/front-right": {
+          "sourceSha256": "dad04f248bcccca8e4105da42ec3abb1c14bf5de3519c24bd52680451044cd82",
+          "settingsSha256": "d75106cdc26b0c6d7fca7b24131d5a9b110b3091e3cdad36553213ff4838b283",
+          "frameSha256": [
+            "6bffa43df89a6a07878621ae2cc3346a05f446453b15c5c916694b4894e4fe26",
+            "75361803777e72cde8005d3e135edbabf350959f41070e1e6ee50e262813ff18",
+            "e296c3a99c371adee56d1378fb1a477dbd26adeae6f569620c5799829a779e23",
+            "6ee6dfc3fe33b2c743d401dcabd4ad23a3712506ab273ac8b67085c9714624af",
+            "67cb29723f71aaffb5dac56b8fd2ad99e9919855479dfa2933d3a54ed25e5d26",
+            "ea5eb08d722f38cf231930bbd1e3e5ed27c7b022e48856c97cbfc7544caffc4e",
+            "f08b1b57d52c7bcef050b9a86cff8a7ffbb7d771aa31e2214b692a75fdd7dcf1",
+            "0d4840e99f6e39c65418161a71baf8a7d0ae1a22c2232ce3b8f1c3111f8aaa17"
+          ],
+          "atlasSha256": "65592311e0b975923e454b20bfc7d1cffefd27ea3ae93541056f31b16e6a3d7a",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "d75106cdc26b0c6d7fca7b24131d5a9b110b3091e3cdad36553213ff4838b283",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "front-right"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/right": {
+          "sourceSha256": "0093aeb90a6d5dbc3020dd71bfe56710e37762c08861477b3825f82301741fa7",
+          "settingsSha256": "8270ba12fc51a93e853fc54fcd7b3be9920d24b5d544dde9d0ff2b4ff2755f6e",
+          "frameSha256": [
+            "3ed9ec32c36c8e588e784ab9e15ebcc2179f088c8cdf6bd8356ea9028f6ba768",
+            "e1ef64f1705201a20c3769ea46c0a9fd0ecda57c136ad5002a8d3f0d54c92564",
+            "f459bc1320b3ffdb6f04de63ae56316baa8c913e254e2ecfd3b4230918a8df51",
+            "543633dc942809f982085a5d6644c2b6d51b6800832ecc95f854c6f5bea6eaaa",
+            "b9775d84bcc51c6f75dcab6612a04707ff16c1f1b0811e734cab64759125cfa5",
+            "59394761ca4b83587844f2f9c3bb3eacf9026ffb7a2892346eb7d67cd4ad860f",
+            "b13b48e2af1557bed0828b96af6457b09de049f3bdb6bd1ebd0002b9680fdbc5",
+            "79a24d1224a57842321384f0dab2a26676490e0ecb9668bc6cc157d7a67e750d"
+          ],
+          "atlasSha256": "d4e357b5bf98715754093dd8e31e7562800a5793a4c049c5b38640ddf6888aad",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "8270ba12fc51a93e853fc54fcd7b3be9920d24b5d544dde9d0ff2b4ff2755f6e",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "right"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/back-right": {
+          "sourceSha256": "723db23d8ca98a5b630497b773ce81374293ac71adbde2852e22a7b8f913326c",
+          "settingsSha256": "c0e491e4415f1b8a0f8bfe01c837071c8828bd763dfcce5f47d1bf915507a8de",
+          "frameSha256": [
+            "febd70b1d5bbe171da8cd979294d73364e0c7c23dcf2b2c4ddd0ce32613e75cb",
+            "ee6be595e97ef6345fd665574eb871e9061e444e9feb01c573ee79ea290ec4b0",
+            "ced491494e02e5afc3c6bf91c4be59f0112f971e5c0d9fc35aeb1adff5e3ba13",
+            "46e39dbb46a6d5fb6fd53639e717ad4e5971dda67427bd08e5e305836cc640c7",
+            "f7b45eb4dc5de56fb839064a8c09dd91e0396a36b36003a178868e8faf62cce9",
+            "b1c097b60cb2ddeda00e23f004134dab9a73510557d093fa65cf81ee2ca67772",
+            "9553a96a752c118a2ec09c56801fa42e30913342c7cd38a8fdbd96e86efe5c42",
+            "bf3264fca00c9e0ac83c51bd8b6ef350db09fa4f94ab0f6e55ecb182ec669717"
+          ],
+          "atlasSha256": "4a9786054fd46c42dc90d55137612b16d37b41271674f0cdc2ae044334e22fa1",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "c0e491e4415f1b8a0f8bfe01c837071c8828bd763dfcce5f47d1bf915507a8de",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "back-right"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/back": {
+          "sourceSha256": "4428ffde77b0a2222a3806b4fd4920c90b9d5c6131333210d78b9d1fff13929e",
+          "settingsSha256": "3037bdd8c9f7996c5d74f3227315a6d189e702d83ee12faec31e6a049fa1b1ed",
+          "frameSha256": [
+            "eabbbfef23447ed3e1e50a46d5f96ebcf88ab3674dc753e195cbefefe3458d9c",
+            "c448000d94e2684d25be0eadab53189802fb47b12a0052fe42b38a0cb4f81d86",
+            "d356e5d1bc6063986574e9cff764d5055eb2f0ea8d2cdbe41791c49f51625e2e",
+            "a3f6cc025ef7007232ef2a9bd2abfa7f19b47bd3b8977e47204d0662e4d8b97e",
+            "535e534fbd2d4a68ef0cd0264759fa5151afadfa9234de29e264c421fd3b6fde",
+            "ce8ad03de13820e598ba687b0f9dd4a584d7625fd3360e579a54147f4c7283e4",
+            "8caf85a92a66fbd4001eaa07929eda729a6fa21910537d877b91c8bce17d3cce",
+            "841ca8ded2dbe7d3e7a0fa55e7b8892aa1918f7af0acf00d1387c56f43d89fa8"
+          ],
+          "atlasSha256": "f715a41aad17e6cc3664c56aa8898f599ea63ec41f4004178578f64c4ab4a4bd",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "3037bdd8c9f7996c5d74f3227315a6d189e702d83ee12faec31e6a049fa1b1ed",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "back"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/back-left": {
+          "sourceSha256": "fc8f9333b4b8dac02269347afceb033692b778d0d93cfa60b85b2cbdba3fd80d",
+          "settingsSha256": "5222e7ce093086ce3fd89987be95ae1c23866bca295c9c1e4c8e11170cdd682c",
+          "frameSha256": [
+            "1838de6949d0cf4e781a5e7a4818207065e98bea21870da88dbb320e5462cf80",
+            "7e8fa8e10040657657d1e2b78f3b16a518ffb98ec5d8c7e5d96191ce4efc2e97",
+            "a5720dc91d61230ebddb6c1fdeab200323a4747a082117263f4015b78213f7ad",
+            "309e17adb5a5d10ab027aa1299b5e12c37316aacf8e5786c784163410efb1dd1",
+            "9dd7e084f3a573b4b62fe7d7c16ef81fa21efc43a4185710ff383c2574107d46",
+            "27f17b2dafab713fdd36b3fcceca08d87be8ce9c8924c38393e1c14f11bd007c",
+            "6f00bc344c775d1c91bf3b9bb7421331cfb2c3d255c59e450bcf4b9f4d3d557d",
+            "290c26108b48c17a9fffc16484c730c229d6bcfb8fc61c3365d162bda2829343"
+          ],
+          "atlasSha256": "e7d6e120bdf9049afa823b97bf7b6ca10e1b69a7a64220d36ac13989aa3a50cb",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "5222e7ce093086ce3fd89987be95ae1c23866bca295c9c1e4c8e11170cdd682c",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "back-left"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/left": {
+          "sourceSha256": "237eb58fda11c79b0dd8d007686de56c43a71f68685fdaed219bc274fcf613e7",
+          "settingsSha256": "b3d5e043f489e14c4e00a0156680de42265df81e5549feb61673af57a31df127",
+          "frameSha256": [
+            "5037d76b985af5f5eea4a502a763bf4b09e32ab0daf5d213201e234e2d9ee0c3",
+            "7bb8d6cbd9b799391eeb3a8b17acd6a2794a3c901cdfd51d1a4e1a8410db406d",
+            "b16c7ddcb476ae229768c6792611043e9dbb38a6489d6e31c6c1a8b034b3de72",
+            "92c4eca945ee7dd53900af5a8a2ee1ba7308fafd2a09ad5f2e02013f625c2c87",
+            "f57e4497fbf5c5919459c8438c04210845bfcc04f3b2982bb69f3f289fe1b49a",
+            "5e24f2fa851b80e90d26aba0100eb04b68506f5b447e5bb0aa5da064f67d9353",
+            "8ffff20dd8ffc154ab6d3ed8d084879b9859c0524838e9ecaa1638d40f8da11d",
+            "c77e0ae9d70fa45e7dd0d42d8a3ccd6da25fbd2e0ecefb4237284fcefd9d70be"
+          ],
+          "atlasSha256": "b7048b79d0f07d8bd3828e4eadd3468e54160a19e9e37627fd9d3ae8772fb605",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "b3d5e043f489e14c4e00a0156680de42265df81e5549feb61673af57a31df127",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "left"
+        },
+        "public/sprites/Female Miner/motion/pickaxe-swing/front-left": {
+          "sourceSha256": "a331d9ee7bca973af28c66cf16ee1847b2de5c3955c820cf611cf0a83d5e1244",
+          "settingsSha256": "e4279962e317eede41c97d1ddd36c143081e178f184b117a5f53a431be663efb",
+          "frameSha256": [
+            "9bd559b8420c48f8c19ee2334f56a856fd2ed49276cb4973b1d1185b6851d42c",
+            "4697ea115d131eac2df87cc24430197847c92052a5583fbca37f5bdae25f7253",
+            "22fd965061d2ac0c78590e9286a90fb1538b42d92de6fb65172c2b1d9a143000",
+            "2b654abd6a672891ac8e63950a9c07dbe81668b5e3d5e97295a498c03735a4e7",
+            "81ddf89087c7f48caceae248392884c6ec8ed1b6eeaea340c61dd7717b141015",
+            "e7a04051917bfa9736fa8773013771b8c67b669a138f050d96b38d0ca22d344b",
+            "d4d9c660140df2a01871485bb8c15f3701c6d1ae99eaf82ae1d89f205a6cf373",
+            "d3d80d275c6c6ff6ad88facb1b8f023f6b66021068e950cb95b3b2fbfe2cf17a"
+          ],
+          "atlasSha256": "9f79a54a1f716a146d19842b7fba64f7938b9a7815c186133a0a0b4613be76a4",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "e4279962e317eede41c97d1ddd36c143081e178f184b117a5f53a431be663efb",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "pickaxe-swing",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Female Miner/shovel-cycle",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "All views broadly follow lower/lift/cast/reset, but back5 and side5 cannot yet share a verified cast/contact plane.",
+        "body-scale": "Body silhouettes retain helmet/hair identity. Blade reach and ground penetration are not measured in a common plane.",
+        "direction-transitions": "Front/right/rear switching needs approved blade position and grip continuity through lift and cast.",
+        "equipment-geometry": "Blade face and handle alignment change through front/right cast4-6; hidden lower grip and zero-load release need geometric review."
+      },
+      "bindings": {
+        "public/sprites/Female Miner/motion/shovel-cycle/front": {
+          "sourceSha256": "920279200b41da14f7c35d57a7db9e76b1b01f7b4676d4de75d71ece13984f53",
+          "settingsSha256": "a4ff8939d52527770c7196d75558083c878756651d10223f5aba449cd5ad27ae",
+          "frameSha256": [
+            "789879c0c3f1fd50310d7fe0b8ff7d63633b2f0863550367e579f6133b4003f6",
+            "e2ccfe22571ad06125b7c8f85d42be58ee9a140edc02d0fc9460c2eb432c5017",
+            "3c4f4a9f47d3137648d13dc5b58294720263b423719866db30995b90d28e1dc0",
+            "c642cae03e3bb24723e7370d03d3d72a715f1436be3e38db914f4e84a6a70133",
+            "d99c3afe37316a3cc20ec32f59b2de769c4e8e06eea0746f9a27aaa33a1a0ee2",
+            "2856dd0867f17c25a1ec677f7ecb8b8a0d71d7ec11290c2e1f993af7a28e34fe",
+            "7e10c7c8fdd0efad06b65760ba4b19bf58ee28659b79dc8516492cdb971ed440",
+            "2d30e75adb6cbac30e2f869fc26e2f91ca6d3500fd56aa889d9f3e5247f2120a"
+          ],
+          "atlasSha256": "1322b6c008464c76733005d583b6a7b13a98de0fd9ebab88757533ad31310fe5",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "a4ff8939d52527770c7196d75558083c878756651d10223f5aba449cd5ad27ae",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "front"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/front-right": {
+          "sourceSha256": "3617bd888cccea8aca816ae5396c79f13b4a6b47d0a127d6e76ae81b395e8ad6",
+          "settingsSha256": "bf7c9227e2d9b4e906cd9043e495c42fb9991cc33219bfd3dac36cc698170364",
+          "frameSha256": [
+            "fbd4025a9128f30d516f1f80f1cc61d9f531d6817e3cdeb8f832daf11db260ab",
+            "b929c9f2c94761ad22f6fd500884168f282784f003573c79f47a2efd4b11c8dd",
+            "a8279bbb4f3759b92e2048847cd82f05bc7eb133f4300064a31893b44a9a018d",
+            "a299a0fe83a08ae73f675db409d827c3c50bf64d6fe6153acd2a83313c67c83b",
+            "e22813a370c5c32f6e34b8ac606595ef716a89ca5b9145f0ae082b21886230fd",
+            "97def79da2f9a837b4fb51f7bd3c98b5e2e333b14bdbe316b173e1ae1c0465c9",
+            "d174a61e5588bd130ed4663dafd52ada5f6f1fda4133e1d2dcb657c24d4191b8",
+            "1701368eb99217511757c6943cc81440ecaa5fedd7b0dcf2b90aea60971865f3"
+          ],
+          "atlasSha256": "a89cc570d1adcab2bbd3ef62442d0893130224b9491826a01354f3ea0c93012f",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "bf7c9227e2d9b4e906cd9043e495c42fb9991cc33219bfd3dac36cc698170364",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "front-right"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/right": {
+          "sourceSha256": "10cbcdb50cb27ff82b3f4c673ae60e93e91fb5e0cd1887b2af6db94d9699c0b4",
+          "settingsSha256": "94a2a0ca513079b75ddb12f9a537281ff08ffd3e3e3900dab22c86f5016122fc",
+          "frameSha256": [
+            "77bda85d16ca19bb67f43389c42d33e8714c5c343da56dd9840434b248aa34b5",
+            "e8a85bf18cfee5227f4bf8a5ea489d6940264750566bd655391658a9a6b57024",
+            "3bcf7bd30bb7514ec891f054e9675f7ece656e6df1a2da4d5c6bb020f8b2a808",
+            "13cd9c2992190b8ddba6cb38eb713d74d2e821de61da2b2c46bef3134e31561f",
+            "077db9673ca86e55088197342629e90777ff5f5200945c1715a5183fe19d99c4",
+            "d788b238299ec2f2f21ac59b9039dc855902e0ccdb8ff2a4c802353d8948a56b",
+            "ea9c05b49797f9084ed917149f0e510f96ef17e3cb7f23e06b8293ed308cbfb9",
+            "54c1b5871822f434889d5bedc1109d658aed21b273ad2392bcdad3dc5986b1b7"
+          ],
+          "atlasSha256": "70d595f9e9641586bdb71bad2b0d0be42c1cab30137aec0504b52651849884f5",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "94a2a0ca513079b75ddb12f9a537281ff08ffd3e3e3900dab22c86f5016122fc",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "right"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/back-right": {
+          "sourceSha256": "80ff58b128d178f97cb8f4ae0b66a9f6c4dc1d2bef89c4a7aebb8c2167327b7e",
+          "settingsSha256": "bdd7da6e30607b309f1a7892f47a0a40be5aed4204ce21115236af182c66b178",
+          "frameSha256": [
+            "2a57046a21a169843a2a147b9a5d43bdc5a49501dbd6f506b5e9f1d176f328c9",
+            "8109251fa08397e4b0cdb3e1a0d87e76aed00484ddb4fe54276f5469736dc7e1",
+            "4a420a8061e07f8e6bbaad63b8b9182ad964cb29a4498ac4895f9fc7f0e8206a",
+            "6b3344ba55c8dd3f8f40145406950ad38c54cebf06a1948a2ab7804ff88dc1ad",
+            "69b44a302a4b5d85c5e6157c5288cccdcada9b47142e7863e16cbad8ec8c19d0",
+            "40a7726111314a3df368bcbe29005120a79b95edd7d21ebf90b895cecaa2e2a9",
+            "a88a02c5b776d7eff209d7229fd19fdbc0a376a246b1efa136c08b6b9e419698",
+            "5d1d1b247a7bda5840826ca03716d37049c9569600b19e72f204b86c4d02bf32"
+          ],
+          "atlasSha256": "667dafe94f86670b796dedfbf3b1c26465828fe6a134f40cf230aaf8b567d801",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "bdd7da6e30607b309f1a7892f47a0a40be5aed4204ce21115236af182c66b178",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "back-right"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/back": {
+          "sourceSha256": "4788b74106448db0e3cae4f0bba86b33e05086453310d50a8cdff2a20289fd6a",
+          "settingsSha256": "d671ab260ec9e01a270bec7ab59c3448f9cfb901f43cc93f3eaf5a08d78a0b6e",
+          "frameSha256": [
+            "09ea995d1598439d42e04ab3fc5e157cbe8c4b0f8d5f5334001bb6fc5495aaac",
+            "2ba30f18f5cb5e45b8c0504e9d0fc83f9aa775b2edbe57de4d0d4ee89385ae10",
+            "5b81d2139fe5b8225249a515d5e974689b3cc473c853cb7262584b2c70db95bf",
+            "76b8e33d0032867cfbcb4218e4567a175459a9096b68672c500aa7f2534b25d6",
+            "2a9844d5e86b47e3adc9c7cde68abee7a2bbe94f5c84a51e2842f0b04f5d84c8",
+            "89559dc7cb6e31ea8192faeae3c21ae1e09cd75e77eb584f1b7a5c41d344f0a3",
+            "b0fe5b63cf63cd8d363d0febfb50e1fac33744ddc1528160f61527f0364c2332",
+            "a8e26dd5c3c4aad35d7c465ce8c217f55d582eb691942fa7913ee71287562b3b"
+          ],
+          "atlasSha256": "17f55459385a93de516999216893eb933678538e09728c5cad028114fadcf5d6",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "d671ab260ec9e01a270bec7ab59c3448f9cfb901f43cc93f3eaf5a08d78a0b6e",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "back"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/back-left": {
+          "sourceSha256": "5d8997687f93908651317875f44013b4f9e56bed336ce21f453c056e9f569997",
+          "settingsSha256": "78bca91029ee84d7a6341f39a30878c7fe4b96b543e933053e7f6b356516650a",
+          "frameSha256": [
+            "cf9a513318766aa15329a7be84e1ec772b23232777399ca2554367529d2a59cc",
+            "5040c4634216fd6b28ebcb09b6dbae269cbe696644848d61e040e112ea2821ee",
+            "5b7d98b306628923f18d2b4428c98890dabaf602ad8d9c4b2ac23faf959e0e98",
+            "264197868ad3da089ed7630da6678b28580db19b1cd354a5233ebd7e5840649a",
+            "b2934abfe07f0c687916c605e6dd20ffe3f4b39fc61e8962750501267c282b4d",
+            "07ab0cfb14c2162eedee4fd26d02436b456a03ad6b61339a97ec8789db6bdb66",
+            "8174d7290a1d0e5c0f01a43665b19cb3c310139c627f585f8552442299a0b4eb",
+            "78eba99f9df9fa1bf21497cb8c711cb98e13d64b42a6a330353d4fb526b2a541"
+          ],
+          "atlasSha256": "d0d3decf026689a382d770eabedb9ce95b6e937a9ec14fd75e651117868b8f75",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "78bca91029ee84d7a6341f39a30878c7fe4b96b543e933053e7f6b356516650a",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "back-left"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/left": {
+          "sourceSha256": "1609e162491f88167cb59eab0026075a3e9c1f47514821e28ebe8fe3ac8c8efd",
+          "settingsSha256": "39b387dd5110928de63290d50238408285bbb0be674b3dcca4ecb279e0bd1394",
+          "frameSha256": [
+            "369961841f4148e695181537034e09b3303ac1aae211a4ba51c9caa300bb86eb",
+            "27d239fe0ea354df43a9347fb6c19b1ab7a1f9ef6ddcd7ab17aba66e52e93d4d",
+            "7f95c53e6f92ead1394293622bccc6b0bbd294a278ef5b60301311f46aa41617",
+            "e654fa9aee093048ab9965f94e095311e0bd116847eee52f9ce6b303d15a3ad1",
+            "b99b9a9c4d24f01bc781b04f2cbc4228092de64deb7303f8eefef20482707049",
+            "5dd49a5afcf3473ee43c57776bec0361d09ce377d92d54f32603372b4481c025",
+            "aa65897a62452b4281eade84950d999657587de532f652e180713b9341924ef3",
+            "54b421ed3fed66eb5530123270665e5d39e039fd02e363c3ca1d2dc8533cf031"
+          ],
+          "atlasSha256": "e8c5fac652182a2b627bf16258bb45bf2fdd8f38e8dc1cafca8a8a9718da03c2",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "39b387dd5110928de63290d50238408285bbb0be674b3dcca4ecb279e0bd1394",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "left"
+        },
+        "public/sprites/Female Miner/motion/shovel-cycle/front-left": {
+          "sourceSha256": "653833f8d6fa04af336756d4aa0e835272f7d2f252235b7d26c2970f15b8a4da",
+          "settingsSha256": "fe1745c6ed0f2327eee08a2041f59dd1264b5be658570931d22c91a42537004b",
+          "frameSha256": [
+            "e29581afbc34290531cfa218a151679f169997eec15a894a80440f99b3ced5a3",
+            "dc6afb65feb1dbd17b2a6151163f94037cd249d904bd08520dbee34b8dc52513",
+            "79fb3a6b01a04a7be466567cfe1be9feaaac02d3f6a1cf85eebfb1a964871c11",
+            "75cbf31d50a6e3efd6dd8fa47b1144d7554b40d83102f4eda212dd9a42211344",
+            "eb6b046b60c87ca71f1d421f15c2d283783fafc9a06b4f74d962c6fa3c4b31b1",
+            "9b31250cb8ff17707b408c25b7d025e9ec151ab7d8ee6d8910d070e179a50445",
+            "5ac4445ae6900d00aa1ea53ee8bb6c76e368c6abbd0f323b16cae2feb27a74f2",
+            "efb5b89bbff980521742d87281ea7c22a2f8185e78b48c73e0bb675e5499c36b"
+          ],
+          "atlasSha256": "48545de1c4664d4c426ae7c218242c8d02cdcf1ed1ace32882f1875f67a814be",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              576
+            ],
+            "targetBodyHeight": 340,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "fe1745c6ed0f2327eee08a2041f59dd1264b5be658570931d22c91a42537004b",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Female Miner",
+          "action": "shovel-cycle",
+          "direction": "front-left"
+        }
+      }
+    },
+    {
+      "id": "Helga/carry-mine-timber",
+      "verdict": "changes-required",
+      "reviewedAt": "2026-10-01",
+      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "checks": {
+        "phase-agreement": "Carry legs inherit unresolved non-front walk contacts. Rear-right0/4 support exchange and2/6 passing feet need anatomical review before directional carrying can pass.",
+        "body-scale": "Nominal body height is shared. Log projection/foreshortening has not been measured as one rigid object.",
+        "direction-transitions": "Right/rear-right/rear switch changes visible cut-end orientation and supporting hand visibility; hidden grip remains unreviewed.",
+        "equipment-geometry": "Log stays broadly on the shoulder, but consistent length, cut-end orientation and anatomical hand/shoulder contact across all eight views are not approved."
+      },
+      "bindings": {
+        "public/sprites/Helga/motion/carry-mine-timber/front": {
+          "sourceSha256": "74f2479d8eb06bb04d2edd60312113cb545e95217cbee0a02acf1c1bbb9d9929",
+          "settingsSha256": "68c4fedfdf214e3b1ab7c94535d555ee3941f2fbc48fc7b4f350d2aa5cac6e42",
+          "frameSha256": [
+            "e41547f0bb93276c2db235a19914514b1b2294fbf01ebde5b9cd8f752de1ff19",
+            "c42b28ccdd33ef6825144415ce0369f7fa4978d52b5f1282269ea4d67b5a4d60",
+            "d348f11ced4211e03251aa2871f592604ec57e082cbc98fed4407d4cfecd80f7",
+            "fd046a4db2ab5223944e087bab26120c1a60d9bc6b071a00d054c81bef90a9ff",
+            "fec7b08006c166f397fef5cbc62086fcc4a7cf2cac83923091c6a8386f01b557",
+            "6ae944a025d593e6ea9bd19be1f7d54f204c0d7db628ecc4dfc8f95002839e81",
+            "98a2007ac0db9616da71f768eb4d1ada4fa4152ee6e7d6502a599f7f4d4e0686",
+            "44fd973fa1ecddd081bac5199e89a1c9dae94cace0be8cdf5ddfd939445ef2e0"
+          ],
+          "atlasSha256": "29a1aa1b00cf1eb541d4dcaacc771a6f25ac25f728e44b1c7aea35cb1808c1fe",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "68c4fedfdf214e3b1ab7c94535d555ee3941f2fbc48fc7b4f350d2aa5cac6e42",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "front"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/front-right": {
+          "sourceSha256": "f86161b643f4b3035ec777eb0a49dd3b44593ce370901e532e757ebe4eb50871",
+          "settingsSha256": "d56da0e4cdfde1213aaa21166666dfb48cea24a4da5855250d633397086f312b",
+          "frameSha256": [
+            "1147d6f16e05edc41ded7ac442d5227759e9bbe98fa31d95c39fcb19c4b6f11a",
+            "57744ab108f5cdef7ec6da80130115981d0a4063c92b93d84b49df75c042fe89",
+            "796d1cadf30e1d9c1c1ff74941f29d3ca5a5d13856b17f669ff39ad1cd0a1cfc",
+            "6a76373bab2ae8fb0ac47adcce23062b38bd865dad2177237df6fce629929deb",
+            "b3b1baffdddfaa1fce68dd32494a525488e0f47f883caec7632487837e872055",
+            "44ba5617aa9cb729d8beeaf8f612243d3f068937aa60ed6d2e4e30128de3adef",
+            "c57bf8579ce56f3261b2f1ecf5842bacf5077e69042f89d3bcea848deae92caa",
+            "d8cd260b26fc99cbc974e0bcde86822d8fd3f0d503115535004b2b01c55e836e"
+          ],
+          "atlasSha256": "3e3182ecfba4774e8579682659f9a6e21f0d2d4936978e14301301dd475b1285",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "d56da0e4cdfde1213aaa21166666dfb48cea24a4da5855250d633397086f312b",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "front-right"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/right": {
+          "sourceSha256": "e6469f704d5a19d8b6805ae3d69113a441d4533402bd57d0633ff9e0f5aa3b4f",
+          "settingsSha256": "fee7507bc115cf568bea74278d2057f2edd01d50a711bad3b9b652376401f273",
+          "frameSha256": [
+            "359ebb84c26d4fd77e2662e859fac5b803518a41def030a654bb60caaa8de90a",
+            "0cf6b3331e7c9822588b63bdfc4c169953863cbf730c22abfe31b8c9599b0209",
+            "dc322d025ab19f509f766cf1512380965f11920951e7d7c3af0989124599ee4d",
+            "fb4d6a156cdfeeebb06676f375ad75e126850d4d0d1f631d2e687a38133ce2e1",
+            "692b68605c06a8a10decce23e0bddd4f32c3652fa80078a8970018facb9008b3",
+            "758df9b6fe4eead565a7b309dac2d38f04bf4338c985f8e8145eb0041a865d68",
+            "c95ef76aff3ae21a1fc1a7aee513f657db25e68e8e1fd68ea876fbdb2e40edbc",
+            "aec4b4c09b62436b571511a1a5094c88af528039d98f0c4d0f1c71f6883e4127"
+          ],
+          "atlasSha256": "3766b613114514ab6321ced08dab6d7bdc711dd5ff83bdedc62ee8edcb43d3ac",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "fee7507bc115cf568bea74278d2057f2edd01d50a711bad3b9b652376401f273",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "right"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/back-right": {
+          "sourceSha256": "004c9090382921fb485b8fe6b3164af174527c7c26f5cd843307d66522e54228",
+          "settingsSha256": "c0becc973bfe97c96a79f19b93d221fd260f2b8b9976f1b31fc567e7cda69d4b",
+          "frameSha256": [
+            "eee72563f29bcf1e3bcb9e2fede709ff77da646187ee0d1c4b3569fd4bb12f63",
+            "ac4cb569bbc1180b74f76479fd4ece221ef71714979d6d2753d8b28736c9bcb9",
+            "19e08dc831a12ba6c13ad5180a34ba81dd4be34ba80fde8b4ebab3c472082542",
+            "00371516848937f7e2b8dff0194d572efff23e1319fe3f9730972e6223bf5f85",
+            "a0aa08b728a70ba06cf870a2dc10c9874420b63dab487d404fa9f35b750d5b36",
+            "9fe15107cbf3f0cde210f8e995af5b3411ca4b22c94baf7af4677bcf84821ca1",
+            "ed900515cb33679f1f9f3efa0ad25ce036edf4263544bd70a8fbc66a055d8790",
+            "b725e45e5fa7727613707742ce20a1564660ab0b622c2bbc44e61c2f093ba3ea"
+          ],
+          "atlasSha256": "c87a33c09afd03fce5ac1661ebec72b2d33a7b3b75e0a1d2075b3364c96e697a",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "c0becc973bfe97c96a79f19b93d221fd260f2b8b9976f1b31fc567e7cda69d4b",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "back-right"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/back": {
+          "sourceSha256": "0858112c6f922eba6925f4263b66775127580d6ca6c914e8b498596382ee4e2d",
+          "settingsSha256": "a37b0604fe09035990b664c71d966af5764189eade91bbe3188ecd645ee2f55c",
+          "frameSha256": [
+            "5ddc2dbc153ef2cd07d1695b7955fc10e40b08ddd104b67934a9a5b863ead7cf",
+            "e083acb6b205ffd0862b7e145b48bfa3e9e6ca2a9d4fbd8561b3f81f8fb37d57",
+            "20b9c4241b777d34ee0598a455da0ce1a7cfe51df199918c087adaa5a5da8de1",
+            "bc41d98ef876e70750ce99da3448c590f49192fbdec66cd544abd6ffeccf75c5",
+            "2b03f9328780948becb3a615c37027fe1ead69c81cce923725be953f8b973d86",
+            "622ac0505e12348ed947e39f5369634c59f67408930b3d841b96f869bc57bbf1",
+            "25f9900571d172b107961cf63867c1300dc7deaded283bb2144e9a5ab868b9c4",
+            "fa14b38e637ddb22b02081dfaceaa9e58d6ada5495e531d853c623eebd86d5f7"
+          ],
+          "atlasSha256": "ebe7e0bc025fbe252e5dce7ff140cfce07eb3b30aefea16494b49dadc2957e34",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "a37b0604fe09035990b664c71d966af5764189eade91bbe3188ecd645ee2f55c",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "back"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/back-left": {
+          "sourceSha256": "5a1ba5da0c0675e7b69975646a544315b2c7357f8f2d1545440d7a03a002d701",
+          "settingsSha256": "cfb9e550e0f4610a93ad6951b3ad0119137fcecc5e2f28f71d3b5f55dd66fbca",
+          "frameSha256": [
+            "6d0859f80c134a202cb43e1a071068af3edb21dacac9ec13a9f2eea6ad0b9eb5",
+            "566e29c7e9bd2104687042e9ab0e0f632e3a1e2dfd322d467802d45c1c7138f2",
+            "502967bfa97422ca333f5894bf4643e04da76ef3b2f158ca9f5e384ae1c9a309",
+            "6841490fc1b3bedcf88256892a5f8bcb98c4ec9ee9c62703146dcb45e0aa6e76",
+            "fe166e4d43541d0f37cec9813ba4d62bb9dce9a324762d92a30ee319fc25f4df",
+            "0d9f78433061a442c42c6f6c5681e70a981115ff5752a0c7b5fbb7da3a3c00c7",
+            "c400c866f93408f32c1d9733f9a4bf296a4932edbd69008fcacaf4986f4a96b4",
+            "20bf79616b87e88d035f804fa7515f2681e5102c3ec27217f8eb0456b42faddc"
+          ],
+          "atlasSha256": "82b7ddca9320c02e9e3b170043d1a5889d49e6419f4de6da455851aca92f0fbd",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "cfb9e550e0f4610a93ad6951b3ad0119137fcecc5e2f28f71d3b5f55dd66fbca",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "back-left"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/left": {
+          "sourceSha256": "5766446cfa29d1d6cb6448e5829e1baac6fb1b75d1c9abf13186a8778c311147",
+          "settingsSha256": "d217836e8fa682ca88189f90a9f50bca378f88b57c0281338916e07b3881b76e",
+          "frameSha256": [
+            "45cdf3d07843fe49aa634644be77db8cef575ebd88f3ce24dcca5408a91dc3b6",
+            "8c9d51a6f2169b23b752c158f49effe40efb5999c529c46bb5ebe942d31f7321",
+            "66241c95c43a2c810c5b7f629d6dc7033b7c1c10aecf5451bd59e84df58d3c18",
+            "1704bfe6d4c97bd609780a067bb56df90368a271e6bc1264a52a767d3e31ef3c",
+            "fdae50da30fa8fb8ddc856266fbe470ffaad24390d5429a1016cf10c8ce6425e",
+            "0fa18847d1a31b398482c3a721a47761d2d15ca5e329f5ef2d011f8a2a0186c9",
+            "27e1000007cfc7189e165e78ac05f409865223d3cfa7bb06c50f76125ad3c63e",
+            "b73cc45ec1b9c8074da28893960f4ea6c0803d076af830bde038b769d821b394"
+          ],
+          "atlasSha256": "d69c0a2137bf3f8c328a8d3cb36a4310dd537454be3c68d209d95947e4104227",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "d217836e8fa682ca88189f90a9f50bca378f88b57c0281338916e07b3881b76e",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "durationsMs": [
+            140,
+            140,
+            105,
+            115,
+            140,
+            140,
+            105,
+            115
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "left"
+        },
+        "public/sprites/Helga/motion/carry-mine-timber/front-left": {
+          "sourceSha256": "77e08cc2c9dcb947c72f67378bfdfaa1a1f34462d72b1f09a6b3e60737fd0d89",
+          "settingsSha256": "5e9042907caaa225020bf2b348d66d71d24d86555084260a261412bcbf6384a8",
+          "frameSha256": [
+            "aaf068382c06fc8e9484836b6fdac468178b6cc83abe25b04430bbef1d470850",
+            "048beea37d4555994adae5435c9fa6f6adcd2c6e76dde3235085920e0fc39efb",
+            "474345f7ac3503469ed1ebd391494778dd4f74fd83c268f4082d99b72c8b9774",
+            "61acf7a03f83403f2645e7d6833bb3b6ac3950de7fb4755cbf21b6f543bb2c20",
+            "4c0f22247afc27bc3fc0c2f6c744421831acf4ce0b1005e2fd26923ac4289093",
+            "c1d61fa28c4e74ee76e5833f52e5494a5f7d35339ccad03e79bf3c7d705f8fc4",
+            "03daf13a0f4425f2321267e3af013effb99728ab57282ef1551ba747ce4f6fc5",
+            "ddc749cdce4dd6138d80f3f9054ae6c44028b82882dcec6daca4af0ad7114f6b"
+          ],
+          "atlasSha256": "fa5f5da2f589259d426fd085b7db79240d9d5dad9feaa7dd9e81a7eb61653249",
+          "registration": {
+            "method": "body-height-and-row-ground-calibration",
+            "targetAnchor": [
+              320,
+              608
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "5e9042907caaa225020bf2b348d66d71d24d86555084260a261412bcbf6384a8",
+            "exportVersion": 2
+          },
+          "durationsMs": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "character": "Helga",
+          "action": "carry-mine-timber",
+          "direction": "front-left"
+        }
+      }
+    }
+  ],
+  "runtimeCoverageDependencies": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "public/sprites/Elder/motion/render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    }
+  ]
 }

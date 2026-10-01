@@ -65,9 +65,10 @@ def family_status(family, cycles, reviews):
     if (any(not r.get('binding') or r['reviewStatus'] in {'stale-export', 'invalid-evidence', 'missing-export'} for r in members)
             or set(record.get('checks', {})) != checks
             or not all(isinstance(n, str) and n.strip() for n in record['checks'].values())
+            or record.get('verdict') not in {'approved', 'changes-required'}
             or record.get('bindings') != {r['destination']: r.get('binding') for r in members}):
         return 'stale-or-incomplete'
-    return 'review-recorded'
+    return 'review-recorded' if record['verdict'] == 'approved' else 'reviewed-changes-required'
 
 
 def inventory(root=Path('.')):
@@ -95,20 +96,34 @@ def inventory(root=Path('.')):
     if not mapped <= available:
         raise ValueError('Mapped reference action outside main library')
     runtime = scope['runtimeCoverageBinding']
-    coverage_current = digest(root / runtime['file']) == runtime['sha256']
+    coverage_current = (digest(root / runtime['file']) == runtime['sha256'] and
+                        all(digest(root / d['file']) == d['sha256'] for d in scope.get('runtimeCoverageDependencies', [])))
     unmapped = [{k: e[k] for k in ['character', 'action', 'destination']} for e in reference
                 if (e['character'], e['action']) not in mapped]
     counts = Counter(e['kind'] for e in main)
     approved_main = sum(r['reviewStatus'] == 'scoped-review-approved' for r in records[:len(main)])
     approved_actor = sum(r['reviewStatus'] == 'scoped-review-approved' for r in records[len(main):])
+    remaining_cycles = len(records) - approved_main - approved_actor
+    remaining_families = sum(f['status'] != 'review-recorded' for f in families)
+    invalid_exports = sum(r['reviewStatus'] in {'stale-export', 'invalid-evidence', 'missing-export'} for r in records)
+    blockers = []
+    for gate, count in [('final-cycle-reviews', remaining_cycles), ('direction-continuity', remaining_families),
+                        ('runtime-action-activation', len(unmapped) if coverage_current else None),
+                        ('current-exports', invalid_exports)]:
+        if count is None or count > 0:
+            blockers.append({'gate': gate, 'remaining': count})
     return {'version': 1, 'scopeDate': scope['frozenAt'],
+            'reviewGatesComplete': not blockers, 'mergeBlockers': blockers,
             'counts': {'mainCycles': len(main), 'mainFrames': sum(r['frameCount'] for r in records[:len(main)]),
                        'walkCycles': counts['walk'], 'nonFrontWalkCycles': sum(e['kind'] == 'walk' and e['direction'] != 'front' for e in main),
                        'directionalToolCarryCycles': counts['directional'], 'fixedWorkCycles': len(reference),
                        'actorCycles': len(actors), 'actorFrames': sum(r['frameCount'] for r in records[len(main):]),
                        'mainScopedReviewsApproved': approved_main, 'actorScopedReviewsApproved': approved_actor,
                        'cycleReviewsRemaining': len(records) - approved_main - approved_actor,
-                       'directionFamilies': len(families), 'directionFamiliesReviewed': sum(f['status'] == 'review-recorded' for f in families),
+                       'directionFamilies': len(families),
+                       'directionFamiliesEvaluated': sum(f['status'] in {'review-recorded', 'reviewed-changes-required'} for f in families),
+                       'directionFamiliesChangesRequired': sum(f['status'] == 'reviewed-changes-required' for f in families),
+                       'directionFamiliesReviewed': sum(f['status'] == 'review-recorded' for f in families),
                        'referenceActionsMapped': len(mapped) if coverage_current else None,
                        'referenceActionsWithoutMapping': len(unmapped) if coverage_current else None},
             'runtimeCoverageBindingCurrent': coverage_current,

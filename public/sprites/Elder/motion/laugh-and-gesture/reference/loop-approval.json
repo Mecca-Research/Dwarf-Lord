@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "61ae68cae34420d13d26f28f1eb1ade78c4715fce4c63e853298fa23b0791d25",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "ec8daeb49730bcf76a939564eb113f6b2b1b4d511167875e4f7fefb444ef9f29",
+      "222c885c89e1806550a83357d37d28dd36a4fd9dba9ddfaa004249d0c7aad17a",
+      "b785733142d5e3c528388c52b97ff93268b9b2d48b703bfc634ea5f6e254af55",
+      "f1077c9c9b26b30622e88e56b4eaa88a5d7b1b1d07d89891aad65d794b020e29",
+      "258118c97cc6968c17e2eeb2daacf96e64cd2aafcd9b30d4811a6fc4a4d6579d",
+      "b23f0e3bf1bc43fd4fe85d97c2190185237e3f552241947097543991502c0fea",
+      "1e63e4cecf915d50382462d53fea24bf50606590e1f72ec59464f4e64110537d",
+      "20a5dbcc99da27627d1c37d3dde024031931b57887eb022bf538b28f3176edb7"
+    ],
+    "atlasSha256": "d660784982d7e892dbe589b5e58b49af1b86f59025aacfcc65fb03d75e81d93a",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "laugh-and-gesture",
+    "direction": "reference"
+  },
+  "scope": "Fixed-view seated Elder laugh-and-gesture cycle and once-hold playback at the home camp only. No moving foot/cane, 360-degree pose transition, pickaxe work, or seamless change between different camp activities is approved.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and the live camp render inspected. Same bald Elder, broad white beard, embroidered olive-brown coat, belt and brown boots. Runtime uses the same740px standing-equivalent seated-body height across the camp activities; laughing head tilt is intentional, not a change in character scale.",
+    "station-and-foot-contact": "Both visible boots and the stool retain their seated ground baseline through eight frames and7-to0. No translating root or walking stance. Small outline differences remain within the appearance of seated motion. This approval does not certify a moving anatomical sole.",
+    "hand-and-tool-contact": "Left hand lifts, opens, extends and lowers while the other rests on the knee. No tool is carried; the cane remains resting against the stool and is not a supporting contact during movement.",
+    "prop-continuity": "Same stool, boots, clothing and pouches through every frame. No independently rendered station is superimposed at this camp activity. Resting cane stays beside the stool with the same visible grip/end material; it is not animated as a planted walking cane.",
+    "last-to-first-transition": "Eight poses inspected in order, including0/7 comparison. Frame7 lowers the gesturing hand to its knee-rest position near0. The lifted/open-hand sequence contains a purposefully larger initial movement, with no object handoff. Live task stops on7 with one completion; the finite camp sequence holds that pose for two seconds before a distinct activity. Rechecked in the final live build with all eight frames observed; each preloaded activity handoff retains a displayed work pose, including while waiting for the next texture."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    }
+  ]
+}

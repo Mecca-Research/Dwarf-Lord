@@ -90,8 +90,8 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Cook | serve-stew | reference | not-reviewed |
 | Elder | eat-stew | reference | not-reviewed |
 | Elder | eat-bread | reference | not-reviewed |
-| Elder | laugh-seated | reference | not-reviewed |
-| Elder | laugh-and-gesture | reference | not-reviewed |
+| Elder | laugh-seated | reference | scoped-review-approved |
+| Elder | laugh-and-gesture | reference | scoped-review-approved |
 | Elder | inspect-pickaxe-in-lap | reference | not-reviewed |
 | Elder | examine-pickaxe-crack | reference | not-reviewed |
 | Female Miner | pickaxe-ready | reference | not-reviewed |
@@ -171,17 +171,17 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 
 | Family | Current review |
 | --- | --- |
-| Blacksmith/walk | not-reviewed |
-| Borrin/walk | not-reviewed |
-| Cook/walk | not-reviewed |
-| Elder/walk | not-reviewed |
-| Female Miner/walk | not-reviewed |
-| Ginger/walk | not-reviewed |
-| Helga/walk | not-reviewed |
-| Laborer/walk | not-reviewed |
-| Female Miner/pickaxe-swing | not-reviewed |
-| Female Miner/shovel-cycle | not-reviewed |
-| Helga/carry-mine-timber | not-reviewed |
+| Blacksmith/walk | reviewed-changes-required |
+| Borrin/walk | reviewed-changes-required |
+| Cook/walk | reviewed-changes-required |
+| Elder/walk | reviewed-changes-required |
+| Female Miner/walk | reviewed-changes-required |
+| Ginger/walk | reviewed-changes-required |
+| Helga/walk | reviewed-changes-required |
+| Laborer/walk | reviewed-changes-required |
+| Female Miner/pickaxe-swing | reviewed-changes-required |
+| Female Miner/shovel-cycle | reviewed-changes-required |
+| Helga/carry-mine-timber | reviewed-changes-required |
 
 ## Reference work actions without a live mapping
 
@@ -204,12 +204,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Cook | stir-cauldron |
 | Cook | mix-ingredients |
 | Cook | serve-stew |
-| Elder | eat-stew |
-| Elder | eat-bread |
-| Elder | laugh-seated |
-| Elder | laugh-and-gesture |
-| Elder | inspect-pickaxe-in-lap |
-| Elder | examine-pickaxe-crack |
 | Female Miner | pickaxe-ready |
 | Female Miner | pickaxe-contact |
 | Female Miner | shovel-ore |

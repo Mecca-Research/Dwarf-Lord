@@ -4,6 +4,7 @@ import { MotionPlayback, motionPlacement } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
 import { passiveWorkstation } from "./workstation-sites";
+import { elderCampActions, elderCampActivity, WorkActivitySequence } from "./work-activities";
 
 const folders: Partial<Record<DwarfAppearance, string>> = {
   blacksmith: "Blacksmith", borrin: "Borrin", cook: "Cook", elder: "Elder",
@@ -89,7 +90,7 @@ function acquire(folder: string, direction: string, action = "walk") {
   entry.users++; entry.touched = ++clock;
   const held = entry;
   let released = false;
-  return { promise: entry.promise, release() { if (!released) { released = true; held.users--; held.touched = ++clock; trim(); } } };
+  return { promise: entry.promise, get value() { return held.value; }, release() { if (!released) { released = true; held.users--; held.touched = ++clock; trim(); } } };
 }
 
 export const npcMotionDiagnostics = new Map<string, { loaded: boolean; direction: string; frame: number; phase: number; distance: number; visualRoot?: [number, number] }>();
@@ -210,22 +211,35 @@ export class NpcWorkMotion {
   private token = 0;
   private retryAt = 0;
   private view = "";
+  private activity?: WorkActivitySequence;
+  private activityDay = -1;
+  private preload?: { action: string; lease: ReturnType<typeof acquire> };
+  private preloadRetryAt = 0;
   constructor(private id: string, private appearance: DwarfAppearance) {}
 
   update(body: Body, job: string | null, day: number, resolved: boolean, dt: number, bodyHeight: number) {
     // Consultant desk work is cosmetic; Borrin remains excluded from production jobs.
     const passive = passiveWorkstation(this.appearance, job, body);
-    const action = passive ? passive.action! : this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
+    const elder = elderCampActivity(this.appearance, job, body);
+    if (elder && (!this.activity || this.activityDay !== day)) {
+      this.reset(); this.activity = new WorkActivitySequence(elderCampActions); this.activityDay = day;
+    }
+    const elapsedMs = (Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000;
+    const action = elder ? this.activity!.action : passive ? passive.action! : this.appearance === "cook" && job === "meals" ? "chop-vegetables" :
       this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? "hammer-contact" :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
       this.appearance === "ginger" && job === "timber" ? "fell-tree" :
       this.appearance === "stoneworker" && job === "limestone" ? "chisel-contact" : null;
-    if (!action || (!passive && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
+    if (!action || (!passive && !elder && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;
-    if (key !== this.key) { this.reset(); this.key = key; this.retryAt = 0; }
-    const direction = this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "actor";
+    if (key !== this.key) {
+      const activity = elder ? this.activity : undefined, activityDay = this.activityDay;
+      this.reset(); this.activity = activity; this.activityDay = activityDay;
+      this.key = key; this.retryAt = 0;
+    }
+    const direction = elder ? "reference" : this.appearance === "femaleMiner" ? directions[((body.facing % 8) + 8) % 8] : "actor";
     if (direction !== this.view) {
       ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
       this.view = direction; this.retryAt = 0;
@@ -233,31 +247,50 @@ export class NpcWorkMotion {
     if (!this.lease && performance.now() >= this.retryAt) {
       const token = ++this.token;
       this.lease = acquire(workFolders[this.appearance]!, direction, action);
-      this.lease.promise.then(value => {
-        if (token !== this.token) return;
+      const install = (value: Loaded) => {
+        if (token !== this.token || this.loaded === value) return;
         this.loaded = value;
         if (this.player) this.player.setMotion(value.manifest, { preservePhase: true });
         else this.player = new value.module.MotionPlayback(value.manifest);
-      }).catch(error => {
+      };
+      // A ready preloaded activity installs in this frame, without an idle flash.
+      if (this.lease.value) install(this.lease.value);
+      this.lease.promise.then(install).catch(error => {
         if (token !== this.token) return;
         this.lease?.release(); this.lease = undefined; this.retryAt = performance.now() + 5000;
         console.warn("NPC work motion unavailable", action, error);
       });
     }
-    this.player?.advance((Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000);
+    // A texture's network/decode time is not part of its authored animation.
+    const endedBeforeUpdate = Boolean(this.player?.ended);
+    if (this.loaded) this.player?.advance(elapsedMs);
     if (!this.loaded || !this.player) return null;
     if (this.appearance === "laborer" && job === "storage") {
       workstationTaskStates.set("storage-pallet", { owner: this.id, task: key, active: true, completed: this.player.ended });
     }
     npcWorkDiagnostics.set(this.id, { action, direction, frame: this.player.index, completed: this.player.ended, completions: this.player.completions });
-    return { texture: this.loaded.texture, frame: this.player.index, foregroundPolygons: this.loaded.foregroundPolygons?.[this.player.index], placement: motionPlacement(this.loaded.manifest, bodyHeight) };
+    const result = { texture: this.loaded.texture, frame: this.player.index, foregroundPolygons: this.loaded.foregroundPolygons?.[this.player.index], placement: motionPlacement(this.loaded.manifest, bodyHeight) };
+    if (elder) {
+      const next = this.activity!.actions[this.activity!.index + 1];
+      if (next && !this.preload && performance.now() >= this.preloadRetryAt) {
+        const lease = acquire(workFolders[this.appearance]!, "reference", next);
+        this.preload = { action: next, lease };
+        lease.promise.catch(() => {
+          if (this.preload?.lease === lease) { lease.release(); this.preload = undefined; this.preloadRetryAt = performance.now() + 5000; }
+        });
+      }
+      // Hold the completed pose until the next action is actually ready.
+      this.activity!.update(elapsedMs, endedBeforeUpdate && Boolean(this.preload?.lease.value));
+    }
+    return result;
   }
 
   private reset() {
     const station = workstationTaskStates.get("storage-pallet");
     if (station?.owner === this.id) station.active = false;
     ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
-    this.player = undefined; this.key = ""; this.view = ""; npcWorkDiagnostics.delete(this.id);
+    this.preload?.lease.release(); this.preload = undefined; this.preloadRetryAt = 0;
+    this.player = undefined; this.key = ""; this.view = ""; this.activity = undefined; this.activityDay = -1; npcWorkDiagnostics.delete(this.id);
   }
   dispose() { this.reset(); }
 }

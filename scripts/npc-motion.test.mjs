@@ -14,8 +14,11 @@ const catalog=loadCommonJs('src/game/data/catalog.ts', {'../world/dwarf-appearan
 let stationSource=ts.transpileModule(readFileSync('src/game/world/workstation-sites.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
 stationSource=stationSource.replace('import { JOBS, STARTING_DWARVES } from "../data/catalog";',`const JOBS=${JSON.stringify(catalog.JOBS)},STARTING_DWARVES=${JSON.stringify(catalog.STARTING_DWARVES)};`);
 const stationUrl=`data:text/javascript;base64,${Buffer.from(stationSource).toString('base64')}`;
+let activitySource=ts.transpileModule(readFileSync('src/game/world/work-activities.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
+activitySource=activitySource.replace('import { STARTING_DWARVES } from "../data/catalog";', `const STARTING_DWARVES=${JSON.stringify(catalog.STARTING_DWARVES)};`);
+const activityUrl=`data:text/javascript;base64,${Buffer.from(activitySource).toString('base64')}`;
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
-outputText = outputText.replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
+outputText = outputText.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`).replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
 const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
@@ -254,4 +257,30 @@ test('work-only specialists keep static walking fallback without requesting abse
   assert.equal(npcMotionDiagnostics.has(id),false);
  } finally {driver.dispose();}
  }
+});
+
+test('Elder activity preloading holds the completed pose until the next action is ready and installs without an idle flash', async()=>{
+ const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
+ const calibration=JSON.parse(readFileSync('public/sprites/Elder/motion/render-calibration.json'));
+ const home=catalog.STARTING_DWARVES.find(d=>d.id==='elder'),body={x:home.x,z:home.z,anim:'sit',facing:0,speed:0};
+ let releaseNext;const nextGate=new Promise(resolve=>{releaseNext=resolve});
+ globalThis.location={href:'https://motion.test/'};globalThis.document={createElement:()=>({getContext:()=>({drawImage(){}})})};
+ globalThis.createImageBitmap=async()=>({width:5120,height:640,close(){}});
+ globalThis.fetch=async url=>{
+  const path=decodeURIComponent(new URL(url).pathname);
+  if(path.endsWith('/eat-bread/reference/manifest.json'))await nextGate;
+  return {ok:true,json:async()=>path.endsWith('/render-calibration.json')?calibration:JSON.parse(readFileSync('public'+path)),blob:async()=>new Blob()};
+ };
+ const worker=new NpcWorkMotion('elder-activity-test','elder');
+ const update=(dt=0,day=1)=>worker.update(body,null,day,true,dt,1.95);
+ try {
+  let first;for(let i=0;i<50;i++){first=update();if(first)break;await new Promise(r=>setTimeout(r,1));}assert.ok(first);
+  update(2);const last=update(10);assert.equal(last.frame,7);assert.equal(npcWorkDiagnostics.get('elder-activity-test').action,'eat-stew','a delayed next atlas cannot advance activity');
+  assert.equal(update(0).texture,last.texture,'pause keeps displayed pose');
+  releaseNext();await new Promise(r=>setTimeout(r,10));
+  update(2);const next=update(0);assert.ok(next,'preloaded handoff cannot return an idle fallback');assert.equal(next.frame,0);
+  assert.equal(npcWorkDiagnostics.get('elder-activity-test').action,'eat-bread');
+  assert.equal(update(0,2).frame,0);assert.equal(npcWorkDiagnostics.get('elder-activity-test').action,'eat-stew','new day resets finite sequence');
+  body.anim='walk';assert.equal(update(),null);assert.equal(npcWorkDiagnostics.has('elder-activity-test'),false);
+ }finally{releaseNext();worker.dispose();await new Promise(r=>setTimeout(r,1));for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v}}
 });

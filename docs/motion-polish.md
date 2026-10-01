@@ -267,3 +267,13 @@ Blacksmith's current eight-boundary model has 60.128 px maximum candidate residu
 The ground-review renderer now holds each pose's projected root while the floor moves, using elevation 0.6 rather than the former arbitrary 0.45 projection factor. Both exact live atlases cover all eight poses and logical cycle returns.64 samples per pilot include 52 Laborer/51 Blacksmith moving holds with zero visible x/z root movement. This is delivery and within-hold root proof, not anatomical sole tracking.
 
 192 Node tests,56 Python tests, type checking, Pages build,153-cycle browser review, pilot review/runtime checks and inspected gameplay screenshots pass. PR 9 remains Draft. Zero final cycle or stride approvals close;156 cycle reviews,11 family reviews and 60 work activation rows remain. See the root motion completion report and source-bound diagnostics for the next named corrections.
+
+### Motion35: live Elder activities and explicit failed continuity reviews (1 October 2026)
+
+Six seated Elder references now play in the camp with calibrated body placement, finite once-hold sequencing, preload, day reset and departure cancellation. Activity completion is cosmetic, independent of production output. Two fixed-view laughter cycles have exact-artifact scoped approval after all eight exported/live poses and seated contacts were inspected. Other activities, translating contacts, direction switches and cross-action seams are excluded.
+
+All eleven eight-view families have current bound findings and explicit changes-required verdicts. None passes. The rear Elder guided redraw was rejected wholesale; no selected poses or walking approvals. Joint cane/foot travel still conflicts by95.579px in the proxy diagnostic. Laborer rear-left and Blacksmith right remain failed/unadopted pilots. See docs/motion35-rejected-attempts.json and the archived direction sheets before attempting further authoring.
+
+The static Pages shell now mounts rather than hydrating an empty app. Final live captures show no console errors.198 Node/57 Python tests, type checking, Pages build, main review-browser controls, workstation lifecycle, NPC movement and bundled gameplay captures pass. These prove software behavior, not anatomical motion acceptance.
+
+Frozen scope remains160 cycles.154 final cycle approvals,54 named reference-action activations and11 passing family reviews remain. Eight Elder coordinated moving foot/cane views are included in the walk obligations. The root report gives a finite completion order; the generated inventory identifies each remaining cycle/action. PR9 remains draft and is not green to merge.

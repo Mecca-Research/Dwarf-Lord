@@ -15,11 +15,13 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 0)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 2)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 4)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 156)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 154)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
+        self.assertFalse(report['reviewGatesComplete'])
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':154,'direction-continuity':11,'runtime-action-activation':54})
 
     def test_add_remove_and_duplicate_cannot_silently_change_scope(self):
         for entries in [[{'destination': 'a'}, {'destination': 'b'}], [],
@@ -62,13 +64,22 @@ class CompletionTests(unittest.TestCase):
         self.assertIsNone(report['counts']['referenceActionsWithoutMapping'])
         self.assertEqual(report['referenceActionsWithoutMapping'], [])
 
+    def test_activity_dispatch_or_calibration_edit_invalidates_mapping_audit(self):
+        original = motion_completion.digest
+        for changed in ['work-activities.ts', 'render-calibration.json']:
+            with patch('motion_completion.digest', side_effect=lambda p: 'changed' if str(p).endswith(changed) else original(p)):
+                self.assertIsNone(motion_completion.inventory()['counts']['referenceActionsMapped'])
+
     def test_direction_review_cannot_survive_changed_family_binding(self):
         family = {'id': 'test/walk', 'destinations': [str(i) for i in range(8)]}
         cycles = {str(i): {'destination': str(i), 'binding': {'sourceSha256': str(i)}, 'reviewStatus': 'not-reviewed'} for i in range(8)}
-        record = {'id': family['id'], 'checks': {k: 'Reviewed' for k in
+        record = {'id': family['id'], 'verdict': 'approved', 'checks': {k: 'Reviewed' for k in
                   ['phase-agreement', 'body-scale', 'direction-transitions', 'equipment-geometry']},
                   'bindings': {d: r['binding'] for d, r in cycles.items()}}
         self.assertEqual(motion_completion.family_status(family, cycles, [record]), 'review-recorded')
+        record['verdict'] = 'changes-required'
+        self.assertEqual(motion_completion.family_status(family, cycles, [record]), 'reviewed-changes-required')
+        record['verdict'] = 'approved'
         changed = copy.deepcopy(cycles)
         changed['0']['binding']['sourceSha256'] = 'changed'
         self.assertEqual(motion_completion.family_status(family, changed, [record]), 'stale-or-incomplete')

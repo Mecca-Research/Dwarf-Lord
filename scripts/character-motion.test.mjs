@@ -81,7 +81,10 @@ test('registered motion stays inside its canvas and preserves authored timing in
  for(const entry of plan.entries){
   const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
   assert.equal(m.registration.exportVersion,2,entry.destination);
-  assert.equal(m.playback.loopApproved,false);
+  const reviewed = entry.character==='Elder' && ['laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference';
+  assert.equal(m.playback.loopApproved,reviewed,entry.destination);
+  if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
+  assert.equal(m.productionReady,false,'a scoped seated review cannot approve all production motion');
   assert.equal(m.playback.durationMs,m.frames.reduce((n,f)=>n+f.durationMs,0));
   const configPath=resolve(folder,'motion-polish.json');
   if(existsSync(configPath)){
