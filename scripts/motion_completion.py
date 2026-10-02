@@ -46,8 +46,11 @@ def cycle(entry, root):
         # Recompute instead of trusting playback.loopApproved, including every
         # frame, timing, registration, atlas and workstation dependency hash.
         apply(folder, manifest)
-        review = manifest.get('loopReview', {})
-        record['reviewStatus'] = ('scoped-review-approved' if manifest['playback']['loopApproved']
+        loop = manifest['playback']['loopApproved']
+        task = manifest['playback'].get('taskApproved', False)
+        review = manifest.get('loopReview', {}) if loop else manifest.get('taskReview', manifest.get('loopReview', {}))
+        record['approvalType'] = 'loop' if loop else 'once-hold-task' if task else None
+        record['reviewStatus'] = ('scoped-review-approved' if loop or task
                                   else review.get('status', 'not-reviewed'))
         record['scope'] = review.get('scope')
     except (OSError, KeyError, ValueError) as error:

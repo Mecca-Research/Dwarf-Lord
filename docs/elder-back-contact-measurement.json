@@ -2,12 +2,12 @@
   "version": 2,
   "config": {
     "folder": "public/sprites/Elder/motion/walk/back",
-    "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
+    "sourceSha256": "322057bbd54a03c0d99b5a15a3b1cd7f2f0b83eba2d937ce70fd10458467ffae",
     "regions": {
       "cane": [
         450,
         450,
-        560,
+        610,
         640
       ],
       "leftBoot": [
@@ -25,24 +25,24 @@
     },
     "cameraElevationRadians": 0.6,
     "strideBodyRatio": 1.2,
-    "assumptions": "Back-facing straight travel at runtime ratio1.2. Cane plant hypothesized in frames0-2; frames3-5 release/trailing,6-7 forward airborne recovery. Exact rigid-length and ground-height correspondence remain unreviewed. Boot silhouette proxies are diagnostic only; changing heel/toe roll cannot establish material correspondence. No stride/loop approval.",
+    "assumptions": "Motion36 local contacts/passing0,1,4,5 adopted with constant physical body scale/root. Rear straight travel still uses estimated runtime ratio1.2. Cane support0-2; recovery4-7 is airborne. Silhouette proxies diagnose conflicts; material sole/tip correspondence, full stride and terrain contact remain unapproved.",
     "caneSupportFrames": [
       0,
       1,
       2
     ]
   },
-  "manifestSha256": "29151cef6318a4975fe98039252330ff1a89d2f7e822f1287243daa79177a86e",
+  "manifestSha256": "ce7bf3be0817ce8f18bfab8cc0bb5dff12b3b0b45824b7a529bb57f743fd8bda",
   "binding": {
-    "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
-    "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+    "sourceSha256": "322057bbd54a03c0d99b5a15a3b1cd7f2f0b83eba2d937ce70fd10458467ffae",
+    "settingsSha256": "254282646eca653538f931920eb2d83c72a2e217a0f157da5f6c25ac5951525f",
     "frameSha256": [
-      "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
-      "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+      "983810113432fd2f418f1aadf8cad85578d7e3ec8b51fa3dca08006cf3e560ff",
+      "8969ab8488804edbc98222ce2f8222c050ec2e3cd465a56da3cb422671e34bd8",
       "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
       "6c1acf566d33754ec554ecee65c216ee08cd7fc97a477d93c2516daa1b589053",
-      "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
-      "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+      "44074d4e55da040be453d435467cc487772c5fd3561b3b30023b67ed4cda5c2f",
+      "c952a4ca914b2db5cd41ca616de533b3ac334f26bd7adb1c5fb858d83bf32b0d",
       "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
       "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46"
     ],
@@ -60,40 +60,40 @@
   "samples": [
     {
       "frame": 0,
-      "frameSha256": "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
+      "frameSha256": "983810113432fd2f418f1aadf8cad85578d7e3ec8b51fa3dca08006cf3e560ff",
       "timeMs": 0,
       "contacts": {
         "cane": [
-          501.0,
-          496
+          502.0,
+          499
         ],
         "leftBoot": [
-          282.0,
-          614
+          278.0,
+          536
         ],
         "rightBoot": [
-          382.0,
-          615
+          383.5,
+          616
         ]
       },
       "projectedRootY": 0.0
     },
     {
       "frame": 1,
-      "frameSha256": "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+      "frameSha256": "8969ab8488804edbc98222ce2f8222c050ec2e3cd465a56da3cb422671e34bd8",
       "timeMs": 140,
       "contacts": {
         "cane": [
-          492.0,
-          564
+          496.5,
+          559
         ],
         "leftBoot": [
-          283.5,
-          587
+          284.0,
+          588
         ],
         "rightBoot": [
-          373.0,
-          615
+          354.0,
+          541
         ]
       },
       "projectedRootY": -49.327
@@ -140,40 +140,40 @@
     },
     {
       "frame": 4,
-      "frameSha256": "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
+      "frameSha256": "44074d4e55da040be453d435467cc487772c5fd3561b3b30023b67ed4cda5c2f",
       "timeMs": 500,
       "contacts": {
         "cane": [
-          496.5,
-          587
+          509.0,
+          511
         ],
         "leftBoot": [
-          261.5,
-          617
+          261.0,
+          618
         ],
         "rightBoot": [
-          356.0,
-          603
+          361.0,
+          561
         ]
       },
       "projectedRootY": -176.168
     },
     {
       "frame": 5,
-      "frameSha256": "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+      "frameSha256": "c952a4ca914b2db5cd41ca616de533b3ac334f26bd7adb1c5fb858d83bf32b0d",
       "timeMs": 640,
       "contacts": {
         "cane": [
-          503.0,
-          589
+          554.0,
+          517
         ],
         "leftBoot": [
-          261.5,
-          615
+          280.0,
+          549
         ],
         "rightBoot": [
-          359.0,
-          594
+          357.0,
+          602
         ]
       },
       "projectedRootY": -225.496
@@ -221,10 +221,10 @@
   ],
   "canePlantDriftPx": [
     0.0,
-    20.729,
-    16.128
+    12.007,
+    18.057
   ],
-  "maxCanePlantDriftPx": 20.729,
+  "maxCanePlantDriftPx": 18.057,
   "contactWindows": {
     "cane": {
       "supportFrames": [
@@ -234,12 +234,12 @@
       ],
       "projectedContacts": [
         [
-          501.0,
-          496.0
+          502.0,
+          499.0
         ],
         [
-          492.0,
-          514.673
+          496.5,
+          509.673
         ],
         [
           511.0,
@@ -256,15 +256,15 @@
         {
           "from": 0,
           "to": 1,
-          "contactJumpPx": 20.729
+          "contactJumpPx": 12.007
         },
         {
           "from": 1,
           "to": 2,
-          "contactJumpPx": 36.639
+          "contactJumpPx": 30.056
         }
       ],
-      "maxBoundaryContactDriftPx": 20.729,
+      "maxBoundaryContactDriftPx": 18.057,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     },
@@ -277,12 +277,12 @@
       ],
       "projectedContacts": [
         [
-          282.0,
-          614.0
+          278.0,
+          536.0
         ],
         [
-          283.5,
-          537.673
+          284.0,
+          538.673
         ],
         [
           292.0,
@@ -304,12 +304,12 @@
         {
           "from": 0,
           "to": 1,
-          "contactJumpPx": 76.342
+          "contactJumpPx": 6.568
         },
         {
           "from": 1,
           "to": 2,
-          "contactJumpPx": 22.959
+          "contactJumpPx": 23.717
         },
         {
           "from": 2,
@@ -317,7 +317,7 @@
           "contactJumpPx": 37.211
         }
       ],
-      "maxBoundaryContactDriftPx": 134.783,
+      "maxBoundaryContactDriftPx": 57.526,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     },
@@ -330,12 +330,12 @@
       ],
       "projectedContacts": [
         [
-          356.0,
-          426.832
+          361.0,
+          384.832
         ],
         [
-          359.0,
-          368.504
+          357.0,
+          376.504
         ],
         [
           352.0,
@@ -357,12 +357,12 @@
         {
           "from": 4,
           "to": 5,
-          "contactJumpPx": 58.404
+          "contactJumpPx": 9.238
         },
         {
           "from": 5,
           "to": 6,
-          "contactJumpPx": 29.179
+          "contactJumpPx": 36.67
         },
         {
           "from": 6,
@@ -370,7 +370,7 @@
           "contactJumpPx": 40.307
         }
       ],
-      "maxBoundaryContactDriftPx": 124.231,
+      "maxBoundaryContactDriftPx": 81.949,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     }
@@ -394,12 +394,12 @@
       ],
       "projectedContacts": [
         [
-          501.0,
-          496.0
+          502.0,
+          499.0
         ],
         [
-          492.0,
-          495.999
+          496.5,
+          490.999
         ],
         [
           511.0,
@@ -416,15 +416,15 @@
         {
           "from": 0,
           "to": 1,
-          "contactJumpPx": 9.0
+          "contactJumpPx": 9.709
         },
         {
           "from": 1,
           "to": 2,
-          "contactJumpPx": 19.0
+          "contactJumpPx": 15.348
         }
       ],
-      "maxBoundaryContactDriftPx": 10.0,
+      "maxBoundaryContactDriftPx": 9.709,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     },
@@ -435,15 +435,15 @@
   "hypotheticalSupportFootDriftPx": {
     "leftBoot": [
       0.0,
-      76.342,
-      98.165,
-      134.784
+      6.568,
+      24.13,
+      57.526
     ],
     "rightBoot": [
       0.0,
-      58.405,
-      86.747,
-      124.231
+      9.239,
+      45.553,
+      81.95
     ]
   },
   "units": "640-pixel atlas projection; boot silhouette proxies, not tracked material points",

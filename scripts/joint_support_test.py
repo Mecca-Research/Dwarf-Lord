@@ -12,7 +12,9 @@ class JointSupportTest(unittest.TestCase):
     def test_bound_joint_evidence_reproduces_without_approval(self):
         result = measure(self.input)
         self.assertEqual(result, json.loads(Path('docs/elder-back-joint-contact-measurement.json').read_text()))
-        self.assertGreater(result['maxRequiredRootDisagreementPx'], 90)
+        # Local pose corrections may improve the diagnostic without satisfying
+        # the six-pixel contact tolerance or proving material correspondence.
+        self.assertGreater(result['maxRequiredRootDisagreementPx'], 6)
         self.assertFalse(result['jointContactApproved'])
 
     def test_changed_source_timing_or_runtime_invalidates_support_claim(self):

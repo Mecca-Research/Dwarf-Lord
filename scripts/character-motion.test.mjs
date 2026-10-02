@@ -81,7 +81,7 @@ test('registered motion stays inside its canvas and preserves authored timing in
  for(const entry of plan.entries){
   const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
   assert.equal(m.registration.exportVersion,2,entry.destination);
-  const reviewed = entry.character==='Elder' && ['laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference';
+  const reviewed = entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference';
   assert.equal(m.playback.loopApproved,reviewed,entry.destination);
   if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
   assert.equal(m.productionReady,false,'a scoped seated review cannot approve all production motion');
@@ -133,6 +133,7 @@ test('reviewed gait assemblies preserve traceable, distinct authored source pose
   for(const source of assembly.inputs){
    assert.equal(source.sha256,hash(resolve(folder,source.file)));
    if(source.reference)assert.equal(source.referenceSha256,hash(resolve(folder,source.reference)));
+   for(const field of ['originalPoseReference','secondaryReference'])if(source[field])assert.equal(source[`${field}Sha256`],hash(resolve(folder,source[field])));
   }
   for(const pose of assembly.poses){
    const source=assembly.inputs.find(s=>s.id===pose.input);assert.ok(source);
@@ -149,8 +150,10 @@ test('runtime actor layers and persistent stations retain source provenance and 
   for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
   const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
   assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
-  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,['Blacksmith','Ginger','Stoneworker','Quartermaster'].includes(entry.character));
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,entry.character!=='Laborer');
+  assert.equal(Boolean(m.playback.taskApproved),entry.character==='Laborer');
   if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
+  if(m.playback.taskApproved){const approval=json(resolve(root,'task-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);assert.equal(m.playback.mode,'once-hold');for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
   for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
  }
  for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet','ledger-desk','masonry-bench','weighing-table']) {

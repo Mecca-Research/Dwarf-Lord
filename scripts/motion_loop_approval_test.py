@@ -48,7 +48,7 @@ class LoopApprovalTests(unittest.TestCase):
             self.assertEqual(stale['loopReview']['status'], 'stale-or-incomplete')
 
     def test_absent_review_cannot_inherit_an_approval(self):
-        other = Path('public/sprites/Cook/motion/chop-vegetables/actor')
+        other = Path('public/sprites/Elder/motion/walk/front')
         manifest = json.loads((other / 'manifest.json').read_text())
         manifest['playback']['loopApproved'] = True
         manifest['loopReview'] = {'status': 'approved'}
@@ -73,3 +73,24 @@ class LoopApprovalTests(unittest.TestCase):
                 manifest = copy.deepcopy(self.manifest)
                 apply(self.folder, manifest)
                 self.assertFalse(manifest['playback']['loopApproved'])
+
+    def test_finite_placement_is_approved_without_a_continuous_loop(self):
+        folder=Path('public/sprites/Laborer/motion/stack-crates/actor')
+        manifest=json.loads((folder/'manifest.json').read_text())
+        apply(folder,manifest)
+        self.assertTrue(manifest['playback']['taskApproved'])
+        self.assertFalse(manifest['playback']['loopApproved'])
+        self.assertEqual(manifest['playback']['mode'],'once-hold')
+        self.assertFalse(manifest['productionReady'])
+
+    def test_task_review_rejects_repeat_mode_changed_contacts_or_release_layer(self):
+        folder=Path('public/sprites/Laborer/motion/stack-crates/actor')
+        original=json.loads((folder/'manifest.json').read_text())
+        for mutate in [lambda m:m['playback'].update(mode='loop'),lambda m:m['playback'].update(endBehavior='restart'),lambda m:m['frames'][0].update(durationMs=999),lambda m:m['registration'].update(targetAnchor=[0,0])]:
+            manifest=copy.deepcopy(original);mutate(manifest);apply(folder,manifest)
+            self.assertFalse(manifest['playback']['taskApproved'])
+        old_digest=motion_loop_approval.digest
+        changed=Path('public/sprites/workstations/storage-pallet/completed-crate.png').resolve()
+        with patch('motion_loop_approval.digest',side_effect=lambda p:'changed' if p.resolve()==changed else old_digest(p)):
+            manifest=copy.deepcopy(original);apply(folder,manifest)
+            self.assertFalse(manifest['playback']['taskApproved'])

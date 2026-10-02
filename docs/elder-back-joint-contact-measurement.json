@@ -9,12 +9,12 @@
       ],
       "projectedContacts": [
         [
-          501.0,
-          496.0
+          502.0,
+          499.0
         ],
         [
-          492.0,
-          514.673
+          496.5,
+          509.673
         ],
         [
           511.0,
@@ -31,15 +31,15 @@
         {
           "from": 0,
           "to": 1,
-          "contactJumpPx": 20.729
+          "contactJumpPx": 12.007
         },
         {
           "from": 1,
           "to": 2,
-          "contactJumpPx": 36.639
+          "contactJumpPx": 30.056
         }
       ],
-      "maxBoundaryContactDriftPx": 20.729,
+      "maxBoundaryContactDriftPx": 18.057,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     },
@@ -53,12 +53,12 @@
       ],
       "projectedContacts": [
         [
-          282.0,
-          614.0
+          278.0,
+          536.0
         ],
         [
-          283.5,
-          537.673
+          284.0,
+          538.673
         ],
         [
           292.0,
@@ -80,12 +80,12 @@
         {
           "from": 0,
           "to": 1,
-          "contactJumpPx": 76.342
+          "contactJumpPx": 6.568
         },
         {
           "from": 1,
           "to": 2,
-          "contactJumpPx": 22.959
+          "contactJumpPx": 23.717
         },
         {
           "from": 2,
@@ -93,7 +93,7 @@
           "contactJumpPx": 37.211
         }
       ],
-      "maxBoundaryContactDriftPx": 134.783,
+      "maxBoundaryContactDriftPx": 57.526,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     },
@@ -107,12 +107,12 @@
       ],
       "projectedContacts": [
         [
-          356.0,
-          426.832
+          361.0,
+          384.832
         ],
         [
-          359.0,
-          368.504
+          357.0,
+          376.504
         ],
         [
           352.0,
@@ -134,12 +134,12 @@
         {
           "from": 4,
           "to": 5,
-          "contactJumpPx": 58.404
+          "contactJumpPx": 9.238
         },
         {
           "from": 5,
           "to": 6,
-          "contactJumpPx": 29.179
+          "contactJumpPx": 36.67
         },
         {
           "from": 6,
@@ -147,7 +147,7 @@
           "contactJumpPx": 40.307
         }
       ],
-      "maxBoundaryContactDriftPx": 124.231,
+      "maxBoundaryContactDriftPx": 81.949,
       "materialCorrespondenceReviewed": false,
       "contactApproved": false
     }
@@ -160,7 +160,7 @@
         "cane",
         "leftBoot"
       ],
-      "requiredRootDisagreementPx": 95.579
+      "requiredRootDisagreementPx": 14.009
     },
     {
       "from": 1,
@@ -169,22 +169,22 @@
         "cane",
         "leftBoot"
       ],
-      "requiredRootDisagreementPx": 14.5
+      "requiredRootDisagreementPx": 7.632
     }
   ],
-  "maxRequiredRootDisagreementPx": 95.579,
+  "maxRequiredRootDisagreementPx": 14.009,
   "jointContactApproved": false,
   "scope": "Shared root constraint diagnostic; no material correspondence, ground-height, rigid-cane or full-stride approval",
   "binding": {
-    "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
-    "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+    "sourceSha256": "322057bbd54a03c0d99b5a15a3b1cd7f2f0b83eba2d937ce70fd10458467ffae",
+    "settingsSha256": "254282646eca653538f931920eb2d83c72a2e217a0f157da5f6c25ac5951525f",
     "frameSha256": [
-      "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
-      "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+      "983810113432fd2f418f1aadf8cad85578d7e3ec8b51fa3dca08006cf3e560ff",
+      "8969ab8488804edbc98222ce2f8222c050ec2e3cd465a56da3cb422671e34bd8",
       "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
       "6c1acf566d33754ec554ecee65c216ee08cd7fc97a477d93c2516daa1b589053",
-      "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
-      "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+      "44074d4e55da040be453d435467cc487772c5fd3561b3b30023b67ed4cda5c2f",
+      "c952a4ca914b2db5cd41ca616de533b3ac334f26bd7adb1c5fb858d83bf32b0d",
       "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
       "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46"
     ],
@@ -200,7 +200,7 @@
     ]
   },
   "runtimeSha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab",
-  "inputMeasurementSha256": "2b2d0b8bc8ac47ff8fa153754ff649907e740555fbbbb02e17b3ed455ffc6c92",
+  "inputMeasurementSha256": "5f4ebe005a13f86e3771b1f0bf646cfef9c3b60756b4e94a008cfbca0808df5e",
   "landmarks": "Existing silhouette proxies, not corresponding material sole landmarks",
   "productionReady": false
 }

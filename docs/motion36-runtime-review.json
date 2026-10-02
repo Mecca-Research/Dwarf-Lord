@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "checkpoint": "motion36",
+  "date": "2026-10-02",
+  "baseCommit": "0fd229a8463af78310cd149a0eec2ba1fa57859e",
+  "scope": "Five scoped review closures and four local authored Elder rear gait corrections. Full motion polish remains incomplete; no walking stride/contact, direction-family or gameplay-activation closure is claimed.",
+  "dependencies": [
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "src/game/world/sprites.tsx",
+      "sha256": "7f5ab3f67c1b2623a33902d07fd8cbb91d0a8c63da7eb7fda8c26ca9871b0f81"
+    },
+    {
+      "file": "src/game/world/workstations.tsx",
+      "sha256": "328eb500bb81bc526a6fe1d523fe9b25db4df91f628318e199a197f4331db4c4"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
+    },
+    {
+      "file": "src/game/world/scene.tsx",
+      "sha256": "87085e1d8df0afcc32ac7ebffeafc5253f181c3fe202c0ebe4ed6d602106c3a7"
+    },
+    {
+      "file": "src/game/motion-playback.ts",
+      "sha256": "ad0e63e4834242ef94dffce1579f92c1d0235aafe6329f2cf517db969c6de50c"
+    },
+    {
+      "file": "scripts/motion_loop_approval.py",
+      "sha256": "c953b549a8f7c1b7069e375a40050fab3f75b3b48aa15db5dd96036f8c37afc4"
+    },
+    {
+      "file": "scripts/motion_completion.py",
+      "sha256": "5e174c0bc406f21b99e883b0f1e31eef3411f9ece08d2fbc3be507db5f684758"
+    },
+    {
+      "file": "scripts/assemble-reviewed-motion.py",
+      "sha256": "3b4557d3a2bd3002beda29f47e0557532f10e54cf257f5a5611ca34b27052299"
+    },
+    {
+      "file": "scripts/elder-frame-review-check.mjs",
+      "sha256": "ca6929b6654d686b018d7e14474768d4bb28e9741b80a4ca3d27ab828b60c350"
+    },
+    {
+      "file": "scripts/elder-activity-check.mjs",
+      "sha256": "15aca456573389eee479058c55d7429fa845072d559f09f4bc132ef349123c95"
+    },
+    {
+      "file": "scripts/npc-motion-check.mjs",
+      "sha256": "25f3ef35870486a434dcf37bddde88b62fe1cfdc5aab0182de8a025b96ec6f97"
+    },
+    {
+      "file": "scripts/workstation-review-check.mjs",
+      "sha256": "3f180f18a6f2eff5833f544e59e69855acd87abf249b77ac5493a13d9228fefb"
+    },
+    {
+      "file": "public/workstation-review.html",
+      "sha256": "a46ad8c86356ef73b80061f3fc582ded3f23628952cef29f572b2b2307e56630"
+    },
+    {
+      "file": "public/sprites/Elder/motion/render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "sha256": "9519e0d2db6fdd0f6cedc42d727b772111e4d9c7ffa5fbe05bf4efa6baa5bda5"
+    },
+    {
+      "file": "public/sprites/Elder/motion/walk/back/assembly.json",
+      "sha256": "f6e82efd6512f489740cef57886e6953df30bea6160cfa340b68d8f64fdc1ba9"
+    },
+    {
+      "file": "public/sprites/Elder/motion/walk/back/manifest.json",
+      "sha256": "ce7bf3be0817ce8f18bfab8cc0bb5dff12b3b0b45824b7a529bb57f743fd8bda"
+    },
+    {
+      "file": "docs/motion-completion-scope.json",
+      "sha256": "3eb5db328dd728267a7a863dd4f1ee0eed18e1528bd227c86a3e9dde9bdc21dc"
+    },
+    {
+      "file": "docs/motion-completion-status.json",
+      "sha256": "39d948b219762b88851404c0b42f7534eea3be339aa3628c062fc173baa495ff"
+    },
+    {
+      "file": "docs/elder-back-contact-regions.json",
+      "sha256": "28680d86400f8f0af15e44dbc8499318e27a9abb37c789b10d67e9d8d829960a"
+    },
+    {
+      "file": "docs/elder-back-contact-measurement.json",
+      "sha256": "5f4ebe005a13f86e3771b1f0bf646cfef9c3b60756b4e94a008cfbca0808df5e"
+    },
+    {
+      "file": "docs/elder-back-joint-contact-measurement.json",
+      "sha256": "6e1538b126a955b68e972f0d13ef95757dcdbfd68626c0170bdf6f19d27240e9"
+    }
+  ],
+  "newApprovals": [
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/loop-approval.json",
+      "sha256": "2e91a3a83ae7f1aedcdedce29eb5ae979cb1f46f8ca80786ab412c654d3c05df",
+      "scope": "Fixed-camera independent cutting-block vegetable chopping only; once-hold task playback. No food consumption/accounting, other preparation actions, hidden blade geometry or other directions are certified."
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+      "sha256": "7867e67ee73c262704c19ac8d9a29259c42383f163f2db97a028ac28489de436",
+      "scope": "Fixed-camera seated Borrin independent open-ledger writing only; once-hold consultation activity. No accounting mutations, other administrative actions, moving contacts or other views are approved."
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/task-approval.json",
+      "sha256": "77285d8f1670441d98e4fd4318cba704f14590a01b0400abde0584c4de3b8837",
+      "scope": "One fixed-view crate placement task: lift, carry upward, place, release and hold. Explicit new-task reset is separate. Continuous7-to0 repeat is NOT approved; no walk, other load, inventory creation or all-direction contact approval."
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+      "sha256": "3dbe0bf11890fea0de5c7541589d88f3aefcc8346af6be7d4d8e6c3ecb22baa8",
+      "scope": "Fixed-view seated Elder eat-bread cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved."
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+      "sha256": "f9c1d225fd23a10082421d6dfcdb48ed2f099da24768c3a1871e0a309287d4f1",
+      "scope": "Fixed-view seated Elder eat-stew cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved."
+    }
+  ],
+  "elderRearGait": {
+    "modifiedPoses": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "unchangedExportedPoses": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "maxJointRootProxyConflictPx": 14.009,
+    "maxCanePlantDisplacementPx": 18.057,
+    "contactTolerancePx": 6,
+    "materialCorrespondenceReviewed": false,
+    "movingFootCaneApproved": false,
+    "adoptedStride": null,
+    "runtimeStrideBodyRatio": 1.2
+  },
+  "controlledElderReview": {
+    "method": "Controlled browser clock; actual renderer and unchanged authored125ms frame timing",
+    "actions": [
+      {
+        "action": "eat-stew",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "eat-stew",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "eat-bread",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "eat-bread",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "laugh-seated",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "laugh-seated",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "laugh-and-gesture",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "laugh-and-gesture",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "inspect-pickaxe-in-lap",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "inspect-pickaxe-in-lap",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "examine-pickaxe-crack",
+        "framesObserved": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "completed": {
+          "action": "examine-pickaxe-crack",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      }
+    ],
+    "errors": []
+  },
+  "naturalElderLifecycle": {
+    "actions": [
+      {
+        "action": "eat-stew",
+        "framesObserved": [
+          6,
+          7
+        ],
+        "completed": {
+          "action": "eat-stew",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "eat-bread",
+        "framesObserved": [
+          6,
+          7
+        ],
+        "completed": {
+          "action": "eat-bread",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "laugh-seated",
+        "framesObserved": [
+          6,
+          7
+        ],
+        "completed": {
+          "action": "laugh-seated",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "laugh-and-gesture",
+        "framesObserved": [
+          6,
+          7
+        ],
+        "completed": {
+          "action": "laugh-and-gesture",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "inspect-pickaxe-in-lap",
+        "framesObserved": [
+          6,
+          7
+        ],
+        "completed": {
+          "action": "inspect-pickaxe-in-lap",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      },
+      {
+        "action": "examine-pickaxe-crack",
+        "framesObserved": [
+          5,
+          7
+        ],
+        "completed": {
+          "action": "examine-pickaxe-crack",
+          "direction": "reference",
+          "frame": 7,
+          "completed": true,
+          "completions": 1
+        }
+      }
+    ],
+    "consecutiveSamples": 85,
+    "allHandoffsDisplayed": true,
+    "errors": [],
+    "scope": "Continuous natural-time lifecycle observation; complete pose coverage is provided by the controlled-clock review, not inferred from a slow renderer."
+  },
+  "walkingRuntime": {
+    "sampleCount": 32,
+    "movingHeldPoseSamples": 12,
+    "errors": [],
+    "scope": "Logical travel, held visual root, turn, collision freeze, arrival, cancellation/day completion and Borrin desk lifecycle. Not anatomical sole travel calibration."
+  },
+  "stationReviews": {
+    "actors": [
+      {
+        "character": "Cook",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Blacksmith",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Ginger",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Laborer",
+        "approved": true,
+        "approvalType": "once-hold-task",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Borrin",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Stoneworker",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      },
+      {
+        "character": "Quartermaster",
+        "approved": true,
+        "approvalType": "loop",
+        "completed": true,
+        "completions": 1
+      }
+    ],
+    "errors": []
+  },
+  "libraryControls": {
+    "sequences": 153,
+    "images": 1224,
+    "errors": [],
+    "scope": "Image loading, controls, phase, review seam mode and mobile layout; no automatic anatomical acceptance."
+  },
+  "softwareValidation": {
+    "nodeTestsPassed": 198,
+    "pythonTestsPassed": 62,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "whitespace": "passed",
+    "bundledGameplayCaptures": 2,
+    "bundledGameplayErrors": []
+  },
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 4,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 149,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 11,
+    "referenceActionsWithoutMapping": 54
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 149
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 54
+    }
+  ],
+  "productionReady": false,
+  "artifacts": [
+    {
+      "file": "docs/art-review/motion36/borrin-ledger-layering.jpg",
+      "sha256": "035558b5f30531990dd3b878f75c91f294e1654036ba8fb771c4c485b14d2b05"
+    },
+    {
+      "file": "docs/art-review/motion36/cook-cutting-block.jpg",
+      "sha256": "54c4d51f3fd5f49d97561f92f23a642c184e9b1ee4f3beea0e18e3c94eb9b679"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-back-poses.jpg",
+      "sha256": "601ba4fa643470f12ada160b63723697280cbc7ccea95aeee610acf00e4ea9bd"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-bread-live.jpg",
+      "sha256": "c355619ffda67791780bd60558c903ee09e513d5ad04f80374a054eb9bdc8e8a"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-eat-bread.jpg",
+      "sha256": "44fd7d5a1456cb883f406c827054326b00bbff21894467c14d60a45122f944b5"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-eat-stew.jpg",
+      "sha256": "36f8a5f2f8d4032a0c98efbc033125efeaf17654e64a718499994ec3c6343ee1"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-pickaxe-crack-unapproved.jpg",
+      "sha256": "a4b33615c4cfe3fac4a5318d72bb6b4cf32ed6c8389b628c7d5114b52d8f10ba"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-pickaxe-lap-unapproved.jpg",
+      "sha256": "e213cb753355f1096a11d04b18a26cf3e886bf1965f834af079fec6c9ff2a136"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-rear-contact-diagnostic.jpg",
+      "sha256": "53357cee48bbffbe6bf672bbae67d3df5b04173bbe6c91c660a267656d267dfe"
+    },
+    {
+      "file": "docs/art-review/motion36/elder-stew-live.jpg",
+      "sha256": "9f9813c8603030d18e080e4f4286a39dff17ba254e75222975fe280937e8101a"
+    },
+    {
+      "file": "docs/art-review/motion36/gameplay-movement.jpg",
+      "sha256": "7b4a49c58758b72bb6d8da4598b154c24e3b8919781c0e452397c3d31815e537"
+    },
+    {
+      "file": "docs/art-review/motion36/laborer-released-crate.jpg",
+      "sha256": "109ed2ab2fca4ecf0604c267030e54d1a93313b08aec2de0733f1519aa76a5e1"
+    }
+  ]
+}

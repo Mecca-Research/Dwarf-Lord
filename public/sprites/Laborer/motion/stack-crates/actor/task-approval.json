@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "add68891f07d7f3a702806a2a3508f1f55546c345a9b1381cad2e273ac38973a",
+    "settingsSha256": "8f00925622713079de9a25f84b8360f9bdba89b1b4872913c52edfedca7ee348",
+    "frameSha256": [
+      "6d37df525537f2781253b3052892aaf89b6101d523e770d9eff49b58cb0dd133",
+      "0a1d21109afaff680f497d3c4d4dd5c8fddc966e73d3a59a4ee768ceb49f7ce6",
+      "f90520acdcdf1139caced4e9649ca1f76f8fb9668252b5dbfb11cfed42695681",
+      "aac8577ec1f0ccb9bfc9898182cdc6c0576d5ee7de62a62217705216f50f05ab",
+      "69f7348b5593aea1ce3584e8740b71a3a9f2114bc10a834513a3e2229f186aad",
+      "0a68e427f8e07be1717b087be7c79f1c4c0de0d25f9354bb7339befcc5682658",
+      "98bbdc483a5fab20e3bf8d011391e0b5ae3d2f5c1e68f85c92cb871b9cf33c6f",
+      "f8cca9485b9494c257df3b79ffcb70d879342a66073420488d6e513a5a915fbd"
+    ],
+    "atlasSha256": "7b594de37516c077dc74adb3c63c85d1ab22c59beeeb032cde68b08b5e4a5ac8",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        180,
+        616
+      ],
+      "targetBodyHeight": 500,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "8f00925622713079de9a25f84b8360f9bdba89b1b4872913c52edfedca7ee348",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Laborer",
+    "action": "stack-crates",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "One fixed-view crate placement task: lift, carry upward, place, release and hold. Explicit new-task reset is separate. Continuous7-to0 repeat is NOT approved; no walk, other load, inventory creation or all-direction contact approval.",
+  "checks": {
+    "identity-and-scale": "All eight authored/composite frames inspected. Same bald stocky Laborer, brown beard, light shirt, dark vest and boots;370px calibrated body scale at the180/616 root. Body leans and arms reach without changing actor identity.",
+    "station-and-foot-contact": "Pallet and existing stack remain fixed through all frames. Boots keep the fixed floor plane during the in-place reach; no translating walk is present. Independent pallet remains after cancellation/departure.",
+    "hand-and-tool-contact": "Both hands grip the same crate edges, lift it, support its underside, place it on the stack and release by7. Reviewed foreground contours retain the load over the persistent lower stack; no detached hand or doubled stationary prop in the layered captures.",
+    "prop-continuity": "The placed crate in the final frame matches the owned completion-layer pixels. It persists after the completed worker leaves. Cancellation before completion never places it; new task explicitly resets staging. This is cosmetic and awards no economic goods.",
+    "completion-and-reset": "Live and review-browser checks reach7 once, remain completed without implicit repeat, retain the released crate after actor departure, and clear staging for a genuinely new task.7-to0 would recreate a held crate and is intentionally excluded from seamless-loop approval."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "9ed29b368fc644ea55ea0d4470736ed3f0aae37d6fc7fed6e60cc3d6f78b2edd"
+    },
+    {
+      "file": "../../../../workstations/storage-pallet/sprite.png",
+      "sha256": "1092fd2b3e984bb211dc5a906665073a9b67cb7110bd9599c4c452bc29e6f815"
+    },
+    {
+      "file": "../../../../workstations/storage-pallet/completed-crate.png",
+      "sha256": "17a66555fe09747e5d95afb3b24c2eddc5cd4e8345cd5e487bbbbc8b862e18d8"
+    },
+    {
+      "file": "../../../../workstations/storage-pallet/generation.json",
+      "sha256": "1ab3f694e2b3457ae36a14629037717c687cf78c0913f6562110863663c83f01"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstations.tsx",
+      "sha256": "328eb500bb81bc526a6fe1d523fe9b25db4df91f628318e199a197f4331db4c4"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
+    }
+  ]
+}

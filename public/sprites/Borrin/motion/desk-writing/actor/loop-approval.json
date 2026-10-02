@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05",
+    "settingsSha256": "2572a3114bd2be38c7244b06696f740528af40952eaae7a45eee3f0b305f6494",
+    "frameSha256": [
+      "7e908ce0645dc1ef368e8a2bf3242489306a545d65ad935895d8e82a72f4e6de",
+      "d913a7f3d91a572ac0ccbf002f8ca28018976460d23eabf54a0d820372c69ae9",
+      "750adc5759aaf5c532c5a00161ea6ba63598bc046a7bfa9cc646eb9839a23f31",
+      "b368effa4d28125193a50b3f16b7fbd4743784706b60916ffffcb5504189e82f",
+      "f1abd0e87710ed2fbe1ee4598440137ad4a237e9d84159a8d11f95f4424e2901",
+      "69236d50e53b57185f4e70c23b4a49c5ab689cb9ae821a5ec1fd1bf2ac2ed16b",
+      "1a7ad67195f353fcbd7134f80c2b4af2047c1af8f1d3dcfdba95554db5f96cd2",
+      "0227ed28b0bfdfa038223380eef4187c0c62c85f2c1f6ac899980f1d8bb1cffc"
+    ],
+    "atlasSha256": "552494c5e5e97d7a6e379971e9d303723ba04992d2acebafec1779b43e22149d",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "2572a3114bd2be38c7244b06696f740528af40952eaae7a45eee3f0b305f6494",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Borrin",
+    "action": "desk-writing",
+    "direction": "actor"
+  },
+  "scope": "Fixed-camera seated Borrin independent open-ledger writing only; once-hold consultation activity. No accounting mutations, other administrative actions, moving contacts or other views are approved.",
+  "checks": {
+    "identity-and-scale": "All eight actor/layered poses inspected. Same second-oldest manager with combed grey hair, spectacles, forked grey beard, red scarf and dark vest. Same650px standing-equivalent seated-body calibration, chair and boots; no character scale switch.",
+    "station-and-foot-contact": "Desk/open ledger stay fixed, independent of Borrin. Seated boots and chair retain their baseline. Desk legs occlude portions of the actor and those hidden contacts are excluded.",
+    "hand-and-tool-contact": "Quill moves through writing strokes, lifts, then returns; fingers retain the same shaft. Eight added narrow contours preserve original shaft pixels between feather and hand over the page. Page contact is projected near the front margin; no ink-fluid or pressure simulation is certified.",
+    "prop-continuity": "Same quill, open pages, ribbon, desk, ink pot and stacked books remain throughout. New contours use original actor pixels rather than redraw or duplicate props. Borrin leaving still leaves the owned desk behind.",
+    "last-to-first-transition": "All eight composite frames and repeat inspected. Pose7 lowers the quill toward the initial writing position; ledger stays open and neither page nor tool resets. Live consultation remains once-hold; next day deliberately restarts the activity."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "9519e0d2db6fdd0f6cedc42d727b772111e4d9c7ffa5fbe05bf4efa6baa5bda5"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/sprite.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/generation.json",
+      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
+    }
+  ]
+}

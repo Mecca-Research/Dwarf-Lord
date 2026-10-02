@@ -26,7 +26,7 @@ function draw(){
   if($('foreground').checked&&$('actor').checked){ctx.save();ctx.clip();ctx.drawImage(frames[n],0,0);ctx.restore()}
   if($('contours').checked){ctx.strokeStyle='#67ffe2';ctx.lineWidth=1;ctx.stroke()}ctx.restore()}
  $('frame').value=n;$('number').textContent=`${n+1} / 8`;
- $('status').textContent=`${selected.character} · ${selected.action} · ${manifest.frames[n].durationMs} ms · ${player.ended?'Completed; last pose held':'Frame review'} · ${manifest.playback.loopApproved?'Fixed-view visual loop approved; task playback remains once-hold':'Contact and loop approval pending'}`;
+ $('status').textContent=`${selected.character} · ${selected.action} · ${manifest.frames[n].durationMs} ms · ${player.ended?'Completed; last pose held':'Frame review'} · ${manifest.playback.loopApproved?'Fixed-view visual loop approved; task playback remains once-hold':manifest.playback.taskApproved?'Finite task approved; continuous repeat is excluded':'Contact and cycle approval pending'}`;
 }
 async function choose(){const token=++request;loading=true;play(false);$('error').textContent='';selected=library[Number($('station').value)];
  const base=new URL(selected.actor,location.href);const [m,c,g]=await Promise.all([json(base),json(selected.calibration),json(selected.station)]);
@@ -42,6 +42,6 @@ $('frame').oninput=()=>{play(false);player?.seekPhase(Number($('frame').value));
 for(const id of ['actor','prop','foreground','contours'])$(id).onchange=draw;
 function tick(ms){if(!playing||loading)return;player.advance(Math.max(0,ms),{repeat:$('repeat').checked});if(player.ended)play(false);draw()}
 let last=performance.now();function loop(now){tick(Math.min(100,now-last));last=now;requestAnimationFrame(loop)}requestAnimationFrame(loop);
-window.advanceTime=tick;window.render_game_to_text=()=>JSON.stringify({loading,playing,character:manifest?.character,frame:player?.index,completed:player?.ended,completions:player?.completions,actor:$('actor').checked,station:$('prop').checked,completedProp:Boolean($('prop').checked&&!$('actor').checked&&player?.ended&&completionProp),foreground:$('foreground').checked,approved:Boolean(manifest?.playback?.loopApproved)});
+window.advanceTime=tick;window.render_game_to_text=()=>JSON.stringify({loading,playing,character:manifest?.character,frame:player?.index,completed:player?.ended,completions:player?.completions,actor:$('actor').checked,station:$('prop').checked,completedProp:Boolean($('prop').checked&&!$('actor').checked&&player?.ended&&completionProp),foreground:$('foreground').checked,approved:Boolean(manifest?.playback?.loopApproved||manifest?.playback?.taskApproved),approvalType:manifest?.playback?.loopApproved?'loop':manifest?.playback?.taskApproved?'once-hold-task':null});
 try{library=await json('workstation-library.json');library.forEach((e,i)=>$('station').append(new Option(e.character,String(i))));await choose()}catch(e){fail(e)}
 </script></body></html>

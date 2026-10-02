@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "source-landmarks",
@@ -271,5 +272,10 @@
     "exportVersion": 2,
     "stationRegistration": null
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "One fixed-view crate placement task: lift, carry upward, place, release and hold. Explicit new-task reset is separate. Continuous7-to0 repeat is NOT approved; no walk, other load, inventory creation or all-direction contact approval."
+  }
 }

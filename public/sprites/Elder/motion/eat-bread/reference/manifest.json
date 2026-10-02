@@ -254,9 +254,10 @@
       125,
       125
     ],
-    "loopApproved": false,
+    "loopApproved": true,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -270,7 +271,7 @@
     "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
     "exportVersion": 2
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "note": "Visual loop review recorded for the exact artifacts and scope in loop-approval.json. Task playback and overall production readiness are unchanged.",
   "review": {
     "status": "needs-visual-review",
     "issues": [
@@ -284,5 +285,10 @@
       "prop continuity",
       "direction and scale continuity"
     ]
+  },
+  "loopReview": {
+    "status": "approved",
+    "record": "loop-approval.json",
+    "scope": "Fixed-view seated Elder eat-bread cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved."
   }
 }

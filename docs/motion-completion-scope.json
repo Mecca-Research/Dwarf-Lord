@@ -1376,13 +1376,13 @@
     {
       "id": "Elder/walk",
       "verdict": "changes-required",
-      "reviewedAt": "2026-10-01",
-      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "reviewedAt": "2026-10-02",
+      "method": "Re-reviewed all eight back-view frames after authored0/1/4/5 contact/passing edits and fixed physical root/scale. Other seven view bindings are unchanged from the complete motion35 family comparison. Still changes-required, not a passed continuity review.",
       "checks": {
-        "phase-agreement": "Back view fails simultaneous foot/cane root constraints. Front-right/right0/4 support exchange and2/6 passing phases still need verified anatomical identity and joint cane support windows.",
-        "body-scale": "520px body target does not prove rigid cane length or correct ground height.",
+        "phase-agreement": "Back0/4 now put the named heel forward;1/5 have distinct opposite-foot airborne passing instead of repeating a trailing sole. Remaining2/3/6/7 support transitions and alignment to the other seven views need contact review. No walking phase convention is certified solely by frame labels.",
+        "body-scale": "New back edits use the same physical body height/root rather than changing silhouette height. Other seven directions still need pelvis/shoulder, boots and cane-length correspondence before a phase-preserving turn can pass.",
         "direction-transitions": "Rear-to-side transitions switch cane projection without an approved recovery/replant. All eight direction contacts remain open.",
-        "equipment-geometry": "The cane appears vertical in rear-right/rear-left holds; rigid length, hand grip and simultaneous sole support need coordinated authored correction."
+        "equipment-geometry": "Cane4/5 now lift and recover into6/7; first support proxy conflict improved from95.579px to14.009px but still fails. Rigid cane length, visible tip material, whole-stride soles and replant timing remain unapproved."
       },
       "bindings": {
         "public/sprites/Elder/motion/walk/front": {
@@ -1547,19 +1547,19 @@
           "direction": "back-right"
         },
         "public/sprites/Elder/motion/walk/back": {
-          "sourceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
-          "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+          "sourceSha256": "322057bbd54a03c0d99b5a15a3b1cd7f2f0b83eba2d937ce70fd10458467ffae",
+          "settingsSha256": "254282646eca653538f931920eb2d83c72a2e217a0f157da5f6c25ac5951525f",
           "frameSha256": [
-            "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1",
-            "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+            "983810113432fd2f418f1aadf8cad85578d7e3ec8b51fa3dca08006cf3e560ff",
+            "8969ab8488804edbc98222ce2f8222c050ec2e3cd465a56da3cb422671e34bd8",
             "d466057a3189f59f58c5f0cde6724d06b2c62e35a61d8621700b9d18c8b42fa6",
             "6c1acf566d33754ec554ecee65c216ee08cd7fc97a477d93c2516daa1b589053",
-            "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
-            "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+            "44074d4e55da040be453d435467cc487772c5fd3561b3b30023b67ed4cda5c2f",
+            "c952a4ca914b2db5cd41ca616de533b3ac334f26bd7adb1c5fb858d83bf32b0d",
             "cdd97cfb48b9e737a251d6117648951978ab6a4aab12fcbf52c909f4be0529e0",
             "532440d7faeb2171dc7e676ebc7812f0562bff4a6647e63c967920786f6a9a46"
           ],
-          "atlasSha256": "3252e10a199e771e74778a1145b3a5645782d92f20c997fdcfbe6aebf1769bf2",
+          "atlasSha256": "fbbadab7053daef4ac98b100a601d754e34afb4cfc0a1ef21e57d8ae16a7487a",
           "registration": {
             "method": "source-landmarks",
             "targetAnchor": [
@@ -1569,7 +1569,7 @@
             "targetBodyHeight": 520,
             "scaleScope": "directional-body-height",
             "landmarksVerified": false,
-            "settingsSha256": "f9e4f09b064cb9a3ce40499d1720ffe84b2433d2dde6e4b807a6c04d6e65710d",
+            "settingsSha256": "254282646eca653538f931920eb2d83c72a2e217a0f157da5f6c25ac5951525f",
             "exportVersion": 2,
             "stationRegistration": null
           },

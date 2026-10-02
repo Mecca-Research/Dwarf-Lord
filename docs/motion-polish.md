@@ -277,3 +277,14 @@ All eleven eight-view families have current bound findings and explicit changes-
 The static Pages shell now mounts rather than hydrating an empty app. Final live captures show no console errors.198 Node/57 Python tests, type checking, Pages build, main review-browser controls, workstation lifecycle, NPC movement and bundled gameplay captures pass. These prove software behavior, not anatomical motion acceptance.
 
 Frozen scope remains160 cycles.154 final cycle approvals,54 named reference-action activations and11 passing family reviews remain. Eight Elder coordinated moving foot/cane views are included in the walk obligations. The root report gives a finite completion order; the generated inventory identifies each remaining cycle/action. PR9 remains draft and is not green to merge.
+
+
+### Motion36: four local gait corrections and five scoped review closures (2 October 2026)
+
+Closed Cook chopping and Borrin ledger-writing loops, plus Laborer finite crate placement. All seven independent actors now have scoped reviews; Laborer does not have a repeating loop approval. Original-pixel quill shaft contours fix the pen/page layering gap. Finite task approvals bind once-hold/end behavior, all artifacts and released-prop dependencies independently from loop reviews.
+
+Adopted individually authored Elder rear poses0/1/4/5 with fixed physical root/scale, leaving2/3/6/7 unchanged. Saved exact prompts, immediate edit references, intermediate candidates and original exported inputs. Opt-in physical assembly landmarks prevent raised feet/tools from changing body scale; legacy Ginger assembly reconstructs identically. Elder joint silhouette-proxy disagreement improves 95.579 to14.009 px and cane plant displacement 20.729 to18.057 px; both remain above 6 px. No material sole correspondence, coordinated gait approval or stride adoption is implied.
+
+Closed Elder bread and stew cosmetic seated loop reviews. Controlled browser time inspected all 48 actual-rendered poses of the six camp activities with unchanged authored timings, one completion, terminal holds and departure reset. Pickaxe inspections remain unapproved. Natural-time lifecycle validation remains separate so a slow renderer skipping a short pose cannot be mistaken for a contact approval.
+
+Frozen scope 160 unchanged. Final cycle obligations fall 154 to149:64 walking,24 directional tools/timber and61 fixed work. Four main plus seven independent actor reviews are scoped approvals. Direction families remain11 changes-required/0 passed;54 reference-action activations and all eight Elder moving foot/cane directions remain open. Runtime work mappings and the 1.2-body-height walking estimate are unchanged. Root report and generated inventory list exact stopping conditions; PR #9 remains draft, not green to merge.

@@ -5,6 +5,7 @@ Requires Pillow, NumPy, SciPy. Run with a motion sequence directory argument.
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -57,6 +58,17 @@ def main():
         if source['poseCount'] not in (1,8):raise ValueError('Inputs must contain one or eight poses')
         path=folder/source['file']
         if hashlib.sha256(path.read_bytes()).hexdigest()!=source['sha256']:raise ValueError('Assembly input changed')
+        # A raised foot or tool changes the silhouette, not the physical body
+        # scale or pelvis root. Optional reviewed canvas landmarks preserve both.
+        for field in ['rootXs','rootYs','bodyHeights']:
+            if field in source and (not isinstance(source[field],list) or len(source[field])!=source['poseCount'] or any(
+                    not isinstance(v,(int,float)) or isinstance(v,bool) or not math.isfinite(v)
+                    for v in source[field])):raise ValueError(f'One finite {field} landmark required per source pose')
+        if 'bodyHeights' in source and any(v<=0 for v in source['bodyHeights']):raise ValueError('Body heights must be positive')
+        if ('bodyHeights' in source)!=('rootYs' in source):raise ValueError('Physical body heights and rootYs must be authored together')
+        width,canvas_height=Image.open(path).size
+        if any(not 0<=v<width for v in source.get('rootXs',[])) or any(not 0<=v<canvas_height for v in source.get('rootYs',[])):
+            raise ValueError('Body root outside authored canvas')
         inputs[source['id']]=extract(path,source['poseCount'],source.get('cells'))
     if len(assembly['poses'])!=8 or len({(p['input'],p['pose']) for p in assembly['poses']})!=8:raise ValueError('Exactly eight distinct authored poses required')
     sheet=Image.new('RGBA',(2560,1280));marks=[]
@@ -69,11 +81,17 @@ def main():
         if 'rootXs' in source_config:
             if len(source_config['rootXs'])!=source_config['poseCount']:raise ValueError('One root x required per source pose')
             head=source_config['rootXs'][source_index]-box[0]
-        scale=assembly.get('normalizedHeight',500)/height;crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
+        normalized_height=assembly.get('normalizedHeight',500)
+        if not isinstance(normalized_height,(int,float)) or not math.isfinite(normalized_height) or normalized_height<=0:raise ValueError('Invalid normalized body height')
+        height=source_config.get('bodyHeights',[height]*source_config['poseCount'])[source_index]
+        scale=normalized_height/height;crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
         x=i%4*640+320-round(head*scale);ground=floors[source_index//4]
+        if 'rootYs' in source_config:ground=source_config['rootYs'][source_index]
         y=i//4*640+600-round((ground-box[1])*scale)
         if x<i%4*640 or x+crop.width>(i%4+1)*640 or y<i//4*640 or y+crop.height>(i//4+1)*640:raise ValueError('Authored pose exceeds its source cell')
-        sheet.alpha_composite(crop,(x,y));marks.append({'root':[i%4*640+320,i//4*640+600],'bodyHeight':500})
+        # Keep legacy silhouette assemblies byte-for-byte compatible with their
+        # reviewed exports. Physical registration is explicit and opt-in.
+        sheet.alpha_composite(crop,(x,y));marks.append({'root':[i%4*640+320,i//4*640+600],'bodyHeight':normalized_height if 'bodyHeights' in source_config else 500})
     sheet.save(folder/'source-sheet.png')
     settings={'version':1,'assemblySha256':hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256((folder/'source-sheet.png').read_bytes()).hexdigest(),'targetBodyHeight':assembly.get('targetBodyHeight',520),'targetAnchor':assembly.get('targetAnchor',[320,616]),'landmarks':marks,'landmarksVerified':False,'durationsMs':assembly.get('durationsMs',[140,140,105,115]*2),'note':'Selected authored full-body poses assembled without limb editing or synthetic in-betweens. Source cell roots preserve the original row floor and calibrated body size.'}
     (folder/'motion-polish.json').write_text(json.dumps(settings,indent=2)+'\n')

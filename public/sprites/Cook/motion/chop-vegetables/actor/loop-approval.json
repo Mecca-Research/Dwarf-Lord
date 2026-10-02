@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+    "settingsSha256": "345c06ac1a1fbda04669b02e97e879550474b375447e2670257db71545b620a6",
+    "frameSha256": [
+      "d8e2d9296152c6e312d3214aebfd6f8042a44f998eb46828584f8e39ab62ff67",
+      "6cac54fedc18adb41f78983153105a68746cea0cca95faa90c7888fbbc17f1ca",
+      "bc21c4e722fff0bc686cf1dd1c3504b7b867f63d63da33d21b22e6079302622a",
+      "e2871e39c85d7ec6f2d9da16be34bbf7e10c79a341f8bb7e15f6b93290cd683d",
+      "d0a2863ccaf0978f6b68f97d105987e7347ba0b5a3df755d81244c8119d43876",
+      "1a9e016d79031fa17ed9e822bd3685e6f21e76e9b697bc8e3b84d6417c87db4b",
+      "769355e8e6cef97d3517120a5dc434902b8e5d8cd0c9e314263b683d4165b8e8",
+      "260db51b39c899b7720b0e8761a6a722b356c56e95df89d88688369848239d69"
+    ],
+    "atlasSha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "345c06ac1a1fbda04669b02e97e879550474b375447e2670257db71545b620a6",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Cook",
+    "action": "chop-vegetables",
+    "direction": "actor"
+  },
+  "scope": "Fixed-camera independent cutting-block vegetable chopping only; once-hold task playback. No food consumption/accounting, other preparation actions, hidden blade geometry or other directions are certified.",
+  "checks": {
+    "identity-and-scale": "All eight actor and composited poses inspected; same broad Cook, brown hair/beard, red sleeves, apron and boots. Same520px body calibration and fixed view. Final layered browser capture inspected.",
+    "station-and-foot-contact": "Independent wood cutting block and ingredients remain fixed. Visible boots keep their ground baseline across all eight poses; parts behind the block are occluded and are not separately measured.",
+    "hand-and-tool-contact": "Knife stays in the same hand through lift, downward chop and low return. The other hand remains on the far side of the food. Original blade pixels pass over the near carrot/work face with the reviewed foreground contours. This is projected visible contact, not penetration or force proof.",
+    "prop-continuity": "Same separate block, bowl, vegetables and source knife through all eight poses. Ingredient counts are static cosmetic art; the animation never issues inventory output.",
+    "last-to-first-transition": "All eight layered frames and repeat/return inspected. Pose7 returns the knife to the low ready position near0 without changing station or held tool. Actual job playback completes once on7; cancellation leaves the cutting block independently visible."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "ddb5a83888d373e7ce42423b3068f31aaf0efaea55fbed79f5ffe119e41dcb41"
+    },
+    {
+      "file": "../../../../workstations/cutting-block/sprite.png",
+      "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+    },
+    {
+      "file": "../../../../workstations/cutting-block/generation.json",
+      "sha256": "28637e86c8696b5e86581095d8878049096c830809e78b28c2beb328528e3d9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
+    }
+  ]
+}

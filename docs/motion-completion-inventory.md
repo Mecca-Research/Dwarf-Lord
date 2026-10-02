@@ -88,8 +88,8 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Cook | stir-cauldron | reference | not-reviewed |
 | Cook | mix-ingredients | reference | not-reviewed |
 | Cook | serve-stew | reference | not-reviewed |
-| Elder | eat-stew | reference | not-reviewed |
-| Elder | eat-bread | reference | not-reviewed |
+| Elder | eat-stew | reference | scoped-review-approved |
+| Elder | eat-bread | reference | scoped-review-approved |
 | Elder | laugh-seated | reference | scoped-review-approved |
 | Elder | laugh-and-gesture | reference | scoped-review-approved |
 | Elder | inspect-pickaxe-in-lap | reference | not-reviewed |
@@ -159,11 +159,11 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Helga | carry-mine-timber | back-left | not-reviewed |
 | Helga | carry-mine-timber | left | not-reviewed |
 | Helga | carry-mine-timber | front-left | not-reviewed |
-| Cook | chop-vegetables | actor | not-reviewed |
+| Cook | chop-vegetables | actor | scoped-review-approved |
 | Blacksmith | hammer-contact | actor | scoped-review-approved |
 | Ginger | fell-tree | actor | scoped-review-approved |
-| Laborer | stack-crates | actor | not-reviewed |
-| Borrin | desk-writing | actor | not-reviewed |
+| Laborer | stack-crates | actor | scoped-review-approved |
+| Borrin | desk-writing | actor | scoped-review-approved |
 | Stoneworker | chisel-contact | actor | scoped-review-approved |
 | Quartermaster | check-weights | actor | scoped-review-approved |
 

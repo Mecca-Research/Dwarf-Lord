@@ -7,9 +7,9 @@ const browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '
 try {
   const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
   const errors = [], assets = [];
-  page.on('console', m => { if (m.type() === 'warning' || m.type() === 'error') console.log(m.type(), m.text()); });
+  page.on('console', m => { if (m.type() === 'warning' || m.type() === 'error') console.log(m.type(), m.text()); if(m.type()==='error')errors.push(m.text()); });
   page.on('pageerror', e => errors.push(e.message));
-  page.on('response', r => { if (r.url().includes('/motion/walk/')) { assets.push({ url: r.url(), status: r.status() }); if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); } });
+  page.on('response', r => { if (r.url().includes('/motion/walk/')) assets.push({ url: r.url(), status: r.status() }); if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
   await page.goto(process.env.REVIEW_URL ?? 'http://localhost:8080/');
   await page.getByRole('button', { name: 'Walk the road' }).waitFor();
   await page.waitForTimeout(1500);
@@ -37,11 +37,21 @@ try {
   await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='tam')?.motion?.loaded);
   const plantSamples = await page.evaluate(() => new Promise(resolve => {
     const samples=[];
-    const timeout=setTimeout(()=>resolve(samples),60000);
+    let routePass=0,finished=false;
+    const finish=()=>{finished=true;clearTimeout(timeout);resolve(samples);};
+    const timeout=setTimeout(finish,60000);
     function sample() {
+      if(finished)return;
       const dwarf=JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='tam');
-      if(dwarf?.motion?.loaded)samples.push({x:dwarf.x,z:dwarf.z,...dwarf.motion});
-      if(samples.length>=32){clearTimeout(timeout);resolve(samples);}else if(samples.length<32)requestAnimationFrame(sample);
+      if(dwarf?.motion?.loaded)samples.push({routePass,x:dwarf.x,z:dwarf.z,...dwarf.motion});
+      // A slow software renderer can finish sixteen units of travel in fewer
+      // than32 rendered frames. Repeat the same warmed route to finish the
+      // sample window; never compare planted roots across a teleport.
+      if(dwarf?.anim==='idle'){
+        routePass++;
+        const t=window.__controlsTest;t.teleportDwarf('tam',-8,3);t.setDwarfDest('tam',8,3);
+      }
+      if(samples.length>=32)finish();else requestAnimationFrame(sample);
     }
     requestAnimationFrame(sample);
   }));
@@ -49,7 +59,7 @@ try {
   let movingHolds=0;
   for(let i=1;i<plantSamples.length;i++){
     const previous=plantSamples[i-1],current=plantSamples[i];
-    if(previous.frame===current.frame&&previous.direction===current.direction){
+    if(previous.routePass===current.routePass&&previous.frame===current.frame&&previous.direction===current.direction){
       assert.deepEqual(current.visualRoot,previous.visualRoot,'visible walking pose stays planted during a held frame');
       if(Math.hypot(current.x-previous.x,current.z-previous.z)>1e-6)movingHolds++;
     }

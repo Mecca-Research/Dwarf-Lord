@@ -1,34 +1,34 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: motion35, 1 October 2026. PR #9 remains a draft. **Full motion polish is not complete and merge approval is withheld.** This report and the generated inventory track a frozen library of 160 cycles, rather than allowing each checkpoint to expand the scope.
+Checkpoint: **motion36, 2 October 2026**. PR #9 remains a draft. **Full motion polish is incomplete; merge approval is withheld.** The scope stays frozen at 160 cycles. No new character, action or direction was added to the completion obligations in this checkpoint.
 
-## Completed in motion35
+## Completed in motion36
 
-- Activated all six existing Elder seated activities in the live camp: eat stew, eat bread, laugh seated, laugh and gesture, inspect a pickaxe in his lap, and examine a pickaxe crack. Each plays its eight authored frames once, holds completion, then advances through a finite sequence. The final activity stays finished. Leaving/returning and a new day reset the sequence; walking, sleep, dialogue poses and production assignments cannot claim seated work. The Elder retains his narrative role and earns no production output.
-- Added source-bound seated body placement for the six activities. The 740px standing-equivalent seated height is shared; each action has a reviewed pelvis/root offset. This placement permits gameplay rendering, not moving sole/cane certification.
-- Preload the next activity and hold the completed current pose until it is ready. A ready atlas installs in the same render update, avoiding an idle-sprite flash between activities. Texture loading cannot advance authored time. Failed preloads back off; departure releases the leases.
-- Passed **two scoped final cycle reviews**, `Elder/laugh-seated/reference` and `Elder/laugh-and-gesture/reference`. All eight exported and live poses, identity/body scale, seated boots/stool, hand movement, prop continuity and the last-to-first return were inspected. Reviews bind the exact frames, source, atlas, timing, calibration and playback implementation. Their scope excludes walking contacts, pickaxe use, other directions and seamless transitions between different activities. Overall production readiness remains false.
-- Evaluated **all eleven direction families** together, each with all eight poses in all eight directions. Every family has specific recorded corrections or outstanding contact verification. **None has a passed continuity approval.** Failed reviews now have an explicit `changes-required` verdict; writing notes cannot count as passing a direction family.
-- Tried one Elder rear-gait sheet using a new authored vector guide for coordinated support soles and cane tips. The render did not follow the required support travel and passing phase. It was rejected in full: **zero candidate poses were adopted**. Prompt, guide, reference hash, generated file and exact failed constraints are retained. This is not a contact closure.
-- Refreshed Elder and pilot contact measurements against the current runtime implementation. No numerical candidate was adopted and no gait was approved.
+- Closed three independent station reviews: Cook vegetable chopping, Borrin open-ledger writing, and Laborer crate placement. All seven existing station actors now have a valid scoped final review. Six have a fixed-view visual loop review. Laborer has a finite once-hold task review: the crate is lifted, placed, released and held. Continuous7-to0 replay is explicitly unapproved because the released crate would reappear in his hands.
+- Fixed Borrin's quill layering over the ledger. Narrow shaft contours reuse the original actor pixels, keeping the feather, shaft, hand and nib visible over the page while the torso stays behind the desk. Regenerated and inspected the desk preview and browser composites; expanded the atlas-coordinate geometry test to include Borrin.
+- Closed two main-library reviews: Elder `eat-stew/reference` and `eat-bread/reference`. Reviewed all eight native/exported poses, prop ownership, seated feet/stool, body scale and0/7 return. Controlled browser time exposed all 48 poses in the six-activity camp sequence through the actual renderer, with unchanged125ms timings. Each activity completed once, held its terminal pose, and reset after departure. The eating approvals cover cosmetic fixed-view gestures; food accounting, moving feet/cane and cross-action seams are excluded. The two pickaxe inspection actions remain unapproved despite passing their playback checks.
+- Adopted four individually authored Elder rear gait corrections: contact0, passing/support1, opposite contact4 and passing/support5. The contact boot reaches forward in depth; the passing boot is airborne rather than presenting another trailing sole. Cane4/5 is released and recovering. Original poses2/3/6/7 remain byte-for-byte unchanged. Candidate0 and5 needed a second local edit; their unselected inputs, exact prompts, original references and immediate edit references are retained.
+- Added opt-in physical body-height/root landmarks to whole-pose assembly. A raised foot now changes pose geometry without changing body scale or pelvis registration. Legacy assemblies retain their exact prior behavior, verified by reconstructing the previously approved Ginger station source and registration.
+- Recomputed the Elder rear diagnostics. Simultaneous foot/cane proxy disagreement improved from 95.579 px to**14.009 px**. Cane plant displacement improved from 20.729 px to**18.057 px**. Both remain above the 6 px contact target and use silhouette proxies, not corresponding material points. **No stride, walking contact or full direction approval was adopted.** Runtime walking still uses the existing1.2-body-height estimate.
+- Strengthened review accounting: a finite task cannot inherit a seamless-loop approval, and changed playback mode, end behavior, source, timing, registration or released-prop layer invalidates the task review. Improved the live walking probe so a slow renderer can complete its32-sample window over multiple routes without comparing planted roots across teleports; missing work assets and browser console errors now fail it.
 
 ## Exact current accounting
 
-| Gate | Before motion35 | Current | Still required |
+| Gate | Before motion36 | Current | Still required |
 | --- | ---: | ---: | --- |
-| Existing reference actions with gameplay mapping | 5 of 65 | **11 of 65** | 54 task/ambient activations |
-| Direction families evaluated with a recorded verdict | 0 of 11 | **11 of 11** | Correct findings and pass all 11 |
+| Main-library cycles with scoped final approval | 2 of 153 | **4 of 153** | 149 |
+| Independent station actors with scoped final approval | 4 of 7 | **7 of 7** | 0 |
+| Outstanding final cycle reviews, main + actors | 154 | **149** | 64 walk +24 directional tool/carry +61 fixed work |
+| Direction families with a recorded verdict | 11 of 11 | **11 of 11** | Correct the findings |
 | Direction families with passing continuity approval | 0 of 11 | **0 of 11** | 11 |
-| Main-library cycles with scoped final approval | 0 of 153 | **2 of 153** | 151 |
-| Independent station actors with scoped final approval | 4 of 7 | **4 of 7** | 3 |
-| Outstanding final cycle approvals, main + actors | 156 | **154** | 64 walk + 24 directional tool/carry + 63 fixed work + 3 independent actors |
-| Elder joint moving foot/cane directions approved | 0 of 8 | **0 of 8** | 8, included in the walk count |
+| Existing reference actions with gameplay mapping | 11 of 65 | **11 of 65** | 54 activations |
+| Elder coordinated moving foot/cane directions approved | 0 of 8 | **0 of 8** | 8, included in the walk count |
 
-These counts overlap by gate. The 154 cycle obligations are **not 154 proven redraw requirements**. An unreviewed asset must be inspected before deciding it is defective. A new generated image or a passing build does not close an art review.
+These gates overlap. The149 cycle reviews are **not149 demonstrated redraw requirements**. They identify assets awaiting final acceptance; each must be inspected before deciding whether it needs redrawing. Playback, export/loading checks and visual/physical contact acceptance are separate. An approved station actor does not automatically approve the older combined reference image for the same action.
 
 ### Remaining gameplay activations
 
-| Character | Existing reference actions still inactive |
+| Character | Existing actions still inactive |
 | --- | ---: |
 | Blacksmith | 6 |
 | Borrin | 7 |
@@ -40,39 +40,35 @@ These counts overlap by gate. The 154 cycle obligations are **not 154 proven red
 | Laborer | 12 |
 | **Total** | **54** |
 
-The exact action names are in `docs/motion-completion-inventory.md`. These require appropriate task contexts, source-bound body placement, lifecycle/completion tests, and prop/station compatibility. Do not select every existing work image automatically: many include painted furniture, loads or tools that would overlap a persistent independent station. Mining/carry directional templates do not automatically activate their different fixed-reference counterparts.
+The action names are listed in `docs/motion-completion-inventory.md`. Each needs a suitable task or ambient context, source-bound body placement, completion/reset behavior, and compatible tools/props. Many older references contain painted furniture or loads; automatically selecting them over an independent station would duplicate props. The existing seven stations remain independently rendered after their workers depart. No new station family or gameplay action was activated in motion36.
 
-## Contact and continuity corrections still open
+## Contact and continuity work still open
 
-**Elder:** all eight moving foot/cane views remain unapproved. The rear diagnostic has 20.729px cane plant displacement, 36.639px largest cane boundary jump, and **95.579px disagreement between the root travel required by simultaneous cane/foot proxies**. These are silhouette diagnostics, not verified corresponding material points. Retiming a cane alone cannot solve conflicting foot support. Required work is contact-controlled support poses, physical cane lift/recovery/replant, material sole/tip correspondence across every boundary, and live movement proof. The rejected guide sheet is not a substitute. Use individually authored or rigged contact-controlled poses rather than repeating the same failed sheet request.
+**Elder moving gait:** complete all eight views. Rear0/1/4/5 now have better local leg phases, but soles2/3/6/7, simultaneous first-half foot/cane support, physical cane length/depth, and recovery/replant need corresponding material landmarks and contact-controlled geometry. Rear diagnostic disagreement is 14.009 px, above 6 px; cane plant displacement is 18.057 px. Neither measures a verified anatomical sole. Preserve the new physical root/scale while correcting remaining poses. The Elder is a seated narrative NPC in gameplay; a destination request does not create a walking demonstration. A genuine moving-contact test requires an intentional supported movement context, rather than treating a forced destination as proof.
 
-**Laborer rear-left:** arm counter-swing in3-5, contact4/support5 geometry and6-to7 spacing are unresolved. Whole-stride candidate boundary residual reaches110.265px. The bounded registration proposal is rejected: it needs25.136px perpendicular displacement, beyond12px, and a hold below40ms. There is no valid calibration to adopt.
+**Laborer rear-left:** arm counter-swing in3-5, contact4/support5 geometry and6-to7 spacing remain unresolved. The whole-stride candidate boundary residual remains 110.265 px. The bounded registration proposal is rejected:25.136 px perpendicular displacement exceeds 12 px and a proposed hold falls below40ms. No valid stride calibration has been adopted.
 
-**Blacksmith right:** the old six-point fit was invalidated by the moved return toe. Current whole-boundary residual reaches60.128px; changing a single stride ratio still leaves35.679px. A bounded, unapplied candidate at0.875 body heights with durations `[121,174,136,46,165,119,116,123]` and up to5.75px vertical registration predicts1.269px for candidate marks. It still needs reviewed material/anatomical correspondence, a registered re-export, runtime adoption and live full-stride/loop proof.
+**Blacksmith right:** current whole-boundary residual remains 60.128 px; changing one stride ratio leaves35.679 px. A bounded, unapplied proposal uses 0.875 body heights, durations `[121,174,136,46,165,119,116,123]` and up to5.75 px vertical registration, predicting1.269 px at candidate marks. It still requires actual sole/material correspondence review, a registered export, runtime adoption and live full-stride/loop proof. A numerical fit to unverified marks is not an approval.
 
-**Other walking families:** side/rear contact halves0/4, passing feet2/6, and anatomical support identity still require confirmation against the front phase convention. Reach3 and touchdown4 deliberately share the advancing leg; that is not itself a required leg swap. Rear-right first-half/return cases and same-side arm advances have specific notes in the bound family records. Correct those poses before approving turns; matching frame indices or a common520px height cannot establish anatomical continuity.
+**Other gait families:** side/rear contact halves0/4, passing phases2/6, support-foot identity and opposite arm phases need correction/verification against the front convention. Reach3 and touchdown4 legitimately use the same advancing leg; do not swap them merely to change frame parity. All eight views and turning transitions must retain character scale, anatomical phase and held-foot contact. All64 walking cycles remain unapproved.
 
-**Directional tools and timber:** the three families have reviewed open findings for matched strike/cast planes, hidden hand/shaft grips, blade elevation, and log foreshortening/cut-end/shoulder geometry. All24 final cycle reviews remain open.
+**Directional tools and timber:** all 24 cycle reviews remain open. Check strike/cast planes, wrist/shaft grips, tool-head elevation, and log foreshortening/cut ends/shoulder contact in all eight views. Visible rear occlusion does not verify hidden hand anatomy. The two Elder seated pickaxe inspection cycles also need rigid tool/shaft and grip review; successful playback does not close them.
 
-**Independent stations:** Cook blade/food/block contact, Borrin quill/paper contact and Laborer crate release/reset still need final approval. Existing scoped approvals for Blacksmith, Ginger, Stoneworker and Quartermaster remain separate from their main reference cycles. Further independent actions must preserve an independently owned prop through cancellation, completion and worker departure.
+**Final work-cycle reviews:** review the remaining61 main-library fixed work cycles in their actual task contexts. Existing source-bound station approvals stay limited to their fixed view and exact artifacts. Laborer placement requires an explicit new-task reset; it is not a repeating crate-generation loop. Overall `productionReady` remains false.
 
-## Finite completion order
+## Completion order and stopping conditions
 
-1. Author coordinated Elder support/cane poses and validate one full rear stride against genuine material landmarks; carry the accepted contact method through the other seven views.
-2. Correct the documented Laborer rear-left defects and verify the Blacksmith right calibration before adopting any runtime stride changes.
-3. Work through the remaining side/rear walking findings in the eleven bound family records; measure complete strides, including7-to0 and direction switches.
-4. Correct/review the pickaxe, shovel and timber geometry, then approve their full directional families.
-5. Activate the54 named existing reference actions with calibrated placements and real task/ambient contexts; retain independent prop ownership where those stations are used.
-6. Close the154 remaining cycle obligations, recording only source-bound passed reviews. Re-evaluate changed dependencies. Merge readiness requires every gate to pass.
+1. Finish the Laborer rear-left and Blacksmith right pilots with real corresponding sole points at every support boundary, including7-to0; correct anatomy/arm phases first, then adopt only verified registration, stride and timing. Prove held contacts, transitions, turning, collision freeze and arrival in the live renderer.
+2. Finish Elder rear joint foot/cane support and rigid recovery/replant, then apply the verified method to the seven other Elder directions. Give movement an intentional gameplay/review context while retaining his narrative role.
+3. Resolve the remaining seven other walking families and the three directional tool/carry families. Re-review each complete eight-direction family with current source/registration/runtime bindings. All11 families must receive explicit passing verdicts.
+4. Activate the 54 named existing work actions in appropriate contexts and review their body placement, prop layering and lifecycle. Add an independent station only where an action actually requires one; do not expand the frozen cycle scope automatically.
+5. Close all 149 remaining final cycle reviews against exact artifacts and dependencies. Re-export any changed art, revoke stale approvals automatically, and rerun the relevant browser/gameplay checks.
+6. Give merge approval only when the generated inventory has zero remaining cycle reviews, zero failed/missing direction approvals, zero unmapped required actions, and passing checks on the exact pushed PR commit. A successful CI build alone is insufficient.
 
-## Evidence and validation
+## Evidence and verification
 
-- `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`: regenerated source-bound accounting.
-- `docs/motion-completion-scope.json`: unchanged160-cycle scope, eleven blocked direction-review records, eleven audited reference mappings, and dispatch/calibration dependency hashes.
-- `docs/motion35-rejected-attempts.json` and `docs/art-review/motion35/`: rejected Elder guide source and the eleven direction contact sheets.
-- `docs/motion35-runtime-review.json`: current activity samples, validation totals, dependency hashes, completed delta and remaining merge blockers. The archived live screenshot is in `docs/art-review/motion35/elder-live-laugh-and-gesture.png`.
-- `public/sprites/Elder/motion/*/reference/loop-approval.json`: the two narrowly scoped passed seated-cycle reviews.
-- Live six-activity check: once-hold completion, finite terminal hold, departure/return reset; all eight live frames of both approved laughter cycles;464 consecutive recorded activity samples with no idle fallback during handoffs. The first stew cycle was not sampled at every frame in the software-rendered live probe and has no final cycle approval.
-- Automated library browser review:153 sequences,1,224 images, controls, phase preservation, seam comparison and mobile layout. This is functional review-tool validation, not automatic anatomical approval.
-- Static Pages startup now mounts its empty client shell directly; server-rendered pages retain hydration with visible recovery errors. The final live activity check and the two movement-burst captures have no console errors.
-- Motion35 adds activity/loader lifecycle tests and strict blocked-review accounting.198 Node tests,57 Python tests, type checking, Pages build, browser review and whitespace checks pass. GitHub build status is a separate delivery check; full motion acceptance remains blocked.
+`docs/motion-completion-status.json` and the generated inventory are the current accounting source. `docs/motion36-runtime-review.json` binds the checkpoint to exact runtime, art, calibration, review and browser-probe files. Current native pose sheets and browser captures are in `docs/art-review/motion36/`. Historical motion34/35 records retain their original claims and hashes; they are not relabeled as current approvals.
+
+Validation is recorded in the bound motion36 evidence after the final checks. Local checks cover198 Node tests,62 Python tests, type checking, a Pages build, all 153 sequence/1,224-image review controls, all seven station layers, controlled-clock48-pose Elder rendering, normal-time lifecycle probes, real walking/turning/collision/arrival behavior, and bundled gameplay captures. These checks do not approve unresolved anatomy or tool geometry.
+
+**PR #9 is not green to merge. Motion36 closed five reviews and improved four gait poses;149 final reviews,11 passing direction-family reviews and54 gameplay activations still remain.**

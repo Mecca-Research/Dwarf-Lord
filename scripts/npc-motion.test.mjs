@@ -180,7 +180,7 @@ test('workstations hold one completion and reset only on task lifecycle changes'
 });
 
 test('foreground contours preserve source pixels within the selected atlas frame', () => {
-  for(const [character,action] of [['Cook','chop-vegetables'],['Blacksmith','hammer-contact']]) {
+  for(const [character,action] of [['Cook','chop-vegetables'],['Blacksmith','hammer-contact'],['Borrin','desk-writing']]) {
   const contours=JSON.parse(readFileSync(`public/sprites/${character}/motion/render-calibration.json`,'utf8')).actions[`${action}/actor`].foregroundPolygons;
   for(let frame=0;frame<8;frame++) {
     const geometry=motionForegroundGeometry(contours[frame],frame),position=geometry.getAttribute('position'),uv=geometry.getAttribute('uv');
