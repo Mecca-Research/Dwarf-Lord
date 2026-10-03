@@ -22,7 +22,7 @@ The 32 new acceptances comprise three visual loops and 29 finite once-hold tasks
 
 These acceptances cover the named fixed references at their local sequence scale, visible grips, combined painted props and gallery/shared playback. Physical standing-height calibration, translating sole/cane contacts, direction changes, independent furniture ownership, live gameplay activation and economic output remain separate requirements. Finite tasks are not approved seamless repeats.
 
-**Corrected Borrin's open-ledger identity in all eight poses.** The standing explanation now retains bronze spectacles and two brass-bound grey beard tips. Its static consultation reference uses the same reviewed initial pose. The newly authored faces preserve the original poses, open book and painted furniture. Fresh registration measurement gives0.369px maximum residual translation for this set. The other33 registered fixed-prop sets remain within the existing0.71px test bound.
+**Corrected Borrin's open-ledger identity in all eight poses.** The standing explanation now retains bronze spectacles and two brass-bound grey beard tips. Its static consultation reference uses the same reviewed initial pose. The newly authored faces preserve the original poses, open book and painted furniture. Fresh registration measurement gives 0.369 px maximum residual translation for this set. The other33 registered fixed-prop sets remain within the existing0.71 px test bound.
 
 **Recorded rejected work without counting it as completed.** New `cycle-review.json` records bind specific defects to the current art and evidence. They remain merge blockers. Changed art or evidence invalidates the rejection, and a positive verdict placed in this rejection file cannot grant approval. Four regression tests cover those cases.
 
@@ -32,13 +32,13 @@ Single-pose attempts to fix Blacksmith hammer recovery and Ginger's final split 
 
 | Gate | Before motion38 | Current | Still required |
 | --- | ---: | ---: | --- |
-| Main-library cycles with scoped final acceptance | 7 of153 | **39 of153** | 114 |
-| Independent station actors with scoped acceptance | 7 of7 | **7 of7** | 0 |
+| Main-library cycles with scoped final acceptance | 7 of 153 | **39 of 153** | 114 |
+| Independent station actors with scoped acceptance | 7 of 7 | **7 of 7** | 0 |
 | Outstanding cycle reviews, main + actors | 146 | **114** | 63 walk +24 directional tool/carry +27 fixed work |
-| Fixed-reference actions with scoped acceptance | 6 of65 | **38 of65** | 20 recorded defects +7 further contact/calibration reviews |
-| Direction families with passing continuity approval | 0 of11 | **0 of11** | 11 current changes-required verdicts |
-| Existing reference actions mapped to gameplay | 11 of65 | **11 of65** | 54 activations |
-| Elder coordinated moving foot/cane views approved | 0 of8 | **0 of8** | Eight, included in the walk count |
+| Fixed-reference actions with scoped acceptance | 6 of 65 | **38 of 65** | 20 recorded defects +7 further contact/calibration reviews |
+| Direction families with passing continuity approval | 0 of 11 | **0 of 11** | 11 current changes-required verdicts |
+| Existing reference actions mapped to gameplay | 11 of 65 | **11 of 65** | 54 activations |
+| Elder coordinated moving foot/cane views approved | 0 of 8 | **0 of 8** | Eight, included in the walk count |
 
 The39 main acceptances comprise eight scoped loops and31 finite tasks. Together with the seven independent actors, **46 of the frozen160 cycles have scoped acceptance**. This is a count of accepted review scopes, not a percentage of game development complete. The114 open cycles are not114 demonstrated redraw requirements. Direction and activation gates overlap the cycle work and should not be added together as separate assets.
 
@@ -83,11 +83,11 @@ The exact action names and cycle IDs are in `docs/motion-completion-inventory.md
 
 ## Moving contact and direction work still open
 
-**Blacksmith right view remains the completed walking pilot.** Motion37 reviewed all eight visible material heel/toe boundaries and adopted0.880769-body stride with109/232/135/46/164/118/111/85ms holds. Whole-boundary residual was1.032px maximum; the saved actual renderer proof covers three strides,24 handoffs and held-pose travel. Its scope is this view at0.6-radian camera elevation on flat ground. Other directions, turns, terrain and equipment remain unapproved.
+**Blacksmith right view remains the completed walking pilot.** Motion37 reviewed all eight visible material heel/toe boundaries and adopted 0.880769-body stride with 109/232/135/46/164/118/111/85 ms holds. Whole-boundary residual was1.032 px maximum; the saved actual renderer proof covers three strides,24 handoffs and held-pose travel. Its scope is this view at0.6-radian camera elevation on flat ground. Other directions, turns, terrain and equipment remain unapproved.
 
-**Laborer rear-left:** retained local authored0/3/4/5/7 improvements are not a completed stride. The current whole-boundary candidate residual remains63.079px, with14.679px proposed perpendicular registration against a12px bound. Correct boot ground-plane perspective and support travel around2/3 and6/7; review material correspondence throughout both support halves, then remeasure and prove all boundaries in the actual renderer. Do not fit a numerical stride to unverified landmarks.
+**Laborer rear-left:** retained local authored0/3/4/5/7 improvements are not a completed stride. The current whole-boundary candidate residual remains63.079 px, with 14.679 px proposed perpendicular registration against a12 px bound. Correct boot ground-plane perspective and support travel around2/3 and6/7; review material correspondence throughout both support halves, then remeasure and prove all boundaries in the actual renderer. Do not fit a numerical stride to unverified landmarks.
 
-**Elder moving gait:** all eight views still need coordinated foot/cane plant, rigid cane geometry, recovery and replant. Rear proxy disagreement remains14.009px joint and18.057px cane displacement, above6px. These are failed silhouette-proxy diagnostics, not matching material evidence. The seated Elder inspection acceptances do not approve supported movement.
+**Elder moving gait:** all eight views still need coordinated foot/cane plant, rigid cane geometry, recovery and replant. Rear proxy disagreement remains14.009 px joint and18.057 px cane displacement, above 6 px. These are failed silhouette-proxy diagnostics, not matching material evidence. The seated Elder inspection acceptances do not approve supported movement.
 
 **Other walking and direction families:**63 walking reviews and24 directional tool/timber reviews remain open. Check anatomical lead/support legs, phases0/4 and2/6, opposing arms, complete sole travel, wrist/shaft grip, connected heads/handles, tool elevation, log cut ends/foreshortening and shoulder support. Cross-direction scale and transitions need their own explicit passing review against current art and runtime. All11 families remain changes-required.
 
@@ -95,7 +95,7 @@ The exact action names and cycle IDs are in `docs/motion-completion-inventory.md
 
 1. Correct the20 recorded fixed-reference defects and finish the seven contact/calibration reviews. Preserve rejected inputs; verify retained deposits, grips and terminal state before approving a finite task. Approve repeat only where its seam is coherent.
 2. Finish the Laborer rear-left whole-stride pilot and Elder rear joint foot/cane pilot with material-contact authoring, bounded registration and actual-rendered held/transition proof.
-3. Complete remaining walking and directional tool/carry reviews, then pass all11 direction-family continuity reviews against current bindings.
+3. Complete remaining walking and directional tool/carry reviews, then pass all 11 direction-family continuity reviews against current bindings.
 4. Activate the54 existing work actions with appropriate placement, independent or combined prop ownership and task lifecycle. Add stations only where an existing action requires one.
 5. Recompute the frozen inventory and resolve every open review, stale export and required mapping. Changed evidence must revoke acceptance.
 6. Give merge approval only when cycle reviews, direction-family failures and required unmapped actions are all zero, and checks pass on the exact pushed PR commit. A green build alone does not satisfy the motion acceptance gates.
@@ -104,6 +104,6 @@ The exact action names and cycle IDs are in `docs/motion-completion-inventory.md
 
 Current accounting is regenerated in `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Motion38 findings, individual bindings,32 controlled-time proofs, native/browser captures and fresh station residual measurements are in `docs/art-review/motion38/`. `docs/motion38-review-summary.json` records this checkpoint's closures and remaining gates. Motion37's renderer/contact evidence remains historical and current for its unchanged scope.
 
-Motion38 validation: **201 Node tests,67 Python tests, type checking, Pages build and whitespace checks pass**. Browser checks cover all153 sequences/1,224 images, all seven independent workstation layers, the32 exact-duration reviews and their task/loop lifecycle, corrected Borrin static consultation and two inspected headed gameplay movement captures. These checks do not certify the unresolved gait, material-contact, direction or activation work.
+Motion38 validation: **201 Node tests,67 Python tests, type checking, Pages build and whitespace checks pass**. Browser checks cover all 153 sequences/1,224 images, all seven independent workstation layers, the32 exact-duration reviews and their task/loop lifecycle, corrected Borrin static consultation and two inspected headed gameplay movement captures. These checks do not certify the unresolved gait, material-contact, direction or activation work.
 
 **PR #9 remains a draft. Motion38 closed32 reviews;114 cycle reviews,11 direction-family approvals and54 gameplay activations still block merge approval.**
