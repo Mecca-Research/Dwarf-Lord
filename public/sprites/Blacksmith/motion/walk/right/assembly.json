@@ -90,43 +90,191 @@
       "reference": "authoring-inputs/return34-reference.png",
       "referenceSha256": "ef45df34c74abe2c58e18ce69d818a599b629208a1b468dca262e6ac452c1fee",
       "selectionReview": "Local narrower trailing right-leg toe support; contact calibration and camera/scale approval remain separate."
+    },
+    {
+      "id": "baseline37",
+      "file": "authoring-inputs/baseline37.png",
+      "poseCount": 8,
+      "sha256": "df1ffee6ea0a78b80f3dcc5142c4934afbee624c3e56d0617d9321ba339a097c",
+      "cells": [
+        [
+          0,
+          0,
+          640,
+          640
+        ],
+        [
+          640,
+          0,
+          1280,
+          640
+        ],
+        [
+          1280,
+          0,
+          1920,
+          640
+        ],
+        [
+          1920,
+          0,
+          2560,
+          640
+        ],
+        [
+          0,
+          640,
+          640,
+          1280
+        ],
+        [
+          640,
+          640,
+          1280,
+          1280
+        ],
+        [
+          1280,
+          640,
+          1920,
+          1280
+        ],
+        [
+          1920,
+          640,
+          2560,
+          1280
+        ]
+      ],
+      "rootXs": [
+        320,
+        960,
+        1600,
+        2240,
+        320,
+        960,
+        1600,
+        2240
+      ],
+      "rootYs": [
+        616,
+        616,
+        616,
+        616,
+        1256,
+        1256,
+        1256,
+        1256
+      ],
+      "bodyHeights": [
+        520,
+        520,
+        520,
+        520,
+        520,
+        520,
+        520,
+        520
+      ],
+      "selectionReview": "Exact motion36 exported poses before the motion37 leg-overlap correction."
+    },
+    {
+      "id": "contact37",
+      "file": "authoring-inputs/contact37.png",
+      "poseCount": 1,
+      "sha256": "51bbefcb0869782c788e31d6339ac209622e3276f58c750f2d609c71dd7559d3",
+      "reference": "authoring-inputs/contact37-reference.png",
+      "referenceSha256": "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
+      "prompt": "Use case: precise-object-edit, game sprite gait correction. Edit target: the attached right-facing Blacksmith dwarf walking contact sprite. Preserve head, beard, face, exact camera, broad stocky torso, leather apron, both arms and their current positions, clothing/material detail, lighting, body scale and canvas. Correct ONLY the legs' anatomical overlap and visible boot sides. This is FAR LEFT FOOT forward contact and NEAR RIGHT FOOT trailing support; currently the generated forward boot reads as the near leg. The trailing leg extending toward image LEFT must be the NEAR RIGHT leg, passing IN FRONT of the forward FAR LEFT thigh where they overlap below the apron. Show the outer square buckles of the near right trailing boot prominently. The leading leg toward image RIGHT must be the FAR LEFT leg: its upper thigh/shin goes BEHIND the near trailing leg; show the INNER side of this far left leading boot rather than large outer buckles. Keep leading heel approximately x370,y609 and trailing toe approximately x255,y598 in the original 640px canvas. Near right arm is already swinging forward and must remain exactly as is; it opposes the trailing near right leg. Exactly two connected legs and two correctly oriented boots. Keep foot lengths, toe directions, contact geometry and floor baseline otherwise unchanged. Single full-body detailed semi-realistic game sprite with genuine transparent alpha, no ground, shadows, labels or props.",
+      "rootXs": [
+        640
+      ],
+      "rootYs": [
+        1188
+      ],
+      "bodyHeights": [
+        1052
+      ],
+      "selectionReview": "Far-left forward/near-right trailing leg identity distinguished by overlap and outer buckle side. Whole-pose normalization only; ground-material tracking and loop approval remain separate."
+    },
+    {
+      "id": "down37",
+      "file": "authoring-inputs/down37.png",
+      "poseCount": 1,
+      "sha256": "30d689af187db2c2098dedba474ffa172fc436ba13d748b07ebb80b3424a8307",
+      "reference": "authoring-inputs/down37-reference.png",
+      "referenceSha256": "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
+      "prompt": "Use case: precise-object-edit, game gait anatomy correction. Edit target: first image, right-facing Blacksmith walking down pose. Second image is the corrected preceding far-left contact, anatomical boot-side reference ONLY. Keep first image's exact head, beard, arms, torso, apron, camera, broad stocky proportions, textures and scale. Change ONLY visible anatomical leg overlap and boot sides: the planted boot under the pelvis near image x350,y609 is FAR LEFT and must show its INNER side, not the square outer ankle/knee buckles. The trailing bent, lifted boot at image LEFT is NEAR RIGHT, must show its OUTER side with the brass square buckle and leather straps. Its thigh passes IN FRONT of the far supporting left thigh. Keep planted sole and heel in same positions, trailing boot lifted behind in same location and orientation. Exactly two connected legs and feet. Near right arm already swings forward while near right leg recovers from trailing; don't change arms. This is the down/support phase after far-left heel contact and before near-right lifted passing. Genuine alpha, single isolated full-body sprite, no background, shadows, labels or props.",
+      "rootXs": [
+        625
+      ],
+      "rootYs": [
+        1186
+      ],
+      "bodyHeights": [
+        1003
+      ],
+      "selectionReview": "Far-left forward/near-right trailing leg identity distinguished by overlap and outer buckle side. Whole-pose normalization only; ground-material tracking and loop approval remain separate.",
+      "anatomyReference": "authoring-inputs/contact37.png",
+      "anatomyReferenceSha256": "51bbefcb0869782c788e31d6339ac209622e3276f58c750f2d609c71dd7559d3"
+    },
+    {
+      "id": "reach37",
+      "file": "authoring-inputs/reach37.png",
+      "poseCount": 1,
+      "sha256": "5acefada9b8ba91dc26037ab975bed25cc5167076027d4922eccb5754985e838",
+      "reference": "authoring-inputs/reach37-reference.png",
+      "referenceSha256": "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8",
+      "prompt": "Use case: precise-object-edit, game gait anatomy correction. Edit target: first image, right-facing Blacksmith pre-contact reach pose. Second image is the corrected NEXT far-left contact, anatomical boot-side reference ONLY. Keep first image's exact head, face, arms, torso, apron, camera, stocky body scale and texture detail. Correct ONLY legs' anatomical overlap and boot sides. Trailing bent leg toward image LEFT is NEAR RIGHT: prominently show its brass square buckle/outer leather straps and near thigh IN FRONT of leading far thigh. Leading extended airborne leg toward image RIGHT is FAR LEFT: show the INNER boot side without the large outer square buckle. Preserve the exact narrower trailing toe location near x311,y605 in 640px target, its heel raised; preserve far left reaching heel and upturned toe airborne in same position. Far left leg remains behind near right leg at crossing. Two correctly connected legs/two boots. Near right arm forward and far left arm back must remain unchanged, opposing trailing near right leg. This is pre-left-contact high phase, ready to flow to second image next frame. Single isolated whole dwarf, genuine transparent alpha, no floor, shadows, text or props.",
+      "rootXs": [
+        640
+      ],
+      "rootYs": [
+        1172
+      ],
+      "bodyHeights": [
+        1017
+      ],
+      "selectionReview": "Far-left forward/near-right trailing leg identity distinguished by overlap and outer buckle side. Whole-pose normalization only; ground-material tracking and loop approval remain separate.",
+      "anatomyReference": "authoring-inputs/contact37.png",
+      "anatomyReferenceSha256": "51bbefcb0869782c788e31d6339ac209622e3276f58c750f2d609c71dd7559d3"
     }
   ],
   "poses": [
     {
-      "input": "contact",
+      "input": "contact37",
       "pose": 0
     },
     {
-      "input": "left-down-arm",
+      "input": "down37",
       "pose": 0
     },
     {
-      "input": "support-a",
-      "pose": 0
+      "input": "baseline37",
+      "pose": 2
     },
     {
-      "input": "near-high",
-      "pose": 0
+      "input": "baseline37",
+      "pose": 3
     },
     {
-      "input": "original",
+      "input": "baseline37",
       "pose": 4
     },
     {
-      "input": "original",
+      "input": "baseline37",
       "pose": 5
     },
     {
-      "input": "support-b",
-      "pose": 0
+      "input": "baseline37",
+      "pose": 6
     },
     {
-      "input": "return34",
+      "input": "reach37",
       "pose": 0
     }
   ],
-  "review": "Return pose7 narrows trailing near-right support. Re-measure all eight boundaries before any timing/stride adoption.",
+  "review": "Motion37: corrected anatomical boot-side/leg overlap in far-left contact/down/reach 0/1/7. Original motion36 frames2/3/4/5/6 remain exact whole-pose inputs. Contact material correspondence, calibrated timing and final loop approval remain open.",
   "durationsMs": [
     140,
     130,
@@ -136,5 +284,6 @@
     89,
     173,
     98
-  ]
+  ],
+  "normalizedHeight": 520
 }

@@ -8,7 +8,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | --- | --- | --- | --- |
 | Blacksmith | walk | front | not-reviewed |
 | Blacksmith | walk | front-right | not-reviewed |
-| Blacksmith | walk | right | not-reviewed |
+| Blacksmith | walk | right | scoped-review-approved |
 | Blacksmith | walk | back-right | not-reviewed |
 | Blacksmith | walk | back | not-reviewed |
 | Blacksmith | walk | back-left | not-reviewed |
@@ -92,8 +92,8 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Elder | eat-bread | reference | scoped-review-approved |
 | Elder | laugh-seated | reference | scoped-review-approved |
 | Elder | laugh-and-gesture | reference | scoped-review-approved |
-| Elder | inspect-pickaxe-in-lap | reference | not-reviewed |
-| Elder | examine-pickaxe-crack | reference | not-reviewed |
+| Elder | inspect-pickaxe-in-lap | reference | scoped-review-approved |
+| Elder | examine-pickaxe-crack | reference | scoped-review-approved |
 | Female Miner | pickaxe-ready | reference | not-reviewed |
 | Female Miner | pickaxe-contact | reference | not-reviewed |
 | Female Miner | shovel-ore | reference | not-reviewed |

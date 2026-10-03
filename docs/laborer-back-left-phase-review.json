@@ -2,17 +2,17 @@
   "version": 2,
   "folder": "public/sprites/Laborer/motion/walk/back-left",
   "binding": {
-    "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
-    "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+    "sourceSha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635",
+    "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
     "frameSha256": [
-      "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
       "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
       "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
-      "052f86031ca3752f2b83a4916ff3322c96a63c361ee91fbed40773053f87bfd3",
-      "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
-      "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "e4f12f5576c4c37167abfc437fd62f8618d2571203ab4768d5d295bafcf76ddd",
+      "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a",
       "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
-      "29b194e5d39a4e8af0abc8631ee79f948c74aa4f09e079d6caf2a828b0422046"
+      "ed0d23a48a656dd530d7cb04583710ec7fbd961eee4ad37b08183c4db531adbc"
     ],
     "durationsMs": [
       125,
@@ -25,55 +25,55 @@
       125
     ]
   },
-  "scope": "Local authored anatomical pose inspection. Candidate sole-edge correspondence, registration, ground projection and full stride/loop remain unapproved.",
+  "scope": "Current whole-pose local review after motion37 edits; opaque material candidates remain unapproved. Numerical or phase-local improvement cannot close full-stride or loop approval.",
   "observations": [
     {
       "frame": 0,
-      "status": "review-required",
-      "remaining": "Confirm far-right heel strike, near-left trailing toe and opposing arms against adjacent poses. Candidate heel handoff0-to1 has 28.641px perpendicular mismatch."
+      "status": "authored-local-contact-depth-retained",
+      "finding": "Far-right leading heel projects ahead/up; second near-left trailing toe correction restores positive return progression. Material correspondence and whole-stride depth remain open.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 1,
       "status": "local-pose-correction-retained",
-      "legs": "Far-right weight-bearing flat boot; near-left raised recovery.",
-      "remaining": "Whole-cycle registration and actual corresponding support edge review."
+      "finding": "Far-right single-support and near-left recovery retained; actual contact correspondence remains open.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 2,
       "status": "local-pose-correction-selected",
-      "legs": "Near-left airborne passing crosses before far-right supporting calf.",
-      "arms": "Near neutral.",
-      "remaining": "Confirm same far-right sole material point through1-to2-to3."
+      "finding": "Airborne near-left passing retained; far-right sole travels insufficiently down in screen depth into3.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 3,
-      "status": "local-leg-correction-selected-arm-rejected",
-      "legs": "Near-left forward reach is airborne; far-right toe trails. Rear-left back/camera retained.",
-      "arms": "Near-left arm still forward with near-left leg; counter-swing requires correction."
+      "status": "authored-local-arm-correction-retained",
+      "finding": "Near-left arm now back against advancing near-left leg, far-right arm forward mainly occluded. Leg pose retained;2-to3 ground projection still fails.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 4,
-      "status": "needs-correction",
-      "remaining": "Retained contact has excessive spread/projected contact mismatch and near-left arm forward with leading near-left leg. Redraw with controlled foot positions and opposite arms."
+      "status": "authored-local-contact-and-arm-correction-retained",
+      "finding": "Near-left leading heel is higher/foreshortened and arm swings back. Far-right trailing toe retained;4-to5 corresponding material review remains open.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 5,
-      "status": "needs-correction",
-      "remaining": "Near-left support retained but near-left arm still forwards.4-to5 heel correspondence/geometry is unapproved; candidate mismatch110.265px with current travel."
+      "status": "authored-local-arm-and-support-correction-retained",
+      "finding": "Near-left planted boot raised in depth and arm returns from back swing;4-to5 heel transfer and full stride remain open.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 6,
       "status": "local-pose-correction-selected",
-      "legs": "Far-right airborne boot passes close behind near-left supporting shin rather than overreaching ahead.",
-      "arms": "Neutral midpoint.",
-      "remaining": "Corresponding near-left sole tracking;6-to7 candidate timing violates minimum hold."
+      "finding": "Far-right recovery retained; near-left support material travels wrong projected depth into7.",
+      "wholeStrideApproved": false
     },
     {
       "frame": 7,
-      "status": "local-support-spacing-correction-selected",
-      "legs": "Near-left toe support pulled under hip; far-right remains airborne ahead.",
-      "arms": "Retains counter-swing.",
-      "remaining": "Candidate7-to0 progress no longer reverses, but actual material contacts and loop return are unapproved."
+      "status": "authored-local-trailing-boot-correction-retained",
+      "finding": "Near-left heel lifts coherently; return toe now progresses toward0, but6-to7 depth and corresponding material remain unapproved.",
+      "wholeStrideApproved": false
     }
   ],
   "wholeStrideApproved": false,

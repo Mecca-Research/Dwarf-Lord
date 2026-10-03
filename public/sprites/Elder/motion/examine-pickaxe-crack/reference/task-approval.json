@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "binding": {
+    "sourceSha256": "25829dd8cdeb7facb122c32934a9f6438d6e06f03e90316f5a8e95eeb58dcea3",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "8bda1d6bb06935396df1fb60a3a9e9b5b120ab725776a9eea9b9d6ce06ca8fcc",
+      "0316caf42ac51959f7351eaf63c485ab5e1c9583df71644b95265469eec76416",
+      "38b6c944180d3297e12abe82bd54933127846189448d21cae2c89924ddc41819",
+      "448bd69c561dba23fcff56dfc4b503290b483b3c6cfeb4ae79c0d9c8a65376fa",
+      "1c13a367b7e9a23babb4f246671b35608e1450f233b52a516074e9341f1421a0",
+      "36c331ef35f8850fd00a7fd18d1a109876c3f816cc1e949f54bbf30ca13cb052",
+      "c2b1072e9278b9b2a0d093659c60ae1ab90342b15a9d46b28e1f0c1593a03f18",
+      "000e1e04084b744694a26c385755216efafebd7521166932a625f8f95eaf1bfd"
+    ],
+    "atlasSha256": "98daf1075b465e7070b6851f9322996273aa8304651d8bc1d6343f1ef2a923d2",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "examine-pickaxe-crack",
+    "direction": "reference"
+  },
+  "scope": "Motion37 fixed-view seated Elder examine-pickaxe-crack finite cosmetic inspection. All eight poses, visible grip/prop continuity, completion, terminal hold and departure reset accepted. Continuous replay, walking/cane, other directions, independent inspection furniture and cross-action seams are excluded.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and controlled-clock live camp frames reviewed. Same bald Elder, white braided beard, olive embroidered coat, pouches and boots. Standing-equivalent seated placement uses the existing source-bound render calibration; no walking scale or direction continuity approval.",
+    "station-and-foot-contact": "Fixed camp root, seated pelvis, stool and both boots retain the seated ground baseline through0-7. The crack inspection includes its painted wooden table in the combined fixed-view reference; it is not an independent workstation. No moving sole/cane calibration is claimed.",
+    "hand-and-tool-contact": "Left hand supports the wood below the metal eye while right hand examines the metal crack. Raised0/1/7, lowered3/4 and tilted5/6 retain the same visible grip and one connected head/handle. Right index can release to point; the supporting left hand remains on the handle. No hidden grip or 3D rigidity measurement is claimed.",
+    "prop-continuity": "One pickaxe with straight wooden handle, one metal eye/head and the same Elder/stool throughout all eight poses. Crack inspection table is a combined painted prop. No released item, inventory output, duplication or repair result is awarded.",
+    "completion-and-reset": "Actual controlled-clock camp renderer exposed0-7 at unchanged125ms timings, one completion and terminal7 hold. Sequence advances after held completion when the next atlas is ready, then final action stays held. Departure removes work state. Continuous7-to0 replay and seamless transitions between different camp activities are unapproved."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/elder-frame-review-check.mjs",
+      "sha256": "ca6929b6654d686b018d7e14474768d4bb28e9741b80a4ca3d27ab828b60c350"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion37/elder-live-frames.json",
+      "sha256": "ae19ec91664ca0741040d0b5f0d13d4b5e3a54c77cc2892d61ff63d4015bc3b5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion37/elder-examine-pickaxe-crack-poses.jpg",
+      "sha256": "adaa5de8e5b618bc5c37ca7b0f2aa5062aa82e4caeae815495ba787e93406fea"
+    }
+  ]
+}

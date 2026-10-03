@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/05-back-left.png",
   "source": "source-sheet.png",
-  "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
+  "sourceSha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635",
   "sourceSize": [
     2560,
     1280
@@ -16,31 +16,31 @@
     640,
     640
   ],
-  "sharedScale": 1.04,
+  "sharedScale": 1.0,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "retained first contact; leg identity needs review",
+      "description": "far-right leading heel; authored near-left trailing toe advances into return; full contact review pending",
       "durationMs": 125,
       "sourceBounds": [
-        180,
-        97,
-        480,
-        601
+        153,
+        80,
+        491,
+        598
       ],
       "sourceAnchor": [
-        140.0,
-        503.0
+        167.0,
+        520.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        174,
-        93
+        153,
+        96
       ]
     },
     {
@@ -49,14 +49,14 @@
       "description": "far-right support; near-left heel lifts; near-left arm counters forward",
       "durationMs": 125,
       "sourceBounds": [
-        804,
-        100,
-        1146,
+        798,
+        80,
+        1154,
         600
       ],
       "sourceAnchor": [
-        156.0,
-        500.0
+        162.0,
+        520.0
       ],
       "groundAnchor": [
         320,
@@ -70,17 +70,17 @@
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "near-left airborne passing beside far-right support calf; sole calibration pending",
+      "description": "near-left airborne passing beside far-right support calf; sole-depth calibration pending",
       "durationMs": 125,
       "sourceBounds": [
-        1464,
-        102,
-        1739,
+        1459,
+        82,
+        1745,
         594
       ],
       "sourceAnchor": [
-        136.0,
-        498.0
+        141.0,
+        518.0
       ],
       "groundAnchor": [
         320,
@@ -94,89 +94,89 @@
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "near-left airborne reach, far-right trailing support; near-left arm correction pending",
+      "description": "near-left airborne reach; near-left arm back, far-right arm forward; trailing sole-depth correction pending",
       "durationMs": 125,
       "sourceBounds": [
-        2061,
-        100,
-        2396,
-        600
+        2051,
+        80,
+        2394,
+        592
       ],
       "sourceAnchor": [
-        179.0,
-        500.0
+        189.0,
+        520.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        134,
+        131,
         96
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "retained near-left contact; opposing arms and direction correction pending",
+      "description": "authored near-left heel contact in projected depth; opposing arms; full contact review pending",
       "durationMs": 125,
       "sourceBounds": [
-        130,
-        740,
-        525,
-        1240
+        185,
+        720,
+        518,
+        1238
       ],
       "sourceAnchor": [
-        190.0,
-        500.0
+        135.0,
+        520.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        122,
+        185,
         96
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "retained near-left support; arm counter-swing correction pending",
+      "description": "near-left support with authored depth and returning back arm; full sole correspondence pending",
       "durationMs": 125,
       "sourceBounds": [
-        810,
-        742,
-        1141,
-        1237
+        815,
+        720,
+        1112,
+        1224
       ],
       "sourceAnchor": [
-        150.0,
-        498.0
+        145.0,
+        520.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        164,
-        98
+        175,
+        96
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "far-right airborne passing beside near-left supporting calf; neutral arms",
+      "description": "far-right airborne passing beside near-left supporting calf; neutral arms; support-depth correction pending",
       "durationMs": 125,
       "sourceBounds": [
-        1504,
-        740,
-        1735,
+        1500,
+        720,
+        1740,
         1240
       ],
       "sourceAnchor": [
-        96.0,
-        500.0
+        100.0,
+        520.0
       ],
       "groundAnchor": [
         320,
@@ -190,24 +190,24 @@
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "far-right airborne reach; near-left support narrowed under hip; contact review pending",
+      "description": "far-right airborne reach; authored near-left trailing heel/toe; full return contact review pending",
       "durationMs": 125,
       "sourceBounds": [
-        2063,
-        740,
-        2454,
-        1240
+        2049,
+        720,
+        2456,
+        1230
       ],
       "sourceAnchor": [
-        177.0,
-        500.0
+        191.0,
+        520.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        136,
+        129,
         96
       ]
     }
@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "review-seam",
-    "rootMotion": "external"
+    "rootMotion": "external",
+    "taskApproved": false
   },
   "registration": {
     "method": "source-landmarks",
@@ -267,25 +268,9 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+    "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
     "exportVersion": 2,
     "stationRegistration": null
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-      "Passing2/reach3/opposite passing6 locally corrected. Reach3 and contact/support4-5 arm phases, projected sole geometry and 7-to-0 support return still fail final acceptance. See source-bound whole-stride diagnostics.",
-      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
-  }
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
 }

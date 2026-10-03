@@ -25,9 +25,10 @@ def stride_binding(folder, manifest):
             'sourceFrameOrder': list(manifest['sourceFrameOrder'])}
 
 
-def measure(observations):
+def measure(observations, manifest=None):
     folder = Path(observations['folder'])
-    manifest = json.loads((folder / 'manifest.json').read_text())
+    if manifest is None:
+        manifest = json.loads((folder / 'manifest.json').read_text())
     current = stride_binding(folder, manifest)
     if (current != observations['binding'] or current['sourceSha256'] != manifest['sourceSha256']
             or current['actualSettingsSha256'] != current['settingsSha256']):
@@ -80,6 +81,7 @@ def measure(observations):
     all_reviewed = all(t.get('correspondenceReviewed') is True for t in transitions)
     return {'version': 1, 'folder': str(folder), 'binding': current,
             'runtimeSha256': observations['runtimeSha256'], 'strideBodyRatio': ratio,
+            'cameraElevationRadians': elevation,
             'projectedTravelAxis': axis.round(6).tolist(), 'transitions': reports,
             'coveredBoundaries': 8, 'returnBoundaryCovered': True,
             'withinHeldPoseDriftPx': 0,
@@ -91,6 +93,24 @@ def measure(observations):
             'measurementPassed': max_jump <= 6 and all_reviewed,
             'wholeStrideApproved': False, 'loopApproved': False,
             'scope': 'All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval.'}
+
+
+def travel_calibration(folder, manifest):
+    """Recompute the review; a cached pass flag or small residual is not evidence."""
+    path = folder / 'travel-calibration.json'
+    if not path.exists():
+        return None
+    observations = json.loads(path.read_text())
+    if observations.get('binding') != stride_binding(folder, manifest):
+        raise ValueError('Stale walking travel calibration export')
+    measured = measure(observations, manifest)
+    if not measured['measurementPassed']:
+        raise ValueError('Walking travel requires reviewed material points at all eight boundaries within6px')
+    return {'version': 1, 'sourceSha256': manifest['sourceSha256'],
+            'settingsSha256': manifest['registration']['settingsSha256'],
+            'direction': manifest['direction'], 'durationsMs': manifest['playback']['durationsMs'],
+            'strideBodyRatio': measured['strideBodyRatio'],
+            'scope': 'Reviewed sole-material boundaries at this fixed view on flat ground. Turning, uneven terrain, equipment and final cycle approval are separate.'}
 
 
 def annotate(observations, output):

@@ -1,17 +1,17 @@
 {
   "folder": "public/sprites/Laborer/motion/walk/back-left",
   "binding": {
-    "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
-    "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+    "sourceSha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635",
+    "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
     "frameSha256": [
-      "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
       "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
       "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
-      "052f86031ca3752f2b83a4916ff3322c96a63c361ee91fbed40773053f87bfd3",
-      "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
-      "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "e4f12f5576c4c37167abfc437fd62f8618d2571203ab4768d5d295bafcf76ddd",
+      "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a",
       "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
-      "29b194e5d39a4e8af0abc8631ee79f948c74aa4f09e079d6caf2a828b0422046"
+      "ed0d23a48a656dd530d7cb04583710ec7fbd961eee4ad37b08183c4db531adbc"
     ],
     "durationsMs": [
       125,
@@ -23,8 +23,8 @@
       125,
       125
     ],
-    "actualSettingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
-    "atlasSha256": "19d1e24581fc59818cde0004c648c71aee5af14d840cc5b92b6b158f1b1cc72d",
+    "actualSettingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
+    "atlasSha256": "e706dbad58600b95fe8ff4ddb6a16853a894514ee45ccebeef7f5ca4a52a1b50",
     "registration": {
       "method": "source-landmarks",
       "targetAnchor": [
@@ -34,7 +34,7 @@
       "targetBodyHeight": 520,
       "scaleScope": "directional-body-height",
       "landmarksVerified": false,
-      "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+      "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
       "exportVersion": 2,
       "stationRegistration": null
     },
@@ -50,130 +50,130 @@
       7
     ]
   },
-  "runtimeSha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab",
+  "runtimeSha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a",
   "cameraElevationRadians": 0.6,
   "strideBodyRatio": 1.2,
   "transitions": [
     {
+      "from": 0,
+      "to": 1,
       "fromPoint": [
-        293,
+        266,
+        526
+      ],
+      "toPoint": [
+        337,
+        577
+      ],
+      "foot": "right",
+      "landmark": "heel",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "fromPoint": [
+        245,
+        563
+      ],
+      "toPoint": [
+        338,
+        593
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "fromPoint": [
+        338,
+        593
+      ],
+      "toPoint": [
+        404,
+        599
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        404,
+        599
+      ],
+      "toPoint": [
+        431,
+        610
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "fromPoint": [
+        256,
+        529
+      ],
+      "toPoint": [
+        365,
+        593
+      ],
+      "foot": "left",
+      "landmark": "heel",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "fromPoint": [
+        265,
         581
       ],
       "toPoint": [
-        330,
-        569
+        295,
+        606
       ],
-      "foot": "right",
-      "landmark": "heel",
-      "correspondenceReviewed": false,
-      "from": 0,
-      "to": 1
-    },
-    {
-      "fromPoint": [
-        250,
-        550
-      ],
-      "toPoint": [
-        337,
-        591
-      ],
-      "foot": "right",
+      "foot": "left",
       "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 1,
-      "to": 2
+      "correspondenceReviewed": false
     },
     {
+      "from": 6,
+      "to": 7,
       "fromPoint": [
-        337,
-        591
+        295,
+        606
       ],
       "toPoint": [
-        398,
-        605
+        363,
+        595
       ],
-      "foot": "right",
+      "foot": "left",
       "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 2,
-      "to": 3
+      "correspondenceReviewed": false
     },
     {
+      "from": 7,
+      "to": 0,
       "fromPoint": [
-        398,
-        605
+        363,
+        595
       ],
       "toPoint": [
-        448,
+        385,
         608
       ],
-      "foot": "right",
-      "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 3,
-      "to": 4
-    },
-    {
-      "fromPoint": [
-        220,
-        610
-      ],
-      "toPoint": [
-        380,
-        607
-      ],
-      "foot": "left",
-      "landmark": "heel",
-      "correspondenceReviewed": false,
-      "from": 4,
-      "to": 5
-    },
-    {
-      "fromPoint": [
-        291,
-        604
-      ],
-      "toPoint": [
-        320,
-        604
-      ],
       "foot": "left",
       "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 5,
-      "to": 6
-    },
-    {
-      "fromPoint": [
-        320,
-        604
-      ],
-      "toPoint": [
-        330,
-        603
-      ],
-      "foot": "left",
-      "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 6,
-      "to": 7
-    },
-    {
-      "fromPoint": [
-        330,
-        603
-      ],
-      "toPoint": [
-        350,
-        601
-      ],
-      "foot": "left",
-      "landmark": "toe",
-      "correspondenceReviewed": false,
-      "from": 7,
-      "to": 0
+      "correspondenceReviewed": false
     }
   ],
-  "landmarkScope": "Manually inspected opaque heel/toe sole-edge candidates. Material correspondence and support identity remain unapproved; annotated overlays permit review rather than silhouette proxy acceptance."
+  "landmarkScope": "Motion37 opaque heel/toe sole candidates re-inspected after selected0/3/4/5/7. Second contact0 edit restores positive7-to0 toe progression. Full material correspondence and projected depth in2/3/6/7 remain unapproved. No numerical fit approves anatomy."
 }

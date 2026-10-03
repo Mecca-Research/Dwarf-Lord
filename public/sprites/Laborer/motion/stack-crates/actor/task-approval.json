@@ -73,7 +73,7 @@
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
     },
     {
       "file": "../../../../../../src/game/world/workstations.tsx",
@@ -83,5 +83,6 @@
       "file": "../../../../../../src/game/world/workstation-sites.ts",
       "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
     }
-  ]
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
 }

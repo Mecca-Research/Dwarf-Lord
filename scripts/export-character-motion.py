@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as nd
 from motion_registration import VERSION, polish_settings, settings_hash, playback_settings, register
 from motion_loop_approval import apply as apply_loop_approval
+from whole_stride import travel_calibration
 
 ROOT = Path('public/sprites')
 PLAN = Path('docs/expanded-animation-plan.json')
@@ -98,6 +99,9 @@ def export(entry):
               'status':'authored-keyframe-variations','productionReady':False,
               'playback':playback,'registration':registration,
               'note':'Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.'}
+    if entry['kind']=='walk':
+        travel=travel_calibration(folder,manifest)
+        if travel: manifest['travelCalibration']=travel
     (folder/'prompt.txt').write_text(json.loads((folder/'generation.json').read_text())['prompt']+'\n')
     apply_loop_approval(folder, manifest)
     (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

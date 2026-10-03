@@ -16,6 +16,7 @@ import {
 } from "../runtime";
 import { useGame } from "../store";
 import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
+import { spritePointReviewers, type SpritePointReview } from "./motion-review-points";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Workstations, workstationDiagnostics } from "./workstations";
 import { activeWorkstation, passiveWorkstation } from "./workstation-sites";
@@ -153,6 +154,9 @@ function Systems() {
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
       },
+      getCameraAngles: () => ({ azimuth: runtime.cameraAzimuth, elevation: runtime.cameraElev }),
+      projectDwarfSprite: (id: string, point: [number, number], reference?: [number, number, number]) =>
+        spritePointReviewers.get(id)?.(point, reference) ?? null,
     };
     window.__controlsTest = probe;
     window.render_game_to_text = () =>
@@ -624,6 +628,8 @@ declare global {
       setDwarfDest?: (id: string, x: number, z: number) => void;
       teleportDwarf?: (id: string, x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
+      getCameraAngles?: () => { azimuth: number; elevation: number };
+      projectDwarfSprite?: (id: string, point: [number, number], reference?: [number, number, number]) => SpritePointReview | null;
     };
   }
 }

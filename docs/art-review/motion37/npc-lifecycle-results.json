@@ -1,0 +1,652 @@
+{
+  "before": {
+    "id": "tam",
+    "x": -5.599999999999998,
+    "z": 3,
+    "yaw": -1.5707963267948966,
+    "facing": 3,
+    "speed": 2.400000000000002,
+    "anim": "walk",
+    "dest": {
+      "x": 8,
+      "z": 3
+    },
+    "bob": 2.71,
+    "motion": {
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 5,
+      "phase": 5.594405594405602,
+      "distance": 2.160000000000002,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -5.829500000000001,
+        3
+      ]
+    }
+  },
+  "after": {
+    "id": "tam",
+    "x": -5.359999999999998,
+    "z": 3,
+    "yaw": -1.5707963267948966,
+    "facing": 3,
+    "speed": 2.400000000000002,
+    "anim": "walk",
+    "dest": {
+      "x": 8,
+      "z": 3
+    },
+    "bob": 2.9699999999999998,
+    "motion": {
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 6,
+      "phase": 6.216006216006225,
+      "distance": 2.400000000000002,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -5.443400000000001,
+        3
+      ]
+    }
+  },
+  "turned": {
+    "id": "tam",
+    "x": -0.5599999999999934,
+    "z": 3,
+    "yaw": 1.5707963267948966,
+    "facing": 7,
+    "speed": 2.400000000000002,
+    "anim": "walk",
+    "dest": {
+      "x": -10,
+      "z": 3
+    },
+    "bob": 16.48999999999999,
+    "motion": {
+      "loaded": true,
+      "direction": "front-left",
+      "frame": 5,
+      "phase": 5.917637917637961,
+      "distance": 14.640000000000013,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -0.20569999999997662,
+        3
+      ]
+    }
+  },
+  "blocked": {
+    "id": "tam",
+    "x": -7.15,
+    "z": -5,
+    "yaw": 1.5707963267948966,
+    "facing": 7,
+    "speed": 0,
+    "anim": "walk",
+    "dest": {
+      "x": -11,
+      "z": -5
+    },
+    "bob": 18.05,
+    "motion": {
+      "loaded": true,
+      "direction": "front-left",
+      "frame": 0,
+      "phase": 0.8961408961409428,
+      "distance": 15.790000000000013,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.8039999999999825,
+        -5
+      ]
+    }
+  },
+  "held": {
+    "id": "tam",
+    "x": -7.15,
+    "z": -5,
+    "yaw": 1.5707963267948966,
+    "facing": 7,
+    "speed": 0,
+    "anim": "walk",
+    "dest": {
+      "x": -11,
+      "z": -5
+    },
+    "bob": 18.310000000000002,
+    "motion": {
+      "loaded": true,
+      "direction": "front-left",
+      "frame": 0,
+      "phase": 0.8961408961409428,
+      "distance": 15.790000000000013,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.8039999999999825,
+        -5
+      ]
+    }
+  },
+  "consultant": {
+    "id": "borrin",
+    "x": 10,
+    "z": 10,
+    "yaw": -1.5707963267948966,
+    "facing": 3,
+    "speed": 0,
+    "anim": "sit",
+    "dest": null,
+    "bob": 5.554999999999997,
+    "workMotion": {
+      "action": "desk-writing",
+      "direction": "actor",
+      "frame": 7,
+      "completed": true,
+      "completions": 1
+    }
+  },
+  "plantSamples": [
+    {
+      "routePass": 0,
+      "x": -7.039999999999999,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 0,
+      "phase": 0.7024087024087144,
+      "distance": 3.360000000000003,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -7.311200000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -6.799999999999999,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 1,
+      "phase": 1.3240093240093367,
+      "distance": 3.600000000000003,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.925100000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -6.559999999999999,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 1,
+      "phase": 1.9456099456099591,
+      "distance": 3.8400000000000034,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.925100000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -6.3199999999999985,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 2,
+      "phase": 2.5672105672105814,
+      "distance": 4.080000000000004,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.539000000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -6.079999999999998,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.1888111888112034,
+      "distance": 4.320000000000004,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.152900000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -5.839999999999998,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.810411810411826,
+      "distance": 4.560000000000004,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -6.152900000000004,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -5.599999999999998,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 4,
+      "phase": 4.432012432012447,
+      "distance": 4.800000000000004,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -5.7668000000000035,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -5.359999999999998,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 5,
+      "phase": 5.053613053613071,
+      "distance": 5.0400000000000045,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -5.3807000000000045,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -5.119999999999997,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 5,
+      "phase": 5.675213675213693,
+      "distance": 5.280000000000005,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -5.3807000000000045,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -4.879999999999997,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 6,
+      "phase": 6.296814296814316,
+      "distance": 5.520000000000005,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -4.994600000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -4.639999999999997,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 6,
+      "phase": 6.918414918414938,
+      "distance": 5.760000000000005,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -4.994600000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -4.399999999999997,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 7,
+      "phase": 7.540015540015561,
+      "distance": 6.000000000000005,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -4.608500000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -4.159999999999997,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 0,
+      "phase": 0.1616161616161835,
+      "distance": 6.2400000000000055,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -4.222400000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -3.9199999999999964,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 0,
+      "phase": 0.7832167832168058,
+      "distance": 6.480000000000006,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -4.222400000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -3.679999999999996,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 1,
+      "phase": 1.404817404817428,
+      "distance": 6.720000000000006,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -3.836300000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -3.439999999999996,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 2,
+      "phase": 2.0264180264180505,
+      "distance": 6.960000000000006,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -3.450200000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -3.1999999999999957,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 2,
+      "phase": 2.6480186480186725,
+      "distance": 7.200000000000006,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -3.450200000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -2.9599999999999955,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.269619269619295,
+      "distance": 7.440000000000007,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -3.064100000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -2.7199999999999953,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.891219891219917,
+      "distance": 7.680000000000007,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -3.064100000000005,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -2.479999999999995,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 4,
+      "phase": 4.512820512820539,
+      "distance": 7.920000000000007,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -2.6780000000000053,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -2.239999999999995,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 5,
+      "phase": 5.134421134421162,
+      "distance": 8.160000000000007,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -2.2919000000000054,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -1.9999999999999947,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 5,
+      "phase": 5.756021756021784,
+      "distance": 8.400000000000007,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -2.2919000000000054,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -1.7599999999999945,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 6,
+      "phase": 6.377622377622407,
+      "distance": 8.640000000000008,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -1.9058000000000057,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -1.5199999999999942,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 6,
+      "phase": 6.999222999223029,
+      "distance": 8.880000000000008,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -1.9058000000000057,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -1.279999999999994,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 7,
+      "phase": 7.620823620823652,
+      "distance": 9.120000000000008,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -1.519700000000006,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -1.0399999999999938,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 0,
+      "phase": 0.2424242424242748,
+      "distance": 9.360000000000008,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -1.1336000000000064,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -0.7999999999999936,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 0,
+      "phase": 0.8640248640248971,
+      "distance": 9.600000000000009,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -1.1336000000000064,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -0.5599999999999934,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 1,
+      "phase": 1.4856254856255193,
+      "distance": 9.840000000000009,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -0.7475000000000064,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -0.31999999999999346,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 2,
+      "phase": 2.1072261072261407,
+      "distance": 10.080000000000009,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -0.3614000000000064,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": -0.07999999999999344,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 2,
+      "phase": 2.7288267288267622,
+      "distance": 10.32000000000001,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        -0.3614000000000064,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": 0.16000000000000658,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.3504273504273843,
+      "distance": 10.56000000000001,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        0.024699999999993533,
+        3
+      ]
+    },
+    {
+      "routePass": 0,
+      "x": 0.4000000000000065,
+      "z": 3,
+      "loaded": true,
+      "direction": "back-right",
+      "frame": 3,
+      "phase": 3.972027972028006,
+      "distance": 10.80000000000001,
+      "strideBodyRatio": 1.2,
+      "visualRoot": [
+        0.024699999999993533,
+        3
+      ]
+    }
+  ],
+  "movingHolds": 12,
+  "assets": [
+    {
+      "url": "http://localhost:8081/Dwarf-Lord/sprites/Laborer/motion/walk/back-right/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://localhost:8081/Dwarf-Lord/sprites/Laborer/motion/walk/back-right/atlas.png",
+      "status": 200
+    },
+    {
+      "url": "http://localhost:8081/Dwarf-Lord/sprites/Laborer/motion/walk/front-left/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "http://localhost:8081/Dwarf-Lord/sprites/Laborer/motion/walk/front-left/atlas.png",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

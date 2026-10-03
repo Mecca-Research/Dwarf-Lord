@@ -15,13 +15,13 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 4)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 7)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 149)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 146)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':149,'direction-continuity':11,'runtime-action-activation':54})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':146,'direction-continuity':11,'runtime-action-activation':54})
 
     def test_finite_task_is_counted_without_claiming_seamless_repeat(self):
         entry=next(e for e in json.loads(Path('docs/runtime-motion-layers.json').read_text())['entries'] if e['character']=='Laborer')

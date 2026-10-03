@@ -13,7 +13,8 @@ fit=measure(folder,manifest,observations)
 axis=np.array(fit['projectedTravelAxis']);height=manifest['registration']['targetBodyHeight']
 durations=[f['durationMs'] for f in manifest['frames']];cycle=sum(durations)
 reports=[]
-for name,ratio in [('runtime-estimate',1.2),('sampled-keyframe-fit',fit['strideBodyRatio'])]:
+for name,ratio in [('legacy-runtime-estimate',1.2),('sampled-keyframe-fit',fit['strideBodyRatio']),
+                   ('runtime-measured-view',manifest.get('travelCalibration',{}).get('strideBodyRatio',1.2))]:
     tracks=[]
     for track in observations['tracks']:
         holds=[]
@@ -34,6 +35,6 @@ report={'version':2,'binding':binding(folder,manifest),'playbackModel':'Baseline
         'measurements':reports,'correspondenceReviewed':observations.get('correspondenceReviewed') is True,
         'wholeStrideApproved':False,'loopApproved':False,
         'scope':'Projected root travel during sampled intended flat-sole support frames; does not certify anatomical identity, heel-roll, unsampled contacts, terrain or cane.',
-        'remaining':'A whole-stride approval requires contact tracking through held-frame intervals and frame transitions, not only the six keyframe samples.'}
+        'remaining':'This baseline reports how far a continuously translated static image would slide. The actual runtime holds the rendered root; eight measured heel/toe transitions and a live geometry probe are reviewed separately.'}
 Path('docs/blacksmith-right-held-stance-measurement.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps([{k:r[k] for k in ('calibration','maxWithinHoldDriftPx')} for r in reports]))

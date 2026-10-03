@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
-import { MotionPlayback, motionPlacement } from "../motion-playback";
+import { MotionPlayback, motionPlacement, motionStrideBodyRatio } from "../motion-playback";
+import type { MotionManifest } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
 import { passiveWorkstation } from "./workstation-sites";
@@ -13,7 +14,7 @@ const folders: Partial<Record<DwarfAppearance, string>> = {
 // Work-only specialists do not yet have eight-direction walking atlases.
 const workFolders: Partial<Record<DwarfAppearance, string>> = { ...folders, stoneworker: "Stoneworker", quartermaster: "Quartermaster" };
 const directions = ["front", "front-right", "right", "back-right", "back", "back-left", "left", "front-left"];
-type Manifest = { character: string; action: string; kind: string; frames: { durationMs: number }[];
+type Manifest = MotionManifest & { character: string; action: string; kind: string; frames: { durationMs: number }[];
   frameSize: [number, number]; registration: { targetBodyHeight: number; targetAnchor: [number, number] };
   atlas: { file: string }; sourceSha256?: string };
 type Playback = { index: number; phase: number; setMotion(m: Manifest, options: { preservePhase: boolean }): void;
@@ -48,6 +49,7 @@ function acquire(folder: string, direction: string, action = "walk") {
           (action === "walk" && (manifest.kind !== "walk" || manifest.registration.targetBodyHeight !== 520))) {
         throw new Error("Unsupported NPC motion manifest");
       }
+      if (action === "walk") motionStrideBodyRatio(manifest);
       if (action !== "walk" && manifest.kind !== "directional") {
         const calibrationResponse = await fetch(new URL("../../render-calibration.json", url));
         if (!calibrationResponse.ok) throw new Error("Missing work body calibration");
@@ -93,7 +95,7 @@ function acquire(folder: string, direction: string, action = "walk") {
   return { promise: entry.promise, get value() { return held.value; }, release() { if (!released) { released = true; held.users--; held.touched = ++clock; trim(); } } };
 }
 
-export const npcMotionDiagnostics = new Map<string, { loaded: boolean; direction: string; frame: number; phase: number; distance: number; visualRoot?: [number, number] }>();
+export const npcMotionDiagnostics = new Map<string, { loaded: boolean; direction: string; frame: number; phase: number; distance: number; strideBodyRatio: number; visualRoot?: [number, number] }>();
 
 /** Convert resolved root displacement into a rotated/scaled sprite parent's space. */
 export function motionRootTranslation(offset: [number, number], yaw: number, scale: THREE.Vector3, heightDelta: number): [number, number, number] {
@@ -117,6 +119,8 @@ export class NpcWalkMotion {
   private disposed = false;
   private poseRoot?: [number, number];
   private poseKey = "";
+  private lastMove?: [number, number];
+  private poseRootSeeded = false;
   constructor(private id: string, private appearance: DwarfAppearance) {}
 
   update(body: Body, bodyHeight: number, worldScale = 1) {
@@ -132,7 +136,8 @@ export class NpcWalkMotion {
         ++this.token; this.lease?.release(); this.lease = undefined;
         this.loaded = undefined; this.direction = ""; this.pendingTravel = 0;
       }
-      this.moving = false; this.poseRoot = undefined; this.poseKey = ""; npcMotionDiagnostics.delete(this.id); return null;
+      this.moving = false; this.poseRoot = undefined; this.poseKey = "";
+      this.lastMove = undefined; this.poseRootSeeded = false; npcMotionDiagnostics.delete(this.id); return null;
     }
     const direction = directions[((body.facing % 8) + 8) % 8];
     if (!this.moving) this.player?.restart();
@@ -155,31 +160,37 @@ export class NpcWalkMotion {
       });
     }
     // Actual resolved displacement freezes blocked feet. Ignore teleports, not low FPS.
+    const strideBodyRatio = this.loaded ? motionStrideBodyRatio(this.loaded.manifest) : 1.2;
     if (distance <= bodyHeight * worldScale) {
-      const strides = distance / (bodyHeight * worldScale * 1.2);
+      if (distance > 0) this.lastMove = [dx / distance, dz / distance];
+      const strides = distance / (bodyHeight * worldScale * strideBodyRatio);
       // Keep logical phase moving while a different view is loading.
       if (this.player) this.player.travel(strides, 1);
       else this.pendingTravel = (this.pendingTravel + strides) % 1;
       this.distance += distance;
     } else {
       // A teleport cannot keep a stale pose planted at the old location.
-      this.poseRoot = undefined; this.poseKey = "";
+      this.poseRoot = undefined; this.poseKey = ""; this.lastMove = undefined; this.poseRootSeeded = false;
     }
     if (this.loaded && this.player) {
       const key = `${direction}:${this.player.index}:${this.player.completions}`;
-      if (key !== this.poseKey || !this.poseRoot) {
+      if (key !== this.poseKey || !this.poseRoot || (!this.poseRootSeeded && this.lastMove)) {
         const durations = this.loaded.manifest.frames.map(frame => frame.durationMs);
         const fraction = this.player.phase - this.player.index;
-        const frameTravel = bodyHeight * worldScale * 1.2 * durations[this.player.index] / durations.reduce((a, b) => a + b, 0);
+        const frameTravel = bodyHeight * worldScale * strideBodyRatio * durations[this.player.index] / durations.reduce((a, b) => a + b, 0);
         // Reconstruct the last boundary from resolved travel, including low-FPS
         // updates crossing several frames. No image pixels or limb positions change.
-        const back = distance > 0 && distance <= bodyHeight * worldScale ? Math.min(distance, fraction * frameTravel) : 0;
-        this.poseRoot = [body.x - (distance ? dx / distance * back : 0), body.z - (distance ? dz / distance * back : 0)];
+        // Loading may first expose a partly completed pose. Reconstruct its
+        // entire fraction, rather than capping it at just the latest update's
+        // travel. Retain the last resolved heading when decode finishes idle.
+        const back = this.lastMove ? fraction * frameTravel : 0;
+        this.poseRoot = [body.x - (this.lastMove?.[0] ?? 0) * back, body.z - (this.lastMove?.[1] ?? 0) * back];
+        this.poseRootSeeded = Boolean(this.lastMove);
         this.poseKey = key;
       }
     }
     npcMotionDiagnostics.set(this.id, { loaded: Boolean(this.loaded), direction, frame: this.player?.index ?? 0,
-      phase: this.player?.phase ?? 0, distance: this.distance, ...(this.poseRoot ? { visualRoot: this.poseRoot } : {}) });
+      phase: this.player?.phase ?? 0, distance: this.distance, strideBodyRatio, ...(this.poseRoot ? { visualRoot: this.poseRoot } : {}) });
     if (!this.loaded || !this.player) return null;
     return { texture: this.loaded.texture, frame: this.player.index,
       rootOffset: this.poseRoot ? [this.poseRoot[0] - body.x, this.poseRoot[1] - body.z] as [number, number] : [0, 0] as [number, number],

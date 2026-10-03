@@ -26,6 +26,21 @@ for(let c=0;c<characters.length;c++){
 }
 // Contact timing, synchronized views, overlays and last-to-first seam inspection.
 await page.selectOption('#character','0');await ready();
+// A measured walking view starts at its reviewed ratio, while uncalibrated
+// views retain the estimate. Scoped task approval never grants continuous replay.
+await page.selectOption('#action','2');await ready();
+assert.equal((await state()).measuredStrideBodyRatio,.880769);
+assert.equal((await state()).strideBodyRatio,.880769);
+assert.equal((await state()).loopApproved,true);
+await page.selectOption('#character','3');await ready();
+const inspection = await page.locator('#action option').evaluateAll(options => options.find(option => option.textContent.includes('Inspect pickaxe in lap'))?.value);
+assert.ok(inspection !== undefined,'Elder finite inspection appears in the library');
+await page.selectOption('#action',inspection);await ready();
+assert.equal((await state()).taskApproved,true);
+assert.equal((await state()).loopApproved,false);
+await page.selectOption('#character','0');await ready();
+assert.equal((await state()).measuredStrideBodyRatio,null);
+assert.equal((await state()).strideBodyRatio,1.2);
 const timing=await page.evaluate(()=>{document.querySelector('#restart').click();document.querySelector('#play').click();window.advanceTime(139);const a=JSON.parse(window.render_game_to_text()).index;window.advanceTime(1);const b=JSON.parse(window.render_game_to_text()).index;document.querySelector('#play').click();return [a,b]});assert.deepEqual(timing,[0,1]);
 // Ground travel freezes at zero speed and changing directions keeps the fractional beat.
 await page.check('#travel');

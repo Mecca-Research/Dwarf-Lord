@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { compiledPlayback } from './sync-motion-playback.mjs';
-import { MotionPlayback, motionPlacement, reviewTravelVector, reviewHeldRootOffset } from '../public/motion-playback.mjs';
+import { MotionPlayback, motionPlacement, motionStrideBodyRatio, reviewTravelVector, reviewHeldRootOffset } from '../public/motion-playback.mjs';
 const motion = (overrides = {}) => ({ character: 'Helga', action: 'walk', kind: 'walk',
   frames: [140, 140, 105, 115, 140, 140, 105, 115].map(durationMs => ({ durationMs })),
   registration: { targetBodyHeight: 520, targetAnchor: [320, 616] }, frameSize: [640, 640], ...overrides });
@@ -92,4 +92,18 @@ test('directional timber carrying follows travel without replaying stationary to
   const p = new MotionPlayback(motion({ kind: 'directional', action: 'carry-mine-timber' }));
   p.travel(.6, 1.2); assert.equal(p.index, 4);
   assert.throws(() => new MotionPlayback(motion({ kind: 'directional', action: 'pickaxe-swing' })).travel(.6, 1.2));
+});
+
+test('measured walking stride requires the exact source, view, registration and timings', () => {
+  const m = motion({ direction: 'right', sourceSha256: 'source', registration: { settingsSha256: 'settings' } });
+  assert.equal(motionStrideBodyRatio(m), 1.2);
+  m.travelCalibration = { version: 1, sourceSha256: 'source', settingsSha256: 'settings', direction: 'right',
+    durationsMs: m.frames.map(frame => frame.durationMs), strideBodyRatio: .880769, scope: 'Reviewed eight sole boundaries.' };
+  assert.equal(motionStrideBodyRatio(m), .880769);
+  for (const change of [{ sourceSha256: 'changed' }, { settingsSha256: 'changed' }, { direction: 'left' },
+    { strideBodyRatio: 0 }, { strideBodyRatio: NaN }, { strideBodyRatio: 2.1 }, { scope: '' },
+    { durationsMs: [125] }, { durationsMs: m.frames.map(() => 125) }]) {
+    assert.throws(() => motionStrideBodyRatio({ ...m, travelCalibration: { ...m.travelCalibration, ...change } }));
+  }
+  assert.throws(() => motionStrideBodyRatio({ ...m, kind: 'work' }));
 });

@@ -7,7 +7,7 @@ from PIL import Image
 
 from gait_calibration import digest
 from motion_registration import settings_hash
-from whole_stride import measure, propose_calibration, stride_binding
+from whole_stride import measure, propose_calibration, stride_binding, travel_calibration
 
 
 class WholeStrideTests(unittest.TestCase):
@@ -132,8 +132,24 @@ class WholeStrideTests(unittest.TestCase):
             self.assertEqual(measured, json.loads(Path(f'docs/{name}-whole-stride-measurement.json').read_text()))
             self.assertEqual(propose_calibration(measured), json.loads(Path(f'docs/{name}-whole-stride-candidate.json').read_text()))
             self.assertFalse(measured['wholeStrideApproved'])
-            self.assertFalse(measured['materialCorrespondenceReviewed'])
+            self.assertEqual(measured['materialCorrespondenceReviewed'], name == 'blacksmith-right')
             self.assertEqual(measured['coveredBoundaries'], 8)
+
+    def test_runtime_export_recomputes_contacts_instead_of_trusting_pass_flags(self):
+        record = measure(self.obs)
+        path = self.folder / 'travel-calibration.json'
+        path.write_text(json.dumps(record))
+        calibration = travel_calibration(self.folder, self.manifest)
+        self.assertEqual(calibration['strideBodyRatio'], self.obs['strideBodyRatio'])
+        self.assertEqual(calibration['durationsMs'], [125] * 8)
+        for mutation in ['point', 'unreviewed', 'runtime', 'binding']:
+            bad = copy.deepcopy(record)
+            if mutation == 'point': bad['transitions'][0]['toPoint'][0] = 310
+            if mutation == 'unreviewed': bad['transitions'][0]['correspondenceReviewed'] = False
+            if mutation == 'runtime': bad['runtimeSha256'] = 'changed'
+            if mutation == 'binding': bad['binding']['atlasSha256'] = 'changed'
+            path.write_text(json.dumps(bad))
+            with self.assertRaises(ValueError): travel_calibration(self.folder, self.manifest)
 
 
 if __name__ == '__main__':

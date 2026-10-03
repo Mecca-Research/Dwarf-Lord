@@ -1,10 +1,11 @@
 import { asset } from "@/lib/asset";
 import { Billboard, useTexture } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import * as THREE from "three";
 import { DWARF_ART, dwarfAppearance, type DwarfAppearance } from "./dwarf-appearances";
-import { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation } from "./npc-motion";
+import { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation, npcMotionDiagnostics } from "./npc-motion";
+import { reviewSpritePoint, spritePointReviewers } from "./motion-review-points";
 import { useGame } from "../store";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
@@ -157,6 +158,7 @@ export function DwarfSprite({
   const bank = useBank();
 
   const sit = isPlayer ? body.anim === "sit" : DWARF_ART[dwarfAppearance(dwarf?.id)].pose === "sit";
+  const { camera, size } = useThree();
   const h = (sit ? 1.65 : 1.95) * scale;
   const start = pickTex(bank, dwarf, body, isPlayer);
   const w = h * textureAspect(start);
@@ -179,6 +181,18 @@ export function DwarfSprite({
     workMotion.current = worker;
     return () => { driver.dispose(); worker.dispose(); motion.current = null; workMotion.current = null; };
   }, [isPlayer, dwarf?.id]);
+
+  useEffect(() => {
+    const id = dwarf?.id;
+    if (isPlayer || !id) return;
+    const review = (point: [number, number], reference?: [number, number, number]) => {
+      const pose = npcMotionDiagnostics.get(id);
+      return mesh.current && pose?.loaded && body.anim === 'walk'
+        ? reviewSpritePoint(mesh.current, camera, size, point, pose.frame, pose.direction, reference) : null;
+    };
+    spritePointReviewers.set(id, review);
+    return () => { if (spritePointReviewers.get(id) === review) spritePointReviewers.delete(id); };
+  }, [isPlayer, dwarf?.id, body, camera, size]);
 
 
   useFrame((_, dt) => {

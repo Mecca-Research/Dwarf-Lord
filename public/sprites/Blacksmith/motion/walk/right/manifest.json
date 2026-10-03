@@ -7,7 +7,7 @@
   "kind": "walk",
   "reference": "../../../animation/02-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
+  "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
   "sourceSize": [
     2560,
     1280
@@ -16,30 +16,30 @@
     640,
     640
   ],
-  "sharedScale": 1.04,
+  "sharedScale": 1.0,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
       "description": "left heel contact, right toe behind",
-      "durationMs": 140,
+      "durationMs": 109,
       "sourceBounds": [
-        145,
-        100,
-        482,
+        136,
+        80,
+        501,
         600
       ],
       "sourceAnchor": [
-        175.0,
-        500.0
+        184.0,
+        520.25
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        138,
+        136,
         96
       ]
     },
@@ -47,40 +47,40 @@
       "id": "key-01",
       "file": "01.png",
       "description": "left weight down, right heel lifts",
-      "durationMs": 130,
+      "durationMs": 232,
       "sourceBounds": [
-        790,
-        100,
-        1063,
+        788,
+        80,
+        1089,
         600
       ],
       "sourceAnchor": [
-        170.0,
-        500.0
+        172.0,
+        524.75
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        143,
-        96
+        148,
+        91
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
       "description": "right foot airborne passing left support leg",
-      "durationMs": 100,
+      "durationMs": 135,
       "sourceBounds": [
-        1490,
-        100,
-        1686,
+        1486,
+        80,
+        1690,
         600
       ],
       "sourceAnchor": [
-        110.0,
-        500.0
+        114.0,
+        517.25
       ],
       "groundAnchor": [
         320,
@@ -88,23 +88,23 @@
       ],
       "placement": [
         206,
-        96
+        99
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
       "description": "right leg extends forward, left heel rises",
-      "durationMs": 130,
+      "durationMs": 46,
       "sourceBounds": [
-        2090,
-        100,
-        2425,
+        2084,
+        80,
+        2432,
         600
       ],
       "sourceAnchor": [
-        150.0,
-        500.0
+        156.0,
+        519.75
       ],
       "groundAnchor": [
         320,
@@ -119,16 +119,16 @@
       "id": "key-04",
       "file": "04.png",
       "description": "right heel contact, left toe behind",
-      "durationMs": 140,
+      "durationMs": 164,
       "sourceBounds": [
-        145,
-        743,
-        491,
+        138,
+        724,
+        498,
         1237
       ],
       "sourceAnchor": [
-        175.0,
-        497.0
+        182.0,
+        514.25
       ],
       "groundAnchor": [
         320,
@@ -136,23 +136,23 @@
       ],
       "placement": [
         138,
-        99
+        102
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
       "description": "right weight down, left heel lifts",
-      "durationMs": 89,
+      "durationMs": 118,
       "sourceBounds": [
-        791,
-        743,
-        1103,
+        784,
+        723,
+        1108,
         1242
       ],
       "sourceAnchor": [
-        169.0,
-        497.0
+        176.0,
+        513.75
       ],
       "groundAnchor": [
         320,
@@ -160,23 +160,23 @@
       ],
       "placement": [
         144,
-        99
+        102
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
       "description": "left foot airborne passing right support leg",
-      "durationMs": 173,
+      "durationMs": 111,
       "sourceBounds": [
-        1486,
-        740,
-        1690,
+        1481,
+        720,
+        1693,
         1240
       ],
       "sourceAnchor": [
-        114.0,
-        500.0
+        119.0,
+        515.25
       ],
       "groundAnchor": [
         320,
@@ -184,31 +184,31 @@
       ],
       "placement": [
         201,
-        96
+        101
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
       "description": "left leg extends forward, right heel rises",
-      "durationMs": 98,
+      "durationMs": 85,
       "sourceBounds": [
-        2100,
-        740,
-        2440,
-        1240
+        2083,
+        720,
+        2460,
+        1237
       ],
       "sourceAnchor": [
-        140.0,
-        500.0
+        157.0,
+        516.75
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        174,
-        96
+        163,
+        99
       ]
     }
   ],
@@ -245,18 +245,19 @@
     "fps": 8,
     "durationMs": 1000,
     "durationsMs": [
-      140,
-      130,
-      100,
-      130,
-      140,
-      89,
-      173,
-      98
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
     ],
-    "loopApproved": false,
+    "loopApproved": true,
     "endBehavior": "review-seam",
-    "rootMotion": "external"
+    "rootMotion": "external",
+    "taskApproved": false
   },
   "registration": {
     "method": "source-landmarks",
@@ -267,25 +268,32 @@
     "targetBodyHeight": 520,
     "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
     "exportVersion": 2,
     "stationRegistration": null
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "Verify alternating lead feet, passing poses and planted-foot stability; phase captions describe intended poses.",
-      "Return7 trailing support narrowed. Whole-boundary numerical calibration candidate is not adopted: material correspondence, registered re-export, live travel and loop review are still required.",
-      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval."
+  "note": "Visual loop review recorded for the exact artifacts and scope in loop-approval.json. Task playback and overall production readiness are unchanged.",
+  "travelCalibration": {
+    "version": 1,
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "direction": "right",
+    "durationsMs": [
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
     ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+    "strideBodyRatio": 0.880769,
+    "scope": "Reviewed sole-material boundaries at this fixed view on flat ground. Turning, uneven terrain, equipment and final cycle approval are separate."
+  },
+  "loopReview": {
+    "status": "approved",
+    "record": "loop-approval.json",
+    "scope": "Motion37 Blacksmith right-view eight-pose walking loop at0.6-radian elevation on flat camp ground. Both anatomical support feet, arm counter-swing, body scale, held contacts and all eight boundary handoffs including7-to0 are reviewed. Other views, camera turns, uneven terrain, cane/tools and whole-library production readiness are excluded."
   }
 }

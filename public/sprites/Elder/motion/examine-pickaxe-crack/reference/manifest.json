@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -284,5 +285,10 @@
       "prop continuity",
       "direction and scale continuity"
     ]
+  },
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Motion37 fixed-view seated Elder examine-pickaxe-crack finite cosmetic inspection. All eight poses, visible grip/prop continuity, completion, terminal hold and departure reset accepted. Continuous replay, walking/cane, other directions, independent inspection furniture and cross-action seams are excluded."
   }
 }

@@ -13,13 +13,13 @@ class HeldStanceTests(unittest.TestCase):
         report=json.loads(reviewed)
         self.assertFalse(report['wholeStrideApproved'])
         self.assertFalse(report['loopApproved'])
-        # The narrowed return invalidates the old sampled fit. Neither sampled
-        # fitting nor the held-root model can approve anatomical contacts.
+        # The sampled fit now agrees after retiming. It still cannot grant
+        # whole-stride or visual loop approval on its own.
         keyfit=json.loads(Path('docs/blacksmith-right-gait-measurement.json').read_text())
-        self.assertFalse(keyfit['measurementPassed'])
+        self.assertTrue(keyfit['measurementPassed'])
         for measurement in report['measurements']:
             self.assertGreater(measurement['maxWithinHoldDriftPx'], 0)
-            if measurement['calibration'] == 'runtime-estimate':
+            if measurement['calibration'] == 'legacy-runtime-estimate':
                 self.assertGreater(measurement['maxWithinHoldDriftPx'], 100)
             self.assertEqual({t['foot'] for t in measurement['tracks']},{'left','right'})
             for track in measurement['tracks']:

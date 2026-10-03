@@ -31,6 +31,70 @@ test('atlas UVs select one cell per actor and restore canonical full-image UVs',
   a.dispose(); b.dispose();
 });
 
+test('Blacksmith measured view advances by its own stride and holds both sides of every boundary', async () => {
+ const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
+ const manifest = JSON.parse(readFileSync('public/sprites/Blacksmith/motion/walk/right/manifest.json'));
+ globalThis.location = { href: 'https://motion.test/' };
+ globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
+ globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
+ globalThis.fetch = async () => ({ ok: true, json: async () => manifest, blob: async () => new Blob() });
+ const driver = new NpcWalkMotion('blacksmith-measured-test', 'blacksmith');
+ const body = { x: 0, z: 0, facing: 2, anim: 'walk', speed: 2.4 }, height = 1.95, scale = .7;
+ try {
+  let ready; for (let i = 0; i < 50; i++) { ready = driver.update(body, height, scale); if (ready) break; await new Promise(resolve => setTimeout(resolve, 1)); }
+  assert.ok(ready); const ratio = manifest.travelCalibration.strideBodyRatio;
+  assert.equal(npcMotionDiagnostics.get('blacksmith-measured-test').strideBodyRatio, ratio);
+  const total = manifest.frames.reduce((sum, frame) => sum + frame.durationMs, 0);
+  for (let cycle = 0; cycle < 2; cycle++) for (let frame = 0; frame < 8; frame++) {
+   assert.equal(npcMotionDiagnostics.get('blacksmith-measured-test').frame, frame);
+   const root = npcMotionDiagnostics.get('blacksmith-measured-test').visualRoot;
+   const travel = height * scale * ratio * manifest.frames[frame].durationMs / total;
+   for (let step = 0; step < 3; step++) { body.x += travel / 4; driver.update(body, height, scale);
+    assert.equal(npcMotionDiagnostics.get('blacksmith-measured-test').frame, frame);
+    assert.deepEqual(npcMotionDiagnostics.get('blacksmith-measured-test').visualRoot, root); }
+   const phase = npcMotionDiagnostics.get('blacksmith-measured-test').phase;
+   driver.update(body, height, scale); assert.equal(npcMotionDiagnostics.get('blacksmith-measured-test').phase, phase, 'blocked travel freezes');
+   body.x += travel / 4 + 1e-12; driver.update(body, height, scale);
+   assert.equal(npcMotionDiagnostics.get('blacksmith-measured-test').frame, (frame + 1) % 8);
+  }
+  body.anim = 'idle'; assert.equal(driver.update(body, height, scale), null);
+  assert.equal(npcMotionDiagnostics.has('blacksmith-measured-test'), false);
+ } finally { driver.dispose(); for (const [key, value] of Object.entries(saved)) { if (value === undefined) delete globalThis[key]; else globalThis[key] = value; } }
+});
+
+test('a late atlas reconstructs the entire held-pose fraction after movement stops', async () => {
+ const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
+ const manifest = JSON.parse(readFileSync('public/sprites/Blacksmith/motion/walk/right/manifest.json'));
+ // Use a distinct cache key for this controller fixture; the material/art
+ // acceptance test separately exercises the actual right-view export.
+ manifest.direction = 'left'; manifest.travelCalibration.direction = 'left';
+ let release; const gate = new Promise(resolve => { release = resolve; });
+ globalThis.location = { href: 'https://late-load.test/' };
+ globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
+ globalThis.createImageBitmap = async () => { await gate; return { width: 5120, height: 640, close() {} }; };
+ globalThis.fetch = async () => ({ ok: true, json: async () => manifest, blob: async () => new Blob() });
+ const driver = new NpcWalkMotion('late-load-measured-test', 'blacksmith');
+ const body = { x: 0, z: 0, facing: 6, anim: 'walk', speed: 2.4 }, height = 1.95;
+ try {
+  driver.update(body, height); await new Promise(resolve => setTimeout(resolve, 1));
+  for (let i = 0; i < 6; i++) { body.x += .04; driver.update(body, height); }
+  release(); await new Promise(resolve => setTimeout(resolve, 10));
+  const pose = driver.update(body, height), diagnostic = npcMotionDiagnostics.get('late-load-measured-test');
+  assert.ok(pose); const fraction = diagnostic.phase - diagnostic.frame;
+  assert.ok(fraction > .2, 'decode exposes an actual partial pose');
+  const total = manifest.frames.reduce((sum, frame) => sum + frame.durationMs, 0);
+  const back = fraction * height * manifest.travelCalibration.strideBodyRatio * manifest.frames[diagnostic.frame].durationMs / total;
+  assert.ok(Math.abs(pose.rootOffset[0] + back) < 1e-10, 'stationary decode retains the last real movement direction');
+  assert.ok(back > .04, 'the whole fraction cannot be capped at the last movement sample');
+  const planted = diagnostic.visualRoot;
+  assert.deepEqual(driver.update(body, height).rootOffset, pose.rootOffset, 'blocked pose remains planted');
+  const next = (1 - fraction) * height * manifest.travelCalibration.strideBodyRatio * manifest.frames[diagnostic.frame].durationMs / total;
+  body.x += next + 1e-12; driver.update(body, height);
+  const moved = npcMotionDiagnostics.get('late-load-measured-test').visualRoot[0] - planted[0];
+  assert.ok(Math.abs(moved - (back + next)) < 1e-10, 'next boundary includes the complete pose travel');
+ } finally { release(); driver.dispose(); for (const [key, value] of Object.entries(saved)) { if (value === undefined) delete globalThis[key]; else globalThis[key] = value; } }
+});
+
 test('NPC driver shares atlases, preserves turns, freezes collisions and respects world scale', async () => {
   const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
   const requests = [], draws = []; let closed = 0;

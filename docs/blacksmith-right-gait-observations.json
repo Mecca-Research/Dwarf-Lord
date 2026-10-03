@@ -1,32 +1,32 @@
 {
   "folder": "public/sprites/Blacksmith/motion/walk/right",
   "binding": {
-    "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
-    "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
     "frameSha256": [
-      "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
-      "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
-      "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
       "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
-      "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
-      "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
-      "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
-      "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
     ],
     "durationsMs": [
-      140,
-      130,
-      100,
-      130,
-      140,
-      89,
-      173,
-      98
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
     ]
   },
   "cameraElevationRadians": 0.6,
-  "correspondenceReviewed": false,
-  "landmark": "Visible toe-side upper sole seam, manually selected in exported pixels. Return7 landmark updated to the narrowed toe; its old x258 coordinate is no longer the corresponding toe. Material correspondence and whole-stride contacts remain unapproved.",
+  "correspondenceReviewed": true,
+  "landmark": "Motion37: visible corresponding lower sole rim on the far-left inner boot and near-right outer boot. Subset of separately reviewed eight heel/toe boundaries; no automatic whole-cycle approval.",
   "tracks": [
     {
       "foot": "left",
@@ -34,15 +34,15 @@
         {
           "frame": 1,
           "point": [
-            417,
-            599
+            444,
+            602
           ]
         },
         {
           "frame": 2,
           "point": [
             338,
-            600
+            603
           ]
         },
         {
@@ -61,21 +61,21 @@
           "frame": 5,
           "point": [
             418,
-            603
+            606
           ]
         },
         {
           "frame": 6,
           "point": [
             364,
-            602
+            607
           ]
         },
         {
           "frame": 7,
           "point": [
-            311,
-            605
+            313,
+            607
           ]
         }
       ]

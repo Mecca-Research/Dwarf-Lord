@@ -1,9 +1,28 @@
 export interface MotionManifest {
   character: string; action: string; kind: string;
   direction?: string;
+  sourceSha256?: string;
   frames: { durationMs: number }[];
-  registration?: { targetBodyHeight?: number; targetAnchor?: number[] };
+  registration?: { targetBodyHeight?: number; targetAnchor?: number[]; settingsSha256?: string };
   frameSize?: number[];
+  travelCalibration?: { version: number; sourceSha256: string; settingsSha256: string;
+    direction: string; durationsMs: number[]; strideBodyRatio: number; scope: string };
+}
+
+/** Use a reviewed view's measured stride only with its exact export and timings. */
+export function motionStrideBodyRatio(manifest: MotionManifest) {
+  const calibration = manifest.travelCalibration;
+  if (!calibration) return 1.2;
+  if (manifest.kind !== 'walk' || calibration.version !== 1 || !manifest.sourceSha256 ||
+      calibration.sourceSha256 !== manifest.sourceSha256 ||
+      !manifest.registration?.settingsSha256 || calibration.settingsSha256 !== manifest.registration.settingsSha256 ||
+      calibration.direction !== manifest.direction || !calibration.scope?.trim() ||
+      !Number.isFinite(calibration.strideBodyRatio) || calibration.strideBodyRatio < .2 || calibration.strideBodyRatio > 2 ||
+      !Array.isArray(calibration.durationsMs) || calibration.durationsMs.length !== manifest.frames.length ||
+      calibration.durationsMs.some((duration, index) => duration !== manifest.frames[index].durationMs)) {
+    throw new Error('Stale or invalid walking travel calibration');
+  }
+  return calibration.strideBodyRatio;
 }
 
 /** Shared, renderer-independent playback for the authored sprite library.

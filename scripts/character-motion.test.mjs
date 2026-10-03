@@ -81,9 +81,13 @@ test('registered motion stays inside its canvas and preserves authored timing in
  for(const entry of plan.entries){
   const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
   assert.equal(m.registration.exportVersion,2,entry.destination);
-  const reviewed = entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference';
+  const reviewed = (entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference') ||
+    (entry.character==='Blacksmith' && entry.action==='walk' && entry.direction==='right');
   assert.equal(m.playback.loopApproved,reviewed,entry.destination);
   if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
+  const finiteReviewed = entry.character==='Elder' && ['inspect-pickaxe-in-lap','examine-pickaxe-crack'].includes(entry.action) && entry.direction==='reference';
+  assert.equal(Boolean(m.playback.taskApproved),finiteReviewed,entry.destination);
+  if(finiteReviewed){assert.equal(m.playback.mode,'once-hold');assert.equal(m.taskReview.status,'approved');}
   assert.equal(m.productionReady,false,'a scoped seated review cannot approve all production motion');
   assert.equal(m.playback.durationMs,m.frames.reduce((n,f)=>n+f.durationMs,0));
   const configPath=resolve(folder,'motion-polish.json');

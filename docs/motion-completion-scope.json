@@ -359,7 +359,7 @@
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -373,9 +373,9 @@
       "reviewedAt": "2026-10-01",
       "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
       "checks": {
-        "phase-agreement": "Right-view contact handoff still has60.128px candidate residual. Rear-right0/4 contact halves and2/6 passing poses need anatomical support-side confirmation and contact correction before turns can pass.",
-        "body-scale": "All views target520px, but the right-view registration/timing candidate has not been adopted.",
-        "direction-transitions": "Right/back-right turn preserves logical index, not the marked material foot contact; rear-right first-half to opposite support is not a passed transition.",
+        "phase-agreement": "Motion37 right-view leg overlap0/1/7 and arm counter-swing accepted. Measured1.032px eight-boundary residual and three actual rendered strides24-boundary max1.790181px. Other seven views retain changes-required phase findings.",
+        "body-scale": "Right-view physical520px body/root reviewed in native poses and actual rendered mesh. Other seven views need scale/camera and anatomical correspondence before family approval.",
+        "direction-transitions": "Standalone right-view7-to0 loop accepted. Phase-preserving turns between views, especially rear-right0/4 and2/6 and back silhouette changes, remain unapproved.",
         "equipment-geometry": "Apron, bald crown, beard and boots are recognizable; rear-right arm/leg opposition remains a correction."
       },
       "bindings": {
@@ -460,19 +460,19 @@
           "direction": "front-right"
         },
         "public/sprites/Blacksmith/motion/walk/right": {
-          "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
-          "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+          "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+          "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
           "frameSha256": [
-            "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
-            "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
-            "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+            "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+            "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+            "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
             "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
-            "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
-            "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
-            "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
-            "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+            "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+            "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+            "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+            "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
           ],
-          "atlasSha256": "5d0a7e4fe2211cc81fcd060a5b32291daa778d5e38cd73d3be599b09446284b9",
+          "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
           "registration": {
             "method": "source-landmarks",
             "targetAnchor": [
@@ -482,19 +482,19 @@
             "targetBodyHeight": 520,
             "scaleScope": "directional-body-height",
             "landmarksVerified": false,
-            "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+            "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
             "exportVersion": 2,
             "stationRegistration": null
           },
           "durationsMs": [
-            140,
-            130,
-            100,
-            130,
-            140,
-            89,
-            173,
-            98
+            109,
+            232,
+            135,
+            46,
+            164,
+            118,
+            111,
+            85
           ],
           "character": "Blacksmith",
           "action": "walk",
@@ -2720,9 +2720,9 @@
       "reviewedAt": "2026-10-01",
       "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
       "checks": {
-        "phase-agreement": "Rear-left locally corrected2/3/6/7 still leaves arm3-5 and support contact4/5. Whole-boundary residual reaches110.265px.",
+        "phase-agreement": "Motion37 local rear-left0/3/4/5/7 corrected, including opposing near-left arms3/4/5 and positive return toe progression. Original1/2/6 retained exactly. Whole-stride current residual63.079px; bounded registration still rejects14.679px against12px limit and material correspondence remains unapproved. Other seven views need phase/contact review.",
         "body-scale": "Shared520px target; the rear-left candidate needs25.136px perpendicular shift and cannot be adopted within12px.",
-        "direction-transitions": "Rear-left/right/rear phase correspondence remains blocked by failed contact registration, including7-to0.",
+        "direction-transitions": "Rear-left local corrections are not a final loop or turning approval. Review all other views, actual whole-stride support points and phase/scale across adjacent directions.",
         "equipment-geometry": "Same-side arm advance in rear-left3-5 conflicts with counter-swing. Other back-right/non-front poses require equivalent sole tracking."
       },
       "bindings": {
@@ -2928,19 +2928,19 @@
           "direction": "back"
         },
         "public/sprites/Laborer/motion/walk/back-left": {
-          "sourceSha256": "7c8009b048bb93fad2cb1bed8bbe8784476bbf02a4e076b7c12cfff553e7bbf1",
-          "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+          "sourceSha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635",
+          "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
           "frameSha256": [
-            "29f8ae6f3d00378f119d3278a2ec50276c0a119d6cb266174ad2a422f4e5f3d9",
+            "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
             "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
             "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
-            "052f86031ca3752f2b83a4916ff3322c96a63c361ee91fbed40773053f87bfd3",
-            "d2811ba5109af384d88c7289b1d9a646e148903505673c87c23bff90f015ac76",
-            "332e45f015db5ed6cc06edba9ab885a94da2755f5f602895be4a6f337d92b718",
+            "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+            "e4f12f5576c4c37167abfc437fd62f8618d2571203ab4768d5d295bafcf76ddd",
+            "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a",
             "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
-            "29b194e5d39a4e8af0abc8631ee79f948c74aa4f09e079d6caf2a828b0422046"
+            "ed0d23a48a656dd530d7cb04583710ec7fbd961eee4ad37b08183c4db531adbc"
           ],
-          "atlasSha256": "19d1e24581fc59818cde0004c648c71aee5af14d840cc5b92b6b158f1b1cc72d",
+          "atlasSha256": "e706dbad58600b95fe8ff4ddb6a16853a894514ee45ccebeef7f5ca4a52a1b50",
           "registration": {
             "method": "source-landmarks",
             "targetAnchor": [
@@ -2950,7 +2950,7 @@
             "targetBodyHeight": 520,
             "scaleScope": "directional-body-height",
             "landmarksVerified": false,
-            "settingsSha256": "9da09b928632b46235355eb2166141d1f55cb3b8f3938067e5986174f1697d78",
+            "settingsSha256": "ddeda48a2be034405a8ddd04b2280b719d8c81f30f69d126c23bdf5a9cd7142f",
             "exportVersion": 2,
             "stationRegistration": null
           },

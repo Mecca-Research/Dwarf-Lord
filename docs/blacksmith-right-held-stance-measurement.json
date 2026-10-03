@@ -1,40 +1,40 @@
 {
   "version": 2,
   "binding": {
-    "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
-    "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
     "frameSha256": [
-      "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
-      "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
-      "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
       "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
-      "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
-      "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
-      "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
-      "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
     ],
     "durationsMs": [
-      140,
-      130,
-      100,
-      130,
-      140,
-      89,
-      173,
-      98
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
     ]
   },
   "playbackModel": "Baseline without pose synchronization: discrete atlas frame held while physical world root moves continuously.",
   "poseSynchronization": {
-    "runtimeSha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab",
-    "rendererSha256": "7f5ab3f67c1b2623a33902d07fd8cbb91d0a8c63da7eb7fda8c26ca9871b0f81",
+    "runtimeSha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a",
+    "rendererSha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6",
     "modelWithinHoldRootDriftPx": 0,
     "scope": "Visible whole-pose root held at the last authored frame boundary. No limb deformation. Camera/view changes and anatomical/contact transitions require separate review.",
     "tradeoff": "Visible body translation advances at authored pose boundaries; this is stepped sprite movement, not continuous skeletal interpolation."
   },
   "measurements": [
     {
-      "calibration": "runtime-estimate",
+      "calibration": "legacy-runtime-estimate",
       "strideBodyRatio": 1.2,
       "tracks": [
         {
@@ -42,30 +42,30 @@
           "holds": [
             {
               "frame": 1,
-              "durationMs": 130,
+              "durationMs": 232,
               "projectedTravelPx": [
-                81.12,
+                144.768,
                 0.0
               ],
-              "withinHoldDriftPx": 81.12
+              "withinHoldDriftPx": 144.768
             },
             {
               "frame": 2,
-              "durationMs": 100,
+              "durationMs": 135,
               "projectedTravelPx": [
-                62.4,
+                84.24,
                 0.0
               ],
-              "withinHoldDriftPx": 62.4
+              "withinHoldDriftPx": 84.24
             },
             {
               "frame": 3,
-              "durationMs": 130,
+              "durationMs": 46,
               "projectedTravelPx": [
-                81.12,
+                28.704,
                 0.0
               ],
-              "withinHoldDriftPx": 81.12
+              "withinHoldDriftPx": 28.704
             }
           ]
         },
@@ -74,69 +74,69 @@
           "holds": [
             {
               "frame": 5,
-              "durationMs": 89,
+              "durationMs": 118,
               "projectedTravelPx": [
-                55.536,
+                73.632,
                 0.0
               ],
-              "withinHoldDriftPx": 55.536
+              "withinHoldDriftPx": 73.632
             },
             {
               "frame": 6,
-              "durationMs": 173,
+              "durationMs": 111,
               "projectedTravelPx": [
-                107.952,
+                69.264,
                 0.0
               ],
-              "withinHoldDriftPx": 107.952
+              "withinHoldDriftPx": 69.264
             },
             {
               "frame": 7,
-              "durationMs": 98,
+              "durationMs": 85,
               "projectedTravelPx": [
-                61.152,
+                53.04,
                 0.0
               ],
-              "withinHoldDriftPx": 61.152
+              "withinHoldDriftPx": 53.04
             }
           ]
         }
       ],
-      "maxWithinHoldDriftPx": 107.952
+      "maxWithinHoldDriftPx": 144.768
     },
     {
       "calibration": "sampled-keyframe-fit",
-      "strideBodyRatio": 0.938436,
+      "strideBodyRatio": 0.880579,
       "tracks": [
         {
           "foot": "left",
           "holds": [
             {
               "frame": 1,
-              "durationMs": 130,
+              "durationMs": 232,
               "projectedTravelPx": [
-                63.438,
+                106.233,
                 0.0
               ],
-              "withinHoldDriftPx": 63.438
+              "withinHoldDriftPx": 106.233
             },
             {
               "frame": 2,
-              "durationMs": 100,
+              "durationMs": 135,
               "projectedTravelPx": [
-                48.799,
+                61.817,
                 0.0
               ],
-              "withinHoldDriftPx": 48.799
+              "withinHoldDriftPx": 61.817
             },
             {
               "frame": 3,
-              "durationMs": 130,
+              "durationMs": 46,
               "projectedTravelPx": [
-                63.438,
+                21.063,
                 0.0
               ],
-              "withinHoldDriftPx": 63.438
+              "withinHoldDriftPx": 21.063
             }
           ]
         },
@@ -145,40 +145,111 @@
           "holds": [
             {
               "frame": 5,
-              "durationMs": 89,
+              "durationMs": 118,
               "projectedTravelPx": [
-                43.431,
+                54.032,
                 0.0
               ],
-              "withinHoldDriftPx": 43.431
+              "withinHoldDriftPx": 54.032
             },
             {
               "frame": 6,
-              "durationMs": 173,
+              "durationMs": 111,
               "projectedTravelPx": [
-                84.422,
+                50.827,
                 0.0
               ],
-              "withinHoldDriftPx": 84.422
+              "withinHoldDriftPx": 50.827
             },
             {
               "frame": 7,
-              "durationMs": 98,
+              "durationMs": 85,
               "projectedTravelPx": [
-                47.823,
+                38.922,
                 0.0
               ],
-              "withinHoldDriftPx": 47.823
+              "withinHoldDriftPx": 38.922
             }
           ]
         }
       ],
-      "maxWithinHoldDriftPx": 84.422
+      "maxWithinHoldDriftPx": 106.233
+    },
+    {
+      "calibration": "runtime-measured-view",
+      "strideBodyRatio": 0.880769,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 232,
+              "projectedTravelPx": [
+                106.256,
+                0.0
+              ],
+              "withinHoldDriftPx": 106.256
+            },
+            {
+              "frame": 2,
+              "durationMs": 135,
+              "projectedTravelPx": [
+                61.83,
+                0.0
+              ],
+              "withinHoldDriftPx": 61.83
+            },
+            {
+              "frame": 3,
+              "durationMs": 46,
+              "projectedTravelPx": [
+                21.068,
+                0.0
+              ],
+              "withinHoldDriftPx": 21.068
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 118,
+              "projectedTravelPx": [
+                54.044,
+                0.0
+              ],
+              "withinHoldDriftPx": 54.044
+            },
+            {
+              "frame": 6,
+              "durationMs": 111,
+              "projectedTravelPx": [
+                50.838,
+                0.0
+              ],
+              "withinHoldDriftPx": 50.838
+            },
+            {
+              "frame": 7,
+              "durationMs": 85,
+              "projectedTravelPx": [
+                38.93,
+                0.0
+              ],
+              "withinHoldDriftPx": 38.93
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 106.256
     }
   ],
-  "correspondenceReviewed": false,
+  "correspondenceReviewed": true,
   "wholeStrideApproved": false,
   "loopApproved": false,
   "scope": "Projected root travel during sampled intended flat-sole support frames; does not certify anatomical identity, heel-roll, unsampled contacts, terrain or cane.",
-  "remaining": "A whole-stride approval requires contact tracking through held-frame intervals and frame transitions, not only the six keyframe samples."
+  "remaining": "This baseline reports how far a continuously translated static image would slide. The actual runtime holds the rendered root; eight measured heel/toe transitions and a live geometry probe are reviewed separately."
 }

@@ -2,30 +2,30 @@
   "version": 1,
   "folder": "public/sprites/Blacksmith/motion/walk/right",
   "binding": {
-    "sourceSha256": "0b792eb78d0fb32dd50e2963733683d69bac47011d422eea2ab53d2036ca0967",
-    "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
     "frameSha256": [
-      "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d",
-      "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976",
-      "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07",
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
       "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
-      "ad19ba4118b6dccd474368487344ef2c12ee02841b1d9247ce1288353d840d30",
-      "a8d5664b4db9559b49662ae9ab1bb3f7eb89f40c39cd60d7d0a275052dd9b9fe",
-      "83f120229dcfc12c48248efdc86618ae1bd5c132cbec667cb4be04455a81a43a",
-      "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
     ],
     "durationsMs": [
-      140,
-      130,
-      100,
-      130,
-      140,
-      89,
-      173,
-      98
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
     ],
-    "actualSettingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
-    "atlasSha256": "5d0a7e4fe2211cc81fcd060a5b32291daa778d5e38cd73d3be599b09446284b9",
+    "actualSettingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
     "registration": {
       "method": "source-landmarks",
       "targetAnchor": [
@@ -35,7 +35,7 @@
       "targetBodyHeight": 520,
       "scaleScope": "directional-body-height",
       "landmarksVerified": false,
-      "settingsSha256": "14ad933e0c087a5799368875ae7a5404e19f09830c50c41cd971331d7d1504fc",
+      "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
       "exportVersion": 2,
       "stationRegistration": null
     },
@@ -51,91 +51,91 @@
       7
     ]
   },
-  "runtimeSha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab",
+  "runtimeSha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a",
   "adoptedByRuntime": false,
   "wholeStrideApproved": false,
   "loopApproved": false,
   "scope": "Numerical candidate from unapproved material landmarks. Requires visual contact correspondence, registered re-export and live travel proof before adoption.",
   "candidateAvailable": true,
-  "proposedStrideBodyRatio": 0.875,
+  "proposedStrideBodyRatio": 0.880769,
   "proposedDurationsMs": [
-    121,
-    174,
-    136,
+    109,
+    232,
+    135,
     46,
-    165,
-    119,
-    116,
-    123
+    164,
+    118,
+    111,
+    85
   ],
   "proposedOffsetsPx": [
     [
       0.0,
-      0.0
+      -0.25
     ],
     [
       0.0,
-      5.75
+      0.25
     ],
     [
       0.0,
-      3.5
+      -0.25
     ],
     [
       0.0,
-      -0.75
+      0.25
     ],
     [
       0.0,
-      -1.0
+      -0.25
     ],
     [
       0.0,
-      -1.25
+      0.25
     ],
     [
       0.0,
-      -1.5
+      -0.25
     ],
     [
       0.0,
-      -5.75
+      0.25
     ]
   ],
-  "predictedMaxContactJumpPx": 1.269,
+  "predictedMaxContactJumpPx": 0.562,
   "predictedResidualsPx": [
     [
-      0.055,
-      -1.25
+      -0.078,
+      0.5
     ],
     [
-      0.17,
-      -1.25
+      0.256,
+      0.5
     ],
     [
-      -0.12,
-      -1.25
+      -0.17,
+      0.5
+    ],
+    [
+      0.068,
+      0.5
+    ],
+    [
+      0.112,
+      0.5
+    ],
+    [
+      0.044,
+      0.5
+    ],
+    [
+      -0.162,
+      0.5
     ],
     [
       -0.07,
-      -1.25
-    ],
-    [
-      0.075,
-      -1.25
-    ],
-    [
-      0.145,
-      -1.25
-    ],
-    [
-      -0.22,
-      -1.25
-    ],
-    [
-      -0.035,
-      -1.25
+      0.5
     ]
   ],
-  "materialCorrespondenceReviewed": false
+  "materialCorrespondenceReviewed": true
 }
