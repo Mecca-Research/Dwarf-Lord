@@ -45,20 +45,41 @@ def export(entry):
         raise ValueError(f'{source}: frameOrder must use each of the eight source poses once')
     ordered=[ordered[i] for i in frame_order]
     crops = []
+    settings=polish_settings(folder)
+    cells=settings.get('sourceCells')
+    if cells is not None:
+        if len(cells)!=8:
+            raise ValueError('Eight authored source cells required')
+        for i,cell in enumerate(cells):
+            if len(cell)!=4 or any(not isinstance(v,int) or isinstance(v,bool) for v in cell):
+                raise ValueError('Integer source cell bounds required')
+            x0,y0,x1,y1=cell
+            if not 0<=x0<x1<=im.width or not 0<=y0<y1<=im.height:
+                raise ValueError('Source cell outside image')
+            if any(max(x0,a)<min(x1,c) and max(y0,b)<min(y1,d) for a,b,c,d in cells[:i]):
+                raise ValueError('Authored source cells overlap')
     # Register ground plus lower-body/station center, never moving hands or raised tools.
-    for k, _, _ in ordered:
-        mask = solid & (owner == k)
+    for index,(k, _, _) in enumerate(ordered):
+        if cells is None:
+            mask = solid & (owner == k)
+        else:
+            # Whole authored cells retain detached props and exclude neighboring
+            # piles. Nearest-component ownership cannot infer those boundaries.
+            a,b,c,d=cells[frame_order[index]]
+            mask=np.zeros_like(solid);mask[b:d,a:c]=solid[b:d,a:c]
+            if np.count_nonzero(mask)<1000:
+                raise ValueError('Authored cell lacks a full pose')
         yy, xx = np.where(mask)
         box = (int(xx.min()), int(yy.min()), int(xx.max()+1), int(yy.max()+1))
         x0,y0,x1,y1=box
         crop = pixels[y0:y1,x0:x1].copy()
-        crop[:,:,3][owner[y0:y1,x0:x1] != k] = 0
+        if cells is None:
+            crop[:,:,3][owner[y0:y1,x0:x1] != k] = 0
         crop[:,:,:3][crop[:,:,3] == 0] = 0
         lower = mask[y0+int((y1-y0)*.7):y1,x0:x1]
         lower_x = np.where(lower)[1]
         anchor_x = float((lower_x.min()+lower_x.max()+1)/2)
         crops.append((Image.fromarray(crop),box,anchor_x))
-    settings=polish_settings(folder)
     if settings.get('sourceSha256') and settings['sourceSha256']!=hashlib.sha256(source.read_bytes()).hexdigest():
         raise ValueError(f'{source}: source changed; recalibrate motion-polish.json')
     if settings.get('assemblySha256') and settings['assemblySha256']!=hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest():

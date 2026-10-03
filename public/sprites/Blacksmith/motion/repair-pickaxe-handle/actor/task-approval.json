@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656",
+    "settingsSha256": "6e700819de15ec4df2933ac5b5f664774dcc6104fa2b6c8c9e3596373b6fae41",
+    "frameSha256": [
+      "0d0bfb4923c55439fe2799c263cf18b21a4930222baddfb62d7b9584225622bd",
+      "1520af748fec5d33ab7aebb506ac8dbe1761a05ba5e1e609a2308b79a76a3b0a",
+      "6b1d447735ccb89dbd97049b65d710075ec0600893a3e2b87f9ef0d90e648e52",
+      "11552ac82aabdcd08498da830c48a86ebbf8090688a2cc881ad945795501ebb9",
+      "1d9ec1bdab5363d27afa7e1d64c5c769467ebfea29eef1136682b1cff2d1f357",
+      "1f1f70e6e9bb0834ebe494395aa45ee69e1f01899b29b1d99969bec7fd69e8b1",
+      "ac8c06684eab330f9d61ec7b638eee927daa2b6516b2ab05d89234d93a7469c6",
+      "eb8dbe7412f426b8c67ebff20b6ae476f0f9cb5744b4ceae8a45cf38ca5ddeda"
+    ],
+    "atlasSha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "6e700819de15ec4df2933ac5b5f664774dcc6104fa2b6c8c9e3596373b6fae41",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "repair-pickaxe-handle",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view local task, independent station placement/occlusion and controlled live lifecycle. No seamless repeat, direction continuity, moving sole contact or hidden geometry approval.",
+  "checks": {
+    "identity-and-scale": "All eight native/layered poses retain the same seated bald smith, forked dark brass-bound beard, cream sleeves, leather apron, olive trousers and capped boots. Whole-pose authored1/3/6 supply lift/descent/rebound. Reviewed seated650px calibration yields consistent body scale relative to the standing smith. No boot/limb stretching or gait approval.",
+    "station-and-foot-contact": "Seated supported boots use documented visible source ground baselines, correcting row-dependent floor errors. Chair remains actor-owned. The separate repair bench at3/-7 is actor-free, stays fixed and survives task cancellation, departure and day resolution. Source-bound foreground contours reuse original hand/pickaxe pixels over the worktop, leaving the lower shaft and legs occluded correctly.",
+    "hand-and-tool-contact": "Right hand retains one wooden-handled hammer through low0, preliminary lift1, overhead2, authored partial descent3, socket tap4, rebound5/6 and low held recovery7. Left hand stays wrapped around the same connected straight shaft and steel pick head. Visible tools are complete; no clipped hammer, swapped hands, duplicate heads or missing grips. These projected repair contacts do not certify translating cane/tool tips or all directions.",
+    "prop-continuity": "The pickaxe remains shaft-supported and held throughout; same chair, boots and clothing remain. The independent empty repair bench has spare tongs/file, cloth and nail drawer but no duplicated held hammer or painted dwarf. All eight layer views and real completion/departure captures reviewed.",
+    "completion-and-reset": "Exact live renderer and authored durations expose0-7, complete once, hold7 for5000ms and reset only on explicit assignment/day change. A day chooses one operation; completion does not trigger another operation. Repair routing walks naturally to its distinct bench. Renderer never grants inventory or building rewards; existing day resolution retains economic ownership."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "920f603bd97ca324089c8c0a705dd7e3cf464c6b5ef985c347158fe35bc11e87"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "da44bc7c46894befd4fd855c014372c2aeca81177451c941ebff6da3d0d5c501"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "f627c02633f4d859ba5c9e237092646abca046035027be016ab20ed5cd550a3b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-actor-review.json",
+      "sha256": "98b0e57f9b0af8a849bc5f9c3d2a77c62028e35ab9f70073224b68046415c54e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../workstations/repair-bench/generation.json",
+      "sha256": "5b1709cd5dcd93895e769966d14f4cd51fc67695c9229506d2d5a43dc3b6eb01"
+    },
+    {
+      "file": "../../../../workstations/repair-bench/sprite.png",
+      "sha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "2f43478895a7937055ad8c37c7ebfb0fe110ffe86141db6c84a0c2acaf110b53"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "084a0fe492b58f50f2fe49a1aae789168ccfb1e0aad5b0c868bbadf1c503f164"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/smith-work-check.mjs",
+      "sha256": "6d5bded53588e95272462a417b3f66053771843b3ea75882d62a608bb50e1273"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-0.png",
+      "sha256": "3dc83701157148560ce9beb7b8858277aca8522061f364215179c91714193940"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-1.png",
+      "sha256": "766da5aeeb81992f67cd56c7ce293ecaa6152702abb1071dd3302f0cce1a431a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-2.png",
+      "sha256": "e4dceec581c30ca85f443905a0c39b58303d1420d0cc69a879e74e7c2ea9c1f8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-3.png",
+      "sha256": "d698d05852d5c43872f77cc264943868e9ffe0712ddef312f7058a9b7b07cf3e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-4.png",
+      "sha256": "dae67ffd3a558ee60fe5661f45ff3afcd9b22f607ccb904b225424fdeaf844e8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-5.png",
+      "sha256": "da70b6a72f73ae78353b5c18ba5f75ac8c39ef1cdb3d8b3e27f9d114d7692c8f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-6.png",
+      "sha256": "185c4a79feab1cd533fcf85366bce35309deef86f749e0e743793a6626049656"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-layer-7.png",
+      "sha256": "ba6bfea68d1383d764ab54a79b23169a9e09ffabbdfa093cfc1e45f16a50184b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-game-0.png",
+      "sha256": "6d76082bfaf71122e3f5b639cbf2210a43739133b46a93c1c6ff760ad668d94e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-game-2.png",
+      "sha256": "3c23bda1b399255beaa8b42665bd15ff36b2c3bcbff0a6f610bd08f89fbbe01b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-game-4.png",
+      "sha256": "de92f22841b21f70473493baf09eb8a16917bc6b701c906a727e11a8f44414fe"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-game-7.png",
+      "sha256": "b3b902be1c49d0c6fa67b3099a3e8d263ed733ff252b50e6356354503a76c964"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-repair-pickaxe-handle-game-departed.png",
+      "sha256": "741ee68de5dee8894fb379ff1b37c5bbbffaa1048ede80b218b112fe5b874d76"
+    }
+  ]
+}

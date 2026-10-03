@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Blacksmith",
+  "action": "inspect-tool",
+  "title": "Inspect tool",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/03-inspect-tool.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold tool at chest height",
+      "durationMs": 125,
+      "sourceBounds": [
+        178,
+        74,
+        489,
+        606
+      ],
+      "sourceAnchor": [
+        142.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        90
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from hold tool at chest height toward raise tool toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        802,
+        74,
+        1152,
+        606
+      ],
+      "sourceAnchor": [
+        158.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        162,
+        90
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise tool toward eyes",
+      "durationMs": 125,
+      "sourceBounds": [
+        1463,
+        74,
+        1740,
+        606
+      ],
+      "sourceAnchor": [
+        137.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        183,
+        90
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from raise tool toward eyes toward rotate wrist to inspect opposite edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        2083,
+        74,
+        2421,
+        606
+      ],
+      "sourceAnchor": [
+        157.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        163,
+        90
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "rotate wrist to inspect opposite edge",
+      "durationMs": 125,
+      "sourceBounds": [
+        165,
+        714,
+        497,
+        1239
+      ],
+      "sourceAnchor": [
+        155.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        165,
+        90
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from rotate wrist to inspect opposite edge toward lower tool toward chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        809,
+        715,
+        1144,
+        1240
+      ],
+      "sourceAnchor": [
+        151.0,
+        525.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        169,
+        91
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower tool toward chest",
+      "durationMs": 125,
+      "sourceBounds": [
+        1459,
+        714,
+        1772,
+        1240
+      ],
+      "sourceAnchor": [
+        141.0,
+        526.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        179,
+        90
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lower tool toward chest toward hold tool at chest height",
+      "durationMs": 125,
+      "sourceBounds": [
+        2085,
+        715,
+        2407,
+        1240
+      ],
+      "sourceAnchor": [
+        155.0,
+        525.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        165,
+        91
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "4c817efa06348a3c8ef67f5c50c45b72eae24a04b09d4f7a397dd1369aa2f53a",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view local task, independent station placement/occlusion and controlled live lifecycle. No seamless repeat, direction continuity, moving sole contact or hidden geometry approval."
+  }
+}

@@ -15,17 +15,17 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 39)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 44)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 114)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 109)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':114,'direction-continuity':11,'runtime-action-activation':54})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':109,'direction-continuity':11,'runtime-action-activation':52})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']
-                    if e['character'] == 'Blacksmith' and e['action'] == 'anvil-ready')
+                    if e['character'] == 'Blacksmith' and e['action'] == 'fix-wheelbarrow')
 
     def test_recorded_rejection_remains_a_merge_blocker(self):
         result = motion_completion.cycle(self.rejected_entry(), Path('.'))
@@ -33,7 +33,7 @@ class CompletionTests(unittest.TestCase):
         self.assertIsNone(result['approvalType'])
         self.assertTrue(result['issues'])
         report = motion_completion.inventory()
-        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 20)
+        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 16)
         self.assertFalse(report['reviewGatesComplete'])
 
     def test_changed_rejected_frame_needs_a_new_review(self):
@@ -115,6 +115,19 @@ class CompletionTests(unittest.TestCase):
         for changed in ['work-activities.ts', 'render-calibration.json']:
             with patch('motion_completion.digest', side_effect=lambda p: 'changed' if str(p).endswith(changed) else original(p)):
                 self.assertIsNone(motion_completion.inventory()['counts']['referenceActionsMapped'])
+
+    def test_new_forge_actor_or_station_edit_invalidates_coverage(self):
+        original = motion_completion.digest
+        for changed in [
+            'Blacksmith/motion/inspect-tool/actor/03.png',
+            'Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json',
+            'workstations/repair-bench/sprite.png',
+            'world/workstation-sites.ts',
+        ]:
+            with patch('motion_completion.digest', side_effect=lambda p: 'changed' if str(p).endswith(changed) else original(p)):
+                report = motion_completion.inventory()
+                self.assertFalse(report['runtimeCoverageBindingCurrent'])
+                self.assertIsNone(report['counts']['referenceActionsMapped'])
 
     def test_direction_review_cannot_survive_changed_family_binding(self):
         family = {'id': 'test/walk', 'destinations': [str(i) for i in range(8)]}

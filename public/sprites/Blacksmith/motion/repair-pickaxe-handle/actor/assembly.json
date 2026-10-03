@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "normalizedHeight": 520,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "inputs": [
+    {
+      "id": "actor39",
+      "file": "authoring-inputs/source39.png",
+      "sha256": "666e69e24a66044f6858fb0062f49ec0fbf6deb038525d981f99450f06587d57",
+      "poseCount": 8,
+      "reference": "../reference/source-sheet.png",
+      "referenceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+      "rootXs": [
+        280.0,
+        723.5,
+        1167.0,
+        1610.5,
+        280.0,
+        723.5,
+        1167.0,
+        1610.5
+      ],
+      "rootYs": [
+        450,
+        451,
+        451,
+        452,
+        865,
+        865,
+        865,
+        865
+      ],
+      "bodyHeights": [
+        385,
+        385,
+        385,
+        385,
+        385,
+        385,
+        385,
+        385
+      ]
+    },
+    {
+      "id": "descent-single39",
+      "file": "authoring-inputs/descent-single39.png",
+      "sha256": "f69a5b3480f5711bc080c6668915e4a7fa35de1cc1babd6070af792b3d71ea34",
+      "poseCount": 1,
+      "rootXs": [
+        675
+      ],
+      "rootYs": [
+        1196
+      ],
+      "bodyHeights": [
+        958
+      ],
+      "reference": "authoring-inputs/descent-single39-reference.png",
+      "referenceSha256": "ba0e3c0e92dbba1fea2fc3bdf5882f903fe86f9fb92d72de0df3deaac6522f1a"
+    },
+    {
+      "id": "raising39",
+      "file": "authoring-inputs/descent-sheet39.png",
+      "sha256": "99533c623935da39701c256a864226d1174c0b8a4d2240da090ba9ee4dd3fda4",
+      "poseCount": 8,
+      "rootXs": [
+        280.0,
+        723.5,
+        1167.0,
+        1610.5,
+        280.0,
+        723.5,
+        1167.0,
+        1610.5
+      ],
+      "rootYs": [
+        452,
+        453,
+        452,
+        453,
+        867,
+        867,
+        867,
+        867
+      ],
+      "bodyHeights": [
+        385,
+        385,
+        385,
+        385,
+        385,
+        385,
+        385,
+        385
+      ]
+    },
+    {
+      "id": "rebound39",
+      "file": "authoring-inputs/rebound-single39.png",
+      "sha256": "62e6e634e8bcbf69520d76a3443838e28d4c5292844c3822506264a68d438d81",
+      "poseCount": 1,
+      "rootXs": [
+        400
+      ],
+      "rootYs": [
+        843
+      ],
+      "bodyHeights": [
+        740
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor39",
+      "pose": 0
+    },
+    {
+      "input": "raising39",
+      "pose": 3
+    },
+    {
+      "input": "actor39",
+      "pose": 2
+    },
+    {
+      "input": "descent-single39",
+      "pose": 0
+    },
+    {
+      "input": "actor39",
+      "pose": 4
+    },
+    {
+      "input": "actor39",
+      "pose": 5
+    },
+    {
+      "input": "rebound39",
+      "pose": 0
+    },
+    {
+      "input": "actor39",
+      "pose": 7
+    }
+  ],
+  "review": "One common physical body scale per authored source. The same supported ground baseline is read from fully visible seated boots; raised hammer bounds never set body scale or floor. No limb warp; static seated task only, pending native/layer review."
+}

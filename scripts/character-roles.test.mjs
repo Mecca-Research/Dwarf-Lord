@@ -55,7 +55,8 @@ test('forge assignment repairs the existing building through daily resolution', 
   assert.deepEqual(worked.inventoryDelta,{},'repair animation does not mint resource output');
 });
 
-const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog });
+const activities = compile('../src/game/world/work-activities.ts', { '../data/catalog': catalog });
+const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog, './work-activities': activities });
 test('passive weighing requires Fenn at his home table without a job',()=>{
  const fenn=catalog.STARTING_DWARVES.find(d=>d.id==='fenn');
  const body={x:fenn.x,z:fenn.z,anim:'idle'};
@@ -85,4 +86,17 @@ test('Borrin has a persistent consultation desk without becoming a production wo
  assert.deepEqual(site.target,{targetX:borrin.x,targetZ:borrin.z});
  assert.equal(stations.activeWorkstation('borrin',null,false,false),undefined);
  assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
+});
+
+test('forge operations route to their own station and retain completion boundaries',()=>{
+ for(const [day,id,action] of [[1,'anvil','hammer-contact'],[2,'anvil','inspect-tool'],[3,'repair-bench','repair-pickaxe-handle'],[4,'anvil','hammer-contact']]) {
+  const site=stations.activeWorkstation('blacksmith','forge',true,false,day);
+  assert.equal(site.id,id);assert.ok(site.actions.includes(action));
+  assert.equal(stations.workAssignmentTarget('blacksmith','forge',day),site.target,'routing and rendering share the task root');
+  assert.ok(Math.hypot(site.target.targetX-10,site.target.targetZ+7)>3.55,'station clears forge collision');
+  assert.equal(stations.activeWorkstation('blacksmith','forge',true,true,day),undefined);
+  assert.equal(stations.activeWorkstation('blacksmith','forge',false,false,day),undefined);
+ }
+ assert.equal(stations.workAssignmentTarget('laborer','storage',3),catalog.JOBS.find(job=>job.id==='storage'));
+ assert.equal(stations.workAssignmentTarget('laborer','missing-job',3),undefined);
 });

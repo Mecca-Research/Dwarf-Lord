@@ -1,0 +1,16 @@
+{
+  "key": "ginger-split-b39",
+  "character": "Ginger",
+  "action": "chop-downed-log",
+  "refs": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc"
+    }
+  ],
+  "prompt": "Local in-place edit of exact transparent 4 columns x2rows eight-pose sheet. All 8 chopping stumps and spare wood pieces must remain pixel-aligned with exact ORIGINAL silhouettes, grain pattern, feet and frame dimensions. Do not redraw the stump: preserve exact bark ridges and lower foreground scraps. Only the log on TOP of the stump in the LAST bottom-right pose changes. This last log must remain TWO SEPARATE SPLIT HALVES matching bottom-third pose. Preserve two halves' cut faces and gap; no whole log may regenerate. Axe recovers low just above the gap, still held in both hands. Never alter any of the other seven cells. Same canonical red-haired dwarf body, leather vest, green trousers, brown boots, axe design, light, camera, scale. Transparent background. All fixed furniture, stump core and side fragments unchanged.",
+  "output": "authoring-inputs/ginger-split-b39.png",
+  "outputSha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e",
+  "decision": "Pending fixed-stump registration; second whole-sheet edit after failed first candidate.",
+  "method": "Built-in image generation, local correction with exact whole-sheet reference."
+}

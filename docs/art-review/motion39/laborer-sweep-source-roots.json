@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+  "method": "Fixed toolbox panel feature replaces moving wood-chip silhouette as source root. Full-pose common scale preserved; physical source anchors observed on opaque fixed furniture, no limb/pixel editing.",
+  "templateRegion": [
+    440,
+    500,
+    560,
+    575
+  ],
+  "initialSilhouetteDisplacementPx": [
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      -8,
+      2
+    ],
+    [
+      -29,
+      4
+    ],
+    [
+      -37,
+      4
+    ],
+    [
+      -4,
+      1
+    ],
+    [
+      18,
+      0
+    ]
+  ],
+  "initialPlacementMethod": "lower-silhouette-estimate",
+  "sourceLandmarks": [
+    {
+      "root": [
+        242.5,
+        418.0
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        687.6351351351351,
+        418.0
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1130.6081081081081,
+        417.7837837837838
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1573.2297297297298,
+        417.56756756756755
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        245.27027027027026,
+        862.1351351351351
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        688.0,
+        862.1351351351351
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1130.8648648648648,
+        861.7837837837837
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1573.6081081081081,
+        862.0
+      ],
+      "bodyHeight": 407.56756756756755
+    }
+  ],
+  "scope": "Combined kneeling sweeping reference at one camera only. Pixel height preserves the existing local scale; it is not standing-body or translating-sole calibration. Remaining bounded ECC corrections stay <=12px."
+}

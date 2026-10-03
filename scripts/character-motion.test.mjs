@@ -8,7 +8,7 @@ const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const png=p=>{const b=readFileSync(p);assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');return [b.readUInt32BE(16),b.readUInt32BE(20),b[25]]};
 test('station residual evidence matches the current sources and calibration',()=>{
  const report=json('docs/motion-station-followup-results.json');
- assert.equal(report.sequences.length,34);
+ assert.equal(report.sequences.length,36);
  for(const result of report.sequences){
   const m=json(`public/sprites/${result.character}/motion/${result.action}/reference/manifest.json`);
   assert.equal(result.sourceSha256,m.sourceSha256);
@@ -89,13 +89,13 @@ test('registered motion stays inside its canvas and preserves authored timing in
   if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
   const finiteActions = {
    Elder:['inspect-pickaxe-in-lap','examine-pickaxe-crack'],
-   Blacksmith:['inspect-tool','file-tool-edge','repair-pickaxe-handle'],
+   Blacksmith:['anvil-ready','inspect-tool','file-tool-edge','repair-pickaxe-handle'],
    Borrin:['desk-writing','review-open-ledger','turn-ledger-page','explain-at-desk','stamp-paperwork','explain-closed-ledger','explain-open-ledger'],
-   Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat'],
+   Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat','fillet-fish'],
    'Female Miner':['examine-sample','repair-pickaxe'],
    Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
-   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate'],
-   Laborer:['build-crate','stack-crates'],
+   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log'],
+   Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips'],
   };
   const finiteReviewed = entry.direction==='reference' && Boolean(finiteActions[entry.character]?.includes(entry.action));
   assert.equal(Boolean(m.playback.taskApproved),finiteReviewed,entry.destination);
@@ -177,6 +177,33 @@ test('runtime actor layers and persistent stations retain source provenance and 
  assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
  assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
  if(g.completionLayer){assert.equal(hash(resolve(root,g.completionLayer.source)),g.completionLayer.sourceSha256);assert.equal(hash(resolve(root,g.completionLayer.file)),g.completionLayer.sha256);}
+ }
+});
+
+test('new forge actions require exact actor, station and finite task evidence',()=>{
+ const additions=json('docs/runtime-motion-additions.json').entries;
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle']);
+ for(const entry of additions){
+  const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
+  assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);
+  assert.equal(m.playback.loopApproved,false);assert.equal(m.productionReady,false);
+  const a=json(resolve(root,'task-approval.json'));
+  assert.equal(a.binding.sourceSha256,hash(resolve(root,'source-sheet.png')));
+  assert.deepEqual(a.binding.frameSha256,m.frames.map(f=>hash(resolve(root,f.file))));
+  assert.equal(a.binding.atlasSha256,hash(resolve(root,m.atlas.file)));
+  for(const dependency of a.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);
+  const assembly=json(resolve(root,'assembly.json'));
+  assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
+  for(const input of assembly.inputs){
+   assert.equal(hash(resolve(root,input.file)),input.sha256);
+   if(input.reference)assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);
+  }
+  assert.equal(new Set(m.frames.map(f=>hash(resolve(root,f.file)))).size,8);
+  const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[entry.action+'/actor'];
+  assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
+  const stationRoot=resolve('public/sprites/workstations',entry.station),station=json(resolve(stationRoot,'generation.json'));
+  assert.equal(hash(resolve(stationRoot,'source.png')),station.sourceSha256);
+  assert.equal(hash(resolve(stationRoot,'sprite.png')),station.spriteSha256);
  }
 });
 

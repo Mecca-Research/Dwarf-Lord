@@ -1,0 +1,55 @@
+{
+  "selectedSourceUnchanged": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635",
+  "verdict": "changes-required",
+  "attempts": [
+    {
+      "key": "laborer-ground-sheet39",
+      "prompt": "Author corrected eight full-body Laborer walking poses, transparent 4x2 grid, using the first reference exact character and near rear-left camera. The second image is a PROPOSED FOOT GROUND-PLANE GUIDE; its red rings are target distal-toe sole contacts, not decorations and not an approval. Keep crown, torso, pelvis, body size, anatomical legs, contralateral swinging arms, cream sleeves, leather waistcoat and all boot straps from each corresponding first-reference pose. Correct the entire boots and ankle flexion to the correct tilted ground plane: direction is diagonally away to upper-left with camera elevation0.6 radian (34degrees); a flat boot's forward toe is upper-left of its rear heel, not a horizontal side-view sole. Near anatomical LEFT boot has outward square brass buckle; far anatomical RIGHT boot does not acquire that near buckle. Both boots stay connected to the correct legs. Retain phases0 right-leading heel/left-trailing toe;1 right flat support/left heel lift;2 left airborne passing beside right calf;3 left airborne reaching ahead/right trailing toe;4 left-leading heel/right-trailing toe;5 left flat support/right heel lift;6 right airborne passing beside left calf;7 right airborne reaching ahead/left trailing toe. Correct boot/sole ground-plane depth near the red targets for each pose, with rigid foot shape and natural ankle roll, especially right support2/3 and left support6/7. Do not move the entire body to fake a contact correction. Preserve the torso/arm poses and exact scale; no duplicate leading legs, no extra limbs, no front-view shoe on rear-view foot. Remove ALL guide lines, marks, words, panels/background. Output ONLY eight clean fully opaque characters with transparent background, all boots and hands complete, fixed camera/light, 4 columns2rows. Requested 2560x1280 overall; each pose uses its own full640x640 cell with original projected body520px and ground root(320,616).\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/ground-sheet39-reference.png",
+          "sha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635"
+        },
+        {
+          "file": "authoring-inputs/ground-plane-guide39.jpg",
+          "sha256": "b1e35085045026dcadecf5bebe0cc70ea0999d6bd47546647ca0acde69bd0e08"
+        }
+      ],
+      "output": "authoring-inputs/ground-sheet39.png",
+      "outputSha256": "03de21b6d4118e0617715000ccaaee77d3d4721e3db1904fcd074a3cfcd5ad16",
+      "decision": "unselected",
+      "reason": "Supporting boot soles still read as flat horizontal planes. Requested rear-left ground perspective is not authored reliably.",
+      "scope": "Native visual authoring rejection only. Target guide coordinates are not measured material landmarks. Current failed selected-stride result remains unchanged."
+    },
+    {
+      "key": "laborer-ground-passing-right39",
+      "prompt": "Edit this ONE whole Laborer rear-left walk passing pose. Preserve exact bald stocky dwarf head, beard, cream sleeves, brown leather waistcoat, torso, pelvis, arms, legs and stance. Correct the rigid FAR anatomical RIGHT SUPPORTING BOOT ground-plane perspective: its flat planted sole must be a foreshortened diagonal plane on the ground, with the forward TOE upper-left of its rear heel by about80px horizontally and45px vertically. The rear HEEL stays in its current ground position; redraw that entire boot's shape and ankle flex naturally to achieve the ground depth. This is NOT a toe-up boot rocking on its heel: the whole sole is flat on the same plane, viewed from above at34degrees, toe points diagonally away upper-left. The leather upper and straps follow the true tilted/foreshortened boot and both toe and heel remain on the same ground surface. The NEAR anatomical LEFT AIRBORNE boot and bent knee remain exactly as reference, far right boot is on viewer-right, near left airborne sole remains visibly crossing in front of its calf. Do NOT move the whole dwarf upward to fake it; do not move the planted heel, alter torso identity or swap support feet. Keep the boot connected to its correct shin, rigid boot length, no extra feet or limbs. One complete full-body semi-realistic high quality transparent sprite, fixed rear-left camera, no shadows/floor/grid/labels/marks/text. All body parts and both boots complete.",
+      "inputs": [
+        {
+          "file": "authoring-inputs/ground-passing39-reference-2.png",
+          "sha256": "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de"
+        }
+      ],
+      "output": "authoring-inputs/ground-right-passing39.png",
+      "outputSha256": "c7f5677e9c4af59be86e20dbe24d00d5f709d0893d07541061b1a7364e40487c",
+      "decision": "unselected",
+      "reason": "The whole pose preserves identity but the far right planted sole does not show the requested ground-depth geometry.",
+      "scope": "Native visual authoring rejection only. Target guide coordinates are not measured material landmarks. Current failed selected-stride result remains unchanged."
+    },
+    {
+      "key": "laborer-ground-passing-left39",
+      "prompt": "Edit this ONE whole Laborer rear-left walk passing pose. Preserve exact bald stocky dwarf head, beard, cream sleeves, brown leather waistcoat, torso, pelvis, arms, legs and stance. Correct the rigid NEAR anatomical LEFT SUPPORTING BOOT ground-plane perspective: its flat planted sole must be a foreshortened diagonal plane on the ground, with the forward TOE upper-left of its rear heel by about80px horizontally and45px vertically. The rear HEEL stays in its current ground position; redraw that entire boot's shape and ankle flex naturally to achieve the ground depth. This is NOT a toe-up boot rocking on its heel: the whole sole is flat on the same plane, viewed from above at34degrees, toe points diagonally away upper-left. The leather upper and straps follow the true tilted/foreshortened boot and both toe and heel remain on the same ground surface. The FAR anatomical RIGHT AIRBORNE boot and bent knee remain exactly as reference, near left boot with square outward brass buckle is the planted boot at lower-center; far right sole is airborne beside it, with no copied near-left buckle. Do NOT move the whole dwarf upward to fake it; do not move the planted heel, alter torso identity or swap support feet. Keep the boot connected to its correct shin, rigid boot length, no extra feet or limbs. One complete full-body semi-realistic high quality transparent sprite, fixed rear-left camera, no shadows/floor/grid/labels/marks/text. All body parts and both boots complete.",
+      "inputs": [
+        {
+          "file": "authoring-inputs/ground-passing39-reference-6.png",
+          "sha256": "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0"
+        }
+      ],
+      "output": "authoring-inputs/ground-left-passing39.png",
+      "outputSha256": "6cdf36fcec9c6d85cae5edb44cfa986cb92e9ef0300da608e341e90cf49f893e",
+      "decision": "unselected",
+      "reason": "The near-left toe extends too far relative to its heel and the whole-stride support path. The authoring target is not met.",
+      "scope": "Native visual authoring rejection only. Target guide coordinates are not measured material landmarks. Current failed selected-stride result remains unchanged."
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810",
+    "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+    "frameSha256": [
+      "94fe3ab4e366c687dd81b57c0a5c592b3028dd5190c85c8763911ee156962184",
+      "d104f37a1e2efe9c7b72bf5fff164de4bba3a00c7593205c5a837b890bd6ab13",
+      "32685102e7f8d950c6559b94e61775afa73ba82b1571949186530c65876d5172",
+      "d02224526e0767a300dd99765cceb322485a583294f3a3f12fe5903855f6aaed",
+      "9f6c18c400107fbb542945a5cd04adefae43225eda1de241ba665e2b375f9e7a",
+      "8d1f7bfe8d8ef4feb812065b1751f7554b081a86427c74ee938b5556d061b666",
+      "e8a414fae8aabc3723ad598f36693f03d873fba681179bf83f0dc58326592a8f",
+      "18d4edf0d825ae1d6e8700d44dbfda4ab574441a6aefd8a31e4538f4b0a73c7c"
+    ],
+    "atlasSha256": "42d81faaedc49c6f84862d84f9022fa64cd134bfa4205f78f5a5eb5118a10a9a",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          465,
+          450,
+          610,
+          535
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -1.3100004636612539e-08,
+              -4.996836278081673e-09
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.94872,
+            "measuredCorrectionPx": [
+              1.270308256149292,
+              1.8800016641616821
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98324,
+            "measuredCorrectionPx": [
+              0.5748480558395386,
+              0.1146908849477768
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93692,
+            "measuredCorrectionPx": [
+              1.632954478263855,
+              0.3421943187713623
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96649,
+            "measuredCorrectionPx": [
+              0.0054214103147387505,
+              0.5185205936431885
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93539,
+            "measuredCorrectionPx": [
+              1.2204838991165161,
+              -0.7712042927742004
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96325,
+            "measuredCorrectionPx": [
+              0.5268380045890808,
+              -1.036183476448059
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93226,
+            "measuredCorrectionPx": [
+              1.3275641202926636,
+              -0.8941757678985596
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "shovel-rubble",
+    "direction": "reference"
+  },
+  "checks": {
+    "identity-and-scale": "All eight registered native poses reviewed against unchanged character identity and common sequence scale. This is a fixed-reference review, not a translating sole or cross-direction approval.",
+    "station-and-foot-contact": "Visible stance and fixed painted station inspected0-7. Fresh bounded station registration and residual measurement retained. Translating stride, independent furniture ownership and live gameplay activation are separate gates.",
+    "hand-and-tool-contact": "Both wrists retain one straight connected shovel shaft0-7: press0-1, loaded lift2-3, turn4, extend5, tipped blade/cascade6, empty return7. Grey rubble remains in the receiving barrow6-7, whose wheel/hub/side are independently registered below the changing load. No implicit disposal, duplicate carried tool or lost deposit.",
+    "prop-continuity": "Both wrists retain one straight connected shovel shaft0-7: press0-1, loaded lift2-3, turn4, extend5, tipped blade/cascade6, empty return7. Grey rubble remains in the receiving barrow6-7, whose wheel/hub/side are independently registered below the changing load. No implicit disposal, duplicate carried tool or lost deposit.",
+    "completion-and-reset": "Finite task: expose every authored held pose, complete once at7, keep material result while7 holds, reset to0 only on explicit new task. Continuous repeat and resource conservation are excluded."
+  },
+  "scope": "Fixed-reference eight-pose finite task and sustained material result. No seamless repeat, translating gait, hidden anatomy, gameplay activation, independent furniture ownership or economic output certification.",
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "a0ae07e6fe8e5a249d9bdb035902df7f3ca8fd2f484aef770c7c9ed89ae8de39"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Laborer-shovel-rubble-review.json",
+      "sha256": "9c41c69076647084c565e70a1f8386ab6622a0d5ec8ae61e5abfa168c290dcc4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Laborer-shovel-rubble-playback.json",
+      "sha256": "7ea5a1b3a03f953961dbea448037056526bff7e42b1a6cbc151cf0f1d3b1a47a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-registration.json",
+      "sha256": "f32de16c8813bd28c2b7d9b8ffbb82943bbb9016c53b366920e9af30eb1ae568"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Laborer-shovel-rubble-live-0.png",
+      "sha256": "8b7c938397d9ff3a174cf07ef3bb025e7c656b4f98a55ef3ae9df2ad3f64de49"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Laborer-shovel-rubble-live-4.png",
+      "sha256": "42105bcbe52ef88aa64890bcdb02d16849679f7a543ea670edf36eadc376d4ba"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Laborer-shovel-rubble-live-7.png",
+      "sha256": "4f6079fd75f34a5b85cf770e9ac1e11a6a0a0819c7bd4549f1d4a70b1c6714fe"
+    }
+  ]
+}

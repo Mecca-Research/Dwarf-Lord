@@ -2,6 +2,18 @@
   "note": "Fixed prop regions in exported 640px frames; exclude moving tools and hands. Registration does not approve prop redraw or motion.",
   "regions": [
     {
+      "character": "Laborer",
+      "action": "shovel-rubble",
+      "region": [
+        465,
+        450,
+        610,
+        535
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Motion39 native review: fixed wheel hub, axle and side panel below the changing load. New measurement scope; excludes the transferred rubble and moving shovel. Same bounded 12px translation and 0.71px residual requirements."
+    },
+    {
       "character": "Blacksmith",
       "action": "inspect-tool",
       "region": [
@@ -258,6 +270,30 @@
         565,
         600
       ]
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "region": [
+        430,
+        470,
+        570,
+        585
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Canonical fixed toolbox panel, excluding sweeping hands and variable chip piles. Source roots measured on opaque furniture after legacy moving-silhouette anchor diagnosis; bounded12px residual correction remains."
+    },
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "region": [
+        250,
+        440,
+        475,
+        600
+      ],
+      "minimumCorrelation": 0.94,
+      "note": "Fixed stump lower boards and iron ring, excluding moving hammer/tongs/billet. Existing source landmark scale retained."
     }
   ]
 }

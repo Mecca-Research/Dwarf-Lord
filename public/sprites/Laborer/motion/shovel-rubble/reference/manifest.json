@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7",
+  "sourceSha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.494949494949495,
+  "sharedScale": 1.491183879093199,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "shovel low before rubble pile",
       "durationMs": 125,
       "sourceBounds": [
-        30,
-        102,
-        425,
-        411
+        29,
+        101,
+        426,
+        413
       ],
       "sourceAnchor": [
-        197.5,
-        309
+        198.5,
+        312.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        154
+        24,
+        151
       ]
     },
     {
@@ -50,21 +50,21 @@
       "durationMs": 125,
       "sourceBounds": [
         473,
-        119,
-        869,
-        411
+        117,
+        870,
+        414
       ],
       "sourceAnchor": [
-        198.0,
-        292
+        197.8293918918919,
+        295.6587837837838
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        24,
-        179
+        25,
+        175
       ]
     },
     {
@@ -73,14 +73,14 @@
       "description": "lever load upward",
       "durationMs": 125,
       "sourceBounds": [
-        917,
-        99,
-        1312,
-        411
+        916,
+        97,
+        1313,
+        413
       ],
       "sourceAnchor": [
-        197.5,
-        312
+        197.8293918918919,
+        316.0
       ],
       "groundAnchor": [
         320,
@@ -88,7 +88,7 @@
       ],
       "placement": [
         25,
-        150
+        145
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "lift loaded shovel",
       "durationMs": 125,
       "sourceBounds": [
-        1359,
-        69,
-        1755,
-        411
+        1360,
+        68,
+        1756,
+        413
       ],
       "sourceAnchor": [
-        198.0,
-        342
+        196.65878378378378,
+        345.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        24,
-        105
+        27,
+        102
       ]
     },
     {
@@ -122,13 +122,13 @@
       "durationMs": 125,
       "sourceBounds": [
         30,
-        504,
-        425,
-        855
+        503,
+        426,
+        858
       ],
       "sourceAnchor": [
-        197.5,
-        351
+        198.0,
+        354.3293918918919
       ],
       "groundAnchor": [
         320,
@@ -136,7 +136,7 @@
       ],
       "placement": [
         25,
-        91
+        88
       ]
     },
     {
@@ -146,13 +146,13 @@
       "durationMs": 125,
       "sourceBounds": [
         473,
-        505,
-        868,
-        856
+        503,
+        870,
+        857
       ],
       "sourceAnchor": [
-        197.5,
-        351
+        197.8293918918919,
+        354.6706081081081
       ],
       "groundAnchor": [
         320,
@@ -160,7 +160,7 @@
       ],
       "placement": [
         25,
-        91
+        87
       ]
     },
     {
@@ -170,13 +170,13 @@
       "durationMs": 125,
       "sourceBounds": [
         916,
-        506,
-        1311,
-        855
+        504,
+        1313,
+        857
       ],
       "sourceAnchor": [
-        197.5,
-        349
+        197.8293918918919,
+        353.6706081081081
       ],
       "groundAnchor": [
         320,
@@ -184,7 +184,7 @@
       ],
       "placement": [
         25,
-        94
+        89
       ]
     },
     {
@@ -194,21 +194,21 @@
       "durationMs": 125,
       "sourceBounds": [
         1360,
-        551,
-        1755,
-        855
+        550,
+        1756,
+        857
       ],
       "sourceAnchor": [
-        197.5,
-        304
+        197.3293918918919,
+        307.6706081081081
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        162
+        26,
+        157
       ]
     }
   ],
@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -267,22 +268,91 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        465,
+        450,
+        610,
+        535
+      ],
+      "minimumCorrelation": 0.93,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -1.3100004636612539e-08,
+            -4.996836278081673e-09
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.94872,
+          "measuredCorrectionPx": [
+            1.270308256149292,
+            1.8800016641616821
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98324,
+          "measuredCorrectionPx": [
+            0.5748480558395386,
+            0.1146908849477768
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.93692,
+          "measuredCorrectionPx": [
+            1.632954478263855,
+            0.3421943187713623
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96649,
+          "measuredCorrectionPx": [
+            0.0054214103147387505,
+            0.5185205936431885
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.93539,
+          "measuredCorrectionPx": [
+            1.2204838991165161,
+            -0.7712042927742004
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96325,
+          "measuredCorrectionPx": [
+            0.5268380045890808,
+            -1.036183476448059
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.93226,
+          "measuredCorrectionPx": [
+            1.3275641202926636,
+            -0.8941757678985596
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-reference eight-pose finite task and sustained material result. No seamless repeat, translating gait, hidden anatomy, gameplay activation, independent furniture ownership or economic output certification."
   }
 }

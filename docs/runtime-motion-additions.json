@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "note": "Required reference-action gameplay integrations. These derived actor layers do not alter the frozen 153-main/7-original-actor review scope. Their activation evidence is required separately.",
+  "entries": [
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "title": "Inspect tool",
+      "reference": "public/sprites/Blacksmith/work-references/03-inspect-tool.png",
+      "beats": [
+        "hold tool at chest height",
+        "continuous midway transition from hold tool at chest height toward raise tool toward eyes",
+        "raise tool toward eyes",
+        "continuous midway transition from raise tool toward eyes toward rotate wrist to inspect opposite edge",
+        "rotate wrist to inspect opposite edge",
+        "continuous midway transition from rotate wrist to inspect opposite edge toward lower tool toward chest",
+        "lower tool toward chest",
+        "continuous midway transition from lower tool toward chest toward hold tool at chest height"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/inspect-tool/actor",
+      "station": "anvil"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "title": "Repair pickaxe handle",
+      "reference": "public/sprites/Blacksmith/work-references/05-repair-pickaxe-handle.png",
+      "beats": [
+        "hammer held beside pickaxe joint; left hand grips shaft",
+        "continuous midway transition from hammer held beside pickaxe joint; left hand grips shaft toward raise hammer above joint with shaft held steady",
+        "raise hammer above joint with shaft held steady",
+        "continuous midway transition from raise hammer above joint with shaft held steady toward tap fastening wedge on pickaxe head",
+        "tap fastening wedge on pickaxe head",
+        "continuous midway transition from tap fastening wedge on pickaxe head toward hammer rebounds while shaft remains supported",
+        "hammer rebounds while shaft remains supported",
+        "continuous midway transition from hammer rebounds while shaft remains supported toward hammer held beside pickaxe joint; left hand grips shaft"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor",
+      "station": "repair-bench"
+    }
+  ]
+}

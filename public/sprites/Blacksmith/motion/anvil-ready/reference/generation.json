@@ -19,6 +19,27 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Blacksmith/motion/anvil-ready/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: Anvil ready. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. rest hammer low | 2. continuous midway transition from rest hammer low toward slight inhale and draw hammer hand back at hip | 3. slight inhale and draw hammer hand back at hip | 4. continuous midway transition from slight inhale and draw hammer hand back at hip toward adjust tongs on billet | 5. adjust tongs on billet | 6. continuous midway transition from adjust tongs on billet toward settle into ready stance | 7. settle into ready stance | 8. continuous midway transition from settle into ready stance toward rest hammer low",
-  "sourceName": "exec-55659c03-ddbe-4635-909a-c083c610d2ac.png"
+  "prompt": "Edit this exact 8-frame 4-column 2-row transparent Blacksmith/anvil animation. Preserve all seven first poses, dwarf identity, lighting, camera, scale, left hand with tongs, hot orange billet, anvil and stump pixel geometry. Change ONLY LAST bottom-right frame7 RIGHT arm and hammer to the missing DESCENDING RECOVERY: elbow lowered, right hand at chest height, hammer head beside his shoulder, hammer angled downward toward the right thigh. The hammer must be visibly below bottom-third frame6's overhead hammer and above top-first frame0's hanging hammer. Keep the same fingers firmly wrapped around the same wooden handle. No extra tools or fingers, no strike/contact in this recovery. Keep body, legs, entire anvil/stump, tong hand and workpiece at exact existing locations. Do not repaint furniture or make a second dwarf. High quality rendered canonical bald smith, dark braided brass-bound beard, cream sleeves and leather apron. Same transparent background, complete eight full poses, 4x2 grid, no crop or text.",
+  "sourceName": "exec-55659c03-ddbe-4635-909a-c083c610d2ac.png",
+  "editHistory": [
+    {
+      "key": "ready-recovery39",
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "refs": [
+        "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/anvil-ready/reference/source-sheet.png"
+      ],
+      "prompt": "Edit this exact 8-frame 4-column 2-row transparent Blacksmith/anvil animation. Preserve all seven first poses, dwarf identity, lighting, camera, scale, left hand with tongs, hot orange billet, anvil and stump pixel geometry. Change ONLY LAST bottom-right frame7 RIGHT arm and hammer to the missing DESCENDING RECOVERY: elbow lowered, right hand at chest height, hammer head beside his shoulder, hammer angled downward toward the right thigh. The hammer must be visibly below bottom-third frame6's overhead hammer and above top-first frame0's hanging hammer. Keep the same fingers firmly wrapped around the same wooden handle. No extra tools or fingers, no strike/contact in this recovery. Keep body, legs, entire anvil/stump, tong hand and workpiece at exact existing locations. Do not repaint furniture or make a second dwarf. High quality rendered canonical bald smith, dark braided brass-bound beard, cream sleeves and leather apron. Same transparent background, complete eight full poses, 4x2 grid, no crop or text.",
+      "references": [
+        {
+          "file": "authoring-inputs/source-before39.png",
+          "sha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56"
+        }
+      ],
+      "output": "authoring-inputs/ready-recovery39.png",
+      "outputSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
+      "method": "Built-in whole-sheet authored image edit. No individual body-part transforms, interpolated poses or local furniture replacement.",
+      "decision": "Selected pending fixed-prop registration, native and timed playback review."
+    }
+  ]
 }

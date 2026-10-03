@@ -1,0 +1,68 @@
+{
+  "checkpoint": "motion39",
+  "baseline": "e379005",
+  "newMainApprovals": [
+    "Cook/fillet-fish/reference",
+    "Ginger/chop-downed-log/reference",
+    "Laborer/shovel-rubble/reference",
+    "Blacksmith/anvil-ready/reference",
+    "Laborer/sweep-wood-chips/reference"
+  ],
+  "newGameplayMappings": [
+    "Blacksmith/inspect-tool",
+    "Blacksmith/repair-pickaxe-handle"
+  ],
+  "newIndependentActorApprovalsOutsideFrozenScope": 2,
+  "mainLoops": 8,
+  "mainFiniteTasks": 36,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 44,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 109,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 13,
+    "referenceActionsWithoutMapping": 52
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 109
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 52
+    }
+  ],
+  "reviewGatesComplete": false,
+  "productionReady": false,
+  "validation": {
+    "nodeTests": 204,
+    "pythonTests": 70,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "stationVariants": 9,
+    "correctedReferenceTimedReviews": 5,
+    "fixedPropSets": 36,
+    "maxFixedPropResidualPx": 0.699,
+    "residualBoundPx": 0.71
+  },
+  "unselectedGaitAttempts": "Laborer rear-left whole ground-plane sheet and two whole passing poses: visible sole geometry/path not accepted, selected art unchanged. See exact authoring-input rejection record.",
+  "next": "Fully verified Laborer rear-left sole stride using revised authoring method; other gait/cane/directional/fixed-work/live-activation gates remain explicit in completion inventory."
+}

@@ -355,11 +355,19 @@
     {
       "character": "Elder",
       "action": "examine-pickaxe-crack"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -4057,11 +4065,180 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+      "sha256": "084a0fe492b58f50f2fe49a1aae789168ccfb1e0aad5b0c868bbadf1c503f164"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
       "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "sha256": "2f43478895a7937055ad8c37c7ebfb0fe110ffe86141db6c84a0c2acaf110b53"
+    },
+    {
+      "file": "src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+      "sha256": "f627c02633f4d859ba5c9e237092646abca046035027be016ab20ed5cd550a3b"
+    },
+    {
+      "file": "docs/art-review/motion39/runtime-revalidation.json",
+      "sha256": "5b7b3635565b9d85b2aaf6dc8f357a0a6c63a1091323ec5a6b5d5b158eeea59c"
+    },
+    {
+      "file": "docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "sha256": "3b3ca3214e0570843aed862b4322b57eafcebf414ea6724f15073255895ef1c1"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "sha256": "34b44e316bfa66bf81a18a476abfe883723ca455bf2a27f705c32fc97c6fd5dc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
+      "sha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/atlas.png",
+      "sha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/motion-polish.json",
+      "sha256": "5f96e5b5192ad14227eed328c223aacfd4b7b935ca0cae38a83251fe380338e0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/assembly.json",
+      "sha256": "69c60b63de10e0638689b757bd2fbef21a3cc087e2761fc3992ba2b889a21f8a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/generation.json",
+      "sha256": "4449d4a25d799f888e3231ddc6bcdaa50d488294503ce5bea8e255803c487be3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "sha256": "aae93ef47b8f11f6363f3cfb2ef9a18233563a5ab6dca86fda04997812fb2192"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
+      "sha256": "155c427f587850e0ec661f7f4855ff1887d7cf584b8d495b78f197669f9ccff0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/01.png",
+      "sha256": "52450280a0d1d092cc8380e11ad1bbce2f171e621980620ea90f1d31a04356e4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/02.png",
+      "sha256": "ad181b7130e4b9634fe9ffd54a2f486681f2de8060a479470d5ded56646fbf81"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/03.png",
+      "sha256": "9456581aa330d4524f2098718a135f5401a51b39ca0fc0fb8c609cf5fbf8a78d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/04.png",
+      "sha256": "3744280d76edd422f54993fa8133a6cace220dba4a1a7c9dbb323996b513d050"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/05.png",
+      "sha256": "7623f16490c34e7b75368c2c578ffe0d36aa8ee1cee4e4f5d158a8bac6f5071f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/06.png",
+      "sha256": "e884097e43a13d694cfa60914be251be60db0da01968ea4667a10daf6fdb4c85"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/07.png",
+      "sha256": "4321228c74b9114b7e6dd49687fcb501fb13b1b47647205fd2755c7974379168"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/source-sheet.png",
+      "sha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/atlas.png",
+      "sha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/motion-polish.json",
+      "sha256": "afd5f0c037ffa79709903f2d8d0331f4c47d1c77a886f3a83e419f88cd32c6e9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/assembly.json",
+      "sha256": "da44bc7c46894befd4fd855c014372c2aeca81177451c941ebff6da3d0d5c501"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/generation.json",
+      "sha256": "e1bdc5daab410aaf0a59ff67c09c0cd3bc755cad51dd10e7b7275aff3c5840a8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "sha256": "de0a3dca103fd2a669495e4ee21a030511ca9929ecfe1b49939b2df6098b8b7b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
+      "sha256": "0d0bfb4923c55439fe2799c263cf18b21a4930222baddfb62d7b9584225622bd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/01.png",
+      "sha256": "1520af748fec5d33ab7aebb506ac8dbe1761a05ba5e1e609a2308b79a76a3b0a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/02.png",
+      "sha256": "6b1d447735ccb89dbd97049b65d710075ec0600893a3e2b87f9ef0d90e648e52"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/03.png",
+      "sha256": "11552ac82aabdcd08498da830c48a86ebbf8090688a2cc881ad945795501ebb9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/04.png",
+      "sha256": "1d9ec1bdab5363d27afa7e1d64c5c769467ebfea29eef1136682b1cff2d1f357"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/05.png",
+      "sha256": "1f1f70e6e9bb0834ebe494395aa45ee69e1f01899b29b1d99969bec7fd69e8b1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/06.png",
+      "sha256": "ac8c06684eab330f9d61ec7b638eee927daa2b6516b2ab05d89234d93a7469c6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/07.png",
+      "sha256": "eb8dbe7412f426b8c67ebff20b6ae476f0f9cb5744b4ceae8a45cf38ca5ddeda"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/source.png",
+      "sha256": "0e92b63e4e42dbd3c26e644e84ed25ea530c278c70b11299e7b0d9e30dc375bd"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/generation.json",
+      "sha256": "5b1709cd5dcd93895e769966d14f4cd51fc67695c9229506d2d5a43dc3b6eb01"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/source.png",
+      "sha256": "dd1a47e18d16f8d95d107956b744512222afd1a73959423904ee0af643abc0dc"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/sprite.png",
+      "sha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3"
     }
-  ]
+  ],
+  "runtimeCoverageNote": "Motion39 source-bound live coverage: original eleven reference actions plus finite Blacksmith inspection and handle repair. Added derived actors are outside the unchanged160-cycle frozen scope and require their own exact task approval; activation binds their artifacts and current actual renderer proof."
 }

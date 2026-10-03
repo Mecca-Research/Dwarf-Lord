@@ -60,11 +60,11 @@
     },
     {
       "file": "travel-calibration.json",
-      "sha256": "3af094de127c5cba9d5a193b4f3b1710d2258dbfe16468e4a1d6e8cd4c3e6275"
+      "sha256": "1c36d63939615bddd2940e84f13449722dd5cd8cf235c7e9f10f9b37fb2bfebb"
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+      "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -84,11 +84,11 @@
     },
     {
       "file": "../../../../../../docs/blacksmith-right-whole-stride-observations.json",
-      "sha256": "2028003bd3f93e2ef4e052d7a96d302c1df17e3f2b1b0eacf5ba5387c8d7de6a"
+      "sha256": "12d0efd51a1680fbfb168b366ac7e80ad829e4cc8b4eb95dfa34d7bd99c7ab95"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
-      "sha256": "01a0955f7dd69e5d7ed5026029ab8036a52db8cd1ffb57b4981b1e56e77caa67"
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
     },
     {
       "file": "../../../../../../src/game/runtime.ts",
@@ -97,7 +97,38 @@
     {
       "file": "../../../../../../docs/art-review/motion37/blacksmith-right-rendered-stride.json",
       "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
+      "sha256": "5b7b3635565b9d85b2aaf6dc8f357a0a6c63a1091323ec5a6b5d5b158eeea59c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/npc-lifecycle-results.json",
+      "sha256": "f4e35f053325158f23f0ad3d9f532c5f91f16ca7088f5dad33b44f7b492f351f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
+      "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
     }
   ],
-  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+  "runtimeRevalidation": {
+    "checkpoint": "motion39",
+    "files": [
+      "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json"
+    ],
+    "audit": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
+    "scope": "Original selected poses and approval scope retained; current runtime regression evidence supports only the existing acceptance."
+  }
 }

@@ -70,7 +70,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Laborer | walk | back-left | not-reviewed |
 | Laborer | walk | left | not-reviewed |
 | Laborer | walk | front-left | not-reviewed |
-| Blacksmith | anvil-ready | reference | reviewed-changes-required |
+| Blacksmith | anvil-ready | reference | scoped-review-approved |
 | Blacksmith | hammer-raised | reference | scoped-review-approved |
 | Blacksmith | hammer-contact | reference | scoped-review-approved |
 | Blacksmith | inspect-tool | reference | scoped-review-approved |
@@ -111,7 +111,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Laborer | push-stone-barrow | reference | reviewed-changes-required |
 | Laborer | pull-supply-sled | reference | not-reviewed |
 | Laborer | build-crate | reference | scoped-review-approved |
-| Laborer | sweep-wood-chips | reference | not-reviewed |
+| Laborer | sweep-wood-chips | reference | scoped-review-approved |
 | Ginger | saw-timber | reference | scoped-review-approved |
 | Ginger | build-timber-crate | reference | scoped-review-approved |
 | Ginger | stack-firewood | reference | reviewed-changes-required |
@@ -122,9 +122,9 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Borrin | explain-closed-ledger | reference | scoped-review-approved |
 | Borrin | explain-open-ledger | reference | scoped-review-approved |
 | Cook | cut-boar-meat | reference | scoped-review-approved |
-| Cook | fillet-fish | reference | reviewed-changes-required |
+| Cook | fillet-fish | reference | scoped-review-approved |
 | Ginger | fell-tree | reference | scoped-review-approved |
-| Ginger | chop-downed-log | reference | reviewed-changes-required |
+| Ginger | chop-downed-log | reference | scoped-review-approved |
 | Ginger | load-logs-cart | reference | reviewed-changes-required |
 | Ginger | sharpen-axe | reference | scoped-review-approved |
 | Ginger | build-barrel | reference | reviewed-changes-required |
@@ -133,7 +133,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Laborer | stack-crates | reference | scoped-review-approved |
 | Laborer | build-barrel | reference | reviewed-changes-required |
 | Laborer | carry-large-stone-ore | reference | reviewed-changes-required |
-| Laborer | shovel-rubble | reference | reviewed-changes-required |
+| Laborer | shovel-rubble | reference | scoped-review-approved |
 | Laborer | repair-boardwalk | reference | reviewed-changes-required |
 | Female Miner | pickaxe-swing | front | not-reviewed |
 | Female Miner | pickaxe-swing | front-right | not-reviewed |
@@ -191,9 +191,7 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | --- | --- |
 | Blacksmith | anvil-ready |
 | Blacksmith | hammer-raised |
-| Blacksmith | inspect-tool |
 | Blacksmith | file-tool-edge |
-| Blacksmith | repair-pickaxe-handle |
 | Borrin | review-open-ledger |
 | Borrin | turn-ledger-page |
 | Borrin | explain-at-desk |

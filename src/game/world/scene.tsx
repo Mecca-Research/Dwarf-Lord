@@ -2,7 +2,7 @@ import { EffectComposer, Bloom, Vignette, SMAA } from "@react-three/postprocessi
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
-import { JOBS, WORLD_STAGES } from "../data/catalog";
+import { WORLD_STAGES } from "../data/catalog";
 import type { Dwarf } from "../types";
 import {
   camBasis,
@@ -19,7 +19,7 @@ import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
 import { spritePointReviewers, type SpritePointReview } from "./motion-review-points";
 import { DwarfSprite, SpriteBankProvider } from "./sprites";
 import { Workstations, workstationDiagnostics } from "./workstations";
-import { activeWorkstation, passiveWorkstation } from "./workstation-sites";
+import { activeWorkstation, passiveWorkstation, workAssignmentTarget } from "./workstation-sites";
 import { dwarfAppearance } from "./dwarf-appearances";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
@@ -352,7 +352,7 @@ function Systems() {
         b.dest = { x: 8, z: -42 };
       }
       if (dw.assignedJobId && !b.dest) {
-        const job = JOBS.find((j) => j.id === dw.assignedJobId);
+        const job = workAssignmentTarget(dwarfAppearance(dw.id), dw.assignedJobId, useGame.getState().day);
         if (job) b.dest = { x: job.targetX, z: job.targetZ };
       }
       if (b.dest) {
@@ -527,7 +527,7 @@ function DwarfActor({
     const assignedJob = state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId;
     const consulting = Boolean(passiveWorkstation(dwarfAppearance(dwarf.id), assignedJob, b));
     const station = activeWorkstation(dwarfAppearance(dwarf.id),
-      assignedJob, b.anim === "work" || consulting, state.dayResolved)?.target;
+      assignedJob, b.anim === "work" || consulting, state.dayResolved, state.day)?.target;
     // Register the actor to the persistent station, independent of approach tolerance.
     g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
       station ? station.targetZ : b.z);

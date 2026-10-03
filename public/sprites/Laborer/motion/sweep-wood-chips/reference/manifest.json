@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/05-sweep-wood-chips.png",
   "source": "source-sheet.png",
-  "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335",
+  "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
   "sourceSize": [
     1774,
     887
@@ -26,21 +26,21 @@
       "durationMs": 125,
       "sourceBounds": [
         21,
-        31,
-        461,
-        417
+        30,
+        439,
+        418
       ],
       "sourceAnchor": [
-        220.0,
-        386
+        221.5,
+        388.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        39,
-        124
+        37,
+        121
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "continuous midway transition from broom at near edge of wood chips toward push broom forward",
       "durationMs": 125,
       "sourceBounds": [
-        460,
-        34,
-        906,
-        417
+        458,
+        33,
+        884,
+        418
       ],
       "sourceAnchor": [
-        223.0,
-        383
+        229.6351351351351,
+        385.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        35,
-        127
+        27,
+        125
       ]
     },
     {
@@ -74,21 +74,21 @@
       "durationMs": 125,
       "sourceBounds": [
         905,
-        36,
-        1324,
-        414
+        35,
+        1327,
+        417
       ],
       "sourceAnchor": [
-        209.5,
-        378
+        225.60810810810813,
+        382.7837837837838
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        53,
-        134
+        32,
+        128
       ]
     },
     {
@@ -98,21 +98,21 @@
       "durationMs": 125,
       "sourceBounds": [
         1390,
-        38,
-        1766,
-        415
+        36,
+        1769,
+        416
       ],
       "sourceAnchor": [
-        188.0,
-        377
+        184.01351351351357,
+        381.56756756756755
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        80,
-        135
+        85,
+        129
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "broom reaches far edge gathering chips",
       "durationMs": 125,
       "sourceBounds": [
-        47,
-        473,
-        494,
-        857
+        46,
+        472,
+        441,
+        859
       ],
       "sourceAnchor": [
-        223.5,
-        384
+        199.27027027027026,
+        390.1351351351351
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        35,
-        126
+        66,
+        118
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "continuous midway transition from broom reaches far edge gathering chips toward lift slightly and return broom",
       "durationMs": 125,
       "sourceBounds": [
-        484,
+        485,
         467,
-        948,
-        858
+        884,
+        859
       ],
       "sourceAnchor": [
-        232.0,
-        391
+        203.0,
+        395.1351351351351
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        24,
-        117
+        61,
+        112
       ]
     },
     {
@@ -169,22 +169,22 @@
       "description": "lift slightly and return broom",
       "durationMs": 125,
       "sourceBounds": [
-        941,
+        932,
         465,
-        1324,
-        859
+        1327,
+        861
       ],
       "sourceAnchor": [
-        191.5,
-        394
+        198.86486486486478,
+        396.78378378378375
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        76,
-        113
+        66,
+        110
       ]
     },
     {
@@ -193,22 +193,22 @@
       "description": "continuous midway transition from lift slightly and return broom toward broom at near edge of wood chips",
       "durationMs": 125,
       "sourceBounds": [
-        1349,
-        476,
-        1766,
-        861
+        1350,
+        475,
+        1769,
+        862
       ],
       "sourceAnchor": [
-        208.5,
-        385
+        223.60810810810813,
+        387.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        54,
-        125
+        35,
+        122
       ]
     }
   ],
@@ -256,33 +256,103 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
-    "method": "lower-silhouette-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
     ],
-    "targetBodyHeight": null,
-    "scaleScope": "sequence",
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        430,
+        470,
+        570,
+        585
+      ],
+      "minimumCorrelation": 0.93,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -3.995744535245649e-08,
+            1.9516268423558358e-07
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97528,
+          "measuredCorrectionPx": [
+            -0.4416939914226532,
+            0.06814910471439362
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98684,
+          "measuredCorrectionPx": [
+            -0.1394776850938797,
+            -0.1460351049900055
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97228,
+          "measuredCorrectionPx": [
+            -0.6962695121765137,
+            0.08562719076871872
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9793,
+          "measuredCorrectionPx": [
+            -0.4648851454257965,
+            0.004124285653233528
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9706,
+          "measuredCorrectionPx": [
+            0.2244921773672104,
+            -0.15877023339271545
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97885,
+          "measuredCorrectionPx": [
+            0.006583872251212597,
+            -0.44064468145370483
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97296,
+          "measuredCorrectionPx": [
+            0.24882324039936066,
+            -0.23120930790901184
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Motion39 Laborer sweep-wood-chips: exact eight combined-reference poses and finite held task. No translating gait, cross-direction, independent furniture, standing scale, economy or live activation approval."
   }
 }

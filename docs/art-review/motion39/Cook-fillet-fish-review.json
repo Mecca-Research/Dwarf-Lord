@@ -1,0 +1,136 @@
+{
+  "character": "Cook",
+  "action": "fillet-fish",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
+  "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+  "nativeReviewSha256": "ec6468e6bfa193549f4554c2eedc1da11667e3a6212955d5b1f9561fb6ac6d85",
+  "checks": {
+    "identity-and-scale": "All eight registered native poses reviewed against unchanged character identity and common sequence scale. This is a fixed-reference review, not a translating sole or cross-direction approval.",
+    "station-and-foot-contact": "Visible stance and fixed painted station inspected0-7. Fresh bounded station registration and residual measurement retained. Translating stride, independent furniture ownership and live gameplay activation are separate gates.",
+    "hand-and-tool-contact": "Right fingers retain the same connected fillet knife0-7. In1 the knife is low beside the fish head on the board, not over the dwarf head. Left hand steadies the fish0-3, lifts one attached fillet4-5, deposits it6 and withdraws7. One pink detached fillet remains beside the opened fish in6-7. The knife remains held; food never rejoins or disappears.",
+    "prop-continuity": "Right fingers retain the same connected fillet knife0-7. In1 the knife is low beside the fish head on the board, not over the dwarf head. Left hand steadies the fish0-3, lifts one attached fillet4-5, deposits it6 and withdraws7. One pink detached fillet remains beside the opened fish in6-7. The knife remains held; food never rejoins or disappears.",
+    "completion-and-reset": "Finite task: expose every authored held pose, complete once at7, keep material result while7 holds, reset to0 only on explicit new task. Continuous repeat and resource conservation are excluded."
+  },
+  "binding": {
+    "sourceSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
+    "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+    "frameSha256": [
+      "5b3294ca4ddb73d393ad476ad48ee2ed565dcec5c2dcc53e254049681ce738a0",
+      "d8fe662dfa105754219defdbabdccaab4beac75c5ce857ef30a288ccec0faf05",
+      "258b070d4ad13d22f77ac13d0e8bb505f24c4505e1bbb9c58966eacbea4d1e17",
+      "af983b59a02ee51268e07ece02364399e37272d767d654677cd88ffef2b3cfd6",
+      "4261a1184eef6f8d5332bd12cde3bb6ccb08d956d51b798d4310cecc7d7d78f1",
+      "3842b95ab3c0978472eb8070d9e2b185b756a40b6a150be8025e372bb0ab7265",
+      "c38d2ac10f8f93e5e87aecc71de5699972090bac87ff53d59f6f5b9933860900",
+      "055d7b961af900ccd02f98ef64c7116b6c6ddced6706f84c56b12d15d8e84a39"
+    ],
+    "atlasSha256": "205d257b6aa534b2c98265fc445adf3059cef431969197f25d215ab64994b12f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "minimumCorrelation": 0.94,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              2.1227276647550752e-07,
+              1.7721109202284424e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97938,
+            "measuredCorrectionPx": [
+              0.9908784031867981,
+              0.005004419945180416
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98497,
+            "measuredCorrectionPx": [
+              -0.078863225877285,
+              0.005130845122039318
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97712,
+            "measuredCorrectionPx": [
+              0.14699678122997284,
+              -0.07885585725307465
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98251,
+            "measuredCorrectionPx": [
+              -0.13547378778457642,
+              -0.9465025663375854
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97229,
+            "measuredCorrectionPx": [
+              1.3619024753570557,
+              -1.0528786182403564
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97867,
+            "measuredCorrectionPx": [
+              -0.2872554659843445,
+              -0.8525220155715942
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97266,
+            "measuredCorrectionPx": [
+              -0.256700724363327,
+              -1.1155357360839844
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "fillet-fish",
+    "direction": "reference"
+  }
+}

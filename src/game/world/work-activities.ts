@@ -10,6 +10,16 @@ export const elderCampActions = [
   "inspect-pickaxe-in-lap", "examine-pickaxe-crack",
 ] as const;
 
+/** A day's forge assignment has one finite operation, including inspection
+ * and handle repair. A finished operation never silently becomes another task.
+ */
+export const forgeWorkActions = ["hammer-contact", "inspect-tool", "repair-pickaxe-handle"] as const;
+
+export function forgeWorkAction(day: number) {
+  if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");
+  return forgeWorkActions[(day - 1) % forgeWorkActions.length];
+}
+
 export function elderCampActivity(appearance: DwarfAppearance, job: string | null,
   body: Pick<Body, "x" | "z" | "anim">) {
   if (appearance !== "elder" || job !== null || body.anim !== "sit") return false;

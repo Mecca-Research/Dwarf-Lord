@@ -13,10 +13,11 @@ const appearances=loadCommonJs('src/game/world/dwarf-appearances.ts');
 const catalog=loadCommonJs('src/game/data/catalog.ts', {'../world/dwarf-appearances':appearances,'@/lib/asset':{asset:p=>p}});
 let stationSource=ts.transpileModule(readFileSync('src/game/world/workstation-sites.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
 stationSource=stationSource.replace('import { JOBS, STARTING_DWARVES } from "../data/catalog";',`const JOBS=${JSON.stringify(catalog.JOBS)},STARTING_DWARVES=${JSON.stringify(catalog.STARTING_DWARVES)};`);
-const stationUrl=`data:text/javascript;base64,${Buffer.from(stationSource).toString('base64')}`;
 let activitySource=ts.transpileModule(readFileSync('src/game/world/work-activities.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
 activitySource=activitySource.replace('import { STARTING_DWARVES } from "../data/catalog";', `const STARTING_DWARVES=${JSON.stringify(catalog.STARTING_DWARVES)};`);
 const activityUrl=`data:text/javascript;base64,${Buffer.from(activitySource).toString('base64')}`;
+stationSource = stationSource.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`);
+const stationUrl=`data:text/javascript;base64,${Buffer.from(stationSource).toString('base64')}`;
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
 outputText = outputText.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`).replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
@@ -256,6 +257,34 @@ test('foreground contours preserve source pixels within the selected atlas frame
     geometry.dispose();
   }
   }
+});
+
+test('smith inspection and repair retain their calibrated station operation until task reset',async()=>{
+ const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
+ const calibration=JSON.parse(readFileSync('public/sprites/Blacksmith/motion/render-calibration.json'));
+ globalThis.location={href:'https://smith-task.test/'};
+ globalThis.document={createElement:()=>({getContext:()=>({drawImage(){}})})};
+ globalThis.createImageBitmap=async()=>({width:5120,height:640,close(){}});
+ globalThis.fetch=async url=>{const path=decodeURIComponent(new URL(url).pathname);return{ok:true,json:async()=>path.endsWith('render-calibration.json')?calibration:JSON.parse(readFileSync('public'+path)),blob:async()=>new Blob()};};
+ const driver=new NpcWorkMotion('smith-task-test','blacksmith'),body={x:6,z:-7,anim:'work',facing:2};
+ const ready=async day=>{for(let i=0;i<50;i++){const p=driver.update(body,'forge',day,false,0,1.95);if(p)return p;await new Promise(r=>setTimeout(r,1));}throw Error('Smith operation did not load');};
+ try{
+  for(const[day,action,height]of[[2,'inspect-tool',520],[3,'repair-pickaxe-handle',650]]){
+   const first=await ready(day);assert.equal(first.frame,0);assert.ok(Math.abs(first.placement.height-1.95*640/height)<1e-10);
+   for(let frame=0;frame<8;frame++){
+    assert.equal(npcWorkDiagnostics.get('smith-task-test').frame,frame);
+    driver.update(body,'forge',day,false,.124,1.95);
+    assert.equal(npcWorkDiagnostics.get('smith-task-test').frame,frame,'every whole authored hold');
+    driver.update(body,'forge',day,false,.001,1.95);
+   }
+   const final=npcWorkDiagnostics.get('smith-task-test');assert.equal(final.action,action);assert.equal(final.completions,1);assert.equal(final.completed,true);
+   driver.update(body,'forge',day,false,100,1.95);assert.deepEqual(npcWorkDiagnostics.get('smith-task-test'),final,'no automatic operation change');
+   body.facing=6;driver.update(body,'forge',day,false,0,1.95);assert.deepEqual(npcWorkDiagnostics.get('smith-task-test'),final,'fixed workstation camera keeps held task');
+   assert.equal(driver.update(body,'forge',day,true,0,1.95),null);assert.equal(npcWorkDiagnostics.has('smith-task-test'),false);
+   await ready(day);assert.equal(npcWorkDiagnostics.get('smith-task-test').frame,0);
+   body.anim='walk';assert.equal(driver.update(body,'forge',day,false,0,1.95),null);body.anim='work';
+  }
+ }finally{driver.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 
 test('Borrin reviews the ledger as a seated consultant without a production assignment', async () => {

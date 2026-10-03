@@ -50,7 +50,7 @@
       7
     ]
   },
-  "runtimeSha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a",
+  "runtimeSha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1",
   "cameraElevationRadians": 0.6,
   "strideBodyRatio": 0.880769,
   "transitions": [
@@ -184,5 +184,6 @@
     }
   ],
   "landmarkScope": "Manually inspected opaque heel/toe sole-edge candidates. Material correspondence and support identity remain unapproved; annotated overlays permit review rather than silhouette proxy acceptance.",
-  "scope": "Motion37: reviewed visible anatomical heel/toe rim correspondences for all eight flat-ground right-view handoffs. Original poses2/3/5/6 retained; outer/inner boot side repaired0/1/7; pose4 differs only at33 low-alpha fringe pixels. Per-view travel ratio and bounded registration adopted for testing; final runtime/contact and loop reviews are separate."
+  "scope": "Motion37: reviewed visible anatomical heel/toe rim correspondences for all eight flat-ground right-view handoffs. Original poses2/3/5/6 retained; outer/inner boot side repaired0/1/7; pose4 differs only at33 low-alpha fringe pixels. Per-view travel ratio and bounded registration adopted for testing; final runtime/contact and loop reviews are separate.",
+  "runtimeRevalidation": "Motion39 actual rendered regression: same source, poses, roots and durations; three complete strides/152 held samples, maximum boundary1.790px. Forge daily work routing changes do not alter walking. Results recorded separately."
 }

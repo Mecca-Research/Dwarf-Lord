@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+    "settingsSha256": "4c817efa06348a3c8ef67f5c50c45b72eae24a04b09d4f7a397dd1369aa2f53a",
+    "frameSha256": [
+      "155c427f587850e0ec661f7f4855ff1887d7cf584b8d495b78f197669f9ccff0",
+      "52450280a0d1d092cc8380e11ad1bbce2f171e621980620ea90f1d31a04356e4",
+      "ad181b7130e4b9634fe9ffd54a2f486681f2de8060a479470d5ded56646fbf81",
+      "9456581aa330d4524f2098718a135f5401a51b39ca0fc0fb8c609cf5fbf8a78d",
+      "3744280d76edd422f54993fa8133a6cace220dba4a1a7c9dbb323996b513d050",
+      "7623f16490c34e7b75368c2c578ffe0d36aa8ee1cee4e4f5d158a8bac6f5071f",
+      "e884097e43a13d694cfa60914be251be60db0da01968ea4667a10daf6fdb4c85",
+      "4321228c74b9114b7e6dd49687fcb501fb13b1b47647205fd2755c7974379168"
+    ],
+    "atlasSha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "4c817efa06348a3c8ef67f5c50c45b72eae24a04b09d4f7a397dd1369aa2f53a",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "inspect-tool",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view local task, independent station placement/occlusion and controlled live lifecycle. No seamless repeat, direction continuity, moving sole contact or hidden geometry approval.",
+  "checks": {
+    "identity-and-scale": "All eight native and layered poses retain the same bald stocky smith, dark forked brass-bound beard, cream sleeves, leather apron, olive trousers and boots. Source-bound520px standing basis and root320/616 match the existing anvil actor. Actual in-game standing registration is reviewed at the fixed station; other views and translating contacts excluded.",
+    "station-and-foot-contact": "The independent anvil/stump stays fixed across all eight poses and after cancellation/day completion. Visible standing boots keep the local base; the nearer supporting region is partially occluded by the stump, with no claim for hidden geometry. Actor has no painted anvil. The raised hand/tool remains above the station, so no foreground copy is needed.",
+    "hand-and-tool-contact": "Same small steel/wood tool stays in the raised gripping hand through chest hold0/1, lift2/3, wrist rotation4/5 and lower6/7. Opposite empty arm remains connected. This is inspection, not striking or metallurgical workpiece replacement.",
+    "prop-continuity": "One independent anvil remains at the forge, with no duplicate anvil or carried spare hammer. The same held tool remains present from0 through7; body and props do not switch direction during the finite task.",
+    "completion-and-reset": "Exact live renderer and authored durations expose0-7, complete once, hold7 for5000ms and reset only on explicit assignment/day change. A day chooses one operation; completion does not trigger another operation. Repair routing walks naturally to its distinct bench. Renderer never grants inventory or building rewards; existing day resolution retains economic ownership."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "7750255ed027595c514e55e1a6158060ab3706b221dce8faaf3d059290ac0341"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "69c60b63de10e0638689b757bd2fbef21a3cc087e2761fc3992ba2b889a21f8a"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "f627c02633f4d859ba5c9e237092646abca046035027be016ab20ed5cd550a3b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-actor-review.json",
+      "sha256": "877913f9188d1a3a2a06653a756bf27bcc07778ef073ed0859f03437f74039d0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "../../../../workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "2f43478895a7937055ad8c37c7ebfb0fe110ffe86141db6c84a0c2acaf110b53"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "084a0fe492b58f50f2fe49a1aae789168ccfb1e0aad5b0c868bbadf1c503f164"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/smith-work-check.mjs",
+      "sha256": "6d5bded53588e95272462a417b3f66053771843b3ea75882d62a608bb50e1273"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-0.png",
+      "sha256": "bbf368d851ff4f0640bf09f13eb2310a6def92a18c8adf1e44322eaf2015179d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-1.png",
+      "sha256": "d4db988f2a122352b3d0aac46f45987987d657ba55598cffc1b808c6f0a78bda"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-2.png",
+      "sha256": "fbdf03a61a130979516e85792e6b71d136ea758c8830cbd19f7e9c9a04748b7c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-3.png",
+      "sha256": "27344ffffe2a754677ff7eefa0bde3d1c774ef2f7171dbabee1b1ba1a91ad015"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-4.png",
+      "sha256": "14ed1c0c7a4cf808e81a8dfdbb6e5bcda161ccb4e5292d3541f7af6b59f1d1cd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-5.png",
+      "sha256": "e51b283e95d29a2f75e64d884faef31203a1dc6a3788f030ad1e35e7662c6900"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-6.png",
+      "sha256": "d7978800722891177b0c1ee27d3135663f88b6c70a3ab97700ebf3df10e63a9f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-layer-7.png",
+      "sha256": "771a2e22f7c8774c9280d2081b9f571414c021731cb154bbd98de54eab1ee197"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-game-0.png",
+      "sha256": "f342b676c6e43953e448ef37c939ce65941bc2db3accff1950ef1b963b5c0109"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-game-2.png",
+      "sha256": "065ffa863588e982270b5e41c4f4501b55127a48e2c639bedee20669f941811c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-game-4.png",
+      "sha256": "b06349dd2fcc6a64ad9da6cfed913e44952a6a5467223cab3beedacf3e779329"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-game-7.png",
+      "sha256": "d5674cb5eb61ec16d7874262bb07aa3a8d48f192e097ba401481dbeeeccd8a24"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-inspect-tool-game-departed.png",
+      "sha256": "6694bd3c37cb52986aa98c778b3f761f933812d66dd1c2a0048c5d3de5d19423"
+    }
+  ]
+}

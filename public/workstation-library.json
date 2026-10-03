@@ -47,5 +47,19 @@
     "actor": "sprites/Quartermaster/motion/check-weights/actor/manifest.json",
     "calibration": "sprites/Quartermaster/motion/render-calibration.json",
     "station": "sprites/workstations/weighing-table/generation.json"
+  },
+  {
+    "character": "Blacksmith",
+    "action": "inspect-tool",
+    "actor": "sprites/Blacksmith/motion/inspect-tool/actor/manifest.json",
+    "calibration": "sprites/Blacksmith/motion/render-calibration.json",
+    "station": "sprites/workstations/anvil/generation.json"
+  },
+  {
+    "character": "Blacksmith",
+    "action": "repair-pickaxe-handle",
+    "actor": "sprites/Blacksmith/motion/repair-pickaxe-handle/actor/manifest.json",
+    "calibration": "sprites/Blacksmith/motion/render-calibration.json",
+    "station": "sprites/workstations/repair-bench/generation.json"
   }
 ]
