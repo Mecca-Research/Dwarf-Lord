@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136",
+    "settingsSha256": "67345db6b203b1fc37048f9fc4722b5ea38316368963f6eb7c15b175fcf0b786",
+    "frameSha256": [
+      "6955ffaa7599b75a3a3cb3878488413caba7f279e1fd281451300250be381c6b",
+      "9a27b79ce01a420e24cf6c1ab123e82da461f5053fba4217833408dc17b77d8f",
+      "1d68e88c5fc8b3f018a229a0799f10bcf594e08f8303dc6a3b8534b65c1e6961",
+      "5f496ac6379ce3009daa59257c480ef4ffde0e9c01060196c54787d27dcc4435",
+      "50b7e8f4c562af46958d9aadb866c67ac57ef1e1ff28ea902599130d41113407",
+      "fad3adae284bd6397b1fc97c3f431bf99e3a7942828e4a5e5659875e9d1872d2",
+      "674413762a90f2b6387cbbdad1c7f90adcded3cd5b54160f790cb5955ddb4111",
+      "b140557bfc173bc8555547d257e7523ad8e28c3557e0583cf5c878f7e808a4ce"
+    ],
+    "atlasSha256": "aec51b1ff53ddf87cd489f65600d1e86527906ca20197a111fae2580179bdcc8",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "67345db6b203b1fc37048f9fc4722b5ea38316368963f6eb7c15b175fcf0b786",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          60,
+          390,
+          250,
+          585
+        ],
+        "minimumCorrelation": 0.94,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              1.8218561381733167e-10,
+              5.6700244499552355e-09
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98119,
+            "measuredCorrectionPx": [
+              1.0698037147521973,
+              -0.2672487795352936
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98718,
+            "measuredCorrectionPx": [
+              0.03512260317802429,
+              -0.01854351907968521
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98032,
+            "measuredCorrectionPx": [
+              1.2033356428146362,
+              -0.3099938929080963
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98399,
+            "measuredCorrectionPx": [
+              -0.12029162794351578,
+              -0.175546795129776
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97804,
+            "measuredCorrectionPx": [
+              1.0536962747573853,
+              -2.0943384170532227
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9802,
+            "measuredCorrectionPx": [
+              -0.10427188873291016,
+              -0.3188372850418091
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97725,
+            "measuredCorrectionPx": [
+              0.0020488931331783533,
+              -1.7986414432525635
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "explain-open-ledger",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Borrin explain-open-ledger fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Motion38 corrected all eight faces to the same bronze spectacles and short brass-bound forked grey beard. Left hand supports one OPEN leather ledger throughout0-7. Right hand follows and points to entries0-3, opens toward listener5 and returns6/7. The book stays open and connected; table, candle, books and stool persist. Finite explanation, no continuous repeat or independent furniture approval.",
+    "prop-continuity": "Motion38 corrected all eight faces to the same bronze spectacles and short brass-bound forked grey beard. Left hand supports one OPEN leather ledger throughout0-7. Right hand follows and points to entries0-3, opens toward listener5 and returns6/7. The book stays open and connected; table, candle, books and stool persist. Finite explanation, no continuous repeat or independent furniture approval.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "befe476defa86c3b07926db256eedc2e0c8e8a424a229b200d62e4e5b4ece9ae"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-explain-open-ledger-review.json",
+      "sha256": "a28184f7389c50404b38910d19b69a82c5529838ea5e578a996b8e59551e8a34"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-explain-open-ledger-playback.json",
+      "sha256": "df010b8ed7d2d2caf211dd6dc96c7298a45e90584c2fe8b022d18f957d662555"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-explain-open-ledger-0.png",
+      "sha256": "f8eb9b8a6302fcfe0f038351a733a05bc9e794c3fa7940b5aa8a988fceaa3ac1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-explain-open-ledger-4.png",
+      "sha256": "80a5ebf52c3ed5d7795a41fa36779f5af907ad0b7cb88dbb7ca9930f8dac1ac9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-explain-open-ledger-7.png",
+      "sha256": "8d01926abddd81fc1560f558b6b3c8257c04791c5cf5627dc3c2463bfaf54348"
+    }
+  ]
+}

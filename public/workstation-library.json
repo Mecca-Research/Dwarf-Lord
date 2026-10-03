@@ -1,0 +1,51 @@
+[
+  {
+    "character": "Cook",
+    "action": "chop-vegetables",
+    "actor": "sprites/Cook/motion/chop-vegetables/actor/manifest.json",
+    "calibration": "sprites/Cook/motion/render-calibration.json",
+    "station": "sprites/workstations/cutting-block/generation.json"
+  },
+  {
+    "character": "Blacksmith",
+    "action": "hammer-contact",
+    "actor": "sprites/Blacksmith/motion/hammer-contact/actor/manifest.json",
+    "calibration": "sprites/Blacksmith/motion/render-calibration.json",
+    "station": "sprites/workstations/anvil/generation.json"
+  },
+  {
+    "character": "Ginger",
+    "action": "fell-tree",
+    "actor": "sprites/Ginger/motion/fell-tree/actor/manifest.json",
+    "calibration": "sprites/Ginger/motion/render-calibration.json",
+    "station": "sprites/workstations/forestry-trunk/generation.json"
+  },
+  {
+    "character": "Laborer",
+    "action": "stack-crates",
+    "actor": "sprites/Laborer/motion/stack-crates/actor/manifest.json",
+    "calibration": "sprites/Laborer/motion/render-calibration.json",
+    "station": "sprites/workstations/storage-pallet/generation.json"
+  },
+  {
+    "character": "Borrin",
+    "action": "desk-writing",
+    "actor": "sprites/Borrin/motion/desk-writing/actor/manifest.json",
+    "calibration": "sprites/Borrin/motion/render-calibration.json",
+    "station": "sprites/workstations/ledger-desk/generation.json"
+  },
+  {
+    "character": "Stoneworker",
+    "action": "chisel-contact",
+    "actor": "sprites/Stoneworker/motion/chisel-contact/actor/manifest.json",
+    "calibration": "sprites/Stoneworker/motion/render-calibration.json",
+    "station": "sprites/workstations/masonry-bench/generation.json"
+  },
+  {
+    "character": "Quartermaster",
+    "action": "check-weights",
+    "actor": "sprites/Quartermaster/motion/check-weights/actor/manifest.json",
+    "calibration": "sprites/Quartermaster/motion/render-calibration.json",
+    "station": "sprites/workstations/weighing-table/generation.json"
+  }
+]

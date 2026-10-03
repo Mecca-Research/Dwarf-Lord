@@ -1,0 +1,23 @@
+{
+  "checkpoint": "motion35",
+  "status": "rejected",
+  "inputMethod": "New authored eight-phase vector pose guide plus existing Elder identity sheet, instead of another unconstrained prose-only redraw.",
+  "file": "docs/art-review/motion35/elder-joint-guide-rejected.png",
+  "sha256": "e26e6d9a06772ef176dd4491eaaa0da57e321dfc9f02df1f92c4a20a419cf369",
+  "guide": "docs/art-review/motion35/elder-joint-guide.svg",
+  "guideSha256": "082b27ccd3b21297b64521cf11219c0352e4751d54da8d52d1fd162272f68b19",
+  "failures": [
+    "The generator did not follow the specified +30px supporting-sole progression through planted phases0-3.",
+    "Planted cane0-2 does not share the prescribed support-sole progression.",
+    "Frame1 repeats the trailing swing rather than the controlled passing pose; full whole-stride calibration remains invalid."
+  ],
+  "selectedPoses": 0,
+  "productionReady": false,
+  "nextMethod": "Use individually authored or rigged contact-controlled poses. Do not repeat the same sheet regeneration or weaken the joint-contact tolerance.",
+  "prompt": "docs/art-review/motion35/elder-joint-guide-prompt.txt",
+  "promptSha256": "d66e24a72bce4844b0bf9514673ce528ff3aba8a2222c8684e734375774075f1",
+  "reference": {
+    "file": "public/sprites/Elder/motion/walk/back/source-sheet.png",
+    "sha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "794736354cc68dec859ec90060b552476962b55883af7594a0283eadcf8a2e30",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "22111bd2615b486c8450ce8371f7e61e7771a2318803447c3ed0b9ef1cf01a5e",
+      "54729f5710701f8d8051cafae6e2a73a4c0593f7680156dc40f19b2219e2d950",
+      "8091f72e011049ef3750268813f035f8383564eb7f7706d50ffb84a05ac41998",
+      "baea78c028d7e681abc5f716691398daeca31bd4e891d0e2436f8291ddc7aca6",
+      "2399c43875d5b7776ec9ce1cfcf169191aa531f9193ec26c9653db47d0284ea5",
+      "c3bd9c2b7e50b22c7cc009510367c3ff3054cd940d6e833b5ee7f05e58564eec",
+      "1b1cd2ea6c2daaa16dc67571acb1ac4454a4269ac0ff5b2cc29c223ce61cd5bc",
+      "2de9da6ec626619bc2a0fc6dbcd677001344d3bab9c9a6c530443f9e7a2b91a8"
+    ],
+    "atlasSha256": "8fa16ac763f9b13e2ef0688ac9adf5bfa7609c651d8aa89ef9b07f73ca0dcb1f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "eat-stew",
+    "direction": "reference"
+  },
+  "scope": "Fixed-view seated Elder eat-stew cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and all eight poses in the actual controlled-clock camp renderer inspected. Same bald Elder, white beard, embroidered olive coat, belt, pouches and boots. Source-bound740px standing-equivalent seated placement preserves his scale; breathing and head motion do not resize the body.",
+    "station-and-foot-contact": "Both boots, stool and seated pelvis retain their fixed ground baseline throughout0-7 and7-to0. The camp root does not move. This is a seated appearance review, not material sole/cane contact calibration during travel.",
+    "hand-and-tool-contact": "Left hand supports the bowl throughout the cycle. Right hand retains the spoon shaft while lifting from bowl0-1 to face2-4 and lowering5-7. The bowl stays near his lap; spoon/bowl and spoon/mouth contact positions were checked in the native exports and live frames. No hidden liquid or ingestion simulation is certified.",
+    "prop-continuity": "Same wooden bowl, spoon and stool across all eight poses. No independent workstation is duplicated. Small changes in depicted food contents are cosmetic, with no resource consumption or inventory mutation.",
+    "last-to-first-transition": "Frame7 lowers the spoon into the bowl and returns close to0. Spoon grip and bowl ownership remain continuous; no prop appears on the7-to0 return. Actual gameplay completes once on7, holds for two seconds and advances to a separate activity. The controlled browser review observed0-7, one completion, held handoff, terminal sequence and departure reset."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

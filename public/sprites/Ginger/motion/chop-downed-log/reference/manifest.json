@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Ginger",
   "action": "chop-downed-log",
   "title": "Chop downed log",
@@ -32,7 +32,7 @@
       ],
       "sourceAnchor": [
         183.5,
-        337
+        337.0
       ],
       "groundAnchor": [
         320,
@@ -55,15 +55,15 @@
         440
       ],
       "sourceAnchor": [
-        184.5,
-        338
+        185.23817567567568,
+        338.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        70,
+        69,
         158
       ]
     },
@@ -79,15 +79,15 @@
         440
       ],
       "sourceAnchor": [
-        185.5,
-        437
+        189.1908783783784,
+        437.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        69,
+        64,
         24
       ]
     },
@@ -103,15 +103,15 @@
         440
       ],
       "sourceAnchor": [
-        189.5,
-        327
+        195.40540540540542,
+        327.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        63,
+        55,
         173
       ]
     },
@@ -127,15 +127,15 @@
         874
       ],
       "sourceAnchor": [
-        187.0,
-        331
+        191.42905405405406,
+        331.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        67,
+        61,
         168
       ]
     },
@@ -151,16 +151,16 @@
         874
       ],
       "sourceAnchor": [
-        186.0,
-        338
+        188.9527027027027,
+        337.2618243243243
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        68,
-        158
+        64,
+        159
       ]
     },
     {
@@ -175,15 +175,15 @@
         874
       ],
       "sourceAnchor": [
-        188.5,
-        339
+        195.1435810810811,
+        339.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        65,
+        56,
         157
       ]
     },
@@ -200,7 +200,7 @@
       ],
       "sourceAnchor": [
         183.5,
-        336
+        336.7381756756757
       ],
       "groundAnchor": [
         320,
@@ -208,9 +208,19 @@
       ],
       "placement": [
         71,
-        161
+        160
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,119 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        310,
+        480,
+        580,
+        610
+      ],
+      "minimumCorrelation": 0.93,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            2.0041483139721095e-08,
+            -6.41819930535803e-09
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96789,
+          "measuredCorrectionPx": [
+            -1.2501717805862427,
+            -0.1205965206027031
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96312,
+          "measuredCorrectionPx": [
+            -4.803552627563477,
+            -0.27695661783218384
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95093,
+          "measuredCorrectionPx": [
+            -8.227466583251953,
+            -0.2959461212158203
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96087,
+          "measuredCorrectionPx": [
+            -6.246875762939453,
+            0.07979301363229752
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9446,
+          "measuredCorrectionPx": [
+            -4.236002445220947,
+            0.7078591585159302
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.93901,
+          "measuredCorrectionPx": [
+            -8.762506484985352,
+            0.11302994191646576
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95936,
+          "measuredCorrectionPx": [
+            -0.11836312711238861,
+            -0.5717741250991821
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

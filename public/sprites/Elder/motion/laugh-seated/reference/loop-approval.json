@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "6e6e628038fdb1ae8e1e8a93eb944648f46e1a2219a260759317d856cdde422b",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "77d727d1fc454a06105b65f840d2c8675a89ebf0d2663d83aa6063116579c40e",
+      "4657f99252dd2b0955b875baa2fd479b95aeca5a67c8d054d685412f469cafaf",
+      "abf7b6098a3d1b8a61a618003d6c728bc2af11ce151843db6c7ccf02fbbb191c",
+      "5ac264e4eaffe3e79b4b7d988876853830d6436fe6a9d1c5cfe80f522a59011e",
+      "fab813af920bb356d28eb6293380c589e519af45cb1d4b6f92735e14887070fe",
+      "d9ac6037dbaa1aa1f282e1f1d04e362e7da2dc71efccd6d3722d59e7a139966a",
+      "6e5c7d55666f7d164c8a34c333e25cf5f231ef2a8460180f836041021c42c2ab",
+      "0da00d018a901c874119c4e34a81f19b185fbcbf364c12f7f595d1b58833601c"
+    ],
+    "atlasSha256": "f749c96672936fed3e393c92465da4758f9bb0ce27523741ece9ae5562790ce8",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "laugh-seated",
+    "direction": "reference"
+  },
+  "scope": "Fixed-view seated Elder laugh-seated cycle and once-hold playback at the home camp only. No moving foot/cane, 360-degree pose transition, pickaxe work, or seamless change between different camp activities is approved.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and the live camp render inspected. Same bald Elder, broad white beard, embroidered olive-brown coat, belt and brown boots. Runtime uses the same740px standing-equivalent seated-body height across the camp activities; laughing head tilt is intentional, not a change in character scale.",
+    "station-and-foot-contact": "Both visible boots and the stool retain their seated ground baseline through eight frames and7-to0. No translating root or walking stance. Small outline differences remain within the appearance of seated motion. This approval does not certify a moving anatomical sole.",
+    "hand-and-tool-contact": "Right hand rests against his chest as the torso tilts backward; left hand rests on the knee. Neither hand releases an object and no tool contact is implied.",
+    "prop-continuity": "Same stool, boots, clothing and pouches through every frame. No independently rendered station is superimposed at this camp activity. No carried prop in this cycle.",
+    "last-to-first-transition": "Eight poses inspected in order, including0/7 comparison. Frame7 returns to the chest-hand seated laugh near0; the head tilt decreases from the central laugh apex without exchanging props. Live task stops on7 with one completion; the finite camp sequence holds that pose for two seconds before a distinct activity. Rechecked in the final live build with all eight frames observed; each preloaded activity handoff retains a displayed work pose, including while waiting for the next texture."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

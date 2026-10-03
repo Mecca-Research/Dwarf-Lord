@@ -43,3 +43,46 @@ test('legacy character upgrade is repeatable and preserves worker progression', 
   assert.equal(twice.find(d => d.id === 'helga').energy, .23);
   assert.deepEqual(legacy.map(d => d.id), once.filter(d => d.id !== 'elder').map(d => d.id));
 });
+
+test('forge assignment repairs the existing building through daily resolution', () => {
+  const smith=catalog.STARTING_DWARVES.find(d=>d.id==='grit');
+  const job=catalog.JOBS.find(j=>j.id==='forge');
+  assert.equal(job.buildingId,'forge');assert.equal(job.skill,'craft');
+  assert.ok(Math.hypot(job.targetX-10,job.targetZ+7)>3.55,'approach clears forge collision');
+  const idle=sim.resolveJobs([smith],{},1),worked=sim.resolveJobs([smith],{grit:'forge'},1);
+  assert.equal(idle.buildingRepair.forge,undefined);
+  assert.ok(worked.buildingRepair.forge>0);
+  assert.deepEqual(worked.inventoryDelta,{},'repair animation does not mint resource output');
+});
+
+const stations = compile('../src/game/world/workstation-sites.ts', { '../data/catalog': catalog });
+test('passive weighing requires Fenn at his home table without a job',()=>{
+ const fenn=catalog.STARTING_DWARVES.find(d=>d.id==='fenn');
+ const body={x:fenn.x,z:fenn.z,anim:'idle'};
+ const site=stations.passiveWorkstation('quartermaster',null,body);
+ assert.equal(site.id,'weighing-table');assert.equal(site.action,'check-weights');
+ assert.deepEqual(site.target,{targetX:fenn.x,targetZ:fenn.z});
+ assert.equal(stations.passiveWorkstation('quartermaster','storage',body),undefined);
+ for(const anim of ['walk','work','talk','sleep','sit'])assert.equal(stations.passiveWorkstation('quartermaster',null,{...body,anim}),undefined);
+ assert.equal(stations.passiveWorkstation('quartermaster',null,{...body,x:body.x+2}),undefined);
+});
+test('persistent workstation registration only captures its assigned working actor', () => {
+  for(const [appearance,job,id] of [['cook','meals','cutting-block'],['blacksmith','forge','anvil'],['stoneworker','limestone','masonry-bench']]) {
+    const station=stations.activeWorkstation(appearance,job,true,false);
+    assert.equal(station.id,id);
+    assert.equal(station.target,catalog.JOBS.find(j=>j.id===job));
+    assert.equal(stations.activeWorkstation(appearance,job,false,false),undefined,'walking root stays mobile');
+    assert.equal(stations.activeWorkstation(appearance,job,true,true),undefined,'resolved day releases root');
+    assert.equal(stations.activeWorkstation(appearance,null,true,false),undefined,'cancel releases root');
+    assert.equal(stations.activeWorkstation('laborer',job,true,false),undefined,'other characters are not snapped to station');
+  }
+});
+
+test('Borrin has a persistent consultation desk without becoming a production worker',()=>{
+ const site=stations.activeWorkstation('borrin',null,true,true);
+ assert.equal(site.id,'ledger-desk');assert.equal(site.passive,true);
+ const borrin=catalog.STARTING_DWARVES.find(d=>d.id==='borrin');
+ assert.deepEqual(site.target,{targetX:borrin.x,targetZ:borrin.z});
+ assert.equal(stations.activeWorkstation('borrin',null,false,false),undefined);
+ assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
+});

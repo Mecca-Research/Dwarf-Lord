@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+  "verdict": "calibration-required",
+  "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "remaining": [
+    "Broom remains gripped, but the toolbox follows the pose registration rather than one fixed location. Needs measured fixed-toolbox registration and knee/sole contact review."
+  ],
+  "binding": {
+    "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "0341dff60b46cc41157661bd4323c902291cf0e086233f63bf408cf34ca1ce4b",
+      "d994584d35e6146d5b627f67395a9d1ecdd846776ad838d7bd6437c124b2ab07",
+      "053a34d4097145a50dd65f5de31312f9c7235d8c650036379dced23fbbc5bc7d",
+      "a0571ddf07f8a568eb679ee2d53cf460fc46a4168c53817ad4c586d4f9101e3d",
+      "56e6455e2408869fb04159e61bdeac465974e7a4d7df9e9448d1fde200e01fac",
+      "c13f2badb88f567fddc3f7c121d86c5326f644ff53b224794c81531ef55cd48c",
+      "19cf7b830db5522715c6d1aa492dee51e3595b255e08ad7935953d279fc85041",
+      "3d4152d362f05d426d4287f94ed63b5923a59ff9f8123c34fea714e853f55f4b"
+    ],
+    "atlasSha256": "67fbead30a877fb0af0f6210b2be645bdb3aaa0b0705aab53590a5e09bab8ffc",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "sweep-wood-chips",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "46238fe5df3846b644728156372dfc0de049476eb722d488dbd497826ea876e4"
+}

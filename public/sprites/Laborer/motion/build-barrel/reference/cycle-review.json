@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "14fdd05b224291bca562ef0874a1be9391a87974bd8c8f8d49fb9d95e8e7dbe7",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "4f548f87b6a2f1c1a9a11a44f6a662db54a98fe6d0af23632a8bd76daaa72c38",
+      "0167b71a544e02dc96957977ade500b64c45fc2fb8849f041e5780b94cca340a",
+      "e624fe27a2820ed61cc0c79f9b35556d7335b41607fb08f07ce1ad10c6df47bf",
+      "679908670f57157d2815da7116d83fbfa2b58bc0082ee9ac50658387dca2de12",
+      "5fce910fd004815c7024a548ad273505458ebb67d79536b1c751b89bd0a088ed",
+      "d1c500e3dc1e70997a3829d9457c040cdbba3fa475cd824f0e424a3ce2703aea",
+      "4e4eb04df9ac6551b5909523133ce606b38b91d0a522f447c5e9c1a1ce98ce13",
+      "5a3b747806278746e363ddefde6659a3a4ccd796ab4309541c2a30145e77fad6"
+    ],
+    "atlasSha256": "9b6d5d318de5316b5a74e5bc2731d5d2e36d41d78a435d35813aa074d480861d",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "build-barrel",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "New upper iron hoop appears between3 (right hand takes mallet) and4 (mallet raised) without an insertion/placement pose. The mallet also remains in the tool crate while carried. Need clear ownership and upper-hoop placement before a finite assembly or loop acceptance."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "04cfb9ecc971c8b8c7c96adb1f941736c970b81b4baad04e5154831ca31bff2f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-barrel-review.json",
+      "sha256": "80d91a5a1ba8c472d596662c8981620007c996634d1141ff63c84dcb5bb811d6"
+    }
+  ]
+}

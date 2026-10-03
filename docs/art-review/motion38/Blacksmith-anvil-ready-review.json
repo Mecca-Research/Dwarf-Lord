@@ -1,0 +1,131 @@
+{
+  "character": "Blacksmith",
+  "action": "anvil-ready",
+  "direction": "reference",
+  "destination": "public/sprites/Blacksmith/motion/anvil-ready/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+  "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+  "issues": [
+    "Frame6 raises the hammer overhead, then7 returns it to the thigh. The6-to7 jump lacks a descending/recovery pose and does not match a quiet ready stance. Do not approve the candidate loop until this phase is redrawn."
+  ],
+  "binding": {
+    "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+    "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+    "frameSha256": [
+      "67cd84047adb5a37fdc3f5ed8ccb42be5c34c8c5ff82441eed3e638177dde68c",
+      "c6d51cb92d2959412d8c4a0b008245a3c840c3393dff99630d481926cc6c9d0c",
+      "3ae0e28eb0508d3f544e40ed2dc02872c031517572d257b303120ff19d6f1923",
+      "b6da7352aab6e354c4be07216789b5134795a7e32a8c4dbfd7c42e65c59f3d21",
+      "332f369f6359bd0edd92c37940b0046617fa7b20a02a6b97f47b47c65b616e24",
+      "669a026e3d674546c36052929dbf38efdfccfbd1f20af26a180d5597fe94bafc",
+      "a5b92929177347a2dd59267910c858bb4cbcab5306319b0bdf31f9dac31f7ab4",
+      "805f54ee4a89b6aded02539bc42a5371f558ae0e3f4e80220b045ef120b9d359"
+    ],
+    "atlasSha256": "1c465477f3fc8f42565d3116aeb649ac532a78b708981d1c4a0d3aea1c36c531",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          210,
+          410,
+          510,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "correlation": 0.9644,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -6.63,
+              0.23
+            ]
+          },
+          {
+            "correlation": 0.972,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -5.23,
+              0.19
+            ]
+          },
+          {
+            "correlation": 0.9665,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -5.99,
+              0.25
+            ]
+          },
+          {
+            "correlation": 0.9621,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -6.23,
+              -0.28
+            ]
+          },
+          {
+            "correlation": 0.9603,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -6.63,
+              -0.23
+            ]
+          },
+          {
+            "correlation": 0.9672,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -5.39,
+              -0.19
+            ]
+          },
+          {
+            "correlation": 0.9859,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.66,
+              0.0
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      140,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "anvil-ready",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "4e0b06a28d0529428c6a794c4c000f19629c3ac3613e888984dfde31876835dd"
+}

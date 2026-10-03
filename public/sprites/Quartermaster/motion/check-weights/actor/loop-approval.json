@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "4449f2bb45e430a8157c84627a67922a56f29c26f34a695bdb79df95caa96e46",
+    "settingsSha256": "90f17692aafcbccfb7ed4ba4209b47e1cdd07fb513c1331978776646fa6142d7",
+    "frameSha256": [
+      "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a",
+      "ad1f0c3bd1b178532f2e73ae739965c5fc8b7fa1021365fa083c5315f5039cb4",
+      "4ccd3e2bda0550293ddb8c512d77e22445a2c72356f3c728cc289768c925c6af",
+      "6ef49212238e57f41cda5a334787130a06a4977c63b9bada8e105582db09f760",
+      "2cb81eac19fb248bc8f17459bf69bec7db972a808bc5cf6946e75ac2bc8c030b",
+      "c16496fbf3cdcf418fed01e51f78ecb81ea4c14d02dbd60e0f0a2d4d3b5c48e6",
+      "79c92be25704e6afdc2d4dc2be37f5628b128139561ebcf65934cc36a50e35d2",
+      "48d30a013fb3d477b1b0228061f63ee7a7c1aa0731a26a6f1a3771de0042fb16"
+    ],
+    "atlasSha256": "7df425aa9ef232937dc22f0e99955df9000a35d08c265cb85c9c4f34733ab222",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "90f17692aafcbccfb7ed4ba4209b47e1cdd07fb513c1331978776646fa6142d7",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Quartermaster",
+    "action": "check-weights",
+    "direction": "actor"
+  },
+  "scope": "Fixed-view independent calibration-weight inspection loop only. Holds, raises, examines and lowers the same weight beside the empty balance pan; not weight placement, balance simulation, coin transfer, walking or other directions. Gameplay remains once-hold.",
+  "checks": {
+    "identity-and-scale": "All eight source and layered poses retain receding blond hair, brass-ended forked beard, olive waistcoat, cream sleeves and pouches; shared520px registration.",
+    "station-and-foot-contact": "Same independently rendered table and ground baseline. Both visible boots retain a stationary stance with small rendered pose variation; no separate skeletal sole-contact certification.",
+    "hand-and-tool-contact": "Right hand retains the brass cylinder by its knob in all eight poses, including tilted underside inspection. Left hand rests near the table edge. Per-frame foreground contours exclude vest/pouch fragments. The held cylinder stays beside the pan and is never released.",
+    "prop-continuity": "Table, empty pans, scale upright, open ledger, bag and spare weights remain unchanged through the action and departure. Actor does not include any table/scale pixels.",
+    "last-to-first-transition": "All eight layered poses and repeat/once-hold controls reviewed. Frame7 lowers weight close to initial ready0, without object or grip exchange; modest wrist movement closes the inspection cycle."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../workstations/weighing-table/sprite.png",
+      "sha256": "994c204bef369b0d46b979c0982d4c679e5d65d14dd2893572cacd51e77a1bf9"
+    },
+    {
+      "file": "../../../../workstations/weighing-table/generation.json",
+      "sha256": "bc5dc99c0b3c9f1aa883007e275df48a0833f082324bd24cd7904e83d2c8ba6a"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "973c1c170645dd18cc7d468d74d6af986775589cf60bebeccf4beab89b3a287d"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

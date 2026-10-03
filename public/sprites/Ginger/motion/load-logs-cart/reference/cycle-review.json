@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "cd449344877a3f4199e5a287765203b5a2f2642f9b01f1ea24a34b977e0db067",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "e3f1d9e12127bb421b2087a1baeb3d5ba0923111b1e4b2d92cde9951769a5bf8",
+      "ce5d05fee2a028b713f483648048f2738300fe4c81a335dfa9c3cc9cde9e40bd",
+      "22f717db8889d30fb73453bd11cfe8771c3b7dc4c421b1cd78cc5b4b3dacbfb1",
+      "0425fc9ea2687e805fd6cd139048bf46ff8d01da75407e2ad50a7c9e0ae459a5",
+      "abcc88c58f24741c83ebabafc8867731bbf3f72848b259a8cd767242e55a2780",
+      "54c80de16cee29315856ed5dfda851527a6ed62a2ff5f65f22f196b42afb8f3a",
+      "264abbe5aa8a4095ba5d27cd6a59cec8511ad2568cdc68bbb38bdbf94f4bec51",
+      "aa59720e6f4367d7e2f268b7a0977bb04d8143335360a0f271a76a45f1151095"
+    ],
+    "atlasSha256": "fce9650732febe2f4349179035b8d07303b180f2a7026f97603c47743cbfd86a",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "load-logs-cart",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "Frame2 contains a clipped cart at its right and a detached piece of adjacent cart art at the left of3. Need complete individual cart poses without source-grid neighbor fragments; retain the placed log through empty hands6/7."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "8682524878975cd2b8e5d05edc63fa2838957e54253cdddb504ac3453a904042"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-load-logs-cart-review.json",
+      "sha256": "be862b5fcf7c3dc02c73e1536bc4cb2d9dfcd88ca94a885df3165b5f3832e5eb"
+    }
+  ]
+}

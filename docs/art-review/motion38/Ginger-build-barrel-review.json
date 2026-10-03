@@ -1,0 +1,53 @@
+{
+  "character": "Ginger",
+  "action": "build-barrel",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/build-barrel/reference",
+  "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "nativeReviewSha256": "6c79ba7cc789231c538dde7d44c652e7c203b7a363ced88eed824a414470677a",
+  "verdict": "changes-required",
+  "issues": [
+    "Right hand retains mallet during rebound6 but7 it is on the distant bench with both hands already on the barrel, without a lowering/placement pose. Mallet also disappears from the bench across7-to0. Need an explicit return-to-bench beat and persistent tool ownership."
+  ],
+  "binding": {
+    "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "5072381ba50e1fcf32828df11ff5ebe2dfd6a0eebaf097415bbb8e5785167a99",
+      "11ff5eb8459bdc933fec8bc317e9491d80c38fda4f8868712289f7c9f127b8a5",
+      "302866869a959aa27ca898f562d00fec0f93299a761cc743ddb3a8146429aca3",
+      "1b38715c0526fe15f478375263bbb4524c9eabefd90ec21a5fd6d2f8fc37998b",
+      "a26f3c0336a9560dadddb2a3648b2546f8418a81dfb2111ac2a89045bfcfbb93",
+      "43424eeab10251bd5e5930721d4fe1fd161606639ff2b81dd3a347d2f7166e0b",
+      "a76955959797cb1f9784ab9fcf09699cd06adc511c95507a60dd21fc617951b8",
+      "17ef1742f67ee2e8cebaeec132d2d6cd57fa25a16d22206695f354d64e033163"
+    ],
+    "atlasSha256": "8f9da6b1aa0ecdc6fa1a0fa7cd3c0f7fa86976e19a130e22d485151000e135d2",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "build-barrel",
+    "direction": "reference"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c",
+    "settingsSha256": "b849e5f441e7eaed5c72e9bf1626e3ce558db0d7072a28044363c51e23eff2f8",
+    "frameSha256": [
+      "6c830aba25ed2bb4b1bac664be3f2098d061e7d301424816052a6c250e47b935",
+      "620d4a96c90f880f24d25bf5578d6071621e961ab583ee13ee7a2e04e5f69b46",
+      "d1ae1d044e420141c75cda825cd9228d8b90265cadf8283b3526c4f5c0e96866",
+      "3da2a90fe4f80360a43898ea864eb1139b4d65c26d53ca43a86c8f25a61d2510",
+      "3c2ed705bdcfb6ba8210d50352e30d59d8ab937703299e98460ec03f43d6c10d",
+      "d37b31821874535d4cc95228293759559562b84649283339ebce196b5fad34b4",
+      "e56876acbe462350cd1e180faed697ae95dd31fbf1e012ac662b960a46142eab",
+      "b385fa61f3c2e8f8790b31a70b03515d1f39c65e198b6a2bff0de1d3e8003c0f"
+    ],
+    "atlasSha256": "d01ae4bea88240b8a4500191867e652d8314b735b449a7097d57b1ebb190040b",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "b849e5f441e7eaed5c72e9bf1626e3ce558db0d7072a28044363c51e23eff2f8",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          210,
+          410,
+          510,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.0,
+              -0.0
+            ]
+          },
+          {
+            "correlation": 0.9827,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.77,
+              -1.01
+            ]
+          },
+          {
+            "correlation": 0.9854,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.56,
+              -0.85
+            ]
+          },
+          {
+            "correlation": 0.9762,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.19,
+              -0.24
+            ]
+          },
+          {
+            "correlation": 0.9876,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.56,
+              -0.6
+            ]
+          },
+          {
+            "correlation": 0.985,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.88,
+              -0.89
+            ]
+          },
+          {
+            "correlation": 0.9882,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -1.26,
+              0.47
+            ]
+          },
+          {
+            "correlation": 0.9813,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.02,
+              0.66
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      160,
+      100,
+      80,
+      60,
+      90,
+      100,
+      150,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-raised",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Blacksmith hammer-raised fixed reference visual repeat: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet.",
+    "prop-continuity": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet.",
+    "last-to-first-transition": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet. Authored final-to-first repeat inspected and checked at the exact timed boundary in the gallery."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "e4ba3885564e4709ee1dd1b73f7cb08358662f81efe5355bfb140cc030919a58"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-hammer-raised-review.json",
+      "sha256": "d3e6046cee7e9a0933b633c578438364e887668a3ed8ec048cdd4a33795d5130"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-hammer-raised-playback.json",
+      "sha256": "d4b867b3ef35ea6247dd0e8914bcfdd88f44a0943b032ccc09be59fe473b4f5d"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-hammer-raised-0.png",
+      "sha256": "89f2f312b61e7e54c77d202350c85d91d5f5a9def2c2f5309eec41d30ec32bd8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-hammer-raised-4.png",
+      "sha256": "8959930b0449e81e5fc24df6933728d661179602ea9a85457aacfd9b19af9865"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-hammer-raised-7.png",
+      "sha256": "09c9518fd8bd54f981d402834838620192bc166e9c50c694b9ba4bed8cc1e0fc"
+    }
+  ]
+}

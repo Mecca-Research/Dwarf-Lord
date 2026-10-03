@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "sha256": "2301b204f5aa93648443cbc8054e09b155b0459e0b734685493a7374c2d43cd5"
+    },
+    {
+      "id": "corrected",
+      "file": "authoring-inputs/corrected-sheet.png",
+      "poseCount": 8,
+      "sha256": "64638d10a40db7c9055b459d59dcf6c4e40ad3ea7ee79ea2dc50cd1bfa4bb9e8",
+      "reference": "authoring-inputs/original-sheet.png",
+      "referenceSha256": "2301b204f5aa93648443cbc8054e09b155b0459e0b734685493a7374c2d43cd5",
+      "guide": "authoring-inputs/phase-guide.png",
+      "guideSha256": "c493c348f69abd48002f092c6cd32635751020326b616db6507833f9d1a80f53",
+      "prompt": "Preserve exact Ginger identity and fixed back-right camera. Use Blacksmith sheet solely as leg phase guide; correct bottom-row near-right lead/support and far-left recovery, preserve all original top-row poses, no tools, eight complete sprites in transparent 4x2 sheet."
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "corrected",
+      "pose": 4
+    },
+    {
+      "input": "corrected",
+      "pose": 5
+    },
+    {
+      "input": "corrected",
+      "pose": 6
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "review": "Authored second-half leg alternation. Body, arm and whole-stride/loop acceptance remain pending."
+}

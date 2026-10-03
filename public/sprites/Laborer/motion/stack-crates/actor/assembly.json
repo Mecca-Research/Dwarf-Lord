@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "normalizedHeight": 370,
+  "targetBodyHeight": 500,
+  "targetAnchor": [
+    180,
+    616
+  ],
+  "inputs": [
+    {
+      "id": "actor",
+      "file": "authoring-inputs/actor-sheet.png",
+      "poseCount": 8,
+      "sha256": "eea8f8a6aaf1ffa14297d84ad19f7102f89b09cf4653d95acc39071d016984f9",
+      "rootXs": [
+        155.0,
+        575.0,
+        962.0,
+        1473.0,
+        133.0,
+        574.0,
+        997.0,
+        1447.0
+      ],
+      "reference": "authoring-inputs/reference-sheet.png",
+      "referenceSha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e",
+      "prompt": "Edit this eight-frame Laborer dwarf crate stacking animation into an actor-only layer. Remove the stationary pallet, sack and ALL stationary stacked crates from every frame, leaving transparent space. Keep the Laborer exactly the same identity, scale, camera, clothing, face and poses. Keep ONLY the ONE crate he carries and lifts: frames 1-4 retain that carried crate in its original place. Frames 5-7 retain that same crate at its newly placed elevated position next to his hands, floating in transparent space where a separate stationary stack will support it. Frame 8 retain the newly placed crate as a separate complete object at the same elevated position, dwarf's hands lowered. Remove lower stacked crates, pallet, sack and loose side crate in all cells; only the dwarf and ONE moving or newly placed crate per cell. Four columns two rows, same pose locations and generous gutters. Full legs and boots. Genuine transparent background. Detailed semi-realistic game artwork, eight distinct original poses preserved, no captions.",
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor",
+      "pose": 0
+    },
+    {
+      "input": "actor",
+      "pose": 1
+    },
+    {
+      "input": "actor",
+      "pose": 2
+    },
+    {
+      "input": "actor",
+      "pose": 3
+    },
+    {
+      "input": "actor",
+      "pose": 4
+    },
+    {
+      "input": "actor",
+      "pose": 5
+    },
+    {
+      "input": "actor",
+      "pose": 6
+    },
+    {
+      "input": "actor",
+      "pose": 7
+    }
+  ],
+  "review": "Whole actor and moving crate layer, foot-band registration; station contact and completion handoff need review."
+}

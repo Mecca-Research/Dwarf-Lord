@@ -1,0 +1,131 @@
+{
+  "character": "Ginger",
+  "action": "chop-downed-log",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/chop-downed-log/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+  "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+  "issues": [
+    "Split halves visible4-6 become a whole horizontal log again7. A single-pose candidate preserved the split but changed fixed stump geometry; measured0.89327 correlation failed its existing0.93 threshold. Need retained split material and unchanged fixed station."
+  ],
+  "binding": {
+    "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+    "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+    "frameSha256": [
+      "1ddbf8fdb007a1ace9daccbfa57d07fbb698130f6488c753b0ecebd682f9eddc",
+      "e9f02fb81035cc5cb2c236c7f3d75e714b9abcca2f8200d7bda6375b9287aa08",
+      "f2960e5da66287362bdca99cd056aab09ede2fbf7b656ae9f5361fb374cf6d36",
+      "7a29102d1101fa9a93f3c99bb3c3e53286452d1ec7197c77c6bd2eab682423eb",
+      "a6057d13db1fa13144e642783a4033b987270ffd037dde508210567a682a5f04",
+      "c99092b1c99f9770312d93aca1712d1f16526af9109d856ee02e2e7467bf3cde",
+      "0d308e8e776308052911f4778d4ce52d6a3ded53d60d4825fd330071c84e1ed8",
+      "39184f948c326b80ecc52026c7c56ab7aa1be7126fc09c2d5fa88602a3e57e1b"
+    ],
+    "atlasSha256": "93cbfd33d8d7b32052b60d606030f2d1cca5e9b437b8986af8529e5939c3ffa3",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          310,
+          480,
+          580,
+          610
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              2.0041483139721095e-08,
+              -6.41819930535803e-09
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96789,
+            "measuredCorrectionPx": [
+              -1.2501717805862427,
+              -0.1205965206027031
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96312,
+            "measuredCorrectionPx": [
+              -4.803552627563477,
+              -0.27695661783218384
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95093,
+            "measuredCorrectionPx": [
+              -8.227466583251953,
+              -0.2959461212158203
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96087,
+            "measuredCorrectionPx": [
+              -6.246875762939453,
+              0.07979301363229752
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9446,
+            "measuredCorrectionPx": [
+              -4.236002445220947,
+              0.7078591585159302
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93901,
+            "measuredCorrectionPx": [
+              -8.762506484985352,
+              0.11302994191646576
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95936,
+            "measuredCorrectionPx": [
+              -0.11836312711238861,
+              -0.5717741250991821
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "chop-downed-log",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "588f90b561ac076026bef78ef93b202253fbd80242b70f38947790a2d0338c7e"
+}

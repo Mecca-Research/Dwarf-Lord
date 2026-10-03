@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "binding": {
+    "sourceSha256": "5e861d50eee0abf19628adba8a54a5ca859ded276ca0934e323484e9bf84270d",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "56f9510f7ef7bbe2ec0b7987f107c8163f83940d4cf66e07cc0bdd40f750ca47",
+      "71d88229f5579f19ab8e8c967f6bd2b7abf5b76a7cbbcd71fc0adf3eb1c090f0",
+      "80de12597cd46d5d0820e37b2a71939c872025528f10cd4a57f8c0693a0ff742",
+      "d41f30ea14db5f75eb4624f9b14825901b7dccb007fe8d285700e80d3d3b7c50",
+      "223382f44986308924355fd005db7ac0b843c758ae3aa59fec09dbab8b886653",
+      "2de2a35c5bde4e0bf4b6198c7f71b75713151a6c4b5426c5f211b36d7f4b0ce4",
+      "513b04d57166ba5eefd3de5a3bc26a5767861e9a2d777dfa49abfdcbeb1849b3",
+      "0d056c7a96555374812dab272c30c638d762839db2cefa7b6af8609cf4aabdb5"
+    ],
+    "atlasSha256": "813186675948c2bcc2610a482859e1b3a4dab0c249d8e531de57e19c826e50e1",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "inspect-pickaxe-in-lap",
+    "direction": "reference"
+  },
+  "scope": "Motion37 fixed-view seated Elder inspect-pickaxe-in-lap finite cosmetic inspection. All eight poses, visible grip/prop continuity, completion, terminal hold and departure reset accepted. Continuous replay, walking/cane, other directions, independent inspection furniture and cross-action seams are excluded.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and controlled-clock live camp frames reviewed. Same bald Elder, white braided beard, olive embroidered coat, pouches and boots. Standing-equivalent seated placement uses the existing source-bound render calibration; no walking scale or direction continuity approval.",
+    "station-and-foot-contact": "Fixed camp root, seated pelvis, stool and both boots retain the seated ground baseline through0-7. The crack inspection includes its painted wooden table in the combined fixed-view reference; it is not an independent workstation. No moving sole/cane calibration is claimed.",
+    "hand-and-tool-contact": "Right hand examines the pick head while left supports wood below the metal eye. Both visible palms/fingers retain contact during tilt and return. Wood handle stays straight and joined to one metal head;4 is a foreshortened inspection tilt. Occluded fingers are not certified.",
+    "prop-continuity": "One pickaxe with straight wooden handle, one metal eye/head and the same Elder/stool throughout all eight poses. Crack inspection table is a combined painted prop. No released item, inventory output, duplication or repair result is awarded.",
+    "completion-and-reset": "Actual controlled-clock camp renderer exposed0-7 at unchanged125ms timings, one completion and terminal7 hold. Sequence advances after held completion when the next atlas is ready, then final action stays held. Departure removes work state. Continuous7-to0 replay and seamless transitions between different camp activities are unapproved."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/elder-frame-review-check.mjs",
+      "sha256": "ca6929b6654d686b018d7e14474768d4bb28e9741b80a4ca3d27ab828b60c350"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion37/elder-live-frames.json",
+      "sha256": "ae19ec91664ca0741040d0b5f0d13d4b5e3a54c77cc2892d61ff63d4015bc3b5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion37/elder-inspect-pickaxe-in-lap-poses.jpg",
+      "sha256": "7e435febdb2de0b387c7faf40e987cdf582eb8d87b049ec5dff9c0b0bfdcfc20"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      100,
+      435,
+      570,
+      595
+    ],
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "measuredCorrectionPx": [
+          4.0545170776340456e-08,
+          -2.779935073249362e-07
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.99082,
+        "measuredCorrectionPx": [
+          -0.20535312592983246,
+          0.3806953430175781
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.98673,
+        "measuredCorrectionPx": [
+          -0.04501047730445862,
+          0.8254007697105408
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.98739,
+        "measuredCorrectionPx": [
+          1.2576051950454712,
+          0.5042130947113037
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9895,
+        "measuredCorrectionPx": [
+          0.7396932244300842,
+          1.093139886856079
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9828,
+        "measuredCorrectionPx": [
+          1.2871497869491577,
+          0.2892441153526306
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.98601,
+        "measuredCorrectionPx": [
+          0.4627911448478699,
+          1.352336049079895
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.99163,
+        "measuredCorrectionPx": [
+          0.23081448674201965,
+          0.8558533787727356
+        ],
+        "accepted": true
+      }
+    ]
+  },
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions."
+}

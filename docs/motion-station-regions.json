@@ -1,0 +1,263 @@
+{
+  "note": "Fixed prop regions in exported 640px frames; exclude moving tools and hands. Registration does not approve prop redraw or motion.",
+  "regions": [
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "region": [
+        210,
+        410,
+        510,
+        600
+      ]
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "region": [
+        120,
+        425,
+        570,
+        605
+      ]
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "region": [
+        150,
+        420,
+        570,
+        605
+      ]
+    },
+    {
+      "character": "Blacksmith",
+      "action": "fix-wheelbarrow",
+      "region": [
+        455,
+        300,
+        565,
+        450
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Reviewed fixed wood/bench region. Some texture redraw remains; correction addresses translation only."
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "region": [
+        60,
+        390,
+        250,
+        585
+      ]
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-open-ledger",
+      "region": [
+        60,
+        390,
+        250,
+        585
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "cut-boar-meat",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "region": [
+        100,
+        435,
+        570,
+        595
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "region": [
+        230,
+        395,
+        550,
+        590
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "region": [
+        85,
+        450,
+        565,
+        585
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "region": [
+        505,
+        430,
+        580,
+        565
+      ]
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "region": [
+        140,
+        425,
+        580,
+        600
+      ]
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "region": [
+        90,
+        415,
+        580,
+        600
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "region": [
+        260,
+        440,
+        575,
+        610
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Reviewed fixed wood/bench region. Some texture redraw remains; correction addresses translation only."
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "region": [
+        155,
+        460,
+        470,
+        595
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "region": [
+        285,
+        435,
+        580,
+        610
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-axe",
+      "region": [
+        405,
+        440,
+        565,
+        580
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Reviewed fixed wood/bench region. Some texture redraw remains; correction addresses translation only."
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "region": [
+        310,
+        480,
+        580,
+        610
+      ],
+      "minimumCorrelation": 0.93,
+      "note": "Reviewed fixed wood/bench region. Some texture redraw remains; correction addresses translation only."
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "region": [
+        470,
+        100,
+        530,
+        370
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "region": [
+        85,
+        420,
+        565,
+        600
+      ]
+    }
+  ]
+}

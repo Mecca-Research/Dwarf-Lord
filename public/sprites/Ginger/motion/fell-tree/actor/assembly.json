@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "actor",
+      "file": "authoring-inputs/actor-sheet.png",
+      "poseCount": 8,
+      "sha256": "1c49abe1d794886afe71d067c1f36e85c79076a4374adb1c27eeb1060196e1fb",
+      "prompt": "Edit this eight-frame Ginger dwarf tree-chopping sheet into an ACTOR-ONLY sprite sheet, same four columns two rows. Remove ALL trees, roots, ground patches, woodchips, logs and scenery to transparent alpha in every cell. Preserve each corresponding dwarf's exact head/torso/legs/boots, copper-red curly hair and thick beard, cream sleeves, brown vest and green trousers, camera and eight action poses. Keep his axe and both hands throughout, including the complete axe head where it met the removed trunk. Both hands must wrap the same single wooden axe handle with one consistent iron blade, fixed handle length and grip spacing; no duplicated grips, handles or extra fingers. Preserve source scale and consistent grounded soles in every frame; do not rescale individual poses based on raised axe height. Reconstruct any boots hidden by chips naturally. Genuine transparent alpha, eight complete nonoverlapping characters with full tools inside generous cell margins. Exact original semi-realistic rendered quality, no labels or shadows. No station pixels: only Ginger and his axe.",
+      "reference": "../reference/source-sheet.png",
+      "referenceSha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab",
+      "rootXs": [
+        187,
+        661,
+        1105,
+        1540,
+        203,
+        646,
+        1098,
+        1540
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor",
+      "pose": 0
+    },
+    {
+      "input": "actor",
+      "pose": 1
+    },
+    {
+      "input": "actor",
+      "pose": 2
+    },
+    {
+      "input": "actor",
+      "pose": 3
+    },
+    {
+      "input": "actor",
+      "pose": 4
+    },
+    {
+      "input": "actor",
+      "pose": 5
+    },
+    {
+      "input": "actor",
+      "pose": 6
+    },
+    {
+      "input": "actor",
+      "pose": 7
+    }
+  ],
+  "review": "Source roots measured between supporting boots; shared scale includes axe clearance. Contact and loop approval pending.",
+  "normalizedHeight": 450,
+  "targetBodyHeight": 420,
+  "targetAnchor": [
+    240,
+    616
+  ]
+}

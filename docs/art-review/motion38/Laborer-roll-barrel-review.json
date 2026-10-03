@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "roll-barrel",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/roll-barrel/reference",
+  "verdict": "calibration-required",
+  "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "remaining": [
+    "Barrel cap/stave rotation and advancing palms require matched rotation landmarks; the shifting rear boot also needs planted-sole tracking before movement approval."
+  ],
+  "binding": {
+    "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "efc03a3b598df76ee18324fa476cb332edcd0757db69d7c665733b3614a02fbf",
+      "221119552c26e0d499120428785929204f72d027bdfc7c975768a4a5e2a33696",
+      "1a95669f76f54c8a27503b44ca362e6c1443431566a7f1166cb35ed806caa944",
+      "55fb8229c21df81fc7310a1463446ea2c17e6e8386cda8e055ebedb5ee0adb4c",
+      "3c82aa919f1fa1319e952fbe4670aa95afd9c233e413954d3636dc77b956af75",
+      "eaf12b8b456b984e3159d61f4209b1e6326d012e1a2f844aea292abe49bb702e",
+      "a08d3adf071622cec34e1f3af42507969ab24137efce24b19ec4d4f4c58e0419",
+      "5a526f75e0777927b634c0d8fc71c3a081dd571c33315b418ce8a582d12b8139"
+    ],
+    "atlasSha256": "25ac96175810c3951ea941a01b56153391ad74b3ccd9c80f1bfeb6702b41e993",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "roll-barrel",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "27c565f5387a21ae95affeeef43fd9c16889658dac9a4b75b4d2fe8fe331860b"
+}

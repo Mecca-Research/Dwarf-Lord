@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861",
+    "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+    "frameSha256": [
+      "f9b72eced59aed269b49c870415215f583162ec2e4c5800e4f73288b7ae1ff6f",
+      "a3f6de9cc1507f8d92e209ee1ace68b3bafeb237a381630c0b50ebabe80e2d93",
+      "ee42f2ddd940a19365478de8ce30f603e784d4f25ee80951107e7fe457860da2",
+      "5a494c5daa0aaf32e53c257912042ac3838f92c8e58300e09ff5c793769b13e9",
+      "6e33894a6a3e156d0a371b3ad6093c9c13acc95d1bbd48b6007d4e0c2d3d6e85",
+      "c51132b54c90323ec500e9c6f444dc29afd793899f9866efb31064ba4091c939",
+      "fa05b7236ebd5dc53cd4b1a2e6199ed04b4a49b5067e23f1e6caaa65df80c9f5",
+      "5c456708d2b98fe6253ec06efe98f229be713904ca012059d5189740792d661f"
+    ],
+    "atlasSha256": "4670ec730af3e84becb6d88961dc9236b6474247ee76b3e5f511d0741aca0592",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          85,
+          420,
+          565,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              4.005891618419355e-09,
+              -6.886882886192325e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98872,
+            "measuredCorrectionPx": [
+              -0.4848312735557556,
+              -1.2211121320724487
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99371,
+            "measuredCorrectionPx": [
+              0.9063175320625305,
+              0.31173649430274963
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98859,
+            "measuredCorrectionPx": [
+              -0.052571602165699005,
+              -1.3031494617462158
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99182,
+            "measuredCorrectionPx": [
+              -0.15319958329200745,
+              -1.0418895483016968
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98729,
+            "measuredCorrectionPx": [
+              1.2592527866363525,
+              -1.0094122886657715
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99139,
+            "measuredCorrectionPx": [
+              0.820347249507904,
+              -1.2223061323165894
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98603,
+            "measuredCorrectionPx": [
+              1.2337249517440796,
+              -1.0495444536209106
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "build-crate",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Laborer build-crate fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same bald stocky dwarf with long dark forked brass-bound beard, cream rolled sleeves, stitched brown waistcoat, leather belt/pouches and heavy boots across all eight registered poses. Local sequence scale only; no moving foot or cross-direction calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains one metal-headed hammer through poised0, rise1/2, descent3, nail contact4, rebound5/6 and return7. Left hand braces the same wooden crate, safely to the right of the strike. The bench and three spare nails persist. Finite nail-driving pass, no crate delivery or duplication.",
+    "prop-continuity": "Right hand retains one metal-headed hammer through poised0, rise1/2, descent3, nail contact4, rebound5/6 and return7. Left hand braces the same wooden crate, safely to the right of the strike. The bench and three spare nails persist. Finite nail-driving pass, no crate delivery or duplication.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "0d563b203ddf4e47a05512215a86c3a4d9df5f3296cebad17d8e1709e1260f31"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-crate-review.json",
+      "sha256": "3e1d64344be5cc759bb99191806ded8a7699b3d7e86e40b358c7ffecdb9bd839"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-crate-playback.json",
+      "sha256": "3b921a1010d89f6287d6115b56ba0f79728349bdfc075154a39bec9a33a4e3c8"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-crate-0.png",
+      "sha256": "ae4bb15b6d8b12ab1b920c8b39b9b89302cb18879afa55705e9b3fbf5431a7d0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-crate-4.png",
+      "sha256": "a0b4152121b7937d55b17faf8a5907d05f04822c2ab4ccde2ebbb207bd4fb936"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-build-crate-7.png",
+      "sha256": "42a1ac5a398c757098746445eebdfc73c34773bea24233f4f77ec616bcb9fe54"
+    }
+  ]
+}

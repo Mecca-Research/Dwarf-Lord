@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "frameSha256": [
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    ],
+    "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
+    ],
+    "character": "Blacksmith",
+    "action": "walk",
+    "direction": "right"
+  },
+  "scope": "Motion37 Blacksmith right-view eight-pose walking loop at0.6-radian elevation on flat camp ground. Both anatomical support feet, arm counter-swing, body scale, held contacts and all eight boundary handoffs including7-to0 are reviewed. Other views, camera turns, uneven terrain, cane/tools and whole-library production readiness are excluded.",
+  "checks": {
+    "identity-and-scale": "All eight native/exported poses retain the bald broad-bodied Blacksmith, dark braided beard/brass bands, cream sleeves and dark leather apron. Physical520px body/root normalization reviewed; poses2/3/5/6 preserved exactly, pose4 only low-alpha fringe differs. No frame stretching or limb transforms.",
+    "station-and-foot-contact": "Verified posterior heel corner and distal lower toe rim on each anatomical boot at all eight handoffs. Near right outer buckle/far left inner boot distinction corrected0/1/7. Measured max1.032px; actual rendered mesh/camera max1.900372px over24 boundaries,152 held samples; maxheld0.265143px. Partial-pose seeding includes complete stride fraction after late atlas loading.",
+    "hand-and-tool-contact": "Empty hands. Near right arm forward while near right leg trails in0/1/7; near right arm back while near right leg leads3/4/5; passing2/6 approach neutral. Far arm opposes it without additional hands or tools.",
+    "prop-continuity": "No carried props or painted environment. Both three-strap leather boots remain assigned to their anatomical leg; ground shadow supplied separately by runtime.",
+    "last-to-first-transition": "Far-left pre-contact7 flows to far-left heel contact0 with consistent inner boot, near-right trailing support and near arm forward. Three actual7-to0 returns are included in the24-contact renderer result; once-hold work playback and other direction transitions are unchanged."
+  },
+  "dependencies": [
+    {
+      "file": "assembly.json",
+      "sha256": "605ce1a10eaf68cb40e42e90705962d9625e195a82e4b3b027e3e99e2883af14"
+    },
+    {
+      "file": "motion-polish.json",
+      "sha256": "6f6ff40e2392775c5929efdf7f240121997eddcda6254fdb26432b2dc5f40b6a"
+    },
+    {
+      "file": "travel-calibration.json",
+      "sha256": "3af094de127c5cba9d5a193b4f3b1710d2258dbfe16468e4a1d6e8cd4c3e6275"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "../../../../../../src/game/world/motion-review-points.ts",
+      "sha256": "1afe39788475275d0dc6cf6a5f47862c552c80bbe068a9a14007f381f6540343"
+    },
+    {
+      "file": "../../../../../../scripts/stride-renderer-review-check.mjs",
+      "sha256": "9b1541b210feab6eb190905f069e98f8d0a7b62ab4b5773dcb550e0bea03f750"
+    },
+    {
+      "file": "../../../../../../docs/blacksmith-right-whole-stride-observations.json",
+      "sha256": "2028003bd3f93e2ef4e052d7a96d302c1df17e3f2b1b0eacf5ba5387c8d7de6a"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "01a0955f7dd69e5d7ed5026029ab8036a52db8cd1ffb57b4981b1e56e77caa67"
+    },
+    {
+      "file": "../../../../../../src/game/runtime.ts",
+      "sha256": "c1934ecffe8f27d4a8f6da82de4f11d647a346f2889f89fb25e286454ac66eae"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion37/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

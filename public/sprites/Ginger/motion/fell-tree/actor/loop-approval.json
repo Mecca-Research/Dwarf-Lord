@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "d3ec703c0e45e05ec2ad9599acca465eb5a4484c1a5d48ea9be1660b38dff468",
+    "settingsSha256": "8ea45eff1657e15828e29223d4ee9ccdd8fe13c34f7f0ff552e5b12fa5f52d6f",
+    "frameSha256": [
+      "2cab24c455d92cfc312262f1366937f74d3521ae8de3af2b03929eac08aef5bc",
+      "4cbc15d74dd93519d607cd7773eb83a584bf991428c283a59a5c762e9cbf6c90",
+      "5b921db850a532556e1615f969a8229ed5b0adc6c312c85df4fde2d458395b26",
+      "3ad751fde46eb5e4ccc7ed888d763de380b1b531d8dcf2dbe4f1bd149cc748b2",
+      "808567fe289fb77fb3d615e0a9d2a1c04a7a4fd35b8dd48735254c11866afa81",
+      "afc4936417ffe84577dd99f71ca4b22ebf90763fbfdbbb1a957267ab20f293eb",
+      "7cb866e8df8b25b62c2accdf1bcc49ffefbd8d2498093220bed087707edd08f2",
+      "43c284845682fca523e7e6d243796a58ebef4d27710049fc0692945df2311c86"
+    ],
+    "atlasSha256": "11e76e35d4ede1a1e51b2397d1377b55a6a99ec122dd16a3800732d7f26d89c4",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        240,
+        616
+      ],
+      "targetBodyHeight": 420,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "8ea45eff1657e15828e29223d4ee9ccdd8fe13c34f7f0ff552e5b12fa5f52d6f",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Ginger",
+    "action": "fell-tree",
+    "direction": "actor"
+  },
+  "scope": "Fixed-view independent forestry chopping cycle only. Repeated strikes at an existing notch; not a tree-fall, resource award, other view, walking or whole-library approval. Task remains once-hold.",
+  "checks": {
+    "identity-and-scale": "Reviewed all eight layered poses: same ginger hair, beard, shirt, vest, camera and body scale. Upper-body bend is the authored swing, with stationary support boots.",
+    "station-and-foot-contact": "Independent trunk, roots and notch remain fixed. Visible near boot remains planted; far boot is partly occluded by the prop. No certification of hidden foot geometry.",
+    "hand-and-tool-contact": "Both hands retain the axe handle across preparation, backswing, strike and recovery. In frame 5 the leading blade overlaps the existing notch at its left opening; frames 6 and 7 withdraw it. No detached hand or disappearing handle.",
+    "prop-continuity": "Same axe and independently rendered trunk throughout. This depicts repeated chopping, with no crate/food transfer or finished tree-fall state that would reset at the seam.",
+    "last-to-first-transition": "Compared layered frames 7 and 0: both have lowered axe ahead of body, near hand low and torso inclined. Only a small return to ready, without a changed object or supporting leg. Repeat playback verified in workstation review."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "889a4517ce421881404036efb3b62e8ce7bca5cd6ee83ace28584e2399af5ac4"
+    },
+    {
+      "file": "../../../../workstations/forestry-trunk/sprite.png",
+      "sha256": "dcf23ff916144fe3772a7704567f7c2679e2e8813e7ee1cbcc5b53a099a5d3eb"
+    },
+    {
+      "file": "../../../../workstations/forestry-trunk/generation.json",
+      "sha256": "7a0d0fb47277f64398588332f13bdda5d12a02b1614c20113fb1140b87f89502"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

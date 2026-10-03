@@ -1,0 +1,84 @@
+{
+  "folder": "public/sprites/Blacksmith/motion/walk/right",
+  "binding": {
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "frameSha256": [
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    ],
+    "durationsMs": [
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
+    ]
+  },
+  "cameraElevationRadians": 0.6,
+  "correspondenceReviewed": true,
+  "landmark": "Motion37: visible corresponding lower sole rim on the far-left inner boot and near-right outer boot. Subset of separately reviewed eight heel/toe boundaries; no automatic whole-cycle approval.",
+  "tracks": [
+    {
+      "foot": "left",
+      "samples": [
+        {
+          "frame": 1,
+          "point": [
+            444,
+            602
+          ]
+        },
+        {
+          "frame": 2,
+          "point": [
+            338,
+            603
+          ]
+        },
+        {
+          "frame": 3,
+          "point": [
+            276,
+            603
+          ]
+        }
+      ]
+    },
+    {
+      "foot": "right",
+      "samples": [
+        {
+          "frame": 5,
+          "point": [
+            418,
+            606
+          ]
+        },
+        {
+          "frame": 6,
+          "point": [
+            364,
+            607
+          ]
+        },
+        {
+          "frame": 7,
+          "point": [
+            313,
+            607
+          ]
+        }
+      ]
+    }
+  ]
+}

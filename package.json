@@ -18,7 +18,11 @@
     "check:auth": "node scripts/check-auth-invariant.mjs",
     "test": "node --test 'scripts/**/*.test.mjs'",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predev": "node scripts/sync-motion-playback.mjs",
+    "prebuild": "node scripts/sync-motion-playback.mjs",
+    "prebuild:pages": "node scripts/sync-motion-playback.mjs",
+    "prebuild:dev": "node scripts/sync-motion-playback.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.4",

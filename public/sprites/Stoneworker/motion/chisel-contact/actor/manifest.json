@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Stoneworker",
+  "action": "chisel-contact",
+  "title": "Dress limestone at masonry bench",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/01-chisel-contact.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d8a4ba0057e14c600608be46f9cae44a95c8a0eb02fc9db5993f352ffdfcf755",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "ready",
+      "durationMs": 140,
+      "sourceBounds": [
+        150,
+        95,
+        480,
+        599
+      ],
+      "sourceAnchor": [
+        170.0,
+        505.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        143,
+        91
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift",
+      "durationMs": 140,
+      "sourceBounds": [
+        789,
+        94,
+        1124,
+        599
+      ],
+      "sourceAnchor": [
+        171.0,
+        506.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        142,
+        90
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raised",
+      "durationMs": 105,
+      "sourceBounds": [
+        1412,
+        95,
+        1777,
+        601
+      ],
+      "sourceAnchor": [
+        188.0,
+        505.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        124,
+        91
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "downstroke",
+      "durationMs": 115,
+      "sourceBounds": [
+        2068,
+        96,
+        2392,
+        601
+      ],
+      "sourceAnchor": [
+        172.0,
+        504.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        92
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "contact",
+      "durationMs": 140,
+      "sourceBounds": [
+        144,
+        745,
+        480,
+        1240
+      ],
+      "sourceAnchor": [
+        176.0,
+        495.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        101
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "rebound",
+      "durationMs": 140,
+      "sourceBounds": [
+        784,
+        745,
+        1121,
+        1239
+      ],
+      "sourceAnchor": [
+        176.0,
+        495.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        101
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "settle",
+      "durationMs": 105,
+      "sourceBounds": [
+        1436,
+        744,
+        1759,
+        1239
+      ],
+      "sourceAnchor": [
+        164.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        100
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "ready return",
+      "durationMs": 115,
+      "sourceBounds": [
+        2066,
+        744,
+        2397,
+        1240
+      ],
+      "sourceAnchor": [
+        174.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        139,
+        100
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "loopApproved": true,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "af158ceaeb43e4f9cd061ae68a6555c87dce198cb839d1db1dc1704438bc7e28",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Visual loop review recorded for the exact artifacts and scope in loop-approval.json. Task playback and overall production readiness are unchanged.",
+  "loopReview": {
+    "status": "approved",
+    "record": "loop-approval.json",
+    "scope": "Fixed-view independent limestone dressing loop only. Eight actor/prop poses and repeat playback reviewed; gameplay remains once-hold. Does not approve walking, other directions, physical cutting forces or fixed-hole precision."
+  }
+}

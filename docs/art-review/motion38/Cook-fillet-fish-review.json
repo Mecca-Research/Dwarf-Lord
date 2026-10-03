@@ -1,0 +1,130 @@
+{
+  "character": "Cook",
+  "action": "fillet-fish",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+  "settingsSha256": "6c130a04f801d95671bc72bcc123af1e89b28618fbb206fc4af12d22bb1841b8",
+  "issues": [
+    "Frame1 lifts the knife above the dwarf head instead of positioning it at the fish head. Fillet visible and laid on the board6 is absent in7, with the fish resetting its exposed side. Need controlled blade approach and retained released fillet before finite-task or repeat acceptance."
+  ],
+  "binding": {
+    "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+    "settingsSha256": "6c130a04f801d95671bc72bcc123af1e89b28618fbb206fc4af12d22bb1841b8",
+    "frameSha256": [
+      "4d3bb680a7cb1890d072e2d163d424c16ff2df485506d2630f58ed9cb3b3404d",
+      "e228163be171becec879ab6ddea2ef3867a88a3ab8ffe57e82210af5511b90e4",
+      "2690d07d4a456978e592f75f69d52222980cfbe883e3250cba86ec70f6ea0ea6",
+      "66e977b5a3ce57db6e73d3b0bf66e850bbfc9c4203d4724ee8cf27d64261c871",
+      "256bcb74bdb8277dc08ae7fe88a035eeb58448b6b38c8b08562ef48043d03ea4",
+      "b714ba0aec385401ff24dd438bd47551e10b58a09ba290a28347c86278cacdaa",
+      "c51c2c90ade706419b939128eb2ebaef6af727d2431554239e416892025cf5a5",
+      "9d3a881883ec606a7f928dbc8bdd1ddc8144b3dbc5365b171af1563ae8c05db5"
+    ],
+    "atlasSha256": "1667cefcab5b4d973b0fd48a72c2a85eb5469d44b4c4afd9d2637ca7bc557563",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "6c130a04f801d95671bc72bcc123af1e89b28618fbb206fc4af12d22bb1841b8",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -7.787856581842334e-09,
+              -8.858960676150218e-09
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9846,
+            "measuredCorrectionPx": [
+              1.294630765914917,
+              -1.3666841983795166
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98771,
+            "measuredCorrectionPx": [
+              0.24940261244773865,
+              -1.3374754190444946
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98253,
+            "measuredCorrectionPx": [
+              0.6849725246429443,
+              -1.4833495616912842
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98192,
+            "measuredCorrectionPx": [
+              0.8893468379974365,
+              0.5822018980979919
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97839,
+            "measuredCorrectionPx": [
+              1.3088303804397583,
+              0.529331386089325
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9782,
+            "measuredCorrectionPx": [
+              0.29898273944854736,
+              0.48583054542541504
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97779,
+            "measuredCorrectionPx": [
+              0.5283340215682983,
+              0.4339592456817627
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "fillet-fish",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "2a654fbf1a47a639943a022f397ef98e8094f88761eec8f8654ea928c3c7fa51"
+}

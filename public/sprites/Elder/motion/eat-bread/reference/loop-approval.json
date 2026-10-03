@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "9aab34babae337c1bf3f9a5c0493c6c54225ccf419e610998615553c74c8f7ea",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "845f2535367c3281f96a20a6e7dc3c46cb5079e746a87f6d59b5f349ed4d04e4",
+      "b9ea23234a8309ca2b515184f8fc373418976b04866bd3a97e4ec8466d057b60",
+      "18776e9ab0537aa224ad8557f77597f90e1b43d0a0fc892183ed11f028bb7076",
+      "1c2d727f0a5c3376dba995c3676d36bc814808e776be4fd29f99533601f80312",
+      "0ebf9cb5ced50713e1a42f0c0c4083859c0c0ba88e71242b5adea0c646966ab7",
+      "89ff90eb92c3b0eb13e16fa7c622e9538a9291a4ab6ca300d52e4a41e3365686",
+      "fa007622fef05b0c4a6ad092882dd87101531a979a29c80a1355944012c1a04a",
+      "1edf8c7d9c962de740ae1d020bdb7da91fefa6b143caddc5e3e6eda16d7a2aa1"
+    ],
+    "atlasSha256": "4d5fae1bc52864442307c427c1c806176ccef5f42bcbee5a1adf37f46945685f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "eat-bread",
+    "direction": "reference"
+  },
+  "scope": "Fixed-view seated Elder eat-bread cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and all eight poses in the actual controlled-clock camp renderer inspected. Same bald Elder, white beard, embroidered olive coat, belt, pouches and boots. Source-bound740px standing-equivalent seated placement preserves his scale; breathing and head motion do not resize the body.",
+    "station-and-foot-contact": "Both boots, stool and seated pelvis retain their fixed ground baseline throughout0-7 and7-to0. The camp root does not move. This is a seated appearance review, not material sole/cane contact calibration during travel.",
+    "hand-and-tool-contact": "Right hand retains the same bread piece as it rises0-3 to the mouth/beard, rests near the mouth4 and lowers5-7. Left palm and fingers keep the bowl supported in his lap. Mouth occlusion and hand ownership checked across all eight native and live poses; this is a cosmetic eating gesture.",
+    "prop-continuity": "Same bread piece, wooden bowl and stool in every pose. The bread piece remains depicted rather than vanishing or being consumed. This fixed-view ambient gesture does not spend food, simulate a measured bite or certify hidden finger anatomy.",
+    "last-to-first-transition": "Frame7 lowers the bread to the same chest position as0, with continuous right-hand grip and left-hand bowl support. All eight poses and0/7 comparison reviewed. Live playback finishes once, holds7, then makes a distinct preloaded activity handoff. No seamless transition to a different activity is implied."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

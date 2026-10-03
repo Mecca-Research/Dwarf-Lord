@@ -1,0 +1,58 @@
+{
+  "character": "Helga",
+  "action": "pickaxe-ready",
+  "direction": "reference",
+  "destination": "public/sprites/Helga/motion/pickaxe-ready/reference",
+  "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "nativeReviewSha256": "d09aa80d6bfd599bd4cf581baf6cb57a68aba2e6e80db350bddd559942f81b63",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "checks": {
+    "identity-and-scale": "Same stocky beardless woman, red twin braids, iron helmet, blue sleeves, brown apron and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+    "station-and-foot-contact": "Station-free fixed ready stance. Visible boots retain their local baseline; no translating sole or gait claim.",
+    "hand-and-tool-contact": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+    "prop-continuity": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+    "completion-and-reset": "Every authored pose0-7 held for its full duration; finite task completes once, holds7 and resets only explicitly. Gallery/shared playback acceptance only; gameplay task activation and economy effects remain separate gates."
+  },
+  "binding": {
+    "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "fc65abcacda22ea3ee377cb4c8d56dd1194af8081a7f58ad8a806a93066837bc",
+      "0fa0f64be537d10cea6d128f56dc821d847766ce921339842ab5409e7c220681",
+      "f12dde0ddf62d4b67fbcee6b7a22ecaad1ecf642c101205a1ba808e0d798f2ad",
+      "beceb57a76c84808219501d6b40c8384b7f2378aa21142c3250772fc8de31d3f",
+      "4bdae4c2c23410aa9bce53f0d2a8a8a47e1d028601a1a3c81dfe4c9439a274a9",
+      "39c3fee62cd0f3e85de3b2ddcfa5d93270dcd451acf75ea545f8dbc62493549b",
+      "e8b077ac8b1dd742cf8893ef811a5b9a8a915ae2f48a6eb362499500cf75c6c5",
+      "43fbd0cc86d651bc0a600844c350461550ccf420b85b72243c860e906293be5b"
+    ],
+    "atlasSha256": "96cf93112dfd143dfe1672484aee3a9c60b772796e858dcded5806acf9751cb1",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Helga",
+    "action": "pickaxe-ready",
+    "direction": "reference"
+  }
+}
