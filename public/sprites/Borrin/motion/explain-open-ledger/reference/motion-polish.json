@@ -1,16 +1,12 @@
 {
   "version": 1,
-  "sourceSha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6",
+  "sourceSha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136",
   "offsetsPx": [
     [
       0,
       0
     ],
     [
-      0,
-      0
-    ],
-    [
       1,
       0
     ],
@@ -20,7 +16,7 @@
     ],
     [
       1,
-      1
+      0
     ],
     [
       0,
@@ -28,13 +24,18 @@
     ],
     [
       1,
-      0
+      -2
     ],
     [
       0,
       0
+    ],
+    [
+      0,
+      -2
     ]
   ],
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions.",
   "stationRegistration": {
     "method": "bounded-translation-ECC",
     "referenceSourcePose": 0,
@@ -44,73 +45,73 @@
       250,
       585
     ],
+    "minimumCorrelation": 0.94,
     "maxCorrectionPx": 12,
     "results": [
       {
         "correlation": 1.0,
         "measuredCorrectionPx": [
-          -7.002853592147362e-12,
-          -1.0022456198299778e-09
+          1.8218561381733167e-10,
+          5.6700244499552355e-09
         ],
         "accepted": true
       },
       {
-        "correlation": 0.9835,
+        "correlation": 0.98119,
         "measuredCorrectionPx": [
-          0.24599038064479828,
-          -0.42293280363082886
+          1.0698037147521973,
+          -0.2672487795352936
         ],
         "accepted": true
       },
       {
-        "correlation": 0.99089,
+        "correlation": 0.98718,
         "measuredCorrectionPx": [
-          0.5923105478286743,
-          -0.23438334465026855
+          0.03512260317802429,
+          -0.01854351907968521
         ],
         "accepted": true
       },
       {
-        "correlation": 0.98281,
+        "correlation": 0.98032,
         "measuredCorrectionPx": [
-          0.4206606149673462,
-          -0.29862943291664124
+          1.2033356428146362,
+          -0.3099938929080963
         ],
         "accepted": true
       },
       {
-        "correlation": 0.98422,
+        "correlation": 0.98399,
         "measuredCorrectionPx": [
-          0.9860904216766357,
-          0.5056426525115967
+          -0.12029162794351578,
+          -0.175546795129776
         ],
         "accepted": true
       },
       {
-        "correlation": 0.97951,
+        "correlation": 0.97804,
         "measuredCorrectionPx": [
-          0.34519559144973755,
-          0.04763500392436981
+          1.0536962747573853,
+          -2.0943384170532227
         ],
         "accepted": true
       },
       {
-        "correlation": 0.9801,
+        "correlation": 0.9802,
         "measuredCorrectionPx": [
-          0.5044224858283997,
-          0.49250900745391846
+          -0.10427188873291016,
+          -0.3188372850418091
         ],
         "accepted": true
       },
       {
-        "correlation": 0.98062,
+        "correlation": 0.97725,
         "measuredCorrectionPx": [
-          0.26255953311920166,
-          0.03445349261164665
+          0.0020488931331783533,
+          -1.7986414432525635
         ],
         "accepted": true
       }
     ]
-  },
-  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions."
+  }
 }

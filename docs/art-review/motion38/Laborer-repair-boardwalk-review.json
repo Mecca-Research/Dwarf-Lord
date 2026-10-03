@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "repair-boardwalk",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "issues": [
+    "Hammer appears at2 after both empty palms brace the board at0/1. At6 the right hand still holds the hammer, but7 the left hand holds it while the right reaches for a nail, with no handoff pose. Need explicit pickup and hand transfer, or keep the right hand owning the hammer in7."
+  ],
+  "binding": {
+    "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "7e1fb75fc95e1e92230b87c39eb89ebf9671242f9f334b0c9386a951f298a46c",
+      "1b8db8fbcb9f3847db36beaa2314743384d27161288cee7a7f0367561a2f2a50",
+      "344964f9f0b50d050dd104454ceccb342f92bc7b4d9eb0a95a70f724150aed82",
+      "fb8e283af40248b3e83806fbe2508373236fa905f4e691258892ad7f7620d8af",
+      "36727e773a963c05b0fc52d36a2375fb19b316a87d9a72157440ad8bba35497a",
+      "e67ba06c0877e093f7c65ce79c843cf1dff578fa04b5cdbde0f13258bf0bab62",
+      "bb5658f4cdaf853515ebf1ca1202cb4d259e666477313d03331259ba63f40c1a",
+      "7abfb8397475950576f7ba3b0afd3599643c5ba54fbdb89b291a4f025706404e"
+    ],
+    "atlasSha256": "868aa19f08521817245cdaa5cca634df72d462b209e030770876a1587a2ce6d8",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "repair-boardwalk",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "d7b91d0be0a5d36bc81108181efa0d7c678e1977870ce1eea69dd459d6e683a1"
+}

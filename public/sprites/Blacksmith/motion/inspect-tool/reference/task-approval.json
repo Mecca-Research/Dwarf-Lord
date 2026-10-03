@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+    "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+    "frameSha256": [
+      "0f9814ce687eaed70adf37402bbae3b090315cfa20db965715731f373bcc9a3f",
+      "6deefae32222a95474a96f5616784bdec1ce52ce74b049dad7baad25b43447a3",
+      "b006eb48b9d0a5fd171fad6cd1e82c6944887c31a7930f340d09b9d090e14034",
+      "b3dc7cbb331b48fdb31035802f0717f50eb56840c1379425cb6656040fab0217",
+      "5af07652985e65da0795f15caf7eff58c922fb792c9b7ebd080cca7df66655a8",
+      "e745cd364e121a08ff60c3103cc8288e1e4a67f8a51185f254e79c673833eeff",
+      "d9dc78fb7c2ca6566037b795f5a127839fcbdd73c28c86dd164ea54591e23d48",
+      "40e2a51a91611707601e4abba43c9f158541f575455e186c281a969b4d736d49"
+    ],
+    "atlasSha256": "642d34872ecd8bb7326599efcd7b01948c158172083f3a2177b24c84860bf8c0",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          210,
+          410,
+          510,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -4.682942478240193e-09,
+              2.757767347816298e-10
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.978,
+            "measuredCorrectionPx": [
+              -0.30932432413101196,
+              0.10300986468791962
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98788,
+            "measuredCorrectionPx": [
+              -0.2233923077583313,
+              0.11387412250041962
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97621,
+            "measuredCorrectionPx": [
+              0.6159985661506653,
+              0.009714973159134388
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98062,
+            "measuredCorrectionPx": [
+              -0.022350983694195747,
+              -0.004621319472789764
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97184,
+            "measuredCorrectionPx": [
+              -0.76518315076828,
+              -0.041909411549568176
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97764,
+            "measuredCorrectionPx": [
+              0.538892388343811,
+              0.056572508066892624
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96748,
+            "measuredCorrectionPx": [
+              0.5957098007202148,
+              -0.04463621601462364
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "inspect-tool",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Blacksmith inspect-tool fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+    "prop-continuity": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "3577b6a51de3a37fd7640726b579f9d1a8d432bf0dbfad0d80638816b978cb8a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-inspect-tool-review.json",
+      "sha256": "9156e2b2eb11a7aa0ea4a383a1a6a695872b80ae7667ce6da71a96520756fb4e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-inspect-tool-playback.json",
+      "sha256": "2d188778f7ec421f8b063edc1322c5388802007c69e16285ed6408d5a89a8d1d"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-inspect-tool-0.png",
+      "sha256": "eba0b2ee87d6fae59970c8bfac604ed9810173bdb698b35136f6c19a14897272"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-inspect-tool-4.png",
+      "sha256": "ce931400bce6415b305ade7cfb76b157d8f09df0afaed49ad9611465432235f6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-inspect-tool-7.png",
+      "sha256": "a635759587c2f79b141eef63213b1f67aae4f86e8e94fdf3620acdc7d6ff8b6a"
+    }
+  ]
+}

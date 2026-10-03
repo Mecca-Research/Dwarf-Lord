@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372",
+    "settingsSha256": "e6de65c09ac7b13b90680fa76f3a5a17ff477a924373dc8cb9815ad98f6cf0dc",
+    "frameSha256": [
+      "0308c0e6d5ebb16be57a07f5f5da4346ff3493bab6f35112d198534a239cdee4",
+      "0e663653735f5ed612c3e484e3430c140e36c202a67f2dbe30ce0fb91ad6d60c",
+      "82dd675dd85978c3f388ec3b50b92a87e8c8f86c2d9669545351b7df1542376e",
+      "c8773c6763e201731f4ed05359c003a57651bfe5fca3b0a5028f919cae8481db",
+      "9ed7f9308285c1f8b0a6971ffa2c854453c361451aae4dabdfbe56bd6b32642e",
+      "b86a3e5f3834cf544aebb345ab211623556186abd28f46cd5b537d8888df09e0",
+      "d1eee47efe39492c50c33cd61ee76e6d12e57186ac2b2985d5199ea2ccbd764d",
+      "e520e5b80ba563697b77b7857acb8f13a2883d0847360cb7ea81e2ba501e1fd4"
+    ],
+    "atlasSha256": "1d41df66ac7aa10137dc2ddfedc4a19d1e678eeedd905ce3792827b26bbd831c",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "e6de65c09ac7b13b90680fa76f3a5a17ff477a924373dc8cb9815ad98f6cf0dc",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          85,
+          450,
+          565,
+          585
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              4.4193910753165255e-08,
+              -2.1388315474268893e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99115,
+            "measuredCorrectionPx": [
+              -0.47750434279441833,
+              -0.3513355851173401
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99285,
+            "measuredCorrectionPx": [
+              -0.6885806918144226,
+              -0.5510181784629822
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98443,
+            "measuredCorrectionPx": [
+              1.0128130912780762,
+              -0.0925043597817421
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97495,
+            "measuredCorrectionPx": [
+              -0.37909188866615295,
+              1.2229011058807373
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96887,
+            "measuredCorrectionPx": [
+              -0.6989784836769104,
+              1.1231887340545654
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97293,
+            "measuredCorrectionPx": [
+              -1.432565450668335,
+              1.6811401844024658
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96662,
+            "measuredCorrectionPx": [
+              0.10062102228403091,
+              1.372610092163086
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Female Miner",
+    "action": "examine-sample",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Female Miner examine-sample fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same beardless stocky female dwarf with iron/brass helmet, long brown braids, tan shirt, leather mining gear and brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left hand holds one dark metallic sample from chest0 through raised1/2, rotation3/4 and lowered5/6/7. Right hand stays on the ore tray. Helmet, two brown braids, tan shirt, crouched knees and tray remain; no sample deposit or mining stroke is claimed.",
+    "prop-continuity": "Left hand holds one dark metallic sample from chest0 through raised1/2, rotation3/4 and lowered5/6/7. Right hand stays on the ore tray. Helmet, two brown braids, tan shirt, crouched knees and tray remain; no sample deposit or mining stroke is claimed.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "e87a93527eba098b6754cbf1e57489ce45914007934828cdacedb78f448aed53"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-examine-sample-review.json",
+      "sha256": "e39211083889d8bbea5ca800bfdb5741b9eee30d7549443bb098969dec01d0db"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-examine-sample-playback.json",
+      "sha256": "6972a23911842ea0595be847cecb19a7f10d44d43931542784b732fdb3e69c34"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-examine-sample-0.png",
+      "sha256": "2a0d80a3587dbbb84ada909fc025846baaa0a71815b135b29910ad3d5e37991e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-examine-sample-4.png",
+      "sha256": "e3152b3b6e6d6cc5d4ca5cba10b37a9727dbff0b75d6228e88e66c58e1d05ee4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-examine-sample-7.png",
+      "sha256": "16185f037dcbd752cf39c6aca4f00ae56ab7adebe0113d92dd7ed06c6bfde980"
+    }
+  ]
+}

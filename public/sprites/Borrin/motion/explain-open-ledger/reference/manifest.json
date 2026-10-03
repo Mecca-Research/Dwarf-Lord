@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../work-references/consult-ledger.png",
   "source": "source-sheet.png",
-  "sourceSha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6",
+  "sourceSha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.4474327628361858,
+  "sharedScale": 1.4368932038834952,
   "frameCount": 8,
   "frames": [
     {
@@ -25,22 +25,22 @@
       "description": "support open ledger with left hand",
       "durationMs": 125,
       "sourceBounds": [
-        26,
-        39,
-        420,
-        421
+        25,
+        38,
+        423,
+        422
       ],
       "sourceAnchor": [
-        204.0,
-        382.0
+        206.0,
+        384.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        63
+        24,
+        64
       ]
     },
     {
@@ -50,21 +50,21 @@
       "durationMs": 125,
       "sourceBounds": [
         470,
-        49,
-        863,
-        421
+        45,
+        867,
+        422
       ],
       "sourceAnchor": [
-        203.5,
-        372.0
+        204.80405405405406,
+        377.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        78
+        26,
+        74
       ]
     },
     {
@@ -74,13 +74,13 @@
       "durationMs": 125,
       "sourceBounds": [
         913,
-        47,
-        1307,
-        421
+        45,
+        1310,
+        422
       ],
       "sourceAnchor": [
-        203.8091216216216,
-        374.0
+        205.5,
+        377.0
       ],
       "groundAnchor": [
         320,
@@ -88,7 +88,7 @@
       ],
       "placement": [
         25,
-        75
+        74
       ]
     },
     {
@@ -98,21 +98,21 @@
       "durationMs": 125,
       "sourceBounds": [
         1357,
-        48,
-        1751,
-        421
+        45,
+        1754,
+        422
       ],
       "sourceAnchor": [
-        204.0,
-        373.0
+        204.80405405405406,
+        377.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        76
+        26,
+        74
       ]
     },
     {
@@ -121,21 +121,21 @@
       "description": "look up to listener",
       "durationMs": 125,
       "sourceBounds": [
-        26,
-        479,
-        420,
-        865
+        25,
+        478,
+        423,
+        866
       ],
       "sourceAnchor": [
-        203.8091216216216,
-        385.3091216216216
+        206.0,
+        388.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
+        24,
         58
       ]
     },
@@ -146,21 +146,21 @@
       "durationMs": 125,
       "sourceBounds": [
         470,
-        476,
-        864,
+        475,
+        867,
         865
       ],
       "sourceAnchor": [
-        204.0,
-        389.0
+        204.30405405405406,
+        391.3918918918919
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        53
+        26,
+        54
       ]
     },
     {
@@ -171,12 +171,12 @@
       "sourceBounds": [
         913,
         488,
-        1307,
-        865
+        1310,
+        866
       ],
       "sourceAnchor": [
-        203.8091216216216,
-        377.0
+        205.5,
+        378.0
       ],
       "groundAnchor": [
         320,
@@ -184,7 +184,7 @@
       ],
       "placement": [
         25,
-        70
+        73
       ]
     },
     {
@@ -194,21 +194,21 @@
       "durationMs": 125,
       "sourceBounds": [
         1357,
-        482,
-        1750,
+        483,
+        1753,
         865
       ],
       "sourceAnchor": [
-        203.5,
-        383.0
+        204.5,
+        383.3918918918919
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        62
+        26,
+        65
       ]
     }
   ],
@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -267,7 +268,7 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "797d1f799d50bcfa6efb25e2d05137dc1ac3d090e64d9af5b6c5fc67fde5fb28",
+    "settingsSha256": "67345db6b203b1fc37048f9fc4722b5ea38316368963f6eb7c15b175fcf0b786",
     "exportVersion": 2,
     "stationRegistration": {
       "method": "bounded-translation-ECC",
@@ -278,69 +279,70 @@
         250,
         585
       ],
+      "minimumCorrelation": 0.94,
       "maxCorrectionPx": 12,
       "results": [
         {
           "correlation": 1.0,
           "measuredCorrectionPx": [
-            -7.002853592147362e-12,
-            -1.0022456198299778e-09
+            1.8218561381733167e-10,
+            5.6700244499552355e-09
           ],
           "accepted": true
         },
         {
-          "correlation": 0.9835,
+          "correlation": 0.98119,
           "measuredCorrectionPx": [
-            0.24599038064479828,
-            -0.42293280363082886
+            1.0698037147521973,
+            -0.2672487795352936
           ],
           "accepted": true
         },
         {
-          "correlation": 0.99089,
+          "correlation": 0.98718,
           "measuredCorrectionPx": [
-            0.5923105478286743,
-            -0.23438334465026855
+            0.03512260317802429,
+            -0.01854351907968521
           ],
           "accepted": true
         },
         {
-          "correlation": 0.98281,
+          "correlation": 0.98032,
           "measuredCorrectionPx": [
-            0.4206606149673462,
-            -0.29862943291664124
+            1.2033356428146362,
+            -0.3099938929080963
           ],
           "accepted": true
         },
         {
-          "correlation": 0.98422,
+          "correlation": 0.98399,
           "measuredCorrectionPx": [
-            0.9860904216766357,
-            0.5056426525115967
+            -0.12029162794351578,
+            -0.175546795129776
           ],
           "accepted": true
         },
         {
-          "correlation": 0.97951,
+          "correlation": 0.97804,
           "measuredCorrectionPx": [
-            0.34519559144973755,
-            0.04763500392436981
+            1.0536962747573853,
+            -2.0943384170532227
           ],
           "accepted": true
         },
         {
-          "correlation": 0.9801,
+          "correlation": 0.9802,
           "measuredCorrectionPx": [
-            0.5044224858283997,
-            0.49250900745391846
+            -0.10427188873291016,
+            -0.3188372850418091
           ],
           "accepted": true
         },
         {
-          "correlation": 0.98062,
+          "correlation": 0.97725,
           "measuredCorrectionPx": [
-            0.26255953311920166,
-            0.03445349261164665
+            0.0020488931331783533,
+            -1.7986414432525635
           ],
           "accepted": true
         }
@@ -348,19 +350,9 @@
     }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Motion38 Borrin explain-open-ledger fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates."
   }
 }

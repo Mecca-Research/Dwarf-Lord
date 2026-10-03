@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -363,5 +364,10 @@
       "prop continuity",
       "direction and scale continuity"
     ]
+  },
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Motion38 Borrin turn-ledger-page fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates."
   }
 }

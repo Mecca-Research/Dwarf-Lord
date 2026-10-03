@@ -15,13 +15,53 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 7)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 39)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 146)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 114)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':146,'direction-continuity':11,'runtime-action-activation':54})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':114,'direction-continuity':11,'runtime-action-activation':54})
+
+    def rejected_entry(self):
+        return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']
+                    if e['character'] == 'Blacksmith' and e['action'] == 'anvil-ready')
+
+    def test_recorded_rejection_remains_a_merge_blocker(self):
+        result = motion_completion.cycle(self.rejected_entry(), Path('.'))
+        self.assertEqual(result['reviewStatus'], 'reviewed-changes-required')
+        self.assertIsNone(result['approvalType'])
+        self.assertTrue(result['issues'])
+        report = motion_completion.inventory()
+        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 20)
+        self.assertFalse(report['reviewGatesComplete'])
+
+    def test_changed_rejected_frame_needs_a_new_review(self):
+        entry = self.rejected_entry()
+        changed = (Path(entry['destination']) / '06.png').resolve()
+        original = motion_loop_approval.digest
+        with patch('motion_loop_approval.digest', side_effect=lambda p: 'changed' if p.resolve() == changed else original(p)):
+            result = motion_completion.cycle(entry, Path('.'))
+        self.assertEqual(result['reviewStatus'], 'stale-or-incomplete')
+        self.assertNotIn('issues', result, 'old defects must not be asserted against new art')
+
+    def test_changed_rejection_evidence_revokes_current_status(self):
+        original = motion_completion.digest
+        with patch('motion_completion.digest', side_effect=lambda p: 'changed' if p.name.endswith('-review.json') else original(p)):
+            result = motion_completion.cycle(self.rejected_entry(), Path('.'))
+        self.assertEqual(result['reviewStatus'], 'stale-or-incomplete')
+
+    def test_positive_verdict_in_rejection_file_cannot_approve_a_cycle(self):
+        original = motion_completion.load
+        def fake_load(path):
+            value = original(path)
+            if path.name == 'cycle-review.json':
+                value['verdict'] = 'approved'
+            return value
+        with patch('motion_completion.load', side_effect=fake_load):
+            result = motion_completion.cycle(self.rejected_entry(), Path('.'))
+        self.assertEqual(result['reviewStatus'], 'stale-or-incomplete')
+        self.assertIsNone(result['approvalType'])
 
     def test_finite_task_is_counted_without_claiming_seamless_repeat(self):
         entry=next(e for e in json.loads(Path('docs/runtime-motion-layers.json').read_text())['entries'] if e['character']=='Laborer')

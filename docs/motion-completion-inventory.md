@@ -70,24 +70,24 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Laborer | walk | back-left | not-reviewed |
 | Laborer | walk | left | not-reviewed |
 | Laborer | walk | front-left | not-reviewed |
-| Blacksmith | anvil-ready | reference | not-reviewed |
-| Blacksmith | hammer-raised | reference | not-reviewed |
-| Blacksmith | hammer-contact | reference | not-reviewed |
-| Blacksmith | inspect-tool | reference | not-reviewed |
-| Blacksmith | file-tool-edge | reference | not-reviewed |
-| Blacksmith | repair-pickaxe-handle | reference | not-reviewed |
-| Borrin | desk-writing | reference | not-reviewed |
-| Borrin | review-open-ledger | reference | not-reviewed |
-| Borrin | turn-ledger-page | reference | not-reviewed |
-| Borrin | explain-at-desk | reference | not-reviewed |
-| Borrin | count-coins | reference | not-reviewed |
-| Borrin | stamp-paperwork | reference | not-reviewed |
-| Cook | chop-vegetables | reference | not-reviewed |
-| Cook | peel-potatoes | reference | not-reviewed |
-| Cook | knead-dough | reference | not-reviewed |
-| Cook | stir-cauldron | reference | not-reviewed |
-| Cook | mix-ingredients | reference | not-reviewed |
-| Cook | serve-stew | reference | not-reviewed |
+| Blacksmith | anvil-ready | reference | reviewed-changes-required |
+| Blacksmith | hammer-raised | reference | scoped-review-approved |
+| Blacksmith | hammer-contact | reference | scoped-review-approved |
+| Blacksmith | inspect-tool | reference | scoped-review-approved |
+| Blacksmith | file-tool-edge | reference | scoped-review-approved |
+| Blacksmith | repair-pickaxe-handle | reference | scoped-review-approved |
+| Borrin | desk-writing | reference | scoped-review-approved |
+| Borrin | review-open-ledger | reference | scoped-review-approved |
+| Borrin | turn-ledger-page | reference | scoped-review-approved |
+| Borrin | explain-at-desk | reference | scoped-review-approved |
+| Borrin | count-coins | reference | reviewed-changes-required |
+| Borrin | stamp-paperwork | reference | scoped-review-approved |
+| Cook | chop-vegetables | reference | scoped-review-approved |
+| Cook | peel-potatoes | reference | scoped-review-approved |
+| Cook | knead-dough | reference | scoped-review-approved |
+| Cook | stir-cauldron | reference | scoped-review-approved |
+| Cook | mix-ingredients | reference | scoped-review-approved |
+| Cook | serve-stew | reference | scoped-review-approved |
 | Elder | eat-stew | reference | scoped-review-approved |
 | Elder | eat-bread | reference | scoped-review-approved |
 | Elder | laugh-seated | reference | scoped-review-approved |
@@ -95,46 +95,46 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Elder | inspect-pickaxe-in-lap | reference | scoped-review-approved |
 | Elder | examine-pickaxe-crack | reference | scoped-review-approved |
 | Female Miner | pickaxe-ready | reference | not-reviewed |
-| Female Miner | pickaxe-contact | reference | not-reviewed |
-| Female Miner | shovel-ore | reference | not-reviewed |
-| Female Miner | examine-sample | reference | not-reviewed |
-| Female Miner | push-ore-barrow | reference | not-reviewed |
-| Female Miner | repair-pickaxe | reference | not-reviewed |
-| Helga | pickaxe-ready | reference | not-reviewed |
-| Helga | pickaxe-contact | reference | not-reviewed |
-| Helga | inspect-mineral | reference | not-reviewed |
-| Helga | shovel-stone | reference | not-reviewed |
-| Helga | carry-mine-timber | reference | not-reviewed |
-| Helga | bind-tool-handle | reference | not-reviewed |
+| Female Miner | pickaxe-contact | reference | reviewed-changes-required |
+| Female Miner | shovel-ore | reference | reviewed-changes-required |
+| Female Miner | examine-sample | reference | scoped-review-approved |
+| Female Miner | push-ore-barrow | reference | reviewed-changes-required |
+| Female Miner | repair-pickaxe | reference | scoped-review-approved |
+| Helga | pickaxe-ready | reference | scoped-review-approved |
+| Helga | pickaxe-contact | reference | scoped-review-approved |
+| Helga | inspect-mineral | reference | scoped-review-approved |
+| Helga | shovel-stone | reference | reviewed-changes-required |
+| Helga | carry-mine-timber | reference | reviewed-changes-required |
+| Helga | bind-tool-handle | reference | scoped-review-approved |
 | Laborer | lift-crate | reference | not-reviewed |
 | Laborer | carry-sack | reference | not-reviewed |
-| Laborer | push-stone-barrow | reference | not-reviewed |
+| Laborer | push-stone-barrow | reference | reviewed-changes-required |
 | Laborer | pull-supply-sled | reference | not-reviewed |
-| Laborer | build-crate | reference | not-reviewed |
+| Laborer | build-crate | reference | scoped-review-approved |
 | Laborer | sweep-wood-chips | reference | not-reviewed |
-| Ginger | saw-timber | reference | not-reviewed |
-| Ginger | build-timber-crate | reference | not-reviewed |
-| Ginger | stack-firewood | reference | not-reviewed |
-| Ginger | haul-firewood | reference | not-reviewed |
-| Ginger | sharpen-hatchet | reference | not-reviewed |
-| Ginger | carry-supplies | reference | not-reviewed |
-| Blacksmith | fix-wheelbarrow | reference | not-reviewed |
-| Borrin | explain-closed-ledger | reference | not-reviewed |
-| Borrin | explain-open-ledger | reference | not-reviewed |
-| Cook | cut-boar-meat | reference | not-reviewed |
-| Cook | fillet-fish | reference | not-reviewed |
-| Ginger | fell-tree | reference | not-reviewed |
-| Ginger | chop-downed-log | reference | not-reviewed |
-| Ginger | load-logs-cart | reference | not-reviewed |
-| Ginger | sharpen-axe | reference | not-reviewed |
-| Ginger | build-barrel | reference | not-reviewed |
+| Ginger | saw-timber | reference | scoped-review-approved |
+| Ginger | build-timber-crate | reference | scoped-review-approved |
+| Ginger | stack-firewood | reference | reviewed-changes-required |
+| Ginger | haul-firewood | reference | reviewed-changes-required |
+| Ginger | sharpen-hatchet | reference | scoped-review-approved |
+| Ginger | carry-supplies | reference | reviewed-changes-required |
+| Blacksmith | fix-wheelbarrow | reference | reviewed-changes-required |
+| Borrin | explain-closed-ledger | reference | scoped-review-approved |
+| Borrin | explain-open-ledger | reference | scoped-review-approved |
+| Cook | cut-boar-meat | reference | scoped-review-approved |
+| Cook | fillet-fish | reference | reviewed-changes-required |
+| Ginger | fell-tree | reference | scoped-review-approved |
+| Ginger | chop-downed-log | reference | reviewed-changes-required |
+| Ginger | load-logs-cart | reference | reviewed-changes-required |
+| Ginger | sharpen-axe | reference | scoped-review-approved |
+| Ginger | build-barrel | reference | reviewed-changes-required |
 | Laborer | roll-barrel | reference | not-reviewed |
 | Laborer | carry-crate | reference | not-reviewed |
-| Laborer | stack-crates | reference | not-reviewed |
-| Laborer | build-barrel | reference | not-reviewed |
-| Laborer | carry-large-stone-ore | reference | not-reviewed |
-| Laborer | shovel-rubble | reference | not-reviewed |
-| Laborer | repair-boardwalk | reference | not-reviewed |
+| Laborer | stack-crates | reference | scoped-review-approved |
+| Laborer | build-barrel | reference | reviewed-changes-required |
+| Laborer | carry-large-stone-ore | reference | reviewed-changes-required |
+| Laborer | shovel-rubble | reference | reviewed-changes-required |
+| Laborer | repair-boardwalk | reference | reviewed-changes-required |
 | Female Miner | pickaxe-swing | front | not-reviewed |
 | Female Miner | pickaxe-swing | front-right | not-reviewed |
 | Female Miner | pickaxe-swing | right | not-reviewed |

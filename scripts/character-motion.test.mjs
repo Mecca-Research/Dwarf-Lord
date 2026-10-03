@@ -82,10 +82,22 @@ test('registered motion stays inside its canvas and preserves authored timing in
   const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
   assert.equal(m.registration.exportVersion,2,entry.destination);
   const reviewed = (entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference') ||
-    (entry.character==='Blacksmith' && entry.action==='walk' && entry.direction==='right');
+    (entry.character==='Blacksmith' && entry.action==='walk' && entry.direction==='right') ||
+    (entry.direction==='reference' && ((entry.character==='Blacksmith' && ['hammer-raised','hammer-contact'].includes(entry.action)) ||
+      (entry.character==='Ginger' && entry.action==='fell-tree')));
   assert.equal(m.playback.loopApproved,reviewed,entry.destination);
   if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
-  const finiteReviewed = entry.character==='Elder' && ['inspect-pickaxe-in-lap','examine-pickaxe-crack'].includes(entry.action) && entry.direction==='reference';
+  const finiteActions = {
+   Elder:['inspect-pickaxe-in-lap','examine-pickaxe-crack'],
+   Blacksmith:['inspect-tool','file-tool-edge','repair-pickaxe-handle'],
+   Borrin:['desk-writing','review-open-ledger','turn-ledger-page','explain-at-desk','stamp-paperwork','explain-closed-ledger','explain-open-ledger'],
+   Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat'],
+   'Female Miner':['examine-sample','repair-pickaxe'],
+   Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
+   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate'],
+   Laborer:['build-crate','stack-crates'],
+  };
+  const finiteReviewed = entry.direction==='reference' && Boolean(finiteActions[entry.character]?.includes(entry.action));
   assert.equal(Boolean(m.playback.taskApproved),finiteReviewed,entry.destination);
   if(finiteReviewed){assert.equal(m.playback.mode,'once-hold');assert.equal(m.taskReview.status,'approved');}
   assert.equal(m.productionReady,false,'a scoped seated review cannot approve all production motion');

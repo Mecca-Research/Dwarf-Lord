@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+    "settingsSha256": "4af8af157f27645afecbaaabff5d19bd33434f833055c136a0c827db8314d03c",
+    "frameSha256": [
+      "533619c8864322f7ab76497fd2ccb0155245cfcfa6623de163e447ca00eb747e",
+      "2682c1b9e36f9e40c65f0ffe6d4aa6215ebaee8b16cd52507377e1d021e8e5ac",
+      "04bd8dd279e976e9b0cab3ecb0fbb0c2b778db27f3434d7f209c40fa5f976741",
+      "5580ce971e3cfdb246d2aae8da44cf61adc2a9731943644078f391db05eadb81",
+      "24cbd46ec45ec0454381204d6a029f52cb6421aecf2884fe9c8b3bee927b19ca",
+      "071d0b4af1e898b9ecc90fc0e52987842e5b725cee0e911b30728b0e89b1f12c",
+      "3735619357fed61ca1877e14b1c90b7a59929b0be567f79278b0546873341e8a",
+      "5ac4212c6e83622133a6c04805f20f06786c6bfd184c4251ced46b193d0d8307"
+    ],
+    "atlasSha256": "9939f73f9c335ab14793ac0bef1b4ac2d4766e17dba38eb54e3847d3ff6f758d",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "4af8af157f27645afecbaaabff5d19bd33434f833055c136a0c827db8314d03c",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          150,
+          420,
+          570,
+          605
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              1.310220855421651e-11,
+              -8.653312733031271e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98963,
+            "measuredCorrectionPx": [
+              -0.5663865804672241,
+              0.3806700110435486
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99129,
+            "measuredCorrectionPx": [
+              4.628406047821045,
+              0.3828064501285553
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98768,
+            "measuredCorrectionPx": [
+              -0.8529866337776184,
+              0.009237993508577347
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99367,
+            "measuredCorrectionPx": [
+              -0.2341749668121338,
+              2.603640079498291
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98453,
+            "measuredCorrectionPx": [
+              -1.3021421432495117,
+              1.5446370840072632
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99394,
+            "measuredCorrectionPx": [
+              -0.0015739202499389648,
+              1.783054232597351
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98723,
+            "measuredCorrectionPx": [
+              0.2422577440738678,
+              1.2698662281036377
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "repair-pickaxe-handle",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Blacksmith repair-pickaxe-handle fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left hand braces upright pick shaft below its metal eye throughout. Right hand keeps the short hammer through raise2, joint approach3, wedge contact4, recovery5/6 and return7. One straight supported pick and stationary bench tools persist; no repair output or unseen wedge deformation is certified.",
+    "prop-continuity": "Left hand braces upright pick shaft below its metal eye throughout. Right hand keeps the short hammer through raise2, joint approach3, wedge contact4, recovery5/6 and return7. One straight supported pick and stationary bench tools persist; no repair output or unseen wedge deformation is certified.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "87f73020d99abf6a4aff7dda83f041b68ae537535a8c1cde71e79df8da556c41"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-review.json",
+      "sha256": "d27b555007cf9ed9783a929db95adb6d39055783b1ff28694d54f1b4c5fa33f9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-playback.json",
+      "sha256": "8ab408741a636e38b8d4674eb136ef8e91c2af9161b1f67eb9383c810d018b4f"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-0.png",
+      "sha256": "246fdfdd92459f8a8c710de43c47e296bbdccaced6b49be4cdde8eb1c2487424"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-4.png",
+      "sha256": "1abdde82424ca8512401be45a9b3af1a247a606482b1f14b38c81c4e365e34b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-7.png",
+      "sha256": "96f9f2796b4d12dbdc5790338025a054a8d1b0900dc14f79616e45ac7b1582ae"
+    }
+  ]
+}

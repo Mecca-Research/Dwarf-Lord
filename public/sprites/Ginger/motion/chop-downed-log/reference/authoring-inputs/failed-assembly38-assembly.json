@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 500,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "note": "Full-pose extraction, uniform input scale and translation only. The bodyHeight500 field is a canvas registration scale, not a verified physical standing-height or gait calibration. Gameplay requires separate render calibration.",
+  "inputs": [
+    {
+      "id": "baseline",
+      "file": "authoring-inputs/baseline38.png",
+      "sha256": "b90449ede1bd7e2dc17e0d198fb36c8a2c0a83a3bafa0d447600ffef42e5961a",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          640,
+          640
+        ],
+        [
+          640,
+          0,
+          1280,
+          640
+        ],
+        [
+          1280,
+          0,
+          1920,
+          640
+        ],
+        [
+          1920,
+          0,
+          2560,
+          640
+        ],
+        [
+          0,
+          640,
+          640,
+          1280
+        ],
+        [
+          640,
+          640,
+          1280,
+          1280
+        ],
+        [
+          1280,
+          640,
+          1920,
+          1280
+        ],
+        [
+          1920,
+          640,
+          2560,
+          1280
+        ]
+      ],
+      "rootXs": [
+        320,
+        960,
+        1600,
+        2240,
+        320,
+        960,
+        1600,
+        2240
+      ],
+      "rootYs": [
+        616,
+        616,
+        616,
+        616,
+        1256,
+        1256,
+        1256,
+        1256
+      ],
+      "bodyHeights": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "id": "ginger-split-log-final38",
+      "file": "authoring-inputs/ginger-split-log-final38.png",
+      "sha256": "dfc134df8407458bf5fa857c3c56e5ce6b08a009db1a4589f98dc7d45e07c56d",
+      "poseCount": 1,
+      "cells": [
+        [
+          0,
+          0,
+          1254,
+          1254
+        ]
+      ],
+      "rootXs": [
+        638
+      ],
+      "rootYs": [
+        1207
+      ],
+      "bodyHeights": [
+        1000
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "baseline",
+      "pose": 0
+    },
+    {
+      "input": "baseline",
+      "pose": 1
+    },
+    {
+      "input": "baseline",
+      "pose": 2
+    },
+    {
+      "input": "baseline",
+      "pose": 3
+    },
+    {
+      "input": "baseline",
+      "pose": 4
+    },
+    {
+      "input": "baseline",
+      "pose": 5
+    },
+    {
+      "input": "baseline",
+      "pose": 6
+    },
+    {
+      "input": "ginger-split-log-final38",
+      "pose": 0
+    }
+  ]
+}

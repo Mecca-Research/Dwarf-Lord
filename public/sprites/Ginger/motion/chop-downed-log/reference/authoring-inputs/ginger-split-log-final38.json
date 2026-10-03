@@ -1,0 +1,21 @@
+{
+  "id": "ginger-split-log-final38",
+  "character": "Ginger",
+  "action": "chop-downed-log",
+  "frame": 7,
+  "refs": [
+    {
+      "file": "authoring-inputs/ginger-split-log-final38-reference-0.png",
+      "sha256": "39184f948c326b80ecc52026c7c56ab7aa1be7126fc09c2d5fa88602a3e57e1b"
+    },
+    {
+      "file": "authoring-inputs/ginger-split-log-final38-reference-1.png",
+      "sha256": "0d308e8e776308052911f4778d4ce52d6a3ded53d60d4825fd330071c84e1ed8"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. FIRST image is the ONE final pose to edit. SECOND image is the preceding state of the SAME log after it was split, a continuity reference. Preserve the first image's exact full dwarf pose and identity, curly orange hair, pointed ginger beard, cream sleeves, leather waistcoat, green trousers, both planted boots, stump, scattered split pieces, lighting, camera and canvas. Fix the single horizontal log atop the stump: it must stay SPLIT into the SAME TWO HALF-LOG pieces shown in the second image, same cut ends, bark, opened wooden faces and their positions. The two pieces must never become a whole cylinder again. Adjust only the low axe and hands as necessary: he holds the same connected wooden axe with BOTH hands low in front of him, blade resting lightly between/above the two split pieces, without fusing them together or penetrating an unbroken new log. He has finished this split and holds the result, not yet introduced another log. Keep the stump and scattered pieces unchanged. No new material, no duplicate axe, no regeneration of the split log. High quality semi-realistic rendering and true transparent RGBA, full dwarf and stump entirely visible, one pose only, no text.",
+  "output": "authoring-inputs/ginger-split-log-final38.png",
+  "outputSha256": "dfc134df8407458bf5fa857c3c56e5ce6b08a009db1a4589f98dc7d45e07c56d",
+  "method": "Built-in image generation; single full-pose edit after inspecting source and adjacent authored pose. No synthesized or warped body pixels.",
+  "decision": "rejected: split halves stay split, but the repainted stump region correlation0.89327 falls below the existing0.93 bound; fixed station geometry changes. Original sequence remains blocked for regrowing its log."
+}

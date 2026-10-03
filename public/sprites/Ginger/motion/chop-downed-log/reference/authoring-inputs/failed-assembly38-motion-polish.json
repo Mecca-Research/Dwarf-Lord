@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "assemblySha256": "aedadeb2f3ad65229e321650042367637633526c2a1a8ab2035032d6c725e2cd",
+  "sourceSha256": "6d008382c38790f2cad188011c7b412a29b2144f37b04e154e966fbda5a329b9",
+  "targetBodyHeight": 500,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "landmarks": [
+    {
+      "root": [
+        320,
+        600
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        960,
+        600
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        1600,
+        600
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        2240,
+        600
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        320,
+        1240
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        960,
+        1240
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        1600,
+        1240
+      ],
+      "bodyHeight": 500
+    },
+    {
+      "root": [
+        2240,
+        1240
+      ],
+      "bodyHeight": 500
+    }
+  ],
+  "landmarksVerified": false,
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "note": "Whole-pose canvas registration only. No verified physical standing-height or gait calibration. Unchanged poses retain native pixel scale; the corrected pose uses one uniform scale and translation. Independent runtime calibration and painted station geometry remain separate gates.",
+  "playbackMode": "once-hold"
+}

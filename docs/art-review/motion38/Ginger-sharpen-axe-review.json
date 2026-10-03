@@ -1,0 +1,136 @@
+{
+  "character": "Ginger",
+  "action": "sharpen-axe",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/sharpen-axe/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51",
+  "settingsSha256": "0247612b1f1749051fa226c7ef8d5d83c11e3b118770ff5629e24a904091f381",
+  "nativeReviewSha256": "3e89457a4af23f00a261d2451ff88479d34f8d3a1ef618d6bdfd9dd14fcc4d81",
+  "checks": {
+    "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Both hands retain one long wooden axe handle through0-3 whetstone pass, lifted4/5, angle setup6 and lowered7. Metal head stays connected with a consistent eye; edge is visibly above the stone during recovery. Stone/bench, bucket/cloth and braced boots persist. Finite pass only; water drops and hidden blade pressure are not certified.",
+    "prop-continuity": "Both hands retain one long wooden axe handle through0-3 whetstone pass, lifted4/5, angle setup6 and lowered7. Metal head stays connected with a consistent eye; edge is visibly above the stone during recovery. Stone/bench, bucket/cloth and braced boots persist. Finite pass only; water drops and hidden blade pressure are not certified.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51",
+    "settingsSha256": "0247612b1f1749051fa226c7ef8d5d83c11e3b118770ff5629e24a904091f381",
+    "frameSha256": [
+      "9003026597b37caad5846dc16c61fbe4db14dd19a860ab154a72ff5b1f06f61f",
+      "00e8fee8fd1d83ede1f85badff47a4caa007fb0502222d6f83d726ea2c1bad3c",
+      "d954c36f72a94c0038d8837a76718b4d5dd4d40b0eb87279cca2cdbdda490854",
+      "dbc449a715c4b60b0e086cfb441b9ad00750beae880c2092d5ee6ab37a1075d6",
+      "3cfc8e5637ab0ac2e7409972983b2e3b4198fb3e47aab675317aecbc29330245",
+      "09a6797dea8eb8d79cb2b334d1932b27cfbeaec2d057d837bf8cbc69a9023379",
+      "ba835e31e1cc178b22ad0e776bff366945be7c5bee0ac2324a5c83bb3f207779",
+      "af90daaac1db89f855050ea4c4c1dddcdbe99dab034f5b4105915e986e5e9e73"
+    ],
+    "atlasSha256": "f47a6de96ee52953705275924c7e6ca78c026fe5b8e53b7295bd675c336aa6a8",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "0247612b1f1749051fa226c7ef8d5d83c11e3b118770ff5629e24a904091f381",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          405,
+          440,
+          565,
+          580
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -3.7341862935136305e-08,
+              -1.0868532029917333e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95292,
+            "measuredCorrectionPx": [
+              -7.131962776184082,
+              0.6371113061904907
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95741,
+            "measuredCorrectionPx": [
+              -8.299753189086914,
+              0.4128718078136444
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93144,
+            "measuredCorrectionPx": [
+              -9.591413497924805,
+              0.7739019393920898
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96872,
+            "measuredCorrectionPx": [
+              -0.7887306809425354,
+              0.7731671333312988
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95098,
+            "measuredCorrectionPx": [
+              -6.515531539916992,
+              1.2351198196411133
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97132,
+            "measuredCorrectionPx": [
+              0.7571166157722473,
+              -0.41338038444519043
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95589,
+            "measuredCorrectionPx": [
+              -7.546298503875732,
+              -0.07117722183465958
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "sharpen-axe",
+    "direction": "reference"
+  }
+}

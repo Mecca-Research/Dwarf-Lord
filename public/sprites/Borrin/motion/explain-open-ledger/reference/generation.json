@@ -20,5 +20,24 @@
   "status": "pending",
   "destination": "public/sprites/Borrin/motion/explain-open-ledger/reference",
   "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Borrin. Action: Explain with open ledger. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. support open ledger with left hand | 2. look down at page | 3. point to entry with right finger | 4. trace entry along page | 5. look up to listener | 6. raise right palm explaining | 7. return finger to entry | 8. settle open ledger",
-  "sourceName": "exec-beee943a-ab6c-4aa9-a8be-240e749c7679.png"
+  "sourceName": "exec-beee943a-ab6c-4aa9-a8be-240e749c7679.png",
+  "editHistory": [
+    {
+      "checkpoint": "motion38",
+      "input": "authoring-inputs/borrin-open-ledger38.png",
+      "sha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136",
+      "references": [
+        {
+          "file": "authoring-inputs/borrin-open-ledger38-reference-0.png",
+          "sha256": "6c926e14aa3d5ebd6f413cdca1b0e132a538faa5fbe089185bda3e43f13ddda6"
+        },
+        {
+          "file": "authoring-inputs/borrin-open-ledger38-reference-1.png",
+          "sha256": "4b9a94948e9a1fe88e9e075dbcff15c51f4ad292c8f7c7eef497f0233911aafb"
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Edit target: first image, an eight-pose 4-column by 2-row transparent game animation sheet of Borrin standing and explaining an OPEN ledger. Supporting canonical character identity: second image with closed ledger. Preserve exactly the first image's eight ordered distinct poses, open leather ledger, both hands and gestures, table, stool, candle and all supplies, framing, full bodies, camera, realistic detailed rendering, and separated grid. Change only Borrin's face/beard identity in ALL eight poses to match the second image: same angular old dwarf face with straight nose, bronze reading spectacles, receding swept-back iron-grey hair, neat forked grey beard ending in TWO distinct short braided tips each held with a small brass ring. The first image has an incorrect plain square worker beard; replace it with these two recognizable braids without making the beard longer like the Elder. Keep navy waistcoat, cream rolled sleeves, burgundy scarf, brass keyring, stocky dwarf physique and same light. Each head follows its existing viewing angle and expression. Keep all facial skin opaque and intact, no nose or cheek holes. No hats, no cane, no new items or character changes. Preserve all eight complete figures and all furniture. Clean antialiased cutouts against TRUE transparent RGBA, no red/yellow/green fringe, no white matte, no floor or text. High quality semi-realistic game sprites, not a cartoon. Do not turn into a portrait or reduce the number of poses.",
+      "decision": "selected"
+    }
+  ]
 }

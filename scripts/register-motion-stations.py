@@ -16,9 +16,13 @@ from PIL import Image
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--apply', action='store_true')
+    parser.add_argument('--character')
+    parser.add_argument('--action')
     args = parser.parse_args()
     jobs = json.loads(Path('docs/motion-station-regions.json').read_text())['regions']
     for job in jobs:
+        if (args.character and job['character'] != args.character) or (args.action and job['action'] != args.action):
+            continue
         folder = Path('public/sprites') / job['character'] / 'motion' / job['action'] / 'reference'
         manifest = json.loads((folder / 'manifest.json').read_text())
         path = folder / 'motion-polish.json'

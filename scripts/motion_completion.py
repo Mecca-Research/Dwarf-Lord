@@ -53,6 +53,23 @@ def cycle(entry, root):
         record['reviewStatus'] = ('scoped-review-approved' if loop or task
                                   else review.get('status', 'not-reviewed'))
         record['scope'] = review.get('scope')
+        # A rejected review is useful progress, but it cannot close a cycle.
+        # Bind its defects to the exact export so a later redraw needs review.
+        rejected = folder / 'cycle-review.json'
+        if not loop and not task and rejected.exists():
+            finding = load(rejected)
+            valid = (finding.get('verdict') == 'changes-required'
+                     and finding.get('binding') == current
+                     and isinstance(finding.get('issues'), list) and bool(finding['issues'])
+                     and all(isinstance(issue, str) and issue.strip() for issue in finding['issues'])
+                     and bool(finding.get('scope')) and bool(finding.get('dependencies')))
+            if valid:
+                valid = all((folder / item['file']).is_file() and digest(folder / item['file']) == item['sha256']
+                            for item in finding['dependencies'])
+            record['reviewStatus'] = 'reviewed-changes-required' if valid else 'stale-or-incomplete'
+            if valid:
+                record['issues'] = finding['issues']
+                record['scope'] = finding['scope']
     except (OSError, KeyError, ValueError) as error:
         record['reviewStatus'] = 'invalid-evidence'
         record['error'] = str(error)

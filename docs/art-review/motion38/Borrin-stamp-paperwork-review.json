@@ -1,0 +1,136 @@
+{
+  "character": "Borrin",
+  "action": "stamp-paperwork",
+  "direction": "reference",
+  "destination": "public/sprites/Borrin/motion/stamp-paperwork/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+  "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+  "nativeReviewSha256": "d4f03b89ccf5e268d1ce5f37af5e397338134bf2fbdf16094d40a0329e1927d7",
+  "checks": {
+    "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand keeps one brass stamp by its wooden handle from poised0 through lower1/2/3 and paper contact4, then lifts5/6/7. Left hand retains the document on the same desk. Open ledger, tied papers and scroll remain. Finite stamp task; actual ink mark, stamps of additional documents and independent desk compositing are not certified.",
+    "prop-continuity": "Right hand keeps one brass stamp by its wooden handle from poised0 through lower1/2/3 and paper contact4, then lifts5/6/7. Left hand retains the document on the same desk. Open ledger, tied papers and scroll remain. Finite stamp task; actual ink mark, stamps of additional documents and independent desk compositing are not certified.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+    "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+    "frameSha256": [
+      "579c9b9cab9c44ae4ccec127e3aa658e975dec26a28ec9629b82909d699a3cc3",
+      "f75766d3ca6609c8765abaa59fd62debab3b27ec6c1dbb6790151a31bd54710d",
+      "855b43e10ae672d0d29fed17633bc1a195e8f7eb851f63cd4ffba010fd3a907e",
+      "c46599f51babcac9ec714450dbef54e1394d2bed83065cd5e15c1445c6c0d4d0",
+      "b05d767f434c765216d14309513fa8f9a8279609e10021b389f856f8ed3e02de",
+      "3526179f75f0b00d96ec1a9fe6666b656eb16d979a41bb6c73e095d71ec9ce2e",
+      "bfe178a196a8188500f6eff9d4dc6eeb3db473d10d2209475c7eb998ba80aa01",
+      "ec353a5d7d2741ab9e6447076f6110daf1f24f79d6b9350af7f5dd547cad291f"
+    ],
+    "atlasSha256": "b81c3a12c2d1d1a582938b0520a33c694af68e7402510e083e77f213896dc55a",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          40,
+          370,
+          595,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.0,
+              0.0
+            ]
+          },
+          {
+            "correlation": 0.9946,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.17,
+              -0.12
+            ]
+          },
+          {
+            "correlation": 0.9964,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.32,
+              -0.26
+            ]
+          },
+          {
+            "correlation": 0.9931,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.8,
+              -0.14
+            ]
+          },
+          {
+            "correlation": 0.994,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.09,
+              1.77
+            ]
+          },
+          {
+            "correlation": 0.9893,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.17,
+              0.35
+            ]
+          },
+          {
+            "correlation": 0.9922,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.24,
+              0.3
+            ]
+          },
+          {
+            "correlation": 0.9869,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.53,
+              0.42
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "stamp-paperwork",
+    "direction": "reference"
+  }
+}
