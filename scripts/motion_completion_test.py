@@ -15,17 +15,17 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 44)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 47)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 109)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 106)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':109,'direction-continuity':11,'runtime-action-activation':52})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':106,'direction-continuity':11,'runtime-action-activation':51})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']
-                    if e['character'] == 'Blacksmith' and e['action'] == 'fix-wheelbarrow')
+                    if e['character'] == 'Female Miner' and e['action'] == 'pickaxe-contact')
 
     def test_recorded_rejection_remains_a_merge_blocker(self):
         result = motion_completion.cycle(self.rejected_entry(), Path('.'))
@@ -33,7 +33,7 @@ class CompletionTests(unittest.TestCase):
         self.assertIsNone(result['approvalType'])
         self.assertTrue(result['issues'])
         report = motion_completion.inventory()
-        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 16)
+        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 14)
         self.assertFalse(report['reviewGatesComplete'])
 
     def test_changed_rejected_frame_needs_a_new_review(self):

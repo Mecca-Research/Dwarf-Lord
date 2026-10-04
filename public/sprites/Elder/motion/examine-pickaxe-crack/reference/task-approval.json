@@ -60,11 +60,11 @@
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
+      "sha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "084a0fe492b58f50f2fe49a1aae789168ccfb1e0aad5b0c868bbadf1c503f164"
+      "sha256": "f91984ad7ff88f61a4e76b68a7f74b5d3d9040823e188912c498255a129c05b2"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -105,15 +105,43 @@
     {
       "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
       "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/runtime-revalidation.json",
+      "sha256": "a44c4f1dc17b59fb1d41312e982b29f9ce989c6d4a380021a880eb8100b7bf51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/npc-lifecycle-results.json",
+      "sha256": "6de0cbce3aae45d05d7ad4b7a2c47c2d56d29bec5b5114a4b6ca05a7a4f6848d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/smith-gameplay.json",
+      "sha256": "c4c153387e62dafe36731d2ecdda356e081938c79d4796304ce88d837f9bfa1d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/station-layer-results.json",
+      "sha256": "9818670221a57df8b6728c292fa452128e7ada1514d2e2a0c313fceb9d6afce9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion39",
+    "checkpoint": "motion40",
     "files": [
       "src/game/world/npc-motion.ts",
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
-    "scope": "Original selected poses and approval scope retained; current runtime regression evidence supports only the existing acceptance."
+    "audit": "../../../../../../docs/art-review/motion40/runtime-revalidation.json",
+    "scope": "Identical selected poses and original limited review scope; fresh actual renderer regression only."
   }
 }

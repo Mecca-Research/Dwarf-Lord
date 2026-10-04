@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "cycles": [
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-ready",
+      "title": "Pickaxe ready",
+      "reference": "public/sprites/Female Miner/work-references/00-pickaxe-ready.png",
+      "beats": [
+        "low connected two-hand ready; head remains left",
+        "small continuous lift; same grip",
+        "chest-height lift; same grip",
+        "higher intermediate ready lift",
+        "highest small preparation lift",
+        "partial connected-tool lowering",
+        "lower toward ready",
+        "completed lowered ready hold retaining both hands on same shaft"
+      ],
+      "kind": "work",
+      "direction": "reference",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+      "verdict": "accepted",
+      "sourceSha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05",
+      "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86"
+    }
+  ]
+}

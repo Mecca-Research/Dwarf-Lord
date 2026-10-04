@@ -1,0 +1,309 @@
+{
+  "method": "Controlled clock and actual Three renderer; job/day controls, with no direct animation frame mutation.",
+  "seen": [
+    {
+      "day": 1,
+      "action": "chop-vegetables",
+      "x": -0.5,
+      "station": "cutting-block",
+      "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+      "atlasSha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+      "calibrationSha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc",
+      "propSha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+      "naturalArrival": false,
+      "arrival": {
+        "id": "kori",
+        "x": -0.5,
+        "z": 4.5,
+        "yaw": 0.86,
+        "facing": 6,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 0.0704,
+        "workMotion": {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "chop-vegetables",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "action": "peel-potatoes",
+      "x": -3.5,
+      "station": "potato-block",
+      "sourceSha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+      "atlasSha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c",
+      "calibrationSha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc",
+      "propSha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -3.0369046521338907,
+        "z": 4.538117085934791,
+        "yaw": 1.4886720831080964,
+        "facing": 7,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 11.504599999999979,
+        "workMotion": {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "peel-potatoes",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Two daily cosmetic meal preparation operations, source/atlas/calibration/prop hashes and natural potato-block arrival. Economic output remains in existing day resolution."
+}

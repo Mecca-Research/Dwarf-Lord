@@ -4,14 +4,14 @@
   "title": "Pickaxe ready",
   "reference": "public/sprites/Female Miner/work-references/00-pickaxe-ready.png",
   "beats": [
-    "pickaxe held low ready",
-    "continuous midway transition from pickaxe held low ready toward adjust grip",
-    "adjust grip",
-    "continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore",
-    "lift pickaxe a little and lean toward ore",
-    "continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready",
-    "return to ready",
-    "continuous midway transition from return to ready toward pickaxe held low ready"
+    "low connected two-hand ready; head remains left",
+    "small continuous lift; same grip",
+    "chest-height lift; same grip",
+    "higher intermediate ready lift",
+    "highest small preparation lift",
+    "partial connected-tool lowering",
+    "lower toward ready",
+    "completed lowered ready hold retaining both hands on same shaft"
   ],
   "kind": "work",
   "direction": "reference",
@@ -19,6 +19,16 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Female Miner. Action: Pickaxe ready. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. OVERRIDE reference surroundings: remove ALL rocks, ore and surrounding items; character and held tool ONLY. Transparent background. Eight poses: 1. pickaxe held low ready | 2. continuous midway transition from pickaxe held low ready toward adjust grip | 3. adjust grip | 4. continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore | 5. lift pickaxe a little and lean toward ore | 6. continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready | 7. return to ready | 8. continuous midway transition from return to ready toward pickaxe held low ready",
-  "sourceName": "exec-a9c5c845-ce92-4ee6-9d65-5cee70c2166f.png"
+  "prompt": "Edit the supplied exact Female Miner sprite into an eight-pose fixed-camera preparation sequence, 4 columns by 2 rows. This is the same beardless stocky female dwarf with bronze-riveted metal helmet, long dark brown twin braids, tan rolled-sleeve mining tunic, leather vest/belt/pouches, patterned brown trousers and large worn capped leather boots. Preserve her canonical face, stocky proportions, costume, rendering detail, 3/4 front view and lighting from the reference.\nCreate a FINITE SMALL PICKAXE-READY lift and lower sequence. No strike, no walking. The same single rigid wooden shaft with its same iron curved pickaxe head stays connected throughout. Head remains to VIEWER LEFT of both hands in every frame. Anatomical RIGHT hand (viewer-left arm) stays nearer the metal head. Anatomical LEFT hand (viewer-right arm) stays nearer the lower handle end. Never mirror the tool, switch hands, detach head, duplicate tools, let the shaft cross a palm incorrectly or teleport across her body. Both hands wrap their same shaft positions in all8, with coherent wrist rotation.\nAll8 feet and legs remain the SAME braced stable grounded stance as the input: her right boot (viewer-left) forward/lower, left boot (viewer-right) back/higher. Repeat the identical ground projection, visible cap/sole geometry, support spacing and boot orientation for every frame. Both entire boots fully visible, no foot sliding, toe lifts or stepping. Upper body may bend slightly while hips and feet stay fixed. Same frame scale; helmet-to-foot physical height unchanged. Arms/tool do the motion. This is not an overhead swing: keep tool below helmet crown to avoid changing bounds or camera scale.\nRow-major poses:\n0 hold connected pickaxe head viewer-left at lower chest, shaft sloping down-right about15 degrees, same separated two-hand grip.\n1 lift both connected hands/head very slightly, shaft20degrees, distinct midpoint.\n2 lift to chest, shaft25degrees.\n3 lift midway toward high-ready, shaft30degrees, coherent elbows.\n4 maximum small ready lift, shaft35degrees, head still below helmet crown, both hands hold unchanged same points.\n5 lower the whole rigid tool to30degrees.\n6 lower to20degrees.\n7 completed lowered-ready hold like0, relaxed but keeps the same grip, head left.\nEvery source cell has equal empty margins, full visible silhouette including tool and boots, 20px clear padding to all cell boundaries. Every figure aligned on the same cell ground baseline and same body scale. Transparent background, no rocks, ore, ground, shadow puddle, furniture, text, labels or border. Render8 true consecutive authored poses. Keep the character crisp, detailed and semi-realistic; no cartoon/pixel style.\n",
+  "sourceName": "exec-a9c5c845-ce92-4ee6-9d65-5cee70c2166f.png",
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
 }

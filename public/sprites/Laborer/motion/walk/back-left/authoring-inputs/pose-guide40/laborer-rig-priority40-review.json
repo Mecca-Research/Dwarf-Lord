@@ -1,0 +1,23 @@
+{
+  "key": "laborer-rig-priority40",
+  "decision": "unselected",
+  "inputs": [
+    {
+      "file": "laborer-rig-guide40.png",
+      "sha256": "bbea8e019ed25b6a763e10a05148fe5f1b4daa1daffd9397b3e9c041b2e3a45f"
+    },
+    {
+      "file": "priority-identity.png",
+      "sha256": "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125"
+    }
+  ],
+  "prompt": "Transform FIRST image's EIGHT simple projected pose rigs into EIGHT detailed full-body sprites of the SAME stocky dwarf in SECOND image. FIRST image determines ONLY geometry/pose/foot placement for every frame; SECOND image provides ONLY the character's identity, body proportions, fine realistic leather/linen/skin/beard appearance. Do not copy SECOND image's leg pose to any cell. Exact eight frames, 4columns2rows in FIRST image reading order. Replace the schematic body, blue/right leg and orange/left leg with anatomically correct dwarf body, same bald head, dark beard, cream sleeves, brown leather waistcoat, dark trousers and brown boots with brass buckles. NONE of FIRST guide's colors, marks, circles, ground axes, labels, text or shapes remain. Preserve the fixed overhead rear-left camera, looking away upper-left at34degrees. Primary constraint is the supporting sole plane: toe significantly UP-LEFT from rear heel, both flat on the same invisible ground. The same boots must NOT point horizontally/sideways. Follow the FIRST figure's indicated leading foot, supporting leg, bent airborne leg and opposite arm swing exactly: top0 FAR RIGHT heel front / NEAR LEFT toe rear, top1 FAR RIGHT flat front / NEAR LEFT bent airborne recovery, top2 FAR RIGHT flat support under hip / NEAR LEFT airborne passing, top3 FAR RIGHT trailing toe / NEAR LEFT heel reaching front. Bottom4 NEAR LEFT heel front / FAR RIGHT trailing toe, bottom5 NEAR LEFT flat front / FAR RIGHT bent airborne recovery, bottom6 NEAR LEFT flat under hip / FAR RIGHT airborne passing, bottom7 NEAR LEFT trailing toe / FAR RIGHT heel reaching front. Clear physical alternation between top0 and bottom4, top1 and bottom5, top2 and bottom6. Anatomical left has the OUTER brass buckle toward the viewer; far right outer buckle is behind its boot/occluded. Natural knee and ankle articulation follows these rig landmarks, with the support leg carrying weight and the airborne sole separate. Same head/torso/pelvis/camera/body size in every cell; appropriate shoulder counter-swing. Rig boots are rectangular guides only: reconstruct rigid anatomically correct leather boots with their toe/heel orientations, same lengths and heel-toe contacts. Detailed semi-realistic rendering, complete bodies/soles, wide transparent gutters, fully transparent background; no environment, tools, chair, props, grid, cast shadow or words.\n",
+  "output": "laborer-rig-priority40.png",
+  "outputSha256": "9c83e311e648ee0dfe9ca3988d9b470a76ef725a8ce867c934eac87cb3a4a7b1",
+  "issues": [
+    "Pose2 and pose6 do not expose the required opposite passing/support combinations: the second pose in each half is repeated as a contact-like stance instead.",
+    "The near-left buckled boot extends toward the same rear screen side in0 and4; the requested near-left leading contact is not established clearly.",
+    "Planted soles still do not consistently follow the guide ground-depth plane."
+  ],
+  "scope": "Native visual rejection only. No candidate material landmarks or numeric gait approval. Selected assets and all existing approved artifact bindings remain unchanged."
+}

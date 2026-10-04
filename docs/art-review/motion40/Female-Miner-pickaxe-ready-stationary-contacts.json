@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05",
+    "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+    "frameSha256": [
+      "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5",
+      "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d",
+      "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f",
+      "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5",
+      "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b",
+      "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294",
+      "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed",
+      "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b"
+    ],
+    "atlasSha256": "3f4c4fc2787b653c6e3eba41b2c72ff90147455b4f88fb82b39a52efb4b6334c",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      130,
+      130,
+      130,
+      160,
+      130,
+      130,
+      160
+    ],
+    "character": "Female Miner",
+    "action": "pickaxe-ready",
+    "direction": "reference"
+  },
+  "scope": "Stationary front three-quarter tool preparation only; no traveling gait, whole-stride, directional family or hidden heel approval.",
+  "cameraScale": "Same source camera and one common419.5px body extent for all eight source cells. Visible boot stance midpoints and floor roots use actual source pixels, never tool bounds.",
+  "minimumCorrelation": 0.94,
+  "contactBoundPx": 6,
+  "tracks": [
+    {
+      "boot": "right-near-boot",
+      "region": [
+        105,
+        565,
+        205,
+        635
+      ],
+      "visibleSolePoint": [
+        166,
+        611
+      ],
+      "method": "Translation-only ECC of native visible cap/riveted sole region. The seed marks the visible front sole rim; hidden heel contacts are not inferred.",
+      "samples": [
+        {
+          "frame": 0,
+          "file": "00.png",
+          "frameSha256": "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5",
+          "correlation": 0.999998746885902,
+          "translationPx": [
+            -6.01045940129552e-07,
+            -1.0977064590633745e-07
+          ],
+          "registeredVisibleSolePoint": [
+            165.99999939895406,
+            610.9999998902293
+          ]
+        },
+        {
+          "frame": 1,
+          "file": "01.png",
+          "frameSha256": "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d",
+          "correlation": 0.9961152946198885,
+          "translationPx": [
+            -1.5083363056182861,
+            -0.09617426991462708
+          ],
+          "registeredVisibleSolePoint": [
+            164.4916636943817,
+            610.9038257300854
+          ]
+        },
+        {
+          "frame": 2,
+          "file": "02.png",
+          "frameSha256": "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f",
+          "correlation": 0.997742055833337,
+          "translationPx": [
+            -0.30804145336151123,
+            0.012955810874700546
+          ],
+          "registeredVisibleSolePoint": [
+            165.6919585466385,
+            611.0129558108747
+          ]
+        },
+        {
+          "frame": 3,
+          "file": "03.png",
+          "frameSha256": "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5",
+          "correlation": 0.9951827809785714,
+          "translationPx": [
+            -1.2951616048812866,
+            -0.032292820513248444
+          ],
+          "registeredVisibleSolePoint": [
+            164.7048383951187,
+            610.9677071794868
+          ]
+        },
+        {
+          "frame": 4,
+          "file": "04.png",
+          "frameSha256": "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b",
+          "correlation": 0.9952571994936809,
+          "translationPx": [
+            -0.6920355558395386,
+            0.30045780539512634
+          ],
+          "registeredVisibleSolePoint": [
+            165.30796444416046,
+            611.3004578053951
+          ]
+        },
+        {
+          "frame": 5,
+          "file": "05.png",
+          "frameSha256": "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294",
+          "correlation": 0.9935909377402791,
+          "translationPx": [
+            -1.0229841470718384,
+            0.012326359748840332
+          ],
+          "registeredVisibleSolePoint": [
+            164.97701585292816,
+            611.0123263597488
+          ]
+        },
+        {
+          "frame": 6,
+          "file": "06.png",
+          "frameSha256": "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed",
+          "correlation": 0.9954356437195984,
+          "translationPx": [
+            -1.3758456707000732,
+            0.07376763224601746
+          ],
+          "registeredVisibleSolePoint": [
+            164.62415432929993,
+            611.073767632246
+          ]
+        },
+        {
+          "frame": 7,
+          "file": "07.png",
+          "frameSha256": "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b",
+          "correlation": 0.9943116820434277,
+          "translationPx": [
+            -1.8148977756500244,
+            -0.007092837244272232
+          ],
+          "registeredVisibleSolePoint": [
+            164.18510222434998,
+            610.9929071627557
+          ]
+        }
+      ],
+      "maxDistanceFromInitialPx": 1.814911033954255,
+      "maxAdjacentTransitionPx": 1.814911033954255
+    },
+    {
+      "boot": "left-far-boot",
+      "region": [
+        410,
+        548,
+        523,
+        598
+      ],
+      "visibleSolePoint": [
+        475,
+        590
+      ],
+      "method": "Translation-only ECC of native visible cap/riveted sole region. The seed marks the visible front sole rim; hidden heel contacts are not inferred.",
+      "samples": [
+        {
+          "frame": 0,
+          "file": "00.png",
+          "frameSha256": "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5",
+          "correlation": 1.0000004522162145,
+          "translationPx": [
+            -3.525657632508228e-07,
+            -4.3907610347559967e-07
+          ],
+          "registeredVisibleSolePoint": [
+            474.99999964743427,
+            589.9999995609239
+          ]
+        },
+        {
+          "frame": 1,
+          "file": "01.png",
+          "frameSha256": "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d",
+          "correlation": 0.9909893698693031,
+          "translationPx": [
+            1.0454802513122559,
+            -0.021111853420734406
+          ],
+          "registeredVisibleSolePoint": [
+            476.04548025131226,
+            589.9788881465793
+          ]
+        },
+        {
+          "frame": 2,
+          "file": "02.png",
+          "frameSha256": "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f",
+          "correlation": 0.9944400340579327,
+          "translationPx": [
+            1.5273176431655884,
+            0.12972068786621094
+          ],
+          "registeredVisibleSolePoint": [
+            476.5273176431656,
+            590.1297206878662
+          ]
+        },
+        {
+          "frame": 3,
+          "file": "03.png",
+          "frameSha256": "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5",
+          "correlation": 0.9897674479346664,
+          "translationPx": [
+            1.7760730981826782,
+            -0.15696588158607483
+          ],
+          "registeredVisibleSolePoint": [
+            476.7760730981827,
+            589.8430341184139
+          ]
+        },
+        {
+          "frame": 4,
+          "file": "04.png",
+          "frameSha256": "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b",
+          "correlation": 0.9929476740380845,
+          "translationPx": [
+            1.6782422065734863,
+            -1.876606822013855
+          ],
+          "registeredVisibleSolePoint": [
+            476.6782422065735,
+            588.1233931779861
+          ]
+        },
+        {
+          "frame": 5,
+          "file": "05.png",
+          "frameSha256": "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294",
+          "correlation": 0.9898919278954942,
+          "translationPx": [
+            1.2427819967269897,
+            -2.1578245162963867
+          ],
+          "registeredVisibleSolePoint": [
+            476.242781996727,
+            587.8421754837036
+          ]
+        },
+        {
+          "frame": 6,
+          "file": "06.png",
+          "frameSha256": "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed",
+          "correlation": 0.992262103671502,
+          "translationPx": [
+            1.5952306985855103,
+            -1.9142082929611206
+          ],
+          "registeredVisibleSolePoint": [
+            476.5952306985855,
+            588.0857917070389
+          ]
+        },
+        {
+          "frame": 7,
+          "file": "07.png",
+          "frameSha256": "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b",
+          "correlation": 0.9855042366716353,
+          "translationPx": [
+            0.869447648525238,
+            -2.410945415496826
+          ],
+          "registeredVisibleSolePoint": [
+            475.86944764852524,
+            587.5890545845032
+          ]
+        }
+      ],
+      "maxDistanceFromInitialPx": 2.5629271362895873,
+      "maxAdjacentTransitionPx": 2.5629271362895873
+    }
+  ],
+  "maxVisibleSoleDriftPx": 2.5629271362895873,
+  "maxVisibleSoleTransitionPx": 2.5629271362895873,
+  "measurementPassed": true,
+  "approval": false
+}

@@ -100,3 +100,18 @@ test('forge operations route to their own station and retain completion boundari
  assert.equal(stations.workAssignmentTarget('laborer','storage',3),catalog.JOBS.find(job=>job.id==='storage'));
  assert.equal(stations.workAssignmentTarget('laborer','missing-job',3),undefined);
 });
+
+test('meal operations share the task target with distinct persistent preparation blocks',()=>{
+ for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'cutting-block','chop-vegetables']]) {
+  assert.equal(activities.cookingWorkAction(day),action);
+  const site=stations.activeWorkstation('cook','meals',true,false,day);
+  assert.equal(site.id,id);assert.ok(site.actions.includes(action));
+  assert.equal(stations.workAssignmentTarget('cook','meals',day),site.target);
+  assert.equal(stations.activeWorkstation('cook','meals',false,false,day),undefined);
+  assert.equal(stations.activeWorkstation('cook','meals',true,true,day),undefined);
+ }
+ const vegetable=stations.activeWorkstation('cook','meals',true,false,1);
+ const potato=stations.activeWorkstation('cook','meals',true,false,2);
+ assert.ok(Math.hypot(vegetable.target.targetX-potato.target.targetX,vegetable.target.targetZ-potato.target.targetZ)>=3);
+ for(const day of [0,-1,NaN,1.5,Infinity])assert.throws(()=>activities.cookingWorkAction(day));
+});

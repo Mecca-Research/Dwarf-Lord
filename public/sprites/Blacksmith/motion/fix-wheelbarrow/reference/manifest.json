@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
+  "sourceSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
   "sourceSize": [
     1774,
     887
@@ -16,70 +16,22 @@
     640,
     640
   ],
-  "sharedScale": 1.491183879093199,
+  "sharedScale": 1.48,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "inspect wheel axle",
+      "description": "inspect axle with already gripped low hammer",
       "durationMs": 125,
       "sourceBounds": [
-        50,
-        95,
-        426,
-        404
+        47,
+        93,
+        428,
+        405
       ],
       "sourceAnchor": [
-        182.5,
-        309.0
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        48,
-        155
-      ]
-    },
-    {
-      "id": "key-01",
-      "file": "01.png",
-      "description": "grip loose axle with left hand",
-      "durationMs": 125,
-      "sourceBounds": [
-        490,
-        95,
-        867,
-        403
-      ],
-      "sourceAnchor": [
-        182.15878378378378,
-        308.6706081081081
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        48,
-        156
-      ]
-    },
-    {
-      "id": "key-02",
-      "file": "02.png",
-      "description": "position hammer in right hand",
-      "durationMs": 125,
-      "sourceBounds": [
-        927,
-        92,
-        1299,
-        404
-      ],
-      "sourceAnchor": [
-        178.64695945945945,
+        185.5,
         312.0
       ],
       "groundAnchor": [
@@ -87,120 +39,144 @@
         616
       ],
       "placement": [
-        54,
-        151
+        45,
+        154
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "bring hammer toward axle; left hand steadies wheel",
+      "durationMs": 125,
+      "sourceBounds": [
+        488,
+        93,
+        870,
+        405
+      ],
+      "sourceAnchor": [
+        184.82432432432432,
+        311.3243243243243
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        46,
+        155
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "hold hammer at chest ready",
+      "durationMs": 125,
+      "sourceBounds": [
+        925,
+        90,
+        1302,
+        405
+      ],
+      "sourceAnchor": [
+        181.2972972972973,
+        315.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        52,
+        150
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "raise hammer slightly",
+      "description": "raise hammer overhead",
       "durationMs": 125,
       "sourceBounds": [
-        1372,
-        63,
-        1748,
-        404
+        1369,
+        55,
+        1751,
+        405
       ],
       "sourceAnchor": [
-        182.6706081081081,
-        340.3293918918919
+        185.5,
+        349.3243243243243
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        48,
-        109
+        45,
+        99
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "tap securing wedge",
+      "description": "tap axle fastening",
       "durationMs": 125,
       "sourceBounds": [
-        48,
-        522,
-        430,
-        832
+        46,
+        520,
+        432,
+        834
       ],
       "sourceAnchor": [
-        187.1706081081081,
-        310.6706081081081
+        189.35135135135135,
+        314.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        41,
-        153
+        40,
+        151
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "rebound hammer",
+      "description": "rebound gripped hammer",
       "durationMs": 125,
       "sourceBounds": [
-        487,
-        512,
-        869,
-        833
+        488,
+        510,
+        871,
+        834
       ],
       "sourceAnchor": [
-        188.18243243243242,
-        320.3293918918919
+        188.02702702702703,
+        323.3243243243243
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        39,
-        138
+        42,
+        137
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "turn wheel by hand to test",
+      "description": "lower hammer beside wheel while left hand checks",
       "durationMs": 125,
       "sourceBounds": [
-        927,
-        520,
-        1307,
-        833
+        924,
+        519,
+        1309,
+        835
       ],
       "sourceAnchor": [
-        187.18243243243242,
-        313.0
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        41,
-        149
-      ]
-    },
-    {
-      "id": "key-07",
-      "file": "07.png",
-      "description": "inspect repaired hub",
-      "durationMs": 125,
-      "sourceBounds": [
-        1369,
-        508,
-        1751,
-        833
-      ],
-      "sourceAnchor": [
-        189.53547297297297,
-        325.6706081081081
+        191.21621621621622,
+        314.64864864864865
       ],
       "groundAnchor": [
         320,
@@ -208,7 +184,31 @@
       ],
       "placement": [
         37,
-        130
+        150
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "hold completed repair; retain hammer low in right hand",
+      "durationMs": 125,
+      "sourceBounds": [
+        1368,
+        507,
+        1754,
+        835
+      ],
+      "sourceAnchor": [
+        190.72972972972974,
+        327.3243243243243
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        38,
+        132
       ]
     }
   ],
@@ -256,7 +256,8 @@
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
     "method": "lower-silhouette-estimate",
@@ -267,7 +268,7 @@
     "targetBodyHeight": null,
     "scaleScope": "sequence",
     "landmarksVerified": false,
-    "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+    "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
     "exportVersion": 2,
     "stationRegistration": {
       "method": "bounded-translation-ECC",
@@ -284,85 +285,90 @@
         {
           "correlation": 1.0,
           "measuredCorrectionPx": [
-            3.637423873215084e-08,
-            3.357946454229932e-08
+            1.2094574231014121e-07,
+            1.305019168285071e-07
           ],
           "accepted": true
         },
         {
-          "correlation": 0.97784,
+          "correlation": 0.97887,
           "measuredCorrectionPx": [
-            1.6158318519592285,
-            -0.7439188957214355
+            0.6262201070785522,
+            0.806508481502533
           ],
           "accepted": true
         },
         {
-          "correlation": 0.98697,
+          "correlation": 0.98244,
           "measuredCorrectionPx": [
-            5.019732475280762,
-            -0.29708972573280334
+            4.1163010597229,
+            -0.16499736905097961
           ],
           "accepted": true
         },
         {
-          "correlation": 0.98087,
+          "correlation": 0.97863,
           "measuredCorrectionPx": [
-            -0.9594030380249023,
-            0.8385468125343323
+            -0.08229683339595795,
+            0.7461755275726318
           ],
           "accepted": true
         },
         {
-          "correlation": 0.93219,
+          "correlation": 0.95181,
           "measuredCorrectionPx": [
-            -1.2636456489562988,
-            -1.4111850261688232
+            -2.2482500076293945,
+            0.4247056245803833
           ],
           "accepted": true
         },
         {
-          "correlation": 0.97031,
+          "correlation": 0.97609,
           "measuredCorrectionPx": [
-            -3.5489139556884766,
-            0.7215408086776733
+            -2.5466785430908203,
+            0.5987875461578369
           ],
           "accepted": true
         },
         {
-          "correlation": 0.97063,
+          "correlation": 0.97393,
           "measuredCorrectionPx": [
-            -4.469050884246826,
-            0.46269840002059937
+            -4.911051273345947,
+            1.9722003936767578
           ],
           "accepted": true
         },
         {
-          "correlation": 0.96845,
+          "correlation": 0.97253,
           "measuredCorrectionPx": [
-            -8.755480766296387,
-            -0.8266808390617371
+            -7.420382022857666,
+            0.6179739832878113
           ],
           "accepted": true
         }
-      ]
+      ],
+      "integerPlacementRefinement": {
+        "method": "Bounded whole-pose placement after raster rounding; fractional offset selects the nearest integer exported placement. Original region and limits unchanged.",
+        "measurements": [
+          {
+            "frame": 6,
+            "beforeResidualPx": 0.8242011666297913,
+            "wholePoseTranslationPx": [
+              -1,
+              0
+            ],
+            "predictedResidualPx": 0.20578882098197937,
+            "correlation": 0.9734417012421632,
+            "exportOffsetRoundingCorrectionPx": 0.5
+          }
+        ]
+      }
     }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "Review foot contacts and prop grip through the full cycle; pose differences alone do not establish a valid gait.",
-      "Fixed station translation registered to pose 0; inspect remaining prop redraw and hand contact independently.",
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Exact eight combined-reference poses, local fixed-prop/grip ownership and finite held task only; no loop, movement, direction, independent station or gameplay activation approval."
   }
 }

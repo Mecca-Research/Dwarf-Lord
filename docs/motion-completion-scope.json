@@ -363,11 +363,15 @@
     {
       "character": "Blacksmith",
       "action": "repair-pickaxe-handle"
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1"
+    "sha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -4065,7 +4069,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "084a0fe492b58f50f2fe49a1aae789168ccfb1e0aad5b0c868bbadf1c503f164"
+      "sha256": "f91984ad7ff88f61a4e76b68a7f74b5d3d9040823e188912c498255a129c05b2"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4077,7 +4081,7 @@
     },
     {
       "file": "src/game/world/workstation-sites.ts",
-      "sha256": "2f43478895a7937055ad8c37c7ebfb0fe110ffe86141db6c84a0c2acaf110b53"
+      "sha256": "2bff89e7f73d93505623c129bc26909b0ffb8cbbaaae643313e77356732d74a2"
     },
     {
       "file": "src/game/motion-playback.ts",
@@ -4097,11 +4101,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "3b3ca3214e0570843aed862b4322b57eafcebf414ea6724f15073255895ef1c1"
+      "sha256": "410a6a3948cf81b347bfe60ff3e03d6b582b6763a7dd7ea3da270fc0e0568b4e"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "34b44e316bfa66bf81a18a476abfe883723ca455bf2a27f705c32fc97c6fd5dc"
+      "sha256": "65f7d478c4e3c5023261c836b17e17e856fa688ef10e41ed9f4eb24859d169d9"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4125,7 +4129,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "aae93ef47b8f11f6363f3cfb2ef9a18233563a5ab6dca86fda04997812fb2192"
+      "sha256": "d7ca77d60acb7a900410cd5606e7ed77c70e809b9480df17454ac310c58a876d"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4181,7 +4185,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "de0a3dca103fd2a669495e4ee21a030511ca9929ecfe1b49939b2df6098b8b7b"
+      "sha256": "fd0cb050209e874eaf5df5639380d27b82870a7de879c46f522f12ab84534239"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4238,7 +4242,95 @@
     {
       "file": "public/sprites/workstations/repair-bench/sprite.png",
       "sha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3"
+    },
+    {
+      "file": "public/sprites/Cook/motion/render-calibration.json",
+      "sha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc"
+    },
+    {
+      "file": "docs/art-review/motion40/runtime-revalidation.json",
+      "sha256": "a44c4f1dc17b59fb1d41312e982b29f9ce989c6d4a380021a880eb8100b7bf51"
+    },
+    {
+      "file": "docs/art-review/motion40/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "docs/art-review/motion40/smith-gameplay.json",
+      "sha256": "c4c153387e62dafe36731d2ecdda356e081938c79d4796304ce88d837f9bfa1d"
+    },
+    {
+      "file": "scripts/cooking-work-check.mjs",
+      "sha256": "df1209ff4b437e08dd77ab2dbdc8f497a44cdc6cb938f2b11ac3b203b0d04a8c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/source-sheet.png",
+      "sha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/atlas.png",
+      "sha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/motion-polish.json",
+      "sha256": "67e3ac201733bce3501b3b11553ccc6f7fb5f1a1c2100bc48bf820bf71e389d5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/assembly.json",
+      "sha256": "57e49050120742a3af4a2b55de033ce62468c1d88663d00da334f568bd6e2004"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/generation.json",
+      "sha256": "ed75b5f2a1f115402bca103f7d6c40375f4813da236ca1493ffb2be55f1412a4"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "sha256": "ebdc1e69219a33ebf23b6bcef2a914bcd9a6494fdbcd767252d3c0df60e515fc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
+      "sha256": "926276d44d5ae8a35beaa01b30e7090cdb85b8f9d2429734a94be24a2b161122"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/01.png",
+      "sha256": "1750132a34ef3922189591d2c3482b11230ac97b51fa509c00b42747316a3e37"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/02.png",
+      "sha256": "73e097891393b8da95569dcb405c3ed376439cf6989a33ff94f3e5ff3d8875c4"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/03.png",
+      "sha256": "58d3e836fbb3e40499a8b6d1d380c3a2a4c9e4c9dae66729a70116666480a0fd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/04.png",
+      "sha256": "9a9f77bd425c6a1cf2c345d3b83c139e08a578327d9406a10e023ab558e7fe87"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/05.png",
+      "sha256": "abfb27866de5e005dae2bce5b53472a16aeba1f4d307990e53a6bc568aecb5da"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/06.png",
+      "sha256": "e198166b4cc096fbdc0475fc51970acb2aabda4a6f8334c8d1a782506652097d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/07.png",
+      "sha256": "70e303c7979dedd2a229f2a2489e2fc520a87d539d0db22f2850e4ba21cb4453"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/generation.json",
+      "sha256": "0761749748fdaaa6fee75cabc6c9c85d04496d86b2df82725390f92cf518f44f"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/source.png",
+      "sha256": "e35df199344d5ff7e6e9dc917c6518ed0e2f8d16d44a8b92d02936c4ed9bcaaa"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/sprite.png",
+      "sha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6"
     }
   ],
-  "runtimeCoverageNote": "Motion39 source-bound live coverage: original eleven reference actions plus finite Blacksmith inspection and handle repair. Added derived actors are outside the unchanged160-cycle frozen scope and require their own exact task approval; activation binds their artifacts and current actual renderer proof."
+  "runtimeCoverageNote": "Motion40 source-bound live coverage: previous thirteen actions plus finite Cook potato paring. Three derived additions remain outside the unchanged frozen160 and carry exact task approvals, static stations, calibration and current actual renderer proof."
 }

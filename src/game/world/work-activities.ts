@@ -20,6 +20,14 @@ export function forgeWorkAction(day: number) {
   return forgeWorkActions[(day - 1) % forgeWorkActions.length];
 }
 
+/** Meal preparation keeps a task's selected operation for the entire day. */
+export const cookingWorkActions = ["chop-vegetables", "peel-potatoes"] as const;
+
+export function cookingWorkAction(day: number) {
+  if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");
+  return cookingWorkActions[(day - 1) % cookingWorkActions.length];
+}
+
 export function elderCampActivity(appearance: DwarfAppearance, job: string | null,
   body: Pick<Body, "x" | "z" | "anim">) {
   if (appearance !== "elder" || job !== null || body.anim !== "sit") return false;

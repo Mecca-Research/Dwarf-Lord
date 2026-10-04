@@ -5,7 +5,7 @@
   "mergeBlockers": [
     {
       "gate": "final-cycle-reviews",
-      "remaining": 109
+      "remaining": 106
     },
     {
       "gate": "direction-continuity",
@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 52
+      "remaining": 51
     }
   ],
   "counts": {
@@ -25,15 +25,15 @@
     "fixedWorkCycles": 65,
     "actorCycles": 7,
     "actorFrames": 56,
-    "mainScopedReviewsApproved": 44,
+    "mainScopedReviewsApproved": 47,
     "actorScopedReviewsApproved": 7,
-    "cycleReviewsRemaining": 109,
+    "cycleReviewsRemaining": 106,
     "directionFamilies": 11,
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 13,
-    "referenceActionsWithoutMapping": 52
+    "referenceActionsMapped": 14,
+    "referenceActionsWithoutMapping": 51
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -4684,22 +4684,22 @@
       "destination": "public/sprites/Borrin/motion/count-coins/reference",
       "id": "Borrin/count-coins/reference",
       "frameCount": 8,
-      "reviewStatus": "reviewed-changes-required",
-      "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Exact eight combined-reference poses and finite one-coin counting/inspection. No deposit simulation, loop, movement, independent furniture, gameplay activation or economic approval.",
       "binding": {
-        "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
-        "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+        "sourceSha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa",
+        "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
         "frameSha256": [
-          "2d3819342065d3329c0b9873f7133e1a0a0b096f5bb61f8b0517245ee6f1c5a3",
-          "7e3fb5852840729e8a634f658751923a28c992d78d6fb784cab64e4ed0ab650d",
-          "0ded2d2cd89164f90730d0747dc12bc5652f6a65f081f4d9db25f29829a6b33b",
-          "015920181bf3700403a6d563fd6c70389fcc18b3709ddc67830665485f57a981",
-          "f08f409687a6ad8d95b5b393cc448354a45f557abb9320f3d9fe83dac348c700",
-          "9c4e35a98a4783b9c6aa8b96296f617641ff031cb16552c0ba9354ff45ee07d6",
-          "8e1ecac359481de6e9216a678d48de71d01e01e101ffbbea22b7f73b5edd5289",
-          "81592698a28980acb2b9ced85a494ca5f75a2f7ef134f59a45ee65774bc4735a"
+          "52a6e6c7edd04ebd14d6cf3ae5a344adaf6cf79946b3000d1ab501d7c0063f34",
+          "b7d9f05ef3e9814b07a81fc592ad366c4d39f70d76c53eabe96b1b763392e15b",
+          "e1bf160f2b8f5ff80cc28f4716c29ab1c75c96b491e804cd3e9775a0da35fd6c",
+          "77e31ffa37965940991eded5df8b05834de7ac3d3fbf99910b1ecdbd552654ce",
+          "1ba82c0e31bb20078e96e598eb3eadc79a7c74a56e3b23522e3119d8406f91e7",
+          "d8cf5494e892bd0638600b0e9ce0a0af1542dc44514fe4fe4fe198e180f7dc60",
+          "38d321134755e9772a34c77f74846b7de9fb17e98015f7068a2b727b342c69ba",
+          "c893c541823ba74d7894513971694c5c30f14e7203feded260632193e0a63d68"
         ],
-        "atlasSha256": "779c51946ce8a857099f245bf39f891a34cd9e180b705217ca7f388d5cc0cd04",
+        "atlasSha256": "558bc3f881ee2ceb1b6b5bd29f82186bcd1988e191e2478e0a9e0ea28472c6e5",
         "registration": {
           "method": "lower-silhouette-estimate",
           "targetAnchor": [
@@ -4709,7 +4709,7 @@
           "targetBodyHeight": null,
           "scaleScope": "sequence",
           "landmarksVerified": false,
-          "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+          "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
           "exportVersion": 2,
           "stationRegistration": {
             "method": "bounded-translation-ECC",
@@ -4720,74 +4720,74 @@
               595,
               600
             ],
+            "minimumCorrelation": 0.94,
             "maxCorrectionPx": 12,
             "results": [
               {
                 "correlation": 1.0,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.0,
-                  0.0
-                ]
+                "measuredCorrectionPx": [
+                  5.997176977245999e-09,
+                  7.345354902099643e-08
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9934,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.89,
-                  -0.08
-                ]
+                "correlation": 0.99002,
+                "measuredCorrectionPx": [
+                  -0.7242420315742493,
+                  -0.08219155669212341
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9966,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.04,
-                  -0.13
-                ]
+                "correlation": 0.99506,
+                "measuredCorrectionPx": [
+                  -1.0201380252838135,
+                  -0.23273904621601105
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9933,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.48,
-                  -0.15
-                ]
+                "correlation": 0.99012,
+                "measuredCorrectionPx": [
+                  -0.8960815072059631,
+                  -0.12210791558027267
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9923,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  -0.13,
-                  0.39
-                ]
+                "correlation": 0.99147,
+                "measuredCorrectionPx": [
+                  -1.0618375539779663,
+                  -0.40218448638916016
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9894,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.82,
-                  0.43
-                ]
+                "correlation": 0.98703,
+                "measuredCorrectionPx": [
+                  -0.7655878067016602,
+                  -0.3976975977420807
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.991,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  -0.21,
-                  0.45
-                ]
+                "correlation": 0.99077,
+                "measuredCorrectionPx": [
+                  -1.1719260215759277,
+                  -0.1319657862186432
+                ],
+                "accepted": true
               },
               {
-                "correlation": 0.9921,
-                "accepted": true,
-                "measuredTranslationPx": [
-                  0.28,
-                  0.61
-                ]
+                "correlation": 0.98771,
+                "measuredCorrectionPx": [
+                  -1.218994140625,
+                  -0.07668036967515945
+                ],
+                "accepted": true
               }
-            ],
-            "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+            ]
           }
         },
         "durationsMs": [
@@ -4804,10 +4804,7 @@
         "action": "count-coins",
         "direction": "reference"
       },
-      "approvalType": null,
-      "issues": [
-        "Original poses5-7 retain the counted copper coin in the fingers after apparent placement. Two whole-sheet edits still retained a duplicate final-hand coin; the single-pose empty-hand edit changed the destination coin and desk layout. Need retained one-coin deposit with visibly empty returning fingers and stable desk coins."
-      ]
+      "approvalType": "once-hold-task"
     },
     {
       "character": "Borrin",
@@ -6033,49 +6030,50 @@
       "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
       "id": "Female Miner/pickaxe-ready/reference",
       "frameCount": 8,
-      "reviewStatus": "not-reviewed",
-      "scope": null,
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Fixed-view small pickaxe-ready lift/lower and visible stationary sole contacts. No strike, traveling contact, seamless repeat, hidden heel or cross-direction/tool-template family approval.",
       "binding": {
-        "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05",
+        "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
         "frameSha256": [
-          "dc9e699c7f533d8fb51c5a1f75f1c1c971b3cfd6b89578d7fd98eb47dcbcbd9c",
-          "5fefe1e57f1df0a6475eebd427fd411c5a195a0e86cc67a63057850b565cb7ff",
-          "6927f12815ef923f3c812969aed87da1330e33259dcb37ead3df126a6053e4c4",
-          "e4a6c47d163f0c53d82f695bc190e06acbb6efeebd35793dfed1ce2a7dea1928",
-          "3cb7d2d68217d69cefbc89bf525d4625dc51fb78836135dd0f1db62d7de37018",
-          "dc4cbaccbde661ccec3d9246f866bc476e46d39430cdae7341dc2fea5068afe3",
-          "392dd46f18c5c3bca46fd812ccc2ea0d2f67ed87adbb2316d5047b70b3b2c8c6",
-          "f1231490222292ad366ac332c9e697bb5faab442dcd14f3c1c8ca384abbbc381"
+          "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5",
+          "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d",
+          "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f",
+          "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5",
+          "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b",
+          "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294",
+          "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed",
+          "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b"
         ],
-        "atlasSha256": "a911082cb1e9ef2cc419b6c37b0ec97358ed11ea067d5156732be2e858df45c6",
+        "atlasSha256": "3f4c4fc2787b653c6e3eba41b2c72ff90147455b4f88fb82b39a52efb4b6334c",
         "registration": {
-          "method": "lower-silhouette-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
             616
           ],
-          "targetBodyHeight": null,
-          "scaleScope": "sequence",
+          "targetBodyHeight": 520,
+          "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          160,
+          130,
+          130,
+          130,
+          160,
+          130,
+          130,
+          160
         ],
         "character": "Female Miner",
         "action": "pickaxe-ready",
         "direction": "reference"
       },
-      "approvalType": null
+      "approvalType": "once-hold-task"
     },
     {
       "character": "Female Miner",
@@ -8003,22 +8001,22 @@
       "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
       "id": "Blacksmith/fix-wheelbarrow/reference",
       "frameCount": 8,
-      "reviewStatus": "reviewed-changes-required",
-      "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Exact eight combined-reference poses, local fixed-prop/grip ownership and finite held task only; no loop, movement, direction, independent station or gameplay activation approval.",
       "binding": {
-        "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
-        "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+        "sourceSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
+        "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
         "frameSha256": [
-          "2c819e12f79ea62d79be2d123c88a76a3635d5ddec84d9dc5906e4cd08767ae1",
-          "c748773542606bb58d00d1f54b97fe5eb318f8c68d5d933ac5ab631f71ea187d",
-          "2ec25e203a2bc1e70a3d510daed0349520e294316ae7c1602a6328c444960f12",
-          "89517d68bab67737c74901668182caddbd9ed901163721b0765c79cad095f937",
-          "333cd9dfb7209993d47fd28728d1cf054e3e532e83ef9619e776bcc085be7b22",
-          "0c098918f788653f1ed4925f0aa9906c5025c1e609bbed9cf83a78207fc68eac",
-          "ab0e9c15915ccd15085ae5304471f061b9b4c062fabe7bae46254a73480c26e0",
-          "88cf55cd806c6efa9736b045a1c71a3d3c228ba80e06bfa8bad5971872c02ef1"
+          "5120def62f2c3ec109c215cdd769b449bb30910176bdcd05a6b90120fca64db9",
+          "d6e5d717a1be5bc9fbd06aa20f839141441c29080192efc4eb98c805fd1e5810",
+          "8314a1f1cc814e3f00e74f1ff04e6b7eee3d6196aa07e582f71bba67b7f70f38",
+          "9cca262f48d4590f7f89a49673e3198c9aa73a5466efad0d31cd380f99262815",
+          "ed0e767b7fac860a8004700f3a8257a84dd0e4548fe56343ad092802d45ea397",
+          "ce354ed90aa0cf65e9de818533f903da01f97aab6cdecbfa21f54184138bfd2b",
+          "667572bf4292a302b0c7e6689a30acbcc4e432d4f4f7d7354b1d364e261d54e3",
+          "1120da21284fb3f9815a3f2086a81b53c007640c83616938ccae89a64ff90c83"
         ],
-        "atlasSha256": "774f8ece92c4e0f2eb6915dbd761b89325e18240e1db187921857d80daf35ffe",
+        "atlasSha256": "cb8406384aa1e1d416e490a56d6545bcc02c25b745fa4c260106107e4ed9fd51",
         "registration": {
           "method": "lower-silhouette-estimate",
           "targetAnchor": [
@@ -8028,7 +8026,7 @@
           "targetBodyHeight": null,
           "scaleScope": "sequence",
           "landmarksVerified": false,
-          "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+          "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
           "exportVersion": 2,
           "stationRegistration": {
             "method": "bounded-translation-ECC",
@@ -8045,68 +8043,84 @@
               {
                 "correlation": 1.0,
                 "measuredCorrectionPx": [
-                  3.637423873215084e-08,
-                  3.357946454229932e-08
+                  1.2094574231014121e-07,
+                  1.305019168285071e-07
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.97784,
+                "correlation": 0.97887,
                 "measuredCorrectionPx": [
-                  1.6158318519592285,
-                  -0.7439188957214355
+                  0.6262201070785522,
+                  0.806508481502533
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.98697,
+                "correlation": 0.98244,
                 "measuredCorrectionPx": [
-                  5.019732475280762,
-                  -0.29708972573280334
+                  4.1163010597229,
+                  -0.16499736905097961
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.98087,
+                "correlation": 0.97863,
                 "measuredCorrectionPx": [
-                  -0.9594030380249023,
-                  0.8385468125343323
+                  -0.08229683339595795,
+                  0.7461755275726318
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.93219,
+                "correlation": 0.95181,
                 "measuredCorrectionPx": [
-                  -1.2636456489562988,
-                  -1.4111850261688232
+                  -2.2482500076293945,
+                  0.4247056245803833
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.97031,
+                "correlation": 0.97609,
                 "measuredCorrectionPx": [
-                  -3.5489139556884766,
-                  0.7215408086776733
+                  -2.5466785430908203,
+                  0.5987875461578369
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.97063,
+                "correlation": 0.97393,
                 "measuredCorrectionPx": [
-                  -4.469050884246826,
-                  0.46269840002059937
+                  -4.911051273345947,
+                  1.9722003936767578
                 ],
                 "accepted": true
               },
               {
-                "correlation": 0.96845,
+                "correlation": 0.97253,
                 "measuredCorrectionPx": [
-                  -8.755480766296387,
-                  -0.8266808390617371
+                  -7.420382022857666,
+                  0.6179739832878113
                 ],
                 "accepted": true
               }
-            ]
+            ],
+            "integerPlacementRefinement": {
+              "method": "Bounded whole-pose placement after raster rounding; fractional offset selects the nearest integer exported placement. Original region and limits unchanged.",
+              "measurements": [
+                {
+                  "frame": 6,
+                  "beforeResidualPx": 0.8242011666297913,
+                  "wholePoseTranslationPx": [
+                    -1,
+                    0
+                  ],
+                  "predictedResidualPx": 0.20578882098197937,
+                  "correlation": 0.9734417012421632,
+                  "exportOffsetRoundingCorrectionPx": 0.5
+                }
+              ]
+            }
           }
         },
         "durationsMs": [
@@ -8123,10 +8137,7 @@
         "action": "fix-wheelbarrow",
         "direction": "reference"
       },
-      "approvalType": null,
-      "issues": [
-        "Hammer appears in right hand2 without a pickup and disappears by6/7 while a ground hammer remains throughout. Need an explicit pickup, retained single carried hammer and final placement; cannot certify prop ownership from this set."
-      ]
+      "approvalType": "once-hold-task"
     },
     {
       "character": "Borrin",
@@ -11307,11 +11318,6 @@
     },
     {
       "character": "Cook",
-      "action": "peel-potatoes",
-      "destination": "public/sprites/Cook/motion/peel-potatoes/reference"
-    },
-    {
-      "character": "Cook",
       "action": "knead-dough",
       "destination": "public/sprites/Cook/motion/knead-dough/reference"
     },
@@ -11526,5 +11532,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "a9f6d08d6bc8d0fd9f0f82c0e0280eeab9d87a38e256b27ac2936173fa805fdb"
+  "scopeSha256": "7c8a1dcd05468465874ef7ca800b5155cf7b2534150d97c34a5e1f9c8901bf82"
 }

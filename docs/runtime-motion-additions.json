@@ -47,6 +47,29 @@
       "status": "exported",
       "destination": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor",
       "station": "repair-bench"
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "title": "Peel potatoes",
+      "reference": "public/sprites/Cook/work-references/01-peel-potatoes.png",
+      "beats": [
+        "knife against potato upper skin",
+        "begin attached skin curl",
+        "continue paring stroke",
+        "blade reaches lower potato",
+        "finish stroke with ribbon still attached",
+        "knife lifts away; same ribbon persists",
+        "recover knife; turn held potato",
+        "completed ready hold with retained potato and attached ribbon"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/peel-potatoes/actor",
+      "station": "potato-block"
     }
   ]
 }

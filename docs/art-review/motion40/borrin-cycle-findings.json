@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "checkpoint": "motion40",
+  "cycles": [
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/count-coins/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa",
+      "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
+      "nativeReviewSha256": "c7933b7dcc08e5d5ebacdc2541ccbf35d6c485272a07fbcc553756034258e4e0",
+      "binding": {
+        "sourceSha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa",
+        "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
+        "frameSha256": [
+          "52a6e6c7edd04ebd14d6cf3ae5a344adaf6cf79946b3000d1ab501d7c0063f34",
+          "b7d9f05ef3e9814b07a81fc592ad366c4d39f70d76c53eabe96b1b763392e15b",
+          "e1bf160f2b8f5ff80cc28f4716c29ab1c75c96b491e804cd3e9775a0da35fd6c",
+          "77e31ffa37965940991eded5df8b05834de7ac3d3fbf99910b1ecdbd552654ce",
+          "1ba82c0e31bb20078e96e598eb3eadc79a7c74a56e3b23522e3119d8406f91e7",
+          "d8cf5494e892bd0638600b0e9ce0a0af1542dc44514fe4fe4fe198e180f7dc60",
+          "38d321134755e9772a34c77f74846b7de9fb17e98015f7068a2b727b342c69ba",
+          "c893c541823ba74d7894513971694c5c30f14e7203feded260632193e0a63d68"
+        ],
+        "atlasSha256": "558bc3f881ee2ceb1b6b5bd29f82186bcd1988e191e2478e0a9e0ea28472c6e5",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              40,
+              370,
+              595,
+              600
+            ],
+            "minimumCorrelation": 0.94,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  5.997176977245999e-09,
+                  7.345354902099643e-08
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.99002,
+                "measuredCorrectionPx": [
+                  -0.7242420315742493,
+                  -0.08219155669212341
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.99506,
+                "measuredCorrectionPx": [
+                  -1.0201380252838135,
+                  -0.23273904621601105
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.99012,
+                "measuredCorrectionPx": [
+                  -0.8960815072059631,
+                  -0.12210791558027267
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.99147,
+                "measuredCorrectionPx": [
+                  -1.0618375539779663,
+                  -0.40218448638916016
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98703,
+                "measuredCorrectionPx": [
+                  -0.7655878067016602,
+                  -0.3976975977420807
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.99077,
+                "measuredCorrectionPx": [
+                  -1.1719260215759277,
+                  -0.1319657862186432
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98771,
+                "measuredCorrectionPx": [
+                  -1.218994140625,
+                  -0.07668036967515945
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Borrin",
+        "action": "count-coins",
+        "direction": "reference"
+      },
+      "checks": {
+        "identity-and-scale": "All eight native poses retain canonical senior grey dwarf, spectacles, twin grey beard tips, ivory sleeves, dark embroidered waistcoat, red scarf and seated chair/boots. One common local reference scale; no standing, direction or walking certification.",
+        "station-and-foot-contact": "The same desk panels/legs, open ledger, inkpot/quill, purse and silver/copper stacks remain fixed0-7. Original40/370/595/600 region and12px correction bound retained; minimum correlation.987 and fresh maximum residual.457px. Stationary seated support only, no translating material soles or independent furniture approval.",
+        "hand-and-tool-contact": "One copper disk is already gripped in anatomical right/viewer-left thumb/index0, lifts1/2, rotates edge-on3, lowers beside ledger4, rotates near ledger5, lowers above tabletop6 and stays held in completed pose7. Coin remains connected to fingers and appears edge-on where naturally rotated. Left hand retains ledger contact throughout.",
+        "prop-continuity": "Reauthored finite counting/inspection operation deliberately retains the same coin at both entry and completion, with unchanged static desk stacks. There is no apparent deposit followed by a duplicated hand coin. No economic minting, spending, pickup or stack conversion is implied.",
+        "completion-and-reset": "Full-duration eight-pose playback, once at7,10000ms final hold and explicit restart must be verified separately. No seamless7-to0 repeat, gameplay activation, independent station or economy approval."
+      },
+      "scope": "Exact eight combined-reference poses and finite one-coin counting/inspection. No deposit simulation, loop, movement, independent furniture, gameplay activation or economic approval."
+    }
+  ]
+}

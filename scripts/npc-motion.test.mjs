@@ -151,12 +151,14 @@ test('NPC driver shares atlases, preserves turns, freezes collisions and respect
 test('workstations hold one completion and reset only on task lifecycle changes', async () => {
   const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
   const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/actor/manifest.json', 'utf8'));
+  const peelManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/peel-potatoes/actor/manifest.json', 'utf8'));
   const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
   assert.equal(calibration.actions['chop-vegetables/actor'].sourceSha256, manifest.sourceSha256);
   globalThis.location = { href: 'https://motion.test/' };
   globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
   globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
-  globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration : manifest, blob: async () => new Blob() });
+  globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration :
+    String(url).includes('/peel-potatoes/') ? peelManifest : manifest, blob: async () => new Blob() });
   const driver = new NpcWorkMotion('cook-test', 'cook');
   const body = { x: 0, z: 0, facing: 0, anim: 'work' };
   const update = (dt = .1, job = 'meals', day = 1, resolved = false) => driver.update(body, job, day, resolved, dt, 1.95);
@@ -177,6 +179,11 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     await ready(); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'reassignment restarts');
     update(.1,'meals',1,true); assert.equal(npcWorkDiagnostics.has('cook-test'),false);
     await ready(2); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'new day restarts');
+    assert.equal(npcWorkDiagnostics.get('cook-test').action,'peel-potatoes','day selects its own calibrated operation');
+    for (const frame of peelManifest.frames) update(frame.durationMs/1000,'meals',2);
+    assert.equal(npcWorkDiagnostics.get('cook-test').completed,true);
+    assert.equal(npcWorkDiagnostics.get('cook-test').frame,7);
+    update(5,'meals',2); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'paring does not repeat itself');
     body.anim='walk'; assert.equal(update(),null,'travel releases workstation');
     const toolManifest = JSON.parse(readFileSync('public/sprites/Female Miner/motion/pickaxe-swing/front/manifest.json', 'utf8'));
     globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });

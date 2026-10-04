@@ -50,7 +50,7 @@
       7
     ]
   },
-  "runtimeSha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1",
+  "runtimeSha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c",
   "cameraElevationRadians": 0.6,
   "strideBodyRatio": 0.880769,
   "transitions": [
@@ -185,5 +185,9 @@
   ],
   "landmarkScope": "Manually inspected opaque heel/toe sole-edge candidates. Material correspondence and support identity remain unapproved; annotated overlays permit review rather than silhouette proxy acceptance.",
   "scope": "Motion37: reviewed visible anatomical heel/toe rim correspondences for all eight flat-ground right-view handoffs. Original poses2/3/5/6 retained; outer/inner boot side repaired0/1/7; pose4 differs only at33 low-alpha fringe pixels. Per-view travel ratio and bounded registration adopted for testing; final runtime/contact and loop reviews are separate.",
-  "runtimeRevalidation": "Motion39 actual rendered regression: same source, poses, roots and durations; three complete strides/152 held samples, maximum boundary1.790px. Forge daily work routing changes do not alter walking. Results recorded separately."
+  "runtimeRevalidation": {
+    "checkpoint": "motion40",
+    "previousRuntimeSha256": "9f0d5643c2059b33bd01ebd9f4f7c3e0df75144fd30f782402522b906653fac1",
+    "scope": "Only Cook daily action import/selection changed. Walking calculations, selected source/frames/settings, timings, body ratio and material observations are unchanged. Fresh renderer regression required for existing right-view approval; failed Laborer contacts stay failed."
+  }
 }

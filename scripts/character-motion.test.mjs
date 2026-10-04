@@ -89,10 +89,10 @@ test('registered motion stays inside its canvas and preserves authored timing in
   if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
   const finiteActions = {
    Elder:['inspect-pickaxe-in-lap','examine-pickaxe-crack'],
-   Blacksmith:['anvil-ready','inspect-tool','file-tool-edge','repair-pickaxe-handle'],
-   Borrin:['desk-writing','review-open-ledger','turn-ledger-page','explain-at-desk','stamp-paperwork','explain-closed-ledger','explain-open-ledger'],
+   Blacksmith:['anvil-ready','inspect-tool','file-tool-edge','repair-pickaxe-handle','fix-wheelbarrow'],
+   Borrin:['desk-writing','review-open-ledger','turn-ledger-page','explain-at-desk','stamp-paperwork','explain-closed-ledger','explain-open-ledger','count-coins'],
    Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat','fillet-fish'],
-   'Female Miner':['examine-sample','repair-pickaxe'],
+   'Female Miner':['examine-sample','repair-pickaxe','pickaxe-ready'],
    Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
    Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log'],
    Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips'],
@@ -180,9 +180,9 @@ test('runtime actor layers and persistent stations retain source provenance and 
  }
 });
 
-test('new forge actions require exact actor, station and finite task evidence',()=>{
+test('additional work actions require exact actor, station and finite task evidence',()=>{
  const additions=json('docs/runtime-motion-additions.json').entries;
- assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle']);
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes']);
  for(const entry of additions){
   const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
   assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);

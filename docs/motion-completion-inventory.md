@@ -80,7 +80,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Borrin | review-open-ledger | reference | scoped-review-approved |
 | Borrin | turn-ledger-page | reference | scoped-review-approved |
 | Borrin | explain-at-desk | reference | scoped-review-approved |
-| Borrin | count-coins | reference | reviewed-changes-required |
+| Borrin | count-coins | reference | scoped-review-approved |
 | Borrin | stamp-paperwork | reference | scoped-review-approved |
 | Cook | chop-vegetables | reference | scoped-review-approved |
 | Cook | peel-potatoes | reference | scoped-review-approved |
@@ -94,7 +94,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Elder | laugh-and-gesture | reference | scoped-review-approved |
 | Elder | inspect-pickaxe-in-lap | reference | scoped-review-approved |
 | Elder | examine-pickaxe-crack | reference | scoped-review-approved |
-| Female Miner | pickaxe-ready | reference | not-reviewed |
+| Female Miner | pickaxe-ready | reference | scoped-review-approved |
 | Female Miner | pickaxe-contact | reference | reviewed-changes-required |
 | Female Miner | shovel-ore | reference | reviewed-changes-required |
 | Female Miner | examine-sample | reference | scoped-review-approved |
@@ -118,7 +118,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Ginger | haul-firewood | reference | reviewed-changes-required |
 | Ginger | sharpen-hatchet | reference | scoped-review-approved |
 | Ginger | carry-supplies | reference | reviewed-changes-required |
-| Blacksmith | fix-wheelbarrow | reference | reviewed-changes-required |
+| Blacksmith | fix-wheelbarrow | reference | scoped-review-approved |
 | Borrin | explain-closed-ledger | reference | scoped-review-approved |
 | Borrin | explain-open-ledger | reference | scoped-review-approved |
 | Cook | cut-boar-meat | reference | scoped-review-approved |
@@ -197,7 +197,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Borrin | explain-at-desk |
 | Borrin | count-coins |
 | Borrin | stamp-paperwork |
-| Cook | peel-potatoes |
 | Cook | knead-dough |
 | Cook | stir-cauldron |
 | Cook | mix-ingredients |

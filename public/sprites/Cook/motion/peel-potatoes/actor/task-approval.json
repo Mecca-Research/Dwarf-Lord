@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+    "settingsSha256": "d997545821d34a3e6ac8fc29cc57523842ae240248ff4ef310ad4b76f0e6bf67",
+    "frameSha256": [
+      "926276d44d5ae8a35beaa01b30e7090cdb85b8f9d2429734a94be24a2b161122",
+      "1750132a34ef3922189591d2c3482b11230ac97b51fa509c00b42747316a3e37",
+      "73e097891393b8da95569dcb405c3ed376439cf6989a33ff94f3e5ff3d8875c4",
+      "58d3e836fbb3e40499a8b6d1d380c3a2a4c9e4c9dae66729a70116666480a0fd",
+      "9a9f77bd425c6a1cf2c345d3b83c139e08a578327d9406a10e023ab558e7fe87",
+      "abfb27866de5e005dae2bce5b53472a16aeba1f4d307990e53a6bc568aecb5da",
+      "e198166b4cc096fbdc0475fc51970acb2aabda4a6f8334c8d1a782506652097d",
+      "70e303c7979dedd2a229f2a2489e2fc520a87d539d0db22f2850e4ba21cb4453"
+    ],
+    "atlasSha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "d997545821d34a3e6ac8fc29cc57523842ae240248ff4ef310ad4b76f0e6bf67",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      160
+    ],
+    "character": "Cook",
+    "action": "peel-potatoes",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view local paring task, independent station placement/foreground ownership and live lifecycle. No seamless loop, moving contacts, cross-direction family, economy or production-ready approval.",
+  "checks": {
+    "identity-and-scale": "All eight native poses retain canonical balding red-shirt Cook, brown beard, stained pale leather-strapped apron, stocky legs and capped boots. One common projected body extent; actual native boot-stance midpoints correct irregular source gutters. No moving sole, standing direction or hidden anatomy acceptance.",
+    "station-and-foot-contact": "Separate persistent potato block uses same520-body-height/[320,616] basis as actor. Native boot roots are stable after whole-pose registration. All eight layered views and actual day2 arrival at-3.5/4.5 reviewed; both meal blocks stay after cancellation/departure/day resolution. No furniture pixels are in the actor source.",
+    "hand-and-tool-contact": "One knife stays in anatomical right hand and same potato in left throughout. Blade starts on skin0, starts curl1, passes through distinct stroke2/3, completes lower stroke4, lifts5, recovers6 and holds clear7. Source-bound hand/knife/potato/ribbon contours retain lower stroke above tabletop. The first behind-table-only composition was rejected; no limb pixels are edited or duplicated.",
+    "prop-continuity": "Single attached skin ribbon grows through stroke1-4 and stays attached to same held potato through5-7. Exposed yellow patch persists. No imaginary drop, duplicate potato, disappearing strip or bowl transfer. Station owns static bowl/skins/loose potatoes; actor owns knife, held potato and ribbon. One finite paring stroke, not a completed whole-potato processing loop.",
+    "completion-and-reset": "Actual day1/day2 meal jobs expose each of eight authored-duration poses, complete once, hold7 for5000ms without another operation, release on cancellation/day resolution, and reset0 only on explicit reassignment or morning. A daily operation chooses its own physical task target; renderer never awards inventory/economic output."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "2abe0dd7cbb3fb616115bf426d6501dd2e43613e1596824ed2b7b8de5c7ad42d"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "57e49050120742a3af4a2b55de033ce62468c1d88663d00da334f568bd6e2004"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "ed75b5f2a1f115402bca103f7d6c40375f4813da236ca1493ffb2be55f1412a4"
+    },
+    {
+      "file": "authoring-inputs/paring40.json",
+      "sha256": "3ebf755fcd67dade2435613f7d86e96b975cdd95a49d3ed58907b6c8f8b64b49"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-actor-review.json",
+      "sha256": "ef9cf31e6eebfa606bd57b952426fac09d02cc290ed9007d46b40ef79d3ce9a0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/station-layer-results.json",
+      "sha256": "9818670221a57df8b6728c292fa452128e7ada1514d2e2a0c313fceb9d6afce9"
+    },
+    {
+      "file": "../../../../workstations/potato-block/generation.json",
+      "sha256": "0761749748fdaaa6fee75cabc6c9c85d04496d86b2df82725390f92cf518f44f"
+    },
+    {
+      "file": "../../../../workstations/potato-block/sprite.png",
+      "sha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6"
+    },
+    {
+      "file": "../../../../workstations/potato-block/source.png",
+      "sha256": "e35df199344d5ff7e6e9dc917c6518ed0e2f8d16d44a8b92d02936c4ed9bcaaa"
+    },
+    {
+      "file": "../../../../workstations/potato-block/reference40.png",
+      "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "2bff89e7f73d93505623c129bc26909b0ffb8cbbaaae643313e77356732d74a2"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "f91984ad7ff88f61a4e76b68a7f74b5d3d9040823e188912c498255a129c05b2"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/cooking-work-check.mjs",
+      "sha256": "df1209ff4b437e08dd77ab2dbdc8f497a44cdc6cb938f2b11ac3b203b0d04a8c"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-0.png",
+      "sha256": "399cd34d16cdd4bfd627223849dd5f4207b7742d74535b635dddfa76561b4252"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-1.png",
+      "sha256": "370a81490149cf97cf8c0d42c82493bf868dc9962df9ce7c44b00b8ea0e8f6af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-2.png",
+      "sha256": "a4a607157d604348ccaa9ac35b3afa743a73bf6c2a6ae4a22845e31e14ed4972"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-3.png",
+      "sha256": "b7912cd35c1a68e2e46921a0811edead905eea22f9f07d53405fc773b1fbfc50"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-4.png",
+      "sha256": "24b6e963a5ca0c35ead2c9d0505542333e60cfd22e1ad43ca88fd42d8e80f337"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-5.png",
+      "sha256": "3e09544465b629b4c41c648edd21c84300141b99890f2d815cb9b551a340b9f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-6.png",
+      "sha256": "3c971cce6f89d822cb1509c6bcf97eebda4243802b1fba77f664263c436d9fc2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-layer-7.png",
+      "sha256": "b540e5ea1818a01eb5fd924e26fc3a99232ddf608e73b840375fdf50dca1932c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-game-0.png",
+      "sha256": "4dbce19c3303ae1551a2a5598c8e50ce81d8f43ff86b64c68efba1a5c954754e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-game-2.png",
+      "sha256": "dfea314ac642175f82ccc8abc51ce694cd1fc07054fe349a3121f0834fae54e0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-game-4.png",
+      "sha256": "1f6ea3ca0b8043a46d729d95cb12a03cd577753d375258b3fa809e25bc4f93e0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-game-7.png",
+      "sha256": "ffc5d13bcc8c9c4ae37e35f6575ca57f8c6f78097701358b229bfca0a7072fda"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Cook-peel-potatoes-game-departed.png",
+      "sha256": "cc2ad5b43ef3f6807333e12554bd7845c42e2adaa1bdffc1ee01a616e47f9da6"
+    }
+  ]
+}
