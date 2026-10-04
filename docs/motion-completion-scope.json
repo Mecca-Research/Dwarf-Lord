@@ -367,11 +367,15 @@
     {
       "character": "Cook",
       "action": "peel-potatoes"
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c"
+    "sha256": "afe2174e9e61fd64d21fa190e77fb17aca72daa383d525be851ce2b2f8e938ad"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -4069,7 +4073,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "f91984ad7ff88f61a4e76b68a7f74b5d3d9040823e188912c498255a129c05b2"
+      "sha256": "c836b8ea715304cd1ae16a337e0807a6c09a6c9b2b9b09548799ede9c2d2d520"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4101,11 +4105,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "410a6a3948cf81b347bfe60ff3e03d6b582b6763a7dd7ea3da270fc0e0568b4e"
+      "sha256": "333026a594cb3ec825ea6e32e31f0444b7315c9c4b0d5c5150c944fa0e140c45"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "65f7d478c4e3c5023261c836b17e17e856fa688ef10e41ed9f4eb24859d169d9"
+      "sha256": "8a8ee3ce36195bee8e2dfd519b2712773ca3036a9dd53bb283752e8b0d008d46"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4129,7 +4133,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "d7ca77d60acb7a900410cd5606e7ed77c70e809b9480df17454ac310c58a876d"
+      "sha256": "31b6c9d1fc7acb55cb447a83d7e4186ca14e7ef5b5b2c380f1a1547407727997"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4185,7 +4189,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "fd0cb050209e874eaf5df5639380d27b82870a7de879c46f522f12ab84534239"
+      "sha256": "9b1f63ca5059713fcf3d189b70230ba46c72d7f6c1d7878cd21721de84df567c"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4285,7 +4289,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "ebdc1e69219a33ebf23b6bcef2a914bcd9a6494fdbcd767252d3c0df60e515fc"
+      "sha256": "b3cff358839047acb23d50f3b95d063a718a8d25e3e261add7b8871b99f2da24"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4330,7 +4334,99 @@
     {
       "file": "public/sprites/workstations/potato-block/sprite.png",
       "sha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "sha256": "97bc6b2a890c33241f33f67cf6310384a147ffe559993b24e61c860e76713861"
+    },
+    {
+      "file": "docs/art-review/motion41/runtime-revalidation.json",
+      "sha256": "11ace8cb82b1b9b7aafaf02bd80775779d272443942c951d132fdb95a4c97f42"
+    },
+    {
+      "file": "docs/art-review/motion41/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "docs/art-review/motion41/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "docs/art-review/motion41/smith-gameplay.json",
+      "sha256": "8e033aad1e59302c202730afdf7b109ecbe0d5e092f8c02faf341b02ca1f34f3"
+    },
+    {
+      "file": "scripts/consultant-work-check.mjs",
+      "sha256": "e8be50e65b9b3d02495ecbc1f5a59a7258247483f4ff643a464febec027dba0b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/source-sheet.png",
+      "sha256": "67ed4826b90e000a640e0acb4d19f7849064014ca0821d700113e0efcc72fae6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/atlas.png",
+      "sha256": "2ebc2cad6d91a8d285e483146cd97f3b3a1ae6039b97e02c196199a2a4e86c3e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/motion-polish.json",
+      "sha256": "efccbdcc1a6a9a189db056b931c9ae1bc6eda58ffe24297c1f6da55e64abcd0a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/assembly.json",
+      "sha256": "6b45f458297e746330e527e74c8b19f8af5b4c0a0f3d3c87274a5c00b1ed6997"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/generation.json",
+      "sha256": "01bf5fab500a461959789b4b614d6ed742c5a965722fd56388e98b0ccff1cb84"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "sha256": "a6e938e7d3cc2862e099ee2b60f161b462fc6ed36f8648b348b71d14830852d3"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
+      "sha256": "637c14868642823a5c1a13c522e0906a2490c2fa2e5c691bd769ba5f8fceab10"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/01.png",
+      "sha256": "d3f2f84339a0b1bfc776bfd8df29ed15662d24ca78afe7870bebb7f14a3c4126"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/02.png",
+      "sha256": "8aa472eed6289113b271e6474c37dfe8d90fedb52b34d216c46c401f46eb5557"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/03.png",
+      "sha256": "c7c4477952d434d2662399f01c7d52d81eb8dec34111837b3fba29d53d5ead5d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/04.png",
+      "sha256": "fa3836f5c12cd87dfa1da97344de7a75434bc1a00854647eee979dcb2a9c9e40"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/05.png",
+      "sha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/06.png",
+      "sha256": "d2db26cbb94fe710428b625a406ded8cd1f5b1d21798da5b297711d72dfe4dcf"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/07.png",
+      "sha256": "48a145c435b6ca36081558006407488dc579449f2ddd9655304876948fe7ab6c"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/generation.json",
+      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/source.png",
+      "sha256": "cf3e452ffaf431d1522244716e86ad740bed9171e953c258e7804f54760659ae"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/sprite.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
     }
   ],
-  "runtimeCoverageNote": "Motion40 source-bound live coverage: previous thirteen actions plus finite Cook potato paring. Three derived additions remain outside the unchanged frozen160 and carry exact task approvals, static stations, calibration and current actual renderer proof."
+  "runtimeCoverageNote": "Motion41 source-bound live coverage: previous fourteen actions plus finite Borrin coin inspection at original independent ledger desk. Four derived additions remain outside unchanged frozen160 and carry exact task approvals, static stations, calibration and current actual renderer proof."
 }

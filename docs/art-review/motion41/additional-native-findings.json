@@ -1,0 +1,45 @@
+{
+  "checkpoint": "motion41",
+  "method": "Visual review of exact current eight-pose contact sheets; captions treated as intention, not evidence. These diagnostic findings do not grant acceptance or supply calibration.",
+  "records": [
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "direction": "reference",
+      "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+      "reviewImageSha256": "00dfe116a857c9cc60d3c3dd344b23e824052c4d21d0750529a4ab6f8254ab9a",
+      "verdict": "changes-required",
+      "issues": [
+        "Frame3 returns to the first leading-leg configuration instead of approaching the opposite contact shown4. Frame7 remains in the second leading-leg configuration instead of a recovery toward0. The held sack/hand configuration alone does not establish the intended alternating gait.",
+        "Body-height and actual sole-material calibration across the traveling load-bearing stride are still missing. Existing approximate lower-silhouette registration cannot approve planted travel."
+      ],
+      "scope": "Native contact-sheet diagnostic only. No acceptance, registration change, measured contact declaration, modified selected asset or frozen-scope change."
+    },
+    {
+      "character": "Laborer",
+      "action": "roll-barrel",
+      "direction": "reference",
+      "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+      "reviewImageSha256": "27c565f5387a21ae95affeeef43fd9c16889658dac9a4b75b4d2fe8fe331860b",
+      "verdict": "changes-required",
+      "issues": [
+        "The exported painted cradle/body/barrel assembly changes projected proportions across the eight cells. No common body/prop registration and independent fixed cradle geometry is established.",
+        "Rolling barrel grain/ring motion and push/regrip recovery require measured material/contact review; the displayed intentions do not provide proof of coherent rolling or floor/cradle contact."
+      ],
+      "scope": "Native contact-sheet diagnostic only. No acceptance, registration change, measured contact declaration, modified selected asset or frozen-scope change."
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back-right",
+      "sourceSha256": "c493c348f69abd48002f092c6cd32635751020326b616db6507833f9d1a80f53",
+      "reviewImageSha256": "8d6b96ddceb5e13de30a514dce414fa8c319a1cf5e45f6815df7065e4b84cd9c",
+      "verdict": "changes-required",
+      "issues": [
+        "First-half sole/support configuration does not convincingly implement the labelled left support and opposite recovery. The repeated lifted near boot requires source-bound anatomical review rather than adopting the captions.",
+        "First and second halves change projected boot/body proportions and camera relationship; sole material correspondence, arm opposition and stride travel are unverified."
+      ],
+      "scope": "Native contact-sheet diagnostic only. No acceptance, registration change, measured contact declaration, modified selected asset or frozen-scope change."
+    }
+  ]
+}

@@ -85,7 +85,12 @@ test('Borrin has a persistent consultation desk without becoming a production wo
  const borrin=catalog.STARTING_DWARVES.find(d=>d.id==='borrin');
  assert.deepEqual(site.target,{targetX:borrin.x,targetZ:borrin.z});
  assert.equal(stations.activeWorkstation('borrin',null,false,false),undefined);
- assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
+  assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
+  for(const [day,action] of [[1,'desk-writing'],[2,'count-coins'],[3,'desk-writing']]) {
+    assert.equal(activities.consultantWorkAction(day),action);
+    assert.equal(stations.activeWorkstation('borrin',null,true,true,day).id,'ledger-desk');
+  }
+  for(const day of [0,-1,NaN,1.5,Infinity])assert.throws(()=>activities.consultantWorkAction(day));
 });
 
 test('forge operations route to their own station and retain completion boundaries',()=>{

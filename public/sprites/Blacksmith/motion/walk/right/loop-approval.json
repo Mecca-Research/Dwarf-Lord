@@ -60,11 +60,11 @@
     },
     {
       "file": "travel-calibration.json",
-      "sha256": "d7afb880e9049a3553493f3e8d83f988ade2e2a51723db4b823fd134098612e0"
+      "sha256": "5a396b26f42ec543fbdf0651d93e66cc8b3f3dec81ac8aafaab353b79ca0e895"
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c"
+      "sha256": "afe2174e9e61fd64d21fa190e77fb17aca72daa383d525be851ce2b2f8e938ad"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -84,7 +84,7 @@
     },
     {
       "file": "../../../../../../docs/blacksmith-right-whole-stride-observations.json",
-      "sha256": "4b65054960a433c070eebee8c2ece5bbc5768f1b187290586bff39ba9a0204df"
+      "sha256": "3edab24a1127c90e6892a7dec3670c76e42f9dcd04eb6c967274b32503544432"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -149,16 +149,48 @@
     {
       "file": "../../../../../../docs/art-review/motion40/cooking-gameplay.json",
       "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/runtime-revalidation.json",
+      "sha256": "11ace8cb82b1b9b7aafaf02bd80775779d272443942c951d132fdb95a4c97f42"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/npc-lifecycle-results.json",
+      "sha256": "e6eec5449b2e2872fd1f30f7a20393549b68842a4e5d63e1293d3e579afc5bbf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/smith-gameplay.json",
+      "sha256": "8e033aad1e59302c202730afdf7b109ecbe0d5e092f8c02faf341b02ca1f34f3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/blacksmith-right-rendered-stride.json",
+      "sha256": "0fd55a94db2e708f5e698f2519fe4b97d6216c13fab2bcef703c51942de54a4c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/station-layer-results.json",
+      "sha256": "43760a4d64120654d9a7161e48538ec641747429b61ee063732e3063462c9816"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion40",
+    "checkpoint": "motion41",
     "files": [
       "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json",
       "src/game/world/npc-motion.ts",
       "docs/blacksmith-right-whole-stride-observations.json"
     ],
-    "audit": "../../../../../../docs/art-review/motion40/runtime-revalidation.json",
+    "audit": "../../../../../../docs/art-review/motion41/runtime-revalidation.json",
     "scope": "Identical selected poses and original limited review scope; fresh actual renderer regression only."
   }
 }

@@ -5,7 +5,7 @@ import type { MotionManifest } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
 import { passiveWorkstation } from "./workstation-sites";
-import { cookingWorkAction, elderCampActions, elderCampActivity, forgeWorkAction, WorkActivitySequence } from "./work-activities";
+import { consultantWorkAction, cookingWorkAction, elderCampActions, elderCampActivity, forgeWorkAction, WorkActivitySequence } from "./work-activities";
 
 const folders: Partial<Record<DwarfAppearance, string>> = {
   blacksmith: "Blacksmith", borrin: "Borrin", cook: "Cook", elder: "Elder",
@@ -236,7 +236,7 @@ export class NpcWorkMotion {
       this.reset(); this.activity = new WorkActivitySequence(elderCampActions); this.activityDay = day;
     }
     const elapsedMs = (Number.isFinite(dt) ? Math.max(dt, 0) : 0) * 1000;
-    const action = elder ? this.activity!.action : passive ? passive.action! : this.appearance === "cook" && job === "meals" ? cookingWorkAction(day) :
+    const action = elder ? this.activity!.action : passive ? (this.appearance === "borrin" ? consultantWorkAction(day) : passive.action!) : this.appearance === "cook" && job === "meals" ? cookingWorkAction(day) :
       this.appearance === "femaleMiner" && (job === "limestone" || job === "iron") ? "pickaxe-swing" :
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? forgeWorkAction(day) :

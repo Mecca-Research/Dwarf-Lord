@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    140,
+    140,
+    160,
+    140,
+    140,
+    140,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "count41",
+      "file": "authoring-inputs/count41.png",
+      "poseCount": 8,
+      "sha256": "6747bf19db33daff6766445c2fc0dc7e339739ad3a317f61df7c7e313965dc09",
+      "cells": [
+        [
+          38,
+          13,
+          390,
+          505
+        ],
+        [
+          423,
+          12,
+          768,
+          505
+        ],
+        [
+          808,
+          10,
+          1148,
+          505
+        ],
+        [
+          1184,
+          9,
+          1527,
+          505
+        ],
+        [
+          46,
+          515,
+          396,
+          1011
+        ],
+        [
+          425,
+          516,
+          773,
+          1011
+        ],
+        [
+          807,
+          518,
+          1154,
+          1011
+        ],
+        [
+          1183,
+          517,
+          1531,
+          1011
+        ]
+      ],
+      "rootXs": [
+        219.0,
+        598.0,
+        979.0,
+        1358.5,
+        221.0,
+        602.0,
+        981.5,
+        1361.0
+      ],
+      "rootYs": [
+        502.0,
+        502.0,
+        502.0,
+        502.0,
+        1008.0,
+        1008.0,
+        1008.0,
+        1008.0
+      ],
+      "bodyHeights": [
+        488.5,
+        488.5,
+        488.5,
+        488.5,
+        488.5,
+        488.5,
+        488.5,
+        488.5
+      ],
+      "reference": "authoring-inputs/reference41-0.png",
+      "referenceSha256": "7e908ce0645dc1ef368e8a2bf3242489306a545d65ad935895d8e82a72f4e6de"
+    },
+    {
+      "id": "low0",
+      "file": "authoring-inputs/low-request-0-41.png",
+      "poseCount": 1,
+      "sha256": "25a8f384bab5a5d8ab3fdabefd9c141595d9b2ca7b26b8074fee1df523aa5339",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "rootXs": [
+        647.5
+      ],
+      "rootYs": [
+        1191
+      ],
+      "bodyHeights": [
+        1050.0
+      ]
+    },
+    {
+      "id": "low6",
+      "file": "authoring-inputs/low-request-6-41.png",
+      "poseCount": 1,
+      "sha256": "38bbb20baa21afef874ac0dbf3b428119678bacb66093fc9e7f62b7bbae4d76d",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "rootXs": [
+        630.5
+      ],
+      "rootYs": [
+        1210
+      ],
+      "bodyHeights": [
+        1026.0
+      ]
+    },
+    {
+      "id": "low7",
+      "file": "authoring-inputs/low-request-7-41.png",
+      "poseCount": 1,
+      "sha256": "4369d4220c351fb11b220653af17f8a33ae1428d7442198eb8db3547499d3022",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "rootXs": [
+        628.0
+      ],
+      "rootYs": [
+        1208
+      ],
+      "bodyHeights": [
+        1019.0
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "low6",
+      "pose": 0
+    },
+    {
+      "input": "count41",
+      "pose": 1
+    },
+    {
+      "input": "count41",
+      "pose": 2
+    },
+    {
+      "input": "count41",
+      "pose": 3
+    },
+    {
+      "input": "count41",
+      "pose": 4
+    },
+    {
+      "input": "count41",
+      "pose": 5
+    },
+    {
+      "input": "low7",
+      "pose": 0
+    },
+    {
+      "input": "low0",
+      "pose": 0
+    }
+  ],
+  "review": "Eight distinct whole authored poses; corrected sheet1-5 and three clean pinched-disk single poses. Common seated extent and actual lower-body/chair center/floor roots. Selection order reduces first-lift spacing and supplies clear lowering. No limb edits, interpolation, translating sole or hidden anatomy certification."
+}

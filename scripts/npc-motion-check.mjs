@@ -93,7 +93,7 @@ try {
   assert.equal((await sample()).anim, 'idle', 'morning does not restore completed work');
   await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin')?.workMotion?.completed);
   const consultant=await page.evaluate(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin'));
-  assert.equal(consultant.workMotion.action,'desk-writing');assert.equal(consultant.workMotion.completions,1);
+  assert.equal(consultant.workMotion.action,'count-coins');assert.equal(consultant.workMotion.completions,1);
   await page.evaluate(()=>window.__controlsTest.teleport(10,13));await page.waitForTimeout(1600);
   await page.screenshot({path:`${output}/borrin-desk.png`});
   await page.evaluate(()=>window.__controlsTest.teleportDwarf('borrin',20,10));

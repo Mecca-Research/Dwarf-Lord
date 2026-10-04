@@ -195,7 +195,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Borrin | review-open-ledger |
 | Borrin | turn-ledger-page |
 | Borrin | explain-at-desk |
-| Borrin | count-coins |
 | Borrin | stamp-paperwork |
 | Cook | knead-dough |
 | Cook | stir-cauldron |

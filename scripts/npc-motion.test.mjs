@@ -294,14 +294,14 @@ test('smith inspection and repair retain their calibrated station operation unti
  }finally{driver.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 
-test('Borrin reviews the ledger as a seated consultant without a production assignment', async () => {
+test('Borrin writes or inspects one held coin as a finite consultant activity without a production assignment', async () => {
   const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
-  const manifest=JSON.parse(readFileSync('public/sprites/Borrin/motion/desk-writing/actor/manifest.json','utf8'));
+  const manifests=Object.fromEntries(['desk-writing','count-coins'].map(action=>[action,JSON.parse(readFileSync(`public/sprites/Borrin/motion/${action}/actor/manifest.json`,'utf8'))]));
   const calibration=JSON.parse(readFileSync('public/sprites/Borrin/motion/render-calibration.json','utf8'));
   globalThis.location={href:'https://motion.test/'};
   globalThis.document={createElement:()=>({width:0,height:0,getContext:()=>({drawImage(){}})})};
   globalThis.createImageBitmap=async()=>({width:5120,height:640,close(){}});
-  globalThis.fetch=async url=>({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?calibration:manifest,blob:async()=>new Blob()});
+  globalThis.fetch=async url=>({ok:true,json:async()=>String(url).endsWith('render-calibration.json')?calibration:manifests[String(url).includes('/count-coins/')?'count-coins':'desk-writing'],blob:async()=>new Blob()});
   const worker=new NpcWorkMotion('borrin-consultant-test','borrin'),body={x:10,z:10,facing:3,anim:'sit',speed:0};
   const update=(dt=0,day=1)=>worker.update(body,null,day,true,dt,1.95);
   async function ready(day=1){for(let i=0;i<50;i++){const pose=update(0,day);if(pose)return pose;await new Promise(r=>setTimeout(r,1));}throw new Error('consultant desk did not load');}
@@ -312,7 +312,16 @@ test('Borrin reviews the ledger as a seated consultant without a production assi
     body.anim='walk';assert.equal(update(),null,'walking releases the seated desk action');
     body.anim='sit';body.x=20;assert.equal(update(),null,'a seated consultant away from the desk cannot write at it');
     body.x=10;await ready(2);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').frame,0,'next day restarts the review');
+    assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').action,'count-coins','even day selects a new desk operation');
+    for(let frame=0;frame<8;frame++){
+      assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').frame,frame);
+      update(manifests['count-coins'].frames[frame].durationMs/1000+.000001,2);
+    }
+    const completed=npcWorkDiagnostics.get('borrin-consultant-test');
+    assert.equal(completed.completed,true);assert.equal(completed.completions,1);
+    update(100,2);assert.deepEqual(npcWorkDiagnostics.get('borrin-consultant-test'),completed,'coin inspection stays finished without minting another action');
     assert.equal(worker.update(body,'forge',2,false,0,1.95),null,'production assignment cannot activate consultant motion');
+    await ready(3);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').action,'desk-writing');
   }finally{worker.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 

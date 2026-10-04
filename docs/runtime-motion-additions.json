@@ -70,6 +70,29 @@
       "status": "exported",
       "destination": "public/sprites/Cook/motion/peel-potatoes/actor",
       "station": "potato-block"
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "title": "Count coins",
+      "reference": "public/sprites/Borrin/work-references/04-count-coins.png",
+      "beats": [
+        "counted coin already held low",
+        "slight coin and forearm lift",
+        "chest-level coin inspection",
+        "high inspection lift",
+        "small held-coin wrist turn",
+        "lower same coin toward chest",
+        "lower same coin toward desk",
+        "completed low hold retaining same coin"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/count-coins/actor",
+      "station": "ledger-desk"
     }
   ]
 }

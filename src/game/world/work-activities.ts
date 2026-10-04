@@ -28,6 +28,16 @@ export function cookingWorkAction(day: number) {
   return cookingWorkActions[(day - 1) % cookingWorkActions.length];
 }
 
+/** The consultant inspects one already held coin on alternate days.
+ * These finite desk activities never create coins or production assignments.
+ */
+export const consultantWorkActions = ["desk-writing", "count-coins"] as const;
+
+export function consultantWorkAction(day: number) {
+  if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");
+  return consultantWorkActions[(day - 1) % consultantWorkActions.length];
+}
+
 export function elderCampActivity(appearance: DwarfAppearance, job: string | null,
   body: Pick<Body, "x" | "z" | "anim">) {
   if (appearance !== "elder" || job !== null || body.anim !== "sit") return false;
