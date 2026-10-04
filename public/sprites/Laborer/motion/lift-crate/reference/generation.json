@@ -9,9 +9,9 @@
     "lift crate to knee height",
     "continuous midway transition from lift crate to knee height toward straighten with crate at waist",
     "straighten with crate at waist",
-    "continuous midway transition from straighten with crate at waist toward settle weight while holding crate",
-    "settle weight while holding crate",
-    "continuous midway transition from settle weight while holding crate toward bend with hands gripping crate sides"
+    "first controlled lowering; crate still clear of floor",
+    "deeper lowering while same two grips persist",
+    "completed floor placement with both hands still gripping crate"
   ],
   "kind": "work",
   "direction": "reference",
@@ -20,5 +20,258 @@
   "status": "pending",
   "destination": "public/sprites/Laborer/motion/lift-crate/reference",
   "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Laborer. Action: Lift crate. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. bend with hands gripping crate sides | 2. continuous midway transition from bend with hands gripping crate sides toward lift crate to knee height | 3. lift crate to knee height | 4. continuous midway transition from lift crate to knee height toward straighten with crate at waist | 5. straighten with crate at waist | 6. continuous midway transition from straighten with crate at waist toward settle weight while holding crate | 7. settle weight while holding crate | 8. continuous midway transition from settle weight while holding crate toward bend with hands gripping crate sides",
-  "sourceName": "exec-3bd0404d-04b0-459c-91e4-21292fbb8e2b.png"
+  "sourceName": "exec-3bd0404d-04b0-459c-91e4-21292fbb8e2b.png",
+  "editHistory": [
+    {
+      "frame": 5,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. First lowering intermediate: crate moves down by about one quarter of the total waist-to-floor distance, bottom near lower knee height. Knees bend moderately, chest leans slightly forward, head still noticeably higher than crouched destination. Fingers remain attached to side edges. Crate remains above floor.",
+      "source": "authoring-inputs/pose-5.png",
+      "sourceSha256": "4c4484ee710a9be498220e0c0d883703a941facd84cb23972fe4d91d426605d1",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 6,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. Second lowering intermediate: crate moves down by about two thirds of the total waist-to-floor distance, bottom a hand-span above floor. Knees clearly flex and torso bends more than first intermediate, head above low destination. Both grips stay fixed on same sides, no release or foot travel.",
+      "source": "authoring-inputs/pose-6.png",
+      "sourceSha256": "7b1787c73343ecb6b500d51d4e6a9a89ec2293ffeddf89af25b4be5c28a2cbd2",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 7,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. Final controlled lowering: crate bottom now rests on the floor, complete crouched stance similar to second reference, with hips/knees flexed while maintaining exactly first reference's foot locations. Both hands remain visibly gripping its sides. No unshown release; finish held in this low settled position.",
+      "source": "authoring-inputs/pose-7.png",
+      "sourceSha256": "bb2927eb3bbfb728ccf1a6898638ef323d72b5ba9c6a4a72af4e96ac49e79259",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "frame": 2,
+      "prompt": "Precisely correct the FIRST image as ONE complete dwarf-and-crate game sprite on genuine transparent background. The SECOND image supplies the exact stationary two-boot stance and canonical capped boot geometry. Preserve first image's bald stocky Laborer face, three brown beard braids/brass bands, ivory rolled sleeves, brown vest/pouch, knees/torso bending, both hands gripping SAME crate sides, same crate wood bracing/iron corners, lighting and exact orthographic camera. Preserve the near boot at viewer-left, all upper body and held crate. Correct only the FAR anatomical left lower-leg/boot: it is too far to viewer-right in the first image. Move its projected toe/sole footprint about 29 pixels LEFT on the 640x640 reference canvas, keeping the same ground elevation, so BOTH boots match the second image's exact stance. Far boot must have same cap/sole texture and toe direction as second image; its toe end belongs around x458,y537 (on 640x640 coordinates), not around x489,y537. Its heel/calves may be occluded naturally by the existing crate. Do not move or enlarge the crate, do not move the near boot or rotate the camera, do not create a new pose of the upper body, no extra arms or props. This is a whole-pose asset correction; no text, coordinates, guides, background or labels in output. Keep generous transparent canvas, retain every visible source object completely. If output canvas is1280x1280, double coordinate positions while preserving this composition.",
+      "output": "authoring-inputs/far-2-42.png",
+      "outputSha256": "d0924337340c540b0f898b350428e544d5bf005fdb012ccd7eb79deb758b586c",
+      "references": [
+        {
+          "file": "authoring-inputs/far-2-input-42.png",
+          "sha256": "22c1ea13403fe53a1166c2742e1ac29d31550df398605bc2bf1aa7ef36be73cc"
+        },
+        {
+          "file": "authoring-inputs/far-2-stance-42.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 2,
+      "prompt": "Precisely edit FIRST reference into ONE entire detailed Laborer-and-crate sprite, true transparent RGBA. Preserve its exact bald stocky dwarf, THREE brown brass-bound beard braids, face, cream sleeves, brown vest/pouch/trousers, bent upper body and knees, same TWO hands gripping same ONE crate, all wood bracing/iron rivets, lighting/camera and upper-body pose. The SECOND photo supplies the exact stationary boot stance; THIRD image is a schematic TARGET FOOTPRINT guide, not final art. Both foot footprints must occupy the guide positions at proportional canvas coordinates. Near boot at viewer-left remains unchanged. Far boot at viewer-right must be in the second photo's exact position, same toe direction and cap/riveted sole appearance, with natural occlusion beneath the held crate. Correct far lower leg/ankle bend to reach that planted boot. Treat positions as FRACTIONS of canvas, not raw pixels from640 applied on1280. Preserve the first photo's composition at whatever output resolution; retain complete actor/crate and transparent margins. No extra limbs/props, no labels or colored marks, no diagram or background in the final sprite. Do not change body's pose to the standing second image; only its stationary foot locations are shared. The first photo's farther boot still lies right of target by2.3% of total canvas width. Shift that one boot LEFT by2.3% of output canvas width (approximately30 pixels for1280-wide output), keeping ground elevation. Maintain the same knee-height crate-lift pose.",
+      "output": "authoring-inputs/lift-far2b-42.png",
+      "outputSha256": "3761fe8d1cc5613e66a5a1ea31aa23b2498fe09881c90e877756460cc3059d9d",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-far2b-42-input.png",
+          "sha256": "6e166d39dfdde67eb9e922101c86e3cfb1b78f76faa8aa19963b5dbb0f49580d"
+        },
+        {
+          "file": "authoring-inputs/lift-far2b-42-stance.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-far2b-42-guide.png",
+          "sha256": "86f4a3cb8f1714670f3370436aba2e02749e5c6641b2ea6d02cf6730680c4c47"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 3,
+      "prompt": "Precisely edit FIRST reference into ONE entire detailed Laborer-and-crate sprite, true transparent RGBA. Preserve its exact bald stocky dwarf, THREE brown brass-bound beard braids, face, cream sleeves, brown vest/pouch/trousers, bent upper body and knees, same TWO hands gripping same ONE crate, all wood bracing/iron rivets, lighting/camera and upper-body pose. The SECOND photo supplies the exact stationary boot stance; THIRD image is a schematic TARGET FOOTPRINT guide, not final art. Both foot footprints must occupy the guide positions at proportional canvas coordinates. Near boot at viewer-left remains unchanged. Far boot at viewer-right must be in the second photo's exact position, same toe direction and cap/riveted sole appearance, with natural occlusion beneath the held crate. Correct far lower leg/ankle bend to reach that planted boot. Treat positions as FRACTIONS of canvas, not raw pixels from640 applied on1280. Preserve the first photo's composition at whatever output resolution; retain complete actor/crate and transparent margins. No extra limbs/props, no labels or colored marks, no diagram or background in the final sprite. Do not change body's pose to the standing second image; only its stationary foot locations are shared. The first photo's farther boot lies right of target by4.7% of total canvas width, and slightly too high. Shift that one boot LEFT by4.7% of output canvas width and DOWN by0.7% of height (approximately60 left/9 down on1280). Maintain the same transitional raised-crate pose.",
+      "output": "authoring-inputs/lift-far3-42.png",
+      "outputSha256": "d9391fb65775f5205591026ef9ed0407d609067f4858f5954300acedc72fac7c",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-far3-42-input.png",
+          "sha256": "14b04f340f927f17797b6b7f2602c132b7f7555b86451b45bfe66c418f53b7f3"
+        },
+        {
+          "file": "authoring-inputs/lift-far3-42-stance.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-far3-42-guide.png",
+          "sha256": "86f4a3cb8f1714670f3370436aba2e02749e5c6641b2ea6d02cf6730680c4c47"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 5,
+      "prompt": "Precisely edit FIRST reference into ONE entire detailed Laborer-and-crate sprite, true transparent RGBA. Preserve its exact bald stocky dwarf, THREE brown brass-bound beard braids, face, cream sleeves, brown vest/pouch/trousers, bent upper body and knees, same TWO hands gripping same ONE crate, all wood bracing/iron rivets, lighting/camera and upper-body pose. The SECOND photo supplies the exact stationary boot stance; THIRD image is a schematic TARGET FOOTPRINT guide, not final art. Both foot footprints must occupy the guide positions at proportional canvas coordinates. Near boot at viewer-left remains unchanged. Far boot at viewer-right must be in the second photo's exact position, same toe direction and cap/riveted sole appearance, with natural occlusion beneath the held crate. Correct far lower leg/ankle bend to reach that planted boot. Treat positions as FRACTIONS of canvas, not raw pixels from640 applied on1280. Preserve the first photo's composition at whatever output resolution; retain complete actor/crate and transparent margins. No extra limbs/props, no labels or colored marks, no diagram or background in the final sprite. Do not change body's pose to the standing second image; only its stationary foot locations are shared. The first photo's farther boot lies right of target by0.9% of total canvas width and too LOW by1.9% of total canvas height. Shift it LEFT by0.9% of output width and UP by1.9% of height (approximately11 left/24 up on1280). Preserve the first lowering pose and crate height.",
+      "output": "authoring-inputs/lift-far5-42.png",
+      "outputSha256": "190c399d25b9f5896a7ef3ed9e665343635b3d26e38f89aba6a77b58885e7119",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-far5-42-input.png",
+          "sha256": "206b7b2700f2a2e97e68d444d0a141f73f7c500176d9faeea60cfb4bae9d1ebb"
+        },
+        {
+          "file": "authoring-inputs/lift-far5-42-stance.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-far5-42-guide.png",
+          "sha256": "86f4a3cb8f1714670f3370436aba2e02749e5c6641b2ea6d02cf6730680c4c47"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 2,
+      "prompt": "Edit FIRST reference photo into ONE whole detailed transparent dwarf Laborer sprite. FIRST photo is the immutable base: preserve its exact camera, scale, light, three brass-bound brown beard braids, bald head, cream sleeves, leather vest/pouch, one identical wooden crate and metal corner rivets. Precisely keep BOTH BOOTS from FIRST photo at their original positions, ground heights, directions, shape and material. Do not redraw, shift or reproject either boot or any sole pixels. The complete lower boot region below 70 percent of the first image height is LOCKED; only body/trouser joints above the boot shafts may change. This is a stationary lifting action, no step, feet occupy unchanged footprint. SECOND photo supplies only desired torso/arm/crate pose, NEVER its boots or their spacing. Change hips, knees above the shafts, torso, arms and same TWO attached grips naturally to match its lifting/lowering action. Bend hips and knees, lean chest and head forward, lower the held crate from waist to knee height; crate bottom stays above the far boot. Use second photo's upper-body silhouette. Preserve the first photo's entire 640-square composition when output is enlarged, keep same transparent margins. TWO arms and hands remain attached to same crate sides. No new background, furniture, other objects, duplicated crate, lifted foot, text or annotation. The highest priority is keeping the two original visible boots pixel-identical in proportion to the first source while upper-body action changes.",
+      "output": "authoring-inputs/lift-locked2-42.png",
+      "outputSha256": "f638625f73f583744d8a4a8566754fc244bee569886cfb310618a882a5aa9ae0",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-locked2-42-input.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-locked2-42-stance.png",
+          "sha256": "ffb993ac80a650db37e190fc260c3cb81e30a54aaf184de9aaba2fa8f904c50b"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "frame": 3,
+      "prompt": "Edit FIRST reference photo into ONE whole detailed transparent dwarf Laborer sprite. FIRST photo is the immutable base: preserve its exact camera, scale, light, three brass-bound brown beard braids, bald head, cream sleeves, leather vest/pouch, one identical wooden crate and metal corner rivets. Precisely keep BOTH BOOTS from FIRST photo at their original positions, ground heights, directions, shape and material. Do not redraw, shift or reproject either boot or any sole pixels. The complete lower boot region below 70 percent of the first image height is LOCKED; only body/trouser joints above the boot shafts may change. This is a stationary lifting action, no step, feet occupy unchanged footprint. SECOND photo supplies only desired torso/arm/crate pose, NEVER its boots or their spacing. Change hips, knees above the shafts, torso, arms and same TWO attached grips naturally to match its lifting/lowering action. Flex hips and knees moderately, lean forward less than second photo; raise/transitional held crate just below waist height. Use second photo's upper-body pose. Preserve the first photo's entire 640-square composition when output is enlarged, keep same transparent margins. TWO arms and hands remain attached to same crate sides. No new background, furniture, other objects, duplicated crate, lifted foot, text or annotation. The highest priority is keeping the two original visible boots pixel-identical in proportion to the first source while upper-body action changes.",
+      "output": "authoring-inputs/lift-locked3-42.png",
+      "outputSha256": "1d8260650e27a08bacaaa11624512bde0e79b50ba824c83f86136ccca4129e56",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-locked3-42-input.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-locked3-42-stance.png",
+          "sha256": "caaa28a14bc954885ac6459862d9fcbcdd92da152bfacb2755fdf26a2f706510"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "frame": 5,
+      "prompt": "Edit FIRST reference photo into ONE whole detailed transparent dwarf Laborer sprite. FIRST photo is the immutable base: preserve its exact camera, scale, light, three brass-bound brown beard braids, bald head, cream sleeves, leather vest/pouch, one identical wooden crate and metal corner rivets. Precisely keep BOTH BOOTS from FIRST photo at their original positions, ground heights, directions, shape and material. Do not redraw, shift or reproject either boot or any sole pixels. The complete lower boot region below 70 percent of the first image height is LOCKED; only body/trouser joints above the boot shafts may change. This is a stationary lifting action, no step, feet occupy unchanged footprint. SECOND photo supplies only desired torso/arm/crate pose, NEVER its boots or their spacing. Change hips, knees above the shafts, torso, arms and same TWO attached grips naturally to match its lifting/lowering action. First controlled lowering from waist: flex hips/knees moderately, lean chest forward; same crate bottom below knee height and above the floor. Preserve second photo's lowered body/hand/crate pose. Preserve the first photo's entire 640-square composition when output is enlarged, keep same transparent margins. TWO arms and hands remain attached to same crate sides. No new background, furniture, other objects, duplicated crate, lifted foot, text or annotation. The highest priority is keeping the two original visible boots pixel-identical in proportion to the first source while upper-body action changes.",
+      "output": "authoring-inputs/lift-locked5-42.png",
+      "outputSha256": "5b27abdba5b9d1682e2ad84efa035e993301b2372f7dcf72598403b06b754a35",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-locked5-42-input.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        },
+        {
+          "file": "authoring-inputs/lift-locked5-42-stance.png",
+          "sha256": "aa04ea5a51d5055e36e5e195d889d2585f5533595fe546dd5e039f25ba3541dd"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 5,
+      "prompt": "Localized edit of this ONE exact sprite: lower the SAME wooden crate from waist by only4.7 percent of full canvas height (30pixels on640,60on1280), by a small forward lean of shoulders and straightening elbows. Keep torso almost at same elevation; head may lean forward10pixels on640. This is first small lowering after the waist lift, NOT a full crouch. DO NOT CHANGE the image below65 percent canvas height: same thighs, knees, BOTH planted boots and their texture/shape/spacing/elevation remain identical to input, no leg movement or new ground plane. Preserve overall composition, image margins, camera, scale, shirt/vest/pouch/trousers, bald head and three brass-bound brown beard braids. TWO hands retain exact same crate-side grips; SAME crate dimensions/boards/diagonal braces/iron corners/rivets and orientation. Do not change to a much lower pose; only a subtle first lowering of arms and held crate, while feet/legs remain exactly from the supplied reference. Return ONE full-body high detail semi-realistic Laborer-and-crate sprite with true alpha background, no text/annotations/background or extra props. This is one whole authored pose, opaque complete face/skin. Upper body and crate still clearly above the lowest crouched destination, crate bottom remaining above boot ankles.",
+      "output": "authoring-inputs/lift-small5-42.png",
+      "outputSha256": "8bbe8e5b06f91802d3f084a7a829f91caf7b73eb509a8e65dbef93df23400fd3",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-small5-input42.png",
+          "sha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 6,
+      "prompt": "Edit FIRST photo into ONE full body Laborer-with-crate sprite, transparent RGBA. It is the first slight lowering with good fixed feet. SECOND photo gives low floor placement destination only. Make a genuine halfway BODY lowering between them: head elevation halfway from first to second, hips and knees moderately flexed, chest leans forward. In original640-square composition head top should be around145-160px, not220px; crate bottom around535-550px, not600px. This is an intermediate before full crouch, one hand-span of crate clearance remaining above floor. Both boots stay at EXACT FIRST photo positions, scale, directions and texture; leave near boot completely unchanged, far boot may become naturally hidden by lowering crate but never step/reproject it. Keep SAME bald stocky dwarf, same THREE brown brass-bound beard braids, cream sleeves, weathered brown vest/pouch/trousers, camera and lighting. EXACT same one crate from FIRST photo, same dimensions, two face proportions, bracing, iron corner strips and rivets, same orientation. Exactly two hands continuously grip its SAME sides, no release or extra fingers/objects. Smooth intermediate torso/hip/knee/arm articulation, not a copy of the deep crouched second photo. Retain first photo full640composition and transparent margins when output enlarged. No text, diagram, background or extra prop. Feet are fixed while body/crate lower. Entire face/skin opaque.",
+      "output": "authoring-inputs/lift-mid6-42.png",
+      "outputSha256": "1af7d92c65b48fa4df0aacdbbe8964247b8daa681c8e89afd8e77cf11bfa5c4e",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-mid6-reference-0.png",
+          "sha256": "bb36f3c02a2bbbdadbfe32e8190263a14383da84ebc2bfa0edfcbf45ccf0ee74"
+        },
+        {
+          "file": "authoring-inputs/lift-mid6-reference-1.png",
+          "sha256": "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 6,
+      "prompt": "ONE localized upper-body/held-object edit of this exact dwarf sprite. Keep actor face, bald head and three brass-bound beard braids, torso/chest/shoulder elevation, knees, legs, BOTH BOOTS and their ground positions/shape/texture, proportions and camera exactly unchanged. He already has the correct moderately braced lowering stance; do not crouch further or stand up. Simply lower the SAME crate by about ONE QUARTER OF THE CRATE'S OWN HEIGHT, naturally straightening both elbows while TWO hands continuously retain the same side grips. Crate remains at lower knee/shin height, still above floor, for a middle lowering pose. Head/torso and ALL feet stay exactly from first photo; only forearms/hands and the already-held crate move down together. Same one crate dimensions, diagonal braces, iron corner rivets and face proportions, same slight orientation, no shrink, switch, rotation, release or added objects. This is a small arm extension, not a new body stance. Entire one dwarf+crate retained within original proportional640composition if enlarged, true alpha background, opaque complete skin/face, no text/labels/scenery. Never change boot spacing, step, leg shape, image zoom or camera.",
+      "output": "authoring-inputs/lift-mid6d-42.png",
+      "outputSha256": "185083410f94555c4269a90da344896661f3e7396b06ff63c3b40d94c5a71507",
+      "references": [
+        {
+          "file": "authoring-inputs/lift-mid6d-input42.png",
+          "sha256": "6748487daf317ed90461b3e5500b205cb2713d3408728f49adc6cae17ea3418c"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "frame": 4,
+      "prompt": "ONE localized forearm-and-crate edit of the supplied exact dwarf sprite. Keep complete head/face/three brass-bound brown braids, chest/shoulder/hip elevations, bent knees, legs and BOTH BOOTS IDENTICAL to photo, at the same scale, positions, texture, camera and ground footprints. This character keeps a braced stance through the heavy lift; NEVER straighten his knees, stand up, crouch further or reproject feet. Change ONLY elbows/forearms and already-held crate: lift the SAME crate vertically by about HALF OF THE CRATE'S OWN HEIGHT, bending both elbows naturally while TWO hands continuously maintain same side grips. The result is highest waist-level hold. Body/head remain exactly from photo; only load and attached forearms move upward together. Same one crate, rigid dimensions, two face proportions, iron corner strips/rivets and diagonal bracing; no shrink, rotation, tool, release or extra object. Crate motion is small relative to this full canvas. Preserve first photo full640-square proportional composition if enlarged and all transparent margins; true RGBA alpha, opaque complete skin/face, no text or background. This is stationary planted-foot arm work, a braced load stance, not a new body pose or standing image.",
+      "output": "authoring-inputs/lift-braced4-42.png",
+      "outputSha256": "0b64a17046db5f675bef91ac0d56ebd22650262f4bd46bfcbfe5efa7c2d6400c",
+      "references": [
+        {
+          "file": "authoring-inputs/braced-base6-42.png",
+          "sha256": "2ceb90e09c5519dac6c19a6319bf5154d4ff050a3490bfb810f140291cc9553f"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "frame": 5,
+      "prompt": "ONE localized forearm-and-crate edit of the supplied exact dwarf sprite. Keep complete head/face/three brass-bound brown braids, chest/shoulder/hip elevations, bent knees, legs and BOTH BOOTS IDENTICAL to photo, at the same scale, positions, texture, camera and ground footprints. This character keeps a braced stance through the heavy lift; NEVER straighten his knees, stand up, crouch further or reproject feet. Change ONLY elbows/forearms and already-held crate: lift the SAME crate vertically by about ONE QUARTER OF THE CRATE'S OWN HEIGHT, bending both elbows naturally while TWO hands continuously maintain same side grips. The result is middle held height, first controlled lowering after the higher hold. Body/head remain exactly from photo; only load and attached forearms move upward together. Same one crate, rigid dimensions, two face proportions, iron corner strips/rivets and diagonal bracing; no shrink, rotation, tool, release or extra object. Crate motion is small relative to this full canvas. Preserve first photo full640-square proportional composition if enlarged and all transparent margins; true RGBA alpha, opaque complete skin/face, no text or background. This is stationary planted-foot arm work, a braced load stance, not a new body pose or standing image.",
+      "output": "authoring-inputs/lift-braced5-42.png",
+      "outputSha256": "e8ed1d1faa9485f14e09544dbd10378885f0fc6a67cb66bf597308ffed6b2902",
+      "references": [
+        {
+          "file": "authoring-inputs/braced-base6-42.png",
+          "sha256": "2ceb90e09c5519dac6c19a6319bf5154d4ff050a3490bfb810f140291cc9553f"
+        }
+      ],
+      "selected": true
+    }
+  ]
 }

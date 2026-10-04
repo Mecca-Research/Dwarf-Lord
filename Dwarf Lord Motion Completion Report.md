@@ -1,8 +1,18 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: **motion41, 4 October 2026**. **PR #9 is not ready to merge.** Borrin now alternates finite writing and held-coin inspection at his independent ledger desk. Existing reference actions awaiting gameplay activation fall from51 to **50**. The remaining frozen cycle reviews stay at **106**; no walking view or direction family is newly approved.
+Checkpoint: **motion42, 4 October 2026**. **PR #9 is not ready to merge.** The Laborer's stationary crate lift now has a complete lowering sequence and an exact finite-action approval. Remaining frozen cycle reviews fall from106 to **105**. Gameplay activation remains **15 of65**; no walking view or direction family is newly approved.
 
-The frozen scope remains **160 cycles:153 main sequences and seven original independent station actors**. Four derived actors (Blacksmith inspection/repair, Cook paring and Borrin inspection) support existing required actions and have separate exact approvals. They neither enlarge the frozen denominator nor remove unfinished main cycles.
+The frozen scope remains **160 cycles:153 main sequences and seven original independent station actors**. Four derived actors (Blacksmith inspection/repair, Cook paring and Borrin inspection) retain their separate exact approvals. They neither enlarge the frozen denominator nor remove unfinished main cycles.
+
+## Completed in motion42
+
+The Laborer's eight poses raise the same already-gripped crate, reach the highest braced hold at3, lower through4/5/6 and finish at7 with the crate low and both grips retained. New whole-pose edits preserve his bald head, three brass-bound brown beard braids, cream sleeves, leather vest/pouch and stocky build. The earlier abrupt upright-to-deep-crouch recovery is replaced by staged lowering. One common standing590/cap76 registration basis is retained; crouching and tool reach are not independently scaled into a false body-height match.
+
+Both actual visible boot cap/riveted rim regions are measured separately. Near0-7 has minimum correlation0.957366, maximum travel5.593496px and maximum adjacent change5.421399px. Far2-6 has minimum correlation0.991070, maximum travel and adjacent change5.978849px. All retain the original0.94 correlation and6px contact bounds. Bounded whole-figure root corrections are2[-4,-1],3[-1,1],4-6[3,0]; they change no limb or scale. The far boot is hidden in0/1/7 and remains explicitly unmeasured. This is visible cap/rim correspondence, not certification of an invisible heel or moving stride.
+
+The actual shared gallery verifies all eight authored holds and boundaries, completion at7, a10-second unchanged terminal hold and explicit restart. Native eight-pose art and live0/4/7 captures are inspected. Approval binds the exact source, all frames, atlas, registration, timing, material-contact report and current playback implementation. It certifies a finite stationary lift/lower with retained grips; it does not certify a seamless7-to0 repeat, unshown release, crate transfer, economic output, traveling gait or gameplay activation.
+
+Several intermediate authoring attempts changed far-foot spacing or overcorrected the foot and were rejected. No contact threshold was relaxed and no hidden-foot point was invented. Independent barrel-station actor candidates for Ginger and Laborer are still isolated, with mallet approach/contact and placement under review; they close no review or activation gate.
 
 ## Completed in motion41
 
@@ -36,17 +46,17 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 
 ## Exact remaining work
 
-| Gate | Before motion41 | Current | Still required |
+| Gate | Before motion42 | Current | Still required |
 | --- | ---: | ---: | --- |
-| Main cycles with scoped acceptance |47 /153 | **47 /153** |106 |
+| Main cycles with scoped acceptance |47 /153 | **48 /153** |105 |
 | Original independent actors accepted |7 /7 | **7 /7** |0 |
-| Frozen cycle reviews remaining |106 | **106** |63 walk +24 directional tool/carry +19 fixed references |
-| Fixed references accepted |46 /65 | **46 /65** |14 recorded defects +5 further contact/calibration reviews |
+| Frozen cycle reviews remaining |106 | **105** |63 walk +24 directional tool/carry +18 fixed references |
+| Fixed references accepted |46 /65 | **47 /65** |14 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |14 /65 | **15 /65** |50 activations |
+| Existing reference actions active |15 /65 | **15 /65** |50 activations |
 | Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in63 walks |
 
-The47 main acceptances comprise eight scoped loops and39 finite tasks. Including the original seven actors, **54 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
+The48 main acceptances comprise eight scoped loops and40 finite tasks. Including the original seven actors, **55 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
 
 ### Remaining fixed-reference reviews
 
@@ -59,9 +69,9 @@ The47 main acceptances comprise eight scoped loops and39 finite tasks. Including
 | Female Miner |3 /6 |pickaxe-contact; shovel-ore; push-ore-barrow |
 | Helga |4 /6 |shovel-stone; carry-mine-timber |
 | Ginger |6 /11 |stack-firewood; haul-firewood; carry-supplies; load-logs-cart; build-barrel |
-| Laborer |4 /13 |lift-crate; carry-sack; push-stone-barrow; pull-supply-sled; roll-barrel; carry-crate; build-barrel; carry-large-stone-ore; repair-boardwalk |
+| Laborer |5 /13 |carry-sack; push-stone-barrow; pull-supply-sled; roll-barrel; carry-crate; build-barrel; carry-large-stone-ore; repair-boardwalk |
 
-The five further calibration/contact reviews are Laborer lift-crate, carry-sack, pull-supply-sled, roll-barrel and carry-crate. Lift-crate also requires a lower recovery beat. The14 recorded defects require corrected geometry/material state and new exact review evidence; a calibration or loading check is not final acceptance.
+The four further calibration/contact reviews are Laborer carry-sack, pull-supply-sled, roll-barrel and carry-crate. The stationary lift-crate review is closed in motion42. The14 recorded defects require corrected geometry/material state and new exact review evidence; a calibration or loading check is not final acceptance.
 
 ### Existing reference actions awaiting gameplay activation
 
@@ -91,17 +101,17 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 1. Produce and verify the complete Laborer rear-left stride with anatomically correct opposing leg/arm phases and source-bound visible sole observations. Preserve existing correction and contact bounds; reject an unsuitable pose method rather than repeatedly fitting it.
 2. Correct only demonstrated defects in the other walking views and complete their whole-stride/held-frame reviews. Add coordinated Elder cane recovery/plant proof for all eight views.
 3. Correct remaining directional tool/log geometry and full material/grip state, then complete all eleven cross-direction family reviews.
-4. Close the19 remaining fixed-reference reviews, retaining a clear distinction between finite completion and seamless-loop approval.
+4. Close the18 remaining fixed-reference reviews, retaining a clear distinction between finite completion and seamless-loop approval.
 5. Activate the50 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
 6. Recompute the frozen inventory from exact artifacts/dependencies. All160 review obligations, all11 direction families and all65 live reference-action mappings must be current, without missing/stale evidence. Derived additions need their own exact acceptance.
 7. Run full tests, build and actual browser checks on the final committed revision, verify GitHub checks on that exact PR head and confirm no remaining motion/gameplay gate. Only then give an all-green merge recommendation.
 
 ## Validation and evidence
 
-Current local validation: **205 Node tests and70 Python tests pass**, with type checking, Pages build and whitespace checks. The153-sequence/1,224-image gallery passes controls/race/mobile checks. All11 station variants pass approved layered rendering, fixed props, foreground occlusion, held completion and released-crate retention. Two final headed built-game movement captures/state snapshots are inspected for client errors. Prior bounded fixed-reference measurements retain unchanged selected sources; the crate candidate supplies a separate near-foot diagnostic rather than a full acceptance.
+Motion42 local validation: **205 Node tests and70 Python tests pass**, with type checking, Pages build and whitespace checks. Fresh gallery controls load153 sequences/1,224 images. The corrected lift has exact timed eight-pose,10-second terminal hold and explicit-reset proof. Two headed built-game movement captures/state snapshots are inspected without a client-error artifact; runtime and live mappings are unchanged from motion41. The153-sequence/1,224-image gallery passes controls/race/mobile checks. All11 station variants pass approved layered rendering, fixed props, foreground occlusion, held completion and released-crate retention. Two final headed built-game movement captures/state snapshots are inspected for client errors. Prior bounded fixed-reference measurements retain unchanged selected sources; the crate candidate supplies a separate near-foot diagnostic rather than a full acceptance.
 
 Forge, cooking, consultant, original NPC/passive tasks, Elder seated activities and accepted right-view stride have fresh actual-renderer evidence. Runtime-dependent approvals preserve their exact selected art and original scope. The two interrupted concurrent renderer runs and initially terminated forge attempt are documented separately from successful complete reruns. The earlier pre-audit test failures detected stale approval dependencies; the final source-bound revalidation and full suite pass.
 
-Machine-readable results: `docs/motion41-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Current native/game/station captures and immutable runtime audit are under `docs/art-review/motion41/`. Earlier closures and their immutable evidence remain in motion39/motion40 and `progress.md`.
+Machine-readable results: `docs/motion42-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Current crate-lift native/material/timed captures are under `docs/art-review/motion42/`. Unchanged game/station coverage and its immutable runtime audit remain under `docs/art-review/motion41/`. Earlier closures and their immutable evidence remain in motion39/motion40 and `progress.md`.
 
-**Passing local or GitHub checks does not close the106 motion reviews,11 family reviews or50 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**
+**Passing local or GitHub checks does not close the105 motion reviews,11 family reviews or50 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**

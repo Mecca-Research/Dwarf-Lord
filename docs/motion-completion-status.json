@@ -5,7 +5,7 @@
   "mergeBlockers": [
     {
       "gate": "final-cycle-reviews",
-      "remaining": 106
+      "remaining": 105
     },
     {
       "gate": "direction-continuity",
@@ -25,9 +25,9 @@
     "fixedWorkCycles": 65,
     "actorCycles": 7,
     "actorFrames": 56,
-    "mainScopedReviewsApproved": 47,
+    "mainScopedReviewsApproved": 48,
     "actorScopedReviewsApproved": 7,
-    "cycleReviewsRemaining": 106,
+    "cycleReviewsRemaining": 105,
     "directionFamilies": 11,
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
@@ -6978,49 +6978,50 @@
       "destination": "public/sprites/Laborer/motion/lift-crate/reference",
       "id": "Laborer/lift-crate/reference",
       "frameCount": 8,
-      "reviewStatus": "not-reviewed",
-      "scope": null,
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Finite stationary crate lift and complete controlled lowering, same retained two-hand grip, native identity/scale and visible near sole0-7/far sole2-6 only. Hidden heels/occluded far foot, gait, direction family, seamless loop and live activation are excluded.",
       "binding": {
-        "sourceSha256": "947ba76025489dfe54e6a05199b89c51f2bf9eced8b190d1009827d1f62f3f35",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "3b3ef95e8abd969770dac65d452658f1d662e81a9d7cbafe50e2ad471c1e0a94",
+        "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
         "frameSha256": [
-          "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98",
-          "47166d2d3966ebe434eeebae6637cccd8da3c296bae1e980c6d78bb66394bdfd",
-          "e95dd8d8800da654c17936452735e99ae3789dd0828a82c57e849222d497f625",
-          "c394879c4f4df1db14b40cd4cec10fd8ce72f794bcf88f477d0c691bc7f71140",
-          "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7",
-          "8173c1198c001945c5d34aa23d365e383d1115ee0b0c23866d67a715de14542e",
-          "f84fe7d06005d91d3b8c82ab92395194eae5c7afcab88d9697a56cc3e99c5e10",
-          "3ac4bc8c021b75f2a69fe171067ba2d42474194eedd5d9f3b78d2366f17d8349"
+          "c58972e497422972258aff868ff49c2808d2e6d06634317f5d782f2e2e794c78",
+          "109e859efaa631a313cc8c6e2da1078097e983b8e7194d147a7a286a7488f34e",
+          "9a9fe7c8d684fe655c8f92c668f1f2089d2a319fd619484c962df87fcb043e03",
+          "2b6235ec400bd3bf29a6f796d4f8e27598ef6442bf5687f23e85989c1380ef04",
+          "3bb60e7110d17f4d61a9df1858b8d14067ae5953b3b13a25b962ff12d055b39b",
+          "45c184493b459c9d38579282f64a58938815539f3b57c868ed37964eec2ee68d",
+          "f397e30ddc7e103fd2d23479e8304f8bf2ec15048f46d183b75c367a4c7c7f98",
+          "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
         ],
-        "atlasSha256": "6677a1cc2bcaea51d817615b689004867eb8e4c46c82359379633c4cbdcf95b8",
+        "atlasSha256": "5ea56259ec85ba28c2e09f92165999a6208fa99f6b46ad29900d4ab44f23e2d8",
         "registration": {
-          "method": "lower-silhouette-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
-            616
+            574
           ],
-          "targetBodyHeight": null,
-          "scaleScope": "sequence",
+          "targetBodyHeight": 520,
+          "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          160,
+          130,
+          130,
+          130,
+          160,
+          150,
+          150,
+          170
         ],
         "character": "Laborer",
         "action": "lift-crate",
         "direction": "reference"
       },
-      "approvalType": null
+      "approvalType": "once-hold-task"
     },
     {
       "character": "Laborer",

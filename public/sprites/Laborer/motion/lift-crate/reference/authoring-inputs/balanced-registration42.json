@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "before": {
+    "version": 1,
+    "selected": false,
+    "sourceSha256": "ecaffe8a3c93f5b9b02536483ce407e8543b3320dda5948374f1cbfabed664cc",
+    "settingsSha256": "6e2bca0d0f0c40243c9dd3bedf106b669639cbdee84ab766fb155a6397d7a314",
+    "frameSha256": [
+      "c58972e497422972258aff868ff49c2808d2e6d06634317f5d782f2e2e794c78",
+      "109e859efaa631a313cc8c6e2da1078097e983b8e7194d147a7a286a7488f34e",
+      "5633622a9eb2b7b53d586e87dcd102847a21e55b13d1d99738601c24d2da52a0",
+      "3adf5aab9fd75459580b0c0721217b35b75c40651648d2d3957888e1e26ea60d",
+      "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef",
+      "bb36f3c02a2bbbdadbfe32e8190263a14383da84ebc2bfa0edfcbf45ccf0ee74",
+      "1aa5b3e954eaaa62883d4e02bab9ba3793eb7dc73f9cc29d3490549d239405a5",
+      "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
+    ],
+    "minimumCorrelation": 0.94,
+    "maxDriftPx": 6,
+    "regions": [
+      {
+        "name": "near",
+        "box": [
+          166,
+          535,
+          249,
+          585
+        ],
+        "referenceFrame": 0,
+        "results": [
+          {
+            "frame": 0,
+            "correlation": 1.0000005960056428,
+            "translation": [
+              -7.923024902822817e-09,
+              -2.1425502438887634e-07
+            ],
+            "driftPx": 2.144014672467165e-07,
+            "passed": true
+          },
+          {
+            "frame": 1,
+            "correlation": 0.9923217393948556,
+            "translation": [
+              -0.07874258607625961,
+              -0.7353348731994629
+            ],
+            "driftPx": 0.739538848400116,
+            "passed": true
+          },
+          {
+            "frame": 2,
+            "correlation": 0.9813275060373622,
+            "translation": [
+              -1.2785720825195312,
+              -0.06345237791538239
+            ],
+            "driftPx": 1.2801456451416016,
+            "passed": true
+          },
+          {
+            "frame": 3,
+            "correlation": 0.9751402695276511,
+            "translation": [
+              -0.26039397716522217,
+              -0.33062854409217834
+            ],
+            "driftPx": 0.4208565652370453,
+            "passed": true
+          },
+          {
+            "frame": 4,
+            "correlation": 0.9838632476778875,
+            "translation": [
+              -0.2095714509487152,
+              -0.13030797243118286
+            ],
+            "driftPx": 0.24677997827529907,
+            "passed": true
+          },
+          {
+            "frame": 5,
+            "correlation": 0.974485464360084,
+            "translation": [
+              0.5396988391876221,
+              -0.41850727796554565
+            ],
+            "driftPx": 0.682951807975769,
+            "passed": true
+          },
+          {
+            "frame": 6,
+            "correlation": 0.9748071975720881,
+            "translation": [
+              -0.039472244679927826,
+              -0.23916779458522797
+            ],
+            "driftPx": 0.24240316450595856,
+            "passed": true
+          },
+          {
+            "frame": 7,
+            "correlation": 0.9755168212493673,
+            "translation": [
+              -0.048122309148311615,
+              0.9379122853279114
+            ],
+            "driftPx": 0.9391459822654724,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "far",
+        "box": [
+          405,
+          517,
+          469,
+          547
+        ],
+        "referenceFrame": 4,
+        "results": [
+          {
+            "frame": 2,
+            "correlation": 0.987713277213792,
+            "translation": [
+              -6.31078577041626,
+              5.585033893585205
+            ],
+            "driftPx": 8.427254676818848,
+            "passed": false
+          },
+          {
+            "frame": 3,
+            "correlation": 0.9918880845129886,
+            "translation": [
+              -8.260637283325195,
+              1.3806438446044922
+            ],
+            "driftPx": 8.375219345092773,
+            "passed": false
+          },
+          {
+            "frame": 4,
+            "correlation": 1.0000001115335582,
+            "translation": [
+              -2.245511723231175e-07,
+              1.843823724811955e-07
+            ],
+            "driftPx": 2.905513554196659e-07,
+            "passed": true
+          },
+          {
+            "frame": 5,
+            "correlation": 0.9961199210375798,
+            "translation": [
+              -5.1058454513549805,
+              0.8821153044700623
+            ],
+            "driftPx": 5.181484699249268,
+            "passed": true
+          }
+        ],
+        "passed": false
+      }
+    ],
+    "scope": "Visible near cap/rim in0-7 and visible far cap/rim in2-5. Far foot hidden in0/1/6/7 is explicitly unmeasured. No hidden heel or moving gait certification.",
+    "measurementPassed": false
+  },
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      -3
+    ],
+    [
+      4,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "maxCorrectionBoundPx": 12,
+  "contactBoundPx": 6,
+  "method": "Bounded whole-pose translation from both independently visible boot cap/sole material tracks. Reference0 near /4 far. Same uniform source body basis and exact images; no per-limb transform."
+}

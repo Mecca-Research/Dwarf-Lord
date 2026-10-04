@@ -106,7 +106,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Helga | shovel-stone | reference | reviewed-changes-required |
 | Helga | carry-mine-timber | reference | reviewed-changes-required |
 | Helga | bind-tool-handle | reference | scoped-review-approved |
-| Laborer | lift-crate | reference | not-reviewed |
+| Laborer | lift-crate | reference | scoped-review-approved |
 | Laborer | carry-sack | reference | not-reviewed |
 | Laborer | push-stone-barrow | reference | reviewed-changes-required |
 | Laborer | pull-supply-sled | reference | not-reviewed |

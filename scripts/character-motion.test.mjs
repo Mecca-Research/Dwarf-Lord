@@ -95,7 +95,7 @@ test('registered motion stays inside its canvas and preserves authored timing in
    'Female Miner':['examine-sample','repair-pickaxe','pickaxe-ready'],
    Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
    Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log'],
-   Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips'],
+   Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips','lift-crate'],
   };
   const finiteReviewed = entry.direction==='reference' && Boolean(finiteActions[entry.character]?.includes(entry.action));
   assert.equal(Boolean(m.playback.taskApproved),finiteReviewed,entry.destination);

@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "selected": true,
+  "sourceSha256": "3b3ef95e8abd969770dac65d452658f1d662e81a9d7cbafe50e2ad471c1e0a94",
+  "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
+  "frameSha256": [
+    "c58972e497422972258aff868ff49c2808d2e6d06634317f5d782f2e2e794c78",
+    "109e859efaa631a313cc8c6e2da1078097e983b8e7194d147a7a286a7488f34e",
+    "9a9fe7c8d684fe655c8f92c668f1f2089d2a319fd619484c962df87fcb043e03",
+    "2b6235ec400bd3bf29a6f796d4f8e27598ef6442bf5687f23e85989c1380ef04",
+    "3bb60e7110d17f4d61a9df1858b8d14067ae5953b3b13a25b962ff12d055b39b",
+    "45c184493b459c9d38579282f64a58938815539f3b57c868ed37964eec2ee68d",
+    "f397e30ddc7e103fd2d23479e8304f8bf2ec15048f46d183b75c367a4c7c7f98",
+    "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
+  ],
+  "minimumCorrelation": 0.94,
+  "maxDriftPx": 6,
+  "regions": [
+    {
+      "name": "near",
+      "box": [
+        166,
+        535,
+        249,
+        585
+      ],
+      "referenceFrame": 0,
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 1.0000005960056428,
+          "translation": [
+            -7.923024902822817e-09,
+            -2.1425502438887634e-07
+          ],
+          "driftPx": 2.144014672467165e-07,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9923217393948556,
+          "translation": [
+            -0.07874258607625961,
+            -0.7353348731994629
+          ],
+          "driftPx": 0.739538848400116,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9813706766297143,
+          "translation": [
+            -5.486842155456543,
+            -1.0870870351791382
+          ],
+          "driftPx": 5.593495845794678,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9765143138922936,
+          "translation": [
+            -1.2172303199768066,
+            0.6907057166099548
+          ],
+          "driftPx": 1.3995442390441895,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9578030807546377,
+          "translation": [
+            4.114488124847412,
+            -0.29130667448043823
+          ],
+          "driftPx": 4.124787330627441,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9573664469238035,
+          "translation": [
+            4.2368974685668945,
+            -1.4701361656188965
+          ],
+          "driftPx": 4.484707355499268,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.96061582007749,
+          "translation": [
+            4.267782688140869,
+            -0.12046793103218079
+          ],
+          "driftPx": 4.269482612609863,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9755168212493673,
+          "translation": [
+            -0.048122309148311615,
+            0.9379122853279114
+          ],
+          "driftPx": 0.9391459822654724,
+          "passed": true
+        }
+      ],
+      "adjacentChanges": [
+        {
+          "from": 0,
+          "to": 1,
+          "changePx": 0.739538676648593
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "changePx": 5.419526781536242
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "changePx": 4.624946734177863
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "changePx": 5.4213992576763665
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "changePx": 1.1851679275982754
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "changePx": 1.3500215702871396
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "changePx": 4.443782693607796
+        }
+      ],
+      "maxAdjacentChangePx": 5.4213992576763665,
+      "passed": true
+    },
+    {
+      "name": "far",
+      "box": [
+        405,
+        517,
+        469,
+        547
+      ],
+      "referenceFrame": 4,
+      "results": [
+        {
+          "frame": 2,
+          "correlation": 0.9910703402585306,
+          "translation": [
+            5.072294235229492,
+            1.5563020706176758
+          ],
+          "driftPx": 5.305680274963379,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9913722615902202,
+          "translation": [
+            5.931748390197754,
+            -0.7489969730377197
+          ],
+          "driftPx": 5.978848934173584,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9999999882566216,
+          "translation": [
+            -1.9433210596275785e-08,
+            -8.578028953820649e-09
+          ],
+          "driftPx": 2.124222753252525e-08,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.997497243300936,
+          "translation": [
+            2.2130417823791504,
+            -1.6282683610916138
+          ],
+          "driftPx": 2.7475101947784424,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9944688184641383,
+          "translation": [
+            1.7068419456481934,
+            -0.31134626269340515
+          ],
+          "driftPx": 1.7350059747695923,
+          "passed": true
+        }
+      ],
+      "adjacentChanges": [
+        {
+          "from": 2,
+          "to": 3,
+          "changePx": 2.4602977716468977
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "changePx": 5.978849023677492
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "changePx": 2.747510117245468
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "changePx": 1.4108586350006824
+        }
+      ],
+      "maxAdjacentChangePx": 5.978849023677492,
+      "passed": true
+    }
+  ],
+  "scope": "Visible near cap/rim in0-7 and visible far cap/rim in2-6. Far foot hidden in0/1/7 is explicitly unmeasured. No hidden heel or moving gait certification.",
+  "measurementPassed": true,
+  "binding": {
+    "sourceSha256": "3b3ef95e8abd969770dac65d452658f1d662e81a9d7cbafe50e2ad471c1e0a94",
+    "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
+    "frameSha256": [
+      "c58972e497422972258aff868ff49c2808d2e6d06634317f5d782f2e2e794c78",
+      "109e859efaa631a313cc8c6e2da1078097e983b8e7194d147a7a286a7488f34e",
+      "9a9fe7c8d684fe655c8f92c668f1f2089d2a319fd619484c962df87fcb043e03",
+      "2b6235ec400bd3bf29a6f796d4f8e27598ef6442bf5687f23e85989c1380ef04",
+      "3bb60e7110d17f4d61a9df1858b8d14067ae5953b3b13a25b962ff12d055b39b",
+      "45c184493b459c9d38579282f64a58938815539f3b57c868ed37964eec2ee68d",
+      "f397e30ddc7e103fd2d23479e8304f8bf2ec15048f46d183b75c367a4c7c7f98",
+      "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
+    ],
+    "atlasSha256": "5ea56259ec85ba28c2e09f92165999a6208fa99f6b46ad29900d4ab44f23e2d8",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        574
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      130,
+      130,
+      130,
+      160,
+      150,
+      150,
+      170
+    ],
+    "character": "Laborer",
+    "action": "lift-crate",
+    "direction": "reference"
+  }
+}
