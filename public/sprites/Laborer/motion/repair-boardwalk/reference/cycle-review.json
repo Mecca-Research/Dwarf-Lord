@@ -1,59 +1,91 @@
 {
   "version": 1,
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-10-05",
   "verdict": "changes-required",
+  "character": "Laborer",
+  "action": "repair-boardwalk",
   "binding": {
-    "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "sourceSha256": "2643510cc9d6748deb4daa2e4da716dae16fe915c99d7dfb2da26fa69cc1ee40",
+    "settingsSha256": "32411ac1044868a0b3855bd253dc80e89b4394819ebe12abdff75b5a8c4dbb85",
     "frameSha256": [
-      "7e1fb75fc95e1e92230b87c39eb89ebf9671242f9f334b0c9386a951f298a46c",
-      "1b8db8fbcb9f3847db36beaa2314743384d27161288cee7a7f0367561a2f2a50",
-      "344964f9f0b50d050dd104454ceccb342f92bc7b4d9eb0a95a70f724150aed82",
-      "fb8e283af40248b3e83806fbe2508373236fa905f4e691258892ad7f7620d8af",
-      "36727e773a963c05b0fc52d36a2375fb19b316a87d9a72157440ad8bba35497a",
-      "e67ba06c0877e093f7c65ce79c843cf1dff578fa04b5cdbde0f13258bf0bab62",
-      "bb5658f4cdaf853515ebf1ca1202cb4d259e666477313d03331259ba63f40c1a",
-      "7abfb8397475950576f7ba3b0afd3599643c5ba54fbdb89b291a4f025706404e"
+      "d0411a9a3cd13bfbf952c4d27b463c20c738c9a6513f498293e4fa516febbcf2",
+      "a6c8400f41ea34becbe7a48f6f52f59e274861dae3cc008d9af02b20f2181797",
+      "14846ee7795002d21f0c6fd0d4265e982e8e005559e26f1589e64790dfb4323e",
+      "3d725ba6581228b636badd8c6a9013bcdd93349ab5588ccd41b672284c89aba2",
+      "a988a2c8f3299482351f1908dbdc9310f185d320685e8cb2ebe67decd2e29789",
+      "1e35905dcd24cdd9ed272f44feb2c243d2285d7d033aa0bf125feb82e44f0dd1",
+      "3b80439442a73a54505631771624514f5804cd8fd774991e7c113a4472724610",
+      "8bf591c65f83288f18afe41ba23a71a1506ddbb67bcaa5c1cd78bbb29c4a7189"
     ],
-    "atlasSha256": "868aa19f08521817245cdaa5cca634df72d462b209e030770876a1587a2ce6d8",
+    "atlasSha256": "ce2132d40357faf5c577b59600e92bf9a6d228fa932b72dbeff539dabf234d7a",
     "registration": {
-      "method": "lower-silhouette-estimate",
+      "method": "source-landmarks",
       "targetAnchor": [
         320,
         616
       ],
-      "targetBodyHeight": null,
-      "scaleScope": "sequence",
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
       "landmarksVerified": false,
-      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-      "exportVersion": 2
+      "settingsSha256": "32411ac1044868a0b3855bd253dc80e89b4394819ebe12abdff75b5a8c4dbb85",
+      "exportVersion": 2,
+      "stationRegistration": null
     },
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      160,
+      140,
+      140,
+      160,
+      140,
+      100,
+      140,
+      160
     ],
     "character": "Laborer",
     "action": "repair-boardwalk",
     "direction": "reference"
   },
-  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "scope": "Motion45 native eight-pose reference ownership improvements selected. Remaining contact/geometry failures explicitly retain changes-required; neither a finite-task acceptance nor a continuous-loop, moving-foot, independent runtime station, gameplay or economic approval.",
+  "fixed": [
+    "One hammer already held in anatomical right hand in0 and retained through all8 poses and finish7, with no invisible tool pickup or final switch to left hand.",
+    "Authored intermediate descent4 and lower rebound6; left hand remains a distinct brace.",
+    "One independent empty plank prop used identically in all8 composed references, without a spare hammer in the nail box."
+  ],
   "issues": [
-    "Hammer appears at2 after both empty palms brace the board at0/1. At6 the right hand still holds the hammer, but7 the left hand holds it while the right reaches for a nail, with no handoff pose. Need explicit pickup and hand transfer, or keep the right hand owning the hammer in7."
+    "Two independently observed stationary boot regions still exceed the unchanged6px travel/adjacent limits in some held-pose transitions. Posterior correlation falls below.94 at pose3; front rim falls below.94 at6/7. No whole-stride or stationary material acceptance.",
+    "Projected hammer lower face at contact5 reaches approximately8px below the existing visible fastener center. Correct contact geometry together with supports before workstation activation.",
+    "Common590px input body basis is a local sequence estimate; cross-action/direction physical scale and scene-station fit are not verified."
+  ],
+  "reviewedFrames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "dependencies": [
     {
       "file": "review.jpg",
-      "sha256": "d7b91d0be0a5d36bc81108181efa0d7c678e1977870ce1eea69dd459d6e683a1"
+      "sha256": "d920edb2297d829c71b0d4b4fa5615829ad9d3b19e3c0e5558345122bf8ef33f"
     },
     {
-      "file": "../../../../../../docs/art-review/motion38/Laborer-repair-boardwalk-review.json",
-      "sha256": "0ae65cdba8d3a0e8075a88a2bed8f4fa535be7f117663a27a4587930da30df83"
+      "file": "../../../../../../docs/art-review/motion45/Laborer-repair-boardwalk-review.json",
+      "sha256": "a8bf80f9960bb9681a1d687eb02bff94c57797c88bda68d1eeaff03ea18d5f9a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/support-material-measurement.json",
+      "sha256": "17a5533bcf28cb4b82d59f31200174ca06544f7e1760e29ca2f3c7be9661ec92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/support-material-observations.jpg",
+      "sha256": "4e7b2519a49fd3aba18f41400080807bf4e5d04e950928fc2ad57f2fb0c39f80"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/contact-5-close.jpg",
+      "sha256": "066bc99b5644b1cf013d3e3c10dbbee00eb9c8ae7a077798038464276399d406"
     }
   ]
 }

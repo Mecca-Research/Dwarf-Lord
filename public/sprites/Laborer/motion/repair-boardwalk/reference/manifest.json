@@ -7,208 +7,208 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+  "sourceSha256": "2643510cc9d6748deb4daa2e4da716dae16fe915c99d7dfb2da26fa69cc1ee40",
   "sourceSize": [
-    1774,
-    887
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.468982630272953,
+  "sharedScale": 1.0,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "kneel beside loose board",
-      "durationMs": 125,
+      "description": "already-held right hammer low; left palm braces",
+      "durationMs": 160,
       "sourceBounds": [
-        24,
-        130,
-        425,
-        431
+        11,
+        127,
+        629,
+        549
       ],
       "sourceAnchor": [
-        200.5,
-        301
+        309.0,
+        473.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        174
+        11,
+        143
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "align board with left hand",
-      "durationMs": 125,
+      "description": "start hammer lift; same owner",
+      "durationMs": 140,
       "sourceBounds": [
-        467,
-        127,
-        868,
-        431
+        651,
+        114,
+        1269,
+        549
       ],
       "sourceAnchor": [
-        200.5,
-        304
+        309.0,
+        486.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        169
+        11,
+        130
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "position nail",
-      "durationMs": 125,
+      "description": "half-raised hammer",
+      "durationMs": 140,
       "sourceBounds": [
-        911,
-        127,
-        1312,
-        431
+        1291,
+        93,
+        1909,
+        549
       ],
       "sourceAnchor": [
-        200.5,
-        304
+        309.0,
+        507.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        169
+        11,
+        109
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "raise hammer in right hand",
-      "durationMs": 125,
+      "description": "full compact raised hammer",
+      "durationMs": 160,
       "sourceBounds": [
-        1354,
-        28,
-        1755,
-        431
+        1931,
+        4,
+        2549,
+        549
       ],
       "sourceAnchor": [
-        200.5,
-        403
+        309.0,
+        596.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        24
+        11,
+        20
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "strike nail",
-      "durationMs": 125,
+      "description": "authored midway descent",
+      "durationMs": 140,
       "sourceBounds": [
-        24,
-        553,
-        425,
-        872
+        11,
+        758,
+        629,
+        1189
       ],
       "sourceAnchor": [
-        200.5,
-        319
+        309.0,
+        482.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        147
+        11,
+        134
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "rebound",
-      "durationMs": 125,
+      "description": "one low settling contact",
+      "durationMs": 100,
       "sourceBounds": [
-        467,
-        548,
-        868,
-        872
+        651,
+        768,
+        1269,
+        1189
       ],
       "sourceAnchor": [
-        200.5,
-        324
+        309.0,
+        472.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        140
+        11,
+        144
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "check board",
-      "durationMs": 125,
+      "description": "small rebound; right grip retained",
+      "durationMs": 140,
       "sourceBounds": [
-        911,
-        567,
-        1312,
-        872
+        1291,
+        762,
+        1909,
+        1189
       ],
       "sourceAnchor": [
-        200.5,
-        305
+        309.0,
+        478.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        168
+        11,
+        138
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "ready next nail",
-      "durationMs": 125,
+      "description": "settled low right-hand finish",
+      "durationMs": 160,
       "sourceBounds": [
-        1355,
-        526,
-        1755,
-        872
+        1931,
+        766,
+        2549,
+        1189
       ],
       "sourceAnchor": [
-        200.0,
-        346
+        309.0,
+        474.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        26,
-        108
+        11,
+        142
       ]
     }
   ],
@@ -243,46 +243,34 @@
       7
     ],
     "fps": 8,
-    "durationMs": 1000,
+    "durationMs": 1140,
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      160,
+      140,
+      140,
+      160,
+      140,
+      100,
+      140,
+      160
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
   },
   "registration": {
-    "method": "lower-silhouette-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
     ],
-    "targetBodyHeight": null,
-    "scaleScope": "sequence",
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "32411ac1044868a0b3855bd253dc80e89b4394819ebe12abdff75b5a8c4dbb85",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
-  }
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
 }

@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Laborer",
+  "action": "repair-boardwalk",
+  "title": "Repair boardwalk",
+  "direction": "actor",
+  "kind": "new-work",
+  "reference": "../../../../../../../../../../public/sprites/Laborer/animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "ece57b3a9d7b209e5b82eb9946640848a21369d1713c61d4a84ea69382205908",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "already-held right hammer low; left palm braces",
+      "durationMs": 160,
+      "sourceBounds": [
+        139,
+        353,
+        475,
+        608
+      ],
+      "sourceAnchor": [
+        181.0,
+        247.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        206,
+        143
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "start hammer lift; same owner",
+      "durationMs": 140,
+      "sourceBounds": [
+        772,
+        340,
+        1121,
+        605
+      ],
+      "sourceAnchor": [
+        188.0,
+        260.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        198,
+        130
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "half-raised hammer",
+      "durationMs": 140,
+      "sourceBounds": [
+        1414,
+        320,
+        1750,
+        605
+      ],
+      "sourceAnchor": [
+        186.0,
+        280.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        201,
+        109
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "full compact raised hammer",
+      "durationMs": 160,
+      "sourceBounds": [
+        2064,
+        235,
+        2378,
+        604
+      ],
+      "sourceAnchor": [
+        176.0,
+        365.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        211,
+        20
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "authored midway descent",
+      "durationMs": 140,
+      "sourceBounds": [
+        136,
+        984,
+        478,
+        1247
+      ],
+      "sourceAnchor": [
+        184.0,
+        256.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        203,
+        134
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "one low settling contact",
+      "durationMs": 100,
+      "sourceBounds": [
+        773,
+        994,
+        1119,
+        1251
+      ],
+      "sourceAnchor": [
+        187.0,
+        246.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        200,
+        144
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "small rebound; right grip retained",
+      "durationMs": 140,
+      "sourceBounds": [
+        1411,
+        988,
+        1756,
+        1247
+      ],
+      "sourceAnchor": [
+        189.0,
+        252.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        197,
+        138
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "settled low right-hand finish",
+      "durationMs": 160,
+      "sourceBounds": [
+        2055,
+        992,
+        2398,
+        1250
+      ],
+      "sourceAnchor": [
+        185.0,
+        248.0
+      ],
+      "groundAnchor": [
+        394,
+        400
+      ],
+      "placement": [
+        202,
+        142
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1140,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      160,
+      140,
+      100,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      394,
+      400
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "3dc8c5e3255c9a019fc59fa92ddc6f8dff7a4d930c7f56f062445bdc0b943eb3",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

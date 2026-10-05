@@ -7709,42 +7709,43 @@
       "id": "Ginger/stack-firewood/reference",
       "frameCount": 8,
       "reviewStatus": "reviewed-changes-required",
-      "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+      "scope": "Motion45 native eight-pose reference ownership improvements selected. Remaining contact/geometry failures explicitly retain changes-required; neither a finite-task acceptance nor a continuous-loop, moving-foot, independent runtime station, gameplay or economic approval.",
       "binding": {
-        "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "bc5cb7efe3adce0f3908784a8b8582927171513d63f97a546ab864fb533e1cc4",
+        "settingsSha256": "2555f6371a20a29d9ac24decdc43d139245c1ff3afff8bf88f203db1725dfd8c",
         "frameSha256": [
-          "a5a7a4be94291549f8d0a9f5da247afc22c20a908c4353bc641fb650226bb551",
-          "46b4e15ecd5f25802b80d7f814c55f5527c696434bf8cc8d77ec3fda79ddcf5a",
-          "aa8e1c19b52066f2725c30a4555d498737f584673e68ff2fc78bdcdeeeb8439a",
-          "609ba0cc61e61db42557cf21f27ac0f56a2d505c8e7e557fbf08c62ba788f449",
-          "971d875a3252428ece101e2a8e53ca48e837b6f0445b06d29c5e1226c7c711cc",
-          "ae325c657b90d6b0385143d03e652372a0cbb3cd44123557a007cfed9f58eec4",
-          "79ef43d6850b6ab7f0aa2ad19eb8413d72d1f2f0497a49a5d3bd3a4de9349b56",
-          "d23b67707d096dc77616efb70cff9f79a6a8d52653cd0caadfb5c1361bad39ff"
+          "18dc6d6c64cc3f46f17f1530b66577ce0b1d2a8a205117e4ff010a95e31dee70",
+          "cfabfc2b4f28b87931c61c684cae2f432bfe5aff41a7564a1b9f5970d588603f",
+          "033270a0d18a5d3265311dffac79275e5beae779b1bd4bd108163dbf3b2c1eb7",
+          "bdbe754b10566a7fa3a3741201e4dee8feaacaacfff01f70f2de2fcbef39c46d",
+          "89c6c95d76c557cc426a9425e31dce13d64e7889e7c3f3c03daff33bd8a5fc91",
+          "0aa23402e63c0e8f4180a4afa68e8789d700a56a51a1387e70eb914ebf1b9a37",
+          "2c4f8d0dbbe8ddaef89adf364243a58b733a133a5d49f66283f141596b405f16",
+          "fad15a75b263ea80e3dd2bb3872ac4e7326f5cc1ad2de44b2623a77d8cb456eb"
         ],
-        "atlasSha256": "c49565b6b61b5a4d2114f277d1fc5b5bb01c082e2888cf7f3bcee4992e75da60",
+        "atlasSha256": "6695a7a873cba83c222d7d959c3a1e5689e12036f0b7da469368a2fcce688fb6",
         "registration": {
-          "method": "lower-silhouette-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
             616
           ],
-          "targetBodyHeight": null,
-          "scaleScope": "sequence",
+          "targetBodyHeight": 592,
+          "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "2555f6371a20a29d9ac24decdc43d139245c1ff3afff8bf88f203db1725dfd8c",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          160,
+          140,
+          140,
+          140,
+          160,
+          140,
+          140,
+          180
         ],
         "character": "Ginger",
         "action": "stack-firewood",
@@ -7752,7 +7753,8 @@
       },
       "approvalType": null,
       "issues": [
-        "Placed log at4-6 is lifted back out7. The final held state loses its delivered log and repeats the held-log initial state; need empty hands and a retained added log, or explicit separate removal task."
+        "Final pose7 retains delivered log and empty hands, but the painted rack front-base region changes relative to both planted boots. Measured whole-prop displacement reaches17.647px with current fixed source registration, above the unchanged12px correction bound. A whole-pose shift cannot simultaneously correct the rack and both foot locations.",
+        "Visible boot-region translations are below6px in this selected equal-cell export, but correlations below.94 do not establish automatic material correspondence. Native/source inspection and proper sole correspondence remain required; no planted-foot approval is claimed."
       ]
     },
     {
@@ -9561,42 +9563,43 @@
       "id": "Laborer/repair-boardwalk/reference",
       "frameCount": 8,
       "reviewStatus": "reviewed-changes-required",
-      "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+      "scope": "Motion45 native eight-pose reference ownership improvements selected. Remaining contact/geometry failures explicitly retain changes-required; neither a finite-task acceptance nor a continuous-loop, moving-foot, independent runtime station, gameplay or economic approval.",
       "binding": {
-        "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "2643510cc9d6748deb4daa2e4da716dae16fe915c99d7dfb2da26fa69cc1ee40",
+        "settingsSha256": "32411ac1044868a0b3855bd253dc80e89b4394819ebe12abdff75b5a8c4dbb85",
         "frameSha256": [
-          "7e1fb75fc95e1e92230b87c39eb89ebf9671242f9f334b0c9386a951f298a46c",
-          "1b8db8fbcb9f3847db36beaa2314743384d27161288cee7a7f0367561a2f2a50",
-          "344964f9f0b50d050dd104454ceccb342f92bc7b4d9eb0a95a70f724150aed82",
-          "fb8e283af40248b3e83806fbe2508373236fa905f4e691258892ad7f7620d8af",
-          "36727e773a963c05b0fc52d36a2375fb19b316a87d9a72157440ad8bba35497a",
-          "e67ba06c0877e093f7c65ce79c843cf1dff578fa04b5cdbde0f13258bf0bab62",
-          "bb5658f4cdaf853515ebf1ca1202cb4d259e666477313d03331259ba63f40c1a",
-          "7abfb8397475950576f7ba3b0afd3599643c5ba54fbdb89b291a4f025706404e"
+          "d0411a9a3cd13bfbf952c4d27b463c20c738c9a6513f498293e4fa516febbcf2",
+          "a6c8400f41ea34becbe7a48f6f52f59e274861dae3cc008d9af02b20f2181797",
+          "14846ee7795002d21f0c6fd0d4265e982e8e005559e26f1589e64790dfb4323e",
+          "3d725ba6581228b636badd8c6a9013bcdd93349ab5588ccd41b672284c89aba2",
+          "a988a2c8f3299482351f1908dbdc9310f185d320685e8cb2ebe67decd2e29789",
+          "1e35905dcd24cdd9ed272f44feb2c243d2285d7d033aa0bf125feb82e44f0dd1",
+          "3b80439442a73a54505631771624514f5804cd8fd774991e7c113a4472724610",
+          "8bf591c65f83288f18afe41ba23a71a1506ddbb67bcaa5c1cd78bbb29c4a7189"
         ],
-        "atlasSha256": "868aa19f08521817245cdaa5cca634df72d462b209e030770876a1587a2ce6d8",
+        "atlasSha256": "ce2132d40357faf5c577b59600e92bf9a6d228fa932b72dbeff539dabf234d7a",
         "registration": {
-          "method": "lower-silhouette-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
             616
           ],
-          "targetBodyHeight": null,
-          "scaleScope": "sequence",
+          "targetBodyHeight": 520,
+          "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "32411ac1044868a0b3855bd253dc80e89b4394819ebe12abdff75b5a8c4dbb85",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          160,
+          140,
+          140,
+          160,
+          140,
+          100,
+          140,
+          160
         ],
         "character": "Laborer",
         "action": "repair-boardwalk",
@@ -9604,7 +9607,9 @@
       },
       "approvalType": null,
       "issues": [
-        "Hammer appears at2 after both empty palms brace the board at0/1. At6 the right hand still holds the hammer, but7 the left hand holds it while the right reaches for a nail, with no handoff pose. Need explicit pickup and hand transfer, or keep the right hand owning the hammer in7."
+        "Two independently observed stationary boot regions still exceed the unchanged6px travel/adjacent limits in some held-pose transitions. Posterior correlation falls below.94 at pose3; front rim falls below.94 at6/7. No whole-stride or stationary material acceptance.",
+        "Projected hammer lower face at contact5 reaches approximately8px below the existing visible fastener center. Correct contact geometry together with supports before workstation activation.",
+        "Common590px input body basis is a local sequence estimate; cross-action/direction physical scale and scene-station fit are not verified."
       ]
     },
     {
