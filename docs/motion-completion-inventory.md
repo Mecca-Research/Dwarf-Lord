@@ -193,7 +193,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Blacksmith | hammer-raised |
 | Blacksmith | file-tool-edge |
 | Borrin | turn-ledger-page |
-| Borrin | stamp-paperwork |
 | Cook | knead-dough |
 | Cook | stir-cauldron |
 | Cook | mix-ingredients |

@@ -88,7 +88,7 @@
     },
     {
       "file": "../../render-calibration.json",
-      "sha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989"
+      "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
     },
     {
       "file": "../../../../workstations/ledger-desk/source.png",
@@ -96,15 +96,15 @@
     },
     {
       "file": "../../../../workstations/ledger-desk/sprite.png",
-      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+      "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
     },
     {
       "file": "../../../../workstations/ledger-desk/generation.json",
-      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+      "sha256": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3"
     },
     {
       "file": "../../../../../../scripts/consultant-work-check.mjs",
-      "sha256": "cf7b9d1e29293c0e9df8412ce433ff3a1934d354ed0ca04dd30e766c978651e8"
+      "sha256": "0f4523540a68a6b2bc790318efa50e57d61a3985a73e4cb9de24284a3a09d095"
     },
     {
       "file": "../../../../../../scripts/workstation-review-check.mjs",
@@ -128,7 +128,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
+      "sha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836"
     },
     {
       "file": "../../../../../../src/game/world/terrain.tsx",
@@ -225,6 +225,34 @@
     {
       "file": "../../../../../../docs/art-review/motion44/Borrin-stationary-boot-probe.py",
       "sha256": "0893bf68cd807be0d5975db94faf7d0f8ac7d70855c03f244f18dfbe7ce5ccaf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
+      "sha256": "fe51d864edab2c2a1448f7c3cee16a14e41d92d1de31876f742f87db2030e1db"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/consultant-gameplay.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/station-layer-authoring-results.json",
+      "sha256": "a6915a5cece89a8c092546dc2e8309f95d214264175c4973810295aec40a5885"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/Borrin-retained-ledger-contact.json",
+      "sha256": "bec7a38929ea36a5ab0329c6bdb2f39833106f0f5eea0e70d347a1c0ea2b935d"
     }
-  ]
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion46",
+    "files": [
+      "public/sprites/Borrin/motion/render-calibration.json",
+      "public/sprites/workstations/ledger-desk/sprite.png",
+      "public/sprites/workstations/ledger-desk/generation.json",
+      "scripts/consultant-work-check.mjs",
+      "src/game/world/work-activities.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
+    "scope": "Exact existing limited acceptance after one additive finite consultant action and independent receipt. Five fresh consultant actions/current layers and unchanged source/runtime audit."
+  }
 }

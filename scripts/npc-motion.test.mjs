@@ -294,9 +294,9 @@ test('smith inspection and repair retain their calibrated station operation unti
  }finally{driver.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 
-test('Borrin completes four finite consultant activities without a production assignment', async () => {
+test('Borrin completes five finite consultant activities without a production assignment', async () => {
   const saved={fetch:globalThis.fetch,location:globalThis.location,document:globalThis.document,createImageBitmap:globalThis.createImageBitmap};
-  const manifests=Object.fromEntries(['desk-writing','count-coins','review-open-ledger','explain-at-desk'].map(action=>[action,JSON.parse(readFileSync(`public/sprites/Borrin/motion/${action}/actor/manifest.json`,'utf8'))]));
+  const manifests=Object.fromEntries(['desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork'].map(action=>[action,JSON.parse(readFileSync(`public/sprites/Borrin/motion/${action}/actor/manifest.json`,'utf8'))]));
   const calibration=JSON.parse(readFileSync('public/sprites/Borrin/motion/render-calibration.json','utf8'));
   globalThis.location={href:'https://motion.test/'};
   globalThis.document={createElement:()=>({width:0,height:0,getContext:()=>({drawImage(){}})})};
@@ -321,7 +321,7 @@ test('Borrin completes four finite consultant activities without a production as
     assert.equal(completed.completed,true);assert.equal(completed.completions,1);
     update(100,2);assert.deepEqual(npcWorkDiagnostics.get('borrin-consultant-test'),completed,'coin inspection stays finished without minting another action');
     assert.equal(worker.update(body,'forge',2,false,0,1.95),null,'production assignment cannot activate consultant motion');
-    for(const [day,action] of [[3,'review-open-ledger'],[4,'explain-at-desk']]){
+    for(const [day,action] of [[3,'review-open-ledger'],[4,'explain-at-desk'],[5,'stamp-paperwork']]){
       await ready(day);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').action,action);
       for(let frame=0;frame<8;frame++){
         assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').frame,frame);
@@ -331,7 +331,7 @@ test('Borrin completes four finite consultant activities without a production as
       assert.equal(held.completed,true);assert.equal(held.completions,1);
       update(100,day);assert.deepEqual(npcWorkDiagnostics.get('borrin-consultant-test'),held,'completed consultant operation stays held');
     }
-    await ready(5);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').action,'desk-writing','the next four-day sequence restarts with writing');
+    await ready(6);assert.equal(npcWorkDiagnostics.get('borrin-consultant-test').action,'desk-writing','the next five-day sequence restarts with writing');
   }finally{worker.dispose();for(const[k,v]of Object.entries(saved)){if(v===undefined)delete globalThis[k];else globalThis[k]=v;}}
 });
 

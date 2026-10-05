@@ -39,9 +39,9 @@ export function timberWorkAction(day: number) {
 }
 
 /** The consultant performs one finite desk activity for the entire day.
- * Writing, coin inspection, entry review and explanation remain cosmetic.
+ * Writing, coin inspection, entry review, explanation and sealing remain cosmetic.
  */
-export const consultantWorkActions = ["desk-writing", "count-coins", "review-open-ledger", "explain-at-desk"] as const;
+export const consultantWorkActions = ["desk-writing", "count-coins", "review-open-ledger", "explain-at-desk", "stamp-paperwork"] as const;
 
 export function consultantWorkAction(day: number) {
   if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");

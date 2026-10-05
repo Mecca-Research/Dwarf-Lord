@@ -60,7 +60,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
+      "sha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836"
     },
     {
       "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
@@ -205,14 +205,30 @@
     {
       "file": "../../../../../../docs/art-review/motion44/station-layer-authoring-results.json",
       "sha256": "35b9bf5f36cbc8439fa53b550d408d28173625f4e6aec90ee5e10a6eba188ae8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
+      "sha256": "fe51d864edab2c2a1448f7c3cee16a14e41d92d1de31876f742f87db2030e1db"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/consultant-gameplay.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/station-layer-authoring-results.json",
+      "sha256": "a6915a5cece89a8c092546dc2e8309f95d214264175c4973810295aec40a5885"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/Borrin-retained-ledger-contact.json",
+      "sha256": "bec7a38929ea36a5ab0329c6bdb2f39833106f0f5eea0e70d347a1c0ea2b935d"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion44",
+    "checkpoint": "motion46",
     "files": [
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
-    "scope": "Exact previous selected art and limited acceptance; additive consultant source diff and current actual-renderer regression."
+    "audit": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
+    "scope": "Exact existing limited acceptance after one additive finite consultant action and independent receipt. Five fresh consultant actions/current layers and unchanged source/runtime audit."
   }
 }

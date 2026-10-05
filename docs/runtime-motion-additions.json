@@ -162,6 +162,29 @@
       "status": "exported",
       "destination": "public/sprites/Borrin/motion/explain-at-desk/actor",
       "station": "ledger-desk"
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "title": "Stamp paperwork",
+      "reference": "public/sprites/Borrin/work-references/05-stamp-paperwork.png",
+      "beats": [
+        "stamp already held just above entry",
+        "begin a modest lift",
+        "stamp at modest apex",
+        "controlled midpoint descent",
+        "base contacts entry",
+        "gentle retained-grip press",
+        "lift stamp clear",
+        "finished retained-stamp hold"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "One finite cosmetic administrative seal press; actor owns one stamp and chair/body; original independent desk owns its book and paper. No minting, economic change, unseen ink mark or seamless repeat claim.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/stamp-paperwork/actor",
+      "station": "ledger-desk"
     }
   ]
 }

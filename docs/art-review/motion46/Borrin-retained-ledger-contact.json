@@ -1,0 +1,344 @@
+[
+  {
+    "version": 1,
+    "config": {
+      "actor": "public/sprites/Borrin/motion/review-open-ledger/actor",
+      "binding": {
+        "sourceSha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a",
+        "settingsSha256": "c07ca616bbca01e6a7d1f3054338b1c789a81327acba124f25233a06279eb0e6",
+        "frameSha256": [
+          "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e",
+          "c808ba8266b0066006fb6071c1d21c5ee5df8e04034a76648e0cc742ab39d11d",
+          "476252650bb5d38c8489184b49f455c4dacb3866a4213d337d9b5577f9edb213",
+          "09dbff3db0d998a9ce360d81984e1eb8546f9e5993514e32c573fd6dcfabceb9",
+          "68e0c58ab32f4be4474c6e8b5c4b6bf7bf190402def5815a42677e1ef38b8549",
+          "02165e5eac3557ab43b00529e76788594abb5865ac4ac8c357bbde3961c1710e",
+          "8cc5bafe5bb39b69a82ddb57f07d9bf9291293f82eb549d98a09810d2c29df02",
+          "d197c064ec7c42ab2d038af8e12582da37b507fe8a5b519c5dfe31ca984146df"
+        ],
+        "durationsMs": [
+          160,
+          140,
+          140,
+          160,
+          160,
+          140,
+          140,
+          160
+        ]
+      },
+      "dependencies": [
+        {
+          "file": "public/sprites/workstations/ledger-desk/sprite.png",
+          "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+        },
+        {
+          "file": "public/sprites/Borrin/motion/render-calibration.json",
+          "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+        }
+      ],
+      "workingFacePolygon": [
+        [
+          144,
+          339
+        ],
+        [
+          199,
+          284
+        ],
+        [
+          280,
+          287
+        ],
+        [
+          402,
+          308
+        ],
+        [
+          383,
+          361
+        ],
+        [
+          259,
+          350
+        ]
+      ],
+      "points": [
+        [
+          247,
+          341
+        ],
+        [
+          248,
+          340
+        ],
+        [
+          253,
+          345
+        ],
+        [
+          265,
+          351
+        ],
+        [
+          250,
+          350
+        ],
+        [
+          250,
+          349
+        ],
+        [
+          252,
+          349
+        ],
+        [
+          252,
+          352
+        ]
+      ],
+      "scope": "Projected source-visible pointing finger near the open ledger entry: tip in review, directly inspected index-pad flesh in explanation. This measures silhouette placement, not 3D contact force. Fixed book/page pixels and source-pixel hand occlusion reviewed separately. No page turn, writing/coin or moving gait approval."
+    },
+    "samples": [
+      {
+        "frame": 0,
+        "point": [
+          247.0,
+          341.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 1,
+        "point": [
+          248.0,
+          340.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 2,
+        "point": [
+          253.0,
+          345.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 3,
+        "point": [
+          265.0,
+          351.0
+        ],
+        "outsideWorkingFacePx": 0.466
+      },
+      {
+        "frame": 4,
+        "point": [
+          250.0,
+          350.0
+        ],
+        "outsideWorkingFacePx": 0.857
+      },
+      {
+        "frame": 5,
+        "point": [
+          250.0,
+          349.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 6,
+        "point": [
+          252.0,
+          349.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 7,
+        "point": [
+          252.0,
+          352.0
+        ],
+        "outsideWorkingFacePx": 2.657
+      }
+    ],
+    "maxOutsideWorkingFacePx": 2.657,
+    "lastToFirstToolTravelPx": 12.083,
+    "scope": "Projected source-visible pointing finger near the open ledger entry: tip in review, directly inspected index-pad flesh in explanation. This measures silhouette placement, not 3D contact force. Fixed book/page pixels and source-pixel hand occlusion reviewed separately. No page turn, writing/coin or moving gait approval.",
+    "approval": false
+  },
+  {
+    "version": 1,
+    "config": {
+      "actor": "public/sprites/Borrin/motion/explain-at-desk/actor",
+      "binding": {
+        "sourceSha256": "097f47aef963216e272cf6a94e46de2c3e2c99a88ba273acc2cd07169174a4ba",
+        "settingsSha256": "a83de1adcb4ac380a2ce05edf8e5570148a84a1b9a00e92d925d4c3891adc468",
+        "frameSha256": [
+          "369b49365f3919da60bc1a7af0aa03ec2b1737e12b18023817d4eca4c93034cc",
+          "fd0a040a478236a8d648e21273e381b40fc25ad4991c4c9dbdf790b28da21aee",
+          "048b97f29a6a9fb11ed5319e6d787acbea0c50b7b05dc2c32d657afc0b6bcc43",
+          "e254be8d11f4d75882abcb201e1e886a90761db7e73b08cf04e659b72a0e15ae",
+          "2c919cfa79b343219408d5ccf8c60653e89fe2f469be627ac3307696d98e9123",
+          "95df6ef561341b71caa52b79daa080e328529272b4f9752bd841b2af154f2931",
+          "c4c7943b9f6d451ad398c8c045b89618b4859dec2852b3bf157e9207d7e7c94c",
+          "bf4f666957aca08545588a91cd2806edac8bdb04716818984899decc3a6c13b6"
+        ],
+        "durationsMs": [
+          160,
+          140,
+          140,
+          160,
+          160,
+          140,
+          140,
+          160
+        ]
+      },
+      "dependencies": [
+        {
+          "file": "public/sprites/workstations/ledger-desk/sprite.png",
+          "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+        },
+        {
+          "file": "public/sprites/Borrin/motion/render-calibration.json",
+          "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+        }
+      ],
+      "workingFacePolygon": [
+        [
+          144,
+          339
+        ],
+        [
+          199,
+          284
+        ],
+        [
+          280,
+          287
+        ],
+        [
+          402,
+          308
+        ],
+        [
+          383,
+          361
+        ],
+        [
+          259,
+          350
+        ]
+      ],
+      "points": [
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ],
+        [
+          296,
+          344
+        ]
+      ],
+      "scope": "Projected source-visible pointing finger near the open ledger entry: tip in review, directly inspected index-pad flesh in explanation. This measures silhouette placement, not 3D contact force. Fixed book/page pixels and source-pixel hand occlusion reviewed separately. No page turn, writing/coin or moving gait approval."
+    },
+    "samples": [
+      {
+        "frame": 0,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 1,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 2,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 3,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 4,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 5,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 6,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      },
+      {
+        "frame": 7,
+        "point": [
+          296.0,
+          344.0
+        ],
+        "outsideWorkingFacePx": 0
+      }
+    ],
+    "maxOutsideWorkingFacePx": 0,
+    "lastToFirstToolTravelPx": 0.0,
+    "scope": "Projected source-visible pointing finger near the open ledger entry: tip in review, directly inspected index-pad flesh in explanation. This measures silhouette placement, not 3D contact force. Fixed book/page pixels and source-pixel hand occlusion reviewed separately. No page turn, writing/coin or moving gait approval.",
+    "approval": false
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "708a1a7bbf8f2c602da2d39360d618c8e2c563d23b7b1bd9a0b141bb258cc8c0",
+    "settingsSha256": "e7a106bfea8c091b1d9dc7745cb6fcee4fa18e9c5faa17bdf9ba68514df4759b",
+    "frameSha256": [
+      "77b3bfd387916abb58afe405ba250ef39c605612c64be4b3e9fbb6e24b94d157",
+      "c345a45149e103effa05df1ec6c6e8df2c8bcafada2488299d938f1a0a8ff2fa",
+      "ee55fec9d0cd94fce3bf47420d70c59feea0821e59e0e29a08d82eed1f5d6022",
+      "95efbdd766640fbe6a2c0a43e339619c29bc03495ecafad3e86d2f6ebfc2c7ea",
+      "1cdf7534bc5f9cbcc9f609641d738b0c3eca2e38f87bde56dd02b65b37529d79",
+      "adc1de57f4a1189d2ce2728afb905dda07da81296f03ddfd765d6c9b9cdb8eeb",
+      "24ca1925d7ea02ab87752fc0cae8c721cefaa8a2a05e5e8111ce148c7fd081ca",
+      "4d8e53f6c56e12e1be2c1763d7898ff054f51dd41652b9485555ca8998d0d574"
+    ],
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      160,
+      160,
+      140,
+      160
+    ]
+  },
+  "dependencies": [
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/sprite.png",
+      "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/receipt.png",
+      "sha256": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/generation.json",
+      "sha256": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3"
+    }
+  ],
+  "pressFrames": [
+    4,
+    5
+  ],
+  "samples": [
+    {
+      "frame": 4,
+      "point": [
+        282,
+        366
+      ],
+      "landmark": "Native visible brass front-rim material; no shadow, belt or hidden base point",
+      "sourceRgba": [
+        252,
+        188,
+        85,
+        253
+      ],
+      "receiptRgba": [
+        223,
+        196,
+        150,
+        253
+      ],
+      "foregroundOwned": true,
+      "projectedPaperContact": true
+    },
+    {
+      "frame": 5,
+      "point": [
+        283,
+        368
+      ],
+      "landmark": "Native visible brass front-rim material; no shadow, belt or hidden base point",
+      "sourceRgba": [
+        201,
+        117,
+        32,
+        253
+      ],
+      "receiptRgba": [
+        216,
+        188,
+        141,
+        253
+      ],
+      "foregroundOwned": true,
+      "projectedPaperContact": true
+    }
+  ],
+  "pressMaterialTravelPx": 2.23606797749979,
+  "maxContactChangePx": 6,
+  "measurementPassed": true,
+  "scope": "Projected native visible brass rim/paper placement for the two actual press poses only. Other poses are airborne preparation/recovery/held finish and do not claim planted tool contact. No3D contact force, invisible underside, ink-mark state, paper transfer or continuous-loop certification.",
+  "approval": false
+}

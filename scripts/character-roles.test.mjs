@@ -86,7 +86,7 @@ test('Borrin has a persistent consultation desk without becoming a production wo
  assert.deepEqual(site.target,{targetX:borrin.x,targetZ:borrin.z});
  assert.equal(stations.activeWorkstation('borrin',null,false,false),undefined);
   assert.equal(stations.activeWorkstation('borrin','forge',true,false),undefined);
-  for(const [day,action] of [[1,'desk-writing'],[2,'count-coins'],[3,'review-open-ledger'],[4,'explain-at-desk'],[5,'desk-writing']]) {
+  for(const [day,action] of [[1,'desk-writing'],[2,'count-coins'],[3,'review-open-ledger'],[4,'explain-at-desk'],[5,'stamp-paperwork'],[6,'desk-writing']]) {
     assert.equal(activities.consultantWorkAction(day),action);
     assert.equal(stations.activeWorkstation('borrin',null,true,true,day).id,'ledger-desk');
   }
