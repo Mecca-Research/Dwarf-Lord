@@ -1,8 +1,20 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: **motion46, 5 October 2026**. **PR #9 is not ready to merge.** Borrin now performs one finite paperwork-stamping task at his independently owned desk, with eight distinct authored poses, verified visible boot material and a retained brass stamp pressing an independent receipt. No walking, directional family or additional frozen cycle approval is claimed.
+Checkpoint: **motion47, 5 October 2026**. **PR #9 is not ready to merge.** The Blacksmith now has an independently reviewed left-facing eight-pose walk, including opposite-leg passing phases, counter-arms, original-bound whole-stride sole calibration and three complete strides in the shipped game. This closes one individual walking-view review; no direction-family, moving cane or gameplay activation is inferred.
 
-The frozen scope remains **160 cycles: 153 main sequences and seven original independent station actors**. **49 main cycles and all seven original actors have scoped acceptance; 104 reviews remain.** Eight derived actors have separate finite task approvals outside that denominator. **19 of 65 reference actions are active; 46 remain inactive.** The 15 approved actor/station variants use 10 physical runtime props. The authored firewood-rack asset remains inactive and unapproved.
+The frozen scope remains **160 cycles: 153 main sequences and seven original independent station actors**. **50 main cycles and all seven original actors have scoped acceptance;103 reviews remain.** Eight derived actors have separate finite task approvals outside that denominator. **19 of65 reference actions are active;46 remain inactive.** The15 approved actor/station variants use10 physical runtime props. The authored firewood-rack asset remains inactive and unapproved.
+
+## Completed in motion47
+
+**Blacksmith left now alternates the two supporting legs.** Eight distinct full-body authored poses replace the old unreviewed walk. Opposed knees and raised passing boots in2/6, a compact full-body push-off in3 and the extended trailing support in0 correct the demonstrated phase and return defects. The arms oppose the legs and pass near neutral in2/6. Seven original full-strip authoring steps, their exact ordered prompts/references, a separate diagnostic guide and the previous selected asset are preserved. No limb painting, warp, pixel mirror, per-pose scale or synthetic in-between is used.
+
+**Actual lower sole material is calibrated at every handoff.** Native posterior bottom heel corners cover0-to1 and4-to5; distal lower fore-sole curves cover the other six, including7-to0. Cap/buckle, cloth, shadow, transparent outline and skeleton targets are excluded. One common physical height and520px body target retain scale. Native per-column empty row gutters retain complete poses rather than clipping a trailing toe or capturing a neighboring head. Whole-pose vertical corrections stay within10px, below the unchanged12px bound; no horizontal or local-body correction is applied. Retimed holds remain46-205ms, above the original40ms minimum. All eight corresponding material handoffs measure at most1.048px, below6px. The source-bound stride ratio is1.267308.
+
+**The final shipped build verifies three full strides.** Actual rendered mesh/camera projections cover24 boundaries and229 moving/held material samples. Maximum boundary change5.778456px and held drift0.314486px pass the unchanged6px/.5px bounds. All eight poses are captured and inspected; each7-to0 return is included. No console or page error is recorded. The earlier candidate-preview connection failure provides no approval; the restored candidate check and the final direct build check both complete independently.
+
+**Family continuity remains explicitly open.** The new left and prior right walk each plant their own observed sole material at the fixed view, but physical stride ratios1.267308/.880769 differ. Turns need common physical phase/leg agreement and stride geometry. Far-side strap/buckle appearance varies in the new strip and remains a costume/family finding; it is not used to claim corresponding material. Six other Blacksmith directions remain open. The family review is freshly bound to the selected left source and retains a changes-required verdict. This fixed-view approval does not cover turns, other camera elevations, terrain, tools, moving cane or whole-library readiness.
+
+**All earlier accepted art and the game runtime remain exact.** The audit compares all64 previously accepted source/frame/atlas/assembly/settings/generation assets againstf09347d. Earlier56 frozen acceptances and8 derived actor acceptances keep their exact art and existing evidence scope. Movement, root math, task dispatch, camera rendering, economic outputs, station geometry and all19 live mappings are unchanged. A new lateral-view renderer checker adds left-route evidence without changing the original right checker or weakening any limit.
 
 ## Completed in motion46
 
@@ -102,17 +114,17 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 
 ## Exact remaining work
 
-| Gate | Before motion46 | Current | Still required |
+| Gate | Before motion47 | Current | Still required |
 | --- | ---: | ---: | --- |
-| Main cycles with scoped acceptance |49 /153 | **49 /153** |104 |
+| Main cycles with scoped acceptance |49 /153 | **50 /153** |103 |
 | Original independent actors accepted |7 /7 | **7 /7** |0 |
-| Frozen cycle reviews remaining |104 | **104** |63 walk +24 directional tool/carry +17 fixed references |
+| Frozen cycle reviews remaining |104 | **103** |62 walk +24 directional tool/carry +17 fixed references |
 | Fixed references accepted |48 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |18 /65 | **19 /65** |46 activations |
-| Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in63 walks |
+| Existing reference actions active |19 /65 | **19 /65** |46 activations |
+| Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in62 walks |
 
-The49 main acceptances comprise eight scoped loops and41 finite tasks. Including the original seven actors, **56 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
+The50 main acceptances comprise nine scoped loops and41 finite tasks. Including the original seven actors, **57 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
 
 ### Remaining fixed-reference reviews
 
@@ -146,11 +158,11 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 
 ## Moving-contact and direction requirements
 
-- **63 walking cycles:** only Blacksmith right has final scoped stride acceptance. Other views need distinct opposite-leg and counter-arm phases, grounded support spacing and visible anatomical heel/toe material correspondence throughout eight poses, held frames and all boundaries including7-to0. Existing contact/registration tolerances remain unchanged. Pose targets, silhouette proxies and a low fitted residual do not certify material correspondence.
+- **62 walking cycles:** Blacksmith right and left have separate fixed-view scoped stride acceptance. Other views need distinct opposite-leg and counter-arm phases, grounded support spacing and visible anatomical heel/toe material correspondence throughout eight poses, held frames and all boundaries including7-to0. Existing contact/registration tolerances remain unchanged. Pose targets, silhouette proxies and a low fitted residual do not certify material correspondence.
 - **Elder's eight moving foot/cane views, included above:** finish coupled foot support, cane plant/trailing articulation, lift, forward recovery and replant. Rear cane displacement18.057px and joint foot/cane disagreement14.009px remain above6px. Four locally corrected poses do not complete the stride. No cane-only retiming or untracked hidden points may conceal foot failure.
 - **Laborer rear-left:** current selected whole-stride residual remains63.079px and correspondence is unapproved. New rig targets are not measured sole observations and no new gait candidate is selected. A controlled source-authoring method must produce corresponding supporting and recovering feet before another fit can be adopted.
 - **24 directional tool/carry cycles:** eight Female Miner pickaxe-swing views, eight shovel-cycle views and eight Helga timber-carry views. Resolve connected head/shaft geometry, hand order and visible grips, reach/elevation, shovel load retention/discharge, timber orientation/occlusion and body scale. The newly accepted fixed preparation does not close any of these24.
-- **11 direction families:** eight walking character families and those three tool/carry families remain changes-required. After individual defects and material contacts are corrected, compare synchronized phase, scale, equipment geometry and actual direction transitions. One accepted view cannot close its eight-view family.
+- **11 direction families:** eight walking character families and those three tool/carry families remain changes-required. After individual defects and material contacts are corrected, compare synchronized phase, scale, equipment geometry and actual direction transitions. Accepted individual views cannot close their eight-view family. Blacksmith left/right physical stride ratios1.267308/.880769 and phase ownership at turns require a common direction-transition review; far-side strap/buckle appearance is also still a family finding.
 
 ## Finite path to merge approval
 
@@ -164,10 +176,10 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 
 ## Validation and evidence
 
-Motion46 full validation passes **209 Node tests and78 Python tests**, type checking, the Pages build and whitespace checks. Fresh consultant proof covers five activities and ordinary camera rotation; all15 approved station variants pass layer/control checks. The main gallery covers153 sequences/1,224 frames. Native and actual-game paperwork press/departure captures are inspected. Two headed full-scene startup/movement captures and state snapshots pass; the player moves and no client error is recorded. Actual camp furniture can occlude lower boot material; the native contact measurements do not claim verification of those hidden world pixels.
+Full checks pass **210 Node tests and78 Python tests**, type checking and the Pages build. The new regression check validates portable exact authoring inputs and all24 source-bound rendered sole handoffs; analytical diagnostics reproduce without automatic cycle approval. The current153-sequence/1,224-image gallery passes controls, race handling and mobile layout. Two headed full-scene startup/movement captures are inspected: player coordinates change and no client error is recorded. Native and all eight selected-game walk captures are also inspected.
 
-Unchanged original NPC/passive, forge, meal, timber, Elder seated and Blacksmith right evidence retains its motion43/44 provenance. The analytical right stride remains1.032px; its retained three-stride proof has24 boundaries/152 held samples, maximum1.900px transition and0.265px held drift. Neither other walking views nor moving cane contact is newly accepted.
+Retained NPC/passive, forge, meal, timber, consultant and Elder seated evidence keeps its original scope and checkpoint. All19 live mappings and15 approved actor/station variants remain unchanged. Blacksmith right retains1.032px analytical measurement and motion43 three-stride proof:24 boundaries/152 held samples, maximum1.900px transition and0.265px held drift. Elder moving cane and all other walks remain unapproved.
 
-Current machine-readable results: `docs/motion46-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Source-bound native/material, receipt composition, runtime audit, actual consultant and approved layer evidence is under `docs/art-review/motion46/`. Earlier unchanged and rejected evidence remains in its original checkpoint folders.
+Current machine-readable results: `docs/motion47-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Source-bound native lower-sole magnifications, final rendered stride, all eight actual-game captures, authoring-attempt findings and retained-source audit are under `docs/art-review/motion47/`. Earlier unchanged and rejected evidence remains in its original folders; rejected candidates are never counted as approved.
 
-**Passing local or GitHub checks does not close the104 motion reviews,11 family reviews or46 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**
+**Passing local or GitHub checks does not close the103 motion reviews,11 family reviews or46 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**

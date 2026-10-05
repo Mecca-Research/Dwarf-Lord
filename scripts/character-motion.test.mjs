@@ -82,7 +82,7 @@ test('registered motion stays inside its canvas and preserves authored timing in
   const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
   assert.equal(m.registration.exportVersion,2,entry.destination);
   const reviewed = (entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference') ||
-    (entry.character==='Blacksmith' && entry.action==='walk' && entry.direction==='right') ||
+    (entry.character==='Blacksmith' && entry.action==='walk' && ['right','left'].includes(entry.direction)) ||
     (entry.direction==='reference' && ((entry.character==='Blacksmith' && ['hammer-raised','hammer-contact'].includes(entry.action)) ||
       (entry.character==='Ginger' && entry.action==='fell-tree')));
   assert.equal(m.playback.loopApproved,reviewed,entry.destination);
@@ -140,7 +140,7 @@ test('direction families use a common body target instead of independently fitti
 });
 
 test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
- for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','back-right'],['Ginger','back-right'],['Laborer','back-left'],['Elder','back']]){
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','left'],['Blacksmith','back-right'],['Ginger','back-right'],['Laborer','back-left'],['Elder','back']]){
   const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
   const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
   assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
@@ -156,6 +156,43 @@ test('reviewed gait assemblies preserve traceable, distinct authored source pose
    assert.ok(Number.isInteger(pose.pose)&&pose.pose>=0&&pose.pose<source.poseCount);
   }
  }
+});
+
+test('accepted left gait retains exact authoring inputs and all rendered sole handoffs',()=>{
+ const folder=resolve('public/sprites/Blacksmith/motion/walk/left');
+ const generation=json(resolve(folder,'generation.json'));
+ assert.equal(generation.editHistory.length,7);
+ assert.equal(new Set(generation.editHistory.map(step=>step.outputSha256)).size,7);
+ for(const step of generation.editHistory){
+  assert.equal(hash(resolve(folder,step.output)),step.outputSha256);
+  assert.ok(step.prompt.length>100);
+  for(const reference of step.references){
+   assert.ok(!reference.file.startsWith('/'),'source references must remain portable');
+   assert.equal(hash(resolve(folder,reference.file)),reference.sha256);
+  }
+ }
+ const archive=json(resolve(folder,'authoring-inputs/baseline47/archive.json'));
+ for(const [file,digest] of Object.entries(archive.files)){
+  assert.equal(hash(resolve(folder,'authoring-inputs/baseline47',file)),digest);
+ }
+ const manifest=json(resolve(folder,'manifest.json'));
+ const observations=json('docs/blacksmith-left-whole-stride-observations.json');
+ const rendered=json('docs/art-review/motion47/Blacksmith-left-rendered-stride.json');
+ assert.equal(observations.binding.sourceSha256,hash(resolve(folder,'source-sheet.png')));
+ assert.equal(observations.binding.atlasSha256,hash(resolve(folder,'atlas.png')));
+ assert.deepEqual(observations.binding.frameSha256,manifest.frames.map(frame=>hash(resolve(folder,frame.file))));
+ assert.deepEqual(rendered.sourceBinding,observations.binding);
+ assert.equal(rendered.boundaries.length,24);
+ for(let cycle=0;cycle<3;cycle++){
+  assert.deepEqual(rendered.boundaries.slice(cycle*8,cycle*8+8).map(b=>[b.from,b.to]),
+   Array.from({length:8},(_,i)=>[i,(i+1)%8]));
+ }
+ assert.ok(rendered.holds.filter(sample=>sample.moved>0).length>=8);
+ assert.ok(rendered.holds.every(sample=>sample.contactDriftSpritePx<.5));
+ assert.ok(rendered.boundaries.every(sample=>sample.contactJumpSpritePx<=6));
+ assert.deepEqual(rendered.errors,[]);
+ assert.equal(manifest.playback.loopApproved,true);
+ assert.equal(manifest.productionReady,false);
 });
 
 test('runtime actor layers and persistent stations retain source provenance and calibration',()=>{

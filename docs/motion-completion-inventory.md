@@ -12,7 +12,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Blacksmith | walk | back-right | not-reviewed |
 | Blacksmith | walk | back | not-reviewed |
 | Blacksmith | walk | back-left | not-reviewed |
-| Blacksmith | walk | left | not-reviewed |
+| Blacksmith | walk | left | scoped-review-approved |
 | Blacksmith | walk | front-left | not-reviewed |
 | Borrin | walk | front | not-reviewed |
 | Borrin | walk | front-right | not-reviewed |

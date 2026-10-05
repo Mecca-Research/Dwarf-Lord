@@ -1,0 +1,15 @@
+{
+  "prompt": "Use case: precise-object-edit. Correct the gait geometry in image1, retaining the exact same Blacksmith identity, costume, detailed semi-realistic rendered sprite style, face, true transparent background, left-facing slightly elevated side camera, shared scale and four-column two-row layout with eight distinct full-body poses. Image2 is an explicit diagnostic skeleton guide ONLY for poses/limb phases, NOT for appearance. RED is the NEAR anatomical RIGHT leg and arm; BLUE is the FAR anatomical LEFT leg and arm. Use this exact limb sequencing with continuous knee-shin-boot ownership in every cell. All red/blue guide marks, lines, letters and background must be absent from the final art.\nMain correction: in top3 and bottom7 the reaching boot must be the OPPOSITE leg from that half's support boot, not the original same-leg stance; the arm on each side swings OPPOSITE its leg. In top2 and bottom6 the recovering foot must actually pass FORWARD next to the planted shin, not remain dangling behind it. Top0 has the far LEFT foot leading, near RIGHT foot behind and near RIGHT hand forward. Bottom4 has near RIGHT foot leading, far LEFT foot behind and near RIGHT hand back. Do not draw the same knee/boot in front in0 and4. The guide explicitly specifies different near/far limb chains.\nTop1 then top2 show the far LEFT planted sole traveling backward from forward of hips to under hips, near RIGHT foot raised passing from behind to ahead. Top3 far LEFT is pushing off behind while near RIGHT heel is reaching forward airborne; near RIGHT arm BACK, far LEFT arm FORWARD. Bottom5 then bottom6 show near RIGHT planted sole traveling backward under hips while far LEFT foot passes airborne toward the front. Bottom7 near RIGHT is pushing off behind while far LEFT heel reaches forward airborne; near RIGHT arm FORWARD, far LEFT arm BACK. Keep lateral leg lanes slightly separate so both soles are readable. The in-place pelvis stays fixed across all frames, modest bob only. Every slot has full complete head, arms, apron, knees and both heavy strapped iron-toed boots with unchanged material, proportions and toe-facing direction. No tools, floor, ground shadow, labels, scenery or cropped limbs. This is a complete8-frame correction, not a motion-blurred illustration, and not a sheet of repeated stance.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-first47.png",
+      "sha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/phase-guide47.png",
+      "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29"
+    }
+  ],
+  "output": "strip-guide47.png",
+  "outputSha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb"
+}

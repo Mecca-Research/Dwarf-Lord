@@ -5,7 +5,7 @@
   "mergeBlockers": [
     {
       "gate": "final-cycle-reviews",
-      "remaining": 104
+      "remaining": 103
     },
     {
       "gate": "direction-continuity",
@@ -25,9 +25,9 @@
     "fixedWorkCycles": 65,
     "actorCycles": 7,
     "actorFrames": 56,
-    "mainScopedReviewsApproved": 49,
+    "mainScopedReviewsApproved": 50,
     "actorScopedReviewsApproved": 7,
-    "cycleReviewsRemaining": 104,
+    "cycleReviewsRemaining": 103,
     "directionFamilies": 11,
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
@@ -362,24 +362,24 @@
       "destination": "public/sprites/Blacksmith/motion/walk/left",
       "id": "Blacksmith/walk/left",
       "frameCount": 8,
-      "reviewStatus": "not-reviewed",
-      "scope": null,
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Blacksmith LEFT-view eight-pose empty-handed walking loop at0.6-radian elevation on flat ground. Individual opposite-leg/arm phases, visible sole material, held-frame travel, all eight boundary handoffs and7-to0 loop return are reviewed. Cross-direction phase/stride/costume continuity, camera turns, uneven terrain, tools/cane, other walking views and whole-library readiness are excluded.",
       "binding": {
-        "sourceSha256": "f272365eb53d359bd32e13be4efc1f19ab24f3ab1cf5f2ab68ea8a4a96d03471",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+        "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
         "frameSha256": [
-          "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7",
-          "59992e26db3ce0bd3b1fa490197030a9aaaf294da495dbd8c886229478ebc69e",
-          "db9505b2acdc7da83e2f24d902d2592536b4803ee73a834878c5c703d0e70bde",
-          "561a6dfe07ae31bdbf54485dda7099f8a9ab23ae87a0232ac6841df5b93bbac1",
-          "e8aaaa33985d35ace2e3e0254c2cae87bd56b83ded449c7f06b13ae9ea9a0cb1",
-          "b9bc9a99f893700027f880c8945595a937de89e8e009282d48c99a6acb1952bb",
-          "cf05e6538cc5f830291e70887b211e669d0409f26720c4b5631e6915646d9b0a",
-          "86ed16f8283c5d61ed57156fa54cf149bbc57741f97c5bceb4a3b1decf07c53f"
+          "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0",
+          "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b",
+          "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619",
+          "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6",
+          "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570",
+          "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88",
+          "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e",
+          "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
         ],
-        "atlasSha256": "28d421fea75005bd513e4307cdd8b67ebeeaa70e06fff77b113eb4f675208c71",
+        "atlasSha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
         "registration": {
-          "method": "torso-median-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
             616
@@ -387,24 +387,25 @@
           "targetBodyHeight": 520,
           "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          103,
+          205,
+          91,
+          46,
+          121,
+          176,
+          159,
+          99
         ],
         "character": "Blacksmith",
         "action": "walk",
         "direction": "left"
       },
-      "approvalType": null
+      "approvalType": "loop"
     },
     {
       "character": "Blacksmith",
@@ -11511,5 +11512,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "60225ad677a26fd3b0544231993aafa4427b9fc1599d0255dec6e2e563f868f4"
+  "scopeSha256": "5e54d90fca00d65d5202962e6f1312c377f64b1689082f82cc2988b6b17e29b9"
 }

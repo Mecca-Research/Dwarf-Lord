@@ -402,13 +402,13 @@
     {
       "id": "Blacksmith/walk",
       "verdict": "changes-required",
-      "reviewedAt": "2026-10-01",
-      "method": "Eight phases in all eight directions inspected together; this is a blocked visual review, not anatomical contact certification.",
+      "reviewedAt": "2026-10-05",
+      "method": "Current whole-family blocked review, with separately source-bound native/material and actual fixed-view approvals for right and left. Individual view acceptance does not certify phase-preserving turns.",
       "checks": {
-        "phase-agreement": "Motion37 right-view leg overlap0/1/7 and arm counter-swing accepted. Measured1.032px eight-boundary residual and three actual rendered strides24-boundary max1.790181px. Other seven views retain changes-required phase findings.",
-        "body-scale": "Right-view physical520px body/root reviewed in native poses and actual rendered mesh. Other seven views need scale/camera and anatomical correspondence before family approval.",
-        "direction-transitions": "Standalone right-view7-to0 loop accepted. Phase-preserving turns between views, especially rear-right0/4 and2/6 and back silhouette changes, remain unapproved.",
-        "equipment-geometry": "Apron, bald crown, beard and boots are recognizable; rear-right arm/leg opposition remains a correction."
+        "phase-agreement": "Right and left independently display opposed leg support and counter-arms across0-7. Motion47 left passes1.048px material measurement and three actual strides24 boundaries. Six other views still need corresponding sole/arm review; common anatomical phases across all camera directions remain unapproved.",
+        "body-scale": "Left and right use the same520px body target with common whole-strip physical scale, full boots and bounded registration. Six remaining views need physical camera/body registration and anatomical material proof.",
+        "direction-transitions": "Right individual stride ratio.880769; newly measured left1.267308. Each fixed view plants its observed soles, but their physical stride lengths and leg ownership/phase at a direction change do not yet agree. Correct and review direction transitions; never force an existing contact fit or shrink a body to hide the mismatch.",
+        "equipment-geometry": "Both accepted lateral views retain apron, bald crown, beard and heavy boots. Far-side strap/buckle appearance varies within the new left strip and cross-view costume geometry still needs review. Rear-right arm/leg opposition and back silhouette findings remain open."
       },
       "bindings": {
         "public/sprites/Blacksmith/motion/walk/front": {
@@ -654,21 +654,21 @@
           "direction": "back-left"
         },
         "public/sprites/Blacksmith/motion/walk/left": {
-          "sourceSha256": "f272365eb53d359bd32e13be4efc1f19ab24f3ab1cf5f2ab68ea8a4a96d03471",
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+          "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
           "frameSha256": [
-            "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7",
-            "59992e26db3ce0bd3b1fa490197030a9aaaf294da495dbd8c886229478ebc69e",
-            "db9505b2acdc7da83e2f24d902d2592536b4803ee73a834878c5c703d0e70bde",
-            "561a6dfe07ae31bdbf54485dda7099f8a9ab23ae87a0232ac6841df5b93bbac1",
-            "e8aaaa33985d35ace2e3e0254c2cae87bd56b83ded449c7f06b13ae9ea9a0cb1",
-            "b9bc9a99f893700027f880c8945595a937de89e8e009282d48c99a6acb1952bb",
-            "cf05e6538cc5f830291e70887b211e669d0409f26720c4b5631e6915646d9b0a",
-            "86ed16f8283c5d61ed57156fa54cf149bbc57741f97c5bceb4a3b1decf07c53f"
+            "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0",
+            "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b",
+            "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619",
+            "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6",
+            "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570",
+            "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88",
+            "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e",
+            "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
           ],
-          "atlasSha256": "28d421fea75005bd513e4307cdd8b67ebeeaa70e06fff77b113eb4f675208c71",
+          "atlasSha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
           "registration": {
-            "method": "torso-median-estimate",
+            "method": "source-landmarks",
             "targetAnchor": [
               320,
               616
@@ -676,18 +676,19 @@
             "targetBodyHeight": 520,
             "scaleScope": "directional-body-height",
             "landmarksVerified": false,
-            "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-            "exportVersion": 2
+            "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+            "exportVersion": 2,
+            "stationRegistration": null
           },
           "durationsMs": [
-            125,
-            125,
-            125,
-            125,
-            125,
-            125,
-            125,
-            125
+            103,
+            205,
+            91,
+            46,
+            121,
+            176,
+            159,
+            99
           ],
           "character": "Blacksmith",
           "action": "walk",

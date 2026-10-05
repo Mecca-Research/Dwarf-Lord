@@ -126,13 +126,13 @@ class WholeStrideTests(unittest.TestCase):
         self.assertIn('exceeds 12px', candidate['reason'])
 
     def test_current_pilot_diagnostics_reproduce_without_approval(self):
-        for name in ['laborer-back-left', 'blacksmith-right']:
+        for name in ['laborer-back-left', 'blacksmith-right', 'blacksmith-left']:
             observations = json.loads(Path(f'docs/{name}-whole-stride-observations.json').read_text())
             measured = measure(observations)
             self.assertEqual(measured, json.loads(Path(f'docs/{name}-whole-stride-measurement.json').read_text()))
             self.assertEqual(propose_calibration(measured), json.loads(Path(f'docs/{name}-whole-stride-candidate.json').read_text()))
             self.assertFalse(measured['wholeStrideApproved'])
-            self.assertEqual(measured['materialCorrespondenceReviewed'], name == 'blacksmith-right')
+            self.assertEqual(measured['materialCorrespondenceReviewed'], name.startswith('blacksmith-'))
             self.assertEqual(measured['coveredBoundaries'], 8)
 
     def test_runtime_export_recomputes_contacts_instead_of_trusting_pass_flags(self):
