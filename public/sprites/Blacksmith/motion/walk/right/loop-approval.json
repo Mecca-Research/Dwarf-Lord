@@ -60,11 +60,11 @@
     },
     {
       "file": "travel-calibration.json",
-      "sha256": "cb9ca88adc72aecd2fc32631a673692c0fbe1d47e19f76481eb9509813465e55"
+      "sha256": "b529ef4a4a996ac97f9744f3bfaedd28f8d51ff3eb40da1bd5ed78ad54ba4b1c"
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -84,7 +84,7 @@
     },
     {
       "file": "../../../../../../docs/blacksmith-right-whole-stride-observations.json",
-      "sha256": "69eaecdff57032b1a53107292169f01206c5d974157ac8a19f051550a6f9980c"
+      "sha256": "64ba55dceedf085b3f5dc6dbf25a6d0942b45459ecc6e80f8ed8380b92329102"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -217,16 +217,44 @@
     {
       "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
       "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+      "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/retained-assets-audit48.json",
+      "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion43",
+    "checkpoint": "motion48",
     "files": [
       "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json",
       "src/game/world/npc-motion.ts",
       "docs/blacksmith-right-whole-stride-observations.json"
     ],
-    "audit": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
-    "scope": "Exact prior selected art and limited acceptance; current source diff and actual renderer regression."
+    "audit": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+    "scope": "Exact prior limited art/registration/timing with audited task routing and synchronous finished prop ownership; fresh actual task and gait checks. No new art, contact scope or family approval."
   }
 }

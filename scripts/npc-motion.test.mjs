@@ -18,8 +18,10 @@ activitySource=activitySource.replace('import { STARTING_DWARVES } from "../data
 const activityUrl=`data:text/javascript;base64,${Buffer.from(activitySource).toString('base64')}`;
 stationSource = stationSource.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`);
 const stationUrl=`data:text/javascript;base64,${Buffer.from(stationSource).toString('base64')}`;
+const completionSource=ts.transpileModule(readFileSync('src/game/world/workstation-completion.ts','utf8'), {compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const completionUrl=`data:text/javascript;base64,${Buffer.from(completionSource).toString('base64')}`;
 let { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
-outputText = outputText.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`).replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
+outputText = outputText.replace('from "./work-activities"', `from ${JSON.stringify(activityUrl)}`).replace('from "./workstation-sites"', `from ${JSON.stringify(stationUrl)}`).replace('from "./workstation-completion"', `from ${JSON.stringify(completionUrl)}`).replace('from "../motion-playback"', `from ${JSON.stringify(moduleUrl)}`).replace('from "three"', `from ${JSON.stringify(import.meta.resolve('three'))}`)
   .replace('import { asset } from "@/lib/asset";', `const asset = p => p === '/motion-playback.mjs' ? ${JSON.stringify(moduleUrl)} : 'https://motion.test'+p;`);
 const { NpcWalkMotion, NpcWorkMotion, setMotionUv, motionForegroundGeometry, motionRootTranslation, npcMotionDiagnostics, npcWorkDiagnostics, workstationTaskStates } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
 
@@ -152,13 +154,14 @@ test('workstations hold one completion and reset only on task lifecycle changes'
   const saved = { fetch: globalThis.fetch, location: globalThis.location, document: globalThis.document, createImageBitmap: globalThis.createImageBitmap };
   const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/actor/manifest.json', 'utf8'));
   const peelManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/peel-potatoes/actor/manifest.json', 'utf8'));
+  const doughManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/knead-dough/actor/manifest.json', 'utf8'));
   const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
   assert.equal(calibration.actions['chop-vegetables/actor'].sourceSha256, manifest.sourceSha256);
   globalThis.location = { href: 'https://motion.test/' };
   globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
   globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
   globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration :
-    String(url).includes('/peel-potatoes/') ? peelManifest : manifest, blob: async () => new Blob() });
+    String(url).includes('/peel-potatoes/') ? peelManifest : String(url).includes('/knead-dough/') ? doughManifest : manifest, blob: async () => new Blob() });
   const driver = new NpcWorkMotion('cook-test', 'cook');
   const body = { x: 0, z: 0, facing: 0, anim: 'work' };
   const update = (dt = .1, job = 'meals', day = 1, resolved = false) => driver.update(body, job, day, resolved, dt, 1.95);
@@ -184,6 +187,21 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     assert.equal(npcWorkDiagnostics.get('cook-test').completed,true);
     assert.equal(npcWorkDiagnostics.get('cook-test').frame,7);
     update(5,'meals',2); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'paring does not repeat itself');
+    await ready(3); assert.equal(npcWorkDiagnostics.get('cook-test').action,'knead-dough');
+    assert.equal(workstationTaskStates.get('dough-block').completed,false,'arrival does not create finished dough');
+    for(const frame of doughManifest.frames) update(frame.durationMs/1000,'meals',3);
+    assert.equal(workstationTaskStates.get('dough-block').completed,true);
+    assert.equal(workstationTaskStates.get('dough-block').active,true,'actor owns dough while finishing');
+    update(5,'meals',3); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1);
+    workstationTaskStates.set('unrelated-fixture',{owner:'another-worker',task:'fixture',active:true,completed:true});
+    update(0,null,3);
+    assert.equal(workstationTaskStates.get('dough-block').active,false,'departure hands dough to persistent prop');
+    assert.equal(workstationTaskStates.get('dough-block').completed,true);
+    assert.equal(workstationTaskStates.get('unrelated-fixture').active,true,'reset only releases this actor workpieces');
+    await ready(3); assert.equal(workstationTaskStates.get('dough-block').completed,false,'explicit return stages a fresh stroke');
+    update(0,null,3); assert.equal(workstationTaskStates.get('dough-block').completed,false,'cancel before finish creates no dough');
+    workstationTaskStates.delete('unrelated-fixture');
+    await ready(4); assert.equal(npcWorkDiagnostics.get('cook-test').action,'chop-vegetables','next recipe day restores vegetables');
     body.anim='walk'; assert.equal(update(),null,'travel releases workstation');
     const toolManifest = JSON.parse(readFileSync('public/sprites/Female Miner/motion/pickaxe-swing/front/manifest.json', 'utf8'));
     globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });

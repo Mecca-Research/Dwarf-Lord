@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "inputs": [
+    {
+      "id": "contact48",
+      "file": "authoring-inputs/strip-contact48.png",
+      "sha256": "7aeed1be4025acf82fa5c65ef750eeadf1d49b200ee4cf7e47709fe8fad87c2f",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          469
+        ],
+        [
+          444,
+          0,
+          887,
+          470
+        ],
+        [
+          887,
+          0,
+          1330,
+          470
+        ],
+        [
+          1330,
+          0,
+          1774,
+          470
+        ],
+        [
+          0,
+          469,
+          444,
+          887
+        ],
+        [
+          444,
+          470,
+          887,
+          887
+        ],
+        [
+          887,
+          470,
+          1330,
+          887
+        ],
+        [
+          1330,
+          470,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        219.0,
+        658.0,
+        1097.0,
+        1547.0,
+        216.0,
+        666.0,
+        1114.0,
+        1555.0
+      ],
+      "rootYs": [
+        444.0,
+        444.0,
+        444.0,
+        444.0,
+        871.0,
+        871.0,
+        871.0,
+        871.0
+      ],
+      "bodyHeights": [
+        385.0,
+        385.0,
+        385.0,
+        385.0,
+        385.0,
+        385.0,
+        385.0,
+        385.0
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "contact48",
+      "pose": 0
+    },
+    {
+      "input": "contact48",
+      "pose": 1
+    },
+    {
+      "input": "contact48",
+      "pose": 2
+    },
+    {
+      "input": "contact48",
+      "pose": 3
+    },
+    {
+      "input": "contact48",
+      "pose": 4
+    },
+    {
+      "input": "contact48",
+      "pose": 5
+    },
+    {
+      "input": "contact48",
+      "pose": 6
+    },
+    {
+      "input": "contact48",
+      "pose": 7
+    }
+  ],
+  "review": "One shared physical strip height and row registration estimate. Targets/torso estimates are not observed sole or cane material. Candidate only."
+}

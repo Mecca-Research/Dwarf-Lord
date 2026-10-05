@@ -107,7 +107,7 @@ test('forge operations route to their own station and retain completion boundari
 });
 
 test('meal operations share the task target with distinct persistent preparation blocks',()=>{
- for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'cutting-block','chop-vegetables']]) {
+ for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'dough-block','knead-dough'],[4,'cutting-block','chop-vegetables']]) {
   assert.equal(activities.cookingWorkAction(day),action);
   const site=stations.activeWorkstation('cook','meals',true,false,day);
   assert.equal(site.id,id);assert.ok(site.actions.includes(action));
@@ -118,5 +118,8 @@ test('meal operations share the task target with distinct persistent preparation
  const vegetable=stations.activeWorkstation('cook','meals',true,false,1);
  const potato=stations.activeWorkstation('cook','meals',true,false,2);
  assert.ok(Math.hypot(vegetable.target.targetX-potato.target.targetX,vegetable.target.targetZ-potato.target.targetZ)>=3);
+ const dough=stations.activeWorkstation('cook','meals',true,false,3);
+ assert.ok(Math.hypot(potato.target.targetX-dough.target.targetX,potato.target.targetZ-dough.target.targetZ)>=3);
+ assert.equal(dough.completionLayer,'completed-dough.png');
  for(const day of [0,-1,NaN,1.5,Infinity])assert.throws(()=>activities.cookingWorkAction(day));
 });

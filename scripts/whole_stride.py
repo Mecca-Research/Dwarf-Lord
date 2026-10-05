@@ -106,11 +106,16 @@ def travel_calibration(folder, manifest):
     measured = measure(observations, manifest)
     if not measured['measurementPassed']:
         raise ValueError('Walking travel requires reviewed material points at all eight boundaries within6px')
-    return {'version': 1, 'sourceSha256': manifest['sourceSha256'],
+    result = {'version': 1, 'sourceSha256': manifest['sourceSha256'],
             'settingsSha256': manifest['registration']['settingsSha256'],
             'direction': manifest['direction'], 'durationsMs': manifest['playback']['durationsMs'],
             'strideBodyRatio': measured['strideBodyRatio'],
             'scope': 'Reviewed sole-material boundaries at this fixed view on flat ground. Turning, uneven terrain, equipment and final cycle approval are separate.'}
+    if manifest.get('character') == 'Elder':
+        from cane_stride import require_for_export
+        result['coordinatedSupport'] = require_for_export(folder, observations, manifest)
+        result['scope'] = 'Reviewed sole and coordinated cane-material contacts at this fixed view. Native recovery, actual playback, direction/terrain and final cycle approval are separate.'
+    return result
 
 
 def annotate(observations, output):

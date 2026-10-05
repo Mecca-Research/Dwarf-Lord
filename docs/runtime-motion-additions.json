@@ -185,6 +185,29 @@
       "status": "exported",
       "destination": "public/sprites/Borrin/motion/stamp-paperwork/actor",
       "station": "ledger-desk"
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "title": "Knead dough",
+      "reference": "public/sprites/Cook/work-references/02-knead-dough.png",
+      "beats": [
+        "palms rest on dough",
+        "continuous midway transition from palms rest on dough toward lean forward pressing dough",
+        "lean forward pressing dough",
+        "continuous midway transition from lean forward pressing dough toward fold dough back over itself",
+        "fold dough back over itself",
+        "continuous midway transition from fold dough back over itself toward pull hands back to kneading start",
+        "pull hands back to kneading start",
+        "continuous midway transition from pull hands back to kneading start toward palms rest on dough"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Source-only original registered poses, extracted actor/visible dough, independent fixed kneading block, source hand foreground and separately authored persistent dough after departure.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/knead-dough/actor",
+      "station": "dough-block"
     }
   ]
 }

@@ -39,10 +39,10 @@ try {
   const completed=await state();assert.equal(completed.frame,7);assert.equal(completed.completed,true);assert.equal(completed.completions,1);assert.equal(completed.playing,false);
   await page.evaluate(()=>window.advanceTime(5000));assert.equal((await state()).completions,1);
   await page.screenshot({path:`${output}/${name}-layered.png`});
-  if(before.character==='Laborer') {
+  if(before.character==='Laborer'||(before.character==='Cook'&&library[i].action==='knead-dough')) {
    await page.uncheck('#actor');assert.equal((await state()).completedProp,true);
-   assert.notEqual(await pixels(),propOnly,'released crate remains after completed actor leaves');
-   await page.screenshot({path:`${output}/Laborer-completed-station.png`});
+   assert.notEqual(await pixels(),propOnly,'finished workpiece remains after completed actor leaves');
+   await page.screenshot({path:`${output}/${name}-completed-station.png`});
    await page.click('#restart');assert.equal((await state()).completedProp,false,'new task resets visual staging');
    await page.check('#actor');
   }

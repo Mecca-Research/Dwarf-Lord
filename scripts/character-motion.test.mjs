@@ -219,7 +219,7 @@ test('runtime actor layers and persistent stations retain source provenance and 
 
 test('additional work actions require exact actor, station and finite task evidence',()=>{
  const additions=json('docs/runtime-motion-additions.json').entries;
- assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk','stamp-paperwork']);
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk','stamp-paperwork','knead-dough']);
  for(const entry of additions){
   const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
   assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);
@@ -229,11 +229,23 @@ test('additional work actions require exact actor, station and finite task evide
   assert.deepEqual(a.binding.frameSha256,m.frames.map(f=>hash(resolve(root,f.file))));
   assert.equal(a.binding.atlasSha256,hash(resolve(root,m.atlas.file)));
   for(const dependency of a.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);
-  const assembly=json(resolve(root,'assembly.json'));
-  assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
-  for(const input of assembly.inputs){
-   assert.equal(hash(resolve(root,input.file)),input.sha256);
-   if(input.reference)assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);
+  if(entry.action==='knead-dough'){
+   const source=json(resolve(root,'generation.json'));
+   assert.equal(source.method,'source-pixel-foreground-stencils');
+   assert.equal(source.originalFrames.length,8);assert.equal(source.actorPolygons.length,8);
+   for(const input of source.originalFrames)assert.equal(hash(resolve(input.file)),input.sha256);
+   const evidence=json('docs/art-review/motion48/cook-kneading/source-pixel-identity48.json');
+   assert.equal(evidence.geometryEdited,false);
+   assert.deepEqual(evidence.originalFrameOrder,[0,1,2,3,4,5,6,7]);
+   assert.deepEqual(evidence.samples.map(s=>s.exportedSha256),m.frames.map(f=>hash(resolve(root,f.file))));
+   assert.ok(evidence.samples.every(s=>s.sameOpaqueOriginalPixels&&s.visiblePixels>0));
+  }else{
+   const assembly=json(resolve(root,'assembly.json'));
+   assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
+   for(const input of assembly.inputs){
+    assert.equal(hash(resolve(root,input.file)),input.sha256);
+    if(input.reference)assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);
+   }
   }
   assert.equal(new Set(m.frames.map(f=>hash(resolve(root,f.file)))).size,8);
   const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[entry.action+'/actor'];

@@ -1,0 +1,44 @@
+{
+  "sourceSha256": "96118cb487d52c9e3457d99baf7929825cf6e930dc6ac1495f2be82f6234adb8",
+  "spriteSha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe",
+  "prompt": "Precise object edit. Remove the entire dwarf, every body part, and the lump of dough from the attached image. Keep ONLY the complete SAME wooden kneading block as a separate persistent workstation sprite. Preserve the exact camera/perspective/proportions, thick scarred warm-brown square end-grain tabletop, same four stout wooden legs with dark iron bands and bolts, same folded red-striped kitchen towel draped over RIGHT edge and same flour-filled brown wooden bowl at rear RIGHT. Keep the existing dusting of white flour on top, but remove the lump of dough. Complete the small surfaces previously hidden behind arms/body with matching wood/flour, and show all four entire legs. The tabletop is empty in the center. No dwarf, face, beard, hair, hands, apron, boots, dough, knife or extra objects. No floor or shadow. Transparent alpha and clean natural edges, no red/yellow outline. Match the source table exactly; do not restyle/rearrange or add fruit/vegetables. Complete unclipped isolated table, generous transparent margin.",
+  "reference": "../../Cook/motion/knead-dough/reference/00.png",
+  "referenceSha256": "ba338df3b78500558331a84fb59892f5ac44e935e81e4623a3ac8d080168fca6",
+  "placement": {
+    "alphaThreshold": 128,
+    "width": 400,
+    "x": 180,
+    "y": 250,
+    "canvas": [
+      640,
+      640
+    ]
+  },
+  "targetBodyHeight": 562,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "placementReview": "One uniform400px normalization of the complete independent table. Native all8 source hand/dough contacts reviewed above fixed flour surface; final gameplay proof pending.",
+  "completionLayer": {
+    "source": "authoring-inputs/dough48.png",
+    "sourceSha256": "0e0d00015f1c0640c8f0e433a5b18f77485ecf525f9f3460fad4c06ed862561c",
+    "file": "completed-dough.png",
+    "sha256": "31382dd073af1bab58458aea8f3f2c7b7c1b2bba28f322ef5c5af68b9e7ad119",
+    "placement": {
+      "width": 146,
+      "x": 279,
+      "y": 271,
+      "canvas": [
+        640,
+        640
+      ],
+      "alphaThreshold": 128
+    },
+    "prompt": "Precise object cutout/edit. From this image keep ONLY the same small oval lump of kneaded pale cream dough resting under the dwarf's palms. Remove the entire dwarf and both hands, all clothing and the whole wooden table, flour scattered on table, bowl, towel and everything else. Complete the top of the dough where palms previously covered it, with the same dough material and shallow pressed palm folds. Preserve exactly its squat horizontal oval footprint, same mildly downward front-right camera, unbaked off-white fine speckled moist dough, soft folded surface and flat underside. ONE small broad low lump, no ball, no loaf, no baked brown crust, no platter, no flour halo, no table, no hand. Transparent alpha with clean edges and generous margin. This is the same dough after the cook removes his hands, a separate persistent object for the same station.",
+    "reference": "../../Cook/motion/knead-dough/reference/07.png",
+    "referenceSha256": "0aa3b99e377cd4ddfd167b61b7069dc03fe1a9feac4baefd405914c7045a2464",
+    "scope": "Separately authored previously occluded dough top after palms leave. Same registered oval footprint and surface. A cosmetic retained workpiece, not baked bread or economic output."
+  }
+}

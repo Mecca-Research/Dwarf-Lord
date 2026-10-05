@@ -21,7 +21,7 @@ export function forgeWorkAction(day: number) {
 }
 
 /** Meal preparation keeps a task's selected operation for the entire day. */
-export const cookingWorkActions = ["chop-vegetables", "peel-potatoes"] as const;
+export const cookingWorkActions = ["chop-vegetables", "peel-potatoes", "knead-dough"] as const;
 
 export function cookingWorkAction(day: number) {
   if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");

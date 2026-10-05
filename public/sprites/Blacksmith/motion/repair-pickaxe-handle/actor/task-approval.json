@@ -88,7 +88,7 @@
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -96,11 +96,11 @@
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
-      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
+      "sha256": "9317c7adedcdcd2d155c3874037a620d24899aa798402ad625654a1931965a82"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836"
+      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -112,7 +112,7 @@
     },
     {
       "file": "../../../../../../scripts/workstation-review-check.mjs",
-      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+      "sha256": "9b8684c2d01dfb509ea6063d9c5e1896d1a8bc4e9ff77b6f9e0df9d8e83e4bb3"
     },
     {
       "file": "../../../../../workstation-review.html",
@@ -305,14 +305,45 @@
     {
       "file": "../../../../../../docs/art-review/motion46/Borrin-retained-ledger-contact.json",
       "sha256": "bec7a38929ea36a5ab0329c6bdb2f39833106f0f5eea0e70d347a1c0ea2b935d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+      "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/retained-assets-audit48.json",
+      "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion46",
+    "checkpoint": "motion48",
     "files": [
-      "src/game/world/work-activities.ts"
+      "src/game/world/npc-motion.ts",
+      "src/game/world/workstation-sites.ts",
+      "src/game/world/work-activities.ts",
+      "scripts/workstation-review-check.mjs"
     ],
-    "audit": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
-    "scope": "Exact existing limited acceptance after one additive finite consultant action and independent receipt. Five fresh consultant actions/current layers and unchanged source/runtime audit."
+    "audit": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+    "scope": "Exact prior limited art/registration/timing with audited task routing and synchronous finished prop ownership; fresh actual task and gait checks. No new art, contact scope or family approval."
   }
 }

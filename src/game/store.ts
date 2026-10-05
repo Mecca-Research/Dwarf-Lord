@@ -10,6 +10,8 @@ import {
 } from "./data/catalog";
 import { DIALOGUE } from "./data/dialogue";
 import { runtime } from "./runtime";
+import { dwarfAppearance } from "./world/dwarf-appearances";
+import { workAssignmentTarget } from "./world/workstation-sites";
 import { clearSave, readSave, writeSave, reconcileCharacterIdentities } from "./save";
 import { assignedCap, resolveExpedition, resolveJobs, restNight, workers } from "./sim";
 import { sting } from "./audio";
@@ -319,7 +321,7 @@ export const useGame = create<GameStore>((set, get) => ({
   },
 
   assignJob: (dwarfId, jobId) => {
-    const { dwarves, dayResolved } = get();
+    const { dwarves, dayResolved, day } = get();
     const worker = dwarves.find((d) => d.id === dwarfId);
     const job = JOBS.find((j) => j.id === jobId);
     if (!worker || worker.isSteward || worker.narrativeOnly || dayResolved || (jobId !== null && !job)) return;
@@ -332,7 +334,8 @@ export const useGame = create<GameStore>((set, get) => ({
     set({ dwarves: next });
     const body = runtime.dwarves.get(dwarfId);
     if (body) {
-      body.dest = job ? { x: job.targetX, z: job.targetZ } : null;
+      const target = job ? workAssignmentTarget(dwarfAppearance(dwarfId), job.id, day) : undefined;
+      body.dest = target ? { x: target.targetX, z: target.targetZ } : null;
       body.speed = 0;
       body.anim = worker.sitOnStart ? "sit" : "idle";
     }

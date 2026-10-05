@@ -7,6 +7,7 @@ import { cookingWorkAction, forgeWorkAction, timberWorkAction } from "./work-act
 export const workstationSites = [
   { id: "cutting-block", appearance: "cook", job: "meals", bodyHeight: 520, anchor: [320, 616], actions: ["chop-vegetables"] },
   { id: "potato-block", appearance: "cook", job: "meals", bodyHeight: 520, anchor: [320, 616], actions: ["peel-potatoes"], offsetX: -3 },
+  { id: "dough-block", appearance: "cook", job: "meals", bodyHeight: 562, anchor: [320, 616], actions: ["knead-dough"], offsetX: -6, completionLayer: "completed-dough.png" },
   { id: "anvil", appearance: "blacksmith", job: "forge", bodyHeight: 520, anchor: [320, 616], actions: ["hammer-contact", "inspect-tool"] },
   { id: "repair-bench", appearance: "blacksmith", job: "forge", bodyHeight: 650, anchor: [320, 616], actions: ["repair-pickaxe-handle"], offsetX: -3 },
   { id: "forestry-trunk", appearance: "ginger", job: "timber", bodyHeight: 376, anchor: [240, 616], actions: ["fell-tree"] },

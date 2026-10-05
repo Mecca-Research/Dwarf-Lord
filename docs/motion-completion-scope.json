@@ -387,11 +387,15 @@
     {
       "character": "Borrin",
       "action": "stamp-paperwork"
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+    "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -4090,7 +4094,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836"
+      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4102,7 +4106,7 @@
     },
     {
       "file": "src/game/world/workstation-sites.ts",
-      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
+      "sha256": "9317c7adedcdcd2d155c3874037a620d24899aa798402ad625654a1931965a82"
     },
     {
       "file": "src/game/motion-playback.ts",
@@ -4122,11 +4126,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "e3703c131b098ba00b72c5c9e9ad68d5c268dc17ba674dd85cd81b2297d1ca6d"
+      "sha256": "87b1de79a4ba51d1f240af2160a30461bcefa5ef1557a58d547b2d9e74669451"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "aecf6824c1fdbefd93fedeb646c0f682a8d70eed1e2900876d65249ddb54ef45"
+      "sha256": "6764d6e25ba2a30f646c118c23789bfc008ac99c70e98276b3ca4e2045030230"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4150,7 +4154,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "bce95083fe1f777a3937e43473b2fad40a378e80f8276c026e6a4c2ec16504b4"
+      "sha256": "0882c67de8ddbbef579997e54c96f7eb12747de246b77bce5001ae1a09a398d1"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4206,7 +4210,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "a61b2b45ee632e9e3437c5b0dc6bc7b8c07dfc6b823902080efbbea08546e235"
+      "sha256": "f873bbc319e65fe0dc56b2f89c1832c4bdbe1b128dc1412ac52e0d41c3c1428d"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4266,7 +4270,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/render-calibration.json",
-      "sha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc"
+      "sha256": "43f1af8a7e2a36147b31cac920d90253b58e3d52c877eb352b89f264a36d1c95"
     },
     {
       "file": "docs/art-review/motion40/runtime-revalidation.json",
@@ -4282,7 +4286,7 @@
     },
     {
       "file": "scripts/cooking-work-check.mjs",
-      "sha256": "df1209ff4b437e08dd77ab2dbdc8f497a44cdc6cb938f2b11ac3b203b0d04a8c"
+      "sha256": "f7b2b364d0613ad5515ac5bed038ba1d0c4ee54d47e9c466cacd2fa371c9db7d"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/source-sheet.png",
@@ -4306,7 +4310,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "4fc221127fb187ab56dff3361f2fc8d14a61d7a85a3e2380adecf95dff8cdae6"
+      "sha256": "152e21e1c6faaea15a9549db328a04c8aaa710e138fbb7e78d77ca0fc765ee8e"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4398,7 +4402,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "54d3f8ffa3367ce0917a57b0afeffc47de92ad44ba0b888be89fd4d9fa9b61f0"
+      "sha256": "bfab240f38f45cb0765a57a5095d4b6fb5631f723a1f251ea9e26853ffb96568"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4490,7 +4494,7 @@
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
-      "sha256": "e16eccb47ec528aaa37a267d6cec224ac1547513450511850a210244814a968e"
+      "sha256": "2bbdf513cc27281eb136933fadde01fe17e6ce2826ed23ab6257a23bc42e3a72"
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
@@ -4574,7 +4578,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
-      "sha256": "9d4e583b011635eabc8f0627b7824946e0f55f6112f537f8b996ae21dd336b10"
+      "sha256": "cbb491911ea479fb42898f610a3b3b2af16e021d9d38bc5e20722f72011313b2"
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
@@ -4630,7 +4634,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
-      "sha256": "f476d37cf3ad69d1d259868791bf7a79753f96cbb07400fb74e2622388674dec"
+      "sha256": "1b95fad3daf73222dbd228e00d25a9652ea1b8df9f808434f177823b82a7c40a"
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
@@ -4702,7 +4706,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
-      "sha256": "e11308d7a577d967402ee013c4f3a74c8f22d96e8f9c089c3dd20e0df6423cde"
+      "sha256": "04f3b605f85316c4b713db9131f4a9895375ae69f380bacd0391e0a4441d1980"
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png",
@@ -4735,7 +4739,143 @@
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/07.png",
       "sha256": "4d8e53f6c56e12e1be2c1763d7898ff054f51dd41652b9485555ca8998d0d574"
+    },
+    {
+      "file": "docs/art-review/motion48/runtime-coverage-audit48.json",
+      "sha256": "50a179c40c1fb037451321f9cfb80db4f763ca79ee60160a057074245c98b996"
+    },
+    {
+      "file": "docs/art-review/motion48/runtime-revalidation48.json",
+      "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+    },
+    {
+      "file": "docs/art-review/motion48/retained-assets-audit48.json",
+      "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+    },
+    {
+      "file": "docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "docs/art-review/motion48/station-layer-approved48.json",
+      "sha256": "c869656a8022a3d5f00facc99a808b42db1bb51f329c3971edf2eeac3cee9f16"
+    },
+    {
+      "file": "src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098"
+    },
+    {
+      "file": "src/game/world/workstation-completion.ts",
+      "sha256": "716283d346f669bc85e4e6a20f8c577f15ce006b858f0148b3d9c2b0cce087ca"
+    },
+    {
+      "file": "src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+    },
+    {
+      "file": "scripts/work-assignment.test.mjs",
+      "sha256": "67c657a5db10f22944056145ae3f8317e4e4c122730e04e9195f4fb036b474fb"
+    },
+    {
+      "file": "scripts/workstation-completion.test.mjs",
+      "sha256": "78639c2d2834f794d926f5259a2f71bba0b4964901366ea701933c9d25bb9f2e"
+    },
+    {
+      "file": "scripts/workstation_export.py",
+      "sha256": "19fafaeafed083ce7367eb19ef8583e29b627e9979f89ef76e72efc3600505fd"
+    },
+    {
+      "file": "scripts/workstation_export_test.py",
+      "sha256": "f4a482958264c2d7fccf88d709395bd042de07b890f4beede4fadda50b1a8b86"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/source-sheet.png",
+      "sha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/atlas.png",
+      "sha256": "c52bb366181eaa84b87b0da385c26c5c3dfd984e8bc082e654cb71075dd17ed5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/motion-polish.json",
+      "sha256": "26a0f89bcfdcb8eba6169df4dbb9d93f4abe3d51b687f0a9c5989c49e86fb171"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/generation.json",
+      "sha256": "5bf1b299401afd2c20507525faa6b50eb86eb1653a689cd6290ff548e2cace32"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "sha256": "a1eff57561c0fab0bd3b55b72e3c654c2cae8b39c864cd5190407a544fa8fbd2"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/00.png",
+      "sha256": "b6bc03419c4c6f207f9396bae6f5586e5d781587a8e9904a1cd25871845de1f5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/01.png",
+      "sha256": "186e03561ca8f45009eccfc66717418a62d881f73b6507a23dbe0ba56969997f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/02.png",
+      "sha256": "59371a2243611ac5c77551b3324b15527a96ed9e83223ecba29433155c0b4cb9"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/03.png",
+      "sha256": "898677a62daff8ed6b9b551580fcb618096290fd562a97ed7806bf7330af2904"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/04.png",
+      "sha256": "fa1799b3f1356976819aadb06b6b987d438f542bd52a77e3b1229a31afd2196c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/05.png",
+      "sha256": "5b0773358b6637f1d82279c9c29cedc43299362be49665c484aae3f52141177c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/06.png",
+      "sha256": "e28b87898d15385eabfd4f5f95c87e70b2ae4e1c1db0e031c04b461ede7b6728"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/07.png",
+      "sha256": "2bbf6df49705a5647fa0789a77da68bb562d755b052cabc1d4100d8ef4f72476"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/source.png",
+      "sha256": "96118cb487d52c9e3457d99baf7929825cf6e930dc6ac1495f2be82f6234adb8"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/sprite.png",
+      "sha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/completed-dough.png",
+      "sha256": "31382dd073af1bab58458aea8f3f2c7b7c1b2bba28f322ef5c5af68b9e7ad119"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/generation.json",
+      "sha256": "53dcaa46070c110565bfc0a4f688f5b3c8c940fd548c5913b91c1f5b7e546500"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/authoring-inputs/dough48.png",
+      "sha256": "0e0d00015f1c0640c8f0e433a5b18f77485ecf525f9f3460fad4c06ed862561c"
     }
   ],
-  "runtimeCoverageNote": "Motion46 source-bound live coverage: previous18 plus Borrin retained-stamp paperwork as daily finite cosmetic consultant activities. Eight derived additions remain outside unchanged frozen160; each retains exact task, original-pixel layer and actual-game evidence. Original physical desk remains independently owned. Daily economic outputs and consultant production exclusion are unchanged."
+  "runtimeCoverageNote": "Motion48 actual-renderer coverage: previous19 plus finite Cook kneading at an independent fixed block, finished dough retained only after completion/departure. All65 prior scoped art/registration/timing acceptances retain exact selected sources. Nine derived actors remain outside frozen160;50 main/7 original scopes unchanged. Task assignment now immediately targets the selected physical site; synchronous prop ownership covers arrival, cancellation, departure, return and late mounts. Economic output remains in existing day resolution."
 }

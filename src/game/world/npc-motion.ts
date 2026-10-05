@@ -4,7 +4,8 @@ import { MotionPlayback, motionPlacement, motionStrideBodyRatio } from "../motio
 import type { MotionManifest } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
-import { passiveWorkstation } from "./workstation-sites";
+import { activeWorkstation, passiveWorkstation } from "./workstation-sites";
+import { WorkstationTaskStates } from "./workstation-completion";
 import { consultantWorkAction, cookingWorkAction, elderCampActions, elderCampActivity, forgeWorkAction, timberWorkAction, WorkActivitySequence } from "./work-activities";
 
 const folders: Partial<Record<DwarfAppearance, string>> = {
@@ -211,7 +212,7 @@ export function setMotionUv(geometry: THREE.BufferGeometry, frame: number | null
 
 export const npcWorkDiagnostics = new Map<string, { action: string; direction: string; frame: number; completed: boolean; completions: number }>();
 /** Cosmetic station handoff only: animation never writes inventory or rewards. */
-export const workstationTaskStates = new Map<string, { owner: string; task: string; active: boolean; completed: boolean }>();
+export const workstationTaskStates = new WorkstationTaskStates();
 
 /** Task-owned one-shot playback. Rendering never awards economic output. */
 export class NpcWorkMotion {
@@ -276,8 +277,9 @@ export class NpcWorkMotion {
     const endedBeforeUpdate = Boolean(this.player?.ended);
     if (this.loaded) this.player?.advance(elapsedMs);
     if (!this.loaded || !this.player) return null;
-    if (this.appearance === "laborer" && job === "storage") {
-      workstationTaskStates.set("storage-pallet", { owner: this.id, task: key, active: true, completed: this.player.ended });
+    const completionStation = activeWorkstation(this.appearance, job, true, false, day);
+    if (completionStation?.completionLayer) {
+      workstationTaskStates.set(completionStation.id, { owner: this.id, task: key, active: true, completed: this.player.ended });
     }
     npcWorkDiagnostics.set(this.id, { action, direction, frame: this.player.index, completed: this.player.ended, completions: this.player.completions });
     const result = { texture: this.loaded.texture, frame: this.player.index, foregroundPolygons: this.loaded.foregroundPolygons?.[this.player.index], placement: motionPlacement(this.loaded.manifest, bodyHeight) };
@@ -297,8 +299,9 @@ export class NpcWorkMotion {
   }
 
   private reset() {
-    const station = workstationTaskStates.get("storage-pallet");
-    if (station?.owner === this.id) station.active = false;
+    for (const [id, station] of workstationTaskStates) {
+      if (station.owner === this.id) workstationTaskStates.set(id, { ...station, active: false });
+    }
     ++this.token; this.lease?.release(); this.lease = undefined; this.loaded = undefined;
     this.preload?.lease.release(); this.preload = undefined; this.preloadRetryAt = 0;
     this.player = undefined; this.key = ""; this.view = ""; this.activity = undefined; this.activityDay = -1; npcWorkDiagnostics.delete(this.id);

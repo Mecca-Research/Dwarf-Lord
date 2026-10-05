@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 46
+      "remaining": 45
     }
   ],
   "counts": {
@@ -32,8 +32,8 @@
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 19,
-    "referenceActionsWithoutMapping": 46
+    "referenceActionsMapped": 20,
+    "referenceActionsWithoutMapping": 45
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -11303,11 +11303,6 @@
     },
     {
       "character": "Cook",
-      "action": "knead-dough",
-      "destination": "public/sprites/Cook/motion/knead-dough/reference"
-    },
-    {
-      "character": "Cook",
       "action": "stir-cauldron",
       "destination": "public/sprites/Cook/motion/stir-cauldron/reference"
     },
@@ -11512,5 +11507,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "5e54d90fca00d65d5202962e6f1312c377f64b1689082f82cc2988b6b17e29b9"
+  "scopeSha256": "e7664082da787e8fe2a1fbb42d9928910848c5a0801838c58e8c19fb21ad0e96"
 }
