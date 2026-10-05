@@ -22,7 +22,7 @@ try {
  await until(()=>[...document.querySelectorAll('button')].some(b=>b.textContent==='Walk the road'),'start');
  await page.getByRole('button',{name:'Walk the road'}).click({force:true});
  await until(()=>Boolean(window.__controlsTest?.teleportDwarf),'scene');
- for(const [day,action] of [[1,'desk-writing'],[2,'count-coins']]) {
+ for(const [day,action] of [[1,'desk-writing'],[2,'count-coins'],[3,'review-open-ledger'],[4,'explain-at-desk']]) {
   const manifest=JSON.parse(readFileSync(`public/sprites/Borrin/motion/${action}/actor/manifest.json`));
   // Leaving and returning uses ordinary seated eligibility, never a frame setter.
   await page.evaluate(()=>{const t=window.__controlsTest;t.teleport(10,13);t.setZoomBias(12);t.teleportDwarf('borrin',20,10);});await tick();
@@ -63,7 +63,7 @@ try {
   await page.evaluate(()=>window.__controlsTest.nextMorning());await tick();
   console.log(`PASS consultant day${day}: ${action}, eight poses, completion hold, departure/return, persistent desk, no production assignment and morning selection`);
  }
- await until(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin')?.workMotion?.action==='desk-writing','day3 writing');
+ await until(()=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='borrin')?.workMotion?.action==='desk-writing','day5 writing');
  assert.deepEqual(errors,[]);
- await writeFile(`${output}/results.json`,JSON.stringify({method:'Controlled clock and actual Three renderer; home eligibility/day controls, without direct frame mutation.',seen,errors,scope:'Two finite cosmetic consultant activities. Coin stays held; no coin deposit, minting, economic transaction, seamless loop or moving sole certification.'},null,2)+'\n');
+ await writeFile(`${output}/results.json`,JSON.stringify({method:'Controlled clock and actual Three renderer; home eligibility/day controls, without direct frame mutation.',seen,errors,scope:'Four finite cosmetic consultant activities. Coin stays held; book/stacks/ink remain independently owned by the persistent desk. No coin deposit, minting, economic transaction, seamless loop or moving sole certification.'},null,2)+'\n');
 } finally {await browser.close();}

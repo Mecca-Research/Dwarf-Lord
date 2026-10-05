@@ -53,7 +53,7 @@
   "dependencies": [
     {
       "file": "../../render-calibration.json",
-      "sha256": "97bc6b2a890c33241f33f67cf6310384a147ffe559993b24e61c860e76713861"
+      "sha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989"
     },
     {
       "file": "../../../../workstations/ledger-desk/sprite.png",
@@ -190,15 +190,38 @@
     {
       "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
       "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
+      "sha256": "23b2627eca1e0cfa15d98a0ab7ed8a9cc92d2cc0fecd27faaca332cd76b0deef"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/smith-gameplay.json",
+      "sha256": "5ed34fa5dd95373abe86a57f7549e7d137354bf67c8abaa5ffc49ba053f9aba6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/consultant-gameplay.json",
+      "sha256": "f928774fa1ee2d8dc9d150bcc200e4313245a46e278894286bbfb4b474a21af9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/station-layer-authoring-results.json",
+      "sha256": "35b9bf5f36cbc8439fa53b550d408d28173625f4e6aec90ee5e10a6eba188ae8"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion43",
+    "checkpoint": "motion44",
     "files": [
-      "src/game/world/npc-motion.ts",
-      "src/game/world/workstation-sites.ts"
+      "public/sprites/Borrin/motion/render-calibration.json"
     ],
-    "audit": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
-    "scope": "Exact prior selected art and limited acceptance; current source diff and actual renderer regression."
+    "audit": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
+    "scope": "Exact previous selected art and limited acceptance; additive consultant source diff and current actual-renderer regression."
   }
 }

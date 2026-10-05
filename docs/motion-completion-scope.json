@@ -375,6 +375,14 @@
     {
       "character": "Ginger",
       "action": "build-barrel"
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk"
     }
   ],
   "runtimeCoverageBinding": {
@@ -4077,7 +4085,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
+      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4109,11 +4117,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "36f8ec3052a55fcffaa48334ce6f37a25cc5a2727a687f35e7a1721fe5aaeb13"
+      "sha256": "adc578672f22efe0272aa890e29142c762f45d8f91c73e55385cc89105ae1f58"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "a2cf204638c760b3a62c0c0a2b4b64de15b2df7a4fd8682298cb92685ddb5e96"
+      "sha256": "8d4e7385cdaeda387b78bcc5c92db8476f7dd3960b8fcfa025a6b36e3bfc8471"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4137,7 +4145,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "8996b825a1a6e4cae26e157be4a7a2a3196800feb5e22463048b9232b7d53f04"
+      "sha256": "27c688110fd815c86bdba16fddf57f197d243f03b8c792ebcf437a296ba50368"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4193,7 +4201,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "7357988d6b453430a4d547b5934c9a66d0f132651e0ba84227ef1c9cc162ae2b"
+      "sha256": "3f1db1827c5f9a86df835e4181f1dab444c8c18636c466b957080bdf802bdc4d"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4293,7 +4301,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "4616cac3c930c085343f74ac21dfa800d1ea48819bd1120e1cd323f619aba8e3"
+      "sha256": "dcbf1aa227bafc7270b1c0e334eab30623b3f743c2e05d7f0a76e9ceb45017ba"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4341,7 +4349,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/render-calibration.json",
-      "sha256": "97bc6b2a890c33241f33f67cf6310384a147ffe559993b24e61c860e76713861"
+      "sha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989"
     },
     {
       "file": "docs/art-review/motion41/runtime-revalidation.json",
@@ -4361,7 +4369,7 @@
     },
     {
       "file": "scripts/consultant-work-check.mjs",
-      "sha256": "e8be50e65b9b3d02495ecbc1f5a59a7258247483f4ff643a464febec027dba0b"
+      "sha256": "cf7b9d1e29293c0e9df8412ce433ff3a1934d354ed0ca04dd30e766c978651e8"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/source-sheet.png",
@@ -4385,7 +4393,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "08bc2178e618ab81e3275fe2041098bee01f40a36783b8461d5f349f3f7980ca"
+      "sha256": "c10b9be18723e8e3ce48761c69eceeacc871d3ef99bca3f3612bd1e24cd2a8a9"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4477,7 +4485,7 @@
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
-      "sha256": "680c7ec5c81a48d0f02e0f7b8745225f674357b91abf7d57d2c3367b51d415e0"
+      "sha256": "91d5f17caade6f6c4b8fc2084b3de03f550ed61eecf2cd20945bfb58fede5444"
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
@@ -4522,7 +4530,135 @@
     {
       "file": "public/sprites/workstations/cooper-barrel/generation.json",
       "sha256": "1fbd9c4be29dcc892decd0756574edd6eb210ad3e3e974c16a764a73dfa8c5f9"
+    },
+    {
+      "file": "docs/art-review/motion44/runtime-coverage-audit.json",
+      "sha256": "60b9f6cd731275b83849bfb949fda5dd54d04dd1e1c5f84b87bf7ed5011cdbf4"
+    },
+    {
+      "file": "docs/art-review/motion44/runtime-revalidation.json",
+      "sha256": "23b2627eca1e0cfa15d98a0ab7ed8a9cc92d2cc0fecd27faaca332cd76b0deef"
+    },
+    {
+      "file": "docs/art-review/motion44/consultant-gameplay.json",
+      "sha256": "f928774fa1ee2d8dc9d150bcc200e4313245a46e278894286bbfb4b474a21af9"
+    },
+    {
+      "file": "docs/art-review/motion44/station-layer-results.json",
+      "sha256": "b24b0b762cdc288778f557118d0ddf70ddb8f7b3d69a86504b15a74ca1906e9b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/source-sheet.png",
+      "sha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/atlas.png",
+      "sha256": "a510e4ecd866a9fc8a62911251a0561ce02406608a6b3e87612eb82fa0c47d45"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/assembly.json",
+      "sha256": "9a92ec05915b349cfbb7d5345d44513e9a62a27b2349870d2d55d31ea1acbf95"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/motion-polish.json",
+      "sha256": "330bf34dd6c1f05237823c88f6d93bc62f5217956b50275b98fc5f4070fca194"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/generation.json",
+      "sha256": "b9dc74d5aafa69e64e4bc5511a92f6d3b3904dde1f5b4b8d903cb3735c04ad26"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "sha256": "cc843eab8bc65e81be6165c56972a11179c7934790f968df8317e89db9faaa40"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
+      "sha256": "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/01.png",
+      "sha256": "c808ba8266b0066006fb6071c1d21c5ee5df8e04034a76648e0cc742ab39d11d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/02.png",
+      "sha256": "476252650bb5d38c8489184b49f455c4dacb3866a4213d337d9b5577f9edb213"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/03.png",
+      "sha256": "09dbff3db0d998a9ce360d81984e1eb8546f9e5993514e32c573fd6dcfabceb9"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/04.png",
+      "sha256": "68e0c58ab32f4be4474c6e8b5c4b6bf7bf190402def5815a42677e1ef38b8549"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/05.png",
+      "sha256": "02165e5eac3557ab43b00529e76788594abb5865ac4ac8c357bbde3961c1710e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/06.png",
+      "sha256": "8cc5bafe5bb39b69a82ddb57f07d9bf9291293f82eb549d98a09810d2c29df02"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/07.png",
+      "sha256": "d197c064ec7c42ab2d038af8e12582da37b507fe8a5b519c5dfe31ca984146df"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/source-sheet.png",
+      "sha256": "097f47aef963216e272cf6a94e46de2c3e2c99a88ba273acc2cd07169174a4ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/atlas.png",
+      "sha256": "cd070ff4aad539b034ea752dac38cf6601236369c5605c22fbedcc428307837f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/assembly.json",
+      "sha256": "6a94478fc1ad712b788aeca5dd7b3d2cccc55bb07cf86cc22360b3df9957cf3f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/motion-polish.json",
+      "sha256": "d6e72aad4e87b5f38b0f4b44459cecea141608579e9927a331ae5faa236fe223"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/generation.json",
+      "sha256": "383b7f49b0c912c2fc36c0c88c7ba38594d7d41f130386bf74ae2adbd96d0cb8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "sha256": "51ffc8f8027b1822752a2c16e8032d36f5ea7ffc855f0efc3afde75fe07f83ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
+      "sha256": "369b49365f3919da60bc1a7af0aa03ec2b1737e12b18023817d4eca4c93034cc"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/01.png",
+      "sha256": "fd0a040a478236a8d648e21273e381b40fc25ad4991c4c9dbdf790b28da21aee"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/02.png",
+      "sha256": "048b97f29a6a9fb11ed5319e6d787acbea0c50b7b05dc2c32d657afc0b6bcc43"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/03.png",
+      "sha256": "e254be8d11f4d75882abcb201e1e886a90761db7e73b08cf04e659b72a0e15ae"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/04.png",
+      "sha256": "2c919cfa79b343219408d5ccf8c60653e89fe2f469be627ac3307696d98e9123"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/05.png",
+      "sha256": "95df6ef561341b71caa52b79daa080e328529272b4f9752bd841b2af154f2931"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/06.png",
+      "sha256": "c4c7943b9f6d451ad398c8c045b89618b4859dec2852b3bf157e9207d7e7c94c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/07.png",
+      "sha256": "bf4f666957aca08545588a91cd2806edac8bdb04716818984899decc3a6c13b6"
     }
   ],
-  "runtimeCoverageNote": "Motion43 source-bound live coverage: earlier15 plus finite Ginger two-tap existing upper-hoop seating at independent cooper barrel. Five derived additions remain outside unchanged frozen160; each has exact task, layer and actual-game evidence. Economic outputs remain in existing day resolution."
+  "runtimeCoverageNote": "Motion44 source-bound live coverage: previous16 plus Borrin open-ledger review and desk explanation as daily finite cosmetic consultant activities. Seven derived additions remain outside unchanged frozen160; each retains exact task, original-pixel layer and actual-game evidence. Original physical desk remains independently owned. Daily economic outputs and consultant production exclusion are unchanged."
 }

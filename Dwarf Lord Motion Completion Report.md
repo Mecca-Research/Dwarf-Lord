@@ -1,8 +1,20 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: **motion43, 5 October 2026**. **PR #9 is not ready to merge.** Ginger now performs a calibrated eight-pose barrel-hoop seating action at an independent persistent cooper station. One main review and one live reference-action mapping close. The remaining frozen review count falls from105 to **104**; live activation rises from15 to **16 of65**. No new gait or direction family is approved.
+Checkpoint: **motion44, 5 October 2026**. **PR #9 is not ready to merge.** Borrin now performs an eight-pose open-ledger review and an eight-pose desk explanation at the existing independent ledger desk. Two existing reference-action activations close: **16 to18 of65 active;49 to47 inactive**. Their main references were already accepted, so the frozen review count remains **104**. No new gait or direction family is approved.
 
-The frozen scope remains **160 cycles:153 main sequences and seven original independent station actors**. Five derived actors (Blacksmith inspection/repair, Cook paring, Borrin inspection and Ginger hoop seating) carry separate exact task approvals. They do not enlarge the frozen denominator. There are12 actor/station variants using10 independently owned physical props.
+The frozen scope remains **160 cycles:153 main sequences and seven original independent station actors**. Seven derived actors (Blacksmith inspection/repair, Cook paring, Borrin coin inspection/ledger review/desk explanation and Ginger hoop seating) carry separate exact finite task approvals. They do not enlarge the frozen denominator. There are14 actor/station variants using10 independently owned physical props.
+
+## Completed in motion44
+
+**Borrin reviews an entry and explains it in the game.** On successive days he writes, inspects an already held coin, reviews the open ledger, then explains the entry with one modest free-hand gesture. Day5 restores writing. The two new actions each have eight distinct whole authored poses, source-only chair/body ownership, the same650/[320,616] physical basis as his earlier desk activities and one finite held finish. Borrin retains swept grey hair, bronze spectacles, two short brass-bound grey beard tips, red cravat, dark waistcoat, cream sleeves and stocky seated proportions. Whole-sheet hand-height corrections bring the actual fingers to the independently owned book; no local limb warping or synthetic frame is used.
+
+**Both visible stationary boot regions pass the original bounds.** Ledger review near cap/rim minimum correlation0.976282, maximum travel2.673021px and adjacent change3.208113px; far0.969989/2.347676/3.897978px. Explanation near0.978517/2.255885/2.554747px; far0.973429/1.486138/2.150604px. All keep the original0.94 correlation and6px travel/adjacent limits. Review uses bounded whole-pose integer registration, maximum5.10px; explanation needs no correction. An isolated reproduction preserves the original failed review far-boot6.980634px drift/7.811749px adjacent result. These native visible-cap/rim checks do not certify an invisible heel, traveling stride or world contact hidden by scene furniture.
+
+**Fingers and desk layering are checked separately.** Actual review index-tip points lie within2.657px of the traced fixed open-book face; directly inspected explanatory index-pad flesh lies inside that face in all eight poses. An automated proposal picking belt brass in explanatory4/5/7 was rejected. The other hand rests at the right book/stack edge, rises for a small explanatory gesture and returns. Narrow original-pixel forearm/hand contours keep the belt, waistcoat and chair post behind the fixed desk. No3D contact force, page turn, coin transfer or quill ownership is inferred. The desk, book, ink, counter and stacks remain fixed and independent after departure.
+
+**Actual finite playback and eligibility pass.** Four consultant operations show all eight authored-duration poses, one completion at7, an unchanged5-second terminal hold, release on departure, explicit return/reset0, persistent furniture and morning selection. Borrin remains outside production assignments and his cosmetic action remains available after daily production resolution. The economic catalog, day resolver, movement/root math, physical stations and other work selection retain their exact baseline code. Existing61 scoped acceptances retain exact selected art, timings and individual calibration actions; the immutable runtime audit permits only the additive consultant dispatch and its directly affected dependencies. Current original NPC/passive, three forge, two meal and fourteen functional/approved station-layer checks pass. Unchanged Elder/timber/right-stride evidence retains its original motion43 provenance rather than being relabeled as a new run.
+
+**Laborer gait attempts stay unselected.** Two whole-eight-pose strips, including one using a ground-plane guide, still fail to establish opposed support/reach and corresponding sole material. Exact ordered references, prompts and outputs are archived in `authoring-inputs/whole-strip44/`. Neither source is selected; no new numerical gait fit is claimed. Selected rear-left63.079px, Elder cane18.057px and joint14.009px failures remain unchanged. The four undecided Laborer carry/roll/sled references also have a fresh native inspection and explicit remaining measurement requirements, without invented contact results or acceptance.
 
 ## Completed in motion43
 
@@ -62,14 +74,14 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 
 ## Exact remaining work
 
-| Gate | Before motion43 | Current | Still required |
+| Gate | Before motion44 | Current | Still required |
 | --- | ---: | ---: | --- |
-| Main cycles with scoped acceptance |48 /153 | **49 /153** |104 |
+| Main cycles with scoped acceptance |49 /153 | **49 /153** |104 |
 | Original independent actors accepted |7 /7 | **7 /7** |0 |
-| Frozen cycle reviews remaining |105 | **104** |63 walk +24 directional tool/carry +17 fixed references |
-| Fixed references accepted |47 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
+| Frozen cycle reviews remaining |104 | **104** |63 walk +24 directional tool/carry +17 fixed references |
+| Fixed references accepted |48 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |15 /65 | **16 /65** |49 activations |
+| Existing reference actions active |16 /65 | **18 /65** |47 activations |
 | Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in63 walks |
 
 The49 main acceptances comprise eight scoped loops and41 finite tasks. Including the original seven actors, **56 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
@@ -79,7 +91,7 @@ The49 main acceptances comprise eight scoped loops and41 finite tasks. Including
 | Character | Accepted / existing | Remaining actions |
 | --- | ---: | --- |
 | Blacksmith |7 /7 |No combined-reference review remains; four live activations remain. |
-| Borrin |8 /8 |No combined-reference review remains; six live activations remain. |
+| Borrin |8 /8 |No combined-reference review remains; four live activations remain. |
 | Cook |8 /8 |No combined-reference review remains; six live activations remain. |
 | Elder |6 /6 |Seated references complete; all eight coordinated moving cane views remain open. |
 | Female Miner |3 /6 |pickaxe-contact; shovel-ore; push-ore-barrow |
@@ -94,13 +106,13 @@ The four further calibration/contact reviews are Laborer carry-sack, pull-supply
 | Character | Still inactive |
 | --- | ---: |
 | Blacksmith |4 |
-| Borrin |6 |
+| Borrin |4 |
 | Cook |6 |
 | Female Miner |6 |
 | Helga |6 |
 | Ginger |9 |
 | Laborer |12 |
-| **Total** | **49** |
+| **Total** | **47** |
 
 Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. Every activation requires an appropriate task/ambient context, source-bound placement/scale, correct tool/material ownership and completion/reset behavior. Furniture-containing references cannot be overlaid on independent duplicate props. Compatible operations may share a reviewed station; one new station per action is not required. Visual animation must not duplicate gameplay rewards.
 
@@ -118,16 +130,16 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 2. Correct only demonstrated defects in the other walking views and complete their whole-stride/held-frame reviews. Add coordinated Elder cane recovery/plant proof for all eight views.
 3. Correct remaining directional tool/log geometry and full material/grip state, then complete all eleven cross-direction family reviews.
 4. Close the17 remaining fixed-reference reviews, retaining a clear distinction between finite completion and seamless-loop approval.
-5. Activate the49 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
+5. Activate the47 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
 6. Recompute the frozen inventory from exact artifacts/dependencies. All160 review obligations, all11 direction families and all65 live reference-action mappings must be current, without missing/stale evidence. Derived additions need their own exact acceptance.
 7. Run full tests, build and actual browser checks on the final committed revision, verify GitHub checks on that exact PR head and confirm no remaining motion/gameplay gate. Only then give an all-green merge recommendation.
 
 ## Validation and evidence
 
-Motion43 validation: **207 Node tests and70 Python tests pass**, with type checking, Pages build and whitespace checks. Main-gallery controls/race/mobile checks cover153 sequences and1,224 images. All12 independent workstation variants pass approved layer checks, fixed-prop invariance, original-pixel foreground rendering, terminal hold and explicit replay/reset. Native and actual-game cooper captures verify the two settled contacts, independent furniture and final clearing. The headed built-game startup/movement smoke is recorded only after both full-scene captures are inspected; the earlier short-pause blank startup capture is excluded.
+Motion44 validation: **209 Node tests and72 Python tests pass**, with type checking, Pages build and whitespace checks. Main-gallery controls/race/mobile checks cover153 sequences and1,224 images. All14 independent workstation variants pass approved layer checks, fixed-prop invariance, original-pixel foreground rendering, terminal hold and explicit replay/reset. Native/material and actual-game Borrin captures verify both new eight-pose activities. Two headed full-scene startup/movement captures and18-character state snapshots are inspected; the player position changes and no client-error artifact is produced.
 
-Forge, cooking, consultant, original NPC/passive tasks, Elder seated handoffs and accepted right-view stride have fresh actual-renderer evidence. Runtime-dependent approvals retain their exact previous selected art and limited scope, guarded by the source diff and immutable motion43 runtime audit. Failed gait/cane diagnostics are refreshed against the unchanged walking logic and remain explicitly unapproved.
+Fresh current renderer checks cover four consultant operations, original NPC/passive tasks, three forge and two meal operations. Unchanged motion43 Elder seated handoffs, timber operations and Blacksmith right stride retain their original source-bound evidence and date. Exact relevant art, individual calibration actions, root math and action implementations are audited against71c193d; unchanged numerical observations are not regenerated. The analytical right stride remains1.032px; its retained three-stride proof has24 boundaries/152 held samples, maximum1.900px transition and0.265px held drift under original bounds. Other walking views remain open.
 
-Machine-readable results: `docs/motion43-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Native/material/layer/timed/live evidence and runtime audit are under `docs/art-review/motion43/`. Earlier evidence remains under its original checkpoint directories. Rejected Laborer guide-first inputs and solver findings are under the selected rear-left folder's `authoring-inputs/guide-first42/` and supply no acceptance.
+Machine-readable results: `docs/motion44-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Native/material/layer/timed/live evidence, reproducible stationary boot probe and source/coverage audits are under `docs/art-review/motion44/`. Earlier evidence retains its original checkpoint directory. Rejected whole-strip Laborer inputs are under the selected rear-left folder's `authoring-inputs/whole-strip44/` and supply no acceptance.
 
-**Passing local or GitHub checks does not close the104 motion reviews,11 family reviews or49 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**
+**Passing local or GitHub checks does not close the104 motion reviews,11 family reviews or47 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**

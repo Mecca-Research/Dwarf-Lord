@@ -38,10 +38,10 @@ export function timberWorkAction(day: number) {
   return timberWorkActions[(day - 1) % timberWorkActions.length];
 }
 
-/** The consultant inspects one already held coin on alternate days.
- * These finite desk activities never create coins or production assignments.
+/** The consultant performs one finite desk activity for the entire day.
+ * Writing, coin inspection, entry review and explanation remain cosmetic.
  */
-export const consultantWorkActions = ["desk-writing", "count-coins"] as const;
+export const consultantWorkActions = ["desk-writing", "count-coins", "review-open-ledger", "explain-at-desk"] as const;
 
 export function consultantWorkAction(day: number) {
   if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "prompt": "Edit image1's COMPLETE eight-pose Borrin explaining actor-only sheet together. Preserve every pose's exact head, torso, clothing, chair, seated boot positions, camera, body size, order and four-column/two-row layout. Fix hand/page height ONLY. The pointing anatomical RIGHT index finger (image-left hand) is currently35 pixels TOO LOW at640-frame scale, below imaginary desk/page. Raise its forearm in ALL8 poses by a modest natural elbow bend until downward fingertip is clearly ABOVE belt (around(298,340) in640-frame body registration), not on thigh/below buckle. Keep finger extended and steady above that imagined book entry. No tools or book in hand.\nThe free anatomical LEFT hand (image-right) still performs the same moderate explanatory lift, open-palm gesture and return. Its LOW contact poses1,7,8 need the palm/fingers raised about30pixels too, to sit at imagined cream book RIGHT page around(398,347), not on thigh. Middle gesture poses2-6 retain small smooth outward/return motion and same modest arc; don't add a second gesture. Image2 shows actual independent desk/open ledger in matching640-frame placement; use page surface as contact guide but do NOT include it in any actor frame. Image3 is approved seated writing actor identity/materials. Do not move the whole character up, move boots, change chair/pelvis/root or resize body to fix hands. Only flex elbows and raise low forearms/hands a little. Preserve exact Borrin swept grey hair, spectacles, twin short grey beard tips, scarf and vest. All8 fully visible, generous margins/gutters so every extended hand belongs wholly to its own pose. No desk, ledger, quill, props, shadows, labels or scenery. True transparent alpha, high-quality semi-realistic rendering, fixed view, one coherent eight-pose finite explanatory action.\n",
+  "source": "authoring-inputs/explain-height44.png",
+  "sourceSha256": "4d1df97eda38e2cbcdb3d6de8309b4aa90ccea5968b57d1e120d3553492cb537",
+  "references": [
+    {
+      "file": "authoring-inputs/explain44.png",
+      "sha256": "2e6917e7922551b4835dc260b14a65b43545ac869c16bd278fe1a1fc2070ad91"
+    },
+    {
+      "file": "authoring-inputs/desk-reference44.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "authoring-inputs/reference44-1.png",
+      "sha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05"
+    }
+  ],
+  "method": "Built-in whole eight-pose arm contact-height edit. Whole-figure component ownership removes cell-neighbor fragments without changing source art."
+}

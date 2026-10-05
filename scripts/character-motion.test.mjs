@@ -182,7 +182,7 @@ test('runtime actor layers and persistent stations retain source provenance and 
 
 test('additional work actions require exact actor, station and finite task evidence',()=>{
  const additions=json('docs/runtime-motion-additions.json').entries;
- assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel']);
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk']);
  for(const entry of additions){
   const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
   assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);
@@ -232,5 +232,27 @@ test('Borrin foreground contours keep his vest off the open ledger',()=>{
   assert.equal(polygons.some(p=>contains(p,[260,330])),false,'vest behind quill must not cover paper');
   assert.equal(polygons.some(p=>contains(p,[360,370])),false,'pants below hand stay behind desk');
   assert.equal(polygons.some(p=>contains(p,[430,340])),true,'resting hand remains above paper');
+ }
+});
+
+test('Borrin ledger review and explanation preserve visible fingers without foreground furniture',()=>{
+ const calibration=json('public/sprites/Borrin/motion/render-calibration.json').actions;
+ const observations=json('docs/art-review/motion44/Borrin-ledger-contact.json');
+ function contains(poly,[x,y]) {
+  let inside=false;
+  for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+   const [a,b]=poly[i],[d,e]=poly[j];
+   if(((b>y)!==(e>y))&&x<(d-a)*(y-b)/(e-b)+a)inside=!inside;
+  }
+  return inside;
+ }
+ for(const action of ['review-open-ledger','explain-at-desk']){
+  const observation=observations.find(o=>o.config.actor.endsWith(`/${action}/actor`));
+  assert.equal(observation.config.binding.sourceSha256,hash(`${observation.config.actor}/source-sheet.png`));
+  for(const [frame,polygons] of calibration[action+'/actor'].foregroundPolygons.entries()){
+   assert.ok(polygons.some(p=>contains(p,observation.config.points[frame])),'the reviewed pointing finger remains above the ledger');
+   assert.equal(polygons.some(p=>contains(p,[320,350])),false,'belt and vest stay behind the desk');
+   assert.equal(polygons.some(p=>contains(p,[495,352])),false,'the chair post stays behind the book stack');
+  }
  }
 });

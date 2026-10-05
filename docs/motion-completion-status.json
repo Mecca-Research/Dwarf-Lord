@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 49
+      "remaining": 47
     }
   ],
   "counts": {
@@ -32,8 +32,8 @@
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 16,
-    "referenceActionsWithoutMapping": 49
+    "referenceActionsMapped": 18,
+    "referenceActionsWithoutMapping": 47
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -11292,18 +11292,8 @@
     },
     {
       "character": "Borrin",
-      "action": "review-open-ledger",
-      "destination": "public/sprites/Borrin/motion/review-open-ledger/reference"
-    },
-    {
-      "character": "Borrin",
       "action": "turn-ledger-page",
       "destination": "public/sprites/Borrin/motion/turn-ledger-page/reference"
-    },
-    {
-      "character": "Borrin",
-      "action": "explain-at-desk",
-      "destination": "public/sprites/Borrin/motion/explain-at-desk/reference"
     },
     {
       "character": "Borrin",
@@ -11521,5 +11511,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "87781b3c44a4de34d482d7d173c5acc6d1237695f94df78ca8cf0bea085f99a1"
+  "scopeSha256": "8525c4b9eb37a159c4b896e4eddfd8f2150c67917ff5257477b128262937009f"
 }

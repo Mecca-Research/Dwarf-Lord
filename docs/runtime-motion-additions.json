@@ -116,6 +116,52 @@
       "status": "exported",
       "destination": "public/sprites/Ginger/motion/build-barrel/actor",
       "station": "cooper-barrel"
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "title": "Review open ledger",
+      "reference": "public/sprites/Borrin/work-references/01-review-open-ledger.png",
+      "beats": [
+        "point at upper entry",
+        "finger begins tracing down entry",
+        "trace the entry",
+        "lean down to read entry",
+        "closest examination of entry",
+        "straighten while retaining page contacts",
+        "return finger toward entry",
+        "completed pointing hold at the reviewed entry"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Finite seated review of an existing ledger entry. Actor owns body/chair/hands only; original independent desk owns fixed book, ink and coins. No economic writes or continuous-loop claim.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/review-open-ledger/actor",
+      "station": "ledger-desk"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "title": "Explain at desk",
+      "reference": "public/sprites/Borrin/work-references/03-explain-at-desk.png",
+      "beats": [
+        "point to ledger entry; free hand low",
+        "begin free-hand explanatory lift",
+        "open palm toward listener",
+        "extend open palm a little farther",
+        "full modest explanatory gesture",
+        "lower free hand",
+        "return free hand to page",
+        "completed low pointing/page hold"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Finite seated explain of an existing ledger entry. Actor owns body/chair/hands only; original independent desk owns fixed book, ink and coins. No economic writes or continuous-loop claim.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/explain-at-desk/actor",
+      "station": "ledger-desk"
     }
   ]
 }

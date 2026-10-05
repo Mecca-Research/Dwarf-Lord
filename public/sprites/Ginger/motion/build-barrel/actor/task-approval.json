@@ -132,7 +132,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
+      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
     },
     {
       "file": "../../../../../../src/game/world/terrain.tsx",
@@ -209,6 +209,38 @@
     {
       "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-departed.png",
       "sha256": "06f408a1c36cc5df912f05fed83c6a67c0968ebc0d364fba029b5035d836cb10"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
+      "sha256": "23b2627eca1e0cfa15d98a0ab7ed8a9cc92d2cc0fecd27faaca332cd76b0deef"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/smith-gameplay.json",
+      "sha256": "5ed34fa5dd95373abe86a57f7549e7d137354bf67c8abaa5ffc49ba053f9aba6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/consultant-gameplay.json",
+      "sha256": "f928774fa1ee2d8dc9d150bcc200e4313245a46e278894286bbfb4b474a21af9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/station-layer-authoring-results.json",
+      "sha256": "35b9bf5f36cbc8439fa53b550d408d28173625f4e6aec90ee5e10a6eba188ae8"
     }
-  ]
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion44",
+    "files": [
+      "src/game/world/work-activities.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
+    "scope": "Exact previous selected art and limited acceptance; additive consultant source diff and current actual-renderer regression."
+  }
 }

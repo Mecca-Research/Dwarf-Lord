@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a",
+    "settingsSha256": "c07ca616bbca01e6a7d1f3054338b1c789a81327acba124f25233a06279eb0e6",
+    "frameSha256": [
+      "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e",
+      "c808ba8266b0066006fb6071c1d21c5ee5df8e04034a76648e0cc742ab39d11d",
+      "476252650bb5d38c8489184b49f455c4dacb3866a4213d337d9b5577f9edb213",
+      "09dbff3db0d998a9ce360d81984e1eb8546f9e5993514e32c573fd6dcfabceb9",
+      "68e0c58ab32f4be4474c6e8b5c4b6bf7bf190402def5815a42677e1ef38b8549",
+      "02165e5eac3557ab43b00529e76788594abb5865ac4ac8c357bbde3961c1710e",
+      "8cc5bafe5bb39b69a82ddb57f07d9bf9291293f82eb549d98a09810d2c29df02",
+      "d197c064ec7c42ab2d038af8e12582da37b507fe8a5b519c5dfe31ca984146df"
+    ],
+    "atlasSha256": "a510e4ecd866a9fc8a62911251a0561ce02406608a6b3e87612eb82fa0c47d45",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "c07ca616bbca01e6a7d1f3054338b1c789a81327acba124f25233a06279eb0e6",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      140,
+      160,
+      160,
+      140,
+      140,
+      160
+    ],
+    "character": "Borrin",
+    "action": "review-open-ledger",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view finite seated open-ledger entry review and leaning/return at the existing independent persistent ledger desk. Visible boot-cap/rim material, projected finger/page placement, source-pixel foreground and consultant arrival/departure/day lifecycle only. No hidden sole, traveling gait, other camera direction, continuous loop, writing/page-turn/coin transfer or economic effect approval.",
+  "checks": {
+    "identity-and-scale": "Eight genuinely authored whole poses retain Borrin swept grey hair, bronze spectacles, two brass-bound short grey beard tips, cream rolled sleeves, red cravat, dark waistcoat, trousers, boots and wooden chair. One upright seated physical source basis and source-boot stance roots, with650/[320,616] effective actor/prop registration matching his writing/coin activities. Leaning or raised-hand height never becomes a new body scale. Whole-sheet edits and whole-figure extraction preserve neighboring-hand ownership; no limb warping or synthesized frames.",
+    "station-and-foot-contact": "Both actual visible stationary boot-cap and sole-rim regions are tracked independently across poses0-7: near minimum correlation0.976282, maximum travel2.673021px, adjacent change3.208113px; far minimum correlation0.969989, maximum travel2.347676px, adjacent change3.897978px. All pass unchanged.94 correlation/6px travel/6px adjacent bounds. Review roots use bounded whole-pose integer translations (maximum5.10px) from the two-region midpoint; explanation needs no translation. Reproduced zero-offset review proof records the failed6.980634px far drift/7.811749px adjacent change rather than concealing it. Native material correspondence does not certify hidden heel, moving stride or continuous world contact; live camera foreground objects can occlude boots.",
+    "hand-and-tool-contact": "Actual pointing index-tip locations were inspected in all eight poses; maximum projected distance beyond the fixed open-book face is2.657px. The finger follows an entry as his head leans toward the ledger and returns. The opposite low hand rests at the right page/book-stack edge; no page turn or gripping a separate book is claimed. Native layered inspection verifies hand/forearm source-pixel contours over the fixed open book and upper tabletop. Dark vest, belt and chair-post wedges are excluded. This is projected silhouette/page placement, not3D contact force; no quill, held coin or tool belongs to either new actor.",
+    "prop-continuity": "One independently owned ledger desk, book/page state, ink pot, brass counter and stack of books remain identical for every pose and after Borrin departs. Actor owns only his body/chair. Foreground hands reuse original pose pixels. Low free-hand/book-stack occlusion is inspected separately from the pointing-page contact. No ledger entry transaction, page-state mutation, currency deposit or duplicate furniture is represented.",
+    "completion-and-reset": "Actual Three renderer covers all eight authored-duration poses for each of four daily consultant operations, completes exactly once at7, and holds unchanged for5000ms. Departure releases actor while the desk persists; explicit return resets0. Production assignment is rejected. Day resolution leaves the cosmetic consultant available, next morning selects the next operation, and day5 restores writing. The source, atlas, calibration and prop served in game match selected files. Shared layer renderer verifies every hold, completion, static prop invariance and explicit restart. This finite action does not approve7-to0 as a seamless loop."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-actor-review.json",
+      "sha256": "69be6b82f7365bf4cb99322cf3629baa54b1c12b3d007e08fb3846f4969bbc41"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-stationary-boot-contacts.json",
+      "sha256": "7755c626932343e1f3ba81a853cbd57a69f071ec844b23ae03623fccf1dce169"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-ledger-contact.json",
+      "sha256": "a4d9b81dae9a0855c69ab0b14bf90e4ad8bfe75abd43d3011cc865a86cedc362"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/consultant-gameplay.json",
+      "sha256": "f928774fa1ee2d8dc9d150bcc200e4313245a46e278894286bbfb4b474a21af9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/station-layer-authoring-results.json",
+      "sha256": "35b9bf5f36cbc8439fa53b550d408d28173625f4e6aec90ee5e10a6eba188ae8"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "9a92ec05915b349cfbb7d5345d44513e9a62a27b2349870d2d55d31ea1acbf95"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "b9dc74d5aafa69e64e4bc5511a92f6d3b3904dde1f5b4b8d903cb3735c04ad26"
+    },
+    {
+      "file": "review.jpg",
+      "sha256": "c856327b2ee01bfce97aa85ef6b19fbb30f01b1569599c434af48bc3066cc2c7"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/source.png",
+      "sha256": "cf3e452ffaf431d1522244716e86ad740bed9171e953c258e7804f54760659ae"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/sprite.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/generation.json",
+      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+    },
+    {
+      "file": "../../../../../../scripts/consultant-work-check.mjs",
+      "sha256": "cf7b9d1e29293c0e9df8412ce433ff3a1934d354ed0ca04dd30e766c978651e8"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
+    },
+    {
+      "file": "../../../../../../src/game/world/terrain.tsx",
+      "sha256": "06e70874b5cd1427b241f13138837f9c6e2628bca33c1e15251bb98bf57f3cca"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "authoring-inputs/review-height44.png",
+      "sha256": "bee2a242e4ff51ee766f11292cf1cfa68f487ccaf46f5e9d6abdf0e4717b7c4b"
+    },
+    {
+      "file": "authoring-inputs/boot-contacts-before-root44.json",
+      "sha256": "ec56b7bea50b4677a06f35a9ea4d5d55751ab6945e1c465650ac98e5df82792c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-native-layer-review.jpg",
+      "sha256": "21ba34b03344c37a7bf51b9b8dab1bb9a0be201eebf4ae1944f4dfd955392211"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-finger-observations.jpg",
+      "sha256": "b0ad6bee2c253a20111461c4f147fa77325283fc95827396bacaef257388f736"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-review.jpg",
+      "sha256": "01dd2d7dc3aaf7db123669cb21ff82a06680ac1abeaf7f28a4208e494f5704d2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-departed.png",
+      "sha256": "fe3de52dafc12339c293422397e0f66b6653c91837db62ea75dd647a42788e3f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-0.png",
+      "sha256": "e69f73019da1c0fa317ae3e3abeab2c6deee923f6e44764462549f3101fd3294"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-0.png",
+      "sha256": "11a540b9a28e9f7aae001b331e0fe4bbd72d483335f5d9022cb4fb651ce6929b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-1.png",
+      "sha256": "86671af0f77927f9df3433c1cfdd90eeca2746a3004bf09e1bec9156500b30d4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-1.png",
+      "sha256": "92507c3278413d837240d3b3177ce574262e745fe357addc4c0967c11b778d7a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-2.png",
+      "sha256": "ff7ff23a4e532b4717172af7307da067d27a8dce583656a40366ff61695fdc10"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-2.png",
+      "sha256": "9cf820bd660ddec3da00d249a80a2ebbc2745d6a5560c4ac9e6e8463acdaa33c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-3.png",
+      "sha256": "860fa985fdeb176da64584305749c1b1b47902bb3f8c9c0cef94ad1844546677"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-3.png",
+      "sha256": "6ca754877b2c153e3014e075348dee7ed209207d0d384749a1d75df95c970110"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-4.png",
+      "sha256": "2fdefad1a0cec7a3d95894490808f6be567943db5ca5205114812cfb9182fad2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-4.png",
+      "sha256": "067bdf948ad864411b22e75fb6d011272157e707ce510698b8825cce3963faa4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-5.png",
+      "sha256": "15bb6989ca66c3c299570fa8e759c7d9f8768417aabc5fdf8cea1f54c82ad925"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-5.png",
+      "sha256": "94f52da6f8bb9878cb7a9d89f38b933b0b2d2bd7cd45d09acd388fadb24cebb3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-6.png",
+      "sha256": "d29e44ed7fbb8677d00d2083836a452a4842f1a85fd077f8d41e033c62be183f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-6.png",
+      "sha256": "177d91af51bda849540d4073809f3904b1a2d6221ba1d99a3a13bc79bf224633"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-layer-7.png",
+      "sha256": "987f9ba821223d08e82813aa134696d8ff4a74ea402da8884fd074a0c78b4b45"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-review-open-ledger-game-7.png",
+      "sha256": "7ec9681541c0a7833006e8e3b2f7df01211d8e64752e7aa7acbe567067490448"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/Borrin-stationary-boot-probe.py",
+      "sha256": "0893bf68cd807be0d5975db94faf7d0f8ac7d70855c03f244f18dfbe7ce5ccaf"
+    }
+  ]
+}

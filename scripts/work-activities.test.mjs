@@ -8,6 +8,11 @@ const source=readFileSync('src/game/world/work-activities.ts','utf8');
 const {outputText}=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS}});
 const actions={};new Function('exports','require',outputText)(actions,id=>{assert.equal(id,'../data/catalog');return catalog;});
 const {elderCampActivity,elderCampActions,WorkActivitySequence}=actions;
+test('consultant keeps one cosmetic operation for each valid day and returns to writing',()=>{
+ assert.deepEqual(actions.consultantWorkActions,['desk-writing','count-coins','review-open-ledger','explain-at-desk']);
+ assert.deepEqual([1,2,3,4,5,6,7,8].map(actions.consultantWorkAction),['desk-writing','count-coins','review-open-ledger','explain-at-desk','desk-writing','count-coins','review-open-ledger','explain-at-desk']);
+ for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.consultantWorkAction(day));
+});
 test('timber activity selects one finite operation per valid day and restores forestry',()=>{
  assert.deepEqual(actions.timberWorkActions,['fell-tree','build-barrel']);
  assert.deepEqual([1,2,3,4].map(actions.timberWorkAction),['fell-tree','build-barrel','fell-tree','build-barrel']);
