@@ -127,7 +127,7 @@ A scoped review applies only to its exact source, frames, atlas, registration, t
 | Ginger | chop-downed-log | reference | scoped-review-approved |
 | Ginger | load-logs-cart | reference | reviewed-changes-required |
 | Ginger | sharpen-axe | reference | scoped-review-approved |
-| Ginger | build-barrel | reference | reviewed-changes-required |
+| Ginger | build-barrel | reference | scoped-review-approved |
 | Laborer | roll-barrel | reference | not-reviewed |
 | Laborer | carry-crate | reference | not-reviewed |
 | Laborer | stack-crates | reference | scoped-review-approved |
@@ -232,7 +232,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Ginger | chop-downed-log |
 | Ginger | load-logs-cart |
 | Ginger | sharpen-axe |
-| Ginger | build-barrel |
 | Laborer | roll-barrel |
 | Laborer | carry-crate |
 | Laborer | build-barrel |

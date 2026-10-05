@@ -371,11 +371,15 @@
     {
       "character": "Borrin",
       "action": "count-coins"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-barrel"
     }
   ],
   "runtimeCoverageBinding": {
     "file": "src/game/world/npc-motion.ts",
-    "sha256": "afe2174e9e61fd64d21fa190e77fb17aca72daa383d525be851ce2b2f8e938ad"
+    "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
   },
   "retryPolicy": {
     "maxAttemptsPerPosePerCheckpoint": 2,
@@ -4073,7 +4077,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "c836b8ea715304cd1ae16a337e0807a6c09a6c9b2b9b09548799ede9c2d2d520"
+      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4085,7 +4089,7 @@
     },
     {
       "file": "src/game/world/workstation-sites.ts",
-      "sha256": "2bff89e7f73d93505623c129bc26909b0ffb8cbbaaae643313e77356732d74a2"
+      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
     },
     {
       "file": "src/game/motion-playback.ts",
@@ -4105,11 +4109,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "333026a594cb3ec825ea6e32e31f0444b7315c9c4b0d5c5150c944fa0e140c45"
+      "sha256": "36f8ec3052a55fcffaa48334ce6f37a25cc5a2727a687f35e7a1721fe5aaeb13"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "8a8ee3ce36195bee8e2dfd519b2712773ca3036a9dd53bb283752e8b0d008d46"
+      "sha256": "a2cf204638c760b3a62c0c0a2b4b64de15b2df7a4fd8682298cb92685ddb5e96"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4133,7 +4137,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "31b6c9d1fc7acb55cb447a83d7e4186ca14e7ef5b5b2c380f1a1547407727997"
+      "sha256": "8996b825a1a6e4cae26e157be4a7a2a3196800feb5e22463048b9232b7d53f04"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4189,7 +4193,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "9b1f63ca5059713fcf3d189b70230ba46c72d7f6c1d7878cd21721de84df567c"
+      "sha256": "7357988d6b453430a4d547b5934c9a66d0f132651e0ba84227ef1c9cc162ae2b"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4289,7 +4293,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "b3cff358839047acb23d50f3b95d063a718a8d25e3e261add7b8871b99f2da24"
+      "sha256": "4616cac3c930c085343f74ac21dfa800d1ea48819bd1120e1cd323f619aba8e3"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4381,7 +4385,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "a6e938e7d3cc2862e099ee2b60f161b462fc6ed36f8648b348b71d14830852d3"
+      "sha256": "08bc2178e618ab81e3275fe2041098bee01f40a36783b8461d5f349f3f7980ca"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4426,7 +4430,99 @@
     {
       "file": "public/sprites/workstations/ledger-desk/sprite.png",
       "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "src/game/world/terrain.tsx",
+      "sha256": "06e70874b5cd1427b241f13138837f9c6e2628bca33c1e15251bb98bf57f3cca"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/render-calibration.json",
+      "sha256": "64aa4b6ccaa935ce881a141442c8e91e1c4658964eb00f6ccfc7ce129cc01247"
+    },
+    {
+      "file": "docs/art-review/motion43/runtime-revalidation.json",
+      "sha256": "9de495e924f1897b8d9ce273e4bb4fc7611649be83b4213b44e6eaf449684b15"
+    },
+    {
+      "file": "docs/art-review/motion43/cooper-gameplay.json",
+      "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "docs/art-review/motion43/station-layer-results.json",
+      "sha256": "e567b82f3a9a8ad7bda2c20bb3683ac6c02820e30b12604b72da8b9cb58b2267"
+    },
+    {
+      "file": "scripts/cooper-work-check.mjs",
+      "sha256": "3ad43a5795b96e5d251cdffaf41ed1e58dc43ceb802fb883d76208c98030cba9"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/source-sheet.png",
+      "sha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/atlas.png",
+      "sha256": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/assembly.json",
+      "sha256": "dc3ce5a810ae7f15dc7cf5db99881b5ca42319b3fe2fc5bbf647839dfac0ec35"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/motion-polish.json",
+      "sha256": "c40fdd89967d031d458db5d820600b299b1ddbb2478ed1ff8c7abb1fcadab77c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/generation.json",
+      "sha256": "272742f6dff66b606ee8fad522cf60b645597f4f0ee92b499e6296d337dac346"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "sha256": "680c7ec5c81a48d0f02e0f7b8745225f674357b91abf7d57d2c3367b51d415e0"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
+      "sha256": "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/01.png",
+      "sha256": "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/02.png",
+      "sha256": "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/03.png",
+      "sha256": "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/04.png",
+      "sha256": "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/05.png",
+      "sha256": "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/06.png",
+      "sha256": "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/07.png",
+      "sha256": "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/source.png",
+      "sha256": "945672ceeaa053f4a49d6c1160e408ffc81494d355cf235dd3d46d5fd077ce5e"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/sprite.png",
+      "sha256": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/generation.json",
+      "sha256": "1fbd9c4be29dcc892decd0756574edd6eb210ad3e3e974c16a764a73dfa8c5f9"
     }
   ],
-  "runtimeCoverageNote": "Motion41 source-bound live coverage: previous fourteen actions plus finite Borrin coin inspection at original independent ledger desk. Four derived additions remain outside unchanged frozen160 and carry exact task approvals, static stations, calibration and current actual renderer proof."
+  "runtimeCoverageNote": "Motion43 source-bound live coverage: earlier15 plus finite Ginger two-tap existing upper-hoop seating at independent cooper barrel. Five derived additions remain outside unchanged frozen160; each has exact task, layer and actual-game evidence. Economic outputs remain in existing day resolution."
 }

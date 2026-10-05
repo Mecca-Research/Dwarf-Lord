@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "selected": false,
+  "baselineSelectedFolder": "public/sprites/Laborer/motion/walk/back-left",
+  "candidateBinding": {
+    "sourceSha256": "0445933dfc202e49ed7e304054c8ce81b1ab4e573c88fa2a1be66438c578e484",
+    "settingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+    "frameSha256": [
+      "1acf7d6e1f6a57996ad9598a3da396e27d251fa0ee319b59f725f0a6e2d4129d",
+      "b37e60426f119f14e1773d94a43aaf77cb5e8b6600cb7a58dab52cbbe1b43923",
+      "90eb7e730e417213bdaed2c3e335dfa4fe13910bbfd6e1ba4847a58812a110d1",
+      "9d994b03862e5b6da003f3178ff307ba9d39d4569c23943e7030e980d570f9cb",
+      "a45847aa1fed090a75057dc27039fa8601cab8f517fd721ad36ed637415779c1",
+      "3d606d71b9a6c4b91fc43a4e3660a5fa441507276de96a74e81ed9ae0232a2d1",
+      "5de0e0562cb3db470de4e8b1d7bc6843f73a61b39f4ba8fb3dfa216f810026ab",
+      "dfeb9685c24a474b83e29f4dc0f0e91346a6fd8bc400cfeb264772d24c7c39da"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+    "atlasSha256": "4b315deebb7cd9ce131416b0cebc3cc71eb8449389b8cf9da752befe125fd021",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "verdict": "changes-required",
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "maxContactJumpPx": 79.571,
+  "fittedResidualPx": 80.439,
+  "reversedSupportBoundaries": [
+    3,
+    7
+  ],
+  "issues": [
+    "Provisional opaque sole-landmark diagnostic exceeds6px, but anatomical/material correspondence and support windows remain unapproved; it cannot certify actual whole-stride contact.",
+    "Under the provisional selectors,3-to4 and7-to0 reverse the stance direction and the solver correctly refuses a timing candidate. Resolve correspondence/pose geometry before adoption.",
+    "Reach3/contact4 counter-swing and constant body/boot camera remain unapproved.",
+    "Initial constant1153 source body basis and nominal640/1200 root are authoring assumptions, not a verified registration or stride."
+  ],
+  "scope": "Independent guide-first candidate only. All eight whole poses/ordered prompts/inputs and native actual-material diagnostic retained. Selected source, eight frames, atlas, registration, timings and63.079px failure remain unchanged."
+}

@@ -7,208 +7,208 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
+  "sourceSha256": "8447a76795af9cdce674bec2b42c1a5ed983846875e816d33c8ce4e9a0d4b4a5",
   "sourceSize": [
-    1774,
-    887
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.3672055427251733,
+  "sharedScale": 1.0,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "brace staves in barrel jig",
-      "durationMs": 125,
+      "description": "held mallet low; opposite palm above rim",
+      "durationMs": 160,
       "sourceBounds": [
-        20,
-        43,
-        435,
-        407
+        180,
+        74,
+        618,
+        600
       ],
       "sourceAnchor": [
-        207.5,
-        364
+        140.0,
+        526.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        36,
-        118
+        180,
+        90
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "position stave",
-      "durationMs": 125,
+      "description": "raise same mallet toward chest",
+      "durationMs": 140,
       "sourceBounds": [
-        460,
-        35,
-        874,
-        407
+        818,
+        77,
+        1258,
+        601
       ],
       "sourceAnchor": [
-        207.0,
-        372
+        142.0,
+        523.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        107
+        178,
+        93
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "seat stave in ring",
-      "durationMs": 125,
+      "description": "highest mallet raise",
+      "durationMs": 160,
       "sourceBounds": [
-        901,
-        54,
-        1315,
-        407
+        1419,
+        32,
+        1898,
+        600
       ],
       "sourceAnchor": [
-        207.0,
-        353
+        181.0,
+        568.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        133
+        139,
+        48
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "grip mallet",
-      "durationMs": 125,
+      "description": "descend toward upper hoop",
+      "durationMs": 120,
       "sourceBounds": [
-        1343,
-        47,
-        1757,
-        407
+        2101,
+        105,
+        2538,
+        600
       ],
       "sourceAnchor": [
-        207.0,
-        360
+        139.0,
+        495.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        124
+        181,
+        121
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "raise mallet",
-      "durationMs": 125,
+      "description": "first settling hoop tap; opposite hand braced",
+      "durationMs": 100,
       "sourceBounds": [
-        21,
-        424,
-        435,
-        857
+        181,
+        747,
+        618,
+        1240
       ],
       "sourceAnchor": [
-        207.0,
-        433
+        139.0,
+        493.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        24
+        181,
+        123
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "tap hoop downward",
-      "durationMs": 125,
+      "description": "rebound while bracing hand stays at rim",
+      "durationMs": 120,
       "sourceBounds": [
-        461,
-        505,
-        874,
-        857
+        814,
+        748,
+        1258,
+        1240
       ],
       "sourceAnchor": [
-        206.5,
-        352
+        146.0,
+        492.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        135
+        174,
+        124
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "rebound mallet",
-      "durationMs": 125,
+      "description": "second low settling hoop tap",
+      "durationMs": 140,
       "sourceBounds": [
-        901,
-        475,
-        1314,
-        857
+        1460,
+        741,
+        1898,
+        1240
       ],
       "sourceAnchor": [
-        206.5,
-        382
+        140.0,
+        499.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        94
+        180,
+        117
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "inspect hoop fit",
-      "durationMs": 125,
+      "description": "completed low grip; free palm above rim",
+      "durationMs": 160,
       "sourceBounds": [
-        1343,
-        507,
-        1757,
-        857
+        2096,
+        722,
+        2538,
+        1241
       ],
       "sourceAnchor": [
-        207.0,
-        350
+        144.0,
+        518.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        37,
-        137
+        176,
+        98
       ]
     }
   ],
@@ -243,46 +243,39 @@
       7
     ],
     "fps": 8,
-    "durationMs": 1000,
+    "durationMs": 1100,
     "durationsMs": [
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125,
-      125
+      160,
+      140,
+      160,
+      120,
+      100,
+      120,
+      140,
+      160
     ],
     "loopApproved": false,
     "endBehavior": "hold-last",
-    "rootMotion": "stationary-or-task-driven"
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
   },
   "registration": {
-    "method": "lower-silhouette-estimate",
+    "method": "source-landmarks",
     "targetAnchor": [
       320,
       616
     ],
-    "targetBodyHeight": null,
-    "scaleScope": "sequence",
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
     "landmarksVerified": false,
-    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "exportVersion": 2
+    "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [
-      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
-    ],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view finite two-tap existing upper-hoop seating and held finish. Native actor identity/scale, visible boot-cap material, source-pixel hand/tool contacts and gallery completion/reset only. No hidden sole, traveling gait, other direction, complete barrel fabrication, seamless repeat or live activation approval."
   }
 }

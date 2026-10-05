@@ -5,7 +5,7 @@ import type { MotionManifest } from "../motion-playback";
 import type { Body } from "../runtime";
 import type { DwarfAppearance } from "./dwarf-appearances";
 import { passiveWorkstation } from "./workstation-sites";
-import { consultantWorkAction, cookingWorkAction, elderCampActions, elderCampActivity, forgeWorkAction, WorkActivitySequence } from "./work-activities";
+import { consultantWorkAction, cookingWorkAction, elderCampActions, elderCampActivity, forgeWorkAction, timberWorkAction, WorkActivitySequence } from "./work-activities";
 
 const folders: Partial<Record<DwarfAppearance, string>> = {
   blacksmith: "Blacksmith", borrin: "Borrin", cook: "Cook", elder: "Elder",
@@ -241,7 +241,7 @@ export class NpcWorkMotion {
       this.appearance === "femaleMiner" && job === "shaft2" ? "shovel-cycle" :
       this.appearance === "blacksmith" && job === "forge" ? forgeWorkAction(day) :
       this.appearance === "laborer" && job === "storage" ? "stack-crates" :
-      this.appearance === "ginger" && job === "timber" ? "fell-tree" :
+      this.appearance === "ginger" && job === "timber" ? timberWorkAction(day) :
       this.appearance === "stoneworker" && job === "limestone" ? "chisel-contact" : null;
     if (!action || (!passive && !elder && (body.anim !== "work" || resolved))) { if (this.key) this.reset(); return null; }
     const key = `${day}:${job}:${action}`;

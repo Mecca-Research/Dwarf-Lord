@@ -28,6 +28,16 @@ export function cookingWorkAction(day: number) {
   return cookingWorkActions[(day - 1) % cookingWorkActions.length];
 }
 
+/** Timber workers alternate tree cutting with maintaining an existing barrel.
+ * Reseating its hoop is cosmetic; the daily timber job still owns its output.
+ */
+export const timberWorkActions = ["fell-tree", "build-barrel"] as const;
+
+export function timberWorkAction(day: number) {
+  if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");
+  return timberWorkActions[(day - 1) % timberWorkActions.length];
+}
+
 /** The consultant inspects one already held coin on alternate days.
  * These finite desk activities never create coins or production assignments.
  */

@@ -88,7 +88,7 @@
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
-      "sha256": "afe2174e9e61fd64d21fa190e77fb17aca72daa383d525be851ce2b2f8e938ad"
+      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -96,11 +96,11 @@
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
-      "sha256": "2bff89e7f73d93505623c129bc26909b0ffb8cbbaaae643313e77356732d74a2"
+      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "c836b8ea715304cd1ae16a337e0807a6c09a6c9b2b9b09548799ede9c2d2d520"
+      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -229,15 +229,52 @@
     {
       "file": "../../../../../../docs/art-review/motion41/consultant-gameplay.json",
       "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
+      "sha256": "9de495e924f1897b8d9ce273e4bb4fc7611649be83b4213b44e6eaf449684b15"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/smith-gameplay.json",
+      "sha256": "b2905cff824676494021054245fff438476fa72fa492fd65bd3d30d7c09a5c51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/station-layer-results.json",
+      "sha256": "e567b82f3a9a8ad7bda2c20bb3683ac6c02820e30b12604b72da8b9cb58b2267"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
+      "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion41",
+    "checkpoint": "motion43",
     "files": [
       "src/game/world/npc-motion.ts",
+      "src/game/world/workstation-sites.ts",
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion41/runtime-revalidation.json",
-    "scope": "Identical selected poses and original limited review scope; fresh actual renderer regression only."
+    "audit": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
+    "scope": "Exact prior selected art and limited acceptance; current source diff and actual renderer regression."
   }
 }

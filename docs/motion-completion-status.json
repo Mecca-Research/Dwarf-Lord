@@ -5,7 +5,7 @@
   "mergeBlockers": [
     {
       "gate": "final-cycle-reviews",
-      "remaining": 105
+      "remaining": 104
     },
     {
       "gate": "direction-continuity",
@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 50
+      "remaining": 49
     }
   ],
   "counts": {
@@ -25,15 +25,15 @@
     "fixedWorkCycles": 65,
     "actorCycles": 7,
     "actorFrames": 56,
-    "mainScopedReviewsApproved": 48,
+    "mainScopedReviewsApproved": 49,
     "actorScopedReviewsApproved": 7,
-    "cycleReviewsRemaining": 105,
+    "cycleReviewsRemaining": 104,
     "directionFamilies": 11,
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 15,
-    "referenceActionsWithoutMapping": 50
+    "referenceActionsMapped": 16,
+    "referenceActionsWithoutMapping": 49
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -9111,52 +9111,50 @@
       "destination": "public/sprites/Ginger/motion/build-barrel/reference",
       "id": "Ginger/build-barrel/reference",
       "frameCount": 8,
-      "reviewStatus": "reviewed-changes-required",
-      "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+      "reviewStatus": "scoped-review-approved",
+      "scope": "Fixed-view finite two-tap existing upper-hoop seating and held finish. Native actor identity/scale, visible boot-cap material, source-pixel hand/tool contacts and gallery completion/reset only. No hidden sole, traveling gait, other direction, complete barrel fabrication, seamless repeat or live activation approval.",
       "binding": {
-        "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
-        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceSha256": "8447a76795af9cdce674bec2b42c1a5ed983846875e816d33c8ce4e9a0d4b4a5",
+        "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
         "frameSha256": [
-          "5072381ba50e1fcf32828df11ff5ebe2dfd6a0eebaf097415bbb8e5785167a99",
-          "11ff5eb8459bdc933fec8bc317e9491d80c38fda4f8868712289f7c9f127b8a5",
-          "302866869a959aa27ca898f562d00fec0f93299a761cc743ddb3a8146429aca3",
-          "1b38715c0526fe15f478375263bbb4524c9eabefd90ec21a5fd6d2f8fc37998b",
-          "a26f3c0336a9560dadddb2a3648b2546f8418a81dfb2111ac2a89045bfcfbb93",
-          "43424eeab10251bd5e5930721d4fe1fd161606639ff2b81dd3a347d2f7166e0b",
-          "a76955959797cb1f9784ab9fcf09699cd06adc511c95507a60dd21fc617951b8",
-          "17ef1742f67ee2e8cebaeec132d2d6cd57fa25a16d22206695f354d64e033163"
+          "37d7347263bd270fdae960dd0608517bd5dc93871bb7970a24bbd5091f9abd21",
+          "26c9724fd99f31b48bc40b983255f3b520ba2964f570dda3cbab9adae58ce0fb",
+          "6b50eacea7a9ec4518fbe3312de43b08b3ac13d7617b8b65c0a1131d921e437b",
+          "88295c57bfb9189884a7b85f8befb9e70325df1f56411658e0aefdee84d57ed6",
+          "a5a540ecfe05173369f1ba36b350e6c89c70cdc4dfc79e22533ae17c8acf8fb7",
+          "b14f360103a11e7ad1abb29997a1645e0c0a8a0f0041c0031a5056d11d7ec7e9",
+          "53297c93163208dbe3e89df879140badbebdfaf870f58067bd7da9a649c42240",
+          "4bd13c33d3c5323318c28e41f14ef1a297dcea8fe3c7f4984716b9ff197d3001"
         ],
-        "atlasSha256": "8f9da6b1aa0ecdc6fa1a0fa7cd3c0f7fa86976e19a130e22d485151000e135d2",
+        "atlasSha256": "38b81396c8aeb41fea9389c1ac3d0f5d184938e3fb023414f449dd50b9d0d767",
         "registration": {
-          "method": "lower-silhouette-estimate",
+          "method": "source-landmarks",
           "targetAnchor": [
             320,
             616
           ],
-          "targetBodyHeight": null,
-          "scaleScope": "sequence",
+          "targetBodyHeight": 520,
+          "scaleScope": "directional-body-height",
           "landmarksVerified": false,
-          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-          "exportVersion": 2
+          "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
+          "exportVersion": 2,
+          "stationRegistration": null
         },
         "durationsMs": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
+          160,
+          140,
+          160,
+          120,
+          100,
+          120,
+          140,
+          160
         ],
         "character": "Ginger",
         "action": "build-barrel",
         "direction": "reference"
       },
-      "approvalType": null,
-      "issues": [
-        "Right hand retains mallet during rebound6 but7 it is on the distant bench with both hands already on the barrel, without a lowering/placement pose. Mallet also disappears from the bench across7-to0. Need an explicit return-to-bench beat and persistent tool ownership."
-      ]
+      "approvalType": "once-hold-task"
     },
     {
       "character": "Laborer",
@@ -11493,11 +11491,6 @@
       "destination": "public/sprites/Ginger/motion/sharpen-axe/reference"
     },
     {
-      "character": "Ginger",
-      "action": "build-barrel",
-      "destination": "public/sprites/Ginger/motion/build-barrel/reference"
-    },
-    {
       "character": "Laborer",
       "action": "roll-barrel",
       "destination": "public/sprites/Laborer/motion/roll-barrel/reference"
@@ -11528,5 +11521,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "bc3c0940358660c3bc8a18215c3d5234c85e7e2fcf52812c484915b36dbca8be"
+  "scopeSha256": "87781b3c44a4de34d482d7d173c5acc6d1237695f94df78ca8cf0bea085f99a1"
 }

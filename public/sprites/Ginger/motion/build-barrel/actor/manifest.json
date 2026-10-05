@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Ginger",
+  "action": "build-barrel",
+  "title": "Build barrel",
+  "direction": "actor",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "held mallet low; opposite palm above rim",
+      "durationMs": 160,
+      "sourceBounds": [
+        185,
+        94,
+        584,
+        600
+      ],
+      "sourceAnchor": [
+        135.0,
+        506.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        180,
+        90
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "raise same mallet toward chest",
+      "durationMs": 140,
+      "sourceBounds": [
+        824,
+        96,
+        1223,
+        600
+      ],
+      "sourceAnchor": [
+        136.96153846153845,
+        503.03846153846155
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        93
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "highest mallet raise",
+      "durationMs": 160,
+      "sourceBounds": [
+        1429,
+        54,
+        1871,
+        600
+      ],
+      "sourceAnchor": [
+        173.8846153846154,
+        546.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        139,
+        48
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "descend toward upper hoop",
+      "durationMs": 120,
+      "sourceBounds": [
+        2106,
+        124,
+        2507,
+        600
+      ],
+      "sourceAnchor": [
+        134.0,
+        476.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        181,
+        121
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "first settling hoop tap; opposite hand braced",
+      "durationMs": 100,
+      "sourceBounds": [
+        186,
+        767,
+        570,
+        1240
+      ],
+      "sourceAnchor": [
+        133.51923076923077,
+        473.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        181,
+        123
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "rebound while bracing hand stays at rim",
+      "durationMs": 120,
+      "sourceBounds": [
+        818,
+        768,
+        1206,
+        1240
+      ],
+      "sourceAnchor": [
+        140.55769230769232,
+        472.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        174,
+        124
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "second low settling hoop tap",
+      "durationMs": 140,
+      "sourceBounds": [
+        1466,
+        760,
+        1857,
+        1240
+      ],
+      "sourceAnchor": [
+        134.96153846153845,
+        480.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        180,
+        117
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed low grip; free palm above rim",
+      "durationMs": 160,
+      "sourceBounds": [
+        2103,
+        741,
+        2502,
+        1240
+      ],
+      "sourceAnchor": [
+        138.92307692307693,
+        498.03846153846155
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        98
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1100,
+    "durationsMs": [
+      160,
+      140,
+      160,
+      120,
+      100,
+      120,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view finite two-tap reseating of an existing barrel upper hoop at independent persistent cooper station, visible actor boot-cap/rim material and source-pixel grip/tool geometry, natural arrival and task/day lifecycle. No continuous repeat, other direction, hidden sole, traveling gait, complete barrel fabrication or resource-creation approval."
+  }
+}

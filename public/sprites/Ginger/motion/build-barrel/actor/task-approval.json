@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+    "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+    "frameSha256": [
+      "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac",
+      "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb",
+      "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc",
+      "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0",
+      "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd",
+      "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d",
+      "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3",
+      "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068"
+    ],
+    "atlasSha256": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      160,
+      120,
+      100,
+      120,
+      140,
+      160
+    ],
+    "character": "Ginger",
+    "action": "build-barrel",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view finite two-tap reseating of an existing barrel upper hoop at independent persistent cooper station, visible actor boot-cap/rim material and source-pixel grip/tool geometry, natural arrival and task/day lifecycle. No continuous repeat, other direction, hidden sole, traveling gait, complete barrel fabrication or resource-creation approval.",
+  "checks": {
+    "identity-and-scale": "Eight native full poses retain Ginger's curly orange hair and broad unbraided orange beard, cream rolled sleeves, brown vest/belt, green trousers and capped brown boots. Original common physical source basis and measured91px boot cap basis for new individual poses avoid using raised mallet or crouched height as body extent. Fixed520/[320,616] actor/prop basis and small whole-pose offsets leave limb anatomy unchanged.",
+    "station-and-foot-contact": "Both actual visible boot-cap/riveted-rim regions are independently tracked in the actor0-7. Near minimum correlation0.956651/max travel4.6912/max adjacent4.4916px; far minimum0.957494/max travel3.4915/max adjacent4.5072px. Original .94/6/6 bounds remain unchanged. Main reference is the exact composed actor, independent260px barrel/jig and original-pixel foreground contours. Static prop pixels stay fixed. This measures visible actor material, not an invisible heel or moving world contact. Final built-game capture at-36/18 shows the worker and barrel in the shared timber clearing; decorative pines clear both persistent station roots. Body/root/prop registration matches the native layer renderer. Hidden heel/world material is not inferred from a screenshot.",
+    "hand-and-tool-contact": "Exactly one mallet remains in the near hand throughout low hold, raising1/2, descent3, first settling tap4, rebound5, second low settling tap6 and completed low hold7. Native lower wood-head rims4[449,392] and6[428,390] lie inside the traced original fixed upper-hoop face. The opposite fingers brace the same rim at4/5/6; preparation/completion palm lies above it, with no falsely claimed brace during those poses. Foreground contours reuse source hand/mallet pixels and exclude vest/trouser wedges.",
+    "prop-continuity": "One independent open barrel, upper hoop, stave arrangement, rigid cradle/base, toolbox and spare hoop remain identical in all eight compositions. Two light taps reseat the existing upper hoop. This finite construction/maintenance step does not represent complete barrel fabrication, an unshown new material state, object creation or an economic reward. The mallet remains held at7.",
+    "completion-and-reset": "Actual Three renderer naturally routes the timber worker to the selected physical station. Day1 tree cutting and day2 upper-hoop seating each show all eight authored-duration poses, complete once, hold7 for5000ms and retain completed state through camera rotation. Cancellation releases actor; station remains independently visible after departure. Explicit reassignment resets0; day resolution releases motion; morning selects next operation and day3 restores tree cutting. Source, atlas, calibration and static prop hashes match current files. Economic catalog/day resolver and reward ownership remain unchanged."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-actor-review.json",
+      "sha256": "165f8d2c61275196ba99bc0d08761a59a4f68addd202526ca4942fa89c1ccfdf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-stationary-contacts.json",
+      "sha256": "5ef9ac6afca2c2b8dd877e8560997fb52076e2a631379e9d84089075f6f5997b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-upper-hoop-contact.json",
+      "sha256": "1a51a38e5a33e72fa21e9fccdbf43c46f2eef5fa8d106e080018ca13ced15ebb"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
+      "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/station-layer-results.json",
+      "sha256": "e567b82f3a9a8ad7bda2c20bb3683ac6c02820e30b12604b72da8b9cb58b2267"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/ginger-upper-native-review.jpg",
+      "sha256": "05f267c569e8b4df227362f24ed37d3ae329c3e9faa2c2b3040f4f5e1058ec2f"
+    },
+    {
+      "file": "review.jpg",
+      "sha256": "2b8db0133bc7304590c470486d73cc11205d674f614b993d25066d72cb63bf6d"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "dc3ce5a810ae7f15dc7cf5db99881b5ca42319b3fe2fc5bbf647839dfac0ec35"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "272742f6dff66b606ee8fad522cf60b645597f4f0ee92b499e6296d337dac346"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "64aa4b6ccaa935ce881a141442c8e91e1c4658964eb00f6ccfc7ce129cc01247"
+    },
+    {
+      "file": "../../../../workstations/cooper-barrel/generation.json",
+      "sha256": "1fbd9c4be29dcc892decd0756574edd6eb210ad3e3e974c16a764a73dfa8c5f9"
+    },
+    {
+      "file": "../../../../workstations/cooper-barrel/source.png",
+      "sha256": "945672ceeaa053f4a49d6c1160e408ffc81494d355cf235dd3d46d5fd077ce5e"
+    },
+    {
+      "file": "../../../../workstations/cooper-barrel/sprite.png",
+      "sha256": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a"
+    },
+    {
+      "file": "../../../../../../scripts/cooper-work-check.mjs",
+      "sha256": "3ad43a5795b96e5d251cdffaf41ed1e58dc43ceb802fb883d76208c98030cba9"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "c1054ebd901b53d1876c242d77b7a71b1090228336fb2aa26191a33fc1e3c6f1"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
+    },
+    {
+      "file": "../../../../../../src/game/world/terrain.tsx",
+      "sha256": "06e70874b5cd1427b241f13138837f9c6e2628bca33c1e15251bb98bf57f3cca"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-0.png",
+      "sha256": "59b10db7eec27669259cbbf35ba0a6b3b9a56f177e96493bc9d378417d5d4b62"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-0.png",
+      "sha256": "c1c14cade6991ee62951d6a6a8a9fe1f1ac1f4f8e2137875f79619c7b6c5059a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-1.png",
+      "sha256": "431a6ea16c909767134e6e7e129364254f6d43643560314f8d1243021a390d3c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-1.png",
+      "sha256": "e82948e8ca724e3dae25124fc2349d67eeebe48c4c92a0b21fca10973b2392f9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-2.png",
+      "sha256": "39eeb27de2f819fb5ab55210ca4b9349d55995586b3d3916d68965cfc852546f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-2.png",
+      "sha256": "0e191f0c8fc0c8f9a6b75e62a1e51900c7b72594a86e128f4a7e1ea786c45894"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-3.png",
+      "sha256": "e4a324fd8c143a7f80a3ef72337440f018317f5639fb0e95b9be646f053ff448"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-3.png",
+      "sha256": "423d5b238548df4992032e032f1fdef340f87dabed2dfcd8f6008f8632fe137f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-4.png",
+      "sha256": "338e27d3577d977a91a9053de8cdadd9663ba68947fe39a453ca7764af0d71c8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-4.png",
+      "sha256": "daba858bb3e8779186815a689904eaef760772af619f9eeb2b3698f0ab28945f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-5.png",
+      "sha256": "8a1f845a7b327968633994416e62cddac023ceba56c45ba0bd0c5aa3cf965112"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-5.png",
+      "sha256": "5a5703001500287b079fc7a33f8e7c5b06d11f7641ad3ffc786e26e331556367"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-6.png",
+      "sha256": "9a09bd1a38d026813fc54e897b48bfc418eb2f2d55495d96fc5e52408c14b31e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-6.png",
+      "sha256": "9e0e47a55f2c7f3e6543c5d6aba2f252940b8b32b18ef954dcd8940bdabb7bc1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-layer-7.png",
+      "sha256": "b9a33ffb81e3d8441cb1876fa2359a65e656d2b25bd4a89880b6e52e48f6df1e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-7.png",
+      "sha256": "771c1b579cbb88b0b8f8a2f958f732f3038e29c191f14f7ea8b2dd2589ee73d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/Ginger-build-barrel-game-departed.png",
+      "sha256": "06f408a1c36cc5df912f05fed83c6a67c0968ebc0d364fba029b5035d836cb10"
+    }
+  ]
+}

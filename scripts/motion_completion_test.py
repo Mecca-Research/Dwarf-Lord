@@ -15,13 +15,13 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['nonFrontWalkCycles'], 56)
         self.assertEqual(report['counts']['fixedWorkCycles'], 65)
         self.assertEqual(report['counts']['actorCycles'], 7)
-        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 48)
+        self.assertEqual(report['counts']['mainScopedReviewsApproved'], 49)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
-        self.assertEqual(report['counts']['cycleReviewsRemaining'], 105)
+        self.assertEqual(report['counts']['cycleReviewsRemaining'], 104)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':105,'direction-continuity':11,'runtime-action-activation':50})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':104,'direction-continuity':11,'runtime-action-activation':49})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']
@@ -33,7 +33,7 @@ class CompletionTests(unittest.TestCase):
         self.assertIsNone(result['approvalType'])
         self.assertTrue(result['issues'])
         report = motion_completion.inventory()
-        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 14)
+        self.assertEqual(sum(r['reviewStatus'] == 'reviewed-changes-required' for r in report['cycles']), 13)
         self.assertFalse(report['reviewGatesComplete'])
 
     def test_changed_rejected_frame_needs_a_new_review(self):

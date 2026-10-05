@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "method": "Bundled develop-web-game client, headed Chromium, two movement/input bursts with7-second real startup pauses. Both rendered camp captures visually inspected; short-pause blank initial capture is excluded.",
+  "errors": [],
+  "captureCount": 2,
+  "sourceBindings": [
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "sha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0"
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454"
+    },
+    {
+      "file": "src/game/world/terrain.tsx",
+      "sha256": "06e70874b5cd1427b241f13138837f9c6e2628bca33c1e15251bb98bf57f3cca"
+    }
+  ],
+  "captures": [
+    {
+      "file": "docs/art-review/motion43/gameplay-shot-0.png",
+      "sha256": "ce875d57a100670158468e88de90f2948d9393757f1cfff596ee1183037294e7",
+      "state": "docs/art-review/motion43/gameplay-state-0.json"
+    },
+    {
+      "file": "docs/art-review/motion43/gameplay-shot-1.png",
+      "sha256": "ce8adb7156ebe0059eb10178e24354dbabdff7216d2fb4e554b75900f8707274",
+      "state": "docs/art-review/motion43/gameplay-state-1.json"
+    }
+  ],
+  "scope": "Built camp movement/input smoke and visible scene rendering. Does not grant an anatomical gait, hidden contact, other direction or final full-motion approval."
+}

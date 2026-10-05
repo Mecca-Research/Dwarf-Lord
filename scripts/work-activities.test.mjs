@@ -8,6 +8,27 @@ const source=readFileSync('src/game/world/work-activities.ts','utf8');
 const {outputText}=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS}});
 const actions={};new Function('exports','require',outputText)(actions,id=>{assert.equal(id,'../data/catalog');return catalog;});
 const {elderCampActivity,elderCampActions,WorkActivitySequence}=actions;
+test('timber activity selects one finite operation per valid day and restores forestry',()=>{
+ assert.deepEqual(actions.timberWorkActions,['fell-tree','build-barrel']);
+ assert.deepEqual([1,2,3,4].map(actions.timberWorkAction),['fell-tree','build-barrel','fell-tree','build-barrel']);
+ for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.timberWorkAction(day));
+});
+test('timber routing uses the same operation and physical station as playback',()=>{
+ const sitesSource=readFileSync('src/game/world/workstation-sites.ts','utf8');
+ const compiled=ts.transpileModule(sitesSource,{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText;
+ const sites={};new Function('exports','require',compiled)(sites,id=>{
+  if(id==='./work-activities')return actions;
+  assert.equal(id,'../data/catalog');return {STARTING_DWARVES:[{id:'borrin',x:10,z:10},{id:'fenn',x:2,z:8}],JOBS:[
+   {id:'timber',targetX:-42,targetZ:18},...['meals','forge','storage','limestone'].map(id=>({id,targetX:0,targetZ:0}))]};
+ });
+ for(const [day,id,x]of [[1,'forestry-trunk',-42],[2,'cooper-barrel',-36],[3,'forestry-trunk',-42]]){
+  const site=sites.activeWorkstation('ginger','timber',true,false,day);
+  assert.equal(site.id,id);assert.deepEqual(site.target,{id:'timber',targetX:x,targetZ:18});
+  assert.deepEqual(sites.workAssignmentTarget('ginger','timber',day),site.target);
+  assert.equal(sites.activeWorkstation('ginger','timber',false,false,day),undefined);
+  assert.equal(sites.activeWorkstation('ginger','timber',true,true,day),undefined);
+ }
+});
 test('all six Elder camp activities have eight frames and source-bound body placement',()=>{
  const c=JSON.parse(readFileSync('public/sprites/Elder/motion/render-calibration.json'));
  assert.equal(elderCampActions.length,6);

@@ -93,6 +93,29 @@
       "status": "exported",
       "destination": "public/sprites/Borrin/motion/count-coins/actor",
       "station": "ledger-desk"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-barrel",
+      "title": "Build barrel",
+      "reference": "public/sprites/Ginger/animation/01-front-right.png",
+      "beats": [
+        "held mallet low; opposite palm above rim",
+        "raise same mallet toward chest",
+        "highest mallet raise",
+        "descend toward upper hoop",
+        "first settling hoop tap; opposite hand braced",
+        "rebound while bracing hand stays at rim",
+        "second low settling hoop tap",
+        "completed low grip; free palm above rim"
+      ],
+      "kind": "new-work",
+      "direction": "actor",
+      "notes": "Finite two-tap reseating of an existing barrel upper hoop, then held finish. Independent fixed prop; no barrel fabrication or economic output.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Ginger/motion/build-barrel/actor",
+      "station": "cooper-barrel"
     }
   ]
 }

@@ -1,13 +1,13 @@
 import { useMemo, useLayoutEffect, useRef } from "react";
 import * as THREE from "three";
 import { groundHeight } from "../runtime";
-import { JOBS } from "../data/catalog";
+import { workstationSites } from "./workstation-sites";
 import { rockGeo } from "./geom";
 import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
 const N = 128,
   R = 28;
-const timberSite = JOBS.find(job => job.id === "timber")!;
+const timberSites = workstationSites.filter(site => site.appearance === "ginger" && site.job === "timber");
 const rand = (i: number) => {
   const n = Math.sin(i * 127.1 + 311.7) * 43758.5453;
   return n - Math.floor(n);
@@ -174,9 +174,10 @@ export function Terrain() {
       </mesh>
       <Dressing />
       <Dressing moss />
-      {/* Leave room for the timber worker, authored tree and axe swing. */}
+      {/* Leave both persistent timber stations and their working space clear. */}
       {Array.from({ length: 28 }, (_, i) => i).filter(i =>
-        Math.hypot(-38 - (i % 7) * 3.2 - timberSite.targetX, 18 + Math.floor(i / 7) * 3.1 - timberSite.targetZ) >= 5
+        timberSites.every(site => Math.hypot(-38 - (i % 7) * 3.2 - site.target.targetX,
+          18 + Math.floor(i / 7) * 3.1 - site.target.targetZ) >= 5)
       ).map(i => (
         <Pine
           key={i}

@@ -94,7 +94,7 @@ test('registered motion stays inside its canvas and preserves authored timing in
    Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat','fillet-fish'],
    'Female Miner':['examine-sample','repair-pickaxe','pickaxe-ready'],
    Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
-   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log'],
+   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log','build-barrel'],
    Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips','lift-crate'],
   };
   const finiteReviewed = entry.direction==='reference' && Boolean(finiteActions[entry.character]?.includes(entry.action));
@@ -182,7 +182,7 @@ test('runtime actor layers and persistent stations retain source provenance and 
 
 test('additional work actions require exact actor, station and finite task evidence',()=>{
  const additions=json('docs/runtime-motion-additions.json').entries;
- assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins']);
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel']);
  for(const entry of additions){
   const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
   assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);

@@ -67,7 +67,7 @@ try {
  await page.evaluate(()=>{const t=window.__controlsTest;t.assignJob("nessa",null);t.teleportDwarf("nessa",12,-35);});
  await waitFor(()=>!JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==="nessa")?.workMotion);
  const addedWorkers=[];
- for(const [id,job,action,x,z] of [['stig','limestone','chisel-contact',8,-38],['grit','forge','inspect-tool',6,-7],['nessa','shaft2','shovel-cycle',14,-32],['tam','storage','stack-crates',8,8],['brokk','timber','fell-tree',-42,18]]) {
+ for(const [id,job,action,x,z] of [['stig','limestone','chisel-contact',8,-38],['grit','forge','inspect-tool',6,-7],['nessa','shaft2','shovel-cycle',14,-32],['tam','storage','stack-crates',8,8],['brokk','timber','build-barrel',-36,18]]) {
   await page.evaluate(({id,job,x,z})=>{const t=window.__controlsTest;t.teleport(x,z+3);t.teleportDwarf(id,x-2,z);t.assignJob(id,job);},{id,job,x,z});
   await waitFor(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id)?.workMotion?.completed,id,{timeout:60000});
   const worker=await page.evaluate(id=>JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id===id),id);
@@ -83,10 +83,10 @@ try {
    await page.screenshot({path:`${output}/completed-storage-pallet.png`});
   }
   if(job==='timber') {
-   assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='forestry-trunk'&&s.persistent)));
+   assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='cooper-barrel'&&s.persistent&&s.x===-36&&s.z===18)));
    await page.evaluate(()=>window.__controlsTest.teleportDwarf('brokk',-46,18));
    await tick(300);
-   await page.screenshot({path:`${output}/empty-forestry-trunk.png`});
+   await page.screenshot({path:`${output}/empty-cooper-barrel.png`});
   }
   if(action==='chisel-contact') {
    assert.ok(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).workstations.some(s=>s.id==='masonry-bench'&&s.persistent)));
