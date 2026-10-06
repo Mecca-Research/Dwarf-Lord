@@ -38,10 +38,10 @@ export function timberWorkAction(day: number) {
   return timberWorkActions[(day - 1) % timberWorkActions.length];
 }
 
-/** The consultant performs one finite desk activity for the entire day.
- * Writing, coin inspection, entry review, explanation and sealing remain cosmetic.
+/** The consultant performs one finite administrative activity for the day.
+ * Desk work and a standing explanation with his held ledger remain cosmetic.
  */
-export const consultantWorkActions = ["desk-writing", "count-coins", "review-open-ledger", "explain-at-desk", "stamp-paperwork"] as const;
+export const consultantWorkActions = ["desk-writing", "count-coins", "review-open-ledger", "explain-at-desk", "stamp-paperwork", "explain-closed-ledger"] as const;
 
 export function consultantWorkAction(day: number) {
   if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");

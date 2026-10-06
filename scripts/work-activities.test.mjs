@@ -19,8 +19,8 @@ test('forge preparation and raised-hammer tasks keep their own days and then res
  for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.forgeWorkAction(day));
 });
 test('consultant keeps one cosmetic operation for each valid day and returns to writing',()=>{
- assert.deepEqual(actions.consultantWorkActions,['desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork']);
- assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11].map(actions.consultantWorkAction),['desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork','desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork','desk-writing']);
+ assert.deepEqual(actions.consultantWorkActions,['desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork','explain-closed-ledger']);
+ assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11,12,13].map(actions.consultantWorkAction),['desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork','explain-closed-ledger','desk-writing','count-coins','review-open-ledger','explain-at-desk','stamp-paperwork','explain-closed-ledger','desk-writing']);
  for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.consultantWorkAction(day));
 });
 test('timber activity selects one finite operation per valid day and restores forestry',()=>{

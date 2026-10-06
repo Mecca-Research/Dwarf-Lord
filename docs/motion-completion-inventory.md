@@ -216,7 +216,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 | Ginger | sharpen-hatchet |
 | Ginger | carry-supplies |
 | Blacksmith | fix-wheelbarrow |
-| Borrin | explain-closed-ledger |
 | Borrin | explain-open-ledger |
 | Cook | cut-boar-meat |
 | Cook | fillet-fish |

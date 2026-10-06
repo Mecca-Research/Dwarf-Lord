@@ -1,6 +1,16 @@
 # Dwarf Lord Motion Completion Report
 
-Current checkpoint: **motion57,6 October2026**. PR9 remains Draft and is **not ready to merge**. Twenty-five of65 existing reference actions are active;21 approved independent actor/station variants use14 physical live props. The frozen main review inventory remains103 individual reviews and11 open direction families. Motion56 completed finite filing at an independent vise bench; motion57 adds reusable authoring constraints and retains rejected gait attempts without changing selected sprites or approvals.
+Current checkpoint: **motion58, 6 October 2026**. PR9 remains Draft and is **not ready to merge**. **26 of 65** existing reference actions are active; **22** approved independent actor/station variants use **14** live props. The frozen main inventory still has **103** individual reviews and **11** open direction families. This checkpoint closes one live-animation gap for Borrin; it does not close a walking or family gate.
+
+## Completed in motion58
+
+**Borrin now explains while standing with his closed ledger.** Eight literal original poses retain his face, glasses, grey bound beard, cravat, keys, book and hand gestures. Source-only contours remove painted furniture, including fragments between his knees. One actual 534px crown-to-boot-rim basis and [320,616] source datum apply to all eight poses with zero offsets. The unchanged independent desk owns a separate open ledger and desk items; the actor owns his held closed book.
+
+**Both visible stationary boots pass the contact bounds.** Near minimum correlation is 0.957996, maximum drift 1.233744px and adjacent change 1.535480px; far values are 0.970601, 0.974086px and 0.605940px. All eight native and actual compositions, camera change and departure were inspected. Moving one obstructing crate from the exact desk origin to beside the desk reveals the standing boots. No hidden sole, moving material, ground force, seat-to-stand, book pickup/put-down, economic output or seamless repeat is approved.
+
+**The full consultant lifecycle and prior work pass.** Six actual consultant days verify every pose, one completion/five-second hold, camera change, rejected production assignment, cancellation, persistent desk, departure, explicit return/reset, resolution/morning and day 7 restoration to writing. All 22 approved independent previews and two headed movement captures pass. Every earlier accepted source/registration/timing set and prop remains exact; 21 affected approvals carry limited runtime revalidation. Seated ledger contact points reproduce the original 2.657px/0px distances under the additive calibration dependency, within 6px, with the original 44/46 observations retained.
+
+**Regression checks pass after correcting two stale fixtures.** The mocked consultant check now covers its sixth action and day 7 restoration; seated contact tests use a fresh, immutable dependency recheck of unchanged original geometry. All 222 Node and 104 Python tests, typecheck, Pages build and whitespace pass. Coverage advances 25 to 26 of 65, with inactive references falling from 40 to 39. The 103 main review and 11 family counts stay unchanged.
 
 ## Completed in motion57
 
@@ -225,7 +235,7 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 | Frozen cycle reviews remaining |103 | **103** |62 walk +24 directional tool/carry +17 fixed references |
 | Fixed references accepted |48 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |23 /65 | **25 /65** |40 activations |
+| Existing reference actions active |23 /65 | **26 /65** |39 activations |
 | Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in62 walks |
 
 The50 main acceptances comprise nine scoped loops and41 finite tasks. Including the original seven actors, **57 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
@@ -235,7 +245,7 @@ The50 main acceptances comprise nine scoped loops and41 finite tasks. Including 
 | Character | Accepted / existing | Remaining actions |
 | --- | ---: | --- |
 | Blacksmith |7 /7 |No combined-reference review remains; one live activation remains. |
-| Borrin |8 /8 |No combined-reference review remains; three live activations remain. |
+| Borrin |8 /8 |No combined-reference review remains; two live activations remain. |
 | Cook |8 /8 |No combined-reference review remains; three live activations remain. |
 | Elder |6 /6 |Seated references complete; all eight coordinated moving cane views remain open. |
 | Female Miner |3 /6 |pickaxe-contact; shovel-ore; push-ore-barrow |
@@ -250,13 +260,13 @@ The four further calibration/contact reviews are Laborer carry-sack, pull-supply
 | Character | Still inactive |
 | --- | ---: |
 | Blacksmith |1 |
-| Borrin |3 |
+| Borrin |2 |
 | Cook |3 |
 | Female Miner |6 |
 | Helga |6 |
 | Ginger |9 |
 | Laborer |12 |
-| **Total** | **40** |
+| **Total** | **39** |
 
 Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. Every activation requires an appropriate task/ambient context, source-bound placement/scale, correct tool/material ownership and completion/reset behavior. Furniture-containing references cannot be overlaid on independent duplicate props. Compatible operations may share a reviewed station; one new station per action is not required. Visual animation must not duplicate gameplay rewards.
 
@@ -274,14 +284,14 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 2. Correct only demonstrated defects in the other walking views and complete their whole-stride/held-frame reviews. Add coordinated Elder cane recovery/plant proof for all eight views.
 3. Correct remaining directional tool/log geometry and full material/grip state, then complete all eleven cross-direction family reviews.
 4. Close the17 remaining fixed-reference reviews, retaining a clear distinction between finite completion and seamless-loop approval.
-5. Activate the40 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
+5. Activate the39 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
 6. Recompute the frozen inventory from exact artifacts/dependencies. All160 review obligations, all11 direction families and all65 live reference-action mappings must be current, without missing/stale evidence. Derived additions need their own exact acceptance.
 7. Run full tests, build and actual browser checks on the final committed revision, verify GitHub checks on that exact PR head and confirm no remaining motion/gameplay gate. Only then give an all-green merge recommendation.
 
 ## Validation and evidence
 
-Fresh motion57 checks pass **222 Node tests** and all eight offline guide browser views/64 volumes. Motion56's104 Python tests, type checking, Pages build,21 approved independent previews, actual seven-day forge checks and two headed startup/movement captures retain their original provenance, supported by the exact4932-file runtime/public audit. Those game captures show18 characters and14 persistent props. Earlier six-day cooking and original NPC/job observations retain motion55 provenance and exact non-forge code, sites and assets.
+Current checks pass **222 Node tests and 104 Python tests**, type checking and the Pages build. All **22 approved independent previews** pass. Fresh actual six-day consultant checks show no client errors; two complete headed movement captures show 18 characters and 14 persistent props. Earlier seven-day forge observations retain motion56 provenance; six-day cooking and original NPC/job observations retain motion55 provenance, supported by exact retained runtime, art and station transforms.
 
-Current machine-readable results are `docs/motion57-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Eight-direction guides, exact rejected authoring requests, the latest complete native trial, source-bound sole hypotheses, numeric failures and unchanged-runtime audits are under `docs/art-review/motion57/`. Original-pixel filing identities, visible boot/file observations, all8 native/actual filing poses, finite task approval, station history and runtime/export checks remain under `docs/art-review/motion56/`. Prior gait geometry bounds and rejected trials remain under `docs/art-review/motion54/`; selected Laborer rear-left and Elder moving-cane failures are unchanged. Prior observation dates and limited scopes are preserved.
+Current results are `docs/motion58-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Original-pixel identities, visible boot measurements, all eight native/actual standing poses, finite approval, retained-asset/runtime audits, exact seated-ledger contact rechecks and execution records are under `docs/art-review/motion58/`. Whole-volume constraints and rejected Laborer source attempts remain under `docs/art-review/motion57/`; earlier geometry bounds and trials remain under `docs/art-review/motion54/`. The selected Laborer rear-left and Elder moving-cane failures are unchanged. Original dates and limited scopes remain explicit.
 
-**Passing local or GitHub checks does not close the103 motion reviews,11 family reviews or40 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**
+**Passing local or GitHub checks does not close the 103 motion reviews, 11 family reviews or 39 inactive actions. PR9 remains Draft; no full-motion or merge approval is given.**

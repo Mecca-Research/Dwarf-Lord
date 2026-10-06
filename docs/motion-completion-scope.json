@@ -411,6 +411,10 @@
     {
       "character": "Blacksmith",
       "action": "file-tool-edge"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger"
     }
   ],
   "runtimeCoverageBinding": {
@@ -4114,7 +4118,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "ab4998fd65d92d3f046e175a1fe624d8c8f13689fa2c02c3db10b40d3bb3fa77"
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4146,11 +4150,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "fa497e7dcdfc71d835a072e97fc5f2965e2cd017d8733914e7c3ff331a330dc0"
+      "sha256": "acf61d34bc94679b4610fc96bcbe8f7ee8e58453cb2cc31e288952af005b7fba"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "fb1ffb72b77504b93a17b1bddf39ba804364714f58bbb0cabf411150d91cb913"
+      "sha256": "3f5d85322a9993359793569c3fe98d43cfc5676c87e5ee105f758572de6e36ca"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4174,7 +4178,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "111b0c23573bb0f547405a12a4ecb8da4f763a8c1841fd4406057441bda92c19"
+      "sha256": "ae71a855be6734337a8be6e2b9497dacfa4301fa98bababf11434e87b6febe8b"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4230,7 +4234,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "b503de6b0c1409b7c74b2c1edf3f39069bbc16424824fd9d1c1ed783d5af7919"
+      "sha256": "af7d13938f05a4e396e21cdb9056b5d287b59fd53a926d194a7329b96eb77d07"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4330,7 +4334,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "e1ab6c57a79633c0dc6e4a143a5fd8e4d95e473bbeb58c2b71e75b6efd15c60c"
+      "sha256": "6f391d81a46dce6091bdd86c1993cb52769765c65d1ddda7feb0917f067116ad"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4378,7 +4382,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/render-calibration.json",
-      "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+      "sha256": "11ac4b14b115d91cd79cbda50a32faa03edab180aaea1eb2c75acec0dd681d3a"
     },
     {
       "file": "docs/art-review/motion41/runtime-revalidation.json",
@@ -4398,7 +4402,7 @@
     },
     {
       "file": "scripts/consultant-work-check.mjs",
-      "sha256": "0f4523540a68a6b2bc790318efa50e57d61a3985a73e4cb9de24284a3a09d095"
+      "sha256": "136e808201a76534aa9d7eb93339aa50b4091d0665f01e14fbe164b1ca0a4123"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/source-sheet.png",
@@ -4422,7 +4426,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "92e409c71a03b9f6b084cbcac5f3d78f4a26c87995dbc07e0c7e59c4df121eea"
+      "sha256": "44e493dee004598a390222e64efa5424f9404e8ac5081e19bf82771b22673ab4"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4514,7 +4518,7 @@
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
-      "sha256": "745709a624422514781b620bf616f8c9421fe00768f130f78af43eff1bc7fb44"
+      "sha256": "125d131239fcd3ffa16abfb5e07380c606b078b0e6d6036f539888fb513bb383"
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
@@ -4598,7 +4602,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
-      "sha256": "42a59e3b9129098c84df70fc508fc016863044d5203b36e62d8ac0b4e25a548d"
+      "sha256": "61738d8bfbef8cb2a351309d0c28d3c8196d1d25395d01417b88927bc93dfea2"
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
@@ -4654,7 +4658,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
-      "sha256": "29f743c28b64faef2040ebaac58e35e0d5acdbb79745bf4b0fb4cde2966a7ea9"
+      "sha256": "ca47dcfb19184922edc68682cc7f2d06f099a5da96112361a8e66a9a537aaeb5"
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
@@ -4726,7 +4730,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
-      "sha256": "0d78a4b1b511421d789d76aa3349a0e2f6899cedbc60abb663d0e892d9a53683"
+      "sha256": "68d6ca34b5768570e4b74c0eae2243e76febf78b06858058d1855bf49c09c52b"
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png",
@@ -4842,7 +4846,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
-      "sha256": "15a7db169037238b60369273fad44c7475233e87044b40cdf3e9d4bb25f4df08"
+      "sha256": "a579a8b347c5a27a7a8074408431e4fb1e2835a7de62dd404d4af53c8f06815c"
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/00.png",
@@ -4946,7 +4950,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
-      "sha256": "f9d6af481b7648a39a98c0cb4f2a57f3f6f4391dfd72dad99533f946b3c77a24"
+      "sha256": "cfab034b2cb8140a41e27c2ffc83a28a5fbded0de964bd1ca1c2f83d8c1cf12b"
     },
     {
       "file": "public/sprites/Cook/motion/stir-cauldron/actor/review.jpg",
@@ -5054,7 +5058,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
-      "sha256": "0967709786442aa48ac1481197a542d3e7bf451ebb05806a4dc79307ddef67ce"
+      "sha256": "a48ff8c05726569da9eb8221cb757cafb4f80687dafab4171a8de354df35b138"
     },
     {
       "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/review.jpg",
@@ -5150,7 +5154,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
-      "sha256": "98fd0bf57da3bb6780347caf83b66dd4d41362694aad42837cafa9aec520601c"
+      "sha256": "6b134abc73126b463acc09e5009071d9bb187b588ed6c9440a5a31595dd38d88"
     },
     {
       "file": "public/sprites/Cook/motion/mix-ingredients/actor/review.jpg",
@@ -5278,7 +5282,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/task-approval.json",
-      "sha256": "b6bcde43daaf36b4c9eed865bdc9247ca326942dd07eefda4cf755aa55a41f19"
+      "sha256": "62cc787fc876c44e55ea64eaafb3bf7fab73dc6e52ce10becd72c91bbccaff91"
     },
     {
       "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/review.jpg",
@@ -5378,7 +5382,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/task-approval.json",
-      "sha256": "7a7e1a9b7bac7e94e3c4a49719aa83896dbb96e893e0bba1dbc7bd309cbb9725"
+      "sha256": "8d4c27fabdefcc55e08222f731a8f10c7cd88712dd28874a9d10999ba3e3975c"
     },
     {
       "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/review.jpg",
@@ -5451,7 +5455,155 @@
     {
       "file": "docs/art-review/motion56/runtime-normalization-revalidation56.json",
       "sha256": "91f8c351efa200d951ac5e47bd11362f6b9a3916fbe98e4cc379d753ab75fe62"
+    },
+    {
+      "file": "docs/art-review/motion58/runtime-coverage-audit58.json",
+      "sha256": "2bbaaa05fc54383124f955c8e0432bbcc818b7a6fadf14575732600490985264"
+    },
+    {
+      "file": "docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "src/game/world/environment.tsx",
+      "sha256": "17128a014a0c637c0b84d087df2cf2ef24b964843f7016b6833bb70dde2db986"
+    },
+    {
+      "file": "docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/07.png",
+      "sha256": "97c9db1713315fd9b639c7bbb5c181228f45a74b7760d8705608945125b03980"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/02.png",
+      "sha256": "b5ea9194668ee8fec10ae12c233919c4c46eaca373f9484b099cdbb28e394144"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/00.png",
+      "sha256": "14807b5912de57672c669b401e95ad9d7c3b00614253480e724a152316891a82"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/task-approval.json",
+      "sha256": "b1533fecba0887f77a81fd47aa4cf515e8bb01354df303a902971970ace6bc39"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/review.jpg",
+      "sha256": "1da494046199d36fe354f8f8ceb6ae4a9e7ea1e7031a114dce704e7364be78b7"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/preview.png",
+      "sha256": "0717ba12431977064253219e36d587c54814ed9108aa1ce9b7628a52a301353e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/04.png",
+      "sha256": "fcb699e6211882dd80f016447fa85064eef6dd97dde02520232b3e0753f821bf"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/01.png",
+      "sha256": "1e9d851624d911153054e61e341dfbd2d280d4668509be10ef614d247cfcafa1"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/05.png",
+      "sha256": "3d2217747af76cb5ac99b0bd215decb127ef44ee1987574b4014aa6156ae67f0"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/prompt.txt",
+      "sha256": "d24e68c4a30b7b50d087800ca0c9ca26e3bb8e4e1d9cebb4898b01429636ed82"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/03.png",
+      "sha256": "d8553726e4e2f342b4bcabbce55745e7ba1e38d4e5f5db529d050521b706cecc"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/atlas.png",
+      "sha256": "f176b47787d8c978b40f26f29accd90fea259d9acad87b273cdb50434a749cc8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/motion-polish.json",
+      "sha256": "3fa8c95d15922a5bc9d5f8f0312d6090a714933c0247679c6629e3b2d6497b91"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/manifest.json",
+      "sha256": "d2e91d18b8b7f639e06af3b90ef8f094cfeae38fd6443099407b4a1914bbdd5c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/source-sheet.png",
+      "sha256": "ed6cc4fa5d681eb370b205cfde453b472687df348530a7653e91fa528f654ad0"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/generation.json",
+      "sha256": "a97b87e7e0e2f389a0014fab44d40eb5d2a54197abefe0ebed3b61984bdb212e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/06.png",
+      "sha256": "80445953c5bd90774b8183259c55ed55f5efc62c4f94be2c99ee37e70aecc27e"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/receipt.png",
+      "sha256": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/work-review.jpg",
+      "sha256": "219b27cb373c74d626106f06e5be5d3220a01ddfda4d9df7d57a5e85875f3ef9"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/work-preview.png",
+      "sha256": "6767afc94a3e3b5bc48c3528f820857552c02789bb92c895a27d77541f5dceb0"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/base-sprite46.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.json",
+      "sha256": "de32d5908b3ef858edec5f8295d9915a3ad05a541120f7201e6cd06d3022ad66"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/base-generation46.json",
+      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.png",
+      "sha256": "d2118bd932ceb8f6c27202bd95be49250041886831d7f67991553845192a2070"
+    },
+    {
+      "file": "docs/art-review/motion58/ledger-contact-revalidation58.json",
+      "sha256": "5e648f3c458499f429a6b60747cd220fb425f5dee9292f42b813b82f48d510d0"
+    },
+    {
+      "file": "docs/art-review/motion58/Borrin-retained-ledger-contact58.json",
+      "sha256": "f61e9678c7d01b3f8d23dc7cdaf058b8f58e6059274c6b3118e3c2a92cfcd00b"
+    },
+    {
+      "file": "docs/borrin-ledger-current-observations.json",
+      "sha256": "8e89db31caa234360e7d667c07772b3d54583e2acfa6eb32a98e8526fb211277"
+    },
+    {
+      "file": "docs/art-review/motion58/ledger-coverage-revalidation58.json",
+      "sha256": "141fb0a8bfc8ab0687110ec778f6aae64f744f1fb8647ed50950555056dc50ca"
+    },
+    {
+      "file": "scripts/station_contact_test.py",
+      "sha256": "e96c007dfa49c14d6f3f5718e28cffecd14608fb71081b8163b96ff8f4ed0d8c"
+    },
+    {
+      "file": "scripts/npc-motion.test.mjs",
+      "sha256": "3f222cd6179993d0e56b7eeb7a1f1d0bed075ba8b0ebdb070030641f3c8047ec"
     }
   ],
-  "runtimeCoverageNote": "Motion56 finite original-source filing at one independently owned vise bench. Seven actual forge days and21 variants pass source/atlas/calibration/prop hashes, natural arrival, all8 frames, one held completion, camera, cancellation/departure/return and day reset.70 earlier source/registration/timing sets, props, sites and prior calibration entries exact. Same actual55 anvil geometry rechecked under additive calibration dependency. Non-forge meal/role checks retain original55 provenance; native gait/cane dates/scopes unchanged.14 derived actors outside frozen160;50main+7original accepted.25 live/40 inactive;103 cycle and11 family gates open. No economy, hidden forces or seamless-loop approval."
+  "runtimeCoverageNote": "Motion58 finite original standing closed-ledger explanation at unchanged independent desk. Six actual consultant days and22 variants validate all8 frames, completion hold, camera, cancellation/persistent desk/departure, return0, resolution/morning and day7 restoration. One crate moved beside desk to reveal standing boots.71 earlier scoped source/registration/timing sets, every old prop/site and prior Borrin calibration actions exact. Non-consultant actual gameplay keeps56/55 provenance and exact code/art/sites. Native gait/cane dates/scopes unchanged.15 derived actors outside frozen160;50main+7original accepted.26 live/39 inactive;103 cycles/11 families remain open. No economic production, hidden force, walking/direction or repeat approval."
 }

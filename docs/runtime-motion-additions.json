@@ -323,6 +323,29 @@
       "status": "exported",
       "destination": "public/sprites/Blacksmith/motion/file-tool-edge/actor",
       "station": "vise-bench"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "title": "Explain with closed ledger",
+      "reference": "public/sprites/Borrin/animation/11-explain.png",
+      "beats": [
+        "hold closed ledger under left arm",
+        "raise right hand palm up",
+        "extend palm to listener",
+        "curl fingers emphasizing point",
+        "gesture outward",
+        "bring hand toward chest",
+        "nod toward listener",
+        "lower hand"
+      ],
+      "kind": "new-work",
+      "direction": "actor",
+      "notes": "Eight literal original standing Borrin poses, one observed534/[320,616] basis and zero whole-pose offsets. Source body/closed ledger/free hand/visible boot material exact. Unchanged independent650/[320,616] desk owns separate open ledger/ink/receipt/stacks. All8 native/game compositions and six actual consultant days approved only as a finite explanation. No pickup/put-down, seat-to-stand, accounting output, moving gait, direction family or seamless repeat.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Borrin/motion/explain-closed-ledger/actor",
+      "station": "ledger-desk"
     }
   ]
 }

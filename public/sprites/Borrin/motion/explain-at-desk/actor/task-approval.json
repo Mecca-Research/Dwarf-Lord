@@ -88,7 +88,7 @@
     },
     {
       "file": "../../render-calibration.json",
-      "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+      "sha256": "11ac4b14b115d91cd79cbda50a32faa03edab180aaea1eb2c75acec0dd681d3a"
     },
     {
       "file": "../../../../workstations/ledger-desk/source.png",
@@ -104,7 +104,7 @@
     },
     {
       "file": "../../../../../../scripts/consultant-work-check.mjs",
-      "sha256": "0f4523540a68a6b2bc790318efa50e57d61a3985a73e4cb9de24284a3a09d095"
+      "sha256": "136e808201a76534aa9d7eb93339aa50b4091d0665f01e14fbe164b1ca0a4123"
     },
     {
       "file": "../../../../../../scripts/workstation-review-check.mjs",
@@ -128,7 +128,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "ab4998fd65d92d3f046e175a1fe624d8c8f13689fa2c02c3db10b40d3bb3fa77"
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
     },
     {
       "file": "../../../../../../src/game/world/terrain.tsx",
@@ -385,15 +385,36 @@
     {
       "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
       "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion56",
+    "checkpoint": "motion58",
     "files": [
-      "src/game/world/workstation-sites.ts",
+      "public/sprites/Borrin/motion/render-calibration.json",
+      "scripts/consultant-work-check.mjs",
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
-    "scope": "Earlier selected art and calibration actions exact. Seven forge days/21 variants verify only additive sixth operation/site; same actual anvil points rechecked. Non-forge meals/roles keep55 actual provenance and exact code/sites/art. Prior native dates/scopes and unresolved gait/cane/family verdicts retained."
+    "audit": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+    "scope": "Earlier selected art/timing and action calibration entries exact. Six actual consultant days and22 variants verify additive standing explanation/one local crate clearance only. Other gameplay/native observation dates and limited scopes retained. Source-pixel test addition replays all prior actors without changing helper semantics."
   }
 }

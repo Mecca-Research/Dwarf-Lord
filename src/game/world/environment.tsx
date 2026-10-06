@@ -41,7 +41,8 @@ export function Environment() {
       <Terrain />
       <PathClutter />
       <Crate x={-7} z={0} s={0.65} />
-      <Crate x={10} z={10} s={0.8} />
+      {/* Keep Borrin's desk position clear for seated and standing consultation. */}
+      <Crate x={12} z={10.5} s={0.8} />
 
       <Dorm x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
       <Forge x={10} z={-7} rot={-0.2} condition={forge?.condition ?? 0.22} />

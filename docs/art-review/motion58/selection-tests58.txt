@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: Elder and Borrin have separate roles without increasing worker payroll or capability
+ok 1 - Elder and Borrin have separate roles without increasing worker payroll or capability
+  ---
+  duration_ms: 2.121443
+  type: 'test'
+  ...
+# Subtest: direct job resolution rejects narrative and steward assignments
+ok 2 - direct job resolution rejects narrative and steward assignments
+  ---
+  duration_ms: 1.12673
+  type: 'test'
+  ...
+# Subtest: legacy character upgrade is repeatable and preserves worker progression
+ok 3 - legacy character upgrade is repeatable and preserves worker progression
+  ---
+  duration_ms: 2.856452
+  type: 'test'
+  ...
+# Subtest: forge assignment repairs the existing building through daily resolution
+ok 4 - forge assignment repairs the existing building through daily resolution
+  ---
+  duration_ms: 0.392588
+  type: 'test'
+  ...
+# Subtest: passive weighing requires Fenn at his home table without a job
+ok 5 - passive weighing requires Fenn at his home table without a job
+  ---
+  duration_ms: 0.393263
+  type: 'test'
+  ...
+# Subtest: persistent workstation registration only captures its assigned working actor
+ok 6 - persistent workstation registration only captures its assigned working actor
+  ---
+  duration_ms: 0.347523
+  type: 'test'
+  ...
+# Subtest: Borrin has a persistent consultation desk without becoming a production worker
+ok 7 - Borrin has a persistent consultation desk without becoming a production worker
+  ---
+  duration_ms: 0.539147
+  type: 'test'
+  ...
+# Subtest: forge operations route to their own station and retain completion boundaries
+ok 8 - forge operations route to their own station and retain completion boundaries
+  ---
+  duration_ms: 0.315362
+  type: 'test'
+  ...
+# Subtest: meal operations share the task target with distinct persistent preparation blocks
+ok 9 - meal operations share the task target with distinct persistent preparation blocks
+  ---
+  duration_ms: 0.589701
+  type: 'test'
+  ...
+# Subtest: meal selection includes finite mixing and restores chopping on the sixth day
+ok 10 - meal selection includes finite mixing and restores chopping on the sixth day
+  ---
+  duration_ms: 2.354376
+  type: 'test'
+  ...
+# Subtest: forge preparation and raised-hammer tasks keep their own days and then restore forging
+ok 11 - forge preparation and raised-hammer tasks keep their own days and then restore forging
+  ---
+  duration_ms: 0.650174
+  type: 'test'
+  ...
+# Subtest: consultant keeps one cosmetic operation for each valid day and returns to writing
+ok 12 - consultant keeps one cosmetic operation for each valid day and returns to writing
+  ---
+  duration_ms: 0.709106
+  type: 'test'
+  ...
+# Subtest: timber activity selects one finite operation per valid day and restores forestry
+ok 13 - timber activity selects one finite operation per valid day and restores forestry
+  ---
+  duration_ms: 0.496682
+  type: 'test'
+  ...
+# Subtest: timber routing uses the same operation and physical station as playback
+ok 14 - timber routing uses the same operation and physical station as playback
+  ---
+  duration_ms: 39.101434
+  type: 'test'
+  ...
+# Subtest: all six Elder camp activities have eight frames and source-bound body placement
+ok 15 - all six Elder camp activities have eight frames and source-bound body placement
+  ---
+  duration_ms: 54.251392
+  type: 'test'
+  ...
+# Subtest: camp activities never claim production work, walking, dialogue, sleep or a moved Elder
+ok 16 - camp activities never claim production work, walking, dialogue, sleep or a moved Elder
+  ---
+  duration_ms: 0.420321
+  type: 'test'
+  ...
+# Subtest: finite sequence holds completed actions, pauses, and never skips or loops the last action
+ok 17 - finite sequence holds completed actions, pauses, and never skips or loops the last action
+  ---
+  duration_ms: 0.375448
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1002.25261
