@@ -397,3 +397,10 @@ Validation:201 Node tests,67 Python tests, type checking, Pages build, whitespac
 - Exporter now reproduces receipt composition, independent dough completion, legacy source cutouts, height-based cooper placement and inactive full-canvas rack, checking all outputs before writes. Three regression tests prove every existing station output is exact and failures preserve prior art.
 - Validation215 Node/88 Python tests, typecheck, Pages build, whitespace,153/1224 gallery and16 approved station checks pass. First generic capture used unsupported keys and ran before scene readiness; a second awaited a walking-only probe during idle and timed out. Neither counts as movement evidence. Corrected headed client waits for11 mounted stations, uses supported arrows, then records two full-scene captures with changed player coordinates and no error artifact.
 - Frozen160 stays50 main+7 original accepted;103 reviews (62walk+24directional+17fixed),11 families,45 inactive actions remain. PR9 remains Draft, no all-green recommendation.
+
+
+## Motion49 — Blacksmith rear-right bounded research,5 October2026
+
+- Archived five distinct authoring methods with exact ordered requests/reference hashes, raw outputs, physical guides, shared whole-pose registration and neutral unapproved captions. Guide-only strip followed by wardrobe correction restores bare forearms; no candidate selected.
+- Actual opaque distal-sole hypotheses across3-to4, projected at game's0.6-radian elevation, leave minimum8.324px/67.275px perpendicular mismatch even after original +/-12px component corrections. Both fail original6px; anatomical ownership/all-eight-boundary calibration and renderer approval remain unverified. No contact bound changed.
+- Selected assets/runtime audited exact toc8ff9bd; prior215 Node/88 Python checks and actual-game evidence retain motion48 provenance. Main50/153+original7/7 remain accepted,103 reviews/11 families/45 inactive actions remain. PR9 stays Draft and is not green to merge.

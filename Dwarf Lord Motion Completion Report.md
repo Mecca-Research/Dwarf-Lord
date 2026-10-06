@@ -1,8 +1,16 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: **motion48, 5 October 2026**. **PR #9 is not ready to merge.** Cook kneading is now a verified finite gameplay task at an independent block, with finished dough retained after departure. Direct station routing and synchronous workpiece ownership correct two actual gameplay failures. Coordinated foot/cane export checks now prevent a passing sole fit from hiding a failing cane. Five rejected Elder right-view authoring attempts are archived and excluded from the game.
+Checkpoint: **motion49, 5 October 2026**. **PR #9 is not ready to merge.** Motion48's Cook kneading, operation-specific assignment routing and synchronous finished-prop ownership remain selected and tested. Five Blacksmith rear-right authoring methods are archived as private, unapproved research. The latest eight-pose draft restores bare forearms, but its pose3-to4 sole-contact preflight exceeds the unchanged bound under both inspected correspondence hypotheses; no new gait is selected.
 
 The frozen scope remains **160 cycles: 153 main sequences and seven original independent station actors**. **50 main cycles and all seven original actors have scoped acceptance; 103 reviews remain.** Nine derived actors have separate finite task approvals outside that denominator. **20 of 65 reference actions are active; 45 remain inactive.** The 16 approved actor/station variants use 11 physical runtime props. The authored firewood rack remains inactive and unapproved.
+
+## Motion49 authoring outcome
+
+**Blacksmith rear-right remains open.** Five bounded methods tested a full-body guide with canonical reference, two isolated contact poses, a guide-only eight-pose strip and a targeted wardrobe correction. The latest draft has eight distinct whole poses and bare forearms. Its single common source-height basis is430.5px, normalized to520px; there is no limb paint, warp, mirror, per-pose scaling or synthetic frame. Anatomical sole correspondence remains unverified, and review captions explicitly identify the poses as unapproved.
+
+**The actual visible contact preflight rejects adoption.** Using the game's default0.6-radian camera elevation, two provisional opaque distal-sole matches across3-to4 leave minimum perpendicular errors8.324px and67.275px even after the largest allowed whole-pose per-component corrections. Both exceed the original6px bound. Timing and root travel along the projected direction cannot remove that perpendicular mismatch. These are provisional material hypotheses, not named anatomical foot tracks, an eight-boundary fit or a whole-stride approval. Final foot/arm transfer, all eight sole handoffs and actual renderer loop review still require genuinely corrected source poses.
+
+**The game and prior approvals are unchanged.** `docs/art-review/motion49/unchanged-runtime-audit49.json` verifies all selected motion assets and runtime code againstc8ff9bd. Frozen counts and live mappings remain unchanged. Full technical and actual-game validation retains its motion48 provenance; no old run is relabeled as new motion verification. Exact prompts, ordered references, raw outputs, corrected and initial guides, candidate registration and reproducible failure measurements are retained under `docs/art-review/motion49/`. All candidate approval and selection flags remain false.
 
 ## Completed in motion48
 
@@ -128,14 +136,14 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 
 ## Exact remaining work
 
-| Gate | Before motion48 | Current | Still required |
+| Gate | Before motion49 | Current | Still required |
 | --- | ---: | ---: | --- |
 | Main cycles with scoped acceptance |50 /153 | **50 /153** |103 |
 | Original independent actors accepted |7 /7 | **7 /7** |0 |
 | Frozen cycle reviews remaining |103 | **103** |62 walk +24 directional tool/carry +17 fixed references |
 | Fixed references accepted |48 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |19 /65 | **20 /65** |45 activations |
+| Existing reference actions active |20 /65 | **20 /65** |45 activations |
 | Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in62 walks |
 
 The50 main acceptances comprise nine scoped loops and41 finite tasks. Including the original seven actors, **57 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.

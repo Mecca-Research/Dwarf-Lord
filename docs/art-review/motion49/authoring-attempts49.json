@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "checkpoint": "motion49",
+  "baseline": "c8ff9bd95f504492fad535ab9412fe4436148937",
+  "attempts": [
+    {
+      "order": 1,
+      "method": "Whole-sheet guide/photo conditioning",
+      "request": {
+        "file": "authoring-inputs/request-guide49.json",
+        "sha256": "f6fbbde25378d932a54490afb2d3a658096c49476bd0a827497c200bb1ba4510"
+      },
+      "output": {
+        "file": "authoring-inputs/strip-guide49.png",
+        "originalGeneratedFile": "exec-5c44fc21-3c68-4ceb-abc5-a822ea2596fd.png",
+        "sha256": "620ebf713add8a3bf3af761f8834185e4e02ce6356d1146d3d791cd90852a279"
+      },
+      "portableReferences": [
+        {
+          "file": "authoring-inputs/back-right-physical-guide49.png",
+          "sha256": "ecb74e2aafd8a2d67e45c302ec40a041149f9ed24c0ca038f35d6a916008a9ac"
+        },
+        {
+          "file": "authoring-inputs/canonical49.png",
+          "sha256": "a9a23c14da11a5a0d773bf5efa49094726bd47208e127061ffcb06016b2a1b59"
+        }
+      ],
+      "verdict": "not-approved",
+      "findings": "Both halves mostly repeat canonical leading boot/arm geometry. Initial near/far wording was ambiguous and corrected; no contact acceptance."
+    },
+    {
+      "order": 2,
+      "method": "Focused single contact and corrected depth guide",
+      "request": {
+        "file": "authoring-inputs/request-left-contact49.json",
+        "sha256": "f270e2bc2d2d0d1a3d57a7e49b200fdd3d795956150adfd0b5654f45756fa836"
+      },
+      "output": {
+        "file": "authoring-inputs/left-contact-single49.png",
+        "originalGeneratedFile": "exec-82ac343d-89a0-4764-8d18-2be30292994f.png",
+        "sha256": "7f8dea85c25d0bb1f21a742b221bf5a2f7c5eaa972fb3a942725fca647bc96d7"
+      },
+      "portableReferences": [
+        {
+          "file": "authoring-inputs/left-contact-guide49.png",
+          "sha256": "5fe431b01ccb714434136216e21ec9e6e0a2cacddd74153b7a68399699e6bfd4"
+        },
+        {
+          "file": "authoring-inputs/canonical49.png",
+          "sha256": "a9a23c14da11a5a0d773bf5efa49094726bd47208e127061ffcb06016b2a1b59"
+        }
+      ],
+      "verdict": "not-approved",
+      "findings": "Matches the canonical stance rather than establishing an opposite verified contact pair. Full hip/sole ownership is not certified."
+    },
+    {
+      "order": 3,
+      "method": "Body-only identity reference to remove old boot pose conditioning",
+      "request": {
+        "file": "authoring-inputs/request-right-contact49.json",
+        "sha256": "734a09d50dad7e51b0bd12bb7542a1acc2e5fe92feb90dc2af39020afbbecab5"
+      },
+      "output": {
+        "file": "authoring-inputs/right-contact-single49.png",
+        "originalGeneratedFile": "exec-6a4092fb-72c6-47a3-8ed2-c624889f0aac.png",
+        "sha256": "3626589e951e597a6da87baeae4b67b885b1e689b2e0aa3c3a2cb1fe00585c76"
+      },
+      "portableReferences": [
+        {
+          "file": "authoring-inputs/right-contact-guide49.png",
+          "sha256": "ae20f9951e80a346937b075771ae79dd81523f26073f5e8b6f73084a71abbd13"
+        },
+        {
+          "file": "authoring-inputs/blacksmith-body-only49.png",
+          "sha256": "7bf5c32ebc1edf340f026448695152642ef039d57ab58fb2db0a25d49c87aab4"
+        }
+      ],
+      "verdict": "not-approved",
+      "findings": "Opposite contact ownership still unverified. Single pose cannot close a stride; no selected output."
+    },
+    {
+      "order": 4,
+      "method": "Guide-only complete source authoring",
+      "request": {
+        "file": "authoring-inputs/request-fresh-guide49.json",
+        "sha256": "c87d7383873095cfa3691d05c18b31d1bba939b11643bc032f9fd79c386dde07"
+      },
+      "output": {
+        "file": "authoring-inputs/strip-fresh49.png",
+        "originalGeneratedFile": "exec-52fb469f-f81b-41c5-8b18-1eab2221916a.png",
+        "sha256": "2dabf531555169057075a615c3b71e41efa317c3c619d1148e19801f883b731d"
+      },
+      "portableReferences": [
+        {
+          "file": "authoring-inputs/back-right-physical-guide49-corrected.png",
+          "sha256": "8d8e22fa67d457266635014517676bdca79d480864ace4b980de20fb9c376318"
+        }
+      ],
+      "verdict": "not-approved",
+      "findings": "Eight distinct passing poses, but added wrist guards violate current outfit; targeted wardrobe correction required."
+    },
+    {
+      "order": 5,
+      "method": "Targeted bare-arm wardrobe correction",
+      "request": {
+        "file": "authoring-inputs/request-bare-arms49.json",
+        "sha256": "43b61c274e4f9c49904fd4b7d3cc7391306d83d18a1355bc663851141231ad37"
+      },
+      "output": {
+        "file": "authoring-inputs/strip-bare-arms49.png",
+        "originalGeneratedFile": "exec-abf7f8b0-60b4-4995-98c2-fbd57a64a680.png",
+        "sha256": "fddf188e34cb33c3c816bc3a26a1da43d3f7c9a78a1008bfb9b51c5e24610767"
+      },
+      "portableReferences": [
+        {
+          "file": "authoring-inputs/strip-fresh49.png",
+          "sha256": "2dabf531555169057075a615c3b71e41efa317c3c619d1148e19801f883b731d"
+        }
+      ],
+      "verdict": "not-approved",
+      "findings": "Wrist guards removed, eight distinct poses exported at common physical scale. Provisional3-to4 sole-region hypotheses fail original contact bounds; no full anatomical correspondence, rendered-stride or loop approval."
+    }
+  ],
+  "selected": false,
+  "cycleApproved": false,
+  "productionReady": false,
+  "scope": "Private research: no selected game source, native approval, travel calibration, scope denominator, family record or runtime mapping changes. Guide targets/automatic captions cannot certify anatomy or contact. Source-only crop, shared uniform registration and full authored pose selection; no local limb paint/warp/mirror/synthesis.",
+  "nextRequired": "A physically coordinated3-to4 support transfer followed by native anatomy/sole correspondence across all eight boundaries and actual-renderer three-stride verification. Do not weaken12px component/40ms hold/6px sole/.5px held bounds or adopt a low fitted residual without material proof."
+}
