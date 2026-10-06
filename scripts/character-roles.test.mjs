@@ -107,7 +107,7 @@ test('forge operations route to their own station and retain completion boundari
 });
 
 test('meal operations share the task target with distinct persistent preparation blocks',()=>{
- for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'dough-block','knead-dough'],[4,'cutting-block','chop-vegetables']]) {
+ for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'dough-block','knead-dough'],[4,'stew-cauldron','stir-cauldron'],[5,'cutting-block','chop-vegetables']]) {
   assert.equal(activities.cookingWorkAction(day),action);
   const site=stations.activeWorkstation('cook','meals',true,false,day);
   assert.equal(site.id,id);assert.ok(site.actions.includes(action));

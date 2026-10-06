@@ -155,13 +155,14 @@ test('workstations hold one completion and reset only on task lifecycle changes'
   const manifest = JSON.parse(readFileSync('public/sprites/Cook/motion/chop-vegetables/actor/manifest.json', 'utf8'));
   const peelManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/peel-potatoes/actor/manifest.json', 'utf8'));
   const doughManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/knead-dough/actor/manifest.json', 'utf8'));
+  const stirManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/stir-cauldron/actor/manifest.json', 'utf8'));
   const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
   assert.equal(calibration.actions['chop-vegetables/actor'].sourceSha256, manifest.sourceSha256);
   globalThis.location = { href: 'https://motion.test/' };
   globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
   globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
   globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration :
-    String(url).includes('/peel-potatoes/') ? peelManifest : String(url).includes('/knead-dough/') ? doughManifest : manifest, blob: async () => new Blob() });
+    String(url).includes('/peel-potatoes/') ? peelManifest : String(url).includes('/knead-dough/') ? doughManifest : String(url).includes('/stir-cauldron/') ? stirManifest : manifest, blob: async () => new Blob() });
   const driver = new NpcWorkMotion('cook-test', 'cook');
   const body = { x: 0, z: 0, facing: 0, anim: 'work' };
   const update = (dt = .1, job = 'meals', day = 1, resolved = false) => driver.update(body, job, day, resolved, dt, 1.95);
@@ -201,7 +202,13 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     await ready(3); assert.equal(workstationTaskStates.get('dough-block').completed,false,'explicit return stages a fresh stroke');
     update(0,null,3); assert.equal(workstationTaskStates.get('dough-block').completed,false,'cancel before finish creates no dough');
     workstationTaskStates.delete('unrelated-fixture');
-    await ready(4); assert.equal(npcWorkDiagnostics.get('cook-test').action,'chop-vegetables','next recipe day restores vegetables');
+    const stir = await ready(4); assert.equal(npcWorkDiagnostics.get('cook-test').action,'stir-cauldron');
+    assert.ok(Math.abs(stir.placement.height-1.95*640/547)<1e-10,'stirring uses its source-bound body basis');
+    for(const frame of stirManifest.frames)update(frame.durationMs/1000,'meals',4);
+    update(5,'meals',4); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'stirring stays finished');
+    assert.equal(workstationTaskStates.has('stew-cauldron'),false,'stirring does not spawn another completed pot or serving');
+    update(0,null,4); await ready(4); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'stirring resets on reassignment');
+    await ready(5); assert.equal(npcWorkDiagnostics.get('cook-test').action,'chop-vegetables','next recipe day restores vegetables');
     body.anim='walk'; assert.equal(update(),null,'travel releases workstation');
     const toolManifest = JSON.parse(readFileSync('public/sprites/Female Miner/motion/pickaxe-swing/front/manifest.json', 'utf8'));
     globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });

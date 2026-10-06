@@ -1,0 +1,30 @@
+{
+  "checkpoint": "motion51",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "completed": {
+    "newFrozenCycleApprovals": 0,
+    "newFamilyApprovals": 0,
+    "newLiveMappings": [],
+    "candidateSelected": false
+  },
+  "privateResearch": {
+    "character": "Blacksmith",
+    "direction": "back-right",
+    "methods": 2,
+    "findings": [
+      "Ordered full-pose/previous-contact/target guide retains incorrect outgoing boot geometry.",
+      "Standalone physical stage with upper-body identity changes legs but enlarges/recenters body outside the common basis."
+    ],
+    "materialCorrespondenceVerified": false,
+    "wholeStrideApproved": false,
+    "loopApproved": false
+  },
+  "remaining": {
+    "individualCycleReviews": 103,
+    "directionFamilies": 11,
+    "inactiveReferenceActions": 44
+  },
+  "note": "Selected gait files are exact against998862a. Repeated image generation has not established usable material contacts for this view. No gate is closed or bound relaxed."
+}

@@ -391,6 +391,10 @@
     {
       "character": "Cook",
       "action": "knead-dough"
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron"
     }
   ],
   "runtimeCoverageBinding": {
@@ -4094,7 +4098,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
+      "sha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4106,7 +4110,7 @@
     },
     {
       "file": "src/game/world/workstation-sites.ts",
-      "sha256": "9317c7adedcdcd2d155c3874037a620d24899aa798402ad625654a1931965a82"
+      "sha256": "570de9c1f3eded873a4db3ea5ac07054d515cc5823f96ee0b0ac477234ed911b"
     },
     {
       "file": "src/game/motion-playback.ts",
@@ -4126,11 +4130,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "87b1de79a4ba51d1f240af2160a30461bcefa5ef1557a58d547b2d9e74669451"
+      "sha256": "9e910ce27109a341ee5a7b5928e873fc4590ba56e2ad2b0d4b6f3c536b2f8c6d"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "6764d6e25ba2a30f646c118c23789bfc008ac99c70e98276b3ca4e2045030230"
+      "sha256": "064d0119d9666a54378fd14c7d5a8ac5145af55ef45b7a3c8c9e52345777c7d0"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4154,7 +4158,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "0882c67de8ddbbef579997e54c96f7eb12747de246b77bce5001ae1a09a398d1"
+      "sha256": "83b8b243a37cbfa2a74bfb0fcfdb6aab0bd5058053f2b1d5a6de540adcd944c2"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4210,7 +4214,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "f873bbc319e65fe0dc56b2f89c1832c4bdbe1b128dc1412ac52e0d41c3c1428d"
+      "sha256": "64283dc4f12e9f1b56aa1f812e241e4b648cca241abfa5616419fcafa374b7b7"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4270,7 +4274,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/render-calibration.json",
-      "sha256": "43f1af8a7e2a36147b31cac920d90253b58e3d52c877eb352b89f264a36d1c95"
+      "sha256": "06adea86361785f77a49e1ac3c7ff703ddbda633b9b33841fa071279be3381e6"
     },
     {
       "file": "docs/art-review/motion40/runtime-revalidation.json",
@@ -4286,7 +4290,7 @@
     },
     {
       "file": "scripts/cooking-work-check.mjs",
-      "sha256": "f7b2b364d0613ad5515ac5bed038ba1d0c4ee54d47e9c466cacd2fa371c9db7d"
+      "sha256": "46acb9be27ab0f1a253054d075de3778a78f3cd7f034ea573d3292ebf36e0078"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/source-sheet.png",
@@ -4310,7 +4314,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "152e21e1c6faaea15a9549db328a04c8aaa710e138fbb7e78d77ca0fc765ee8e"
+      "sha256": "a4fd4ca174be91504148bbdf839d6197a2b6eb1ca9ad5050805d69e4c65dd936"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4402,7 +4406,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "bfab240f38f45cb0765a57a5095d4b6fb5631f723a1f251ea9e26853ffb96568"
+      "sha256": "5a34e5a2b5af23334ec11f4ceb697059561ce7f5254893b401b34132bbb4e285"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4494,7 +4498,7 @@
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
-      "sha256": "2bbdf513cc27281eb136933fadde01fe17e6ce2826ed23ab6257a23bc42e3a72"
+      "sha256": "1be532cb364776111ac6741deeaaf721157f3f65a07ece0dbaa3cb2d4466a3cd"
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
@@ -4578,7 +4582,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
-      "sha256": "cbb491911ea479fb42898f610a3b3b2af16e021d9d38bc5e20722f72011313b2"
+      "sha256": "1d105fe17275c976c077bd2f50e102c5806a0474595b31781bff4d35e2294456"
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
@@ -4634,7 +4638,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
-      "sha256": "1b95fad3daf73222dbd228e00d25a9652ea1b8df9f808434f177823b82a7c40a"
+      "sha256": "62cd375708827452a9a0013239060b17f9a9a08f2c18b1e29d28d4c8230de2d2"
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
@@ -4706,7 +4710,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
-      "sha256": "04f3b605f85316c4b713db9131f4a9895375ae69f380bacd0391e0a4441d1980"
+      "sha256": "b44b6e808e937486e1cb022249793b865bd9a25d75bb17aafe89bbf1192c7f3c"
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png",
@@ -4790,7 +4794,7 @@
     },
     {
       "file": "scripts/work-assignment.test.mjs",
-      "sha256": "67c657a5db10f22944056145ae3f8317e4e4c122730e04e9195f4fb036b474fb"
+      "sha256": "e1bde0b2da78f34b14f617b5130dbf59c94179f077951a6b83b582bf9e8e0216"
     },
     {
       "file": "scripts/workstation-completion.test.mjs",
@@ -4822,7 +4826,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
-      "sha256": "a1eff57561c0fab0bd3b55b72e3c654c2cae8b39c864cd5190407a544fa8fbd2"
+      "sha256": "2f433b33302367a21eff605cbafc5af0d21dcb051f7c6c32e5a1f7e3e3b2f160"
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/00.png",
@@ -4875,7 +4879,123 @@
     {
       "file": "public/sprites/workstations/dough-block/authoring-inputs/dough48.png",
       "sha256": "0e0d00015f1c0640c8f0e433a5b18f77485ecf525f9f3460fad4c06ed862561c"
+    },
+    {
+      "file": "docs/art-review/motion50/runtime-coverage-audit50.json",
+      "sha256": "42ec900b205827c383d6f80f6c98f0f98eed67a1cd94f5e15f02bc8c9bdad408"
+    },
+    {
+      "file": "docs/art-review/motion50/runtime-revalidation50.json",
+      "sha256": "be0d75f350680a016783e3a3fe9ce476050f7ad33903fffcc5e62caaaa372071"
+    },
+    {
+      "file": "docs/art-review/motion50/retained-assets-audit50.json",
+      "sha256": "d860b2654bf676fc01e06e22ce00da70cdff559ae98f9753248c9e311c6dc3c1"
+    },
+    {
+      "file": "docs/art-review/motion50/npc-gameplay50.json",
+      "sha256": "e33b2533e52422f4d0679fd20a82e6ac470e6ac4acab559f234d81093b41f774"
+    },
+    {
+      "file": "docs/art-review/motion50/consultant-gameplay50.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "docs/art-review/motion50/blacksmith-right-gameplay50.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "docs/art-review/motion50/blacksmith-left-gameplay50.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "docs/art-review/motion50/station-layer-authoring50.json",
+      "sha256": "88c3363318b5a63b805a0b3ceb474c92790c738e51eaa9e0f9818f00da360fb1"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/07.png",
+      "sha256": "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/02.png",
+      "sha256": "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/00.png",
+      "sha256": "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "sha256": "6b89d46d5cdf63a9207075a01bc1585fbfb14a4da15c9784c0d51cff151023b0"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/review.jpg",
+      "sha256": "eba77d7919929cf74a37555af2bbd44edb2bb1e9529ef0f3f13c4cf4dd090e2e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/preview.png",
+      "sha256": "0d89fcc6e3b0885cfe24e9e34b1f03f9cc9bb0afb58348d60895b8e1485a9557"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/04.png",
+      "sha256": "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/01.png",
+      "sha256": "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/05.png",
+      "sha256": "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/prompt.txt",
+      "sha256": "44989072094d5979c070b105abe3f3567567d31ef31ec8625b9731134ef51542"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/03.png",
+      "sha256": "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/atlas.png",
+      "sha256": "1c7deac6f3a281a892daed4725498c5aff19281d75265f02d9d69ccf66cf8967"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/motion-polish.json",
+      "sha256": "43e82d00ad0fdd5a4b6879fb35f18f56b8536bc3ea93be97bb565fb6d34ed1ad"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/manifest.json",
+      "sha256": "3aa0670b18f3925bbc14e1fbf202b18942f667087d4fa87a165244fde0ce2f6d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/source-sheet.png",
+      "sha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/generation.json",
+      "sha256": "719d8e91a660f31843dbed62b7cef7af8a075598f308d67e9d9dbc3746556003"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/06.png",
+      "sha256": "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/source.png",
+      "sha256": "d1e536cebd380fb8a9a6d6e10d2d46ddb43d616268c8d9be2afa9d66db046135"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/sprite.png",
+      "sha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/generation.json",
+      "sha256": "03f8a959dc9463e091793c24b5597f52c495ae7003deeb72aec464a570315d10"
     }
   ],
-  "runtimeCoverageNote": "Motion48 actual-renderer coverage: previous19 plus finite Cook kneading at an independent fixed block, finished dough retained only after completion/departure. All65 prior scoped art/registration/timing acceptances retain exact selected sources. Nine derived actors remain outside frozen160;50 main/7 original scopes unchanged. Task assignment now immediately targets the selected physical site; synchronous prop ownership covers arrival, cancellation, departure, return and late mounts. Economic output remains in existing day resolution."
+  "runtimeCoverageNote": "Motion50 actual-renderer coverage: prior20 plus finite Cook stirring at an independent persistent cauldron. Five meal days, exact source/calibration/prop hashes, all8 stirring poses, completion/hold, camera turn, cancellation/departure/return and day reset exercised. Every earlier66 accepted art/registration/timing set is exact.10 derived actors outside frozen160;50 main/7 original remain accepted,11 direction families open. Economic output remains under existing day resolution."
 }

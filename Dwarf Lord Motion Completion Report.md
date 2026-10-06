@@ -1,8 +1,24 @@
 # Dwarf Lord motion completion report
 
-Checkpoint: **motion49, 5 October 2026**. **PR #9 is not ready to merge.** Motion48's Cook kneading, operation-specific assignment routing and synchronous finished-prop ownership remain selected and tested. Five Blacksmith rear-right authoring methods are archived as private, unapproved research. The latest eight-pose draft restores bare forearms, but its pose3-to4 sole-contact preflight exceeds the unchanged bound under both inspected correspondence hypotheses; no new gait is selected.
+Checkpoint: **motion50 and bounded motion51 research, 5 October 2026**. **PR #9 is not ready to merge.** Cook stirring is now a selected, verified finite task at an independent persistent stew cauldron. The prior kneading, immediate worksite routing and synchronous finished-prop handoffs remain selected. Two further Blacksmith rear-right methods remain rejected and unselected; they do not close a gait review.
 
-The frozen scope remains **160 cycles: 153 main sequences and seven original independent station actors**. **50 main cycles and all seven original actors have scoped acceptance; 103 reviews remain.** Nine derived actors have separate finite task approvals outside that denominator. **20 of 65 reference actions are active; 45 remain inactive.** The 16 approved actor/station variants use 11 physical runtime props. The authored firewood rack remains inactive and unapproved.
+The frozen scope remains **160 cycles: 153 main sequences and seven original independent station actors**. **50 main cycles and all seven original actors have scoped acceptance; 103 reviews remain.** Ten derived actors have separate finite task approvals outside that denominator. **21 of 65 reference actions are active; 44 remain inactive.** The 17 approved actor/station variants use 12 physical runtime props. The authored firewood rack remains inactive and unapproved.
+
+## Completed in motion50
+
+**Cook stirring now runs in the game.** Eight original source poses retain the exact opaque actor pixels, their coordinates and 0–7 order. One 547px body basis and [320,616] anchor apply throughout. The actor owns the wooden spoon shaft, hands and held towel; the independently authored cauldron owns the fixed iron rim, stew, ring handles and complete three-legged stand. No actor redraw, local limb editing, duplicate frame or per-pose scaling is used. The nearby decorative barrel was moved clear after the initial obstructed scene placement was rejected.
+
+**Visible support and tool contacts pass their stated checks.** The visible near boot's minimum correlation is 0.990038, maximum travel 1.013719px and adjacent travel 1.018147px, within the unchanged 0.94 / 6px / 6px bounds. Visible wooden shaft points meet the projected stew face in all eight poses, with maximum outside distance 0px. Hand/towel silhouettes overlap the fixed opaque rim. The far sole, submerged spoon bowl, hidden material grip and fluid/contact forces remain unobserved; this finite task does not certify those contacts or a seamless 7-to-0 loop.
+
+**Actual task lifecycle is verified across five meal days.** The game selects vegetables, potatoes, kneading, stirring and vegetables. Stirring reaches its physical site naturally, displays all eight authored-duration poses, completes once at pose7 and holds for five seconds. Camera rotation, cancellation, departure with the persistent cauldron, explicit return/reset, day release and morning selection pass. No second pot, serving or economic output is spawned; the existing day resolver retains reward ownership.
+
+**Earlier accepted sources retain their limited scope.** All 66 earlier accepted art/registration/timing sets and prior prop files are exact against c8ff9bd. Every earlier Cook calibration entry remains equal. Five current consultant activities, original NPC/job behavior, both approved Blacksmith side strides and 17 independent layers pass again. Only the additive meal action/site, directly affected calibration and check dependencies, and the nearby decorative barrel change. Eighteen affected approval records carry the fresh bounded runtime audit; their earlier native scope and observation dates are preserved.
+
+**Legacy gallery checks now read the actual manifests.** Outdated assumptions of six work images per character and twelve poses for every character prevented the checks from reaching the current galleries. The corrected checks verify all 103 static references, including supplemental and moved Borrin references, and 166 angle/stance images across 14 characters. Image dimensions, transparency, navigation, library switching and mobile layout are checked. This repairs verification without changing art or granting motion acceptance.
+
+## Motion51 research outcome
+
+Two distinct single-pose rear-right methods are archived with their exact ordered prompts, reference hashes, raw outputs and guides. Conditioning on the retained full pose/contact reference keeps the incorrect outgoing boot placement. Conditioning on a standalone physical stage and an upper-body-only identity reference changes the legs but enlarges/recenters the body outside the existing common basis. Neither establishes anatomical sole correspondence, all-eight-boundary calibration or actual loop continuity. Every selected Blacksmith walking file remains exact against 998862a. These attempts add no accepted cycle, family or gameplay mapping. No guide target, hidden point or per-pose scale is used to conceal the failure.
 
 ## Motion49 authoring outcome
 
@@ -136,14 +152,14 @@ Actual-game checks verify both meal days, natural arrival, all eight authored-du
 
 ## Exact remaining work
 
-| Gate | Before motion49 | Current | Still required |
+| Gate | Before motion50 | Current | Still required |
 | --- | ---: | ---: | --- |
 | Main cycles with scoped acceptance |50 /153 | **50 /153** |103 |
 | Original independent actors accepted |7 /7 | **7 /7** |0 |
 | Frozen cycle reviews remaining |103 | **103** |62 walk +24 directional tool/carry +17 fixed references |
 | Fixed references accepted |48 /65 | **48 /65** |13 recorded defects +4 further contact/calibration reviews |
 | Direction families passed |0 /11 | **0 /11** |All11 have current changes-required reviews |
-| Existing reference actions active |20 /65 | **20 /65** |45 activations |
+| Existing reference actions active |20 /65 | **21 /65** |44 activations |
 | Elder moving foot/cane views accepted |0 /8 | **0 /8** |All8, already included in62 walks |
 
 The50 main acceptances comprise nine scoped loops and41 finite tasks. Including the original seven actors, **57 of the frozen160 cycles have scoped acceptance**. This is an acceptance inventory, not a percentage of total game development. Review, direction and activation gates overlap; do not add them into an invented total asset count. An open review does not automatically require a redraw.
@@ -154,7 +170,7 @@ The50 main acceptances comprise nine scoped loops and41 finite tasks. Including 
 | --- | ---: | --- |
 | Blacksmith |7 /7 |No combined-reference review remains; four live activations remain. |
 | Borrin |8 /8 |No combined-reference review remains; three live activations remain. |
-| Cook |8 /8 |No combined-reference review remains; five live activations remain. |
+| Cook |8 /8 |No combined-reference review remains; four live activations remain. |
 | Elder |6 /6 |Seated references complete; all eight coordinated moving cane views remain open. |
 | Female Miner |3 /6 |pickaxe-contact; shovel-ore; push-ore-barrow |
 | Helga |4 /6 |shovel-stone; carry-mine-timber |
@@ -169,12 +185,12 @@ The four further calibration/contact reviews are Laborer carry-sack, pull-supply
 | --- | ---: |
 | Blacksmith |4 |
 | Borrin |3 |
-| Cook |5 |
+| Cook |4 |
 | Female Miner |6 |
 | Helga |6 |
 | Ginger |9 |
 | Laborer |12 |
-| **Total** | **45** |
+| **Total** | **44** |
 
 Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. Every activation requires an appropriate task/ambient context, source-bound placement/scale, correct tool/material ownership and completion/reset behavior. Furniture-containing references cannot be overlaid on independent duplicate props. Compatible operations may share a reviewed station; one new station per action is not required. Visual animation must not duplicate gameplay rewards.
 
@@ -192,14 +208,14 @@ Exact action names and cycle IDs are in `docs/motion-completion-inventory.md`. E
 2. Correct only demonstrated defects in the other walking views and complete their whole-stride/held-frame reviews. Add coordinated Elder cane recovery/plant proof for all eight views.
 3. Correct remaining directional tool/log geometry and full material/grip state, then complete all eleven cross-direction family reviews.
 4. Close the17 remaining fixed-reference reviews, retaining a clear distinction between finite completion and seamless-loop approval.
-5. Activate the45 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
+5. Activate the44 remaining existing actions in appropriate work/ambient contexts, separating actor/prop ownership where necessary and verifying arrival, contact, completion, cancellation, departure, camera changes and day resets.
 6. Recompute the frozen inventory from exact artifacts/dependencies. All160 review obligations, all11 direction families and all65 live reference-action mappings must be current, without missing/stale evidence. Derived additions need their own exact acceptance.
 7. Run full tests, build and actual browser checks on the final committed revision, verify GitHub checks on that exact PR head and confirm no remaining motion/gameplay gate. Only then give an all-green merge recommendation.
 
 ## Validation and evidence
 
-Full checks pass **215 Node tests and 88 Python tests**, type checking and the Pages build. The 153-sequence / 1,224-image main gallery and all 16 approved actor/station variants pass controls, layer occlusion, finite hold/reset and fixed-prop checks. Fresh actual-game Cook, consultant, original NPC work and both side-view stride checks record no client error. Two headed full-scene startup/movement captures are inspected separately.
+Current checks pass **215 Node tests and 88 Python tests**, type checking and the Pages build. The 153-sequence / 1,224-image main gallery and all 17 approved actor/station variants pass controls, layer occlusion, finite hold/reset and fixed-prop checks. Current static and stance galleries pass 103 and 166 images respectively. Actual five-day Cook and consultant checks, original NPC/job behavior and both approved side-view strides record no client error. Two headed full-scene captures show player movement, 18 characters and all 12 persistent stations, with no console/page-error artifact.
 
-Current machine-readable results: `docs/motion48-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Original-pixel identity, native and actual kneading images, sole/dough observations, finite approval, runtime regression results and exact retained-asset audit are under `docs/art-review/motion48/`. All failed Elder research remains in `docs/art-review/motion48/elder-right/`; it is not a selected or accepted gait. Earlier unchanged observations retain their original provenance.
+Machine-readable current results are `docs/motion50-review-summary.json`, `docs/motion-completion-status.json` and `docs/motion-completion-inventory.md`. Source-pixel identity, native and actual stirring images, visible contacts, finite approval, original sources, runtime regression results, retained-asset audit and full validation logs are under `docs/art-review/motion50/`. Setup failures, an interrupted wrapper and the first obstructed station placement are archived and excluded from acceptance. The two rejected rear-right drafts and their exact input mappings are under `docs/art-review/motion51/`. Earlier unchanged evidence retains its original provenance.
 
-**Passing local or GitHub checks does not close the 103 motion reviews, 11 family reviews or 45 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**
+**Passing local or GitHub checks does not close the 103 motion reviews, 11 family reviews or 44 inactive actions. PR #9 remains Draft; no full-motion or merge approval is given.**

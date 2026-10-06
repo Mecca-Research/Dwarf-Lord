@@ -404,3 +404,20 @@ Validation:201 Node tests,67 Python tests, type checking, Pages build, whitespac
 - Archived five distinct authoring methods with exact ordered requests/reference hashes, raw outputs, physical guides, shared whole-pose registration and neutral unapproved captions. Guide-only strip followed by wardrobe correction restores bare forearms; no candidate selected.
 - Actual opaque distal-sole hypotheses across3-to4, projected at game's0.6-radian elevation, leave minimum8.324px/67.275px perpendicular mismatch even after original +/-12px component corrections. Both fail original6px; anatomical ownership/all-eight-boundary calibration and renderer approval remain unverified. No contact bound changed.
 - Selected assets/runtime audited exact toc8ff9bd; prior215 Node/88 Python checks and actual-game evidence retain motion48 provenance. Main50/153+original7/7 remain accepted,103 reviews/11 families/45 inactive actions remain. PR9 stays Draft and is not green to merge.
+
+
+## 2026-10-05 — motion50 Cook stirring and current verification
+
+- Activated eight original source-pixel Cook stirring poses at an independently authored persistent stew cauldron. Shared547/[320,616] registration and125ms holds preserve literal opaque original pixels; actor owns spoon shaft/towel and prop owns fixed stew/rim/stand. The nearby barrel is moved clear after rejected initial overlap.
+- Visible near boot passes original.94/6/6: minimum.990038, max1.013719px, adjacent1.018147px. Visible wooden shaft meets projected stew face in all8, outside0px; hand/towel overlaps opaque rim. Hidden far sole/submerged bowl/forces and seamless repeat are excluded. Finite once-hold approval only.
+- Actual5 meal days verify vegetables/potatoes/kneading/stirring/vegetables, natural arrival, all8, one completion/5s hold, camera, cancellation, persistent pot/departure, return0 and day reset. Daily economic output owner unchanged.
+- All66 earlier accepted source/art/registration/timing sets and previous props exact.18 affected approval records narrowly revalidated with current5 consultant days, original NPC/job lifecycle, both approved side strides and17 layers. Original observation scopes/dates preserved.
+- Repaired stale static/stance gallery checks:103 static references and166 angle/stance images,14 characters, actual manifest counts/dimensions, transparency, navigation and mobile pass. No art or acceptance altered by checker repair.
+- Final215 Node/88 Python tests, typecheck, Pages build,153/1224 main gallery and17 approved station checks pass. Two corrected headed full-scene captures show movement,18 characters/12 stations and no client-error artifact. Entry/setup failures, interrupted wrapper and first obstructed station placement remain excluded/archive evidence.
+- Live coverage21/65,44 inactive.10 derived finite actors outside frozen160;17 variants/12 physical active props. Frozen remains50 main+7 original accepted,103 reviews (62walk+24directional+17fixed),0/11 families passed and0/8 Elder coordinated moving cane views. PR9 stays Draft and is not ready to merge.
+
+## Motion51 — rear-right single-pose research,5 October2026
+
+- Two genuinely different full-pose methods retained: ordered full-pose/preceding-contact/target guide; then standalone physical stage with upper-body-only identity reference. First keeps incorrect outgoing boot placement; second changes legs but enlarges/recenters body outside shared basis.
+- Exact requests, ordered archived references/hashes, raw outputs, diagnostic normalizations and explicit rejection findings preserved. Selected Blacksmith gait files exact against998862a. Neither method proves corresponding sole material/all-eight-boundary contacts or loop continuity; no candidate selected, no fit/guide point treated as acceptance.
+- Adds no closed gate or gameplay mapping. Current counts retain motion50:103 individual reviews,11 direction families and44 inactive actions. No all-green merge recommendation.

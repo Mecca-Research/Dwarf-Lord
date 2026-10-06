@@ -21,7 +21,7 @@ class CompletionTests(unittest.TestCase):
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':45})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':44})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']

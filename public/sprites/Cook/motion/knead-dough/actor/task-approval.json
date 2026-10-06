@@ -180,7 +180,7 @@
     },
     {
       "file": "../../render-calibration.json",
-      "sha256": "43f1af8a7e2a36147b31cac920d90253b58e3d52c877eb352b89f264a36d1c95"
+      "sha256": "06adea86361785f77a49e1ac3c7ff703ddbda633b9b33841fa071279be3381e6"
     },
     {
       "file": "generation.json",
@@ -208,11 +208,11 @@
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
-      "sha256": "9317c7adedcdcd2d155c3874037a620d24899aa798402ad625654a1931965a82"
+      "sha256": "570de9c1f3eded873a4db3ea5ac07054d515cc5823f96ee0b0ac477234ed911b"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
+      "sha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -280,7 +280,7 @@
     },
     {
       "file": "../../../../../../scripts/cooking-work-check.mjs",
-      "sha256": "f7b2b364d0613ad5515ac5bed038ba1d0c4ee54d47e9c466cacd2fa371c9db7d"
+      "sha256": "46acb9be27ab0f1a253054d075de3778a78f3cd7f034ea573d3292ebf36e0078"
     },
     {
       "file": "../../../../../../scripts/workstation-review-check.mjs",
@@ -297,6 +297,45 @@
     {
       "file": "../../../../../workstation-review.html",
       "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+      "sha256": "be0d75f350680a016783e3a3fe9ce476050f7ad33903fffcc5e62caaaa372071"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/retained-assets-audit50.json",
+      "sha256": "d860b2654bf676fc01e06e22ce00da70cdff559ae98f9753248c9e311c6dc3c1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/npc-gameplay50.json",
+      "sha256": "e33b2533e52422f4d0679fd20a82e6ac470e6ac4acab559f234d81093b41f774"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/consultant-gameplay50.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-right-gameplay50.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-left-gameplay50.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
     }
-  ]
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion50",
+    "files": [
+      "public/sprites/Cook/motion/render-calibration.json",
+      "src/game/world/workstation-sites.ts",
+      "src/game/world/work-activities.ts",
+      "scripts/cooking-work-check.mjs"
+    ],
+    "audit": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+    "scope": "Exact prior selected assets and limited acceptance, freshly exercised after fourth meal operation/site addition. No new art/material/family approval."
+  }
 }

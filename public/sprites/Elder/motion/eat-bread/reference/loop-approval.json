@@ -60,7 +60,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
+      "sha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a"
     },
     {
       "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
@@ -249,15 +249,42 @@
     {
       "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
       "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+      "sha256": "be0d75f350680a016783e3a3fe9ce476050f7ad33903fffcc5e62caaaa372071"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/retained-assets-audit50.json",
+      "sha256": "d860b2654bf676fc01e06e22ce00da70cdff559ae98f9753248c9e311c6dc3c1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/npc-gameplay50.json",
+      "sha256": "e33b2533e52422f4d0679fd20a82e6ac470e6ac4acab559f234d81093b41f774"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/consultant-gameplay50.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-right-gameplay50.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-left-gameplay50.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion48",
+    "checkpoint": "motion50",
     "files": [
-      "src/game/world/npc-motion.ts",
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
-    "scope": "Exact prior limited art/registration/timing with audited task routing and synchronous finished prop ownership; fresh actual task and gait checks. No new art, contact scope or family approval."
+    "audit": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+    "scope": "Exact prior selected assets and limited acceptance, freshly exercised after fourth meal operation/site addition. No new art/material/family approval."
   }
 }

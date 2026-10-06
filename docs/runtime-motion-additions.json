@@ -208,6 +208,29 @@
       "status": "exported",
       "destination": "public/sprites/Cook/motion/knead-dough/actor",
       "station": "dough-block"
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "title": "Stir cauldron",
+      "reference": "public/sprites/Cook/work-references/03-stir-cauldron.png",
+      "beats": [
+        "spoon at near side of cauldron",
+        "continuous midway transition from spoon at near side of cauldron toward stir spoon to right",
+        "stir spoon to right",
+        "continuous midway transition from stir spoon to right toward stir spoon to far side",
+        "stir spoon to far side",
+        "continuous midway transition from stir spoon to far side toward stir spoon to left completing circular motion",
+        "stir spoon to left completing circular motion",
+        "continuous midway transition from stir spoon to left completing circular motion toward spoon at near side of cauldron"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Original registered body, spoon shaft and held towel; independent fixed cauldron owns rim/stew/stand. Hidden far boot and submerged spoon bowl unobserved. Finite once-hold cosmetic task.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/stir-cauldron/actor",
+      "station": "stew-cauldron"
     }
   ]
 }

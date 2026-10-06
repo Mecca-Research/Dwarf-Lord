@@ -23,9 +23,9 @@ try {
  await until(()=>Boolean(window.__controlsTest?.assignJob),'scene');
  const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
  const startDay=Number(process.env.REVIEW_START_DAY??1);
- assert.ok(Number.isInteger(startDay)&&startDay>=1&&startDay<=4);
+ assert.ok(Number.isInteger(startDay)&&startDay>=1&&startDay<=5);
  for(let day=1;day<startDay;day++){await page.evaluate(()=>{window.__controlsTest.resolveDay();window.__controlsTest.nextMorning();});await tick();}
- for(const [day,action,x,station] of [[1,'chop-vegetables',-.5,'cutting-block'],[2,'peel-potatoes',-3.5,'potato-block'],[3,'knead-dough',-6.5,'dough-block'],[4,'chop-vegetables',-.5,'cutting-block']].filter(([day])=>day>=startDay)) {
+ for(const [day,action,x,station] of [[1,'chop-vegetables',-.5,'cutting-block'],[2,'peel-potatoes',-3.5,'potato-block'],[3,'knead-dough',-6.5,'dough-block'],[4,'stir-cauldron',-9.5,'stew-cauldron'],[5,'chop-vegetables',-.5,'cutting-block']].filter(([day])=>day>=startDay)) {
   const manifest=JSON.parse(readFileSync(`public/sprites/Cook/motion/${action}/actor/manifest.json`));
   await page.evaluate(({x,day})=>{const t=window.__controlsTest;t.teleport(x,7);t.setZoomBias(12);t.teleportDwarf('kori',x,day===1?4.5:6);t.assignJob('kori','meals');},{x,day});
   await until(()=>Boolean(JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion),'loaded meal operation');
@@ -42,20 +42,22 @@ try {
   for(let frame=0;frame<8;frame++) {
    const d=await worker();assert.equal(d.workMotion.action,action);assert.equal(d.workMotion.frame,frame);
    assert.equal(d.workMotion.direction,'actor');samples.push(d.workMotion);
-   if(day===3||[0,2,4,7].includes(frame))await page.screenshot({path:`${output}/day${day}-${action}-${frame}.png`});
+   if(day===3||day===4||[0,2,4,7].includes(frame))await page.screenshot({path:`${output}/day${day}-${action}-${frame}.png`});
    await tick(manifest.frames[frame].durationMs);
   }
   const completed=(await worker()).workMotion;
   assert.equal(completed.completed,true);assert.equal(completed.completions,1);
   await tick(5000);assert.deepEqual((await worker()).workMotion,completed,'terminal does not start another meal operation');
-  if(day===3) {
+  if(day===3||day===4) {
    const cameraBefore=await page.evaluate(()=>window.__controlsTest.getCameraAngles());
    await page.keyboard.down('q');await tick(400);await page.keyboard.up('q');
    assert.notEqual((await page.evaluate(()=>window.__controlsTest.getCameraAngles())).azimuth,cameraBefore.azimuth);
-   assert.deepEqual((await worker()).workMotion,completed,'camera rotation preserves finished dough task');
-   await page.screenshot({path:`${output}/knead-dough-rotated.png`});
-   const piece=await (await page.request.get(new URL('sprites/workstations/dough-block/completed-dough.png',page.url()).href)).body();
-   assert.equal(hash(piece),hash(readFileSync('public/sprites/workstations/dough-block/completed-dough.png')));
+   assert.deepEqual((await worker()).workMotion,completed,'camera rotation preserves the finite meal task');
+   await page.screenshot({path:`${output}/${action}-rotated.png`});
+   if(day===3){
+    const piece=await (await page.request.get(new URL('sprites/workstations/dough-block/completed-dough.png',page.url()).href)).body();
+    assert.equal(hash(piece),hash(readFileSync('public/sprites/workstations/dough-block/completed-dough.png')));
+   }
   }
   await page.evaluate(()=>window.__controlsTest.assignJob('kori',null));await tick();
   assert.equal((await worker()).workMotion,undefined,'cancel releases actor');
@@ -64,6 +66,7 @@ try {
   assert.ok(stations.some(s=>s.id==='cutting-block'&&s.persistent));
   assert.ok(stations.some(s=>s.id==='potato-block'&&s.persistent&&s.x===-3.5&&s.z===4.5));
   if(day===3)assert.ok(stations.some(s=>s.id==='dough-block'&&s.persistent&&s.completedProp&&s.x===-6.5&&s.z===4.5),'finished dough survives departure');
+  if(day===4)assert.ok(stations.some(s=>s.id==='stew-cauldron'&&s.persistent&&s.x===-9.5&&s.z===4.5),'cauldron persists independently after departure');
   await page.screenshot({path:`${output}/${action}-departed.png`});
   await page.evaluate(({x})=>{const t=window.__controlsTest;t.teleportDwarf('kori',x,4.5);t.assignJob('kori','meals');},{x});
   await until(()=>Boolean(JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion),'reassigned meal operation');
@@ -85,5 +88,5 @@ try {
  }
  assert.deepEqual(errors,[]);
  await writeFile(`${output}/results.json`,JSON.stringify({method:'Controlled clock and actual Three renderer; job/day controls, with no direct animation frame mutation.',seen,errors,
-  scope:'Three daily cosmetic meal operations and day4 recipe return, exact source/atlas/calibration/prop hashes, natural arrivals, eight dough poses, camera-preserved hold and completed dough ownership after departure. Cancellation before finish creates no prop. Economic output remains in existing day resolution; no baking or seamless-loop approval.'},null,2)+'\n');
+  scope:'Four daily cosmetic meal operations and day5 recipe return, exact source/atlas/calibration/prop hashes, natural arrivals, all eight dough and stirring poses, camera-preserved holds, persistent cauldron and completed dough ownership after departure. Cancellation before kneading finishes creates no prop. Economic output remains in existing day resolution; no baking, boiling simulation, serving or seamless-loop approval.'},null,2)+'\n');
 }finally{await browser.close();}

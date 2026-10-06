@@ -1,0 +1,19 @@
+{
+  "prompt": "Edit the Blacksmith whole-body sprite in reference1 into a correct rear-right double-support walking contact pose4. Reference2 is the previous pose3 and establishes this same character identity, equipment, camera and which near leg was supporting. Reference3 is a DIAGNOSTIC GUIDE ONLY; its colored tracks and circles are desired whole-pose geometry, never art and never proof. Keep the body position, bald head, thick black beard, cream rolled-sleeve shirt, crossed brown leather shoulder straps, brown leather apron and brass ring, blacksmith trousers and two brown brass-buckled boots. Bare forearms, no bracers, gloves or new items. Same rear three-quarter camera, facing and walking toward image upper-right. His anatomical RIGHT leg is the nearer trailing leg. Keep that same boot in contact during3-to4: redraw its complete hip/knee/ankle chain so its distal lower fore-sole material reaches the gold target at pixel[354,619] in a640x640 reference canvas. It is a trailing toe support: forefoot stays grounded, heel lifts slightly. The anatomical LEFT leg is the farther LEADING leg making a new heel contact approximately[407,559], ahead and image upper-right of the trailing boot. Both legs must connect naturally to their own sides of the pelvis, with visible separated knees, no crossing/reversed chains, no impossible shin bend. This is double support; do not lift the entire trailing boot or repeat the old recovery pose. Counter-swing the anatomical RIGHT near arm forward and LEFT far arm backward, keeping same shoulders and compact dwarf proportions. Preserve the original head/torso scale and stage location, approximately crown y100, hips y451, transparent640x640 frame. Do not zoom or recenter, enlarge anatomy, change the camera, invent tools or obscure the boot contact. Author one entire coherent new pose with all body parts and both complete boots, high-quality semi-realistic materials exactly matching references. No guide strokes, labels, dots, shadows or background in the final image. Transparent alpha. Whole-body pose authoring, not a mirrored leg or disconnected boot. Return a single sprite.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/docs/art-review/motion49/candidate-bare/04.png",
+      "sha256": "e1c9c3b152e9cdc7ac7f366555623f0be4dd6d60ca4e358887b3cdd9f9827ada"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/docs/art-review/motion49/candidate-bare/03.png",
+      "sha256": "4e3996ce36ea55c19809b75d58d825fcb7ed1d5b8bd415b537ae0e2e3fb25a10"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion51/blacksmith-back-right/pose4-contact-guide51.png",
+      "sha256": "fdb7d0b8046d7ff8e6e0ab4bea3df5e0cd800151220ba9d6c45060fda8ccb10b"
+    }
+  ],
+  "transparent_background": true,
+  "scope": "One unapproved full-pose contact authoring attempt. Other seven source poses retained. Exact material correspondence, shared registration, all-eight-boundary calibration and actual loop remain required."
+}
