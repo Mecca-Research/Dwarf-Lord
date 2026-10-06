@@ -1,6 +1,6 @@
 Original prompt: Rebuild Dwarf Lord assets to match the supplied reference and create a PR; use the WSL filesystem.
 
-Active persistent checkout: /opt/codex-work/dwarf-lord. Branch: codex/rebuild-reference-assets.
+Active persistent checkout: /opt/codex-work/dwarf-lord. Current branch: codex/expanded-character-cycles. PR9 remains Draft.
 
 Implemented: individual-board timber hall with exposed rafters and damage tied to condition, sagging A-frame tents, framed crates, stave barrels, low boardwalk, continuous cliff skirt, 2,400 instanced stones and 650 moss pieces, readable neutral material tint, responsive camera zoom and larger illustrated characters. Removed duplicate billboard props. New games begin in camp.
 
@@ -444,3 +444,12 @@ Validation:201 Node tests,67 Python tests, type checking, Pages build, whitespac
 - All68 earlier accepted art/registration/timing sets, prior Cook calibration actions and existing prop files exact againstee5e760. Twenty affected approvals narrowly revalidated; prior numerical scopes/dates retained. No walking/cane/directional/family approval added.
 - Validation219 Node/90 Python, typecheck, Pages build and whitespace pass. Two outdated meal fixtures updated to exercise mixing lifecycle and day6 return. Terminated attached client and acceptance-preflight filename error excluded; independent reruns complete successfully.
 - Live23/65,42 inactive;12 derived finite actors outside frozen160,19 variants/13 active physical props. Frozen50 main+7 original accepted;103 reviews(62walk+24directional+17fixed),0/11 families passed,0/8 Elder coordinated moving cane views. PR9 remains Draft and not ready to merge.
+
+
+## 2026-10-06 — Motion54 rear-left closed geometry preflight
+- No selected runtime/public file or approval changed against8e25a3a. All69 scoped source sets,103 open selected cycles and160 frozen obligations retain exact artifacts. Current inventory:50/153 main +7/7 original actors accepted, twelve derived actors outside denominator;23/65 mappings,42 inactive;0/11 families passed.
+- Added source-bound stride_geometry_diagnostic.py and seven mathematical tests. Timing-independent bounds expose necessary source/material corrections before another numerical fit; passing bounds never grants acceptance. All97 Python tests pass.
+- Selected rear-left unreviewed point hypotheses:6-to7 minimum10.313736px within±12px component corrections; closed-cycle minimum9.297339px even with unlimited pose translations. Selected original63.079px failure remains exact.
+- Seven built-in single-pose attempts archived with exact prompts, ordered reference hashes and raw alpha outputs. Final unselected four-pose trial has63.733px uncorrected jump and7.151417px closed lower bound; material/anatomical correspondence remains false. Rejected transparent grid readings retained separately. No guide/hidden point or per-pose body scale is acceptance evidence.
+- Art/evidence: docs/art-review/motion54/. Current summary: docs/motion54-review-summary.json. Earlier actual motion53 runtime/build/browser proof retains original dates and scopes. PR9 is not all green; no merge recommendation.
+- Next: further true sole/material and boot-ground perspective correction for Laborer rear-left. Independently activate and verify existing raised-hammer action using the unchanged anvil; do not repeat an unsuitable gait method or reclassify its failures.
