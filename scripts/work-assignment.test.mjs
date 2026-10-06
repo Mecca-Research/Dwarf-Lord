@@ -39,7 +39,7 @@ test('job assignment immediately routes to the selected daily physical workstati
   for (const [id, day, job, station] of [
     ['kori', 1, 'meals', 'cutting-block'], ['kori', 2, 'meals', 'potato-block'],
     ['kori', 3, 'meals', 'dough-block'], ['kori', 4, 'meals', 'stew-cauldron'],
-    ['kori', 5, 'meals', 'cutting-block'],
+    ['kori', 5, 'meals', 'mixing-block'], ['kori', 6, 'meals', 'cutting-block'],
     ['grit', 3, 'forge', 'repair-bench'], ['grit', 4, 'forge', 'anvil'],
     ['grit', 5, 'forge', 'anvil'], ['brokk', 2, 'timber', 'cooper-barrel'],
   ]) {

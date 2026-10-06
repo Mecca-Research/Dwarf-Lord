@@ -18,11 +18,11 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['mainScopedReviewsApproved'], 50)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
         self.assertEqual(report['counts']['cycleReviewsRemaining'], 103)
-        self.assertEqual(report['counts']['referenceActionsMapped'], 22)
+        self.assertEqual(report['counts']['referenceActionsMapped'], 23)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':43})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':42})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']
@@ -127,6 +127,21 @@ class CompletionTests(unittest.TestCase):
             'public/workstation-registration.mjs',
             'workstations/repair-bench/sprite.png',
             'world/workstation-sites.ts',
+        ]:
+            with patch('motion_completion.digest', side_effect=lambda p: 'changed' if str(p).endswith(changed) else original(p)):
+                report = motion_completion.inventory()
+                self.assertFalse(report['runtimeCoverageBindingCurrent'])
+                self.assertIsNone(report['counts']['referenceActionsMapped'])
+
+    def test_mixing_actor_or_persistent_bowl_edit_invalidates_coverage(self):
+        original = motion_completion.digest
+        for changed in [
+            'Cook/motion/mix-ingredients/actor/03.png',
+            'Cook/motion/mix-ingredients/actor/task-approval.json',
+            'workstations/mixing-block/sprite.png',
+            'workstations/mixing-block/completed-mixture.png',
+            'workstations/mixing-block/completion-source.png',
+            'workstations/mixing-block/generation.json',
         ]:
             with patch('motion_completion.digest', side_effect=lambda p: 'changed' if str(p).endswith(changed) else original(p)):
                 report = motion_completion.inventory()

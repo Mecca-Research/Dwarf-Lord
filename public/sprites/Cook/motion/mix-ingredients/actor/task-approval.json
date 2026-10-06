@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c",
+    "settingsSha256": "d71cf03d907ccf9eb294436fba8a868e69929a6f497bc0d1657cb2bad2805245",
+    "frameSha256": [
+      "4fa40f36de86b7e1444b45855200a63e0055b376670ec0e7fd40814380c742d8",
+      "85545b90d42e1526534831e30ab044bcb182c4bad862db3c5a890f56f4eb4d95",
+      "1f80cbfd663f6037387766c24c76d75f13890beb970bfc22ad133a220f509736",
+      "474513b4eb523b2ad2ae16ef21196d11f8981cba037eefa1216630f37f319379",
+      "d8e9a572e750f6a4bfcb4568107129cece535c834a676bd7ad33075f2e983a3b",
+      "7dd5d0ff1301600527f5b0f3455d14d2d6458fd65d99706f5d6a11d1c2f2b7e2",
+      "f7f13cac0734baa514174cad856a2de5e512b93de4a43fc637367c06d260e9ef",
+      "50ac49eea3235af782cafb7dada9f2ca1f1c069711117ac05c5b1a96aff8b11d"
+    ],
+    "atlasSha256": "90ae6011dd645a7823a59ea5b59fc64c213a17cca8cc2913f48520e298dfe39f",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 521,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "d71cf03d907ccf9eb294436fba8a868e69929a6f497bc0d1657cb2bad2805245",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "mix-ingredients",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Finite stationary original-pixel Cook mixing over an independent flour table, visible near-boot/lower-bowl contact and persistent cosmetic completion reviewed. Hidden far sole, traveling motion, forces, ingredient transfer, direction continuity and seamless repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Literal original bald brown-haired Cook, full brown beard, maroon sleeves, cream flour-stained apron and stocky body. Original0-7 order, all opaque source pixels retained on one521/[320,616] visible pose0 body basis. No local painting, warp, mirror, per-pose scaling, offsets, duplicate poses or synthetic in-betweens. Only visible near leg/boot retained; far leg stays unobserved.",
+    "station-and-foot-contact": "Visible stationary boot minimum correlation0.992514, maximum travel0.989665px and adjacent1.021999px pass unchanged.94/6/6 bounds. Hidden sole, moving gait and family-scale continuity are excluded.",
+    "hand-and-tool-contact": "One wooden spoon stays connected to the mixing hand as it moves across the bowl. The other hand steadies the same wooden rim. The actual opaque lower bowl point lies on the independent projected tabletop in all8 poses, maximum outside0px. Hidden spoon tip, bowl underside, ingredient/force tracks and anatomical hidden contacts are not certified.",
+    "prop-continuity": "Actor owns body, visible boot, bowl, mixture, spoon and hands. Independent table owns flour sack, loose scoop/flour, eggs and small cup. A separately authored lower-angle bowl persists after finite completion/departure and resets for explicit new work. First overly overhead bowl is preserved as unselected. Uniform source normalization only; no utensil or body fragment remains in the completed prop. No reward, ingredient transfer, serving or baking added.",
+    "completion-and-reset": "Six actual meal days display every authored-duration mixing frame, complete once at7 and hold5seconds. Ordinary camera turn preserves finish. Cancel releases actor; independent table and completed bowl persist after departure. Explicit return resets0 and hides old mixture; cancellation before completion leaves no completed bowl. Day resolution releases motion and next morning restores recipe selection. No seamless7-to0 repeat approval."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/prepare-mixing.py",
+      "sha256": "1f68a22e3425f2afe37c10e3886730451a05d95984c4135a1f2a1b44d9b14a67"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-correction-request53.json",
+      "sha256": "91ae93569da279716f1125e4ce30cfab759cd953da0dd93d4577dd2e9175858f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-5.png",
+      "sha256": "954fc7a816b4c34c82588469c79e5afc536662aac7d9fad5c4e4d80531be6029"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/source-pixel-identity53.json",
+      "sha256": "250c501167558a3b3b10b88a3158c6b0cb717658a905739d83f76e6c333a453e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/layered-once-preview53.txt",
+      "sha256": "2a419e2d69e19bd42d7975d7c16d8ec525a6187b3f7c307a0e524a369954fb61"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-5.png",
+      "sha256": "248a1981f6332f395a56bb90de1681ad606f4dc6646243fe32aecad481d2c60a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-material-contact53.jpg",
+      "sha256": "b708d3e9b93a92333347038d402b76fc423a5b1afd2a64c7ed74ec19b0210080"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-3.png",
+      "sha256": "d3e59fbc15439178c9c7d2dbf1791169f9edd7359c69f66a2729ee308008615e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/mixing-completed53.png",
+      "sha256": "bfbccfcae309b71c51f27b48da1c5a1ef2b567cab380a6f9be4bfec043155ce3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-authoring-review53.json",
+      "sha256": "5754f1550d77a72f14e895f044c9319ca39f59380f2cc2e538fa5532f4b0824c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/stationary-boots53.json",
+      "sha256": "6771edfebf2225c60858d500bd636b3b1f4f9161178b34cb31e3a08b794c153b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/actor-review53.json",
+      "sha256": "9a55193b27a9e2eb73ad62af344e5352f43857c85344f5e45684b0b1465f6116"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-rotated.png",
+      "sha256": "9bc058cb9d9c01d1842dea8952aad00013ee57919638e74c53c91d0d416e151a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-4.png",
+      "sha256": "8a1a73fc56cdf42b1d7b7c2ce718217b5579e453ae0802aae1643da7cc51ba1a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/layered-once-preview53.png",
+      "sha256": "9e9a64f4880ef1156cbaf3ed2a309558e4ce75ee76784fbc7b8141479aff5ffa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/install-mixing.py",
+      "sha256": "e8a1ca9ed2043a143c34a402c1cb3fb69d4882762c0c19f96d758fabddfe545a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-1.png",
+      "sha256": "9d25c098b0c98c63dea5b35bd746be7dd51f8e90ca742a5e401f03bf445319ef"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-2.png",
+      "sha256": "650e569ce8e0c00feab2f628877df94c243fa290c7372e4c3198d3d3651ef61c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-surface-contact53.json",
+      "sha256": "f365bc9585f565d051cc78db6ac987fcd221f1143c5a7da7f65bcba7125b266b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-departed.png",
+      "sha256": "900c3e7b7148d869a1faa990a18f15a67d924ce5dc8d6ef43ef8249f9ef318b8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-4.png",
+      "sha256": "34d8a63266655f39cf77eab76628399e98f026df9137f645ba3b4cec2ee1b847"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-7.png",
+      "sha256": "f6dac53a83ecd5a51282a9a9ec7c7d4240ed55cde35f7fbe8cf0be42d4d43e30"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/source-body-basis53.json",
+      "sha256": "0343021af40c62682ca66c172a8d756035a511fc2ebfe197b8ba4ff8ada3358a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-6.png",
+      "sha256": "61087c0b3f115f662349470b74ef76b3f610db595a50f699250b4afe7c2cf524"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-reference-crop53.png",
+      "sha256": "4e61260d2424c9b80d33a153f4da2ab10b9299cb9a927a4ddcee35a43451b030"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-request53.json",
+      "sha256": "c56774df1325dbdd8798ad439b2426fc1eb524fc2ca74175239f7b54038b26e8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/measure-mixing.py",
+      "sha256": "74ab16ea4b44c3d8868825669a52454c6142daa0c5ef3b06313f6ab5ed1f43d2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-6.png",
+      "sha256": "a94bd2b97f843fd0e2f7529c0c923321dc49a7ce3e72d83bd7570253f2a96584"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/rejected-bowl-perspective53.png",
+      "sha256": "fd89e3d7aa521deb8d861fcc9bd4419d781955bd7523e218ee7849e3dabc8e95"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-2.png",
+      "sha256": "30447dcb6116825954c471d7932eb1a20a2b09afae553c239ae783c07433b49b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-0.png",
+      "sha256": "deaf26e1f06d7ccd18ee08279972e66011851be084bd405b253567e4a0d6af00"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-7.png",
+      "sha256": "62140f9e6f5d496c70f0da72881266393d267c4b0e864234aec700658410fbda"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/layer-config53.json",
+      "sha256": "9ca4796a62d79120d1e1a2a2dea5d6a1e2b6a9e29ce9b0372a6cd415b34618e7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/native-0.png",
+      "sha256": "cb2511aced13d9f663e62a26b681016e43c9f0308d12b274da1c1e18fcda9a12"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/add-completed-bowl.py",
+      "sha256": "9167a78a261d144f133fd2de96182e778145ec5d7548777303c98fb29fd27467"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/mixing-layered-native53.jpg",
+      "sha256": "5dd06fe43c82890e440da88ede6af827d4b9dd9fb417c211f734f9e34b47ba14"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-3.png",
+      "sha256": "ecba057a0a29de0fdb127744db1ba116130ec61bddec0f61d371361c4102094d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/game-1.png",
+      "sha256": "86bba4dbfb228b22ace40b59c5d4dc4376ab22fa97f1daab10e9d45bae67abae"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cook-mixing/bowl-reference-crop53.json",
+      "sha256": "f45430801a72727b88cac83e1b7ee35605da02da5b930904f3f130c6ec7ada23"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cooking-gameplay53.json",
+      "sha256": "3e48d4f9a38e1a533e341cdd1258932ef77d22b6246bc782cdf3ce99f9902151"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/smith-gameplay53.json",
+      "sha256": "b0b9fd011c3c940f22053c8d52b151639baa34f7e01c8147f426c1b9c7e2fc19"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/npc-gameplay53.json",
+      "sha256": "831691c1251ad14f5e5a5c652824e2bfa6824a1e5da8f2c3fee0a7416e62e5aa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/station-layer-authoring53.json",
+      "sha256": "69c49e7b628a2d38adbb75d7c47a1a61c36c714ab75d9fe6ce54a76562e87f06"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/runtime-revalidation53.json",
+      "sha256": "a63fac4c57f9e1e87a6223b29abd4cfe42d4ae48a0a3e3ffdccd8573aa1478f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/retained-assets-audit53.json",
+      "sha256": "84b99dafbf65abca1905b86931fa41349795c57b017ca62b60347779d0403c39"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "43ae0310637a954b563827996ce43df87b7bdfeda44f1752c9dd9cf7dc65657f"
+    },
+    {
+      "file": "motion-polish.json",
+      "sha256": "40558ff749144f5329be3edf26eb5ba2e5c95dcfc8207b23f73dd38e7f29a929"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/source.png",
+      "sha256": "043e9d5073bebb182909fcce9c34d63cf3f1ec0492c234270bafca85f498fc39"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/request53.json",
+      "sha256": "214048c912d9023c6f36236d78bb0b23836f79bb9eb10c54ca18936afc132aa6"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/sprite.png",
+      "sha256": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/completion-request53.json",
+      "sha256": "91ae93569da279716f1125e4ce30cfab759cd953da0dd93d4577dd2e9175858f"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/completed-mixture.png",
+      "sha256": "ef6d3424ba7f0ac5d740c7435b5b5967a1cd4164e6509b8e60cbc1daee8fc55d"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/generation.json",
+      "sha256": "e62acae5a0a1508bf13cd9bb39afdfe70954afaa3874c4ab65b05270c2e97689"
+    },
+    {
+      "file": "../../../../workstations/mixing-block/completion-source.png",
+      "sha256": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1"
+    },
+    {
+      "file": "../../../../../../src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "bae81904704c3d645275ee3394ba30a1fbd82f615586caf51436d5e6002bea11"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "0d604bddf2edbffccefa89646d689a06be060c1d7ce3afc09645dc42cfd02fd5"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-completion.ts",
+      "sha256": "716283d346f669bc85e4e6a20f8c577f15ce006b858f0148b3d9c2b0cce087ca"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/cooking-work-check.mjs",
+      "sha256": "a628bb22bc083e75c5c1eab770bcfd497fd1da00654d61a94cb8c4eafc55e959"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "e8d67159e79242ff4bc0ccf23b33ae549f28b00cdbaeb6994e7c8676e2438c7f"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+    },
+    {
+      "file": "../reference/00.png",
+      "sha256": "170b8974fbcd34364976084b9d1d1b2dc784e99e66f3999c853b73f557e98af7"
+    },
+    {
+      "file": "../reference/01.png",
+      "sha256": "c293aa0a3941fc6a46faa33c45894913e6dbfba445c3b7d8207fca5226523022"
+    },
+    {
+      "file": "../reference/02.png",
+      "sha256": "4877f42c42e1b412ac3dca6c08e3710f8aaefe61e55d340da05d48938d14b92f"
+    },
+    {
+      "file": "../reference/03.png",
+      "sha256": "cfd5b1c755519d094fa62ef4584534c7c2ec5b214644187f7dd6c8a97b2d49e6"
+    },
+    {
+      "file": "../reference/04.png",
+      "sha256": "fa13d37c837583f5cc8aeebd66c3cdf12705c24f09738b9fd91b484fc7ed772e"
+    },
+    {
+      "file": "../reference/05.png",
+      "sha256": "eefa462bbfae522e0e51f890944990fd59d1ed0356e78fe6ef6ad947732b0f05"
+    },
+    {
+      "file": "../reference/06.png",
+      "sha256": "9f4431710fdf4b7589481f781f3ed8ac2e2a4a3b67e3424f312d18135b48c2f3"
+    },
+    {
+      "file": "../reference/07.png",
+      "sha256": "3b0899e2e9360f77144cbaec16c25adc7a5fd2ec0d3f9a9186209d7bfb9ad87a"
+    }
+  ]
+}

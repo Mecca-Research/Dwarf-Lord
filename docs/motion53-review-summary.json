@@ -1,0 +1,82 @@
+{
+  "checkpoint": "motion53",
+  "reviewedAt": "2026-10-06",
+  "baseline": "ee5e7604136268e79772eae044cba486def9a40a",
+  "allGreenToMerge": false,
+  "frozenScope": {
+    "mainCycles": 153,
+    "originalIndependentActorCycles": 7,
+    "total": 160
+  },
+  "accepted": {
+    "mainCycles": 50,
+    "originalActors": 7,
+    "derivedActorsOutsideFrozenScope": 12,
+    "totalScopedSources": 69
+  },
+  "remaining": {
+    "individualCycles": 103,
+    "walking": 62,
+    "directionalToolCarry": 24,
+    "fixedReferences": 17,
+    "directionFamilies": 11,
+    "inactiveReferenceActions": 42
+  },
+  "live": {
+    "referenceActions": 23,
+    "totalReferenceActions": 65,
+    "approvedStationVariants": 19,
+    "physicalActiveProps": 13
+  },
+  "completed": [
+    "Eight original-pixel finite mixing poses, independent flour table and source-bound native/actual contact review.",
+    "Persistent independently authored completed bowl after departure; fresh staging/reset and cancellation before completion.",
+    "Six-day cooking selection and immediate station routing, day-six recipe return."
+  ],
+  "measurements": {
+    "minVisibleBootCorrelation": 0.992513589082357,
+    "maxVisibleBootTravelPx": 0.9896649718284607,
+    "maxAdjacentVisibleBootPx": 1.0219987803539585,
+    "maxLowerBowlOutsideTablePx": 0,
+    "scope": "Visible stationary material only; no hidden sole/spoon tip, forces, moving stride or seamless-loop approval."
+  },
+  "validation": {
+    "nodeTestsPassed": 219,
+    "pythonTestsPassed": 90,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "approvedLayerVariants": 19,
+    "actualMealDays": 6,
+    "actualForgeDays": 5,
+    "originalJobsAndPassiveStations": "passed",
+    "headedStartupMovement": "2 iterations,18 characters,13 stations,no errors"
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 42
+    }
+  ],
+  "runtimeCoverageBindingCurrent": true,
+  "evidence": [
+    "docs/art-review/motion53/cook-mixing/actor-review53.json",
+    "docs/art-review/motion53/cook-mixing/stationary-boots53.json",
+    "docs/art-review/motion53/cook-mixing/bowl-surface-contact53.json",
+    "docs/art-review/motion53/cooking-gameplay53.json",
+    "docs/art-review/motion53/smith-gameplay53.json",
+    "docs/art-review/motion53/npc-gameplay53.json",
+    "docs/art-review/motion53/station-layer-authoring53.json",
+    "docs/art-review/motion53/skill-client53.json",
+    "docs/art-review/motion53/retained-assets-audit53.json",
+    "docs/art-review/motion53/runtime-coverage-audit53.json"
+  ],
+  "scopeNote": "Unreviewed does not mean broken. Gates overlap. Frozen denominator and acceptance/contact thresholds unchanged. Earlier numerical observations keep their provenance; no new walking/cane/tool-direction/family acceptance."
+}

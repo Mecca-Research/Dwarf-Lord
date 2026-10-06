@@ -254,6 +254,29 @@
       "status": "exported",
       "destination": "public/sprites/Blacksmith/motion/anvil-ready/actor",
       "station": "anvil"
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "title": "Mix ingredients",
+      "reference": "public/sprites/Cook/work-references/04-mix-ingredients.png",
+      "beats": [
+        "bowl held steady and spoon at near edge",
+        "continuous midway transition from bowl held steady and spoon at near edge toward mix ingredients toward right",
+        "mix ingredients toward right",
+        "continuous midway transition from mix ingredients toward right toward stir through far side of bowl",
+        "stir through far side of bowl",
+        "continuous midway transition from stir through far side of bowl toward return spoon toward near edge",
+        "return spoon toward near edge",
+        "continuous midway transition from return spoon toward near edge toward bowl held steady and spoon at near edge"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Literal original body, visible near boot, spoon and held mixing bowl. One521/[320,616] shared body basis; no local editing or reconstructed far leg. Fixed flour table is independently owned. Finite task; no serving, material handoff, economic output or seamless-repeat approval.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Cook/motion/mix-ingredients/actor",
+      "station": "mixing-block"
     }
   ]
 }

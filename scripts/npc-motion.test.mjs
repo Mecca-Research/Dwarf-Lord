@@ -156,13 +156,14 @@ test('workstations hold one completion and reset only on task lifecycle changes'
   const peelManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/peel-potatoes/actor/manifest.json', 'utf8'));
   const doughManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/knead-dough/actor/manifest.json', 'utf8'));
   const stirManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/stir-cauldron/actor/manifest.json', 'utf8'));
+  const mixManifest = JSON.parse(readFileSync('public/sprites/Cook/motion/mix-ingredients/actor/manifest.json', 'utf8'));
   const calibration = JSON.parse(readFileSync('public/sprites/Cook/motion/render-calibration.json', 'utf8'));
   assert.equal(calibration.actions['chop-vegetables/actor'].sourceSha256, manifest.sourceSha256);
   globalThis.location = { href: 'https://motion.test/' };
   globalThis.document = { createElement: () => ({ getContext: () => ({ drawImage() {} }) }) };
   globalThis.createImageBitmap = async () => ({ width: 5120, height: 640, close() {} });
   globalThis.fetch = async url => ({ ok: true, json: async () => String(url).endsWith('render-calibration.json') ? calibration :
-    String(url).includes('/peel-potatoes/') ? peelManifest : String(url).includes('/knead-dough/') ? doughManifest : String(url).includes('/stir-cauldron/') ? stirManifest : manifest, blob: async () => new Blob() });
+    String(url).includes('/peel-potatoes/') ? peelManifest : String(url).includes('/knead-dough/') ? doughManifest : String(url).includes('/stir-cauldron/') ? stirManifest : String(url).includes('/mix-ingredients/') ? mixManifest : manifest, blob: async () => new Blob() });
   const driver = new NpcWorkMotion('cook-test', 'cook');
   const body = { x: 0, z: 0, facing: 0, anim: 'work' };
   const update = (dt = .1, job = 'meals', day = 1, resolved = false) => driver.update(body, job, day, resolved, dt, 1.95);
@@ -208,7 +209,18 @@ test('workstations hold one completion and reset only on task lifecycle changes'
     update(5,'meals',4); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'stirring stays finished');
     assert.equal(workstationTaskStates.has('stew-cauldron'),false,'stirring does not spawn another completed pot or serving');
     update(0,null,4); await ready(4); assert.equal(npcWorkDiagnostics.get('cook-test').frame,0,'stirring resets on reassignment');
-    await ready(5); assert.equal(npcWorkDiagnostics.get('cook-test').action,'chop-vegetables','next recipe day restores vegetables');
+    const mixing=await ready(5); assert.equal(npcWorkDiagnostics.get('cook-test').action,'mix-ingredients');
+    assert.ok(Math.abs(mixing.placement.height-1.95*640/521)<1e-10,'mixing uses its measured common body basis');
+    assert.equal(workstationTaskStates.get('mixing-block').completed,false,'arrival does not produce a completed mixture');
+    for(const frame of mixManifest.frames)update(frame.durationMs/1000,'meals',5);
+    update(5,'meals',5); assert.equal(npcWorkDiagnostics.get('cook-test').completions,1,'mixing stays finished');
+    assert.equal(workstationTaskStates.get('mixing-block').active,true,'actor owns bowl while finishing');
+    assert.equal(workstationTaskStates.get('mixing-block').completed,true);
+    update(0,null,5); assert.equal(workstationTaskStates.get('mixing-block').active,false,'departure hands bowl to persistent prop');
+    assert.equal(workstationTaskStates.get('mixing-block').completed,true);
+    await ready(5); assert.equal(workstationTaskStates.get('mixing-block').completed,false,'explicit return stages a fresh bowl');
+    update(0,null,5); assert.equal(workstationTaskStates.get('mixing-block').completed,false,'cancellation before finish creates no mixture');
+    await ready(6); assert.equal(npcWorkDiagnostics.get('cook-test').action,'chop-vegetables','next recipe day restores vegetables');
     body.anim='walk'; assert.equal(update(),null,'travel releases workstation');
     const toolManifest = JSON.parse(readFileSync('public/sprites/Female Miner/motion/pickaxe-swing/front/manifest.json', 'utf8'));
     globalThis.fetch = async () => ({ ok:true, json:async()=>toolManifest, blob:async()=>new Blob() });

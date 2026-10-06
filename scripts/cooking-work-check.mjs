@@ -23,9 +23,9 @@ try {
  await until(()=>Boolean(window.__controlsTest?.assignJob),'scene');
  const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
  const startDay=Number(process.env.REVIEW_START_DAY??1);
- assert.ok(Number.isInteger(startDay)&&startDay>=1&&startDay<=5);
+ assert.ok(Number.isInteger(startDay)&&startDay>=1&&startDay<=6);
  for(let day=1;day<startDay;day++){await page.evaluate(()=>{window.__controlsTest.resolveDay();window.__controlsTest.nextMorning();});await tick();}
- for(const [day,action,x,station] of [[1,'chop-vegetables',-.5,'cutting-block'],[2,'peel-potatoes',-3.5,'potato-block'],[3,'knead-dough',-6.5,'dough-block'],[4,'stir-cauldron',-9.5,'stew-cauldron'],[5,'chop-vegetables',-.5,'cutting-block']].filter(([day])=>day>=startDay)) {
+ for(const [day,action,x,station] of [[1,'chop-vegetables',-.5,'cutting-block'],[2,'peel-potatoes',-3.5,'potato-block'],[3,'knead-dough',-6.5,'dough-block'],[4,'stir-cauldron',-9.5,'stew-cauldron'],[5,'mix-ingredients',-12.5,'mixing-block'],[6,'chop-vegetables',-.5,'cutting-block']].filter(([day])=>day>=startDay)) {
   const manifest=JSON.parse(readFileSync(`public/sprites/Cook/motion/${action}/actor/manifest.json`));
   await page.evaluate(({x,day})=>{const t=window.__controlsTest;t.teleport(x,7);t.setZoomBias(12);t.teleportDwarf('kori',x,day===1?4.5:6);t.assignJob('kori','meals');},{x,day});
   await until(()=>Boolean(JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion),'loaded meal operation');
@@ -42,13 +42,13 @@ try {
   for(let frame=0;frame<8;frame++) {
    const d=await worker();assert.equal(d.workMotion.action,action);assert.equal(d.workMotion.frame,frame);
    assert.equal(d.workMotion.direction,'actor');samples.push(d.workMotion);
-   if(day===3||day===4||[0,2,4,7].includes(frame))await page.screenshot({path:`${output}/day${day}-${action}-${frame}.png`});
+   if(day===3||day===4||day===5||[0,2,4,7].includes(frame))await page.screenshot({path:`${output}/day${day}-${action}-${frame}.png`});
    await tick(manifest.frames[frame].durationMs);
   }
   const completed=(await worker()).workMotion;
   assert.equal(completed.completed,true);assert.equal(completed.completions,1);
   await tick(5000);assert.deepEqual((await worker()).workMotion,completed,'terminal does not start another meal operation');
-  if(day===3||day===4) {
+  if(day===3||day===4||day===5) {
    const cameraBefore=await page.evaluate(()=>window.__controlsTest.getCameraAngles());
    await page.keyboard.down('q');await tick(400);await page.keyboard.up('q');
    assert.notEqual((await page.evaluate(()=>window.__controlsTest.getCameraAngles())).azimuth,cameraBefore.azimuth);
@@ -57,6 +57,10 @@ try {
    if(day===3){
     const piece=await (await page.request.get(new URL('sprites/workstations/dough-block/completed-dough.png',page.url()).href)).body();
     assert.equal(hash(piece),hash(readFileSync('public/sprites/workstations/dough-block/completed-dough.png')));
+   }
+   if(day===5){
+    const piece=await (await page.request.get(new URL('sprites/workstations/mixing-block/completed-mixture.png',page.url()).href)).body();
+    assert.equal(hash(piece),hash(readFileSync('public/sprites/workstations/mixing-block/completed-mixture.png')));
    }
   }
   await page.evaluate(()=>window.__controlsTest.assignJob('kori',null));await tick();
@@ -67,10 +71,19 @@ try {
   assert.ok(stations.some(s=>s.id==='potato-block'&&s.persistent&&s.x===-3.5&&s.z===4.5));
   if(day===3)assert.ok(stations.some(s=>s.id==='dough-block'&&s.persistent&&s.completedProp&&s.x===-6.5&&s.z===4.5),'finished dough survives departure');
   if(day===4)assert.ok(stations.some(s=>s.id==='stew-cauldron'&&s.persistent&&s.x===-9.5&&s.z===4.5),'cauldron persists independently after departure');
+  if(day===5)assert.ok(stations.some(s=>s.id==='mixing-block'&&s.persistent&&s.completedProp&&s.x===-12.5&&s.z===4.5),'finished bowl persists independently after departure');
   await page.screenshot({path:`${output}/${action}-departed.png`});
   await page.evaluate(({x})=>{const t=window.__controlsTest;t.teleportDwarf('kori',x,4.5);t.assignJob('kori','meals');},{x});
   await until(()=>Boolean(JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion),'reassigned meal operation');
   assert.equal((await worker()).workMotion.frame,0,'reassignment starts at0');
+  if(day===5){
+   assert.equal((await state()).workstations.find(s=>s.id==='mixing-block').completedProp,false,'new mixing task stages a fresh bowl');
+   await page.evaluate(()=>window.__controlsTest.assignJob('kori',null));await tick();
+   assert.equal((await state()).workstations.find(s=>s.id==='mixing-block').completedProp,false,'cancellation before finish creates no completed mixture');
+   await page.evaluate(()=>window.__controlsTest.assignJob('kori','meals'));
+   await until(()=>Boolean(JSON.parse(window.render_game_to_text()).dwarves.find(d=>d.id==='kori')?.workMotion),'restart mixing task');
+   await tick(2000);
+  }
   if(day===3) {
    assert.equal((await state()).workstations.find(s=>s.id==='dough-block').completedProp,false,'return stages a fresh workpiece');
    await page.evaluate(()=>window.__controlsTest.assignJob('kori',null));await tick();
@@ -88,5 +101,5 @@ try {
  }
  assert.deepEqual(errors,[]);
  await writeFile(`${output}/results.json`,JSON.stringify({method:'Controlled clock and actual Three renderer; job/day controls, with no direct animation frame mutation.',seen,errors,
-  scope:'Four daily cosmetic meal operations and day5 recipe return, exact source/atlas/calibration/prop hashes, natural arrivals, all eight dough and stirring poses, camera-preserved holds, persistent cauldron and completed dough ownership after departure. Cancellation before kneading finishes creates no prop. Economic output remains in existing day resolution; no baking, boiling simulation, serving or seamless-loop approval.'},null,2)+'\n');
+  scope:'Five daily cosmetic meal operations and day6 recipe return; exact source/atlas/calibration/prop hashes, natural arrivals, all eight kneading/stirring/mixing poses, camera-preserved holds, persistent flour table/cauldron, completed mixing bowl and completed dough after departure. Cancellation before kneading finishes creates no prop. Mixing transfers no ingredients or reward. Economic output remains in existing day resolution; no baking, boiling simulation, serving or seamless-loop approval.'},null,2)+'\n');
 }finally{await browser.close();}

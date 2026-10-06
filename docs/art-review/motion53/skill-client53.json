@@ -1,0 +1,62 @@
+{
+  "method": "Established develop-web-game headed client; readiness waits for13 independent stations, up/right movement18frames each,2 iterations.",
+  "execution": {
+    "command": [
+      "xvfb-run",
+      "-a",
+      "node",
+      "work/expanded-cycles/motion53/gameplay-client53.mjs",
+      "--url",
+      "http://localhost:8081/Dwarf-Lord/",
+      "--click-selector",
+      "button:has-text(\"Walk the road\")",
+      "--actions-file",
+      "work/expanded-cycles/motion53/gameplay-actions53.json",
+      "--iterations",
+      "2",
+      "--headless",
+      "false",
+      "--screenshot-dir",
+      "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion53/skill-client-complete"
+    ],
+    "started": "2026-10-06T06:57:10.795180+00:00",
+    "completed": "2026-10-06T06:57:47.012134+00:00",
+    "exitCode": 0
+  },
+  "players": [
+    {
+      "x": -3.8272634648602644,
+      "z": 3.891307685881423,
+      "yaw": -2.2907963267948968,
+      "facing": 2,
+      "speed": 0,
+      "anim": "idle",
+      "dest": null,
+      "bob": 3.2066666666666697
+    },
+    {
+      "x": -2.684199239959245,
+      "z": 3.8164466295741866,
+      "yaw": -2.2907963267948968,
+      "facing": 2,
+      "speed": 0,
+      "anim": "idle",
+      "dest": null,
+      "bob": 6.326666666666678
+    }
+  ],
+  "characterCounts": [
+    18,
+    18
+  ],
+  "workstationCounts": [
+    13,
+    13
+  ],
+  "errors": [],
+  "captures": [
+    "skill-client/shot-0.png",
+    "skill-client/shot-1.png"
+  ],
+  "scope": "Current startup/movement and nonblank visual captures; no gait/contact, family or whole-library motion certification."
+}

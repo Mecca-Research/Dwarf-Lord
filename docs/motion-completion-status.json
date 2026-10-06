@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 43
+      "remaining": 42
     }
   ],
   "counts": {
@@ -32,8 +32,8 @@
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 22,
-    "referenceActionsWithoutMapping": 43
+    "referenceActionsMapped": 23,
+    "referenceActionsWithoutMapping": 42
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -11298,11 +11298,6 @@
     },
     {
       "character": "Cook",
-      "action": "mix-ingredients",
-      "destination": "public/sprites/Cook/motion/mix-ingredients/reference"
-    },
-    {
-      "character": "Cook",
       "action": "serve-stew",
       "destination": "public/sprites/Cook/motion/serve-stew/reference"
     },
@@ -11497,5 +11492,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "a7185953c360b864b57ee53c3666b61eebf4cadc9dfe05fca38e279ab738546c"
+  "scopeSha256": "b588b5bb6a1690bd145ee3c4297db34f618af71a96450c2c03625c2206a4b71e"
 }

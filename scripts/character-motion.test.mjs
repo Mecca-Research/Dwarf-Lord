@@ -219,7 +219,7 @@ test('runtime actor layers and persistent stations retain source provenance and 
 
 test('additional work actions require exact actor, station and finite task evidence',()=>{
  const additions=json('docs/runtime-motion-additions.json').entries;
- assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk','stamp-paperwork','knead-dough','stir-cauldron','anvil-ready']);
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk','stamp-paperwork','knead-dough','stir-cauldron','anvil-ready','mix-ingredients']);
  for(const entry of additions){
   const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
   assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);
@@ -229,7 +229,7 @@ test('additional work actions require exact actor, station and finite task evide
   assert.deepEqual(a.binding.frameSha256,m.frames.map(f=>hash(resolve(root,f.file))));
   assert.equal(a.binding.atlasSha256,hash(resolve(root,m.atlas.file)));
   for(const dependency of a.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);
-  if(['knead-dough','stir-cauldron','anvil-ready'].includes(entry.action)){
+  if(['knead-dough','stir-cauldron','anvil-ready','mix-ingredients'].includes(entry.action)){
    const source=json(resolve(root,'generation.json'));
    assert.equal(source.method,'source-pixel-foreground-stencils');
    assert.equal(source.originalFrames.length,8);assert.equal(source.actorPolygons.length,8);
@@ -238,6 +238,7 @@ test('additional work actions require exact actor, station and finite task evide
     'knead-dough':'docs/art-review/motion48/cook-kneading/source-pixel-identity48.json',
     'stir-cauldron':'docs/art-review/motion50/cook-cauldron/source-pixel-identity50.json',
     'anvil-ready':'docs/art-review/motion52/blacksmith-ready/source-pixel-identity52.json',
+    'mix-ingredients':'docs/art-review/motion53/cook-mixing/source-pixel-identity53.json',
    }[entry.action]);
    assert.equal(evidence.geometryEdited,false);
    assert.deepEqual(evidence.originalFrameOrder,[0,1,2,3,4,5,6,7]);

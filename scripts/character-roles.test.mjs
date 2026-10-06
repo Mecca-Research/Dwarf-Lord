@@ -94,7 +94,8 @@ test('Borrin has a persistent consultation desk without becoming a production wo
 });
 
 test('forge operations route to their own station and retain completion boundaries',()=>{
- for(const [day,id,action] of [[1,'anvil','hammer-contact'],[2,'anvil','inspect-tool'],[3,'repair-bench','repair-pickaxe-handle'],[4,'anvil','hammer-contact']]) {
+ for(const [day,id,action] of [[1,'anvil','hammer-contact'],[2,'anvil','inspect-tool'],[3,'repair-bench','repair-pickaxe-handle'],[4,'anvil','anvil-ready'],[5,'anvil','hammer-contact']]) {
+  assert.equal(activities.forgeWorkAction(day),action);
   const site=stations.activeWorkstation('blacksmith','forge',true,false,day);
   assert.equal(site.id,id);assert.ok(site.actions.includes(action));
   assert.equal(stations.workAssignmentTarget('blacksmith','forge',day),site.target,'routing and rendering share the task root');
@@ -107,7 +108,7 @@ test('forge operations route to their own station and retain completion boundari
 });
 
 test('meal operations share the task target with distinct persistent preparation blocks',()=>{
- for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'dough-block','knead-dough'],[4,'stew-cauldron','stir-cauldron'],[5,'cutting-block','chop-vegetables']]) {
+ for(const [day,id,action] of [[1,'cutting-block','chop-vegetables'],[2,'potato-block','peel-potatoes'],[3,'dough-block','knead-dough'],[4,'stew-cauldron','stir-cauldron'],[5,'mixing-block','mix-ingredients'],[6,'cutting-block','chop-vegetables']]) {
   assert.equal(activities.cookingWorkAction(day),action);
   const site=stations.activeWorkstation('cook','meals',true,false,day);
   assert.equal(site.id,id);assert.ok(site.actions.includes(action));
@@ -121,5 +122,8 @@ test('meal operations share the task target with distinct persistent preparation
  const dough=stations.activeWorkstation('cook','meals',true,false,3);
  assert.ok(Math.hypot(potato.target.targetX-dough.target.targetX,potato.target.targetZ-dough.target.targetZ)>=3);
  assert.equal(dough.completionLayer,'completed-dough.png');
+ const mixture=stations.activeWorkstation('cook','meals',true,false,5);
+ assert.equal(mixture.completionLayer,'completed-mixture.png');
+ assert.ok(Math.hypot(mixture.target.targetX-dough.target.targetX,mixture.target.targetZ-dough.target.targetZ)>=3);
  for(const day of [0,-1,NaN,1.5,Infinity])assert.throws(()=>activities.cookingWorkAction(day));
 });
