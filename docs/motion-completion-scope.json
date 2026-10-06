@@ -403,6 +403,10 @@
     {
       "character": "Cook",
       "action": "mix-ingredients"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised"
     }
   ],
   "runtimeCoverageBinding": {
@@ -4106,7 +4110,7 @@
   "runtimeCoverageDependencies": [
     {
       "file": "src/game/world/work-activities.ts",
-      "sha256": "0d604bddf2edbffccefa89646d689a06be060c1d7ce3afc09645dc42cfd02fd5"
+      "sha256": "abfc991246e1674211000a40dc94440c6f3cb239fa59300ccb43a7c63aa18e36"
     },
     {
       "file": "public/sprites/Elder/motion/render-calibration.json",
@@ -4118,7 +4122,7 @@
     },
     {
       "file": "src/game/world/workstation-sites.ts",
-      "sha256": "bae81904704c3d645275ee3394ba30a1fbd82f615586caf51436d5e6002bea11"
+      "sha256": "b5cd85fd869223b3b0b15166ec4011f2397c722660c3c8c64f6f51acfe50e930"
     },
     {
       "file": "src/game/motion-playback.ts",
@@ -4126,7 +4130,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/render-calibration.json",
-      "sha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57"
+      "sha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b"
     },
     {
       "file": "docs/art-review/motion39/runtime-revalidation.json",
@@ -4138,11 +4142,11 @@
     },
     {
       "file": "docs/runtime-motion-additions.json",
-      "sha256": "d1fb69766f9490c0b265b86eb38b9f75fcd33aadc9d501a6f255d3aab6ef76fe"
+      "sha256": "589fb889fdb94652e9ee06088cdc51109b5324c9037093ce0d1da1282461a94c"
     },
     {
       "file": "public/workstation-library.json",
-      "sha256": "dbf0d879a749e949e75c707e24ea70e4ba6da28620af918d268436d67f541d64"
+      "sha256": "e56108d982c34f600010f5313b3d0a1b1108ecbc91e3b9ddfea710574a50516a"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
@@ -4166,7 +4170,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
-      "sha256": "5608dc33217285aa8b08d93452aa07fd2cddc4af4c224a7bed2d9c20cc477747"
+      "sha256": "9328004503c0dd7d705657998a190e4de5a84afc83a0514d3bbf633d7c524d6d"
     },
     {
       "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
@@ -4222,7 +4226,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
-      "sha256": "4433bd976795bcca60b13b7e78ccfff18bedba28994cc2fe84072b8b67d9e991"
+      "sha256": "dc0c3f35f7f0da35167273d2d463a361de12ffcb782767b2a2f71cfeb38c375a"
     },
     {
       "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
@@ -4322,7 +4326,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
-      "sha256": "a7c06ffe7e9789078c9f729dd6580fb9e941df8409f7e1c712104266dd5ed997"
+      "sha256": "51fae07259aca4e45bd5dd22c833b768c0fac9a6bf3862c64c39b9bb2f85f998"
     },
     {
       "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
@@ -4414,7 +4418,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
-      "sha256": "cd5d8ae359b60cdbd2ffe7ec5d6da40d1127b7f7a7cb7f1c14cc3d8aa9a3d5ea"
+      "sha256": "68eff28c00de0e8b1fca18d4fe09aba90aa2eeda1bf41d19ab3d480da1957c7f"
     },
     {
       "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
@@ -4506,7 +4510,7 @@
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
-      "sha256": "278c82590db566c7467cac653b50c57a84ee912a8230330f78aa77b73e91a0f8"
+      "sha256": "4c93d6447156c7ff5c7547f6e81b6c36b0899323035f5226a1a16235b6a6667b"
     },
     {
       "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
@@ -4590,7 +4594,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
-      "sha256": "5e794f1984ddece35247b35da38b647f67fac6dc4ab600356307097514d1b8b1"
+      "sha256": "c5693a275b5c64d90cb813134f9eea04f55f7caf651fbbaa33150afafb4b2e33"
     },
     {
       "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
@@ -4646,7 +4650,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
-      "sha256": "c10ce444dc889b5f71e14081b8a27e947097b5531f95f8f856588c99840fcc8a"
+      "sha256": "80a4ba8551533f0a00c0209118ed11dff23112a1bdc6f0a49bd80dc2aee63fca"
     },
     {
       "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
@@ -4718,7 +4722,7 @@
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
-      "sha256": "eef937045c850f85b0aee4d2565d63f6bb2f197d0c6685252acb684db40d3ccf"
+      "sha256": "e3e0c67ff3eaa686b76417a0bbd50e34c07252837ff6125ce08e391a188900b2"
     },
     {
       "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png",
@@ -4834,7 +4838,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
-      "sha256": "f1cc0a56fc82be4310b0a70b967bfcb2027acc28bb3d1cbc6d93b42d7289345f"
+      "sha256": "7441653bef3dfa0c4e5b463ce415daf98df2a7613118b842883361e4cddb31fe"
     },
     {
       "file": "public/sprites/Cook/motion/knead-dough/actor/00.png",
@@ -4938,7 +4942,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
-      "sha256": "e584963b01902d6f2903f1b259af7794e9c2f484bd66c1b3c197acfa74e68728"
+      "sha256": "42dd8db9f23f6c25f7a97613df5f4ec401c38a8ed675457c50fd9b159c74fc79"
     },
     {
       "file": "public/sprites/Cook/motion/stir-cauldron/actor/review.jpg",
@@ -5046,7 +5050,7 @@
     },
     {
       "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
-      "sha256": "9361799a68de1a7cffac7a8f2bfa4a23ab3be999fd0ef51b6629a61bb8cbc8df"
+      "sha256": "1a73ed756468e3cb7c4fc9fe31601ba8ad99e5e4fbaf2723ab6940943e34836c"
     },
     {
       "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/review.jpg",
@@ -5142,7 +5146,7 @@
     },
     {
       "file": "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
-      "sha256": "9485257a4f9424ad17d381d9fa9d640a312185a6b9883f48bd59297d901816d0"
+      "sha256": "b775ea5bf99db78ce2809f2f39a9389278bb5a8be542ec93cc7206189bc5e2db"
     },
     {
       "file": "public/sprites/Cook/motion/mix-ingredients/actor/review.jpg",
@@ -5223,7 +5227,107 @@
     {
       "file": "public/sprites/workstations/mixing-block/completion-source.png",
       "sha256": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1"
+    },
+    {
+      "file": "docs/art-review/motion55/runtime-coverage-audit55.json",
+      "sha256": "3d6b937c095bdacd51d1d2a7dff10d54de1de2138bac9bbefec24f224f5942aa"
+    },
+    {
+      "file": "docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "docs/art-review/motion55/ready-real-surface-recheck55.json",
+      "sha256": "3a27045749d7d218d0edb4cf28426022cad56dd13b86160be8aec656d7829662"
+    },
+    {
+      "file": "docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/07.png",
+      "sha256": "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/02.png",
+      "sha256": "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/00.png",
+      "sha256": "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/task-approval.json",
+      "sha256": "5c8228f38c3721c16a0a29d3057de97a4d47fb21204782b9f42b5e0d5a3ce2f3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/review.jpg",
+      "sha256": "9613944ed15f1ceed09e764afab1e60db6c470f0d644da1d843c3a0ed1ae927f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/preview.png",
+      "sha256": "bc80549d7dd94058d79dbfc80c99a8c587d0fc212391565429ad900441e5084b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/04.png",
+      "sha256": "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/01.png",
+      "sha256": "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/05.png",
+      "sha256": "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/prompt.txt",
+      "sha256": "4fe5705b657cc095737537a15f292d8177334084acc9a7dfe4402efa86fd4712"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/03.png",
+      "sha256": "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/atlas.png",
+      "sha256": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/motion-polish.json",
+      "sha256": "36a50a1693101c127191362b5ae8c10ed28ad9bf1850d124d68c5ce0366305dc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/manifest.json",
+      "sha256": "f859ec3765f6e1c0ea82a516c68fb5311d0ce4ded4dcba33a2f22d6bb0e90519"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/source-sheet.png",
+      "sha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/generation.json",
+      "sha256": "c519a9c3fff0e3e83ffc091bba9a5e372a981ed26958675de0b0f74d244663d2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/06.png",
+      "sha256": "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d"
     }
   ],
-  "runtimeCoverageNote": "Motion53 finite original-pixel mixing at an independent flour table, with persistent completed bowl. Six actual meal days,5 forge days, original jobs/passive stations and19 layered variants pass. All8 poses, exact source/atlas/calibration/prop hashes, natural arrival, hold, camera turn, cancellation/departure/return and day reset exercised.68 earlier accepted art/registration/timing sets, all existing props and prior Cook calibration entries exact. Older numerical gait/cane/contact observations keep dates/scope.12 derived actors outside frozen160;50 main/7 original and11 open direction families unchanged.23 live reference actions,42 inactive. Economic ownership remains in existing day resolution."
+  "runtimeCoverageNote": "Motion55 finite raised-hammer edge tap at unchanged independent anvil. Six actual forge days,6 meal days, original jobs/passive stations and20 layered variants pass. Exact source/atlas/calibration/prop hashes, natural arrival, all8 frames, one held completion, camera, cancel/departure/return and day reset exercised.69 earlier source/registration/timing sets and every existing prop exact. Fresh actual steel trace retains/rechecks earlier preparation; previous52 outline retained. Older moving gait/cane observations and scopes unchanged.13 derived actors outside frozen160;50 main+7 original approved,103 cycles and11 families open.24 live/41 inactive references. Existing day resolver retains economic ownership."
 }

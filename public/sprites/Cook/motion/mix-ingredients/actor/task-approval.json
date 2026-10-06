@@ -284,11 +284,11 @@
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
-      "sha256": "bae81904704c3d645275ee3394ba30a1fbd82f615586caf51436d5e6002bea11"
+      "sha256": "b5cd85fd869223b3b0b15166ec4011f2397c722660c3c8c64f6f51acfe50e930"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "0d604bddf2edbffccefa89646d689a06be060c1d7ce3afc09645dc42cfd02fd5"
+      "sha256": "abfc991246e1674211000a40dc94440c6f3cb239fa59300ccb43a7c63aa18e36"
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
@@ -357,6 +357,39 @@
     {
       "file": "../reference/07.png",
       "sha256": "3b0899e2e9360f77144cbaec16c25adc7a5fd2ec0d3f9a9186209d7bfb9ad87a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
     }
-  ]
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion55",
+    "files": [
+      "src/game/world/workstation-sites.ts",
+      "src/game/world/work-activities.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+    "scope": "Earlier exact selected art/calibration actions and limited native verdicts retained. Six forge days,6 meal days, original jobs and20 variants verify the additive forge mapping. Preparation points are freshly checked on actual steel; original52 outline retained. Earlier gait/cane dates/scopes unchanged; no new family/global motion approval."
+  }
 }

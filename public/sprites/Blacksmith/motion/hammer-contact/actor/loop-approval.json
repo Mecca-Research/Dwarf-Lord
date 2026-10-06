@@ -52,7 +52,7 @@
   "dependencies": [
     {
       "file": "../../render-calibration.json",
-      "sha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57"
+      "sha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b"
     },
     {
       "file": "../../../../workstations/anvil/sprite.png",
@@ -113,14 +113,38 @@
     {
       "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
       "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion52",
+    "checkpoint": "motion55",
     "files": [
       "public/sprites/Blacksmith/motion/render-calibration.json"
     ],
-    "audit": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
-    "scope": "Exact prior selected sources and limited native acceptance retained. Additive forge mapping and pixel-equivalent prior preview layers verified. Earlier numerical stride/cane observations retain their dates; no new native gait, family or global motion approval."
+    "audit": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+    "scope": "Earlier exact selected art/calibration actions and limited native verdicts retained. Six forge days,6 meal days, original jobs and20 variants verify the additive forge mapping. Preparation points are freshly checked on actual steel; original52 outline retained. Earlier gait/cane dates/scopes unchanged; no new family/global motion approval."
   }
 }

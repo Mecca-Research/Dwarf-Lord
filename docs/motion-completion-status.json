@@ -13,7 +13,7 @@
     },
     {
       "gate": "runtime-action-activation",
-      "remaining": 42
+      "remaining": 41
     }
   ],
   "counts": {
@@ -32,8 +32,8 @@
     "directionFamiliesEvaluated": 11,
     "directionFamiliesChangesRequired": 11,
     "directionFamiliesReviewed": 0,
-    "referenceActionsMapped": 23,
-    "referenceActionsWithoutMapping": 42
+    "referenceActionsMapped": 24,
+    "referenceActionsWithoutMapping": 41
   },
   "runtimeCoverageBindingCurrent": true,
   "remainingRedrawCount": null,
@@ -11283,11 +11283,6 @@
   "referenceActionsWithoutMapping": [
     {
       "character": "Blacksmith",
-      "action": "hammer-raised",
-      "destination": "public/sprites/Blacksmith/motion/hammer-raised/reference"
-    },
-    {
-      "character": "Blacksmith",
       "action": "file-tool-edge",
       "destination": "public/sprites/Blacksmith/motion/file-tool-edge/reference"
     },
@@ -11492,5 +11487,5 @@
       "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
     }
   ],
-  "scopeSha256": "b588b5bb6a1690bd145ee3c4297db34f618af71a96450c2c03625c2206a4b71e"
+  "scopeSha256": "15415623b47da1aaeb5bafd431ba4faf56e4d7e627679a6917c2d9b17a51192f"
 }

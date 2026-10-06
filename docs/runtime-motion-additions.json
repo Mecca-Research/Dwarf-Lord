@@ -277,6 +277,29 @@
       "status": "exported",
       "destination": "public/sprites/Cook/motion/mix-ingredients/actor",
       "station": "mixing-block"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "title": "Hammer raised",
+      "reference": "public/sprites/Blacksmith/work-references/01-hammer-raised.png",
+      "beats": [
+        "hammer held overhead",
+        "continuous midway transition from hammer held overhead toward hammer descends halfway",
+        "hammer descends halfway",
+        "continuous midway transition from hammer descends halfway toward hammer contacts billet on anvil",
+        "hammer contacts billet on anvil",
+        "continuous midway transition from hammer contacts billet on anvil toward hammer rebounds and begins recovery",
+        "hammer rebounds and begins recovery",
+        "continuous midway transition from hammer rebounds and begins recovery toward hammer held overhead"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Literal original Blacksmith body, visible near boot, hammer, hands, tongs and billet. One actual opaque pose0 crown/boot496/[280,592] basis and bounded whole-pose vertical registration over the unchanged520/[320,616] independent anvil. Visible edge tap only; far sole, hidden striking face, forces, economic output and repeat are excluded. Finite task approval pending gameplay.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/hammer-raised/actor",
+      "station": "anvil"
     }
   ]
 }

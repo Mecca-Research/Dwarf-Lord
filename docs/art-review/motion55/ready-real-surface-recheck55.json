@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "config": {
+    "actor": "public/sprites/Blacksmith/motion/anvil-ready/actor",
+    "binding": {
+      "sourceSha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+      "settingsSha256": "3714124156aea3e269965b65653d02c3cbbfb71a3eccdc33d8268d7778851d9e",
+      "frameSha256": [
+        "f5cd4f5a10d0e14919a6d0aa71e274eba2f8ee1ed2225ed42c423a22f4472490",
+        "08d833bfed2e5c3bd562c13ec69b2260b47559ba5a4e72a652256355f7b64ed6",
+        "80797ed4db882a145da6604955adb76112610f1e72e649a25c84a4c4e72aaa9d",
+        "f0d7667a8d0f52bbd4d61a4f628bf4b66e9b440b10d705588679fa18372b3a18",
+        "38c82ce8fcbf704ed66d768dd530ee806b1cea880cff025fe70fd34b73215a62",
+        "341041dbfe268c052b56d9c5823c35f8fe89e36a2cb47ab40571564a2c3042d7",
+        "e04388add13e53044aca51fbc33d1bfb4fbdabc7422bbead22ff6536d054ecc2",
+        "4d8e4dd865a2e9ed7e76a942db954b558714434f6307c13dc915b82cb85226a6"
+      ],
+      "durationsMs": [
+        140,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        140
+      ]
+    },
+    "dependencies": [
+      {
+        "file": "docs/art-review/motion52/blacksmith-ready/registered-prop52.png",
+        "sha256": "fda4698336e03edac443971b17454dad7ffd4d40acf7d1fe19794ff02e6d14fe"
+      },
+      {
+        "file": "public/sprites/workstations/anvil/sprite.png",
+        "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+      },
+      {
+        "file": "public/sprites/workstations/anvil/generation.json",
+        "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+      },
+      {
+        "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+        "sha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b"
+      },
+      {
+        "file": "public/workstation-registration.mjs",
+        "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+      }
+    ],
+    "workingFacePolygon": [
+      [
+        209.52307692307693,
+        362.95000000000005
+      ],
+      [
+        390.6096153846154,
+        326.73269230769233
+      ],
+      [
+        417.03846153846155,
+        355.11923076923074
+      ],
+      [
+        224.20576923076925,
+        374.69615384615383
+      ]
+    ],
+    "points": [
+      [
+        329,
+        350
+      ],
+      [
+        337,
+        351
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        339,
+        346
+      ],
+      [
+        328,
+        352
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        328,
+        348
+      ]
+    ],
+    "scope": "Fresh55 trace of actual opaque independent anvil top face, same eight original prepared-billet points and unchanged509/[280,592] actor versus520/[320,616] prop bases. The earlier52 outline and finding are retained; no hidden jaw, far sole, force or repeat claim."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "point": [
+        329.0,
+        350.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 1,
+      "point": [
+        337.0,
+        351.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "point": [
+        339.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "point": [
+        328.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "point": [
+        328.0,
+        348.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0,
+  "lastToFirstToolTravelPx": 2.236,
+  "scope": "Fresh55 trace of actual opaque independent anvil top face, same eight original prepared-billet points and unchanged509/[280,592] actor versus520/[320,616] prop bases. The earlier52 outline and finding are retained; no hidden jaw, far sole, force or repeat claim.",
+  "approval": false,
+  "actualPropFaceTrace": {
+    "source": "public/sprites/workstations/anvil/sprite.png",
+    "sourceSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+    "vertices": [
+      [
+        248,
+        382
+      ],
+      [
+        433,
+        345
+      ],
+      [
+        460,
+        374
+      ],
+      [
+        263,
+        394
+      ]
+    ],
+    "vertexAlpha": [
+      250,
+      250,
+      253,
+      252
+    ],
+    "mappedSamples": [
+      {
+        "sourcePoint": [
+          370.0589390962672,
+          368.770137524558
+        ],
+        "alpha": 252
+      },
+      {
+        "sourcePoint": [
+          378.2318271119843,
+          369.7917485265226
+        ],
+        "alpha": 251
+      },
+      {
+        "sourcePoint": [
+          378.2318271119843,
+          370.81335952848724
+        ],
+        "alpha": 251
+      },
+      {
+        "sourcePoint": [
+          378.2318271119843,
+          370.81335952848724
+        ],
+        "alpha": 251
+      },
+      {
+        "sourcePoint": [
+          380.2750491159136,
+          364.6836935166994
+        ],
+        "alpha": 253
+      },
+      {
+        "sourcePoint": [
+          369.03732809430255,
+          370.81335952848724
+        ],
+        "alpha": 252
+      },
+      {
+        "sourcePoint": [
+          378.2318271119843,
+          370.81335952848724
+        ],
+        "alpha": 251
+      },
+      {
+        "sourcePoint": [
+          369.03732809430255,
+          366.72691552062867
+        ],
+        "alpha": 252
+      }
+    ],
+    "olderOutlineTransparentVertices": [
+      [
+        246,
+        361
+      ],
+      [
+        425,
+        340
+      ]
+    ]
+  }
+}

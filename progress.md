@@ -453,3 +453,12 @@ Validation:201 Node tests,67 Python tests, type checking, Pages build, whitespac
 - Seven built-in single-pose attempts archived with exact prompts, ordered reference hashes and raw alpha outputs. Final unselected four-pose trial has63.733px uncorrected jump and7.151417px closed lower bound; material/anatomical correspondence remains false. Rejected transparent grid readings retained separately. No guide/hidden point or per-pose body scale is acceptance evidence.
 - Art/evidence: docs/art-review/motion54/. Current summary: docs/motion54-review-summary.json. Earlier actual motion53 runtime/build/browser proof retains original dates and scopes. PR9 is not all green; no merge recommendation.
 - Next: further true sole/material and boot-ground perspective correction for Laborer rear-left. Independently activate and verify existing raised-hammer action using the unchanged anvil; do not repeat an unsuitable gait method or reclassify its failures.
+
+
+## 2026-10-06 — Motion55 raised-hammer integration
+- Continue in `/opt/codex-work/dwarf-lord`, branch `codex/expanded-character-cycles`; PR9 stays Draft.
+- One new source-only finite Blacksmith actor at the unchanged anvil. Actual opaque496px crown/near-boot basis, shared[280,592] root, whole-pose[0,-12] offsets. Native near-boot0.979021/2.448547px/1.715515px; all8 billet points on actual steel face, edge tap3.162278px.
+- Corrected transparent-corner anvil trace with four actual opaque steel vertices; same earlier preparation points pass0px outside. Old52 evidence retained.
+- Six actual forge days and6 meal days, original job/passive roles, live displacement-driven NPC controls,20 independent variants and136 prior identity comparisons pass.69 previous scoped source sets, every prop and all prior Blacksmith calibration actions exact;22 affected approvals narrowly revalidated.
+- 24/65 references live,41 inactive;20 approved variants/13 physical props;13 derived finite actors outside frozen160.50 main+7 original actors accepted,103 reviews(62walk/24directional/17fixed) and11 families still open. Selected Laborer rear-left63.079px, Elder18.057px cane/14.009px joint unchanged. No all-green claim.
+- All219 Node/99 Python tests, typecheck and Pages build pass. See `docs/art-review/motion55/` and `docs/motion55-review-summary.json`. Untracked private56 vise-bench preflight is not selected or active.

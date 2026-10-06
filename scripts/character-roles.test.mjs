@@ -94,7 +94,7 @@ test('Borrin has a persistent consultation desk without becoming a production wo
 });
 
 test('forge operations route to their own station and retain completion boundaries',()=>{
- for(const [day,id,action] of [[1,'anvil','hammer-contact'],[2,'anvil','inspect-tool'],[3,'repair-bench','repair-pickaxe-handle'],[4,'anvil','anvil-ready'],[5,'anvil','hammer-contact']]) {
+ for(const [day,id,action] of [[1,'anvil','hammer-contact'],[2,'anvil','inspect-tool'],[3,'repair-bench','repair-pickaxe-handle'],[4,'anvil','anvil-ready'],[5,'anvil','hammer-raised'],[6,'anvil','hammer-contact']]) {
   assert.equal(activities.forgeWorkAction(day),action);
   const site=stations.activeWorkstation('blacksmith','forge',true,false,day);
   assert.equal(site.id,id);assert.ok(site.actions.includes(action));

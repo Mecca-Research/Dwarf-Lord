@@ -1,0 +1,122 @@
+{
+  "checkpoint": "motion55",
+  "recordedAt": "2026-10-06T09:08:43.399629+00:00",
+  "baseline": "a52cf5b15e912ad498f8b7a6fc68a006cf96f69f",
+  "mergeReady": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 24,
+    "referenceActionsWithoutMapping": 41
+  },
+  "scopedSourceSets": 70,
+  "derivedActorsOutsideFrozenScope": 13,
+  "independentVariants": 20,
+  "physicalProps": 13,
+  "activatedReferenceActions": [
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised"
+    }
+  ],
+  "native": {
+    "commonBodyBasisPx": 496,
+    "root": [
+      280,
+      592
+    ],
+    "integerWholePoseOffsets": [
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ],
+      [
+        0,
+        -12
+      ]
+    ],
+    "sourcePixelsExact": true,
+    "nearBootMinimumCorrelation": 0.9790214237666647,
+    "nearBootMaximumTravelPx": 2.44854736328125,
+    "nearBootAdjacentMaximumPx": 1.7155148658867891,
+    "billetOutsideActualSteelFacePx": 0,
+    "visibleTapEdgePx": 3.1622776601683795,
+    "preparationRecheckOutsideActualSteelFacePx": 0
+  },
+  "actualGameplay": {
+    "forgeDays": 6,
+    "mealDays": 6,
+    "allEightRaisedFrames": true,
+    "naturalArrival": true,
+    "oneCompletionHeld5Seconds": true,
+    "cameraTurn": true,
+    "cancelPersistentAnvilDepartureReturnResetDayRelease": true,
+    "originalJobPassiveRoles": true,
+    "stationVariants": 20,
+    "earlierIdentityComparisons": 136
+  },
+  "unchangedEarlierScopedSets": 69,
+  "narrowlyRevalidatedApprovals": 22,
+  "validation": {
+    "nodeTests": 219,
+    "pythonTests": 99,
+    "typecheck": true,
+    "pagesBuild": true,
+    "whitespace": true,
+    "headedClient": {
+      "iterations": 2,
+      "exitCode": 0
+    },
+    "approvedLayerCheck": {
+      "variants": 20,
+      "exitCode": 0
+    }
+  },
+  "remaining": {
+    "walking": 62,
+    "directionalToolsCarry": 24,
+    "fixedReferences": 17,
+    "directionFamilies": 11,
+    "inactiveReferences": 41,
+    "categoriesOverlap": true,
+    "unknownRedrawCount": true
+  },
+  "scope": "Finite stationary visible edge tap only. Main reference review and earlier numerical stride/cane dates/scopes retained. No moving gait, hidden underside/sole, centered impact face, force, economic output, cross-direction or seamless-repeat approval."
+}

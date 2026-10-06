@@ -18,11 +18,11 @@ class CompletionTests(unittest.TestCase):
         self.assertEqual(report['counts']['mainScopedReviewsApproved'], 50)
         self.assertEqual(report['counts']['actorScopedReviewsApproved'], 7)
         self.assertEqual(report['counts']['cycleReviewsRemaining'], 103)
-        self.assertEqual(report['counts']['referenceActionsMapped'], 23)
+        self.assertEqual(report['counts']['referenceActionsMapped'], 24)
         self.assertIsNone(report['remainingRedrawCount'])
         self.assertFalse(report['productionReady'])
         self.assertFalse(report['reviewGatesComplete'])
-        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':42})
+        self.assertEqual({b['gate']: b['remaining'] for b in report['mergeBlockers']}, {'final-cycle-reviews':103,'direction-continuity':11,'runtime-action-activation':41})
 
     def rejected_entry(self):
         return next(e for e in json.loads(Path('docs/expanded-animation-plan.json').read_text())['entries']

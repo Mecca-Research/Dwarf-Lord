@@ -1,0 +1,138 @@
+{
+  "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+  "binding": {
+    "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+    "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+    "frameSha256": [
+      "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c",
+      "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958",
+      "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37",
+      "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8",
+      "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211",
+      "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d",
+      "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d",
+      "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+    ],
+    "durationsMs": [
+      160,
+      100,
+      80,
+      60,
+      90,
+      100,
+      150,
+      140
+    ]
+  },
+  "bounds": {
+    "minCorrelation": 0.94,
+    "maxDriftPx": 6,
+    "maxAdjacentPx": 6
+  },
+  "regions": [
+    {
+      "name": "near-visible-boot",
+      "box": [
+        154,
+        514,
+        233,
+        585
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 1.0000000900488588,
+          "translationPx": [
+            -1.1551278156218814e-08,
+            -4.976341116957883e-08
+          ],
+          "driftPx": 5.108648792884196e-08,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9901622949831947,
+          "translationPx": [
+            -0.9259650707244873,
+            0.3437572121620178
+          ],
+          "driftPx": 0.9877147078514099,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9911083394819001,
+          "translationPx": [
+            0.7868245840072632,
+            0.24709877371788025
+          ],
+          "driftPx": 0.8247125148773193,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9856025054500528,
+          "translationPx": [
+            -0.7577508091926575,
+            0.7164669036865234
+          ],
+          "driftPx": 1.0428379774093628,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9866908918515972,
+          "translationPx": [
+            -1.2726519107818604,
+            1.0960336923599243
+          ],
+          "driftPx": 1.679563283920288,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9800222619468835,
+          "translationPx": [
+            -1.6703853607177734,
+            1.2734287977218628
+          ],
+          "driftPx": 2.100430488586426,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.984428106198817,
+          "translationPx": [
+            -0.9800893068313599,
+            0.8978932499885559
+          ],
+          "driftPx": 1.3292055130004883,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9790214237666647,
+          "translationPx": [
+            -1.7012132406234741,
+            1.7610387802124023
+          ],
+          "driftPx": 2.44854736328125,
+          "passed": true
+        }
+      ],
+      "adjacentDriftPx": [
+        0.9877147087778498,
+        1.7155148658867891,
+        1.614317065111111,
+        0.6396828053665448,
+        0.43550076992388514,
+        0.7858343270833295,
+        1.1247399407121712
+      ],
+      "passed": true
+    }
+  ],
+  "approval": false,
+  "scope": "Visible stationary near boot cap/lower rim only; no far leg, anatomical hidden heel, traveling stride, ground force or seamless repeat claim.",
+  "measurementPassed": true
+}
