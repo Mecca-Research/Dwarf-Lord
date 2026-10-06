@@ -1,0 +1,43 @@
+{
+  "selectedRuntimeChanged": false,
+  "materialCorrespondenceReviewed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "numericTrial": {
+    "cycleDurationMs": 1000,
+    "minimumHoldMs": 40,
+    "maximumIntegerComponentPx": 12,
+    "contactLimitPx": 6,
+    "maximumIntegerResidualPx": 9.931111386419717,
+    "adoptedByRuntime": false
+  },
+  "longerDurationTrials": {
+    "cycleDurationsMs": [
+      1200,
+      1600,
+      2000
+    ],
+    "roundedMaximumResidualPx": [
+      9.356439783266406,
+      8.796181714106927,
+      8.370780878724942
+    ],
+    "adoptedByRuntime": false,
+    "scope": "Proposed bounded calibrations only; unequal long holds are not approved native cadence."
+  },
+  "unobservedTarget": {
+    "point": [
+      300,
+      549
+    ],
+    "isSourceObservation": false,
+    "isAcceptanceEvidence": false
+  },
+  "excludedAttempts": [
+    "Initial422px/floor436 registration guess, replaced by measured419px/floor435 common source basis.",
+    "Standard tight-alpha re-export of assembled4 discarded faint edge fringe and failed full-RGBA identity; corrected literal whole-cell assembly preserves native pixels.",
+    "Initial candidate5 point[288,581] is transparent; rejected before complete observation/calibration.",
+    "Initial candidate6 point[310,594] has alpha15; rejected before complete observation/calibration."
+  ],
+  "scope": "Private source-bound necessary geometry and bounded numerical proposals. Candidate5/6 historical diagnostics retain their original private paths and provenance; retained raw/normalized inputs permit reproduction. Passing closed/per-boundary bounds is insufficient. No hidden or guide point supplies material/contact/loop approval."
+}

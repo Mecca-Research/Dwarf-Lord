@@ -1,0 +1,255 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "frameSha256": [
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    ],
+    "durationsMs": [
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
+    ]
+  },
+  "playbackModel": "Baseline without pose synchronization: discrete atlas frame held while physical world root moves continuously.",
+  "poseSynchronization": {
+    "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+    "rendererSha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6",
+    "modelWithinHoldRootDriftPx": 0,
+    "scope": "Visible whole-pose root held at the last authored frame boundary. No limb deformation. Camera/view changes and anatomical/contact transitions require separate review.",
+    "tradeoff": "Visible body translation advances at authored pose boundaries; this is stepped sprite movement, not continuous skeletal interpolation."
+  },
+  "measurements": [
+    {
+      "calibration": "legacy-runtime-estimate",
+      "strideBodyRatio": 1.2,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 232,
+              "projectedTravelPx": [
+                144.768,
+                0.0
+              ],
+              "withinHoldDriftPx": 144.768
+            },
+            {
+              "frame": 2,
+              "durationMs": 135,
+              "projectedTravelPx": [
+                84.24,
+                0.0
+              ],
+              "withinHoldDriftPx": 84.24
+            },
+            {
+              "frame": 3,
+              "durationMs": 46,
+              "projectedTravelPx": [
+                28.704,
+                0.0
+              ],
+              "withinHoldDriftPx": 28.704
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 118,
+              "projectedTravelPx": [
+                73.632,
+                0.0
+              ],
+              "withinHoldDriftPx": 73.632
+            },
+            {
+              "frame": 6,
+              "durationMs": 111,
+              "projectedTravelPx": [
+                69.264,
+                0.0
+              ],
+              "withinHoldDriftPx": 69.264
+            },
+            {
+              "frame": 7,
+              "durationMs": 85,
+              "projectedTravelPx": [
+                53.04,
+                0.0
+              ],
+              "withinHoldDriftPx": 53.04
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 144.768
+    },
+    {
+      "calibration": "sampled-keyframe-fit",
+      "strideBodyRatio": 0.880579,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 232,
+              "projectedTravelPx": [
+                106.233,
+                0.0
+              ],
+              "withinHoldDriftPx": 106.233
+            },
+            {
+              "frame": 2,
+              "durationMs": 135,
+              "projectedTravelPx": [
+                61.817,
+                0.0
+              ],
+              "withinHoldDriftPx": 61.817
+            },
+            {
+              "frame": 3,
+              "durationMs": 46,
+              "projectedTravelPx": [
+                21.063,
+                0.0
+              ],
+              "withinHoldDriftPx": 21.063
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 118,
+              "projectedTravelPx": [
+                54.032,
+                0.0
+              ],
+              "withinHoldDriftPx": 54.032
+            },
+            {
+              "frame": 6,
+              "durationMs": 111,
+              "projectedTravelPx": [
+                50.827,
+                0.0
+              ],
+              "withinHoldDriftPx": 50.827
+            },
+            {
+              "frame": 7,
+              "durationMs": 85,
+              "projectedTravelPx": [
+                38.922,
+                0.0
+              ],
+              "withinHoldDriftPx": 38.922
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 106.233
+    },
+    {
+      "calibration": "runtime-measured-view",
+      "strideBodyRatio": 0.880769,
+      "tracks": [
+        {
+          "foot": "left",
+          "holds": [
+            {
+              "frame": 1,
+              "durationMs": 232,
+              "projectedTravelPx": [
+                106.256,
+                0.0
+              ],
+              "withinHoldDriftPx": 106.256
+            },
+            {
+              "frame": 2,
+              "durationMs": 135,
+              "projectedTravelPx": [
+                61.83,
+                0.0
+              ],
+              "withinHoldDriftPx": 61.83
+            },
+            {
+              "frame": 3,
+              "durationMs": 46,
+              "projectedTravelPx": [
+                21.068,
+                0.0
+              ],
+              "withinHoldDriftPx": 21.068
+            }
+          ]
+        },
+        {
+          "foot": "right",
+          "holds": [
+            {
+              "frame": 5,
+              "durationMs": 118,
+              "projectedTravelPx": [
+                54.044,
+                0.0
+              ],
+              "withinHoldDriftPx": 54.044
+            },
+            {
+              "frame": 6,
+              "durationMs": 111,
+              "projectedTravelPx": [
+                50.838,
+                0.0
+              ],
+              "withinHoldDriftPx": 50.838
+            },
+            {
+              "frame": 7,
+              "durationMs": 85,
+              "projectedTravelPx": [
+                38.93,
+                0.0
+              ],
+              "withinHoldDriftPx": 38.93
+            }
+          ]
+        }
+      ],
+      "maxWithinHoldDriftPx": 106.256
+    }
+  ],
+  "correspondenceReviewed": true,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Projected root travel during sampled intended flat-sole support frames; does not certify anatomical identity, heel-roll, unsampled contacts, terrain or cane.",
+  "remaining": "This baseline reports how far a continuously translated static image would slide. The actual runtime holds the rendered root; eight measured heel/toe transitions and a live geometry probe are reviewed separately."
+}

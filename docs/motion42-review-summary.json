@@ -1,0 +1,64 @@
+{
+  "checkpoint": "motion42",
+  "date": "2026-10-04",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 48,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 105,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 15,
+    "referenceActionsWithoutMapping": 50
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 105
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 50
+    }
+  ],
+  "closed": [
+    "Laborer/lift-crate/reference: finite stationary retained-grip lift/lower with visible near0-7 and far2-6 material contacts and actual shared-gallery lifecycle."
+  ],
+  "candidateWork": [
+    "Ginger/Laborer independent barrel station actors remain unselected pending native, material/tool contact and lifecycle review."
+  ],
+  "validation": {
+    "nodeTests": 205,
+    "pythonTests": 70,
+    "typecheck": true,
+    "pagesBuild": true,
+    "whitespace": true,
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "finiteReferenceReviews": [
+      {
+        "character": "Laborer",
+        "action": "lift-crate",
+        "timedHoldsAndBoundaries": 8,
+        "terminalHoldMs": 10000,
+        "explicitReset": true
+      }
+    ],
+    "builtGameSmoke": "Two headed movement captures and state snapshots inspected; no client error artifact. Runtime is unchanged from b2089f6."
+  }
+}

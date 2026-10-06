@@ -1,0 +1,720 @@
+{
+  "version": 1,
+  "checkpoint": "motion38",
+  "date": "2026-10-03",
+  "baselineCommit": "f97e0583962d28a611c4cdc11827195f0781ebb8",
+  "frozenScope": 160,
+  "newMainApprovals": 32,
+  "newLoopApprovals": 3,
+  "newFiniteTaskApprovals": 29,
+  "recordedDefects": 20,
+  "fixedReferencesNeedingCalibration": 7,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 39,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 114,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 11,
+    "referenceActionsWithoutMapping": 54
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 114
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 54
+    }
+  ],
+  "productionReady": false,
+  "mergeApproved": false,
+  "scope": "Exact native fixed-reference poses plus controlled gallery/shared playback. No new gameplay mapping, direction approval or moving foot/cane contact approval. Existing seven independent actors and Blacksmith right-view acceptance remain unchanged.",
+  "validation": {
+    "nodeTests": 201,
+    "pythonTests": 67,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "gallerySequences": 153,
+    "galleryFrames": 1224,
+    "controlledTimeSequences": 32,
+    "controlledHeldPoses": 256,
+    "explicitRepeatBoundaries": 3,
+    "workstationActors": 7,
+    "headedGameplayCaptures": 2,
+    "whitespace": "passed"
+  },
+  "dependencies": [
+    {
+      "file": "scripts/motion_completion.py",
+      "sha256": "7f281420e617fe49548f50cae524dc6d3b9eee5353536fafb808554542ed8a88"
+    },
+    {
+      "file": "scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "docs/motion-completion-scope.json",
+      "sha256": "ed49a1c6594049c5a3011cc463dc218cafc0b40271f8824cb608c29ebd70a7b1"
+    },
+    {
+      "file": "docs/motion-completion-status.json",
+      "sha256": "bc051dac98bf0b4af03d0b50fd47a1636c11e9e6d0478e13db93408863d71978"
+    },
+    {
+      "file": "docs/motion-station-followup-results.json",
+      "sha256": "f175516cbc0fc4f98bd6ad1b75f8f0fd16df2e25361aa6f17ee73584a3ebe1c5"
+    },
+    {
+      "file": "Dwarf Lord Motion Completion Report.md",
+      "sha256": "921944212cef17fa9a6572deefd26fde0e49722e63cbf1436e48fd53b5cf48bd"
+    },
+    {
+      "file": "public/sprites/Borrin/work-references/consult-ledger.png",
+      "sha256": "6955ffaa7599b75a3a3cb3878488413caba7f279e1fd281451300250be381c6b"
+    },
+    {
+      "file": "public/sprites/Borrin/work-references/manifest.json",
+      "sha256": "47ada8134be93b147137b645abb85691e820347fe4aad7f31955ca903a7c42fb"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-anvil-ready-review.json",
+      "sha256": "9a88a97d092bdd1782b316fead0e6ff8f69d0db4a14c6be6c2174a1971e2a1c5"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-file-tool-edge-review.json",
+      "sha256": "8ee42e503b7496620a03c5a594fea56e48c9d7c6a5344c5df9c29e4a157a75a5"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-fix-wheelbarrow-review.json",
+      "sha256": "2dcf19428a607ec857a020a617254f9103f34b38a95b3c93df2eae03ae819581"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-hammer-contact-review.json",
+      "sha256": "b0fbfabe85c54ee9f45e686041f81d723e2a725bf6ab0ab78465eb7af28020d8"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-hammer-raised-review.json",
+      "sha256": "d3e6046cee7e9a0933b633c578438364e887668a3ed8ec048cdd4a33795d5130"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-inspect-tool-review.json",
+      "sha256": "9156e2b2eb11a7aa0ea4a383a1a6a695872b80ae7667ce6da71a96520756fb4e"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-review.json",
+      "sha256": "d27b555007cf9ed9783a929db95adb6d39055783b1ff28694d54f1b4c5fa33f9"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-count-coins-review.json",
+      "sha256": "4611ce570eec4f5377339d951a40bdeff203a1b3f2c9f2cf0202672f83291bd5"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-desk-writing-review.json",
+      "sha256": "096a04e2ad5654ae0a6d8b58ddb50ba7184565d74540a8f10f30db00b49cad90"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-at-desk-review.json",
+      "sha256": "7e0d1e41de5c68eb519257d8490e7e15e7ec96b1a5d586ae54766dd35dc29de4"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-closed-ledger-review.json",
+      "sha256": "196e4d6d22680bbc0ded848f9de7d56c530376f7689ee420186cb9a5a9986664"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-open-ledger-review.json",
+      "sha256": "a28184f7389c50404b38910d19b69a82c5529838ea5e578a996b8e59551e8a34"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-review-open-ledger-review.json",
+      "sha256": "8bb4cd0f9c613114e594ee8f0d97c81f72b946dc58e1a77c912764d623716aa8"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-stamp-paperwork-review.json",
+      "sha256": "abbedd23df1b17fafbd525e896b68c45156fd5595a658af406177b93aac7f735"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-turn-ledger-page-review.json",
+      "sha256": "6d1465016f4fcc5eb41c48e3966557d1a94549fd4f2053c9f3cea850fd0fd480"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-chop-vegetables-review.json",
+      "sha256": "f3fc9ce46453789818fb0ba962bf2be1a510c4627bad429a42920b3a87513e2a"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-cut-boar-meat-review.json",
+      "sha256": "abdc69e7f2a7b35728533ad84f3d7959e1e4317226abe7d7e7af2081a9514add"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-fillet-fish-review.json",
+      "sha256": "41384bb9d6057a147f3c64eca3297ac645bc29a69e8f550ca4e09046819f2dc1"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-knead-dough-review.json",
+      "sha256": "9a945bcc026998d341c9504ec907ea7345045894063315652ce80f4bbf7b9c31"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-mix-ingredients-review.json",
+      "sha256": "1966da58e62dbc17aae8f3710c8b82be311b8cd439db29ab96a042b50909e8a4"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-peel-potatoes-review.json",
+      "sha256": "7c869d50f6c530d40487784c8dfa2022770f4d1301ef99dc0d96f2bc4597558b"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-serve-stew-review.json",
+      "sha256": "00e68ded7844180e68cb5c85b0e359f6c1042659a88d0ca583088ae62d0c6c6b"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-stir-cauldron-review.json",
+      "sha256": "0bdbe7274be4d2e411f9438d4f2aed82877a55b4719d75788f4517592a45b33f"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-examine-sample-review.json",
+      "sha256": "e39211083889d8bbea5ca800bfdb5741b9eee30d7549443bb098969dec01d0db"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-pickaxe-contact-review.json",
+      "sha256": "54851f3837cac7144aaee0077ba5b6763d60a86e01b670354398c513ed2c8f92"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-pickaxe-ready-review.json",
+      "sha256": "384df80f81d30f7974cc11e9b7533f140c1b7cc29903a0b1d04df1cf1bfa54af"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-push-ore-barrow-review.json",
+      "sha256": "d0a0b5e14fbdcd820989f738df44140ab36996f74958e4c51deaf7e41f798d41"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-repair-pickaxe-review.json",
+      "sha256": "a0cd6af489b46bdae28d7fc6c7bd9a8928ee576ba5bc45869dc0c08a3149e7a5"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-shovel-ore-review.json",
+      "sha256": "11046f06f4b93d9e1cf17092341de27f9708d281462333986af78bea8a86c713"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-build-barrel-review.json",
+      "sha256": "28c92acaa913d9314cc8fe7de071f99fd8cbd9bc4f69c3ffda7e5f54ea997a0a"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-build-timber-crate-review.json",
+      "sha256": "1fb427520ece96cce9a2217028a155fd1584b78524a5151e80d27015d5cb2931"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-carry-supplies-review.json",
+      "sha256": "20af0258f140af5090f14d6cb714ca3192f8644a04db103d1de28b4e81593a22"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-chop-downed-log-review.json",
+      "sha256": "75fd41bae744b8ac14ad3b16e8848ee70c62ad8219c77eb4996b690816bb0cdd"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-fell-tree-review.json",
+      "sha256": "4573ccce213b3e167d32da12ccb31808a6aff9cdf12827354419fbc6b5d09721"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-haul-firewood-review.json",
+      "sha256": "e9e1cd72ba8cd051cd927ba0183e2fc6aca7cb96ce61a254d3086fdaf22c24c1"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-load-logs-cart-review.json",
+      "sha256": "be862b5fcf7c3dc02c73e1536bc4cb2d9dfcd88ca94a885df3165b5f3832e5eb"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-saw-timber-review.json",
+      "sha256": "836173d1221ba9e0706b6e1b19f47e8e77ad72ad306eee18335f9daa90eb413f"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-sharpen-axe-review.json",
+      "sha256": "8cd97f6a5ee670ee88a32702984ffb297493a87867d9fc8547ceeb17a85d04a9"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-sharpen-hatchet-review.json",
+      "sha256": "594223de326c2bae5aa137545e8ac9afb2c4a065f6dd08271eb304564221899c"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-stack-firewood-review.json",
+      "sha256": "ada8876fa14ea9466b432e70b2706e4304f76eb46c387fc3bc7ef0bd64fe79ce"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-bind-tool-handle-review.json",
+      "sha256": "ac6b4e2f5645bc38af5a8a7d6605c781f9718a58adcf8b9424737491c12885ce"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-carry-mine-timber-review.json",
+      "sha256": "3fc1a83c87ca72b3c1f4aebc0a863b225d51c7bd6aafd1de3fabf2fbd964aaba"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-inspect-mineral-review.json",
+      "sha256": "653324b2b8165d788bc27bbc9999955c5bb272bb3a731b815025d6ba93b463dc"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-pickaxe-contact-review.json",
+      "sha256": "dd8f8662655e94b19e25966829107a67d7452c5c565984b3460046314d3de64d"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-pickaxe-ready-review.json",
+      "sha256": "67acca9cba857b69d1588512038a04094dbeb8e6ba205cc8ad4e7d811737b6f5"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-shovel-stone-review.json",
+      "sha256": "dd1fc44eb299a250348235953b300b77d9599471e8f82d9ee1198f311dfb3ac5"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-build-barrel-review.json",
+      "sha256": "80d91a5a1ba8c472d596662c8981620007c996634d1141ff63c84dcb5bb811d6"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-build-crate-review.json",
+      "sha256": "3e1d64344be5cc759bb99191806ded8a7699b3d7e86e40b358c7ffecdb9bd839"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-carry-crate-review.json",
+      "sha256": "de4a737ecaa67e9aefa5489ce9ddb2ad91e715dbc267eea572b2b55697fcbca7"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-carry-large-stone-ore-review.json",
+      "sha256": "6bd7bfde06c750fe6147d4c077f3a8959d9435dde99ca2065526a53dd0447f6f"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-carry-sack-review.json",
+      "sha256": "a8efdc605c88844c3d277b47e877e28e4e4b69e43d4634c9ea8ef13264443496"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-lift-crate-review.json",
+      "sha256": "921145dd040b1ce64352d98baf334d27a4eb79d20e71c25141bd4d10ae81841b"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-pull-supply-sled-review.json",
+      "sha256": "dbd9647fa0f4e5e7ca0eca6b303055eb2f1292ef4e83b674cce03de1abbf0a18"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-push-stone-barrow-review.json",
+      "sha256": "7469480e8803103e9cd53612c6ff8e9d0c896c20a32fdd3eb22e6301a3cb88cd"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-repair-boardwalk-review.json",
+      "sha256": "0ae65cdba8d3a0e8075a88a2bed8f4fa535be7f117663a27a4587930da30df83"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-roll-barrel-review.json",
+      "sha256": "2da9052752644ffb73bb6733ebc1ff9b850da3d78604de81a8a15fddee2b6d16"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-shovel-rubble-review.json",
+      "sha256": "2a27f887621afede2aa17aa949efdbe237b42bee92007fcb027700d14cd3fab7"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-stack-crates-review.json",
+      "sha256": "a53d9b159d905bfa89ab49bf699ffb8f58a125bfeb34c3be73796a8820794510"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-sweep-wood-chips-review.json",
+      "sha256": "48d40e020dcb982e3e00535085218c265c4b4d8a1d7e0ba41cfbd856f079399e"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-file-tool-edge-playback.json",
+      "sha256": "ec66d3033a3121bf02996a6e99e6cb209988ea93d3ff2b8479bc27e9ef178ced"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-hammer-contact-playback.json",
+      "sha256": "00cd22d0d5a409c7517cefbbcd8dc3f7aed25cdf06940f5398af2554da4fa358"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-hammer-raised-playback.json",
+      "sha256": "d4b867b3ef35ea6247dd0e8914bcfdd88f44a0943b032ccc09be59fe473b4f5d"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-inspect-tool-playback.json",
+      "sha256": "2d188778f7ec421f8b063edc1322c5388802007c69e16285ed6408d5a89a8d1d"
+    },
+    {
+      "file": "docs/art-review/motion38/Blacksmith-repair-pickaxe-handle-playback.json",
+      "sha256": "8ab408741a636e38b8d4674eb136ef8e91c2af9161b1f67eb9383c810d018b4f"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-desk-writing-playback.json",
+      "sha256": "d49135dc6b48efdede22da8bad0a2ef4935d6e7d333430e855e4d37b71a1e4b2"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-at-desk-playback.json",
+      "sha256": "040edb6921236a63c2398410aa760a5d963a4d34eaa2377628a2a21bc2bfd92c"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-closed-ledger-playback.json",
+      "sha256": "a8c001e975fee9c4df43d4889c518d82c5f1173b2027c166feec3afad194dfdf"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-explain-open-ledger-playback.json",
+      "sha256": "df010b8ed7d2d2caf211dd6dc96c7298a45e90584c2fe8b022d18f957d662555"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-review-open-ledger-playback.json",
+      "sha256": "aaa6eeac41c65d4473710e98291183cffed26738f9a82038054134be460df4fb"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-stamp-paperwork-playback.json",
+      "sha256": "656c169200e288e68738a4fd0e278648c9554e0dea1251016ae71bcf0270bd26"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-turn-ledger-page-playback.json",
+      "sha256": "dcda63471978bac508f57912ffefa3a74420f5505dca82c72f6780d9808cfd49"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-chop-vegetables-playback.json",
+      "sha256": "38403da91242867d7a69220fefd28260c93bfef1176ddd120a064c41d6bb2359"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-cut-boar-meat-playback.json",
+      "sha256": "830fa9a2afb0ee1589bd1b7d563e1af22f780d317b34f3a9f8ec3883ceccdcb2"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-knead-dough-playback.json",
+      "sha256": "063db101b300125289efbbe6ecd4380b3e74f13eef051cb3d983fec0ebd2f789"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-mix-ingredients-playback.json",
+      "sha256": "3de3dbbe1d1d7e58eaad6d3830e9f4bf87331f3d88732a1b5fec06df32589a68"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-peel-potatoes-playback.json",
+      "sha256": "23c75e3b6004f5ea3370b9b5689fefdec3973edc0cfd3e9b0faf8a0e43f31e8e"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-serve-stew-playback.json",
+      "sha256": "b2c3081604d46b7059b6321d2292453e7ea7a4509c0769db3578adda463da925"
+    },
+    {
+      "file": "docs/art-review/motion38/Cook-stir-cauldron-playback.json",
+      "sha256": "e2b86f626c010428a31a00b556b987b87c05b1dc76530551f29fe1271d4e4b9c"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-examine-sample-playback.json",
+      "sha256": "6972a23911842ea0595be847cecb19a7f10d44d43931542784b732fdb3e69c34"
+    },
+    {
+      "file": "docs/art-review/motion38/Female-Miner-repair-pickaxe-playback.json",
+      "sha256": "f914d9c32371e841f74d4c192a59835d5c8a0ec1808c5d57fad52deab3e7b37b"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-build-timber-crate-playback.json",
+      "sha256": "ca569bc91ad590d3882d2105d1c4298f32ad9316e10795e4184bb886c9f6ccf5"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-fell-tree-playback.json",
+      "sha256": "62c5748cce596059bca9ed95b570fcec4985bc5ed7762e706e72adaeaf783571"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-saw-timber-playback.json",
+      "sha256": "98f2d28a620fc6ca864b931c765c69e7f00e05c22b8b70408a96bd11e2ac9ef5"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-sharpen-axe-playback.json",
+      "sha256": "6dad325bad39dd2acfecb1315ece9158c53c1bc4eeb864cb2e15c90de1c15cbd"
+    },
+    {
+      "file": "docs/art-review/motion38/Ginger-sharpen-hatchet-playback.json",
+      "sha256": "feeddefed9cc5cc04ddecc7a058b68ee31aaae7c3ce650d38c54620c79bba09e"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-bind-tool-handle-playback.json",
+      "sha256": "229f120a39dad361c5c2ec72195870fbb10ac780ca03b448441bbc016d33d76f"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-inspect-mineral-playback.json",
+      "sha256": "b1d5a56f115cd5a6bf1cd800926f302d6391a550d110a7d6fa90871ca1b66dde"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-pickaxe-contact-playback.json",
+      "sha256": "74333e3a4b7eb1e044279bb9cd7abc367b749390988bbb0148b032813a7e8c00"
+    },
+    {
+      "file": "docs/art-review/motion38/Helga-pickaxe-ready-playback.json",
+      "sha256": "8d932a4edeadb91ad030b041d7c102f921d3b560aacddeb143576646f931192d"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-build-crate-playback.json",
+      "sha256": "3b921a1010d89f6287d6115b56ba0f79728349bdfc075154a39bec9a33a4e3c8"
+    },
+    {
+      "file": "docs/art-review/motion38/Laborer-stack-crates-playback.json",
+      "sha256": "38174fe8249ebbc0363435b67bb84a4026018711169eadf09ca7c5598de118ed"
+    },
+    {
+      "file": "docs/art-review/motion38/gallery-results.json",
+      "sha256": "4721c089eaf025f40f45f785054f36d711270c310624ab3d2e6afce7d2161f60"
+    },
+    {
+      "file": "docs/art-review/motion38/workstation-results.json",
+      "sha256": "e0fee449b54e4f811094375c02c51175cdd1c6b18e1a8879b1d74a563be922f3"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-static-consultation.json",
+      "sha256": "3cddd3d3c4fc628f01ec839107360424c4b7b23904dcfe4219e4ae83aa1e1179"
+    },
+    {
+      "file": "docs/art-review/motion38/Borrin-static-consultation.png",
+      "sha256": "cd68c17d245848edc47a683db9d520b7b830ee4a2e5a62b0c36c5088b8bc9f8c"
+    },
+    {
+      "file": "docs/art-review/motion38/cycle-findings.json",
+      "sha256": "df0d6c8e76380fb905358e47c2dc46bf0ff9e2ccf911af13b3cdc3b1335fd852"
+    },
+    {
+      "file": "docs/art-review/motion38/station-registration.json",
+      "sha256": "f175516cbc0fc4f98bd6ad1b75f8f0fd16df2e25361aa6f17ee73584a3ebe1c5"
+    },
+    {
+      "file": "docs/art-review/motion38/gameplay-0.png",
+      "sha256": "e9f9222e4f556eea9f3ad4349684bc2b2095cc2747b04d89e595822b9a45bdef"
+    },
+    {
+      "file": "docs/art-review/motion38/gameplay-1.png",
+      "sha256": "6f229b7c4049b67a2e5647f14f524b7a0323cedac0818e1a5d6d9260788a0945"
+    },
+    {
+      "file": "docs/art-review/motion38/gameplay-state-0.json",
+      "sha256": "d53eea2e23427898f08906ff5c19a2d3b905564b9693b0a132afbf0c17e65786"
+    },
+    {
+      "file": "docs/art-review/motion38/gameplay-state-1.json",
+      "sha256": "115b271ced54054397d98be4756062ea44b7884b546bce3a6313b6adfdc3975e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/loop-approval.json",
+      "sha256": "da044f2d230da3febaa558c4a85b350c99d3a43b29a3cb0c51d06f3d39da4c75"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/loop-approval.json",
+      "sha256": "44800f77e2ea8202461467a4ff38a7491dd4957a787fb5e9482f90104a5c53cd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/task-approval.json",
+      "sha256": "32c933b11ab77447e592dd36de3ac0b774f48cb24a3e400947ad932e918af5c1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/task-approval.json",
+      "sha256": "90ec3134f7969cf2aa0528c558404da9fd1cfa4bd0ae6591a026789eedbe3f90"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/task-approval.json",
+      "sha256": "06b3fd95d9b0f8e00f2d3f82a5518b1161fc13765ab7ee9feebe1daecf45c981"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/task-approval.json",
+      "sha256": "e45128988673b8284a78e21782565a1df74dda7542ff9b27ace0147b651017f1"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/task-approval.json",
+      "sha256": "b21cb52e2696c32854f13a2fda46a9547fe2ade69ce6c485067d7cc636715fc5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/task-approval.json",
+      "sha256": "c4fe55cd217d748b8024d5c05bd52f1577243b9f4ac5764cc1f3888005cb5265"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/task-approval.json",
+      "sha256": "fdefd0af142a1a39b53eb5eb1aac52f407c6abd72db9a0a993121c77dbe37247"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/task-approval.json",
+      "sha256": "83807863ab143e9696c76d209102cd109b685423a5a99f063ceef93d2cf6f23c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/task-approval.json",
+      "sha256": "cb292bfc5f1eb38f77e1e417ddb5eb1ff64ea4d36be1634bd30e14c673603780"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/task-approval.json",
+      "sha256": "66448d9ccd3a3b739254a846ed7b3c6b180ea8d0c4b43e9beadfa3b613e7b49b"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/task-approval.json",
+      "sha256": "c5973b2805b3cde2a1f984cf0e132d293cfbf097306d62587fadd21be4875155"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/task-approval.json",
+      "sha256": "30d2c72b31dda93030709ea379227c889a50dec1da707f2b7f2b0efb17f26747"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/task-approval.json",
+      "sha256": "2398349ac8fe0c844dd33a7fe2d9ac26c020a3258bc124234c22297f1a66a275"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/task-approval.json",
+      "sha256": "ea9455afb26b1d5308d243da3d9f0e1eddff9b704dae5ffbfb59daddcedced44"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/task-approval.json",
+      "sha256": "a50c1f475fc35b247a24fc08c0b54c619d0e2b8128fb16cef20c51af3163a0bc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/task-approval.json",
+      "sha256": "acb3ba296c64fc4d670dd5af4290a5899fd1bac8f4fcbc84ebc1066cf70da700"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/task-approval.json",
+      "sha256": "d4bf47bb4f98c90f3e095325b83c454327e0a4b4a2e41143906a05f5f590ae73"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/task-approval.json",
+      "sha256": "e9c00d7fcb1d7d5d0460e278c996bc9fa45fa7e376081c83f723f74c6a3fc4a7"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/task-approval.json",
+      "sha256": "a6625573163c305828a91c149839b1678f2d2a1e3fe1aef1891be0768c3dfba9"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/task-approval.json",
+      "sha256": "b9b8c09e7b363930f9f092a1dc0416fca75420390353249c3066bc8015857015"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/task-approval.json",
+      "sha256": "cfd7a7d017cf825ebac3f0768c753029b13b1869d7fdf9b3b24136263ed67655"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/task-approval.json",
+      "sha256": "c4155304e5e9f19981d249c2964ec12551a54d37404d585f4ba185effcf44f4c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/cycle-review.json",
+      "sha256": "951363516623c04364c8334117fe9327eef09a66d5b2e5649c8f1354a8c49d39"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/cycle-review.json",
+      "sha256": "363c3b70131e59150a3590cda4655fb3d5ad38befe29cc7e662cc8dbe2290771"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/cycle-review.json",
+      "sha256": "377fbd4ae8b9741e688504c87b5296779b1ff05b9ad41aa665097fe4b3bcf297"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/task-approval.json",
+      "sha256": "c6ea15a62c2f1a62f357e6e7a207fc62fe78e1373b849d42db026cd44c8f291c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/task-approval.json",
+      "sha256": "c4f3c69fffbffcd3cca82e95f05b84d7f7a2fdafcf20d33395a7e994cceea249"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/task-approval.json",
+      "sha256": "bdb66f82d62ec4838ee649c2c9fe2e62b1e93d52e66771b598e16bb5553a8d55"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/task-approval.json",
+      "sha256": "7ee98804393d44f930434685abc97c83bea6a0884defcae86381a397015b0391"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/repair-boardwalk/reference/cycle-review.json",
+      "sha256": "bed075d2f14971a593167f21441858fad969d0890a8215a1171a76f78b7c822a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-barrel/reference/cycle-review.json",
+      "sha256": "21df15040469d65da2e08aa3f7112d6304d3e7534d9bfcee4ea005679a7d660b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/cycle-review.json",
+      "sha256": "db64599d6b911d3661402ad5a58028757d8087815d21a30f9cd830419a39af8f"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/cycle-review.json",
+      "sha256": "67a02f5b1cb2f68d30b1981205408f8918733b7b388e265ace3b0170aab8bde6"
+    },
+    {
+      "file": "public/sprites/Helga/motion/shovel-stone/reference/cycle-review.json",
+      "sha256": "df66249a6d40894ca7f4c31722cbacc8b6fad68d4ad6add80d90eddda5828f3e"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/shovel-ore/reference/cycle-review.json",
+      "sha256": "f96f0897bf84ba205b7483af26c99a59508aefb7a61963148431f6515476667b"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/task-approval.json",
+      "sha256": "0cb1eaa9e0e3387572904250e1ca6a4d2598d831a30bc5903df880cc1699410f"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/task-approval.json",
+      "sha256": "5fe6cd60683826b301c92b96f291828a4210c1c44db029027fb1579fa4a623aa"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/loop-approval.json",
+      "sha256": "3a08bab47f29cf0eed0226ae42c22605ffb081a74be2a1c51616b3e4d012fa86"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/task-approval.json",
+      "sha256": "4bd94cbc5cc13cb264d4f5fd75b321923efd23f70375ac4439a8811d4d075c69"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/stack-firewood/reference/cycle-review.json",
+      "sha256": "2fc32d58ec88ec3b2669409f105367d92d5a7a37a74c45a6c5d116e030c69420"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/load-logs-cart/reference/cycle-review.json",
+      "sha256": "73885f0f786f5e48f77b29139b039410ba922f7e0b7d315e7ec05a1479679469"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/cycle-review.json",
+      "sha256": "f8c11849f86719cbe4ee417c1c723109143979fbf2aa0bddfee68179206ba6b5"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-contact/reference/cycle-review.json",
+      "sha256": "feb5ff67a08126d0d14af87d50c99dc18af19886a04783ea7036764e8596ce76"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/carry-large-stone-ore/reference/cycle-review.json",
+      "sha256": "ffefbf3e8c6d95e2bbf28ac474635fda134940a83d817d2082a72077ecfeb1c8"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/cycle-review.json",
+      "sha256": "0bd2e36cd6f15d955d0011697170acd72d54d76eea604c45727bd5fc4b0256c1"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/push-ore-barrow/reference/cycle-review.json",
+      "sha256": "1c37c193e41b08e3bb21717b34088f0b31ef5254b951c8a83a7f2ff3e3d545b1"
+    },
+    {
+      "file": "public/sprites/Helga/motion/carry-mine-timber/reference/cycle-review.json",
+      "sha256": "8ee0153a2bd10619ea26bf2e2ca78e33d752a226b1b67477ba9560a3637b5a2a"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/haul-firewood/reference/cycle-review.json",
+      "sha256": "41579c59312ef99db156a740bea9abaf55906823fdd4c28e847ed30eb7738935"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/carry-supplies/reference/cycle-review.json",
+      "sha256": "60d064c01a546629e0efd81263ce4633f34dc413eeec2a08153a44b75aa23ed2"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/push-stone-barrow/reference/cycle-review.json",
+      "sha256": "551417a8314d4200f61cc46148321883c95e939b413f3c2b5a83fb3ccbc25515"
+    }
+  ]
+}

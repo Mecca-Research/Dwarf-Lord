@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "prompt": "Create eight authored animation poses as a clean transparent4-column by2-row sheet. Use the FIRST supplied seated actor as the exact character/camera/proportion reference. This is Borrin, second oldest dwarf, senior manager/ledger consultant: swept back short grey hair, square bronze spectacles, stern mature face, TWO short grey beard tips each with a brass band, red neck scarf, off-white rolled sleeves, dark worn vest with brass buttons, broad belt, brown patterned trousers and heavy stocky capped boots. Preserve ALL these features consistently; not the much older white-bearded Elder or Silver. Keep the exact semi-realistic high-detail rendering and stocky dwarf body.\nThe SECOND image shows the counted-coin inspection action. Change ONLY the actor's purposeful hands/eyes to this action, while matching the first actor's fixed seated body and SAME wooden chair. The THIRD image is the INDEPENDENT desk that will be rendered separately. NEVER include ANY desk/table, books, ledger, coin stack, pouch, quill, inkwell, ground or scenery in the output! Output Borrin+same chair+ONE held copper-coloured coin only. All furniture except the one chair is absent. Chair stays actor-owned and identical across8.\nMatch the first actor's front3/4 view looking somewhat left, full seated body including both complete visible boots. Source sheet cells have identical physical scale, floor baseline, chair width/backrest, boot spacing and camera. Boots/chair remain planted and unchanged in all8; no leg motion, hovering, stretching, new costume, face holes or camera changes. Body roots stay centered per cell with clear margins.\nLeft hand (viewer-right) stays relaxed with fingers slightly spread at roughly the original actor's left-hand position, where the independent ledger's right page edge will be: don't hold a book, no reaching through a tabletop. Heretofore right hand (viewer-left arm) permanently grips ONE small copper coin between thumb and index finger. Same coin and same right-hand ownership in all8; no pen or second coin.\nRow-major8 purposeful finite inspection poses:\n0 coin already held low above the future table, right fingers pinching the disk, gaze down toward it.\n1 lift the connected held coin/forearm a little.\n2 lift to chest inspection height, look at same coin.\n3 lift near eye/upper-chest level, coin face visible, glasses remain on nose.\n4 slightly rotate same pinched disk edge-on, wrist tilts, no release/handoff.\n5 lower coin/forearm toward chest, same coin still held.\n6 lower toward future desk height, maintaining pinch.\n7 completed low relaxed coin-inspection hold, still holding same coin (no deposit, no disappearance, no stack, no returning empty hand).\nDistinct hand/arm orientations at each frame, coherent elbow and wrist motion, no interpolation blur or duplicate frozen poses. All facial details opaque. Same separated two beard tips/brass bands, scarf and spectacles in every cell. Same seated chair/boots geometry.\nTransparent background with no floor shadow. Crisp realistic illustrated game sprites, no text, labels, borders, cartoon or pixel art. Render all8 complete uncropped actors; keep clear cell margins.\n",
+  "sourceSha256": "32f345c969c7d9a0139162eced36f6b19bf3c1db30d5aa8763ef4c0de64139d5",
+  "source": "authoring-inputs/count41.png",
+  "references": [
+    {
+      "file": "authoring-inputs/reference41-0.png",
+      "sha256": "7e908ce0645dc1ef368e8a2bf3242489306a545d65ad935895d8e82a72f4e6de"
+    },
+    {
+      "file": "authoring-inputs/reference41-1.png",
+      "sha256": "77e31ffa37965940991eded5df8b05834de7ac3d3fbf99910b1ecdbd552654ce"
+    },
+    {
+      "file": "authoring-inputs/reference41-2.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    }
+  ],
+  "method": "Built-in authored seated actor-only sheet. Whole source cell extraction, common physical scale and actual visible stationary boot roots only. No local limb painting or interpolation.",
+  "scope": "Same counted coin held throughout finite cosmetic inspection; actor owns chair/coin, independent desk owns books/inkwell/static brass coin. Native composition and gameplay acceptance remain pending."
+}

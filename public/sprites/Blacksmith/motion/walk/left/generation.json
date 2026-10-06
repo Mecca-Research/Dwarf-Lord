@@ -1,24 +1,127 @@
 {
-  "character": "Blacksmith",
-  "action": "walk",
-  "title": "Walking cycle",
-  "reference": "public/sprites/Blacksmith/animation/06-left.png",
-  "beats": [
-    "left heel contact, right toe behind",
-    "left weight down, right heel lifts",
-    "right foot airborne passing left support leg",
-    "right leg extends forward, left heel rises",
-    "right heel contact, left toe behind",
-    "right weight down, left heel lifts",
-    "left foot airborne passing right support leg",
-    "left leg extends forward, right heel rises"
+  "prompt": "Use case: precise-object-edit. In this transparent4\u00d72 eight-pose LEFT-facing Blacksmith sprite sheet, REDRAW ONLY THE TOP-RIGHT WHOLE POSE (pose3) in a clear pre-landing walk stance. Same identity, detailed realistic dwarf rendering, costume and shared scale. The RIGHT near leg reaches forward toward screen LEFT, boot airborne. The LEFT far supporting leg is bent behind it, HEEL RAISED, with its TOE DIRECTLY BELOW THE CENTER OF HIS HIPS. The far supporting toe should be tucked UNDER HIS BODY, about half a boot length closer to the body than it is now. It should NOT be stretched far to the right behind him. Draw the full knee-shin-boot chain naturally in this compact push-off, keeping the forward airborne leg and opposed arms. This is a distinct earlier toe-off posture, before the more extended trailing toe in the next bottom-left pose. Keep all other seven poses exactly as supplied, same camera and proportions. No floor, shadow, text, markings, camera turn or cropped body parts. Eight complete distinct poses, real transparent background.",
+  "method": "Built-in eight-pose whole-strip authoring and full-pose corrections; source-only whole-pose normalization and registration.",
+  "references": [
+    {
+      "file": "authoring-inputs/strip-compact47-reference-0.png",
+      "sha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e",
+      "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-pushoff47.png"
+    }
   ],
-  "kind": "walk",
-  "direction": "left",
-  "notes": "No workstation or scenery. Natural full-body walk in place with opposite-leg contact poses and counter-swinging arms. ALL EIGHT figures must face exactly left, the SAME direction as the input reference, camera never moves. Top row four phases of LEFT foot step; bottom row four phases of RIGHT foot step. Opposite leg must lead in second row. Complete left-contact/down/passing/up/right-contact/down/passing/up sequence. No duplicated leading leg across both rows. Walk IN PLACE. Do not mirror or turn around. Leave large transparent gutters and 50px margin around each figure. NO clipping.",
-  "frameCount": 8,
-  "status": "pending",
-  "destination": "public/sprites/Blacksmith/motion/walk/left",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: Walking cycle. Direction: left. No workstation or scenery. Natural full-body walk in place with opposite-leg contact poses and counter-swinging arms. ALL EIGHT figures must face exactly left, the SAME direction as the input reference, camera never moves. Top row four phases of LEFT foot step; bottom row four phases of RIGHT foot step. Opposite leg must lead in second row. Complete left-contact/down/passing/up/right-contact/down/passing/up sequence. No duplicated leading leg across both rows. Walk IN PLACE. Do not mirror or turn around. Leave large transparent gutters and 50px margin around each figure. NO clipping. Eight poses: 1. left heel contact, right toe behind | 2. left weight down, right heel lifts | 3. right foot airborne passing left support leg | 4. right leg extends forward, left heel rises | 5. right heel contact, left toe behind | 6. right weight down, left heel lifts | 7. left foot airborne passing right support leg | 8. left leg extends forward, right heel rises",
-  "sourceName": "exec-2e74577f-cc7b-4c62-8fa6-1e8d9982d86a.png"
+  "reference": "authoring-inputs/baseline47/00.png",
+  "candidate": false,
+  "editHistory": [
+    {
+      "prompt": "Use case: identity-preserve. Asset type: complete semi-realistic Dwarf Lord eight-frame walk sprite strip, true transparent background, four columns by two rows, frames0-7 left-to-right top then bottom. Image1 is this Blacksmith's accepted RIGHT-facing walk source and physical gait phases, NOT the requested camera direction. Image2 is the identity/costume/LEFT-facing camera seed. Re-render the same dwarf walking toward SCREEN LEFT from the opposite side, keeping all eight gait phases anatomically correct. This must be a new left camera render, not mirrored pixels. Bald weathered face, thick black twin-braided beard with brass cuffs, rolled cream linen sleeves, layered riveted brown leather blacksmith apron, grey-brown trousers, the same strapped iron-toed heavy boots. Stocky dwarf, unchanged outfit/material/palette, no props. Constant true side camera with slightly elevated view, always looking left; no torso rotation toward camera between frames. Same physical body proportions and continuous boot material.\nANATOMY IS CRITICAL: left leg leads in0; RIGHT leg leads in4. Because the camera sees his anatomical RIGHT side in this left-facing view, the NEAR RIGHT leg is BEHIND in0 and FORWARD in4. Draw its continuous knee/boot chain, do not keep the same leg in front. His near RIGHT arm swings FORWARD in0 (opposite the right leg behind) and BACK in4 (opposite right leg forward). Continuous opposed counter-swing both arms through all frames, no abrupt single-pose arm flip. Keep a little lateral leg spacing so the far sole can be seen instead of total overlap.\n0 left far heel newly contacting in front (screen left), left toe lifted only slightly; right near toe behind, near right hand in front. 1 left far foot planted flat nearer underneath body, right near heel rises behind; arms easing toward center. 2 left far boot planted under body, RIGHT near knee bent visibly passing forward and right boot airborne beside the support shin, arms near neutral. 3 left far forefoot push-off BEHIND body, RIGHT near leg reaching in front with its heel still airborne, near right arm backswing. 4 RIGHT near heel contacting in front, left far toe behind, near right hand behind torso. 5 RIGHT near sole planted flat moving underneath body, left far heel lifts behind, arms easing. 6 RIGHT near boot planted under body, LEFT far knee bent passing forward with its boot visibly airborne beside support shin, arms neutral. 7 RIGHT near forefoot pushes behind body and LEFT far leg reaches forward airborne, near right arm returns forward smoothly to0.\nKeep actual planted boot contact moving smoothly from in FRONT of hips to BEHIND hips during each support half while the in-place pelvis stays centered. All frames share one scale and root. Full head, arms, knees, both complete boots, visible sole material. Modest body bob only; no sprawling stride, no crossed legs, no sliding identical one-sided stance. Eight distinct full-body poses in eight equal clear slots, generous transparent gutters and margins, no cropping, no labels, no guide graphics, no floor/shadow/scenery, no painted contact targets.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-first47-reference-0.png",
+          "sha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/walk/right/source-sheet.png"
+        },
+        {
+          "file": "authoring-inputs/strip-first47-reference-1.png",
+          "sha256": "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/walk/left/00.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-first47.png",
+      "outputSha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622",
+      "rawResult": "authoring-inputs/strip-first47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Correct the gait geometry in image1, retaining the exact same Blacksmith identity, costume, detailed semi-realistic rendered sprite style, face, true transparent background, left-facing slightly elevated side camera, shared scale and four-column two-row layout with eight distinct full-body poses. Image2 is an explicit diagnostic skeleton guide ONLY for poses/limb phases, NOT for appearance. RED is the NEAR anatomical RIGHT leg and arm; BLUE is the FAR anatomical LEFT leg and arm. Use this exact limb sequencing with continuous knee-shin-boot ownership in every cell. All red/blue guide marks, lines, letters and background must be absent from the final art.\nMain correction: in top3 and bottom7 the reaching boot must be the OPPOSITE leg from that half's support boot, not the original same-leg stance; the arm on each side swings OPPOSITE its leg. In top2 and bottom6 the recovering foot must actually pass FORWARD next to the planted shin, not remain dangling behind it. Top0 has the far LEFT foot leading, near RIGHT foot behind and near RIGHT hand forward. Bottom4 has near RIGHT foot leading, far LEFT foot behind and near RIGHT hand back. Do not draw the same knee/boot in front in0 and4. The guide explicitly specifies different near/far limb chains.\nTop1 then top2 show the far LEFT planted sole traveling backward from forward of hips to under hips, near RIGHT foot raised passing from behind to ahead. Top3 far LEFT is pushing off behind while near RIGHT heel is reaching forward airborne; near RIGHT arm BACK, far LEFT arm FORWARD. Bottom5 then bottom6 show near RIGHT planted sole traveling backward under hips while far LEFT foot passes airborne toward the front. Bottom7 near RIGHT is pushing off behind while far LEFT heel reaches forward airborne; near RIGHT arm FORWARD, far LEFT arm BACK. Keep lateral leg lanes slightly separate so both soles are readable. The in-place pelvis stays fixed across all frames, modest bob only. Every slot has full complete head, arms, apron, knees and both heavy strapped iron-toed boots with unchanged material, proportions and toe-facing direction. No tools, floor, ground shadow, labels, scenery or cropped limbs. This is a complete8-frame correction, not a motion-blurred illustration, and not a sheet of repeated stance.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-guide47-reference-0.png",
+          "sha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-first47.png"
+        },
+        {
+          "file": "authoring-inputs/strip-guide47-reference-1.png",
+          "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/phase-guide47.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-guide47.png",
+      "outputSha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb",
+      "rawResult": "authoring-inputs/strip-guide47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image1 is the same detailed bald Blacksmith walking LEFT, eight poses in4 columns\u00d72 rows. Correct ONLY the THIRD pose in EACH row (pose2 top third, pose6 bottom third). Keep the other six poses, character, materials, camera, scale, transparent background and sheet layout unchanged. These two are the mid-passing phases and currently show a raised boot still trailing behind while the planted boot is ahead. REPLACE both full leg poses in these two cells: draw the SUPPORTING boot planted FLAT directly beneath the pelvis, instead of forward in front of it. The SUPPORTING knee should be vertical over that ankle. Bend the opposite SWING knee UP and FORWARD toward screen LEFT and draw its boot visibly AIRBORNE in front of the planted shin, its toe left of the planted shin, not dangling behind the body. Neither is a backward kick. Pose2 uses FAR LEFT support and NEAR RIGHT airborne passing leg; pose6 uses NEAR RIGHT support and FAR LEFT airborne passing leg. Preserve visible source boot identity: same heavy iron toe caps, leather straps, buckle, sole and heel, opposite anatomical leg ownership. Image2 shows the equivalent accepted passing pose viewed from the opposite side; use its actual bent knee/raised boot and planted leg relationship, but render from this LEFT-facing camera without mirroring. Keep slight lateral separation to expose the farther sole. Arms at neutral in these two cells, opposite leg/arm sequence in the other six cells unchanged. Continuous stocky dwarf pelvis above planted leg, no torso rotation, no extra limbs, no guide graphics, no labels, no floor or shadow. Eight distinct complete full-body poses with head/boots uncropped.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-passing47-reference-0.png",
+          "sha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-guide47.png"
+        },
+        {
+          "file": "authoring-inputs/strip-passing47-reference-1.png",
+          "sha256": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/walk/right/02.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-passing47.png",
+      "outputSha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290",
+      "rawResult": "authoring-inputs/strip-passing47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Anatomical continuity correction to the complete eight-pose LEFT-facing Blacksmith walk in image1. Keep its detailed semi-realistic rendering, stocky identity, bald head, black two-braided beard, cream shirt, layered leather apron, all eight complete poses and transparent4-column2-row layout. Image2 is the explicit pose guide, not style. IMPORTANT: both mid-passing poses currently have the SAME leg planted; correct this. Top-third pose2 must have the NEAR anatomical RIGHT thigh bending FORWARD toward screen LEFT in FRONT of the other thigh, knee lifted, its heavy boot AIRBORNE in front of the far planted shin. The FAR LEFT leg stays straight and planted under the pelvis, behind the lifted near leg. Bottom-third pose6 keeps the NEAR RIGHT leg planted under the pelvis and has FAR LEFT knee/boot airborne passing in front. The near leg must always overlap the far leg where they cross. Never swap leg ownership mid-step.\nMake boot-side anatomy unambiguous: NEAR RIGHT boot shows its brass SQUARE OUTER CALF BUCKLE and round ankle stud in every pose. FAR LEFT boot shows its plain INNER CALF leather straps, with its outer buckle naturally hidden on its opposite side. These are the same two matching boots viewed on their different surfaces, not different footwear. Top0: SQUARE near boot behind, PLAIN far heel contacting forward. Top1: SQUARE near boot raised behind, PLAIN far boot flat ahead. Top2: SQUARE near boot raised passing FORWARD, PLAIN far boot flat under hip. Top3: SQUARE near boot reaching forward airborne, PLAIN far toe pushing behind. Bottom4: SQUARE near heel contacting ahead, PLAIN far toe behind. Bottom5: SQUARE near foot flat ahead, PLAIN far boot raised behind. Bottom6: SQUARE near foot flat under hip, PLAIN far boot raised passing forward. Bottom7: SQUARE near toe pushes behind, PLAIN far heel reaches forward airborne. Arms swing opposite their anatomical legs and remain as in the current corrected sheet, neutral near passing. Preserve same true LEFT side camera in all cells, no turns. Subtle bob only, no floor, shadow, labels or colors from the guide. Both sole edges and all boots complete, zero extra limbs, same physical scale across all eight.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-anatomy47-reference-0.png",
+          "sha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-passing47.png"
+        },
+        {
+          "file": "authoring-inputs/strip-anatomy47-reference-1.png",
+          "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/phase-guide47.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-anatomy47.png",
+      "outputSha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6",
+      "rawResult": "authoring-inputs/strip-anatomy47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Preserve the complete LEFT-facing Blacksmith8-pose strip in image1, identity, outfit, arms, scale, camera,4\u00d72 layout and real transparent alpha. Correct the TRAILING anatomical RIGHT leg in the TOP-LEFT pose0 ONLY: extend it farther BACK toward screen RIGHT, with its toe still lightly touching the same ground plane. Keep his pelvis and the far left leading heel unchanged. Move the whole trailing boot/shin farther to the right, naturally extending that leg behind the body, with the toe about one-third of a boot length farther right than its current location. The trailing toe in pose0 must finish farther BEHIND the pelvis than the right support toe in bottom-right pose7, so the7-to0 supporting toe travels smoothly backward during forward walking. Currently pose0's right trailing toe is farther FORWARD than7, which creates a reverse foot slide. Redraw that complete leg naturally at the same boot size, keep full heel/shin/boot within the cell, no pelvis drift, no body shrink, no clipping. Retain the other seven poses and their near/far leg ownership; particularly2 right raised passing with left planted and6 left raised passing with right planted. Keep matching heavy iron-toed boots and unchanged square outer right buckle. In the far left boot of pose1, show the same inner plain strap surface as the far left boot in pose0; its outer buckle is on the hidden side, not suddenly visible on the inner face. No extra limbs, symbols, labels, color coding, floor or shadow.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-return47-reference-0.png",
+          "sha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-anatomy47.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-return47.png",
+      "outputSha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7",
+      "rawResult": "authoring-inputs/strip-return47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Keep the complete8-pose LEFT-facing bald Blacksmith walk, detailed semi-realistic character, costume, arms, shared scale, transparent background and4\u00d72 layout in image1. Change ONLY the FAR LEFT TRAILING SUPPORT LEG in the TOP-RIGHT cell (pose3). The near RIGHT leg is reaching forward airborne and remains untouched. The far LEFT foot behind the body is the planted toe-off support. Bring this far left boot about ONE-QUARTER OF A BOOT LENGTH toward screen LEFT, closer UNDER the pelvis, while retaining its toe on the same ground height. Bend its knee/ankle naturally to a slightly less extended push-off; preserve the same full boot, heel raised and its plain inner calf surface. Do not move his pelvis, the forward airborne boot or torso. Its toe must still be behind the pelvis, but appreciably less far behind than the far left trailing toe in the next pose4 (bottom-left). Then the support toe can travel smoothly backwards from3 to4 while the right heel lands. Currently their trailing toe positions are nearly the same, which skips the final push-off phase. Retain all seven other whole poses, including the corrected long trailing right leg in0 and the opposed raised passing legs2/6. No additional marks, floor, shadow, camera changes, resized parts, labels or cropped limbs.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-pushoff47-reference-0.png",
+          "sha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-return47.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-pushoff47.png",
+      "outputSha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e",
+      "rawResult": "authoring-inputs/strip-pushoff47.json"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. In this transparent4\u00d72 eight-pose LEFT-facing Blacksmith sprite sheet, REDRAW ONLY THE TOP-RIGHT WHOLE POSE (pose3) in a clear pre-landing walk stance. Same identity, detailed realistic dwarf rendering, costume and shared scale. The RIGHT near leg reaches forward toward screen LEFT, boot airborne. The LEFT far supporting leg is bent behind it, HEEL RAISED, with its TOE DIRECTLY BELOW THE CENTER OF HIS HIPS. The far supporting toe should be tucked UNDER HIS BODY, about half a boot length closer to the body than it is now. It should NOT be stretched far to the right behind him. Draw the full knee-shin-boot chain naturally in this compact push-off, keeping the forward airborne leg and opposed arms. This is a distinct earlier toe-off posture, before the more extended trailing toe in the next bottom-left pose. Keep all other seven poses exactly as supplied, same camera and proportions. No floor, shadow, text, markings, camera turn or cropped body parts. Eight complete distinct poses, real transparent background.",
+      "references": [
+        {
+          "file": "authoring-inputs/strip-compact47-reference-0.png",
+          "sha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-pushoff47.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-compact47.png",
+      "outputSha256": "f5a77643551e123b4373f6b365e23279472fab92e1294a7532f56747b6179f76",
+      "rawResult": "authoring-inputs/strip-compact47.json"
+    }
+  ],
+  "reviewNote": "Selected motion47 full-pose left-view correction. Native anatomy, source-material sole calibration and actual rendered fixed-view review are bound separately; no other direction or family approval."
 }

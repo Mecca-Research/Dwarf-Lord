@@ -1,0 +1,23 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "node",
+    "work/expanded-cycles/motion55/gameplay-client55.mjs",
+    "--url",
+    "http://localhost:8081/Dwarf-Lord/",
+    "--click-selector",
+    "button:has-text(\"Walk the road\")",
+    "--actions-file",
+    "work/expanded-cycles/motion55/gameplay-actions55.json",
+    "--iterations",
+    "2",
+    "--headless",
+    "false",
+    "--screenshot-dir",
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion55/skill-client-complete"
+  ],
+  "started": "2026-10-06T09:06:55.673017+00:00",
+  "completed": "2026-10-06T09:07:34.448912+00:00",
+  "exitCode": 0
+}

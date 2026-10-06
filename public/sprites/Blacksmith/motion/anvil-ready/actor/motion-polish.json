@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "sourceSha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+  "targetBodyHeight": 509,
+  "targetAnchor": [
+    280,
+    592
+  ],
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      12,
+      -1
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "landmarks": [
+    {
+      "root": [
+        280,
+        592
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        920,
+        592
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        1560,
+        592
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        2200,
+        592
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        280,
+        1232
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        920,
+        1232
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        1560,
+        1232
+      ],
+      "bodyHeight": 509
+    },
+    {
+      "root": [
+        2200,
+        1232
+      ],
+      "bodyHeight": 509
+    }
+  ],
+  "sourceCells": [
+    [
+      0,
+      0,
+      640,
+      640
+    ],
+    [
+      640,
+      0,
+      1280,
+      640
+    ],
+    [
+      1280,
+      0,
+      1920,
+      640
+    ],
+    [
+      1920,
+      0,
+      2560,
+      640
+    ],
+    [
+      0,
+      640,
+      640,
+      1280
+    ],
+    [
+      640,
+      640,
+      1280,
+      1280
+    ],
+    [
+      1280,
+      640,
+      1920,
+      1280
+    ],
+    [
+      1920,
+      640,
+      2560,
+      1280
+    ]
+  ],
+  "durationsMs": [
+    140,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    140
+  ],
+  "review": "One shared visible crown-to-near-boot basis and retained original coordinates. Bounded whole-pose integer registration fixes visible near-boot drift, without moving any local limb. No per-pose scaling. Physical prop registration, native contact, gameplay and task approval are pending."
+}

@@ -1,0 +1,36 @@
+{
+  "sourceSha256": "78efe03c914be2c03de40dd570ec436b7d48ff6d2f37d478d1ec317302a1dc74",
+  "spriteSha256": "994c204bef369b0d46b979c0982d4c679e5d65d14dd2893572cacd51e77a1bf9",
+  "reference": "../../Quartermaster/work-references/05-check-weights.png",
+  "referenceSha256": "ecf5f62b67746c9871ba92884d0c4e4e06e294435f3478fe6a59213323069f3f",
+  "placement": {
+    "crop": "alpha >=128 bounds",
+    "alphaThreshold": 128,
+    "width": 560,
+    "x": 75,
+    "y": 174,
+    "canvas": [
+      640,
+      640
+    ]
+  },
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "editInputs": [
+    {
+      "file": "authoring-inputs/initial-table.png",
+      "sha256": "f328b9c4369a0e4b55dbadf8dca910819b35cfc79d402652c469109d65c31d7b"
+    },
+    {
+      "file": "authoring-inputs/actor-reference.png",
+      "sha256": "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a"
+    }
+  ],
+  "review": "Fixed-view weight inspection beside the empty pan; no release/coin transfer or balance physics approval.",
+  "prompt": "Use case precise-object-edit. FIRST image edit target independent weighing table; SECOND image actor reference for working height only. Preserve FIRST exact width, wood/brass quality, coin bag, open ledger, number of spare weights and camera. Need table worktop HIGHER and balance pans LOWER relative to worktop to fit actor's waist-level hands. Make wooden TABLE LEGS about30 percent LONGER while ground feet fixed. Make brass BALANCE SCALE about HALF its current vertical height: shorter central upright and shorter hanging chains, retain width and brass geometry. Goal worktop about actor belt/forearm height, scale pans only a little above table, not near actor's chest. Complete full table feet and all props, genuine transparent alpha, no actor/body/hand, no text or scene. Do not merely scale whole prop; change legs and scale heights naturally.",
+  "initialPrompt": "Use case background-extraction / precise-object-edit. Reference locks exact high-quality fantasy weighing table. Create ONE complete independent workstation sprite only: the same low heavy weathered wooden four-legged table, small brass balance scale near LEFT side, left cloth coin bag and few coins, center spare cylindrical brass weights, OPEN ledger on RIGHT. Remove dwarf and all body/hands/held calibration weight entirely, reconstruct hidden table edge and scale naturally. Scale's LEFT pan must be EMPTY to receive actor-held weight (do not draw a weight suspended in air). Brass scale height moderate: highest upright about one third of full table/scale prop height. Camera exactly elevated front three-quarter reference, detailed realistic wood/brass/canvas, no dramatic scene. Complete feet on same baseline, squat table no tall legs, tabletop about waist level. True alpha transparent background, no floor or shadow, no labels/text, no human/dwarf parts. One static prop, not sheet."
+}

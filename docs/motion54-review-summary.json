@@ -1,0 +1,60 @@
+{
+  "checkpoint": "motion54",
+  "recordedAt": "2026-10-06T08:04:50.380243+00:00",
+  "baseline": "8e25a3a25f90b92b56e4b4ca92237caaec844451",
+  "mergeReady": false,
+  "runtimeChanges": false,
+  "newCycleAcceptances": 0,
+  "newFamilyAcceptances": 0,
+  "newReferenceActivations": 0,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 23,
+    "referenceActionsWithoutMapping": 42
+  },
+  "scopedSourceSets": 69,
+  "derivedActorsOutsideFrozenScope": 12,
+  "selectedLaborer": {
+    "maxWholeStrideJumpPx": 63.079,
+    "normalClosureLowerBoundPx": 9.297339120813383,
+    "materialCorrespondenceReviewed": false,
+    "unchanged": true
+  },
+  "lastUnselectedTrial": {
+    "maxWholeStrideJumpPx": 63.733,
+    "normalClosureLowerBoundPx": 7.15141746320338,
+    "materialCorrespondenceReviewed": false,
+    "wholeStrideApproved": false,
+    "loopApproved": false
+  },
+  "validation": {
+    "newMathematicalTests": 7,
+    "pythonTests": 97,
+    "pythonPassed": true,
+    "runtimeBuildAndBrowserEvidence": "Exact8e25a3a runtime retained. Use original motion53 evidence and exact-head successful CI; no new browser/render or native gait acceptance is claimed.",
+    "nodeTests": 219,
+    "nodePassed": true,
+    "archivedDiagnosticReplayExact": true
+  },
+  "nextSourceWork": [
+    "Re-inspect actual anatomical sole-material correspondence at all8 boundaries.",
+    "Correct rear-left planted boot yaw/perspective and paired heel-contact footprints; targets remain constraints, not observations.",
+    "Re-export under one common body basis; only then fit all8 contacts within unchanged6px/12px/40ms bounds.",
+    "Verify actual held contacts, all boundaries and semantic leg/arm/return continuity before any selected-source or loop approval."
+  ],
+  "scope": "Seven bounded whole-pose trials archived with exact prompts, ordered reference hashes and raw alpha outputs. The final corresponding-material hypotheses fail the closed geometry bound even with unlimited pose offsets. No art/threshold/scope/approval/gameplay mutation conceals the failure."
+}

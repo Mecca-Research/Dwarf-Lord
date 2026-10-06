@@ -6,6 +6,37 @@ import { createHash } from 'node:crypto';
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const png=p=>{const b=readFileSync(p);assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');return [b.readUInt32BE(16),b.readUInt32BE(20),b[25]]};
+test('station residual evidence matches the current sources and calibration',()=>{
+ const report=json('docs/motion-station-followup-results.json');
+ assert.equal(report.sequences.length,36);
+ for(const result of report.sequences){
+  const m=json(`public/sprites/${result.character}/motion/${result.action}/reference/manifest.json`);
+  assert.equal(result.sourceSha256,m.sourceSha256);
+  assert.equal(result.settingsSha256,m.registration.settingsSha256);
+  assert.ok(result.after.maxTranslationPx<=.71,`${result.character}/${result.action}`);
+  if(!result.baselineComparable)assert.equal(result.before,null,'changed art cannot be compared to old pixels');
+ }
+});
+test('targeted motion redraws retain their exact edit references and prompts',()=>{
+ for(const folder of ['Ginger/motion/fell-tree/reference','Elder/motion/walk/back','Helga/motion/carry-mine-timber/left']){
+  const root=resolve('public/sprites',folder),g=json(resolve(root,'generation.json'));
+  const inputs=g.editHistory??[{...g.editInput,input:g.editInput.file,prompt:g.prompt}];
+  for(const input of inputs){assert.equal(hash(resolve(root,input.input)),input.sha256);assert.ok(input.prompt.length>100)}
+ }
+});
+test('directional authoring templates resolve every view to the correct eight-frame family',()=>{
+ const templates=json('public/sprites/directional-motion-templates.json').templates;
+ assert.equal(templates.length,3);
+ for(const template of templates){
+  assert.equal(template.productionReady,false);assert.equal(template.intendedPhases.length,8);
+  assert.deepEqual(template.directions.map(d=>d.angleFromFrontDegrees),[0,45,90,135,180,225,270,315]);
+  for(const direction of template.directions){
+   const m=json(resolve('public/sprites',direction.manifest));
+   assert.equal(m.character,template.sourceCharacter);assert.equal(m.action,template.action);
+   assert.equal(m.direction,direction.id);assert.equal(m.frameCount,8);
+  }
+ }
+});
 test('expanded motion plan preserves the requested character and directional coverage',()=>{
  const p=json('docs/expanded-animation-plan.json');
  assert.equal(p.entries.length,153);
@@ -26,6 +57,7 @@ test('every exported motion has eight transparent frames, atlas, source and anim
    assert.equal(m.frames.length,8);assert.equal(m.frameCount,8);assert.equal(m.productionReady,false);
    assert.deepEqual(m.playback.order,[0,1,2,3,4,5,6,7]);
    assert.equal(hash(resolve(folder,m.source)),m.sourceSha256,'stale export after source replacement');
+   assert.deepEqual(m.sourceFrameOrder??[0,1,2,3,4,5,6,7],json(resolve(folder,'generation.json')).frameOrder??[0,1,2,3,4,5,6,7]);
    assert.ok(existsSync(resolve(folder,m.reference)));assert.deepEqual(png(resolve(folder,m.atlas.file)),[5120,640,6]);
    const apng=readFileSync(resolve(folder,m.preview));const offset=apng.indexOf(Buffer.from('acTL'));assert.ok(offset>0);assert.equal(apng.readUInt32BE(offset+4),8);
    const hashes=new Set();for(const frame of m.frames){assert.deepEqual(png(resolve(folder,frame.file)),[640,640,6]);hashes.add(hash(resolve(folder,frame.file)));total++;}
@@ -41,5 +73,243 @@ test('new task references resolve to their exported initial pose without duplica
   const item=json(refs).supplementalReferences.find(r=>r.id===e.action&&r.origin==='expanded-motion');
   assert.ok(item,e.destination);assert.equal(item.staticReference,true);assert.equal(item.productionReady,false);
   assert.equal(resolve(dirname(refs),item.file),resolve(e.destination,'00.png'));
+ }
+});
+
+test('registered motion stays inside its canvas and preserves authored timing in APNG',()=>{
+ const plan=json('docs/expanded-animation-plan.json');
+ for(const entry of plan.entries){
+  const folder=resolve(entry.destination),m=json(resolve(folder,'manifest.json'));
+  assert.equal(m.registration.exportVersion,2,entry.destination);
+  const reviewed = (entry.character==='Elder' && ['eat-stew','eat-bread','laugh-seated','laugh-and-gesture'].includes(entry.action) && entry.direction==='reference') ||
+    (entry.character==='Blacksmith' && entry.action==='walk' && ['right','left'].includes(entry.direction)) ||
+    (entry.direction==='reference' && ((entry.character==='Blacksmith' && ['hammer-raised','hammer-contact'].includes(entry.action)) ||
+      (entry.character==='Ginger' && entry.action==='fell-tree')));
+  assert.equal(m.playback.loopApproved,reviewed,entry.destination);
+  if(reviewed){assert.ok(existsSync(resolve(folder,'loop-approval.json')));assert.equal(m.loopReview.status,'approved');}
+  const finiteActions = {
+   Elder:['inspect-pickaxe-in-lap','examine-pickaxe-crack'],
+   Blacksmith:['anvil-ready','inspect-tool','file-tool-edge','repair-pickaxe-handle','fix-wheelbarrow'],
+   Borrin:['desk-writing','review-open-ledger','turn-ledger-page','explain-at-desk','stamp-paperwork','explain-closed-ledger','explain-open-ledger','count-coins'],
+   Cook:['chop-vegetables','peel-potatoes','knead-dough','stir-cauldron','mix-ingredients','serve-stew','cut-boar-meat','fillet-fish'],
+   'Female Miner':['examine-sample','repair-pickaxe','pickaxe-ready'],
+   Helga:['inspect-mineral','bind-tool-handle','pickaxe-ready','pickaxe-contact'],
+   Ginger:['sharpen-hatchet','sharpen-axe','saw-timber','build-timber-crate','chop-downed-log','build-barrel'],
+   Laborer:['build-crate','stack-crates','shovel-rubble','sweep-wood-chips','lift-crate'],
+  };
+  const finiteReviewed = entry.direction==='reference' && Boolean(finiteActions[entry.character]?.includes(entry.action));
+  assert.equal(Boolean(m.playback.taskApproved),finiteReviewed,entry.destination);
+  if(finiteReviewed){assert.equal(m.playback.mode,'once-hold');assert.equal(m.taskReview.status,'approved');}
+  assert.equal(m.productionReady,false,'a scoped seated review cannot approve all production motion');
+  assert.equal(m.playback.durationMs,m.frames.reduce((n,f)=>n+f.durationMs,0));
+  const configPath=resolve(folder,'motion-polish.json');
+  if(existsSync(configPath)){
+   const config=json(configPath);
+   assert.equal(config.sourceSha256,m.sourceSha256,'recalibrate changed source');
+   if(config.bodyHeight)assert.ok(Math.abs(m.sharedScale*config.bodyHeight-config.targetBodyHeight)<.001);
+  }
+  for(const f of m.frames){
+   const [x,y]=f.placement,[x0,y0,x1,y1]=f.sourceBounds;
+   assert.ok(x>=0&&y>=0&&x+Math.round((x1-x0)*m.sharedScale)<=640&&y+Math.round((y1-y0)*m.sharedScale)<=640,entry.destination);
+   assert.ok(Math.abs(x+f.sourceAnchor[0]*m.sharedScale-f.groundAnchor[0])<=.501);
+   assert.ok(Math.abs(y+f.sourceAnchor[1]*m.sharedScale-f.groundAnchor[1])<=.501);
+  }
+  const bytes=readFileSync(resolve(folder,m.preview)),durations=[];let repeats;
+  for(let pos=8;pos<bytes.length;){
+   const len=bytes.readUInt32BE(pos),type=bytes.toString('ascii',pos+4,pos+8),data=pos+8;
+   if(type==='acTL')repeats=bytes.readUInt32BE(data+4);
+   if(type==='fcTL')durations.push(bytes.readUInt16BE(data+20)*1000/(bytes.readUInt16BE(data+22)||100));
+   pos+=len+12;
+  }
+  assert.deepEqual(durations,m.frames.map(f=>f.durationMs));
+  assert.equal(repeats,m.playback.mode==='once-hold'?1:0);
+ }
+});
+
+test('direction families use a common body target instead of independently fitting tool reach',()=>{
+ const entries=json('docs/expanded-animation-plan.json').entries,groups=new Map();
+ for(const e of entries.filter(e=>e.kind==='walk'||e.direction!=='reference')){
+  const m=json(resolve(e.destination,'manifest.json')),key=e.character+'/'+e.action;
+  if(!groups.has(key))groups.set(key,[]);groups.get(key).push(m);
+ }
+ for(const [key,views] of groups){
+  assert.equal(views.length,8,key);
+  assert.equal(new Set(views.map(m=>m.registration.targetBodyHeight)).size,1,key);
+  assert.ok(views.every(m=>m.registration.targetBodyHeight>0&&m.registration.scaleScope==='directional-body-height'),key);
+ }
+});
+
+test('reviewed gait assemblies preserve traceable, distinct authored source poses',()=>{
+ for(const [name,direction] of [...['Borrin','Cook','Elder','Ginger','Helga'].map(name=>[name,'front']),['Blacksmith','right'],['Blacksmith','left'],['Blacksmith','back-right'],['Ginger','back-right'],['Laborer','back-left'],['Elder','back']]){
+  const folder=resolve('public/sprites',name,'motion/walk',direction),path=resolve(folder,'assembly.json');
+  const assembly=json(path),settings=json(resolve(folder,'motion-polish.json'));
+  assert.equal(settings.assemblySha256,hash(path),'rebuild sheet after changing selected poses');
+  assert.equal(assembly.poses.length,8);
+  assert.equal(new Set(assembly.poses.map(p=>`${p.input}:${p.pose}`)).size,8);
+  for(const source of assembly.inputs){
+   assert.equal(source.sha256,hash(resolve(folder,source.file)));
+   if(source.reference)assert.equal(source.referenceSha256,hash(resolve(folder,source.reference)));
+   for(const field of ['originalPoseReference','secondaryReference'])if(source[field])assert.equal(source[`${field}Sha256`],hash(resolve(folder,source[field])));
+  }
+  for(const pose of assembly.poses){
+   const source=assembly.inputs.find(s=>s.id===pose.input);assert.ok(source);
+   assert.ok(Number.isInteger(pose.pose)&&pose.pose>=0&&pose.pose<source.poseCount);
+  }
+ }
+});
+
+test('accepted left gait retains exact authoring inputs and all rendered sole handoffs',()=>{
+ const folder=resolve('public/sprites/Blacksmith/motion/walk/left');
+ const generation=json(resolve(folder,'generation.json'));
+ assert.equal(generation.editHistory.length,7);
+ assert.equal(new Set(generation.editHistory.map(step=>step.outputSha256)).size,7);
+ for(const step of generation.editHistory){
+  assert.equal(hash(resolve(folder,step.output)),step.outputSha256);
+  assert.ok(step.prompt.length>100);
+  for(const reference of step.references){
+   assert.ok(!reference.file.startsWith('/'),'source references must remain portable');
+   assert.equal(hash(resolve(folder,reference.file)),reference.sha256);
+  }
+ }
+ const archive=json(resolve(folder,'authoring-inputs/baseline47/archive.json'));
+ for(const [file,digest] of Object.entries(archive.files)){
+  assert.equal(hash(resolve(folder,'authoring-inputs/baseline47',file)),digest);
+ }
+ const manifest=json(resolve(folder,'manifest.json'));
+ const observations=json('docs/blacksmith-left-whole-stride-observations.json');
+ const rendered=json('docs/art-review/motion47/Blacksmith-left-rendered-stride.json');
+ assert.equal(observations.binding.sourceSha256,hash(resolve(folder,'source-sheet.png')));
+ assert.equal(observations.binding.atlasSha256,hash(resolve(folder,'atlas.png')));
+ assert.deepEqual(observations.binding.frameSha256,manifest.frames.map(frame=>hash(resolve(folder,frame.file))));
+ assert.deepEqual(rendered.sourceBinding,observations.binding);
+ assert.equal(rendered.boundaries.length,24);
+ for(let cycle=0;cycle<3;cycle++){
+  assert.deepEqual(rendered.boundaries.slice(cycle*8,cycle*8+8).map(b=>[b.from,b.to]),
+   Array.from({length:8},(_,i)=>[i,(i+1)%8]));
+ }
+ assert.ok(rendered.holds.filter(sample=>sample.moved>0).length>=8);
+ assert.ok(rendered.holds.every(sample=>sample.contactDriftSpritePx<.5));
+ assert.ok(rendered.boundaries.every(sample=>sample.contactJumpSpritePx<=6));
+ assert.deepEqual(rendered.errors,[]);
+ assert.equal(manifest.playback.loopApproved,true);
+ assert.equal(manifest.productionReady,false);
+});
+
+test('runtime actor layers and persistent stations retain source provenance and calibration',()=>{
+ for(const entry of json('docs/runtime-motion-layers.json').entries){
+  const root=resolve(entry.destination),m=json(resolve(root,'manifest.json')),assembly=json(resolve(root,'assembly.json'));
+  assert.equal(hash(resolve(root,'source-sheet.png')),m.sourceSha256);
+  assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
+  for(const input of assembly.inputs){assert.equal(hash(resolve(root,input.file)),input.sha256);assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);}
+  const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[`${entry.action}/${entry.direction}`];
+  assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
+  assert.equal(m.frames.length,8);assert.equal(m.playback.loopApproved,entry.character!=='Laborer');
+  assert.equal(Boolean(m.playback.taskApproved),entry.character==='Laborer');
+  if(m.playback.loopApproved){const approval=json(resolve(root,'loop-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
+  if(m.playback.taskApproved){const approval=json(resolve(root,'task-approval.json'));assert.equal(approval.binding.sourceSha256,m.sourceSha256);assert.equal(m.playback.mode,'once-hold');for(const dependency of approval.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);}
+  for(const f of m.frames)assert.deepEqual(png(resolve(root,f.file)),[640,640,6]);
+ }
+ for(const id of ['cutting-block','anvil','forestry-trunk','storage-pallet','ledger-desk','masonry-bench','weighing-table']) {
+ const root=resolve('public/sprites/workstations',id),g=json(resolve(root,'generation.json'));
+ assert.equal(hash(resolve(root,'source.png')),g.sourceSha256);assert.equal(hash(resolve(root,'sprite.png')),g.spriteSha256);
+ assert.equal(hash(resolve(root,g.reference)),g.referenceSha256);assert.deepEqual(png(resolve(root,'sprite.png')),[640,640,6]);
+ if(g.completionLayer){assert.equal(hash(resolve(root,g.completionLayer.source)),g.completionLayer.sourceSha256);assert.equal(hash(resolve(root,g.completionLayer.file)),g.completionLayer.sha256);}
+ }
+});
+
+test('additional work actions require exact actor, station and finite task evidence',()=>{
+ const additions=json('docs/runtime-motion-additions.json').entries;
+ assert.deepEqual(additions.map(e=>e.action),['inspect-tool','repair-pickaxe-handle','peel-potatoes','count-coins','build-barrel','review-open-ledger','explain-at-desk','stamp-paperwork','knead-dough','stir-cauldron','anvil-ready','mix-ingredients','hammer-raised','file-tool-edge','explain-closed-ledger']);
+ for(const entry of additions){
+  const root=resolve(entry.destination),m=json(resolve(root,'manifest.json'));
+  assert.equal(m.playback.mode,'once-hold');assert.equal(m.playback.taskApproved,true);
+  assert.equal(m.playback.loopApproved,false);assert.equal(m.productionReady,false);
+  const a=json(resolve(root,'task-approval.json'));
+  assert.equal(a.binding.sourceSha256,hash(resolve(root,'source-sheet.png')));
+  assert.deepEqual(a.binding.frameSha256,m.frames.map(f=>hash(resolve(root,f.file))));
+  assert.equal(a.binding.atlasSha256,hash(resolve(root,m.atlas.file)));
+  for(const dependency of a.dependencies)assert.equal(hash(resolve(root,dependency.file)),dependency.sha256);
+  if(['knead-dough','stir-cauldron','anvil-ready','mix-ingredients','hammer-raised','file-tool-edge','explain-closed-ledger'].includes(entry.action)){
+   const source=json(resolve(root,'generation.json'));
+   assert.equal(source.method,'source-pixel-foreground-stencils');
+   assert.equal(source.originalFrames.length,8);assert.equal(source.actorPolygons.length,8);
+   for(const input of source.originalFrames)assert.equal(hash(resolve(input.file)),input.sha256);
+   const evidence=json({
+    'knead-dough':'docs/art-review/motion48/cook-kneading/source-pixel-identity48.json',
+    'stir-cauldron':'docs/art-review/motion50/cook-cauldron/source-pixel-identity50.json',
+    'anvil-ready':'docs/art-review/motion52/blacksmith-ready/source-pixel-identity52.json',
+    'mix-ingredients':'docs/art-review/motion53/cook-mixing/source-pixel-identity53.json',
+    'hammer-raised':'docs/art-review/motion55/blacksmith-raised/source-pixel-identity55.json',
+    'file-tool-edge':'docs/art-review/motion56/blacksmith-filing/source-pixel-identity56.json',
+    'explain-closed-ledger':'docs/art-review/motion58/borrin-standing/source-pixel-identity58.json',
+   }[entry.action]);
+   assert.equal(evidence.geometryEdited,false);
+   assert.deepEqual(evidence.originalFrameOrder,[0,1,2,3,4,5,6,7]);
+   assert.deepEqual(evidence.samples.map(s=>s.exportedSha256),m.frames.map(f=>hash(resolve(root,f.file))));
+   assert.ok(evidence.samples.every(s=>s.sameOpaqueOriginalPixels&&s.visiblePixels>0));
+  }else{
+   const assembly=json(resolve(root,'assembly.json'));
+   assert.equal(json(resolve(root,'motion-polish.json')).assemblySha256,hash(resolve(root,'assembly.json')));
+   for(const input of assembly.inputs){
+    assert.equal(hash(resolve(root,input.file)),input.sha256);
+    if(input.reference)assert.equal(hash(resolve(root,input.reference)),input.referenceSha256);
+   }
+  }
+  assert.equal(new Set(m.frames.map(f=>hash(resolve(root,f.file)))).size,8);
+  const placement=json(`public/sprites/${entry.character}/motion/render-calibration.json`).actions[entry.action+'/actor'];
+  assert.equal(placement.sourceSha256,m.sourceSha256);assert.equal(placement.foregroundPolygons.length,8);
+  const stationRoot=resolve('public/sprites/workstations',entry.station),station=json(resolve(stationRoot,'generation.json'));
+  assert.equal(hash(resolve(stationRoot,'source.png')),station.sourceSha256);
+  assert.equal(hash(resolve(stationRoot,'sprite.png')),station.spriteSha256);
+ }
+});
+
+test('log contact review binds all views and accepts only visible rear occlusion',()=>{
+ const review=json('docs/helga-log-contact-review.json');assert.equal(review.entries.length,8);assert.equal(review.loopApproved,false);
+ for(const entry of review.entries){
+  const root=resolve(entry.folder),m=json(resolve(root,'manifest.json'));
+  assert.deepEqual(entry.binding,{sourceSha256:hash(resolve(root,'source-sheet.png')),settingsSha256:m.registration.settingsSha256,frameSha256:m.frames.map(f=>hash(resolve(root,f.file))),durationsMs:m.frames.map(f=>f.durationMs)});
+  assert.deepEqual(entry.reviewedFrames,[0,1,2,3,4,5,6,7]);
+ }
+ const rear=review.entries.find(e=>e.direction==='back-left');assert.equal(rear.visibleContact,'accepted-visible-occlusion');
+ assert.match(review.occlusionReview.scope,/No hidden-anatomy/);
+});
+
+test('Borrin foreground contours keep his vest off the open ledger',()=>{
+ const c=json('public/sprites/Borrin/motion/render-calibration.json').actions['desk-writing/actor'];
+ function contains(poly,[x,y]) {
+  let inside=false;
+  for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+   const [a,b]=poly[i],[d,e]=poly[j];
+   if(((b>y)!==(e>y))&&x<(d-a)*(y-b)/(e-b)+a)inside=!inside;
+  }
+  return inside;
+ }
+ for(const polygons of c.foregroundPolygons){
+  assert.equal(polygons.some(p=>contains(p,[260,330])),false,'vest behind quill must not cover paper');
+  assert.equal(polygons.some(p=>contains(p,[360,370])),false,'pants below hand stay behind desk');
+  assert.equal(polygons.some(p=>contains(p,[430,340])),true,'resting hand remains above paper');
+ }
+});
+
+test('Borrin ledger review and explanation preserve visible fingers without foreground furniture',()=>{
+ const calibration=json('public/sprites/Borrin/motion/render-calibration.json').actions;
+ const observations=json('docs/art-review/motion44/Borrin-ledger-contact.json');
+ function contains(poly,[x,y]) {
+  let inside=false;
+  for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+   const [a,b]=poly[i],[d,e]=poly[j];
+   if(((b>y)!==(e>y))&&x<(d-a)*(y-b)/(e-b)+a)inside=!inside;
+  }
+  return inside;
+ }
+ for(const action of ['review-open-ledger','explain-at-desk']){
+  const observation=observations.find(o=>o.config.actor.endsWith(`/${action}/actor`));
+  assert.equal(observation.config.binding.sourceSha256,hash(`${observation.config.actor}/source-sheet.png`));
+  for(const [frame,polygons] of calibration[action+'/actor'].foregroundPolygons.entries()){
+   assert.ok(polygons.some(p=>contains(p,observation.config.points[frame])),'the reviewed pointing finger remains above the ledger');
+   assert.equal(polygons.some(p=>contains(p,[320,350])),false,'belt and vest stay behind the desk');
+   assert.equal(polygons.some(p=>contains(p,[495,352])),false,'the chair post stays behind the book stack');
+  }
  }
 });

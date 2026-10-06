@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Female Miner",
   "action": "pickaxe-swing",
   "title": "Isolated pickaxe swing",
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3799533799533799,
+  "sharedScale": 0.9459369227002604,
   "frameCount": 8,
   "frames": [
     {
@@ -31,16 +31,16 @@
         438
       ],
       "sourceAnchor": [
-        124.5,
-        382
+        143.0,
+        361.027
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        148,
-        89
+        185,
+        234
       ]
     },
     {
@@ -55,16 +55,16 @@
         422
       ],
       "sourceAnchor": [
-        183.0,
-        360
+        158.0,
+        355.027
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        67,
-        119
+        171,
+        240
       ]
     },
     {
@@ -79,16 +79,16 @@
         422
       ],
       "sourceAnchor": [
-        106.5,
-        414
+        135.0,
+        409.027
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        173,
-        45
+        192,
+        189
       ]
     },
     {
@@ -103,16 +103,16 @@
         433
       ],
       "sourceAnchor": [
-        106.5,
-        429
+        129.0,
+        413.027
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        173,
-        24
+        198,
+        185
       ]
     },
     {
@@ -127,16 +127,16 @@
         846
       ],
       "sourceAnchor": [
-        114.5,
-        342
+        75.0,
+        343.52700000000004
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        162,
-        144
+        249,
+        251
       ]
     },
     {
@@ -151,16 +151,16 @@
         883
       ],
       "sourceAnchor": [
-        147.0,
-        354
+        181.0,
+        318.52700000000004
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        117,
-        127
+        149,
+        275
       ]
     },
     {
@@ -175,16 +175,16 @@
         847
       ],
       "sourceAnchor": [
-        169.5,
-        328
+        163.0,
+        328.52700000000004
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        86,
-        163
+        166,
+        265
       ]
     },
     {
@@ -199,18 +199,28 @@
         869
       ],
       "sourceAnchor": [
-        135.5,
-        371
+        159.0,
+        349.52700000000004
       ],
       "groundAnchor": [
         320,
-        616
+        576
       ],
       "placement": [
-        133,
-        104
+        170,
+        245
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,12 +242,41 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven"
+  },
+  "registration": {
+    "method": "body-height-and-row-ground-calibration",
+    "targetAnchor": [
+      320,
+      576
+    ],
+    "targetBodyHeight": 340,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "d75106cdc26b0c6d7fca7b24131d5a9b110b3091e3cdad36553213ff4838b283",
+    "exportVersion": 2
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
   "review": {
     "status": "needs-visual-review",
-    "issues": [],
+    "issues": [
+      "Body height calibrated across this directional family. Estimated roots and remaining authored pose drift still need visual approval.",
+      "One-shot preview holds its completed state. Any repeat requires an authored reset or a gameplay state transition."
+    ],
     "poseCaptions": "intended-poses-not-verified",
     "requiredChecks": [
       "character identity",

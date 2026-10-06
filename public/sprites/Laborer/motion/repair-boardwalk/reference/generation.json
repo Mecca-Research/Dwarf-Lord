@@ -1,24 +1,92 @@
 {
+  "actorOnly": false,
+  "prompt": "Correct this eight-pose 4x2 transparent kneeling Laborer sheet. Keep the full eight frames in the same order and same semi-realistic identity. Make these specific geometry changes, not just texture retouches: In pose2 (top row third) move the ENTIRE forward boot and its lower shin toward image-right by thirty raw image pixels, without moving the near knee or posterior boot. In pose3 (top row fourth) move the entire forward boot and lower shin to image-right by forty raw pixels, without moving the near knee or posterior boot. In pose6 (bottom row third) move the entire forward boot and lower shin to image-right by fifteen raw pixels. These changes restore the same stable horizontal spacing between the rear boot and forward boot present in pose0. Keep the near kneeling knee, posterior boot and grounded trousers in pose2,3,6 at their present location; the forward leg must extend farther to the right rather than pulling in toward the near knee. Retain complete realistic foot/ankle anatomy. All other poses retain their foot geometry. All eight characters must keep identical physical dimensions with no per-pose resize or distorted legs. Right hand retains ONE identical wooden-handled steel hammer throughout; left hand braces flat on image-right. Retain this exact existing arm sequence:0 low ready,1 lift,2 half raise,3 overhead apex,4 halfway descent,5 low contact,6 little rebound,7 low settled hammer. The hammer never disappears or switches hands. Preserve apron, brown three-braided brass-bound beard, bald face, cream sleeves, vest, pouches, and high-quality texture. Also FIX THE CLIPPED FINGERS on top-right pose3: reconstruct the complete bracing left hand with all fingers and add generous transparent margin around every full character. Widen the total sheet or move all fourth-column sprites as needed to leave at least32 pixels of blank margin beyond their fingertips. No character touches any image edge; no raised hammer clips. Fully transparent PNG, no floor, no props, no shadows, no labels, no grid. The resulting stationary kneeling supports should not change spacing during hammer raising.",
+  "reference": "authoring-inputs/previous-source-sheet.png",
+  "referenceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+  "editHistory": [
+    {
+      "source": "authoring-inputs/laborer-boardwalk-actor.png",
+      "sourceSha256": "9b8ac13de74071063c7319a61c5b5d1f7c3d9668be7e9540a233fa4d48add80a",
+      "prompt": "Edit the COMPLETE eight-pose Laborer dwarf boardwalk-repair sheet in image1 together as one coherent eight-pose animation, preserving its four-column/two-row layout, isometric front-right camera, stocky kneeling anatomy, identity, lighting/materials and equal scale. Image2 shows his approved actor identity: bald head, heavy brown eyebrows, broad nose, THREE brass-bound brown beard braids, cream rolled sleeves, brown leather vest, belt/pouch, trousers and rugged boots. Keep that exact dwarf, never a human or a different hairstyle.\n\nCreate the ACTOR-only layer: REMOVE all boardwalk planks, posts, toolbox, barrel, nails and scenery from every pose. Preserve/reconstruct the complete kneeling body, both planted knees and ONE boot resting ahead on the imaginary boardwalk surface, with generous transparent gutters. The other lower leg is tucked behind the kneeling knee, not a second standing gait. Keep knee/boot spacing, body/root and camera FIXED throughout all eight poses. Torso can make a small natural lean for the strike but support limbs must stay put; do not rescale raised-arm or leaning poses.\n\nFix tool ownership and author a real smooth single hammer stroke. Exactly ONE iron-headed hammer with one ash-wood handle is visibly held in the anatomical RIGHT hand (image-LEFT arm) in EVERY pose0-7. It is already held at the start, never spawns from empty hands, disappears, duplicates, changes hand or turns into a pickaxe. The anatomical LEFT hand (image-RIGHT) braces the same imaginary plank surface, fingers flat, stationary and AWAY from the hammer's contact point; it never holds a hammer, nail or another tool. No pickup, nail placement or unseen handoff occurs.\n\nEight distinct full poses in row order:\n0 low ready hammer hovering above the imaginary plank, free palm flat to its right;\n1 right elbow begins raising hammer, head rises modestly;\n2 half-raised hammer, proper midway lift;\n3 full but compact raised hammer over the work point, same grip;\n4 visibly halfway DESCENDING head and arm, between apex3 and contact5;\n5 hammer head makes ONE low contact on the imaginary plank/fastener, opposite palm safely to the right;\n6 small low rebound, hammer still in right hand;\n7 settled low ready finish, hammer still visibly held in the SAME right hand, left palm still rests flat.\nKeep identical handle/head proportions and connected hand/handle/head anatomy. Do not omit the genuine descending4, flip the head, swap hands or show an extra spare hammer. No plank, nails, toolbox, posts, barrels, chair, text, floor, cast shadow, border or matte anywhere. True transparent alpha. Fully visible hands/tools/support limbs in every cell, no neighboring fragments or clipped raised head. High-quality semi-realistic rendered game sprites matching the supplied identity. Author all eight poses together.\n",
+      "references": [
+        {
+          "file": "authoring-inputs/reference-sheet.png",
+          "sha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea"
+        },
+        {
+          "file": "authoring-inputs/identity-reference.png",
+          "sha256": "6d37df525537f2781253b3052892aaf89b6101d523e770d9eff49b58cb0dd133"
+        }
+      ],
+      "method": "Built-in whole-eight-pose edit, preserved4x2 layout and common camera/identity. No locally painted or warped limbs."
+    },
+    {
+      "source": "authoring-inputs/laborer-boardwalk-arc.png",
+      "sourceSha256": "26bbd1a56a09017c05a9335eb20f0e42e5925baa472d7c163189459ff74334fb",
+      "prompt": "Edit this COMPLETE eight-pose Laborer kneeling hammer actor animation together, keeping the four-column/two-row layout and every body's exact head, clothes, kneeling legs, boots, support spacing, scale, camera and positions. Preserve the exact same single right-hand hammer and left flat bracing palm in every pose. Correct the SWING ARC in the whole sheet: pose4 (bottom-left) is currently almost down already. Put its hammer at a genuinely HALFWAY DESCENDING angle and height between pose3's full apex and pose5's low contact. At the source cell size, hammer head should be around local y200-220 in pose4, midway between apex near y30 and contact near y400, with elbow/arm naturally bent. Do not jump from apex straight to nearly-low contact. Pose6 (third bottom) should be a SMALL rebound after contact5: raise the head only about30-45 source pixels above the low contact, keep grip and shaft connected, keep left palm flat. Pose7 remains the settled low ready finish in the SAME right hand, matching0. Preserve0/1/2/3/5/7 and all eight leg/knee/boot roots, body sizes, free hands and identity exactly. Do not change pose order, erase hammer, swap hands, add nails/props, move feet or redraw chair/furniture (none). All eight full authored poses together, generous gutters, high-quality semi-realistic Laborer with bald head and three brass-bound brown beard braids. True transparent alpha, no floor/shadow/text/scenery.\n",
+      "references": [
+        {
+          "file": "authoring-inputs/laborer-boardwalk-actor.png",
+          "sha256": "9b8ac13de74071063c7319a61c5b5d1f7c3d9668be7e9540a233fa4d48add80a"
+        }
+      ],
+      "method": "Built-in whole-eight-pose edit, preserved4x2 layout and common camera/identity. No locally painted or warped limbs."
+    },
+    {
+      "source": "authoring-inputs/laborer-boardwalk-supports.png",
+      "sourceSha256": "fb1f3e16b3bd9a0348959bb30a3c8c59e0b6b3055c4ea44d8ad8a953f66a7658",
+      "prompt": "Edit this complete eight-pose, four-column by two-row transparent Laborer hammering sprite sheet. Preserve its high quality semi-realistic style, bald stocky dwarf identity, three brass-banded brown beard braids, cream rolled sleeves, weathered brown vest, apron and pouches, same camera, same eight arm-and-hammer poses and anatomical right-hand hammer ownership. Keep all eight full-body sprites, generous separate margins, no clipping, no scenery or floor, no text. Fix ONLY the stationary kneeling lower-body geometry and the ground-bracing left hand positions across this whole sheet. He is kneeling in place through the entire swing. Use pose 0 at top left as the exact lower-body model: the bent near knee, posterior near boot cap, forward far boot and its visible sole rim must have identical size, spacing, orientation and relative positions to the hips in ALL EIGHT poses, including pose 2 and pose 3 where he raises the hammer. His knees, boots and ground-bracing free left palm remain stationary in world space; they do not draw closer together when he raises his arm. Keep pose 0 foot spacing in poses 1,2,3,4,5,6,7. Do not stretch the torso or scale individual poses. In each cell the same knee and boots should be centered at the same cell-relative x and y, with the hammer raised overhead only in pose 3. Preserve the already correct upper arm motion: 0 hammer held low in right hand,1 starts lifting,2 half raise,3 apex overhead,4 midway descending,5 low hammer contact,6 small low rebound,7 low settled hammer retained in SAME right hand. There is exactly one hammer per pose, continuous grip and unchanged hammer design. Never switch hands, never create spare tools. Free left hand stays planted forward-right, far from hammer strike. Do not remove its fingers. Deliver one transparent PNG sprite sheet with eight genuinely distinct authored upper-body poses and stable stationary kneeling supports; no local warping appearance, no grid or words.\n",
+      "references": [
+        {
+          "file": "authoring-inputs/laborer-boardwalk-arc.png",
+          "sha256": "26bbd1a56a09017c05a9335eb20f0e42e5925baa472d7c163189459ff74334fb"
+        }
+      ],
+      "method": "Built-in whole-eight-pose edit, preserved4x2 layout and common camera/identity. No locally painted or warped limbs."
+    },
+    {
+      "source": "authoring-inputs/laborer-boardwalk-stable.png",
+      "sourceSha256": "0793d84298efa3e227a6cf1785fc652317c7ba0938bc0baf87596492e955d312",
+      "prompt": "Re-author a complete eight-frame hammer swing as ONE 4-column by 2-row transparent PNG sprite sheet. The single supplied transparent kneeling Laborer is the exact character and stable lower-body pose reference. The supplied eight-frame sheet establishes the required arm swing stages, but its lower body has an ERROR: the two feet get closer during the apex. You must replace that erroneous geometry. Treat the single-pose reference like a fixed planted skeleton: same posterior near boot, same forward far boot, same grounded knee and identical horizontal foot separation in all eight poses, exactly matching the reference. Do not merely retouch the current multi-frame image. Construct the eight full characters on a new evenly spaced grid. Each 640-equivalent cell has the same near boot center at cell x=242 y=368, the same near knee at x=312 y=374, the same forward far boot toe at x=462 y=377, and the same supporting left palm at x=522 y=383. Keep these ratios at any output resolution. Both stationary boot centers have separation220cellpx; this spacing must NOT shrink in frame2 or3. Preserve stable heel/toe silhouettes, complete boots, fixed knees, same leather grain, folds and boot soles. All hammer movement is above the fixed lower body. The bald stocky dwarf has three brass-banded brown beard braids, weathered brown vest, cream rolled sleeves, brown kneeling trousers, leather pouches, no helmet. Photorealistic detailed painted game sprite style, clear natural anatomy. Exactly ONE wooden-handled steel-head hammer is held continuously by the anatomical RIGHT hand, visually on image-left. The left hand braces flat ahead on image-right and never picks up a tool. Eight distinct right-hand poses reading left-to-right then next row:0 low-ready hammer retained horizontally at x=405 y=379,1 initial lift with head at x=414 y=320,2 half-raise head at x=407 y=223,3 overhead apex head at x=402 y=38,4 authored mid-descent head at x=420 y=248,5 low contact head face at x=420 y=397,6 small rebound head face at x=420 y=347,7 low-ready retained hammer with bottom at x=420 y=389. Preserve full wooden handle from palm to head at every angle and keep hammer head design and size the same. No duplicated hammers, missing grips, switched hands, animation trails, dropped tools, scenery, plank, shadows, nails, props, text or grid lines. Generous transparent margins. All eight individual characters are fully visible and separated. Kneeling height stays the SAME irrespective of hammer elevation. Torso may rotate gently at the waist but legs and boots and bracing palm are immobile. This is a stationary light tap of an already seated fastener; low-ready has the tool already in hand and final low pose keeps it. Deliver eight coherent upper-body motion poses above the exact identical stationary kneeling supports.\n",
+      "references": [
+        {
+          "file": "authoring-inputs/kneeling-single-reference.png",
+          "sha256": "878a60656bba0b656484fe7038455091c54b785acd070bb9759f3e4d11464664"
+        },
+        {
+          "file": "authoring-inputs/laborer-boardwalk-supports.png",
+          "sha256": "fb1f3e16b3bd9a0348959bb30a3c8c59e0b6b3055c4ea44d8ad8a953f66a7658"
+        }
+      ],
+      "method": "Built-in whole-eight-pose edit, preserved4x2 layout and common camera/identity. No locally painted or warped limbs."
+    },
+    {
+      "source": "authoring-inputs/laborer-boardwalk-final.png",
+      "sourceSha256": "ba8452c50471272421ae982d53fbdbc33ba821d027729d017d1b49ecb3ab34ee",
+      "prompt": "Correct this eight-pose 4x2 transparent kneeling Laborer sheet. Keep the full eight frames in the same order and same semi-realistic identity. Make these specific geometry changes, not just texture retouches: In pose2 (top row third) move the ENTIRE forward boot and its lower shin toward image-right by thirty raw image pixels, without moving the near knee or posterior boot. In pose3 (top row fourth) move the entire forward boot and lower shin to image-right by forty raw pixels, without moving the near knee or posterior boot. In pose6 (bottom row third) move the entire forward boot and lower shin to image-right by fifteen raw pixels. These changes restore the same stable horizontal spacing between the rear boot and forward boot present in pose0. Keep the near kneeling knee, posterior boot and grounded trousers in pose2,3,6 at their present location; the forward leg must extend farther to the right rather than pulling in toward the near knee. Retain complete realistic foot/ankle anatomy. All other poses retain their foot geometry. All eight characters must keep identical physical dimensions with no per-pose resize or distorted legs. Right hand retains ONE identical wooden-handled steel hammer throughout; left hand braces flat on image-right. Retain this exact existing arm sequence:0 low ready,1 lift,2 half raise,3 overhead apex,4 halfway descent,5 low contact,6 little rebound,7 low settled hammer. The hammer never disappears or switches hands. Preserve apron, brown three-braided brass-bound beard, bald face, cream sleeves, vest, pouches, and high-quality texture. Also FIX THE CLIPPED FINGERS on top-right pose3: reconstruct the complete bracing left hand with all fingers and add generous transparent margin around every full character. Widen the total sheet or move all fourth-column sprites as needed to leave at least32 pixels of blank margin beyond their fingertips. No character touches any image edge; no raised hammer clips. Fully transparent PNG, no floor, no props, no shadows, no labels, no grid. The resulting stationary kneeling supports should not change spacing during hammer raising.\n",
+      "references": [
+        {
+          "file": "authoring-inputs/laborer-boardwalk-stable.png",
+          "sha256": "0793d84298efa3e227a6cf1785fc652317c7ba0938bc0baf87596492e955d312"
+        }
+      ],
+      "method": "Built-in whole-eight-pose edit, preserved4x2 layout and common camera/identity. No locally painted or warped limbs."
+    }
+  ],
   "character": "Laborer",
   "action": "repair-boardwalk",
-  "title": "Repair boardwalk",
-  "reference": "public/sprites/Laborer/animation/01-front-right.png",
-  "beats": [
-    "kneel beside loose board",
-    "align board with left hand",
-    "position nail",
-    "raise hammer in right hand",
-    "strike nail",
-    "rebound",
-    "check board",
-    "ready next nail"
-  ],
-  "kind": "new-work",
   "direction": "reference",
-  "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle.",
-  "frameCount": 8,
-  "status": "pending",
+  "kind": "work",
   "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Laborer. Action: Repair boardwalk. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. kneel beside loose board | 2. align board with left hand | 3. position nail | 4. raise hammer in right hand | 5. strike nail | 6. rebound | 7. check board | 8. ready next nail",
-  "sourceName": "exec-18f225d2-70ba-4cde-a889-4291865574a3.png"
+  "composition": {
+    "actor": "authoring-inputs/actor-native-sheet.png",
+    "actorSha256": "1a8dbfff487d2eb252cb40b15aa644f7d5179e99d1f13065eb34d31828144b4b",
+    "prop": "authoring-inputs/boardwalk-station-native.png",
+    "propSha256": "e04b19c38c0b0486f2f3a5a65cc50c6fca8af12a8c287e70a9718149e162bf78",
+    "order": [
+      "static-station",
+      "complete-actor"
+    ],
+    "method": "Source-preserving full-layer composition, repeated static prop, no local repaint or limb edits."
+  }
 }

@@ -1,0 +1,135 @@
+{
+  "character": "Cook",
+  "action": "chop-vegetables",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/chop-vegetables/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+  "settingsSha256": "e5af7f172d845c6a983d96771a59651ab24031e0db560456cd060471bb0469a4",
+  "nativeReviewSha256": "d7619e8adb25c4a0b75be29ae5cca514658baec7ffb65e18515dac1f82727e0a",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains one cleaver through poised0, rise1/2, descent3, carrot contact4 and lift5/6/7. Left hand stays to the right of the blade holding the carrot. Bowl, carrots/onion/garlic and cutting block remain. Accepted cosmetic chopping, no new inventory or exact sliced-material yield.",
+    "prop-continuity": "Right hand retains one cleaver through poised0, rise1/2, descent3, carrot contact4 and lift5/6/7. Left hand stays to the right of the blade holding the carrot. Bowl, carrots/onion/garlic and cutting block remain. Accepted cosmetic chopping, no new inventory or exact sliced-material yield.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+    "settingsSha256": "e5af7f172d845c6a983d96771a59651ab24031e0db560456cd060471bb0469a4",
+    "frameSha256": [
+      "de4ced06aff36c6892af8a372ec6ddec2aedcec83daab2ec3306a98850603b34",
+      "9c65719a1ff83b1aa281eccced70114ac395007c99bf05d147497ebe579705cd",
+      "b239edb63ce31d824678a45433d277512a2c0aa1d1eac1f85d6f44a7bad273fc",
+      "6d2c53662e03408113b60911d53440e9001110159c800bdf0e5d95e12fe4d15f",
+      "2ce305e1f94db0219ae7204b72e56bf7503bf67c75026814072aab028ca711d7",
+      "bbb80de34af9b2279e3af93bfc99980958b90df398115733b033c5563095b725",
+      "9c9aef0d91994d82153188116ce2201b3798146cd77164a1b682184bb000ad7d",
+      "df563fdefcd1fbb412f120e1f324d3a6df889b9216ec0cc881c0fcbb6b2c4c35"
+    ],
+    "atlasSha256": "0817b9a9dba38258ed6ed06cd20cf5385377bfcd5f92761c2f9a0b11a8bc476e",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "e5af7f172d845c6a983d96771a59651ab24031e0db560456cd060471bb0469a4",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              5.864758012563698e-09,
+              1.7408538610652613e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99251,
+            "measuredCorrectionPx": [
+              0.45278993248939514,
+              1.7257804870605469
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99671,
+            "measuredCorrectionPx": [
+              0.04915456473827362,
+              0.052875056862831116
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99282,
+            "measuredCorrectionPx": [
+              -0.0875149816274643,
+              0.22283759713172913
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99384,
+            "measuredCorrectionPx": [
+              0.23381614685058594,
+              1.783942461013794
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99097,
+            "measuredCorrectionPx": [
+              -1.1360613107681274,
+              0.244990274310112
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9933,
+            "measuredCorrectionPx": [
+              0.0028123781085014343,
+              1.718607783317566
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99016,
+            "measuredCorrectionPx": [
+              -0.051493074744939804,
+              0.26862189173698425
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "chop-vegetables",
+    "direction": "reference"
+  }
+}

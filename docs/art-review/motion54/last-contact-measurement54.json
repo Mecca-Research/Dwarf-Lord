@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "folder": "docs/art-review/motion54/last-trial",
+  "binding": {
+    "sourceSha256": "d8cce54bacd80436b7e737a43879595599478a1d6d106ce78bb8188f718d692d",
+    "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "frameSha256": [
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
+      "05492e78224717f5f5434274270411aed68578eb9c30280a8ef1f1e3ab2f7876",
+      "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "fe3fd25478bd7f93ec1cdefc1d11c9ed3b93f9059dd019d1c1946a5f64617294",
+      "6c29439d7cf0361c7fde4fce6abedd817f8aa3591b9b099d349dfc9bb34ee578",
+      "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "c49c9432c4007bfc54be184a61953141b598167bef7be745c8ded56650fe0cf2"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "atlasSha256": "8b1d74985cd73d3b3aeee10865a5ed52df8a24163001b9bf79aecc4e4cdbde98",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "strideBodyRatio": 1.2,
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -0.707107,
+    -0.399263
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "fromPoint": [
+        266,
+        526
+      ],
+      "toPoint": [
+        317,
+        548
+      ],
+      "foot": "right",
+      "landmark": "heel",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 10.042,
+      "contactResidualPx": [
+        -4.154,
+        -9.142
+      ],
+      "requiredForwardTravelPx": 68.01,
+      "perpendicularMismatchPx": 5.918
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "fromPoint": [
+        245,
+        526
+      ],
+      "toPoint": [
+        338,
+        593
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 52.135,
+      "contactResidualPx": [
+        37.846,
+        35.858
+      ],
+      "requiredForwardTravelPx": 140.294,
+      "perpendicularMismatchPx": 12.616
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "fromPoint": [
+        338,
+        593
+      ],
+      "toPoint": [
+        404,
+        599
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 27.382,
+      "contactResidualPx": [
+        10.846,
+        -25.142
+      ],
+      "requiredForwardTravelPx": 74.407,
+      "perpendicularMismatchPx": 27.226
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        404,
+        599
+      ],
+      "toPoint": [
+        403,
+        600
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 63.733,
+      "contactResidualPx": [
+        -56.154,
+        -30.142
+      ],
+      "requiredForwardTravelPx": -0.467,
+      "perpendicularMismatchPx": 1.362
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "fromPoint": [
+        254,
+        544
+      ],
+      "toPoint": [
+        354,
+        580
+      ],
+      "foot": "left",
+      "landmark": "heel",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 45.108,
+      "contactResidualPx": [
+        44.846,
+        4.858
+      ],
+      "requiredForwardTravelPx": 129.031,
+      "perpendicularMismatchPx": 17.82
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "fromPoint": [
+        250,
+        555
+      ],
+      "toPoint": [
+        295,
+        606
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 22.303,
+      "contactResidualPx": [
+        -10.154,
+        19.858
+      ],
+      "requiredForwardTravelPx": 79.135,
+      "perpendicularMismatchPx": 22.284
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "fromPoint": [
+        295,
+        606
+      ],
+      "toPoint": [
+        354,
+        608
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 29.395,
+      "contactResidualPx": [
+        3.846,
+        -29.142
+      ],
+      "requiredForwardTravelPx": 64.479,
+      "perpendicularMismatchPx": 27.267
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "fromPoint": [
+        354,
+        608
+      ],
+      "toPoint": [
+        385,
+        608
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 39.412,
+      "contactResidualPx": [
+        -24.154,
+        -31.142
+      ],
+      "requiredForwardTravelPx": 33.242,
+      "perpendicularMismatchPx": 15.242
+    }
+  ],
+  "coveredBoundaries": 8,
+  "returnBoundaryCovered": true,
+  "withinHeldPoseDriftPx": 0,
+  "withinHoldScope": "Held-root model only; live playback evidence and anatomical contact review are separate.",
+  "maxContactJumpPx": 63.733,
+  "fittedStrideBodyRatio": 1.131019,
+  "fittedMaxContactJumpPx": 60.093,
+  "materialCorrespondenceReviewed": false,
+  "measurementPassed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval."
+}

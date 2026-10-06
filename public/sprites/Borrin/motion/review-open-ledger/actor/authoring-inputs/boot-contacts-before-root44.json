@@ -1,0 +1,320 @@
+{
+  "action": "review-open-ledger",
+  "sourceSha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a",
+  "settingsSha256": "0c47a4de878b81324e44c1692091ef755bbe20c05f4a8ccc6f0fb928e99d1b19",
+  "frameSha256": [
+    "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e",
+    "6bd007be8909727ae7aa5ce82a7f3b2728ea6ee2bd2e971337268a7b60778edf",
+    "f03417e7af175f619528bad96e981945f79905b298099c4df40c33aa046a71c9",
+    "537c2b82fa06f33eaaede0d7b045785ab3694970a7ba3a83fecbf591bf1640e0",
+    "9fc639b38bcb978c1b55cfb101ca06b35b63be0621e27e57041ff96dc7302224",
+    "2d5ab19e2367598f34ff8de1e70ccd8b121dd53a23f7b1d6cd463aa883f330a9",
+    "fc13665dd8647dab9cebd59441621b8a9b1ec364abc5594ac3d3e40eee5b6978",
+    "762e633e8b1cf945e4f6f68e044cb7db3aef8789a04189b132c14a676adc3344"
+  ],
+  "bounds": {
+    "minimumCorrelation": 0.94,
+    "maxMaterialTravelPx": 6,
+    "maxAdjacentChangePx": 6
+  },
+  "regions": [
+    {
+      "name": "near",
+      "box": [
+        158,
+        554,
+        270,
+        616
+      ],
+      "referenceFrame": 0,
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 1.0000003766185643,
+          "translation": [
+            -1.8286981173787353e-07,
+            -4.029658953186299e-07
+          ],
+          "driftPx": 4.4251879671719507e-07,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9799533266560924,
+          "translation": [
+            -2.8014464378356934,
+            1.142630934715271
+          ],
+          "driftPx": 3.0255093574523926,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9880104112723391,
+          "translation": [
+            1.3081082105636597,
+            -0.6107163429260254
+          ],
+          "driftPx": 1.4436486959457397,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.97871727838866,
+          "translation": [
+            -2.4120163917541504,
+            0.9768680334091187
+          ],
+          "driftPx": 2.6023247241973877,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.985095434401704,
+          "translation": [
+            2.575817346572876,
+            0.17651112377643585
+          ],
+          "driftPx": 2.581857919692993,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9768346700190415,
+          "translation": [
+            -0.15273967385292053,
+            0.8436793088912964
+          ],
+          "driftPx": 0.8573938608169556,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9801787783386456,
+          "translation": [
+            -1.139878273010254,
+            1.286507248878479
+          ],
+          "driftPx": 1.7188435792922974,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9752967702267992,
+          "translation": [
+            -1.5288761854171753,
+            2.0615642070770264
+          ],
+          "driftPx": 2.5666143894195557,
+          "passed": true
+        }
+      ],
+      "adjacentChanges": [
+        {
+          "from": 0,
+          "to": 1,
+          "changePx": 3.0255094601262473
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "changePx": 4.467959946574373
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "changePx": 4.044718928275943
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "changePx": 5.051638999769296
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "changePx": 2.8089387321449997
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "changePx": 1.0819145984686565
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "changePx": 0.867198168995373
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "far",
+      "box": [
+        342,
+        562,
+        436,
+        620
+      ],
+      "referenceFrame": 0,
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 0.9999996487794021,
+          "translation": [
+            -3.9616850244783564e-07,
+            5.2392067573237e-07
+          ],
+          "driftPx": 6.56842701118876e-07,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9754114900274268,
+          "translation": [
+            -0.36790594458580017,
+            1.1945499181747437
+          ],
+          "driftPx": 1.2499216794967651,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9861606383892879,
+          "translation": [
+            -3.3669888973236084,
+            0.08581431210041046
+          ],
+          "driftPx": 3.368082284927368,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9702646735594649,
+          "translation": [
+            -6.969549655914307,
+            0.39322924613952637
+          ],
+          "driftPx": 6.9806342124938965,
+          "passed": false
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9699192044728362,
+          "translation": [
+            0.8387261033058167,
+            0.6261351704597473
+          ],
+          "driftPx": 1.0466645956039429,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9716550398035468,
+          "translation": [
+            -0.5235939621925354,
+            0.656248927116394
+          ],
+          "driftPx": 0.8395316004753113,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.975132389341466,
+          "translation": [
+            -2.1493961811065674,
+            1.077660322189331
+          ],
+          "driftPx": 2.4044241905212402,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9731769382339673,
+          "translation": [
+            -2.052736759185791,
+            1.0571833848953247
+          ],
+          "driftPx": 2.3089749813079834,
+          "passed": true
+        }
+      ],
+      "adjacentChanges": [
+        {
+          "from": 0,
+          "to": 1,
+          "changePx": 1.2499210966573022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "changePx": 3.1974666849835276
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "changePx": 3.615653185941354
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "changePx": 7.8117485559641535
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "changePx": 1.362652853517509
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "changePx": 1.6795298207900653
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "changePx": 0.09880459911867125
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "scope": "Visible stationary seated boot-cap and sole-rim material at a fixed task root. Both8 holds, no hidden heel, standing/walking or continuous-loop certification.",
+  "measurementPassed": false,
+  "registrationScope": "Reproduced original zero-offset export from the exact selected source-sheet, common scale and assembly in an isolated folder. Selected art and registration remain unchanged. This is the failed before-registration diagnostic.",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "sourceAssemblySha256": "9a92ec05915b349cfbb7d5345d44513e9a62a27b2349870d2d55d31ea1acbf95"
+}

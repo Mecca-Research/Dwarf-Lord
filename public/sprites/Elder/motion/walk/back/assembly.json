@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "method": "authored-poses-with-physical-root-and-scale",
+  "normalizedHeight": 520,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    140,
+    140,
+    105,
+    115,
+    140,
+    140,
+    105,
+    115
+  ],
+  "inputs": [
+    {
+      "id": "existing",
+      "file": "authoring-inputs/motion35-poses.png",
+      "poseCount": 8,
+      "sha256": "3a3d532668f83883d8df06f98a1a9968b0aebe00bac5e30d6a0a0c95e210d253",
+      "cells": [
+        [
+          0,
+          0,
+          640,
+          640
+        ],
+        [
+          640,
+          0,
+          1280,
+          640
+        ],
+        [
+          1280,
+          0,
+          1920,
+          640
+        ],
+        [
+          1920,
+          0,
+          2560,
+          640
+        ],
+        [
+          0,
+          640,
+          640,
+          1280
+        ],
+        [
+          640,
+          640,
+          1280,
+          1280
+        ],
+        [
+          1280,
+          640,
+          1920,
+          1280
+        ],
+        [
+          1920,
+          640,
+          2560,
+          1280
+        ]
+      ],
+      "rootXs": [
+        320,
+        960,
+        1600,
+        2240,
+        320,
+        960,
+        1600,
+        2240
+      ],
+      "rootYs": [
+        616,
+        616,
+        616,
+        616,
+        1256,
+        1256,
+        1256,
+        1256
+      ],
+      "bodyHeights": [
+        520,
+        520,
+        520,
+        520,
+        520,
+        520,
+        520,
+        520
+      ],
+      "provenance": "Unmodified whole exported motion35 poses; each frame hash is recorded in motion35-export-manifest.json. Native physical root/scale retain current placements."
+    },
+    {
+      "id": "contact0",
+      "file": "authoring-inputs/motion36-elder-contact-0-adjust.png",
+      "poseCount": 1,
+      "sha256": "cfd95b6041568557a5ab0b25ab2b10daa88077d31c81d1e89171cbab3755a924",
+      "rootXs": [
+        627.0
+      ],
+      "rootYs": [
+        1206.9750000000001
+      ],
+      "bodyHeights": [
+        1018.875
+      ],
+      "prompt": "Precise minimal edit to this one1280x1280 transparent Elder rear-view walking pose. Preserve all body, head, coat, straps, pouch, both arms, right trailing leg and cane EXACTLY in place. Only the screen LEFT boot and its foreshortened lower leg need another small forward reach AWAY from camera: left heel now ends around x540 y1080; raise that heel48pixels to y1032 without resizing/moving any other part of the figure. The left planted boot is partly under/behind the coat hem, its toe pointing away and heel on the ground just BEHIND the cane tip in depth. Keep left boot back/upper visible, no bottom sole facing camera, left knee naturally forward. Do not shorten the whole dwarf, move body root or cane, or alter right trailing foot. This is grounded forward heel strike, not lifting his left boot. Keep high-detail leather/fur boot and exact character identity. Genuine transparent alpha, no ground/shadow, no labels, one whole dwarf with same canvas positions.",
+      "reference": "authoring-inputs/motion36-elder-contact-0-first.png",
+      "referenceSha256": "0f42d59b2704a8454325c3d95ab734ac750bd30d70f1f67e5db25c17fff1eeea",
+      "authoringMethod": "Single whole-pose constrained edit; no limb compositing or synthetic in-betweens. Fixed camera canvas landmarks retain physical body scale and root while feet move.",
+      "originalPoseReference": "authoring-inputs/motion36-reference-0.png",
+      "originalPoseReferenceSha256": "e917b48668fa11d8c317e6e7501732b686aacf156a486192d08ffbb9e07bfeb1"
+    },
+    {
+      "id": "support1",
+      "file": "authoring-inputs/motion36-elder-support-1.png",
+      "poseCount": 1,
+      "sha256": "3e0466a05ee258878e0f34589b49159a5016917f4729f73c1d68bbc8874986b5",
+      "rootXs": [
+        627.0
+      ],
+      "rootYs": [
+        1206.9750000000001
+      ],
+      "bodyHeights": [
+        1018.875
+      ],
+      "prompt": "Precise edit target image1, one640x640 Elder rear-facing walk sprite. Image2 is reference only for the new left-leading contact phase and exact same Elder identity. Preserve image1's bald head, upper body, ornate olive-brown coat, brown straps, belt/pouches, camera, original positions and scale. This is LEFT-FOOT SUPPORT / RIGHT-FOOT PASSING, not another trailing-right-sole contact pose.\nKeep the anatomical LEFT leg and boot (screen LEFT) EXACTLY as image1, firmly planted with heel/sole around x278 y585. Change only anatomical RIGHT leg (screen RIGHT) below coat: bend its knee slightly and swing the boot FORWARD away from camera to pass near the supporting ankle. The right boot ends around x358 y545, heel off ground and toe pointing away, no large underside sole facing the viewer. Its calf/upper boot may be occluded by the coat hem. This is an AIRBORNE passing foot with a natural knee joint, not a shortened body or planted second boot. Remove the old large trailing right sole below y600.\nCoordinate cane with that planted left heel: pivot the intact right-hand wooden cane slightly forward in depth so its metal tip moves from y565 to y550, x492 unchanged. Same actual physical cane length, small realistic foreshortening of the rigid shaft and natural wrist adjustment; low elbow, keep gripping hand at waist. The tip is PLANTED slightly ahead of the left heel and never floating. The grounded left heel minus cane tip depth separation stays about35pixels, matching image2's support geometry. Do not change the left boot to fake this. Preserve both original hand identities, left arm, cane thickness/wood/ferrule, boot design and coat. Full body, genuine transparent alpha, no scenery, text, ground/shadow, one pose only.",
+      "reference": "authoring-inputs/motion36-reference-1.png",
+      "referenceSha256": "d515f7a41596d75fc987b5f3d5fa96311ff96b5918fb15eda60f86f1aa55ab44",
+      "authoringMethod": "Single whole-pose constrained edit; no limb compositing or synthetic in-betweens. Fixed camera canvas landmarks retain physical body scale and root while feet move."
+    },
+    {
+      "id": "contact4",
+      "file": "authoring-inputs/motion36-elder-contact-4.png",
+      "poseCount": 1,
+      "sha256": "d39e49fb9ccb59168dfec1a30460444b1bf739885bde2188e4067a3a8d830c71",
+      "rootXs": [
+        627.0
+      ],
+      "rootYs": [
+        1206.9750000000001
+      ],
+      "bodyHeights": [
+        1018.875
+      ],
+      "prompt": "Precise edit target image1: one640x640 Elder rear-view walking sprite. Reference image2 shows the corresponding LEFT-leading contact; this new pose is its RIGHT-leading anatomical counterpart. Preserve image1's bald head, entire upper torso, coat, brown leather back straps/belt/pouches, left arm, overall canvas positions, camera and physical body scale. Change ONLY the RIGHT leg/boot (screen RIGHT) below the coat and low right wrist/cane.\nRIGHT heel strike ahead, away from the camera: right leg reaches forward underneath the coat, foreshortened; right grounded heel ends near x365 y535 in the original640 coordinates, about65pixels above its old position. Toe points away, upper/back of boot visible, NOT underside sole. Knee/ankle anatomically connected; coat may occlude the top of the forward leg. Remove old low right shin/foot beneath y600. Keep LEFT trailing boot with its sole facing viewer exactly as image1.\nCane release: lift the whole intact cane naturally with a small low-elbow right-wrist motion so ferrule rises from y588 to about y550 at x495. Same physical cane length, rigid wood and metal ferrule; slight forward-depth tilt is allowed, not cutting shaft shorter. Keep wrist below ribs, elbow beside waist, no hand near head, no extra hand. This tip is AIRBORNE now, never planted while right foot takes weight. Preserve ornate costume textures, dwarf proportions, light, identity and full body margins. Genuine transparent alpha, no floor/shadow/scenery, no text/guide, one whole pose.",
+      "reference": "authoring-inputs/motion36-reference-4.png",
+      "referenceSha256": "9840d4e79d20e20a4682430695a5e6f582ca4a4a64ac244eda0eac878b047c34",
+      "authoringMethod": "Single whole-pose constrained edit; no limb compositing or synthetic in-betweens. Fixed camera canvas landmarks retain physical body scale and root while feet move."
+    },
+    {
+      "id": "support5",
+      "file": "authoring-inputs/motion36-elder-support-5.png",
+      "poseCount": 1,
+      "sha256": "52baf41677ac8856a508f843dd01983dbc0280c396edf3bb2578074a0ab694d2",
+      "rootXs": [
+        627.0
+      ],
+      "rootYs": [
+        1206.9750000000001
+      ],
+      "bodyHeights": [
+        1018.875
+      ],
+      "prompt": "Minimal precise edit to image1, one rear-view Elder dwarf. Change ONLY the screen LEFT boot orientation and its ankle, leaving every other original pixel/pose intact, especially planted RIGHT boot, head, coat and lifted cane. The LEFT boot is an AIRBORNE FORWARD PASSING foot, coming forward AWAY from viewer under the coat. It currently wrongly shows the huge underside sole toward viewer. Rotate that boot and ankle so toe points AWAY in depth and we see its BACK HEEL and upper/back leather, NOT its underside sole. Reference image2 shows correct back-facing airborne passing boot orientation on the other side; use that foot orientation only, do not swap legs or mirror whole character. The left foot stays at the same screen position under left thigh, bottom near y1070 of this1280-style canvas. Natural knee flex, lifted heel, fur cuff and same boot design. Keep RIGHT planted boot exactly fixed near bottom y1170. Do not change the cane or arm or any torso scale/position. Full body with original margins, detailed same Elder, genuine transparent alpha, no ground/text/shadow.",
+      "reference": "authoring-inputs/motion36-elder-support-5-first.png",
+      "referenceSha256": "e21271b04cb1089788a6ccdf2f44939a812cf14e99a256a868a335fca8e97aec",
+      "authoringMethod": "Single whole-pose constrained edit; no limb compositing or synthetic in-betweens. Fixed camera canvas landmarks retain physical body scale and root while feet move.",
+      "originalPoseReference": "authoring-inputs/motion36-reference-5.png",
+      "originalPoseReferenceSha256": "e5594ddbfca87c18a9ca7fab981743719e1979098de76b95ef11cabbb0df6adf",
+      "secondaryReference": "authoring-inputs/motion36-elder-support-1.png",
+      "secondaryReferenceSha256": "3e0466a05ee258878e0f34589b49159a5016917f4729f73c1d68bbc8874986b5"
+    }
+  ],
+  "poses": [
+    {
+      "input": "contact0",
+      "pose": 0
+    },
+    {
+      "input": "support1",
+      "pose": 0
+    },
+    {
+      "input": "existing",
+      "pose": 2
+    },
+    {
+      "input": "existing",
+      "pose": 3
+    },
+    {
+      "input": "contact4",
+      "pose": 0
+    },
+    {
+      "input": "support5",
+      "pose": 0
+    },
+    {
+      "input": "existing",
+      "pose": 6
+    },
+    {
+      "input": "existing",
+      "pose": 7
+    }
+  ],
+  "review": "Four local authored heel-contact/passing corrections selected (0,1,4,5), with lifted/swinging cane4/5. Fixed physical body scale/root replaces silhouette normalization for these inputs. Remaining contact geometry, material sole/cane tracking and full stride/seam are unapproved."
+}

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Female Miner",
   "action": "pickaxe-ready",
   "title": "Pickaxe ready",
@@ -7,152 +7,32 @@
   "kind": "work",
   "reference": "../../../work-references/00-pickaxe-ready.png",
   "source": "source-sheet.png",
-  "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
+  "sourceSha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05",
   "sourceSize": [
-    1774,
-    887
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.3703703703703705,
+  "sharedScale": 1.04,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "pickaxe held low ready",
-      "durationMs": 125,
+      "description": "low connected two-hand ready; head remains left",
+      "durationMs": 160,
       "sourceBounds": [
-        38,
-        34,
-        397,
-        422
+        123,
+        108,
+        510,
+        600
       ],
       "sourceAnchor": [
-        178.0,
-        388
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        76,
-        84
-      ]
-    },
-    {
-      "id": "key-01",
-      "file": "01.png",
-      "description": "continuous midway transition from pickaxe held low ready toward adjust grip",
-      "durationMs": 125,
-      "sourceBounds": [
-        484,
-        33,
-        790,
-        422
-      ],
-      "sourceAnchor": [
-        153.0,
-        389
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        110,
-        83
-      ]
-    },
-    {
-      "id": "key-02",
-      "file": "02.png",
-      "description": "adjust grip",
-      "durationMs": 125,
-      "sourceBounds": [
-        930,
-        34,
-        1234,
-        422
-      ],
-      "sourceAnchor": [
-        152.5,
-        388
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        111,
-        84
-      ]
-    },
-    {
-      "id": "key-03",
-      "file": "03.png",
-      "description": "continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore",
-      "durationMs": 125,
-      "sourceBounds": [
-        1398,
-        26,
-        1700,
-        424
-      ],
-      "sourceAnchor": [
-        151.0,
-        398
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        113,
-        71
-      ]
-    },
-    {
-      "id": "key-04",
-      "file": "04.png",
-      "description": "lift pickaxe a little and lean toward ore",
-      "durationMs": 125,
-      "sourceBounds": [
-        54,
-        436,
-        357,
-        868
-      ],
-      "sourceAnchor": [
-        151.5,
-        432
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        112,
-        24
-      ]
-    },
-    {
-      "id": "key-05",
-      "file": "05.png",
-      "description": "continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready",
-      "durationMs": 125,
-      "sourceBounds": [
-        499,
-        461,
-        798,
-        868
-      ],
-      "sourceAnchor": [
-        149.5,
-        407
+        197.0,
+        492.0
       ],
       "groundAnchor": [
         320,
@@ -160,23 +40,119 @@
       ],
       "placement": [
         115,
-        58
+        104
       ]
     },
     {
-      "id": "key-06",
-      "file": "06.png",
-      "description": "return to ready",
-      "durationMs": 125,
+      "id": "key-01",
+      "file": "01.png",
+      "description": "small continuous lift; same grip",
+      "durationMs": 130,
       "sourceBounds": [
-        942,
-        492,
-        1249,
-        867
+        761,
+        105,
+        1151,
+        600
       ],
       "sourceAnchor": [
-        153.5,
-        375
+        199.0,
+        495.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        101
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "chest-height lift; same grip",
+      "durationMs": 130,
+      "sourceBounds": [
+        1399,
+        99,
+        1791,
+        600
+      ],
+      "sourceAnchor": [
+        201.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        111,
+        95
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "higher intermediate ready lift",
+      "durationMs": 130,
+      "sourceBounds": [
+        2037,
+        99,
+        2432,
+        600
+      ],
+      "sourceAnchor": [
+        203.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        109,
+        95
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "highest small preparation lift",
+      "durationMs": 160,
+      "sourceBounds": [
+        120,
+        736,
+        511,
+        1240
+      ],
+      "sourceAnchor": [
+        200.0,
+        504.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        92
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "partial connected-tool lowering",
+      "durationMs": 130,
+      "sourceBounds": [
+        758,
+        738,
+        1151,
+        1240
+      ],
+      "sourceAnchor": [
+        202.0,
+        502.0
       ],
       "groundAnchor": [
         320,
@@ -184,33 +160,67 @@
       ],
       "placement": [
         110,
-        102
+        94
       ]
     },
     {
-      "id": "key-07",
-      "file": "07.png",
-      "description": "continuous midway transition from return to ready toward pickaxe held low ready",
-      "durationMs": 125,
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower toward ready",
+      "durationMs": 130,
       "sourceBounds": [
-        1370,
-        494,
-        1726,
-        867
+        1402,
+        741,
+        1791,
+        1240
       ],
       "sourceAnchor": [
-        177.0,
-        373
+        198.0,
+        499.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        77,
-        105
+        114,
+        97
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed lowered ready hold retaining both hands on same shaft",
+      "durationMs": 160,
+      "sourceBounds": [
+        2040,
+        745,
+        2431,
+        1240
+      ],
+      "sourceAnchor": [
+        200.0,
+        495.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        112,
+        101
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,40 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1130,
+    "durationsMs": [
+      160,
+      130,
+      130,
+      130,
+      160,
+      130,
+      130,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view small pickaxe-ready lift/lower and visible stationary sole contacts. No strike, traveling contact, seamless repeat, hidden heel or cross-direction/tool-template family approval."
   }
 }

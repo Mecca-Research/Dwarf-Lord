@@ -1,0 +1,135 @@
+{
+  "character": "Cook",
+  "action": "cut-boar-meat",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/cut-boar-meat/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad",
+  "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+  "nativeReviewSha256": "a38633c5f616a127983272c7d5469e1b501af25f7e23a591b05489ec9ed61bf9",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains cleaver through preparation0/1, lift2, descent3, meat cut4 and lift5. Left hand braces meat then transfers the cut portion to the existing bowl6 and returns7. Meat on the block remains smaller after the cut. Bowl retains its contents at7; finite cut only, not a regenerating raw meat loop.",
+    "prop-continuity": "Right hand retains cleaver through preparation0/1, lift2, descent3, meat cut4 and lift5. Left hand braces meat then transfers the cut portion to the existing bowl6 and returns7. Meat on the block remains smaller after the cut. Bowl retains its contents at7; finite cut only, not a regenerating raw meat loop.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad",
+    "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+    "frameSha256": [
+      "a229ebb38566c61e4fbf3c1df5be382a22de882905859e42ea3dda18175c349c",
+      "3c11171fe33e8cd8ceac1af205c25b6d4b210386f80a4269e2dd5377934cbd66",
+      "54a78af52c7deaf3aaee10e2679f1ebab65dd490ce1f4d5bfd62135178a0273f",
+      "d7e2a2b629c7c7a49853c3956bf27d8133ed5d4bf839c4344339443ce6fba9a7",
+      "a31c6f1446c5834b43115886f6c64a04d37ecc671fdf55f741af31b4c6f638a5",
+      "64c14471558fa0047d868999f85a1f17ad70d685a96462a3e3bc54933faac642",
+      "c653820956caeb3bb9e2197e8959e6d9b644f6584518b6dc64e7fd8f54d30572",
+      "01d3041288e66174fe0f485a7f8712e244e58823e00d0ceb0425f540ca6abbdc"
+    ],
+    "atlasSha256": "aad3f9d6b42e252ec559f580abe729a3dc5f12ecbb706eb350b34912f102209f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -4.13965111079051e-08,
+              1.429193208224433e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98305,
+            "measuredCorrectionPx": [
+              0.43870818614959717,
+              -0.10584166646003723
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97781,
+            "measuredCorrectionPx": [
+              2.699437379837036,
+              -0.5993518829345703
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98506,
+            "measuredCorrectionPx": [
+              0.8435728549957275,
+              -0.24850931763648987
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97984,
+            "measuredCorrectionPx": [
+              0.24455004930496216,
+              -0.1754651814699173
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97743,
+            "measuredCorrectionPx": [
+              0.39725053310394287,
+              -0.1021464467048645
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98123,
+            "measuredCorrectionPx": [
+              0.890095591545105,
+              0.1114533394575119
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98266,
+            "measuredCorrectionPx": [
+              0.5852857828140259,
+              -0.3176131248474121
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "cut-boar-meat",
+    "direction": "reference"
+  }
+}

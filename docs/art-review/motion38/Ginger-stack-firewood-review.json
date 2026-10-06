@@ -1,0 +1,53 @@
+{
+  "character": "Ginger",
+  "action": "stack-firewood",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/stack-firewood/reference",
+  "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "nativeReviewSha256": "2fa9cf28606909c846246a505a6ec522384c597cdc0676b85dbebee24f4e88f1",
+  "verdict": "changes-required",
+  "issues": [
+    "Placed log at4-6 is lifted back out7. The final held state loses its delivered log and repeats the held-log initial state; need empty hands and a retained added log, or explicit separate removal task."
+  ],
+  "binding": {
+    "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "a5a7a4be94291549f8d0a9f5da247afc22c20a908c4353bc641fb650226bb551",
+      "46b4e15ecd5f25802b80d7f814c55f5527c696434bf8cc8d77ec3fda79ddcf5a",
+      "aa8e1c19b52066f2725c30a4555d498737f584673e68ff2fc78bdcdeeeb8439a",
+      "609ba0cc61e61db42557cf21f27ac0f56a2d505c8e7e557fbf08c62ba788f449",
+      "971d875a3252428ece101e2a8e53ca48e837b6f0445b06d29c5e1226c7c711cc",
+      "ae325c657b90d6b0385143d03e652372a0cbb3cd44123557a007cfed9f58eec4",
+      "79ef43d6850b6ab7f0aa2ad19eb8413d72d1f2f0497a49a5d3bd3a4de9349b56",
+      "d23b67707d096dc77616efb70cff9f79a6a8d52653cd0caadfb5c1361bad39ff"
+    ],
+    "atlasSha256": "c49565b6b61b5a4d2114f277d1fc5b5bb01c082e2888cf7f3bcee4992e75da60",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "stack-firewood",
+    "direction": "reference"
+  }
+}

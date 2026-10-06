@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287",
+    "settingsSha256": "7d08e2f7ce56c764f4a96bdfd18a5a59eaa350372336b0166075b6d97e8ab410",
+    "frameSha256": [
+      "15ccd0cad742cac04b09cddf12dc0a6aeac8528460dcd85f9a31a51f1d0075f6",
+      "562f2dd3f8629f3d0823b9d60b8906f1e0d68eed74ae5d8d4089c59237cb6e3c",
+      "bc44416f7e7e58c2dc6c5f3f8b40a6ee7fc6152110894643e21e3f692c904357",
+      "1586fba72d368c5d40de16db4158fa915854f166580953e714878bbed31f9c9c",
+      "d807747d76d1b646d00dfb38a5dd44d722f7c1267f1de890cb936a30e343153f",
+      "878c9a211b15e4086f16e7fc379b1326c0672dea09028d23114cdd0667b27fed",
+      "f39f5937458465564f90f78c12a063366e0bd69e35e497b886de09a245301499",
+      "0f6313f265fd6305858bdf902ef7bea5b3f1069781e1db93b4bc8181391637a9"
+    ],
+    "atlasSha256": "f7c4b71b15ac7d95d1d8fef82b55dbec9d6f7f668b257b27729f453306c1126f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "7d08e2f7ce56c764f4a96bdfd18a5a59eaa350372336b0166075b6d97e8ab410",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          505,
+          430,
+          580,
+          565
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              6.981680655826494e-08,
+              5.504669076117352e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98878,
+            "measuredCorrectionPx": [
+              1.3212947845458984,
+              0.421825110912323
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99619,
+            "measuredCorrectionPx": [
+              1.912699818611145,
+              0.29718080163002014
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99297,
+            "measuredCorrectionPx": [
+              2.309980869293213,
+              0.5546357035636902
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99647,
+            "measuredCorrectionPx": [
+              0.12805327773094177,
+              -0.33161067962646484
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9952,
+            "measuredCorrectionPx": [
+              0.8811205625534058,
+              -0.20808731019496918
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99601,
+            "measuredCorrectionPx": [
+              1.5464718341827393,
+              -0.25753575563430786
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99396,
+            "measuredCorrectionPx": [
+              0.2340543419122696,
+              -0.23532173037528992
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Female Miner",
+    "action": "repair-pickaxe",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Female Miner repair-pickaxe fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same beardless stocky female dwarf with iron/brass helmet, long brown braids, tan shirt, leather mining gear and brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left hand braces one straight pick handle below the attached metal eye. Right hand retains hammer through lift1, wedge contact2/3/4, rebound5, lowered inspection6 and return7. Pick raises for inspection without being released. Seated bench and spare chisels remain; no actual repair economy result is awarded.",
+    "prop-continuity": "Left hand braces one straight pick handle below the attached metal eye. Right hand retains hammer through lift1, wedge contact2/3/4, rebound5, lowered inspection6 and return7. Pick raises for inspection without being released. Seated bench and spare chisels remain; no actual repair economy result is awarded.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "060d3887f2bd361efd3ea15c71c99d45c6f15f9d6a23698a8ccdc7a6eb3040e6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-repair-pickaxe-review.json",
+      "sha256": "a0cd6af489b46bdae28d7fc6c7bd9a8928ee576ba5bc45869dc0c08a3149e7a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-repair-pickaxe-playback.json",
+      "sha256": "f914d9c32371e841f74d4c192a59835d5c8a0ec1808c5d57fad52deab3e7b37b"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-repair-pickaxe-0.png",
+      "sha256": "65cffb384942bae9f63bee2ddc9728e188545086354e9bf013b9734171f05e05"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-repair-pickaxe-4.png",
+      "sha256": "f9553a8e47b31a6bc8c88fb4fa1530c6f39e70da0a5de158289724fe4db584f8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Female-Miner-repair-pickaxe-7.png",
+      "sha256": "a94ff3f279aced478162145974859a9ca11b601ad0d12ba519b0d28c733e7ab8"
+    }
+  ]
+}

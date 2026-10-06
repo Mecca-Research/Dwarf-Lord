@@ -1,0 +1,272 @@
+{
+  "sourceSha256": "ece57b3a9d7b209e5b82eb9946640848a21369d1713c61d4a84ea69382205908",
+  "frameSha256": [
+    "64bddcb17496932a1ad67dfec88033160524f2ff77f50185251244fa18bff88e",
+    "d7590a15e622ed8507dc53b62a17edd1def8ea538438b6f85bcffa81be47f387",
+    "9f1d2c214912daf1ce8c60e408278799b19a3e9aa32ce02ea4da4ccaca7ce116",
+    "dfe46cd6f103a6de2e9e4b9c635b5d7a1fd2e8c40e1f8499caae4ba6c0e40726",
+    "4e1b9e06c513a2f85f9fe7a8ddd8b3f89e7eecf809502941374003d78e02c0ac",
+    "253472497db4f3a42a3548f110f03bdb738331f21c89fa698e11560a6a06d0b3",
+    "7496b1ac41b3890d1b77bb149c826bdd9a3fadfba45ba3ef39478ccecacbf4f0",
+    "9d82392576d7dcc3d726fa5524fc15a1e1f11ff33d9745f61c6d48b381fc5c80"
+  ],
+  "settingsSha256": "3dc8c5e3255c9a019fc59fa92ddc6f8dff7a4d930c7f56f062445bdc0b943eb3",
+  "bounds": {
+    "minimumCorrelation": 0.94,
+    "maxMaterialTravelPx": 6,
+    "maxAdjacentChangePx": 6
+  },
+  "regions": [
+    {
+      "name": "posterior-boot-visible-cap",
+      "region": [
+        218,
+        353,
+        250,
+        383
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 1.000000002011622,
+          "translation": [
+            -2.2867716609198396e-09,
+            -9.600609196525056e-10
+          ],
+          "driftPx": 2.4801294351561864e-09
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9507411690072931,
+          "translation": [
+            -6.2846574783325195,
+            -2.0252058506011963
+          ],
+          "driftPx": 6.602906703948975
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9649089890910217,
+          "translation": [
+            -2.7883732318878174,
+            -2.8383209705352783
+          ],
+          "driftPx": 3.978830337524414
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9397785037742415,
+          "translation": [
+            5.0799078941345215,
+            -3.3598082065582275
+          ],
+          "driftPx": 6.090465545654297
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9465875626747786,
+          "translation": [
+            1.0395070314407349,
+            -3.083017349243164
+          ],
+          "driftPx": 3.253547430038452
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9436112425996508,
+          "translation": [
+            -4.639281272888184,
+            -2.2908430099487305
+          ],
+          "driftPx": 5.1740593910217285
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9501464182342544,
+          "translation": [
+            -5.5213847160339355,
+            -2.675504207611084
+          ],
+          "driftPx": 6.135471820831299
+        },
+        {
+          "frame": 7,
+          "correlation": 0.961838480776204,
+          "translation": [
+            -1.1868780851364136,
+            -0.43595027923583984
+          ],
+          "driftPx": 1.2644097805023193
+        }
+      ]
+    },
+    {
+      "name": "front-boot-visible-rim",
+      "region": [
+        451,
+        378,
+        470,
+        396
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 1.000000073588042,
+          "translation": [
+            3.937007591048314e-07,
+            -1.7633276172546175e-07
+          ],
+          "driftPx": 4.3138558680766437e-07
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9579143636481853,
+          "translation": [
+            3.96148419380188,
+            3.36061429977417
+          ],
+          "driftPx": 5.194909572601318
+        },
+        {
+          "frame": 2,
+          "correlation": 0.969892025340751,
+          "translation": [
+            3.9884698390960693,
+            3.1067676544189453
+          ],
+          "driftPx": 5.055679798126221
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9524373125352589,
+          "translation": [
+            -5.093020915985107,
+            0.26466718316078186
+          ],
+          "driftPx": 5.099893093109131
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9687761363615666,
+          "translation": [
+            0.0862346887588501,
+            2.559727430343628
+          ],
+          "driftPx": 2.5611796379089355
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9545374338578865,
+          "translation": [
+            4.850390911102295,
+            0.6521590352058411
+          ],
+          "driftPx": 4.89403772354126
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9374246831713793,
+          "translation": [
+            4.703482627868652,
+            1.7221815586090088
+          ],
+          "driftPx": 5.0088582038879395
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9319121715356811,
+          "translation": [
+            0.6684532165527344,
+            1.438796877861023
+          ],
+          "driftPx": 1.586495041847229
+        }
+      ]
+    },
+    {
+      "name": "front-knee-support-cloth",
+      "region": [
+        292,
+        370,
+        317,
+        391
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 0.9999998722112022,
+          "translation": [
+            1.2071396326973627e-08,
+            -1.1564189605905995e-07
+          ],
+          "driftPx": 1.162702290002926e-07
+        },
+        {
+          "frame": 1,
+          "correlation": 0.8863621049269396,
+          "translation": [
+            -0.5359337329864502,
+            -1.5334458351135254
+          ],
+          "driftPx": 1.6244018077850342
+        },
+        {
+          "frame": 2,
+          "correlation": 0.8341122184269099,
+          "translation": [
+            0.3904447555541992,
+            -1.627923607826233
+          ],
+          "driftPx": 1.6740914583206177
+        },
+        {
+          "frame": 3,
+          "correlation": 0.810359269852443,
+          "translation": [
+            -63.315185546875,
+            -5.016313552856445
+          ],
+          "driftPx": 63.513587951660156
+        },
+        {
+          "frame": 4,
+          "correlation": 0.827418006606711,
+          "translation": [
+            22.84641456604004,
+            -1.561391830444336
+          ],
+          "driftPx": 22.899707794189453
+        },
+        {
+          "frame": 5,
+          "correlation": 0.7775326754054507,
+          "translation": [
+            9.121864318847656,
+            7.189366340637207
+          ],
+          "driftPx": 11.614447593688965
+        },
+        {
+          "frame": 6,
+          "correlation": 0.8240383217347366,
+          "translation": [
+            -69.63217163085938,
+            -0.09302258491516113
+          ],
+          "driftPx": 69.63223266601562
+        },
+        {
+          "frame": 7,
+          "correlation": 0.8408247608660411,
+          "translation": [
+            7.295705795288086,
+            -0.41682863235473633
+          ],
+          "driftPx": 7.307603359222412
+        }
+      ]
+    }
+  ],
+  "approval": false,
+  "scope": "Provisional actual visible posterior boot cap, front boot rim and front knee cloth in isolated kneeling candidate. Native anatomy/occlusion and root review required. No hidden sole, travel, 3D contact force or final cycle approval."
+}

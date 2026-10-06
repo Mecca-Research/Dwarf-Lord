@@ -1,0 +1,161 @@
+{
+  "checkpoint": "motion56",
+  "method": "Source-bound independent exporter replay of every authored workstation output.",
+  "scriptSha256": "cd558b162842b24909c6ee83ffc1f96f8251e38885058f1bd33045ed0a1fa2d4",
+  "testSha256": "130ac656797d90ed8b8d5a1337667dfa152f254e50f3c318ad86ee940edc5bcb",
+  "stations": [
+    {
+      "station": "anvil",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/anvil/sprite.png",
+          "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+        }
+      ]
+    },
+    {
+      "station": "cooper-barrel",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/cooper-barrel/sprite.png",
+          "sha256": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a"
+        }
+      ]
+    },
+    {
+      "station": "cutting-block",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/cutting-block/sprite.png",
+          "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+        }
+      ]
+    },
+    {
+      "station": "dough-block",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/dough-block/sprite.png",
+          "sha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe"
+        },
+        {
+          "file": "public/sprites/workstations/dough-block/completed-dough.png",
+          "sha256": "31382dd073af1bab58458aea8f3f2c7b7c1b2bba28f322ef5c5af68b9e7ad119"
+        }
+      ]
+    },
+    {
+      "station": "firewood-rack",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/firewood-rack/sprite.png",
+          "sha256": "61dc6acd85793b1caadb76aaac5a8b4e9e4f64e2d6f70806c102dbc7fc959424"
+        }
+      ]
+    },
+    {
+      "station": "forestry-trunk",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/forestry-trunk/sprite.png",
+          "sha256": "dcf23ff916144fe3772a7704567f7c2679e2e8813e7ee1cbcc5b53a099a5d3eb"
+        }
+      ]
+    },
+    {
+      "station": "ledger-desk",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/ledger-desk/sprite.png",
+          "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+        },
+        {
+          "file": "public/sprites/workstations/ledger-desk/receipt.png",
+          "sha256": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e"
+        }
+      ]
+    },
+    {
+      "station": "masonry-bench",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/masonry-bench/sprite.png",
+          "sha256": "2a861206fefd929e98f39968ca13a6c0ae7a0cf1336b7740d2a4de5c8704f4aa"
+        }
+      ]
+    },
+    {
+      "station": "mixing-block",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/mixing-block/sprite.png",
+          "sha256": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1"
+        },
+        {
+          "file": "public/sprites/workstations/mixing-block/completed-mixture.png",
+          "sha256": "ef6d3424ba7f0ac5d740c7435b5b5967a1cd4164e6509b8e60cbc1daee8fc55d"
+        }
+      ]
+    },
+    {
+      "station": "potato-block",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/potato-block/sprite.png",
+          "sha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6"
+        }
+      ]
+    },
+    {
+      "station": "repair-bench",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/repair-bench/sprite.png",
+          "sha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3"
+        }
+      ]
+    },
+    {
+      "station": "stew-cauldron",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/stew-cauldron/sprite.png",
+          "sha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9"
+        }
+      ]
+    },
+    {
+      "station": "storage-pallet",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/storage-pallet/sprite.png",
+          "sha256": "1092fd2b3e984bb211dc5a906665073a9b67cb7110bd9599c4c452bc29e6f815"
+        },
+        {
+          "file": "public/sprites/workstations/storage-pallet/completed-crate.png",
+          "sha256": "17a66555fe09747e5d95afb3b24c2eddc5cd4e8345cd5e487bbbbc8b862e18d8"
+        }
+      ]
+    },
+    {
+      "station": "vise-bench",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/vise-bench/sprite.png",
+          "sha256": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd"
+        }
+      ]
+    },
+    {
+      "station": "weighing-table",
+      "outputs": [
+        {
+          "file": "public/sprites/workstations/weighing-table/sprite.png",
+          "sha256": "994c204bef369b0d46b979c0982d4c679e5d65d14dd2893572cacd51e77a1bf9"
+        }
+      ]
+    }
+  ],
+  "priorAssetsChanged": false,
+  "scope": "One new uniform whole-canvas mode with a bounded fixed integer placement. Every previous source, placement and output remains byte-identical. No new motion, hidden contact or loop approval."
+}

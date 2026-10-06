@@ -1,0 +1,24 @@
+{
+  "character": "Female Miner",
+  "action": "pickaxe-ready",
+  "title": "Pickaxe ready",
+  "reference": "public/sprites/Female Miner/work-references/00-pickaxe-ready.png",
+  "beats": [
+    "pickaxe held low ready",
+    "continuous midway transition from pickaxe held low ready toward adjust grip",
+    "adjust grip",
+    "continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore",
+    "lift pickaxe a little and lean toward ore",
+    "continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready",
+    "return to ready",
+    "continuous midway transition from return to ready toward pickaxe held low ready"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. OVERRIDE reference surroundings: remove ALL rocks, ore and surrounding items; character and held tool ONLY. Transparent background.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Female Miner. Action: Pickaxe ready. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. OVERRIDE reference surroundings: remove ALL rocks, ore and surrounding items; character and held tool ONLY. Transparent background. Eight poses: 1. pickaxe held low ready | 2. continuous midway transition from pickaxe held low ready toward adjust grip | 3. adjust grip | 4. continuous midway transition from adjust grip toward lift pickaxe a little and lean toward ore | 5. lift pickaxe a little and lean toward ore | 6. continuous midway transition from lift pickaxe a little and lean toward ore toward return to ready | 7. return to ready | 8. continuous midway transition from return to ready toward pickaxe held low ready",
+  "sourceName": "exec-a9c5c845-ce92-4ee6-9d65-5cee70c2166f.png"
+}

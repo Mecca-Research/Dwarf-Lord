@@ -1,0 +1,136 @@
+{
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+  "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+  "nativeReviewSha256": "3ba8a99b343212f8cb68d909153d162e85947c21adb1d496bcce9ca960dce84a",
+  "checks": {
+    "identity-and-scale": "All eight native poses retain the bald broad Laborer, two brass-tipped brown braids, cream rolled sleeves, leather waistcoat and boots. One original common raster scale is preserved. The calibrated source root follows fixed toolbox features, not changing chip-pile silhouette; this is a kneeling local sequence, not standing or gait calibration.",
+    "station-and-foot-contact": "Reviewed the complete kneeling0-7, visible bent knees and boot positions as he reaches and returns the broom. Fixed toolbox registration replaces the unreliable moving-pile anchor. Fresh residual0.465px with remaining bounded corrections at most1px. Whole authored cell boundaries exclude neighboring fragments and retain each complete pose and detached props. Translating sole contacts are excluded.",
+    "hand-and-tool-contact": "Right hand holds the same short wooden broom throughout approach0/1, push2/3/4, lift5/6 and return7. Left hand shifts toward the broom during the forward reach and withdraws on return; all visible wrists are connected. No tool appears without a hand or transfers to a new owner.",
+    "prop-continuity": "One identical iron-bound toolbox and its handle/contents remain fixed beside the knee. Chips collect into the swept pile and remain visible at7; no claim of resource removal or repeated delivery. Toolbox panels are not warped or animated. Chip fragments belonging to adjacent cells are excluded by documented source-cell ownership.",
+    "completion-and-reset": "Controlled gallery playback must expose all authored holds0-7, finish once at7, retain the final pose for sustained time and restart only on explicit task reset. No seamless7-to0 approval, economic output, standing-body placement or live activation is implied."
+  },
+  "binding": {
+    "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+    "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+    "frameSha256": [
+      "8a956fca05d1a11e7cbf7dfd253f5ca37e0c3155a949dc37542c80801cc05aa2",
+      "2556d26505bf6bae6116b40f01e2868be3df78ad3feef2d4f27585dec5b921c4",
+      "b1e8687dbfe07dc76ed1df722a655e7616403bf856c84dfc3a1abbc4818c8ac6",
+      "83863339d3cf8c621f9a8d6dc8d50e73fc96d0f9cce6c25dc9c109938af54154",
+      "4c1bb2e41e10b7517aa32da4d9f7b724d635c0cf290b9e45b0bbc57e4dbe3998",
+      "60832f31ac561a9dec1878733fb2e4200ddc2e69c815302e96b828e0ef56e4f8",
+      "6a1a286adc80117779b3f71f1141d3157e53922850524217b782bcfebfeee1ac",
+      "25b1f5d7b24af29f16ec82cbd8231e25724601adbf82212a596f78258e29442e"
+    ],
+    "atlasSha256": "351716f0022558d548ba34b46aeb83143c58efd1d87d2711e679e3a775c5e956",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          430,
+          470,
+          570,
+          585
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -3.995744535245649e-08,
+              1.9516268423558358e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97528,
+            "measuredCorrectionPx": [
+              -0.4416939914226532,
+              0.06814910471439362
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98684,
+            "measuredCorrectionPx": [
+              -0.1394776850938797,
+              -0.1460351049900055
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97228,
+            "measuredCorrectionPx": [
+              -0.6962695121765137,
+              0.08562719076871872
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9793,
+            "measuredCorrectionPx": [
+              -0.4648851454257965,
+              0.004124285653233528
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9706,
+            "measuredCorrectionPx": [
+              0.2244921773672104,
+              -0.15877023339271545
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97885,
+            "measuredCorrectionPx": [
+              0.006583872251212597,
+              -0.44064468145370483
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97296,
+            "measuredCorrectionPx": [
+              0.24882324039936066,
+              -0.23120930790901184
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "sweep-wood-chips",
+    "direction": "reference"
+  }
+}

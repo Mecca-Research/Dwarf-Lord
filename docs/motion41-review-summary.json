@@ -1,0 +1,80 @@
+{
+  "checkpoint": "motion41",
+  "date": "2026-10-04",
+  "baseline": "a3edda9522f402602075cacd58715d2494201b43",
+  "newMainApprovals": [],
+  "newGameplayMappings": [
+    "Borrin/count-coins"
+  ],
+  "newIndependentActorApprovalsOutsideFrozenScope": 1,
+  "totalDerivedActorApprovalsOutsideFrozenScope": 4,
+  "mainLoops": 8,
+  "mainFiniteTasks": 39,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 47,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 106,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 15,
+    "referenceActionsWithoutMapping": 50
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 106
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 50
+    }
+  ],
+  "reviewGatesComplete": false,
+  "productionReady": false,
+  "validation": {
+    "nodeTests": 205,
+    "pythonTests": 70,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "stationVariants": 11,
+    "physicalPropFamilies": 9,
+    "forgeOperations": 3,
+    "cookingOperations": 2,
+    "consultantOperations": 2,
+    "ElderSeatedActivities": 6,
+    "rightStrideBoundaries": 24,
+    "rightHeldSamples": 152,
+    "rightRenderedBoundaryPx": 1.79,
+    "headedGameplayCaptures": 2
+  },
+  "remainingMeasurements": {
+    "LaborerRearLeftWholeStridePx": 63.079,
+    "ElderRearCanePlantPx": 18.057,
+    "ElderRearJointFootCanePx": 14.009,
+    "BlacksmithRightAnalyticalWholeStridePx": 1.032
+  },
+  "unselectedCrateCandidate": {
+    "newLoweringPoses": 3,
+    "nearBootMinimumCorrelation": 0.9748071975720881,
+    "nearBootMaximumDriftPx": 1.0488706827163696,
+    "completeContactApproved": false,
+    "remaining": "Far support spacing/material contact, final native/task review"
+  },
+  "evidence": "docs/art-review/motion41/runtime-revalidation.json"
+}

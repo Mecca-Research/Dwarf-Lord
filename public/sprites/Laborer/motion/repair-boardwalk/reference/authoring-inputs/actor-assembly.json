@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    394,
+    400
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    140,
+    140,
+    160,
+    140,
+    100,
+    140,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "whole-sheet",
+      "file": "authoring-inputs/laborer-boardwalk-final.png",
+      "poseCount": 8,
+      "sha256": "ba8452c50471272421ae982d53fbdbc33ba821d027729d017d1b49ecb3ab34ee",
+      "rootXs": [
+        243.00000022205217,
+        712.7589689344168,
+        1213.0654391508835,
+        1668.7040982613196,
+        250.44633410985654,
+        716.4659176973196,
+        1183.5552288935735,
+        1637.7828165934636
+      ],
+      "rootYs": [
+        434.9999998994204,
+        440.2960490916784,
+        440.8253687918186,
+        442.32102581629385,
+        806.7992859620315,
+        802.762668958077,
+        805.4207118657919,
+        803.1266144238986
+      ],
+      "bodyHeights": [
+        590,
+        590,
+        590,
+        590,
+        590,
+        590,
+        590,
+        590
+      ],
+      "rootRegistration": {
+        "method": "common whole-pose origin from mean of two separately observed stationary boot patches",
+        "beforeMeasurementSha256": "00468dea2086aa8b3df5af9f94149568716648d61ee4c3aea0ae725983aa3c0b",
+        "observedNativeWholeOriginShiftsPx": [
+          [
+            1.9570699372195577e-07,
+            -8.864641132255713e-08
+          ],
+          [
+            6.838413298130035,
+            4.667704284191132
+          ],
+          [
+            40.60004806518555,
+            5.1342233419418335
+          ],
+          [
+            34.99344253540039,
+            6.452429533004761
+          ],
+          [
+            6.562870740890503,
+            -29.261646270751953
+          ],
+          [
+            10.105554580688477,
+            -32.819342613220215
+          ],
+          [
+            14.591049194335938,
+            -30.47666072845459
+          ],
+          [
+            7.740787506103516,
+            -32.49857711791992
+          ]
+        ],
+        "limbChanges": false,
+        "perPoseScale": false,
+        "scope": "Replaces provisional uniform-column and row-floor estimates with observed source placement. Two-foot relative spacing and material tests remain independent and can fail. Not a bounded runtime offset or a gait calibration."
+      }
+    }
+  ],
+  "poses": [
+    {
+      "input": "whole-sheet",
+      "pose": 0
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 1
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 2
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 3
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 4
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 5
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 6
+    },
+    {
+      "input": "whole-sheet",
+      "pose": 7
+    }
+  ],
+  "review": "Shared590 physical basis and one uniform520/590 export. Initial row/column layout estimates replaced by two independently observed visible support patches. Whole-source origins only; no limb warp, local foot move or per-pose rescale. Foot tests, tool contact and production approvals remain separate."
+}

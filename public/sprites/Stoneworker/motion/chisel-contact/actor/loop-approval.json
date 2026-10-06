@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "d8a4ba0057e14c600608be46f9cae44a95c8a0eb02fc9db5993f352ffdfcf755",
+    "settingsSha256": "af158ceaeb43e4f9cd061ae68a6555c87dce198cb839d1db1dc1704438bc7e28",
+    "frameSha256": [
+      "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457",
+      "bc413fad7f071c50b140caded8bc688941c1139e12738183de32cce53023b979",
+      "3e90fd0b62ac1ec8f82e3632e86fb508ea263db2207552262716b1584730018a",
+      "d1296212e7b557d754a9c52ee6aa18bf8ba116713328ec4ab6bbc63a6b7eea1b",
+      "255d78b2e73edcdeb46573ff4bd6b64f7de5e79e13211e6d6ccede61e126d164",
+      "59acd2ed5f17b87a6d37d0a2183e2796b19a929361afcff65c0b79106951f20c",
+      "2a0cd78474c95116d3ec94649c7c44b7e169c32e4e807a1ed30849c3fbbeec17",
+      "d038cd8993b672741df330383da5f36e2b5dd105c96b2c5aa205885cb2c60aa2"
+    ],
+    "atlasSha256": "f5cab789cbbd6f1d5952eaf18a67f9a271480a0cc9787f5c8b812ac6eb3cc7a7",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "af158ceaeb43e4f9cd061ae68a6555c87dce198cb839d1db1dc1704438bc7e28",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Stoneworker",
+    "action": "chisel-contact",
+    "direction": "actor"
+  },
+  "scope": "Fixed-view independent limestone dressing loop only. Eight actor/prop poses and repeat playback reviewed; gameplay remains once-hold. Does not approve walking, other directions, physical cutting forces or fixed-hole precision.",
+  "checks": {
+    "identity-and-scale": "Same stocky tan-skinned Stoneworker, dark braided beard, slate tunic, camera, body registration and boots throughout the eight poses.",
+    "station-and-foot-contact": "Squat bench remains fixed. Visible near boot remains on the ground baseline; far foot is partly hidden and no separate skeletal support certification is given.",
+    "hand-and-tool-contact": "Right hand keeps mallet grip through lift/tap/rebound; left hand retains chisel. Eight source-bound chisel endpoints remain on visible limestone face, including its front bevel. Dressing repositions the point, rather than cutting one fixed hole.",
+    "prop-continuity": "Same independently rendered bench, tray, cloth and limestone throughout; no prop exchange or geometry reset at completion.",
+    "last-to-first-transition": "Frame7 returns to low ready mallet used by frame0. Reviewed all eight layered poses and repeat/once-hold controls; endpoint reposition is13.416px in exported pixels and stays within the face, with unchanged stone."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../workstations/masonry-bench/sprite.png",
+      "sha256": "2a861206fefd929e98f39968ca13a6c0ae7a0cf1336b7740d2a4de5c8704f4aa"
+    },
+    {
+      "file": "../../../../workstations/masonry-bench/generation.json",
+      "sha256": "ed124586d5a19ce4c1b35be9639fcdcfc5a964c6a52d0f7df13bbb43f062884e"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "76f70dd9ed16b67d77cc289b1ab29ae0effb91242fda999253250b9d2627f569"
+    },
+    {
+      "file": "../../../../../../docs/masonry-contact-observations.json",
+      "sha256": "7ca27b49b78b006797720dabc963759774ed38d3c4e89444034221e68d98094b"
+    },
+    {
+      "file": "../../../../../../docs/masonry-contact-measurement.json",
+      "sha256": "91ec02c5d1f25659ae6397e04ac8f4b44e78efcf5123b74bbe1b1717c3f78322"
+    }
+  ],
+  "runtimeRevalidation": "Motion37: work branch, source art/placement/foreground and finite task playback unchanged; walking stride helper and partial-pose reconstruction added, plus a read-only mesh/camera probe. Station/Elder runtime regression recorded in docs/motion37-runtime-review.json before publishing."
+}

@@ -1,4 +1,4 @@
-"""Export authored eight-frame sheets with one shared scale per action.
+"""Export authored eight-frame sheets with shared sequence scale and calibrated directional body height.
 Requires Pillow, NumPy and SciPy. Run from repository root. Missing sources stay pending.
 """
 import argparse
@@ -9,6 +9,9 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as nd
+from motion_registration import VERSION, polish_settings, settings_hash, playback_settings, register
+from motion_loop_approval import apply as apply_loop_approval
+from whole_stride import travel_calibration
 
 ROOT = Path('public/sprites')
 PLAN = Path('docs/expanded-animation-plan.json')
@@ -36,36 +39,65 @@ def export(entry):
     centers = [(int(k), *reversed(nd.center_of_mass(solid, labels, int(k)))) for k in main]
     centers.sort(key=lambda c: c[2])
     ordered = sorted(centers[:4], key=lambda c:c[1])+sorted(centers[4:], key=lambda c:c[1])
+    generation=json.loads((folder/'generation.json').read_text())
+    frame_order=generation.get('frameOrder',list(range(8)))
+    if sorted(frame_order)!=list(range(8)):
+        raise ValueError(f'{source}: frameOrder must use each of the eight source poses once')
+    ordered=[ordered[i] for i in frame_order]
     crops = []
+    settings=polish_settings(folder)
+    cells=settings.get('sourceCells')
+    if cells is not None:
+        if len(cells)!=8:
+            raise ValueError('Eight authored source cells required')
+        for i,cell in enumerate(cells):
+            if len(cell)!=4 or any(not isinstance(v,int) or isinstance(v,bool) for v in cell):
+                raise ValueError('Integer source cell bounds required')
+            x0,y0,x1,y1=cell
+            if not 0<=x0<x1<=im.width or not 0<=y0<y1<=im.height:
+                raise ValueError('Source cell outside image')
+            if any(max(x0,a)<min(x1,c) and max(y0,b)<min(y1,d) for a,b,c,d in cells[:i]):
+                raise ValueError('Authored source cells overlap')
     # Register ground plus lower-body/station center, never moving hands or raised tools.
-    for k, _, _ in ordered:
-        mask = solid & (owner == k)
+    for index,(k, _, _) in enumerate(ordered):
+        if cells is None:
+            mask = solid & (owner == k)
+        else:
+            # Whole authored cells retain detached props and exclude neighboring
+            # piles. Nearest-component ownership cannot infer those boundaries.
+            a,b,c,d=cells[frame_order[index]]
+            mask=np.zeros_like(solid);mask[b:d,a:c]=solid[b:d,a:c]
+            if np.count_nonzero(mask)<1000:
+                raise ValueError('Authored cell lacks a full pose')
         yy, xx = np.where(mask)
         box = (int(xx.min()), int(yy.min()), int(xx.max()+1), int(yy.max()+1))
         x0,y0,x1,y1=box
         crop = pixels[y0:y1,x0:x1].copy()
-        crop[:,:,3][owner[y0:y1,x0:x1] != k] = 0
+        if cells is None:
+            crop[:,:,3][owner[y0:y1,x0:x1] != k] = 0
         crop[:,:,:3][crop[:,:,3] == 0] = 0
         lower = mask[y0+int((y1-y0)*.7):y1,x0:x1]
         lower_x = np.where(lower)[1]
         anchor_x = float((lower_x.min()+lower_x.max()+1)/2)
         crops.append((Image.fromarray(crop),box,anchor_x))
-    left=max(a for _,_,a in crops)
-    right=max(c.width-a for c,_,a in crops)
-    height=max(c.height for c,_,_ in crops)
-    scale=min(296/max(left,right),592/height)
+    if settings.get('sourceSha256') and settings['sourceSha256']!=hashlib.sha256(source.read_bytes()).hexdigest():
+        raise ValueError(f'{source}: source changed; recalibrate motion-polish.json')
+    if settings.get('assemblySha256') and settings['assemblySha256']!=hashlib.sha256((folder/'assembly.json').read_bytes()).hexdigest():
+        raise ValueError(f'{folder}: selections changed; rerun assemble-reviewed-motion.py')
+    playback=playback_settings(entry,settings)
+    scale,anchors,placements,registration=register(crops,entry,settings,frame_order)
     outputs=[]; frames=[]
     review=Image.new('RGB',(2560,1400),(48,55,54)); draw=ImageDraw.Draw(review)
     for i,(crop,box,ax) in enumerate(crops):
         crop=crop.resize((round(crop.width*scale),round(crop.height*scale)),Image.LANCZOS)
         output=Image.new('RGBA',(640,640))
-        position=(round(320-ax*scale),616-crop.height)
+        position=tuple(placements[i])
         output.alpha_composite(crop,position)
         filename=f'{i:02d}.png'; output.save(folder/filename)
         outputs.append(output)
         frames.append({'id':f'key-{i:02d}','file':filename,'description':entry['beats'][i],
-                       'durationMs':125,'sourceBounds':list(box),'sourceAnchor':[ax,box[3]-box[1]],
-                       'groundAnchor':[320,616],'placement':list(position)})
+                       'durationMs':playback['durationsMs'][i],'sourceBounds':list(box),'sourceAnchor':anchors[i],
+                       'groundAnchor':registration['targetAnchor'],'placement':list(position)})
         x,y=(i%4)*640,(i//4)*700
         review.paste(output,(x,y),output)
         words=entry['beats'][i].split(); lines=['']
@@ -76,31 +108,52 @@ def export(entry):
         if len(lines)>1:draw.text((x+16,y+665),lines[1],font=FONT,fill='white')
     review.save(folder/'review.jpg',quality=90)
     # APNG keeps alpha and the same exact eight authored images; no synthetic motion.
-    outputs[0].save(folder/'preview.png',save_all=True,append_images=outputs[1:],duration=125,loop=0,disposal=0,blend=0)
+    outputs[0].save(folder/'preview.png',save_all=True,append_images=outputs[1:],duration=playback['durationsMs'],loop=1 if playback['mode']=='once-hold' else 0,disposal=0,blend=0)
     atlas=Image.new('RGBA',(5120,640))
     for i,output in enumerate(outputs):atlas.alpha_composite(output,(i*640,0))
     atlas.save(folder/'atlas.png')
-    manifest={'version':1,'character':entry['character'],'action':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],
+    manifest={'version':2,'character':entry['character'],'action':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],
               'reference':os.path.relpath(entry['reference'],folder),'source':'source-sheet.png',
               'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'sourceSize':list(im.size),
-              'frameSize':[640,640],'sharedScale':scale,'frameCount':8,'frames':frames,
+              'frameSize':[640,640],'sharedScale':scale,'frameCount':8,'frames':frames,'sourceFrameOrder':frame_order,
               'atlas':{'file':'atlas.png','columns':8,'rows':1},'preview':'preview.png',
               'status':'authored-keyframe-variations','productionReady':False,
-              'playback':{'mode':'repeat-preview','order':list(range(8)),'fps':8},
+              'playback':playback,'registration':registration,
               'note':'Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.'}
+    if entry['kind']=='walk':
+        travel=travel_calibration(folder,manifest)
+        if travel: manifest['travelCalibration']=travel
     (folder/'prompt.txt').write_text(json.loads((folder/'generation.json').read_text())['prompt']+'\n')
+    apply_loop_approval(folder, manifest)
     (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     return {'id':entry['action'],'title':entry['title'],'direction':entry['direction'],'kind':entry['kind'],'manifest':entry['action']+'/manifest.json','frameCount':8}
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--force',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--character');parser.add_argument('--action');parser.add_argument('--direction');parser.add_argument('--force',action='store_true')
+    parser.add_argument('--runtime-layers',action='store_true',help='Export independent actor layers without rewriting the main character library')
+    args=parser.parse_args()
+    if args.runtime_layers:
+        count=0
+        for entry in json.loads(Path('docs/runtime-motion-layers.json').read_text())['entries']:
+            if ((not args.character or args.character==entry['character']) and
+                (not args.action or args.action==entry['action']) and
+                (not args.direction or args.direction==entry['direction'])):
+                if export(entry):count+=1
+        print(f'Exported {count} independent runtime actor layers; main library unchanged')
+        return
     plan=json.loads(PLAN.read_text());by_character={};count=0
     for entry in plan['entries']:
         folder=Path(entry['destination']); manifest=folder/'manifest.json'
         source=folder/'source-sheet.png'
         stale=manifest.exists() and (not (folder/'prompt.txt').exists() or (source.exists() and json.loads(manifest.read_text()).get('sourceSha256')!=hashlib.sha256(source.read_bytes()).hexdigest()))
-        if (not args.character or args.character==entry['character']) and (args.force or stale or not manifest.exists()):
+        if manifest.exists() and (folder/'generation.json').exists():
+            stale=stale or json.loads(manifest.read_text()).get('sourceFrameOrder',list(range(8)))!=json.loads((folder/'generation.json').read_text()).get('frameOrder',list(range(8)))
+        if manifest.exists():
+            registration=json.loads(manifest.read_text()).get('registration',{})
+            stale=stale or registration.get('exportVersion')!=VERSION or registration.get('settingsSha256')!=settings_hash(polish_settings(folder))
+        selected=(not args.character or args.character==entry['character']) and (not args.action or args.action==entry['action']) and (not args.direction or args.direction==entry['direction'])
+        if selected and (args.force or stale or not manifest.exists()):
             result=export(entry)
             if result:entry['status']='exported';count+=1
         if manifest.exists():

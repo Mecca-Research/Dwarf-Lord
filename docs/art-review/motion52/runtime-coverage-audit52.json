@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "checkpoint": "motion52",
+  "baseline": "096ce97da44c6c8b12c35fd19ae200be3e383055",
+  "addedMappings": [
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a",
+      "sha256": "05046d429f2a4eec214c2d60c9a8f0d527168791badd14f36be2b925d8d1f6c6"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "beforeSha256": "570de9c1f3eded873a4db3ea5ac07054d515cc5823f96ee0b0ac477234ed911b",
+      "sha256": "89f89c5c5e7b279da24e1614f41d3bde9cb488135d45c777de2a2d9b06198f57"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+      "beforeSha256": "f627c02633f4d859ba5c9e237092646abca046035027be016ab20ed5cd550a3b",
+      "sha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "9e910ce27109a341ee5a7b5928e873fc4590ba56e2ad2b0d4b6f3c536b2f8c6d",
+      "sha256": "641e16ce089e652429064bc91cd5d1027fd1ef4b957ac81e6c223eb4935e71e0"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "064d0119d9666a54378fd14c7d5a8ac5145af55ef45b7a3c8c9e52345777c7d0",
+      "sha256": "c8e3871ed7ad2f41a4ca863dbe1642c1286df66ce97ca16ce4ac95c9bc043ba7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "83b8b243a37cbfa2a74bfb0fcfdb6aab0bd5058053f2b1d5a6de540adcd944c2",
+      "sha256": "7ab743c2858ddeeedcdeb18751cf61b0d29b1208a62d1af4dc59f16ae1f4f840"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "64283dc4f12e9f1b56aa1f812e241e4b648cca241abfa5616419fcafa374b7b7",
+      "sha256": "4698d93132202c8c7c6ac5d14dbe54a855bad353bd040ac26d3fdad7bedb831c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "a4fd4ca174be91504148bbdf839d6197a2b6eb1ca9ad5050805d69e4c65dd936",
+      "sha256": "15275ad0b95f9134415adcc869222a668702b53ab65bee511d9720684d737dca"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "5a34e5a2b5af23334ec11f4ceb697059561ce7f5254893b401b34132bbb4e285",
+      "sha256": "4a51d9ad07c4d36affd98e1e52432fe242f7ab275072597a9f9467fc600eb8a7"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "1be532cb364776111ac6741deeaaf721157f3f65a07ece0dbaa3cb2d4466a3cd",
+      "sha256": "28ef17f87504b8f319d5bc3584240cfcf188ff69e2888a5ccc0fcffc795b146b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "1d105fe17275c976c077bd2f50e102c5806a0474595b31781bff4d35e2294456",
+      "sha256": "afce88c7745c955444171a213550ad53781fc739dd483c091cb4479aa5ee464e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "62cd375708827452a9a0013239060b17f9a9a08f2c18b1e29d28d4c8230de2d2",
+      "sha256": "2635da554c9e533a201f46bcc1df64a07624b9c6968b0e46c67edf27f18b75cb"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "beforeSha256": "b44b6e808e937486e1cb022249793b865bd9a25d75bb17aafe89bbf1192c7f3c",
+      "sha256": "9d626e69806f98755c3411f39c242c2fcc477f75901e3717f2c0780da1c8a013"
+    },
+    {
+      "file": "scripts/work-assignment.test.mjs",
+      "beforeSha256": "e1bde0b2da78f34b14f617b5130dbf59c94179f077951a6b83b582bf9e8e0216",
+      "sha256": "a69d4792c29b2e61790fe9a735ff2845b4b40d6c6c89fc237871cfa057b90e09"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "beforeSha256": "2f433b33302367a21eff605cbafc5af0d21dcb051f7c6c32e5a1f7e3e3b2f160",
+      "sha256": "a42a6bd8f6db62e008218d6e8159d17c58af13a903f6f6f720a9ccc7505ed624"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "beforeSha256": "6b89d46d5cdf63a9207075a01bc1585fbfb14a4da15c9784c0d51cff151023b0",
+      "sha256": "c4fc8416272d03a7665f3d05999cb0db000c8e6d3b1be7956a00e5c2b18cf4c6"
+    }
+  ],
+  "revalidatedEarlierApprovals": [
+    "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+    "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-seated/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference/loop-approval.json",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/task-approval.json",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference/task-approval.json",
+    "public/sprites/Cook/motion/chop-vegetables/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/loop-approval.json",
+    "public/sprites/Laborer/motion/stack-crates/actor/task-approval.json",
+    "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+    "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+    "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+    "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+    "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+    "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json"
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion52/runtime-revalidation52.json",
+    "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+  },
+  "scope": "One finite cosmetic forge preparation activation, on the existing physical anvil. Frozen160 obligations unchanged;50 main and7 original accepted,11 derived actors outside denominator.22 live references/43 inactive;103 individual reviews and11 family gates remain open."
+}

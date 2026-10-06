@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "folder": "public/sprites/Blacksmith/motion/walk/right",
+  "binding": {
+    "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "frameSha256": [
+      "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+      "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+      "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+      "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+      "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+      "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+      "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+      "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    ],
+    "durationsMs": [
+      109,
+      232,
+      135,
+      46,
+      164,
+      118,
+      111,
+      85
+    ],
+    "actualSettingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+    "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "right",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "strideBodyRatio": 0.880769,
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    1.0,
+    0.0
+  ],
+  "transitions": [
+    {
+      "fromPoint": [
+        372,
+        602
+      ],
+      "toPoint": [
+        322,
+        602
+      ],
+      "foot": "left",
+      "landmark": "heel",
+      "correspondenceReviewed": true,
+      "from": 0,
+      "to": 1,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        49.922,
+        0.0
+      ],
+      "contactJumpPx": 0.078,
+      "contactResidualPx": [
+        -0.078,
+        0.0
+      ],
+      "requiredForwardTravelPx": 50.0,
+      "perpendicularMismatchPx": 0.0
+    },
+    {
+      "fromPoint": [
+        444,
+        602
+      ],
+      "toPoint": [
+        338,
+        603
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 1,
+      "to": 2,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        106.256,
+        0.0
+      ],
+      "contactJumpPx": 1.032,
+      "contactResidualPx": [
+        0.256,
+        1.0
+      ],
+      "requiredForwardTravelPx": 106.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "fromPoint": [
+        338,
+        603
+      ],
+      "toPoint": [
+        276,
+        603
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 2,
+      "to": 3,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        61.83,
+        0.0
+      ],
+      "contactJumpPx": 0.17,
+      "contactResidualPx": [
+        -0.17,
+        0.0
+      ],
+      "requiredForwardTravelPx": 62.0,
+      "perpendicularMismatchPx": 0.0
+    },
+    {
+      "fromPoint": [
+        276,
+        603
+      ],
+      "toPoint": [
+        255,
+        604
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 3,
+      "to": 4,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        21.068,
+        0.0
+      ],
+      "contactJumpPx": 1.002,
+      "contactResidualPx": [
+        0.068,
+        1.0
+      ],
+      "requiredForwardTravelPx": 21.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "fromPoint": [
+        390,
+        611
+      ],
+      "toPoint": [
+        315,
+        611
+      ],
+      "foot": "right",
+      "landmark": "heel",
+      "correspondenceReviewed": true,
+      "from": 4,
+      "to": 5,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        75.112,
+        0.0
+      ],
+      "contactJumpPx": 0.112,
+      "contactResidualPx": [
+        0.112,
+        0.0
+      ],
+      "requiredForwardTravelPx": 75.0,
+      "perpendicularMismatchPx": 0.0
+    },
+    {
+      "fromPoint": [
+        418,
+        606
+      ],
+      "toPoint": [
+        364,
+        607
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 5,
+      "to": 6,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        54.044,
+        0.0
+      ],
+      "contactJumpPx": 1.001,
+      "contactResidualPx": [
+        0.044,
+        1.0
+      ],
+      "requiredForwardTravelPx": 54.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "fromPoint": [
+        364,
+        607
+      ],
+      "toPoint": [
+        313,
+        607
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 6,
+      "to": 7,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        50.838,
+        0.0
+      ],
+      "contactJumpPx": 0.162,
+      "contactResidualPx": [
+        -0.162,
+        0.0
+      ],
+      "requiredForwardTravelPx": 51.0,
+      "perpendicularMismatchPx": 0.0
+    },
+    {
+      "fromPoint": [
+        313,
+        607
+      ],
+      "toPoint": [
+        274,
+        608
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": true,
+      "from": 7,
+      "to": 0,
+      "materialReview": "Same visible sole feature on the same anatomical boot: posterior bottom heel corner for contact-to-down, distal lower toe rim for flat/down/passing/toe-off. Near right outer square buckle side distinguishes it from far left inner side; no hidden point inferred.",
+      "projectedRootTravelPx": [
+        38.93,
+        0.0
+      ],
+      "contactJumpPx": 1.002,
+      "contactResidualPx": [
+        -0.07,
+        1.0
+      ],
+      "requiredForwardTravelPx": 39.0,
+      "perpendicularMismatchPx": 1.0
+    }
+  ],
+  "coveredBoundaries": 8,
+  "returnBoundaryCovered": true,
+  "withinHeldPoseDriftPx": 0,
+  "withinHoldScope": "Held-root model only; live playback evidence and anatomical contact review are separate.",
+  "maxContactJumpPx": 1.032,
+  "fittedStrideBodyRatio": 0.880366,
+  "fittedMaxContactJumpPx": 1.021,
+  "materialCorrespondenceReviewed": true,
+  "measurementPassed": true,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval."
+}

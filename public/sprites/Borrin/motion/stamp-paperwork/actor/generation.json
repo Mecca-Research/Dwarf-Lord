@@ -1,0 +1,98 @@
+{
+  "actorOnly": true,
+  "prompt": "Edit the FIRST reference's 4-column by 2-row sprite sheet into one eight-pose animation of BORRIN making one slow administrative brass-stamp press, ready for overlay on the independent desk in reference TWO. Preserve exactly the first sheet's full stocky seated dwarf, wood chair, stationary two boots and knees, swept grey hair, bronze spectacles, two short brass-bound grey beard tips, red neck cravat, dark leather waistcoat, rolled cream sleeves, proportions, camera, detailed semi-realistic painterly rendering, transparent background and eight equal source cells. Keep the original chair, legs, boots, pelvis, head and cell positions unchanged in every cell. Only the hands and forearms and one small brass seal stamp change for this task. Draw all eight poses, no duplicated pose, no labels or added desk/book/ink/furniture. The desk is shown in reference TWO only for alignment and must NOT be painted into the actor sheet.\n\nAnatomical right hand is on IMAGE LEFT. In every cell its fingers enclose the SAME upright brass stamp's round handle with a short shaft and circular flat base, exactly like the tool in reference THREE. No hand switch, tool spawn, extra hand or second stamp. The OTHER hand stays low toward IMAGE RIGHT where it rests at the book-stack edge. Keep the right stamp at approximately the first sheet's image-left pointing finger location: local-cell x around 215, and bottom base at local y around 217 during contact. It will align over the open ledger's front page when normalized; keep base below the curled right fist and facing down toward paper.\n\nOrdered top row cells0-3: 0 stamp held upright, base a little above the open entry at local y198; 1 begin gentle lift, base y181; 2 modest apex, base y167; 3 controlled midway descent, base y191. Bottom row4-7: 4 stamp base reaches paper plane y217; 5 gentle downward press on that same plane without sinking through it; 6 recovery lifts the retained stamp base to y191; 7 finished upright retained-stamp hold base at y198. There is only one press, smooth small elbow/wrist changes, and a steady torso/feet. Preserve realistic finger-wrap grip. Final pose holds the same stamp above the page. No new ink mark, paper transfer, resource reward or reloading task is depicted. Full chair and boots remain visible, no clipping at cell borders, transparent background. This is a complete eight-pose actor sheet rather than a concept poster.\n",
+  "reference": "../reference/source-sheet.png",
+  "referenceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+  "editHistory": [
+    {
+      "version": 1,
+      "source": "authoring-inputs/stamp46.png",
+      "sourceSha256": "ac45c73cfe7bebedeb0dd31235e11b351493de0c44b7d141ff8eb80fd840ab70",
+      "references": [
+        {
+          "file": "authoring-inputs/reference46-0.png",
+          "sha256": "4d1df97eda38e2cbcdb3d6de8309b4aa90ccea5968b57d1e120d3553492cb537"
+        },
+        {
+          "file": "authoring-inputs/reference46-1.png",
+          "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+        },
+        {
+          "file": "authoring-inputs/reference46-2.png",
+          "sha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5"
+        }
+      ],
+      "prompt": "Edit the FIRST reference's 4-column by 2-row sprite sheet into one eight-pose animation of BORRIN making one slow administrative brass-stamp press, ready for overlay on the independent desk in reference TWO. Preserve exactly the first sheet's full stocky seated dwarf, wood chair, stationary two boots and knees, swept grey hair, bronze spectacles, two short brass-bound grey beard tips, red neck cravat, dark leather waistcoat, rolled cream sleeves, proportions, camera, detailed semi-realistic painterly rendering, transparent background and eight equal source cells. Keep the original chair, legs, boots, pelvis, head and cell positions unchanged in every cell. Only the hands and forearms and one small brass seal stamp change for this task. Draw all eight poses, no duplicated pose, no labels or added desk/book/ink/furniture. The desk is shown in reference TWO only for alignment and must NOT be painted into the actor sheet.\n\nAnatomical right hand is on IMAGE LEFT. In every cell its fingers enclose the SAME upright brass stamp's round handle with a short shaft and circular flat base, exactly like the tool in reference THREE. No hand switch, tool spawn, extra hand or second stamp. The OTHER hand stays low toward IMAGE RIGHT where it rests at the book-stack edge. Keep the right stamp at approximately the first sheet's image-left pointing finger location: local-cell x around 215, and bottom base at local y around 217 during contact. It will align over the open ledger's front page when normalized; keep base below the curled right fist and facing down toward paper.\n\nOrdered top row cells0-3: 0 stamp held upright, base a little above the open entry at local y198; 1 begin gentle lift, base y181; 2 modest apex, base y167; 3 controlled midway descent, base y191. Bottom row4-7: 4 stamp base reaches paper plane y217; 5 gentle downward press on that same plane without sinking through it; 6 recovery lifts the retained stamp base to y191; 7 finished upright retained-stamp hold base at y198. There is only one press, smooth small elbow/wrist changes, and a steady torso/feet. Preserve realistic finger-wrap grip. Final pose holds the same stamp above the page. No new ink mark, paper transfer, resource reward or reloading task is depicted. Full chair and boots remain visible, no clipping at cell borders, transparent background. This is a complete eight-pose actor sheet rather than a concept poster.\n",
+      "method": "Built-in whole-eight-pose edit of approved seated actor. Shared physical source basis; no local body part transforms, painting or pose synthesis.",
+      "scope": "Candidate finite retained-stamp press at independently owned original desk. Contact and game evidence pending."
+    },
+    {
+      "version": 1,
+      "source": "authoring-inputs/stamp-height46.png",
+      "sourceSha256": "530d01063a13d81ffd6e82f9d156af00032597a6513336d39c7e6c3b935d6bdf",
+      "references": [
+        {
+          "file": "authoring-inputs/stamp46.png",
+          "sha256": "ac45c73cfe7bebedeb0dd31235e11b351493de0c44b7d141ff8eb80fd840ab70"
+        }
+      ],
+      "prompt": "Edit this exact eight-pose Borrin actor sprite sheet, keep the same 4-column2-row layout, transparent background, exact full seated identity, chair, boots, stationary legs, head, cream sleeves, waistcoat, grey double beard tips and spectacles. Correct only the vertical reach of his IMAGE-LEFT anatomical right hand plus the one retained brass seal stamp. The image-right free hand must stay in its current low place in ALL cells. Do not alter a single boot, knee, chair part or the pelvis arrangement. Never add a desk, ledger, paper, loose prop or labels.\n\nThis actor will be overlaid on a separate ledger desk whose working page is at local-cell Y approximately220. The brass stamp's bottom flat face must be at this page during press, not down at the thigh. In the current edit bottom-row first and second stamp poses are around localY245 and are too low. Raise their WHOLE fist/wrist/held stamp and draw correct connecting forearm approximately25 pixels so base is at LOCAL-Y220. Preserve actual hand wrap around the upright same handle.\n\nEight poses TOP0-3/BOTTOM4-7:0 retained ready stamp bottom face localY202,1 moderate lift bottomY174,2 apex bottomY134,3 midpoint descent bottomY186,4 press contact bottomY220,5 firm gentle press bottomY220,6 retained stamp recovers to bottomY193,7 finished retained-stamp hover bottomY202. The stamp stays at localX177-181 on IMAGE LEFT through ALL poses, with a single circular flat base pointing downward and same brass shape. Reconnect each anatomically right elbow/forearm to its fixed shoulder naturally and keep realistic grip. It must be a smooth modest motion without a hand switch or stamp appearing/disappearing. Other hand stays low exactly unchanged; chest/head/legs/chair are unchanged across this sheet. All8 complete authored poses, preserve source character scale/camera and full margins. No invented ink mark or paper transfer.\n",
+      "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+      "selected": false,
+      "review": "Height attempt still leaves base below the independent book; unselected."
+    },
+    {
+      "version": 1,
+      "source": "authoring-inputs/stamp-reach46.png",
+      "sourceSha256": "55c116b8f57a4270340a82c7f2ba7221f2db9f8b78f148dd4a6055c870ff9c40",
+      "references": [
+        {
+          "file": "authoring-inputs/stamp46.png",
+          "sha256": "ac45c73cfe7bebedeb0dd31235e11b351493de0c44b7d141ff8eb80fd840ab70"
+        }
+      ],
+      "prompt": "Correct this complete4-column2-row Borrin seated actor animation. Preserve his exact stocky identity, detailed rendering, grey hair/glasses/double short brass-bound beard tips/red cravat, chair and two planted boots and legs, fixed same camera, same eight source cells, transparent background.\n\nThe stamp press is WRONG: in bottom-row first and second cells his right fist and brass stamp are down over his thigh. He should press a paper resting on a DESK IN FRONT OF HIS BELT. In those TWO contact poses RAISE HIS WHOLE RIGHT FOREARM/FIST/RETAINED STAMP visibly: the stamp's BOTTOM FLAT FACE must be horizontally level with the FINGERTIPS OF HIS OTHER HAND. His right stamp grip must sit beside his waistcoat brass BUTTON just ABOVE THE BELT. Keep elbow lifted naturally so stamp stays vertical. Do not let tool face descend below the fingers of the other hand. His other hand remains at its current belt-height desk-edge resting pose, exactly unchanged across eight poses. This is a forward desk reach, not pounding his leg.\n\nReauthor all8 right-arm/held-stamp poses smoothly: top-left ready above desk near the existing belt-level other fingers; top-second rising; top-third apex; top-fourth midway descent with base still above other fingers. Bottom-first and bottom-second PRESS on the exact other-fingertip horizontal plane with fist ABOVE THE BELT, base LEVEL WITH the other fingers. Bottom-third lifts stamp clear, bottom-last retains stamp ready a little above paper, never releasing or switching it. Exactly one same brass seal stamp with a circular flat down-facing base is gripped by anatomical RIGHT HAND on IMAGE LEFT from start to finish. No added desk, book, paper, scenery, labels, new ink mark, duplicate or missing tools. Only right-arm movement and small corresponding upper-body posture; chair/knees/boots/camera/scale remain exactly as input. Full eight different poses, no clipping.\n",
+      "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+      "selected": true,
+      "review": "Forward reach now places stamp base near the low free-hand fingers; numerical material/contact checks pending."
+    },
+    {
+      "version": 1,
+      "source": "authoring-inputs/stamp-page46.png",
+      "sourceSha256": "4ae4560d7697ea9f3ec7d8062af82c33adf1c9e40fe07aa29ecd6d01face094d",
+      "references": [
+        {
+          "file": "authoring-inputs/stamp-reach46.png",
+          "sha256": "55c116b8f57a4270340a82c7f2ba7221f2db9f8b78f148dd4a6055c870ff9c40"
+        },
+        {
+          "file": "authoring-inputs/page-guide46.jpg",
+          "sha256": "d62861130437f56b91a2695bce3fa07f10a5a701d4be381203efe44263adeb0b"
+        },
+        {
+          "file": "authoring-inputs/reference46-0.png",
+          "sha256": "4d1df97eda38e2cbcdb3d6de8309b4aa90ccea5968b57d1e120d3553492cb537"
+        }
+      ],
+      "prompt": "Correct the FIRST image's eight actor poses for a brass seal press ON THE OPEN PAPER PAGE. SECOND image is a diagnostic showing why the stamp currently misses: it is too far IMAGE LEFT and a little too LOW, over bare wood. Its cyan ellipse shows the true page target in bottom-row contact poses. THIRD image is the same actor's approved page-pointing reference; its index finger already points at the proper paper entry. Draw the seal stamp's flat base exactly where that index fingertip points, with the closed-grip fist above it. This requires his IMAGE-LEFT right forearm to reach ACROSS toward his CENTER BELT BUCKLE, then the seal face is in front of the buckle ON THE PAGE, not to the left of his waist. Move the stamp and hand roughly35 source pixels toward IMAGE RIGHT and raise it slightly, with a naturally connected right elbow/forearm. Preserve one same upright seal stamp and continuous enclosed grip.\n\nOutput ONLY the full4-column2-row transparent actor sheet like FIRST image; do NOT paint the diagnostic desk/book/cyan marks/labels into the output. Keep exact same dwarf, scale/camera, identity, chair, grey short double beard/spectacles/red cravat, knees/boots and opposite resting hand. Draw all8 right-hand/tool poses: ready just above the pointed paper entry, lift, apex, midway descent, bottom-first page contact at the THIRD image fingertip and SECOND cyan ellipse, bottom-second gentle press ON THE SAME PAGE SPOT, recovery lift, finished hold slightly above that entry. Right forearm reaches toward center in every pose so stamp remains above the ledger rather than bare wood. Feet/chair/body remain fixed, no hand/tool switch, no duplicate stamp, no missing tool, no ink-mark effect. The tool's lower flat rim in the two press poses must visibly be ON PAPER, not lower than its front edge. Genuine eight smooth authored poses with transparent background and full margins.\n",
+      "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+      "selected": false,
+      "review": "Desk painted into the candidate: extra owner remains unselected."
+    },
+    {
+      "version": 1,
+      "source": "authoring-inputs/stamp-remove46.png",
+      "sourceSha256": "7a679ac049aa401c04e25cc4ce9b50cc7acbdcb86836b153f4c35b975b3ec82d",
+      "references": [
+        {
+          "file": "authoring-inputs/stamp-page46.png",
+          "sha256": "4ae4560d7697ea9f3ec7d8062af82c33adf1c9e40fe07aa29ecd6d01face094d"
+        }
+      ],
+      "prompt": "Remove the desk and all its contents from this EXACT existing4-column2-row eight-pose sheet. Keep each current Borrin pose, right-hand grip, stamp placement, face, body, visible cream sleeves, trousers, boots, visible wooden CHAIR and original source-cell coordinates/scale unchanged. The brass seal STAMP already held in his IMAGE-LEFT right hand belongs to BORRIN and must REMAIN in that same hand at its EXACT current place in every cell, including the lowered contact pose in bottom-first/bottom-second. The current tool placement is already correct. Do not move the forearms or stamp, do not re-center or re-size characters.\n\nRemove ONLY the large wooden DESK/table with drawers, desk legs/crossbeams, open LEDGER, inkwell, small loose counter, book stack and papers. Replace removed furniture pixels with transparency. Keep every visible actor body/limb pixel at its current coordinate. If the desk hides body areas, leave those hidden areas transparent rather than inventing limbs or moving the knees. His CHAIR behind him is actor-owned and its existing visible parts remain. The TWO visible boots and actual soles remain exactly as they are. No new props, labels, background, scenery, extra stamp or changed outfit.\n\nThe result is the SAME eight authored sealing poses ready to be overlaid on an independent fixed desk: ready, rise, apex, descend, contact, press, lift, held finish. This request only separates ownership by removing the desk's pixels. It does NOT reauthor the action or body. Keep4columns2rows source canvas and transparent background, original cell margins and fixed camera.\n",
+      "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+      "selected": true,
+      "review": "Whole-sheet editor removes independent furniture. Native actor/desk contact and ownership proof pending."
+    }
+  ]
+}

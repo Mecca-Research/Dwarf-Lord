@@ -1,0 +1,16 @@
+{
+  "key": "Cook-fillet-fish",
+  "character": "Cook",
+  "action": "fillet-fish",
+  "prompt": "Edit this exact eight-frame 4-column by 2-row transparent sprite sheet. Keep the same image dimensions, positions, canonical stocky dwarf cook, boots, table, towel, barrel, bowl, fish head orientation, all fixed station geometry and unchanged six poses EXACTLY as supplied. Only correct two motion continuity defects: in frame 1 (top row SECOND) his right hand and knife must be just above the fish's head on the cutting board, about wrist high, beginning the incision; never above his own head. Keep one anatomically correct gripping hand and one connected blade/handle. In frame 7 (bottom row FOURTH), preserve the completed result of frame 6 (bottom row THIRD): the pink separated fillet remains flat on the same front-right area of the board, and the opened fish carcass remains on the rear-left; neither food item can vanish or rejoin. Right hand lowers the knife beside the carcass, left hand releases and withdraws from the deposited fillet, both hands empty except knife in right. Continuous finite filleting task ending with deposited fillet retained. Transparent background, no labels, no frame reordering, no new objects, no camera/scale/lighting changes. Preserve fixed furniture outlines and exact registration.",
+  "method": "Built-in whole-sheet image edit; exact supplied source inspected first. No synthesized limb motion or local pixel redraw.",
+  "references": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566"
+    }
+  ],
+  "output": "authoring-inputs/Cook-fillet-fish39.png",
+  "outputSha256": "91274dd3cd333c06fe943fb9e69d29272377e0d431bf425bdd27e110a09ea254",
+  "decision": "Rejected: lowered knife corrected, but final fillet still disappears."
+}

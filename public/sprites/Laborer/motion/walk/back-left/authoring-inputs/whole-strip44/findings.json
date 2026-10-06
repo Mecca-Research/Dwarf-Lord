@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "date": "2026-10-05",
+  "character": "Laborer",
+  "direction": "back-left",
+  "attempts": [
+    {
+      "source": "laborer-whole-strip.png",
+      "sourceSha256": "fde9c3a76f2f1e666144e490f00c85253e4cd68d875014f75c0fc799d1574224",
+      "prompt": "prompt.txt",
+      "promptSha256": "1fc002165b4143a016f252478d94aaea062ee46ddc8261774fd78c9105168db4",
+      "references": [
+        {
+          "file": "laborer-eight-slot-edit.png",
+          "sha256": "5c725faddbf79dbf50499d304256cf3ab74a65d322731b809c35ca6cee80a11f"
+        },
+        {
+          "file": "identity-back-left.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "method": "Built-in eight-pose edit generated together as one horizontal strip.",
+      "verdict": "changes-required",
+      "selected": false,
+      "findings": [
+        "The contact/reach phases do not visibly exchange the leading near and far legs at the opposite half-stride; near-left reach/contact cannot be accepted.",
+        "The same supporting material cannot be identified at every ordered boundary; no heel/toe observations or travel calibration are adopted.",
+        "Authoring targets in the schematic remain targets only. Prompt labels do not establish contact, scale, camera or arm correctness."
+      ],
+      "closure": false
+    },
+    {
+      "source": "laborer-guide-strip.png",
+      "sourceSha256": "a99826bb14b4592fa85ffb2349bde27f8f1ace156220582c7c6f5182591c4aaf",
+      "prompt": "guide-prompt.txt",
+      "promptSha256": "51071626cb0ff25ed8bf93ec98bbde1327e2438b31c1832c7656b8c9f4cb6198",
+      "references": [
+        {
+          "file": "eight-pose-ground-guide.png",
+          "sha256": "494c8280f77a813cf8b6edd62e05b55096678320ebdf6e985f093caf6aafca22"
+        },
+        {
+          "file": "selected-identity00.png",
+          "sha256": "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125"
+        }
+      ],
+      "method": "Built-in eight-pose edit generated together as one horizontal strip.",
+      "verdict": "changes-required",
+      "selected": false,
+      "findings": [
+        "The contact/reach phases do not visibly exchange the leading near and far legs at the opposite half-stride; near-left reach/contact cannot be accepted.",
+        "The same supporting material cannot be identified at every ordered boundary; no heel/toe observations or travel calibration are adopted.",
+        "Authoring targets in the schematic remain targets only. Prompt labels do not establish contact, scale, camera or arm correctness."
+      ],
+      "closure": false
+    }
+  ],
+  "selectedCheckpoint": [
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/source-sheet.png",
+      "sha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/atlas.png",
+      "sha256": "e706dbad58600b95fe8ff4ddb6a16853a894514ee45ccebeef7f5ca4a52a1b50"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/motion-polish.json",
+      "sha256": "e7e76734cac9e113b00bcddd9087af1c1cf26b234fa22b65e34707d89128332c"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/assembly.json",
+      "sha256": "2532271f9409e2985b1579fbcf1036ff6226e86277fe2e66e1e79ab048ad8ef3"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/manifest.json",
+      "sha256": "45d4eca6cdd30c028b4afb1d4260d6de8c7ce2a97076c97853dcafc88838207c"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/00.png",
+      "sha256": "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/01.png",
+      "sha256": "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/02.png",
+      "sha256": "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/03.png",
+      "sha256": "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/04.png",
+      "sha256": "e4f12f5576c4c37167abfc437fd62f8618d2571203ab4768d5d295bafcf76ddd"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/05.png",
+      "sha256": "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/06.png",
+      "sha256": "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/07.png",
+      "sha256": "ed0d23a48a656dd530d7cb04583710ec7fbd961eee4ad37b08183c4db531adbc"
+    }
+  ],
+  "scope": "Unselected diagnostic authoring record. Selected Laborer gait and failed63.079px report remain unchanged. No new task, cycle, direction or gait approval."
+}

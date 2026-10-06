@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "source": "authoring-inputs/stamp-height46.png",
+  "sourceSha256": "530d01063a13d81ffd6e82f9d156af00032597a6513336d39c7e6c3b935d6bdf",
+  "references": [
+    {
+      "file": "authoring-inputs/stamp46.png",
+      "sha256": "ac45c73cfe7bebedeb0dd31235e11b351493de0c44b7d141ff8eb80fd840ab70"
+    }
+  ],
+  "prompt": "Edit this exact eight-pose Borrin actor sprite sheet, keep the same 4-column2-row layout, transparent background, exact full seated identity, chair, boots, stationary legs, head, cream sleeves, waistcoat, grey double beard tips and spectacles. Correct only the vertical reach of his IMAGE-LEFT anatomical right hand plus the one retained brass seal stamp. The image-right free hand must stay in its current low place in ALL cells. Do not alter a single boot, knee, chair part or the pelvis arrangement. Never add a desk, ledger, paper, loose prop or labels.\n\nThis actor will be overlaid on a separate ledger desk whose working page is at local-cell Y approximately220. The brass stamp's bottom flat face must be at this page during press, not down at the thigh. In the current edit bottom-row first and second stamp poses are around localY245 and are too low. Raise their WHOLE fist/wrist/held stamp and draw correct connecting forearm approximately25 pixels so base is at LOCAL-Y220. Preserve actual hand wrap around the upright same handle.\n\nEight poses TOP0-3/BOTTOM4-7:0 retained ready stamp bottom face localY202,1 moderate lift bottomY174,2 apex bottomY134,3 midpoint descent bottomY186,4 press contact bottomY220,5 firm gentle press bottomY220,6 retained stamp recovers to bottomY193,7 finished retained-stamp hover bottomY202. The stamp stays at localX177-181 on IMAGE LEFT through ALL poses, with a single circular flat base pointing downward and same brass shape. Reconnect each anatomically right elbow/forearm to its fixed shoulder naturally and keep realistic grip. It must be a smooth modest motion without a hand switch or stamp appearing/disappearing. Other hand stays low exactly unchanged; chest/head/legs/chair are unchanged across this sheet. All8 complete authored poses, preserve source character scale/camera and full margins. No invented ink mark or paper transfer.\n",
+  "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+  "selected": false,
+  "review": "Height attempt still leaves base below the independent book; unselected."
+}

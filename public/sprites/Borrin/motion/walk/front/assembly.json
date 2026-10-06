@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "generation": "authoring-inputs/original-generation.json",
+      "sha256": "a71e233e1fd1d0484ebe12343ba1d64264f965e2a77260ffcaa10485e84555f2"
+    },
+    {
+      "id": "correction",
+      "file": "authoring-inputs/correction-sheet.png",
+      "poseCount": 8,
+      "prompt": "Use case: identity-preserve. Edit the provided Borrin FRONT walking sprite sheet. Lock original identity, face, beard/hair, body proportions, clothing, materials and high-quality semi-realistic render. Make EIGHT CHRONOLOGICAL full-body poses arranged 4 columns by 2 rows on transparent RGBA. ONE complete TWO-STEP walk in place, same frontal camera, same body size and centered pelvis throughout. Explicit order: 1 LEFT boot (screen RIGHT) heel lands forward; 2 same LEFT boot planted supporting weight, RIGHT trailing heel rises; 3 RIGHT knee (screen LEFT) bent and passing airborne alongside planted LEFT leg, NOT a high forward kick; 4 RIGHT leg reaches forward preparing heel landing, left heel begins rising; 5 RIGHT boot heel lands forward, OPPOSITE contact to frame1; 6 RIGHT boot planted supporting weight, LEFT trailing heel rises; 7 LEFT knee (screen RIGHT) bent and passing airborne alongside RIGHT support leg; 8 LEFT leg reaches forward preparing heel landing, matching transition back to1. His anatomical LEFT arm (screen RIGHT) must KEEP the identical closed brown ledger tucked firmly at his left ribs in all eight poses; ledger hand never changes, grip never releases. Only the free RIGHT arm swings: forward with LEFT leg, back with RIGHT leg. Free arm reaches forward when OPPOSITE leg reaches forward, recedes during down phase, neutral at passing phase. No two feet airborne, no duplicated stride throughout the sheet, no extra limbs, no mirrored costumes. Same horizontal torso axis, modest weight shift. Keep existing face crisp and opaque, no holes. Transparent background without scenery or floor shadows. Large gutters and complete head/boot margins; no clipping. Preserve this exact character, not a redesign.",
+      "sha256": "e0bfa296cf2edce783e48d04c75d2d7c50505d2edd0a10dbb7210a8a0b534f5a"
+    },
+    {
+      "id": "passing",
+      "file": "authoring-inputs/left-passing.png",
+      "poseCount": 1,
+      "prompt": "Use case: precise-object-edit. Edit ONLY the LEGS of this exact game sprite. Keep ALL pixels from belt upward visually identical: same big dwarf head size, glasses, grey beard, face, torso width, blue vest, shirt, keys, closed ledger in LEFT arm at screen RIGHT, same hand poses, same illustration style. Swap the support and passing legs: SCREEN LEFT boot must be grounded flat, SCREEN RIGHT knee bent with that boot lifted tucked beside the other shin. This is the opposite-leg passing pose. Do NOT mirror the whole sprite. Do not enlarge the body relative to the head. Retain this exact compact stocky proportion and same image composition/scale with clear margins. Full-body on genuinely transparent background, no scenery, no glow, no floor, no text.",
+      "sha256": "ac06a9dbb0b843ccaa2274967c8101c23e3db41d55d2e30c0340c757545530cf",
+      "reference": "authoring-inputs/right-passing-reference.png",
+      "referenceSha256": "140632fe7f10441deaa5abfc2a2658e111749838dfcc4bf2ff0b3e202d3c8f93"
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "correction",
+      "pose": 0
+    },
+    {
+      "input": "correction",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "correction",
+      "pose": 1
+    },
+    {
+      "input": "passing",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "note": "Each selected pose was authored as a complete image. Assembly only extracts, uniformly scales, registers and arranges existing poses; no interpolation, mirroring or limb editing."
+}

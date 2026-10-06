@@ -1,0 +1,3797 @@
+{
+  "checkpoint": "motion58",
+  "baseline": "374698f1fd20167a4cb202e82b91857ea799bafe",
+  "unchangedAcceptedCycles": [
+    "public/sprites/Blacksmith/motion/walk/right",
+    "public/sprites/Blacksmith/motion/walk/left",
+    "public/sprites/Blacksmith/motion/anvil-ready/reference",
+    "public/sprites/Blacksmith/motion/hammer-raised/reference",
+    "public/sprites/Blacksmith/motion/hammer-contact/reference",
+    "public/sprites/Blacksmith/motion/inspect-tool/reference",
+    "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference",
+    "public/sprites/Borrin/motion/desk-writing/reference",
+    "public/sprites/Borrin/motion/review-open-ledger/reference",
+    "public/sprites/Borrin/motion/turn-ledger-page/reference",
+    "public/sprites/Borrin/motion/explain-at-desk/reference",
+    "public/sprites/Borrin/motion/count-coins/reference",
+    "public/sprites/Borrin/motion/stamp-paperwork/reference",
+    "public/sprites/Cook/motion/chop-vegetables/reference",
+    "public/sprites/Cook/motion/peel-potatoes/reference",
+    "public/sprites/Cook/motion/knead-dough/reference",
+    "public/sprites/Cook/motion/stir-cauldron/reference",
+    "public/sprites/Cook/motion/mix-ingredients/reference",
+    "public/sprites/Cook/motion/serve-stew/reference",
+    "public/sprites/Elder/motion/eat-stew/reference",
+    "public/sprites/Elder/motion/eat-bread/reference",
+    "public/sprites/Elder/motion/laugh-seated/reference",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference",
+    "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+    "public/sprites/Female Miner/motion/examine-sample/reference",
+    "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+    "public/sprites/Helga/motion/pickaxe-ready/reference",
+    "public/sprites/Helga/motion/pickaxe-contact/reference",
+    "public/sprites/Helga/motion/inspect-mineral/reference",
+    "public/sprites/Helga/motion/bind-tool-handle/reference",
+    "public/sprites/Laborer/motion/lift-crate/reference",
+    "public/sprites/Laborer/motion/build-crate/reference",
+    "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+    "public/sprites/Ginger/motion/saw-timber/reference",
+    "public/sprites/Ginger/motion/build-timber-crate/reference",
+    "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+    "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+    "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+    "public/sprites/Borrin/motion/explain-open-ledger/reference",
+    "public/sprites/Cook/motion/cut-boar-meat/reference",
+    "public/sprites/Cook/motion/fillet-fish/reference",
+    "public/sprites/Ginger/motion/fell-tree/reference",
+    "public/sprites/Ginger/motion/chop-downed-log/reference",
+    "public/sprites/Ginger/motion/sharpen-axe/reference",
+    "public/sprites/Ginger/motion/build-barrel/reference",
+    "public/sprites/Laborer/motion/stack-crates/reference",
+    "public/sprites/Laborer/motion/shovel-rubble/reference",
+    "public/sprites/Cook/motion/chop-vegetables/actor",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor",
+    "public/sprites/Ginger/motion/fell-tree/actor",
+    "public/sprites/Laborer/motion/stack-crates/actor",
+    "public/sprites/Borrin/motion/desk-writing/actor",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor",
+    "public/sprites/Quartermaster/motion/check-weights/actor",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor",
+    "public/sprites/Cook/motion/peel-potatoes/actor",
+    "public/sprites/Borrin/motion/count-coins/actor",
+    "public/sprites/Ginger/motion/build-barrel/actor",
+    "public/sprites/Borrin/motion/review-open-ledger/actor",
+    "public/sprites/Borrin/motion/explain-at-desk/actor",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor",
+    "public/sprites/Cook/motion/knead-dough/actor",
+    "public/sprites/Cook/motion/stir-cauldron/actor",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor",
+    "public/sprites/Cook/motion/mix-ingredients/actor",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor"
+  ],
+  "unchangedSelectedAssets": [
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/source-sheet.png",
+      "sha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/atlas.png",
+      "sha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/motion-polish.json",
+      "sha256": "6f6ff40e2392775c5929efdf7f240121997eddcda6254fdb26432b2dc5f40b6a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/00.png",
+      "sha256": "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/01.png",
+      "sha256": "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/02.png",
+      "sha256": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/03.png",
+      "sha256": "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/04.png",
+      "sha256": "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/05.png",
+      "sha256": "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/06.png",
+      "sha256": "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/07.png",
+      "sha256": "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/source-sheet.png",
+      "sha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/atlas.png",
+      "sha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/motion-polish.json",
+      "sha256": "cbad54d024a55803410003cb83bf74ed1197b0f5badb852e896be433a29c95a4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/00.png",
+      "sha256": "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/01.png",
+      "sha256": "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/02.png",
+      "sha256": "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/03.png",
+      "sha256": "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/04.png",
+      "sha256": "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/05.png",
+      "sha256": "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/06.png",
+      "sha256": "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/07.png",
+      "sha256": "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/source-sheet.png",
+      "sha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/atlas.png",
+      "sha256": "c8cb82a3cdc99109340c4e76b10eb8a870b9cb6c91ce0c170549a86d2e4e7f8c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/motion-polish.json",
+      "sha256": "786cca2607cc81ad2484e03db99dab02446951a860511c85c4e9145d177cf385"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/00.png",
+      "sha256": "ea2c2863a83c8607888fd56f4c67868b82295d3d39bcbcd661ef07d423bdddcd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/01.png",
+      "sha256": "7e74db2d3333ac814bfdef9a2c263fc893f32895fc500399eda5cc53b84e9b34"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/02.png",
+      "sha256": "2f6ac23b8c5aa766d6913f903f7478390254b80ed06b9a014d7932dc214db902"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/03.png",
+      "sha256": "9d323c9695d4bc7abcb484303da889f044afa454c0833d8e76929aeceef76f0b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/04.png",
+      "sha256": "5deb6d0ae02e1dc068fd0467f751831d0db80662e6278f32b7e050931beebf4d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/05.png",
+      "sha256": "c7937a98f351924d5abd9864fad5fa5d50a84cc1487ea06063ac876fa380ae0f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/06.png",
+      "sha256": "411f51c1546cf81e1ac41e9a2b7cb26163bd029c70289ca29bc0a32aac37344f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/reference/07.png",
+      "sha256": "e1a799da69eee1d72e273eeb6ff003bdef9539a538675fb09f7d8ad5e06c8335"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/source-sheet.png",
+      "sha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/atlas.png",
+      "sha256": "d01ae4bea88240b8a4500191867e652d8314b735b449a7097d57b1ebb190040b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/motion-polish.json",
+      "sha256": "1de39f84d1c0358f63dc8fde52e52ed92426b01d6c9ff010aebd7e46cf9fafa4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/00.png",
+      "sha256": "6c830aba25ed2bb4b1bac664be3f2098d061e7d301424816052a6c250e47b935"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/01.png",
+      "sha256": "620d4a96c90f880f24d25bf5578d6071621e961ab583ee13ee7a2e04e5f69b46"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/02.png",
+      "sha256": "d1ae1d044e420141c75cda825cd9228d8b90265cadf8283b3526c4f5c0e96866"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/03.png",
+      "sha256": "3da2a90fe4f80360a43898ea864eb1139b4d65c26d53ca43a86c8f25a61d2510"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/04.png",
+      "sha256": "3c2ed705bdcfb6ba8210d50352e30d59d8ab937703299e98460ec03f43d6c10d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/05.png",
+      "sha256": "d37b31821874535d4cc95228293759559562b84649283339ebce196b5fad34b4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/06.png",
+      "sha256": "e56876acbe462350cd1e180faed697ae95dd31fbf1e012ac662b960a46142eab"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/reference/07.png",
+      "sha256": "b385fa61f3c2e8f8790b31a70b03515d1f39c65e198b6a2bff0de1d3e8003c0f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/source-sheet.png",
+      "sha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/atlas.png",
+      "sha256": "5fda270c6092eaf028a833132f21c2338d3ba3a18eb2c809dff8be8e23eb735f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/motion-polish.json",
+      "sha256": "61eb628333f5fac4b412ab78cdb7f6072be7f21fa52393f3a13245153162b995"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/00.png",
+      "sha256": "f62a569dfda6fc3b470139a18a77da719c1d222a77db9a032045a0cbce992e0a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/01.png",
+      "sha256": "e1b47556a1e21b31b192260c4817d0c0c86b1a10213aa7903efd57abac6cac56"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/02.png",
+      "sha256": "41eec1c3ea0ede736f064b6a07296f201e44db9d049fd3e4257dbb2a6efbaf0b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/03.png",
+      "sha256": "32d0fbaa32ddfade507c786c6d4c665f72c9d8d6b4f81c1924bf27660b7383c0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/04.png",
+      "sha256": "fc8e9fa8fb0908826435fdd8286961a022f7444245fd48bdbcdef0b982c8c028"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/05.png",
+      "sha256": "a4f8b45196582104f56b0220c31052836b7fc1fb1b50e0b62458028328283d51"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/06.png",
+      "sha256": "239d9adc9b3d372d64f670bcea174bf1cd5efcfadec605ca0f750f4bcfd4901b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/reference/07.png",
+      "sha256": "91726a4a91ae948b8eb81efb97fb40862b68ba1b44ac4a4e77de5559505e5431"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/source-sheet.png",
+      "sha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/atlas.png",
+      "sha256": "642d34872ecd8bb7326599efcd7b01948c158172083f3a2177b24c84860bf8c0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/motion-polish.json",
+      "sha256": "75f56460d3933fb153ebc02b465816917dbd7436017d69a62cdac9475a26f38d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/00.png",
+      "sha256": "0f9814ce687eaed70adf37402bbae3b090315cfa20db965715731f373bcc9a3f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/01.png",
+      "sha256": "6deefae32222a95474a96f5616784bdec1ce52ce74b049dad7baad25b43447a3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/02.png",
+      "sha256": "b006eb48b9d0a5fd171fad6cd1e82c6944887c31a7930f340d09b9d090e14034"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/03.png",
+      "sha256": "b3dc7cbb331b48fdb31035802f0717f50eb56840c1379425cb6656040fab0217"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/04.png",
+      "sha256": "5af07652985e65da0795f15caf7eff58c922fb792c9b7ebd080cca7df66655a8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/05.png",
+      "sha256": "e745cd364e121a08ff60c3103cc8288e1e4a67f8a51185f254e79c673833eeff"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/06.png",
+      "sha256": "d9dc78fb7c2ca6566037b795f5a127839fcbdd73c28c86dd164ea54591e23d48"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/reference/07.png",
+      "sha256": "40e2a51a91611707601e4abba43c9f158541f575455e186c281a969b4d736d49"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/source-sheet.png",
+      "sha256": "77c059ab3c11da539ef6105586f0eef5d3075e977d3b5312ff845d6694183c54"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/atlas.png",
+      "sha256": "ebcbdc6545b0b2d2eb863f8cccc6b72bf0e8866f99adca57e60523136ff3d511"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/motion-polish.json",
+      "sha256": "35bfe5f2e1e90342ecf29953d85325fc5f0f7398d914beab4241b22b7674d3b7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png",
+      "sha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/01.png",
+      "sha256": "fee5718e7c31a0a000ca27bd787b1b41f7b1993cfc203c0d6e436c42721eaa2b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/02.png",
+      "sha256": "3b03645ff5f9ec62ef3274f0df61b6f6e6a7f3f7ee41467185a23a0adee09a67"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/03.png",
+      "sha256": "b5b51588a75cc35bbf6597bfa3130779f5287b2260814d3b65bf9f6204e45f82"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/04.png",
+      "sha256": "e2f2a5cda3aecf5fe1b67de663d8bef69f0de6981d6641a200bb3c20717f8b23"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/05.png",
+      "sha256": "179799f963618a7e9e088a0aad896523fa1e301e969cf8d9226a912fe6e64683"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/06.png",
+      "sha256": "70c9287cbd9fade97bd977348a03ed125b2705c570335e709ae3f988349dfb44"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/reference/07.png",
+      "sha256": "f5ec756128ecccbeed55b592577a3bb209649b4aa3ab485849022f0f958b0116"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/source-sheet.png",
+      "sha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/atlas.png",
+      "sha256": "9939f73f9c335ab14793ac0bef1b4ac2d4766e17dba38eb54e3847d3ff6f758d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/motion-polish.json",
+      "sha256": "7c82c568050c99af75fd0820bacde16a8bcf967786b0e4126f415d3f243f9e35"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/00.png",
+      "sha256": "533619c8864322f7ab76497fd2ccb0155245cfcfa6623de163e447ca00eb747e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/01.png",
+      "sha256": "2682c1b9e36f9e40c65f0ffe6d4aa6215ebaee8b16cd52507377e1d021e8e5ac"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/02.png",
+      "sha256": "04bd8dd279e976e9b0cab3ecb0fbb0c2b778db27f3434d7f209c40fa5f976741"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/03.png",
+      "sha256": "5580ce971e3cfdb246d2aae8da44cf61adc2a9731943644078f391db05eadb81"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/04.png",
+      "sha256": "24cbd46ec45ec0454381204d6a029f52cb6421aecf2884fe9c8b3bee927b19ca"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/05.png",
+      "sha256": "071d0b4af1e898b9ecc90fc0e52987842e5b725cee0e911b30728b0e89b1f12c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/06.png",
+      "sha256": "3735619357fed61ca1877e14b1c90b7a59929b0be567f79278b0546873341e8a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/07.png",
+      "sha256": "5ac4212c6e83622133a6c04805f20f06786c6bfd184c4251ced46b193d0d8307"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/source-sheet.png",
+      "sha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/atlas.png",
+      "sha256": "a7df76dee498ab8777ac46c70f57c77d0b08629b53eff9412858df775c5e4af3"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/motion-polish.json",
+      "sha256": "0e08d533dd347bcb1acb4fa48d4a86d2e354d41cc3469232747d706d63733ddf"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/00.png",
+      "sha256": "a08c1a87bda79b036feb395ec42c4c4c95fd77e63173ce7fc81e51d45933eecd"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/01.png",
+      "sha256": "e3179e21b838829ed001760281bc11d63e8fda4f8ee09fa6ba4181ca0ab59759"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/02.png",
+      "sha256": "833f57c88e5c7ed794986cab64b80c3769e63085480e24234921424da6cb42dd"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/03.png",
+      "sha256": "30048640e8ea224f46682b19b1bbe627ce9cc042c4ee213d611e20b690e15b22"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/04.png",
+      "sha256": "db31fb7a651cf035b65cc80cc2b35810dbeab20e3a8cc1f9c8829d0e9154524c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/05.png",
+      "sha256": "538840f14b138575c471150199d414b9287655416cee997288f0fbdc0d0c485a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/06.png",
+      "sha256": "1bc191c382eab5ffc62ed307c209e5c3d47ecde3eddd7ec5ed98231b544fd20b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/reference/07.png",
+      "sha256": "ed3e33b9d6f4a6ef3f500e2b10ae43cb7d7733b57ce5f837bd173a1c413c1289"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/source-sheet.png",
+      "sha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/atlas.png",
+      "sha256": "b294917536be860c194cd19d8581fad362b1c6bb2a0f9124ada643b31e82e794"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/motion-polish.json",
+      "sha256": "8d7a9d4d91cd09ba1d02e5dfd3dddc1ffd64de1db9092bcc0fc560f53d5300ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/00.png",
+      "sha256": "9044324e402cf40918f36573f7a2ee11af2072b0dfe26ba139474b2bf7fff7c6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/01.png",
+      "sha256": "cfa79a350b6822c43becaecacb5828a82fdf48a3c06c0c8c7dd7fb705d68fbfa"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/02.png",
+      "sha256": "a6c051f3250051b3397124bb2ec6086cb4d4105da312704577f939c87c64ab3e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/03.png",
+      "sha256": "913f09802b27a801018a503ec29ce3e7b9098dc6c7860eb56815c3a8f0e45c78"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/04.png",
+      "sha256": "26032f1691c94b89c6548020acdcf1b295c5f4165582cfb8d5149c19abd8963d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/05.png",
+      "sha256": "40c105aea32f8ee5169382d2b0724df8178f6d9c86663eaf2df6f8b27aeb5852"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/06.png",
+      "sha256": "15265b76e4f3f50f37ece469982d9ac6bbd15f736e93eb8b3e9aaf7fab346ac0"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/reference/07.png",
+      "sha256": "82c063beae6e350e67fa4e6357bb0ce7c667ded4bbc57bff9d861c6b1730f9ad"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/source-sheet.png",
+      "sha256": "376c9e58003ad398d906d9c991ec17b024ee655fb0ecbd5f07f941d39a4eec85"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/atlas.png",
+      "sha256": "5bec1c485b262d2cc786e890422056a90c7b013e0c095fe3abb6fcd976b55db8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/motion-polish.json",
+      "sha256": "d95b7ad5739ea4ab1eb576a18acbb9d49794ac92dce6d9056fb4007cb6c5241c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/00.png",
+      "sha256": "55a6799b83270ec107a1e40281af51a2435c52c2c01c9805c276c71df6f8166b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/01.png",
+      "sha256": "b60a8d8f6065d36af1fadcafe67aef77384af300303d366e498b54bc1910d18a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/02.png",
+      "sha256": "e6cb1e5f64804f795e71f6188893b3d80150726cc32d23a3137a4d342aa60207"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/03.png",
+      "sha256": "0e39086593bac860a3d79e8395a58ae25d08308e696d3662ba77cdbcbe50d040"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/04.png",
+      "sha256": "93acc1365c5f9747cc960afe9a28ec7105f8f520d5c0c92a2cd205cc6041e2e5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/05.png",
+      "sha256": "6d7852a0d68423fb9e37ee21bb8b0e0c5b9fa7651aa3fe74240ecf18c5528acd"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/06.png",
+      "sha256": "d05a4a352cbbf3710d1e39414264e390248b33bbc77df489cffa481a6b7bc90e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/turn-ledger-page/reference/07.png",
+      "sha256": "b3dfd18aa8857824ea3efe0068db2ba7ae8f61480f670e9d8650487624f6d04f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/source-sheet.png",
+      "sha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/atlas.png",
+      "sha256": "1460cdf658d101ae7e1a00c9b033182430afac4994334bbf41fb70f0e14df03a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/motion-polish.json",
+      "sha256": "e6d632d79afb79d992db308a3c32dff6545c2f4eb946b12a123de9e58effc972"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/00.png",
+      "sha256": "f155fd7c10c7f2091afa82533f935ed4dbe7da42b47b6604c63810a7992b5943"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/01.png",
+      "sha256": "aeed251deb1071cc04d74c369b2571231e17e15a7deff7a2d27572d9789e6219"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/02.png",
+      "sha256": "7cdb06ad32d959a943ef34f6d1a1c7411c0fb7e149b62c6fb8ceb98a97ad529d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/03.png",
+      "sha256": "e8a5321de14defb8f88fab13cf65d4690697499cfc817eca90bd2b43d7ab2d15"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/04.png",
+      "sha256": "dde6fd995c42c24e20eb32133878648be5a62d9708fc157b6dbaddc61a47e399"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/05.png",
+      "sha256": "43fddcee6b2a1d03dfd80dc33e5a93cd2bb5465a2c79df7dd460ba008347c4f4"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/06.png",
+      "sha256": "bcfcc4452336f68f0930e33ca2bda9ea6268c4cf86abdfa37f6c64b7987b5817"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/reference/07.png",
+      "sha256": "629b79219f4a8ba3b82a2f013e3ccc5c8d787ad1d9c0536736f075888a9433c4"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/source-sheet.png",
+      "sha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/atlas.png",
+      "sha256": "558bc3f881ee2ceb1b6b5bd29f82186bcd1988e191e2478e0a9e0ea28472c6e5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/motion-polish.json",
+      "sha256": "cf35a40a1ef1a9cc57a5e62bc18523e37a27d3ffeba1b46378077b36e0fe3a66"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/00.png",
+      "sha256": "52a6e6c7edd04ebd14d6cf3ae5a344adaf6cf79946b3000d1ab501d7c0063f34"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/01.png",
+      "sha256": "b7d9f05ef3e9814b07a81fc592ad366c4d39f70d76c53eabe96b1b763392e15b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/02.png",
+      "sha256": "e1bf160f2b8f5ff80cc28f4716c29ab1c75c96b491e804cd3e9775a0da35fd6c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/03.png",
+      "sha256": "77e31ffa37965940991eded5df8b05834de7ac3d3fbf99910b1ecdbd552654ce"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/04.png",
+      "sha256": "1ba82c0e31bb20078e96e598eb3eadc79a7c74a56e3b23522e3119d8406f91e7"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/05.png",
+      "sha256": "d8cf5494e892bd0638600b0e9ce0a0af1542dc44514fe4fe4fe198e180f7dc60"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/06.png",
+      "sha256": "38d321134755e9772a34c77f74846b7de9fb17e98015f7068a2b727b342c69ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/reference/07.png",
+      "sha256": "c893c541823ba74d7894513971694c5c30f14e7203feded260632193e0a63d68"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/source-sheet.png",
+      "sha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/atlas.png",
+      "sha256": "b81c3a12c2d1d1a582938b0520a33c694af68e7402510e083e77f213896dc55a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/motion-polish.json",
+      "sha256": "4f057fabaadc5dc157073fbe93aebb1ea76031bf5a449e53d1c87bb5f2515833"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/00.png",
+      "sha256": "579c9b9cab9c44ae4ccec127e3aa658e975dec26a28ec9629b82909d699a3cc3"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/01.png",
+      "sha256": "f75766d3ca6609c8765abaa59fd62debab3b27ec6c1dbb6790151a31bd54710d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/02.png",
+      "sha256": "855b43e10ae672d0d29fed17633bc1a195e8f7eb851f63cd4ffba010fd3a907e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/03.png",
+      "sha256": "c46599f51babcac9ec714450dbef54e1394d2bed83065cd5e15c1445c6c0d4d0"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/04.png",
+      "sha256": "b05d767f434c765216d14309513fa8f9a8279609e10021b389f856f8ed3e02de"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/05.png",
+      "sha256": "3526179f75f0b00d96ec1a9fe6666b656eb16d979a41bb6c73e095d71ec9ce2e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/06.png",
+      "sha256": "bfe178a196a8188500f6eff9d4dc6eeb3db473d10d2209475c7eb998ba80aa01"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/reference/07.png",
+      "sha256": "ec353a5d7d2741ab9e6447076f6110daf1f24f79d6b9350af7f5dd547cad291f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/source-sheet.png",
+      "sha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/atlas.png",
+      "sha256": "0817b9a9dba38258ed6ed06cd20cf5385377bfcd5f92761c2f9a0b11a8bc476e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/motion-polish.json",
+      "sha256": "0a254750df8fa8520f0faae509ae5ae3df3cd86db64fb81e2fd829e34b65c83e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/00.png",
+      "sha256": "de4ced06aff36c6892af8a372ec6ddec2aedcec83daab2ec3306a98850603b34"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/01.png",
+      "sha256": "9c65719a1ff83b1aa281eccced70114ac395007c99bf05d147497ebe579705cd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/02.png",
+      "sha256": "b239edb63ce31d824678a45433d277512a2c0aa1d1eac1f85d6f44a7bad273fc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/03.png",
+      "sha256": "6d2c53662e03408113b60911d53440e9001110159c800bdf0e5d95e12fe4d15f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/04.png",
+      "sha256": "2ce305e1f94db0219ae7204b72e56bf7503bf67c75026814072aab028ca711d7"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/05.png",
+      "sha256": "bbb80de34af9b2279e3af93bfc99980958b90df398115733b033c5563095b725"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/06.png",
+      "sha256": "9c9aef0d91994d82153188116ce2201b3798146cd77164a1b682184bb000ad7d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/reference/07.png",
+      "sha256": "df563fdefcd1fbb412f120e1f324d3a6df889b9216ec0cc881c0fcbb6b2c4c35"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/source-sheet.png",
+      "sha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/atlas.png",
+      "sha256": "9719875a208ea135fa208e81fd235e097f29e1ab43e7fd575c25a316bdc31190"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/motion-polish.json",
+      "sha256": "5c2cd7284d195bf204c0ac5c377af613e4622e90d29ced5565631bfb0a3ece61"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/00.png",
+      "sha256": "8a95aaa4e2bb7fcd709a13f4b6b121d7d9d6589d1511f21bfdd9fabacf277905"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/01.png",
+      "sha256": "e4d8cf904ad0a1f2a40b4893dbea35376aee3b80ee682cb6c12a1e067839a5cd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/02.png",
+      "sha256": "c8e7d384690e4a47ca69789330e7c4b81e35b5193cda23e9fa34b627429e6b3a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/03.png",
+      "sha256": "47297fb03ec97d162bf1c626e5e3d0c9034035ba543bd98d7b79082d53365155"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/04.png",
+      "sha256": "bd8825ba5fd6c7174f9230aa1c29ab3b1330d178a8cbbb455383bb738069e001"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/05.png",
+      "sha256": "b1d8193a71aa82018e2d5691de9d50318e70baaf2436b3710705ab9fd0f0730a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/06.png",
+      "sha256": "54ba96ab0e0732a274b9f9f7dca3bc0c67b6d9a60eb37692c715f5fdd1bdf6ef"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/reference/07.png",
+      "sha256": "37411eb2d1bd0d76bed5de0d8250221029a46caaca975828d5b6fffdaf212b79"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/source-sheet.png",
+      "sha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/atlas.png",
+      "sha256": "ea08a5447214d6dadfdec67a30bfd2c5adc3128c73dd050ea17eb6cbe0cffaeb"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/motion-polish.json",
+      "sha256": "a5fccdf76324be6ab6c9bfb6d0dbebd931d12857821940d2e78f8191360601e5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/00.png",
+      "sha256": "ba338df3b78500558331a84fb59892f5ac44e935e81e4623a3ac8d080168fca6"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/01.png",
+      "sha256": "763aa69d8b5de5324e556c652f87ceb37998cfbd569f5340c2e394d8a6073c0e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/02.png",
+      "sha256": "697e67cc28ba35cb68dfe852d7e79a3db8e4eb61f94b8589d6c37d1a10e7f935"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/03.png",
+      "sha256": "540ce71c768fff0326cc9d4f62f6148d692ef66d899c9153b539eab0fbaa119c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/04.png",
+      "sha256": "83b22b8bcef054208d8779515f99e83d0db99cc772f569c4f455b8ec34ef8a36"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/05.png",
+      "sha256": "f5330264edaf42de2837824ce975b38b821efdaf406fc4e5fd2556e7800c7387"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/06.png",
+      "sha256": "69224938011bdfa9bdb78f336c15f8f199603517215ce20a97174380b724ebc1"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/reference/07.png",
+      "sha256": "0aa3b99e377cd4ddfd167b61b7069dc03fe1a9feac4baefd405914c7045a2464"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/source-sheet.png",
+      "sha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/atlas.png",
+      "sha256": "f9c47512f397ca92763cb4d797a644956203fbe11dc1f5dd07a9221eecf2dc4b"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/motion-polish.json",
+      "sha256": "2a4f8fb155ae078a43128c8d26638d16e72c9c31af9d6ee07c01180fa99495d5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/00.png",
+      "sha256": "4380674cd9415b476e6657d33aa0167dc230e7bb94b2f900fdf046bc6f4bf63d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/01.png",
+      "sha256": "6685402db2acef70165cc3c5bfbe85466185ca09c99f171658c03dd52b6f3950"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/02.png",
+      "sha256": "d5b082f4f840ff4436a63fc119875fd73935d0a5037c0d158e47a55df8513bcf"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/03.png",
+      "sha256": "aed39df439715d448f5ac4773894833400d8802f3aeb4319044a038993f914b9"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/04.png",
+      "sha256": "2deb0639def5416203c5c5eefbf498b1efc1d0c04780f7ca8b50a0fd8838fcda"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/05.png",
+      "sha256": "39aad3b7f4e35a707db12398b96cb3b8f2cfc18115381db226b2ec2ef6e8aed8"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/06.png",
+      "sha256": "28ee4d99b44db35ce14fdcf8f9ab65deab90139bb0adb8355bc890177cb651bd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/reference/07.png",
+      "sha256": "d1d1a20b12480835e2664ca64c502439a22f076fdf19cba252e09d411334dbb0"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/source-sheet.png",
+      "sha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/atlas.png",
+      "sha256": "77f58194b356e75c9d64f566058bade52ee9771078201334b6ff23628061c402"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/motion-polish.json",
+      "sha256": "c1b59b1dfacd467acbee73efe36a62741898b77876172a9ccdb9c5a9856701ea"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/00.png",
+      "sha256": "170b8974fbcd34364976084b9d1d1b2dc784e99e66f3999c853b73f557e98af7"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/01.png",
+      "sha256": "c293aa0a3941fc6a46faa33c45894913e6dbfba445c3b7d8207fca5226523022"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/02.png",
+      "sha256": "4877f42c42e1b412ac3dca6c08e3710f8aaefe61e55d340da05d48938d14b92f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/03.png",
+      "sha256": "cfd5b1c755519d094fa62ef4584534c7c2ec5b214644187f7dd6c8a97b2d49e6"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/04.png",
+      "sha256": "fa13d37c837583f5cc8aeebd66c3cdf12705c24f09738b9fd91b484fc7ed772e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/05.png",
+      "sha256": "eefa462bbfae522e0e51f890944990fd59d1ed0356e78fe6ef6ad947732b0f05"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/06.png",
+      "sha256": "9f4431710fdf4b7589481f781f3ed8ac2e2a4a3b67e3424f312d18135b48c2f3"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/reference/07.png",
+      "sha256": "3b0899e2e9360f77144cbaec16c25adc7a5fd2ec0d3f9a9186209d7bfb9ad87a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/source-sheet.png",
+      "sha256": "e16349a9f29ffdf790722475b1aa2acc28eb22a0ef35fdd68a5ee2aeba4485b3"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/atlas.png",
+      "sha256": "df340999e5045ca6db3cecaf983b207284360bf343764ae4a63d75831627cd55"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/motion-polish.json",
+      "sha256": "08933eda3266a495d32ef017c17b79dda94c216a2e7d421fb30ce560a06f4e67"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/00.png",
+      "sha256": "87081bfe340f8075e86bf0d4e798596ea57d6062a328fe0f83645fbb33f1e813"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/01.png",
+      "sha256": "4bf88db557d4fda90591a455f2a69e8102ac9f4761ee11f473887f112b954a50"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/02.png",
+      "sha256": "7ef26d0ca2593e2a6d88b306a70d08e6d0194e3826e156c04416deab4b3a8d64"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/03.png",
+      "sha256": "52ecc1d4b547229fa9e834127f93d3f115c19c6511f18e91a7c56be00f463d66"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/04.png",
+      "sha256": "22eafc07a247f16d99c4b6e5aeeb4b59769a70338617b88e08e15d2362d5281a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/05.png",
+      "sha256": "e18102a8c3acbf98bed34b4c01ac1118ee30d750c1550e5dd909426fa4969d7f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/06.png",
+      "sha256": "165d353bebed23daa84344112c1ba96662d1dc362731314e77e2e53f8766afd9"
+    },
+    {
+      "file": "public/sprites/Cook/motion/serve-stew/reference/07.png",
+      "sha256": "b480eec7ac8cbfe3f3ecc879fe397fb7ce0520ca2114c824abefdf6ff0c129ff"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/source-sheet.png",
+      "sha256": "794736354cc68dec859ec90060b552476962b55883af7594a0283eadcf8a2e30"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/atlas.png",
+      "sha256": "8fa16ac763f9b13e2ef0688ac9adf5bfa7609c651d8aa89ef9b07f73ca0dcb1f"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/00.png",
+      "sha256": "22111bd2615b486c8450ce8371f7e61e7771a2318803447c3ed0b9ef1cf01a5e"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/01.png",
+      "sha256": "54729f5710701f8d8051cafae6e2a73a4c0593f7680156dc40f19b2219e2d950"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/02.png",
+      "sha256": "8091f72e011049ef3750268813f035f8383564eb7f7706d50ffb84a05ac41998"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/03.png",
+      "sha256": "baea78c028d7e681abc5f716691398daeca31bd4e891d0e2436f8291ddc7aca6"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/04.png",
+      "sha256": "2399c43875d5b7776ec9ce1cfcf169191aa531f9193ec26c9653db47d0284ea5"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/05.png",
+      "sha256": "c3bd9c2b7e50b22c7cc009510367c3ff3054cd940d6e833b5ee7f05e58564eec"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/06.png",
+      "sha256": "1b1cd2ea6c2daaa16dc67571acb1ac4454a4269ac0ff5b2cc29c223ce61cd5bc"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/07.png",
+      "sha256": "2de9da6ec626619bc2a0fc6dbcd677001344d3bab9c9a6c530443f9e7a2b91a8"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/source-sheet.png",
+      "sha256": "9aab34babae337c1bf3f9a5c0493c6c54225ccf419e610998615553c74c8f7ea"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/atlas.png",
+      "sha256": "4d5fae1bc52864442307c427c1c806176ccef5f42bcbee5a1adf37f46945685f"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/00.png",
+      "sha256": "845f2535367c3281f96a20a6e7dc3c46cb5079e746a87f6d59b5f349ed4d04e4"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/01.png",
+      "sha256": "b9ea23234a8309ca2b515184f8fc373418976b04866bd3a97e4ec8466d057b60"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/02.png",
+      "sha256": "18776e9ab0537aa224ad8557f77597f90e1b43d0a0fc892183ed11f028bb7076"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/03.png",
+      "sha256": "1c2d727f0a5c3376dba995c3676d36bc814808e776be4fd29f99533601f80312"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/04.png",
+      "sha256": "0ebf9cb5ced50713e1a42f0c0c4083859c0c0ba88e71242b5adea0c646966ab7"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/05.png",
+      "sha256": "89ff90eb92c3b0eb13e16fa7c622e9538a9291a4ab6ca300d52e4a41e3365686"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/06.png",
+      "sha256": "fa007622fef05b0c4a6ad092882dd87101531a979a29c80a1355944012c1a04a"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/07.png",
+      "sha256": "1edf8c7d9c962de740ae1d020bdb7da91fefa6b143caddc5e3e6eda16d7a2aa1"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/source-sheet.png",
+      "sha256": "6e6e628038fdb1ae8e1e8a93eb944648f46e1a2219a260759317d856cdde422b"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/atlas.png",
+      "sha256": "f749c96672936fed3e393c92465da4758f9bb0ce27523741ece9ae5562790ce8"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/00.png",
+      "sha256": "77d727d1fc454a06105b65f840d2c8675a89ebf0d2663d83aa6063116579c40e"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/01.png",
+      "sha256": "4657f99252dd2b0955b875baa2fd479b95aeca5a67c8d054d685412f469cafaf"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/02.png",
+      "sha256": "abf7b6098a3d1b8a61a618003d6c728bc2af11ce151843db6c7ccf02fbbb191c"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/03.png",
+      "sha256": "5ac264e4eaffe3e79b4b7d988876853830d6436fe6a9d1c5cfe80f522a59011e"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/04.png",
+      "sha256": "fab813af920bb356d28eb6293380c589e519af45cb1d4b6f92735e14887070fe"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/05.png",
+      "sha256": "d9ac6037dbaa1aa1f282e1f1d04e362e7da2dc71efccd6d3722d59e7a139966a"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/06.png",
+      "sha256": "6e5c7d55666f7d164c8a34c333e25cf5f231ef2a8460180f836041021c42c2ab"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/07.png",
+      "sha256": "0da00d018a901c874119c4e34a81f19b185fbcbf364c12f7f595d1b58833601c"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/source-sheet.png",
+      "sha256": "61ae68cae34420d13d26f28f1eb1ade78c4715fce4c63e853298fa23b0791d25"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/atlas.png",
+      "sha256": "d660784982d7e892dbe589b5e58b49af1b86f59025aacfcc65fb03d75e81d93a"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/00.png",
+      "sha256": "ec8daeb49730bcf76a939564eb113f6b2b1b4d511167875e4f7fefb444ef9f29"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/01.png",
+      "sha256": "222c885c89e1806550a83357d37d28dd36a4fd9dba9ddfaa004249d0c7aad17a"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/02.png",
+      "sha256": "b785733142d5e3c528388c52b97ff93268b9b2d48b703bfc634ea5f6e254af55"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/03.png",
+      "sha256": "f1077c9c9b26b30622e88e56b4eaa88a5d7b1b1d07d89891aad65d794b020e29"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/04.png",
+      "sha256": "258118c97cc6968c17e2eeb2daacf96e64cd2aafcd9b30d4811a6fc4a4d6579d"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/05.png",
+      "sha256": "b23f0e3bf1bc43fd4fe85d97c2190185237e3f552241947097543991502c0fea"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/06.png",
+      "sha256": "1e63e4cecf915d50382462d53fea24bf50606590e1f72ec59464f4e64110537d"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/07.png",
+      "sha256": "20a5dbcc99da27627d1c37d3dde024031931b57887eb022bf538b28f3176edb7"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/source-sheet.png",
+      "sha256": "5e861d50eee0abf19628adba8a54a5ca859ded276ca0934e323484e9bf84270d"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/atlas.png",
+      "sha256": "813186675948c2bcc2610a482859e1b3a4dab0c249d8e531de57e19c826e50e1"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/00.png",
+      "sha256": "56f9510f7ef7bbe2ec0b7987f107c8163f83940d4cf66e07cc0bdd40f750ca47"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/01.png",
+      "sha256": "71d88229f5579f19ab8e8c967f6bd2b7abf5b76a7cbbcd71fc0adf3eb1c090f0"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/02.png",
+      "sha256": "80de12597cd46d5d0820e37b2a71939c872025528f10cd4a57f8c0693a0ff742"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/03.png",
+      "sha256": "d41f30ea14db5f75eb4624f9b14825901b7dccb007fe8d285700e80d3d3b7c50"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/04.png",
+      "sha256": "223382f44986308924355fd005db7ac0b843c758ae3aa59fec09dbab8b886653"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/05.png",
+      "sha256": "2de2a35c5bde4e0bf4b6198c7f71b75713151a6c4b5426c5f211b36d7f4b0ce4"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/06.png",
+      "sha256": "513b04d57166ba5eefd3de5a3bc26a5767861e9a2d777dfa49abfdcbeb1849b3"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/07.png",
+      "sha256": "0d056c7a96555374812dab272c30c638d762839db2cefa7b6af8609cf4aabdb5"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/source-sheet.png",
+      "sha256": "25829dd8cdeb7facb122c32934a9f6438d6e06f03e90316f5a8e95eeb58dcea3"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/atlas.png",
+      "sha256": "98daf1075b465e7070b6851f9322996273aa8304651d8bc1d6343f1ef2a923d2"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/00.png",
+      "sha256": "8bda1d6bb06935396df1fb60a3a9e9b5b120ab725776a9eea9b9d6ce06ca8fcc"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/01.png",
+      "sha256": "0316caf42ac51959f7351eaf63c485ab5e1c9583df71644b95265469eec76416"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/02.png",
+      "sha256": "38b6c944180d3297e12abe82bd54933127846189448d21cae2c89924ddc41819"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/03.png",
+      "sha256": "448bd69c561dba23fcff56dfc4b503290b483b3c6cfeb4ae79c0d9c8a65376fa"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/04.png",
+      "sha256": "1c13a367b7e9a23babb4f246671b35608e1450f233b52a516074e9341f1421a0"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/05.png",
+      "sha256": "36c331ef35f8850fd00a7fd18d1a109876c3f816cc1e949f54bbf30ca13cb052"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/06.png",
+      "sha256": "c2b1072e9278b9b2a0d093659c60ae1ab90342b15a9d46b28e1f0c1593a03f18"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/07.png",
+      "sha256": "000e1e04084b744694a26c385755216efafebd7521166932a625f8f95eaf1bfd"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/source-sheet.png",
+      "sha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/atlas.png",
+      "sha256": "3f4c4fc2787b653c6e3eba41b2c72ff90147455b4f88fb82b39a52efb4b6334c"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/motion-polish.json",
+      "sha256": "cb415530cda519828787ba570d4adf0fd9ceedc8e1762690d8d238978353568d"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/00.png",
+      "sha256": "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/01.png",
+      "sha256": "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/02.png",
+      "sha256": "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/03.png",
+      "sha256": "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/04.png",
+      "sha256": "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/05.png",
+      "sha256": "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/06.png",
+      "sha256": "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/pickaxe-ready/reference/07.png",
+      "sha256": "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/source-sheet.png",
+      "sha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/atlas.png",
+      "sha256": "1d41df66ac7aa10137dc2ddfedc4a19d1e678eeedd905ce3792827b26bbd831c"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/motion-polish.json",
+      "sha256": "898a2b4d4887eb241d8d0637286a7c39f3187def7d5a204823f57d1d9a87ed77"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/00.png",
+      "sha256": "0308c0e6d5ebb16be57a07f5f5da4346ff3493bab6f35112d198534a239cdee4"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/01.png",
+      "sha256": "0e663653735f5ed612c3e484e3430c140e36c202a67f2dbe30ce0fb91ad6d60c"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/02.png",
+      "sha256": "82dd675dd85978c3f388ec3b50b92a87e8c8f86c2d9669545351b7df1542376e"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/03.png",
+      "sha256": "c8773c6763e201731f4ed05359c003a57651bfe5fca3b0a5028f919cae8481db"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/04.png",
+      "sha256": "9ed7f9308285c1f8b0a6971ffa2c854453c361451aae4dabdfbe56bd6b32642e"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/05.png",
+      "sha256": "b86a3e5f3834cf544aebb345ab211623556186abd28f46cd5b537d8888df09e0"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/06.png",
+      "sha256": "d1eee47efe39492c50c33cd61ee76e6d12e57186ac2b2985d5199ea2ccbd764d"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/examine-sample/reference/07.png",
+      "sha256": "e520e5b80ba563697b77b7857acb8f13a2883d0847360cb7ea81e2ba501e1fd4"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/source-sheet.png",
+      "sha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/atlas.png",
+      "sha256": "f7c4b71b15ac7d95d1d8fef82b55dbec9d6f7f668b257b27729f453306c1126f"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/motion-polish.json",
+      "sha256": "83660ab555f40cc55c28bdd9447538c8771aa37948f31b1a83663c455e375fcb"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/00.png",
+      "sha256": "15ccd0cad742cac04b09cddf12dc0a6aeac8528460dcd85f9a31a51f1d0075f6"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/01.png",
+      "sha256": "562f2dd3f8629f3d0823b9d60b8906f1e0d68eed74ae5d8d4089c59237cb6e3c"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/02.png",
+      "sha256": "bc44416f7e7e58c2dc6c5f3f8b40a6ee7fc6152110894643e21e3f692c904357"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/03.png",
+      "sha256": "1586fba72d368c5d40de16db4158fa915854f166580953e714878bbed31f9c9c"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/04.png",
+      "sha256": "d807747d76d1b646d00dfb38a5dd44d722f7c1267f1de890cb936a30e343153f"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/05.png",
+      "sha256": "878c9a211b15e4086f16e7fc379b1326c0672dea09028d23114cdd0667b27fed"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/06.png",
+      "sha256": "f39f5937458465564f90f78c12a063366e0bd69e35e497b886de09a245301499"
+    },
+    {
+      "file": "public/sprites/Female Miner/motion/repair-pickaxe/reference/07.png",
+      "sha256": "0f6313f265fd6305858bdf902ef7bea5b3f1069781e1db93b4bc8181391637a9"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/source-sheet.png",
+      "sha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/atlas.png",
+      "sha256": "96cf93112dfd143dfe1672484aee3a9c60b772796e858dcded5806acf9751cb1"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/00.png",
+      "sha256": "fc65abcacda22ea3ee377cb4c8d56dd1194af8081a7f58ad8a806a93066837bc"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/01.png",
+      "sha256": "0fa0f64be537d10cea6d128f56dc821d847766ce921339842ab5409e7c220681"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/02.png",
+      "sha256": "f12dde0ddf62d4b67fbcee6b7a22ecaad1ecf642c101205a1ba808e0d798f2ad"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/03.png",
+      "sha256": "beceb57a76c84808219501d6b40c8384b7f2378aa21142c3250772fc8de31d3f"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/04.png",
+      "sha256": "4bdae4c2c23410aa9bce53f0d2a8a8a47e1d028601a1a3c81dfe4c9439a274a9"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/05.png",
+      "sha256": "39c3fee62cd0f3e85de3b2ddcfa5d93270dcd451acf75ea545f8dbc62493549b"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/06.png",
+      "sha256": "e8b077ac8b1dd742cf8893ef811a5b9a8a915ae2f48a6eb362499500cf75c6c5"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-ready/reference/07.png",
+      "sha256": "43fbd0cc86d651bc0a600844c350461550ccf420b85b72243c860e906293be5b"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/source-sheet.png",
+      "sha256": "4d716d9a32b5d2ed0ee4ac478213f37e3ec7da6dc92d8b362dc3fc6705cbde75"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/atlas.png",
+      "sha256": "61d9f9adb15fcdf90c10ad85d6282e597e3bc9496797ef0cfbf99daaab3e3bb7"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/00.png",
+      "sha256": "bff3939a21c16db75d1eff56af7c14aaeee98c94d566945efbd10884dd73ad8c"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/01.png",
+      "sha256": "bdd1a8de03b909adc03590e007c7767ca043ba3eb48662303cae2c9b89f1ecd5"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/02.png",
+      "sha256": "d6b06ca0e8839bf7d39adbf77d7b546dc00e73fe76054604b22c668245b42c7c"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/03.png",
+      "sha256": "7e463a9121a70f7399d43c3b6a9836bd83b134a02d6f7f90949d8ce704216b6c"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/04.png",
+      "sha256": "c6bb76220648f92bae1ae138aa01be8f4d4b234ad4ab9fdf1430dafe9dea69c8"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/05.png",
+      "sha256": "8b82731f169104d835b4fd986dce8f32addc13d4a7b6375ba458b19957108fc4"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/06.png",
+      "sha256": "99552785ac875fce1642f0565d1583f06d03245545b7ef26e59103f330d61644"
+    },
+    {
+      "file": "public/sprites/Helga/motion/pickaxe-contact/reference/07.png",
+      "sha256": "bf2bf6d4116ba3c391217d58e804fb0aeffeace32e9f423273869d76d17b1b86"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/source-sheet.png",
+      "sha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/atlas.png",
+      "sha256": "a280c3331df03ea89dd35931c1ae0b3b9381e6907f7d3d7ae61bfaf07cd0bf3e"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/motion-polish.json",
+      "sha256": "882aa8266ecee2990a6eb903eff6caf0c3d6e6476c0c45083f4333649479ee1c"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/00.png",
+      "sha256": "6032d1fea346e90fdb9e6829936fbad76f938e6acb52e77930f1fa03b40a7e53"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/01.png",
+      "sha256": "995fcdf8cabf24c75539c6a194d218429d7abd4985ea304247384dd253a73b81"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/02.png",
+      "sha256": "015823a1073b6a704cdb276161860d940294b99697042ddf0fa1110b27026c40"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/03.png",
+      "sha256": "b3556a42a61f010171986069356c8f0047fad641a049edb8df5be9b54a3258d4"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/04.png",
+      "sha256": "2bd6f3f785703816736dba222134d744328386b1f1a689dfe75269b1e5b762de"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/05.png",
+      "sha256": "539c1a352a00ada35518f87c29be15e90002a6bb0447cf99cd610d6ba0c00417"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/06.png",
+      "sha256": "fe6f3ae23c1f1540cf6fd7a96b43c46381981fdeda686535824f01df04a2a24e"
+    },
+    {
+      "file": "public/sprites/Helga/motion/inspect-mineral/reference/07.png",
+      "sha256": "a169ed11f86f8c15c2a3459caf9dd1709fedbc2e0fe30233ac734338c9260e49"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/source-sheet.png",
+      "sha256": "b912762dbc5747fd48f546f1dd8a30f0329ebd48536c992ff3505cc7e285b2a5"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/atlas.png",
+      "sha256": "58b80aa918dc2ce01683bbcf1bc7b53b0e4c8888358e23d1453f25d953bb0ae4"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/motion-polish.json",
+      "sha256": "156931a7c7c80580336533ff5c4715f30f4dc2633d3a6f4fd5710128627dd713"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/00.png",
+      "sha256": "0e95911c92360274e92c3ae2703c5807bf71125300d57791930dc37a63729383"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/01.png",
+      "sha256": "76f7afbeff412d3ab169c54cc71b724c233c7bf81cda6bb67d0925e90cee7973"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/02.png",
+      "sha256": "fcc43b769128636b20fce5f2007687af98303e12ae7cbff7272b967702ae07b5"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/03.png",
+      "sha256": "9ee5810d481827d7d830006ca73b977dd27fbe2822f637d5be063ee269c347d6"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/04.png",
+      "sha256": "ad3d48f929dd63b4287f8f9b71c5b18ef7b219891e9591eb810e18617d295e36"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/05.png",
+      "sha256": "b782493301be6c3d22a56d51afeee9f82bc9d2d3a9440a45f25cc6b2468b0b28"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/06.png",
+      "sha256": "8db528ae1ddad4b3634d12446307ed1b8da8a840170642b9cd591407840e8adf"
+    },
+    {
+      "file": "public/sprites/Helga/motion/bind-tool-handle/reference/07.png",
+      "sha256": "6818fb035313222a62709d7abfcbef6d509fd16f24def6f48b4b1c5df1687fca"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/source-sheet.png",
+      "sha256": "3b3ef95e8abd969770dac65d452658f1d662e81a9d7cbafe50e2ad471c1e0a94"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/atlas.png",
+      "sha256": "5ea56259ec85ba28c2e09f92165999a6208fa99f6b46ad29900d4ab44f23e2d8"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/motion-polish.json",
+      "sha256": "c2b46cd42a9c18f50e3b40fbeb745474b0f3df9b32e7fb20db05a64f4f42649a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/00.png",
+      "sha256": "c58972e497422972258aff868ff49c2808d2e6d06634317f5d782f2e2e794c78"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/01.png",
+      "sha256": "109e859efaa631a313cc8c6e2da1078097e983b8e7194d147a7a286a7488f34e"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/02.png",
+      "sha256": "9a9fe7c8d684fe655c8f92c668f1f2089d2a319fd619484c962df87fcb043e03"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/03.png",
+      "sha256": "2b6235ec400bd3bf29a6f796d4f8e27598ef6442bf5687f23e85989c1380ef04"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/04.png",
+      "sha256": "3bb60e7110d17f4d61a9df1858b8d14067ae5953b3b13a25b962ff12d055b39b"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/05.png",
+      "sha256": "45c184493b459c9d38579282f64a58938815539f3b57c868ed37964eec2ee68d"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/06.png",
+      "sha256": "f397e30ddc7e103fd2d23479e8304f8bf2ec15048f46d183b75c367a4c7c7f98"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/lift-crate/reference/07.png",
+      "sha256": "9977eeeba8a5aa4fb305d3efc2e8c399abdba04291b8782b7ede7f625ecca51c"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/source-sheet.png",
+      "sha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/atlas.png",
+      "sha256": "4670ec730af3e84becb6d88961dc9236b6474247ee76b3e5f511d0741aca0592"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/motion-polish.json",
+      "sha256": "4481c8407913e2f367234f965f09381796462252624c07b72e5c7ed068147cb5"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/00.png",
+      "sha256": "f9b72eced59aed269b49c870415215f583162ec2e4c5800e4f73288b7ae1ff6f"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/01.png",
+      "sha256": "a3f6de9cc1507f8d92e209ee1ace68b3bafeb237a381630c0b50ebabe80e2d93"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/02.png",
+      "sha256": "ee42f2ddd940a19365478de8ce30f603e784d4f25ee80951107e7fe457860da2"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/03.png",
+      "sha256": "5a494c5daa0aaf32e53c257912042ac3838f92c8e58300e09ff5c793769b13e9"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/04.png",
+      "sha256": "6e33894a6a3e156d0a371b3ad6093c9c13acc95d1bbd48b6007d4e0c2d3d6e85"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/05.png",
+      "sha256": "c51132b54c90323ec500e9c6f444dc29afd793899f9866efb31064ba4091c939"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/06.png",
+      "sha256": "fa05b7236ebd5dc53cd4b1a2e6199ed04b4a49b5067e23f1e6caaa65df80c9f5"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/build-crate/reference/07.png",
+      "sha256": "5c456708d2b98fe6253ec06efe98f229be713904ca012059d5189740792d661f"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/source-sheet.png",
+      "sha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/atlas.png",
+      "sha256": "351716f0022558d548ba34b46aeb83143c58efd1d87d2711e679e3a775c5e956"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/motion-polish.json",
+      "sha256": "77d04a607abb80f8fd8cb0c47239c8fe536b0e791a4cfaf4544e51e4ceed7359"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/00.png",
+      "sha256": "8a956fca05d1a11e7cbf7dfd253f5ca37e0c3155a949dc37542c80801cc05aa2"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/01.png",
+      "sha256": "2556d26505bf6bae6116b40f01e2868be3df78ad3feef2d4f27585dec5b921c4"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/02.png",
+      "sha256": "b1e8687dbfe07dc76ed1df722a655e7616403bf856c84dfc3a1abbc4818c8ac6"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/03.png",
+      "sha256": "83863339d3cf8c621f9a8d6dc8d50e73fc96d0f9cce6c25dc9c109938af54154"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/04.png",
+      "sha256": "4c1bb2e41e10b7517aa32da4d9f7b724d635c0cf290b9e45b0bbc57e4dbe3998"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/05.png",
+      "sha256": "60832f31ac561a9dec1878733fb2e4200ddc2e69c815302e96b828e0ef56e4f8"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/06.png",
+      "sha256": "6a1a286adc80117779b3f71f1141d3157e53922850524217b782bcfebfeee1ac"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/sweep-wood-chips/reference/07.png",
+      "sha256": "25b1f5d7b24af29f16ec82cbd8231e25724601adbf82212a596f78258e29442e"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/source-sheet.png",
+      "sha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/atlas.png",
+      "sha256": "53ee2b6823d31a57310b47b93202c8e86ad6759ff5f9c0ea58eb96ec7395203b"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/motion-polish.json",
+      "sha256": "a899a2b551c2cf1cb6a133c7cfa87621dd8abb1b4234446e078876dcad268891"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/00.png",
+      "sha256": "3337370017f5deb4770ef44dcced7cbecdf69128db97ceedf792023cdcb10c49"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/01.png",
+      "sha256": "b436da4b06a432393f9a4cf5226a1f7c4d55bfd6892ab9ef3903b05754c93616"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/02.png",
+      "sha256": "df66f08c65bbf1bbda6bd6adea52387786818a41a46d4014f80c8a6617bbec35"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/03.png",
+      "sha256": "9189f5c2d4ce2f987037cea1a04f2c7ad9fd5da7d4e83cbbefe72686bf6c1956"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/04.png",
+      "sha256": "5fc44c81554ce6d661f498983a246ec56afead37a32fcbc6153c2878070585a2"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/05.png",
+      "sha256": "f04366f5c2e199305e51e097071620d900e49f34cc6e56c661277c0b875a6704"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/06.png",
+      "sha256": "b39043eb852c52eb9498ee1c5bc9cc02fcf54fef042533c85b29db3cd53a6ca3"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/saw-timber/reference/07.png",
+      "sha256": "1e83ca93e1fe20a79c2bba341d57374006406e9077761d5377fcc25528811198"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/source-sheet.png",
+      "sha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/atlas.png",
+      "sha256": "d72a3faedfbab459d190f56939e10a900ccc2f190cfdbb5258f3ff9886e8873c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/motion-polish.json",
+      "sha256": "06f576361125b79045a174bc49d955996db45e22a36a8d471a6939763d80ffae"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/00.png",
+      "sha256": "d87931983eee819f9af495f3fc23088f5988491b3809b6662e93716545d1263d"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/01.png",
+      "sha256": "2646c46ad4a99be758fa6221b26373fe644875dada7017959e3c5072e0e71368"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/02.png",
+      "sha256": "663c49951f24343bacab01306edbb4747148b871b058fc64697fdb0078f18582"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/03.png",
+      "sha256": "135c5fe6fb0882bbe4e2f78cce8a2b10938237f582ce8d4303a866b6a4f290ac"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/04.png",
+      "sha256": "af3d2d4f08814390ffe6b5e6b2f471af6d19e27735a2138d377ce6579b3a527b"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/05.png",
+      "sha256": "30542b7ae5a62af84f6a0d70863010bf5eab3ee57bbfde138bf28eb8571169c0"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/06.png",
+      "sha256": "0077255d026a3b33ecbba3500c23c5811e51b8f022405fadeecf241c35d4066d"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-timber-crate/reference/07.png",
+      "sha256": "a56e494eeb4af7980079398fa5205d70cf544f15d581d102ce7caa4b6780aa75"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/source-sheet.png",
+      "sha256": "087df31fd02b2a5718bbf0af8816580d98495f4c99d3ab49b8b2e249c52526e1"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/atlas.png",
+      "sha256": "ce1ea8205f6226278952461ddaef0c35b2046ba038e63e556240655aede7d974"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/motion-polish.json",
+      "sha256": "4cc4429afab4c89fec656dc73801bf8040a20d79d010a14f693e934cef508f6f"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/00.png",
+      "sha256": "c057c868128c19acead6dc548d3c094b29ecf4c8bf1f6275080609bdf6ef7460"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/01.png",
+      "sha256": "1575e2c589fee14f4c5b199a22117e9490e9e5e079e492138b4b10d2c35498d8"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/02.png",
+      "sha256": "9d4617613da4eb4662d99073e19bb02114a80fed531b43c4dc4a6e193c9b209f"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/03.png",
+      "sha256": "f8aa63d4d174cbbcd2e5e58462e4fafba886e9f58fa8a1b338d7166d32b9f5f3"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/04.png",
+      "sha256": "9a76fb404b3635c635777d3477c9d583196be81e1a5276c37a5f4a2a47e32894"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/05.png",
+      "sha256": "08bdd7c881bc4a08dc8eb17950237d42a85514076b21e2513ce1208801b262de"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/06.png",
+      "sha256": "289cf4870cc73defe0e1a94965f1165dc08a1d23bd30454eac1f6e88220d3fe6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-hatchet/reference/07.png",
+      "sha256": "4cd38e1f61373463603fd0998eef21911a157ec10871034008aad083c561c642"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/source-sheet.png",
+      "sha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/atlas.png",
+      "sha256": "cb8406384aa1e1d416e490a56d6545bcc02c25b745fa4c260106107e4ed9fd51"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/motion-polish.json",
+      "sha256": "a3eb51f5f6df33353b73405c4a141ad72283309c75c849367b3c9f6179939d83"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/00.png",
+      "sha256": "5120def62f2c3ec109c215cdd769b449bb30910176bdcd05a6b90120fca64db9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/01.png",
+      "sha256": "d6e5d717a1be5bc9fbd06aa20f839141441c29080192efc4eb98c805fd1e5810"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/02.png",
+      "sha256": "8314a1f1cc814e3f00e74f1ff04e6b7eee3d6196aa07e582f71bba67b7f70f38"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/03.png",
+      "sha256": "9cca262f48d4590f7f89a49673e3198c9aa73a5466efad0d31cd380f99262815"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/04.png",
+      "sha256": "ed0e767b7fac860a8004700f3a8257a84dd0e4548fe56343ad092802d45ea397"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/05.png",
+      "sha256": "ce354ed90aa0cf65e9de818533f903da01f97aab6cdecbfa21f54184138bfd2b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/06.png",
+      "sha256": "667572bf4292a302b0c7e6689a30acbcc4e432d4f4f7d7354b1d364e261d54e3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference/07.png",
+      "sha256": "1120da21284fb3f9815a3f2086a81b53c007640c83616938ccae89a64ff90c83"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/source-sheet.png",
+      "sha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/atlas.png",
+      "sha256": "cde644a8d6d6a20866adae908715dd1a1dab6254ef647f3fe527ebc931409a3c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/motion-polish.json",
+      "sha256": "d4677893e50b36e149bcfc6b34a98bbed0dab70b38a79efe4420db2fecccbf87"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/00.png",
+      "sha256": "4b9a94948e9a1fe88e9e075dbcff15c51f4ad292c8f7c7eef497f0233911aafb"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/01.png",
+      "sha256": "cf075dbda2b74c8379d2d802957ded148e3f6fcd4fe5de9105d8a5925acdd61c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/02.png",
+      "sha256": "2c490cd7659f79f78d9855910670f360117a8423a51225785312b6087020bdf8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/03.png",
+      "sha256": "454de38a7250b577682fa32c1ae80c0eed630e3bdfc8f29ff9a4d99489a0a030"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/04.png",
+      "sha256": "2c715f32f0f0b54f55eccb30df15c4ffa32a88f42ef488280b064c7fb3869437"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/05.png",
+      "sha256": "23b99c666cc7714b0d56943fcf2214eff5de279e3d3c71a8be20db33d31718f8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/06.png",
+      "sha256": "549d13c3817438dee00fbca6cb3b78d6c82ff2a9d961ab339613d3cca1915711"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/reference/07.png",
+      "sha256": "8b203760a9083ef3252f4b954c7d6e7e1a190635234629b0b69414bb7af2a2dd"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/source-sheet.png",
+      "sha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/atlas.png",
+      "sha256": "aec51b1ff53ddf87cd489f65600d1e86527906ca20197a111fae2580179bdcc8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/motion-polish.json",
+      "sha256": "142a532665d5e388f19f764f957212f3523b5184b30ad18721f55d038390c344"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/00.png",
+      "sha256": "6955ffaa7599b75a3a3cb3878488413caba7f279e1fd281451300250be381c6b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/01.png",
+      "sha256": "9a27b79ce01a420e24cf6c1ab123e82da461f5053fba4217833408dc17b77d8f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/02.png",
+      "sha256": "1d68e88c5fc8b3f018a229a0799f10bcf594e08f8303dc6a3b8534b65c1e6961"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/03.png",
+      "sha256": "5f496ac6379ce3009daa59257c480ef4ffde0e9c01060196c54787d27dcc4435"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/04.png",
+      "sha256": "50b7e8f4c562af46958d9aadb866c67ac57ef1e1ff28ea902599130d41113407"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/05.png",
+      "sha256": "fad3adae284bd6397b1fc97c3f431bf99e3a7942828e4a5e5659875e9d1872d2"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/06.png",
+      "sha256": "674413762a90f2b6387cbbdad1c7f90adcded3cd5b54160f790cb5955ddb4111"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-open-ledger/reference/07.png",
+      "sha256": "b140557bfc173bc8555547d257e7523ad8e28c3557e0583cf5c878f7e808a4ce"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/source-sheet.png",
+      "sha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/atlas.png",
+      "sha256": "aad3f9d6b42e252ec559f580abe729a3dc5f12ecbb706eb350b34912f102209f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/motion-polish.json",
+      "sha256": "e85b972db7824ac403abc14f20a7850aae87536eade942edfa95c08c78887bc0"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/00.png",
+      "sha256": "a229ebb38566c61e4fbf3c1df5be382a22de882905859e42ea3dda18175c349c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/01.png",
+      "sha256": "3c11171fe33e8cd8ceac1af205c25b6d4b210386f80a4269e2dd5377934cbd66"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/02.png",
+      "sha256": "54a78af52c7deaf3aaee10e2679f1ebab65dd490ce1f4d5bfd62135178a0273f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/03.png",
+      "sha256": "d7e2a2b629c7c7a49853c3956bf27d8133ed5d4bf839c4344339443ce6fba9a7"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/04.png",
+      "sha256": "a31c6f1446c5834b43115886f6c64a04d37ecc671fdf55f741af31b4c6f638a5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/05.png",
+      "sha256": "64c14471558fa0047d868999f85a1f17ad70d685a96462a3e3bc54933faac642"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/06.png",
+      "sha256": "c653820956caeb3bb9e2197e8959e6d9b644f6584518b6dc64e7fd8f54d30572"
+    },
+    {
+      "file": "public/sprites/Cook/motion/cut-boar-meat/reference/07.png",
+      "sha256": "01d3041288e66174fe0f485a7f8712e244e58823e00d0ceb0425f540ca6abbdc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/source-sheet.png",
+      "sha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/atlas.png",
+      "sha256": "205d257b6aa534b2c98265fc445adf3059cef431969197f25d215ab64994b12f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/motion-polish.json",
+      "sha256": "fb997f15613947155088d014a167ec278add9f3874930bff3a8cc5fc6affee82"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/00.png",
+      "sha256": "5b3294ca4ddb73d393ad476ad48ee2ed565dcec5c2dcc53e254049681ce738a0"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/01.png",
+      "sha256": "d8fe662dfa105754219defdbabdccaab4beac75c5ce857ef30a288ccec0faf05"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/02.png",
+      "sha256": "258b070d4ad13d22f77ac13d0e8bb505f24c4505e1bbb9c58966eacbea4d1e17"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/03.png",
+      "sha256": "af983b59a02ee51268e07ece02364399e37272d767d654677cd88ffef2b3cfd6"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/04.png",
+      "sha256": "4261a1184eef6f8d5332bd12cde3bb6ccb08d956d51b798d4310cecc7d7d78f1"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/05.png",
+      "sha256": "3842b95ab3c0978472eb8070d9e2b185b756a40b6a150be8025e372bb0ab7265"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/06.png",
+      "sha256": "c38d2ac10f8f93e5e87aecc71de5699972090bac87ff53d59f6f5b9933860900"
+    },
+    {
+      "file": "public/sprites/Cook/motion/fillet-fish/reference/07.png",
+      "sha256": "055d7b961af900ccd02f98ef64c7116b6c6ddced6706f84c56b12d15d8e84a39"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/source-sheet.png",
+      "sha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/atlas.png",
+      "sha256": "59c434cd01f55e2dd9466c1f803a25bee3e0f0aa36e288379628a061629ce7d5"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/motion-polish.json",
+      "sha256": "ff90d355f42cce6ba198a5ad9c36ec52c31884f0308082c3e6e6a5fdb5a4b436"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/00.png",
+      "sha256": "d327c6e169673096fa9fb9fe0bf132ec437fb7a6fba75d8566bac6fd55a45dd1"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/01.png",
+      "sha256": "99c71654018d5c1550ab1bb3148cac13ca4bdb91e3adc95b40f39d3ed01c6062"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/02.png",
+      "sha256": "49ccea91b1cbf21769109b5161c0f5390f051adc3322bf55bdca17a8253a8532"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/03.png",
+      "sha256": "e270e371584aac027e971f2f835213064733b0aae4c0eeb1f59011df9effbf0d"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/04.png",
+      "sha256": "a46e277491f81ab85d4b6765abed63470b97ca267c40cac09c3ac70a7dc040dd"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/05.png",
+      "sha256": "6328e144ddca80f5990783efdaeb065eb6afaf2a42d6db9adf957172c5865bcb"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/06.png",
+      "sha256": "a629bd999f6990144bda3f4683c867c1d187b16226d84ab6d7c7751cf145b0df"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/reference/07.png",
+      "sha256": "89915ba9c7f73b8df76000492739c99aabd2adc495820c01c237d1c217a8797e"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/source-sheet.png",
+      "sha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/atlas.png",
+      "sha256": "c57344288c22f8b7d6aef476b8a3bfc6053fad9a3588358ca4855fe1f707344e"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/motion-polish.json",
+      "sha256": "0f65c23e3ed14ddf3bbab5dd753841e98831dfe335407602663c60058a9f1024"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/00.png",
+      "sha256": "cbd9dae395657fd81bbc6d339a9830dd4c5653f11e0f16a680618d77dd8b6df6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/01.png",
+      "sha256": "f4f5df8f6c9a14e156ddd293a7245177995b8b385a370d7de468d4b29887a3f8"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/02.png",
+      "sha256": "d17b187f5ed37b038f892c6cc87acaa8f2f46213dd6b2fb784711bb34bdf6057"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/03.png",
+      "sha256": "883dd973051bf41da22147a6cec6c7a321c543786eed5d6b3d7cbc0b0a9bbd92"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/04.png",
+      "sha256": "f92580c1303a89cc2c4f39f44d8f8d82d2562f374f0424f53cfee16bc15f6a33"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/05.png",
+      "sha256": "c99334fea219875532dd89eb6db1c068795a7fe5d9f9f91666f84a168fdaafe6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/06.png",
+      "sha256": "beb2836dc987e116a70c0af92dd2bb3adf157fa46a02efd5ca67ad5e3c46dabc"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/chop-downed-log/reference/07.png",
+      "sha256": "cee917fe53384ee9d50a36a60ce5afa65606f3cef5a1bfbe73da85ae7331b580"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/source-sheet.png",
+      "sha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/atlas.png",
+      "sha256": "f47a6de96ee52953705275924c7e6ca78c026fe5b8e53b7295bd675c336aa6a8"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/motion-polish.json",
+      "sha256": "5a6214b61de07240f0580e0907ea6b3fd46c38756b72e8aed779e11a2f6f2887"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/00.png",
+      "sha256": "9003026597b37caad5846dc16c61fbe4db14dd19a860ab154a72ff5b1f06f61f"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/01.png",
+      "sha256": "00e8fee8fd1d83ede1f85badff47a4caa007fb0502222d6f83d726ea2c1bad3c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/02.png",
+      "sha256": "d954c36f72a94c0038d8837a76718b4d5dd4d40b0eb87279cca2cdbdda490854"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/03.png",
+      "sha256": "dbc449a715c4b60b0e086cfb441b9ad00750beae880c2092d5ee6ab37a1075d6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/04.png",
+      "sha256": "3cfc8e5637ab0ac2e7409972983b2e3b4198fb3e47aab675317aecbc29330245"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/05.png",
+      "sha256": "09a6797dea8eb8d79cb2b334d1932b27cfbeaec2d057d837bf8cbc69a9023379"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/06.png",
+      "sha256": "ba835e31e1cc178b22ad0e776bff366945be7c5bee0ac2324a5c83bb3f207779"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/sharpen-axe/reference/07.png",
+      "sha256": "af90daaac1db89f855050ea4c4c1dddcdbe99dab034f5b4105915e986e5e9e73"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/source-sheet.png",
+      "sha256": "8447a76795af9cdce674bec2b42c1a5ed983846875e816d33c8ce4e9a0d4b4a5"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/atlas.png",
+      "sha256": "38b81396c8aeb41fea9389c1ac3d0f5d184938e3fb023414f449dd50b9d0d767"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/motion-polish.json",
+      "sha256": "c345ed7ddfbe6b295254cc68ae2d1844d853b869f2759832ebb08418e5e8fb02"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/00.png",
+      "sha256": "37d7347263bd270fdae960dd0608517bd5dc93871bb7970a24bbd5091f9abd21"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/01.png",
+      "sha256": "26c9724fd99f31b48bc40b983255f3b520ba2964f570dda3cbab9adae58ce0fb"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/02.png",
+      "sha256": "6b50eacea7a9ec4518fbe3312de43b08b3ac13d7617b8b65c0a1131d921e437b"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/03.png",
+      "sha256": "88295c57bfb9189884a7b85f8befb9e70325df1f56411658e0aefdee84d57ed6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/04.png",
+      "sha256": "a5a540ecfe05173369f1ba36b350e6c89c70cdc4dfc79e22533ae17c8acf8fb7"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/05.png",
+      "sha256": "b14f360103a11e7ad1abb29997a1645e0c0a8a0f0041c0031a5056d11d7ec7e9"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/06.png",
+      "sha256": "53297c93163208dbe3e89df879140badbebdfaf870f58067bd7da9a649c42240"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/reference/07.png",
+      "sha256": "4bd13c33d3c5323318c28e41f14ef1a297dcea8fe3c7f4984716b9ff197d3001"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/source-sheet.png",
+      "sha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/atlas.png",
+      "sha256": "7b35822dcb4567d1a6029e80283403d6a78dc693e6289d3c38d87f39b20f5077"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/00.png",
+      "sha256": "7a8fcfedcc956da6709d860f8b7a9115c6cea98101188da9f2a2de2896aac5a1"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/01.png",
+      "sha256": "22c64dc9668e6d4d70e537d6e4a1943382bc3608cbf3bcdd40154382402734af"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/02.png",
+      "sha256": "4b66abc7184b083684daf2b9596c3f5e29b1120400f94fded46a18ba51d934d2"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/03.png",
+      "sha256": "0d194cc5ee25213eea469334993d549438f901ffc5ef3590e41d96f261c62207"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/04.png",
+      "sha256": "4fbc320933e4fd7832582e305c2cbe5905ab08af4307ccc7965c1bbb6fd1d3e2"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/05.png",
+      "sha256": "4838ae61b84764a822a55bff561be0e8fc61ac8bb78fb0566f1b17069a23de58"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/06.png",
+      "sha256": "a728b99ed31616ff049b584c3bc497d2122e4c0e5914bd7fd08f321da1a8c5b5"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/reference/07.png",
+      "sha256": "14de2b876582771611a9384277c9c323c05e1e466cf597462e19cf21bef62797"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/source-sheet.png",
+      "sha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/atlas.png",
+      "sha256": "42d81faaedc49c6f84862d84f9022fa64cd134bfa4205f78f5a5eb5118a10a9a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/motion-polish.json",
+      "sha256": "96599d408ae740f1ae9d6c0d699bedfac6a9be7a4b8031030be23caf1a34f00d"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/00.png",
+      "sha256": "94fe3ab4e366c687dd81b57c0a5c592b3028dd5190c85c8763911ee156962184"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/01.png",
+      "sha256": "d104f37a1e2efe9c7b72bf5fff164de4bba3a00c7593205c5a837b890bd6ab13"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/02.png",
+      "sha256": "32685102e7f8d950c6559b94e61775afa73ba82b1571949186530c65876d5172"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/03.png",
+      "sha256": "d02224526e0767a300dd99765cceb322485a583294f3a3f12fe5903855f6aaed"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/04.png",
+      "sha256": "9f6c18c400107fbb542945a5cd04adefae43225eda1de241ba665e2b375f9e7a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/05.png",
+      "sha256": "8d1f7bfe8d8ef4feb812065b1751f7554b081a86427c74ee938b5556d061b666"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/06.png",
+      "sha256": "e8a414fae8aabc3723ad598f36693f03d873fba681179bf83f0dc58326592a8f"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/shovel-rubble/reference/07.png",
+      "sha256": "18d4edf0d825ae1d6e8700d44dbfda4ab574441a6aefd8a31e4538f4b0a73c7c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/source-sheet.png",
+      "sha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/atlas.png",
+      "sha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/motion-polish.json",
+      "sha256": "64d5cd66a1f56183c786c545bb76dbb6dc6d96f1449d693b43db99d25dc0e75f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/00.png",
+      "sha256": "d8e2d9296152c6e312d3214aebfd6f8042a44f998eb46828584f8e39ab62ff67"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/01.png",
+      "sha256": "6cac54fedc18adb41f78983153105a68746cea0cca95faa90c7888fbbc17f1ca"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/02.png",
+      "sha256": "bc21c4e722fff0bc686cf1dd1c3504b7b867f63d63da33d21b22e6079302622a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/03.png",
+      "sha256": "e2871e39c85d7ec6f2d9da16be34bbf7e10c79a341f8bb7e15f6b93290cd683d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/04.png",
+      "sha256": "d0a2863ccaf0978f6b68f97d105987e7347ba0b5a3df755d81244c8119d43876"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/05.png",
+      "sha256": "1a9e016d79031fa17ed9e822bd3685e6f21e76e9b697bc8e3b84d6417c87db4b"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/06.png",
+      "sha256": "769355e8e6cef97d3517120a5dc434902b8e5d8cd0c9e314263b683d4165b8e8"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/07.png",
+      "sha256": "260db51b39c899b7720b0e8761a6a722b356c56e95df89d88688369848239d69"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/source-sheet.png",
+      "sha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/atlas.png",
+      "sha256": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/motion-polish.json",
+      "sha256": "21fed3ab2d1af43a0ddaabe4a29324d1bdb39dea7b74ab0b06175a99d57fe9dd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/00.png",
+      "sha256": "ad06a7c99e18f787db6a5f0cac209081f983cecfe585eab488f27a96e8bf40ee"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/01.png",
+      "sha256": "63f1faba9c79a1430645692cf34217ddeb733749da5472621e7daf7ab2349d4e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/02.png",
+      "sha256": "6771fff7b9156ed3f0a69210ab62a67f9e7f92236b12a9fb2f6cf59ed63f2ff8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/03.png",
+      "sha256": "29be0df96cc2e8eefe478779e1df760fcef134be0ce83647dcf7d76764872453"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/04.png",
+      "sha256": "8b77fdac93295aef2f88f0a09d33cc3972356ce432e70b7c02e96cb288f098dc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/05.png",
+      "sha256": "827ba2345896889f88e6d5e730c92e32a478edc896b9b360dbd61801cc1ccdc5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/06.png",
+      "sha256": "68b37ef7d11e4736b012c86e94375d0d4b91ac650c2e0890faace702ff19a779"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/07.png",
+      "sha256": "2555b38e986d9813ebceb5b4e6a28f50c8f6d99bf82b647e8e7cf1855a856ee5"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/source-sheet.png",
+      "sha256": "d3ec703c0e45e05ec2ad9599acca465eb5a4484c1a5d48ea9be1660b38dff468"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/atlas.png",
+      "sha256": "11e76e35d4ede1a1e51b2397d1377b55a6a99ec122dd16a3800732d7f26d89c4"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/motion-polish.json",
+      "sha256": "4082947e5be9daa4303d95a1f516ba854ede9046778c9e4ceffa55243f9772b3"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/00.png",
+      "sha256": "2cab24c455d92cfc312262f1366937f74d3521ae8de3af2b03929eac08aef5bc"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/01.png",
+      "sha256": "4cbc15d74dd93519d607cd7773eb83a584bf991428c283a59a5c762e9cbf6c90"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/02.png",
+      "sha256": "5b921db850a532556e1615f969a8229ed5b0adc6c312c85df4fde2d458395b26"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/03.png",
+      "sha256": "3ad751fde46eb5e4ccc7ed888d763de380b1b531d8dcf2dbe4f1bd149cc748b2"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/04.png",
+      "sha256": "808567fe289fb77fb3d615e0a9d2a1c04a7a4fd35b8dd48735254c11866afa81"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/05.png",
+      "sha256": "afc4936417ffe84577dd99f71ca4b22ebf90763fbfdbbb1a957267ab20f293eb"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/06.png",
+      "sha256": "7cb866e8df8b25b62c2accdf1bcc49ffefbd8d2498093220bed087707edd08f2"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/07.png",
+      "sha256": "43c284845682fca523e7e6d243796a58ebef4d27710049fc0692945df2311c86"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/source-sheet.png",
+      "sha256": "add68891f07d7f3a702806a2a3508f1f55546c345a9b1381cad2e273ac38973a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/atlas.png",
+      "sha256": "7b594de37516c077dc74adb3c63c85d1ab22c59beeeb032cde68b08b5e4a5ac8"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/motion-polish.json",
+      "sha256": "c61b121d99a9f6b770162a9228ddabb722c42041860724b5c7569057142fa0f3"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/00.png",
+      "sha256": "6d37df525537f2781253b3052892aaf89b6101d523e770d9eff49b58cb0dd133"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/01.png",
+      "sha256": "0a1d21109afaff680f497d3c4d4dd5c8fddc966e73d3a59a4ee768ceb49f7ce6"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/02.png",
+      "sha256": "f90520acdcdf1139caced4e9649ca1f76f8fb9668252b5dbfb11cfed42695681"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/03.png",
+      "sha256": "aac8577ec1f0ccb9bfc9898182cdc6c0576d5ee7de62a62217705216f50f05ab"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/04.png",
+      "sha256": "69f7348b5593aea1ce3584e8740b71a3a9f2114bc10a834513a3e2229f186aad"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/05.png",
+      "sha256": "0a68e427f8e07be1717b087be7c79f1c4c0de0d25f9354bb7339befcc5682658"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/06.png",
+      "sha256": "98bbdc483a5fab20e3bf8d011391e0b5ae3d2f5c1e68f85c92cb871b9cf33c6f"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/07.png",
+      "sha256": "f8cca9485b9494c257df3b79ffcb70d879342a66073420488d6e513a5a915fbd"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/source-sheet.png",
+      "sha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/atlas.png",
+      "sha256": "552494c5e5e97d7a6e379971e9d303723ba04992d2acebafec1779b43e22149d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/motion-polish.json",
+      "sha256": "17cb7456f58ab0b86d6821aaa1427047afb9efd1ab6a7fb86ee39e0fe74b14a5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/00.png",
+      "sha256": "7e908ce0645dc1ef368e8a2bf3242489306a545d65ad935895d8e82a72f4e6de"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/01.png",
+      "sha256": "d913a7f3d91a572ac0ccbf002f8ca28018976460d23eabf54a0d820372c69ae9"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/02.png",
+      "sha256": "750adc5759aaf5c532c5a00161ea6ba63598bc046a7bfa9cc646eb9839a23f31"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/03.png",
+      "sha256": "b368effa4d28125193a50b3f16b7fbd4743784706b60916ffffcb5504189e82f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/04.png",
+      "sha256": "f1abd0e87710ed2fbe1ee4598440137ad4a237e9d84159a8d11f95f4424e2901"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/05.png",
+      "sha256": "69236d50e53b57185f4e70c23b4a49c5ab689cb9ae821a5ec1fd1bf2ac2ed16b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/06.png",
+      "sha256": "1a7ad67195f353fcbd7134f80c2b4af2047c1af8f1d3dcfdba95554db5f96cd2"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/07.png",
+      "sha256": "0227ed28b0bfdfa038223380eef4187c0c62c85f2c1f6ac899980f1d8bb1cffc"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/source-sheet.png",
+      "sha256": "d8a4ba0057e14c600608be46f9cae44a95c8a0eb02fc9db5993f352ffdfcf755"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/atlas.png",
+      "sha256": "f5cab789cbbd6f1d5952eaf18a67f9a271480a0cc9787f5c8b812ac6eb3cc7a7"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/motion-polish.json",
+      "sha256": "90c840b50a7a889b54b6cb936df259026b820d8cb3f2e981b41ec4276a82da22"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/00.png",
+      "sha256": "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/01.png",
+      "sha256": "bc413fad7f071c50b140caded8bc688941c1139e12738183de32cce53023b979"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/02.png",
+      "sha256": "3e90fd0b62ac1ec8f82e3632e86fb508ea263db2207552262716b1584730018a"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/03.png",
+      "sha256": "d1296212e7b557d754a9c52ee6aa18bf8ba116713328ec4ab6bbc63a6b7eea1b"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/04.png",
+      "sha256": "255d78b2e73edcdeb46573ff4bd6b64f7de5e79e13211e6d6ccede61e126d164"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/05.png",
+      "sha256": "59acd2ed5f17b87a6d37d0a2183e2796b19a929361afcff65c0b79106951f20c"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/06.png",
+      "sha256": "2a0cd78474c95116d3ec94649c7c44b7e169c32e4e807a1ed30849c3fbbeec17"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/07.png",
+      "sha256": "d038cd8993b672741df330383da5f36e2b5dd105c96b2c5aa205885cb2c60aa2"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/source-sheet.png",
+      "sha256": "4449f2bb45e430a8157c84627a67922a56f29c26f34a695bdb79df95caa96e46"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/atlas.png",
+      "sha256": "7df425aa9ef232937dc22f0e99955df9000a35d08c265cb85c9c4f34733ab222"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/motion-polish.json",
+      "sha256": "323bba381f10af9ae4bd75601f55891edac6d30f01179d4f6e68398b89be3454"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/00.png",
+      "sha256": "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/01.png",
+      "sha256": "ad1f0c3bd1b178532f2e73ae739965c5fc8b7fa1021365fa083c5315f5039cb4"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/02.png",
+      "sha256": "4ccd3e2bda0550293ddb8c512d77e22445a2c72356f3c728cc289768c925c6af"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/03.png",
+      "sha256": "6ef49212238e57f41cda5a334787130a06a4977c63b9bada8e105582db09f760"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/04.png",
+      "sha256": "2cb81eac19fb248bc8f17459bf69bec7db972a808bc5cf6946e75ac2bc8c030b"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/05.png",
+      "sha256": "c16496fbf3cdcf418fed01e51f78ecb81ea4c14d02dbd60e0f0a2d4d3b5c48e6"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/06.png",
+      "sha256": "79c92be25704e6afdc2d4dc2be37f5628b128139561ebcf65934cc36a50e35d2"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/07.png",
+      "sha256": "48d30a013fb3d477b1b0228061f63ee7a7c1aa0731a26a6f1a3771de0042fb16"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png",
+      "sha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/atlas.png",
+      "sha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/motion-polish.json",
+      "sha256": "5f96e5b5192ad14227eed328c223aacfd4b7b935ca0cae38a83251fe380338e0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png",
+      "sha256": "155c427f587850e0ec661f7f4855ff1887d7cf584b8d495b78f197669f9ccff0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/01.png",
+      "sha256": "52450280a0d1d092cc8380e11ad1bbce2f171e621980620ea90f1d31a04356e4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/02.png",
+      "sha256": "ad181b7130e4b9634fe9ffd54a2f486681f2de8060a479470d5ded56646fbf81"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/03.png",
+      "sha256": "9456581aa330d4524f2098718a135f5401a51b39ca0fc0fb8c609cf5fbf8a78d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/04.png",
+      "sha256": "3744280d76edd422f54993fa8133a6cace220dba4a1a7c9dbb323996b513d050"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/05.png",
+      "sha256": "7623f16490c34e7b75368c2c578ffe0d36aa8ee1cee4e4f5d158a8bac6f5071f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/06.png",
+      "sha256": "e884097e43a13d694cfa60914be251be60db0da01968ea4667a10daf6fdb4c85"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/07.png",
+      "sha256": "4321228c74b9114b7e6dd49687fcb501fb13b1b47647205fd2755c7974379168"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/source-sheet.png",
+      "sha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/atlas.png",
+      "sha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/motion-polish.json",
+      "sha256": "afd5f0c037ffa79709903f2d8d0331f4c47d1c77a886f3a83e419f88cd32c6e9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png",
+      "sha256": "0d0bfb4923c55439fe2799c263cf18b21a4930222baddfb62d7b9584225622bd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/01.png",
+      "sha256": "1520af748fec5d33ab7aebb506ac8dbe1761a05ba5e1e609a2308b79a76a3b0a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/02.png",
+      "sha256": "6b1d447735ccb89dbd97049b65d710075ec0600893a3e2b87f9ef0d90e648e52"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/03.png",
+      "sha256": "11552ac82aabdcd08498da830c48a86ebbf8090688a2cc881ad945795501ebb9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/04.png",
+      "sha256": "1d9ec1bdab5363d27afa7e1d64c5c769467ebfea29eef1136682b1cff2d1f357"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/05.png",
+      "sha256": "1f1f70e6e9bb0834ebe494395aa45ee69e1f01899b29b1d99969bec7fd69e8b1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/06.png",
+      "sha256": "ac8c06684eab330f9d61ec7b638eee927daa2b6516b2ab05d89234d93a7469c6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/07.png",
+      "sha256": "eb8dbe7412f426b8c67ebff20b6ae476f0f9cb5744b4ceae8a45cf38ca5ddeda"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/source-sheet.png",
+      "sha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/atlas.png",
+      "sha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/motion-polish.json",
+      "sha256": "67e3ac201733bce3501b3b11553ccc6f7fb5f1a1c2100bc48bf820bf71e389d5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/00.png",
+      "sha256": "926276d44d5ae8a35beaa01b30e7090cdb85b8f9d2429734a94be24a2b161122"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/01.png",
+      "sha256": "1750132a34ef3922189591d2c3482b11230ac97b51fa509c00b42747316a3e37"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/02.png",
+      "sha256": "73e097891393b8da95569dcb405c3ed376439cf6989a33ff94f3e5ff3d8875c4"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/03.png",
+      "sha256": "58d3e836fbb3e40499a8b6d1d380c3a2a4c9e4c9dae66729a70116666480a0fd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/04.png",
+      "sha256": "9a9f77bd425c6a1cf2c345d3b83c139e08a578327d9406a10e023ab558e7fe87"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/05.png",
+      "sha256": "abfb27866de5e005dae2bce5b53472a16aeba1f4d307990e53a6bc568aecb5da"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/06.png",
+      "sha256": "e198166b4cc096fbdc0475fc51970acb2aabda4a6f8334c8d1a782506652097d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/07.png",
+      "sha256": "70e303c7979dedd2a229f2a2489e2fc520a87d539d0db22f2850e4ba21cb4453"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/source-sheet.png",
+      "sha256": "67ed4826b90e000a640e0acb4d19f7849064014ca0821d700113e0efcc72fae6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/atlas.png",
+      "sha256": "2ebc2cad6d91a8d285e483146cd97f3b3a1ae6039b97e02c196199a2a4e86c3e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/motion-polish.json",
+      "sha256": "efccbdcc1a6a9a189db056b931c9ae1bc6eda58ffe24297c1f6da55e64abcd0a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/00.png",
+      "sha256": "637c14868642823a5c1a13c522e0906a2490c2fa2e5c691bd769ba5f8fceab10"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/01.png",
+      "sha256": "d3f2f84339a0b1bfc776bfd8df29ed15662d24ca78afe7870bebb7f14a3c4126"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/02.png",
+      "sha256": "8aa472eed6289113b271e6474c37dfe8d90fedb52b34d216c46c401f46eb5557"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/03.png",
+      "sha256": "c7c4477952d434d2662399f01c7d52d81eb8dec34111837b3fba29d53d5ead5d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/04.png",
+      "sha256": "fa3836f5c12cd87dfa1da97344de7a75434bc1a00854647eee979dcb2a9c9e40"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/05.png",
+      "sha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/06.png",
+      "sha256": "d2db26cbb94fe710428b625a406ded8cd1f5b1d21798da5b297711d72dfe4dcf"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/07.png",
+      "sha256": "48a145c435b6ca36081558006407488dc579449f2ddd9655304876948fe7ab6c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/source-sheet.png",
+      "sha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/atlas.png",
+      "sha256": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/motion-polish.json",
+      "sha256": "c40fdd89967d031d458db5d820600b299b1ddbb2478ed1ff8c7abb1fcadab77c"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/00.png",
+      "sha256": "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/01.png",
+      "sha256": "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/02.png",
+      "sha256": "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/03.png",
+      "sha256": "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/04.png",
+      "sha256": "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/05.png",
+      "sha256": "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/06.png",
+      "sha256": "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/07.png",
+      "sha256": "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/source-sheet.png",
+      "sha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/atlas.png",
+      "sha256": "a510e4ecd866a9fc8a62911251a0561ce02406608a6b3e87612eb82fa0c47d45"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/motion-polish.json",
+      "sha256": "330bf34dd6c1f05237823c88f6d93bc62f5217956b50275b98fc5f4070fca194"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/00.png",
+      "sha256": "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/01.png",
+      "sha256": "c808ba8266b0066006fb6071c1d21c5ee5df8e04034a76648e0cc742ab39d11d"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/02.png",
+      "sha256": "476252650bb5d38c8489184b49f455c4dacb3866a4213d337d9b5577f9edb213"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/03.png",
+      "sha256": "09dbff3db0d998a9ce360d81984e1eb8546f9e5993514e32c573fd6dcfabceb9"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/04.png",
+      "sha256": "68e0c58ab32f4be4474c6e8b5c4b6bf7bf190402def5815a42677e1ef38b8549"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/05.png",
+      "sha256": "02165e5eac3557ab43b00529e76788594abb5865ac4ac8c357bbde3961c1710e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/06.png",
+      "sha256": "8cc5bafe5bb39b69a82ddb57f07d9bf9291293f82eb549d98a09810d2c29df02"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/07.png",
+      "sha256": "d197c064ec7c42ab2d038af8e12582da37b507fe8a5b519c5dfe31ca984146df"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/source-sheet.png",
+      "sha256": "097f47aef963216e272cf6a94e46de2c3e2c99a88ba273acc2cd07169174a4ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/atlas.png",
+      "sha256": "cd070ff4aad539b034ea752dac38cf6601236369c5605c22fbedcc428307837f"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/motion-polish.json",
+      "sha256": "d6e72aad4e87b5f38b0f4b44459cecea141608579e9927a331ae5faa236fe223"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/00.png",
+      "sha256": "369b49365f3919da60bc1a7af0aa03ec2b1737e12b18023817d4eca4c93034cc"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/01.png",
+      "sha256": "fd0a040a478236a8d648e21273e381b40fc25ad4991c4c9dbdf790b28da21aee"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/02.png",
+      "sha256": "048b97f29a6a9fb11ed5319e6d787acbea0c50b7b05dc2c32d657afc0b6bcc43"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/03.png",
+      "sha256": "e254be8d11f4d75882abcb201e1e886a90761db7e73b08cf04e659b72a0e15ae"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/04.png",
+      "sha256": "2c919cfa79b343219408d5ccf8c60653e89fe2f469be627ac3307696d98e9123"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/05.png",
+      "sha256": "95df6ef561341b71caa52b79daa080e328529272b4f9752bd841b2af154f2931"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/06.png",
+      "sha256": "c4c7943b9f6d451ad398c8c045b89618b4859dec2852b3bf157e9207d7e7c94c"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/07.png",
+      "sha256": "bf4f666957aca08545588a91cd2806edac8bdb04716818984899decc3a6c13b6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/source-sheet.png",
+      "sha256": "708a1a7bbf8f2c602da2d39360d618c8e2c563d23b7b1bd9a0b141bb258cc8c0"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/atlas.png",
+      "sha256": "a4146d45c81efa21330b1cf25dd4d8c134d0d162f4062e10bd3d3d8d4efdb3f8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/motion-polish.json",
+      "sha256": "e7951dda400d5fbbd67a6cad610038bbfee95710ce507e65f2c6c3843c1a9353"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png",
+      "sha256": "77b3bfd387916abb58afe405ba250ef39c605612c64be4b3e9fbb6e24b94d157"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/01.png",
+      "sha256": "c345a45149e103effa05df1ec6c6e8df2c8bcafada2488299d938f1a0a8ff2fa"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/02.png",
+      "sha256": "ee55fec9d0cd94fce3bf47420d70c59feea0821e59e0e29a08d82eed1f5d6022"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/03.png",
+      "sha256": "95efbdd766640fbe6a2c0a43e339619c29bc03495ecafad3e86d2f6ebfc2c7ea"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/04.png",
+      "sha256": "1cdf7534bc5f9cbcc9f609641d738b0c3eca2e38f87bde56dd02b65b37529d79"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/05.png",
+      "sha256": "adc1de57f4a1189d2ce2728afb905dda07da81296f03ddfd765d6c9b9cdb8eeb"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/06.png",
+      "sha256": "24ca1925d7ea02ab87752fc0cae8c721cefaa8a2a05e5e8111ce148c7fd081ca"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/07.png",
+      "sha256": "4d8e53f6c56e12e1be2c1763d7898ff054f51dd41652b9485555ca8998d0d574"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/source-sheet.png",
+      "sha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/atlas.png",
+      "sha256": "c52bb366181eaa84b87b0da385c26c5c3dfd984e8bc082e654cb71075dd17ed5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/motion-polish.json",
+      "sha256": "26a0f89bcfdcb8eba6169df4dbb9d93f4abe3d51b687f0a9c5989c49e86fb171"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/00.png",
+      "sha256": "b6bc03419c4c6f207f9396bae6f5586e5d781587a8e9904a1cd25871845de1f5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/01.png",
+      "sha256": "186e03561ca8f45009eccfc66717418a62d881f73b6507a23dbe0ba56969997f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/02.png",
+      "sha256": "59371a2243611ac5c77551b3324b15527a96ed9e83223ecba29433155c0b4cb9"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/03.png",
+      "sha256": "898677a62daff8ed6b9b551580fcb618096290fd562a97ed7806bf7330af2904"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/04.png",
+      "sha256": "fa1799b3f1356976819aadb06b6b987d438f542bd52a77e3b1229a31afd2196c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/05.png",
+      "sha256": "5b0773358b6637f1d82279c9c29cedc43299362be49665c484aae3f52141177c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/06.png",
+      "sha256": "e28b87898d15385eabfd4f5f95c87e70b2ae4e1c1db0e031c04b461ede7b6728"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/07.png",
+      "sha256": "2bbf6df49705a5647fa0789a77da68bb562d755b052cabc1d4100d8ef4f72476"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/source-sheet.png",
+      "sha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/atlas.png",
+      "sha256": "1c7deac6f3a281a892daed4725498c5aff19281d75265f02d9d69ccf66cf8967"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/motion-polish.json",
+      "sha256": "43e82d00ad0fdd5a4b6879fb35f18f56b8536bc3ea93be97bb565fb6d34ed1ad"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/00.png",
+      "sha256": "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/01.png",
+      "sha256": "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/02.png",
+      "sha256": "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/03.png",
+      "sha256": "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/04.png",
+      "sha256": "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/05.png",
+      "sha256": "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/06.png",
+      "sha256": "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/07.png",
+      "sha256": "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/source-sheet.png",
+      "sha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/atlas.png",
+      "sha256": "dcc5b78d9d2afb88ef15c41b6e2637861fde5d5f57d99d04681372b0d18399a3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/motion-polish.json",
+      "sha256": "bb95420e192ce60b5ffe90d18cd20a68d4523bb60034357e469a2d9d9e28a064"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/00.png",
+      "sha256": "f5cd4f5a10d0e14919a6d0aa71e274eba2f8ee1ed2225ed42c423a22f4472490"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/01.png",
+      "sha256": "08d833bfed2e5c3bd562c13ec69b2260b47559ba5a4e72a652256355f7b64ed6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/02.png",
+      "sha256": "80797ed4db882a145da6604955adb76112610f1e72e649a25c84a4c4e72aaa9d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/03.png",
+      "sha256": "f0d7667a8d0f52bbd4d61a4f628bf4b66e9b440b10d705588679fa18372b3a18"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/04.png",
+      "sha256": "38c82ce8fcbf704ed66d768dd530ee806b1cea880cff025fe70fd34b73215a62"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/05.png",
+      "sha256": "341041dbfe268c052b56d9c5823c35f8fe89e36a2cb47ab40571564a2c3042d7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/06.png",
+      "sha256": "e04388add13e53044aca51fbc33d1bfb4fbdabc7422bbead22ff6536d054ecc2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/07.png",
+      "sha256": "4d8e4dd865a2e9ed7e76a942db954b558714434f6307c13dc915b82cb85226a6"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/source-sheet.png",
+      "sha256": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/atlas.png",
+      "sha256": "90ae6011dd645a7823a59ea5b59fc64c213a17cca8cc2913f48520e298dfe39f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/motion-polish.json",
+      "sha256": "40558ff749144f5329be3edf26eb5ba2e5c95dcfc8207b23f73dd38e7f29a929"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/00.png",
+      "sha256": "4fa40f36de86b7e1444b45855200a63e0055b376670ec0e7fd40814380c742d8"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/01.png",
+      "sha256": "85545b90d42e1526534831e30ab044bcb182c4bad862db3c5a890f56f4eb4d95"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/02.png",
+      "sha256": "1f80cbfd663f6037387766c24c76d75f13890beb970bfc22ad133a220f509736"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/03.png",
+      "sha256": "474513b4eb523b2ad2ae16ef21196d11f8981cba037eefa1216630f37f319379"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/04.png",
+      "sha256": "d8e9a572e750f6a4bfcb4568107129cece535c834a676bd7ad33075f2e983a3b"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/05.png",
+      "sha256": "7dd5d0ff1301600527f5b0f3455d14d2d6458fd65d99706f5d6a11d1c2f2b7e2"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/06.png",
+      "sha256": "f7f13cac0734baa514174cad856a2de5e512b93de4a43fc637367c06d260e9ef"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/07.png",
+      "sha256": "50ac49eea3235af782cafb7dada9f2ca1f1c069711117ac05c5b1a96aff8b11d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/source-sheet.png",
+      "sha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/atlas.png",
+      "sha256": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/motion-polish.json",
+      "sha256": "36a50a1693101c127191362b5ae8c10ed28ad9bf1850d124d68c5ce0366305dc"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/00.png",
+      "sha256": "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/01.png",
+      "sha256": "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/02.png",
+      "sha256": "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/03.png",
+      "sha256": "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/04.png",
+      "sha256": "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/05.png",
+      "sha256": "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/06.png",
+      "sha256": "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/07.png",
+      "sha256": "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/source-sheet.png",
+      "sha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/atlas.png",
+      "sha256": "74a6a436ec4eb9650cb96e2f3edb799d96b1cff45db20034dcc9a2f1c34b1d9b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/motion-polish.json",
+      "sha256": "9f898b6cc2e17752f9223fa74c92486c635d416b2c914ecf6257b5ad4cc8c75a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/00.png",
+      "sha256": "639cafcba1ab0a5d278e639303c0ef393028f1b0daeca58bc155f87fa8efd6a4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/01.png",
+      "sha256": "3a8124b02f6a51cdb3aabd8fcd10f0284e64f8405b308681061a50a18dc83ba2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/02.png",
+      "sha256": "d7398101521658530d46dcbd850aa5201d736f46262d35b66631fab8ce9f73c4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/03.png",
+      "sha256": "abd2369eded97a4b15576c6c83fd83bb450050b35264d276ee5bb27895dfd538"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/04.png",
+      "sha256": "6e72831d9d572641baca098d79e01c03dc2e6a8925b30614e66c6e11825fb842"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/05.png",
+      "sha256": "ada691acd724d6a840bb1ae86f5f39ea5cb7a6726ffa32c8605bde333584f557"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/06.png",
+      "sha256": "b9725e7a10665476800591eb49954112e81c07d9ab636824cb9e588232ebe32a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/07.png",
+      "sha256": "769a6d2baf16b753568db7d791275511f6fe687b0e22a4825f1f7efe97cf58f1"
+    }
+  ],
+  "unchangedExistingPropFiles": [
+    {
+      "file": "public/sprites/workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/source.png",
+      "sha256": "0e92b63e4e42dbd3c26e644e84ed25ea530c278c70b11299e7b0d9e30dc375bd"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/work-preview.png",
+      "sha256": "a9d4d303c7a13e76f3504ebc5ccd5c4bfdcf2b170bd575f881bb49ee2840ea16"
+    },
+    {
+      "file": "public/sprites/workstations/anvil/work-review.jpg",
+      "sha256": "214421fbc6a710ef6f9be5b3279b80f73d54d16d68dc2ff7a5f0a21244cf4c3e"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/generation.json",
+      "sha256": "1fbd9c4be29dcc892decd0756574edd6eb210ad3e3e974c16a764a73dfa8c5f9"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/source.png",
+      "sha256": "945672ceeaa053f4a49d6c1160e408ffc81494d355cf235dd3d46d5fd077ce5e"
+    },
+    {
+      "file": "public/sprites/workstations/cooper-barrel/sprite.png",
+      "sha256": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a"
+    },
+    {
+      "file": "public/sprites/workstations/cutting-block/generation.json",
+      "sha256": "28637e86c8696b5e86581095d8878049096c830809e78b28c2beb328528e3d9a"
+    },
+    {
+      "file": "public/sprites/workstations/cutting-block/source.png",
+      "sha256": "a62bf53c07689e717a87bc411b65215ef92863e63fb65547935e94ea9d1fc978"
+    },
+    {
+      "file": "public/sprites/workstations/cutting-block/sprite.png",
+      "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+    },
+    {
+      "file": "public/sprites/workstations/cutting-block/work-preview.png",
+      "sha256": "b06f559f77e90e29d44480c7351e0857d39657f2edbb7c6466bb777855a8368a"
+    },
+    {
+      "file": "public/sprites/workstations/cutting-block/work-review.jpg",
+      "sha256": "598cc5ec22a20d8253d3851a2136ffe549d7556016c74939eea48a75a4b0f0cb"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/authoring-inputs/dough48.png",
+      "sha256": "0e0d00015f1c0640c8f0e433a5b18f77485ecf525f9f3460fad4c06ed862561c"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/completed-dough.png",
+      "sha256": "31382dd073af1bab58458aea8f3f2c7b7c1b2bba28f322ef5c5af68b9e7ad119"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/generation.json",
+      "sha256": "53dcaa46070c110565bfc0a4f688f5b3c8c940fd548c5913b91c1f5b7e546500"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/source.png",
+      "sha256": "96118cb487d52c9e3457d99baf7929825cf6e930dc6ac1495f2be82f6234adb8"
+    },
+    {
+      "file": "public/sprites/workstations/dough-block/sprite.png",
+      "sha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe"
+    },
+    {
+      "file": "public/sprites/workstations/firewood-rack/authoring-inputs/reference.png",
+      "sha256": "18dc6d6c64cc3f46f17f1530b66577ce0b1d2a8a205117e4ff010a95e31dee70"
+    },
+    {
+      "file": "public/sprites/workstations/firewood-rack/generation.json",
+      "sha256": "7139c2c032946aba0e337d435d26812c4caaf7b9a602c06fcb82d935e34159e5"
+    },
+    {
+      "file": "public/sprites/workstations/firewood-rack/prompt.txt",
+      "sha256": "8cbd03449d8dfdd5acd90cab8e3c9d50d7ef7b697ffaa22a0afd85a280effa3c"
+    },
+    {
+      "file": "public/sprites/workstations/firewood-rack/source.png",
+      "sha256": "f07b4497aaa66044c5b77000e61418f6b1ef453b2effa29790b846359c087899"
+    },
+    {
+      "file": "public/sprites/workstations/firewood-rack/sprite.png",
+      "sha256": "61dc6acd85793b1caadb76aaac5a8b4e9e4f64e2d6f70806c102dbc7fc959424"
+    },
+    {
+      "file": "public/sprites/workstations/forestry-trunk/generation.json",
+      "sha256": "7a0d0fb47277f64398588332f13bdda5d12a02b1614c20113fb1140b87f89502"
+    },
+    {
+      "file": "public/sprites/workstations/forestry-trunk/source.png",
+      "sha256": "829cd970135aa71743b5576d266e0508971c1fbb1dc6e816c2c527105696cb57"
+    },
+    {
+      "file": "public/sprites/workstations/forestry-trunk/sprite.png",
+      "sha256": "dcf23ff916144fe3772a7704567f7c2679e2e8813e7ee1cbcc5b53a099a5d3eb"
+    },
+    {
+      "file": "public/sprites/workstations/forestry-trunk/work-preview.png",
+      "sha256": "e36586c23a45251f9ba58577277fb7b00300a6c043d0ffd855b1ceeb016cfa26"
+    },
+    {
+      "file": "public/sprites/workstations/forestry-trunk/work-review.jpg",
+      "sha256": "71918bc55c5896694bf7da48a9186f2102563e8550383cf49d8a9c13acbf00f8"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/base-generation46.json",
+      "sha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/base-sprite46.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.json",
+      "sha256": "de32d5908b3ef858edec5f8295d9915a3ad05a541120f7201e6cd06d3022ad66"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.png",
+      "sha256": "d2118bd932ceb8f6c27202bd95be49250041886831d7f67991553845192a2070"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/generation.json",
+      "sha256": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/receipt.png",
+      "sha256": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/source.png",
+      "sha256": "cf3e452ffaf431d1522244716e86ad740bed9171e953c258e7804f54760659ae"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/sprite.png",
+      "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/work-preview.png",
+      "sha256": "6767afc94a3e3b5bc48c3528f820857552c02789bb92c895a27d77541f5dceb0"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/work-review.jpg",
+      "sha256": "219b27cb373c74d626106f06e5be5d3220a01ddfda4d9df7d57a5e85875f3ef9"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/authoring-inputs/actor-reference.png",
+      "sha256": "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/authoring-inputs/tall-generation.json",
+      "sha256": "9e6a2167037908da28ebf24248404986bc5d57f54d2e4b4816db61d7edfe7c2c"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/authoring-inputs/tall-source.png",
+      "sha256": "6ca1b395321d8133a6bd7b969187453f4227bdd71a159ad918d733ad9227e813"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/authoring-inputs/tall-sprite.png",
+      "sha256": "d89756b0bd2603c0e3a9f2825e902017f0edad27e5236aa61860ebfee8280d10"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/generation.json",
+      "sha256": "ed124586d5a19ce4c1b35be9639fcdcfc5a964c6a52d0f7df13bbb43f062884e"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/source.png",
+      "sha256": "0ea573ee039bb91a81acf2160fb8fc8ddde07d291d8cd1412c3137d5695db2ca"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/sprite.png",
+      "sha256": "2a861206fefd929e98f39968ca13a6c0ae7a0cf1336b7740d2a4de5c8704f4aa"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/work-preview.png",
+      "sha256": "d1340c776de94618e5d1c84f7ddf46e60e761a3380f803e0ea6328837c2d8bcf"
+    },
+    {
+      "file": "public/sprites/workstations/masonry-bench/work-review.jpg",
+      "sha256": "e36ce7338ed02a111a5aeebac4efb6b1ddb52d3e0cc8fb4d8c95fb433b38e04a"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/completed-mixture.png",
+      "sha256": "ef6d3424ba7f0ac5d740c7435b5b5967a1cd4164e6509b8e60cbc1daee8fc55d"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/completion-request53.json",
+      "sha256": "91ae93569da279716f1125e4ce30cfab759cd953da0dd93d4577dd2e9175858f"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/completion-source.png",
+      "sha256": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/generation.json",
+      "sha256": "e62acae5a0a1508bf13cd9bb39afdfe70954afaa3874c4ab65b05270c2e97689"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/request53.json",
+      "sha256": "214048c912d9023c6f36236d78bb0b23836f79bb9eb10c54ca18936afc132aa6"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/source.png",
+      "sha256": "043e9d5073bebb182909fcce9c34d63cf3f1ec0492c234270bafca85f498fc39"
+    },
+    {
+      "file": "public/sprites/workstations/mixing-block/sprite.png",
+      "sha256": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/generation.json",
+      "sha256": "0761749748fdaaa6fee75cabc6c9c85d04496d86b2df82725390f92cf518f44f"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/prompt.txt",
+      "sha256": "633d2e381bda6a810ed0bc6f33b91a814866b307e7204a4cda5381b01fba985a"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/reference40.png",
+      "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/source.png",
+      "sha256": "e35df199344d5ff7e6e9dc917c6518ed0e2f8d16d44a8b92d02936c4ed9bcaaa"
+    },
+    {
+      "file": "public/sprites/workstations/potato-block/sprite.png",
+      "sha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/generation.json",
+      "sha256": "5b1709cd5dcd93895e769966d14f4cd51fc67695c9229506d2d5a43dc3b6eb01"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/prompt.txt",
+      "sha256": "3c48c0dba8d3bf03398284aec6b0ce086d25bee3c9874e6e068465c400c7abe5"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/source.png",
+      "sha256": "dd1a47e18d16f8d95d107956b744512222afd1a73959423904ee0af643abc0dc"
+    },
+    {
+      "file": "public/sprites/workstations/repair-bench/sprite.png",
+      "sha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/generation.json",
+      "sha256": "03f8a959dc9463e091793c24b5597f52c495ae7003deeb72aec464a570315d10"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/source.png",
+      "sha256": "d1e536cebd380fb8a9a6d6e10d2d46ddb43d616268c8d9be2afa9d66db046135"
+    },
+    {
+      "file": "public/sprites/workstations/stew-cauldron/sprite.png",
+      "sha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/completed-crate.png",
+      "sha256": "17a66555fe09747e5d95afb3b24c2eddc5cd4e8345cd5e487bbbbc8b862e18d8"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/generation.json",
+      "sha256": "1ab3f694e2b3457ae36a14629037717c687cf78c0913f6562110863663c83f01"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/source.png",
+      "sha256": "f52f355b0b83817583b3dc97627b610e23771fe43a85a730c56e78f7b33f8059"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/sprite.png",
+      "sha256": "1092fd2b3e984bb211dc5a906665073a9b67cb7110bd9599c4c452bc29e6f815"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/work-preview.png",
+      "sha256": "66d06d6a621df126daac6a07b5e4929e5719cadaafba18b0f1020862fba88da3"
+    },
+    {
+      "file": "public/sprites/workstations/storage-pallet/work-review.jpg",
+      "sha256": "24505035b5cc0480bde41c2db248b5792ee7f7166d0a68033619a23286b07c72"
+    },
+    {
+      "file": "public/sprites/workstations/vise-bench/generation.json",
+      "sha256": "edb259029e05be25467e3c6989dfd44d97faf8507584de922c96bfb65f55322e"
+    },
+    {
+      "file": "public/sprites/workstations/vise-bench/source.png",
+      "sha256": "7c1ebe8201c29f680a38f07e6b91c6dac682f4b484accba44b7e5755599b51ab"
+    },
+    {
+      "file": "public/sprites/workstations/vise-bench/sprite.png",
+      "sha256": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/authoring-inputs/actor-reference.png",
+      "sha256": "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/authoring-inputs/initial-table.png",
+      "sha256": "f328b9c4369a0e4b55dbadf8dca910819b35cfc79d402652c469109d65c31d7b"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/generation.json",
+      "sha256": "bc5dc99c0b3c9f1aa883007e275df48a0833f082324bd24cd7904e83d2c8ba6a"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/source.png",
+      "sha256": "78efe03c914be2c03de40dd570ec436b7d48ff6d2f37d478d1ec317302a1dc74"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/sprite.png",
+      "sha256": "994c204bef369b0d46b979c0982d4c679e5d65d14dd2893572cacd51e77a1bf9"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/work-preview.png",
+      "sha256": "2e7b8c4b5966b8852e558bf4fbe9b7eb58faacc45a57fca6f92f270de4b523b7"
+    },
+    {
+      "file": "public/sprites/workstations/weighing-table/work-review.jpg",
+      "sha256": "2cdc4c27fe6011c491b27e59c31c3f5a558b922303c09b3c8c6965b73e81a477"
+    }
+  ],
+  "unchangedPriorBorrinCalibrationEntries": [
+    "desk-writing/actor",
+    "count-coins/actor",
+    "review-open-ledger/actor",
+    "explain-at-desk/actor",
+    "stamp-paperwork/actor"
+  ],
+  "runtime": [
+    {
+      "file": "src/client.tsx",
+      "sha256": "4a3facbbcbad7e82c9dbaf7386290f5c5c61a6b911d21be2d46f6f87aae66df9",
+      "changed": false
+    },
+    {
+      "file": "src/components/preview-host-bridge.tsx",
+      "sha256": "e4277e80ce127e7305057fb280d03d0703c5c7115b17d2e2aecf000e4867555e",
+      "changed": false
+    },
+    {
+      "file": "src/game/GameApp.tsx",
+      "sha256": "3d035f0eb74c21896fef9506ddcbcc2b7abbe6cc20ac3549be4327f6791ccd3a",
+      "changed": false
+    },
+    {
+      "file": "src/game/audio.ts",
+      "sha256": "1ab4c4a50d5b986564d662269982028712b9b2f86cbaf9bcf17d9c921c8f7bc5",
+      "changed": false
+    },
+    {
+      "file": "src/game/data/catalog.ts",
+      "sha256": "c559bb06053ec50ed08a977113c8232d70141fbcea090d62bf050943c23a02f9",
+      "changed": false
+    },
+    {
+      "file": "src/game/data/dialogue.ts",
+      "sha256": "1b976ebd1164c2608823cf800c5bd4237679207de6c18f704877cd4c4e89a084",
+      "changed": false
+    },
+    {
+      "file": "src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b",
+      "changed": false
+    },
+    {
+      "file": "src/game/runtime.ts",
+      "sha256": "c1934ecffe8f27d4a8f6da82de4f11d647a346f2889f89fb25e286454ac66eae",
+      "changed": false
+    },
+    {
+      "file": "src/game/save.ts",
+      "sha256": "aa7ae9a0179af4781249ddb3da4a4f64b0d3ac8339b2fb8938d4631f13291d2d",
+      "changed": false
+    },
+    {
+      "file": "src/game/sim.ts",
+      "sha256": "63dba550fc56036f19677e1be877bb465a0340668f1dedf44432177bbe9b6cc1",
+      "changed": false
+    },
+    {
+      "file": "src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098",
+      "changed": false
+    },
+    {
+      "file": "src/game/types.ts",
+      "sha256": "4e046194a2630c288c4b87cc4a7dfaaca3a9a2adc93baac38263a2144072ddf1",
+      "changed": false
+    },
+    {
+      "file": "src/game/ui/hud.tsx",
+      "sha256": "5c3ed90714fc26a03bb2d497ba2aea5edec315abad8cf541826a1607a51637ed",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/buildings.tsx",
+      "sha256": "6d50ff4d485c55165966d5c108f22c777484c15635e535a7f16da6b8d666989b",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/dwarf-appearances.ts",
+      "sha256": "5cb746b1d0462e87ec5270f403351aedc7289490e6d2dd257cfd692ef5b38a26",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/dwarves.tsx",
+      "sha256": "cd4e2aea650c4a0b95b70c25e0af447b4a7cc0f0410d89c8cf9c2016e9f744e4",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/environment.tsx",
+      "sha256": "17128a014a0c637c0b84d087df2cf2ef24b964843f7016b6833bb70dde2db986",
+      "changed": true
+    },
+    {
+      "file": "src/game/world/fx.tsx",
+      "sha256": "fa0f40ad7095c776c84258c11df39b64e400fe04fddc47b5d0f8652cf1b1dfaa",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/geom.ts",
+      "sha256": "f2b5fbba31243ccfe9cfeefb85f7c8c285ebe200ca9750ae2fcf8f87db7d5b69",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/kit.tsx",
+      "sha256": "112e1c5198318695f33cea69014d31aa1f11fbb3317192b343bce771ef7414fe",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/materials.tsx",
+      "sha256": "2ca033aad013c5594be70fb0a61ffdebaca2896b8f5dff1bb7db95e3bd315b3f",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/motion-review-points.ts",
+      "sha256": "1afe39788475275d0dc6cf6a5f47862c552c80bbe068a9a14007f381f6540343",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/reference-assets.tsx",
+      "sha256": "a37320e211acf3c628984282362a4720691a978dd2c879d6912316f3bcf730fa",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/terrain.tsx",
+      "sha256": "06e70874b5cd1427b241f13138837f9c6e2628bca33c1e15251bb98bf57f3cca",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104",
+      "changed": true
+    },
+    {
+      "file": "src/game/world/workstation-completion.ts",
+      "sha256": "716283d346f669bc85e4e6a20f8c577f15ce006b858f0148b3d9c2b0cce087ca",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503",
+      "changed": false
+    },
+    {
+      "file": "src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686",
+      "changed": false
+    },
+    {
+      "file": "src/lib/asset.ts",
+      "sha256": "2de5ad992a4f2406425eeed73b1ddcbc426391577d0c6b1ea707ab96afd60f1b",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/client.ts",
+      "sha256": "4bca649afb627b11231a7b31acfcffe9323efddebc05944b2d769d2b8589294f",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/email-password.ts",
+      "sha256": "9b1da7c786e48adfa9a6f7c485bcf5817cf2075a601d8726a965f11171910354",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/gates.tsx",
+      "sha256": "31162fcdcd94a91e5436fde7b4db54aa502810fbb41fea3928a22a8972b8f86f",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/isolation.server.ts",
+      "sha256": "a4adf6a5d548e70a0be52d7efdc7433126028908072b47bf9f92135d9ee558a0",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/middleware.ts",
+      "sha256": "8dc37c4e9bd583f175402330d0952ef4d584c7410723cc2649c4046d5084bd80",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/pglite-dialect.ts",
+      "sha256": "bd66925574245cd47cdd98b5c068dd7b4ee4a51c9439e8421dc54c62fe7c4f50",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/popup.server.ts",
+      "sha256": "81f8833d9ab639f76b86f4bb23fed42a04cec4b0c6d90b7a67425a9232c9bb4a",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/preview.ts",
+      "sha256": "d52a3654a5cef7e841cbca789fd106dc464ea55db574f02aa5d295b7350f8664",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/provider.tsx",
+      "sha256": "4cbbc7f8cc1765788ad65455a33f64dcdafc6fe4ed1d13f90ccfa0ba4c13d1f3",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/providers.ts",
+      "sha256": "4acefac17931529bdeab053588a917b06e44abdb67a275a2ca1c7841080c6a78",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/server.ts",
+      "sha256": "1ae506816ae05895ac2e820e6d640fc3d636b493f24d727849b702edb261e386",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/use-current-user.ts",
+      "sha256": "a0cc4bd74b6da5b346b6bafc1aec58b9bf5cc0278264379b737b79a5cff1e482",
+      "changed": false
+    },
+    {
+      "file": "src/lib/auth/verify.server.ts",
+      "sha256": "9013f2d515f2f456157e87e8b9d7eb142600414cdb9adc033ec636a34d6e03af",
+      "changed": false
+    },
+    {
+      "file": "src/lib/db.ts",
+      "sha256": "8decf7689ff4833ad2f6f263eff9041dd2a68ce923824fa1d55ad620dea72e49",
+      "changed": false
+    },
+    {
+      "file": "src/lib/error-component.tsx",
+      "sha256": "bfc6953c341f29fb75797e050a1271a5ae928f7f6fbce4b781a8c80b52523130",
+      "changed": false
+    },
+    {
+      "file": "src/lib/multiplayer/index.ts",
+      "sha256": "bcb96816a2135e315078e2e7d0eda5522579b0caf9e768dc6c34294e4fa49137",
+      "changed": false
+    },
+    {
+      "file": "src/lib/multiplayer/p2p.ts",
+      "sha256": "4d0d2492ac249a2cf267c8d2db7688b5a2c488ab640da7727c0f1b73c2e92f60",
+      "changed": false
+    },
+    {
+      "file": "src/lib/og/site.json",
+      "sha256": "fa84576c342219e2fd8aa7e4767755b756d6c5ee731e4879fb139a0506ca8d37",
+      "changed": false
+    },
+    {
+      "file": "src/lib/preview-embedder-origin.ts",
+      "sha256": "c2d5e1acc5653ff2abc08a5eeb5feb3331f4e3d7c751ec83d60dee83cf33a6ee",
+      "changed": false
+    },
+    {
+      "file": "src/lib/preview-host-bridge.ts",
+      "sha256": "3d3144d8da9eb395b863375a2ac9c02061ff08b318a49a56e66d3277e1b945ac",
+      "changed": false
+    },
+    {
+      "file": "src/routeTree.gen.ts",
+      "sha256": "f4a843c61899ede2abbc4a7153e6a00557765f737b724b152463c533c4e0ddb0",
+      "changed": false
+    },
+    {
+      "file": "src/router.tsx",
+      "sha256": "e274e59bf65721f3edcafd1e8d828c7e7e3c8bbd79ba79ef7c62ad5647031823",
+      "changed": false
+    },
+    {
+      "file": "src/routes/__root.tsx",
+      "sha256": "6ebca87bad305183eb934097b0230ff14ef58a6e67c89bcb0c24094d6925bfae",
+      "changed": false
+    },
+    {
+      "file": "src/routes/index.tsx",
+      "sha256": "3ec1eec2ed56b2cf2e301af81d6ebe5087cee572456091a13d5ce234b366418c",
+      "changed": false
+    },
+    {
+      "file": "src/styles.css",
+      "sha256": "f91ecb38ac413e7032c0651d377484ac33951adbf72e19573fbc6f6d6232a9c9",
+      "changed": false
+    }
+  ],
+  "changes": {
+    "work-activities": "Append one finite standing closed-ledger explanation after the five unchanged desk activities. All non-consultant lists/functions exact. Day7 restores writing.",
+    "environment": "Move only the crate formerly at Borrin10/10 to12/10.5 beside the desk. It obstructed his standing boots in actual renderer. All independent station transforms, controller, roots, economy, rewards and other environment objects remain exact.",
+    "calibration": "Append534/[320,616] source-only standing registration. All five existing Borrin actor actions unchanged; all other characters exact."
+  },
+  "scope": "71 earlier scoped source/frame/atlas/registration/timing sets, every existing prop and all103 open selected sources exact. Historical native gait/cane and other actual gameplay dates/scopes retained. New standing finite action requires actual/native inspection; no walking/direction/seamless-loop approval."
+}

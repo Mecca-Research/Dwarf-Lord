@@ -1,0 +1,153 @@
+{
+  "checkpoint": "motion58",
+  "recordedAt": "2026-10-06T14:38:17.577226+00:00",
+  "baseline": "374698f1fd20167a4cb202e82b91857ea799bafe",
+  "mergeReady": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 26,
+    "referenceActionsWithoutMapping": 39
+  },
+  "scopedSourceSets": 72,
+  "derivedActorsOutsideFrozenScope": 15,
+  "independentVariants": 22,
+  "physicalProps": 14,
+  "activatedReferenceActions": [
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger"
+    }
+  ],
+  "native": {
+    "commonBodyBasisPx": 534,
+    "root": [
+      320,
+      616
+    ],
+    "sourcePixelsExact": true,
+    "wholePoseOffsetsPx": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "bootRegions": [
+      {
+        "name": "near-visible-boot-cap-rim",
+        "minimumCorrelation": 0.9579961942800655,
+        "maximumTravelPx": 1.2337439060211182,
+        "maximumAdjacentPx": 1.5354796868871459
+      },
+      {
+        "name": "far-visible-boot-cap-rim",
+        "minimumCorrelation": 0.970601166682033,
+        "maximumTravelPx": 0.9740864634513855,
+        "maximumAdjacentPx": 0.6059402182832044
+      }
+    ],
+    "station": "Unchanged650/[320,616] independently owned ledger desk; actor owns already held closed ledger, desk owns separate open book/stacks/ink/paper."
+  },
+  "actualGameplay": {
+    "consultantDays": 6,
+    "allEightStandingFrames": true,
+    "oneCompletionHeld5Seconds": true,
+    "cameraCancelPersistentDeskDepartureReturnDayResolutionMorningDay7Restoration": true,
+    "productionAssignmentRejected": true,
+    "crateClearance": {
+      "before": [
+        10,
+        10
+      ],
+      "after": [
+        12,
+        10.5
+      ],
+      "reason": "Standing boots were occluded by the crate at the exact desk origin; new actual0-7 captures show cleared space."
+    },
+    "retainedNonConsultantEvidence": {
+      "forge": "motion56 seven-day actual observations",
+      "mealsRoles": "motion55 six-day meal and original NPC/work observations",
+      "reason": "Exact runtime/action lists, art/calibration entries and station transforms. Original dates/scopes retained."
+    }
+  },
+  "unchangedEarlierScopedSets": 71,
+  "narrowlyRevalidatedApprovals": 21,
+  "seatedLedgerRecheck": {
+    "originalObservation": "motion44 retained in motion46",
+    "maximumOutsideFacePx": [
+      2.657,
+      0
+    ],
+    "originalPointsAndSamplesExact": true,
+    "thresholdPx": 6
+  },
+  "validation": {
+    "nodeTests": 222,
+    "pythonTests": 104,
+    "typecheck": true,
+    "pagesBuild": true,
+    "whitespace": true,
+    "approvedLayerCheck": {
+      "variants": 22,
+      "exitCode": 0
+    },
+    "headedClient": {
+      "iterations": 2,
+      "characters": 18,
+      "physicalProps": 14,
+      "exitCode": 0
+    }
+  },
+  "remaining": {
+    "walking": 62,
+    "directionalToolsCarry": 24,
+    "fixedReferences": 17,
+    "directionFamilies": 11,
+    "inactiveReferences": 39,
+    "categoriesOverlap": true,
+    "unknownRedrawCount": true
+  },
+  "scope": "Finite original-pixel standing explanation and held closed-book continuity only. No pickup/put-down, seat-to-stand, hidden sole/body/force, accounting/economic output, moving gait, direction family or seamless repeat approval."
+}

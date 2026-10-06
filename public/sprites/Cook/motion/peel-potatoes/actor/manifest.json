@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Cook",
+  "action": "peel-potatoes",
+  "title": "Peel potatoes",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/01-peel-potatoes.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "knife against potato upper skin",
+      "durationMs": 160,
+      "sourceBounds": [
+        163,
+        102,
+        528,
+        600
+      ],
+      "sourceAnchor": [
+        157.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        157,
+        98
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "begin attached skin curl",
+      "durationMs": 140,
+      "sourceBounds": [
+        801,
+        102,
+        1173,
+        600
+      ],
+      "sourceAnchor": [
+        159.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        155,
+        98
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "continue paring stroke",
+      "durationMs": 140,
+      "sourceBounds": [
+        1438,
+        102,
+        1809,
+        600
+      ],
+      "sourceAnchor": [
+        162.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        152,
+        98
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "blade reaches lower potato",
+      "durationMs": 140,
+      "sourceBounds": [
+        2083,
+        102,
+        2451,
+        600
+      ],
+      "sourceAnchor": [
+        157.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        157,
+        98
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "finish stroke with ribbon still attached",
+      "durationMs": 140,
+      "sourceBounds": [
+        162,
+        739,
+        530,
+        1240
+      ],
+      "sourceAnchor": [
+        158.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        156,
+        95
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "knife lifts away; same ribbon persists",
+      "durationMs": 140,
+      "sourceBounds": [
+        790,
+        738,
+        1173,
+        1240
+      ],
+      "sourceAnchor": [
+        170.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        143,
+        94
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "recover knife; turn held potato",
+      "durationMs": 140,
+      "sourceBounds": [
+        1427,
+        737,
+        1809,
+        1240
+      ],
+      "sourceAnchor": [
+        173.0,
+        503.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        93
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed ready hold with retained potato and attached ribbon",
+      "durationMs": 160,
+      "sourceBounds": [
+        2074,
+        738,
+        2455,
+        1240
+      ],
+      "sourceAnchor": [
+        166.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        147,
+        94
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1160,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "d997545821d34a3e6ac8fc29cc57523842ae240248ff4ef310ad4b76f0e6bf67",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view local paring task, independent station placement/foreground ownership and live lifecycle. No seamless loop, moving contacts, cross-direction family, economy or production-ready approval."
+  }
+}

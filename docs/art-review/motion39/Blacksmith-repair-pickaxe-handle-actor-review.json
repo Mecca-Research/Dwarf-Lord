@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656",
+    "settingsSha256": "6e700819de15ec4df2933ac5b5f664774dcc6104fa2b6c8c9e3596373b6fae41",
+    "frameSha256": [
+      "0d0bfb4923c55439fe2799c263cf18b21a4930222baddfb62d7b9584225622bd",
+      "1520af748fec5d33ab7aebb506ac8dbe1761a05ba5e1e609a2308b79a76a3b0a",
+      "6b1d447735ccb89dbd97049b65d710075ec0600893a3e2b87f9ef0d90e648e52",
+      "11552ac82aabdcd08498da830c48a86ebbf8090688a2cc881ad945795501ebb9",
+      "1d9ec1bdab5363d27afa7e1d64c5c769467ebfea29eef1136682b1cff2d1f357",
+      "1f1f70e6e9bb0834ebe494395aa45ee69e1f01899b29b1d99969bec7fd69e8b1",
+      "ac8c06684eab330f9d61ec7b638eee927daa2b6516b2ab05d89234d93a7469c6",
+      "eb8dbe7412f426b8c67ebff20b6ae476f0f9cb5744b4ceae8a45cf38ca5ddeda"
+    ],
+    "atlasSha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "6e700819de15ec4df2933ac5b5f664774dcc6104fa2b6c8c9e3596373b6fae41",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "repair-pickaxe-handle",
+    "direction": "actor"
+  },
+  "checks": {
+    "identity-and-scale": "All eight native/layered poses retain the same seated bald smith, forked dark brass-bound beard, cream sleeves, leather apron, olive trousers and capped boots. Whole-pose authored1/3/6 supply lift/descent/rebound. Reviewed seated650px calibration yields consistent body scale relative to the standing smith. No boot/limb stretching or gait approval.",
+    "station-and-foot-contact": "Seated supported boots use documented visible source ground baselines, correcting row-dependent floor errors. Chair remains actor-owned. The separate repair bench at3/-7 is actor-free, stays fixed and survives task cancellation, departure and day resolution. Source-bound foreground contours reuse original hand/pickaxe pixels over the worktop, leaving the lower shaft and legs occluded correctly.",
+    "hand-and-tool-contact": "Right hand retains one wooden-handled hammer through low0, preliminary lift1, overhead2, authored partial descent3, socket tap4, rebound5/6 and low held recovery7. Left hand stays wrapped around the same connected straight shaft and steel pick head. Visible tools are complete; no clipped hammer, swapped hands, duplicate heads or missing grips. These projected repair contacts do not certify translating cane/tool tips or all directions.",
+    "prop-continuity": "The pickaxe remains shaft-supported and held throughout; same chair, boots and clothing remain. The independent empty repair bench has spare tongs/file, cloth and nail drawer but no duplicated held hammer or painted dwarf. All eight layer views and real completion/departure captures reviewed.",
+    "completion-and-reset": "Exact live renderer and authored durations expose0-7, complete once, hold7 for5000ms and reset only on explicit assignment/day change. A day chooses one operation; completion does not trigger another operation. Repair routing walks naturally to its distinct bench. Renderer never grants inventory or building rewards; existing day resolution retains economic ownership."
+  },
+  "scope": "Fixed-view local task, independent station placement/occlusion and controlled live lifecycle. No seamless repeat, direction continuity, moving sole contact or hidden geometry approval."
+}

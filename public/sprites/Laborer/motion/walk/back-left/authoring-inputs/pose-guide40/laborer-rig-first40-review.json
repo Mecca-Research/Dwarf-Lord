@@ -1,0 +1,23 @@
+{
+  "key": "laborer-rig-first40",
+  "decision": "unselected",
+  "inputs": [
+    {
+      "file": "laborer-rig-first40-reference.png",
+      "sha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635"
+    },
+    {
+      "file": "laborer-rig-guide40.png",
+      "sha256": "bbea8e019ed25b6a763e10a05148fe5f1b4daa1daffd9397b3e9c041b2e3a45f"
+    }
+  ],
+  "prompt": "Reauthor the EIGHT rear-left walking poses of this exact dwarf as ONE transparent 4-column 2-row animation sheet. FIRST image is the exact Laborer identity, fine semi-realistic rendered materials and fixed rear-left camera: bald stocky dwarf, dark beard seen around his left cheek, rolled cream linen sleeves, scratched brown embroidered leather waistcoat, brown trousers, brown heavy capped boots with brass outer buckles. SECOND image is a projected walking POSE GUIDE, only a guide: orange is anatomical LEFT near leg/arm, blue is anatomical RIGHT far leg/arm. Use the guide's eight distinct ankle, supporting-sole, heel, toe, shin/knee and counter-swing arrangements rather than copying the flawed old boot poses. Render actual brown leather anatomy and clothes, NOT the guide colors, block shapes, lines, labels or circles. Camera views him from behind-left looking away toward UPPER LEFT, above him at34 degrees, identical in all eight cells. Boots point along that upper-left ground plane; a flat boot's TOE is clearly UP-LEFT of its HEEL, with both on the same ground plane, not sideways/horizontal. Precise beats in reading order:0 far RIGHT heel plants forward, near LEFT trailing toe supports with raised heel and near left arm forward;1 RIGHT sole flat, LEFT leg folds for recovery;2 RIGHT remains flat bearing weight while LEFT boot passes airborne near hip, arms neutral;3 RIGHT toe supports and heel rises while LEFT heel reaches forward, left arm swings back and right arm forward;4 LEFT heel forward plants while RIGHT trailing toe supports, opposite of0;5 LEFT flat and RIGHT recovery folded;6 LEFT flat support while RIGHT boot passes airborne, arms neutral;7 LEFT toe-off and RIGHT heel reaches forward, preparing0. Feet must exchange leading/supporting sides between0 and4. Preserve rigid same-length connected boots and accurate foreshortened ground plane; extend the knees/shins naturally and maintain reasonable support-foot spacing. Keep the same head, torso, pelvis scale and rear-left camera in all8; do not rotate or mirror the dwarf. Follow the relative near/far foot positions and depth from the guide. No tool, furniture, extra feet or limbs, shadows or floor. Eight complete full-body figures with very generous transparent gutters so soles and raised boots cannot clip or overlap another cell. Uniform cell sizing, consistent body height and body-root placement, same detailed rendering as FIRST reference. No labels, text, colored guides or outlines. Genuine transparent background.\n",
+  "output": "laborer-rig-first40.png",
+  "outputSha256": "6dbabe860154d9725c297b168cfef0c7eefd6244b27e6ec48ffa810275f2a59d",
+  "issues": [
+    "Frame1 puts the near-left buckled boot down when the far-right leg should support. It does not retain the specified first-half right support.",
+    "Visible flat soles remain sideways relative to the projected guide ground plane.",
+    "The complete eight-contact sequence does not follow the rig; no full-stride material correspondence can be approved."
+  ],
+  "scope": "Native visual rejection. No candidate numeric correspondence was approved and selected gait source remains unchanged."
+}

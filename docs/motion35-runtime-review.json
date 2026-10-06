@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "checkpoint": "motion35",
+  "date": "2026-10-01",
+  "baseCommit": "cf28be084b938deec88d66539f40a391e348b80d",
+  "scope": "Current live gameplay activation and texture handoff validation. This is not anatomical walking contact or approval of all activated actions.",
+  "dependencies": [
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "ac880e6bb56761c5505501efd589c09ad0617941e3f1e69c23e3759eb6feb6ab"
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "public/sprites/Elder/motion/render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "src/client.tsx",
+      "sha256": "4a3facbbcbad7e82c9dbaf7386290f5c5c61a6b911d21be2d46f6f87aae66df9"
+    },
+    {
+      "file": "scripts/write-pages-html.mjs",
+      "sha256": "9ab542e5a26e7d2854ecd3561082f06873e56118c3f7441a2cce12f8f3e345e9"
+    },
+    {
+      "file": "scripts/elder-activity-check.mjs",
+      "sha256": "d397b738a54e80a069f5d4b8250e516d2f845ea6c60d2d17530c2e54c1e13759"
+    }
+  ],
+  "elderActivities": [
+    {
+      "action": "eat-stew",
+      "framesObserved": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 18,
+      "completed": {
+        "action": "eat-stew",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "action": "eat-bread",
+      "framesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 35,
+      "completed": {
+        "action": "eat-bread",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "action": "laugh-seated",
+      "framesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 23,
+      "completed": {
+        "action": "laugh-seated",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "action": "laugh-and-gesture",
+      "framesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 28,
+      "completed": {
+        "action": "laugh-and-gesture",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "action": "inspect-pickaxe-in-lap",
+      "framesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 27,
+      "completed": {
+        "action": "inspect-pickaxe-in-lap",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "action": "examine-pickaxe-crack",
+      "framesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sampleCount": 25,
+      "completed": {
+        "action": "examine-pickaxe-crack",
+        "direction": "reference",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    }
+  ],
+  "handoffs": {
+    "samples": 464,
+    "missingWorkMotion": 0,
+    "finiteFinalAction": {
+      "action": "examine-pickaxe-crack",
+      "direction": "reference",
+      "frame": 7,
+      "completed": true,
+      "completions": 1
+    },
+    "departureAndReturnResetPassed": true,
+    "consoleAndPageErrors": []
+  },
+  "evidence": {
+    "file": "docs/art-review/motion35/elder-live-laugh-and-gesture.png",
+    "sha256": "1a12eadb6cc4f0642ce3464dbb23c18d5eb04e593692c39d658f9c9247fb6176",
+    "rawLiveProbe": "work/expanded-cycles/motion35/elder-live/results.json",
+    "rawProbeSha256": "10940158353ce7aa22b57ec30c58a930fc6d7d00c8c4b089014523b7822cbe6a",
+    "workstationProbeSha256": "90a3cdc85ceb145b9e04b7763a4be4dc419d41a331fb87e80d0fef706fd397cb"
+  },
+  "workstationLifecycle": {
+    "status": "passed",
+    "pageErrors": [],
+    "scope": "Cook, directional pickaxe/shovel, Blacksmith forge, Laborer pallet release/completion, Ginger forestry, Stoneworker masonry cancellation/departure; not new final art approvals."
+  },
+  "validation": {
+    "nodeTests": 198,
+    "pythonTests": 57,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "mainLibraryBrowserReview": {
+      "sequences": 153,
+      "images": 1224,
+      "passed": true
+    },
+    "bundledGameplayClient": "two movement bursts and inspected captures, no console errors"
+  },
+  "completedDelta": {
+    "referenceActionsActivated": 6,
+    "mainCycleScopedApprovals": 2,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesApproved": 0,
+    "wholeStridesApproved": 0,
+    "adoptedElderGaitPoses": 0
+  },
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 2,
+    "actorScopedReviewsApproved": 4,
+    "cycleReviewsRemaining": 154,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 11,
+    "referenceActionsWithoutMapping": 54
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 154
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 54
+    }
+  ],
+  "allGreenToMerge": false
+}

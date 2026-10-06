@@ -1,0 +1,24 @@
+{
+  "character": "Ginger",
+  "action": "stack-firewood",
+  "title": "Stack firewood",
+  "reference": "public/sprites/Ginger/work-references/02-stack-firewood.png",
+  "beats": [
+    "hold log above stack",
+    "continuous midway transition from hold log above stack toward lower log halfway",
+    "lower log halfway",
+    "continuous midway transition from lower log halfway toward place log onto stack",
+    "place log onto stack",
+    "continuous midway transition from place log onto stack toward adjust log securely with hands",
+    "adjust log securely with hands",
+    "continuous midway transition from adjust log securely with hands toward hold log above stack"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Ginger/motion/stack-firewood/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Ginger. Action: Stack firewood. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hold log above stack | 2. continuous midway transition from hold log above stack toward lower log halfway | 3. lower log halfway | 4. continuous midway transition from lower log halfway toward place log onto stack | 5. place log onto stack | 6. continuous midway transition from place log onto stack toward adjust log securely with hands | 7. adjust log securely with hands | 8. continuous midway transition from adjust log securely with hands toward hold log above stack",
+  "sourceName": "exec-faeee9cb-871b-42b9-8da5-4f76a5c3eed3.png"
+}

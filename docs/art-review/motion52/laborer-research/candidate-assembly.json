@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "scope": "Eight whole authored source poses; one common body-height scale and row root. No local limb editing, mirror, per-pose scale, duplicates or synthetic in-between. Candidate only.",
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "targetBodyHeight": 520,
+  "inputs": [
+    {
+      "id": "strip52",
+      "file": "authoring-inputs/strip52.png",
+      "sha256": "517342b84048e51ae3ead80f6ff7d26504bb6a3e94d2b2f3383342470315552e",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          430,
+          457
+        ],
+        [
+          430,
+          0,
+          860,
+          457
+        ],
+        [
+          860,
+          0,
+          1290,
+          457
+        ],
+        [
+          1290,
+          0,
+          1720,
+          457
+        ],
+        [
+          0,
+          457,
+          430,
+          914
+        ],
+        [
+          430,
+          457,
+          860,
+          914
+        ],
+        [
+          860,
+          457,
+          1290,
+          914
+        ],
+        [
+          1290,
+          457,
+          1720,
+          914
+        ]
+      ],
+      "rootXs": [
+        229.0,
+        625.0,
+        1053.0,
+        1489.0,
+        217.0,
+        633.0,
+        1050.0,
+        1496.0
+      ],
+      "rootYs": [
+        441.0,
+        441.0,
+        441.0,
+        441.0,
+        880.0,
+        880.0,
+        880.0,
+        880.0
+      ],
+      "bodyHeights": [
+        403.5,
+        403.5,
+        403.5,
+        403.5,
+        403.5,
+        403.5,
+        403.5,
+        403.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "strip52",
+      "pose": 0
+    },
+    {
+      "input": "strip52",
+      "pose": 1
+    },
+    {
+      "input": "strip52",
+      "pose": 2
+    },
+    {
+      "input": "strip52",
+      "pose": 3
+    },
+    {
+      "input": "strip52",
+      "pose": 4
+    },
+    {
+      "input": "strip52",
+      "pose": 5
+    },
+    {
+      "input": "strip52",
+      "pose": 6
+    },
+    {
+      "input": "strip52",
+      "pose": 7
+    }
+  ]
+}

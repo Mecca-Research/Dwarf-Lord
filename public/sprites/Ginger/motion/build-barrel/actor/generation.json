@@ -1,0 +1,82 @@
+{
+  "actorOnly": true,
+  "prompt": "Author EIGHT genuine consecutive full-body ACTOR-ONLY sprites in FOUR columns TWO rows, row-major, equal large cells, true transparent RGBA, prefer2560x1280. FIRST photo is exact Ginger identity/stocky full body and boots. SECOND photo is work pose only. THIRD is immutable independent cooper station for contact reference, do NOT include its furniture in any final frame. Curly copper hair (NOT bald), broad freckled face, wide unbraided copper fan beard, brown waistcoat/cream sleeves/forest-green trousers, capped leather boots; not a brown-bearded or grey dwarf. All eight retain identical clothing/face, camera, size, grounded stationary foot locations and ONE same wooden mallet in anatomical right hand. Exactly TWO arms/TWO hands. Anatomical left hand extends to rest on the back upper barrel rim; in normalized640cell with body height520 and boot root[320616], its palm belongs near[462310]. Mallet strikes upper front hoop at[385340], not empty air. Draw only actor, full trousers/legs/boots including areas that station will hide, and held mallet. NO barrel, bench, toolbox, stool, spare hoop, work material, background, text, labels or floor shadows. Station geometry remains separate. Finite ONE light fastening stroke with retained grip:0 mallet held beside hoop,1 begin raise,2 mallet high readiness above shoulder,3 downward approach toward hoop,4 wooden mallet working face reaches front upper iron hoop contact point,5 small rebound,6 controlled lower toward ready grip,7 completed low mallet hold. Not a swinging axe, no tool swaps, no repeated hit, no material deposit/removal. Left palm stays braced same rim contact throughout; fingers do not invent a held object. Both boots are copied unchanged from FIRST stance, not resized differently per frame. Full-body actor feet stay planted while shoulders/elbow articulate. Fixed orthographic front-right/downward camera matching SECOND photo. Same semi-realistic detailed weathered fantasy sprite style, opaque skin/face and alpha exterior, complete hands/tool and both boots in every cell, generous gutters.",
+  "reference": "authoring-inputs/reference42-0.png",
+  "referenceSha256": "f7698e15af222d1afeba1ad9caf4b207f767042f16a672e1b8e824788d15fa9a",
+  "source": "authoring-inputs/cooper42.png",
+  "sourceSha256": "8ce2f1caa4d1ac0c71c7c89e6108de7559ec3f669807e295e596ddea9dc29896",
+  "references": [
+    {
+      "file": "authoring-inputs/reference42-0.png",
+      "sha256": "f7698e15af222d1afeba1ad9caf4b207f767042f16a672e1b8e824788d15fa9a"
+    },
+    {
+      "file": "authoring-inputs/reference42-1.png",
+      "sha256": "a26f3c0336a9560dadddb2a3648b2546f8418a81dfb2111ac2a89045bfcfbb93"
+    },
+    {
+      "file": "authoring-inputs/reference42-2.png",
+      "sha256": "fcf98cc60ce5c097326cd355aec8d6a975b5008a9f6a84f625cae105c0620101"
+    }
+  ],
+  "selected": true,
+  "editHistory": [
+    {
+      "frame": 3,
+      "prompt": "Use case: precise-object-edit. Edit this ONE Ginger dwarf pose. Preserve the entire original head, curly ginger hair and thick unbraided ginger beard, leather vest, cream sleeves, left outstretched bracing arm and hand, green trousers, BOTH knees, legs, boot caps, boot stance width, brass fittings, root, physical dimensions, camera, light and materials exactly. Change only his anatomical RIGHT forearm/wrist/closed mallet grip (the nearer arm on image left) and its connected mallet: lift the grip and mallet vertically upward by one half of the existing mallet head's own height. Keep its horizontal position and head/shaft orientation as shown. This is the descending approach BEFORE contact; bottom end of the wooden head should now be clearly above the height of his other bracing fingertips. Do not move either planted boot, shift the torso, redraw the supporting hand, change boot spacing or alter the pose's proportions. Maintain realistic continuous anatomy from shoulder to new elbow/forearm, one right hand fully closed around the same mallet handle, one same mallet wooden cylindrical head fixed to that handle. Full figure, true alpha, wide margins including both complete boot soles. Actor ONLY; no barrel, surface, scene, ground, shadow, words, grid, labels or extra limb. Keep the square composition of the input.",
+      "output": "authoring-inputs/ginger-baseline-upper-3-42.png",
+      "outputSha256": "cb3bcf141109e6cc04b1c1b3f66ed3f8ec83f1b4187b3d1ff901bf2a6138a461",
+      "references": [
+        {
+          "file": "authoring-inputs/ginger-baseline-upper-3-42-input0.png",
+          "sha256": "b79c928b61d457d8a704dd7cc3ddba49b6ee15f3aaeeb532a0dbc46083a1a255"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 4,
+      "prompt": "Use case: precise-object-edit. Edit this ONE Ginger dwarf pose. Preserve the entire original head, curly ginger hair and thick unbraided ginger beard, leather vest, cream sleeves, left outstretched bracing arm and hand, green trousers, BOTH knees, legs, boot caps, boot stance width, brass fittings, root, physical dimensions, camera, light and materials exactly. Change only his anatomical RIGHT forearm/wrist/closed mallet grip (the nearer arm on image left) and its connected mallet: lift the grip and mallet vertically upward by one third of the existing mallet head's own height. Keep its horizontal position and head/shaft orientation as shown. This is the actual impact pose: the bottom striking end of the wooden mallet head should be at the SAME height as the bottom of his OTHER bracing fingertips. Do not angle the mallet into a horizontal club. Do not move either planted boot, shift the torso, redraw the supporting hand, change boot spacing or alter the pose's proportions. Maintain realistic continuous anatomy from shoulder to new elbow/forearm, one right hand fully closed around the same mallet handle, one same mallet wooden cylindrical head fixed to that handle. Full figure, true alpha, wide margins including both complete boot soles. Actor ONLY; no barrel, surface, scene, ground, shadow, words, grid, labels or extra limb. Keep the square composition of the input.",
+      "output": "authoring-inputs/ginger-baseline-upper-4-42.png",
+      "outputSha256": "3cb883d705cb2a6d5c2b7b410dd2f27e4da0f4ecb04807d5f2237e5bfdca1921",
+      "references": [
+        {
+          "file": "authoring-inputs/ginger-baseline-upper-4-42-input0.png",
+          "sha256": "cd75148164f5f4e5b6ff46ed4aa68c39648b44bb824ba5f8b18871bba32a81bc"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 4,
+      "prompt": "Use case: precise-object-edit. A precise impact correction for ONE game sprite. Image1 is a placement guide showing the fixed barrel; image2 is the exact actor edit target. Preserve image2's complete dwarf Ginger and exact grounded pose, legs, two boot caps, stance width, body scale, curly ginger hair/fan beard, face, vest, cream sleeves, green trousers and left bracing hand. Change only the nearer anatomical RIGHT forearm, gripping hand and same connected wooden mallet. The wooden mallet's BOTTOM striking end must rest directly on the TOP EDGE of the upper iron hoop at its nearer left/front part shown in image1, not on the vertical wooden staves below that band. Raise the mallet and gripping hand slightly by about one quarter of its own head height, and reach a little farther right across toward the barrel's front hoop; the head should remain upright with the same cylinder size and orientation. Keep the mallet beside his waist, not at chest or head height. Bottom striking end should align with the bottom height of the opposite bracing fingertips, with that bottom face visibly intended to tap DOWN onto the hoop at the indicated position. Keep the OTHER bracing hand and all lower anatomy absolutely identical to image2. Do not alter head, torso, lighting, materials, boots or foot spacing. Final output is ONLY Ginger and the held mallet from image2, with TRUE ALPHA. Remove ALL of image1's barrel, jig, tools, crate, and other workstation pixels; they are only a geometry guide and must not be rendered. No shadows, background, surface, text, grid or label. One full actor in the same square framing, complete soles and head with wide transparent margins.",
+      "output": "authoring-inputs/ginger-hoop-impact-42.png",
+      "outputSha256": "5cee712347ce1b7f5bbdda7979c3f92bad85fe87ac3940686e264ec89849b23f",
+      "references": [
+        {
+          "file": "authoring-inputs/ginger-hoop-impact-42-input0.png",
+          "sha256": "f702b0931644291146bab6bedb24611f6f27e989cf958e3e660677a91667ba2a"
+        },
+        {
+          "file": "authoring-inputs/ginger-hoop-impact-42-input1.png",
+          "sha256": "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 5,
+      "prompt": "Use case: precise-object-edit. Edit this ONE Ginger dwarf into the immediate REBOUND after his wooden mallet taps a barrel hoop. Preserve absolutely the original complete body, head, hair, face, short unbraided curly ginger fan beard, cream sleeves, leather waistcoat, green trousers, belt, knees, legs, both boot shapes, stance spacing, boot soles, camera, physical scale, lighting and lower posture. Preserve the outstretched LEFT bracing forearm and hand (image right) in precisely the same place. Change ONLY his anatomical RIGHT forearm and gripping hand (near arm, image left), plus the same connected mallet: raise that hand and mallet vertically by about the mallet head's own height, with a slightly flexed elbow. Keep the same cylinder-shaped wooden mallet head/handle proportions and same orientation. It is a modest rebound up toward chest height, not a high backswing over the shoulder, and not a different tool. Do not move either planted foot, widen the stance, stand taller or alter the supporting hand. Maintain continuous anatomy to the shoulder, one right hand with closed fingers around one handle. True alpha, actor and held mallet ONLY, same square full-figure composition and wide transparent margins, complete soles and head. No barrel, tabletop, tools, props, scene, ground, shadow, words or labels.",
+      "output": "authoring-inputs/ginger-impact-rebound-42.png",
+      "outputSha256": "43938adb905267d5fc4dd0b1a9ecdb6be5f84c2d72666df11e0557d791958ed0",
+      "references": [
+        {
+          "file": "authoring-inputs/ginger-impact-rebound-42-input0.png",
+          "sha256": "5cee712347ce1b7f5bbdda7979c3f92bad85fe87ac3940686e264ec89849b23f"
+        }
+      ],
+      "selected": false
+    }
+  ],
+  "selectionReview": "Whole authored poses0/1/2/7 from original sheet, upper3 approach, impact4, rebound5 and earlier upper4 as second settling tap6. Original0.94/6/6 contact bounds; no local foot/limb transforms. Native layered and finite playback acceptance still pending."
+}

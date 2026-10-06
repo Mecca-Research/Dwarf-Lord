@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "config": {
+    "actor": "public/sprites/Cook/motion/knead-dough/actor",
+    "binding": {
+      "sourceSha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63",
+      "settingsSha256": "51d3456a1bd4962a50cada7c63e244e32268a340e684ce9a09cd6e80701ee3e5",
+      "frameSha256": [
+        "b6bc03419c4c6f207f9396bae6f5586e5d781587a8e9904a1cd25871845de1f5",
+        "186e03561ca8f45009eccfc66717418a62d881f73b6507a23dbe0ba56969997f",
+        "59371a2243611ac5c77551b3324b15527a96ed9e83223ecba29433155c0b4cb9",
+        "898677a62daff8ed6b9b551580fcb618096290fd562a97ed7806bf7330af2904",
+        "fa1799b3f1356976819aadb06b6b987d438f542bd52a77e3b1229a31afd2196c",
+        "5b0773358b6637f1d82279c9c29cedc43299362be49665c484aae3f52141177c",
+        "e28b87898d15385eabfd4f5f95c87e70b2ae4e1c1db0e031c04b461ede7b6728",
+        "2bbf6df49705a5647fa0789a77da68bb562d755b052cabc1d4100d8ef4f72476"
+      ],
+      "durationsMs": [
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125
+      ]
+    },
+    "dependencies": [
+      {
+        "file": "public/sprites/workstations/dough-block/sprite.png",
+        "sha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe"
+      },
+      {
+        "file": "public/sprites/Cook/motion/render-calibration.json",
+        "sha256": "43f1af8a7e2a36147b31cac920d90253b58e3d52c877eb352b89f264a36d1c95"
+      }
+    ],
+    "workingFacePolygon": [
+      [
+        182,
+        321
+      ],
+      [
+        463,
+        290
+      ],
+      [
+        578,
+        323
+      ],
+      [
+        338,
+        375
+      ]
+    ],
+    "points": [
+      [
+        354,
+        329
+      ],
+      [
+        354,
+        329
+      ],
+      [
+        354,
+        334
+      ],
+      [
+        354,
+        320
+      ],
+      [
+        354,
+        317
+      ],
+      [
+        354,
+        321
+      ],
+      [
+        354,
+        325
+      ],
+      [
+        354,
+        329
+      ]
+    ],
+    "scope": "Manually inspected visible lower dough boundary on the independent floured tabletop. Dough deforms; samples are not a rigid tracked material point. No force, hand pressure, baking or 3D ground claim."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "point": [
+        354.0,
+        329.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 1,
+      "point": [
+        354.0,
+        329.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "point": [
+        354.0,
+        334.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "point": [
+        354.0,
+        320.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "point": [
+        354.0,
+        317.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "point": [
+        354.0,
+        321.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "point": [
+        354.0,
+        325.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "point": [
+        354.0,
+        329.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0,
+  "lastToFirstToolTravelPx": 0.0,
+  "scope": "Manually inspected visible lower dough boundary on the independent floured tabletop. Dough deforms; samples are not a rigid tracked material point. No force, hand pressure, baking or 3D ground claim.",
+  "approval": false
+}

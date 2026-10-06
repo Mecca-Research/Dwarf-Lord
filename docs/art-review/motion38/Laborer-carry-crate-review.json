@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "carry-crate",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/carry-crate/reference",
+  "verdict": "calibration-required",
+  "sourceSha256": "afb43b17681cdb11b593fac6a2cab6c5152a113e869a8ffc6b715077e2240bcf",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "remaining": [
+    "Native grip retains the carried crate, but full planted-sole correspondences, fixed background ownership and moving stride calibration remain unverified."
+  ],
+  "binding": {
+    "sourceSha256": "afb43b17681cdb11b593fac6a2cab6c5152a113e869a8ffc6b715077e2240bcf",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "322644846cef4a8ba2c18be1a21ae49aeedf0c8cc4164587854803075eefa17a",
+      "01219a27fbb89c7971edb54606ccfa4f11b6bbe01467047a1bb250b2f2729976",
+      "65ab60dd753df7635a271cecd077f7c4bd69dd1fbad9d6c7b5d4c413fd263f7a",
+      "f773237f023693f1c8c81f585b7264f8e08072b2605a2f2e8ec9c2f3bb3a44ba",
+      "4caa1b85ca525a2e9da42f39235b7a8ab099eff1ca439a073ab8e1fe0577a5b6",
+      "e51252c03f1e103d097bb6b77f118d6f7556885ad9511af140c52036be6926cc",
+      "746edd20e1c6eab00800cbebc136119167aaf22235a8bc094cc9fb9cd3d505fb",
+      "8c807cc6504a2fc6a5c42733e5bd8228a823f5ce767cc9ae231c85a07a0ae0c2"
+    ],
+    "atlasSha256": "36c3e5bc8386e31f0941d48486e265cfd988167095a78090bc31d8ae47fe52ec",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "carry-crate",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "4ff5c2128204c5c54fe3aaf065cc5d16058519534dcc329cc676e1ef07a04a0f"
+}

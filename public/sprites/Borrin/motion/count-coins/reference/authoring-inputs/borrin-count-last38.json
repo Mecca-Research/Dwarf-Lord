@@ -1,0 +1,17 @@
+{
+  "id": "borrin-count-last38",
+  "character": "Borrin",
+  "action": "count-coins",
+  "frame": 7,
+  "refs": [
+    {
+      "file": "authoring-inputs/borrin-count-last38-reference-0.png",
+      "sha256": "b5db3539540791c3d44c24ec079cc219d1fe83d5d77b74dfb6ac3f45b9f6f302"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Edit this ONE complete transparent pose of Borrin at his coin-counting desk. Preserve every object, position, pixel scale, face, bronze spectacles, two grey beard braids, navy waistcoat, burgundy scarf, chair, feet, table, open ledger, quill/ink and money pouch. Keep the deposited copper coin lying flat on the desk just left of the open ledger near the small silver stacks. CHANGE ONLY the RIGHT HAND on the viewer-left: remove the small copper coin pinched between his fingertips. The hand must be plainly EMPTY. Open the hand with four relaxed separated skin-colored fingers reaching slightly forward, palm facing down above the original copper stack. Empty thumb with clear air gap to index, no pinching pose, no circular orange metallic object near the fingers. He is finished placing one coin and now reaches EMPTY toward the source stack. No extra coins, no new items. Keep all desk coins unchanged and visible. Same detailed semi-realistic rendering, identical full-body and complete desk framing and true transparent RGBA. One full pose only, no grid, no labels.",
+  "output": "authoring-inputs/borrin-count-last38.png",
+  "outputSha256": "9cda51190caa5a7e2cb57809c5cef4f19985d3bc7d3ea152be37ef5bddd3b35a",
+  "method": "Built-in image generation; single full-pose edit after inspecting source and adjacent authored pose. No synthesized or warped body pixels.",
+  "decision": "rejected: fingers are empty, but single-pose regeneration moves the deposited coin and changes the desk coin layout. Not selected into the source."
+}

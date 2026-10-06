@@ -1,0 +1,138 @@
+{
+  "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+  "binding": {
+    "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+    "settingsSha256": "12d1df30983a41121036b67e1ad4a4fbd8b25e6baf2d56c442aff333afa1ad1f",
+    "frameSha256": [
+      "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e",
+      "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8",
+      "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64",
+      "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd",
+      "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc",
+      "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373",
+      "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91",
+      "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ]
+  },
+  "bounds": {
+    "minCorrelation": 0.94,
+    "maxDriftPx": 6,
+    "maxAdjacentPx": 6
+  },
+  "regions": [
+    {
+      "name": "near-visible-boot",
+      "box": [
+        146,
+        509,
+        229,
+        574
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 0.9999998347045992,
+          "translationPx": [
+            7.742195862192602e-08,
+            1.8480824337530066e-07
+          ],
+          "driftPx": 2.003702803676788e-07,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9943504346977113,
+          "translationPx": [
+            0.031318679451942444,
+            0.4703247547149658
+          ],
+          "driftPx": 0.47136634588241577,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9965117559328167,
+          "translationPx": [
+            -0.2968600392341614,
+            0.05060741305351257
+          ],
+          "driftPx": 0.3011428117752075,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9933758801828003,
+          "translationPx": [
+            -1.0068879127502441,
+            0.05740279704332352
+          ],
+          "driftPx": 1.008522868156433,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9942197660926195,
+          "translationPx": [
+            0.0060344357043504715,
+            0.16041550040245056
+          ],
+          "driftPx": 0.16052895784378052,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9900378836344266,
+          "translationPx": [
+            0.2491496354341507,
+            -0.21950048208236694
+          ],
+          "driftPx": 0.3320481777191162,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9936703536768796,
+          "translationPx": [
+            0.010579404421150684,
+            0.2530929148197174
+          ],
+          "driftPx": 0.25331392884254456,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9901890313784406,
+          "translationPx": [
+            -0.9914594888687134,
+            0.21126748621463776
+          ],
+          "driftPx": 1.013718843460083,
+          "passed": true
+        }
+      ],
+      "adjacentDriftPx": [
+        0.4713661590431116,
+        0.532788812091442,
+        0.7100603906804965,
+        1.0181469938334673,
+        0.451044514529403,
+        0.5293961408256083,
+        1.0029114168976112
+      ],
+      "passed": true
+    }
+  ],
+  "approval": false,
+  "scope": "Visible near boot cap/lower rim only, original0-7 at stationary root. Far boot, anatomical hidden sole, traveling gait and loop are unobserved.",
+  "measurementPassed": true
+}

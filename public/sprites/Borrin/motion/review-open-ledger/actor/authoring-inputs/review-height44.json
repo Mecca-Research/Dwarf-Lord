@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "prompt": "Edit image1's COMPLETE eight-pose Borrin actor-only sheet together. Preserve every pose's exact head, torso, clothing, chair, seated boot positions, camera, body size, order and four-column/two-row layout. Change ONLY the arms' contact height: the pointing anatomical RIGHT index finger (image-left hand) and resting anatomical LEFT palm (image-right hand) are currently about25 pixels TOO LOW at640-frame scale, sitting below the imaginary tabletop and on his lap. Raise BOTH forearms/hands smoothly by that amount (roughly half a fingertip length in source) by modest natural elbow bend, without moving shoulders/body/chair/feet. The downward pointing finger remains extended, not a fist. Its tip must now sit ABOVE the belt rather than level with/below it. Resting left palm must also sit above belt with fingers lowered gently onto an imaginary page, not onto thigh.\nKeep the eight differing head lean and finger-reading beats unchanged, the same steady seated floor. Image2 shows the actual independent desk/book at the matched640-frame body scale: right fingertip contacts cream LEFT page around(235,339), left palm contacts cream RIGHT page around(396,346). Those positions are purpose, not scenery to add. The existing entire body image would be anchored at(320,616) and650 standing-equivalent scale, so correct hands rather than moving whole dwarf up. Hands are near the waist but visibly ABOVE belt for this contact. Every frame has both hands at that correct open-book height, including lean4 and final7. Image3 is the original approved writing actor identity/arm height. Preserve the same detailed dwarf rendering and skin/clothes, true transparent alpha. No desk, book, pen, coins or ground. Eight complete distinct poses with ample gutters and no neighbor fragments, no cropped boots/hands. This is a small upper-arm/forearm pose edit, no camera/scale/identity change.\n",
+  "source": "authoring-inputs/review-height44.png",
+  "sourceSha256": "bee2a242e4ff51ee766f11292cf1cfa68f487ccaf46f5e9d6abdf0e4717b7c4b",
+  "references": [
+    {
+      "file": "authoring-inputs/review44.png",
+      "sha256": "091b3d54c4f7e12078412ddba22eae9d15bad727198e4a4202a9ae2b3cc3b7d8"
+    },
+    {
+      "file": "authoring-inputs/desk-reference44.png",
+      "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+    },
+    {
+      "file": "authoring-inputs/reference44-1.png",
+      "sha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05"
+    }
+  ],
+  "method": "Built-in whole eight-pose arm contact-height edit. Whole-figure component ownership removes cell-neighbor fragments without changing source art."
+}

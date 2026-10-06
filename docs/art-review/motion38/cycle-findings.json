@@ -1,0 +1,920 @@
+{
+  "version": 1,
+  "checkpoint": "motion38",
+  "reviewedAt": "2026-10-03",
+  "method": "Explicit review of all eight registered native poses, visible identity, fixed placement, wrists/tools/props. Playback proof is recorded separately. Accept only named scopes after timing proof; never infer approval from a passing loader.",
+  "cycles": [
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/hammer-raised/reference",
+      "verdict": "accepted",
+      "acceptance": "loop",
+      "sourceSha256": "3a7647ddaae90c5bcfd058b39831c665550ed0af5dc738bceb814b432871ea3c",
+      "settingsSha256": "b849e5f441e7eaed5c72e9bf1626e3ce558db0d7072a28044363c51e23eff2f8",
+      "nativeReviewSha256": "e4ba3885564e4709ee1dd1b73f7cb08358662f81efe5355bfb140cc030919a58",
+      "checks": {
+        "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet.",
+        "prop-continuity": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet.",
+        "last-to-first-transition": "Right hand retains wooden hammer handle through overhead0/1, descending2/3, billet contact4, rebound5 and raised recovery6/7. Left hand/tongs keep one orange billet on the same anvil. The7-to0 overhead transition continues recovery without moving or releasing the billet. Authored final-to-first repeat inspected and checked at the exact timed boundary in the gallery."
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/hammer-contact/reference",
+      "verdict": "accepted",
+      "acceptance": "loop",
+      "sourceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727",
+      "settingsSha256": "1f9f0be3edb9345e4d5a9728448ae3b2e1d6bd9216d5ab2a3e59f1bb7ea39530",
+      "nativeReviewSha256": "e6d400a267f7211dcc2cbfe68aeec7280c577f040ef1fb4984bc01a6e0659793",
+      "checks": {
+        "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation.",
+        "prop-continuity": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation.",
+        "last-to-first-transition": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation. Authored final-to-first repeat inspected and checked at the exact timed boundary in the gallery."
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/inspect-tool/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+      "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+      "nativeReviewSha256": "3577b6a51de3a37fd7640726b579f9d1a8d432bf0dbfad0d80638816b978cb8a",
+      "checks": {
+        "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+        "prop-continuity": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "77c059ab3c11da539ef6105586f0eef5d3075e977d3b5312ff845d6694183c54",
+      "settingsSha256": "47b9d0e14cf1bb458f3298eee571e72df42cba7f684d21cb395a2b2a11e06fd2",
+      "nativeReviewSha256": "0c4aac841f2898869899fb8f1a145e0427aa2136997a94bcb7607ae3024a7e2d",
+      "checks": {
+        "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Both hands retain opposite ends of a long file.0/1 near end,2/3 advance,4 far end,5/6 lift and return,7 near end. Clamped metal axe/tool, vise jaws, fixed vise handle and bench supplies persist. Visible filing edge remains above the secured metal, with no workpiece release.",
+        "prop-continuity": "Both hands retain opposite ends of a long file.0/1 near end,2/3 advance,4 far end,5/6 lift and return,7 near end. Clamped metal axe/tool, vise jaws, fixed vise handle and bench supplies persist. Visible filing edge remains above the secured metal, with no workpiece release.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+      "settingsSha256": "4af8af157f27645afecbaaabff5d19bd33434f833055c136a0c827db8314d03c",
+      "nativeReviewSha256": "87f73020d99abf6a4aff7dda83f041b68ae537535a8c1cde71e79df8da556c41",
+      "checks": {
+        "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left hand braces upright pick shaft below its metal eye throughout. Right hand keeps the short hammer through raise2, joint approach3, wedge contact4, recovery5/6 and return7. One straight supported pick and stationary bench tools persist; no repair output or unseen wedge deformation is certified.",
+        "prop-continuity": "Left hand braces upright pick shaft below its metal eye throughout. Right hand keeps the short hammer through raise2, joint approach3, wedge contact4, recovery5/6 and return7. One straight supported pick and stationary bench tools persist; no repair output or unseen wedge deformation is certified.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/desk-writing/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe",
+      "settingsSha256": "f1af109284b66f04f72535c7af80b8719e7ac5bc865720603be25e7cbb753ac3",
+      "nativeReviewSha256": "f93e339ab6951eb67b132361df230737bb80514be34c28835ec68f2169f19f85",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right fingers keep the same feather quill and connected shaft. Tip approaches the left open page0/1/2, lifts3/4, moves to a second stroke5/6 and lowers7. Left hand rests on the other open page throughout. Book never closes; ink pot and two stacked books stay on the combined desk.",
+        "prop-continuity": "Right fingers keep the same feather quill and connected shaft. Tip approaches the left open page0/1/2, lifts3/4, moves to a second stroke5/6 and lowers7. Left hand rests on the other open page throughout. Book never closes; ink pot and two stacked books stay on the combined desk.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/review-open-ledger/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c",
+      "settingsSha256": "44574eb48a734cf6b51c349cb8a613fb44e6e1437d214bcaea67692e4e984eb1",
+      "nativeReviewSha256": "b5c66d16784cc6a50162fdd88a1977f44a9cde3a7f73711eab82332ab36097fd",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right index stays above the same left open ledger page while tracing0/1/2 and leaning3/4, then returning5/6/7. Left hand steadies the opposite page. The same open spine, ink/quill and stacked books remain; no page is released or accounting result invented.",
+        "prop-continuity": "Right index stays above the same left open ledger page while tracing0/1/2 and leaning3/4, then returning5/6/7. Left hand steadies the opposite page. The same open spine, ink/quill and stacked books remain; no page is released or accounting result invented.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/turn-ledger-page/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "376c9e58003ad398d906d9c991ec17b024ee655fb0ecbd5f07f941d39a4eec85",
+      "settingsSha256": "f7232394e6f920d00ea49d1744edfc0c30a36c92743c0ca00347fba06f9de914",
+      "nativeReviewSha256": "f80d9fe1858127d5ca34efe95a124453d0e4f93a2dfab67d392c8882a10667ec",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right fingers pinch the right page corner0, raise1/2, pass the attached page over the spine3/4, then smooth it on the left5/6;7 reaches for a subsequent page. Visible page remains attached at the spine throughout. Finite single turn, not a certified continuous reset of the same page.",
+        "prop-continuity": "Right fingers pinch the right page corner0, raise1/2, pass the attached page over the spine3/4, then smooth it on the left5/6;7 reaches for a subsequent page. Visible page remains attached at the spine throughout. Finite single turn, not a certified continuous reset of the same page.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/explain-at-desk/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc",
+      "settingsSha256": "45173a937bb80599a8fe0b5f0eac43226a80a352cd5ca51c184b56279bfd8a4f",
+      "nativeReviewSha256": "854c3e37603b8153dfdded8c5fd2e2002098f2cdf9943f9ba050553f1aa5ad0c",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right index points to the open ledger throughout. Left hand rises1/2, opens toward listener3/4, returns5/6 and points down7. All eight visible hand shapes and connected wrists are coherent; the book, quill/ink and stack remain. Continuous7-to0 replay is excluded.",
+        "prop-continuity": "Right index points to the open ledger throughout. Left hand rises1/2, opens toward listener3/4, returns5/6 and points down7. All eight visible hand shapes and connected wrists are coherent; the book, quill/ink and stack remain. Continuous7-to0 replay is excluded.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/stamp-paperwork/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+      "settingsSha256": "aed5c29d9a666b5b2ae2ef36cd14b655611da3c07d45444040b1c1d17b7968cb",
+      "nativeReviewSha256": "d4f03b89ccf5e268d1ce5f37af5e397338134bf2fbdf16094d40a0329e1927d7",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand keeps one brass stamp by its wooden handle from poised0 through lower1/2/3 and paper contact4, then lifts5/6/7. Left hand retains the document on the same desk. Open ledger, tied papers and scroll remain. Finite stamp task; actual ink mark, stamps of additional documents and independent desk compositing are not certified.",
+        "prop-continuity": "Right hand keeps one brass stamp by its wooden handle from poised0 through lower1/2/3 and paper contact4, then lifts5/6/7. Left hand retains the document on the same desk. Open ledger, tied papers and scroll remain. Finite stamp task; actual ink mark, stamps of additional documents and independent desk compositing are not certified.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435",
+      "settingsSha256": "367fe7a2c2e1c72476bba8a5ee4c53e4252fad63f6b0f473c6e00d93dcab837b",
+      "nativeReviewSha256": "feeafd0cb7a7875e17b89820741ccbdefaac5ef27c667310b4134666907402ce",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left arm retains the same closed leather ledger across0-7. Right hand rises palm-up1, extends2, curls emphasis3, gestures4, returns to chest5, nods6 and lowers7. Same bronze spectacles and brass-bound forked beard throughout. Combined desk/stool supplies persist; no book opening or release occurs.",
+        "prop-continuity": "Left arm retains the same closed leather ledger across0-7. Right hand rises palm-up1, extends2, curls emphasis3, gestures4, returns to chest5, nods6 and lowers7. Same bronze spectacles and brass-bound forked beard throughout. Combined desk/stool supplies persist; no book opening or release occurs.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "chop-vegetables",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/chop-vegetables/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+      "settingsSha256": "e5af7f172d845c6a983d96771a59651ab24031e0db560456cd060471bb0469a4",
+      "nativeReviewSha256": "d7619e8adb25c4a0b75be29ae5cca514658baec7ffb65e18515dac1f82727e0a",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains one cleaver through poised0, rise1/2, descent3, carrot contact4 and lift5/6/7. Left hand stays to the right of the blade holding the carrot. Bowl, carrots/onion/garlic and cutting block remain. Accepted cosmetic chopping, no new inventory or exact sliced-material yield.",
+        "prop-continuity": "Right hand retains one cleaver through poised0, rise1/2, descent3, carrot contact4 and lift5/6/7. Left hand stays to the right of the blade holding the carrot. Bowl, carrots/onion/garlic and cutting block remain. Accepted cosmetic chopping, no new inventory or exact sliced-material yield.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "peel-potatoes",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/peel-potatoes/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7",
+      "settingsSha256": "56f086c10cf039331b4843ef77ba0bb9786f1d406b92a94c2be55a1bc19e0035",
+      "nativeReviewSha256": "0323aae131a75c444af22343d33e8b0620cdce0495612631cdf21efb49493093",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left hand holds one potato; right fingers retain the small knife through peel draw0/1/2, curled peel3/4, return5/6/7. A peel is visible over the bowl during the cut and then among its contents. The bowl and unpeeled reserve potatoes remain. Finite stroke, not an infinite resetting peel.",
+        "prop-continuity": "Left hand holds one potato; right fingers retain the small knife through peel draw0/1/2, curled peel3/4, return5/6/7. A peel is visible over the bowl during the cut and then among its contents. The bowl and unpeeled reserve potatoes remain. Finite stroke, not an infinite resetting peel.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "knead-dough",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/knead-dough/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab",
+      "settingsSha256": "574f81dd2f67282348ddff9907811db70e91561e30e031005845d4e95675d3aa",
+      "nativeReviewSha256": "ef67d47dcf9733d88cc6fe7287640109116f2709e6378e630dd0c032144e8944",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Both palms contact one dough mass0/1, press2, fold3/4, return5/6 and settle7. Fingers remain connected to their wrists; pliable dough changes shape under them. Same flour bowl, cloth, block and boots. No rigid-prop motion is imposed on the dough.",
+        "prop-continuity": "Both palms contact one dough mass0/1, press2, fold3/4, return5/6 and settle7. Fingers remain connected to their wrists; pliable dough changes shape under them. Same flour bowl, cloth, block and boots. No rigid-prop motion is imposed on the dough.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "stir-cauldron",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/stir-cauldron/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42",
+      "settingsSha256": "5f0f99fb63f4edfebfe01b53e5f5013e7d8f1f142e029999eec4a1782b538559",
+      "nativeReviewSha256": "9c05c12be9e3c49b202057ac33363d2f38f09810f3e47f67c99fb1d3b8b802ac",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right fingers retain the wooden spoon through near0/1, right2/3, far4 and returning5/6/7. Left hand braces the cauldron handle through its folded cloth. Spoon remains directed into the same pot of stew; cauldron and iron stand stay fixed. No boiling/physics or unseen spoon-tip position is certified.",
+        "prop-continuity": "Right fingers retain the wooden spoon through near0/1, right2/3, far4 and returning5/6/7. Left hand braces the cauldron handle through its folded cloth. Spoon remains directed into the same pot of stew; cauldron and iron stand stay fixed. No boiling/physics or unseen spoon-tip position is certified.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "mix-ingredients",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/mix-ingredients/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa",
+      "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+      "nativeReviewSha256": "0a3108b9c4ad7e46b42a001326e6af46d6c421d9a089e7aeefe480e2d696c683",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand keeps one wooden spoon throughout a bowl-stirring pass0-7. Left fingers stay on the bowl rim. Flour bag/scoop, three eggs, cup, thick bowl and cutting block persist. The spoon enters the batter during the pass; no ingredient addition or output release occurs.",
+        "prop-continuity": "Right hand keeps one wooden spoon throughout a bowl-stirring pass0-7. Left fingers stay on the bowl rim. Flour bag/scoop, three eggs, cup, thick bowl and cutting block persist. The spoon enters the batter during the pass; no ingredient addition or output release occurs.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/serve-stew/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "e16349a9f29ffdf790722475b1aa2acc28eb22a0ef35fdd68a5ee2aeba4485b3",
+      "settingsSha256": "9af207cb0c2535ce43688905f6e1cf9de50af280ae0f73d3bdac3ee0a8293f84",
+      "nativeReviewSha256": "644123128124157873e5f91ba2322e4dee687e22e3e3bd2b9be9a4fc1f01ea1f",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains a connected ladle from pot0/1, lift2, bowl approach3, pour4, empty lift5, return6/7. Left hand retains one wooden bowl, empty initially and visibly filled after the pour. Filled bowl stays filled at7. Finite serving only; replay would reset food and remains unapproved.",
+        "prop-continuity": "Right hand retains a connected ladle from pot0/1, lift2, bowl approach3, pour4, empty lift5, return6/7. Left hand retains one wooden bowl, empty initially and visibly filled after the pour. Filled bowl stays filled at7. Finite serving only; replay would reset food and remains unapproved.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Cook",
+      "action": "cut-boar-meat",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/cut-boar-meat/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "f395ba5a006942784fba90c0f22ec08c80b1e019fb1ef42506720760d48ba4ad",
+      "settingsSha256": "2eee27169f2fb365b73b582a3f47a313e0ef5c58be29a9fcd348a8b7fd76a99f",
+      "nativeReviewSha256": "a38633c5f616a127983272c7d5469e1b501af25f7e23a591b05489ec9ed61bf9",
+      "checks": {
+        "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains cleaver through preparation0/1, lift2, descent3, meat cut4 and lift5. Left hand braces meat then transfers the cut portion to the existing bowl6 and returns7. Meat on the block remains smaller after the cut. Bowl retains its contents at7; finite cut only, not a regenerating raw meat loop.",
+        "prop-continuity": "Right hand retains cleaver through preparation0/1, lift2, descent3, meat cut4 and lift5. Left hand braces meat then transfers the cut portion to the existing bowl6 and returns7. Meat on the block remains smaller after the cut. Bowl retains its contents at7; finite cut only, not a regenerating raw meat loop.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/examine-sample/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "4e7143a8c592601ed94a2856b33516d704fa6ed3df6f4c844b1fbac63a61d372",
+      "settingsSha256": "e6de65c09ac7b13b90680fa76f3a5a17ff477a924373dc8cb9815ad98f6cf0dc",
+      "nativeReviewSha256": "e87a93527eba098b6754cbf1e57489ce45914007934828cdacedb78f448aed53",
+      "checks": {
+        "identity-and-scale": "Same beardless stocky female dwarf with iron/brass helmet, long brown braids, tan shirt, leather mining gear and brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left hand holds one dark metallic sample from chest0 through raised1/2, rotation3/4 and lowered5/6/7. Right hand stays on the ore tray. Helmet, two brown braids, tan shirt, crouched knees and tray remain; no sample deposit or mining stroke is claimed.",
+        "prop-continuity": "Left hand holds one dark metallic sample from chest0 through raised1/2, rotation3/4 and lowered5/6/7. Right hand stays on the ore tray. Helmet, two brown braids, tan shirt, crouched knees and tray remain; no sample deposit or mining stroke is claimed.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "2baf02a5c159461a95a3076cd407bf2d80b6e5c170b6c24b3ff6b64082e81287",
+      "settingsSha256": "7d08e2f7ce56c764f4a96bdfd18a5a59eaa350372336b0166075b6d97e8ab410",
+      "nativeReviewSha256": "060d3887f2bd361efd3ea15c71c99d45c6f15f9d6a23698a8ccdc7a6eb3040e6",
+      "checks": {
+        "identity-and-scale": "Same beardless stocky female dwarf with iron/brass helmet, long brown braids, tan shirt, leather mining gear and brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left hand braces one straight pick handle below the attached metal eye. Right hand retains hammer through lift1, wedge contact2/3/4, rebound5, lowered inspection6 and return7. Pick raises for inspection without being released. Seated bench and spare chisels remain; no actual repair economy result is awarded.",
+        "prop-continuity": "Left hand braces one straight pick handle below the attached metal eye. Right hand retains hammer through lift1, wedge contact2/3/4, rebound5, lowered inspection6 and return7. Pick raises for inspection without being released. Seated bench and spare chisels remain; no actual repair economy result is awarded.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/inspect-mineral/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be",
+      "settingsSha256": "ba8e55a41a37fca41f7cf03a3400e89ee8ddfe1a183becbc51d8975b32bbd2bc",
+      "nativeReviewSha256": "72d2a4104d08cce2d5318e402b00e7cee24af562ae5143084d57232cf8aaba2c",
+      "checks": {
+        "identity-and-scale": "Same beardless stocky female dwarf with long bright red braids, metal helmet, faded blue tunic, leather apron and heavy boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Left fingers retain the same mineral from chest0 through lift1/2, extension3/4 and return5/6/7. Right hand keeps a single round magnifier with connected wooden grip, brought toward the stone. Red braids, helmet, blue tunic and kneeling support stay coherent. Tray, cloth and pouch remain; no magnifier swap or mineral release.",
+        "prop-continuity": "Left fingers retain the same mineral from chest0 through lift1/2, extension3/4 and return5/6/7. Right hand keeps a single round magnifier with connected wooden grip, brought toward the stone. Red braids, helmet, blue tunic and kneeling support stay coherent. Tray, cloth and pouch remain; no magnifier swap or mineral release.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/bind-tool-handle/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "b912762dbc5747fd48f546f1dd8a30f0329ebd48536c992ff3505cc7e285b2a5",
+      "settingsSha256": "33b928f37cd02d863265beea3bfd1d251295ca4baab590248392db454079efe8",
+      "nativeReviewSha256": "ab3b8fda036f37e2ac27aa6dcbf43781c51616a6b89cff0df95760a7e09fa4e4",
+      "checks": {
+        "identity-and-scale": "Same beardless stocky female dwarf with long bright red braids, metal helmet, faded blue tunic, leather apron and heavy boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Both hands keep leather binding around one straight pick shaft on the bench.0/1 hold,2 wrap,3/4 pull taut,5/6 press and7 prepare return. Pick head stays attached; reserve leather roll and spare hammer persist. Finite wrapping only; exact knot topology and continuous resetting wrap are excluded.",
+        "prop-continuity": "Both hands keep leather binding around one straight pick shaft on the bench.0/1 hold,2 wrap,3/4 pull taut,5/6 press and7 prepare return. Pick head stays attached; reserve leather roll and spare hammer persist. Finite wrapping only; exact knot topology and continuous resetting wrap are excluded.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "087df31fd02b2a5718bbf0af8816580d98495f4c99d3ab49b8b2e249c52526e1",
+      "settingsSha256": "3a9495328a4b53bf375443b02c6a650016800860a0f1cf75d5114d2e31a132e3",
+      "nativeReviewSha256": "365d08a80afc41183d4850f0d206bea12e1b7f71f9ac6786741cd723ab3e79c3",
+      "checks": {
+        "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Both hands retain the same short-handled hatchet through edge pass0-4, lift5/6 and lowered reset7. Visible edge runs on the whetstone, then lifts clear. Straight handle and connected metal head persist; stone, water cup, cloth, chair and boots remain. Finite sharpening pass, no quantified bevel removal.",
+        "prop-continuity": "Both hands retain the same short-handled hatchet through edge pass0-4, lift5/6 and lowered reset7. Visible edge runs on the whetstone, then lifts clear. Straight handle and connected metal head persist; stone, water cup, cloth, chair and boots remain. Finite sharpening pass, no quantified bevel removal.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-axe",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/sharpen-axe/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "1520d53d711b2c503723b188450231c46ac9f9a4bd1694039ce43eae4d5bab51",
+      "settingsSha256": "0247612b1f1749051fa226c7ef8d5d83c11e3b118770ff5629e24a904091f381",
+      "nativeReviewSha256": "3e89457a4af23f00a261d2451ff88479d34f8d3a1ef618d6bdfd9dd14fcc4d81",
+      "checks": {
+        "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Both hands retain one long wooden axe handle through0-3 whetstone pass, lifted4/5, angle setup6 and lowered7. Metal head stays connected with a consistent eye; edge is visibly above the stone during recovery. Stone/bench, bucket/cloth and braced boots persist. Finite pass only; water drops and hidden blade pressure are not certified.",
+        "prop-continuity": "Both hands retain one long wooden axe handle through0-3 whetstone pass, lifted4/5, angle setup6 and lowered7. Metal head stays connected with a consistent eye; edge is visibly above the stone during recovery. Stone/bench, bucket/cloth and braced boots persist. Finite pass only; water drops and hidden blade pressure are not certified.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/anvil-ready/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+      "settingsSha256": "5f90e7764d452a8bec4a79c5a39bfadf8813b7aec3eec70ce0bcf77124e1dd01",
+      "issues": [
+        "Frame6 raises the hammer overhead, then7 returns it to the thigh. The6-to7 jump lacks a descending/recovery pose and does not match a quiet ready stance. Do not approve the candidate loop until this phase is redrawn."
+      ]
+    },
+    {
+      "character": "Blacksmith",
+      "action": "fix-wheelbarrow",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
+      "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+      "issues": [
+        "Hammer appears in right hand2 without a pickup and disappears by6/7 while a ground hammer remains throughout. Need an explicit pickup, retained single carried hammer and final placement; cannot certify prop ownership from this set."
+      ]
+    },
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+      "settingsSha256": "6c130a04f801d95671bc72bcc123af1e89b28618fbb206fc4af12d22bb1841b8",
+      "issues": [
+        "Frame1 lifts the knife above the dwarf head instead of positioning it at the fish head. Fillet visible and laid on the board6 is absent in7, with the fish resetting its exposed side. Need controlled blade approach and retained released fillet before finite-task or repeat acceptance."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/saw-timber/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2",
+      "settingsSha256": "acce516e7cac6dcbba6b15f853653bd14eee2c6df5391a2b2a62a6c12b7e0c3d",
+      "nativeReviewSha256": "62df6bb46cdb2496c907aaa72182b893e44b2c4c3094a760d695248c4b0bc93e",
+      "checks": {
+        "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains the D-handle saw through near0/1, forward2/3/4 and return5/6/7. Left palm braces the same intact beam on two wooden trestles. Blade remains straight and teeth meet the same kerf region. No separated timber or completed saw-through is certified.",
+        "prop-continuity": "Right hand retains the D-handle saw through near0/1, forward2/3/4 and return5/6/7. Left palm braces the same intact beam on two wooden trestles. Blade remains straight and teeth meet the same kerf region. No separated timber or completed saw-through is certified.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/build-timber-crate/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993",
+      "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+      "nativeReviewSha256": "ce02b179b15f96bdab36b3012cc3e8328a770243b000602f7300e5b72336ca37",
+      "checks": {
+        "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains one hammer through low0, raise1/2, descent3, nail contact4, rebound5/6 and return7. Left palm braces the corner of the same assembled crate. One exposed nail stays at the top board. Cosmetic finite nail-driving pass, not creation of a whole new crate.",
+        "prop-continuity": "Right hand retains one hammer through low0, raise1/2, descent3, nail contact4, rebound5/6 and return7. Left palm braces the corner of the same assembled crate. One exposed nail stays at the top board. Cosmetic finite nail-driving pass, not creation of a whole new crate.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/build-crate/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "d4073d5268cc995eb36846580db6df97e34fd78f9a989bcf8e46792a804fa861",
+      "settingsSha256": "4ceb4079fe6d9facb98a75e9d50c27b97001206d4e79f95e6eaa90c904d57763",
+      "nativeReviewSha256": "0d563b203ddf4e47a05512215a86c3a4d9df5f3296cebad17d8e1709e1260f31",
+      "checks": {
+        "identity-and-scale": "Same bald stocky dwarf with long dark forked brass-bound beard, cream rolled sleeves, stitched brown waistcoat, leather belt/pouches and heavy boots across all eight registered poses. Local sequence scale only; no moving foot or cross-direction calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Right hand retains one metal-headed hammer through poised0, rise1/2, descent3, nail contact4, rebound5/6 and return7. Left hand braces the same wooden crate, safely to the right of the strike. The bench and three spare nails persist. Finite nail-driving pass, no crate delivery or duplication.",
+        "prop-continuity": "Right hand retains one metal-headed hammer through poised0, rise1/2, descent3, nail contact4, rebound5/6 and return7. Left hand braces the same wooden crate, safely to the right of the strike. The bench and three spare nails persist. Finite nail-driving pass, no crate delivery or duplication.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-open-ledger",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/explain-open-ledger/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "32fa9f83c2185ac19885fbbe05cfea2179b1add1c0cf36923e732f2a6306a136",
+      "settingsSha256": "67345db6b203b1fc37048f9fc4722b5ea38316368963f6eb7c15b175fcf0b786",
+      "nativeReviewSha256": "befe476defa86c3b07926db256eedc2e0c8e8a424a229b200d62e4e5b4ece9ae",
+      "checks": {
+        "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+        "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+        "hand-and-tool-contact": "Motion38 corrected all eight faces to the same bronze spectacles and short brass-bound forked grey beard. Left hand supports one OPEN leather ledger throughout0-7. Right hand follows and points to entries0-3, opens toward listener5 and returns6/7. The book stays open and connected; table, candle, books and stool persist. Finite explanation, no continuous repeat or independent furniture approval.",
+        "prop-continuity": "Motion38 corrected all eight faces to the same bronze spectacles and short brass-bound forked grey beard. Left hand supports one OPEN leather ledger throughout0-7. Right hand follows and points to entries0-3, opens toward listener5 and returns6/7. The book stays open and connected; table, candle, books and stool persist. Finite explanation, no continuous repeat or independent furniture approval.",
+        "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "repair-boardwalk",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "aef838e180141e72deeab742566ce58bbb7819de53724dfe6767653ef05b55ea",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "issues": [
+        "Hammer appears at2 after both empty palms brace the board at0/1. At6 the right hand still holds the hammer, but7 the left hand holds it while the right reaches for a nail, with no handoff pose. Need explicit pickup and hand transfer, or keep the right hand owning the hammer in7."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "build-barrel",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/build-barrel/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "14fdd05b224291bca562ef0874a1be9391a87974bd8c8f8d49fb9d95e8e7dbe7",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "issues": [
+        "New upper iron hoop appears between3 (right hand takes mallet) and4 (mallet raised) without an insertion/placement pose. The mallet also remains in the tool crate while carried. Need clear ownership and upper-hoop placement before a finite assembly or loop acceptance."
+      ]
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "direction": "reference",
+      "destination": "public/sprites/Borrin/motion/count-coins/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+      "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+      "issues": [
+        "Original poses5-7 retain the counted copper coin in the fingers after apparent placement. Two whole-sheet edits still retained a duplicate final-hand coin; the single-pose empty-hand edit changed the destination coin and desk layout. Need retained one-coin deposit with visibly empty returning fingers and stable desk coins."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/chop-downed-log/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+      "settingsSha256": "e240d84e0b914427134c8eeb49efb069f673960779ce65e3693dbfa1703f1901",
+      "issues": [
+        "Split halves visible4-6 become a whole horizontal log again7. A single-pose candidate preserved the split but changed fixed stump geometry; measured0.89327 correlation failed its existing0.93 threshold. Need retained split material and unchanged fixed station."
+      ]
+    },
+    {
+      "character": "Helga",
+      "action": "shovel-stone",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/shovel-stone/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "fafd7766e54adbf7c0af975d23035b026eda234a3e281026b7a9e55f99e96a31",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "issues": [
+        "Bucket is clipped or fragmented in1/3 and changes position. The loaded shovel becomes empty5 before the stone cascade6, losing material ownership. Need one complete stationary bucket and shovel load retained until visible discharge."
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-ore",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/shovel-ore/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "7be2a3402b9d63cf9bffbdcef35600f138940bb6f62e64449648df230c64e8d8",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "issues": [
+        "The shovel blade is empty throughout the lift0-4 and cast5/6 although the planned beats describe a load. No ore transfer is visible. Need a defined held load, release and retained deposit, or a separately named empty-tool practice sequence; do not approve this as loaded ore work."
+      ]
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-ready",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/pickaxe-ready/reference",
+      "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "d09aa80d6bfd599bd4cf581baf6cb57a68aba2e6e80db350bddd559942f81b63",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "checks": {
+        "identity-and-scale": "Same stocky beardless woman, red twin braids, iron helmet, blue sleeves, brown apron and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+        "station-and-foot-contact": "Station-free fixed ready stance. Visible boots retain their local baseline; no translating sole or gait claim.",
+        "hand-and-tool-contact": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+        "prop-continuity": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+        "completion-and-reset": "Every authored pose0-7 held for its full duration; finite task completes once, holds7 and resets only explicitly. Gallery/shared playback acceptance only; gameplay task activation and economy effects remain separate gates."
+      }
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-contact",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/pickaxe-contact/reference",
+      "sourceSha256": "4d716d9a32b5d2ed0ee4ac478213f37e3ec7da6dc92d8b362dc3fc6705cbde75",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "0083449ba65aaa2e125583036b6cc3c614e051dc9e68d191e6d03d328ca9bdb1",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "checks": {
+        "identity-and-scale": "Same stocky beardless woman, red twin braids, iron helmet, blue sleeves, brown apron and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+        "station-and-foot-contact": "Visible braced boots and painted ore remain on the reference baseline. This is a fixed combined reference, not an independent scene rock or moving contact calibration.",
+        "hand-and-tool-contact": "Both hands retain the same shaft from low contact0/1, draw-back2, lift3, apex4, descending5, strike6 and resting contact7. Painted ore stays at the same baseline; transient chips6 are cosmetic. No separated material yield or independent ore ownership is certified.",
+        "prop-continuity": "Both hands retain the same shaft from low contact0/1, draw-back2, lift3, apex4, descending5, strike6 and resting contact7. Painted ore stays at the same baseline; transient chips6 are cosmetic. No separated material yield or independent ore ownership is certified.",
+        "completion-and-reset": "Every authored pose0-7 held for its full duration; finite task completes once, holds7 and resets only explicitly. Gallery/shared playback acceptance only; gameplay task activation and economy effects remain separate gates."
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "fell-tree",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/fell-tree/reference",
+      "sourceSha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab",
+      "settingsSha256": "e52087b28dee20af501697039cb2d51a8c1a6b6751ac5842fa5ca914ff5500b9",
+      "nativeReviewSha256": "9fd6c7182059f6ae770dc272f6d88c62d5b020c9e8375273ae126aaf99646bd2",
+      "verdict": "accepted",
+      "acceptance": "loop",
+      "checks": {
+        "identity-and-scale": "Same curly ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+        "station-and-foot-contact": "Existing bounded fixed-tree registration retained. Visible braced boots remain at their local baseline. Independent station actor has its own separate review; this record covers the combined painted reference only.",
+        "hand-and-tool-contact": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke.",
+        "prop-continuity": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke.",
+        "last-to-first-transition": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke. Exact repeat boundary is checked in the controlled gallery."
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "stack-crates",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/stack-crates/reference",
+      "sourceSha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "a66866cbb2edd65debb3668d7d07f82a4448c387f4d91257389c1a4e429392f8",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "checks": {
+        "identity-and-scale": "Same bald stocky dwarf, dark forked brass-bound beard, cream sleeves, brown waistcoat and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+        "station-and-foot-contact": "Braced boots and the pallet stay at their reference baseline during the stationary delivery. Independent actor/pallet ownership has a separate existing task review; this record covers combined painted reference.",
+        "hand-and-tool-contact": "Both hands retain the waist crate0/1, raise2, extend3, lower onto the existing two-crate stack4, release weight5, align6 and withdraw empty7. The delivered top crate stays in the three-crate stack at7. Replay would duplicate delivery and is excluded.",
+        "prop-continuity": "Both hands retain the waist crate0/1, raise2, extend3, lower onto the existing two-crate stack4, release weight5, align6 and withdraw empty7. The delivered top crate stays in the three-crate stack at7. Replay would duplicate delivery and is excluded.",
+        "completion-and-reset": "Every authored pose0-7 held for its full duration; finite task completes once, holds7 and resets only explicitly. Gallery/shared playback acceptance only; gameplay task activation and economy effects remain separate gates."
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/stack-firewood/reference",
+      "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "2fa9cf28606909c846246a505a6ec522384c597cdc0676b85dbebee24f4e88f1",
+      "verdict": "changes-required",
+      "issues": [
+        "Placed log at4-6 is lifted back out7. The final held state loses its delivered log and repeats the held-log initial state; need empty hands and a retained added log, or explicit separate removal task."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "load-logs-cart",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/load-logs-cart/reference",
+      "sourceSha256": "cd449344877a3f4199e5a287765203b5a2f2642f9b01f1ea24a34b977e0db067",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "8682524878975cd2b8e5d05edc63fa2838957e54253cdddb504ac3453a904042",
+      "verdict": "changes-required",
+      "issues": [
+        "Frame2 contains a clipped cart at its right and a detached piece of adjacent cart art at the left of3. Need complete individual cart poses without source-grid neighbor fragments; retain the placed log through empty hands6/7."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "build-barrel",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/build-barrel/reference",
+      "sourceSha256": "728ca47ee2708c95735a0f801e75db8ca3878b4cb8fe54a1a2397635169e4daf",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "6c79ba7cc789231c538dde7d44c652e7c203b7a363ced88eed824a414470677a",
+      "verdict": "changes-required",
+      "issues": [
+        "Right hand retains mallet during rebound6 but7 it is on the distant bench with both hands already on the barrel, without a lowering/placement pose. Mallet also disappears from the bench across7-to0. Need an explicit return-to-bench beat and persistent tool ownership."
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-contact",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-contact/reference",
+      "sourceSha256": "b7e1c2b4a7719e235d9e6030c00c66dbb388bd3c676ce302973539efe7c5feda",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "94cb9dffa58c132afe85b8815c98047f242a74d17e7b882c065f015dcea28570",
+      "verdict": "changes-required",
+      "issues": [
+        "Apex4 jumps directly to nearly-ground contact5; the authored midway descent is absent, causing most of the swing in one boundary. Need a real descending shaft/arm pose before contact6. Fixed-reference tool review cannot certify the separate360 family."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-large-stone-ore",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/carry-large-stone-ore/reference",
+      "sourceSha256": "2505d95187c025e4e03e0a31dfb56a78cef001641889e4efa24926f36a637ac0",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "6fb772ddeb6a71ae663250d30c591faf9369c16f25cda2fa1e61b89575f72cf9",
+      "verdict": "changes-required",
+      "issues": [
+        "Frame2 has clipped ore-bin edges and a detached pickaxe/bin fragment at the left of3. Painted stationary bin is also embedded beside a translating carry gait. Need complete prop-free carry poses and verified planted soles before moving use."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "shovel-rubble",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/shovel-rubble/reference",
+      "sourceSha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "703fdca0aee90d443fd38f923f06fb83470f9e2ad040053fb19e1a5d792908b5",
+      "verdict": "changes-required",
+      "issues": [
+        "Rubble pours visibly into the barrow6, but terminal7 makes the barrow empty again. Need the deposited load retained during the empty-shovel return and held completion; repeat cannot regenerate the source pile."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-crate",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/carry-crate/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "afb43b17681cdb11b593fac6a2cab6c5152a113e869a8ffc6b715077e2240bcf",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "Native grip retains the carried crate, but full planted-sole correspondences, fixed background ownership and moving stride calibration remain unverified."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/carry-sack/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "Both hands retain one sack. Whole-stride sole calibration and transition contacts remain unverified for this carried-load gait."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "roll-barrel",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/roll-barrel/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "Barrel cap/stave rotation and advancing palms require matched rotation landmarks; the shifting rear boot also needs planted-sole tracking before movement approval."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "lift-crate",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/lift-crate/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "947ba76025489dfe54e6a05199b89c51f2bf9eced8b190d1009827d1f62f3f35",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "Hands remain on one crate through lift and lowering. Final6-to7 lowers nearly from waist to ground without an intermediate descent; needs a lower recovery beat and stationary sole registration before acceptance."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "Broom remains gripped, but the toolbox follows the pose registration rather than one fixed location. Needs measured fixed-toolbox registration and knee/sole contact review."
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-ready",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "remaining": [
+        "First transition switches the connected pickaxe head from low viewer-right0 to viewer-left1 across the body. Needs a measured continuous shaft/arm rotation beat and stationary sole registration before final acceptance."
+      ]
+    },
+    {
+      "character": "Female Miner",
+      "action": "push-ore-barrow",
+      "direction": "reference",
+      "destination": "public/sprites/Female Miner/motion/push-ore-barrow/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "472b0557edf045628321bc4caa5cd2c067fa4cdae14a79c8b252ac3e6e07c4c2",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "ff66eaa3250d246015815301b967687b6d900440401bebbd4e058cd05ea5d2cc",
+      "issues": [
+        "Opposed half-stride labels0 and4 retain the same extended rear boot and same forward support foot; contact legs do not visibly exchange. Need real opposite-leg poses plus matched wheel/ground travel and full-stride sole calibration."
+      ]
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "reference",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "85869d177aff25e761f8b900bc8dfd9153cb35ce599f585e5ce208bcb48d0bf7",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "c9a7bfc181c804d747dedbd4c23a4fb1ab6f5ef117fc42278b32c3591a9d23b0",
+      "issues": [
+        "Opposed half-stride labels0 and4 show the same trailing viewer-left boot and leading viewer-right support foot. Need opposite-leg extensions and measured whole-stride contacts; log grip alone cannot approve locomotion or360 continuity."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "haul-firewood",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/haul-firewood/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "b9119f578e66cd9d48ff189d162524d6dac0267be99fe0bf89c4c2ed9dd36d22",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "bd1d4474075a7b8a7c7ccbdf45924b96763ade8205c62c043df5733f29d7726a",
+      "issues": [
+        "The forward boot remains on the same side through0 and4 despite opposite-foot phase labels. Need true opposite-leg extension plus a matched rope/sled displacement and whole-stride sole contact proof."
+      ]
+    },
+    {
+      "character": "Ginger",
+      "action": "carry-supplies",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/carry-supplies/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "b1329fd5f3c7a04724dd5eaa91d8e1d17f1e8230a95d5f4a14f4594b31d5701e",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "04ede3699f74cb873c195791297f19310effdc4892fc841db64579c056b1b0f4",
+      "issues": [
+        "Opposed contacts0 and4 retain the same forward viewer-right boot. Need real contralateral stride extension, retained sack/bucket grip and measured whole-stride sole contacts before moving use."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "push-stone-barrow",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/push-stone-barrow/reference",
+      "verdict": "changes-required",
+      "sourceSha256": "a443d0c9f2dad4cb3cd7b8098b29389655bf5ed649cc1dd32b8ccd9e98843f02",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "b5777eaec0a8d592605e7f3b97892da4430519fd65b75558ad93ac5643ca1e40",
+      "issues": [
+        "Opposed contacts0 and4 retain the same rear viewer-left boot and forward support foot. Need contralateral extensions and matched wheel/sole ground travel before moving approval."
+      ]
+    },
+    {
+      "character": "Laborer",
+      "action": "pull-supply-sled",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/pull-supply-sled/reference",
+      "verdict": "calibration-required",
+      "sourceSha256": "2a918f36d30057620ac32ed26bba292f69bf2b071f2ea1271671fb8583b8e6d2",
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "nativeReviewSha256": "40d63aca4aa8cff076d6032b921f7e65b1d7f9b881f06328e6142497909684a9",
+      "remaining": [
+        "Rope grips and tied crate persist. Rear-foot support occupies most poses1-6, with the alternate contact mainly0/7; whole-stride material-sole correspondences, realistic cadence and sled displacement have not been verified."
+      ]
+    }
+  ]
+}

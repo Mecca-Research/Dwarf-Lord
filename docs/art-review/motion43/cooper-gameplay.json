@@ -1,0 +1,322 @@
+{
+  "method": "Controlled clock and actual Three renderer. Job/day controls and natural arrival, without direct frame mutation.",
+  "seen": [
+    {
+      "day": 1,
+      "action": "fell-tree",
+      "x": -42,
+      "station": "forestry-trunk",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "brokk",
+        "x": -42.48000000000003,
+        "z": 18,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 1.9664,
+        "workMotion": {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "fell-tree",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "fell-tree",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "sourceSha256": "d3ec703c0e45e05ec2ad9599acca465eb5a4484c1a5d48ea9be1660b38dff468",
+      "atlasSha256": "11e76e35d4ede1a1e51b2397d1377b55a6a99ec122dd16a3800732d7f26d89c4",
+      "calibrationSha256": "64aa4b6ccaa935ce881a141442c8e91e1c4658964eb00f6ccfc7ce129cc01247",
+      "propSha256": "dcf23ff916144fe3772a7704567f7c2679e2e8813e7ee1cbcc5b53a099a5d3eb"
+    },
+    {
+      "day": 2,
+      "action": "build-barrel",
+      "x": -36,
+      "station": "cooper-barrel",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "brokk",
+        "x": -36.48000000000003,
+        "z": 18,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 21.193200000000058,
+        "workMotion": {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "build-barrel",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "build-barrel",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "sourceSha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+      "atlasSha256": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1",
+      "calibrationSha256": "64aa4b6ccaa935ce881a141442c8e91e1c4658964eb00f6ccfc7ce129cc01247",
+      "propSha256": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a"
+    }
+  ],
+  "errors": [],
+  "day3Action": "fell-tree",
+  "scope": "Two finite daily timber activities at independent persistent stations. Barrel action reseats the same existing upper hoop twice; it does not fabricate barrels, create resources, certify another direction or approve a seamless loop."
+}

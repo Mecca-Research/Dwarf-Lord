@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "checkpoint": "motion48",
+  "baseline": "e11f33545db2b0b348308f16bb2004e5594ac01f",
+  "assetAudit": {
+    "file": "docs/art-review/motion48/retained-assets-audit48.json",
+    "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+  },
+  "currentEvidence": [
+    {
+      "file": "docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "docs/art-review/motion48/station-layer-authoring48.json",
+      "sha256": "d2fea0c39796e87f74be0fd66b21cda8a946e46c26f1d3399a7560866cfd23cc"
+    }
+  ],
+  "checks": {
+    "assets": "All65 earlier accepted selected art/assembly/registration/timing sets and existing props are byte exact. Every prior Cook calibration entry is equal; only new kneading is added.",
+    "runtime": "Existing root/stride math, callback and drawing order, positions/materials/render orders, task guards and economic resolver unchanged. Assignment now directly selects the current physical site. Completion ownership publishes synchronously for all registered finished layers. Tests cover independent sites, mount order, cancellation and old storage crate. Fresh actual NPC, four meal days, five consultant days, both three-stride lateral walks and16 station variants verify affected behavior.",
+    "retainedScope": "Current revalidation concerns affected runtime/dependencies only. Original native evidence and dates remain. Neither old limited acceptance nor analytical failures are upgraded to a new direction, hidden contact or full family review. All103 frozen review gates and11 direction families remain open."
+  },
+  "scope": "Bounded runtime revalidation after finite Cook addition and two task-routing/handoff corrections. No full merge approval."
+}

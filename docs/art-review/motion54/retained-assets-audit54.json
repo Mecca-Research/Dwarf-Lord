@@ -1,0 +1,301 @@
+{
+  "checkpoint": "motion54",
+  "baseline": "8e25a3a25f90b92b56e4b4ca92237caaec844451",
+  "protectedPaths": [
+    "src",
+    "public",
+    "docs/expanded-animation-plan.json",
+    "docs/runtime-motion-layers.json",
+    "docs/runtime-motion-additions.json",
+    "docs/motion-completion-scope.json",
+    "scripts/whole_stride.py",
+    "scripts/cane_stride.py",
+    "scripts/motion_loop_approval.py",
+    "scripts/motion_registration.py",
+    "scripts/export-character-motion.py"
+  ],
+  "trackedWorkingDiffs": [],
+  "untrackedRuntimeOrPublicFiles": [],
+  "unchangedAcceptedSourceSets": [
+    {
+      "folder": "public/sprites/Blacksmith/motion/walk/right",
+      "manifestSha256": "b859e95f0367d49c421946d0bfb4a5a9bae1e1b2a2a4601cf9b75b3fbd4df2bf"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/walk/left",
+      "manifestSha256": "f09d01c716a979aa789009043bf58465a3f06e136ad3461765743560e66a8902"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/anvil-ready/reference",
+      "manifestSha256": "b555cbec6563ce60924eca5f0196075cebf37ecac9d9405eb33123f44c35c756"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/hammer-raised/reference",
+      "manifestSha256": "6f74b7a70286d40daab91a6c31a858f3e1478ddbfd453e71321ec6abe44e4749"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/hammer-contact/reference",
+      "manifestSha256": "815b2b14461c291161c6e731b0d9befe041bebe3d08eb252b0153154a442de71"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/inspect-tool/reference",
+      "manifestSha256": "396afdf3f07bf2932d001ca091dad19046debd850f3a0d1b1e214271b63a947c"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/file-tool-edge/reference",
+      "manifestSha256": "522299578b8d42296313c92a8cd897496479ab1fa5e019e742671b1db4b83890"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference",
+      "manifestSha256": "0f50bacb9f2a4695033011dd64d08bfb5dbf724141900f2c78666efe9bd22030"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/desk-writing/reference",
+      "manifestSha256": "91e2da600238ff2fbe0507b5b3eaa3dcdb3000f8e816b77d2f52db3ec42d6959"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/review-open-ledger/reference",
+      "manifestSha256": "71d66f5c59828a24a6d52e3e7ffbf501010c6ea60072340cd768085a77571c0e"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/turn-ledger-page/reference",
+      "manifestSha256": "de8bc31fb1b55ef614551c80da96dc1556501c6b4682c649c768451719a0b3f2"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/explain-at-desk/reference",
+      "manifestSha256": "4a4293ef4f1c7e3f4820c9750a42e136e073816ec75be098ffcbce88d88f2aab"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/count-coins/reference",
+      "manifestSha256": "041d7911b4c328bef6e06c3067cb04ada9b657a3e9edc9c945fb5ff63fead381"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/stamp-paperwork/reference",
+      "manifestSha256": "49ec3583c83f54a53861dae77da64be165a9434cdd9680834db43fd314648a56"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/chop-vegetables/reference",
+      "manifestSha256": "54e33baa308b6fe68a75f298874d533bab1fa1bebf881ab087b7007a0d9d43b4"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/peel-potatoes/reference",
+      "manifestSha256": "e0436edeaab07e4cf81dd3e9bc7d8a34191d3ad6f1bb6beafce5c941242b1778"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/knead-dough/reference",
+      "manifestSha256": "f42f92a2bce71a8fff3009a8f877d325d351b4295327f2f7d1ea729bed94ed80"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/stir-cauldron/reference",
+      "manifestSha256": "bf2850990054404771f682867b33a0c1277429c399fe475ab6a90e2f6be67714"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/mix-ingredients/reference",
+      "manifestSha256": "3c06fd74d0b597e343f2de1817869d27eddb4eaf8ae557d5f9ffce7544c68bff"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/serve-stew/reference",
+      "manifestSha256": "e7c69232a9c73217d39e4350dd5891ff0dd663d8692778a112f20e79f89753ff"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/eat-stew/reference",
+      "manifestSha256": "8a973deb7e540df7d9233106d9aeb79a79ca2afa767946318ebab3b1412c21b4"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/eat-bread/reference",
+      "manifestSha256": "10a23038cddd50f2b792d89559c0e85e38db06ef1ccad93c4657e72c69dbdb56"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/laugh-seated/reference",
+      "manifestSha256": "884e401e7748fd0fea7564fc25374e194d2bfbf58e057186d2fae6c221c9421d"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/laugh-and-gesture/reference",
+      "manifestSha256": "2e59c795006e91ffbfb971d33b11ca6bac879edb3c9504c942b0674c63cf0246"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference",
+      "manifestSha256": "526539ba317e3962861050d9c504e9a203059e155e59390782b4b828a90f110b"
+    },
+    {
+      "folder": "public/sprites/Elder/motion/examine-pickaxe-crack/reference",
+      "manifestSha256": "dce204329725da3ccd24a3f6a1e4b29f0d2ab949e68e31eaadc98b9319720d89"
+    },
+    {
+      "folder": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+      "manifestSha256": "fff92fe3a8b942f2ac9d08e908af6428b08c36879aff353b7c0dd8bbb52c6ea8"
+    },
+    {
+      "folder": "public/sprites/Female Miner/motion/examine-sample/reference",
+      "manifestSha256": "57d6188b38cf3e3ea91e615af05000723e6580d9e2814bb1b5a31de04125f9b7"
+    },
+    {
+      "folder": "public/sprites/Female Miner/motion/repair-pickaxe/reference",
+      "manifestSha256": "fcd8b6073606983d38e9a90749594912457a4ce34b3214a24587835a97a3715c"
+    },
+    {
+      "folder": "public/sprites/Helga/motion/pickaxe-ready/reference",
+      "manifestSha256": "177052fedb67221dbaf6f6ed7939677b833189ef23c2577d0e0b3b5c1cd1231f"
+    },
+    {
+      "folder": "public/sprites/Helga/motion/pickaxe-contact/reference",
+      "manifestSha256": "291ce01e4b7c6db8eec13b9acbf5b9d397261f5440847616e6848cbde5723ce4"
+    },
+    {
+      "folder": "public/sprites/Helga/motion/inspect-mineral/reference",
+      "manifestSha256": "f92cfb21f8f57fd794ce395b0bf5d341ec7ed6bdbc3af45e0fd784e3a5d40081"
+    },
+    {
+      "folder": "public/sprites/Helga/motion/bind-tool-handle/reference",
+      "manifestSha256": "f97697facda320afb885cc25c380d14ee91b368efdfc8e839884a5bf2b72aee6"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/lift-crate/reference",
+      "manifestSha256": "dc9eafcc660eb7d888e1368db09ccae8889efd6d03eb9d9126b7193591a51b26"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/build-crate/reference",
+      "manifestSha256": "d5c9f264674b8b07f4f0f1132b2c1f0983a5aa9ae67c59505ba8c204e75b3a63"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+      "manifestSha256": "8ffab3921759c09b7c4d36d49f058cffd03b5d5c389700bcca335ce9332c7e26"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/saw-timber/reference",
+      "manifestSha256": "ddd1d754ad10224ae6f933ac0d0f9bd97f0ed3f7bccb3dd9e72cfbf5c15b8310"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/build-timber-crate/reference",
+      "manifestSha256": "829dca8cf987fec4663e0773440277f5de96d78f2964da5abed4b6d087f81cc0"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/sharpen-hatchet/reference",
+      "manifestSha256": "2df40297ceb74c7ec4540bbf2add0064e2529287b94942c1c00366eddd115634"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+      "manifestSha256": "bd72974ae725b036564074f10285b839e936e170c99b5ed3e4a04f5fa75b89ff"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+      "manifestSha256": "48ad7104eb9128b0f1f110113b4d2b3c0fe7823869de92f8000a0ddb814b1644"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/explain-open-ledger/reference",
+      "manifestSha256": "6453987e04398ceb1e3e8dfcfeecf14d7a4cda3725b0b854ae51deb25fc564f7"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/cut-boar-meat/reference",
+      "manifestSha256": "8daf8fdf5a66ea38ff6ebe696bb9a66eb8c3ae80fa47b84b4c6b24eb6f6f1407"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/fillet-fish/reference",
+      "manifestSha256": "4d25dafd92ddb654ddd6262c77bc650a5a91da82ec4b209e7405d54aff95588a"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/fell-tree/reference",
+      "manifestSha256": "98ddb739b6c4a7d0039cf2a8e09ad35b79a09e025990822d8a2b7b418b32c34b"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/chop-downed-log/reference",
+      "manifestSha256": "6615f26181e8621f86a56bd87e922c7b2d74669c325a598f6ecb241fa6346c7c"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/sharpen-axe/reference",
+      "manifestSha256": "67621198286c06482a7746160a5ddb17c5fcce567b8528071209841a14847436"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/build-barrel/reference",
+      "manifestSha256": "2d397f43f8acf2dd0f3627e3d1221d5edc4d4d449c7c3ab1d4973e86ec0354d7"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/stack-crates/reference",
+      "manifestSha256": "cab22bfc9703f686ae1073b6736571f53d90d3e03d814092310d751da3e66ddd"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/shovel-rubble/reference",
+      "manifestSha256": "9792daf0a02b89f88a7940aa53f1dcad86fa7c3d37686e3cebb29f985ff7413f"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/chop-vegetables/actor",
+      "manifestSha256": "3febdbd19ffafc4344725c74c0901328d1ee8ac1e811fedd8d59ad9bac19a0b3"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/hammer-contact/actor",
+      "manifestSha256": "621bf2dbce118ab1d234631da35215900fc4e4ef1707300963651d8b25b61a09"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/fell-tree/actor",
+      "manifestSha256": "b664bfa1b56bdd9f011b8aecc5ca3bd434d21aa4687a04f3dba86a9d80d141c2"
+    },
+    {
+      "folder": "public/sprites/Laborer/motion/stack-crates/actor",
+      "manifestSha256": "d308d2c53c79c916bd72c483e73c359bd5457d054fd848de9ae4aadee5862823"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/desk-writing/actor",
+      "manifestSha256": "0ea389a250f581dcd7bd6b997fe35377cb5fcb7f4cd04c027bae6a870a21eaab"
+    },
+    {
+      "folder": "public/sprites/Stoneworker/motion/chisel-contact/actor",
+      "manifestSha256": "6c94ed92bb2abb96a150c274cd2fdcddf930dff20ea7aa2234b64a2539a5998c"
+    },
+    {
+      "folder": "public/sprites/Quartermaster/motion/check-weights/actor",
+      "manifestSha256": "bf27e3ef757e315d309893f18d71a8272f39a84b998b33df6e92dbf86fd97903"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/inspect-tool/actor",
+      "manifestSha256": "75debed254dcd3454c0d61182039bb9f942d5821874fde8175f212de79310fd0"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor",
+      "manifestSha256": "25c7c482b22476378375794b17961989c84320b26541e3e734314142e04b845b"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/peel-potatoes/actor",
+      "manifestSha256": "162413cfb4b137a4b712df5347fc7a2adb33c42daa83379dafd1593c5e0cec4a"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/count-coins/actor",
+      "manifestSha256": "a1319fdae7e1a5f7d3da8fbab4a82445245e96c7f28e911ebe254aadcf8e4a00"
+    },
+    {
+      "folder": "public/sprites/Ginger/motion/build-barrel/actor",
+      "manifestSha256": "ddbeeb11daa4febe887007944c71c3f747c2fa8930e79e3b7886323ed48f3e2c"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/review-open-ledger/actor",
+      "manifestSha256": "5be7b15109c7a2fa1deced1c7db84b6e4cead6a2c44c46ac8e5a59ba5ba83e29"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/explain-at-desk/actor",
+      "manifestSha256": "473c5104f3a1f7d0bd1c60597eb5e76a058627cbe5a4567878b1ebee5cc95c9f"
+    },
+    {
+      "folder": "public/sprites/Borrin/motion/stamp-paperwork/actor",
+      "manifestSha256": "b40dc0f85e6b2362b4dfcf2093d113435cc28401da051001b8664f5689d3722a"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/knead-dough/actor",
+      "manifestSha256": "809565639b88a9a31fd5d9a0efe5083e63dc22de079d6ad90a47d150f66ee6e0"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/stir-cauldron/actor",
+      "manifestSha256": "3aa0670b18f3925bbc14e1fbf202b18942f667087d4fa87a165244fde0ce2f6d"
+    },
+    {
+      "folder": "public/sprites/Blacksmith/motion/anvil-ready/actor",
+      "manifestSha256": "9b3c7f9434c2601cba37b37df0c3b450c10a2cb1b23def2c19b34d504aff4015"
+    },
+    {
+      "folder": "public/sprites/Cook/motion/mix-ingredients/actor",
+      "manifestSha256": "3739a0fa10404bd81645d9eaeb9c068d0757970511217228fa89f3a068e80256"
+    }
+  ],
+  "unchangedFrozenObligations": 160,
+  "unchangedOpenSelectedCycles": 103,
+  "runtimeCoverageBindingCurrent": true,
+  "scope": "Every tracked runtime/public file and all selected motion exports, frame/atlas/source art, registrations, timings and approval files remain exact against8e25a3a. New diagnostics/art archives add no runtime mapping, source selection or acceptance. No earlier observation is relabeled."
+}

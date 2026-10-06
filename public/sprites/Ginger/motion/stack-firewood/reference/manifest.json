@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Ginger",
   "action": "stack-firewood",
   "title": "Stack firewood",
@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/02-stack-firewood.png",
   "source": "source-sheet.png",
-  "sourceSha256": "23e49db981f0b73ecfdc2eb45c857cde76c58fd1b10fe105566c2dcba9d247cb",
+  "sourceSha256": "bc5cb7efe3adce0f3908784a8b8582927171513d63f97a546ab864fb533e1cc4",
   "sourceSize": [
     1774,
     887
@@ -16,201 +16,211 @@
     640,
     640
   ],
-  "sharedScale": 1.510204081632653,
+  "sharedScale": 1.4874371859296482,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "hold log above stack",
-      "durationMs": 125,
+      "description": "one log held securely above rack",
+      "durationMs": 160,
       "sourceBounds": [
-        23,
-        29,
-        395,
-        414
+        18,
+        27,
+        403,
+        418
       ],
       "sourceAnchor": [
-        186.0,
-        385
+        192.0,
+        390.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        39,
-        35
+        34,
+        36
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "continuous midway transition from hold log above stack toward lower log halfway",
-      "durationMs": 125,
+      "description": "lower held log toward rack",
+      "durationMs": 140,
       "sourceBounds": [
-        466,
-        33,
-        839,
-        414
+        461,
+        31,
+        848,
+        418
       ],
       "sourceAnchor": [
-        186.5,
-        381
+        192.5,
+        386.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        41
+        34,
+        42
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "lower log halfway",
-      "durationMs": 125,
+      "description": "halfway lowering of same log",
+      "durationMs": 140,
       "sourceBounds": [
-        909,
-        44,
-        1283,
-        413
+        902,
+        41,
+        1291,
+        418
       ],
       "sourceAnchor": [
-        187.0,
-        369
+        195.0,
+        376.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        59
+        30,
+        57
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "continuous midway transition from lower log halfway toward place log onto stack",
-      "durationMs": 125,
+      "description": "approach final support",
+      "durationMs": 140,
       "sourceBounds": [
-        1353,
-        48,
-        1726,
-        413
+        1346,
+        46,
+        1737,
+        418
       ],
       "sourceAnchor": [
-        186.5,
-        365
+        194.5,
+        371.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        65
+        31,
+        64
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "place log onto stack",
-      "durationMs": 125,
+      "description": "place log onto rack",
+      "durationMs": 160,
       "sourceBounds": [
-        23,
-        482,
-        395,
-        857
+        18,
+        481,
+        404,
+        862
       ],
       "sourceAnchor": [
-        186.0,
-        375
+        192.0,
+        379.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        39,
-        50
+        34,
+        52
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "continuous midway transition from place log onto stack toward adjust log securely with hands",
-      "durationMs": 125,
+      "description": "steady newly placed log",
+      "durationMs": 140,
       "sourceBounds": [
-        466,
-        485,
-        839,
-        857
+        462,
+        484,
+        849,
+        862
       ],
       "sourceAnchor": [
-        186.5,
-        372
+        191.5,
+        376.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        54
+        35,
+        57
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "adjust log securely with hands",
-      "durationMs": 125,
+      "description": "align and secure delivered log",
+      "durationMs": 140,
       "sourceBounds": [
-        909,
-        486,
-        1282,
-        857
+        904,
+        484,
+        1292,
+        862
       ],
       "sourceAnchor": [
-        186.5,
-        371
+        193.0,
+        376.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        56
+        33,
+        57
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "continuous midway transition from adjust log securely with hands toward hold log above stack",
-      "durationMs": 125,
+      "description": "withdraw both empty hands; delivered log remains",
+      "durationMs": 180,
       "sourceBounds": [
-        1353,
+        1342,
         465,
-        1726,
-        857
+        1748,
+        863
       ],
       "sourceAnchor": [
-        186.5,
-        392
+        198.5,
+        395.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        38,
-        24
+        25,
+        28
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,35 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1200,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      160,
+      140,
+      140,
+      180
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
   },
-  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
-  }
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 592,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "2555f6371a20a29d9ac24decdc43d139245c1ff3afff8bf88f203db1725dfd8c",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
 }

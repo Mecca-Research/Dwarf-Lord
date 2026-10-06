@@ -1,0 +1,136 @@
+{
+  "character": "Ginger",
+  "action": "saw-timber",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/saw-timber/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2",
+  "settingsSha256": "acce516e7cac6dcbba6b15f853653bd14eee2c6df5391a2b2a62a6c12b7e0c3d",
+  "nativeReviewSha256": "62df6bb46cdb2496c907aaa72182b893e44b2c4c3094a760d695248c4b0bc93e",
+  "checks": {
+    "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains the D-handle saw through near0/1, forward2/3/4 and return5/6/7. Left palm braces the same intact beam on two wooden trestles. Blade remains straight and teeth meet the same kerf region. No separated timber or completed saw-through is certified.",
+    "prop-continuity": "Right hand retains the D-handle saw through near0/1, forward2/3/4 and return5/6/7. Left palm braces the same intact beam on two wooden trestles. Blade remains straight and teeth meet the same kerf region. No separated timber or completed saw-through is certified.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "a0eabad7d80268826d539353ed2bd64b4e38de34c075f69a5a5caff8ce5444b2",
+    "settingsSha256": "acce516e7cac6dcbba6b15f853653bd14eee2c6df5391a2b2a62a6c12b7e0c3d",
+    "frameSha256": [
+      "3337370017f5deb4770ef44dcced7cbecdf69128db97ceedf792023cdcb10c49",
+      "b436da4b06a432393f9a4cf5226a1f7c4d55bfd6892ab9ef3903b05754c93616",
+      "df66f08c65bbf1bbda6bd6adea52387786818a41a46d4014f80c8a6617bbec35",
+      "9189f5c2d4ce2f987037cea1a04f2c7ad9fd5da7d4e83cbbefe72686bf6c1956",
+      "5fc44c81554ce6d661f498983a246ec56afead37a32fcbc6153c2878070585a2",
+      "f04366f5c2e199305e51e097071620d900e49f34cc6e56c661277c0b875a6704",
+      "b39043eb852c52eb9498ee1c5bc9cc02fcf54fef042533c85b29db3cd53a6ca3",
+      "1e83ca93e1fe20a79c2bba341d57374006406e9077761d5377fcc25528811198"
+    ],
+    "atlasSha256": "53ee2b6823d31a57310b47b93202c8e86ad6759ff5f9c0ea58eb96ec7395203b",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "acce516e7cac6dcbba6b15f853653bd14eee2c6df5391a2b2a62a6c12b7e0c3d",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          260,
+          440,
+          575,
+          610
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              4.0539074319667634e-08,
+              9.596254813004634e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97477,
+            "measuredCorrectionPx": [
+              -2.290825366973877,
+              -1.0095235109329224
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96856,
+            "measuredCorrectionPx": [
+              -5.567544460296631,
+              -1.3309907913208008
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.975,
+            "measuredCorrectionPx": [
+              -4.775396823883057,
+              -0.7009764313697815
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93571,
+            "measuredCorrectionPx": [
+              -6.466954708099365,
+              -1.736574649810791
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95501,
+            "measuredCorrectionPx": [
+              -4.070140838623047,
+              -1.9199211597442627
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98039,
+            "measuredCorrectionPx": [
+              -2.7270243167877197,
+              -1.3570982217788696
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96868,
+            "measuredCorrectionPx": [
+              -3.520806074142456,
+              -2.2648379802703857
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "saw-timber",
+    "direction": "reference"
+  }
+}

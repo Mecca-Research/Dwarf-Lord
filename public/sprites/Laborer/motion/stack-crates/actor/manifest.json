@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Laborer",
+  "action": "stack-crates",
+  "title": "Stack crates",
+  "direction": "actor",
+  "kind": "new-work",
+  "reference": "../../../animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "add68891f07d7f3a702806a2a3508f1f55546c345a9b1381cad2e273ac38973a",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "hold crate at waist",
+      "durationMs": 140,
+      "sourceBounds": [
+        232,
+        227,
+        450,
+        599
+      ],
+      "sourceAnchor": [
+        88.0,
+        373.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        92,
+        243
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "bend knees slightly",
+      "durationMs": 140,
+      "sourceBounds": [
+        883,
+        268,
+        1137,
+        601
+      ],
+      "sourceAnchor": [
+        77.0,
+        332.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        103,
+        284
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift toward stack",
+      "durationMs": 105,
+      "sourceBounds": [
+        1525,
+        225,
+        1846,
+        602
+      ],
+      "sourceAnchor": [
+        75.0,
+        375.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        105,
+        241
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "extend arms over stack",
+      "durationMs": 115,
+      "sourceBounds": [
+        2150,
+        219,
+        2521,
+        598
+      ],
+      "sourceAnchor": [
+        90.0,
+        381.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        90,
+        235
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "lower crate onto stack",
+      "durationMs": 140,
+      "sourceBounds": [
+        224,
+        866,
+        602,
+        1236
+      ],
+      "sourceAnchor": [
+        96.0,
+        374.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        84,
+        242
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "release weight",
+      "durationMs": 140,
+      "sourceBounds": [
+        883,
+        873,
+        1254,
+        1240
+      ],
+      "sourceAnchor": [
+        77.0,
+        367.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        103,
+        249
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "align crate edges",
+      "durationMs": 105,
+      "sourceBounds": [
+        1524,
+        875,
+        1898,
+        1240
+      ],
+      "sourceAnchor": [
+        76.0,
+        365.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        104,
+        251
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "withdraw hands",
+      "durationMs": 115,
+      "sourceBounds": [
+        2165,
+        870,
+        2551,
+        1240
+      ],
+      "sourceAnchor": [
+        75.0,
+        370.0
+      ],
+      "groundAnchor": [
+        180,
+        616
+      ],
+      "placement": [
+        105,
+        246
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      180,
+      616
+    ],
+    "targetBodyHeight": 500,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "8f00925622713079de9a25f84b8360f9bdba89b1b4872913c52edfedca7ee348",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "One fixed-view crate placement task: lift, carry upward, place, release and hold. Explicit new-task reset is separate. Continuous7-to0 repeat is NOT approved; no walk, other load, inventory creation or all-direction contact approval."
+  }
+}

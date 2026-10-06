@@ -1,0 +1,14 @@
+{
+  "prompt": "Correct this exact transparent 4x2 sprite sheet so every dwarf AND tool is complete with generous transparent borders. In particular the raised hammer in TOP THIRD pose currently touches/crosses the top edge; redraw the missing uppermost part of its steel hammer head and leave at least 25px transparent margin above it. Uniformly reduce all eight complete poses very slightly if needed to fit them into equal cells with 25px outside margins and wide row gutters. Exact same eight repair-pickaxe poses, stocky bald Blacksmith identity, brass-bound charcoal beard, leather apron, olive trousers, boots, wooden chair, left hand supporting ONE straight upright complete pickaxe, right hand gripping ONE connected hammer. Preserve root plane and physical body scale consistently in all8. No furniture except chair, no workbench, no spare tools, no text. Hammer raised2 now fully visible, then descending3, contact4, controlled rebound5, lower6, return7; no tool vanishing or swapping hands. Transparent background.",
+  "references": [
+    {
+      "file": "first-attempt39.png",
+      "sha256": "010488f45d1f7c9631a71317ef32fbd3f5efd67acebb85ae474512513d136531"
+    }
+  ],
+  "output": "source39.png",
+  "outputSha256": "666e69e24a66044f6858fb0062f49ec0fbf6deb038525d981f99450f06587d57",
+  "method": "Built-in image generation; whole sheet correction to retain complete raised hammer and transparent outer margins.",
+  "firstAttemptDecision": "Rejected due clipped raised hammer at top source border.",
+  "selectedDecision": "Pending actual layered tool review."
+}

@@ -1,0 +1,25 @@
+{
+  "key": "laborer-rig-single2-40",
+  "pose": 2,
+  "decision": "unselected",
+  "prompt": "Create ONE full-body rear-left walking sprite of the Laborer dwarf. FIRST image defines the skeletal/boot POSE and same overhead rear-left CAMERA; SECOND image provides only his FACE/IDENTITY and realistic skin/linen/leather appearance. This is a new pose drawn from a rig, not a copy of a prior full-body gait frame. Bald stocky dwarf, dark beard with two short brass-bound tips, cream rolled sleeves, scratched warm brown leather waistcoat, dark brown trousers, thick rigid brown leather boots with brass OUTER buckles. In this rear-left camera only his left cheek/beard edge is visible and his back faces us; do NOT use the portrait's front camera. Looking/heading away diagonally UPPER LEFT, camera looking down34degrees. Orange in FIRST means anatomical NEAR LEFT, blue means anatomical FAR RIGHT; replace ALL guide colors/labels/grid/block shapes/marks with real anatomy and detailed materials, no text remains. Keep a broad stocky torso and short powerful legs, not long human legs. Render anatomically correct bent shins/knees and real boot volumes from the indicated rigid boot orientations. A PLANTED boot's sole lies FLAT on the invisible ground plane with TOE notably UP-LEFT of HEEL; do not turn it sideways/horizontal or falsely lift its toe. Follow each indicated limb separately, two connected legs only. Same fixed camera, realistic fine-rendered game-sprite materials, complete head/body/boots with large empty margins. Transparent alpha background; no floor, shadow, props, tools or scenery. Pose2: anatomical FAR RIGHT (blue) is the SUPPORT LEG: heel on lower viewer-right, rigid flat sole under the hip, toe pointing up-left in the correct ground plane, supporting weight. Anatomical NEAR LEFT (orange) is the AIRBORNE PASSING LEG: bend its knee forward/up, boot passes visibly in front/left of far shin, with at least one boot-thickness of air above the support ground. Near LEFT outer buckle faces the viewer on that airborne boot. Far RIGHT buckle is on hidden far side, not copied to inner heel. Both arms hang at neutral counter-swing passage. Do not put the near left boot on the floor. Do not show both feet supporting or the near left leg trailing backward. Grounded far right boot must remain fully connected, visible heel and exposed toe/outsole edge outside the raised nearer boot.",
+  "inputs": [
+    {
+      "file": "guide-pose-2.png",
+      "sha256": "eebe503bf3995dae4541927d4104f70d7e6e5f3b765ce175a398471d60c81ecc"
+    },
+    {
+      "file": "single-pose-identity.png",
+      "sha256": "ce3d6f45df3ee5a98f509ba89b7c71e2158616e6a9ce8def40b82e023fe7f2de"
+    }
+  ],
+  "output": "laborer-rig-single2-40.png",
+  "outputSha256": "3661441093a9fda25b060990ff4f625fb216625bad13fdf50ea72abd9b5a0941",
+  "finding": "Leg/support arrangement is closer to the indicated target, but not a full stride acceptance.",
+  "issues": [
+    "Rear waistcoat/waist strap details differ from the canonical selected rear render.",
+    "Camera and common body scale across all eight phases are unverified.",
+    "Guide coordinates are targets only, not measured material sole contacts or an acceptance."
+  ],
+  "scope": "Native single-pose review; no numerical or gameplay approval."
+}

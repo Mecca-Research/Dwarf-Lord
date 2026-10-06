@@ -1,0 +1,15 @@
+{
+  "prompt": "Use case: precise-object-edit. Image1 is the same detailed bald Blacksmith walking LEFT, eight poses in4 columns\u00d72 rows. Correct ONLY the THIRD pose in EACH row (pose2 top third, pose6 bottom third). Keep the other six poses, character, materials, camera, scale, transparent background and sheet layout unchanged. These two are the mid-passing phases and currently show a raised boot still trailing behind while the planted boot is ahead. REPLACE both full leg poses in these two cells: draw the SUPPORTING boot planted FLAT directly beneath the pelvis, instead of forward in front of it. The SUPPORTING knee should be vertical over that ankle. Bend the opposite SWING knee UP and FORWARD toward screen LEFT and draw its boot visibly AIRBORNE in front of the planted shin, its toe left of the planted shin, not dangling behind the body. Neither is a backward kick. Pose2 uses FAR LEFT support and NEAR RIGHT airborne passing leg; pose6 uses NEAR RIGHT support and FAR LEFT airborne passing leg. Preserve visible source boot identity: same heavy iron toe caps, leather straps, buckle, sole and heel, opposite anatomical leg ownership. Image2 shows the equivalent accepted passing pose viewed from the opposite side; use its actual bent knee/raised boot and planted leg relationship, but render from this LEFT-facing camera without mirroring. Keep slight lateral separation to expose the farther sole. Arms at neutral in these two cells, opposite leg/arm sequence in the other six cells unchanged. Continuous stocky dwarf pelvis above planted leg, no torso rotation, no extra limbs, no guide graphics, no labels, no floor or shadow. Eight distinct complete full-body poses with head/boots uncropped.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-guide47.png",
+      "sha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/walk/right/02.png",
+      "sha256": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687"
+    }
+  ],
+  "output": "strip-passing47.png",
+  "outputSha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290"
+}

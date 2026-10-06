@@ -1,0 +1,16 @@
+{
+  "key": "Ginger-chop-downed-log",
+  "character": "Ginger",
+  "action": "chop-downed-log",
+  "prompt": "Edit this exact eight-frame 4-column by 2-row transparent sprite sheet. Keep dimensions, frame positions, identity, clothing, boots, chopping stump and every surrounding piece of wood EXACTLY as supplied. Change ONLY the final pose, frame 7 (bottom-right). Its workpiece must remain the TWO SPLIT LOG HALVES with the same gap and cut faces seen in frame 6 (bottom row THIRD); the log must not regenerate as an intact round log. Preserve the two halves' exact placement on top of the same stump. Show Ginger recovering after the chop, holding the same axe in both hands, with its blade lowered just above the split central gap. Preserve all seven other poses, same scale, camera, physical stance, fixed stump silhouette and grain, no shifting feet. Do not repaint furniture, do not alter axe design or dwarf identity, do not add/lose wood pieces. Transparent background. This is a finite one-log splitting action whose terminal material state remains split, not a repeating reset.",
+  "method": "Built-in whole-sheet image edit; exact supplied source inspected first. No synthesized limb motion or local pixel redraw.",
+  "references": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc"
+    }
+  ],
+  "output": "authoring-inputs/Ginger-chop-downed-log39.png",
+  "outputSha256": "e51ab71671949afa9f8d328525ad264ccfd9cb9d8582e2f153a7ac38358e1887",
+  "decision": "Rejected: final split is retained but fixed-stump correlation0.9143 failed unchanged0.93 threshold. No selected poses; second whole-sheet method is the selected candidate."
+}

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "checkpoint": "motion46",
+  "baseline": "71bedfb1fa40ec5f56a629de81929a5432289761",
+  "addedMappings": [
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7",
+      "sha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "adc578672f22efe0272aa890e29142c762f45d8f91c73e55385cc89105ae1f58",
+      "sha256": "e3703c131b098ba00b72c5c9e9ad68d5c268dc17ba674dd85cd81b2297d1ca6d"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "8d4e7385cdaeda387b78bcc5c92db8476f7dd3960b8fcfa025a6b36e3bfc8471",
+      "sha256": "aecf6824c1fdbefd93fedeb646c0f682a8d70eed1e2900876d65249ddb54ef45"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "27c688110fd815c86bdba16fddf57f197d243f03b8c792ebcf437a296ba50368",
+      "sha256": "bce95083fe1f777a3937e43473b2fad40a378e80f8276c026e6a4c2ec16504b4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "3f1db1827c5f9a86df835e4181f1dab444c8c18636c466b957080bdf802bdc4d",
+      "sha256": "a61b2b45ee632e9e3437c5b0dc6bc7b8c07dfc6b823902080efbbea08546e235"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "dcbf1aa227bafc7270b1c0e334eab30623b3f743c2e05d7f0a76e9ceb45017ba",
+      "sha256": "4fc221127fb187ab56dff3361f2fc8d14a61d7a85a3e2380adecf95dff8cdae6"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "beforeSha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989",
+      "sha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352"
+    },
+    {
+      "file": "scripts/consultant-work-check.mjs",
+      "beforeSha256": "cf7b9d1e29293c0e9df8412ce433ff3a1934d354ed0ca04dd30e766c978651e8",
+      "sha256": "0f4523540a68a6b2bc790318efa50e57d61a3985a73e4cb9de24284a3a09d095"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "c10b9be18723e8e3ce48761c69eceeacc871d3ef99bca3f3612bd1e24cd2a8a9",
+      "sha256": "54d3f8ffa3367ce0917a57b0afeffc47de92ad44ba0b888be89fd4d9fa9b61f0"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/generation.json",
+      "beforeSha256": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc",
+      "sha256": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3"
+    },
+    {
+      "file": "public/sprites/workstations/ledger-desk/sprite.png",
+      "beforeSha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba",
+      "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "91d5f17caade6f6c4b8fc2084b3de03f550ed61eecf2cd20945bfb58fede5444",
+      "sha256": "e16eccb47ec528aaa37a267d6cec224ac1547513450511850a210244814a968e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "cc843eab8bc65e81be6165c56972a11179c7934790f968df8317e89db9faaa40",
+      "sha256": "9d4e583b011635eabc8f0627b7824946e0f55f6112f537f8b996ae21dd336b10"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "51ffc8f8027b1822752a2c16e8032d36f5ea7ffc855f0efc3afde75fe07f83ba",
+      "sha256": "f476d37cf3ad69d1d259868791bf7a79753f96cbb07400fb74e2622388674dec"
+    }
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion46/runtime-revalidation.json",
+    "sha256": "fe51d864edab2c2a1448f7c3cee16a14e41d92d1de31876f742f87db2030e1db"
+  },
+  "scope": "Only existing accepted Borrin paperwork gains an actual finite live mapping. Frozen160, all11 families and original49/7 scoped acceptances unchanged. Eight derived actors have separate finite task approvals. No automatic reward, seamless loop or moving contact is inferred."
+}

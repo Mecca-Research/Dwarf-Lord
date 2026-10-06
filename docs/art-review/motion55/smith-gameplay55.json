@@ -1,0 +1,1069 @@
+{
+  "method": "Controlled clock, actual Three renderer and job/day controls. No direct animation frame mutation.",
+  "seen": [
+    {
+      "day": 1,
+      "action": "hammer-contact",
+      "x": 6,
+      "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+      "atlasSha256": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "anvil",
+      "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 5.520000000000001,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 1.9008,
+        "workMotion": {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "hammer-contact",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "action": "inspect-tool",
+      "x": 6,
+      "sourceSha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+      "atlasSha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "anvil",
+      "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 5.520000000000001,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 5.864599999999997,
+        "workMotion": {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "inspect-tool",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "action": "repair-pickaxe-handle",
+      "x": 3,
+      "sourceSha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656",
+      "atlasSha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "repair-bench",
+      "propSha256": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 2.5200000000000014,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 9.863599999999982,
+        "workMotion": {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "repair-pickaxe-handle",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "action": "anvil-ready",
+      "x": 6,
+      "sourceSha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+      "atlasSha256": "dcc5b78d9d2afb88ef15c41b6e2637861fde5d5f57d99d04681372b0d18399a3",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "anvil",
+      "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 5.520000000000001,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 13.844999999999967,
+        "workMotion": {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "anvil-ready",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "anvil-ready",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "action": "hammer-raised",
+      "x": 6,
+      "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+      "atlasSha256": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "anvil",
+      "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 5.520000000000001,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 17.881399999999996,
+        "workMotion": {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-raised",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "hammer-raised",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "action": "hammer-contact",
+      "x": 6,
+      "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+      "atlasSha256": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a",
+      "calibrationSha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b",
+      "station": "anvil",
+      "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 5.520000000000001,
+        "z": -7,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 21.852200000000067,
+        "workMotion": {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "hammer-contact",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Five daily cosmetic forge operations over six days, including raised-hammer edge tap, preparation and restoration of day1 forging. Resource and building rewards remain in existing day resolution, outside the animation controller."
+}

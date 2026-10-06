@@ -1,0 +1,16 @@
+{
+  "key": "Laborer-shovel-rubble",
+  "character": "Laborer",
+  "action": "shovel-rubble",
+  "prompt": "Edit this exact eight-frame 4-column by 2-row transparent sprite sheet. Keep the same dimensions, frame positions, canonical bald dwarf with dark braided beard, boots, shovel, rubble pile and wheelbarrow geometry EXACTLY as supplied. Change ONLY frame 7 (bottom-right). Preserve the deposited grey rubble load in the receiving wheelbarrow, matching the full load and pile outline from frame 6 (bottom row THIRD). Do not empty the wheelbarrow on return. Keep frame 7's return pose with both hands visibly gripping the same connected shovel, its empty blade lowered onto the source rubble pile. All other seven poses stay unchanged. Keep identical barrow wheel, handles, sides, scale, camera angle, feet positions, perspective and lighting. No additional limbs, no missing/tool fragments, no new objects, transparent background. The sequence ends after one scoop delivery with the load retained.",
+  "method": "Built-in whole-sheet image edit; exact supplied source inspected first. No synthesized limb motion or local pixel redraw.",
+  "references": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7"
+    }
+  ],
+  "output": "authoring-inputs/Laborer-shovel-rubble39.png",
+  "outputSha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810",
+  "decision": "Candidate selected pending native registration and timing review."
+}

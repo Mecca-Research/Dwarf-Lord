@@ -1,0 +1,1069 @@
+{
+  "method": "Controlled clock and actual Three renderer; job/day controls, with no direct animation frame mutation.",
+  "seen": [
+    {
+      "day": 1,
+      "action": "chop-vegetables",
+      "x": -0.5,
+      "station": "cutting-block",
+      "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+      "atlasSha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+      "naturalArrival": false,
+      "arrival": {
+        "id": "kori",
+        "x": -0.5,
+        "z": 4.5,
+        "yaw": 0.86,
+        "facing": 6,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 0.0704,
+        "workMotion": {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "chop-vegetables",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "action": "peel-potatoes",
+      "x": -3.5,
+      "station": "potato-block",
+      "sourceSha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+      "atlasSha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -3.5,
+        "z": 4.999999999999999,
+        "yaw": 0,
+        "facing": 5,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 2.8694,
+        "workMotion": {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "peel-potatoes",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "peel-potatoes",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "action": "knead-dough",
+      "x": -6.5,
+      "station": "dough-block",
+      "sourceSha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63",
+      "atlasSha256": "c52bb366181eaa84b87b0da385c26c5c3dfd984e8bc082e654cb71075dd17ed5",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -6.745065099582098,
+        "z": 4.91181445935406,
+        "yaw": -0.5367985743617621,
+        "facing": 4,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 4.170800000000001,
+        "workMotion": {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "knead-dough",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "knead-dough",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "action": "stir-cauldron",
+      "x": -9.5,
+      "station": "stew-cauldron",
+      "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+      "atlasSha256": "1c7deac6f3a281a892daed4725498c5aff19281d75265f02d9d69ccf66cf8967",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -9.5,
+        "z": 4.999999999999999,
+        "yaw": 0,
+        "facing": 5,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 7.1325999999999885,
+        "workMotion": {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "stir-cauldron",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "stir-cauldron",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "action": "mix-ingredients",
+      "x": -12.5,
+      "station": "mixing-block",
+      "sourceSha256": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c",
+      "atlasSha256": "90ae6011dd645a7823a59ea5b59fc64c213a17cca8cc2913f48520e298dfe39f",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -12.5,
+        "z": 4.999999999999999,
+        "yaw": 0,
+        "facing": 5,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 9.986599999999978,
+        "workMotion": {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "mix-ingredients",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "mix-ingredients",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "action": "chop-vegetables",
+      "x": -0.5,
+      "station": "cutting-block",
+      "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+      "atlasSha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+      "calibrationSha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf",
+      "propSha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "kori",
+        "x": -0.5,
+        "z": 4.999999999999999,
+        "yaw": 0,
+        "facing": 5,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 12.965999999999966,
+        "workMotion": {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "chop-vegetables",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "chop-vegetables",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Five daily cosmetic meal operations and day6 recipe return; exact source/atlas/calibration/prop hashes, natural arrivals, all eight kneading/stirring/mixing poses, camera-preserved holds, persistent flour table/cauldron, completed mixing bowl and completed dough after departure. Cancellation before kneading finishes creates no prop. Mixing transfers no ingredients or reward. Economic output remains in existing day resolution; no baking, boiling simulation, serving or seamless-loop approval."
+}

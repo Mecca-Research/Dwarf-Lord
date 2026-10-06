@@ -1,0 +1,42 @@
+{
+  "character": "Elder",
+  "action": "walk",
+  "title": "Walking cycle",
+  "reference": "public/sprites/Elder/animation/04-back.png",
+  "beats": [
+    "left heel contact, right toe behind",
+    "left weight down, right heel lifts",
+    "right foot airborne passing left support leg",
+    "right leg extends forward, left heel rises",
+    "right heel contact, left toe behind",
+    "right weight down, left heel lifts",
+    "left foot airborne passing right support leg",
+    "left leg extends forward, right heel rises"
+  ],
+  "kind": "walk",
+  "direction": "back",
+  "notes": "No workstation or scenery. Natural full-body walk in place with opposite-leg contact poses and counter-swinging arms. Walk carefully supported by wooden walking stick in right hand; coordinate stick plant, weight transfer and recovery.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Elder/motion/walk/back",
+  "prompt": "Use case: precise-object-edit. Edit this Elder dwarf REAR VIEW walking sprite sheet. Preserve 4 columns 2 rows and all eight complete figures, exact stocky elderly dwarf identity, bald head, embroidered green coat, brown waistcoat, boots, straps and pouch on his anatomical RIGHT hip (screen right). Fix ONLY the walking-stick arm/prop continuity: in the four BOTTOM ROW cells his right arm wrongly becomes straight down and the cane shrinks. Redraw each bottom-row RIGHT arm with its elbow gently bent and right hand at the SAME waist-high grip level as the top-row figures. SAME cane length, thickness, wood grain and rubber ferrule as the top row; no telescoping cane. Anatomical right is SCREEN RIGHT for this rear view. All eight right hands close correctly around the top of the cane. Cane makes small natural forward/back tilts around that grip while keeping fixed length; no detached sticks or extra hands. Preserve ALL leg poses and their positions unchanged; do NOT reorder frames, mirror or change direction. Preserve camera, scale and lighting. Genuine transparent background (no brown matte or glow), ample empty margin and separated cells. No text or labels.",
+  "sourceName": "exec-f7d62dd8-750c-4f39-aa1d-51da36970f52.png",
+  "originalPrompt": "Generate a transparent game sprite sheet: exactly EIGHT separate full-body sprites in FOUR columns and TWO rows, no text, no environment. Preserve this reference dwarf's identity, clothes, materials, proportions, semi-realistic rendering and EXACT camera orientation across every frame. All eight figures face back as in the reference, no turnarounds. Animate a full alternating-leg walk in place with his wooden walking stick in RIGHT hand. Show substantial leg articulation, not eight copies of one stride. Row 1: anatomical LEFT foot contact, left weight down, right foot passes planted left leg, right foot reaches ahead. Row 2: anatomical RIGHT foot contact (opposite leading foot from row1), right weight down, left passes planted right leg, left reaches ahead. Stick plants and lifts with weight transfer, same hand throughout. Exactly two legs, two arms, one stick. Fixed camera, constant character size and light, distinct poses, all feet and whole stick visible with generous transparent gutters. Actual alpha transparency, no painted background.",
+  "editInputSha256": "1e987ca0533f0f44c182b741dcf74f4a4391212fb2e657c43e8e6c27b47231de",
+  "previousGenerationPrompt": "Use case: precise-object-edit. Edit this exact eight-frame 4-column 2-row sprite sheet. Fix ONLY the walking stick handedness in the BOTTOM FOUR sprites: the Elder must hold the stick in his anatomical RIGHT hand, which is screen RIGHT in this straight BACK view, matching all four top-row sprites. Remove the stick from his left hand on screen LEFT in each bottom-row sprite, put the free left hand naturally by his side, and place the SAME wooden stick in his RIGHT hand on screen RIGHT. Every one of the eight sprites must have precisely one walking stick, on the screen-right side. Preserve all original foot poses, body direction, clothes, bald head, camera, sprite positions, sizes, eight-cell layout and transparency. Do NOT mirror any character, do NOT move the belt pouch, do NOT invent new items. Keep the background genuinely transparent.",
+  "editInput": {
+    "file": "authoring-inputs/original-sheet.png",
+    "sha256": "142b4bc585820708198f8ee09ac17658635bd532a39b2f897e2135b79c1da1c2"
+  },
+  "frameOrder": [
+    0,
+    5,
+    2,
+    3,
+    4,
+    1,
+    6,
+    7
+  ],
+  "frameOrderNote": "Exchange the authored down poses 1 and 5 so the supporting leg agrees with preceding contact. Leg artwork unchanged by export."
+}

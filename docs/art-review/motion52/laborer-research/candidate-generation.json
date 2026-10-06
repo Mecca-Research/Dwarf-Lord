@@ -1,0 +1,33 @@
+{
+  "method": "built-in-full-strip-authored-animation",
+  "candidate": true,
+  "prompt": "Use case: sketch-to-render. Asset: complete eight-frame Laborer dwarf walking animation strip, four columns and two rows, on real transparent alpha. Reference1 is a physical whole-body animation guide, not final artwork: follow its connected limbs and boot placement in every numbered cell. Reference2 supplies the canonical Laborer identity/costume/material; it deliberately excludes legs to avoid repeating the old faulty gait. Render one consistent stocky bald dwarf with a brown beard, cream rolled sleeves, worn brown leather waistcoat with waist belt and paneled hem, olive-grey trousers, heavy brown buckled leather boots. Same detailed semi-realistic rendering as reference2, same rear-left elevated three-quarter camera, looking and moving toward upper-left throughout. Keep the same head/torso size and pelvic center in all eight cells; exact four-by-two layout, complete uncut body in every cell, modest bob only. The near anatomical LEFT leg/arm is orange in the guide; the far anatomical RIGHT leg/arm is blue. These colors and all diagram marks must be absent from final art.\nTop0: far RIGHT heel leads, near LEFT trailing toe supports with raised heel; near LEFT arm forward, far RIGHT arm back. Top1: far RIGHT boot settles flat, near LEFT foot lifts/recovering. Top2: far RIGHT sole supports under hips, near LEFT recovering boot passes forward beside it, arms near neutral. Top3: far RIGHT trailing toe pushes off, near LEFT heel reaches forward airborne; near LEFT arm back, far RIGHT arm forward. Bottom4: near LEFT leading heel contacts, far RIGHT trailing toe still down; near LEFT arm back. Bottom5: near LEFT boot settles flat, far RIGHT foot recovers. Bottom6: near LEFT sole supports under hips, far RIGHT recovering foot passes forward, neutral arms. Bottom7: near LEFT trailing toe pushes off, far RIGHT heel reaches forward airborne, near LEFT arm forward/far RIGHT arm back; subsequent top0 is the new heel contact. Both knees belong to their respective sides of the pelvis, with separate connected shins and boots; no knee/foot swap or same-leg lead in0 and4. Preserve consistent boot shape, buckles and sole material.\nThe guide's support contacts advance consistently along the same projected ground direction, with all eight handoffs and0-return planned. Its pale heel/toe dots are AUTHORING TARGETS ONLY, never painted dots or proof. Grounded soles must follow this geometry while the opposite foot clears the ground; do not leave both feet airborne. Preserve both complete boots and readable actual lower sole contours so the output can be independently measured. Author all eight coherent full-body poses together. No scenery, tools, floor, shadows, labels, numbers, guide strokes, colored outlines, marker dots, duplicated stance, zoomed cells or poster background. Genuine transparency. One entire wide eight-frame strip. Do not copy the red/yellow fringe pixels on the identity crop. No additional equipment or costume changes.",
+  "editHistory": [
+    {
+      "prompt": "Use case: sketch-to-render. Asset: complete eight-frame Laborer dwarf walking animation strip, four columns and two rows, on real transparent alpha. Reference1 is a physical whole-body animation guide, not final artwork: follow its connected limbs and boot placement in every numbered cell. Reference2 supplies the canonical Laborer identity/costume/material; it deliberately excludes legs to avoid repeating the old faulty gait. Render one consistent stocky bald dwarf with a brown beard, cream rolled sleeves, worn brown leather waistcoat with waist belt and paneled hem, olive-grey trousers, heavy brown buckled leather boots. Same detailed semi-realistic rendering as reference2, same rear-left elevated three-quarter camera, looking and moving toward upper-left throughout. Keep the same head/torso size and pelvic center in all eight cells; exact four-by-two layout, complete uncut body in every cell, modest bob only. The near anatomical LEFT leg/arm is orange in the guide; the far anatomical RIGHT leg/arm is blue. These colors and all diagram marks must be absent from final art.\nTop0: far RIGHT heel leads, near LEFT trailing toe supports with raised heel; near LEFT arm forward, far RIGHT arm back. Top1: far RIGHT boot settles flat, near LEFT foot lifts/recovering. Top2: far RIGHT sole supports under hips, near LEFT recovering boot passes forward beside it, arms near neutral. Top3: far RIGHT trailing toe pushes off, near LEFT heel reaches forward airborne; near LEFT arm back, far RIGHT arm forward. Bottom4: near LEFT leading heel contacts, far RIGHT trailing toe still down; near LEFT arm back. Bottom5: near LEFT boot settles flat, far RIGHT foot recovers. Bottom6: near LEFT sole supports under hips, far RIGHT recovering foot passes forward, neutral arms. Bottom7: near LEFT trailing toe pushes off, far RIGHT heel reaches forward airborne, near LEFT arm forward/far RIGHT arm back; subsequent top0 is the new heel contact. Both knees belong to their respective sides of the pelvis, with separate connected shins and boots; no knee/foot swap or same-leg lead in0 and4. Preserve consistent boot shape, buckles and sole material.\nThe guide's support contacts advance consistently along the same projected ground direction, with all eight handoffs and0-return planned. Its pale heel/toe dots are AUTHORING TARGETS ONLY, never painted dots or proof. Grounded soles must follow this geometry while the opposite foot clears the ground; do not leave both feet airborne. Preserve both complete boots and readable actual lower sole contours so the output can be independently measured. Author all eight coherent full-body poses together. No scenery, tools, floor, shadows, labels, numbers, guide strokes, colored outlines, marker dots, duplicated stance, zoomed cells or poster background. Genuine transparency. One entire wide eight-frame strip. Do not copy the red/yellow fringe pixels on the identity crop. No additional equipment or costume changes.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "authoring-inputs/reference52-0.png",
+          "sha256": "75c7d7d673eab7c160b9c282ee3d2ac01c9be522a9fb0748a9c47417967e33dc"
+        },
+        {
+          "file": "authoring-inputs/reference52-1.png",
+          "sha256": "be0afe2abfe443ecbfcfc9e91022599ccbb388441bf6e469c50a9d8a9a24f707"
+        }
+      ],
+      "output": "authoring-inputs/strip52.png",
+      "outputSha256": "517342b84048e51ae3ead80f6ff7d26504bb6a3e94d2b2f3383342470315552e"
+    }
+  ],
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Elder",
+  "action": "walk",
+  "title": "Walking cycle",
+  "direction": "right",
+  "kind": "walk",
+  "reference": "../../../../../public/sprites/Elder/animation/02-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "0ff74727876ed7fd55ad67591787ceaa8f1dbb86ff16b78b9c0058bb2edf10a5",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "left heel contact, right toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        128,
+        82,
+        540,
+        600
+      ],
+      "sourceAnchor": [
+        192.0,
+        518.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        120,
+        77
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "left weight down, right heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        800,
+        86,
+        1138,
+        600
+      ],
+      "sourceAnchor": [
+        160.0,
+        514.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        154,
+        81
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "right foot airborne passing left support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        1456,
+        84,
+        1774,
+        600
+      ],
+      "sourceAnchor": [
+        144.0,
+        516.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        170,
+        79
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "right leg extends forward, left heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        2101,
+        87,
+        2443,
+        600
+      ],
+      "sourceAnchor": [
+        139.0,
+        513.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        175,
+        82
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "right heel contact, left toe behind",
+      "durationMs": 125,
+      "sourceBounds": [
+        139,
+        752,
+        549,
+        1239
+      ],
+      "sourceAnchor": [
+        181.0,
+        488.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        132,
+        108
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "right weight down, left heel lifts",
+      "durationMs": 125,
+      "sourceBounds": [
+        796,
+        753,
+        1183,
+        1240
+      ],
+      "sourceAnchor": [
+        164.0,
+        487.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        110
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "left foot airborne passing right support leg",
+      "durationMs": 125,
+      "sourceBounds": [
+        1444,
+        753,
+        1832,
+        1240
+      ],
+      "sourceAnchor": [
+        156.0,
+        487.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        158,
+        110
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "left leg extends forward, right heel rises",
+      "durationMs": 125,
+      "sourceBounds": [
+        2071,
+        753,
+        2459,
+        1240
+      ],
+      "sourceAnchor": [
+        169.0,
+        487.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        144,
+        110
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "loop-candidate",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

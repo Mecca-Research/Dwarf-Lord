@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "inputs": [
+    {
+      "id": "filled48",
+      "file": "authoring-inputs/strip-filled48.png",
+      "sha256": "621fa65a8d9bcb974e61b558590165260ddf53f09c51a02ef2eab2a9cef92906",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          447
+        ],
+        [
+          444,
+          0,
+          887,
+          447
+        ],
+        [
+          887,
+          0,
+          1330,
+          447
+        ],
+        [
+          1330,
+          0,
+          1774,
+          447
+        ],
+        [
+          0,
+          447,
+          444,
+          887
+        ],
+        [
+          444,
+          447,
+          887,
+          887
+        ],
+        [
+          887,
+          447,
+          1330,
+          887
+        ],
+        [
+          1330,
+          447,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        228.0,
+        673.0,
+        1115.0,
+        1552.0,
+        214.0,
+        669.0,
+        1100.0,
+        1570.0
+      ],
+      "rootYs": [
+        433.0,
+        433.0,
+        433.0,
+        433.0,
+        865.0,
+        865.0,
+        865.0,
+        865.0
+      ],
+      "bodyHeights": [
+        411.0,
+        411.0,
+        411.0,
+        411.0,
+        411.0,
+        411.0,
+        411.0,
+        411.0
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "filled48",
+      "pose": 0
+    },
+    {
+      "input": "filled48",
+      "pose": 1
+    },
+    {
+      "input": "filled48",
+      "pose": 2
+    },
+    {
+      "input": "filled48",
+      "pose": 3
+    },
+    {
+      "input": "filled48",
+      "pose": 4
+    },
+    {
+      "input": "filled48",
+      "pose": 5
+    },
+    {
+      "input": "filled48",
+      "pose": 6
+    },
+    {
+      "input": "filled48",
+      "pose": 7
+    }
+  ],
+  "review": "One shared physical strip height and row registration estimate. Targets/torso estimates are not observed sole or cane material. Candidate only."
+}

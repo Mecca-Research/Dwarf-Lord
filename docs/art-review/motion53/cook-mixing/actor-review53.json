@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-06",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c",
+    "settingsSha256": "d71cf03d907ccf9eb294436fba8a868e69929a6f497bc0d1657cb2bad2805245",
+    "frameSha256": [
+      "4fa40f36de86b7e1444b45855200a63e0055b376670ec0e7fd40814380c742d8",
+      "85545b90d42e1526534831e30ab044bcb182c4bad862db3c5a890f56f4eb4d95",
+      "1f80cbfd663f6037387766c24c76d75f13890beb970bfc22ad133a220f509736",
+      "474513b4eb523b2ad2ae16ef21196d11f8981cba037eefa1216630f37f319379",
+      "d8e9a572e750f6a4bfcb4568107129cece535c834a676bd7ad33075f2e983a3b",
+      "7dd5d0ff1301600527f5b0f3455d14d2d6458fd65d99706f5d6a11d1c2f2b7e2",
+      "f7f13cac0734baa514174cad856a2de5e512b93de4a43fc637367c06d260e9ef",
+      "50ac49eea3235af782cafb7dada9f2ca1f1c069711117ac05c5b1a96aff8b11d"
+    ],
+    "atlasSha256": "90ae6011dd645a7823a59ea5b59fc64c213a17cca8cc2913f48520e298dfe39f",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 521,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "d71cf03d907ccf9eb294436fba8a868e69929a6f497bc0d1657cb2bad2805245",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "mix-ingredients",
+    "direction": "actor"
+  },
+  "scope": "Finite stationary original-pixel Cook mixing over an independent flour table, visible near-boot/lower-bowl contact and persistent cosmetic completion reviewed. Hidden far sole, traveling motion, forces, ingredient transfer, direction continuity and seamless repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Literal original bald brown-haired Cook, full brown beard, maroon sleeves, cream flour-stained apron and stocky body. Original0-7 order, all opaque source pixels retained on one521/[320,616] visible pose0 body basis. No local painting, warp, mirror, per-pose scaling, offsets, duplicate poses or synthetic in-betweens. Only visible near leg/boot retained; far leg stays unobserved.",
+    "station-and-foot-contact": "Visible stationary boot minimum correlation0.992514, maximum travel0.989665px and adjacent1.021999px pass unchanged.94/6/6 bounds. Hidden sole, moving gait and family-scale continuity are excluded.",
+    "hand-and-tool-contact": "One wooden spoon stays connected to the mixing hand as it moves across the bowl. The other hand steadies the same wooden rim. The actual opaque lower bowl point lies on the independent projected tabletop in all8 poses, maximum outside0px. Hidden spoon tip, bowl underside, ingredient/force tracks and anatomical hidden contacts are not certified.",
+    "prop-continuity": "Actor owns body, visible boot, bowl, mixture, spoon and hands. Independent table owns flour sack, loose scoop/flour, eggs and small cup. A separately authored lower-angle bowl persists after finite completion/departure and resets for explicit new work. First overly overhead bowl is preserved as unselected. Uniform source normalization only; no utensil or body fragment remains in the completed prop. No reward, ingredient transfer, serving or baking added.",
+    "completion-and-reset": "Six actual meal days display every authored-duration mixing frame, complete once at7 and hold5seconds. Ordinary camera turn preserves finish. Cancel releases actor; independent table and completed bowl persist after departure. Explicit return resets0 and hides old mixture; cancellation before completion leaves no completed bowl. Day resolution releases motion and next morning restores recipe selection. No seamless7-to0 repeat approval."
+  }
+}

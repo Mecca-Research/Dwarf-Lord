@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "folder": "work/expanded-cycles/motion42/gait/project/public/sprites/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "0445933dfc202e49ed7e304054c8ce81b1ab4e573c88fa2a1be66438c578e484",
+    "settingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+    "frameSha256": [
+      "1acf7d6e1f6a57996ad9598a3da396e27d251fa0ee319b59f725f0a6e2d4129d",
+      "b37e60426f119f14e1773d94a43aaf77cb5e8b6600cb7a58dab52cbbe1b43923",
+      "90eb7e730e417213bdaed2c3e335dfa4fe13910bbfd6e1ba4847a58812a110d1",
+      "9d994b03862e5b6da003f3178ff307ba9d39d4569c23943e7030e980d570f9cb",
+      "a45847aa1fed090a75057dc27039fa8601cab8f517fd721ad36ed637415779c1",
+      "3d606d71b9a6c4b91fc43a4e3660a5fa441507276de96a74e81ed9ae0232a2d1",
+      "5de0e0562cb3db470de4e8b1d7bc6843f73a61b39f4ba8fb3dfa216f810026ab",
+      "dfeb9685c24a474b83e29f4dc0f0e91346a6fd8bc400cfeb264772d24c7c39da"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+    "atlasSha256": "4b315deebb7cd9ce131416b0cebc3cc71eb8449389b8cf9da752befe125fd021",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "afe2174e9e61fd64d21fa190e77fb17aca72daa383d525be851ce2b2f8e938ad",
+  "strideBodyRatio": 1.2,
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -0.707107,
+    -0.399263
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "fromPoint": [
+        288,
+        531
+      ],
+      "toPoint": [
+        315,
+        578
+      ],
+      "foot": "right",
+      "landmark": "heel",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 32.313,
+      "contactResidualPx": [
+        -28.154,
+        15.858
+      ],
+      "requiredForwardTravelPx": 57.411,
+      "perpendicularMismatchPx": 27.651
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "fromPoint": [
+        253,
+        552
+      ],
+      "toPoint": [
+        353,
+        581
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 44.897,
+      "contactResidualPx": [
+        44.846,
+        -2.142
+      ],
+      "requiredForwardTravelPx": 124.792,
+      "perpendicularMismatchPx": 23.915
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "fromPoint": [
+        353,
+        581
+      ],
+      "toPoint": [
+        413,
+        592
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 20.717,
+      "contactResidualPx": [
+        4.846,
+        -20.142
+      ],
+      "requiredForwardTravelPx": 71.0,
+      "perpendicularMismatchPx": 19.922
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        413,
+        592
+      ],
+      "toPoint": [
+        407,
+        596
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 66.907,
+      "contactResidualPx": [
+        -61.154,
+        -27.142
+      ],
+      "requiredForwardTravelPx": -4.012,
+      "perpendicularMismatchPx": 6.433
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "fromPoint": [
+        275,
+        546
+      ],
+      "toPoint": [
+        315,
+        597
+      ],
+      "foot": "left",
+      "landmark": "heel",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 24.979,
+      "contactResidualPx": [
+        -15.154,
+        19.858
+      ],
+      "requiredForwardTravelPx": 73.773,
+      "perpendicularMismatchPx": 24.743
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "fromPoint": [
+        230,
+        575
+      ],
+      "toPoint": [
+        258,
+        591
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 31.091,
+      "contactResidualPx": [
+        -27.154,
+        -15.142
+      ],
+      "requiredForwardTravelPx": 39.713,
+      "perpendicularMismatchPx": 0.165
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "fromPoint": [
+        258,
+        591
+      ],
+      "toPoint": [
+        378,
+        595
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 70.297,
+      "contactResidualPx": [
+        64.846,
+        -27.142
+      ],
+      "requiredForwardTravelPx": 131.102,
+      "perpendicularMismatchPx": 55.518
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "fromPoint": [
+        378,
+        595
+      ],
+      "toPoint": [
+        358,
+        600
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false,
+      "materialReview": "Observed opaque posterior bottom heel or distal toe sole rim at native scale. Anatomical side follows outer square buckle on near-left boot, not screen position. Guide-first source support, camera, body root and arm phases remain unapproved; this is diagnostic, not verified planted contact.",
+      "projectedRootTravelPx": [
+        -55.154,
+        -31.142
+      ],
+      "contactJumpPx": 79.571,
+      "contactResidualPx": [
+        -75.154,
+        -26.142
+      ],
+      "requiredForwardTravelPx": -18.419,
+      "perpendicularMismatchPx": 14.187
+    }
+  ],
+  "coveredBoundaries": 8,
+  "returnBoundaryCovered": true,
+  "withinHeldPoseDriftPx": 0,
+  "withinHoldScope": "Held-root model only; live playback evidence and anatomical contact review are separate.",
+  "maxContactJumpPx": 79.571,
+  "fittedStrideBodyRatio": 0.914153,
+  "fittedMaxContactJumpPx": 80.439,
+  "materialCorrespondenceReviewed": false,
+  "measurementPassed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval."
+}

@@ -1,0 +1,135 @@
+{
+  "character": "Blacksmith",
+  "action": "inspect-tool",
+  "direction": "reference",
+  "destination": "public/sprites/Blacksmith/motion/inspect-tool/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+  "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+  "nativeReviewSha256": "3577b6a51de3a37fd7640726b579f9d1a8d432bf0dbfad0d80638816b978cb8a",
+  "checks": {
+    "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+    "prop-continuity": "Right fingers retain one small metal tool through chest0, raised1/2, wrist rotation3/4 and lowered5/6/7. The head and wooden grip remain connected. The hammer lying on the anvil is a separate stationary spare; no tool is released.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+    "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+    "frameSha256": [
+      "0f9814ce687eaed70adf37402bbae3b090315cfa20db965715731f373bcc9a3f",
+      "6deefae32222a95474a96f5616784bdec1ce52ce74b049dad7baad25b43447a3",
+      "b006eb48b9d0a5fd171fad6cd1e82c6944887c31a7930f340d09b9d090e14034",
+      "b3dc7cbb331b48fdb31035802f0717f50eb56840c1379425cb6656040fab0217",
+      "5af07652985e65da0795f15caf7eff58c922fb792c9b7ebd080cca7df66655a8",
+      "e745cd364e121a08ff60c3103cc8288e1e4a67f8a51185f254e79c673833eeff",
+      "d9dc78fb7c2ca6566037b795f5a127839fcbdd73c28c86dd164ea54591e23d48",
+      "40e2a51a91611707601e4abba43c9f158541f575455e186c281a969b4d736d49"
+    ],
+    "atlasSha256": "642d34872ecd8bb7326599efcd7b01948c158172083f3a2177b24c84860bf8c0",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "92bfe2e10cf406f62471a9c6b77228050a74a3c4d104f4df498aee95e6217198",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          210,
+          410,
+          510,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -4.682942478240193e-09,
+              2.757767347816298e-10
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.978,
+            "measuredCorrectionPx": [
+              -0.30932432413101196,
+              0.10300986468791962
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98788,
+            "measuredCorrectionPx": [
+              -0.2233923077583313,
+              0.11387412250041962
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97621,
+            "measuredCorrectionPx": [
+              0.6159985661506653,
+              0.009714973159134388
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98062,
+            "measuredCorrectionPx": [
+              -0.022350983694195747,
+              -0.004621319472789764
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97184,
+            "measuredCorrectionPx": [
+              -0.76518315076828,
+              -0.041909411549568176
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97764,
+            "measuredCorrectionPx": [
+              0.538892388343811,
+              0.056572508066892624
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96748,
+            "measuredCorrectionPx": [
+              0.5957098007202148,
+              -0.04463621601462364
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "inspect-tool",
+    "direction": "reference"
+  }
+}

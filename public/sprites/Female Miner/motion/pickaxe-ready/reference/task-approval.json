@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "6557cce9d5549fbf00b0a00c09834b5d9da18a4dc51de4840d0c49a5b5239d05",
+    "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+    "frameSha256": [
+      "0de45b9a515e5b7b3f7f64cd19bf2d7a51df84c475ac951395879a0915d262e5",
+      "703afd0f34cc84fd1d8e070ec14079f3efcd0085a3be281576a38b7396e0ba7d",
+      "08a86d03ca306a9085ebf8471af0da0d16bd683d48b08cb1d96adca034ef764f",
+      "7369f4da76e1ddf39d905ece32822524bb5ec653f42979e4e8221485cb1aaec5",
+      "3c2aee40c1872c8ddade969d49fc23256fcc222d164384ee9d569e3d1a64b15b",
+      "3c2d91f249cdf7c425abce2c4807aa4772a2acda9149cd5463dec40e76784294",
+      "7ac54e5bb70c8042f4474df241ca7d13f54d359e99a56dccf75e3fdc54c35fed",
+      "7e4fee8305eb09f377234d77b1e4c445dc9923288cb3212f11ed44473a06da8b"
+    ],
+    "atlasSha256": "3f4c4fc2787b653c6e3eba41b2c72ff90147455b4f88fb82b39a52efb4b6334c",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "df150f0ff19aa5319bc601300547e212053f2e2f29b46523edc17c0fadf8fb86",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      130,
+      130,
+      130,
+      160,
+      130,
+      130,
+      160
+    ],
+    "character": "Female Miner",
+    "action": "pickaxe-ready",
+    "direction": "reference"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Fixed-view small pickaxe-ready lift/lower and visible stationary sole contacts. No strike, traveling contact, seamless repeat, hidden heel or cross-direction/tool-template family approval.",
+  "checks": {
+    "identity-and-scale": "All eight native640px frames retain same canonical beardless stocky Female Miner, bronze metal helmet, dark twin braids, tan sleeves, brown vest/pouches and capped leather boots. One common source body extent and fixed camera; no per-pose scaling from moving pickaxe bounds.",
+    "station-and-foot-contact": "Both complete braced boots remain planted. Separate visible cap/sole regions correlate above.985 at unchanged minimum.94; material-region travel and adjacent pose changes remain below6px. Actual source boot stance roots and common body extent are bound. Hidden heels, traveling stance and other views are excluded.",
+    "hand-and-tool-contact": "Same connected pickaxe head remains viewer-left; right hand stays nearer the iron head, left nearer lower handle end. No 0-to1 head flip, changing-hand order or shaft break. Both wrists and elbows continuously lift the connected tool through0-4 then lower5-7. All eight native poses reviewed, with head and complete handle retained inside cell margins.",
+    "prop-continuity": "Single rigid shaft/head stays in the same separated two-hand grip throughout. No rocks, ore, detached objects, tool swaps or unshown handoff. This is a small preparation movement rather than a pickaxe strike or material-production action.",
+    "completion-and-reset": "Actual shared gallery exposes each of eight authored-duration poses and all timed boundaries, completes once at7, holds unchanged completed ready pose for10000ms, and restarts0 only on explicit reset. No seamless7-to0 repeat, live activation or traveling contact approval."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "11d7acabec2e0b48d20a9fcc2cba1b904a21264ac01c0596613212b9a979aed2"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "27b2da589c69b213dc0b66d37207b7aa7c702ff62c11e1ea39646350697a8184"
+    },
+    {
+      "file": "assembly.json",
+      "sha256": "c7b52e929ec4a3fce12edac08cf097102f7eadc8b2af8cf2438503f2b2460a17"
+    },
+    {
+      "file": "authoring-inputs/ready40.json",
+      "sha256": "a27f09fd5db1e911a58a97a3044a7bb1110463a90fe7bb6b8a68f824cc53083c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-review.json",
+      "sha256": "310851b5581f92c506135ce603bc85d06bef264526719888239e007a45b1cc2b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-stationary-contacts.json",
+      "sha256": "de266156dd9122a12bdbaeeda3af32b9d65e72f472ef68280104eaf968d57365"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-contacts.png",
+      "sha256": "eb20dac405e0fe6644700d992b41b9f0eaf8ed11f17038734b117ec882102619"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-playback.json",
+      "sha256": "885789b7c74afd82251b3ee33685bb72aa73af9cc984884b53e2ce4d4b2fbff7"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-live-0.png",
+      "sha256": "1bd623ee1b2d24eceb89008cd2b2826de465b93d2d702a1a03390376858bede3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-live-4.png",
+      "sha256": "6a47c2c223e8be958775c2dcb6c61f908c2e230b03e4c313d4da4fd2c48f32d0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/Female-Miner-pickaxe-ready-live-7.png",
+      "sha256": "6a8b0da5f1bef5d4a1824b86f64855fee9c34d77807fc8e8ccbf80cdc18c6d01"
+    }
+  ]
+}

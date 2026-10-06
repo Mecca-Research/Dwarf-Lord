@@ -1,0 +1,25 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "node",
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion58/gameplay-client58.mjs",
+    "--url",
+    "http://localhost:8081/Dwarf-Lord/",
+    "--click-selector",
+    "button:has-text(\"Walk the road\")",
+    "--actions-file",
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion58/gameplay-actions58.json",
+    "--iterations",
+    "2",
+    "--headless",
+    "false",
+    "--screenshot-dir",
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion58/skill-client"
+  ],
+  "clientSource": "/mnt/c/Users/Tariq/.codex/skills/develop-web-game/scripts/web_game_playwright_client.js",
+  "adaptation": "One asynchronous14-station readiness wait; provided client/action/screenshot logic otherwise unchanged. Earlier no-wait captures excluded from complete-scene validation.",
+  "started": "2026-10-06T14:27:35.440505+00:00",
+  "completed": "2026-10-06T14:28:12.544542+00:00",
+  "exitCode": 0
+}

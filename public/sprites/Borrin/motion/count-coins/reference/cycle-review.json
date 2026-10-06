@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+    "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+    "frameSha256": [
+      "2d3819342065d3329c0b9873f7133e1a0a0b096f5bb61f8b0517245ee6f1c5a3",
+      "7e3fb5852840729e8a634f658751923a28c992d78d6fb784cab64e4ed0ab650d",
+      "0ded2d2cd89164f90730d0747dc12bc5652f6a65f081f4d9db25f29829a6b33b",
+      "015920181bf3700403a6d563fd6c70389fcc18b3709ddc67830665485f57a981",
+      "f08f409687a6ad8d95b5b393cc448354a45f557abb9320f3d9fe83dac348c700",
+      "9c4e35a98a4783b9c6aa8b96296f617641ff031cb16552c0ba9354ff45ee07d6",
+      "8e1ecac359481de6e9216a678d48de71d01e01e101ffbbea22b7f73b5edd5289",
+      "81592698a28980acb2b9ced85a494ca5f75a2f7ef134f59a45ee65774bc4735a"
+    ],
+    "atlasSha256": "779c51946ce8a857099f245bf39f891a34cd9e180b705217ca7f388d5cc0cd04",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "35f63d5b68eeff06c67fefb1b1ee305280b127fe07e08414e1f48c9c0106f55e",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          40,
+          370,
+          595,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "correlation": 0.9934,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.89,
+              -0.08
+            ]
+          },
+          {
+            "correlation": 0.9966,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.04,
+              -0.13
+            ]
+          },
+          {
+            "correlation": 0.9933,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.48,
+              -0.15
+            ]
+          },
+          {
+            "correlation": 0.9923,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.13,
+              0.39
+            ]
+          },
+          {
+            "correlation": 0.9894,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.82,
+              0.43
+            ]
+          },
+          {
+            "correlation": 0.991,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.21,
+              0.45
+            ]
+          },
+          {
+            "correlation": 0.9921,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.28,
+              0.61
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "count-coins",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "Original poses5-7 retain the counted copper coin in the fingers after apparent placement. Two whole-sheet edits still retained a duplicate final-hand coin; the single-pose empty-hand edit changed the destination coin and desk layout. Need retained one-coin deposit with visibly empty returning fingers and stable desk coins."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "700bb6a849072f8df76d50f09c75f65070f8ff3167964a0dd19dcf8aa1d57fd3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Borrin-count-coins-review.json",
+      "sha256": "4611ce570eec4f5377339d951a40bdeff203a1b3f2c9f2cf0202672f83291bd5"
+    }
+  ]
+}

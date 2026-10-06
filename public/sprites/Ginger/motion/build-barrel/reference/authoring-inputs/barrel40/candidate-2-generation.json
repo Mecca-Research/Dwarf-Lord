@@ -1,0 +1,24 @@
+{
+  "character": "Ginger",
+  "action": "build-barrel",
+  "title": "Build barrel",
+  "reference": "public/sprites/Ginger/animation/01-front-right.png",
+  "beats": [
+    "brace staves in barrel jig",
+    "position stave",
+    "seat stave in ring",
+    "grip mallet",
+    "raise mallet",
+    "tap hoop downward",
+    "rebound mallet",
+    "inspect hoop fit"
+  ],
+  "kind": "new-work",
+  "direction": "reference",
+  "notes": "Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Ginger/motion/build-barrel/reference",
+  "prompt": "Edit ONLY the FIXED FURNITURE in this exact eight-frame Ginger barrel-finishing animation sheet. Preserve EVERY actor pose, all8 different mallet/hand positions, clothes, body/boot sizes, head/face, camera, lighting, cell layout and transparent margins. The action is correct; static props are drifting/redrawing and need to be identical. Make frames1..7's barrel, upper/lower steel hoops, vertical stave seams/knots/grain, wooden support braces with iron bolts and bottom crossbeam, nearby bench/tool crate, bucket and spare tools an EXACT repeat of frame0's fixed prop geometry and material texture, in the corresponding same cell coordinates. Barrel does not rotate or sway. Freeze the SAME stave front-face texture, wood-knot locations, hoop nails, brace bolts, lower hoop height/width and base shape across ALL8. Do not clone actor0: retain all8 original purposeful mallet stages and same hands on rim. The worker already grips ONE mallet throughout0..7, with no second matching mallet on furniture. Fixed furniture can be covered naturally by the moving hand/mallet; never delete the hand or move tools into another hand to expose a prop. Maintain the upper hoop already present0..7, fully assembled staves, complete raised mallet head with a little transparent space above it, exactly8 full whole poses. No new objects, background, floor, labels or shadows. Genuine transparent alpha background. Keep the semi-realistic original details; correct static registration/texture continuity only.",
+  "sourceName": "exec-d842fd93-19be-4c7c-813a-b38130867e6b.png"
+}

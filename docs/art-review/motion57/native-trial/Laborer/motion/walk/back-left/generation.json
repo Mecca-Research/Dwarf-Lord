@@ -1,0 +1,67 @@
+{
+  "prompt": "Use the FIRST image's complete 3D figure pose and camera literally to correct only pose3 (TOP-RIGHT whole figure) of the THIRD image's transparent eight-pose Laborer walk strip. The FIRST image is the required body mechanics, limbs and boot perspective. The SECOND image supplies identity, exact vest, cream sleeves, bald head, dark beard and textures. The THIRD image supplies the 4-column2-row strip and the seven other complete figures which must stay unchanged. Repaint the WHOLE top-right Laborer figure following the first gray volume silhouette: LEFT NEAR forearm goes BACK toward SCREEN LOWER-RIGHT, his left hand is at the lower-right of his vest beside his hip; it must NOT be thrust toward screen left. LEFT NEAR airborne leg reaches toward SCREEN UPPER-LEFT, extending its boot just above the ground. RIGHT FAR leg supports him, with its toe at the UP-RIGHT of the nearer airborne foot, a modest heel rise, and its foot not oversized or hanging below the body's original floor plane. Copy the gray guide's short hip-to-knee-to-ankle lengths and diagonal sole planes. It is an earlier compact push-off before pose4. Preserve the existing stocky body/head size, same 34-degree rear-left camera, two-buckle boots and all rich semi-realistic materials. Integrate the guide skeleton naturally into the high-quality Laborer render, no gray guide material left. Redraw the whole pose3 only, no detached-foot transfer or mirrored pose. Exactly eight complete figures,4 columns2 rows, true transparent background, no floor/shadow, labels, extra limbs, circles, cropping or scenery.",
+  "candidate": true,
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "method": "Literal whole normalized native-cell assembly; copy seven preceding frames exactly and one complete newly authored pose with the same retained whole-strip419 basis. No threshold recrop, local body/limb edit, per-pose fit, mirror or synthetic frame. Private unapproved.",
+  "inputs": [
+    {
+      "pose": 0,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/00.png",
+      "sha256": "4922438287bdd6d9a8b631a1149a76c5c89903ffb344dd541504ef2ba2ecd9d3",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 1,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/01.png",
+      "sha256": "1fc1c9a833121f0a4b49d2df5ed2b6188986bd553cd1aa85e648a75864ad9d0d",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 2,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/02.png",
+      "sha256": "0ac642cd7c43971a26ef08895efa1e8ac6dced5139dbd6a6b6b72f4683cf0009",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 3,
+      "file": "work/expanded-cycles/motion57/candidate7-all/Laborer/motion/walk/back-left/02.png",
+      "sha256": "f2dd2e05a889ce519149f85016ad8d9f75559bbc55005bddf25359c29f2948e6",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 4,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/04.png",
+      "sha256": "f8d14e4da77cf76c14780b68ee727380bb4328fc81c4d160c83957cde7184652",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 5,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/05.png",
+      "sha256": "b948af2b1f9ae95f029d06c792ebe6238c76f94c83b4c9f9fd5d501f3303ec2d",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 6,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/06.png",
+      "sha256": "3b189b02fcba20646b1f2844bbd7dd6cbcff7af0a0c6143d43826923234c467c",
+      "wholeNativeFrameOnly": true
+    },
+    {
+      "pose": 7,
+      "file": "work/expanded-cycles/motion57/candidate6/Laborer/motion/walk/back-left/07.png",
+      "sha256": "aa0af4e926b047add5233aba83b8b6753ad1b946631cf4c745011b2029ec8e3b",
+      "wholeNativeFrameOnly": true
+    }
+  ],
+  "exportScript": "work/expanded-cycles/motion57/export-literal-trial57.py",
+  "exportScriptSha256": "d96a91045060b0e82ca0d7fc28bbb76973c2209de0a972cbfb0047509a0705e9"
+}

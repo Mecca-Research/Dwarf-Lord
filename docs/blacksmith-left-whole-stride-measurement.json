@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "folder": "public/sprites/Blacksmith/motion/walk/left",
+  "binding": {
+    "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+    "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+    "frameSha256": [
+      "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0",
+      "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b",
+      "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619",
+      "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6",
+      "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570",
+      "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88",
+      "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e",
+      "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
+    ],
+    "durationsMs": [
+      103,
+      205,
+      91,
+      46,
+      121,
+      176,
+      159,
+      99
+    ],
+    "actualSettingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+    "atlasSha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "strideBodyRatio": 1.267308,
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -1.0,
+    -0.0
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "foot": "left",
+      "landmark": "heel",
+      "fromPoint": [
+        225,
+        603
+      ],
+      "toPoint": [
+        293,
+        604
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -67.877,
+        -0.0
+      ],
+      "contactJumpPx": 1.008,
+      "contactResidualPx": [
+        0.123,
+        1.0
+      ],
+      "requiredForwardTravelPx": 68.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        155,
+        597
+      ],
+      "toPoint": [
+        290,
+        598
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -135.095,
+        -0.0
+      ],
+      "contactJumpPx": 1.005,
+      "contactResidualPx": [
+        -0.095,
+        1.0
+      ],
+      "requiredForwardTravelPx": 135.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        290,
+        598
+      ],
+      "toPoint": [
+        350,
+        599
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -59.969,
+        -0.0
+      ],
+      "contactJumpPx": 1.0,
+      "contactResidualPx": [
+        0.031,
+        1.0
+      ],
+      "requiredForwardTravelPx": 60.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        350,
+        599
+      ],
+      "toPoint": [
+        380,
+        600
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -30.314,
+        -0.0
+      ],
+      "contactJumpPx": 1.048,
+      "contactResidualPx": [
+        -0.314,
+        1.0
+      ],
+      "requiredForwardTravelPx": 30.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "foot": "right",
+      "landmark": "heel",
+      "fromPoint": [
+        231,
+        606
+      ],
+      "toPoint": [
+        311,
+        607
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -79.739,
+        -0.0
+      ],
+      "contactJumpPx": 1.033,
+      "contactResidualPx": [
+        0.261,
+        1.0
+      ],
+      "requiredForwardTravelPx": 80.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        164,
+        600
+      ],
+      "toPoint": [
+        280,
+        601
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -115.984,
+        -0.0
+      ],
+      "contactJumpPx": 1.0,
+      "contactResidualPx": [
+        0.016,
+        1.0
+      ],
+      "requiredForwardTravelPx": 116.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        280,
+        601
+      ],
+      "toPoint": [
+        385,
+        602
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -104.781,
+        -0.0
+      ],
+      "contactJumpPx": 1.024,
+      "contactResidualPx": [
+        0.219,
+        1.0
+      ],
+      "requiredForwardTravelPx": 105.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        385,
+        602
+      ],
+      "toPoint": [
+        450,
+        603
+      ],
+      "correspondenceReviewed": true,
+      "materialReview": "Native posterior bottom heel corner in0/1 and4/5; distal lower fore-sole curve in the other six boundaries. Same anatomical boot followed through heel roll and toe-off. Native nearest-neighbor inspection excludes cap/buckle, cloth, shadow and all diagnostic guide targets; whole-cycle verdict remains separate.",
+      "projectedRootTravelPx": [
+        -65.241,
+        -0.0
+      ],
+      "contactJumpPx": 1.029,
+      "contactResidualPx": [
+        -0.241,
+        1.0
+      ],
+      "requiredForwardTravelPx": 65.0,
+      "perpendicularMismatchPx": 1.0
+    }
+  ],
+  "coveredBoundaries": 8,
+  "returnBoundaryCovered": true,
+  "withinHeldPoseDriftPx": 0,
+  "withinHoldScope": "Held-root model only; live playback evidence and anatomical contact review are separate.",
+  "maxContactJumpPx": 1.048,
+  "fittedStrideBodyRatio": 1.267668,
+  "fittedMaxContactJumpPx": 1.051,
+  "materialCorrespondenceReviewed": true,
+  "measurementPassed": true,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval."
+}

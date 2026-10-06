@@ -1,0 +1,184 @@
+{
+  "folder": "work/expanded-cycles/motion54/candidate-last/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "d8cce54bacd80436b7e737a43879595599478a1d6d106ce78bb8188f718d692d",
+    "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "frameSha256": [
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
+      "05492e78224717f5f5434274270411aed68578eb9c30280a8ef1f1e3ab2f7876",
+      "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "fe3fd25478bd7f93ec1cdefc1d11c9ed3b93f9059dd019d1c1946a5f64617294",
+      "6c29439d7cf0361c7fde4fce6abedd817f8aa3591b9b099d349dfc9bb34ee578",
+      "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "c49c9432c4007bfc54be184a61953141b598167bef7be745c8ded56650fe0cf2"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "atlasSha256": "8b1d74985cd73d3b3aeee10865a5ed52df8a24163001b9bf79aecc4e4cdbde98",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "cameraElevationRadians": 0.6,
+  "strideBodyRatio": 1.2,
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "fromPoint": [
+        266,
+        526
+      ],
+      "toPoint": [
+        317,
+        548
+      ],
+      "foot": "right",
+      "landmark": "heel",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "fromPoint": [
+        243,
+        526
+      ],
+      "toPoint": [
+        338,
+        593
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "fromPoint": [
+        338,
+        593
+      ],
+      "toPoint": [
+        404,
+        599
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        404,
+        599
+      ],
+      "toPoint": [
+        403,
+        600
+      ],
+      "foot": "right",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "fromPoint": [
+        254,
+        544
+      ],
+      "toPoint": [
+        354,
+        580
+      ],
+      "foot": "left",
+      "landmark": "heel",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "fromPoint": [
+        250,
+        557
+      ],
+      "toPoint": [
+        295,
+        606
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "fromPoint": [
+        295,
+        606
+      ],
+      "toPoint": [
+        354,
+        608
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "fromPoint": [
+        354,
+        608
+      ],
+      "toPoint": [
+        385,
+        608
+      ],
+      "foot": "left",
+      "landmark": "toe",
+      "correspondenceReviewed": false
+    }
+  ],
+  "landmarkScope": "PRIVATE unapproved opaque boot sole-point hypotheses after four whole-pose edits. Anatomy and same-material correspondence are NOT accepted. All points checked against actual alpha; no constraint-guide point or invisible sole is used.",
+  "runtimeRevalidation": {
+    "checkpoint": "motion41",
+    "previousRuntimeSha256": "14912c7d53040fc1c9c25ab8ce0ceb4856bfebf03c5caa3936a1c90ba6bfd07c",
+    "scope": "Only Borrin daily consultant action import/selection changed. Walking calculations, selected source/frames/settings, timings, body ratio and material observations are unchanged. Fresh renderer regression required for existing right-view approval; failed Laborer contacts stay failed."
+  }
+}
