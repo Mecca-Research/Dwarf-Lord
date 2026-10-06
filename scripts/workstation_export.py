@@ -1,5 +1,6 @@
 """Reproduce reviewed station layers without writing an unverified replacement."""
 import hashlib
+import math
 from pathlib import Path
 from PIL import Image
 
@@ -13,6 +14,25 @@ def verified_source(folder, relative, expected):
 
 def normalized(source, placement):
     p = placement
+    if p.get('method') == 'whole-canvas-uniform-normalization-and-fixed-integer-placement':
+        canvas, raw, offset, scale = (p.get(key) for key in ['canvas', 'rawCanvas', 'offsetPx', 'scale'])
+        if (not isinstance(canvas, list) or len(canvas) != 2
+                or any(type(v) is not int or v <= 0 for v in canvas)
+                or raw != list(source.size)
+                or not isinstance(offset, list) or len(offset) != 2
+                or any(type(v) is not int or abs(v) > 12 for v in offset)
+                or type(scale) not in (int, float) or not math.isfinite(scale) or scale <= 0
+                or not math.isclose(scale, canvas[0] / source.width, rel_tol=1e-12)
+                or not math.isclose(scale, canvas[1] / source.height, rel_tol=1e-12)):
+            raise ValueError('Uniform whole-canvas scale and bounded integer placement required')
+        image = source.resize(tuple(canvas), Image.LANCZOS)
+        bounds = image.getchannel('A').point(lambda a: 255 if a >= 128 else 0).getbbox()
+        if (bounds is None or bounds[0] + offset[0] < 0 or bounds[1] + offset[1] < 0
+                or bounds[2] + offset[0] > canvas[0] or bounds[3] + offset[1] > canvas[1]):
+            raise ValueError('Workstation placement clips visible source material')
+        output = Image.new('RGBA', tuple(canvas))
+        output.paste(image, tuple(offset))
+        return output
     bounds = (p['crop'] if isinstance(p.get('crop'), list) else
               source.getchannel('A').point(lambda a: 255 if a >= p['alphaThreshold'] else 0).getbbox()
               if 'alphaThreshold' in p else source.getbbox())

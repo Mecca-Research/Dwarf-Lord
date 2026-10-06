@@ -40,8 +40,8 @@ class ForgeSurfaceReviewTest(unittest.TestCase):
             prop = image.convert('RGBA')
         for old_vertex in [(246, 361), (425, 340)]:
             self.assertLess(prop.getpixel(old_vertex)[3], 128)
-        for path in [REVIEW / 'ready-real-surface-recheck55.json',
-                     REVIEW / 'blacksmith-raised/billet-real-surface-contact55.json']:
+        latest = json.loads((ROOT / 'docs/forge-surface-current-observations.json').read_text())
+        for path in [ROOT / file for file in latest['reviewFiles']]:
             with self.subTest(review=path.name):
                 record = json.loads(path.read_text())
                 config = record['config']

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-06",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+    "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+    "frameSha256": [
+      "639cafcba1ab0a5d278e639303c0ef393028f1b0daeca58bc155f87fa8efd6a4",
+      "3a8124b02f6a51cdb3aabd8fcd10f0284e64f8405b308681061a50a18dc83ba2",
+      "d7398101521658530d46dcbd850aa5201d736f46262d35b66631fab8ce9f73c4",
+      "abd2369eded97a4b15576c6c83fd83bb450050b35264d276ee5bb27895dfd538",
+      "6e72831d9d572641baca098d79e01c03dc2e6a8925b30614e66c6e11825fb842",
+      "ada691acd724d6a840bb1ae86f5f39ea5cb7a6726ffa32c8605bde333584f557",
+      "b9725e7a10665476800591eb49954112e81c07d9ab636824cb9e588232ebe32a",
+      "769a6d2baf16b753568db7d791275511f6fe687b0e22a4825f1f7efe97cf58f1"
+    ],
+    "atlasSha256": "74a6a436ec4eb9650cb96e2f3edb799d96b1cff45db20034dcc9a2f1c34b1d9b",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 533,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "file-tool-edge",
+    "direction": "actor"
+  },
+  "scope": "Finite original-pixel stationary filing at an independently owned upward-cutting vise bench. Visible near-boot support, actual metal/cutting-arc proximity0-4, lift/return5-7 and task lifecycle reviewed. Hidden previously occluded body/far sole, forces, material removal, economy, tool pickup/put-down, directions and repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Original bald stocky Blacksmith, split dark brass-bound beard, cream sleeves and leather apron. All selected opaque original0-7 body/near-boot/hands/file pixels exact. One actual opaque533/[320,616] pose0 basis and maximum4px integer whole-pose registration. No local painting, body warp, per-pose scaling, mirror, duplicate pose or synthetic in-between. Formerly occluded far leg/body remains unobserved and unreconstructed.",
+    "station-and-foot-contact": "Visible stationary near-boot material minimum correlation0.982451, maximum travel3.688213px and adjacent3.140063px pass unchanged.94/6/6 limits. Independent furniture uses the same533/[320,616] physical root basis. One fixed whole-prop placement only; native/game occlusion inspected. No hidden sole, traveling gait, ground force or cross-direction height approval.",
+    "hand-and-tool-contact": "The same file stays held between the two hands through forward stroke0-4 and lift/return5-7. Actually visible metal shaft-edge points lie within5.881286px of the true opaque upward cutting arc, below6px, during0-4. First shadow/handle-adjacent0 proposal discarded for directly inspected gray lower shaft edge. Recovery distances remain recorded without a pressure claim. No hidden underside, 3D force or burr/material removal certified.",
+    "prop-continuity": "Actor owns original body, hands, file and visible near boot. Independent bench owns the four-legged table, shelf tools/fasteners, fixed screw vise and single deeply clamped upward-cutting blade. Three ordered builtin prop edits retained; first two fixtures unselected. Only uniform normalization and fixed whole-prop placement used. All8 layers and actual game captures show one fixed vise/blade, without a carried-file fragment in furniture or spontaneous in-cycle transfer. Bench/blade persists after departure; no completed sharpening or resource reward.",
+    "completion-and-reset": "Seven actual forge days show every authored-duration filing frame, one completion at7 and an unchanged5-second finish. Camera rotation preserves held task state. Cancel releases actor; independent vise/bench/blade persists after departure. Explicit return resets0, day resolution releases motion and day7 restores first forging operation. This is one finite filing stroke/recovery, not a seamless repeat or certified pickup/put-down transition."
+  }
+}

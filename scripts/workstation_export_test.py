@@ -4,12 +4,39 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from workstation_export import export_station, verified_bytes
+from PIL import Image
+from workstation_export import export_station, normalized, verified_bytes
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class WorkstationExportTests(unittest.TestCase):
+    def test_whole_canvas_normalization_rejects_changed_raw_geometry_and_anisotropic_scale(self):
+        source = Image.new('RGBA', (8, 8))
+        source.putpixel((4, 4), (100, 80, 60, 255))
+        config = {'method':'whole-canvas-uniform-normalization-and-fixed-integer-placement',
+                  'rawCanvas':[8,8], 'canvas':[4,4], 'scale':0.5, 'offsetPx':[0,0]}
+        for fields in [{'rawCanvas':[9,8]}, {'canvas':[4,5]}, {'scale':0.6}, {'scale':float('nan')}]:
+            with self.subTest(fields=fields), self.assertRaises(ValueError):
+                normalized(source, {**config, **fields})
+
+    def test_whole_canvas_placement_rejects_fractional_and_unbounded_offsets(self):
+        source = Image.new('RGBA', (8, 8))
+        source.putpixel((4, 4), (100, 80, 60, 255))
+        config = {'method':'whole-canvas-uniform-normalization-and-fixed-integer-placement',
+                  'rawCanvas':[8,8], 'canvas':[4,4], 'scale':0.5, 'offsetPx':[0,0]}
+        for offset in [[0.5,0], [True,0], [13,0], [0,-13]]:
+            with self.subTest(offset=offset), self.assertRaises(ValueError):
+                normalized(source, {**config, 'offsetPx':offset})
+
+    def test_whole_canvas_placement_cannot_clip_visible_workstation_material(self):
+        source = Image.new('RGBA', (8, 8))
+        source.putpixel((0, 0), (100, 80, 60, 255))
+        config = {'method':'whole-canvas-uniform-normalization-and-fixed-integer-placement',
+                  'rawCanvas':[8,8], 'canvas':[8,8], 'scale':1, 'offsetPx':[-1,0]}
+        with self.assertRaises(ValueError):
+            normalized(source, config)
+
     def test_all_authored_stations_reproduce_every_layer_exactly(self):
         for metadata in (ROOT / 'public/sprites/workstations').glob('*/generation.json'):
             with self.subTest(station=metadata.parent.name):

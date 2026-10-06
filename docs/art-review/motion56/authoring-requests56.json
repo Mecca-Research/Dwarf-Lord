@@ -1,0 +1,89 @@
+[
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit. Edit the supplied existing Dwarf Lord Blacksmith reference into ONE independent workstation sprite. Remove the whole dwarf, both hands, every worn garment and boot, the long horizontal hand-held metal FILE (and its wooden handle), and all character/contact shadows. Retain the SAME full four-legged weathered timber repair table, its shelf holding the original small metal tools and fastener box, the SAME screw vise with its right-facing round handle, and the SAME single broad axe/tool blade securely clamped vertically in that vise. The vise jaws and clamped blade belong to the workstation and must remain. Complete any occluded portions of the existing table and shelf naturally, with no person or carried file left behind.\nPreserve the source orthographic/isometric camera exactly: tabletop slopes up toward the right rear, right table face and front vise screw remain visible at the same angles. Preserve the original plank grain, metal patina, studs, muted brown/charcoal palette and semi-realistic high-quality illustrated rendering. Do not redesign the vise or tools. Same object coordinates, scale, framing and generous transparent padding as the original 640-square reference, including the empty upper half formerly occupied by the dwarf. Do NOT enlarge or recenter the table after removing the dwarf. The table must have exactly four wood legs, fixed shelf, vise and ONE clamped blade. No file, hammer in a hand, floating limbs, extra blades, labels, letters, backdrop or floor. Clean actual alpha transparency around the full independent workstation. This will stay fixed while the same original character animation works in front of it.",
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png"
+      ],
+      "transparent_background": true
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png",
+        "archive": "authoring-files/input-1-1-00.png",
+        "sha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/vise-bench-source56.png",
+      "sha256": "50f9235e72c28df3d999da536af984b0174918ae8a31f079ad03f0f963184c01"
+    },
+    "selected": false,
+    "finding": "Cutting bit points away from the original file; full forward stroke reaches jaw region instead."
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit. Reference1 is a standalone Dwarf Lord vise bench that must stay independent of the dwarf. References2 and3 show the actual carried-file positions at the start and end of the forward stroke; they are placement guides only. Edit ONLY the clamped axe/tool blade orientation in reference1 to provide a mechanically plausible real cutting edge for that horizontal file stroke. The existing blade currently hangs cutting-edge-down/left, leaving its poll and the vise jaws under the file. Reorient the SAME broad iron axe head in the SAME stationary vise so its curved cutting bit is uppermost: a broad shallow upward-facing arc running approximately left-to-right ABOVE and slightly BEHIND the vise jaws, at the original actors' file elevation. The blade's thick poll/back must be firmly gripped between the jaws below, while its thin bright upper sharpened edge is exposed for filing. This is one solid axe head, not a spare blade or two tools. The upper cutting arc should span approximately reference1 native640-square coordinates x330 to430 and y216 to232, curved naturally, with a clear vertical gap from the jaws underneath. Leave the whole dwarf and carried file out of the output.\nKeep the source orthographic/isometric camera, tabletop perspective, screw vise shape/handle, four-legged scarred wood table, nail box and loose shelf tools, original muted semi-realistic texture/rendering, complete object scale/coordinates and transparent canvas padding. DO NOT move or scale the table, alter furniture design or enlarge/recenter the bench. No person, hands, carried file, floating blade, added axe, labels, outlines or drawn coordinate guides. No backdrop/floor. Actual alpha transparency. Output ONE full independent vise-and-upward-cutting-blade workstation suitable for the unchanged original actor filing stroke.",
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion56/blacksmith-filing/vise-bench-native56.png",
+        "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png",
+        "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/04.png"
+      ],
+      "transparent_background": true
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion56/blacksmith-filing/vise-bench-native56.png",
+        "archive": "authoring-files/input-2-1-vise-bench-native56.png",
+        "sha256": "20d0608fb6e4eab5916da8e1a97a4227d1a4dc47f84dd16a367604b1eb42fc5e"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png",
+        "archive": "authoring-files/input-2-2-00.png",
+        "sha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/04.png",
+        "archive": "authoring-files/input-2-3-04.png",
+        "sha256": "e2f2a5cda3aecf5fe1b67de663d8bef69f0de6981d6641a200bb3c20717f8b23"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/vise-bench-source56-attempt2.png",
+      "sha256": "30041d555a2aec8df11a1dd2c87a12d5481e9d5330b9db9b194eb36d16dde170"
+    },
+    "selected": false,
+    "finding": "Exposed upward cutting arc is too high for the original hands."
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "prompt": "Precise object edit of this existing standalone Dwarf Lord workstation. Keep the entire existing vise, table, shelf, wood grain, metal patina, shelf tools, camera angle, object size, position and transparent margins exactly as reference1. Change only how deeply the single axe head is inserted in the jaws. Its upright cutting edge currently protrudes far too high. LOWER THE SAME AXE HEAD DEEPLY BETWEEN THE JAWS so the sharpened upper curved edge is almost flush with the top of the back jaws: only a very short thin band of the blade projects above the jaws, about one narrow file thickness (one fifth of the current exposed blade height). Most of that same axe head must be hidden firmly between the vise jaws. The exposed upper cutting arc is nearly horizontal and shallow, low enough for the original Blacksmith's horizontal file in reference2 to rest across it without lifting either hand. Exposed edge crosses just above the jaws at the carried-file lower edge shown by reference2; this is not a tall blade sticking up. Do NOT add the dwarf or carried file to the output, do not change their design. One solid axe head only, cutting bit facing up, poll firmly held below, no loose extra blade. Preserve the furniture and its four legs, perspective, semi-realistic detailed rendering and exact canvas framing. No person, limb, carried file, floor, background, label or guide. Real alpha transparency.",
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion56/blacksmith-filing/vise-bench-native56-attempt2.png",
+        "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png"
+      ],
+      "transparent_background": true
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion56/blacksmith-filing/vise-bench-native56-attempt2.png",
+        "archive": "authoring-files/input-3-1-vise-bench-native56-attempt2.png",
+        "sha256": "f26a5c4fc80900c3b0cf164a5fd18ec0d21e9dcf71f51f299597b9fc045ff7f8"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/file-tool-edge/reference/00.png",
+        "archive": "authoring-files/input-3-2-00.png",
+        "sha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/vise-bench-source56-attempt3.png",
+      "sha256": "7c1ebe8201c29f680a38f07e6b91c6dac682f4b484accba44b7e5755599b51ab"
+    },
+    "selected": true,
+    "finding": "Blade seated deeply between fixed jaws; whole-prop placement and original actor contact/suppport checks pass."
+  }
+]

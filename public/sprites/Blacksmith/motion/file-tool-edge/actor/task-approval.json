@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+    "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+    "frameSha256": [
+      "639cafcba1ab0a5d278e639303c0ef393028f1b0daeca58bc155f87fa8efd6a4",
+      "3a8124b02f6a51cdb3aabd8fcd10f0284e64f8405b308681061a50a18dc83ba2",
+      "d7398101521658530d46dcbd850aa5201d736f46262d35b66631fab8ce9f73c4",
+      "abd2369eded97a4b15576c6c83fd83bb450050b35264d276ee5bb27895dfd538",
+      "6e72831d9d572641baca098d79e01c03dc2e6a8925b30614e66c6e11825fb842",
+      "ada691acd724d6a840bb1ae86f5f39ea5cb7a6726ffa32c8605bde333584f557",
+      "b9725e7a10665476800591eb49954112e81c07d9ab636824cb9e588232ebe32a",
+      "769a6d2baf16b753568db7d791275511f6fe687b0e22a4825f1f7efe97cf58f1"
+    ],
+    "atlasSha256": "74a6a436ec4eb9650cb96e2f3edb799d96b1cff45db20034dcc9a2f1c34b1d9b",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 533,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "file-tool-edge",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Finite original-pixel stationary filing at an independently owned upward-cutting vise bench. Visible near-boot support, actual metal/cutting-arc proximity0-4, lift/return5-7 and task lifecycle reviewed. Hidden previously occluded body/far sole, forces, material removal, economy, tool pickup/put-down, directions and repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Original bald stocky Blacksmith, split dark brass-bound beard, cream sleeves and leather apron. All selected opaque original0-7 body/near-boot/hands/file pixels exact. One actual opaque533/[320,616] pose0 basis and maximum4px integer whole-pose registration. No local painting, body warp, per-pose scaling, mirror, duplicate pose or synthetic in-between. Formerly occluded far leg/body remains unobserved and unreconstructed.",
+    "station-and-foot-contact": "Visible stationary near-boot material minimum correlation0.982451, maximum travel3.688213px and adjacent3.140063px pass unchanged.94/6/6 limits. Independent furniture uses the same533/[320,616] physical root basis. One fixed whole-prop placement only; native/game occlusion inspected. No hidden sole, traveling gait, ground force or cross-direction height approval.",
+    "hand-and-tool-contact": "The same file stays held between the two hands through forward stroke0-4 and lift/return5-7. Actually visible metal shaft-edge points lie within5.881286px of the true opaque upward cutting arc, below6px, during0-4. First shadow/handle-adjacent0 proposal discarded for directly inspected gray lower shaft edge. Recovery distances remain recorded without a pressure claim. No hidden underside, 3D force or burr/material removal certified.",
+    "prop-continuity": "Actor owns original body, hands, file and visible near boot. Independent bench owns the four-legged table, shelf tools/fasteners, fixed screw vise and single deeply clamped upward-cutting blade. Three ordered builtin prop edits retained; first two fixtures unselected. Only uniform normalization and fixed whole-prop placement used. All8 layers and actual game captures show one fixed vise/blade, without a carried-file fragment in furniture or spontaneous in-cycle transfer. Bench/blade persists after departure; no completed sharpening or resource reward.",
+    "completion-and-reset": "Seven actual forge days show every authored-duration filing frame, one completion at7 and an unchanged5-second finish. Camera rotation preserves held task state. Cancel releases actor; independent vise/bench/blade persists after departure. Explicit return resets0, day resolution releases motion and day7 restores first forging operation. This is one finite filing stroke/recovery, not a seamless repeat or certified pickup/put-down transition."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-0.png",
+      "sha256": "1574a83e2020c8c80ea88716737c39b7010398b29e068b558a4f9af2daba37eb"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-5.png",
+      "sha256": "768d44a9ab0e5dbf7ca8ef883b242d7ad3eec9068a36f37dc3ee55a170d4e59c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/vise-bench-registered56.png",
+      "sha256": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/stationary-boots56.json",
+      "sha256": "c92330f3fcf33fd5129298c6e07117e14ed217649e2067d4c2e253ce41c2c2dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-5.png",
+      "sha256": "0ed465961fdb9dadf280ff0153708457725de73e558db8c521ac591b6caa6a32"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-7.png",
+      "sha256": "ac4e1297afd5667fcfe9e13c99b6dc403ecaad37aa4185b148c3ee77c92a162b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-rotated.png",
+      "sha256": "78588894d1c621573e9c408104e52c295a03a0bed4021d32f92eb3f8d5176e07"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/prop-placement56.json",
+      "sha256": "42af12e7dcbb8559d30b6d6cc69e4d55ad0b74f7a7eeaefc557676ad312e04f3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/visual-review56.json",
+      "sha256": "b82059930f749311ccfc27743d07efd09b390891030278cdf2407290f59ac8c6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-4.png",
+      "sha256": "98438b7dab64adea854b213d67bb9b34d895afba86229a2b4cd97eda56e041de"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/actor-review56.json",
+      "sha256": "8911572ac19e5ad44bc6c455ec3337916b3254a25f1854be3dc481069e48d819"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-3.png",
+      "sha256": "4c44b3ef36cf35f770eb464f3beb27a406387be6475cd542618ff18af13a0cf1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-4.png",
+      "sha256": "0698d1ebcbca1e31e7984dc9b2b781e86bb988b5c43bcb98928113d461d85435"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-2.png",
+      "sha256": "3b80d1de95bb6f11f7ce8861060681ea12f82b82e74d34398d78387642555c67"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-1.png",
+      "sha256": "e7fc1034417e4c2cbbc9fd55c8998dc00d94a14a64b9690c6e9a296319c3c3f8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-departed.png",
+      "sha256": "d154779472e1f2848ab43da8fad2f21e1b8ce8136bd38d7757f5394bfc8e0ea3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/file-cutting-edge-contact56.json",
+      "sha256": "f860f4dce6eaf7ca4e32bb3361031eec2e374d56f4fb3cc22b0d7d6452834fea"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/cutting-edge-close56.jpg",
+      "sha256": "3af8ebc8847ac458170b55958334c09a0376cde84e480300d401c361915b44b1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-2.png",
+      "sha256": "c475343ba86d70d4d54fd08cc775bc4c17e4cd7ec135f9c7617e6ae9f8c8a734"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/source-pixel-identity56.json",
+      "sha256": "113ab9e69001d6ce49157905b91907a91f50289bff7e37efeb7c34d130750614"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/source-body-basis56.json",
+      "sha256": "bd3d177d85d59698453c5179730367fb9910557c22ee62133043d9d5eab8660e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layer-6.png",
+      "sha256": "93b29f191df7ab174797a201dd114e7995a5181e511c9676d602448166929898"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-6.png",
+      "sha256": "d71d1045a7dafc54d7008b29a4f37ca17baf23947a6b48fc29015966c563b285"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-0.png",
+      "sha256": "33d17563fc8a1e894e9289aa6eeba5f119e153820ca1accd2388e0d7a1706e5c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-7.png",
+      "sha256": "4a403ea8f86365859e8c821ec3f39c118909bc696881f0170a09cca338c93bdd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/observed-metal-tip0-56.png",
+      "sha256": "e0f4f97d52862141792ece509bb217e372322bce86e9aefcfce99c85cb70c313"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-eight-diagnostic56.jpg",
+      "sha256": "8e8fe9457057d980b2f8d3bed3b748b5f9330b3e0893ad6ffef2e4e3f613b602"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/layered-native56.jpg",
+      "sha256": "98a539ec319e82b96fe5f60a9678444c5efce4f8ea17b2ea6c0988d258b756fd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-3.png",
+      "sha256": "f724fb4ba0c986012e3689b577de064d2bfaa9c6145aa0ce1d792e1c4e382659"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/blacksmith-filing/game-1.png",
+      "sha256": "83d038ce12fa58dd9651a06dcad0a5f3f74623055043309e794727e60847318c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "9ef7560ee8de5ec25c06e6ee2b506ac5e618ef9b9a385b9a7734a86080a8bbe5"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "a243fadc1cfcbea2463d6dbdb7fa2f0d12c6cea95d584f306cdb365f8001e5f1"
+    },
+    {
+      "file": "motion-polish.json",
+      "sha256": "9f898b6cc2e17752f9223fa74c92486c635d416b2c914ecf6257b5ad4cc8c75a"
+    },
+    {
+      "file": "../../../../workstations/vise-bench/source.png",
+      "sha256": "7c1ebe8201c29f680a38f07e6b91c6dac682f4b484accba44b7e5755599b51ab"
+    },
+    {
+      "file": "../../../../workstations/vise-bench/sprite.png",
+      "sha256": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd"
+    },
+    {
+      "file": "../../../../workstations/vise-bench/generation.json",
+      "sha256": "edb259029e05be25467e3c6989dfd44d97faf8507584de922c96bfb65f55322e"
+    },
+    {
+      "file": "../../../../../../src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "ab4998fd65d92d3f046e175a1fe624d8c8f13689fa2c02c3db10b40d3bb3fa77"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-completion.ts",
+      "sha256": "716283d346f669bc85e4e6a20f8c577f15ce006b858f0148b3d9c2b0cce087ca"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/smith-work-check.mjs",
+      "sha256": "84faa57ad565360f2d85da8761a1ecf971295ef27c3d34788b37e7aeba8cb30e"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "e8d67159e79242ff4bc0ccf23b33ae549f28b00cdbaeb6994e7c8676e2438c7f"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+    },
+    {
+      "file": "../reference/00.png",
+      "sha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9"
+    },
+    {
+      "file": "../reference/01.png",
+      "sha256": "fee5718e7c31a0a000ca27bd787b1b41f7b1993cfc203c0d6e436c42721eaa2b"
+    },
+    {
+      "file": "../reference/02.png",
+      "sha256": "3b03645ff5f9ec62ef3274f0df61b6f6e6a7f3f7ee41467185a23a0adee09a67"
+    },
+    {
+      "file": "../reference/03.png",
+      "sha256": "b5b51588a75cc35bbf6597bfa3130779f5287b2260814d3b65bf9f6204e45f82"
+    },
+    {
+      "file": "../reference/04.png",
+      "sha256": "e2f2a5cda3aecf5fe1b67de663d8bef69f0de6981d6641a200bb3c20717f8b23"
+    },
+    {
+      "file": "../reference/05.png",
+      "sha256": "179799f963618a7e9e088a0aad896523fa1e301e969cf8d9226a912fe6e64683"
+    },
+    {
+      "file": "../reference/06.png",
+      "sha256": "70c9287cbd9fade97bd977348a03ed125b2705c570335e709ae3f988349dfb44"
+    },
+    {
+      "file": "../reference/07.png",
+      "sha256": "f5ec756128ecccbeed55b592577a3bb209649b4aa3ab485849022f0f958b0116"
+    }
+  ]
+}

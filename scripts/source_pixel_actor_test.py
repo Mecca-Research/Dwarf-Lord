@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 class SourcePixelActorTest(unittest.TestCase):
     def test_original_actor_pixels_survive_one_bounded_whole_pose_registration(self):
-        for character,action in [('Cook','knead-dough'),('Cook','stir-cauldron'),('Cook','mix-ingredients'),('Blacksmith','anvil-ready'),('Blacksmith','hammer-raised')]:
+        for character,action in [('Cook','knead-dough'),('Cook','stir-cauldron'),('Cook','mix-ingredients'),('Blacksmith','anvil-ready'),('Blacksmith','hammer-raised'),('Blacksmith','file-tool-edge')]:
             with self.subTest(character=character,action=action):
                 folder=ROOT/f'public/sprites/{character}/motion/{action}/actor'
                 generation=json.loads((folder/'generation.json').read_text())

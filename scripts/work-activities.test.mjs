@@ -14,8 +14,8 @@ test('meal selection includes finite mixing and restores chopping on the sixth d
  for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.cookingWorkAction(day));
 });
 test('forge preparation and raised-hammer tasks keep their own days and then restore forging',()=>{
- assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11].map(actions.forgeWorkAction),
-  ['hammer-contact','inspect-tool','repair-pickaxe-handle','anvil-ready','hammer-raised','hammer-contact','inspect-tool','repair-pickaxe-handle','anvil-ready','hammer-raised','hammer-contact']);
+ assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11,12,13].map(actions.forgeWorkAction),
+  ['hammer-contact','inspect-tool','repair-pickaxe-handle','anvil-ready','hammer-raised','file-tool-edge','hammer-contact','inspect-tool','repair-pickaxe-handle','anvil-ready','hammer-raised','file-tool-edge','hammer-contact']);
  for(const day of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.throws(()=>actions.forgeWorkAction(day));
 });
 test('consultant keeps one cosmetic operation for each valid day and returns to writing',()=>{

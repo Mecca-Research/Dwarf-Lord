@@ -1,0 +1,25 @@
+{
+  "checkpoint": "motion56",
+  "revalidatedDependencyChanges": [
+    {
+      "file": "scripts/workstation_export.py",
+      "beforeSha256": "19fafaeafed083ce7367eb19ef8583e29b627e9979f89ef76e72efc3600505fd",
+      "sha256": "cd558b162842b24909c6ee83ffc1f96f8251e38885058f1bd33045ed0a1fa2d4"
+    },
+    {
+      "file": "scripts/workstation_export_test.py",
+      "beforeSha256": "f4a482958264c2d7fccf88d709395bd042de07b890f4beede4fadda50b1a8b86",
+      "sha256": "130ac656797d90ed8b8d5a1337667dfa152f254e50f3c318ad86ee940edc5bcb"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "beforeSha256": "1a61994ba05db12ad7f9c574d20d203f16fdccbcb61307f6cdd36eb207984376",
+      "sha256": "15a7db169037238b60369273fad44c7475233e87044b40cdf3e9d4bb25f4df08"
+    }
+  ],
+  "audit": {
+    "file": "docs/art-review/motion56/workstation-normalization-validation56.json",
+    "sha256": "c8151556ee424583dd0f272a9dd96337da3acbc5f301aeae4a2057b11e22c537"
+  },
+  "scope": "Offline deterministic workstation export addition and negative regression tests. Existing native art and task scopes unchanged; no runtime source/controller change."
+}
