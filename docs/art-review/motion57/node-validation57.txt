@@ -1,0 +1,1344 @@
+TAP version 13
+# Subtest: non-canvas app with no custom card gets a soft BRAND NOTE (utility exception)
+ok 1 - non-canvas app with no custom card gets a soft BRAND NOTE (utility exception)
+  ---
+  duration_ms: 7.706584
+  type: 'test'
+  ...
+# Subtest: non-canvas app with a compliant card is silent
+ok 2 - non-canvas app with a compliant card is silent
+  ---
+  duration_ms: 8.489418
+  type: 'test'
+  ...
+# Subtest: card file without site.json card=custom warns
+ok 3 - card file without site.json card=custom warns
+  ---
+  duration_ms: 6.637109
+  type: 'test'
+  ...
+# Subtest: card file with missing site.json warns for card=custom
+ok 4 - card file with missing site.json warns for card=custom
+  ---
+  duration_ms: 5.159427
+  type: 'test'
+  ...
+# Subtest: card file with invalid site.json warns for card=custom
+ok 5 - card file with invalid site.json warns for card=custom
+  ---
+  duration_ms: 7.528175
+  type: 'test'
+  ...
+# Subtest: oversized card warns for non-canvas apps too
+ok 6 - oversized card warns for non-canvas apps too
+  ---
+  duration_ms: 7.541218
+  type: 'test'
+  ...
+# Subtest: canvas app with no card warns 'missing' and missing og:type
+ok 7 - canvas app with no card warns 'missing' and missing og:type
+  ---
+  duration_ms: 6.224133
+  type: 'test'
+  ...
+# Subtest: canvas card without type still warns for og:type
+ok 8 - canvas card without type still warns for og:type
+  ---
+  duration_ms: 11.168944
+  type: 'test'
+  ...
+# Subtest: oversized card warns on the scraper budget (jpg and legacy png)
+ok 9 - oversized card warns on the scraper budget (jpg and legacy png)
+  ---
+  duration_ms: 13.617114
+  type: 'test'
+  ...
+# Subtest: compliant game (custom card + site.json type + x-banner) is silent
+ok 10 - compliant game (custom card + site.json type + x-banner) is silent
+  ---
+  duration_ms: 17.709306
+  type: 'test'
+  ...
+# Subtest: __root.tsx og:type no longer satisfies the canvas gate
+ok 11 - __root.tsx og:type no longer satisfies the canvas gate
+  ---
+  duration_ms: 6.413636
+  type: 'test'
+  ...
+# Subtest: oversized x-banner warns on the same scraper budget as og.jpg
+ok 12 - oversized x-banner warns on the same scraper budget as og.jpg
+  ---
+  duration_ms: 5.272623
+  type: 'test'
+  ...
+# Subtest: legacy png + site.json type still needs the X feed card
+ok 13 - legacy png + site.json type still needs the X feed card
+  ---
+  duration_ms: 4.618266
+  type: 'test'
+  ...
+# Subtest: siteDeclaresOgTypeGame reads the site contract
+ok 14 - siteDeclaresOgTypeGame reads the site contract
+  ---
+  duration_ms: 0.238072
+  type: 'test'
+  ...
+# Subtest: normalizes whitespace before hashing
+ok 15 - normalizes whitespace before hashing
+  ---
+  duration_ms: 6.125439
+  type: 'test'
+  ...
+# Subtest: nullish and blank body text normalize to the empty string
+ok 16 - nullish and blank body text normalize to the empty string
+  ---
+  duration_ms: 0.382608
+  type: 'test'
+  ...
+# Subtest: body text prefix is normalized and capped
+ok 17 - body text prefix is normalized and capped
+  ---
+  duration_ms: 0.163517
+  type: 'test'
+  ...
+# Subtest: identical runs do not diverge
+ok 18 - identical runs do not diverge
+  ---
+  duration_ms: 0.948103
+  type: 'test'
+  ...
+# Subtest: status change diverges
+ok 19 - status change diverges
+  ---
+  duration_ms: 0.403243
+  type: 'test'
+  ...
+# Subtest: title change diverges
+ok 20 - title change diverges
+  ---
+  duration_ms: 0.227268
+  type: 'test'
+  ...
+# Subtest: title comparison is skipped when either side lacks one
+ok 21 - title comparison is skipped when either side lacks one
+  ---
+  duration_ms: 0.243717
+  type: 'test'
+  ...
+# Subtest: canvas disappearing diverges; canvas appearing does not
+ok 22 - canvas disappearing diverges; canvas appearing does not
+  ---
+  duration_ms: 0.211793
+  type: 'test'
+  ...
+# Subtest: horizontal overflow appearing diverges; clearing does not
+ok 23 - horizontal overflow appearing diverges; clearing does not
+  ---
+  duration_ms: 0.549823
+  type: 'test'
+  ...
+# Subtest: new console errors diverge
+ok 24 - new console errors diverge
+  ---
+  duration_ms: 0.516439
+  type: 'test'
+  ...
+# Subtest: errors already present in the baseline do not re-diverge
+ok 25 - errors already present in the baseline do not re-diverge
+  ---
+  duration_ms: 0.223278
+  type: 'test'
+  ...
+# Subtest: body text collapse diverges
+ok 26 - body text collapse diverges
+  ---
+  duration_ms: 0.148916
+  type: 'test'
+  ...
+# Subtest: body text dropping to zero reports collapse
+ok 27 - body text dropping to zero reports collapse
+  ---
+  duration_ms: 0.125363
+  type: 'test'
+  ...
+# Subtest: zero-length baseline reports growth via the hash branch, not collapse
+ok 28 - zero-length baseline reports growth via the hash branch, not collapse
+  ---
+  duration_ms: 0.131397
+  type: 'test'
+  ...
+# Subtest: hash mismatch with a trivial length delta and same page start is tolerated
+ok 29 - hash mismatch with a trivial length delta and same page start is tolerated
+  ---
+  duration_ms: 0.106577
+  type: 'test'
+  ...
+# Subtest: hash mismatch with a trivial length delta but changed page start diverges
+ok 30 - hash mismatch with a trivial length delta but changed page start diverges
+  ---
+  duration_ms: 0.119133
+  type: 'test'
+  ...
+# Subtest: prefix check is skipped when either side lacks a prefix
+ok 31 - prefix check is skipped when either side lacks a prefix
+  ---
+  duration_ms: 0.188725
+  type: 'test'
+  ...
+# Subtest: length-delta tolerance boundary: 50 tolerated, 51 diverges (500-char baseline)
+ok 32 - length-delta tolerance boundary: 50 tolerated, 51 diverges (500-char baseline)
+  ---
+  duration_ms: 0.12799
+  type: 'test'
+  ...
+# Subtest: length-delta floor dominates small baselines: 20 tolerated, 21 diverges (100-char baseline)
+ok 33 - length-delta floor dominates small baselines: 20 tolerated, 21 diverges (100-char baseline)
+  ---
+  duration_ms: 0.116603
+  type: 'test'
+  ...
+# Subtest: collapse boundary: exactly half is 'changed', one below is 'collapsed'
+ok 34 - collapse boundary: exactly half is 'changed', one below is 'collapsed'
+  ---
+  duration_ms: 0.152323
+  type: 'test'
+  ...
+# Subtest: missing baseline viewport diverges
+ok 35 - missing baseline viewport diverges
+  ---
+  duration_ms: 0.136458
+  type: 'test'
+  ...
+# Subtest: empty or null baseline diverges for every viewport
+ok 36 - empty or null baseline diverges for every viewport
+  ---
+  duration_ms: 0.134998
+  type: 'test'
+  ...
+# Subtest: degenerate current verdict fails closed
+ok 37 - degenerate current verdict fails closed
+  ---
+  duration_ms: 0.244788
+  type: 'test'
+  ...
+# Subtest: multiple signals across viewports all accumulate
+ok 38 - multiple signals across viewports all accumulate
+  ---
+  duration_ms: 0.120496
+  type: 'test'
+  ...
+# Subtest: baselineComparison round-trips a valid baseline
+ok 39 - baselineComparison round-trips a valid baseline
+  ---
+  duration_ms: 0.438769
+  type: 'test'
+  ...
+# Subtest: baselineComparison fails closed on malformed or wrong-shape baselines
+ok 40 - baselineComparison fails closed on malformed or wrong-shape baselines
+  ---
+  duration_ms: 0.472154
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs defaults
+ok 41 - parseSmokeArgs defaults
+  ---
+  duration_ms: 0.219384
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs consumes --baseline without shifting positionals
+ok 42 - parseSmokeArgs consumes --baseline without shifting positionals
+  ---
+  duration_ms: 0.109497
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs rejects a trailing --baseline flag
+ok 43 - parseSmokeArgs rejects a trailing --baseline flag
+  ---
+  duration_ms: 0.108232
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs supports the --baseline= form
+ok 44 - parseSmokeArgs supports the --baseline= form
+  ---
+  duration_ms: 0.176461
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs rejects unknown flags instead of treating them as positionals
+ok 45 - parseSmokeArgs rejects unknown flags instead of treating them as positionals
+  ---
+  duration_ms: 0.117382
+  type: 'test'
+  ...
+# Subtest: parseSmokeArgs env fallback and flag precedence
+ok 46 - parseSmokeArgs env fallback and flag precedence
+  ---
+  duration_ms: 0.127504
+  type: 'test'
+  ...
+# Subtest: derivedPaths handles .png, .PNG, and extensionless inputs
+ok 47 - derivedPaths handles .png, .PNG, and extensionless inputs
+  ---
+  duration_ms: 1.705631
+  type: 'test'
+  ...
+# Subtest: exitCodeFor: clean run exits 0
+ok 48 - exitCodeFor: clean run exits 0
+  ---
+  duration_ms: 0.196317
+  type: 'test'
+  ...
+# Subtest: exitCodeFor: errors in any single viewport exit 2
+ok 49 - exitCodeFor: errors in any single viewport exit 2
+  ---
+  duration_ms: 0.438574
+  type: 'test'
+  ...
+# Subtest: exitCodeFor: navigation failure in any viewport exits 1, beating errors
+ok 50 - exitCodeFor: navigation failure in any viewport exits 1, beating errors
+  ---
+  duration_ms: 0.232037
+  type: 'test'
+  ...
+# Subtest: exitCodeFor: 4xx boundary and missing status
+ok 51 - exitCodeFor: 4xx boundary and missing status
+  ---
+  duration_ms: 0.159817
+  type: 'test'
+  ...
+# Subtest: exitCodeFor: no viewport data is a failure
+ok 52 - exitCodeFor: no viewport data is a failure
+  ---
+  duration_ms: 0.169064
+  type: 'test'
+  ...
+# Subtest: browser-smoke wires the guard and verdict helpers
+ok 53 - browser-smoke wires the guard and verdict helpers
+  ---
+  duration_ms: 0.903039
+  type: 'test'
+  ...
+# Subtest: browser-smoke file I/O only touches guarded paths
+ok 54 - browser-smoke file I/O only touches guarded paths
+  ---
+  duration_ms: 0.744778
+  type: 'test'
+  ...
+# Subtest: station residual evidence matches the current sources and calibration
+ok 55 - station residual evidence matches the current sources and calibration
+  ---
+  duration_ms: 56.243293
+  type: 'test'
+  ...
+# Subtest: targeted motion redraws retain their exact edit references and prompts
+ok 56 - targeted motion redraws retain their exact edit references and prompts
+  ---
+  duration_ms: 57.986884
+  type: 'test'
+  ...
+# Subtest: directional authoring templates resolve every view to the correct eight-frame family
+ok 57 - directional authoring templates resolve every view to the correct eight-frame family
+  ---
+  duration_ms: 23.640861
+  type: 'test'
+  ...
+# Subtest: expanded motion plan preserves the requested character and directional coverage
+ok 58 - expanded motion plan preserves the requested character and directional coverage
+  ---
+  duration_ms: 4.679196
+  type: 'test'
+  ...
+# Subtest: every exported motion has eight transparent frames, atlas, source and animated preview
+ok 59 - every exported motion has eight transparent frames, atlas, source and animated preview
+  ---
+  duration_ms: 4851.959007
+  type: 'test'
+  ...
+# Subtest: new task references resolve to their exported initial pose without duplicate files
+ok 60 - new task references resolve to their exported initial pose without duplicate files
+  ---
+  duration_ms: 2.637991
+  type: 'test'
+  ...
+# Subtest: registered motion stays inside its canvas and preserves authored timing in APNG
+ok 61 - registered motion stays inside its canvas and preserves authored timing in APNG
+  ---
+  duration_ms: 163.857163
+  type: 'test'
+  ...
+# Subtest: direction families use a common body target instead of independently fitting tool reach
+ok 62 - direction families use a common body target instead of independently fitting tool reach
+  ---
+  duration_ms: 4.382323
+  type: 'test'
+  ...
+# Subtest: reviewed gait assemblies preserve traceable, distinct authored source poses
+ok 63 - reviewed gait assemblies preserve traceable, distinct authored source poses
+  ---
+  duration_ms: 393.100516
+  type: 'test'
+  ...
+# Subtest: accepted left gait retains exact authoring inputs and all rendered sole handoffs
+ok 64 - accepted left gait retains exact authoring inputs and all rendered sole handoffs
+  ---
+  duration_ms: 122.364336
+  type: 'test'
+  ...
+# Subtest: runtime actor layers and persistent stations retain source provenance and calibration
+ok 65 - runtime actor layers and persistent stations retain source provenance and calibration
+  ---
+  duration_ms: 307.547139
+  type: 'test'
+  ...
+# Subtest: additional work actions require exact actor, station and finite task evidence
+ok 66 - additional work actions require exact actor, station and finite task evidence
+  ---
+  duration_ms: 1478.795041
+  type: 'test'
+  ...
+# Subtest: log contact review binds all views and accepts only visible rear occlusion
+ok 67 - log contact review binds all views and accepts only visible rear occlusion
+  ---
+  duration_ms: 26.734785
+  type: 'test'
+  ...
+# Subtest: Borrin foreground contours keep his vest off the open ledger
+ok 68 - Borrin foreground contours keep his vest off the open ledger
+  ---
+  duration_ms: 3.118278
+  type: 'test'
+  ...
+# Subtest: Borrin ledger review and explanation preserve visible fingers without foreground furniture
+ok 69 - Borrin ledger review and explanation preserve visible fingers without foreground furniture
+  ---
+  duration_ms: 10.255289
+  type: 'test'
+  ...
+# Subtest: Elder and Borrin have separate roles without increasing worker payroll or capability
+ok 70 - Elder and Borrin have separate roles without increasing worker payroll or capability
+  ---
+  duration_ms: 2.578303
+  type: 'test'
+  ...
+# Subtest: direct job resolution rejects narrative and steward assignments
+ok 71 - direct job resolution rejects narrative and steward assignments
+  ---
+  duration_ms: 1.604699
+  type: 'test'
+  ...
+# Subtest: legacy character upgrade is repeatable and preserves worker progression
+ok 72 - legacy character upgrade is repeatable and preserves worker progression
+  ---
+  duration_ms: 3.902493
+  type: 'test'
+  ...
+# Subtest: forge assignment repairs the existing building through daily resolution
+ok 73 - forge assignment repairs the existing building through daily resolution
+  ---
+  duration_ms: 0.669541
+  type: 'test'
+  ...
+# Subtest: passive weighing requires Fenn at his home table without a job
+ok 74 - passive weighing requires Fenn at his home table without a job
+  ---
+  duration_ms: 0.651633
+  type: 'test'
+  ...
+# Subtest: persistent workstation registration only captures its assigned working actor
+ok 75 - persistent workstation registration only captures its assigned working actor
+  ---
+  duration_ms: 0.610558
+  type: 'test'
+  ...
+# Subtest: Borrin has a persistent consultation desk without becoming a production worker
+ok 76 - Borrin has a persistent consultation desk without becoming a production worker
+  ---
+  duration_ms: 0.777871
+  type: 'test'
+  ...
+# Subtest: forge operations route to their own station and retain completion boundaries
+ok 77 - forge operations route to their own station and retain completion boundaries
+  ---
+  duration_ms: 0.578439
+  type: 'test'
+  ...
+# Subtest: meal operations share the task target with distinct persistent preparation blocks
+ok 78 - meal operations share the task target with distinct persistent preparation blocks
+  ---
+  duration_ms: 1.036771
+  type: 'test'
+  ...
+# Subtest: the flag predicate matches src/lib/auth
+ok 79 - the flag predicate matches src/lib/auth
+  ---
+  duration_ms: 1.576862
+  type: 'test'
+  ...
+# Subtest: reads the value a live dev server resolved
+ok 80 - reads the value a live dev server resolved
+  ---
+  duration_ms: 209.168541
+  type: 'test'
+  ...
+# Subtest: a server started without the flag reads as sign-in on
+ok 81 - a server started without the flag reads as sign-in on
+  ---
+  duration_ms: 84.006129
+  type: 'test'
+  ...
+# Subtest: agreement passes
+ok 82 - agreement passes
+  ---
+  duration_ms: 0.519846
+  type: 'test'
+  ...
+# Subtest: divergence fails in either direction
+ok 83 - divergence fails in either direction
+  ---
+  duration_ms: 0.378229
+  type: 'test'
+  ...
+# Subtest: an unobservable dev server is indeterminate, not agreement
+ok 84 - an unobservable dev server is indeterminate, not agreement
+  ---
+  duration_ms: 0.21627
+  type: 'test'
+  ...
+# Subtest: a dev server that cannot be reached probes as null
+ok 85 - a dev server that cannot be reached probes as null
+  ---
+  duration_ms: 0.500671
+  type: 'test'
+  ...
+# Subtest: a server without the endpoint probes as null, not as agreement
+ok 86 - a server without the endpoint probes as null, not as agreement
+  ---
+  duration_ms: 0.437796
+  type: 'test'
+  ...
+# Subtest: only a divergence warns the smoke verdict
+ok 87 - only a divergence warns the smoke verdict
+  ---
+  duration_ms: 1.60976
+  type: 'test'
+  ...
+# Subtest: the build side resolves the template's shipped app-env
+ok 88 - the build side resolves the template's shipped app-env
+  ---
+  duration_ms: 1.101789
+  type: 'test'
+  ...
+# Subtest: the CLI reports rather than silently passing when run via a symlink
+ok 89 - the CLI reports rather than silently passing when run via a symlink
+  ---
+  duration_ms: 175.961584
+  type: 'test'
+  ...
+# Subtest: static Pages shell mounts its app without trying to hydrate missing server content
+ok 90 - static Pages shell mounts its app without trying to hydrate missing server content
+  ---
+  duration_ms: 119.297237
+  type: 'test'
+  ...
+# Subtest: server-rendered output retains hydration and reports actual recovery errors
+ok 91 - server-rendered output retains hydration and reports actual recovery errors
+  ---
+  duration_ms: 29.711015
+  type: 'test'
+  ...
+# Subtest: 13 distinct sprite cells exist on disk
+ok 92 - 13 distinct sprite cells exist on disk
+  ---
+  duration_ms: 2.846157
+  type: 'test'
+  ...
+# Subtest: elder and female identities have dedicated art, including helmeted Helga
+ok 93 - elder and female identities have dedicated art, including helmeted Helga
+  ---
+  duration_ms: 0.4194
+  type: 'test'
+  ...
+# Subtest: all 13 designs are used by starting characters
+ok 94 - all 13 designs are used by starting characters
+  ---
+  duration_ms: 1.793034
+  type: 'test'
+  ...
+# Subtest: every canonical design has a matching portrait and locked profile
+ok 95 - every canonical design has a matching portrait and locked profile
+  ---
+  duration_ms: 2.550563
+  type: 'test'
+  ...
+# Subtest: rejected generic sprites cannot be reused accidentally
+ok 96 - rejected generic sprites cannot be reused accidentally
+  ---
+  duration_ms: 0.733779
+  type: 'test'
+  ...
+# Subtest: injects before </head>
+ok 97 - injects before </head>
+  ---
+  duration_ms: 11.56917
+  type: 'test'
+  ...
+# Subtest: injects the extensions script without a project id
+ok 98 - injects the extensions script without a project id
+  ---
+  duration_ms: 0.869362
+  type: 'test'
+  ...
+# Subtest: injects project id on the script and meta when provided
+ok 99 - injects project id on the script and meta when provided
+  ---
+  duration_ms: 2.49849
+  type: 'test'
+  ...
+# Subtest: does not duplicate grok:app_id
+ok 100 - does not duplicate grok:app_id
+  ---
+  duration_ms: 1.017889
+  type: 'test'
+  ...
+# Subtest: omits x:creator tags without both creator values
+ok 101 - omits x:creator tags without both creator values
+  ---
+  duration_ms: 1.554184
+  type: 'test'
+  ...
+# Subtest: injects x:creator tags when both creator values are set
+ok 102 - injects x:creator tags when both creator values are set
+  ---
+  duration_ms: 0.7768
+  type: 'test'
+  ...
+# Subtest: escapes x:creator values
+ok 103 - escapes x:creator values
+  ---
+  duration_ms: 0.332289
+  type: 'test'
+  ...
+# Subtest: does not duplicate x:creator tags
+ok 104 - does not duplicate x:creator tags
+  ---
+  duration_ms: 1.371591
+  type: 'test'
+  ...
+# Subtest: platform chrome overwrites share-card metas and always sets og:title
+ok 105 - platform chrome overwrites share-card metas and always sets og:title
+  ---
+  duration_ms: 1.150357
+  type: 'test'
+  ...
+# Subtest: does not duplicate twitter:card or og:title
+ok 106 - does not duplicate twitter:card or og:title
+  ---
+  duration_ms: 1.378209
+  type: 'test'
+  ...
+# Subtest: baked identity does not need a workspace filesystem
+ok 107 - baked identity does not need a workspace filesystem
+  ---
+  duration_ms: 8.714447
+  type: 'test'
+  ...
+# Subtest: explicit site without card=custom is not overridden by a cwd card file
+ok 108 - explicit site without card=custom is not overridden by a cwd card file
+  ---
+  duration_ms: 3.311692
+  type: 'test'
+  ...
+# Subtest: snapshotOgIdentity stamps card=custom from a public card file
+ok 109 - snapshotOgIdentity stamps card=custom from a public card file
+  ---
+  duration_ms: 2.833797
+  type: 'test'
+  ...
+# Subtest: snapshotOgIdentity stamps banner from public/x-banner.jpg
+ok 110 - snapshotOgIdentity stamps banner from public/x-banner.jpg
+  ---
+  duration_ms: 3.421385
+  type: 'test'
+  ...
+# Subtest: emits x:game:image for a public host when site.banner is set
+ok 111 - emits x:game:image for a public host when site.banner is set
+  ---
+  duration_ms: 4.622451
+  type: 'test'
+  ...
+# Subtest: does not emit x:game:image without a public host or banner
+ok 112 - does not emit x:game:image without a public host or banner
+  ---
+  duration_ms: 0.414046
+  type: 'test'
+  ...
+# Subtest: site title Grok App is a real name, not a sentinel
+ok 113 - site title Grok App is a real name, not a sentinel
+  ---
+  duration_ms: 0.37307
+  type: 'test'
+  ...
+# Subtest: published grok.me slug is still a title fallback
+ok 114 - published grok.me slug is still a title fallback
+  ---
+  duration_ms: 0.400712
+  type: 'test'
+  ...
+# Subtest: emits og:image for a public host and prefers a custom card
+ok 115 - emits og:image for a public host and prefers a custom card
+  ---
+  duration_ms: 0.340757
+  type: 'test'
+  ...
+# Subtest: placeholder og:image appends site.color when it is 6-digit hex
+ok 116 - placeholder og:image appends site.color when it is 6-digit hex
+  ---
+  duration_ms: 0.377548
+  type: 'test'
+  ...
+# Subtest: document title entities are not double-escaped on og:title
+ok 117 - document title entities are not double-escaped on og:title
+  ---
+  duration_ms: 0.281774
+  type: 'test'
+  ...
+# Subtest: site.json title wins over the host slug
+ok 118 - site.json title wins over the host slug
+  ---
+  duration_ms: 0.281481
+  type: 'test'
+  ...
+# Subtest: injects into documents with no head element
+ok 119 - injects into documents with no head element
+  ---
+  duration_ms: 0.485293
+  type: 'test'
+  ...
+# Subtest: streaming injector matches </HEAD> case-insensitively
+ok 120 - streaming injector matches </HEAD> case-insensitively
+  ---
+  duration_ms: 0.902552
+  type: 'test'
+  ...
+# Subtest: does not duplicate the extensions script
+ok 121 - does not duplicate the extensions script
+  ---
+  duration_ms: 0.452979
+  type: 'test'
+  ...
+# Subtest: is idempotent
+ok 122 - is idempotent
+  ---
+  duration_ms: 0.522473
+  type: 'test'
+  ...
+# Subtest: uses the app name in the injected title tag
+ok 123 - uses the app name in the injected title tag
+  ---
+  duration_ms: 0.293064
+  type: 'test'
+  ...
+# Subtest: streaming injector handles </head> split across chunks
+ok 124 - streaming injector handles </head> split across chunks
+  ---
+  duration_ms: 0.860018
+  type: 'test'
+  ...
+# Subtest: streaming injector passes post-head chunks through untouched
+ok 125 - streaming injector passes post-head chunks through untouched
+  ---
+  duration_ms: 0.400615
+  type: 'test'
+  ...
+# Subtest: streaming injector falls back when no </head> is seen
+ok 126 - streaming injector falls back when no </head> is seen
+  ---
+  duration_ms: 0.369275
+  type: 'test'
+  ...
+# Subtest: detects install query
+ok 127 - detects install query
+  ---
+  duration_ms: 0.403632
+  type: 'test'
+  ...
+# Subtest: filters non-document paths
+ok 128 - filters non-document paths
+  ---
+  duration_ms: 0.388448
+  type: 'test'
+  ...
+# Subtest: strips install params from the app link
+ok 129 - strips install params from the app link
+  ---
+  duration_ms: 0.243717
+  type: 'test'
+  ...
+# Subtest: names the install page from host slug
+ok 130 - names the install page from host slug
+  ---
+  duration_ms: 0.19038
+  type: 'test'
+  ...
+# Subtest: rejects hosts that are not plain slugs
+ok 131 - rejects hosts that are not plain slugs
+  ---
+  duration_ms: 0.276908
+  type: 'test'
+  ...
+# Subtest: renders install page markup
+ok 132 - renders install page markup
+  ---
+  duration_ms: 1.356212
+  type: 'test'
+  ...
+# Subtest: escapes host-derived values in the install page
+ok 133 - escapes host-derived values in the install page
+  ---
+  duration_ms: 0.334819
+  type: 'test'
+  ...
+# Subtest: renders the manifest with the per-app name
+ok 134 - renders the manifest with the per-app name
+  ---
+  duration_ms: 0.200892
+  type: 'test'
+  ...
+# Subtest: vite config keeps the nitro serverDir wiring
+ok 135 - vite config keeps the nitro serverDir wiring
+  ---
+  duration_ms: 7.703176
+  type: 'test'
+  ...
+# Subtest: nitro middleware and its bundled assets exist
+ok 136 - nitro middleware and its bundled assets exist
+  ---
+  duration_ms: 2.329622
+  type: 'test'
+  ...
+# Subtest: vite plugin bakes og identity as a virtual module
+ok 137 - vite plugin bakes og identity as a virtual module
+  ---
+  duration_ms: 0.281482
+  type: 'test'
+  ...
+# Subtest: _migrations keys on basename, not path
+ok 138 - _migrations keys on basename, not path
+  ---
+  duration_ms: 2.613244
+  type: 'test'
+  ...
+# Subtest: a file already applied from another directory does not re-apply
+ok 139 - a file already applied from another directory does not re-apply
+  ---
+  duration_ms: 0.917832
+  type: 'test'
+  ...
+# Subtest: pending migrations are returned in name order
+ok 140 - pending migrations are returned in name order
+  ---
+  duration_ms: 38.36687
+  type: 'test'
+  ...
+# Subtest: non-.sql entries are dropped (readdir also yields the auth/ directory)
+ok 141 - non-.sql entries are dropped (readdir also yields the auth/ directory)
+  ---
+  duration_ms: 0.273014
+  type: 'test'
+  ...
+# Subtest: the auth schema ships outside the globbed directory
+ok 142 - the auth schema ships outside the globbed directory
+  ---
+  duration_ms: 0.685698
+  type: 'test'
+  ...
+# Subtest: this workspace's auth schema copy is byte-identical to its source
+ok 143 - this workspace's auth schema copy is byte-identical to its source
+  ---
+  duration_ms: 0.406358
+  type: 'test'
+  ...
+# Subtest: the copy check reads both files and catches an edit
+ok 144 - the copy check reads both files and catches an edit
+  ---
+  duration_ms: 4.527748
+  type: 'test'
+  ...
+# Subtest: standalone review and game use the same compiled controller
+ok 145 - standalone review and game use the same compiled controller
+  ---
+  duration_ms: 208.409456
+  type: 'test'
+  ...
+# Subtest: walking advances from actual travel and freezes against an obstacle
+ok 146 - walking advances from actual travel and freezes against an obstacle
+  ---
+  duration_ms: 0.650756
+  type: 'test'
+  ...
+# Subtest: direction changes preserve the exact gait beat with different contact durations
+ok 147 - direction changes preserve the exact gait beat with different contact durations
+  ---
+  duration_ms: 0.434584
+  type: 'test'
+  ...
+# Subtest: one-shot completion fires once, holds the final prop state, and requires explicit restart
+ok 148 - one-shot completion fires once, holds the final prop state, and requires explicit restart
+  ---
+  duration_ms: 0.219384
+  type: 'test'
+  ...
+# Subtest: large elapsed steps are bounded and match incremental updates
+ok 149 - large elapsed steps are bounded and match incremental updates
+  ---
+  duration_ms: 0.816219
+  type: 'test'
+  ...
+# Subtest: body size and root stay constant across walk and overhead tool canvases
+ok 150 - body size and root stay constant across walk and overhead tool canvases
+  ---
+  duration_ms: 0.959296
+  type: 'test'
+  ...
+# Subtest: invalid motion input cannot hang playback or produce NaN geometry
+ok 151 - invalid motion input cannot hang playback or produce NaN geometry
+  ---
+  duration_ms: 0.70351
+  type: 'test'
+  ...
+# Subtest: review travel follows authored directions without mirroring sprites
+ok 152 - review travel follows authored directions without mirroring sprites
+  ---
+  duration_ms: 1.698915
+  type: 'test'
+  ...
+# Subtest: review uses the measurement projection and rejects invalid elevation
+ok 153 - review uses the measurement projection and rejects invalid elevation
+  ---
+  duration_ms: 0.664091
+  type: 'test'
+  ...
+# Subtest: held review root stays fixed in world space through every pose
+ok 154 - held review root stays fixed in world space through every pose
+  ---
+  duration_ms: 1.81581
+  type: 'test'
+  ...
+# Subtest: held review rejects non-travel actions and invalid phase or scale
+ok 155 - held review rejects non-travel actions and invalid phase or scale
+  ---
+  duration_ms: 0.68453
+  type: 'test'
+  ...
+# Subtest: directional timber carrying follows travel without replaying stationary tool work
+ok 156 - directional timber carrying follows travel without replaying stationary tool work
+  ---
+  duration_ms: 0.42086
+  type: 'test'
+  ...
+# Subtest: measured walking stride requires the exact source, view, registration and timings
+ok 157 - measured walking stride requires the exact source, view, registration and timings
+  ---
+  duration_ms: 0.791691
+  type: 'test'
+  ...
+# Subtest: volume guides keep each corresponding support landmark grounded across all eight boundaries
+ok 158 - volume guides keep each corresponding support landmark grounded across all eight boundaries
+  ---
+  duration_ms: 8.796498
+  type: 'test'
+  ...
+# Subtest: all eight camera views preserve the fixed world support and closed return without approving sprite motion
+ok 159 - all eight camera views preserve the fixed world support and closed return without approving sprite motion
+  ---
+  duration_ms: 11.892018
+  type: 'test'
+  ...
+# Subtest: opposite half-strides change supporting legs and counter-arms, with both passing feet lifted
+ok 160 - opposite half-strides change supporting legs and counter-arms, with both passing feet lifted
+  ---
+  duration_ms: 1.209535
+  type: 'test'
+  ...
+# Subtest: all 14 non-player character profiles have eight angles and role-specific stance references
+ok 161 - all 14 non-player character profiles have eight angles and role-specific stance references
+  ---
+  duration_ms: 438.05102
+  type: 'test'
+  ...
+# Subtest: Elder and Borrin use narrative poses rather than mislabeled labor cycles
+ok 162 - Elder and Borrin use narrative poses rather than mislabeled labor cycles
+  ---
+  duration_ms: 0.489478
+  type: 'test'
+  ...
+# Subtest: atlas UVs select one cell per actor and restore canonical full-image UVs
+ok 163 - atlas UVs select one cell per actor and restore canonical full-image UVs
+  ---
+  duration_ms: 3.922056
+  type: 'test'
+  ...
+# Subtest: Blacksmith measured view advances by its own stride and holds both sides of every boundary
+ok 164 - Blacksmith measured view advances by its own stride and holds both sides of every boundary
+  ---
+  duration_ms: 10.856998
+  type: 'test'
+  ...
+# Subtest: a late atlas reconstructs the entire held-pose fraction after movement stops
+ok 165 - a late atlas reconstructs the entire held-pose fraction after movement stops
+  ---
+  duration_ms: 12.954289
+  type: 'test'
+  ...
+# Subtest: NPC driver shares atlases, preserves turns, freezes collisions and respects world scale
+ok 166 - NPC driver shares atlases, preserves turns, freezes collisions and respects world scale
+  ---
+  duration_ms: 13.337677
+  type: 'test'
+  ...
+# Subtest: workstations hold one completion and reset only on task lifecycle changes
+ok 167 - workstations hold one completion and reset only on task lifecycle changes
+  ---
+  duration_ms: 43.693707
+  type: 'test'
+  ...
+# Subtest: foreground contours preserve source pixels within the selected atlas frame
+ok 168 - foreground contours preserve source pixels within the selected atlas frame
+  ---
+  duration_ms: 11.00533
+  type: 'test'
+  ...
+# Subtest: smith inspection and repair retain their calibrated station operation until task reset
+ok 169 - smith inspection and repair retain their calibrated station operation until task reset
+  ---
+  duration_ms: 6.809385
+  type: 'test'
+  ...
+# Subtest: Borrin completes five finite consultant activities without a production assignment
+ok 170 - Borrin completes five finite consultant activities without a production assignment
+  ---
+  duration_ms: 14.163629
+  type: 'test'
+  ...
+# Subtest: Quartermaster inspects weights once at his table and releases for travel or a job
+ok 171 - Quartermaster inspects weights once at his table and releases for travel or a job
+  ---
+  duration_ms: 3.376223
+  type: 'test'
+  ...
+# Subtest: visual ground correction survives every direction, parent scale and terrain height
+ok 172 - visual ground correction survives every direction, parent scale and terrain height
+  ---
+  duration_ms: 1.580269
+  type: 'test'
+  ...
+# Subtest: work-only specialists keep static walking fallback without requesting absent atlases
+ok 173 - work-only specialists keep static walking fallback without requesting absent atlases
+  ---
+  duration_ms: 0.442662
+  type: 'test'
+  ...
+# Subtest: Elder activity preloading holds the completed pose until the next action is ready and installs without an idle flash
+ok 174 - Elder activity preloading holds the completed pose until the next action is ready and installs without an idle flash
+  ---
+  duration_ms: 14.514508
+  type: 'test'
+  ...
+# (node:39594) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: preview: a successful sign-out clears the token, then redirects
+ok 175 - preview: a successful sign-out clears the token, then redirects
+  ---
+  duration_ms: 5.690368
+  type: 'test'
+  ...
+# Subtest: preview: a rejected sign-out still clears the token and redirects
+ok 176 - preview: a rejected sign-out still clears the token and redirects
+  ---
+  duration_ms: 0.737771
+  type: 'test'
+  ...
+# Subtest: preview: a sign-out that throws synchronously still clears and redirects
+ok 177 - preview: a sign-out that throws synchronously still clears and redirects
+  ---
+  duration_ms: 0.374725
+  type: 'test'
+  ...
+# Subtest: preview: a sign-out that never settles clears and redirects once the wait expires
+ok 178 - preview: a sign-out that never settles clears and redirects once the wait expires
+  ---
+  duration_ms: 17.968401
+  type: 'test'
+  ...
+# Subtest: preview: no bearer means nothing to invalidate, so no request is made
+ok 179 - preview: no bearer means nothing to invalidate, so no request is made
+  ---
+  duration_ms: 0.442954
+  type: 'test'
+  ...
+# Subtest: preview: a stored bearer is still invalidated server-side
+ok 180 - preview: a stored bearer is still invalidated server-side
+  ---
+  duration_ms: 0.203033
+  type: 'test'
+  ...
+# Subtest: deployed: a confirmed sign-out clears the token, then redirects
+ok 181 - deployed: a confirmed sign-out clears the token, then redirects
+  ---
+  duration_ms: 0.31399
+  type: 'test'
+  ...
+# Subtest: deployed: a sign-out that never settles throws and does NOT redirect
+ok 182 - deployed: a sign-out that never settles throws and does NOT redirect
+  ---
+  duration_ms: 20.328
+  type: 'test'
+  ...
+# Subtest: deployed: a rejected sign-out throws and does NOT redirect
+ok 183 - deployed: a rejected sign-out throws and does NOT redirect
+  ---
+  duration_ms: 3.081602
+  type: 'test'
+  ...
+# Subtest: deployed: the timeout is distinguishable from a rejection
+ok 184 - deployed: the timeout is distinguishable from a rejection
+  ---
+  duration_ms: 20.803658
+  type: 'test'
+  ...
+# Subtest: settleWithin reports the outcome and never rejects
+ok 185 - settleWithin reports the outcome and never rejects
+  ---
+  duration_ms: 22.52165
+  type: 'test'
+  ...
+# Subtest: settleWithin waits its full window, then gives up rather than hanging
+ok 186 - settleWithin waits its full window, then gives up rather than hanging
+  ---
+  duration_ms: 3.729146
+  type: 'test'
+  ...
+# Subtest: pre-sign-in: the preview clear gives up at the preview bound
+ok 187 - pre-sign-in: the preview clear gives up at the preview bound
+  ---
+  duration_ms: 1.322828
+  type: 'test'
+  ...
+# Subtest: pre-sign-in: a deployed session gets the deployed window, not the preview one
+ok 188 - pre-sign-in: a deployed session gets the deployed window, not the preview one
+  ---
+  duration_ms: 1.559829
+  type: 'test'
+  ...
+# Subtest: pre-sign-in: a failed clear never blocks sign-in
+ok 189 - pre-sign-in: a failed clear never blocks sign-in
+  ---
+  duration_ms: 0.515952
+  type: 'test'
+  ...
+# Subtest: pre-sign-in: the preview skips the request when there is no bearer
+ok 190 - pre-sign-in: the preview skips the request when there is no bearer
+  ---
+  duration_ms: 0.254034
+  type: 'test'
+  ...
+# Subtest: every sign-out bound comes from one rule
+ok 191 - every sign-out bound comes from one rule
+  ---
+  duration_ms: 0.145997
+  type: 'test'
+  ...
+# Subtest: the defaults are bounded, and deployed waits longer than preview
+ok 192 - the defaults are bounded, and deployed waits longer than preview
+  ---
+  duration_ms: 0.492009
+  type: 'test'
+  ...
+# Subtest: keeps VITE_-prefixed string entries
+ok 193 - keeps VITE_-prefixed string entries
+  ---
+  duration_ms: 2.86903
+  type: 'test'
+  ...
+# Subtest: drops non-VITE keys, non-string values and malformed documents
+ok 194 - drops non-VITE keys, non-string values and malformed documents
+  ---
+  duration_ms: 0.418038
+  type: 'test'
+  ...
+# Subtest: a missing app-env.json is a clean no-op
+ok 195 - a missing app-env.json is a clean no-op
+  ---
+  duration_ms: 2.314438
+  type: 'test'
+  ...
+# Subtest: reads the app env from a workspace
+ok 196 - reads the app env from a workspace
+  ---
+  duration_ms: 3.924489
+  type: 'test'
+  ...
+# Subtest: an explicit process-env override wins over the file
+ok 197 - an explicit process-env override wins over the file
+  ---
+  duration_ms: 0.401102
+  type: 'test'
+  ...
+# Subtest: the template ships auth off
+ok 198 - the template ships auth off
+  ---
+  duration_ms: 0.952775
+  type: 'test'
+  ...
+# Subtest: vite loadEnv resolves the wrapped value
+ok 199 - vite loadEnv resolves the wrapped value
+  ---
+  duration_ms: 3.842244
+  type: 'test'
+  ...
+# Subtest: the wrapped command runs with the app env applied
+ok 200 - the wrapped command runs with the app env applied
+  ---
+  duration_ms: 128.652805
+  type: 'test'
+  ...
+# Subtest: the wrapped command sees an explicit override, not the file value
+ok 201 - the wrapped command sees an explicit override, not the file value
+  ---
+  duration_ms: 138.329662
+  type: 'test'
+  ...
+# Subtest: the wrapper propagates the command's exit code
+ok 202 - the wrapper propagates the command's exit code
+  ---
+  duration_ms: 154.69901
+  type: 'test'
+  ...
+# Subtest: a signal-killed command is never reported as success
+ok 203 - a signal-killed command is never reported as success
+  ---
+  duration_ms: 116.321434
+  type: 'test'
+  ...
+# Subtest: the CLI still runs when invoked through a symlinked path
+ok 204 - the CLI still runs when invoked through a symlinked path
+  ---
+  duration_ms: 149.482255
+  type: 'test'
+  ...
+# Subtest: meal selection includes finite mixing and restores chopping on the sixth day
+ok 205 - meal selection includes finite mixing and restores chopping on the sixth day
+  ---
+  duration_ms: 7.523795
+  type: 'test'
+  ...
+# Subtest: forge preparation and raised-hammer tasks keep their own days and then restore forging
+ok 206 - forge preparation and raised-hammer tasks keep their own days and then restore forging
+  ---
+  duration_ms: 0.7914
+  type: 'test'
+  ...
+# Subtest: consultant keeps one cosmetic operation for each valid day and returns to writing
+ok 207 - consultant keeps one cosmetic operation for each valid day and returns to writing
+  ---
+  duration_ms: 0.778357
+  type: 'test'
+  ...
+# Subtest: timber activity selects one finite operation per valid day and restores forestry
+ok 208 - timber activity selects one finite operation per valid day and restores forestry
+  ---
+  duration_ms: 0.385334
+  type: 'test'
+  ...
+# Subtest: timber routing uses the same operation and physical station as playback
+ok 209 - timber routing uses the same operation and physical station as playback
+  ---
+  duration_ms: 63.204807
+  type: 'test'
+  ...
+# Subtest: all six Elder camp activities have eight frames and source-bound body placement
+ok 210 - all six Elder camp activities have eight frames and source-bound body placement
+  ---
+  duration_ms: 66.296141
+  type: 'test'
+  ...
+# Subtest: camp activities never claim production work, walking, dialogue, sleep or a moved Elder
+ok 211 - camp activities never claim production work, walking, dialogue, sleep or a moved Elder
+  ---
+  duration_ms: 0.645889
+  type: 'test'
+  ...
+# Subtest: finite sequence holds completed actions, pauses, and never skips or loops the last action
+ok 212 - finite sequence holds completed actions, pauses, and never skips or loops the last action
+  ---
+  duration_ms: 0.904693
+  type: 'test'
+  ...
+# Subtest: work animation library covers every static action with four authored frames
+ok 213 - work animation library covers every static action with four authored frames
+  ---
+  duration_ms: 2545.028417
+  type: 'test'
+  ...
+# Subtest: job assignment immediately routes to the selected daily physical workstation
+ok 214 - job assignment immediately routes to the selected daily physical workstation
+  ---
+  duration_ms: 4.113214
+  type: 'test'
+  ...
+# Subtest: station routing preserves invalid-job, completed-day and consultant assignment guards
+ok 215 - station routing preserves invalid-job, completed-day and consultant assignment guards
+  ---
+  duration_ms: 0.680928
+  type: 'test'
+  ...
+# Subtest: 14 characters have six static work references with complete provenance and transparent PNG format
+ok 216 - 14 characters have six static work references with complete provenance and transparent PNG format
+  ---
+  duration_ms: 479.199225
+  type: 'test'
+  ...
+# Subtest: Borrin ledger poses belong to work references
+ok 217 - Borrin ledger poses belong to work references
+  ---
+  duration_ms: 1.185591
+  type: 'test'
+  ...
+# Subtest: completion subscriptions publish new actor ownership before another frame is needed
+ok 218 - completion subscriptions publish new actor ownership before another frame is needed
+  ---
+  duration_ms: 2.709407
+  type: 'test'
+  ...
+# Subtest: a later-mounted prop receives the current finish and releases its subscription
+ok 219 - a later-mounted prop receives the current finish and releases its subscription
+  ---
+  duration_ms: 0.394775
+  type: 'test'
+  ...
+# Subtest: station subscriptions stay separate and world cleanup hides every retained workpiece
+ok 220 - station subscriptions stay separate and world cleanup hides every retained workpiece
+  ---
+  duration_ms: 0.364018
+  type: 'test'
+  ...
+# Subtest: different workstation source bases retain the same physical root and distances
+ok 221 - different workstation source bases retain the same physical root and distances
+  ---
+  duration_ms: 3.156741
+  type: 'test'
+  ...
+# Subtest: workstation review rejects missing, zero and unrepresentable physical registrations
+ok 222 - workstation review rejects missing, zero and unrepresentable physical registrations
+  ---
+  duration_ms: 1.841895
+  type: 'test'
+  ...
+1..222
+# tests 222
+# suites 0
+# pass 222
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7639.14854
