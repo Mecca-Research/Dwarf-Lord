@@ -231,6 +231,29 @@
       "status": "exported",
       "destination": "public/sprites/Cook/motion/stir-cauldron/actor",
       "station": "stew-cauldron"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "title": "Anvil ready",
+      "reference": "public/sprites/Blacksmith/work-references/00-anvil-ready.png",
+      "beats": [
+        "rest hammer low",
+        "continuous midway transition from rest hammer low toward slight inhale and draw hammer hand back at hip",
+        "slight inhale and draw hammer hand back at hip",
+        "continuous midway transition from slight inhale and draw hammer hand back at hip toward adjust tongs on billet",
+        "adjust tongs on billet",
+        "continuous midway transition from adjust tongs on billet toward settle into ready stance",
+        "settle into ready stance",
+        "lower hammer from overhead to shoulder/chest recovery; tongs retain billet"
+      ],
+      "kind": "work",
+      "direction": "actor",
+      "notes": "Original visible body, near boot, hammer, tongs and billet over the unchanged independent anvil. Integer whole-pose contact registration on one509/[280,592] physical basis. Hidden far leg remains unobserved. Finite preparation, no strike/reward or repeat approval.",
+      "frameCount": 8,
+      "status": "exported",
+      "destination": "public/sprites/Blacksmith/motion/anvil-ready/actor",
+      "station": "anvil"
     }
   ]
 }

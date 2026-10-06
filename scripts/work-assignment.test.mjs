@@ -40,7 +40,8 @@ test('job assignment immediately routes to the selected daily physical workstati
     ['kori', 1, 'meals', 'cutting-block'], ['kori', 2, 'meals', 'potato-block'],
     ['kori', 3, 'meals', 'dough-block'], ['kori', 4, 'meals', 'stew-cauldron'],
     ['kori', 5, 'meals', 'cutting-block'],
-    ['grit', 3, 'forge', 'repair-bench'], ['brokk', 2, 'timber', 'cooper-barrel'],
+    ['grit', 3, 'forge', 'repair-bench'], ['grit', 4, 'forge', 'anvil'],
+    ['grit', 5, 'forge', 'anvil'], ['brokk', 2, 'timber', 'cooper-barrel'],
   ]) {
     useGame.setState({ day, dayResolved: false, dwarves: catalog.STARTING_DWARVES.map(d => ({ ...d, assignedJobId: null })) });
     const body = { x: -20, z: 4, dest: null, speed: 2, anim: 'walk' };

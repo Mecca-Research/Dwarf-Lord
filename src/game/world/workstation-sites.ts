@@ -3,13 +3,15 @@ import type { DwarfAppearance } from "./dwarf-appearances";
 import type { Body } from "../runtime";
 import { cookingWorkAction, forgeWorkAction, timberWorkAction } from "./work-activities";
 
-/** Actor roots and persistent props share one registration, including on arrival. */
+/** Actor roots and persistent props share one world root, including on arrival.
+ * Each layer keeps its measured physical source basis for sprite placement.
+ */
 export const workstationSites = [
   { id: "cutting-block", appearance: "cook", job: "meals", bodyHeight: 520, anchor: [320, 616], actions: ["chop-vegetables"] },
   { id: "potato-block", appearance: "cook", job: "meals", bodyHeight: 520, anchor: [320, 616], actions: ["peel-potatoes"], offsetX: -3 },
   { id: "dough-block", appearance: "cook", job: "meals", bodyHeight: 562, anchor: [320, 616], actions: ["knead-dough"], offsetX: -6, completionLayer: "completed-dough.png" },
   { id: "stew-cauldron", appearance: "cook", job: "meals", bodyHeight: 547, anchor: [320, 616], actions: ["stir-cauldron"], offsetX: -9 },
-  { id: "anvil", appearance: "blacksmith", job: "forge", bodyHeight: 520, anchor: [320, 616], actions: ["hammer-contact", "inspect-tool"] },
+  { id: "anvil", appearance: "blacksmith", job: "forge", bodyHeight: 520, anchor: [320, 616], actions: ["hammer-contact", "inspect-tool", "anvil-ready"] },
   { id: "repair-bench", appearance: "blacksmith", job: "forge", bodyHeight: 650, anchor: [320, 616], actions: ["repair-pickaxe-handle"], offsetX: -3 },
   { id: "forestry-trunk", appearance: "ginger", job: "timber", bodyHeight: 376, anchor: [240, 616], actions: ["fell-tree"] },
   { id: "cooper-barrel", appearance: "ginger", job: "timber", bodyHeight: 520, anchor: [320, 616], actions: ["build-barrel"], offsetX: 6 },

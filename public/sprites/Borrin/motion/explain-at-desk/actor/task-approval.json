@@ -108,11 +108,11 @@
     },
     {
       "file": "../../../../../../scripts/workstation-review-check.mjs",
-      "sha256": "9b8684c2d01dfb509ea6063d9c5e1896d1a8bc4e9ff77b6f9e0df9d8e83e4bb3"
+      "sha256": "47a98d9b62004b8d384f0c181715d216166772e1b504de3743a7255867974a99"
     },
     {
       "file": "../../../../../workstation-review.html",
-      "sha256": "fa2f9cb0162a350a4965a7faa126a5e51c05fa5b887d0b1cf928f603d34fb2dc"
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
     },
     {
       "file": "../../../../../../src/game/world/npc-motion.ts",
@@ -124,11 +124,11 @@
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
-      "sha256": "570de9c1f3eded873a4db3ea5ac07054d515cc5823f96ee0b0ac477234ed911b"
+      "sha256": "89f89c5c5e7b279da24e1614f41d3bde9cb488135d45c777de2a2d9b06198f57"
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a"
+      "sha256": "05046d429f2a4eec214c2d60c9a8f0d527168791badd14f36be2b925d8d1f6c6"
     },
     {
       "file": "../../../../../../src/game/world/terrain.tsx",
@@ -297,15 +297,41 @@
     {
       "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
       "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion50",
+    "checkpoint": "motion52",
     "files": [
+      "scripts/workstation-review-check.mjs",
+      "public/workstation-review.html",
       "src/game/world/workstation-sites.ts",
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
-    "scope": "Exact prior selected assets and limited acceptance, freshly exercised after fourth meal operation/site addition. No new art/material/family approval."
+    "audit": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+    "scope": "Exact prior selected sources and limited native acceptance retained. Additive forge mapping and pixel-equivalent prior preview layers verified. Earlier numerical stride/cane observations retain their dates; no new native gait, family or global motion approval."
   }
 }

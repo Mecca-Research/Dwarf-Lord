@@ -52,7 +52,7 @@
   "dependencies": [
     {
       "file": "../../render-calibration.json",
-      "sha256": "f627c02633f4d859ba5c9e237092646abca046035027be016ab20ed5cd550a3b"
+      "sha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57"
     },
     {
       "file": "../../../../workstations/anvil/sprite.png",
@@ -93,14 +93,34 @@
     {
       "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
       "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion39",
+    "checkpoint": "motion52",
     "files": [
       "public/sprites/Blacksmith/motion/render-calibration.json"
     ],
-    "audit": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
-    "scope": "Original selected poses and approval scope retained; current runtime regression evidence supports only the existing acceptance."
+    "audit": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+    "scope": "Exact prior selected sources and limited native acceptance retained. Additive forge mapping and pixel-equivalent prior preview layers verified. Earlier numerical stride/cane observations retain their dates; no new native gait, family or global motion approval."
   }
 }

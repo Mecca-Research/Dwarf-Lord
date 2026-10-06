@@ -1,0 +1,94 @@
+{
+  "checkpoint": "motion52",
+  "reviewedAt": "2026-10-06",
+  "baseline": "096ce97da44c6c8b12c35fd19ae200be3e383055",
+  "allGreenToMerge": false,
+  "frozenScope": {
+    "mainCycles": 153,
+    "originalIndependentActorCycles": 7,
+    "total": 160
+  },
+  "accepted": {
+    "mainCycles": 50,
+    "originalActors": 7,
+    "derivedActorsOutsideFrozenScope": 11,
+    "totalScopedSources": 68
+  },
+  "remaining": {
+    "individualCycles": 103,
+    "walking": 62,
+    "directionalToolCarry": 24,
+    "fixedWorkReferences": 17,
+    "directionFamilies": 11,
+    "referenceActionsWithoutGameplayMapping": 43
+  },
+  "live": {
+    "referenceActions": 22,
+    "totalReferenceActions": 65,
+    "approvedWorkstationVariants": 18,
+    "physicalActiveProps": 12
+  },
+  "completed": [
+    "Blacksmith anvil-ready: eight original-pixel finite actor poses, independently owned unchanged anvil, live day-four forge selection and held finish.",
+    "Physical workstation preview uses one uniform body-basis transform. All136 prior variant/frame compositions remain pixel-identical.",
+    "Source-only actor identity, physical registration and runtime coverage mutation guards added."
+  ],
+  "measurements": {
+    "blacksmithAnvilReady": {
+      "visibleNearBootMinCorrelation": 0.9687193930053749,
+      "visibleNearBootMaxTravelPx": 0.9909591674804688,
+      "visibleNearBootMaxAdjacentPx": 1.01290758048333,
+      "billetMaxOutsideWorkingFacePx": 0,
+      "wholePoseIntegerCorrectionBoundPerComponentPx": 12,
+      "scope": "Visible stationary boot material and opaque lower billet face only. Hidden far sole, moving gait, impact and seamless loop excluded."
+    }
+  },
+  "validation": {
+    "nodeTestsPassed": 218,
+    "pythonTestsPassed": 89,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "approvedWorkstationVariantsPassed": 18,
+    "forgeDaysPassed": 5,
+    "originalCampJobRegression": "passed",
+    "headedGameplayClient": "two iterations; movement and nonblank captures passed"
+  },
+  "evidence": [
+    "docs/art-review/motion52/blacksmith-ready/actor-review52.json",
+    "docs/art-review/motion52/blacksmith-ready/stationary-boots52.json",
+    "docs/art-review/motion52/blacksmith-ready/billet-surface-contact52.json",
+    "docs/art-review/motion52/smith-gameplay52.json",
+    "docs/art-review/motion52/npc-gameplay52.json",
+    "docs/art-review/motion52/station-layer-approved52.json",
+    "docs/art-review/motion52/skill-client52.json",
+    "docs/art-review/motion52/retained-assets-audit52.json",
+    "docs/art-review/motion52/unchanged-open-motion52.json",
+    "docs/art-review/motion52/runtime-coverage-audit52.json"
+  ],
+  "rejectedAttempts": {
+    "laborerBackLeft": "Two whole-strip authoring methods remain private and unselected; recovery/arm phases and material correspondence fail review.",
+    "blacksmithUnregisteredPreparation": "Original near-boot travel12.087818px and adjacent11.917376px rejected before bounded whole-pose registration."
+  },
+  "retainedEarlierFailureEvidence": {
+    "laborerSelectedBackLeftPx": 63.079,
+    "elderSelectedBackCanePx": 18.057,
+    "elderJointRootPx": 14.009,
+    "provenance": "Earlier source-bound observations; selected files are exact in unchanged-open-motion52.json. Not newly measured or approved."
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 43
+    }
+  ],
+  "runtimeCoverageBindingCurrent": true,
+  "scopeNote": "Gate categories overlap. Unreviewed does not mean broken. No frozen denominator changes, family approvals, new walking/cane acceptance, relaxed thresholds or whole-library readiness."
+}

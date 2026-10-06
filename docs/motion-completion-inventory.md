@@ -189,7 +189,6 @@ These are existing assets awaiting task or ambient activation, not a requirement
 
 | Character | Action |
 | --- | --- |
-| Blacksmith | anvil-ready |
 | Blacksmith | hammer-raised |
 | Blacksmith | file-tool-edge |
 | Borrin | turn-ledger-page |

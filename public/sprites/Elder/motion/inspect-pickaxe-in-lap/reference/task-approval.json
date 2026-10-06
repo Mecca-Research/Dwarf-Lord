@@ -64,7 +64,7 @@
     },
     {
       "file": "../../../../../../src/game/world/work-activities.ts",
-      "sha256": "d338bef5f3d4fc1937c7e329fa6dc6788e5d3ad9863cc60d56a3e49cf2cc1d3a"
+      "sha256": "05046d429f2a4eec214c2d60c9a8f0d527168791badd14f36be2b925d8d1f6c6"
     },
     {
       "file": "../../../../../../src/game/motion-playback.ts",
@@ -297,14 +297,34 @@
     {
       "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
       "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion50",
+    "checkpoint": "motion52",
     "files": [
       "src/game/world/work-activities.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
-    "scope": "Exact prior selected assets and limited acceptance, freshly exercised after fourth meal operation/site addition. No new art/material/family approval."
+    "audit": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+    "scope": "Exact prior selected sources and limited native acceptance retained. Additive forge mapping and pixel-equivalent prior preview layers verified. Earlier numerical stride/cane observations retain their dates; no new native gait, family or global motion approval."
   }
 }

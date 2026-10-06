@@ -13,7 +13,7 @@ export const elderCampActions = [
 /** A day's forge assignment has one finite operation, including inspection
  * and handle repair. A finished operation never silently becomes another task.
  */
-export const forgeWorkActions = ["hammer-contact", "inspect-tool", "repair-pickaxe-handle"] as const;
+export const forgeWorkActions = ["hammer-contact", "inspect-tool", "repair-pickaxe-handle", "anvil-ready"] as const;
 
 export function forgeWorkAction(day: number) {
   if (!Number.isSafeInteger(day) || day < 1) throw new Error("Invalid work day");
