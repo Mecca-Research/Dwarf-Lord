@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "48311521e04149b996e26831715322887c534768bd89b76b71de514dabc4aeab",
+    "settingsSha256": "e52087b28dee20af501697039cb2d51a8c1a6b6751ac5842fa5ca914ff5500b9",
+    "frameSha256": [
+      "d327c6e169673096fa9fb9fe0bf132ec437fb7a6fba75d8566bac6fd55a45dd1",
+      "99c71654018d5c1550ab1bb3148cac13ca4bdb91e3adc95b40f39d3ed01c6062",
+      "49ccea91b1cbf21769109b5161c0f5390f051adc3322bf55bdca17a8253a8532",
+      "e270e371584aac027e971f2f835213064733b0aae4c0eeb1f59011df9effbf0d",
+      "a46e277491f81ab85d4b6765abed63470b97ca267c40cac09c3ac70a7dc040dd",
+      "6328e144ddca80f5990783efdaeb065eb6afaf2a42d6db9adf957172c5865bcb",
+      "a629bd999f6990144bda3f4683c867c1d187b16226d84ab6d7c7751cf145b0df",
+      "89915ba9c7f73b8df76000492739c99aabd2adc495820c01c237d1c217a8797e"
+    ],
+    "atlasSha256": "59c434cd01f55e2dd9466c1f803a25bee3e0f0aa36e288379628a061629ce7d5",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "e52087b28dee20af501697039cb2d51a8c1a6b6751ac5842fa5ca914ff5500b9",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          470,
+          100,
+          530,
+          370
+        ],
+        "minimumCorrelation": 0.94,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -2.0156133473392401e-07,
+              4.955851551358137e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96052,
+            "measuredCorrectionPx": [
+              2.0951688289642334,
+              0.10927838832139969
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96002,
+            "measuredCorrectionPx": [
+              1.4154114723205566,
+              0.07108261436223984
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96113,
+            "measuredCorrectionPx": [
+              3.0107829570770264,
+              0.23688769340515137
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95641,
+            "measuredCorrectionPx": [
+              0.9792795181274414,
+              -0.5135365128517151
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.94124,
+            "measuredCorrectionPx": [
+              2.489323854446411,
+              0.01614690199494362
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95578,
+            "measuredCorrectionPx": [
+              1.9160487651824951,
+              -0.014355206862092018
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.94627,
+            "measuredCorrectionPx": [
+              1.3877214193344116,
+              0.5584726333618164
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      150,
+      120,
+      120,
+      160,
+      65,
+      110,
+      100,
+      175
+    ],
+    "character": "Ginger",
+    "action": "fell-tree",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Ginger fell-tree fixed reference visual repeat: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same curly ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+    "station-and-foot-contact": "Existing bounded fixed-tree registration retained. Visible braced boots remain at their local baseline. Independent station actor has its own separate review; this record covers the combined painted reference only.",
+    "hand-and-tool-contact": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke.",
+    "prop-continuity": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke.",
+    "last-to-first-transition": "Both hands retain one connected axe through low0, drawn-back1, rising2, apex3, descent4, notch contact5, recoil6 and low recovery7. Painted tree notch and scatter persist.7-to0 continues the low recovery without regenerating cut timber; no tree fall is promised by this cosmetic chopping stroke. Exact repeat boundary is checked in the controlled gallery."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "9fd6c7182059f6ae770dc272f6d88c62d5b020c9e8375273ae126aaf99646bd2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-fell-tree-review.json",
+      "sha256": "4573ccce213b3e167d32da12ccb31808a6aff9cdf12827354419fbc6b5d09721"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-fell-tree-playback.json",
+      "sha256": "62c5748cce596059bca9ed95b570fcec4985bc5ed7762e706e72adaeaf783571"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-fell-tree-0.png",
+      "sha256": "010fd504f84a8fa948a67faa6af1e24ac3a01e6829be1cc8d5d2d10a82ba3862"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-fell-tree-4.png",
+      "sha256": "878528ab072f0e23800f6620aa53ccfeee0a17a58dcf306cab929506cbf4eca0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Ginger-fell-tree-7.png",
+      "sha256": "2fa144e899814d381a8afef4147832e314a1841223ec15d28521c2c54f704056"
+    }
+  ]
+}

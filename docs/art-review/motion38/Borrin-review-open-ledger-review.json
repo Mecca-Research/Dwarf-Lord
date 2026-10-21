@@ -1,0 +1,136 @@
+{
+  "character": "Borrin",
+  "action": "review-open-ledger",
+  "direction": "reference",
+  "destination": "public/sprites/Borrin/motion/review-open-ledger/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c",
+  "settingsSha256": "44574eb48a734cf6b51c349cb8a613fb44e6e1437d214bcaea67692e4e984eb1",
+  "nativeReviewSha256": "b5c66d16784cc6a50162fdd88a1977f44a9cde3a7f73711eab82332ab36097fd",
+  "checks": {
+    "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right index stays above the same left open ledger page while tracing0/1/2 and leaning3/4, then returning5/6/7. Left hand steadies the opposite page. The same open spine, ink/quill and stacked books remain; no page is released or accounting result invented.",
+    "prop-continuity": "Right index stays above the same left open ledger page while tracing0/1/2 and leaning3/4, then returning5/6/7. Left hand steadies the opposite page. The same open spine, ink/quill and stacked books remain; no page is released or accounting result invented.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "00a3ce81fdf369734d7ac430314ffb8fdd9e1a87bd54b0620af4717aee31ec8c",
+    "settingsSha256": "44574eb48a734cf6b51c349cb8a613fb44e6e1437d214bcaea67692e4e984eb1",
+    "frameSha256": [
+      "9044324e402cf40918f36573f7a2ee11af2072b0dfe26ba139474b2bf7fff7c6",
+      "cfa79a350b6822c43becaecacb5828a82fdf48a3c06c0c8c7dd7fb705d68fbfa",
+      "a6c051f3250051b3397124bb2ec6086cb4d4105da312704577f939c87c64ab3e",
+      "913f09802b27a801018a503ec29ce3e7b9098dc6c7860eb56815c3a8f0e45c78",
+      "26032f1691c94b89c6548020acdcf1b295c5f4165582cfb8d5149c19abd8963d",
+      "40c105aea32f8ee5169382d2b0724df8178f6d9c86663eaf2df6f8b27aeb5852",
+      "15265b76e4f3f50f37ece469982d9ac6bbd15f736e93eb8b3e9aaf7fab346ac0",
+      "82c063beae6e350e67fa4e6357bb0ce7c667ded4bbc57bff9d861c6b1730f9ad"
+    ],
+    "atlasSha256": "b294917536be860c194cd19d8581fad362b1c6bb2a0f9124ada643b31e82e794",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44574eb48a734cf6b51c349cb8a613fb44e6e1437d214bcaea67692e4e984eb1",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          40,
+          370,
+          595,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.0,
+              0.0
+            ]
+          },
+          {
+            "correlation": 0.9813,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.38,
+              0.13
+            ]
+          },
+          {
+            "correlation": 0.9905,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.49,
+              0.14
+            ]
+          },
+          {
+            "correlation": 0.9803,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.3,
+              0.13
+            ]
+          },
+          {
+            "correlation": 0.9782,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.56,
+              -2.01
+            ]
+          },
+          {
+            "correlation": 0.9737,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.67,
+              -2.25
+            ]
+          },
+          {
+            "correlation": 0.9795,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.59,
+              -2.07
+            ]
+          },
+          {
+            "correlation": 0.9755,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.06,
+              -2.37
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "review-open-ledger",
+    "direction": "reference"
+  }
+}

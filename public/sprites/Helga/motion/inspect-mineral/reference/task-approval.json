@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "c8b9ffdecd17c3784932387cfdb7c85eee1c23d9b11b7a8b8b15bd2fbe0809be",
+    "settingsSha256": "ba8e55a41a37fca41f7cf03a3400e89ee8ddfe1a183becbc51d8975b32bbd2bc",
+    "frameSha256": [
+      "6032d1fea346e90fdb9e6829936fbad76f938e6acb52e77930f1fa03b40a7e53",
+      "995fcdf8cabf24c75539c6a194d218429d7abd4985ea304247384dd253a73b81",
+      "015823a1073b6a704cdb276161860d940294b99697042ddf0fa1110b27026c40",
+      "b3556a42a61f010171986069356c8f0047fad641a049edb8df5be9b54a3258d4",
+      "2bd6f3f785703816736dba222134d744328386b1f1a689dfe75269b1e5b762de",
+      "539c1a352a00ada35518f87c29be15e90002a6bb0447cf99cd610d6ba0c00417",
+      "fe6f3ae23c1f1540cf6fd7a96b43c46381981fdeda686535824f01df04a2a24e",
+      "a169ed11f86f8c15c2a3459caf9dd1709fedbc2e0fe30233ac734338c9260e49"
+    ],
+    "atlasSha256": "a280c3331df03ea89dd35931c1ae0b3b9381e6907f7d3d7ae61bfaf07cd0bf3e",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "ba8e55a41a37fca41f7cf03a3400e89ee8ddfe1a183becbc51d8975b32bbd2bc",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          140,
+          425,
+          580,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -3.8006024993819665e-09,
+              1.4852484575555991e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99236,
+            "measuredCorrectionPx": [
+              0.5950911045074463,
+              0.17535001039505005
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99065,
+            "measuredCorrectionPx": [
+              0.20610180497169495,
+              0.3899073004722595
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98177,
+            "measuredCorrectionPx": [
+              0.292192280292511,
+              0.30994388461112976
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98894,
+            "measuredCorrectionPx": [
+              -0.5560191869735718,
+              0.027541374787688255
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99025,
+            "measuredCorrectionPx": [
+              0.2833644449710846,
+              0.13517309725284576
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99236,
+            "measuredCorrectionPx": [
+              0.6873291730880737,
+              0.09949004650115967
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99019,
+            "measuredCorrectionPx": [
+              0.8579745292663574,
+              0.15057912468910217
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Helga",
+    "action": "inspect-mineral",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Helga inspect-mineral fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same beardless stocky female dwarf with long bright red braids, metal helmet, faded blue tunic, leather apron and heavy boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left fingers retain the same mineral from chest0 through lift1/2, extension3/4 and return5/6/7. Right hand keeps a single round magnifier with connected wooden grip, brought toward the stone. Red braids, helmet, blue tunic and kneeling support stay coherent. Tray, cloth and pouch remain; no magnifier swap or mineral release.",
+    "prop-continuity": "Left fingers retain the same mineral from chest0 through lift1/2, extension3/4 and return5/6/7. Right hand keeps a single round magnifier with connected wooden grip, brought toward the stone. Red braids, helmet, blue tunic and kneeling support stay coherent. Tray, cloth and pouch remain; no magnifier swap or mineral release.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "72d2a4104d08cce2d5318e402b00e7cee24af562ae5143084d57232cf8aaba2c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-inspect-mineral-review.json",
+      "sha256": "653324b2b8165d788bc27bbc9999955c5bb272bb3a731b815025d6ba93b463dc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-inspect-mineral-playback.json",
+      "sha256": "b1d5a56f115cd5a6bf1cd800926f302d6391a550d110a7d6fa90871ca1b66dde"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-inspect-mineral-0.png",
+      "sha256": "0988a794e9f8a0b045dbacc9d7a909418417f35e1c6e0496d24ab97d0c33609e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-inspect-mineral-4.png",
+      "sha256": "f6d994ab835b4fe486acedf5f3cd3aff1ed3d5676e6238e9222be4071538a346"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-inspect-mineral-7.png",
+      "sha256": "16b73232895a541f3ef9941f2e4f8ffc5b6380ef87dc1393c8ccab431e6d2a51"
+    }
+  ]
+}

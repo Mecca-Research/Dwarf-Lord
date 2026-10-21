@@ -1,0 +1,32 @@
+{
+  "sourceSha256": "7c1ebe8201c29f680a38f07e6b91c6dac682f4b484accba44b7e5755599b51ab",
+  "spriteSha256": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd",
+  "prompt": "Precise object edit of this existing standalone Dwarf Lord workstation. Keep the entire existing vise, table, shelf, wood grain, metal patina, shelf tools, camera angle, object size, position and transparent margins exactly as reference1. Change only how deeply the single axe head is inserted in the jaws. Its upright cutting edge currently protrudes far too high. LOWER THE SAME AXE HEAD DEEPLY BETWEEN THE JAWS so the sharpened upper curved edge is almost flush with the top of the back jaws: only a very short thin band of the blade projects above the jaws, about one narrow file thickness (one fifth of the current exposed blade height). Most of that same axe head must be hidden firmly between the vise jaws. The exposed upper cutting arc is nearly horizontal and shallow, low enough for the original Blacksmith's horizontal file in reference2 to rest across it without lifting either hand. Exposed edge crosses just above the jaws at the carried-file lower edge shown by reference2; this is not a tall blade sticking up. Do NOT add the dwarf or carried file to the output, do not change their design. One solid axe head only, cutting bit facing up, poll firmly held below, no loose extra blade. Preserve the furniture and its four legs, perspective, semi-realistic detailed rendering and exact canvas framing. No person, limb, carried file, floor, background, label or guide. Real alpha transparency.",
+  "reference": "../../Blacksmith/motion/file-tool-edge/reference/00.png",
+  "referenceSha256": "e2732acfbd7e78154b9ba0b33cc151b05872312b4b276a38fc9251895eca1fa9",
+  "placement": {
+    "method": "whole-canvas-uniform-normalization-and-fixed-integer-placement",
+    "rawCanvas": [
+      1254,
+      1254
+    ],
+    "canvas": [
+      640,
+      640
+    ],
+    "scale": 0.5103668261562998,
+    "offsetPx": [
+      0,
+      -7
+    ]
+  },
+  "targetBodyHeight": 533,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "candidate": false,
+  "review": "Independent complete vise bench, original shelf tools/fasteners and one upward-cutting blade seated deeply between fixed jaws. Three ordered builtin edits retained in motion56 provenance; first two props unselected. One fixed whole-prop placement, no per-frame prop transform or local pixel deformation. Native actor contacts pass; finite gameplay approval pending.",
+  "finitePlacementReview": "All8 native/game compositions inspected. Active cutting-arc contacts0-4 and lift/return5-7 separated; original source pixels and stationary near-boot material verified. One persistent independently owned bench/blade. Hidden far leg/formerly occluded body, force, metal removal/economy and repeat excluded."
+}

@@ -1,0 +1,858 @@
+{
+  "version": 1,
+  "baseline": "998862aafd128b706b40a545f213fd697d6ca085",
+  "unchangedBlacksmithGaitFiles": [
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/07.png",
+      "sha256": "b3b2d7c5ec233fd1390b55867897d9b1ac1304e2600e754dba0ec5ca9d644549"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/02.png",
+      "sha256": "2f7ce7a9d6a9c2051b8716c0f0acc47bde745b713e4fa66f954ce074a89204e0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/00.png",
+      "sha256": "a9a23c14da11a5a0d773bf5efa49094726bd47208e127061ffcb06016b2a1b59"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/assembly.json",
+      "sha256": "52dd80155f677911b18fc05b2dc0e338ae0212c954cdb6fc85ab76ace4ca6819"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/review.jpg",
+      "sha256": "8d6b96ddceb5e13de30a514dce414fa8c319a1cf5e45f6815df7065e4b84cd9c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/preview.png",
+      "sha256": "53004778115d94b7efb0ceac68467fc0327ee9ee26e8e562dae2ca9403a2d917"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/04.png",
+      "sha256": "1b5f3cd7812d3679118f5a37a8efe3a6d363495678086790e455381bcdf40cf5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/01.png",
+      "sha256": "68637ee890a945c62859d74789a5628ef8ec40a89ceb4b8a3cdc170783b0b732"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/05.png",
+      "sha256": "22bd246fca4d37a7046d78fb91558755333e664e8636ab191a12e4b7ad5c29b2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/prompt.txt",
+      "sha256": "40931574bf2aa5553d2fe2eca02a995a61b831515e4cbf68663d09355653144d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/03.png",
+      "sha256": "e18b455fc1a3855a8b14cc46448d575915e54b052b8a6f031ca4dd8a26165045"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/atlas.png",
+      "sha256": "8b6b234f4b89c6f66631012f84f420d966cbd1f1bea59ff7d26878f7ccbbf586"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/motion-polish.json",
+      "sha256": "aec2ca650c3753d8e781c9546470258cb845e6bf834e67f1c2c6af62858f5136"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/manifest.json",
+      "sha256": "e91f7201a1f51cb5a1daa0862a04a978358af550408ea3ca98a6083941b6a025"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/source-sheet.png",
+      "sha256": "c493c348f69abd48002f092c6cd32635751020326b616db6507833f9d1a80f53"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/generation.json",
+      "sha256": "e7abf561b5b1179ad27d8489a7a5edf95c53e06929073173cf194fe60ec55f97"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/06.png",
+      "sha256": "2c8ed87cc4e043467ca0216095f17b3d69f117c4e70d6749af6e19fa794137a6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/counter-swing-sheet.png",
+      "sha256": "763a272f03bb0108acdf54ecd84011449e9c73f7db61b97c060550b640fc96ab"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/opposite-contact-reference.png",
+      "sha256": "a8cf155b845b5e9f65c6ac3f2eacf13d139089cc67e193c2ea5c81550556f61c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/right-support.png",
+      "sha256": "af249b716ee34ca71cd0cc71543ab5cba8ef2ce3e7ea800a4136d4299b63943c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/opposite-contact.png",
+      "sha256": "dae2639e0637468a2e918979766f825c4510c94a561b03475f2fc833cfbd91e6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/left-recovery.png",
+      "sha256": "4fca81a88b36014a841202d0a68bb41aecabb7f4a6da3b4b453501146aebfbea"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/counter-swing-reference.png",
+      "sha256": "7ac26d6f00e9c19c7075ad7f2202e74a919783549a802e3e5664341febc0ba72"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-right/authoring-inputs/original-sheet.png",
+      "sha256": "2d784590c763213857fff79bf91271bd99f1b23e81a9f7d791bec447675699a3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/07.png",
+      "sha256": "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/02.png",
+      "sha256": "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/00.png",
+      "sha256": "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/assembly.json",
+      "sha256": "5cfb35ed2a3b11bc3a44691dfe7850038f2bb2eefb1876b74b6ee9d3f1d1b9b3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/review.jpg",
+      "sha256": "3206f1c1c3db53661cc692df32a6e78d133f35f3a128f185f4d45a38ef7a02fb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/preview.png",
+      "sha256": "55ce13640c1c7fdd4c0abd506329fa8bd97504576c1bde9e37a7177687bf77d8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/04.png",
+      "sha256": "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/01.png",
+      "sha256": "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/05.png",
+      "sha256": "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/prompt.txt",
+      "sha256": "0ac90d7d8fed183a660e674b54a25eede1ff671ae21aa5f6338bfa63d3678b02"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/travel-calibration.json",
+      "sha256": "032e209f17945f83972443abd20e0bfbdc08ef4f09f8bb1a9801699841ccc68b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/03.png",
+      "sha256": "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/atlas.png",
+      "sha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/motion-polish.json",
+      "sha256": "cbad54d024a55803410003cb83bf74ed1197b0f5badb852e896be433a29c95a4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/manifest.json",
+      "sha256": "f09d01c716a979aa789009043bf58465a3f06e136ad3461765743560e66a8902"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/source-sheet.png",
+      "sha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/generation.json",
+      "sha256": "3b458d728a0782f7e5c585717753414bf87b20b0174fec51f61cb8c2c48a000c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/loop-approval.json",
+      "sha256": "66b0b6776c764243cc40696dfcc720311d2ff1ded4a37d1952c38f8bf9a00c2f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/06.png",
+      "sha256": "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-anatomy47-reference-1.png",
+      "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-compact47.json",
+      "sha256": "477f167331c66903da70ac4943a85351165598c9a71e6d7d03b5a8c7922d9aeb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-first47-reference-1.png",
+      "sha256": "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-passing47.json",
+      "sha256": "08f37706d099c0e5441ebf65b12632abed4dc1c58b0ab47ebfad3632d87a8b74"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-passing47-reference-0.png",
+      "sha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-passing47-reference-1.png",
+      "sha256": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-return47.png",
+      "sha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-guide47-reference-1.png",
+      "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-passing47.png",
+      "sha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-compact47.json",
+      "sha256": "30459ffd8da09fa448f19b3656a4a9d8cd5d05fdbfc92b2a37dc58fa6fc06bf7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-anatomy47.png",
+      "sha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-compact47-reference-0.png",
+      "sha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-guide47.json",
+      "sha256": "0e9146d2d55d62d644b3c57f5538935b747cbe999c2b8b1c7bb9846734703cad"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-guide47.json",
+      "sha256": "0193de7173bf1dcd0e3ee79ec4e348c40dd0bc392861e4a38ae53a3d8068f277"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-anatomy47.json",
+      "sha256": "3f77fc94c7029955e790e92ba3c63b878bc4979145b4bcfb2619c7f9fb141f6d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-compact47.png",
+      "sha256": "f5a77643551e123b4373f6b365e23279472fab92e1294a7532f56747b6179f76"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/phase-guide47.png",
+      "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-guide47-reference-0.png",
+      "sha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-guide47.png",
+      "sha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/phase-guide47.json",
+      "sha256": "1b37d4eae3c881956f40a96460483ded0808943d9ef783b1b946c9045e2813fb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-pushoff47.json",
+      "sha256": "93a524eb992d8ab003e61b410f2b71d4ea7a1b5326c6872b90d4d560bdd64589"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-pushoff47.png",
+      "sha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-first47-reference-0.png",
+      "sha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-pushoff47-reference-0.png",
+      "sha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-first47.json",
+      "sha256": "87e3353829b3d6423f9f0524611ad4fb10d6ff133ea9a0324e522f03968e9cc7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-pushoff47.json",
+      "sha256": "e2fa0c543f25f18ae92ef971057a8e3ab8f5d4101f6f8caef13195210910b6c0"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-passing47.json",
+      "sha256": "2b06b59b1d201fa2300b3118ebf86d84ce2c070442ad5f988b5f1548ad2c12eb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-return47.json",
+      "sha256": "7a8e6ce8ec1602e7a5de02c604e2a842b17f95e40de5dd9297ad2016de798d2d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-return47-reference-0.png",
+      "sha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request.json",
+      "sha256": "0aa9e28846c9c834b6fe8520db71661424e2ea24c2ac3d341a4dea10bd7a3f2b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/request-anatomy47.json",
+      "sha256": "9e70249898e76366e4fd0d626a9abfa2326343745627c1df190b7b58d1aecd60"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-return47.json",
+      "sha256": "fed6b5baca0acc0853930117b9e9197b9c09fa7079dd4b22c314a06707a5b6e3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-anatomy47-reference-0.png",
+      "sha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/strip-first47.png",
+      "sha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/07.png",
+      "sha256": "86ed16f8283c5d61ed57156fa54cf149bbc57741f97c5bceb4a3b1decf07c53f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/02.png",
+      "sha256": "db9505b2acdc7da83e2f24d902d2592536b4803ee73a834878c5c703d0e70bde"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/00.png",
+      "sha256": "c989b99bcd082118289b6f86db70999dbe8f5093814a6158922152c946dd71e7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/review.jpg",
+      "sha256": "696e80f6be5510090a3c770b0250a65bec14e3c2126d2042f6aecc2036f92a7e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/preview.png",
+      "sha256": "c1a6c57d044b5a1405627734f7a1e08731e3c93d7ef498b4393d6717dc9f090f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/04.png",
+      "sha256": "e8aaaa33985d35ace2e3e0254c2cae87bd56b83ded449c7f06b13ae9ea9a0cb1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/archive.json",
+      "sha256": "b15bd5123ac44cb4a5fbc5bf757b9d87f47e68d206a805f15a914ba523f0961e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/01.png",
+      "sha256": "59992e26db3ce0bd3b1fa490197030a9aaaf294da495dbd8c886229478ebc69e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/05.png",
+      "sha256": "b9bc9a99f893700027f880c8945595a937de89e8e009282d48c99a6acb1952bb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/prompt.txt",
+      "sha256": "1b0c242bbe07d728aaba8735cac25186474c4f944b302cfff67db0094de81ca7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/03.png",
+      "sha256": "561a6dfe07ae31bdbf54485dda7099f8a9ab23ae87a0232ac6841df5b93bbac1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/atlas.png",
+      "sha256": "28d421fea75005bd513e4307cdd8b67ebeeaa70e06fff77b113eb4f675208c71"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/manifest.json",
+      "sha256": "0d1764df79754c2192961501ddc66ea144df92256db601fbad574214ed66fd55"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/source-sheet.png",
+      "sha256": "f272365eb53d359bd32e13be4efc1f19ab24f3ab1cf5f2ab68ea8a4a96d03471"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/generation.json",
+      "sha256": "41fecf41dd5b93130e648d6c5eeb796686bef4deecfdcf89441b25f8f80a57fd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/authoring-inputs/baseline47/06.png",
+      "sha256": "cf05e6538cc5f830291e70887b211e669d0409f26720c4b5631e6915646d9b0a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/07.png",
+      "sha256": "50f4cd9082b1888f695395e0cdb66fbf866be86140d47d1ef93e94028e498aa8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/02.png",
+      "sha256": "8d5c15c7bc23cb978c6f362f557b0d6dc1806f75ef93cc52c311f388610c1425"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/00.png",
+      "sha256": "917612965be76fda9fc9aa618077dc0b35db14eeb8b2a5dc764110b7f37467c7"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/review.jpg",
+      "sha256": "26d554e29fb29f905742ce2e468982ee4d676cf976591b87bc6c5ea706c78722"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/preview.png",
+      "sha256": "0b8f4c35479a25e8952d0f4089bed2f9db99a49465a88cd8d1f3c85d8a4c27ed"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/04.png",
+      "sha256": "10c3f6e5d5898f0e1fb176c2dae4635c1c7b28819ec2f428f9566c827a9bdb6e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/01.png",
+      "sha256": "4e58cc19a085282dda379ac779aa6827165888affa74c2a8f90e919fa194fd8d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/05.png",
+      "sha256": "6945e3852fab12a38ee0d597cdfc9250d39141d450c78d43426e39ec252aab58"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/prompt.txt",
+      "sha256": "9a4e9b914b668a0e8c86e0d9750182fde4524a6eb8a78777acc48f03bbffc01c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/03.png",
+      "sha256": "190fe4864fbca8efe43ee69dc08b90489789f2fb52fd68cb13b34bb1150061cb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/atlas.png",
+      "sha256": "3130f5d0397718f6d63b5b8ebb8952f6aa68980bd5efb632b9e60affb7a95d61"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/manifest.json",
+      "sha256": "c5b081d7b02ade7a4f6aaa19e91edf056c165d9756303f540ff2e235fed1b216"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/source-sheet.png",
+      "sha256": "d9a382f24753de4585426671210eb2089846b871cfd17fc65281d352327878ca"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/generation.json",
+      "sha256": "f878e42668848a42085208c7588a8d8aa256adf65c2d1aaafe723ed3c72cfefd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-right/06.png",
+      "sha256": "302476da52a6b3efd42a93cbf9da03c923e0f2e67e7fe5c85f992fd196d87592"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/07.png",
+      "sha256": "ba8488f50ad14739a0473bb4427bb65cde44c91b57d8e98e4bf40b8c1c51cdbe"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/02.png",
+      "sha256": "be825a196ab77fa874896c41197d4da4aa6c75ecca6bbbbaa8da650f958ce45c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/00.png",
+      "sha256": "7ae054d8a44d35958146957937779397b45db0db91074705d9f427d43dad6250"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/review.jpg",
+      "sha256": "e6c46b1a815997556d464f3d6be2b83e097984f82d3a2a68b8779f80e722ee6b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/preview.png",
+      "sha256": "f67eda934f63eef7d7e5a59780b614f6df6365b33d1e970242326ae56b3cb3ed"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/04.png",
+      "sha256": "9d61f2970c6872fce77efb2404473334b2b140fe2a40120dc816ffbc3c708078"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/01.png",
+      "sha256": "fe193fcb77ed0df29428c50886910cc7699711ff3c635e821ad4fe1c8d0b2e11"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/05.png",
+      "sha256": "358f3e180b324e81b40e45814509b071c4814385d158ad3c2c6a8a6dcf760bb9"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/prompt.txt",
+      "sha256": "3a09cbaee789eaf3a38b2034bc24b1ff4347106540d44419f676809539a790fa"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/03.png",
+      "sha256": "27b7270789bc4ad1f2c6a3937eae4078f0870c2f8b28c85d585ab0e4b20e6c3c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/atlas.png",
+      "sha256": "a62dfe69c4454f4874527a5397635199b5776b0583809b29a5c18c032775e911"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/manifest.json",
+      "sha256": "9a271a00f50fe9c15b3c343978ddc79748d08f3e62bf9aca38a4a01a12b195de"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/source-sheet.png",
+      "sha256": "9944f416ebd5280326f51106bf5ebd2e7a3629780ec578709a1621cb1bf0a195"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/generation.json",
+      "sha256": "5a7dc81f3b1bd671acb75ebd8309bddbe7eec7cc3b57435ee7a6013346631c77"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back-left/06.png",
+      "sha256": "775cc30335e8fed3c0d65210c910c620dd13be3518d401b256b17a76821aa06b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/07.png",
+      "sha256": "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/02.png",
+      "sha256": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/00.png",
+      "sha256": "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/assembly.json",
+      "sha256": "605ce1a10eaf68cb40e42e90705962d9625e195a82e4b3b027e3e99e2883af14"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/review.jpg",
+      "sha256": "cd186b79d0ec08f92d96f95589203bbca889f87a711f28665a3018ce3877d93e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/preview.png",
+      "sha256": "5c88fedaaa0fa99b6dcf72a9ffbff81eccf16e88abe0f619df177c9572889d62"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/04.png",
+      "sha256": "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/01.png",
+      "sha256": "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/05.png",
+      "sha256": "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/prompt.txt",
+      "sha256": "6c291e10fbeac6a90a7c01f1bd660b198049e6e09f62c81a1edcc654b3ba8635"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json",
+      "sha256": "b529ef4a4a996ac97f9744f3bfaedd28f8d51ff3eb40da1bd5ed78ad54ba4b1c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/03.png",
+      "sha256": "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/atlas.png",
+      "sha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/motion-polish.json",
+      "sha256": "6f6ff40e2392775c5929efdf7f240121997eddcda6254fdb26432b2dc5f40b6a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/manifest.json",
+      "sha256": "b859e95f0367d49c421946d0bfb4a5a9bae1e1b2a2a4601cf9b75b3fbd4df2bf"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/source-sheet.png",
+      "sha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/generation.json",
+      "sha256": "a847e1e7b1ae8c74e3b906c88a73434c62f33d266d1a35d587b5ea85f9d30bf4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/loop-approval.json",
+      "sha256": "00290bf09501c7f488f956404da094a456936e0cd9d213f8174e22aad2255f57"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/06.png",
+      "sha256": "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/support-a-reference.png",
+      "sha256": "ea8dc1b8b99d7ad9f740d7b2fc73ecf0e53f60812bb6d70832cdce9b87c70e88"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/reach37.png",
+      "sha256": "5acefada9b8ba91dc26037ab975bed25cc5167076027d4922eccb5754985e838"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/far-passing.png",
+      "sha256": "9dbecd887edbf225493d646e0021f86f7e11e060f2a3dab55bd5507c76fc0fea"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/left-down-reference.png",
+      "sha256": "7af31e06fa08112b797c9144f295f76a2b8ac30db54491dfc7900d7494ec525f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/near-passing.png",
+      "sha256": "3b31c34a4bb091a5cfc9f7768b27527ee6982bb7cf29e6a5e29d85bb88ad69f8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/support-b.png",
+      "sha256": "b6366270c6070b617d99f078262d3b269711b7f084719ad70272a091549e6666"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/left-down-arm.png",
+      "sha256": "42b23c102733677fc43759ae0e2d5a80f491bc37f2b6f83b15435ecfca43177f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/support-a.png",
+      "sha256": "0d27ebf3c04f0354345bd44d3203b115b7993afc422de8aa7a5c66ec461edfa4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/contact-reference.png",
+      "sha256": "82e6a2be9c828078532497275b4d0ce393b207d31171f326c57b89f34388ad62"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/contact37.png",
+      "sha256": "51bbefcb0869782c788e31d6339ac209622e3276f58c750f2d609c71dd7559d3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/down37.png",
+      "sha256": "30d689af187db2c2098dedba474ffa172fc436ba13d748b07ebb80b3424a8307"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/support-b-reference.png",
+      "sha256": "5f0db623ee7574d8ff0d8c9e606318d87afef4d9df1da5995de2bdf33e473c07"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/far-high.png",
+      "sha256": "0ab0a67457cc48dbfaa4d59ab8f1b0acf6a56e6f603d3b02e8b5093a7698c03d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/down37-reference.png",
+      "sha256": "6267b4739936dcaf68fba59f02a473b14873a279536ab300a8e600bdd6314976"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/near-passing-reference.png",
+      "sha256": "8e8246e1ed5454c0be47152a71a51f40cddab52281cb9d72c6b6f44336c82b08"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/contact37-reference.png",
+      "sha256": "dc4ecbe11f6b6d9a67eba74380506e35f30f71b29c09709c67ccda299186ca0d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/return34.png",
+      "sha256": "d3932e493bf3da2c4d4663b5b60e84c61cc08fd14fcf8a6ce9bc8f7929f2df45"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/reach37-reference.png",
+      "sha256": "2fd60161e76ee0b3b349552611ca90348b59cc992963d99b720a3dd9bf736ea8"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/return34-reference.png",
+      "sha256": "ef45df34c74abe2c58e18ce69d818a599b629208a1b468dca262e6ac452c1fee"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/contact-corrected.png",
+      "sha256": "6e900337d56961fbdc16a3889c2669c7bd77af14f2022338cd89a39e15e7aa50"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/original-sheet.png",
+      "sha256": "8d72d1ab048c3e7713702a68b3aaedd866aa69946bde3c47a43338f9091b61ad"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/baseline37.png",
+      "sha256": "df1ffee6ea0a78b80f3dcc5142c4934afbee624c3e56d0617d9321ba339a097c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/near-high.png",
+      "sha256": "abe98705bda140399c86d483076fc1fbf39bc34a927efde252895ab15477d94b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/authoring-inputs/original-generation.json",
+      "sha256": "a847e1e7b1ae8c74e3b906c88a73434c62f33d266d1a35d587b5ea85f9d30bf4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/07.png",
+      "sha256": "7b80e2a0f36c766395e3d9c6e5160e0da363150f4183b7e50f5eedd1fe620858"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/02.png",
+      "sha256": "a6d6cbe1990854fd6e8ad0ba8e2a8c470687972b6b824ac82f438ae95c8f275d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/00.png",
+      "sha256": "4d564f81a1b1b7b6c5f6d6e9c9bf2b17968497990eaa8792a02055757197c181"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/review.jpg",
+      "sha256": "723b7bd71b157f8b97580088c5bf6f55eba32397b35a3e699116b87d05f7ca36"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/preview.png",
+      "sha256": "ff7598033b879cfe794e805d5219111a32d1e9b0d198d364fffd2ab4900eebb5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/04.png",
+      "sha256": "8d33e4c2e70dfb5f549b1816dd49bfea075cf96c435d2cdeef8bf5fe12a01e73"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/01.png",
+      "sha256": "8c46d016c5e1d2816135bfeec3012fe93fb4f3f43a5e264db2a0e9a18980a728"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/05.png",
+      "sha256": "fa6d4ad92b9ecc5003ee39210ce5f6eaf1a49abb58898f8ad7a02a79764b9a55"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/prompt.txt",
+      "sha256": "11dcdfd5aed48f5c279ca3753929cc849d827b99ef31564416b46c50f67a5800"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/03.png",
+      "sha256": "936c12d8dda6761b8007ff97bfcfcc29d1f2934efbe578abad1f2dd593ef047b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/atlas.png",
+      "sha256": "a6eb3d06e4257f2bae4b6ff49b053ef51d959e9303e73e578db70f6ec042d945"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/manifest.json",
+      "sha256": "e8d4af4f506aaa3129bbd39faa2de918381d17e330851d08bd0dff1b0268bc02"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/source-sheet.png",
+      "sha256": "c1e39ede7569248a4d0d5e80cfc305e786a439cc016746658b5cb3f957d32c4d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/generation.json",
+      "sha256": "c697abe8485b74a3c4701d37d82de17cf21c19b291c62c26d832b407d0561996"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front-left/06.png",
+      "sha256": "bad1de3bedcf5eab6b983689718422170c4bab9b748c0d96312b68a13c395b63"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/07.png",
+      "sha256": "acc05f8369381e3a430ba26353323f9da6e1aa591172f9831ef5eb916deff3b6"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/02.png",
+      "sha256": "08f963980b259f3ecdb6ef00eb99109c9da4133d6ee006c4442452fd73554c8a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/00.png",
+      "sha256": "b7c9f17cf5b45f4ff7e4553281d1dc17341c59a7ecff226930cdf42b9a20d37d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/review.jpg",
+      "sha256": "6b63eb59ae05d72814e8ba3e8ce6b04859b0b3c29bf35c81de692c03333e738c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/preview.png",
+      "sha256": "3f5d43150a26f43bbc647115f5cd8849701f68002c6fcc9c29f685beeaa5d8f2"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/04.png",
+      "sha256": "592c5b843e5c5f09b1a8d7e9d42094956206a2588415359529a2243c0abe0700"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/01.png",
+      "sha256": "e1c18ef0b53f6cb830c801f0dae2f19029e0d483f455f266975468453f2d02fa"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/05.png",
+      "sha256": "d50c0b4fe143b54d3b8e421f9edc6015a935a5967fc0c1f8adfc23035c7f554c"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/prompt.txt",
+      "sha256": "4817014397bbde59ad5c9b8968da3507cf72fb7e59b036ee52c76a0436e12ff5"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/03.png",
+      "sha256": "fcda3d0d61e7ecfce6b065df9e67a48fbc0693a6c32bc0d5e2defacf8e694ba3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/atlas.png",
+      "sha256": "9fda35c9823a2c416f941f2b8cb778d3ac342af24c92958dead7ac513f4e3505"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/manifest.json",
+      "sha256": "b163abad43a9fed5af7655a85e5f3e592b5b47690a048b1d23acc6025776658a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/source-sheet.png",
+      "sha256": "b2bdd951f481beea4c778549fdd1adcf351c748137b7eef63b4ebdfbe7c44847"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/generation.json",
+      "sha256": "5f3a487c03f0cd0f163091211801c6f8e37e74aad0eb8bce0f50c31cc070ec85"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/back/06.png",
+      "sha256": "734108ad5eff67c8ffeab6eb90c28360e4a0e90cd2e82ff5cac5229bf038918f"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/07.png",
+      "sha256": "7369883b064ff89ca54ea24e677a643cca67ba98708adea5b28789dac785ad5a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/02.png",
+      "sha256": "9c6c3353c1df24a571f37b87fe2f63ba7d4bf43b8df79cfad8351e47ad93fe4b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/00.png",
+      "sha256": "60a870cc9ef5f0ff0262d359d7a6ecb56b8893c2cd13161074dc5f4eeaf16cad"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/review.jpg",
+      "sha256": "c87e1cf8844f75ef3bbd94c0db77c179f915b30a90bb801af03245225a0799c3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/preview.png",
+      "sha256": "055ba9406d82181aebf77c21218dccf4e1bd893efee92c2d3077dc4658662481"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/04.png",
+      "sha256": "833b14dc9c0b15712aec6ce0403998ef4eed3ad6b27a7a213926ba7829fa925b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/01.png",
+      "sha256": "94a48602b2bfde853b9c931619dab522852cb165de269e44996de618d91aae5e"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/05.png",
+      "sha256": "4e4be576429009ca138748103bf72b19587c2eeab03accd71060450c3c83da1b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/prompt.txt",
+      "sha256": "a9ebc400c43728edf95e071cd747b7551ca3b387a01e3d03886eb97543c1eddb"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/03.png",
+      "sha256": "4303d1a42072a558ba60e666f7db39a0c1de30f62b641ee5d8223474cc95f779"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/atlas.png",
+      "sha256": "fe91679995d9707a4bba86c75daf65cd764436a326fff9863970f669dc1132e4"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/motion-polish.json",
+      "sha256": "e4588e7e8e3e3b85e82bad5a2d387c0b257b0c4ff83b55a25990e262efe1435b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/manifest.json",
+      "sha256": "2015f14e8bf14fa3acdfc7eb51867dc428fed5e48f31691c035f6527aa7a010b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/source-sheet.png",
+      "sha256": "8dc40926c069876202723bbe3a669f922d8c0c0bd9f974a110820a80a975c333"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/generation.json",
+      "sha256": "80b4dfbc6488ebbf88694dce90e397e38f59bd5e07fcbc855847c0c7523fd1d3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/front/06.png",
+      "sha256": "1586635ce8d44f59b61541d43030dac5ec138fc149e409e5e2d13fabc34ed58c"
+    }
+  ],
+  "runtimeChange": "Only the separately reviewed motion50 Cook stirring addition and independent cauldron/site are selected. Neither research image is used by a manifest, atlas, calibration, gallery or runtime.",
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "candidateSelected": false
+}

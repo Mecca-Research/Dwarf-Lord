@@ -1,0 +1,118 @@
+{
+  "checkpoint": "motion48",
+  "baseline": "e11f33545db2b0b348308f16bb2004e5594ac01f",
+  "steps": [
+    {
+      "request": "authoring-inputs/request48.json",
+      "prompt": "Use case: asset-generation. Create one complete transparent4-column2-row eight-pose sprite sheet for the ELDER dwarf walking to SCREEN RIGHT while using his ONE wooden cane. Image1 is the exact character/costume/semirealistic rendered style identity; image2 is his canonical cane and grip; image3 is the explicit coupled leg and cane pose guide, used for geometry ONLY. Do not copy the guide colors or labels into the art. Preserve the bald elderly head, long WHITE double beard with brass rings, deep sage/olive embroidered long coat, brown leather shoulder trim and left hip pouch, brown cuffed trousers, strapped brown boots, stocky short dwarf proportions, carved wooden straight cane with its ONE brass collar below the knob. Same detailed rendered quality, face and outfit in all eight poses. True consistent RIGHT-facing side/three-quarter camera at isometric elevation, full body and full cane uncropped, common physical scale and shared floor in each row, generous gutters. No floor, ground shadow, scenery, captions or graphic marks. Real transparent alpha.\nFollow the guide's EIGHT DISTINCT full-body poses and BOTH opposing legs. The RED guide leg is the NEAR anatomical RIGHT leg; BLUE is FAR LEFT. Draw the near leg in front where they overlap. Top0: far left leading heel lands with toe raised, near right trailing toe pushes behind. Top1: far left weight down flat ahead, near right boot recovering airborne BEHIND. Top2: far left support directly UNDER hips, near right knee lifted passing FORWARD with boot airborne in FRONT, never backward kick. Top3: far left heel raised with supporting TOE under hips, near right foot reaches forward AIRBORNE. Bottom4: near right leading heel lands with toe raised, far left toe trails behind. Bottom5: near right flat support ahead, far left boot recovering airborne behind. Bottom6: near right support under hips, far left raised knee and boot passing FORWARD in front. Bottom7: near right supporting toe under hip with heel raised, far left reaches forward airborne ready for the next top0 heel plant. The two passing poses2/6 MUST have opposite legs planted. Heavy soles stay the same size and form; leave both visible lower sole rims and heel corners inspectable. No leg or foot swapping.\nThe cane has a COMPLETE planted/support/lift/recovery/replant cycle, coordinated with those feet. It is always the SAME rigid wooden cane gripped in the SAME near hand around the SAME knob/brass collar. Only one cane and one tool hand; the other hand swings gently opposite its leg. Top0/1/2/3: cane tip touches the shared ground, progressing from ahead of the body toward under the hip as the torso passes it. Its relative positions and tip path must FOLLOW THE GREEN GUIDE while the far left foot supplies support. The four planted tip positions move smoothly left across those cells; do not keep a vertical cane fixed ahead of the torso in every pose. Allow the elbow/shoulder to articulate so its planted end can stay put as the body advances. Bottom4: lift the cane tip clearly OFF the ground and tilt slightly backward. Bottom5: cane remains raised and begins forward recovery. Bottom6: recover the whole cane FORWARD, clearly airborne. Bottom7: lower the cane to just above the floor well AHEAD of the body, ready to replant with top0. The cane never teleports, changes length, switches hands, disappears, merges into a boot or remains planted while its hand moves it. Full shaft, knob, collar and rounded lower tip visible in all eight cells. All eight real full-body poses authored together, no duplicate stance or mirrored pose. Preserve face/costume/camera/body scale. This is an elderly small steady stride, not a wide lunging march.",
+      "references": [
+        {
+          "file": "authoring-inputs/step1-reference0.png",
+          "sha256": "d939690e6b61e970fde041c68f56f63d969cf03e52883d82506ce9b48f6af448",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Elder/animation/02-right.png"
+        },
+        {
+          "file": "authoring-inputs/step1-reference1.png",
+          "sha256": "310f6e73e30922328e5a21013d0bd5f2394361bd88b5e5cb4ad0a7716ab7b006",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Elder/animation/10-stand-stick.png"
+        },
+        {
+          "file": "authoring-inputs/step1-reference2.png",
+          "sha256": "82528ba2831ff41ad540692cfd98115369b5d0358c10b3efed8ed4ff6c1f2c6a",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/coupled-pose-guide48.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-first48.png",
+      "sha256": "62e3c8b06c7e46b3a5975ff92f3b43e25dff005f4bcaf7ff91ad6b0fd26ce143",
+      "verdict": "rejected",
+      "selected": false,
+      "reason": "Missing cane in top3; holding hand switches in recovery; support anatomy not certified."
+    },
+    {
+      "request": "authoring-inputs/request-coupled48.json",
+      "prompt": "Use case: precise-object-edit. Image1 is the REQUIRED eight-pose geometry diagram; image2 is the actual ELDER character sprite sheet to correct. Render all eight full-body Elder poses to match image1's opposing leg chains and coupled cane positions, using image2's high-quality semirealistic materials, face, beard, coat, boots and ONE cane. The current sprite sheet is rejected: TOP-RIGHT pose has NO CANE, and its other poses switch the cane between hands. Correct BOTH defects. In EVERY pose, the SAME NEAR ARM on the side of the VISIBLE LEATHER HIP SATCHEL must extend toward and GRIP THE CANE KNOB. The elbow and forearm of that near arm connect continuously from the nearest shoulder across the front of his coat to the same knob/collar. The FAR arm is the empty swinging arm behind him; it NEVER holds the cane. No two-handed rest or arm switch. Show all cane shafts and tips unoccluded. Same single carved wooden cane, brass collar and knob throughout.\nMatch all eight actual leg poses of image1, without its diagram colors: near leg RED = anatomical RIGHT, far leg BLUE = LEFT. Same physical scale and right-facing camera in all cells. Top0 FAR LEFT heel lands FORWARD, NEAR RIGHT TOE trails BACK; top1 FAR LEFT flat support ahead, NEAR RIGHT boot raised BEHIND; top2 FAR LEFT flat boot UNDER the hips while NEAR RIGHT KNEE lifts FORWARD in FRONT of that leg, boot airborne forward; top3 FAR LEFT TOE planted under hips with heel raised, NEAR RIGHT boot extending forward airborne. Bottom4 NEAR RIGHT heel lands forward, FAR LEFT toe trails; bottom5 NEAR RIGHT flat support ahead, FAR LEFT boot raised behind; bottom6 NEAR RIGHT boot flat UNDER hips while FAR LEFT KNEE lifts FORWARD with its boot airborne; bottom7 NEAR RIGHT TOE pushes off under hips, FAR LEFT boot reaching forward airborne ready to land in top0. NEAR leg always overlaps FAR leg where they cross. Top2 and bottom6 are OPPOSITE planted legs and opposite bent knees, not duplicate poses. Keep lower sole rims and heel corners exposed, full boots and both legs attached to the hips.\nTop0/1/2/3 cane TIP planted on the SAME floor height, progressing left relative to the hips as the dwarf advances, like the GREEN guide: ahead, less ahead, near body, under hips. The hand follows that planted cane with an articulating shoulder/elbow. Top3 must retain the complete ONE cane, with its tip planted and hand near his belt center. Bottom4 cane tip LIFTED clearly off the floor, behind his hand. Bottom5 lift still held and advancing forward. Bottom6 cane clearly lifted AHEAD. Bottom7 cane ahead and lowering, tip just above floor, ready to plant at top0. All four recovery positions remain in that SAME near satchel-side hand; do not solve recovery by passing the cane to the other hand. No material labels, colors, rig shapes, captions, floor or shadows. Preserve transparent4-column2-row sheet layout and all eight complete individually authored full-body poses. Same elderly bald head, long WHITE two-braided beard/brass rings, olive embroidered coat and brown leather trim/pouch, no extra limbs, no duplicates, no missing tool or clipped shaft.",
+      "references": [
+        {
+          "file": "authoring-inputs/step2-reference0.png",
+          "sha256": "82528ba2831ff41ad540692cfd98115369b5d0358c10b3efed8ed4ff6c1f2c6a",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/coupled-pose-guide48.png"
+        },
+        {
+          "file": "authoring-inputs/step2-reference1.png",
+          "sha256": "62e3c8b06c7e46b3a5975ff92f3b43e25dff005f4bcaf7ff91ad6b0fd26ce143",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/strip-first48.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-coupled48.png",
+      "sha256": "4e88d1d7ccd2ed630490f2951a9d7232601b3b1614d3f8ef88107f69237cb341",
+      "verdict": "rejected",
+      "selected": false,
+      "reason": "Cane returns but carrying arm changes and source fails authored opposing limb/tip geometry."
+    },
+    {
+      "request": "authoring-inputs/request-filled48.json",
+      "prompt": "Use case: asset-generation. Create a NEW8-pose transparent4-column2-row sprite sheet of the canonical Elder dwarf from image2, performing the EXACT eight leg/arm/cane poses in image1. Image1 is a depth-ordered solid pose mannequin: near/right RED limb is ON TOP OF the far/left BLUE limb, gray is torso/head, green is the ONE cane. Follow its geometry, depth order and empty-arm versus cane-arm ownership; do not render any guide color, R/L letter, ground line or label. Image2 supplies the exact face, beard, costume, material and semirealistic rendered quality only, not a repeated standing pose. Do not copy its two-handed resting grip. ONE cane only, gripped by the SAME NEAR satchel-side arm in all8, the other FAR arm empty and gently opposing its leg. Continuous nearest shoulder-elbow-wrist-knob chain drawn in the foreground across the coat, visible tool collar/shaft/tip always complete. Do not ever hand the cane to the other arm. The visible leather hip satchel stays on this same near side.\nThe two passing poses2/6 have OPPOSITE planted legs and opposite bent knees. Top2 near RIGHT knee/boot RAISED FORWARD in FRONT OF the far LEFT leg, whose boot is flat UNDER the hips. Bottom6 near RIGHT boot flat UNDER hips; far LEFT knee/boot RAISED FORWARD. Both lifted feet pass in front, never kick behind. Top0/1/2/3 far LEFT foot supports from leading heel landing, flat weight, under-body support to toe-off; near RIGHT progresses trailing toe, rear airborne recovery, front airborne passing, front reach. Bottom4/5/6/7 near RIGHT foot supplies the same four support stages, while far LEFT recovers. Follow the explicit drawn whole leg chains and boot lower rims in the guide. Near leg stays visibly foreground where legs cross, including top2. Broad but short stocky dwarf proportions and same physical body/boot scale; camera always true right-facing side at isometric elevation. No pose/camera turn or one-sided duplicate leg.\nThe SAME cane follows the guide: tip planted in top0/1/2/3 at a common ground plane, moving from ahead to under the hips relative to the torso while the far LEFT foot supports. Articulate the SAME near arm/elbow to retain that knob/collar grip as the torso passes the planted cane. Bottom4 lift the cane tip clearly above the floor while near RIGHT heel takes support. Bottom5 recover the lifted cane forward. Bottom6 lift continues ahead. Bottom7 lower it ahead, its tip just above the floor, ready to replant with top0. Actual cane tip positions must follow the green guide rather than remaining vertically ahead of the body in every pose. Maintain rigid shaft length, one knob/brass collar and one rounded tip. Full cane and both lower soles visible and uncropped.\nRender high-quality detailed semi-realistic fantasy Elder: oldest dwarf, bald wrinkled head, long WHITE double-braided beard with brass rings, olive-green long embroidered coat with brown leather shoulder/piping trim, brown leather satchel, brown cuffed trousers, brown strapped boots. Preserve identity and outfit across renders, natural elbow/knee anatomy, no added parts. All8 distinct complete full-body poses authored together, shared scale and floor height, wide transparent gutters/margins. Real transparent alpha. No environment, cast shadow, colored markers, text, rig shapes, floor or background. No missing cane, no grip switch, no double-handed rests.",
+      "references": [
+        {
+          "file": "authoring-inputs/step3-reference0.png",
+          "sha256": "f35e8648b11ba2e1f7d4daf9ce472552b9f329fed24ad3175cf5c62ebb13e203",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/filled-pose-guide48.png"
+        },
+        {
+          "file": "authoring-inputs/step3-reference1.png",
+          "sha256": "d939690e6b61e970fde041c68f56f63d969cf03e52883d82506ce9b48f6af448",
+          "originalPath": "/opt/codex-work/dwarf-lord/public/sprites/Elder/animation/02-right.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-filled48.png",
+      "sha256": "621fa65a8d9bcb974e61b558590165260ddf53f09c51a02ef2eab2a9cef92906",
+      "verdict": "rejected",
+      "selected": false,
+      "reason": "Changed to fresh canonical-only depth-ordered solid rig. Same near carrying hand retained, but5-to6 support reverses and provisional joint root disagreement40.012px. Far free arm and recovery remain unapproved."
+    },
+    {
+      "request": "authoring-inputs/request-contact48.json",
+      "prompt": "Use case: precise-object-edit. Image1 is the complete eight-pose RIGHT-facing Elder sprite sheet to edit. Image2 is a SOURCE-DERIVED diagnostic pose correction overlay. Keep the same eight complete full-body figures, all identity/costume/camera/material details, body scale,4-column2-row layout and transparent alpha. Redraw ONLY the specified whole arm/cane chains in top0/1/2/3, the complete leg pose in bottom5, and the empty FAR arm in bottom4/5. Preserve all other full-body anatomy/boots/poses. Remove ALL diagnostic colors/labels/targets from the final art. Also clean the existing red/yellow colored fringe from transparent outlines, retaining natural alpha edges and the real rendered clothing colors; no colored halo.\nIn top0/1/2/3, keep the ONE carved wooden cane in the SAME NEAR satchel-side hand, with the same visible nearest-shoulder/elbow/wrist/knob chain. Correct the entire NEAR forearm and rigid cane position to match the GREEN and ORANGE target overlay. Top0 cane tip a little FARTHER ahead of the body, top1 less ahead, top2 near the front of the hips, top3 directly under/in front of the hips. This is how the cane remains planted as the dwarf advances; do not keep it always forward next to the leading boot. On the640px cell reference: cane tip targets0(530,615),1(465,614),2(398,616),3(337,615). These are image-relative drawing targets, not labels. Bend the elbow naturally to keep the SAME hand around the knob/brass collar near y315/350, and keep the whole tip at the target floor. In top3 the nearest elbow bends and the wrist/shaft moves back toward the belt center. Every full rigid shaft and rounded tip remains visible, with no boot merger, missing segment, cane length change or hand switch. Do not move any of those four foot poses to compensate for a misplaced cane.\nBOTTOM-SECOND pose5 has incorrect leg phase and must be REDRAWN as a complete naturally jointed pose: NEAR RIGHT leg is the PLANTED support under/ahead of the hips, with its heel slightly left of the hip center and toe forward. The FAR LEFT leg recovers AIRBORNE BEHIND the body, knee bent back and boot behind the planted shin. The current pose wrongly has the planted boot far behind the hips and the far raised foot extending forward. Correct its thigh/knee/shin/boot chains, retain heavy boot size, outer near calf buckle and plain inner far calf straps. Follow RED planted near boot and BLUE rear airborne far leg in image2. Approximate near heel(280,612),near toe(405,612); far raised boot(205,563)to(270,573),all relative to its640px cell. No cutout limb move or joint distortion. Pose6 then continues near support under hips while far LEFT boot passes forward, and pose7 near toe-off as far LEFT reaches forward. Keep those other poses unchanged.\nBOTTOM0/1 (global4/5) the EMPTY FAR arm gently swings FORWARD opposite the trailing far LEFT leg. Its wrist is visible BELOW/BEHIND the near tool forearm, roughly4(440,352),5(420,350)in its cell. The FAR hand remains EMPTY, without touching or taking the cane. The tool arm stays the SAME nearest satchel-side arm throughout all8, including these recovery poses. No extra hand or extra cane. Retain existing cane lift/recovery/lowering4/5/6/7 and the original elderly face, long WHITE braided beard/brass rings, embroidered olive coat and brown leather pouch/boots. Eight distinct complete full-body poses, uncropped, no floor/shadow/background, no colored marks, no glyphs or text.",
+      "references": [
+        {
+          "file": "authoring-inputs/step4-reference0.png",
+          "sha256": "0f2929bd22ff74b52f5ca8fd690f3913bf7da27415bf8f183cbaac9ef74601e5",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/filled-exported-reference48.png"
+        },
+        {
+          "file": "authoring-inputs/step4-reference1.png",
+          "sha256": "04d1d0bbcb54011ce51d08760ac937a0be107d8c43f1ca20726361e73182d77f",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/observed-coupling-target48.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-contact48.png",
+      "sha256": "7aeed1be4025acf82fa5c65ef750eeadf1d49b200ee4cf7e47709fe8fad87c2f",
+      "verdict": "rejected",
+      "selected": false,
+      "reason": "Whole rear recovery leg improves. All8 provisional soles travel forward, but source cane/foot required-root disagreement56px remains; free far arm4/5 still points backward."
+    },
+    {
+      "request": "authoring-inputs/request-shared-root48.json",
+      "prompt": "Precise object edit, complete 8-pose sprite strip. Image1 is the full RIGHT-facing Elder walk to correct. Image2 is an independent diagnostic full arm-chain drawing guide, not art to copy into the finished image. Preserve all EIGHT existing full-body LEG/BOOT/COAT/HEAD poses from image1 exactly, the one body scale, same fixed right-side camera and transparent alpha,4 columns2 rows. No floor, shadow, labels, colored guides or halo. Correct only the specified full arm/cane chains. Natural 3D joints, same physical cane, same satchel-side nearest hand holds it throughout8; never switch hands. Clean red/yellow outline fringe without making holes.\nTOP ROW0/1/2/3: Follow the white rigid cane and aqua complete arm chains in image2 precisely. The cane tip remains planted on ONE horizontal ground, but slides BACK relative to his torso as the torso advances. The hand must retract and elbow BEND as shown, instead of remaining stretched toward the front boot. The four cane-tip cell X positions must be0=532,1=461,2=362,3=335 with floorY614 on the640px reference cells. All4 shafts straight vertical, same267px brass-collar-to-tip length, collar atY347, hand/knobY324. The arm shoulder stays the same nearest foreground satchel-side shoulder. Wrist ends at each designated caneX. The first arm stretches forward; second bends; third bends substantially with wrist in front of chest; fourth folds with wrist directly under/in front of chest. Do not move the boots/legs to compensate for a wrong cane. The entire cane tip and lower shaft must be visible and distinct from boots in all4.\nBOTTOM FIRST/SECOND(global4/5): the EMPTY far arm moves FORWARD beneath/behind the nearest cane-holding forearm, with open empty hand near cell430,360. Follow the blue far-arm chain in guide. Do not leave the free hand dangling BEHIND the satchel as it currently does. Foreground satchel-side arm keeps the cane and must not be swapped with far arm. Keep bottom-row cane lift/recovery/lowering and all4 complete foot poses unchanged. Bottom6/7 unmodified except natural clean alpha.\nKeep the exact very OLD bald face, heavy stocky DWARF anatomy, long white2-braided beard/brass rings, embroidered olive coat, leather satchel and strapped heavy boots, fully rendered semi-realistic painted materials. ONE same carved wooden cane, one brass collar, one knob, one rounded tip. Distinct8poses,uncropped whole bodies, transparent background. Output art contains zero blue/aqua guide chains, zero white guide rods, zero text.",
+      "references": [
+        {
+          "file": "authoring-inputs/step5-reference0.png",
+          "sha256": "c29f5d9583b6765fa1537a544aaa81385b45b9a3ac8687474246c2cb4b15105a",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/contact-exported-reference48.png"
+        },
+        {
+          "file": "authoring-inputs/step5-reference1.png",
+          "sha256": "233a050d4205e7163c7859ddf957a1a189580e9185dadeb091870cf4b225bb7b",
+          "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion48/elder-right/shared-root-arm-guide48.png"
+        }
+      ],
+      "output": "authoring-inputs/strip-shared-root48.png",
+      "sha256": "460187da91467ffe290ad4991e533f56a10eaf56529145c1c54059a601f8ff87",
+      "verdict": "rejected",
+      "selected": false,
+      "reason": "Second bounded arm-chain source correction fails targets and adds an extra hand in bottom4/5/6/7. Rejected before extraction or calibration. No more same-method rerolls permitted."
+    }
+  ],
+  "scope": "Failed Elder RIGHT authoring research and source-only diagnostics. Selected Elder bytes unchanged. Targets are drawings, not material observations. No anatomical/material manual approvals or live cane stride approval.",
+  "retryPolicy": "Two old-strip attempts then changed to depth-ordered authored rig/canonical-only basis; two targeted source-contact corrections exhausted. Next Elder authoring must use a different physically constrained/rigged method, not another same-strip reroll."
+}

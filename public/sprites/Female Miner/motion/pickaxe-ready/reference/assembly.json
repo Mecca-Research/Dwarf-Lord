@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    130,
+    130,
+    130,
+    160,
+    130,
+    130,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "ready40",
+      "file": "authoring-inputs/ready40.png",
+      "poseCount": 8,
+      "sha256": "ef63a414233725bed988dfdd1aae3ab76570d8a07ad1d1f74da1e9eca6a10650",
+      "reference": "authoring-inputs/ready40-reference.png",
+      "referenceSha256": "6927f12815ef923f3c812969aed87da1330e33259dcb37ead3df126a6053e4c4",
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        226.5,
+        672.0,
+        1115.0,
+        1557.5,
+        227.0,
+        671.5,
+        1115.0,
+        1557.5
+      ],
+      "rootYs": [
+        432.0,
+        432.0,
+        432.0,
+        432.0,
+        877.0,
+        877.0,
+        877.0,
+        877.0
+      ],
+      "bodyHeights": [
+        419.5,
+        419.5,
+        419.5,
+        419.5,
+        419.5,
+        419.5,
+        419.5,
+        419.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "ready40",
+      "pose": 0
+    },
+    {
+      "input": "ready40",
+      "pose": 1
+    },
+    {
+      "input": "ready40",
+      "pose": 2
+    },
+    {
+      "input": "ready40",
+      "pose": 3
+    },
+    {
+      "input": "ready40",
+      "pose": 4
+    },
+    {
+      "input": "ready40",
+      "pose": 5
+    },
+    {
+      "input": "ready40",
+      "pose": 6
+    },
+    {
+      "input": "ready40",
+      "pose": 7
+    }
+  ],
+  "note": "Whole authored poses only. One common body extent and visible boot stance roots; no limb painting, warps, invented contacts or gait fit."
+}

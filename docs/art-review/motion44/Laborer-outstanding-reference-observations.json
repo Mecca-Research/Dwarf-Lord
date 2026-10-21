@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-05",
+  "entries": [
+    {
+      "action": "carry-sack",
+      "binding": {
+        "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "frameSha256": [
+          "1adf92e771556dcbec50a33a73b3a9846951f8f921772e16fc21ff24786c1ca6",
+          "85706ebef79dfe7ca8ffa28c38994952ab6ad8a6f8871ad217514968bc9423be",
+          "5a75c9dbc4fb7853394ebd6d0bcf58cac8d9ddca9bf66c80f670f9b69beb6a03",
+          "8bbe62c6c824dfef25af608575a574f99db4421bd9b2ed5cf46c175338b722cd",
+          "35d2df03e0b0dd003aa74cb406050dfd657e2716ba4980b347a1acb1a5b61499",
+          "37ac4a42d3cf1e7352f18a14782f48c725de35b29d1acaa0a6f51f5b3b4059f8",
+          "f1e004ec172725fcdff32a775cfdb96a7f4b83335f0fc210a8da33e71697dfd7",
+          "62f3b76b99ad3cd364c0a3bf223e902373ff131ee2aef5af4cea324c8a853539"
+        ],
+        "atlasSha256": "28c9fbeaed50af301336de7f4fcbdcddb360dd1fb7f7787a5e1386012a5dd808",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "exportVersion": 2
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "carry-sack",
+        "direction": "reference"
+      },
+      "reviewedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "further-contact-and-calibration-review",
+      "nativeObservations": "Native eight-pose review retains one shoulder sack and both visible grips; opposed main contacts0/4 are visually distinguishable. Poses3/7 revisit the preceding extended-foot posture. Establish actual corresponding toe/heel material paths and distinguish genuine recovery from a repeated phase before whole-stride/held-frame calibration. This observation alone grants neither acceptance nor a demonstrated numerical contact failure.",
+      "dependencies": [
+        {
+          "file": "public/sprites/Laborer/motion/carry-sack/reference/review.jpg",
+          "sha256": "00dfe116a857c9cc60d3c3dd344b23e824052c4d21d0750529a4ab6f8254ab9a"
+        }
+      ],
+      "approval": false
+    },
+    {
+      "action": "pull-supply-sled",
+      "binding": {
+        "sourceSha256": "2a918f36d30057620ac32ed26bba292f69bf2b071f2ea1271671fb8583b8e6d2",
+        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "frameSha256": [
+          "b411df7fffdb6095fd8accf50fb915cb99e1c77c722a1bf88defca53a6ef781b",
+          "7a8e8f38850d88d60e7ad3e2f3c7ceefa4a67089da8dfe2fbfbcfbc277fbc453",
+          "51d964b437ca38fc7bcb2db65a7a39c5a9aa16ac644c8ef914c25f5fc5a4d5d7",
+          "56f95070b1ffef4b0b658c43f81a1398c5c5a4c0473c44e6a68900e04758b6c1",
+          "ad035305391ae10e58bfe970a0f45b8662aa77933dfde3428439aed5dba6554b",
+          "7930c398a7c65611d0babbc78347ffbd636af56d60a7f867ae07fc3224322ab0",
+          "f19a173deea4ca234265f6460c494906f005f0eac10d75b11b353b3f60e8aa77",
+          "7bbf9bd092fe08d4c59d16e81a20aa5151a89f827c712d652ca960b88ca35028"
+        ],
+        "atlasSha256": "54864a026177f941846051091593e37635f0b9f268c6484191b17982feb5d258",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "exportVersion": 2
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "pull-supply-sled",
+        "direction": "reference"
+      },
+      "reviewedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "further-contact-and-calibration-review",
+      "nativeObservations": "Native eight poses retain the sled/load and two-hand rope grip. Main contacts0/4 change the visible rear-foot silhouette, but supporting material correspondence is not yet established. Track both soles, actual rope endpoints/tension and sled displacement with actor-world travel; furniture embedded in the reference cannot move as a separate stationary station. No hidden support point is inferred.",
+      "dependencies": [
+        {
+          "file": "public/sprites/Laborer/motion/pull-supply-sled/reference/review.jpg",
+          "sha256": "40d63aca4aa8cff076d6032b921f7e65b1d7f9b881f06328e6142497909684a9"
+        }
+      ],
+      "approval": false
+    },
+    {
+      "action": "roll-barrel",
+      "binding": {
+        "sourceSha256": "c46f9e81595e183e4c62c4ad22994c9bdc59a6e629d918ac1d820d9aaa50a8bb",
+        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "frameSha256": [
+          "efc03a3b598df76ee18324fa476cb332edcd0757db69d7c665733b3614a02fbf",
+          "221119552c26e0d499120428785929204f72d027bdfc7c975768a4a5e2a33696",
+          "1a95669f76f54c8a27503b44ca362e6c1443431566a7f1166cb35ed806caa944",
+          "55fb8229c21df81fc7310a1463446ea2c17e6e8386cda8e055ebedb5ee0adb4c",
+          "3c82aa919f1fa1319e952fbe4670aa95afd9c233e413954d3636dc77b956af75",
+          "eaf12b8b456b984e3159d61f4209b1e6326d012e1a2f844aea292abe49bb702e",
+          "a08d3adf071622cec34e1f3af42507969ab24137efce24b19ec4d4f4c58e0419",
+          "5a526f75e0777927b634c0d8fc71c3a081dd571c33315b418ce8a582d12b8139"
+        ],
+        "atlasSha256": "25ac96175810c3951ea941a01b56153391ad74b3ccd9c80f1bfeb6702b41e993",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "exportVersion": 2
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "roll-barrel",
+        "direction": "reference"
+      },
+      "reviewedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "further-contact-and-calibration-review",
+      "nativeObservations": "Native eight poses retain one horizontal barrel and support cradle; end-board orientations vary and return. Measure the same visible stave/rivet feature through rotation, continuous hand contact and any relative cradle/barrel translation, with supporting sole material. Establish whether the selected action is finite supported rocking or forward rolling before activation; no forward transport or rolling friction is established by these previews.",
+      "dependencies": [
+        {
+          "file": "public/sprites/Laborer/motion/roll-barrel/reference/review.jpg",
+          "sha256": "27c565f5387a21ae95affeeef43fd9c16889658dac9a4b75b4d2fe8fe331860b"
+        }
+      ],
+      "approval": false
+    },
+    {
+      "action": "carry-crate",
+      "binding": {
+        "sourceSha256": "afb43b17681cdb11b593fac6a2cab6c5152a113e869a8ffc6b715077e2240bcf",
+        "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "frameSha256": [
+          "322644846cef4a8ba2c18be1a21ae49aeedf0c8cc4164587854803075eefa17a",
+          "01219a27fbb89c7971edb54606ccfa4f11b6bbe01467047a1bb250b2f2729976",
+          "65ab60dd753df7635a271cecd077f7c4bd69dd1fbad9d6c7b5d4c413fd263f7a",
+          "f773237f023693f1c8c81f585b7264f8e08072b2605a2f2e8ec9c2f3bb3a44ba",
+          "4caa1b85ca525a2e9da42f39235b7a8ab099eff1ca439a073ab8e1fe0577a5b6",
+          "e51252c03f1e103d097bb6b77f118d6f7556885ad9511af140c52036be6926cc",
+          "746edd20e1c6eab00800cbebc136119167aaf22235a8bc094cc9fb9cd3d505fb",
+          "8c807cc6504a2fc6a5c42733e5bd8228a823f5ce767cc9ae231c85a07a0ae0c2"
+        ],
+        "atlasSha256": "36c3e5bc8386e31f0941d48486e265cfd988167095a78090bc31d8ae47fe52ec",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "exportVersion": 2
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "carry-crate",
+        "direction": "reference"
+      },
+      "reviewedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "further-contact-and-calibration-review",
+      "nativeObservations": "Native eight poses retain one carried crate and hand placement; reference also embeds storage furniture/barrow. Track exact anatomical opposed-leg phases and the same supporting sole material through all poses/boundaries, then separate or remove stationary furniture before traveling activation. The preview does not establish whole-stride contact or an actor-only moving asset.",
+      "dependencies": [
+        {
+          "file": "public/sprites/Laborer/motion/carry-crate/reference/review.jpg",
+          "sha256": "4ff5c2128204c5c54fe3aaf065cc5d16058519534dcc329cc676e1ef07a04a0f"
+        }
+      ],
+      "approval": false
+    }
+  ],
+  "scope": "Additional native inspection of the four existing undecided fixed references. No source selection, numeric contact claim, finite-task or seamless-loop approval; frozen counts and13 recorded rejection records stay unchanged."
+}

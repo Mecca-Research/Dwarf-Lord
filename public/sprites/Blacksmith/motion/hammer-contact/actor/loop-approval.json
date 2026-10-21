@@ -1,0 +1,166 @@
+{
+  "version": 2,
+  "binding": {
+    "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+    "settingsSha256": "a272f6d59b97353951acd7c2e7e7a7ddc7ca30bd925d49faaad00d934f035df5",
+    "frameSha256": [
+      "ad06a7c99e18f787db6a5f0cac209081f983cecfe585eab488f27a96e8bf40ee",
+      "63f1faba9c79a1430645692cf34217ddeb733749da5472621e7daf7ab2349d4e",
+      "6771fff7b9156ed3f0a69210ab62a67f9e7f92236b12a9fb2f6cf59ed63f2ff8",
+      "29be0df96cc2e8eefe478779e1df760fcef134be0ce83647dcf7d76764872453",
+      "8b77fdac93295aef2f88f0a09d33cc3972356ce432e70b7c02e96cb288f098dc",
+      "827ba2345896889f88e6d5e730c92e32a478edc896b9b360dbd61801cc1ccdc5",
+      "68b37ef7d11e4736b012c86e94375d0d4b91ac650c2e0890faace702ff19a779",
+      "2555b38e986d9813ebceb5b4e6a28f50c8f6d99bf82b647e8e7cf1855a856ee5"
+    ],
+    "atlasSha256": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "a272f6d59b97353951acd7c2e7e7a7ddc7ca30bd925d49faaad00d934f035df5",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-contact",
+    "direction": "actor"
+  },
+  "scope": "Fixed-view independent anvil tapping cycle only. Visual loop approval; task playback remains once-hold. Does not approve other forge actions, hidden geometry, walking, or all-direction contacts.",
+  "checks": {
+    "identity-and-scale": "Reviewed all eight layered poses: same head, beard, apron, camera and body scale; no direction change.",
+    "station-and-foot-contact": "Independent anvil stays fixed. Visible supporting boot stays on the same ground plane. Far foot is occluded by the station and is not separately certified.",
+    "hand-and-tool-contact": "Both hands retain their hammer/tong grips through lift, tap and rebound; source-bound projected billet measurement stays within 0.233 pixels of the working face.",
+    "prop-continuity": "Same separate anvil/stump throughout; hammer, tongs and billet remain present, with no workpiece exchange or completion-state reset.",
+    "last-to-first-transition": "Frame 7 returns the hammer to the billet at the contact pose used by frame 0. Reviewed all layered keyframes and repeat/seam playback; no material reset at the seam."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "9ef7560ee8de5ec25c06e6ee2b506ac5e618ef9b9a385b9a7734a86080a8bbe5"
+    },
+    {
+      "file": "../../../../workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "../../../../workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "../../../../../../docs/forge-contact-regions.json",
+      "sha256": "bb11940b23c285b885dc7ebb3739ed1e82848e513b59c7de667ef5e48801c833"
+    },
+    {
+      "file": "../../../../../../docs/forge-contact-measurement.json",
+      "sha256": "9c87e2426a0869ec1af2ece1737179597eac42c99492bb366ca451b92267f882"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
+      "sha256": "5b7b3635565b9d85b2aaf6dc8f357a0a6c63a1091323ec5a6b5d5b158eeea59c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/npc-lifecycle-results.json",
+      "sha256": "f4e35f053325158f23f0ad3d9f532c5f91f16ca7088f5dad33b44f7b492f351f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
+      "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    }
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion56",
+    "files": [
+      "public/sprites/Blacksmith/motion/render-calibration.json"
+    ],
+    "audit": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+    "scope": "Earlier selected art and calibration actions exact. Seven forge days/21 variants verify only additive sixth operation/site; same actual anvil points rechecked. Non-forge meals/roles keep55 actual provenance and exact code/sites/art. Prior native dates/scopes and unresolved gait/cane/family verdicts retained."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "character": "Ginger",
+  "action": "haul-firewood",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/haul-firewood/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "b9119f578e66cd9d48ff189d162524d6dac0267be99fe0bf89c4c2ed9dd36d22",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "nativeReviewSha256": "bd1d4474075a7b8a7c7ccbdf45924b96763ade8205c62c043df5733f29d7726a",
+  "issues": [
+    "The forward boot remains on the same side through0 and4 despite opposite-foot phase labels. Need true opposite-leg extension plus a matched rope/sled displacement and whole-stride sole contact proof."
+  ],
+  "binding": {
+    "sourceSha256": "b9119f578e66cd9d48ff189d162524d6dac0267be99fe0bf89c4c2ed9dd36d22",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "a4e7a73a1a273459dd1822079e636210a6958c2e311f3dd0d955191eb7874892",
+      "29c5aa5441d3013a958010fa5976a6a02c7bbd337f039fc948b0fca00a0976ce",
+      "a08c1845bec9cb641ed0e077b22e2f4fb1c7d4df41e9748b3a700599ab5ac4aa",
+      "16a59968278f7a0cc7ddcd751456df33427f473fd10d2fbf40a1c7e940f53535",
+      "073fe9b560e29132807e348a1149d544cc959f95f9be2f90e999724115b09ad3",
+      "0666fe82c64da40965e07d1d37d85379258a6e76778387732d04d071f573e48b",
+      "5f1001f9e59b7cedc3aacee627e34a7204ccaf02984ed67591fd6dffc245247c",
+      "7f8f06431ee73b666afa4f40147948c54e0ce20dd328692dc3dc25e1b8b60f57"
+    ],
+    "atlasSha256": "de10e8f3c294fe07c9e27c702f47ee6c6ffcd651424f9a547689dcdbeb98ad8e",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "haul-firewood",
+    "direction": "reference"
+  }
+}

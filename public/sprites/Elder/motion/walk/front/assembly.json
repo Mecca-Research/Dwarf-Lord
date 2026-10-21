@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "generation": "authoring-inputs/original-generation.json",
+      "sha256": "699a338c4fcd9a174f192643e33e86a2141f40520d05078384ea8685a66efb5f"
+    },
+    {
+      "id": "correction",
+      "file": "authoring-inputs/correction-sheet.png",
+      "poseCount": 8,
+      "prompt": "Use case: identity-preserve. Edit the provided Elder FRONT walking sprite sheet. Lock original identity, face, beard/hair, body proportions, clothing, materials and high-quality semi-realistic render. Make EIGHT CHRONOLOGICAL full-body poses arranged 4 columns by 2 rows on transparent RGBA. ONE complete TWO-STEP walk in place, same frontal camera, same body size and centered pelvis throughout. Explicit order: 1 LEFT boot (screen RIGHT) heel lands forward; 2 same LEFT boot planted supporting weight, RIGHT trailing heel rises; 3 RIGHT knee (screen LEFT) bent and passing airborne alongside planted LEFT leg, NOT a high forward kick; 4 RIGHT leg reaches forward preparing heel landing, left heel begins rising; 5 RIGHT boot heel lands forward, OPPOSITE contact to frame1; 6 RIGHT boot planted supporting weight, LEFT trailing heel rises; 7 LEFT knee (screen RIGHT) bent and passing airborne alongside RIGHT support leg; 8 LEFT leg reaches forward preparing heel landing, matching transition back to1. Keep his identical wooden walking stick in anatomical RIGHT hand (screen LEFT) in all eight frames. Cane stays same length and continuous firm grip, tip lightly contacting ground through support and lifting only slightly during recovery, never changes hands. LEFT free arm counter-swings softly, small shuffling steps suitable for old dwarf, no high-kick. Free arm reaches forward when OPPOSITE leg reaches forward, recedes during down phase, neutral at passing phase. No two feet airborne, no duplicated stride throughout the sheet, no extra limbs, no mirrored costumes. Same horizontal torso axis, modest weight shift. Keep existing face crisp and opaque, no holes. Transparent background without scenery or floor shadows. Large gutters and complete head/boot margins; no clipping. Preserve this exact character, not a redesign.",
+      "sha256": "7cfa0da58d291bd42043464a46a5b38bea74ba3c82d072c7f3aa9f48250380bd"
+    }
+  ],
+  "poses": [
+    {
+      "input": "original",
+      "pose": 0
+    },
+    {
+      "input": "original",
+      "pose": 1
+    },
+    {
+      "input": "correction",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 6
+    },
+    {
+      "input": "original",
+      "pose": 4
+    },
+    {
+      "input": "original",
+      "pose": 5
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 3
+    }
+  ],
+  "note": "Each selected pose was authored as a complete image. Assembly only extracts, uniformly scales, registers and arranges existing poses; no interpolation, mirroring or limb editing."
+}

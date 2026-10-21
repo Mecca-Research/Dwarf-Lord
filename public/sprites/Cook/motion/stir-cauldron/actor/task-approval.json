@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+    "settingsSha256": "12d1df30983a41121036b67e1ad4a4fbd8b25e6baf2d56c442aff333afa1ad1f",
+    "frameSha256": [
+      "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e",
+      "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8",
+      "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64",
+      "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd",
+      "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc",
+      "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373",
+      "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91",
+      "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795"
+    ],
+    "atlasSha256": "1c7deac6f3a281a892daed4725498c5aff19281d75265f02d9d69ccf66cf8967",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 547,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "12d1df30983a41121036b67e1ad4a4fbd8b25e6baf2d56c442aff333afa1ad1f",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "stir-cauldron",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Finite stationary original-pixel Cook stirring at one independent persistent stew cauldron. No hidden sole, moving contact, fluid/boiling simulation, serving/rewards, family continuity or seamless repeat approval.",
+  "checks": {
+    "identity-and-scale": "Same balding brown-haired stocky Cook, brown beard, maroon sleeves, cream apron, trousers and strapped boot. Literal opaque source pixels preserve original coordinates and0-7 order. Shared547 body basis/[320,616],125ms holds. No actor redraw, limb paint/warp/mirror, per-pose scale, duplicate or synthetic frame.",
+    "station-and-foot-contact": "Visible near boot minimum correlation0.990038, maximum travel1.013719px, adjacent1.018147px pass original.94/6/6 bounds. Fixed pot/stand registration shared with actor. Far boot and anatomical sole hidden by cauldron remain unobserved; no traveling stride approval.",
+    "hand-and-tool-contact": "Original hand retains connected wooden spoon shaft throughout0-7 and opposite hand holds same towel at fixed rim. Separate narrow foreground contours remove original pot and food. Visible wood shaft points enter projected stew face in all8, maximum outside0px. Hand/cloth silhouette overlaps fixed opaque rim. Submerged bowl, 3D forces and hidden grip material are unobserved; no food carried by the spoon is invented.",
+    "prop-continuity": "Actor owns body, held towel and visible wooden spoon shaft. Independent squat cauldron owns two ring handles, retained stew, support ring and three complete feet. One uniform288px prop normalization; the newly visible rim/stew/stand remain fixed. The overlapping decorative barrel was moved clear; first occluded scene captures were rejected. Cancellation/departure preserve cauldron without another completed piece, serving or economic output.",
+    "completion-and-reset": "Actual Three game exercises vegetables/potatoes/kneading/stirring/vegetables over5 days. Stirring naturally reaches-9.5/4.5, displays0-7 at authored holds, completes once at7 and holds5s. Ordinary camera rotation preserves completion. Cancellation releases actor; cauldron persists after departure. Reassignment resets0; day resolution releases animation and morning returns recipe selection. Existing day resolver owns all economic output. Finite once-hold, no7-to0 seamless-loop approval."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-5.png",
+      "sha256": "bb13ba6e5afa4632fad1617f375ad56eb816e8b5f1ad4a247e568ab219e23392"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/layered-once-preview50.txt",
+      "sha256": "6e60c47dcef075ddf0d6880df6d3dea2fee3c5a30f2288a7ba8b6f14ee74b153"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/install-cauldron.py",
+      "sha256": "efb565c534dc268f54d7c0da016585fc40ac9049232731883417582e0fed12e0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-5.png",
+      "sha256": "7ee1dab074a01f5d86c503170da1ae7eb28b5cb0e447f1a087127898aaa67d0a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/measure-contacts.py",
+      "sha256": "f41bf6dfdbd3c28a11963928f0654a39eea927e53e395173575b2986630ec633"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-3.png",
+      "sha256": "68c0cf31aaeb948785ea77407269529522af2958bf571f01d56a16ecaac915aa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-material-contact50.jpg",
+      "sha256": "420d1088b4f611caa80836414dd70b34ea8d7b3ad15e6a5b02178ed06fdb4df5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-rotated.png",
+      "sha256": "5f590473c7b9776fb2545a0fc807e69ecd608332c5f058d8c338727c2f9068b7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-4.png",
+      "sha256": "99623bab516e06a52bee981c250e8e8d073f975b2512e46d38a9638b899abac1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/towel-rim-overlap50.json",
+      "sha256": "88bda05841c86b15ad723889437d61c247842807abdfb63c24870e327451c065"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-1.png",
+      "sha256": "9894bd9b3ef47ed0c9e931cb2f543f3a6509ce285c82aa1d12ac3d49669874f7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-2.png",
+      "sha256": "7b32496e71a172d82886a1232dfa3423aeaf61c3a6ab2d6c53c72cbbff7bf0e1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/all8-stirring-game50.jpg",
+      "sha256": "39fb309546f9560f765df3d5b5a64a6e8ee4c239242b7bb89c809b2330c8ba17"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/source-pixel-identity50.json",
+      "sha256": "c1714ac24ce8a7922bbc93e234fbfd1ae7902c30f756e4d62492bd6987b40091"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-departed.png",
+      "sha256": "49773adee625a7b4cb1559c6ee5306f84ba519ec12f630bd4a3cdfb4128ef8b9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-4.png",
+      "sha256": "13a0cf939aad61d6d3ec0d9d7e20599b21a728a8065eaf45a380038f562840ac"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/station-request50.json",
+      "sha256": "762d6f00da170c313d2be51615a508c70aff842b553c745b9ac016fe9da44b22"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-7.png",
+      "sha256": "19e7a20b98d577cf19bbd80210d4b87499a50f1bb09c5ae805a1ecc7ab788634"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-6.png",
+      "sha256": "2f01782a0835255c5906c1c16b825cfa7db75860d0ce08bb34e652fa9e1395a4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/spoon-surface-contact50.json",
+      "sha256": "0c75c316ddd7fbbda12c91b9e51da695a0512d444bbba575e1474feb1ccc0f51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/stationary-boots50.json",
+      "sha256": "4a27415facc47ad1066c41432dfa41daefa81746b3a11e4452ddf830d8d3e8ac"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-6.png",
+      "sha256": "7c845de89fabe710f8837b77e997317a047872997ed8e12cc2496fa88e736b80"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/actor-review50.json",
+      "sha256": "8278357f71f075cad47c6f0e9e4b24e4c7e82512d4310aa773b6cd3d74d946d5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/prepare-layers.py",
+      "sha256": "7526f9efe81ef2af351046e0dfd2879976fcda2139ff72f27fa2a216deb6ed61"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-2.png",
+      "sha256": "300926b3f4cd9e6f905c054aab345abe9c7b9f08e26373675a0b373ceeead982"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-0.png",
+      "sha256": "917facf4cffb58327d67c44ad197632ab75b06ed4a9bbcd286f92fc0760db3b8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-7.png",
+      "sha256": "aabd74a0f32b1a7e1e4e540fcfced79f3e252ea7116d77a7b76320b6c70cda07"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/layer-config50.json",
+      "sha256": "7e30f1a41d647fd3f5f9a67895f37b814e794bb9c9a2664852c595a3638bb027"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/native-0.png",
+      "sha256": "424fa70fc51ac632f57f8dfe8917b31cdec1a617e6d5e8b7b6906bec1d630b3c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/layered-once-preview50.png",
+      "sha256": "eb6947d42738b566791f8f7c52510cb9b49a0c73c5e83f152fca83e22811db0d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-3.png",
+      "sha256": "2af8266bd6acd49a351550f1c5f23252917418db01aaec68c1511fac11cb401f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/game-1.png",
+      "sha256": "ce99b8353edd31fb9b5e2ddb2b8789bc74fd508e79dff8041cc9b693f3de6a79"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cook-cauldron/layered-native50.jpg",
+      "sha256": "6595359ee66750e342415e0d624fe3bdbddd1c88d5906718efd619da901511d6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/station-layer-authoring50.json",
+      "sha256": "88c3363318b5a63b805a0b3ceb474c92790c738e51eaa9e0f9818f00da360fb1"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "719d8e91a660f31843dbed62b7cef7af8a075598f308d67e9d9dbc3746556003"
+    },
+    {
+      "file": "motion-polish.json",
+      "sha256": "43e82d00ad0fdd5a4b6879fb35f18f56b8536bc3ea93be97bb565fb6d34ed1ad"
+    },
+    {
+      "file": "../../../../workstations/stew-cauldron/source.png",
+      "sha256": "d1e536cebd380fb8a9a6d6e10d2d46ddb43d616268c8d9be2afa9d66db046135"
+    },
+    {
+      "file": "../../../../workstations/stew-cauldron/sprite.png",
+      "sha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9"
+    },
+    {
+      "file": "../../../../workstations/stew-cauldron/generation.json",
+      "sha256": "03f8a959dc9463e091793c24b5597f52c495ae7003deeb72aec464a570315d10"
+    },
+    {
+      "file": "../../../../../../src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "../../../../../../src/game/world/environment.tsx",
+      "sha256": "17128a014a0c637c0b84d087df2cf2ef24b964843f7016b6833bb70dde2db986"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/cooking-work-check.mjs",
+      "sha256": "a628bb22bc083e75c5c1eab770bcfd497fd1da00654d61a94cb8c4eafc55e959"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "e8d67159e79242ff4bc0ccf23b33ae549f28b00cdbaeb6994e7c8676e2438c7f"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
+    },
+    {
+      "file": "../reference/00.png",
+      "sha256": "4380674cd9415b476e6657d33aa0167dc230e7bb94b2f900fdf046bc6f4bf63d"
+    },
+    {
+      "file": "../reference/01.png",
+      "sha256": "6685402db2acef70165cc3c5bfbe85466185ca09c99f171658c03dd52b6f3950"
+    },
+    {
+      "file": "../reference/02.png",
+      "sha256": "d5b082f4f840ff4436a63fc119875fd73935d0a5037c0d158e47a55df8513bcf"
+    },
+    {
+      "file": "../reference/03.png",
+      "sha256": "aed39df439715d448f5ac4773894833400d8802f3aeb4319044a038993f914b9"
+    },
+    {
+      "file": "../reference/04.png",
+      "sha256": "2deb0639def5416203c5c5eefbf498b1efc1d0c04780f7ca8b50a0fd8838fcda"
+    },
+    {
+      "file": "../reference/05.png",
+      "sha256": "39aad3b7f4e35a707db12398b96cb3b8f2cfc18115381db226b2ec2ef6e8aed8"
+    },
+    {
+      "file": "../reference/06.png",
+      "sha256": "28ee4d99b44db35ce14fdcf8f9ab65deab90139bb0adb8355bc890177cb651bd"
+    },
+    {
+      "file": "../reference/07.png",
+      "sha256": "d1d1a20b12480835e2664ca64c502439a22f076fdf19cba252e09d411334dbb0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/runtime-revalidation53.json",
+      "sha256": "a63fac4c57f9e1e87a6223b29abd4cfe42d4ae48a0a3e3ffdccd8573aa1478f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/retained-assets-audit53.json",
+      "sha256": "84b99dafbf65abca1905b86931fa41349795c57b017ca62b60347779d0403c39"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cooking-gameplay53.json",
+      "sha256": "3e48d4f9a38e1a533e341cdd1258932ef77d22b6246bc782cdf3ce99f9902151"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/smith-gameplay53.json",
+      "sha256": "b0b9fd011c3c940f22053c8d52b151639baa34f7e01c8147f426c1b9c7e2fc19"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/npc-gameplay53.json",
+      "sha256": "831691c1251ad14f5e5a5c652824e2bfa6824a1e5da8f2c3fee0a7416e62e5aa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/station-layer-authoring53.json",
+      "sha256": "69c49e7b628a2d38adbb75d7c47a1a61c36c714ab75d9fe6ce54a76562e87f06"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    }
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion58",
+    "files": [
+      "src/game/world/work-activities.ts",
+      "src/game/world/environment.tsx"
+    ],
+    "audit": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+    "scope": "Earlier selected art/timing and action calibration entries exact. Six actual consultant days and22 variants verify additive standing explanation/one local crate clearance only. Other gameplay/native observation dates and limited scopes retained. Source-pixel test addition replays all prior actors without changing helper semantics."
+  }
+}

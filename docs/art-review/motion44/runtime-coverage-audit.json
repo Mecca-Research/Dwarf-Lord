@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "checkpoint": "motion44",
+  "baseline": "71c193dc8f0290f4cb9d0ffba9811853432d990a",
+  "addedMappings": [
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "c8902238d3a174543d4a7aa0daddf14478c8f2864e91e09daca8df991cbab454",
+      "sha256": "4fbf6b45a52b4d874171b0ebf8ea0b3aaee241b775005d25022c4075c3578de7"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "36f8ec3052a55fcffaa48334ce6f37a25cc5a2727a687f35e7a1721fe5aaeb13",
+      "sha256": "adc578672f22efe0272aa890e29142c762f45d8f91c73e55385cc89105ae1f58"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "a2cf204638c760b3a62c0c0a2b4b64de15b2df7a4fd8682298cb92685ddb5e96",
+      "sha256": "8d4e7385cdaeda387b78bcc5c92db8476f7dd3960b8fcfa025a6b36e3bfc8471"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "8996b825a1a6e4cae26e157be4a7a2a3196800feb5e22463048b9232b7d53f04",
+      "sha256": "27c688110fd815c86bdba16fddf57f197d243f03b8c792ebcf437a296ba50368"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "7357988d6b453430a4d547b5934c9a66d0f132651e0ba84227ef1c9cc162ae2b",
+      "sha256": "3f1db1827c5f9a86df835e4181f1dab444c8c18636c466b957080bdf802bdc4d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "4616cac3c930c085343f74ac21dfa800d1ea48819bd1120e1cd323f619aba8e3",
+      "sha256": "dcbf1aa227bafc7270b1c0e334eab30623b3f743c2e05d7f0a76e9ceb45017ba"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "beforeSha256": "97bc6b2a890c33241f33f67cf6310384a147ffe559993b24e61c860e76713861",
+      "sha256": "e4eab5560135b0c70983ce2301411d0e8d7110371c0f85efd7df6d1931b7b989"
+    },
+    {
+      "file": "scripts/consultant-work-check.mjs",
+      "beforeSha256": "e8be50e65b9b3d02495ecbc1f5a59a7258247483f4ff643a464febec027dba0b",
+      "sha256": "cf7b9d1e29293c0e9df8412ce433ff3a1934d354ed0ca04dd30e766c978651e8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "08bc2178e618ab81e3275fe2041098bee01f40a36783b8461d5f349f3f7980ca",
+      "sha256": "c10b9be18723e8e3ce48761c69eceeacc871d3ef99bca3f3612bd1e24cd2a8a9"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "680c7ec5c81a48d0f02e0f7b8745225f674357b91abf7d57d2c3367b51d415e0",
+      "sha256": "91d5f17caade6f6c4b8fc2084b3de03f550ed61eecf2cd20945bfb58fede5444"
+    }
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion44/runtime-revalidation.json",
+    "sha256": "23b2627eca1e0cfa15d98a0ab7ed8a9cc92d2cc0fecd27faaca332cd76b0deef"
+  },
+  "scope": "Only two existing accepted Borrin references gain actual finite live mappings. Frozen160, all11 families and original49/7 scoped acceptances unchanged. Seven derived actors have separate finite task approvals. No automatic reward, seamless loop or moving contact is inferred."
+}

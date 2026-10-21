@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "checkpoint": "motion37",
+  "date": "2026-10-03",
+  "baseCommit": "be8c0a92908cec4ba152bd8e0177e41e99397b80",
+  "scope": "Three scoped main review closures: one calibrated fixed-view walking loop and two finite seated inspection tasks. Five local Laborer poses improved. Full motion acceptance remains incomplete; other gait/cane, direction, activation and cycle gates stay open.",
+  "dependencies": [
+    {
+      "file": "src/game/world/npc-motion.ts",
+      "sha256": "d8dffce74d8b226fb7eee7f6e88ec1e4addb35c3ad82578d76de05a22f9e1b9a"
+    },
+    {
+      "file": "src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "src/game/world/scene.tsx",
+      "sha256": "01a0955f7dd69e5d7ed5026029ab8036a52db8cd1ffb57b4981b1e56e77caa67"
+    },
+    {
+      "file": "src/game/runtime.ts",
+      "sha256": "c1934ecffe8f27d4a8f6da82de4f11d647a346f2889f89fb25e286454ac66eae"
+    },
+    {
+      "file": "src/game/world/motion-review-points.ts",
+      "sha256": "1afe39788475275d0dc6cf6a5f47862c552c80bbe068a9a14007f381f6540343"
+    },
+    {
+      "file": "src/game/world/work-activities.ts",
+      "sha256": "ec978c5133ea3b67a0c1d6c1b8fd999b00a514187390bf72a2d7aa131fb013f0"
+    },
+    {
+      "file": "src/game/world/workstations.tsx",
+      "sha256": "328eb500bb81bc526a6fe1d523fe9b25db4df91f628318e199a197f4331db4c4"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "sha256": "fcfc86857ba8b81ba49826f3b07852c56a397664f2fe51825db06f8ea0f52b50"
+    },
+    {
+      "file": "src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "public/motion-playback.mjs",
+      "sha256": "5e9ecac8529e82b28848b5cd6f52aada17f744bbed2049d7a403049dc9f67632"
+    },
+    {
+      "file": "public/motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "scripts/stride-renderer-review-check.mjs",
+      "sha256": "9b1541b210feab6eb190905f069e98f8d0a7b62ab4b5773dcb550e0bea03f750"
+    },
+    {
+      "file": "scripts/npc-motion-check.mjs",
+      "sha256": "25f3ef35870486a434dcf37bddde88b62fe1cfdc5aab0182de8a025b96ec6f97"
+    },
+    {
+      "file": "scripts/elder-frame-review-check.mjs",
+      "sha256": "ca6929b6654d686b018d7e14474768d4bb28e9741b80a4ca3d27ab828b60c350"
+    },
+    {
+      "file": "scripts/motion-review-check.mjs",
+      "sha256": "dd0156e83c41a805fe861598a73182a1b0e67974a13f428432f83bfa2ecfae5a"
+    },
+    {
+      "file": "scripts/workstation-review-check.mjs",
+      "sha256": "3f180f18a6f2eff5833f544e59e69855acd87abf249b77ac5493a13d9228fefb"
+    },
+    {
+      "file": "scripts/export-character-motion.py",
+      "sha256": "153fc2acc1d748b23a1840d6b986646f8194a8d3a5a398d33b9da68ffddacec7"
+    },
+    {
+      "file": "scripts/whole_stride.py",
+      "sha256": "c15712bdc5302610dcb7b2c9ba1de41447c6ed4127efc8622b2cd72ef229f7fa"
+    },
+    {
+      "file": "scripts/motion_loop_approval.py",
+      "sha256": "c953b549a8f7c1b7069e375a40050fab3f75b3b48aa15db5dd96036f8c37afc4"
+    },
+    {
+      "file": "scripts/motion_completion.py",
+      "sha256": "5e174c0bc406f21b99e883b0f1e31eef3411f9ece08d2fbc3be507db5f684758"
+    },
+    {
+      "file": "docs/expanded-animation-plan.json",
+      "sha256": "838237b7b7fa4aec0481ee72f7ee08dcc33054e2ff979d1476bde0e7f624f610"
+    },
+    {
+      "file": "docs/motion-completion-scope.json",
+      "sha256": "ed49a1c6594049c5a3011cc463dc218cafc0b40271f8824cb608c29ebd70a7b1"
+    },
+    {
+      "file": "docs/motion-completion-status.json",
+      "sha256": "c3e6d71a4c26c9e8151d068dad19bcdfc58c97dd8c0d454ed6d64dc82db2df4b"
+    },
+    {
+      "file": "docs/blacksmith-right-whole-stride-observations.json",
+      "sha256": "2028003bd3f93e2ef4e052d7a96d302c1df17e3f2b1b0eacf5ba5387c8d7de6a"
+    },
+    {
+      "file": "docs/blacksmith-right-whole-stride-measurement.json",
+      "sha256": "3af094de127c5cba9d5a193b4f3b1710d2258dbfe16468e4a1d6e8cd4c3e6275"
+    },
+    {
+      "file": "docs/laborer-back-left-whole-stride-observations.json",
+      "sha256": "a6677323ac2e85a96a94a432ae1efba397543ab2e5b827f5653521d2ff7c0e8c"
+    },
+    {
+      "file": "docs/laborer-back-left-whole-stride-measurement.json",
+      "sha256": "293d8bda03dd3f2bc0ba93ad2d8bdcd35785c25e8362a10678999323a7e8868d"
+    },
+    {
+      "file": "docs/laborer-back-left-whole-stride-candidate.json",
+      "sha256": "b70b18d3f27673715268a86ff01a3dddd2ad8a25a5db2905cfc3cd6d28159323"
+    },
+    {
+      "file": "docs/laborer-back-left-phase-review.json",
+      "sha256": "55d67aaaad289a5174b523b71b854c151797fb02e80536c848c68ff6a9ae1505"
+    },
+    {
+      "file": "docs/elder-back-joint-contact-measurement.json",
+      "sha256": "07f59a64ce94ccbc976e963d8cc562ab0844a83a1e2f877f54c41a8aaf91bca9"
+    },
+    {
+      "file": "docs/elder-back-contact-measurement.json",
+      "sha256": "84fb5abb8acba372fc4ab79848b0764dfd84acdef3c314200081ee7bb622fa5f"
+    },
+    {
+      "file": "docs/art-review/motion37/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "docs/art-review/motion37/elder-live-frames.json",
+      "sha256": "ae19ec91664ca0741040d0b5f0d13d4b5e3a54c77cc2892d61ff63d4015bc3b5"
+    },
+    {
+      "file": "docs/art-review/motion37/gallery-results.json",
+      "sha256": "4721c089eaf025f40f45f785054f36d711270c310624ab3d2e6afce7d2161f60"
+    },
+    {
+      "file": "docs/art-review/motion37/gameplay-state-0.json",
+      "sha256": "4f3eb505756d32d4ba9d798c170cd016beab19e0ebcced35ca2c45ef29d424c5"
+    },
+    {
+      "file": "docs/art-review/motion37/gameplay-state-1.json",
+      "sha256": "e8d530671872bf3b91aa6fc6352480ae152d462381c0613bf35c7772f53fa11f"
+    },
+    {
+      "file": "docs/art-review/motion37/npc-lifecycle-results.json",
+      "sha256": "e19019f3d463c54f20c6313a61461b4ddf161d14bf99f1302c51b9189db0f22d"
+    },
+    {
+      "file": "docs/art-review/motion37/workstation-layer-results.json",
+      "sha256": "e0fee449b54e4f811094375c02c51175cdd1c6b18e1a8879b1d74a563be922f3"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+      "sha256": "df8812c82193c2230992e6b2e30841c8e57a53ceb2efe9124f24e046c571c368"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "sha256": "9519e0d2db6fdd0f6cedc42d727b772111e4d9c7ffa5fbe05bf4efa6baa5bda5"
+    },
+    {
+      "file": "public/sprites/Cook/motion/render-calibration.json",
+      "sha256": "ddb5a83888d373e7ce42423b3068f31aaf0efaea55fbed79f5ffe119e41dcb41"
+    },
+    {
+      "file": "public/sprites/Elder/motion/render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/render-calibration.json",
+      "sha256": "889a4517ce421881404036efb3b62e8ce7bca5cd6ee83ace28584e2399af5ac4"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/render-calibration.json",
+      "sha256": "9ed29b368fc644ea55ea0d4470736ed3f0aae37d6fc7fed6e60cc3d6f78b2edd"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/render-calibration.json",
+      "sha256": "973c1c170645dd18cc7d468d74d6af986775589cf60bebeccf4beab89b3a287d"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/render-calibration.json",
+      "sha256": "76f70dd9ed16b67d77cc289b1ab29ae0effb91242fda999253250b9d2627f569"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/manifest.json",
+      "sha256": "b859e95f0367d49c421946d0bfb4a5a9bae1e1b2a2a4601cf9b75b3fbd4df2bf"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/loop-approval.json",
+      "sha256": "bfd1fb4b4d03cf4c037cbf61abf6499a0c14f935afeaf21c768176194e431e1e"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/manifest.json",
+      "sha256": "8a973deb7e540df7d9233106d9aeb79a79ca2afa767946318ebab3b1412c21b4"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+      "sha256": "135ab4946ff91a01f6dd34f380fdf19dc6b71143295e713e8035d27bfa5147d9"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/manifest.json",
+      "sha256": "10a23038cddd50f2b792d89559c0e85e38db06ef1ccad93c4657e72c69dbdb56"
+    },
+    {
+      "file": "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+      "sha256": "f7e8405ae1b8fc2812bf7bffdc4930856fbcfe4f9cb33ca324556007447dd682"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/manifest.json",
+      "sha256": "884e401e7748fd0fea7564fc25374e194d2bfbf58e057186d2fae6c221c9421d"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-seated/reference/loop-approval.json",
+      "sha256": "b214137ba8c2363a786497936528f9fdfef93762a890ce539f5a1581006623ef"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/manifest.json",
+      "sha256": "2e59c795006e91ffbfb971d33b11ca6bac879edb3c9504c942b0674c63cf0246"
+    },
+    {
+      "file": "public/sprites/Elder/motion/laugh-and-gesture/reference/loop-approval.json",
+      "sha256": "0603654a2259fd93731a04b0cf242c41ec0bbf57f967a348bf2d35a17e39084c"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/manifest.json",
+      "sha256": "526539ba317e3962861050d9c504e9a203059e155e59390782b4b828a90f110b"
+    },
+    {
+      "file": "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/task-approval.json",
+      "sha256": "4c71341602ade925dc0ed220113f6c0bcf57d951062a51ce9bb868b458b48eef"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/manifest.json",
+      "sha256": "dce204329725da3ccd24a3f6a1e4b29f0d2ab949e68e31eaadc98b9319720d89"
+    },
+    {
+      "file": "public/sprites/Elder/motion/examine-pickaxe-crack/reference/task-approval.json",
+      "sha256": "e50e84f846943bedcb8f31e95204bf41a64695531c0ba184bde9dc976e0ef95f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/manifest.json",
+      "sha256": "3febdbd19ffafc4344725c74c0901328d1ee8ac1e811fedd8d59ad9bac19a0b3"
+    },
+    {
+      "file": "public/sprites/Cook/motion/chop-vegetables/actor/loop-approval.json",
+      "sha256": "941dc3f37b2c8b1bbb9f682a180927c75019579ae12f4efd941cddd0dea30782"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/manifest.json",
+      "sha256": "621bf2dbce118ab1d234631da35215900fc4e4ef1707300963651d8b25b61a09"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-contact/actor/loop-approval.json",
+      "sha256": "feb3679152a7b3aa9fdad46b4404e002c0aad7a7e7211e15e61d1fefb679522a"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/manifest.json",
+      "sha256": "b664bfa1b56bdd9f011b8aecc5ca3bd434d21aa4687a04f3dba86a9d80d141c2"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/fell-tree/actor/loop-approval.json",
+      "sha256": "f22a15efa5eb357fc4d26919a00e1e1ebb371f44a0cbe2cc3b3e25b7f2eebf2a"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/manifest.json",
+      "sha256": "d308d2c53c79c916bd72c483e73c359bd5457d054fd848de9ae4aadee5862823"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/stack-crates/actor/task-approval.json",
+      "sha256": "ff962a8d8dba22c8f127641695a3f0337791b51720d04a03d3b874848d6ffd20"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/manifest.json",
+      "sha256": "0ea389a250f581dcd7bd6b997fe35377cb5fcb7f4cd04c027bae6a870a21eaab"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+      "sha256": "22a823e1e52b3f3c558b9a1d40de7331da8b661e6562be7675510e20c69a2d9c"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/manifest.json",
+      "sha256": "6c94ed92bb2abb96a150c274cd2fdcddf930dff20ea7aa2234b64a2539a5998c"
+    },
+    {
+      "file": "public/sprites/Stoneworker/motion/chisel-contact/actor/loop-approval.json",
+      "sha256": "e7f9e3bcd60c4d1cd32da94c2d92926c975f0282c1b52ae06d870540e6ec239a"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/manifest.json",
+      "sha256": "bf27e3ef757e315d309893f18d71a8272f39a84b998b33df6e92dbf86fd97903"
+    },
+    {
+      "file": "public/sprites/Quartermaster/motion/check-weights/actor/loop-approval.json",
+      "sha256": "452b590d6d030d7ed811e38c63eb0ad9fd7f4fd9cf6f8874679e5c538f767bcf"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/assembly.json",
+      "sha256": "605ce1a10eaf68cb40e42e90705962d9625e195a82e4b3b027e3e99e2883af14"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/motion-polish.json",
+      "sha256": "6f6ff40e2392775c5929efdf7f240121997eddcda6254fdb26432b2dc5f40b6a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/source-sheet.png",
+      "sha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/atlas.png",
+      "sha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/assembly.json",
+      "sha256": "2532271f9409e2985b1579fbcf1036ff6226e86277fe2e66e1e79ab048ad8ef3"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/motion-polish.json",
+      "sha256": "e7e76734cac9e113b00bcddd9087af1c1cf26b234fa22b65e34707d89128332c"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/manifest.json",
+      "sha256": "45d4eca6cdd30c028b4afb1d4260d6de8c7ce2a97076c97853dcafc88838207c"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/source-sheet.png",
+      "sha256": "d4edf28064914b1c242bac86812cc2c5e774143ae4d57a1cab22d06b06ee3635"
+    },
+    {
+      "file": "public/sprites/Laborer/motion/walk/back-left/atlas.png",
+      "sha256": "e706dbad58600b95fe8ff4ddb6a16853a894514ee45ccebeef7f5ca4a52a1b50"
+    }
+  ],
+  "newAcceptances": [
+    {
+      "id": "Blacksmith/walk/right",
+      "type": "fixed-view-walk-loop",
+      "registeredMaxContactJumpPx": 1.032,
+      "actualRendererMaxBoundaryJumpSpritePx": 1.9003717812156378,
+      "actualRendererMaxHeldDriftSpritePx": 0.2651430147233448,
+      "boundaries": 24,
+      "heldSamples": 152,
+      "strideBodyRatio": 0.880769,
+      "scope": "flat ground; fixed0.6-radian camera elevation; no turns, other directions, terrain or tools"
+    },
+    {
+      "id": "Elder/inspect-pickaxe-in-lap/reference",
+      "type": "finite-once-hold-task",
+      "continuousLoopApproved": false
+    },
+    {
+      "id": "Elder/examine-pickaxe-crack/reference",
+      "type": "finite-once-hold-task",
+      "continuousLoopApproved": false
+    }
+  ],
+  "localUnapprovedCorrections": {
+    "Laborer/back-left": {
+      "selectedFrames": [
+        0,
+        3,
+        4,
+        5,
+        7
+      ],
+      "originalFramesPixelExact": [
+        1,
+        2,
+        6
+      ],
+      "maximumCandidateContactJumpPx": 63.079,
+      "requiredPerpendicularOffsetPx": 14.679,
+      "maximumPermittedOffsetPx": 12,
+      "materialCorrespondenceReviewed": false,
+      "travelCalibrationAdopted": false,
+      "loopApproved": false
+    }
+  },
+  "checks": {
+    "nodeTests": {
+      "passed": 201,
+      "failed": 0
+    },
+    "pythonTests": {
+      "passed": 63,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "whitespace": "passed",
+    "gallery": {
+      "sequences": 153,
+      "images": 1224,
+      "errors": [],
+      "measuredViewDefaultAndFiniteTaskStatus": "passed"
+    },
+    "workstationLayers": {
+      "stations": 7,
+      "finiteReleaseAndExplicitReset": "passed",
+      "errors": []
+    },
+    "elderLiveRenderer": {
+      "activities": 6,
+      "poses": 48,
+      "onceHoldCompletionAndDepartureReset": "passed",
+      "errors": []
+    },
+    "npcLifecycle": {
+      "actualDisplacementTurningCollisionArrivalCancellationDayCompletion": "passed",
+      "errors": []
+    },
+    "gameplaySmoke": {
+      "iterations": 2,
+      "movement": "passed",
+      "screenshotsInspected": true,
+      "reportedErrors": []
+    }
+  },
+  "remaining": {
+    "cycleReviews": 146,
+    "walking": 63,
+    "directionalToolCarry": 24,
+    "fixedWork": 59,
+    "passingDirectionFamilies": 11,
+    "unmappedReferenceActions": 54,
+    "elderMovingFootCaneViews": 8,
+    "countsOverlap": true
+  },
+  "productionReady": false,
+  "mergeApproved": false
+}

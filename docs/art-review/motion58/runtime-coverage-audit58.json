@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "checkpoint": "motion58",
+  "baseline": "374698f1fd20167a4cb202e82b91857ea799bafe",
+  "addedMappings": [
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "ab4998fd65d92d3f046e175a1fe624d8c8f13689fa2c02c3db10b40d3bb3fa77",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "fa497e7dcdfc71d835a072e97fc5f2965e2cd017d8733914e7c3ff331a330dc0",
+      "sha256": "acf61d34bc94679b4610fc96bcbe8f7ee8e58453cb2cc31e288952af005b7fba"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "fb1ffb72b77504b93a17b1bddf39ba804364714f58bbb0cabf411150d91cb913",
+      "sha256": "3f5d85322a9993359793569c3fe98d43cfc5676c87e5ee105f758572de6e36ca"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "111b0c23573bb0f547405a12a4ecb8da4f763a8c1841fd4406057441bda92c19",
+      "sha256": "ae71a855be6734337a8be6e2b9497dacfa4301fa98bababf11434e87b6febe8b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "b503de6b0c1409b7c74b2c1edf3f39069bbc16424824fd9d1c1ed783d5af7919",
+      "sha256": "af7d13938f05a4e396e21cdb9056b5d287b59fd53a926d194a7329b96eb77d07"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "e1ab6c57a79633c0dc6e4a143a5fd8e4d95e473bbeb58c2b71e75b6efd15c60c",
+      "sha256": "6f391d81a46dce6091bdd86c1993cb52769765c65d1ddda7feb0917f067116ad"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/render-calibration.json",
+      "beforeSha256": "310e1374cb56cb035093c562aac8aee29d98c337859aca153ec3e19399ee1352",
+      "sha256": "11ac4b14b115d91cd79cbda50a32faa03edab180aaea1eb2c75acec0dd681d3a"
+    },
+    {
+      "file": "scripts/consultant-work-check.mjs",
+      "beforeSha256": "0f4523540a68a6b2bc790318efa50e57d61a3985a73e4cb9de24284a3a09d095",
+      "sha256": "136e808201a76534aa9d7eb93339aa50b4091d0665f01e14fbe164b1ca0a4123"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "92e409c71a03b9f6b084cbcac5f3d78f4a26c87995dbc07e0c7e59c4df121eea",
+      "sha256": "44e493dee004598a390222e64efa5424f9404e8ac5081e19bf82771b22673ab4"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "745709a624422514781b620bf616f8c9421fe00768f130f78af43eff1bc7fb44",
+      "sha256": "125d131239fcd3ffa16abfb5e07380c606b078b0e6d6036f539888fb513bb383"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "42a59e3b9129098c84df70fc508fc016863044d5203b36e62d8ac0b4e25a548d",
+      "sha256": "61738d8bfbef8cb2a351309d0c28d3c8196d1d25395d01417b88927bc93dfea2"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "29f743c28b64faef2040ebaac58e35e0d5acdbb79745bf4b0fb4cde2966a7ea9",
+      "sha256": "ca47dcfb19184922edc68682cc7f2d06f099a5da96112361a8e66a9a537aaeb5"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "beforeSha256": "0d78a4b1b511421d789d76aa3349a0e2f6899cedbc60abb663d0e892d9a53683",
+      "sha256": "68d6ca34b5768570e4b74c0eae2243e76febf78b06858058d1855bf49c09c52b"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "beforeSha256": "15a7db169037238b60369273fad44c7475233e87044b40cdf3e9d4bb25f4df08",
+      "sha256": "a579a8b347c5a27a7a8074408431e4fb1e2835a7de62dd404d4af53c8f06815c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "beforeSha256": "f9d6af481b7648a39a98c0cb4f2a57f3f6f4391dfd72dad99533f946b3c77a24",
+      "sha256": "cfab034b2cb8140a41e27c2ffc83a28a5fbded0de964bd1ca1c2f83d8c1cf12b"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+      "beforeSha256": "0967709786442aa48ac1481197a542d3e7bf451ebb05806a4dc79307ddef67ce",
+      "sha256": "a48ff8c05726569da9eb8221cb757cafb4f80687dafab4171a8de354df35b138"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
+      "beforeSha256": "98fd0bf57da3bb6780347caf83b66dd4d41362694aad42837cafa9aec520601c",
+      "sha256": "6b134abc73126b463acc09e5009071d9bb187b588ed6c9440a5a31595dd38d88"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/task-approval.json",
+      "beforeSha256": "b6bcde43daaf36b4c9eed865bdc9247ca326942dd07eefda4cf755aa55a41f19",
+      "sha256": "62cc787fc876c44e55ea64eaafb3bf7fab73dc6e52ce10becd72c91bbccaff91"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/task-approval.json",
+      "beforeSha256": "7a7e1a9b7bac7e94e3c4a49719aa83896dbb96e893e0bba1dbc7bd309cbb9725",
+      "sha256": "8d4c27fabdefcc55e08222f731a8f10c7cd88712dd28874a9d10999ba3e3975c"
+    }
+  ],
+  "revalidatedEarlierApprovals": [
+    "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+    "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-seated/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference/loop-approval.json",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/task-approval.json",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference/task-approval.json",
+    "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+    "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+    "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+    "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+    "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+    "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+    "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/task-approval.json"
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion58/runtime-revalidation58.json",
+    "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+  },
+  "scope": "One finite standing closed-book activation at the unchanged independent desk. Frozen160/50main+7original acceptances unchanged;15 derived actors outside denominator.26 live/39 inactive.103 individual and11 direction-family gates remain open."
+}

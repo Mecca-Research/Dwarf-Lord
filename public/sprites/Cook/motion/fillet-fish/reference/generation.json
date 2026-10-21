@@ -19,6 +19,21 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Cook/motion/fillet-fish/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Cook. Action: Fillet fish. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. hold fish on cutting block with left hand | 2. place fillet knife behind head | 3. draw blade along spine | 4. continue controlled slicing | 5. lift fillet edge with left hand | 6. separate fillet with knife | 7. lay fillet on board | 8. reset fish for next side",
-  "sourceName": "exec-6dc8d248-f10c-433f-a0cd-52e40540f58b.png"
+  "prompt": "Make one local correction to this exact transparent 4x2 eight-pose sprite sheet. Edit only the BOTTOM RIGHT pose, all seven others unchanged. It currently shows a whole silver fish on the cook's wooden table. Replace that fish with the final filleting state from the neighboring BOTTOM THIRD pose: one opened fish carcass at back-left and ONE SEPARATE LARGE PINK SALMON FILLET lying flat in the front-right third of the tabletop, clearly visible and unobscured, below the cook's left fingers. The fillet is a detached pink triangular strip of flesh with pale white fat lines, cannot be silver or part of whole fish. Keep the cook right hand gripping the knife low above carcass and left fingertips lifted away from the detached pink fillet. Final delivery is retained. EXACT same table silhouette, four legs, crossbraces, cloth, barrel of fish, bowl, dwarf body, boots, scale, image dimensions, pose positions, camera, lighting. Transparent background. No other edits; do not reset completed fish. BOTTOM RIGHT MUST HAVE THE PINK SEPARATE FILLET VISIBLE LIKE BOTTOM THIRD.",
+  "sourceName": "exec-6dc8d248-f10c-433f-a0cd-52e40540f58b.png",
+  "editHistory": [
+    {
+      "method": "Built-in whole-sheet local edit, second attempt. One separate deposited fillet retained in final pose. Exact prompt recorded alongside the selected source.",
+      "references": [
+        {
+          "file": "authoring-inputs/Cook-fillet-fish39.png",
+          "sha256": "91274dd3cd333c06fe943fb9e69d29272377e0d431bf425bdd27e110a09ea254"
+        }
+      ],
+      "output": "authoring-inputs/Cook-fillet-fish-b39.png",
+      "outputSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
+      "decision": "Native task and registration review pending.",
+      "prompt": "Make one local correction to this exact transparent 4x2 eight-pose sprite sheet. Edit only the BOTTOM RIGHT pose, all seven others unchanged. It currently shows a whole silver fish on the cook's wooden table. Replace that fish with the final filleting state from the neighboring BOTTOM THIRD pose: one opened fish carcass at back-left and ONE SEPARATE LARGE PINK SALMON FILLET lying flat in the front-right third of the tabletop, clearly visible and unobscured, below the cook's left fingers. The fillet is a detached pink triangular strip of flesh with pale white fat lines, cannot be silver or part of whole fish. Keep the cook right hand gripping the knife low above carcass and left fingertips lifted away from the detached pink fillet. Final delivery is retained. EXACT same table silhouette, four legs, crossbraces, cloth, barrel of fish, bowl, dwarf body, boots, scale, image dimensions, pose positions, camera, lighting. Transparent background. No other edits; do not reset completed fish. BOTTOM RIGHT MUST HAVE THE PINK SEPARATE FILLET VISIBLE LIKE BOTTOM THIRD."
+    }
+  ]
 }

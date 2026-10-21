@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "landmarks": [
+    {
+      "root": [
+        242.5,
+        418.0
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        687.6351351351351,
+        418.0
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1130.6081081081081,
+        417.7837837837838
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1573.2297297297298,
+        417.56756756756755
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        245.27027027027026,
+        862.1351351351351
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        688.0,
+        862.1351351351351
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1130.8648648648648,
+        861.7837837837837
+      ],
+      "bodyHeight": 407.56756756756755
+    },
+    {
+      "root": [
+        1573.6081081081081,
+        862.0
+      ],
+      "bodyHeight": 407.56756756756755
+    }
+  ],
+  "landmarksVerified": false,
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions.",
+  "sourceCells": [
+    [
+      0,
+      0,
+      444,
+      444
+    ],
+    [
+      444,
+      0,
+      887,
+      444
+    ],
+    [
+      887,
+      0,
+      1330,
+      444
+    ],
+    [
+      1330,
+      0,
+      1774,
+      444
+    ],
+    [
+      0,
+      444,
+      444,
+      887
+    ],
+    [
+      444,
+      444,
+      887,
+      887
+    ],
+    [
+      887,
+      444,
+      1330,
+      887
+    ],
+    [
+      1330,
+      444,
+      1774,
+      887
+    ]
+  ],
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      430,
+      470,
+      570,
+      585
+    ],
+    "minimumCorrelation": 0.93,
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "measuredCorrectionPx": [
+          -3.995744535245649e-08,
+          1.9516268423558358e-07
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97528,
+        "measuredCorrectionPx": [
+          -0.4416939914226532,
+          0.06814910471439362
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.98684,
+        "measuredCorrectionPx": [
+          -0.1394776850938797,
+          -0.1460351049900055
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97228,
+        "measuredCorrectionPx": [
+          -0.6962695121765137,
+          0.08562719076871872
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9793,
+        "measuredCorrectionPx": [
+          -0.4648851454257965,
+          0.004124285653233528
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9706,
+        "measuredCorrectionPx": [
+          0.2244921773672104,
+          -0.15877023339271545
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97885,
+        "measuredCorrectionPx": [
+          0.006583872251212597,
+          -0.44064468145370483
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97296,
+        "measuredCorrectionPx": [
+          0.24882324039936066,
+          -0.23120930790901184
+        ],
+        "accepted": true
+      }
+    ]
+  }
+}

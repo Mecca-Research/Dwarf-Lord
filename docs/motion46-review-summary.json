@@ -1,0 +1,73 @@
+{
+  "checkpoint": "motion46",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 49,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 104,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 19,
+    "referenceActionsWithoutMapping": 46
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 104
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 46
+    }
+  ],
+  "completed": {
+    "character": "Borrin",
+    "action": "stamp-paperwork",
+    "frames": 8,
+    "acceptance": "finite live consultant task",
+    "physicalRegistration": {
+      "targetBodyHeight": 650,
+      "targetAnchor": [
+        320,
+        616
+      ]
+    },
+    "stampPressMaterialTravelPx": 2.23606797749979,
+    "receiptPersists": true,
+    "economicMutation": false,
+    "seamlessLoopApproved": false
+  },
+  "validation": {
+    "nodeTests": 209,
+    "pythonTests": 78,
+    "typecheck": true,
+    "pagesBuild": true,
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "consultantOperations": 5,
+    "ordinaryCameraRotation": true,
+    "stationVariants": 15,
+    "physicalRuntimeProps": 10,
+    "retainedAcceptedFrozenCycles": 56,
+    "derivedActors": 8,
+    "headedStartupAndMovement": true,
+    "skillClientErrors": 0
+  },
+  "note": "One genuinely exercised gameplay activation closes. Frozen160 and all11 directional families are unchanged;104 cycle reviews remain. Earlier63 accepted sources stay exact. Receipt-only independent desk composition and current5 consultant/15 layer lifecycle proofs revalidate affected dependencies."
+}

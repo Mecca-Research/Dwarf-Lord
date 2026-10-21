@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+    "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+    "frameSha256": [
+      "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac",
+      "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb",
+      "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc",
+      "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0",
+      "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd",
+      "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d",
+      "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3",
+      "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068"
+    ],
+    "atlasSha256": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      160,
+      120,
+      100,
+      120,
+      140,
+      160
+    ],
+    "character": "Ginger",
+    "action": "build-barrel",
+    "direction": "actor"
+  },
+  "checks": {
+    "identity-and-scale": "Eight native full poses retain Ginger's curly orange hair and broad unbraided orange beard, cream rolled sleeves, brown vest/belt, green trousers and capped brown boots. Original common physical source basis and measured91px boot cap basis for new individual poses avoid using raised mallet or crouched height as body extent. Fixed520/[320,616] actor/prop basis and small whole-pose offsets leave limb anatomy unchanged.",
+    "station-and-foot-contact": "Both actual visible boot-cap/riveted-rim regions are independently tracked in the actor0-7. Near minimum correlation0.956651/max travel4.6912/max adjacent4.4916px; far minimum0.957494/max travel3.4915/max adjacent4.5072px. Original .94/6/6 bounds remain unchanged. Main reference is the exact composed actor, independent260px barrel/jig and original-pixel foreground contours. Static prop pixels stay fixed. This measures visible actor material, not an invisible heel or moving world contact. Final built-game capture at-36/18 shows the worker and barrel in the shared timber clearing; decorative pines clear both persistent station roots. Body/root/prop registration matches the native layer renderer. Hidden heel/world material is not inferred from a screenshot.",
+    "hand-and-tool-contact": "Exactly one mallet remains in the near hand throughout low hold, raising1/2, descent3, first settling tap4, rebound5, second low settling tap6 and completed low hold7. Native lower wood-head rims4[449,392] and6[428,390] lie inside the traced original fixed upper-hoop face. The opposite fingers brace the same rim at4/5/6; preparation/completion palm lies above it, with no falsely claimed brace during those poses. Foreground contours reuse source hand/mallet pixels and exclude vest/trouser wedges.",
+    "prop-continuity": "One independent open barrel, upper hoop, stave arrangement, rigid cradle/base, toolbox and spare hoop remain identical in all eight compositions. Two light taps reseat the existing upper hoop. This finite construction/maintenance step does not represent complete barrel fabrication, an unshown new material state, object creation or an economic reward. The mallet remains held at7.",
+    "completion-and-reset": "Actual Three renderer naturally routes the timber worker to the selected physical station. Day1 tree cutting and day2 upper-hoop seating each show all eight authored-duration poses, complete once, hold7 for5000ms and retain completed state through camera rotation. Cancellation releases actor; station remains independently visible after departure. Explicit reassignment resets0; day resolution releases motion; morning selects next operation and day3 restores tree cutting. Source, atlas, calibration and static prop hashes match current files. Economic catalog/day resolver and reward ownership remain unchanged."
+  },
+  "scope": "Fixed-view finite two-tap reseating of an existing barrel upper hoop at independent persistent cooper station, visible actor boot-cap/rim material and source-pixel grip/tool geometry, natural arrival and task/day lifecycle. No continuous repeat, other direction, hidden sole, traveling gait, complete barrel fabrication or resource-creation approval."
+}

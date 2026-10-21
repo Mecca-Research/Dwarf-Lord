@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-06",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+    "settingsSha256": "3714124156aea3e269965b65653d02c3cbbfb71a3eccdc33d8268d7778851d9e",
+    "frameSha256": [
+      "f5cd4f5a10d0e14919a6d0aa71e274eba2f8ee1ed2225ed42c423a22f4472490",
+      "08d833bfed2e5c3bd562c13ec69b2260b47559ba5a4e72a652256355f7b64ed6",
+      "80797ed4db882a145da6604955adb76112610f1e72e649a25c84a4c4e72aaa9d",
+      "f0d7667a8d0f52bbd4d61a4f628bf4b66e9b440b10d705588679fa18372b3a18",
+      "38c82ce8fcbf704ed66d768dd530ee806b1cea880cff025fe70fd34b73215a62",
+      "341041dbfe268c052b56d9c5823c35f8fe89e36a2cb47ab40571564a2c3042d7",
+      "e04388add13e53044aca51fbc33d1bfb4fbdabc7422bbead22ff6536d054ecc2",
+      "4d8e4dd865a2e9ed7e76a942db954b558714434f6307c13dc915b82cb85226a6"
+    ],
+    "atlasSha256": "dcc5b78d9d2afb88ef15c41b6e2637861fde5d5f57d99d04681372b0d18399a3",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        280,
+        592
+      ],
+      "targetBodyHeight": 509,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "3714124156aea3e269965b65653d02c3cbbfb71a3eccdc33d8268d7778851d9e",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "anvil-ready",
+    "direction": "actor"
+  },
+  "scope": "Finite stationary original-pixel Blacksmith anvil preparation over the unchanged independent anvil. Visible stationary near-boot region and projected lower billet face reviewed. No hidden far sole, traveling stride, concealed jaw/contact force, impact, completed forging, family continuity or seamless repeat certification.",
+  "checks": {
+    "identity-and-scale": "Original bald Blacksmith with two brass-bound black beard braids, cream sleeves, brown leather apron, olive trousers and capped boots. Exact source-material stencils preserve all8 whole poses in0-7 order. One509px visible pose0 body basis and[280,592] root; only bounded whole-pose integer offsets up to12px. No local limb/gear editing, interpolation, mirror, per-pose scale or duplicate frame.",
+    "station-and-foot-contact": "Original unregistered near-boot maximum12.087818px drift/11.917376px adjacent change fails and is archived. Whole-pose integer registration within the original12px component bound gives visible boot minimum correlation0.968719, maximum travel0.990959px and adjacent1.012908px, within unchanged.94/6/6 bounds. Occluded far foot and anatomical traveling sole remain unobserved.",
+    "hand-and-tool-contact": "One visibly connected hammer head/handle is retained in the near hand; the opposite hand retains the same pincer silhouette and orange billet through0-7. Native lower billet points stay on the unchanged independent projected anvil face, maximum outside0px. Pincer open spaces are excluded from the source stencils. Hidden jaw underside, rigid material/force tracks and hammer impact are not certified.",
+    "prop-continuity": "The existing anvil/stump sprite and520/[320,616] physical registration remain byte-identical. Actor owns body, hands, hammer, tongs and hot billet; persistent prop owns anvil/stump. One uniform registration transform places the prop in the actor review canvas; actual gameplay already uses each measured body basis at one world root. No second anvil, furniture painted into the actor, finished forging or economic output is added.",
+    "completion-and-reset": "Actual Three renderer exercises forging/inspection/repair/preparation/forging over5 days. All8 preparation durations display at the naturally reached6/-7 site, complete once at7 and hold5seconds. Camera turn preserves the finish. Cancellation releases actor; departure leaves anvil independent. Explicit return resets0; day resolution releases animation and next morning restores selection. Preparation ends with a held chest/shoulder-height hammer; no seamless7-to0 repeat is approved."
+  }
+}

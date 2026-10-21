@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "character": "Laborer",
+  "direction": "back-left",
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "method": "Two built-in whole-pose source edits using the retained canonical1280px canvas references. Both outputs are1254px square, normalized by the same whole-canvas640/1254 factor to the existing640px physical basis. Six old selected native frames reused exactly. No local painting/warp, mirror, silhouette/per-pose body scale or synthetic frame. PRIVATE UNAPPROVED.",
+  "inputs": [
+    {
+      "pose": 0,
+      "file": "public/sprites/Laborer/motion/walk/back-left/00.png",
+      "sha256": "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 1,
+      "file": "public/sprites/Laborer/motion/walk/back-left/01.png",
+      "sha256": "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 2,
+      "file": "public/sprites/Laborer/motion/walk/back-left/02.png",
+      "sha256": "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 3,
+      "file": "public/sprites/Laborer/motion/walk/back-left/03.png",
+      "sha256": "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 4,
+      "file": "work/expanded-cycles/motion54/landing-attempt2.png",
+      "sha256": "1ad4be6d530f22d912e0cd1567a4b0ae7aa291978403d2c6ba9b452cff9f3151",
+      "uniformCanvasScale": 0.5103668261562998,
+      "localTransform": null
+    },
+    {
+      "pose": 5,
+      "file": "public/sprites/Laborer/motion/walk/back-left/05.png",
+      "sha256": "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 6,
+      "file": "public/sprites/Laborer/motion/walk/back-left/06.png",
+      "sha256": "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "uniformCanvasScale": 1,
+      "localTransform": null
+    },
+    {
+      "pose": 7,
+      "file": "work/expanded-cycles/motion54/replant-attempt1.png",
+      "sha256": "ef7fd3c269703813f0cd46dd18018535b03a7f7ad50412c8b31a81b275bc8562",
+      "uniformCanvasScale": 0.5103668261562998,
+      "localTransform": null
+    }
+  ],
+  "commonPhysicalBodyHeight": 520,
+  "commonPhysicalAnchor": [
+    320,
+    616
+  ],
+  "prompt": "Precise-object-edit. Edit IMAGE 1 ONLY into one next walking pose. Images2/3 are constraints/reference. Keep the original entire head/neck/torso/waist/arms/pelvis, original physical size and exact placement on its original 1280x1280 transparent canvas. Original bald crown is near y190, belt near y650, pelvis near y790. Do not enlarge or vertically stretch/recenter figure. SAME rear-left view, walking toward upper-left. The near anatomical LEFT leg is leading toward image LEFT, the far RIGHT leg trails toward image RIGHT. Required local pose change: move the COMPLETE NEAR LEFT leading boot approximately80px RIGHT and70px UP from its original position, with a naturally shortened/foreshortened left shin from the unchanged thigh. This is an intentional UPWARD and RIGHTWARD placement in projection, NOT downward. Rotate that leading boot into HEEL CONTACT with toe raised: actual low heel sole edge meets x512 y1058 in the guide, toe projects upper-left. Show same near-side brass buckle and leather detail. Leading LEFT boot MUST remain on image LEFT ahead of pelvis; do not swap the leg to trailing. Retain the far trailing RIGHT boot with toe at x862 y1220 and heel lifted, original size/position. Retain near left arm backward and far right arm forward. Image2 is ONLY projected-ground placement constraint; no guide pixels/text/scenery may be in the output. Image3 shows next left support identity, not the target pose. A single entire semi-realistic detailed dwarf with the original high quality finish, original canvas margin above crown, exact original physical body proportions. Preserve shirt, forearms, intricate leather vest and trousers. Two boots, two connected legs. True transparent alpha, no shadow/ground/tools, no duplicated figures, no animation sheet.\n\nPrecise-object-edit of one existing walking pose, not a new design. Use IMAGE1 as the exact full-body Laborer sprite: stocky bald dark-bearded dwarf in engraved worn leather waistcoat, rolled cream sleeves, grey-brown trousers, tall buckled brown boots. Keep exact rear-left camera facing upper-left, identity, lighting, materials, original torso/head/arms and entire figure scale/placement on original1280x1280 canvas. Original crown near y190, belt near y650. Keep far RIGHT forward-reaching boot on IMAGE LEFT airborne exactly unchanged. Keep both arm counter-swing positions unchanged. Only the trailing NEAR ANATOMICAL LEFT boot on IMAGE RIGHT needs a ground-depth correction: move this entire large buckled boot exactly40pixels DOWN, keeping its original horizontal location, original size and toe/heel orientation. Naturally extend its connected trailing shin from the unchanged thigh to the lower ankle. The near left heel remains raised and distal toe supports at the lower projected ground plane; toe-region moves from approximately x726 y1190 to x726 y1230 on this1280canvas. This is a DOWNWARD40px shift, not an upward shift or opposite-leg swap, and not a second leading/heel-contact pose. Image2 shows only which boot and target displacement; remove every guide mark/text/rectangle in final. Keep original margin above head and full boots inside canvas with a small bottom margin. Do NOT enlarge, stretch, recenter, mirror or rotate the dwarf. One connected complete full body, two arms/two legs/two feet, detailed semi-realistic sprite, genuine transparent alpha, no ground/shadow/text/scenery/tools, no sheet or multiple figures."
+}

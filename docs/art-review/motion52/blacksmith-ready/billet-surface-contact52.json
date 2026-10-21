@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "config": {
+    "actor": "public/sprites/Blacksmith/motion/anvil-ready/actor",
+    "binding": {
+      "sourceSha256": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+      "settingsSha256": "3714124156aea3e269965b65653d02c3cbbfb71a3eccdc33d8268d7778851d9e",
+      "frameSha256": [
+        "f5cd4f5a10d0e14919a6d0aa71e274eba2f8ee1ed2225ed42c423a22f4472490",
+        "08d833bfed2e5c3bd562c13ec69b2260b47559ba5a4e72a652256355f7b64ed6",
+        "80797ed4db882a145da6604955adb76112610f1e72e649a25c84a4c4e72aaa9d",
+        "f0d7667a8d0f52bbd4d61a4f628bf4b66e9b440b10d705588679fa18372b3a18",
+        "38c82ce8fcbf704ed66d768dd530ee806b1cea880cff025fe70fd34b73215a62",
+        "341041dbfe268c052b56d9c5823c35f8fe89e36a2cb47ab40571564a2c3042d7",
+        "e04388add13e53044aca51fbc33d1bfb4fbdabc7422bbead22ff6536d054ecc2",
+        "4d8e4dd865a2e9ed7e76a942db954b558714434f6307c13dc915b82cb85226a6"
+      ],
+      "durationsMs": [
+        140,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        140
+      ]
+    },
+    "dependencies": [
+      {
+        "file": "docs/art-review/motion52/blacksmith-ready/registered-prop52.png",
+        "sha256": "fda4698336e03edac443971b17454dad7ffd4d40acf7d1fe19794ff02e6d14fe"
+      },
+      {
+        "file": "public/sprites/workstations/anvil/sprite.png",
+        "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+      },
+      {
+        "file": "public/sprites/workstations/anvil/generation.json",
+        "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+      },
+      {
+        "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+        "sha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57"
+      },
+      {
+        "file": "public/workstation-registration.mjs",
+        "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+      }
+    ],
+    "workingFacePolygon": [
+      [
+        207.56538461538463,
+        342.3942307692308
+      ],
+      [
+        382.77884615384613,
+        321.83846153846156
+      ],
+      [
+        431.7211538461538,
+        348.26730769230767
+      ],
+      [
+        222.24807692307692,
+        364.9076923076923
+      ]
+    ],
+    "points": [
+      [
+        329,
+        350
+      ],
+      [
+        337,
+        351
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        339,
+        346
+      ],
+      [
+        328,
+        352
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        328,
+        348
+      ]
+    ],
+    "scope": "Manually inspected opaque orange billet lower edge on the independent projected anvil face. Both pincer jaws visibly surround the same held billet. No hidden jaw underside, hidden far boot, impact force, completed forging or seamless repeat is certified."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "point": [
+        329.0,
+        350.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 1,
+      "point": [
+        337.0,
+        351.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "point": [
+        339.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "point": [
+        328.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "point": [
+        337.0,
+        352.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "point": [
+        328.0,
+        348.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0,
+  "lastToFirstToolTravelPx": 2.236,
+  "scope": "Manually inspected opaque orange billet lower edge on the independent projected anvil face. Both pincer jaws visibly surround the same held billet. No hidden jaw underside, hidden far boot, impact force, completed forging or seamless repeat is certified.",
+  "approval": false
+}

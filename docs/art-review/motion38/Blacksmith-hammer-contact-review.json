@@ -1,0 +1,136 @@
+{
+  "character": "Blacksmith",
+  "action": "hammer-contact",
+  "direction": "reference",
+  "destination": "public/sprites/Blacksmith/motion/hammer-contact/reference",
+  "verdict": "accepted",
+  "acceptance": "loop",
+  "sourceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727",
+  "settingsSha256": "1f9f0be3edb9345e4d5a9728448ae3b2e1d6bd9216d5ab2a3e59f1bb7ea39530",
+  "nativeReviewSha256": "e6d400a267f7211dcc2cbfe68aeec7280c577f040ef1fb4984bc01a6e0659793",
+  "checks": {
+    "identity-and-scale": "Same bald muscular dwarf, dark forked brass-bound beard, cream rolled sleeves, leather smith apron, olive trousers and capped boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation.",
+    "prop-continuity": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation.",
+    "last-to-first-transition": "Short right-handed tap:0 contact,1/2 lift,3 descent,4 contact,5/6 rebound,7 descends toward0. Left tongs retain the same orange billet. Same visible connected hammer head/handle and planted stance; contact is visual projection, not a force simulation. Authored final-to-first repeat inspected and checked at the exact timed boundary in the gallery."
+  },
+  "binding": {
+    "sourceSha256": "7cea6dc12cbcc3015f405446a526abd1036419df8cc5d7297be3b80ab39dd727",
+    "settingsSha256": "1f9f0be3edb9345e4d5a9728448ae3b2e1d6bd9216d5ab2a3e59f1bb7ea39530",
+    "frameSha256": [
+      "f62a569dfda6fc3b470139a18a77da719c1d222a77db9a032045a0cbce992e0a",
+      "e1b47556a1e21b31b192260c4817d0c0c86b1a10213aa7903efd57abac6cac56",
+      "41eec1c3ea0ede736f064b6a07296f201e44db9d049fd3e4257dbb2a6efbaf0b",
+      "32d0fbaa32ddfade507c786c6d4c665f72c9d8d6b4f81c1924bf27660b7383c0",
+      "fc8e9fa8fb0908826435fdd8286961a022f7444245fd48bdbcdef0b982c8c028",
+      "a4f8b45196582104f56b0220c31052836b7fc1fb1b50e0b62458028328283d51",
+      "239d9adc9b3d372d64f670bcea174bf1cd5efcfadec605ca0f750f4bcfd4901b",
+      "91726a4a91ae948b8eb81efb97fb40862b68ba1b44ac4a4e77de5559505e5431"
+    ],
+    "atlasSha256": "5fda270c6092eaf028a833132f21c2338d3ba3a18eb2c809dff8be8e23eb735f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "1f9f0be3edb9345e4d5a9728448ae3b2e1d6bd9216d5ab2a3e59f1bb7ea39530",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          210,
+          410,
+          510,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.0,
+              -0.0
+            ]
+          },
+          {
+            "correlation": 0.9872,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.22,
+              0.21
+            ]
+          },
+          {
+            "correlation": 0.9908,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.35,
+              0.12
+            ]
+          },
+          {
+            "correlation": 0.9881,
+            "accepted": true,
+            "measuredTranslationPx": [
+              1.11,
+              0.11
+            ]
+          },
+          {
+            "correlation": 0.9889,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.74,
+              0.29
+            ]
+          },
+          {
+            "correlation": 0.9867,
+            "accepted": true,
+            "measuredTranslationPx": [
+              1.23,
+              0.5
+            ]
+          },
+          {
+            "correlation": 0.9885,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.92,
+              0.63
+            ]
+          },
+          {
+            "correlation": 0.9866,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.53,
+              0.5
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      100,
+      140,
+      150,
+      90,
+      80,
+      100,
+      160,
+      180
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-contact",
+    "direction": "reference"
+  }
+}

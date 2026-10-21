@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+    "settingsSha256": "d997545821d34a3e6ac8fc29cc57523842ae240248ff4ef310ad4b76f0e6bf67",
+    "frameSha256": [
+      "926276d44d5ae8a35beaa01b30e7090cdb85b8f9d2429734a94be24a2b161122",
+      "1750132a34ef3922189591d2c3482b11230ac97b51fa509c00b42747316a3e37",
+      "73e097891393b8da95569dcb405c3ed376439cf6989a33ff94f3e5ff3d8875c4",
+      "58d3e836fbb3e40499a8b6d1d380c3a2a4c9e4c9dae66729a70116666480a0fd",
+      "9a9f77bd425c6a1cf2c345d3b83c139e08a578327d9406a10e023ab558e7fe87",
+      "abfb27866de5e005dae2bce5b53472a16aeba1f4d307990e53a6bc568aecb5da",
+      "e198166b4cc096fbdc0475fc51970acb2aabda4a6f8334c8d1a782506652097d",
+      "70e303c7979dedd2a229f2a2489e2fc520a87d539d0db22f2850e4ba21cb4453"
+    ],
+    "atlasSha256": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "d997545821d34a3e6ac8fc29cc57523842ae240248ff4ef310ad4b76f0e6bf67",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      160
+    ],
+    "character": "Cook",
+    "action": "peel-potatoes",
+    "direction": "actor"
+  },
+  "checks": {
+    "identity-and-scale": "All eight native poses retain canonical balding red-shirt Cook, brown beard, stained pale leather-strapped apron, stocky legs and capped boots. One common projected body extent; actual native boot-stance midpoints correct irregular source gutters. No moving sole, standing direction or hidden anatomy acceptance.",
+    "station-and-foot-contact": "Separate persistent potato block uses same520-body-height/[320,616] basis as actor. Native boot roots are stable after whole-pose registration. All eight layered views and actual day2 arrival at-3.5/4.5 reviewed; both meal blocks stay after cancellation/departure/day resolution. No furniture pixels are in the actor source.",
+    "hand-and-tool-contact": "One knife stays in anatomical right hand and same potato in left throughout. Blade starts on skin0, starts curl1, passes through distinct stroke2/3, completes lower stroke4, lifts5, recovers6 and holds clear7. Source-bound hand/knife/potato/ribbon contours retain lower stroke above tabletop. The first behind-table-only composition was rejected; no limb pixels are edited or duplicated.",
+    "prop-continuity": "Single attached skin ribbon grows through stroke1-4 and stays attached to same held potato through5-7. Exposed yellow patch persists. No imaginary drop, duplicate potato, disappearing strip or bowl transfer. Station owns static bowl/skins/loose potatoes; actor owns knife, held potato and ribbon. One finite paring stroke, not a completed whole-potato processing loop.",
+    "completion-and-reset": "Actual day1/day2 meal jobs expose each of eight authored-duration poses, complete once, hold7 for5000ms without another operation, release on cancellation/day resolution, and reset0 only on explicit reassignment or morning. A daily operation chooses its own physical task target; renderer never awards inventory/economic output."
+  },
+  "scope": "Fixed-view local paring task, independent station placement/foreground ownership and live lifecycle. No seamless loop, moving contacts, cross-direction family, economy or production-ready approval."
+}

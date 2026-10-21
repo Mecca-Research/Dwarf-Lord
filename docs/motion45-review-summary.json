@@ -1,0 +1,93 @@
+{
+  "checkpoint": "motion45",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 49,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 104,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 18,
+    "referenceActionsWithoutMapping": 47
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 104
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 47
+    }
+  ],
+  "selectedReferenceImprovements": [
+    {
+      "character": "Laborer",
+      "action": "repair-boardwalk",
+      "frames": 8,
+      "fixed": [
+        "One right-hand hammer retained from ready through finish; no unshown pickup or final hand switch.",
+        "Authored midway descent and small rebound.",
+        "Constant independently authored empty boardwalk prop without a spare hammer."
+      ],
+      "remaining": [
+        "Two-foot material spacing/transition verification.",
+        "Projected strike depth at5.",
+        "Cross-action/direction physical registration."
+      ],
+      "approval": false
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "frames": 8,
+      "fixed": [
+        "Delivered log retained and both hands empty in final7."
+      ],
+      "remaining": [
+        "Painted station displacement/geometry in7.",
+        "Corresponding visible sole material; automatic boot correlations below.94.",
+        "Independent actor/rack registration and gameplay activation."
+      ],
+      "approval": false
+    }
+  ],
+  "additionalAsset": {
+    "file": "public/sprites/workstations/firewood-rack/sprite.png",
+    "status": "authored independent empty rack, awaiting actor/station registration; inactive",
+    "countsAsApprovedRuntimeProp": false
+  },
+  "validation": {
+    "nodeTests": 209,
+    "pythonTests": 75,
+    "typecheck": true,
+    "pagesBuild": true,
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "revisedFinitePlaybacks": 2,
+    "posesPerRevisedPlayback": 8,
+    "terminalHoldMs": 10000,
+    "retainedAcceptedFrozenCycles": 56,
+    "retainedDerivedActors": 7,
+    "stationVariantsUnchanged": 14,
+    "physicalRuntimePropsUnchanged": 10,
+    "runtimeMappingsUnchanged": 18
+  },
+  "note": "Ownership problems improved in16 selected poses, with transparent provenance. No new cycle gate, family, actor, or gameplay activation is claimed. Frozen160 remains49 main plus7 original actors accepted;104 cycle reviews and11 direction families remain open;47 existing reference actions remain inactive. Both revised source-bound rejection records remain current."
+}

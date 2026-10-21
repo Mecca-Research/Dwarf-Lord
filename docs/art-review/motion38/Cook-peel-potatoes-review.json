@@ -1,0 +1,135 @@
+{
+  "character": "Cook",
+  "action": "peel-potatoes",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/peel-potatoes/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7",
+  "settingsSha256": "56f086c10cf039331b4843ef77ba0bb9786f1d406b92a94c2be55a1bc19e0035",
+  "nativeReviewSha256": "0323aae131a75c444af22343d33e8b0620cdce0495612631cdf21efb49493093",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left hand holds one potato; right fingers retain the small knife through peel draw0/1/2, curled peel3/4, return5/6/7. A peel is visible over the bowl during the cut and then among its contents. The bowl and unpeeled reserve potatoes remain. Finite stroke, not an infinite resetting peel.",
+    "prop-continuity": "Left hand holds one potato; right fingers retain the small knife through peel draw0/1/2, curled peel3/4, return5/6/7. A peel is visible over the bowl during the cut and then among its contents. The bowl and unpeeled reserve potatoes remain. Finite stroke, not an infinite resetting peel.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "fd0d021bda6cc31bc69415b3964128b4835189c0cff16ae07a8ebafdcfcde1c7",
+    "settingsSha256": "56f086c10cf039331b4843ef77ba0bb9786f1d406b92a94c2be55a1bc19e0035",
+    "frameSha256": [
+      "8a95aaa4e2bb7fcd709a13f4b6b121d7d9d6589d1511f21bfdd9fabacf277905",
+      "e4d8cf904ad0a1f2a40b4893dbea35376aee3b80ee682cb6c12a1e067839a5cd",
+      "c8e7d384690e4a47ca69789330e7c4b81e35b5193cda23e9fa34b627429e6b3a",
+      "47297fb03ec97d162bf1c626e5e3d0c9034035ba543bd98d7b79082d53365155",
+      "bd8825ba5fd6c7174f9230aa1c29ab3b1330d178a8cbbb455383bb738069e001",
+      "b1d8193a71aa82018e2d5691de9d50318e70baaf2436b3710705ab9fd0f0730a",
+      "54ba96ab0e0732a274b9f9f7dca3bc0c67b6d9a60eb37692c715f5fdd1bdf6ef",
+      "37411eb2d1bd0d76bed5de0d8250221029a46caaca975828d5b6fffdaf212b79"
+    ],
+    "atlasSha256": "9719875a208ea135fa208e81fd235e097f29e1ab43e7fd575c25a316bdc31190",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "56f086c10cf039331b4843ef77ba0bb9786f1d406b92a94c2be55a1bc19e0035",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -2.261707710005112e-09,
+              -4.168356326772482e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99081,
+            "measuredCorrectionPx": [
+              0.5007325410842896,
+              1.5613963603973389
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99342,
+            "measuredCorrectionPx": [
+              0.737602174282074,
+              1.6054918766021729
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9916,
+            "measuredCorrectionPx": [
+              -0.00884790439158678,
+              1.6016956567764282
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99442,
+            "measuredCorrectionPx": [
+              0.3162408173084259,
+              0.05432497709989548
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98984,
+            "measuredCorrectionPx": [
+              0.42695462703704834,
+              0.12017703056335449
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99158,
+            "measuredCorrectionPx": [
+              0.8484907150268555,
+              0.14642316102981567
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99009,
+            "measuredCorrectionPx": [
+              0.02470901422202587,
+              0.2577831447124481
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "peel-potatoes",
+    "direction": "reference"
+  }
+}

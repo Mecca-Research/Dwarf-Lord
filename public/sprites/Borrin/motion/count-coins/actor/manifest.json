@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Borrin",
+  "action": "count-coins",
+  "title": "Count coins",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/04-count-coins.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "67ed4826b90e000a640e0acb4d19f7849064014ca0821d700113e0efcc72fae6",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "counted coin already held low",
+      "durationMs": 160,
+      "sourceBounds": [
+        144,
+        100,
+        491,
+        600
+      ],
+      "sourceAnchor": [
+        176.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        96
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "slight coin and forearm lift",
+      "durationMs": 140,
+      "sourceBounds": [
+        784,
+        102,
+        1131,
+        600
+      ],
+      "sourceAnchor": [
+        176.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        98
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "chest-level coin inspection",
+      "durationMs": 140,
+      "sourceBounds": [
+        1428,
+        99,
+        1770,
+        600
+      ],
+      "sourceAnchor": [
+        172.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        95
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "high inspection lift",
+      "durationMs": 160,
+      "sourceBounds": [
+        2064,
+        98,
+        2409,
+        600
+      ],
+      "sourceAnchor": [
+        176.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        94
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "small held-coin wrist turn",
+      "durationMs": 140,
+      "sourceBounds": [
+        144,
+        738,
+        496,
+        1240
+      ],
+      "sourceAnchor": [
+        176.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        137,
+        94
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "lower same coin toward chest",
+      "durationMs": 140,
+      "sourceBounds": [
+        782,
+        739,
+        1132,
+        1240
+      ],
+      "sourceAnchor": [
+        178.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        135,
+        95
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower same coin toward desk",
+      "durationMs": 140,
+      "sourceBounds": [
+        1429,
+        740,
+        1772,
+        1240
+      ],
+      "sourceAnchor": [
+        171.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        142,
+        96
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed low hold retaining same coin",
+      "durationMs": 160,
+      "sourceBounds": [
+        2065,
+        740,
+        2413,
+        1240
+      ],
+      "sourceAnchor": [
+        175.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        138,
+        96
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1180,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      160,
+      140,
+      140,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "128d36952855d7c30a74bf97a878ec66e9747350e9127767946b4064037001c3",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view finite seated coin inspection at independent ledger desk. No continuous loop, moving contact, direction family, economy or production-ready approval."
+  }
+}

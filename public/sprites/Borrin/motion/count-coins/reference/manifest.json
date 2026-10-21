@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Borrin",
   "action": "count-coins",
   "title": "Count coins",
@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/04-count-coins.png",
   "source": "source-sheet.png",
-  "sourceSha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+  "sourceSha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa",
   "sourceSize": [
     1774,
     887
@@ -16,23 +16,23 @@
     640,
     640
   ],
-  "sharedScale": 1.419664268585132,
+  "sharedScale": 1.4128878281622912,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "hand reaches for copper coin stack",
+      "description": "already-gripped copper coin held low near stacks",
       "durationMs": 125,
       "sourceBounds": [
         15,
-        26,
-        429,
-        422
+        24,
+        431,
+        425
       ],
       "sourceAnchor": [
-        208.0,
-        396
+        208.5,
+        401.0
       ],
       "groundAnchor": [
         320,
@@ -40,95 +40,95 @@
       ],
       "placement": [
         25,
-        54
+        49
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "continuous midway transition from hand reaches for copper coin stack toward pick up one coin",
+      "description": "lift coin midway toward chest",
       "durationMs": 125,
       "sourceBounds": [
-        459,
-        26,
-        872,
-        422
+        458,
+        24,
+        874,
+        425
       ],
       "sourceAnchor": [
-        207.5,
-        396
+        209.20777027027026,
+        401.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        54
+        24,
+        49
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "pick up one coin",
+      "description": "inspect raised coin",
       "durationMs": 125,
       "sourceBounds": [
-        902,
-        26,
-        1316,
-        422
+        901,
+        23,
+        1317,
+        425
       ],
       "sourceAnchor": [
-        207.5,
-        396
+        209.70777027027026,
+        402.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        25,
-        54
+        24,
+        48
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "continuous midway transition from pick up one coin toward place coin beside counted silver stack",
+      "description": "rotate wrist to inspect edge",
       "durationMs": 125,
       "sourceBounds": [
-        1345,
-        26,
-        1759,
-        422
+        1344,
+        24,
+        1761,
+        425
       ],
       "sourceAnchor": [
-        208.5,
-        396
+        210.20777027027026,
+        401.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        24,
-        54
+        23,
+        49
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "place coin beside counted silver stack",
+      "description": "lower held coin beside ledger",
       "durationMs": 125,
       "sourceBounds": [
         15,
         469,
-        429,
-        866
+        431,
+        869
       ],
       "sourceAnchor": [
-        208.0,
-        397
+        208.70777027027026,
+        400.0
       ],
       "groundAnchor": [
         320,
@@ -136,71 +136,23 @@
       ],
       "placement": [
         25,
-        52
+        51
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "continuous midway transition from place coin beside counted silver stack toward return hand toward uncounted coins",
+      "description": "rotate coin near ledger while reading value",
       "durationMs": 125,
       "sourceBounds": [
-        459,
+        458,
         469,
-        872,
-        866
+        874,
+        869
       ],
       "sourceAnchor": [
-        207.5,
-        397
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        25,
-        52
-      ]
-    },
-    {
-      "id": "key-06",
-      "file": "06.png",
-      "description": "return hand toward uncounted coins",
-      "durationMs": 125,
-      "sourceBounds": [
-        902,
-        469,
-        1316,
-        866
-      ],
-      "sourceAnchor": [
-        208.0,
-        397
-      ],
-      "groundAnchor": [
-        320,
-        616
-      ],
-      "placement": [
-        25,
-        52
-      ]
-    },
-    {
-      "id": "key-07",
-      "file": "07.png",
-      "description": "continuous midway transition from return hand toward uncounted coins toward hand reaches for copper coin stack",
-      "durationMs": 125,
-      "sourceBounds": [
-        1345,
-        469,
-        1759,
-        866
-      ],
-      "sourceAnchor": [
-        208.5,
-        397
+        209.70777027027026,
+        400.0
       ],
       "groundAnchor": [
         320,
@@ -208,9 +160,67 @@
       ],
       "placement": [
         24,
-        52
+        51
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "finish counting with coin above tabletop",
+      "durationMs": 125,
+      "sourceBounds": [
+        901,
+        468,
+        1317,
+        869
+      ],
+      "sourceAnchor": [
+        209.70777027027026,
+        401.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        24,
+        49
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed hold retaining one counted coin",
+      "durationMs": 125,
+      "sourceBounds": [
+        1344,
+        468,
+        1760,
+        869
+      ],
+      "sourceAnchor": [
+        210.20777027027026,
+        401.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        23,
+        49
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,117 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "2f9da21a086d4b57dc3c718d17513c9f505b958bf6598891ba5f815b09fcf7fd",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        40,
+        370,
+        595,
+        600
+      ],
+      "minimumCorrelation": 0.94,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            5.997176977245999e-09,
+            7.345354902099643e-08
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99002,
+          "measuredCorrectionPx": [
+            -0.7242420315742493,
+            -0.08219155669212341
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99506,
+          "measuredCorrectionPx": [
+            -1.0201380252838135,
+            -0.23273904621601105
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99012,
+          "measuredCorrectionPx": [
+            -0.8960815072059631,
+            -0.12210791558027267
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99147,
+          "measuredCorrectionPx": [
+            -1.0618375539779663,
+            -0.40218448638916016
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98703,
+          "measuredCorrectionPx": [
+            -0.7655878067016602,
+            -0.3976975977420807
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.99077,
+          "measuredCorrectionPx": [
+            -1.1719260215759277,
+            -0.1319657862186432
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98771,
+          "measuredCorrectionPx": [
+            -1.218994140625,
+            -0.07668036967515945
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Exact eight combined-reference poses and finite one-coin counting/inspection. No deposit simulation, loop, movement, independent furniture, gameplay activation or economic approval."
   }
 }

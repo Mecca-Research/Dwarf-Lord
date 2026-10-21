@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    574
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    130,
+    130,
+    130,
+    160,
+    150,
+    150,
+    170
+  ],
+  "inputs": [
+    {
+      "id": "pose0",
+      "file": "authoring-inputs/pose-0.png",
+      "poseCount": 1,
+      "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98",
+      "rootXs": [
+        278.0
+      ],
+      "rootYs": [
+        583.0
+      ],
+      "bodyHeights": [
+        590.0
+      ],
+      "reference": "authoring-inputs/standing-reference.png",
+      "referenceSha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+    },
+    {
+      "id": "pose1",
+      "file": "authoring-inputs/pose-1.png",
+      "poseCount": 1,
+      "sha256": "47166d2d3966ebe434eeebae6637cccd8da3c296bae1e980c6d78bb66394bdfd",
+      "rootXs": [
+        282.5
+      ],
+      "rootYs": [
+        613.0
+      ],
+      "bodyHeights": [
+        590.0
+      ],
+      "reference": "authoring-inputs/standing-reference.png",
+      "referenceSha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+    },
+    {
+      "id": "pose2",
+      "file": "authoring-inputs/lift-locked2-42.png",
+      "poseCount": 1,
+      "sha256": "f638625f73f583744d8a4a8566754fc244bee569886cfb310618a882a5aa9ae0",
+      "rootXs": [
+        636.3684210526316
+      ],
+      "rootYs": [
+        1125.0
+      ],
+      "bodyHeights": [
+        1048.0263157894738
+      ],
+      "reference": "authoring-inputs/lift-locked2-42-input.png",
+      "referenceSha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+    },
+    {
+      "id": "pose3",
+      "file": "authoring-inputs/lift-locked3-42.png",
+      "poseCount": 1,
+      "sha256": "1d8260650e27a08bacaaa11624512bde0e79b50ba824c83f86136ccca4129e56",
+      "rootXs": [
+        637.2368421052631
+      ],
+      "rootYs": [
+        1126.0
+      ],
+      "bodyHeights": [
+        1063.5526315789473
+      ],
+      "reference": "authoring-inputs/lift-locked3-42-input.png",
+      "referenceSha256": "a5c072fd77bd9ef36abfaa130ebd722f21829b240e3c7e043fd44542ee4663ef"
+    },
+    {
+      "id": "pose4",
+      "file": "authoring-inputs/lift-braced4-42.png",
+      "poseCount": 1,
+      "sha256": "0b64a17046db5f675bef91ac0d56ebd22650262f4bd46bfcbfe5efa7c2d6400c",
+      "rootXs": [
+        627.8157894736842
+      ],
+      "rootYs": [
+        1125.0
+      ],
+      "bodyHeights": [
+        1024.7368421052631
+      ],
+      "reference": "authoring-inputs/braced-base6-42.png",
+      "referenceSha256": "2ceb90e09c5519dac6c19a6319bf5154d4ff050a3490bfb810f140291cc9553f"
+    },
+    {
+      "id": "pose5",
+      "file": "authoring-inputs/lift-braced5-42.png",
+      "poseCount": 1,
+      "sha256": "e8ed1d1faa9485f14e09544dbd10378885f0fc6a67cb66bf597308ffed6b2902",
+      "rootXs": [
+        626.6315789473684
+      ],
+      "rootYs": [
+        1127.0
+      ],
+      "bodyHeights": [
+        1016.9736842105262
+      ],
+      "reference": "authoring-inputs/braced-base6-42.png",
+      "referenceSha256": "2ceb90e09c5519dac6c19a6319bf5154d4ff050a3490bfb810f140291cc9553f"
+    },
+    {
+      "id": "pose6",
+      "file": "authoring-inputs/lift-mid6d-42.png",
+      "poseCount": 1,
+      "sha256": "185083410f94555c4269a90da344896661f3e7396b06ff63c3b40d94c5a71507",
+      "rootXs": [
+        641.7368421052631
+      ],
+      "rootYs": [
+        1124.0
+      ],
+      "bodyHeights": [
+        1063.5526315789473
+      ],
+      "reference": "authoring-inputs/lift-mid6d-input42.png",
+      "referenceSha256": "6748487daf317ed90461b3e5500b205cb2713d3408728f49adc6cae17ea3418c"
+    },
+    {
+      "id": "pose7",
+      "file": "authoring-inputs/pose-7.png",
+      "poseCount": 1,
+      "sha256": "bb2927eb3bbfb728ccf1a6898638ef323d72b5ba9c6a4a72af4e96ac49e79259",
+      "rootXs": [
+        570.4736842105262
+      ],
+      "rootYs": [
+        1147.0
+      ],
+      "bodyHeights": [
+        1242.1052631578946
+      ],
+      "reference": "authoring-inputs/standing-reference.png",
+      "referenceSha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+    }
+  ],
+  "poses": [
+    {
+      "input": "pose0",
+      "pose": 0
+    },
+    {
+      "input": "pose1",
+      "pose": 0
+    },
+    {
+      "input": "pose2",
+      "pose": 0
+    },
+    {
+      "input": "pose3",
+      "pose": 0
+    },
+    {
+      "input": "pose4",
+      "pose": 0
+    },
+    {
+      "input": "pose5",
+      "pose": 0
+    },
+    {
+      "input": "pose6",
+      "pose": 0
+    },
+    {
+      "input": "pose7",
+      "pose": 0
+    }
+  ],
+  "note": "Original whole poses0-4 and three authored whole lowering poses5-7. Initial registration uses a reviewed visible near-boot floor and common boot-to-body axis offset, with original standing extent590. New canvas scale comes from boot cap width, not crouched body extent. No limb edits. Sole material correlation and native crate/identity review still required before selection. Frame2 far boot authored from exact prior pose and stationary4; initial boot-scale registration only, not acceptance. Corrected2 uses the reference520 effective standing basis at2x canvas scale; independent skull/body/contact inspection remains required. Actual output1254 is1.959375x the640 reference; use measured canvas ratio, not assumed1280. Motion42 targeted whole-pose far-foot edits2/3/5. Initial common near-cap registration uses original standing590/cap76 and128px boot-to-body offset; both material contacts and native body/crate review are still required. No per-limb pixel edits. Motion42 targeted whole-pose far-foot edits2/3/5. Initial common near-cap registration uses original standing590/cap76 and128px boot-to-body offset; both material contacts and native body/crate review are still required. No per-limb pixel edits. Motion42 braced lifting4/5 are upper-body edits authored from exact6 whole pose; common original standing590/cap76 basis retained. Initial scale is not material acceptance. Motion42 braced lifting4/5 are upper-body edits authored from exact6 whole pose; common original standing590/cap76 basis retained. Initial scale is not material acceptance."
+}

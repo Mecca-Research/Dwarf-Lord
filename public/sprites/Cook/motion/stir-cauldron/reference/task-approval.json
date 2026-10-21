@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "aa410e9a3cd65841c3455cf7d0b12722d2f074eaac086909a5c3f7c6cedd0b42",
+    "settingsSha256": "5f0f99fb63f4edfebfe01b53e5f5013e7d8f1f142e029999eec4a1782b538559",
+    "frameSha256": [
+      "4380674cd9415b476e6657d33aa0167dc230e7bb94b2f900fdf046bc6f4bf63d",
+      "6685402db2acef70165cc3c5bfbe85466185ca09c99f171658c03dd52b6f3950",
+      "d5b082f4f840ff4436a63fc119875fd73935d0a5037c0d158e47a55df8513bcf",
+      "aed39df439715d448f5ac4773894833400d8802f3aeb4319044a038993f914b9",
+      "2deb0639def5416203c5c5eefbf498b1efc1d0c04780f7ca8b50a0fd8838fcda",
+      "39aad3b7f4e35a707db12398b96cb3b8f2cfc18115381db226b2ec2ef6e8aed8",
+      "28ee4d99b44db35ce14fdcf8f9ab65deab90139bb0adb8355bc890177cb651bd",
+      "d1d1a20b12480835e2664ca64c502439a22f076fdf19cba252e09d411334dbb0"
+    ],
+    "atlasSha256": "f9c47512f397ca92763cb4d797a644956203fbe11dc1f5dd07a9221eecf2dc4b",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "5f0f99fb63f4edfebfe01b53e5f5013e7d8f1f142e029999eec4a1782b538559",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          230,
+          395,
+          550,
+          590
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              2.9961661596189515e-08,
+              3.644086277176939e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.996,
+            "measuredCorrectionPx": [
+              0.5780577659606934,
+              1.6528857946395874
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99763,
+            "measuredCorrectionPx": [
+              0.12385149300098419,
+              0.20441710948944092
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9945,
+            "measuredCorrectionPx": [
+              0.4281693398952484,
+              0.12437882274389267
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99616,
+            "measuredCorrectionPx": [
+              -0.1920219510793686,
+              1.1538368463516235
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99384,
+            "measuredCorrectionPx": [
+              0.5583698749542236,
+              2.3987112045288086
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99611,
+            "measuredCorrectionPx": [
+              -0.24760505557060242,
+              1.1234338283538818
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99492,
+            "measuredCorrectionPx": [
+              0.17562788724899292,
+              0.9830189943313599
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "stir-cauldron",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Cook stir-cauldron fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right fingers retain the wooden spoon through near0/1, right2/3, far4 and returning5/6/7. Left hand braces the cauldron handle through its folded cloth. Spoon remains directed into the same pot of stew; cauldron and iron stand stay fixed. No boiling/physics or unseen spoon-tip position is certified.",
+    "prop-continuity": "Right fingers retain the wooden spoon through near0/1, right2/3, far4 and returning5/6/7. Left hand braces the cauldron handle through its folded cloth. Spoon remains directed into the same pot of stew; cauldron and iron stand stay fixed. No boiling/physics or unseen spoon-tip position is certified.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "9c05c12be9e3c49b202057ac33363d2f38f09810f3e47f67c99fb1d3b8b802ac"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-stir-cauldron-review.json",
+      "sha256": "0bdbe7274be4d2e411f9438d4f2aed82877a55b4719d75788f4517592a45b33f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-stir-cauldron-playback.json",
+      "sha256": "e2b86f626c010428a31a00b556b987b87c05b1dc76530551f29fe1271d4e4b9c"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-stir-cauldron-0.png",
+      "sha256": "60bac72d831ed61563c6b1828057fec9b7f9f5c25db96e59426c59843693626f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-stir-cauldron-4.png",
+      "sha256": "41eda8f3dd60c1bb7d3c355609b6dd77c2f2eeb6fd0e844af2edb0a9373f589b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-stir-cauldron-7.png",
+      "sha256": "831c5864154504fa3ada26ae37c78425737dbe1815c137eaa57bb9b3857144b8"
+    }
+  ]
+}

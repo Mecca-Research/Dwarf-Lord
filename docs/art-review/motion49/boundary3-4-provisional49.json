@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "e1443c6db4b512ca2943d51dab14428fab1f75becfab3caee4c6228d76be009c",
+    "settingsSha256": "593e9e4850065d6751b606561305cee7b3d1f348315b516dc5a2f2e0677efc19",
+    "frameSha256": [
+      "7f733af769629db4768e1510397cbd100d3fe09bc08dc361fbe69d9940798e63",
+      "264d995ef8da2a254bdafe0bd1f6513be1348c9f72f30c42752340452ed51404",
+      "141454a78cd9b6a35f29d3fdcc905866099a868f362c41d76b4b09acf317dc0e",
+      "4e3996ce36ea55c19809b75d58d825fcb7ed1d5b8bd415b537ae0e2e3fb25a10",
+      "e1c9c3b152e9cdc7ac7f366555623f0be4dd6d60ca4e358887b3cdd9f9827ada",
+      "5e2758dd276fd9cdc608c771fe9fad678960a95d44728ab5d72cc351604d57b9",
+      "3401933e3a14426c2e935781469442b2dcb9c084eced8f7ce16314193293b35c",
+      "ee9ab75bdb9ac619ca8ab1dd0f085a52605e6e08bb80276da67f7f4c517ada69"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "593e9e4850065d6751b606561305cee7b3d1f348315b516dc5a2f2e0677efc19",
+    "atlasSha256": "e05315028b69038fc03104006b9fbc50dac007e1c390bdc6d59e1c679716f3d3",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "593e9e4850065d6751b606561305cee7b3d1f348315b516dc5a2f2e0677efc19",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-right",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "cameraElevationRadians": 0.6,
+  "originalBounds": {
+    "perComponentWholePoseOffsetPx": 12,
+    "soleBoundaryResidualPx": 6
+  },
+  "projectedRootAxis": [
+    0.7071067811865476,
+    -0.3992625218835743
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "image-left lower distal sole curve",
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        390,
+        599
+      ],
+      "toPoint": [
+        280,
+        614
+      ],
+      "sourceRgba": [
+        [
+          78,
+          53,
+          34,
+          253
+        ],
+        [
+          44,
+          32,
+          27,
+          247
+        ]
+      ],
+      "requiredRootDeltaPx": [
+        110,
+        -15
+      ],
+      "perpendicularMismatchPx": 41.02289946344592,
+      "maximumAllowedWholePosePerpendicularCorrectionPx": 32.69892008277577,
+      "minimumRemainingPerpendicularPx": 8.323979380670146,
+      "withinOriginal6pxBound": false
+    },
+    {
+      "hypothesis": "image-right distal fore-sole region",
+      "from": 3,
+      "to": 4,
+      "fromPoint": [
+        390,
+        599
+      ],
+      "toPoint": [
+        362,
+        500
+      ],
+      "sourceRgba": [
+        [
+          78,
+          53,
+          34,
+          253
+        ],
+        [
+          106,
+          75,
+          57,
+          253
+        ]
+      ],
+      "requiredRootDeltaPx": [
+        28,
+        99
+      ],
+      "perpendicularMismatchPx": 99.9739218168274,
+      "maximumAllowedWholePosePerpendicularCorrectionPx": 32.69892008277577,
+      "minimumRemainingPerpendicularPx": 67.27500173405163,
+      "withinOriginal6pxBound": false
+    }
+  ],
+  "manualAnatomicalCorrespondenceReviewed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "selected": false,
+  "scope": "Visible opaque lower fore-sole samples in3 and possible boot identities in4. These are provisional correspondence hypotheses, not verified left/right anatomical tracks or a complete eight-boundary calibration. Both inspected hypotheses exceed original6px bounds even after maximal component-bounded whole-pose registration; retiming along the root axis cannot remove perpendicular error. No source limb edits, relaxed bounds or acceptance."
+}

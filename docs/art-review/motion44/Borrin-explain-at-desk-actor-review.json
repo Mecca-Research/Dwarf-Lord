@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-05",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "097f47aef963216e272cf6a94e46de2c3e2c99a88ba273acc2cd07169174a4ba",
+    "settingsSha256": "a83de1adcb4ac380a2ce05edf8e5570148a84a1b9a00e92d925d4c3891adc468",
+    "frameSha256": [
+      "369b49365f3919da60bc1a7af0aa03ec2b1737e12b18023817d4eca4c93034cc",
+      "fd0a040a478236a8d648e21273e381b40fc25ad4991c4c9dbdf790b28da21aee",
+      "048b97f29a6a9fb11ed5319e6d787acbea0c50b7b05dc2c32d657afc0b6bcc43",
+      "e254be8d11f4d75882abcb201e1e886a90761db7e73b08cf04e659b72a0e15ae",
+      "2c919cfa79b343219408d5ccf8c60653e89fe2f469be627ac3307696d98e9123",
+      "95df6ef561341b71caa52b79daa080e328529272b4f9752bd841b2af154f2931",
+      "c4c7943b9f6d451ad398c8c045b89618b4859dec2852b3bf157e9207d7e7c94c",
+      "bf4f666957aca08545588a91cd2806edac8bdb04716818984899decc3a6c13b6"
+    ],
+    "atlasSha256": "cd070ff4aad539b034ea752dac38cf6601236369c5605c22fbedcc428307837f",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "a83de1adcb4ac380a2ce05edf8e5570148a84a1b9a00e92d925d4c3891adc468",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      140,
+      160,
+      160,
+      140,
+      140,
+      160
+    ],
+    "character": "Borrin",
+    "action": "explain-at-desk",
+    "direction": "actor"
+  },
+  "checks": {
+    "identity-and-scale": "Eight genuinely authored whole poses retain Borrin swept grey hair, bronze spectacles, two brass-bound short grey beard tips, cream rolled sleeves, red cravat, dark waistcoat, trousers, boots and wooden chair. One upright seated physical source basis and source-boot stance roots, with650/[320,616] effective actor/prop registration matching his writing/coin activities. Leaning or raised-hand height never becomes a new body scale. Whole-sheet edits and whole-figure extraction preserve neighboring-hand ownership; no limb warping or synthesized frames.",
+    "station-and-foot-contact": "Both actual visible stationary boot-cap and sole-rim regions are tracked independently across poses0-7: near minimum correlation0.978517, maximum travel2.255885px, adjacent change2.554747px; far minimum correlation0.973429, maximum travel1.486138px, adjacent change2.150604px. All pass unchanged.94 correlation/6px travel/6px adjacent bounds. Review roots use bounded whole-pose integer translations (maximum5.10px) from the two-region midpoint; explanation needs no translation. Reproduced zero-offset review proof records the failed6.980634px far drift/7.811749px adjacent change rather than concealing it. Native material correspondence does not certify hidden heel, moving stride or continuous world contact; live camera foreground objects can occlude boots.",
+    "hand-and-tool-contact": "The source-visible anatomical right index-pad flesh stays at the open ledger entry in all eight poses; directly inspected[296,344] lies inside the fixed page polygon. The other hand makes one small lift/open-palm/lower gesture and returns to the right book/stack edge. A lowest-warm-pixel proposal incorrectly selected belt brass in4/5/7 and is excluded; the actual flesh point is independently inspected. Native layered inspection verifies hand/forearm source-pixel contours over the fixed open book and upper tabletop. Dark vest, belt and chair-post wedges are excluded. This is projected silhouette/page placement, not3D contact force; no quill, held coin or tool belongs to either new actor.",
+    "prop-continuity": "One independently owned ledger desk, book/page state, ink pot, brass counter and stack of books remain identical for every pose and after Borrin departs. Actor owns only his body/chair. Foreground hands reuse original pose pixels. Low free-hand/book-stack occlusion is inspected separately from the pointing-page contact. No ledger entry transaction, page-state mutation, currency deposit or duplicate furniture is represented.",
+    "completion-and-reset": "Actual Three renderer covers all eight authored-duration poses for each of four daily consultant operations, completes exactly once at7, and holds unchanged for5000ms. Departure releases actor while the desk persists; explicit return resets0. Production assignment is rejected. Day resolution leaves the cosmetic consultant available, next morning selects the next operation, and day5 restores writing. The source, atlas, calibration and prop served in game match selected files. Shared layer renderer verifies every hold, completion, static prop invariance and explicit restart. This finite action does not approve7-to0 as a seamless loop."
+  },
+  "scope": "Fixed-view finite seated entry-pointing explanation with one modest free-hand gesture at the existing independent persistent ledger desk. Visible boot-cap/rim material, projected finger/page placement, source-pixel foreground and consultant arrival/departure/day lifecycle only. No hidden sole, traveling gait, other camera direction, continuous loop, writing/page-turn/coin transfer or economic effect approval."
+}

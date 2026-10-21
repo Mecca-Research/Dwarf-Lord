@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    140,
+    140,
+    140,
+    160,
+    160,
+    140,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "reach46",
+      "file": "authoring-inputs/stamp-reach46.png",
+      "poseCount": 8,
+      "sha256": "55c116b8f57a4270340a82c7f2ba7221f2db9f8b78f148dd4a6055c870ff9c40",
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        237.0,
+        679.5,
+        1123.0,
+        1566.5,
+        237.0,
+        680.0,
+        1124.0,
+        1565.5
+      ],
+      "rootYs": [
+        439.0,
+        439.0,
+        439.0,
+        439.0,
+        881.0,
+        881.0,
+        881.0,
+        881.0
+      ],
+      "bodyHeights": [
+        427,
+        427,
+        427,
+        427,
+        427,
+        427,
+        427,
+        427
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "reach46",
+      "pose": 0
+    },
+    {
+      "input": "reach46",
+      "pose": 1
+    },
+    {
+      "input": "reach46",
+      "pose": 2
+    },
+    {
+      "input": "reach46",
+      "pose": 3
+    },
+    {
+      "input": "reach46",
+      "pose": 4
+    },
+    {
+      "input": "reach46",
+      "pose": 5
+    },
+    {
+      "input": "reach46",
+      "pose": 6
+    },
+    {
+      "input": "reach46",
+      "pose": 7
+    }
+  ],
+  "review": "One common427 source seated body basis retained from exact actor seed; original boot-stance canvas roots. No per-pose fitting, no contact approval yet."
+}

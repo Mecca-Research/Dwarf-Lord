@@ -1,0 +1,53 @@
+{
+  "character": "Female Miner",
+  "action": "pickaxe-ready",
+  "direction": "reference",
+  "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference",
+  "verdict": "calibration-required",
+  "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "remaining": [
+    "First transition switches the connected pickaxe head from low viewer-right0 to viewer-left1 across the body. Needs a measured continuous shaft/arm rotation beat and stationary sole registration before final acceptance."
+  ],
+  "binding": {
+    "sourceSha256": "250b3c2b6510b315664fbf0108d6a866633a2f4ebc034944b1321932654522cb",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "dc9e699c7f533d8fb51c5a1f75f1c1c971b3cfd6b89578d7fd98eb47dcbcbd9c",
+      "5fefe1e57f1df0a6475eebd427fd411c5a195a0e86cc67a63057850b565cb7ff",
+      "6927f12815ef923f3c812969aed87da1330e33259dcb37ead3df126a6053e4c4",
+      "e4a6c47d163f0c53d82f695bc190e06acbb6efeebd35793dfed1ce2a7dea1928",
+      "3cb7d2d68217d69cefbc89bf525d4625dc51fb78836135dd0f1db62d7de37018",
+      "dc4cbaccbde661ccec3d9246f866bc476e46d39430cdae7341dc2fea5068afe3",
+      "392dd46f18c5c3bca46fd812ccc2ea0d2f67ed87adbb2316d5047b70b3b2c8c6",
+      "f1231490222292ad366ac332c9e697bb5faab442dcd14f3c1c8ca384abbbc381"
+    ],
+    "atlasSha256": "a911082cb1e9ef2cc419b6c37b0ec97358ed11ea067d5156732be2e858df45c6",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Female Miner",
+    "action": "pickaxe-ready",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "12187e61944276e4bb704228d6923675bb2eed3e0e07ec799d2692fe3c814669"
+}

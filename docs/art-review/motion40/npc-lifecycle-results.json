@@ -1,0 +1,234 @@
+{
+  "method": "Controlled clock with actual renderer, job/day lifecycle and passive workstation diagnostics",
+  "passive": [
+    {
+      "id": "borrin",
+      "x": 10,
+      "z": 10,
+      "yaw": -1.5707963267948966,
+      "facing": 3,
+      "speed": 0,
+      "anim": "sit",
+      "dest": null,
+      "bob": 1.2650000000000001,
+      "workMotion": {
+        "action": "desk-writing",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "id": "fenn",
+      "x": -28,
+      "z": 12,
+      "yaw": 0.3,
+      "facing": 5,
+      "speed": 0,
+      "anim": "idle",
+      "dest": null,
+      "bob": 1.2650000000000001,
+      "workMotion": {
+        "action": "check-weights",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    }
+  ],
+  "completed": {
+    "id": "kori",
+    "x": -0.9999999999999991,
+    "z": 4.5,
+    "yaw": -1.5707963267948966,
+    "facing": 3,
+    "speed": 0,
+    "anim": "work",
+    "dest": null,
+    "bob": 4.609999999999998,
+    "workMotion": {
+      "action": "chop-vegetables",
+      "direction": "actor",
+      "frame": 7,
+      "completed": true,
+      "completions": 1
+    }
+  },
+  "miner": {
+    "id": "nessa",
+    "x": 8,
+    "z": -37.51999999999999,
+    "yaw": 0,
+    "facing": 5,
+    "speed": 0,
+    "anim": "work",
+    "dest": null,
+    "bob": 6.979999999999994,
+    "workMotion": {
+      "action": "pickaxe-swing",
+      "direction": "back-left",
+      "frame": 7,
+      "completed": true,
+      "completions": 1
+    }
+  },
+  "turned": {
+    "action": "pickaxe-swing",
+    "direction": "back",
+    "frame": 7,
+    "completed": true,
+    "completions": 1
+  },
+  "stationAfterCancel": [
+    {
+      "id": "cutting-block",
+      "x": -0.5,
+      "z": 4.5,
+      "persistent": true
+    },
+    {
+      "id": "potato-block",
+      "x": -3.5,
+      "z": 4.5,
+      "persistent": true
+    },
+    {
+      "id": "anvil",
+      "x": 6,
+      "z": -7,
+      "persistent": true
+    },
+    {
+      "id": "repair-bench",
+      "x": 3,
+      "z": -7,
+      "persistent": true
+    },
+    {
+      "id": "forestry-trunk",
+      "x": -42,
+      "z": 18,
+      "persistent": true
+    },
+    {
+      "id": "storage-pallet",
+      "x": 8,
+      "z": 8,
+      "persistent": true,
+      "completedProp": false
+    },
+    {
+      "id": "masonry-bench",
+      "x": 8,
+      "z": -38,
+      "persistent": true
+    },
+    {
+      "id": "ledger-desk",
+      "x": 10,
+      "z": 10,
+      "persistent": true
+    },
+    {
+      "id": "weighing-table",
+      "x": -28,
+      "z": 12,
+      "persistent": true
+    }
+  ],
+  "addedWorkers": [
+    {
+      "id": "stig",
+      "x": 7.520000000000001,
+      "z": -38,
+      "yaw": -1.5707963267948966,
+      "facing": 2,
+      "speed": 0,
+      "anim": "work",
+      "dest": null,
+      "bob": 11.259999999999982,
+      "workMotion": {
+        "action": "chisel-contact",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "id": "grit",
+      "x": 5.520000000000001,
+      "z": -7,
+      "yaw": -1.5707963267948966,
+      "facing": 2,
+      "speed": 0,
+      "anim": "work",
+      "dest": null,
+      "bob": 13.294999999999972,
+      "workMotion": {
+        "action": "inspect-tool",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "id": "nessa",
+      "x": 13.519999999999968,
+      "z": -32,
+      "yaw": -1.5707963267948966,
+      "facing": 2,
+      "speed": 0,
+      "anim": "work",
+      "dest": null,
+      "bob": 16.094999999999963,
+      "workMotion": {
+        "action": "shovel-cycle",
+        "direction": "right",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "id": "tam",
+      "x": 7.520000000000001,
+      "z": 8,
+      "yaw": -1.5707963267948966,
+      "facing": 2,
+      "speed": 0,
+      "anim": "work",
+      "dest": null,
+      "bob": 17.254999999999953,
+      "workMotion": {
+        "action": "stack-crates",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    },
+    {
+      "id": "brokk",
+      "x": -42.48000000000003,
+      "z": 18,
+      "yaw": -1.5707963267948966,
+      "facing": 2,
+      "speed": 0,
+      "anim": "work",
+      "dest": null,
+      "bob": 19.344999999999953,
+      "workMotion": {
+        "action": "fell-tree",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      }
+    }
+  ],
+  "errors": []
+}

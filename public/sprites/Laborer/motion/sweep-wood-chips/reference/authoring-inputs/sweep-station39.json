@@ -1,0 +1,19 @@
+{
+  "key": "sweep-station39",
+  "character": "Laborer",
+  "action": "sweep-wood-chips",
+  "refs": [
+    "/opt/codex-work/dwarf-lord/public/sprites/Laborer/motion/sweep-wood-chips/reference/source-sheet.png"
+  ],
+  "prompt": "Edit this exact transparent 8-frame 4x2 Laborer sweeping sheet. Preserve the dwarf's head, beard, clothes, kneeling body, feet, broom, hands and wood-chip piles in ALL eight poses. Correct ONLY the wooden TOOLBOX at viewer-right in each pose: make its shape, camera angle, wood-grain panel pattern, iron corner plates, handle, contents, proportions and projected height EXACTLY match the first top-left toolbox. Every toolbox must have the identical view and dimensions; no rotation or changing plank design across frames. Keep each at the same relative fixed ground location beside the dwarf, preserve full bottom edges and every tool; last bottom-right toolbox must not clip against the canvas edge. All eight dwarfs remain high quality semi-realistic bald stocky Laborer with double brown braids/brass tips, cream shirt and leather waistcoat. Do not alter the sweeping poses, re-render faces, redraw legs or relocate broom. One exact fixed-location canonical toolbox view repeated with the existing eight poses, transparent background, no text, no extra characters.",
+  "references": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "c925fe76b278da2e59070277c26686d199235cbdb04383021e90e5950f396335"
+    }
+  ],
+  "output": "authoring-inputs/sweep-station39.png",
+  "outputSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+  "method": "Built-in whole-sheet authored image edit. No individual body-part transforms, interpolated poses or local furniture replacement.",
+  "decision": "Selected pending fixed-prop registration, native and timed playback review."
+}

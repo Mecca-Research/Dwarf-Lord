@@ -1,0 +1,17 @@
+{
+  "id": "borrin-count-coins38b",
+  "prompt": "Use case: precise-object-edit. First image is the edit target: eight-pose transparent game sheet of Borrin counting one copper coin at his desk. Second image is only an enlarged diagnostic detail of four bottom-row poses, not a replacement scene or output layout. Keep the FIRST image's full 4-column 2-row layout, all eight complete figures, exact high-quality character identity and desk furniture. Fix ONLY TWO spots in the bottom row: second cell (frame5, zero-based) and fourth cell (frame7, zero-based). In each of those two cells the returning right fingertips wrongly hold a second small copper coin. DELETE that coin from the FINGERTIPS and draw intact empty thumb and empty index finger, open with a visible gap between them, no yellow/copper disc, no speck or ring in that gap. The arm and wrist positions otherwise stay unchanged. The single COPPER coin already deposited flat on the DESK immediately left of the open ledger and between the silver coin piles stays visible in bottom-row frames5,6,7. Do NOT delete, move, duplicate or recolor that deposited desk coin. Top-row fingers must retain their original carried copper coin, and bottom-row first cell (frame4) fingers still lower it onto the desk. Bottom-row third cell (frame6) already correctly shows an empty hand and should remain pixel-equivalent. Preserve all other pixels, including dwarf face, grey beard braids, spectacles, clothing, all other coins, stacks, table, legs, books, quill/ink and money pouch. TRUE transparent RGBA, no labels, no background, no pose reordering. This is a finite action: 0 pick,1 lift,2 inspect,3 approach,4 place,5 empty release,6 empty return,7 empty hover; never regenerate a coin in the returning hand. Output the eight complete scene cutouts, not the zoomed diagnostic.",
+  "refs": [
+    {
+      "file": "borrin-count-coins38-b-reference-0.png",
+      "sha256": "ac95f6c0d3fed6a117ac1d91dd050ee0cd229b64eb83e30cfecb1b0013fc8adf"
+    },
+    {
+      "file": "borrin-count-coins38-b-reference-1.png",
+      "sha256": "81d57ef71660d290f493d128bc45facd17a2b73bba8feb6c631edf866bee441a"
+    }
+  ],
+  "output": "borrin-count-coins38-b.png",
+  "outputSha256": "eec91e2c601414bb73bf2f40cad7c45b1284745b709b04ee97e7dfaaaa77f451",
+  "decision": "rejected: frame7 still pinches a copper coin after release. Not selected. Single-pose authoring subsequently tested instead of another whole-sheet retry."
+}

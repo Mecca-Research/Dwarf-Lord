@@ -1,0 +1,37 @@
+{
+  "sourceSha256": "f52f355b0b83817583b3dc97627b610e23771fe43a85a730c56e78f7b33f8059",
+  "prompt": "Create ONE independent storage workstation prop exactly matching the FIRST TOP-LEFT cell of this Laborer sprite sheet: a low wooden shipping pallet, TWO brown iron-cornered wooden crates stacked on the pallet, a smaller low crate to its left, and a tied tan burlap sack to its right. Preserve camera, semi-realistic rendered art, wood color and detail. Remove all dwarves, hands, carried crate and character shadows. Exactly TWO crates in the vertical central stack, no third crate above them; top surface clearly available for a separately animated crate to be placed. One prop only, large clear margins and genuine transparent background, no labels, no spritesheet.",
+  "reference": "../../Laborer/motion/stack-crates/reference/source-sheet.png",
+  "referenceSha256": "6cd16b12bb66e1132c6a8cb05db483f214774c1ef39dba92aa49642d80be143e",
+  "placement": {
+    "crop": "alpha >=128 bounds",
+    "width": 310,
+    "x": 247,
+    "y": 365,
+    "canvas": [
+      640,
+      640
+    ],
+    "alphaThreshold": 128
+  },
+  "targetBodyHeight": 370,
+  "targetAnchor": [
+    180,
+    616
+  ],
+  "productionReady": false,
+  "spriteSha256": "1092fd2b3e984bb211dc5a906665073a9b67cb7110bd9599c4c452bc29e6f815",
+  "completionLayer": {
+    "source": "../../Laborer/motion/stack-crates/actor/07.png",
+    "sourceSha256": "f8cca9485b9494c257df3b79ffcb70d879342a66073420488d6e513a5a915fbd",
+    "bounds": [
+      340,
+      260,
+      510,
+      390
+    ],
+    "file": "completed-crate.png",
+    "sha256": "17a66555fe09747e5d95afb3b24c2eddc5cd4e8345cd5e487bbbbc8b862e18d8",
+    "review": "Complete detached crate from final authored frame, unchanged pixels. Shown after completed actor leaves; no inventory or economy mutation."
+  }
+}

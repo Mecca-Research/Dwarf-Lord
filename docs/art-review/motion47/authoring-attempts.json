@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "checkpoint": "motion47",
+  "selectedSource": {
+    "file": "public/sprites/Blacksmith/motion/walk/left/source-sheet.png",
+    "sha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd"
+  },
+  "history": [
+    {
+      "output": "authoring-inputs/strip-first47.png",
+      "sha256": "e4d69fdd56c26ab34353b0fe7eb89e4778e4ab79d1ef4b0683ff345f69286622",
+      "selected": false,
+      "finding": "Opposite-view authoring did not yet establish the near/right versus far/left passing legs or arm counter-swing."
+    },
+    {
+      "output": "authoring-inputs/strip-guide47.png",
+      "sha256": "ad7aea739b4c455c2244632489db04e9acb7a65831f3cad48fe301c4b00b24fb",
+      "selected": false,
+      "finding": "Counter-arms improved; passing boots still trailed instead of passing forward."
+    },
+    {
+      "output": "authoring-inputs/strip-passing47.png",
+      "sha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290",
+      "selected": false,
+      "finding": "Raised boots moved forward, but the same supporting leg appeared in both mid-passing phases."
+    },
+    {
+      "output": "authoring-inputs/strip-anatomy47.png",
+      "sha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6",
+      "selected": false,
+      "finding": "Opposing passing legs authored; native lower sole observations still found reverse7-to0 travel. Diagnostic remained unapproved."
+    },
+    {
+      "output": "authoring-inputs/strip-return47.png",
+      "sha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7",
+      "selected": false,
+      "finding": "Return trailing toe extended; initial half-row extraction clipped the source toe and was rejected. Column-specific gutter extraction retains complete source poses; push-off travel still needed correction."
+    },
+    {
+      "output": "authoring-inputs/strip-pushoff47.png",
+      "sha256": "c78939842e0eaba0cd4def9dfbdc5d214df13457a5f610b693529ebbad88ff9e",
+      "selected": false,
+      "finding": "Small push-off edit did not supply sufficient distinct support travel."
+    },
+    {
+      "output": "authoring-inputs/strip-compact47.png",
+      "sha256": "f5a77643551e123b4373f6b365e23279472fab92e1294a7532f56747b6179f76",
+      "selected": true,
+      "finding": "Compact full-body push-off has opposing support phases and permits original-bound registration/retiming. Selected cycle needs independently recorded native/material and shipped-game approval."
+    }
+  ],
+  "extraction": "One common physical height; per-column actual empty row gutters preserve complete poses. Whole-pose uniform scale only; no local limb edit, mirror or synthetic tween. Skeleton guide targets are not material observations.",
+  "bounds": {
+    "minFrameHoldMs": 40,
+    "maxWholePoseOffsetPx": 12,
+    "maxSoleBoundaryPx": 6,
+    "maxHeldContactDriftPx": 0.5
+  }
+}

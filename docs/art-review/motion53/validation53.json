@@ -1,0 +1,38 @@
+{
+  "checkpoint": "motion53",
+  "nodeTests": {
+    "passed": 219,
+    "failed": 0
+  },
+  "pythonTests": {
+    "passed": 90,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "pagesBuild": "passed",
+  "whitespace": "passed",
+  "approvedLayerVariants": 19,
+  "localLogHashes": [
+    {
+      "file": "work/expanded-cycles/motion53/node-tests53.log",
+      "sha256": "5105bf62d3f9b9bd356066852f08969e12b793a6f3df3569965ba6740c177f59"
+    },
+    {
+      "file": "work/expanded-cycles/motion53/python-tests53.log",
+      "sha256": "455fdfb73ac9d3bf5ef8d8fc864aa53990cfb2b94facd7810e3759e3b786ba09"
+    },
+    {
+      "file": "work/expanded-cycles/motion53/typecheck53.log",
+      "sha256": "8fa1cf5506304e8abac55868e7f1a136c9b1dde57a3981a382da4c21ea129a6f"
+    },
+    {
+      "file": "work/expanded-cycles/motion53/build53.log",
+      "sha256": "73e50eb29be1bd08294acd965e4eb1afcfde5dd36f016c44245d4535ff38ecda"
+    },
+    {
+      "file": "work/expanded-cycles/motion53/approved-layer-check53.log",
+      "sha256": "ca435d9a6869fa11f369220fd3d661247114e6a4559698cc707bf7b813b4e106"
+    }
+  ],
+  "scope": "Current local checks. Completed actual gameplay and layer evidence are separate source-bound artifacts; passing technical checks does not grant whole-library motion approval."
+}

@@ -1,0 +1,78 @@
+{
+  "checkpoint": "motion43",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 49,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 104,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 16,
+    "referenceActionsWithoutMapping": 49
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 104
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 49
+    }
+  ],
+  "closed": [
+    "Ginger/build-barrel/reference: finite two-tap existing upper-hoop seating, visible actor boot-cap material, fixed prop/source-pixel tool contacts and gallery completion/reset.",
+    "Ginger/build-barrel/actor: independent cooper station, eight authored poses, natural arrival, once-hold/cancel/departure/day lifecycle; separate fifth derived actor, outside unchanged frozen160.",
+    "Ginger/build-barrel live mapping: day2 timber-maintenance step; day1/day3 forestry retained, independent persistent station and shared clearing."
+  ],
+  "candidateWork": [
+    "Unselected Laborer guide-first rear-left attempt archived with exact sources/ordered prompts, provisional opaque sole selectors, false material correspondence and solver refusal. No selection or gait acceptance.",
+    "Laborer barrel-station actor remains unselected."
+  ],
+  "validation": {
+    "nodeTests": 207,
+    "pythonTests": 70,
+    "typecheck": true,
+    "pagesBuild": true,
+    "whitespace": true,
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "stationVariants": 12,
+    "physicalStationProps": 10,
+    "derivedActors": 5,
+    "finiteReferenceReviews": [
+      {
+        "character": "Ginger",
+        "action": "build-barrel",
+        "timedHoldsAndBoundaries": 8,
+        "terminalHoldMs": 10000,
+        "explicitReset": true
+      }
+    ],
+    "liveCooperDays": 2,
+    "terminalHoldMs": 5000,
+    "blacksmithRightRenderedStrides": 3,
+    "blacksmithRightBoundaries": 24,
+    "blacksmithRightHeldSamples": 152,
+    "blacksmithRightMaxHeldDriftPx": 0.2651430147233448,
+    "blacksmithRightMaxBoundaryJumpPx": 1.9003717812156378,
+    "builtGameSmoke": "Two full-scene headed movement captures and states inspected; no client-error artifact. Initial pre-render blank capture is excluded."
+  },
+  "note": "105 to104 frozen review obligations;15 to16 live mappings. Local tests and exact scoped approvals do not complete the remaining104 cycles,11 direction families or49 activations. No full green to merge."
+}

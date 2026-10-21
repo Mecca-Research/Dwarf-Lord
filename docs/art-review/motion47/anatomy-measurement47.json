@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "folder": "work/expanded-cycles/motion47/blacksmith-left/candidate-anatomy",
+  "binding": {
+    "sourceSha256": "bdaa55c7910564f679a34f473f3fe30253560ecc719bab456bccfbc4884b5146",
+    "settingsSha256": "671f5dceea6739788c730c101fe4fcfa1d8b1e97a1e521dec41ce82315367372",
+    "frameSha256": [
+      "d61471605b82c4172eb9cbb07fb5896d04708a7825a95b89422e1f00c0419b2d",
+      "1bb30e647c8801de4e58e57b4994382df63ab8cbb9a24740339f8e5646a5e364",
+      "e589bf0097bb6cf491b11a0ae2936404c5a7c9f230b9e413411e34c0ad487933",
+      "a89f517e9dd08d143c6c446eff457e1273ff2089a89ad1cba562d7ae208fc992",
+      "97e7fa31dab1027b4885ab6632c82a821da6adb6c430ea0f2c49bae58824d253",
+      "7bc87ebeaac6f3f8a62cdc3895f7009f33d2d392a0602e63263cf0eb526f9c11",
+      "44002c684590e1bc11afd8a042ef0a5c7632979a44be147d9a654e466eb97737",
+      "e0a0d593edd6b0c0c27149e88ef3516e22e44d99427e930efac996cb1850e4d5"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "671f5dceea6739788c730c101fe4fcfa1d8b1e97a1e521dec41ce82315367372",
+    "atlasSha256": "a920f031f62a78184ad8a1d36412d52126b4f0549d8cb5a72776410b3160bb94",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "671f5dceea6739788c730c101fe4fcfa1d8b1e97a1e521dec41ce82315367372",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "a0904230ba06687b976c15aa1b21e7d888259976f15496c4a9a3f0b7c45e1f9a",
+  "strideBodyRatio": 0.880769,
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -1.0,
+    -0.0
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "foot": "left",
+      "landmark": "heel",
+      "fromPoint": [
+        222,
+        595
+      ],
+      "toPoint": [
+        290,
+        610
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 18.454,
+      "contactResidualPx": [
+        10.75,
+        15.0
+      ],
+      "requiredForwardTravelPx": 68.0,
+      "perpendicularMismatchPx": 15.0
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        151,
+        594
+      ],
+      "toPoint": [
+        286,
+        603
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 78.269,
+      "contactResidualPx": [
+        77.75,
+        9.0
+      ],
+      "requiredForwardTravelPx": 135.0,
+      "perpendicularMismatchPx": 9.0
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        286,
+        603
+      ],
+      "toPoint": [
+        384,
+        600
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 40.86,
+      "contactResidualPx": [
+        40.75,
+        -3.0
+      ],
+      "requiredForwardTravelPx": 98.0,
+      "perpendicularMismatchPx": 3.0
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "foot": "left",
+      "landmark": "toe",
+      "fromPoint": [
+        384,
+        600
+      ],
+      "toPoint": [
+        387,
+        600
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 54.25,
+      "contactResidualPx": [
+        -54.25,
+        -0.0
+      ],
+      "requiredForwardTravelPx": 3.0,
+      "perpendicularMismatchPx": 0.0
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "foot": "right",
+      "landmark": "heel",
+      "fromPoint": [
+        222,
+        611
+      ],
+      "toPoint": [
+        305,
+        608
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 25.924,
+      "contactResidualPx": [
+        25.75,
+        -3.0
+      ],
+      "requiredForwardTravelPx": 83.0,
+      "perpendicularMismatchPx": 3.0
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        167,
+        594
+      ],
+      "toPoint": [
+        278,
+        593
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 53.759,
+      "contactResidualPx": [
+        53.75,
+        -1.0
+      ],
+      "requiredForwardTravelPx": 111.0,
+      "perpendicularMismatchPx": 1.0
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        278,
+        593
+      ],
+      "toPoint": [
+        379,
+        602
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 44.666,
+      "contactResidualPx": [
+        43.75,
+        9.0
+      ],
+      "requiredForwardTravelPx": 101.0,
+      "perpendicularMismatchPx": 9.0
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "foot": "right",
+      "landmark": "toe",
+      "fromPoint": [
+        379,
+        602
+      ],
+      "toPoint": [
+        358,
+        601
+      ],
+      "correspondenceReviewed": false,
+      "materialReview": "Diagnostic native posterior heel/distal fore-sole pixels only. Anatomical and outer/inner boot-surface consistency still requires review; no gait acceptance.",
+      "projectedRootTravelPx": [
+        -57.25,
+        -0.0
+      ],
+      "contactJumpPx": 78.256,
+      "contactResidualPx": [
+        -78.25,
+        -1.0
+      ],
+      "requiredForwardTravelPx": -21.0,
+      "perpendicularMismatchPx": 1.0
+    }
+  ],
+  "coveredBoundaries": 8,
+  "returnBoundaryCovered": true,
+  "withinHeldPoseDriftPx": 0,
+  "withinHoldScope": "Held-root model only; live playback evidence and anatomical contact review are separate.",
+  "maxContactJumpPx": 78.269,
+  "fittedStrideBodyRatio": 1.111538,
+  "fittedMaxContactJumpPx": 93.255,
+  "materialCorrespondenceReviewed": false,
+  "measurementPassed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "All eight authored contact boundaries on flat ground at the stated fixed view. No automatic anatomical, arm, terrain, turning, cane or loop approval."
+}

@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Blacksmith",
+  "action": "walk",
+  "title": "Walking cycle",
+  "direction": "back-right",
+  "kind": "walk",
+  "reference": "../../../../public/sprites/Blacksmith/animation/03-back-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "e1443c6db4b512ca2943d51dab14428fab1f75becfab3caee4c6228d76be009c",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "Candidate pose0: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        156,
+        102,
+        480,
+        600
+      ],
+      "sourceAnchor": [
+        164.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        98
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "Candidate pose1: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        829,
+        95,
+        1080,
+        599
+      ],
+      "sourceAnchor": [
+        131.0,
+        505.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        184,
+        91
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "Candidate pose2: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        1465,
+        96,
+        1726,
+        601
+      ],
+      "sourceAnchor": [
+        135.0,
+        504.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        180,
+        92
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "Candidate pose3: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        2103,
+        95,
+        2372,
+        600
+      ],
+      "sourceAnchor": [
+        137.0,
+        505.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        178,
+        91
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "Candidate pose4: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        182,
+        744,
+        458,
+        1246
+      ],
+      "sourceAnchor": [
+        138.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        100
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "Candidate pose5: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        826,
+        744,
+        1091,
+        1240
+      ],
+      "sourceAnchor": [
+        134.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        181,
+        100
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "Candidate pose6: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        1462,
+        744,
+        1735,
+        1240
+      ],
+      "sourceAnchor": [
+        138.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        176,
+        100
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "Candidate pose7: anatomical sole correspondence and contact unapproved",
+      "durationMs": 125,
+      "sourceBounds": [
+        2094,
+        744,
+        2375,
+        1240
+      ],
+      "sourceAnchor": [
+        146.0,
+        496.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        168,
+        100
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "loop-candidate",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "593e9e4850065d6751b606561305cee7b3d1f348315b516dc5a2f2e0677efc19",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

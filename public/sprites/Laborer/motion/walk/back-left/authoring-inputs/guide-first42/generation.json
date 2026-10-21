@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "selected": false,
+  "method": "Eight individually authored complete guide-first poses. No local limb transforms or synthetic inbetweens.",
+  "editHistory": [
+    {
+      "frame": 0,
+      "input": "authoring-inputs/guide-first-pose0-42.png",
+      "sha256": "e9735c07dc158daf7f0894c7fcd9c073f90c307cf1db002c04fa5d65b0030888",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 0: FAR RIGHT heel plants in the forward position at upper left. That far/right boot's toe is lifted slightly higher than its heel, so the connected foot rolls into its heel contact. NEAR LEFT leg extends behind toward lower right, supported only on its toe, with heel clearly raised. Near left arm swings forward, far right arm back. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose0-reference0-42.png",
+          "sha256": "08a90d8c55f1b57598fe49842d43a154b97157f0082f0b56251af2f381123566"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 1,
+      "input": "authoring-inputs/guide-first-pose1-42.png",
+      "sha256": "b714643056a2d73a4ef2f70cd867a32fbd73d63b496f842d619ccb673961f697",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 1: FAR RIGHT sole now flat bears weight at the same ground-plane heading; its toe points upper-left of its heel. NEAR LEFT heel leaves the ground and knee bends to recover behind, with that entire boot airborne. Left arm comes back toward neutral, far right arm forward. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose1-reference0-42.png",
+          "sha256": "da49599f3a6dc119eda4f4a57f4a165b56017b5cd7e610d8df51f0e1491db20b"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 2,
+      "input": "authoring-inputs/guide-first-pose2-42.png",
+      "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f",
+      "prompt": "Render ONE detailed semi-realistic Laborer dwarf walking passing pose. FIRST image dictates the exact three-dimensional camera, complete pose, ankle locations, foot orientation and support/recovery anatomy. SECOND photo supplies ONLY the exact Laborer's appearance and material fidelity: bald stocky head, embroidered scratched brown leather waistcoat/belt, cream rolled sleeves, brown trousers and heavy brown capped leather boots/brass outer buckles, dark beard barely visible at his left cheek. Dress the FIRST guide's figure like the SECOND photo, rather than copying the second photo's standing legs. Camera is behind-left, looking from34deg above; dwarf faces away toward upper left. First guide ORANGE anatomy is the LEFT nearer limb, BLUE anatomy is RIGHT farther limb; render all actual brown leather/skin/cloth, none of the colors or guide shapes. Crucial: FAR RIGHT leg bears weight, shin reaches the farther RIGHT-IMAGE boot, which is FLAT on the ground. Its leather TOE points up-left from its HEEL, with sole foreshortened along that upper-left ground plane. NEAR LEFT leg has a bent knee and its boot PASSES airborne just forward/left of the supporting shin. Near-left ankle is ABOVE ground, with visible boot angled in the same travel direction; it must NEVER replace the far supporting boot as a planted flat sole. Left outer brass buckle stays on the near-left boot, right outer buckle on the right foot's outer side. Arms neutral at passing, torso stable, same head/vest proportions. EXACTLY two connected anatomical legs/boots, distinguish both and avoid overlapping soles; no limb merger or third shoe. No arbitrary limb rotation or mirrored front-facing feet. Keep the first guide's raised-versus-planted elevations and foot positions, using realistic leg/boot volumes. Remove the diagram background, all lines, letters, colors, blocks and text. Output full figure on true transparent square canvas, generous margin around both feet and head, highly detailed same render quality as reference photo, no floor, props, shadow or label. A single pose, not a sheet; it is a guide-controlled new pose with the referenced dwarf identity.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose2-reference0-42.png",
+          "sha256": "c534fefba717e66b3754568d93effeb31e8e5e6e3455a01c6244100f4146af41"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 3,
+      "input": "authoring-inputs/guide-first-pose3-42.png",
+      "sha256": "b618ddcf2a04ee1664fffb5911183103b0ceb60f9333853b42560a67f8bb5b41",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 3: FAR RIGHT trailing toe supports, with heel raised. NEAR LEFT knee extends forward toward upper left and its boot reaches for the next heel plant; sole is airborne and toe slightly above heel. Near left arm is behind, far right arm forward. Exact opposite leading leg of0, preparing4. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose3-reference0-42.png",
+          "sha256": "5c670883754b9e074718f6811489d628137e82530647059da6a7b4101dfb11e2"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 4,
+      "input": "authoring-inputs/guide-first-pose4-42.png",
+      "sha256": "9ba963b185d00a58f13a767418431d14b7ec0f4352d21f61cac3f82bb8f9039e",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 4: NEAR LEFT heel plants forward at upper left, toe just lifted for heel roll. FAR RIGHT leg trails toward lower right with raised heel and toe supporting. Left near arm back, far right arm forward, exact leg exchange from0. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose4-reference0-42.png",
+          "sha256": "6cdda9663f71a08eff149187529cca293f6a482116653086dce34bc260655cee"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 5,
+      "input": "authoring-inputs/guide-first-pose5-42.png",
+      "sha256": "2599417635e832de1c0ff27f85864ad9fe2f699058404cd1854d14dcffec16b0",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 5: NEAR LEFT sole lies flat and bears weight. FAR RIGHT knee bends in recovery and that entire farther boot lifts airborne behind. Near left arm comes toward neutral, far right arm back. Preserve left support; never plant the right boot. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose5-reference0-42.png",
+          "sha256": "3dfdc188470e674fedebae7b3a15ca035f716e5d3c815c40296f80e28dca86dd"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 6,
+      "input": "authoring-inputs/guide-first-pose6-42.png",
+      "sha256": "dda32df245c5f6ec49b0ed679d810341f10c1a8b36308cfc8892fa6ade2e9b2d",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 6: NEAR LEFT flat support. FAR RIGHT boot passes AIRBORNE behind/near the supporting shin and toward upper left, with a bent knee; it is never the planted support. Arms neutral. This is the anatomical opposite of2, not a mirrored/repeated2. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose6-reference0-42.png",
+          "sha256": "0abb1913cdac162f2f5fbc49fd35cff77b56c24599a783040f967eece1c0eb04"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 7,
+      "input": "authoring-inputs/guide-first-pose7-42.png",
+      "sha256": "c00815d2c34e2de7b1bf97b3c6d14e7d7f170309d2f86e2a744015af7ed3c8ce",
+      "prompt": "Render ONE full-body semi-realistic Laborer dwarf in this walking pose. FIRST guide determines the exact complete pose, camera, limb ordering and relative sole/ankle positions; do not replace it with an arbitrary walk. SECOND image establishes this series' finished detailed rendered identity, stocky proportions, boot model, skin/cloth/leather appearance and rear-left camera. THIRD image reinforces the same canonical Laborer. Dress the first guide anatomy like the detailed photos, while following FIRST guide's pose rather than copying either photo's legs. ORANGE is anatomical LEFT nearer limb; BLUE is anatomical RIGHT farther limb; render real brown boots/skin/cream linen, no guide colors or boxes. 7: NEAR LEFT trailing toe supports with raised heel. FAR RIGHT leg reaches forward toward upper left for the next right heel plant0; boot is airborne and toe slightly raised relative to heel. Near left arm swings forward, far right arm back. Rear-left camera from34deg above, face away toward upper left, same bald head/dark beard barely at left cheek, scratched embroidered brown leather waistcoat/belt, cream rolled sleeves, brown trousers, brown capped leather boots/brass outer buckles. Preserve the exact second photo physical head/torso/pelvis/boot size; no height or bulk change. Both boots orient forward along the upper-left ground plane, so a FLAT boot's TOE is UP-LEFT of its HEEL; never front-facing/sideways feet. Honor heel-lift versus toe-lift articulation and obvious clearance of recovering feet. Exactly two anatomically connected distinct boots/legs and two opposite counter-swinging arms, with outer buckle staying on same anatomical side. No extra foot, knee merge, limb swap, mirror, tool, prop, scene, shadow, text, guide grid or label. Remove all first diagram content except its intended pose. True alpha, full figure with large margins around head and EVERY boot, complete raised and supporting soles. A single image, not an atlas. Uniform square composition consistent with the second photo and same camera through the series.",
+      "orderedReferences": [
+        {
+          "file": "authoring-inputs/pose7-reference0-42.png",
+          "sha256": "80b9a9afdc6d62316e9efbc568600c120cedcdf2de6d40247784c76f40a4e50f"
+        },
+        {
+          "file": "authoring-inputs/guide-first-pose2-42.png",
+          "sha256": "5cc2fb497571310f9c562d2c8578c0e580de11e276868e5ba2d18ea0febe245f"
+        },
+        {
+          "file": "reference-ee78474953846719.png",
+          "sha256": "ee7847495384671967f93f3010ae46498035d130727b5f738048d96b2174ad14"
+        }
+      ],
+      "selected": false
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "version": 1,
+  "checkpoint": "motion39",
+  "method": "Native eight-pose art review. Temporal and task proofs recorded separately; these verdicts alone do not create acceptance.",
+  "cycles": [
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "direction": "reference",
+      "destination": "public/sprites/Cook/motion/fillet-fish/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
+      "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+      "nativeReviewSha256": "ec6468e6bfa193549f4554c2eedc1da11667e3a6212955d5b1f9561fb6ac6d85",
+      "checks": {
+        "identity-and-scale": "All eight registered native poses reviewed against unchanged character identity and common sequence scale. This is a fixed-reference review, not a translating sole or cross-direction approval.",
+        "station-and-foot-contact": "Visible stance and fixed painted station inspected0-7. Fresh bounded station registration and residual measurement retained. Translating stride, independent furniture ownership and live gameplay activation are separate gates.",
+        "hand-and-tool-contact": "Right fingers retain the same connected fillet knife0-7. In1 the knife is low beside the fish head on the board, not over the dwarf head. Left hand steadies the fish0-3, lifts one attached fillet4-5, deposits it6 and withdraws7. One pink detached fillet remains beside the opened fish in6-7. The knife remains held; food never rejoins or disappears.",
+        "prop-continuity": "Right fingers retain the same connected fillet knife0-7. In1 the knife is low beside the fish head on the board, not over the dwarf head. Left hand steadies the fish0-3, lifts one attached fillet4-5, deposits it6 and withdraws7. One pink detached fillet remains beside the opened fish in6-7. The knife remains held; food never rejoins or disappears.",
+        "completion-and-reset": "Finite task: expose every authored held pose, complete once at7, keep material result while7 holds, reset to0 only on explicit new task. Continuous repeat and resource conservation are excluded."
+      },
+      "binding": {
+        "sourceSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
+        "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+        "frameSha256": [
+          "5b3294ca4ddb73d393ad476ad48ee2ed565dcec5c2dcc53e254049681ce738a0",
+          "d8fe662dfa105754219defdbabdccaab4beac75c5ce857ef30a288ccec0faf05",
+          "258b070d4ad13d22f77ac13d0e8bb505f24c4505e1bbb9c58966eacbea4d1e17",
+          "af983b59a02ee51268e07ece02364399e37272d767d654677cd88ffef2b3cfd6",
+          "4261a1184eef6f8d5332bd12cde3bb6ccb08d956d51b798d4310cecc7d7d78f1",
+          "3842b95ab3c0978472eb8070d9e2b185b756a40b6a150be8025e372bb0ab7265",
+          "c38d2ac10f8f93e5e87aecc71de5699972090bac87ff53d59f6f5b9933860900",
+          "055d7b961af900ccd02f98ef64c7116b6c6ddced6706f84c56b12d15d8e84a39"
+        ],
+        "atlasSha256": "205d257b6aa534b2c98265fc445adf3059cef431969197f25d215ab64994b12f",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              100,
+              435,
+              570,
+              595
+            ],
+            "minimumCorrelation": 0.94,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  2.1227276647550752e-07,
+                  1.7721109202284424e-07
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97938,
+                "measuredCorrectionPx": [
+                  0.9908784031867981,
+                  0.005004419945180416
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98497,
+                "measuredCorrectionPx": [
+                  -0.078863225877285,
+                  0.005130845122039318
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97712,
+                "measuredCorrectionPx": [
+                  0.14699678122997284,
+                  -0.07885585725307465
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98251,
+                "measuredCorrectionPx": [
+                  -0.13547378778457642,
+                  -0.9465025663375854
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97229,
+                "measuredCorrectionPx": [
+                  1.3619024753570557,
+                  -1.0528786182403564
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97867,
+                "measuredCorrectionPx": [
+                  -0.2872554659843445,
+                  -0.8525220155715942
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97266,
+                "measuredCorrectionPx": [
+                  -0.256700724363327,
+                  -1.1155357360839844
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Cook",
+        "action": "fillet-fish",
+        "direction": "reference"
+      }
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "direction": "reference",
+      "destination": "public/sprites/Ginger/motion/chop-downed-log/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e",
+      "settingsSha256": "6f513cf5aeb7ac656246e1e3c1bdb3a2e5e69b194596a02b3c3a7622a80459e6",
+      "nativeReviewSha256": "fd08e095de15deca608e5fd4c098636c329cd49337e3688515e124d43eabae02",
+      "checks": {
+        "identity-and-scale": "All eight registered native poses reviewed against unchanged character identity and common sequence scale. This is a fixed-reference review, not a translating sole or cross-direction approval.",
+        "station-and-foot-contact": "Visible stance and fixed painted station inspected0-7. Fresh bounded station registration and residual measurement retained. Translating stride, independent furniture ownership and live gameplay activation are separate gates.",
+        "hand-and-tool-contact": "Both hands retain one connected axe0-7: low ready0-1, overhead2, descending3, split contact4, pull out5, recovery6, low gap7. The struck log is two split halves4-7, with retained gap/cut faces and no return to whole wood. Fixed stump/register region passes the unchanged0.93 correlation/12px translation constraints. This finite one-log split is not a seamless repeated production loop.",
+        "prop-continuity": "Both hands retain one connected axe0-7: low ready0-1, overhead2, descending3, split contact4, pull out5, recovery6, low gap7. The struck log is two split halves4-7, with retained gap/cut faces and no return to whole wood. Fixed stump/register region passes the unchanged0.93 correlation/12px translation constraints. This finite one-log split is not a seamless repeated production loop.",
+        "completion-and-reset": "Finite task: expose every authored held pose, complete once at7, keep material result while7 holds, reset to0 only on explicit new task. Continuous repeat and resource conservation are excluded."
+      },
+      "binding": {
+        "sourceSha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e",
+        "settingsSha256": "6f513cf5aeb7ac656246e1e3c1bdb3a2e5e69b194596a02b3c3a7622a80459e6",
+        "frameSha256": [
+          "cbd9dae395657fd81bbc6d339a9830dd4c5653f11e0f16a680618d77dd8b6df6",
+          "f4f5df8f6c9a14e156ddd293a7245177995b8b385a370d7de468d4b29887a3f8",
+          "d17b187f5ed37b038f892c6cc87acaa8f2f46213dd6b2fb784711bb34bdf6057",
+          "883dd973051bf41da22147a6cec6c7a321c543786eed5d6b3d7cbc0b0a9bbd92",
+          "f92580c1303a89cc2c4f39f44d8f8d82d2562f374f0424f53cfee16bc15f6a33",
+          "c99334fea219875532dd89eb6db1c068795a7fe5d9f9f91666f84a168fdaafe6",
+          "beb2836dc987e116a70c0af92dd2bb3adf157fa46a02efd5ca67ad5e3c46dabc",
+          "cee917fe53384ee9d50a36a60ce5afa65606f3cef5a1bfbe73da85ae7331b580"
+        ],
+        "atlasSha256": "c57344288c22f8b7d6aef476b8a3bfc6053fad9a3588358ca4855fe1f707344e",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "6f513cf5aeb7ac656246e1e3c1bdb3a2e5e69b194596a02b3c3a7622a80459e6",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              310,
+              480,
+              580,
+              610
+            ],
+            "minimumCorrelation": 0.93,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  -2.0699311154004363e-09,
+                  1.2891643308421408e-09
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97044,
+                "measuredCorrectionPx": [
+                  1.0340121984481812,
+                  0.0165398046374321
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97031,
+                "measuredCorrectionPx": [
+                  -3.411461353302002,
+                  -0.1699560433626175
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.95698,
+                "measuredCorrectionPx": [
+                  -5.82098913192749,
+                  -0.10468818992376328
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.9644,
+                "measuredCorrectionPx": [
+                  -3.1298458576202393,
+                  -1.7418208122253418
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.95036,
+                "measuredCorrectionPx": [
+                  -1.8983503580093384,
+                  -1.200094223022461
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.94348,
+                "measuredCorrectionPx": [
+                  -5.617467403411865,
+                  -1.832826852798462
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.9557,
+                "measuredCorrectionPx": [
+                  1.0493743419647217,
+                  -0.7039577960968018
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Ginger",
+        "action": "chop-downed-log",
+        "direction": "reference"
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "shovel-rubble",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/shovel-rubble/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810",
+      "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+      "nativeReviewSha256": "a0ae07e6fe8e5a249d9bdb035902df7f3ca8fd2f484aef770c7c9ed89ae8de39",
+      "checks": {
+        "identity-and-scale": "All eight registered native poses reviewed against unchanged character identity and common sequence scale. This is a fixed-reference review, not a translating sole or cross-direction approval.",
+        "station-and-foot-contact": "Visible stance and fixed painted station inspected0-7. Fresh bounded station registration and residual measurement retained. Translating stride, independent furniture ownership and live gameplay activation are separate gates.",
+        "hand-and-tool-contact": "Both wrists retain one straight connected shovel shaft0-7: press0-1, loaded lift2-3, turn4, extend5, tipped blade/cascade6, empty return7. Grey rubble remains in the receiving barrow6-7, whose wheel/hub/side are independently registered below the changing load. No implicit disposal, duplicate carried tool or lost deposit.",
+        "prop-continuity": "Both wrists retain one straight connected shovel shaft0-7: press0-1, loaded lift2-3, turn4, extend5, tipped blade/cascade6, empty return7. Grey rubble remains in the receiving barrow6-7, whose wheel/hub/side are independently registered below the changing load. No implicit disposal, duplicate carried tool or lost deposit.",
+        "completion-and-reset": "Finite task: expose every authored held pose, complete once at7, keep material result while7 holds, reset to0 only on explicit new task. Continuous repeat and resource conservation are excluded."
+      },
+      "binding": {
+        "sourceSha256": "3d9f85e32f35eb4c0daee1dcb41e6d67627a0065ed47b0de49f8035b6f37f810",
+        "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+        "frameSha256": [
+          "94fe3ab4e366c687dd81b57c0a5c592b3028dd5190c85c8763911ee156962184",
+          "d104f37a1e2efe9c7b72bf5fff164de4bba3a00c7593205c5a837b890bd6ab13",
+          "32685102e7f8d950c6559b94e61775afa73ba82b1571949186530c65876d5172",
+          "d02224526e0767a300dd99765cceb322485a583294f3a3f12fe5903855f6aaed",
+          "9f6c18c400107fbb542945a5cd04adefae43225eda1de241ba665e2b375f9e7a",
+          "8d1f7bfe8d8ef4feb812065b1751f7554b081a86427c74ee938b5556d061b666",
+          "e8a414fae8aabc3723ad598f36693f03d873fba681179bf83f0dc58326592a8f",
+          "18d4edf0d825ae1d6e8700d44dbfda4ab574441a6aefd8a31e4538f4b0a73c7c"
+        ],
+        "atlasSha256": "42d81faaedc49c6f84862d84f9022fa64cd134bfa4205f78f5a5eb5118a10a9a",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "60dae86ceae5f8f99b524708699a0a63820c48bd4215700cda8048a203030b18",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              465,
+              450,
+              610,
+              535
+            ],
+            "minimumCorrelation": 0.93,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  -1.3100004636612539e-08,
+                  -4.996836278081673e-09
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.94872,
+                "measuredCorrectionPx": [
+                  1.270308256149292,
+                  1.8800016641616821
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98324,
+                "measuredCorrectionPx": [
+                  0.5748480558395386,
+                  0.1146908849477768
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.93692,
+                "measuredCorrectionPx": [
+                  1.632954478263855,
+                  0.3421943187713623
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.96649,
+                "measuredCorrectionPx": [
+                  0.0054214103147387505,
+                  0.5185205936431885
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.93539,
+                "measuredCorrectionPx": [
+                  1.2204838991165161,
+                  -0.7712042927742004
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.96325,
+                "measuredCorrectionPx": [
+                  0.5268380045890808,
+                  -1.036183476448059
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.93226,
+                "measuredCorrectionPx": [
+                  1.3275641202926636,
+                  -0.8941757678985596
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "shovel-rubble",
+        "direction": "reference"
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "direction": "reference",
+      "destination": "public/sprites/Blacksmith/motion/anvil-ready/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
+      "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+      "nativeReviewSha256": "172b8c2d2127e02c6aa468e810b3b4e2c392e7d7dfce6bc182115ad1e0499ebd",
+      "checks": {
+        "identity-and-scale": "All eight native poses retain the bald stocky smith, dark double brass-bound braids, cream rolled sleeves, leather apron, olive trousers and capped boots. Existing sequence scale is retained; this review excludes walking and standing-height calibration.",
+        "station-and-foot-contact": "Fixed combined anvil/stump native region reviewed0-7. Fresh bounded12px registration gives0.397px maximum residual; visible stationary boot and torso support stay in the local ready stance. Furniture is painted in this reference; independent anvil ownership remains the separate actor review.",
+        "hand-and-tool-contact": "Right hand retains one hammer through low0, hip1/2, contact-height3/4, raised5/6 and newly authored descending shoulder/chest recovery7. Left fingers retain the tongs and the same billet. No unexplained pickup, hand switch or disconnected head.",
+        "prop-continuity": "Same anvil/stump, iron ring, tongs and hot orange billet in every pose. Frame7 retains the hammer while recovering from6 instead of jumping to the hanging pose. Material consumption or a repeat reset is not part of this finite preparation task.",
+        "completion-and-reset": "Controlled gallery playback must expose all authored holds0-7, finish once at7, retain the final pose for sustained time and restart only on explicit task reset. No seamless7-to0 approval, economic output, standing-body placement or live activation is implied."
+      },
+      "binding": {
+        "sourceSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
+        "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+        "frameSha256": [
+          "ea2c2863a83c8607888fd56f4c67868b82295d3d39bcbcd661ef07d423bdddcd",
+          "7e74db2d3333ac814bfdef9a2c263fc893f32895fc500399eda5cc53b84e9b34",
+          "2f6ac23b8c5aa766d6913f903f7478390254b80ed06b9a014d7932dc214db902",
+          "9d323c9695d4bc7abcb484303da889f044afa454c0833d8e76929aeceef76f0b",
+          "5deb6d0ae02e1dc068fd0467f751831d0db80662e6278f32b7e050931beebf4d",
+          "c7937a98f351924d5abd9864fad5fa5d50a84cc1487ea06063ac876fa380ae0f",
+          "411f51c1546cf81e1ac41e9a2b7cb26163bd029c70289ca29bc0a32aac37344f",
+          "e1a799da69eee1d72e273eeb6ff003bdef9539a538675fb09f7d8ad5e06c8335"
+        ],
+        "atlasSha256": "c8cb82a3cdc99109340c4e76b10eb8a870b9cb6c91ce0c170549a86d2e4e7f8c",
+        "registration": {
+          "method": "lower-silhouette-estimate",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": null,
+          "scaleScope": "sequence",
+          "landmarksVerified": false,
+          "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              250,
+              440,
+              475,
+              600
+            ],
+            "minimumCorrelation": 0.94,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  -2.009933552926668e-09,
+                  4.3026837648341143e-10
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.95637,
+                "measuredCorrectionPx": [
+                  -6.68612813949585,
+                  -0.020204156637191772
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97659,
+                "measuredCorrectionPx": [
+                  -5.304349899291992,
+                  0.007966841571033001
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.9558,
+                "measuredCorrectionPx": [
+                  -6.404788970947266,
+                  0.12619513273239136
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.95823,
+                "measuredCorrectionPx": [
+                  -7.121712684631348,
+                  -1.1039435863494873
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.94481,
+                "measuredCorrectionPx": [
+                  -6.667656421661377,
+                  -1.1404231786727905
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.96042,
+                "measuredCorrectionPx": [
+                  -5.3807373046875,
+                  -1.0727574825286865
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.95318,
+                "measuredCorrectionPx": [
+                  -0.7841695547103882,
+                  -1.063035249710083
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          140,
+          120,
+          120,
+          120,
+          120,
+          120,
+          120,
+          140
+        ],
+        "character": "Blacksmith",
+        "action": "anvil-ready",
+        "direction": "reference"
+      }
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "direction": "reference",
+      "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference",
+      "verdict": "accepted",
+      "acceptance": "task",
+      "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+      "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+      "nativeReviewSha256": "3ba8a99b343212f8cb68d909153d162e85947c21adb1d496bcce9ca960dce84a",
+      "checks": {
+        "identity-and-scale": "All eight native poses retain the bald broad Laborer, two brass-tipped brown braids, cream rolled sleeves, leather waistcoat and boots. One original common raster scale is preserved. The calibrated source root follows fixed toolbox features, not changing chip-pile silhouette; this is a kneeling local sequence, not standing or gait calibration.",
+        "station-and-foot-contact": "Reviewed the complete kneeling0-7, visible bent knees and boot positions as he reaches and returns the broom. Fixed toolbox registration replaces the unreliable moving-pile anchor. Fresh residual0.465px with remaining bounded corrections at most1px. Whole authored cell boundaries exclude neighboring fragments and retain each complete pose and detached props. Translating sole contacts are excluded.",
+        "hand-and-tool-contact": "Right hand holds the same short wooden broom throughout approach0/1, push2/3/4, lift5/6 and return7. Left hand shifts toward the broom during the forward reach and withdraws on return; all visible wrists are connected. No tool appears without a hand or transfers to a new owner.",
+        "prop-continuity": "One identical iron-bound toolbox and its handle/contents remain fixed beside the knee. Chips collect into the swept pile and remain visible at7; no claim of resource removal or repeated delivery. Toolbox panels are not warped or animated. Chip fragments belonging to adjacent cells are excluded by documented source-cell ownership.",
+        "completion-and-reset": "Controlled gallery playback must expose all authored holds0-7, finish once at7, retain the final pose for sustained time and restart only on explicit task reset. No seamless7-to0 approval, economic output, standing-body placement or live activation is implied."
+      },
+      "binding": {
+        "sourceSha256": "0672baa199243f8909c48d71dcda59ee2ba212358a09c6ac4c0860fd050e72f5",
+        "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+        "frameSha256": [
+          "8a956fca05d1a11e7cbf7dfd253f5ca37e0c3155a949dc37542c80801cc05aa2",
+          "2556d26505bf6bae6116b40f01e2868be3df78ad3feef2d4f27585dec5b921c4",
+          "b1e8687dbfe07dc76ed1df722a655e7616403bf856c84dfc3a1abbc4818c8ac6",
+          "83863339d3cf8c621f9a8d6dc8d50e73fc96d0f9cce6c25dc9c109938af54154",
+          "4c1bb2e41e10b7517aa32da4d9f7b724d635c0cf290b9e45b0bbc57e4dbe3998",
+          "60832f31ac561a9dec1878733fb2e4200ddc2e69c815302e96b828e0ef56e4f8",
+          "6a1a286adc80117779b3f71f1141d3157e53922850524217b782bcfebfeee1ac",
+          "25b1f5d7b24af29f16ec82cbd8231e25724601adbf82212a596f78258e29442e"
+        ],
+        "atlasSha256": "351716f0022558d548ba34b46aeb83143c58efd1d87d2711e679e3a775c5e956",
+        "registration": {
+          "method": "source-landmarks",
+          "targetAnchor": [
+            320,
+            616
+          ],
+          "targetBodyHeight": 520,
+          "scaleScope": "directional-body-height",
+          "landmarksVerified": false,
+          "settingsSha256": "27ab50a7a2e53aa09add3f575386bd0a0a961683f9e4450ebcee4f58f7ced679",
+          "exportVersion": 2,
+          "stationRegistration": {
+            "method": "bounded-translation-ECC",
+            "referenceSourcePose": 0,
+            "outputRegion": [
+              430,
+              470,
+              570,
+              585
+            ],
+            "minimumCorrelation": 0.93,
+            "maxCorrectionPx": 12,
+            "results": [
+              {
+                "correlation": 1.0,
+                "measuredCorrectionPx": [
+                  -3.995744535245649e-08,
+                  1.9516268423558358e-07
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97528,
+                "measuredCorrectionPx": [
+                  -0.4416939914226532,
+                  0.06814910471439362
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.98684,
+                "measuredCorrectionPx": [
+                  -0.1394776850938797,
+                  -0.1460351049900055
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97228,
+                "measuredCorrectionPx": [
+                  -0.6962695121765137,
+                  0.08562719076871872
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.9793,
+                "measuredCorrectionPx": [
+                  -0.4648851454257965,
+                  0.004124285653233528
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.9706,
+                "measuredCorrectionPx": [
+                  0.2244921773672104,
+                  -0.15877023339271545
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97885,
+                "measuredCorrectionPx": [
+                  0.006583872251212597,
+                  -0.44064468145370483
+                ],
+                "accepted": true
+              },
+              {
+                "correlation": 0.97296,
+                "measuredCorrectionPx": [
+                  0.24882324039936066,
+                  -0.23120930790901184
+                ],
+                "accepted": true
+              }
+            ]
+          }
+        },
+        "durationsMs": [
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "character": "Laborer",
+        "action": "sweep-wood-chips",
+        "direction": "reference"
+      }
+    }
+  ]
+}

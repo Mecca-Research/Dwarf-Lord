@@ -1,0 +1,53 @@
+{
+  "character": "Female Miner",
+  "action": "shovel-ore",
+  "direction": "reference",
+  "destination": "public/sprites/Female Miner/motion/shovel-ore/reference",
+  "verdict": "changes-required",
+  "sourceSha256": "7be2a3402b9d63cf9bffbdcef35600f138940bb6f62e64449648df230c64e8d8",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "issues": [
+    "The shovel blade is empty throughout the lift0-4 and cast5/6 although the planned beats describe a load. No ore transfer is visible. Need a defined held load, release and retained deposit, or a separately named empty-tool practice sequence; do not approve this as loaded ore work."
+  ],
+  "binding": {
+    "sourceSha256": "7be2a3402b9d63cf9bffbdcef35600f138940bb6f62e64449648df230c64e8d8",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "f3025f97c55155c0b90660198c9c0261644e849e4b4a964456d39212ac24151c",
+      "96d943f527c56c3aa319f5a51f0a5f3265509325dd62c43d1b5c88d163e24dc7",
+      "b1217cc60feb289c68f60ca0c193d3e256d21d881471105ea6ebe4703f385be5",
+      "1ea8ee05ef4388210aa488d3ba9093d135fe7d52903615ae196c6223062d400d",
+      "27670ffd1039308cd903d8ac77eedcf9f52caa37b6b929c3bb71bceeed9bf8cc",
+      "1b5b5ba3e86b7c206a8ebe453362fbfba372271d4c1bc7c8449e6868d337e618",
+      "021bb40591baa7e29bbe8aac1f3848514c3bca4c294ba951e027283d93f6fe21",
+      "26a168f6c039de8a5ce38ed398083b000a38ecb2b69c9a452b757c2b25737065"
+    ],
+    "atlasSha256": "7bda96d314002aa0305e3f8e8091c361583537789b3b5276d320cac10ce74d2f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Female Miner",
+    "action": "shovel-ore",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "48160b390fa0fac863384a82f372ca95b1b35cb665e5cfa49e8c2f9d432706ab"
+}

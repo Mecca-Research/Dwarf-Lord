@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Borrin",
+  "action": "review-open-ledger",
+  "title": "Review open ledger",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/01-review-open-ledger.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "point at upper entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        121,
+        99,
+        498,
+        600
+      ],
+      "sourceAnchor": [
+        199.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        113,
+        95
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "finger begins tracing down entry",
+      "durationMs": 140,
+      "sourceBounds": [
+        760,
+        98,
+        1138,
+        600
+      ],
+      "sourceAnchor": [
+        198.07692307692307,
+        502.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        114,
+        93
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "trace the entry",
+      "durationMs": 140,
+      "sourceBounds": [
+        1407,
+        101,
+        1774,
+        600
+      ],
+      "sourceAnchor": [
+        192.03846153846155,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        120,
+        97
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "lean down to read entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        2045,
+        134,
+        2422,
+        600
+      ],
+      "sourceAnchor": [
+        190.19230769230768,
+        466.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        130
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "closest examination of entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        118,
+        804,
+        500,
+        1240
+      ],
+      "sourceAnchor": [
+        203.92307692307693,
+        436.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        108,
+        163
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "straighten while retaining page contacts",
+      "durationMs": 140,
+      "sourceBounds": [
+        762,
+        744,
+        1134,
+        1240
+      ],
+      "sourceAnchor": [
+        198.0,
+        496.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        114,
+        99
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "return finger toward entry",
+      "durationMs": 140,
+      "sourceBounds": [
+        1402,
+        747,
+        1773,
+        1240
+      ],
+      "sourceAnchor": [
+        196.07692307692307,
+        493.96153846153845
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        116,
+        102
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed pointing hold at the reviewed entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        2042,
+        744,
+        2414,
+        1240
+      ],
+      "sourceAnchor": [
+        196.07692307692307,
+        497.9230769230769
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        116,
+        98
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1200,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      160,
+      160,
+      140,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "c07ca616bbca01e6a7d1f3054338b1c789a81327acba124f25233a06279eb0e6",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-view finite seated open-ledger entry review and leaning/return at the existing independent persistent ledger desk. Visible boot-cap/rim material, projected finger/page placement, source-pixel foreground and consultant arrival/departure/day lifecycle only. No hidden sole, traveling gait, other camera direction, continuous loop, writing/page-turn/coin transfer or economic effect approval."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "checkpoint": "motion53",
+  "baseline": "ee5e7604136268e79772eae044cba486def9a40a",
+  "addedMappings": [
+    {
+      "character": "Cook",
+      "action": "mix-ingredients"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "05046d429f2a4eec214c2d60c9a8f0d527168791badd14f36be2b925d8d1f6c6",
+      "sha256": "0d604bddf2edbffccefa89646d689a06be060c1d7ce3afc09645dc42cfd02fd5"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "beforeSha256": "89f89c5c5e7b279da24e1614f41d3bde9cb488135d45c777de2a2d9b06198f57",
+      "sha256": "bae81904704c3d645275ee3394ba30a1fbd82f615586caf51436d5e6002bea11"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "641e16ce089e652429064bc91cd5d1027fd1ef4b957ac81e6c223eb4935e71e0",
+      "sha256": "d1fb69766f9490c0b265b86eb38b9f75fcd33aadc9d501a6f255d3aab6ef76fe"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "c8e3871ed7ad2f41a4ca863dbe1642c1286df66ce97ca16ce4ac95c9bc043ba7",
+      "sha256": "dbf0d879a749e949e75c707e24ea70e4ba6da28620af918d268436d67f541d64"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "7ab743c2858ddeeedcdeb18751cf61b0d29b1208a62d1af4dc59f16ae1f4f840",
+      "sha256": "5608dc33217285aa8b08d93452aa07fd2cddc4af4c224a7bed2d9c20cc477747"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "4698d93132202c8c7c6ac5d14dbe54a855bad353bd040ac26d3fdad7bedb831c",
+      "sha256": "4433bd976795bcca60b13b7e78ccfff18bedba28994cc2fe84072b8b67d9e991"
+    },
+    {
+      "file": "public/sprites/Cook/motion/render-calibration.json",
+      "beforeSha256": "06adea86361785f77a49e1ac3c7ff703ddbda633b9b33841fa071279be3381e6",
+      "sha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf"
+    },
+    {
+      "file": "scripts/cooking-work-check.mjs",
+      "beforeSha256": "46acb9be27ab0f1a253054d075de3778a78f3cd7f034ea573d3292ebf36e0078",
+      "sha256": "a628bb22bc083e75c5c1eab770bcfd497fd1da00654d61a94cb8c4eafc55e959"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "15275ad0b95f9134415adcc869222a668702b53ab65bee511d9720684d737dca",
+      "sha256": "a7c06ffe7e9789078c9f729dd6580fb9e941df8409f7e1c712104266dd5ed997"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "4a51d9ad07c4d36affd98e1e52432fe242f7ab275072597a9f9467fc600eb8a7",
+      "sha256": "cd5d8ae359b60cdbd2ffe7ec5d6da40d1127b7f7a7cb7f1c14cc3d8aa9a3d5ea"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "28ef17f87504b8f319d5bc3584240cfcf188ff69e2888a5ccc0fcffc795b146b",
+      "sha256": "278c82590db566c7467cac653b50c57a84ee912a8230330f78aa77b73e91a0f8"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "afce88c7745c955444171a213550ad53781fc739dd483c091cb4479aa5ee464e",
+      "sha256": "5e794f1984ddece35247b35da38b647f67fac6dc4ab600356307097514d1b8b1"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "2635da554c9e533a201f46bcc1df64a07624b9c6968b0e46c67edf27f18b75cb",
+      "sha256": "c10ce444dc889b5f71e14081b8a27e947097b5531f95f8f856588c99840fcc8a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "beforeSha256": "9d626e69806f98755c3411f39c242c2fcc477f75901e3717f2c0780da1c8a013",
+      "sha256": "eef937045c850f85b0aee4d2565d63f6bb2f197d0c6685252acb684db40d3ccf"
+    },
+    {
+      "file": "scripts/work-assignment.test.mjs",
+      "beforeSha256": "a69d4792c29b2e61790fe9a735ff2845b4b40d6c6c89fc237871cfa057b90e09",
+      "sha256": "ffa69c453a648916b70795437e0bc4d3251ad8f1ac2340619403e8337d2eb709"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "beforeSha256": "a42a6bd8f6db62e008218d6e8159d17c58af13a903f6f6f720a9ccc7505ed624",
+      "sha256": "f1cc0a56fc82be4310b0a70b967bfcb2027acc28bb3d1cbc6d93b42d7289345f"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "beforeSha256": "c4fc8416272d03a7665f3d05999cb0db000c8e6d3b1be7956a00e5c2b18cf4c6",
+      "sha256": "e584963b01902d6f2903f1b259af7794e9c2f484bd66c1b3c197acfa74e68728"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+      "beforeSha256": "8473d261b776e74ad14ed6978b539ddd62b25c83f971c0fce0ba6036fca43be5",
+      "sha256": "9361799a68de1a7cffac7a8f2bfa4a23ab3be999fd0ef51b6629a61bb8cbc8df"
+    }
+  ],
+  "revalidatedEarlierApprovals": [
+    "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+    "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-seated/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference/loop-approval.json",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/task-approval.json",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference/task-approval.json",
+    "public/sprites/Cook/motion/chop-vegetables/actor/loop-approval.json",
+    "public/sprites/Laborer/motion/stack-crates/actor/task-approval.json",
+    "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+    "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+    "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+    "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+    "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+    "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json"
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion53/runtime-revalidation53.json",
+    "sha256": "a63fac4c57f9e1e87a6223b29abd4cfe42d4ae48a0a3e3ffdccd8573aa1478f5"
+  },
+  "scope": "One finite cosmetic mixing activation and one independent flour table/completed bowl. Frozen160 unchanged:50 main+7 original accepted,12 derived actors outside denominator.23 live/42 inactive references.103 individual cycle reviews and11 family gates remain open."
+}

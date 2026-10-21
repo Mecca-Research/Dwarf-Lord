@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "carry-sack",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/carry-sack/reference",
+  "verdict": "calibration-required",
+  "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "remaining": [
+    "Both hands retain one sack. Whole-stride sole calibration and transition contacts remain unverified for this carried-load gait."
+  ],
+  "binding": {
+    "sourceSha256": "2706755370418f4dd24674d0f13c0a2062c5a8d7c9fe8b951d1bd0426e48afd1",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "1adf92e771556dcbec50a33a73b3a9846951f8f921772e16fc21ff24786c1ca6",
+      "85706ebef79dfe7ca8ffa28c38994952ab6ad8a6f8871ad217514968bc9423be",
+      "5a75c9dbc4fb7853394ebd6d0bcf58cac8d9ddca9bf66c80f670f9b69beb6a03",
+      "8bbe62c6c824dfef25af608575a574f99db4421bd9b2ed5cf46c175338b722cd",
+      "35d2df03e0b0dd003aa74cb406050dfd657e2716ba4980b347a1acb1a5b61499",
+      "37ac4a42d3cf1e7352f18a14782f48c725de35b29d1acaa0a6f51f5b3b4059f8",
+      "f1e004ec172725fcdff32a775cfdb96a7f4b83335f0fc210a8da33e71697dfd7",
+      "62f3b76b99ad3cd364c0a3bf223e902373ff131ee2aef5af4cea324c8a853539"
+    ],
+    "atlasSha256": "28c9fbeaed50af301336de7f4fcbdcddb360dd1fb7f7787a5e1386012a5dd808",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "carry-sack",
+    "direction": "reference"
+  },
+  "nativeReviewSha256": "00dfe116a857c9cc60d3c3dd344b23e824052c4d21d0750529a4ab6f8254ab9a"
+}

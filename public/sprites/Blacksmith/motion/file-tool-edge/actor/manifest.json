@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Blacksmith",
+  "action": "file-tool-edge",
+  "title": "File tool edge",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../../../public/sprites/Blacksmith/work-references/04-file-tool-edge.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "file at near edge of clamped tool",
+      "durationMs": 125,
+      "sourceBounds": [
+        77,
+        30,
+        441,
+        563
+      ],
+      "sourceAnchor": [
+        243.0,
+        586.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        77,
+        30
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from file at near edge of clamped tool toward push file forward along metal",
+      "durationMs": 125,
+      "sourceBounds": [
+        720,
+        31,
+        1095,
+        564
+      ],
+      "sourceAnchor": [
+        240.0,
+        585.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        31
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "push file forward along metal",
+      "durationMs": 125,
+      "sourceBounds": [
+        1361,
+        31,
+        1737,
+        563
+      ],
+      "sourceAnchor": [
+        239.0,
+        586.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        81,
+        30
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from push file forward along metal toward file reaches far end",
+      "durationMs": 125,
+      "sourceBounds": [
+        2000,
+        31,
+        2403,
+        563
+      ],
+      "sourceAnchor": [
+        240.0,
+        587.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        29
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "file reaches far end",
+      "durationMs": 125,
+      "sourceBounds": [
+        79,
+        676,
+        528,
+        1205
+      ],
+      "sourceAnchor": [
+        241.0,
+        584.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        32
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from file reaches far end toward lift slightly and draw file back",
+      "durationMs": 125,
+      "sourceBounds": [
+        720,
+        664,
+        1101,
+        1204
+      ],
+      "sourceAnchor": [
+        240.0,
+        592.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        80,
+        24
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift slightly and draw file back",
+      "durationMs": 125,
+      "sourceBounds": [
+        1358,
+        665,
+        1715,
+        1205
+      ],
+      "sourceAnchor": [
+        242.0,
+        591.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        78,
+        25
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift slightly and draw file back toward file at near edge of clamped tool",
+      "durationMs": 125,
+      "sourceBounds": [
+        1999,
+        668,
+        2354,
+        1205
+      ],
+      "sourceAnchor": [
+        241.0,
+        588.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        79,
+        28
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 533,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Finite original-pixel stationary filing at an independently owned upward-cutting vise bench. Visible near-boot support, actual metal/cutting-arc proximity0-4, lift/return5-7 and task lifecycle reviewed. Hidden previously occluded body/far sole, forces, material removal, economy, tool pickup/put-down, directions and repeat excluded."
+  }
+}

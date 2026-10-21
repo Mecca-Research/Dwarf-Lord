@@ -1,0 +1,86 @@
+{
+  "checkpoint": "motion40",
+  "date": "2026-10-04",
+  "baseline": "1358d369cd19fdd8fb84a95b65cb3a8a15706c1b",
+  "newMainApprovals": [
+    "Blacksmith/fix-wheelbarrow/reference",
+    "Borrin/count-coins/reference",
+    "Female Miner/pickaxe-ready/reference"
+  ],
+  "newGameplayMappings": [
+    "Cook/peel-potatoes"
+  ],
+  "newIndependentActorApprovalsOutsideFrozenScope": 1,
+  "totalDerivedActorApprovalsOutsideFrozenScope": 3,
+  "mainLoops": 8,
+  "mainFiniteTasks": 39,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 47,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 106,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 14,
+    "referenceActionsWithoutMapping": 51
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 106
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 51
+    }
+  ],
+  "reviewGatesComplete": false,
+  "productionReady": false,
+  "validation": {
+    "nodeTests": 205,
+    "pythonTests": 70,
+    "typecheck": "passed",
+    "pagesBuild": "passed",
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "stationVariants": 10,
+    "physicalPropFamilies": 9,
+    "correctedReferenceTimedReviews": 3,
+    "fixedPropSets": 36,
+    "maxFixedPropResidualPx": 0.699,
+    "residualBoundPx": 0.71,
+    "FemaleMinerReadyVisibleSoleDriftPx": 2.5629271362895873,
+    "stationaryContactBoundPx": 6,
+    "forgeOperations": 3,
+    "cookingOperations": 2,
+    "ElderSeatedActivities": 6,
+    "rightStrideBoundaries": 24,
+    "headedGameplayCaptures": 2
+  },
+  "remainingMeasurements": {
+    "LaborerRearLeftWholeStridePx": 63.079,
+    "ElderRearCanePlantPx": 18.057,
+    "ElderRearJointFootCanePx": 14.009,
+    "BlacksmithRightAnalyticalWholeStridePx": 1.032,
+    "BlacksmithRightRenderedMaxBoundaryPx": 1.9
+  },
+  "rejectedAttempts": {
+    "LaborerRearLeft": "Two full eight-pose rig-guide edits plus two individual poses remain unselected: opposite-leg ground/arm phases, consistent source identity/camera and whole-stride material tracking are not verified. Guides are targets, not observations.",
+    "barrels": "Two complete eight-pose candidates per character improve retained mallet/hoops but fail unchanged.94 fixed-region correlation (Ginger.9122, Laborer.9139 in second attempt). Selected original sources/frames/atlas remain unchanged; no threshold weakening or loop acceptance.",
+    "coinDeposit": "First new deposit sheet still keeps a coin in the returning hand. It was rejected. Selected finite counted-coin inspection keeps the same coin held throughout; no deposit, minting or economic approval."
+  },
+  "scopeNote": "Frozen160 unchanged. Original7 independent actors remain7/7. Derived Blacksmith2/Cook1 layers support existing required reference actions and have separate exact approvals. Scoped finite-task or visible-contact acceptance cannot approve translating contacts, hidden anatomy or direction families."
+}

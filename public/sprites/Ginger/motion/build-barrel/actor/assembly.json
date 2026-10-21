@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "playbackMode": "once-hold",
+  "durationsMs": [
+    160,
+    140,
+    160,
+    120,
+    100,
+    120,
+    140,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "cooper42",
+      "file": "authoring-inputs/cooper42.png",
+      "poseCount": 8,
+      "sha256": "8ce2f1caa4d1ac0c71c7c89e6108de7559ec3f669807e295e596ddea9dc29896",
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        229.5,
+        664.0,
+        1074.0,
+        1507.0,
+        221.5,
+        656.5,
+        1078.0,
+        1520.0
+      ],
+      "rootYs": [
+        432.0,
+        433.0,
+        433.0,
+        433.0,
+        856.0,
+        857.0,
+        858.0,
+        858.0
+      ],
+      "bodyHeights": [
+        389.5,
+        389.5,
+        389.5,
+        389.5,
+        389.5,
+        389.5,
+        389.5,
+        389.5
+      ],
+      "reference": "authoring-inputs/reference42-0.png",
+      "referenceSha256": "f7698e15af222d1afeba1ad9caf4b207f767042f16a672e1b8e824788d15fa9a"
+    },
+    {
+      "id": "ginger-baseline-upper-3-42",
+      "file": "authoring-inputs/ginger-baseline-upper-3-42.png",
+      "poseCount": 1,
+      "sha256": "cb3bcf141109e6cc04b1c1b3f66ed3f8ec83f1b4187b3d1ff901bf2a6138a461",
+      "rootXs": [
+        630.9890109890109
+      ],
+      "rootYs": [
+        1208.0
+      ],
+      "bodyHeights": [
+        1051.4285714285713
+      ],
+      "reference": "authoring-inputs/ginger-baseline-upper-3-42-input0.png",
+      "referenceSha256": "b79c928b61d457d8a704dd7cc3ddba49b6ee15f3aaeeb532a0dbc46083a1a255"
+    },
+    {
+      "id": "ginger-baseline-upper-4-42",
+      "file": "authoring-inputs/ginger-baseline-upper-4-42.png",
+      "poseCount": 1,
+      "sha256": "3cb883d705cb2a6d5c2b7b410dd2f27e4da0f4ecb04807d5f2237e5bfdca1921",
+      "rootXs": [
+        634.4725274725274
+      ],
+      "rootYs": [
+        1209.0
+      ],
+      "bodyHeights": [
+        1068.5714285714284
+      ],
+      "reference": "authoring-inputs/ginger-baseline-upper-4-42-input0.png",
+      "referenceSha256": "cd75148164f5f4e5b6ff46ed4aa68c39648b44bb824ba5f8b18871bba32a81bc"
+    },
+    {
+      "id": "ginger-hoop-impact-42",
+      "file": "authoring-inputs/ginger-hoop-impact-42.png",
+      "poseCount": 1,
+      "sha256": "5cee712347ce1b7f5bbdda7979c3f92bad85fe87ac3940686e264ec89849b23f",
+      "rootXs": [
+        621.945054945055
+      ],
+      "rootYs": [
+        1175.0
+      ],
+      "bodyHeights": [
+        1097.142857142857
+      ],
+      "reference": "authoring-inputs/ginger-hoop-impact-42-input0.png",
+      "referenceSha256": "f702b0931644291146bab6bedb24611f6f27e989cf958e3e660677a91667ba2a"
+    },
+    {
+      "id": "ginger-impact-rebound-42",
+      "file": "authoring-inputs/ginger-impact-rebound-42.png",
+      "poseCount": 1,
+      "sha256": "43938adb905267d5fc4dd0b1a9ecdb6be5f84c2d72666df11e0557d791958ed0",
+      "rootXs": [
+        625.4285714285714
+      ],
+      "rootYs": [
+        1177.0
+      ],
+      "bodyHeights": [
+        1114.2857142857142
+      ],
+      "reference": "authoring-inputs/ginger-impact-rebound-42-input0.png",
+      "referenceSha256": "5cee712347ce1b7f5bbdda7979c3f92bad85fe87ac3940686e264ec89849b23f"
+    }
+  ],
+  "poses": [
+    {
+      "input": "cooper42",
+      "pose": 0
+    },
+    {
+      "input": "cooper42",
+      "pose": 1
+    },
+    {
+      "input": "cooper42",
+      "pose": 2
+    },
+    {
+      "input": "ginger-baseline-upper-3-42",
+      "pose": 0
+    },
+    {
+      "input": "ginger-hoop-impact-42",
+      "pose": 0
+    },
+    {
+      "input": "ginger-impact-rebound-42",
+      "pose": 0
+    },
+    {
+      "input": "ginger-baseline-upper-4-42",
+      "pose": 0
+    },
+    {
+      "input": "cooper42",
+      "pose": 7
+    }
+  ],
+  "note": "Eight distinct genuinely authored whole poses: baseline0/1/2 and7; raised-to-down approach from upper3; adjusted hoop contact from impact4; same-stance rebound5; earlier raised grip candidate upper4 now selected only as pose6 controlled lower/withdrawal. That pose was unsuitable as impact, but is a valid lower withdrawn grip. Common original physical near cap91 basis, complete figure scale/root only, no independent foot/limb transforms. Native body/material, two boots, hoop/bracing contacts and finite playback still require approval."
+}

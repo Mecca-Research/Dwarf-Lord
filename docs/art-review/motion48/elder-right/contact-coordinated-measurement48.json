@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "folder": "docs/art-review/motion48/elder-right/candidate-contact",
+  "binding": {
+    "sourceSha256": "0ff74727876ed7fd55ad67591787ceaa8f1dbb86ff16b78b9c0058bb2edf10a5",
+    "settingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+    "frameSha256": [
+      "dc26ea688a3cd5889e81d05f85ec0fa2167e36bdf2cd768db2c5dfb8a0753dfb",
+      "7cd3a6fd2f2b8e4d7cbd825fba8579a662eedb2f18b2981c26664d3568c6fe89",
+      "bc0c805ba5d54ef8e2210e021f701283a075968cf32eff39358e44cf178cdb46",
+      "1aac7bde77d5afd2d79d9615d6321f971c441bb83e3f87162b88874577b8cb23",
+      "cb05cdfb06ae90153b6f878706cd758130aae6af06a57b153aa3a8bcd3834de3",
+      "ceb914b814d33ab5b9150539325f20bedcc56dc32cb67815271ba43e0984175a",
+      "076c4ce94bbbf36ee4e0c0da8e75dd9e6ff161ec150c21fc3fab3e914c0220c2",
+      "1f2a050f05d87168bc62867219d0be69fd10e3bff795c9f30dacfeac6582f75b"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+    "atlasSha256": "e961e4cf5bddb3e00ec30f493974816e05c1375e348f42e6fd02bb8dae4ee9db",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "right",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "footObservationsSha256": "0f37e83ea0a590f6efea11fcf375e0a7522ff9bc0d0d37241cef287200f4173e",
+  "sharedStrideBodyRatio": 1.2,
+  "soleMeasurementPassed": false,
+  "maxSoleBoundaryPx": 57.0,
+  "canePlant": {
+    "supportFrames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "projectedContacts": [
+      [
+        532.0,
+        614.0
+      ],
+      [
+        568.0,
+        614.0
+      ],
+      [
+        603.0,
+        614.0
+      ],
+      [
+        634.0,
+        615.0
+      ]
+    ],
+    "heldPoseWithinFrameDriftPx": 0,
+    "baselineContinuousRootWithinFrameDriftPx": [
+      78.0,
+      78.0,
+      78.0,
+      78.0
+    ],
+    "transitions": [
+      {
+        "from": 0,
+        "to": 1,
+        "contactJumpPx": 36.0
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "contactJumpPx": 35.0
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "contactJumpPx": 31.016
+      }
+    ],
+    "maxBoundaryContactDriftPx": 102.005,
+    "materialCorrespondenceReviewed": false,
+    "contactApproved": false
+  },
+  "simultaneousBoundaries": [
+    {
+      "from": 0,
+      "to": 1,
+      "foot": "left",
+      "soleLandmark": "heel",
+      "caneRequiredRootTravelPx": [
+        42.0,
+        0.0
+      ],
+      "soleRequiredRootTravelPx": [
+        71,
+        0
+      ],
+      "requiredRootDisagreementPx": 29.0
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "foot": "left",
+      "soleLandmark": "toe",
+      "caneRequiredRootTravelPx": [
+        43.0,
+        0.0
+      ],
+      "soleRequiredRootTravelPx": [
+        99,
+        0
+      ],
+      "requiredRootDisagreementPx": 56.0
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "foot": "left",
+      "soleLandmark": "toe",
+      "caneRequiredRootTravelPx": [
+        47.0,
+        -1.0
+      ],
+      "soleRequiredRootTravelPx": [
+        27,
+        0
+      ],
+      "requiredRootDisagreementPx": 20.025
+    }
+  ],
+  "maxRequiredRootDisagreementPx": 56.0,
+  "projectedTipPath": [
+    [
+      532.0,
+      614.0
+    ],
+    [
+      568.0,
+      614.0
+    ],
+    [
+      603.0,
+      614.0
+    ],
+    [
+      634.0,
+      615.0
+    ],
+    [
+      853.0,
+      542.0
+    ],
+    [
+      927.0,
+      552.0
+    ],
+    [
+      1015.0,
+      554.0
+    ],
+    [
+      1077.0,
+      590.0
+    ]
+  ],
+  "replantApproachTravelPx": [
+    79.0,
+    24.0
+  ],
+  "projectedCollarToTipLengthsPx": [
+    263.321,
+    263.23,
+    263.122,
+    264.0,
+    209.354,
+    216.832,
+    212.085,
+    228.32
+  ],
+  "recoveryFrames": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "reviewFlags": {
+    "tipMaterialReviewed": false,
+    "sameArmAndGripReviewed": true,
+    "rigidShaftReviewed": false,
+    "liftRecoveryReplantReviewed": false
+  },
+  "materialAndRecoveryReviewed": false,
+  "measurementPassed": false,
+  "jointContactApproved": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "One shared root/stride, all observed soles, planted cane tip and eight-pose source coverage. Projected rod length/recovery path does not alone prove3D rigidity or ground clearance. Native anatomy/grip/recovery and actual-renderer final approval remain separate."
+}

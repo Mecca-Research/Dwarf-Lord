@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Cook",
   "action": "fillet-fish",
   "title": "Fillet fish",
@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "ef7359571bed0fb88cb592d3cbade23334f91c939613a60ff1dc8a2fdd035566",
+  "sourceSha256": "4a316adb9e7e21332f09023f30a1aa943de5c76688226625580c5992149d5b07",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.4474327628361858,
+  "sharedScale": 1.4763092269326683,
   "frameCount": 8,
   "frames": [
     {
@@ -25,46 +25,46 @@
       "description": "hold fish on cutting block with left hand",
       "durationMs": 125,
       "sourceBounds": [
-        27,
-        48,
-        418,
-        424
+        26,
+        44,
+        420,
+        427
       ],
       "sourceAnchor": [
-        191.5,
-        376
+        193.5,
+        383.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        72
+        34,
+        51
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "place fillet knife behind head",
+      "description": "place knife just above fish head on board",
       "durationMs": 125,
       "sourceBounds": [
-        471,
-        14,
-        861,
-        423
+        469,
+        47,
+        864,
+        427
       ],
       "sourceAnchor": [
-        191.5,
-        409
+        193.82263513513513,
+        380.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        24
+        34,
+        55
       ]
     },
     {
@@ -73,22 +73,22 @@
       "description": "draw blade along spine",
       "durationMs": 125,
       "sourceBounds": [
-        914,
-        55,
-        1305,
-        423
+        913,
+        51,
+        1307,
+        427
       ],
       "sourceAnchor": [
-        191.5,
-        368
+        193.5,
+        376.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        83
+        34,
+        61
       ]
     },
     {
@@ -97,22 +97,22 @@
       "description": "continue controlled slicing",
       "durationMs": 125,
       "sourceBounds": [
-        1358,
-        54,
-        1748,
-        423
+        1356,
+        51,
+        1750,
+        427
       ],
       "sourceAnchor": [
-        191.0,
-        369
+        194.0,
+        376.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        44,
-        82
+        34,
+        61
       ]
     },
     {
@@ -121,22 +121,22 @@
       "description": "lift fillet edge with left hand",
       "durationMs": 125,
       "sourceBounds": [
-        28,
-        491,
-        418,
-        868
+        26,
+        488,
+        420,
+        871
       ],
       "sourceAnchor": [
-        191.0,
-        377
+        193.5,
+        383.67736486486484
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        44,
-        70
+        34,
+        50
       ]
     },
     {
@@ -145,22 +145,22 @@
       "description": "separate fillet with knife",
       "durationMs": 125,
       "sourceBounds": [
-        471,
-        491,
-        861,
-        868
+        470,
+        488,
+        863,
+        871
       ],
       "sourceAnchor": [
-        191.5,
-        377
+        192.82263513513513,
+        383.67736486486484
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        70
+        35,
+        50
       ]
     },
     {
@@ -169,48 +169,58 @@
       "description": "lay fillet on board",
       "durationMs": 125,
       "sourceBounds": [
-        914,
-        493,
-        1305,
-        868
+        913,
+        490,
+        1307,
+        871
       ],
       "sourceAnchor": [
-        191.5,
-        375
+        194.0,
+        381.67736486486484
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        43,
-        73
+        34,
+        53
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "reset fish for next side",
+      "description": "withdraw fingers; retain deposited fillet beside opened fish",
       "durationMs": 125,
       "sourceBounds": [
-        1358,
-        491,
-        1748,
-        868
+        1356,
+        488,
+        1750,
+        871
       ],
       "sourceAnchor": [
-        191.0,
-        377
+        194.0,
+        383.67736486486484
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        44,
-        70
+        34,
+        50
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,117 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "bdd3d2ddf6d1cba4acf5ed8bb81a33b9153791a7ed8d5f49a12c15ea29a06d39",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        100,
+        435,
+        570,
+        595
+      ],
+      "minimumCorrelation": 0.94,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            2.1227276647550752e-07,
+            1.7721109202284424e-07
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97938,
+          "measuredCorrectionPx": [
+            0.9908784031867981,
+            0.005004419945180416
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98497,
+          "measuredCorrectionPx": [
+            -0.078863225877285,
+            0.005130845122039318
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97712,
+          "measuredCorrectionPx": [
+            0.14699678122997284,
+            -0.07885585725307465
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.98251,
+          "measuredCorrectionPx": [
+            -0.13547378778457642,
+            -0.9465025663375854
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97229,
+          "measuredCorrectionPx": [
+            1.3619024753570557,
+            -1.0528786182403564
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97867,
+          "measuredCorrectionPx": [
+            -0.2872554659843445,
+            -0.8525220155715942
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97266,
+          "measuredCorrectionPx": [
+            -0.256700724363327,
+            -1.1155357360839844
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-reference eight-pose finite task and sustained material result. No seamless repeat, translating gait, hidden anatomy, gameplay activation, independent furniture ownership or economic output certification."
   }
 }

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "landmarksVerified": false,
+  "note": "Visually calibrated source row ground planes and torso axes. Roots describe the projected body origin, not the moving toe. Preserve authored foot elevation; gait still needs gameplay/root-motion review. Coordinates are source order.",
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "landmarks": [
+    {
+      "root": [
+        220,
+        431
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        674,
+        431
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        1105,
+        431
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        1552,
+        431
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        223,
+        871
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        669,
+        871
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        1107,
+        871
+      ],
+      "bodyHeight": 414
+    },
+    {
+      "root": [
+        1552,
+        871
+      ],
+      "bodyHeight": 414
+    }
+  ],
+  "durationsMs": [
+    140,
+    140,
+    105,
+    115,
+    140,
+    140,
+    105,
+    115
+  ],
+  "sourceSha256": "8dc40926c069876202723bbe3a669f922d8c0c0bd9f974a110820a80a975c333"
+}

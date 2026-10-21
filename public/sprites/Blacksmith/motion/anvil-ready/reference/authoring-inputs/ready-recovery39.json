@@ -1,0 +1,19 @@
+{
+  "key": "ready-recovery39",
+  "character": "Blacksmith",
+  "action": "anvil-ready",
+  "refs": [
+    "/opt/codex-work/dwarf-lord/public/sprites/Blacksmith/motion/anvil-ready/reference/source-sheet.png"
+  ],
+  "prompt": "Edit this exact 8-frame 4-column 2-row transparent Blacksmith/anvil animation. Preserve all seven first poses, dwarf identity, lighting, camera, scale, left hand with tongs, hot orange billet, anvil and stump pixel geometry. Change ONLY LAST bottom-right frame7 RIGHT arm and hammer to the missing DESCENDING RECOVERY: elbow lowered, right hand at chest height, hammer head beside his shoulder, hammer angled downward toward the right thigh. The hammer must be visibly below bottom-third frame6's overhead hammer and above top-first frame0's hanging hammer. Keep the same fingers firmly wrapped around the same wooden handle. No extra tools or fingers, no strike/contact in this recovery. Keep body, legs, entire anvil/stump, tong hand and workpiece at exact existing locations. Do not repaint furniture or make a second dwarf. High quality rendered canonical bald smith, dark braided brass-bound beard, cream sleeves and leather apron. Same transparent background, complete eight full poses, 4x2 grid, no crop or text.",
+  "references": [
+    {
+      "file": "authoring-inputs/source-before39.png",
+      "sha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56"
+    }
+  ],
+  "output": "authoring-inputs/ready-recovery39.png",
+  "outputSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
+  "method": "Built-in whole-sheet authored image edit. No individual body-part transforms, interpolated poses or local furniture replacement.",
+  "decision": "Selected pending fixed-prop registration, native and timed playback review."
+}

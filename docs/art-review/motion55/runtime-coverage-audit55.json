@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "checkpoint": "motion55",
+  "baseline": "a52cf5b15e912ad498f8b7a6fc68a006cf96f69f",
+  "addedMappings": [
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "0d604bddf2edbffccefa89646d689a06be060c1d7ce3afc09645dc42cfd02fd5",
+      "sha256": "abfc991246e1674211000a40dc94440c6f3cb239fa59300ccb43a7c63aa18e36"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "beforeSha256": "bae81904704c3d645275ee3394ba30a1fbd82f615586caf51436d5e6002bea11",
+      "sha256": "b5cd85fd869223b3b0b15166ec4011f2397c722660c3c8c64f6f51acfe50e930"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+      "beforeSha256": "0da28f0eea3619768d33c0e0b96393bbd052665a0ee10dcea9c0d870911dea57",
+      "sha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "d1fb69766f9490c0b265b86eb38b9f75fcd33aadc9d501a6f255d3aab6ef76fe",
+      "sha256": "589fb889fdb94652e9ee06088cdc51109b5324c9037093ce0d1da1282461a94c"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "dbf0d879a749e949e75c707e24ea70e4ba6da28620af918d268436d67f541d64",
+      "sha256": "e56108d982c34f600010f5313b3d0a1b1108ecbc91e3b9ddfea710574a50516a"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "5608dc33217285aa8b08d93452aa07fd2cddc4af4c224a7bed2d9c20cc477747",
+      "sha256": "9328004503c0dd7d705657998a190e4de5a84afc83a0514d3bbf633d7c524d6d"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "4433bd976795bcca60b13b7e78ccfff18bedba28994cc2fe84072b8b67d9e991",
+      "sha256": "dc0c3f35f7f0da35167273d2d463a361de12ffcb782767b2a2f71cfeb38c375a"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "a7c06ffe7e9789078c9f729dd6580fb9e941df8409f7e1c712104266dd5ed997",
+      "sha256": "51fae07259aca4e45bd5dd22c833b768c0fac9a6bf3862c64c39b9bb2f85f998"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "cd5d8ae359b60cdbd2ffe7ec5d6da40d1127b7f7a7cb7f1c14cc3d8aa9a3d5ea",
+      "sha256": "68eff28c00de0e8b1fca18d4fe09aba90aa2eeda1bf41d19ab3d480da1957c7f"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "278c82590db566c7467cac653b50c57a84ee912a8230330f78aa77b73e91a0f8",
+      "sha256": "4c93d6447156c7ff5c7547f6e81b6c36b0899323035f5226a1a16235b6a6667b"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "5e794f1984ddece35247b35da38b647f67fac6dc4ab600356307097514d1b8b1",
+      "sha256": "c5693a275b5c64d90cb813134f9eea04f55f7caf651fbbaa33150afafb4b2e33"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "c10ce444dc889b5f71e14081b8a27e947097b5531f95f8f856588c99840fcc8a",
+      "sha256": "80a4ba8551533f0a00c0209118ed11dff23112a1bdc6f0a49bd80dc2aee63fca"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "beforeSha256": "eef937045c850f85b0aee4d2565d63f6bb2f197d0c6685252acb684db40d3ccf",
+      "sha256": "e3e0c67ff3eaa686b76417a0bbd50e34c07252837ff6125ce08e391a188900b2"
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "beforeSha256": "f1cc0a56fc82be4310b0a70b967bfcb2027acc28bb3d1cbc6d93b42d7289345f",
+      "sha256": "7441653bef3dfa0c4e5b463ce415daf98df2a7613118b842883361e4cddb31fe"
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "beforeSha256": "e584963b01902d6f2903f1b259af7794e9c2f484bd66c1b3c197acfa74e68728",
+      "sha256": "42dd8db9f23f6c25f7a97613df5f4ec401c38a8ed675457c50fd9b159c74fc79"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+      "beforeSha256": "9361799a68de1a7cffac7a8f2bfa4a23ab3be999fd0ef51b6629a61bb8cbc8df",
+      "sha256": "1a73ed756468e3cb7c4fc9fe31601ba8ad99e5e4fbaf2723ab6940943e34836c"
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
+      "beforeSha256": "9485257a4f9424ad17d381d9fa9d640a312185a6b9883f48bd59297d901816d0",
+      "sha256": "b775ea5bf99db78ce2809f2f39a9389278bb5a8be542ec93cc7206189bc5e2db"
+    }
+  ],
+  "revalidatedEarlierApprovals": [
+    "public/sprites/Elder/motion/eat-stew/reference/loop-approval.json",
+    "public/sprites/Elder/motion/eat-bread/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-seated/reference/loop-approval.json",
+    "public/sprites/Elder/motion/laugh-and-gesture/reference/loop-approval.json",
+    "public/sprites/Elder/motion/inspect-pickaxe-in-lap/reference/task-approval.json",
+    "public/sprites/Elder/motion/examine-pickaxe-crack/reference/task-approval.json",
+    "public/sprites/Cook/motion/chop-vegetables/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/loop-approval.json",
+    "public/sprites/Laborer/motion/stack-crates/actor/task-approval.json",
+    "public/sprites/Borrin/motion/desk-writing/actor/loop-approval.json",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+    "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+    "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+    "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+    "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+    "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+    "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json"
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion55/runtime-revalidation55.json",
+    "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+  },
+  "scope": "One finite cosmetic raised-hammer activation at existing anvil. Frozen160 unchanged:50 main+7 original accepted,13 derived actors outside denominator.24 live/41 inactive references.103 individual cycles and11 family gates remain open."
+}

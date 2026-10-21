@@ -1,0 +1,32 @@
+{
+  "folder": "public/sprites/Elder/motion/walk/back",
+  "sourceSha256": "322057bbd54a03c0d99b5a15a3b1cd7f2f0b83eba2d937ce70fd10458467ffae",
+  "regions": {
+    "cane": [
+      450,
+      450,
+      610,
+      640
+    ],
+    "leftBoot": [
+      190,
+      475,
+      310,
+      640
+    ],
+    "rightBoot": [
+      340,
+      475,
+      440,
+      640
+    ]
+  },
+  "cameraElevationRadians": 0.6,
+  "strideBodyRatio": 1.2,
+  "assumptions": "Motion36 local contacts/passing0,1,4,5 adopted with constant physical body scale/root. Rear straight travel still uses estimated runtime ratio1.2. Cane support0-2; recovery4-7 is airborne. Silhouette proxies diagnose conflicts; material sole/tip correspondence, full stride and terrain contact remain unapproved.",
+  "caneSupportFrames": [
+    0,
+    1,
+    2
+  ]
+}

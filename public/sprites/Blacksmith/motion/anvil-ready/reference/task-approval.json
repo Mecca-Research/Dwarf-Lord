@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
+    "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+    "frameSha256": [
+      "ea2c2863a83c8607888fd56f4c67868b82295d3d39bcbcd661ef07d423bdddcd",
+      "7e74db2d3333ac814bfdef9a2c263fc893f32895fc500399eda5cc53b84e9b34",
+      "2f6ac23b8c5aa766d6913f903f7478390254b80ed06b9a014d7932dc214db902",
+      "9d323c9695d4bc7abcb484303da889f044afa454c0833d8e76929aeceef76f0b",
+      "5deb6d0ae02e1dc068fd0467f751831d0db80662e6278f32b7e050931beebf4d",
+      "c7937a98f351924d5abd9864fad5fa5d50a84cc1487ea06063ac876fa380ae0f",
+      "411f51c1546cf81e1ac41e9a2b7cb26163bd029c70289ca29bc0a32aac37344f",
+      "e1a799da69eee1d72e273eeb6ff003bdef9539a538675fb09f7d8ad5e06c8335"
+    ],
+    "atlasSha256": "c8cb82a3cdc99109340c4e76b10eb8a870b9cb6c91ce0c170549a86d2e4e7f8c",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          250,
+          440,
+          475,
+          600
+        ],
+        "minimumCorrelation": 0.94,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -2.009933552926668e-09,
+              4.3026837648341143e-10
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95637,
+            "measuredCorrectionPx": [
+              -6.68612813949585,
+              -0.020204156637191772
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97659,
+            "measuredCorrectionPx": [
+              -5.304349899291992,
+              0.007966841571033001
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9558,
+            "measuredCorrectionPx": [
+              -6.404788970947266,
+              0.12619513273239136
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95823,
+            "measuredCorrectionPx": [
+              -7.121712684631348,
+              -1.1039435863494873
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.94481,
+            "measuredCorrectionPx": [
+              -6.667656421661377,
+              -1.1404231786727905
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96042,
+            "measuredCorrectionPx": [
+              -5.3807373046875,
+              -1.0727574825286865
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95318,
+            "measuredCorrectionPx": [
+              -0.7841695547103882,
+              -1.063035249710083
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      140,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "anvil-ready",
+    "direction": "reference"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Motion39 Blacksmith anvil-ready: exact eight combined-reference poses and finite held task. No translating gait, cross-direction, independent furniture, standing scale, economy or live activation approval.",
+  "checks": {
+    "identity-and-scale": "All eight native poses retain the bald stocky smith, dark double brass-bound braids, cream rolled sleeves, leather apron, olive trousers and capped boots. Existing sequence scale is retained; this review excludes walking and standing-height calibration.",
+    "station-and-foot-contact": "Fixed combined anvil/stump native region reviewed0-7. Fresh bounded12px registration gives0.397px maximum residual; visible stationary boot and torso support stay in the local ready stance. Furniture is painted in this reference; independent anvil ownership remains the separate actor review.",
+    "hand-and-tool-contact": "Right hand retains one hammer through low0, hip1/2, contact-height3/4, raised5/6 and newly authored descending shoulder/chest recovery7. Left fingers retain the tongs and the same billet. No unexplained pickup, hand switch or disconnected head.",
+    "prop-continuity": "Same anvil/stump, iron ring, tongs and hot orange billet in every pose. Frame7 retains the hammer while recovering from6 instead of jumping to the hanging pose. Material consumption or a repeat reset is not part of this finite preparation task.",
+    "completion-and-reset": "Controlled gallery playback must expose all authored holds0-7, finish once at7, retain the final pose for sustained time and restart only on explicit task reset. No seamless7-to0 approval, economic output, standing-body placement or live activation is implied."
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "172b8c2d2127e02c6aa468e810b3b4e2c392e7d7dfce6bc182115ad1e0499ebd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-anvil-ready-review.json",
+      "sha256": "cd44d397ca06b5d2cc72dbe1c17d4e0044d1be98a0591d9f114bd2b57a04e21d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-anvil-ready-playback.json",
+      "sha256": "3c178cb4cb3a2bf992240b6ec5c9d07f6a64ed27535041ccf502ec83b0a1085e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-registration-followup.json",
+      "sha256": "cd6034aa8fb31fe3a94cba33e6cf88d63e048bc2995df6b71d3d9b92d22e6748"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-anvil-ready-live-0.png",
+      "sha256": "8c6b0a46b9382208a1f26b306e0fede3c126e0f8085be7b5006e8ed3634c6b65"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-anvil-ready-live-4.png",
+      "sha256": "07bb309287bd9f3c035322ec82735c76b14c4452b4f7d05d6743ef21c3535798"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/Blacksmith-anvil-ready-live-7.png",
+      "sha256": "6b8528ecb2bfa9fc8b6ceb18f1c5ded564f3b3b86ea97e73f72e1d9180cb05fe"
+    }
+  ]
+}

@@ -1,23 +1,15 @@
 import { StrictMode, startTransition } from "react";
-import { hydrateRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import { StartClient } from "@tanstack/react-start/client";
 
-/**
- * GitHub Pages serves a static shell, so hydration will mismatch and recover.
- * Swallow those recoverable errors so the title screen still mounts.
+/** Static Pages output has no rendered app to hydrate. Server-rendered pages
+ * retain hydration; real recovery errors must remain visible in that mode.
  */
 startTransition(() => {
-  hydrateRoot(
-    document,
-    <StrictMode>
-      <StartClient />
-    </StrictMode>,
-    {
-      onRecoverableError: (error) => {
-        const msg = error instanceof Error ? error.message : String(error);
-        if (/hydrat/i.test(msg)) return;
-        console.error(error);
-      },
-    },
-  );
+  const app = <StrictMode><StartClient /></StrictMode>;
+  if (document.documentElement.dataset.clientShell === "true") {
+    createRoot(document).render(app);
+  } else {
+    hydrateRoot(document, app, { onRecoverableError: error => console.error(error) });
+  }
 });

@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "folder": "work/expanded-cycles/motion57/candidate5/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "869588631e5cb02fb58bf84310f8d3b8b50bb28955bf439937e5a29440982b90",
+    "settingsSha256": "050212dac4e4d953bfb4db0cdd6d5829ef51199473c990521307c0558ee691b0",
+    "frameSha256": [
+      "4922438287bdd6d9a8b631a1149a76c5c89903ffb344dd541504ef2ba2ecd9d3",
+      "1fc1c9a833121f0a4b49d2df5ed2b6188986bd553cd1aa85e648a75864ad9d0d",
+      "0ac642cd7c43971a26ef08895efa1e8ac6dced5139dbd6a6b6b72f4683cf0009",
+      "f9d111b3a220b793d7ae1f3060bd25ff5b9679c6c183edc873bd4fe329705e02",
+      "f8d14e4da77cf76c14780b68ee727380bb4328fc81c4d160c83957cde7184652",
+      "b948af2b1f9ae95f029d06c792ebe6238c76f94c83b4c9f9fd5d501f3303ec2d",
+      "3b189b02fcba20646b1f2844bbd7dd6cbcff7af0a0c6143d43826923234c467c",
+      "aa0af4e926b047add5233aba83b8b6753ad1b946631cf4c745011b2029ec8e3b"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "050212dac4e4d953bfb4db0cdd6d5829ef51199473c990521307c0558ee691b0",
+    "atlasSha256": "013196a2b04510b6cc5c630ff52f752221f6643d89b4fd2b55160251a5231f93",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "050212dac4e4d953bfb4db0cdd6d5829ef51199473c990521307c0558ee691b0",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -0.707107,
+    -0.399263
+  ],
+  "normal": [
+    0.49167812720058335,
+    -0.8707770203861187
+  ],
+  "wholePoseComponentLimitPx": 12,
+  "contactLimitPx": 6,
+  "boundaries": [
+    {
+      "from": 0,
+      "to": 1,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 25.96252201350611,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 12.363171222889239,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 11.924358626235174,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 41.46640744941057,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 8.76748390732972,
+      "requiresSourceOrMaterialCorrection": true
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 2.7731196592358103,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 17.130668236223748,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 12.42288492635777,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 17.149020748551887,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    }
+  ],
+  "closedCycle": {
+    "netContactDeltaPx": [
+      -300,
+      -173
+    ],
+    "minimumPossibleMaxResidualPx": 0.3926232958279421,
+    "translationScope": "Even unlimited whole-pose translations cancel at the closed return.",
+    "requiresSourceOrMaterialCorrection": false
+  },
+  "materialCorrespondenceReviewed": false,
+  "numericallyExcludedByNecessaryBounds": true,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Necessary geometry bounds on current source-bound material observations only. Unreviewed points remain hypotheses. Passing these bounds is insufficient for contact, anatomy, arm, held-frame, cane, renderer, cross-direction or loop acceptance."
+}

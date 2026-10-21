@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "sourceSha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      -3,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      -3,
+      -2
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -6,
+      -2
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions.",
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      310,
+      480,
+      580,
+      610
+    ],
+    "minimumCorrelation": 0.93,
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "measuredCorrectionPx": [
+          -2.0699311154004363e-09,
+          1.2891643308421408e-09
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97044,
+        "measuredCorrectionPx": [
+          1.0340121984481812,
+          0.0165398046374321
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97031,
+        "measuredCorrectionPx": [
+          -3.411461353302002,
+          -0.1699560433626175
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.95698,
+        "measuredCorrectionPx": [
+          -5.82098913192749,
+          -0.10468818992376328
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9644,
+        "measuredCorrectionPx": [
+          -3.1298458576202393,
+          -1.7418208122253418
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.95036,
+        "measuredCorrectionPx": [
+          -1.8983503580093384,
+          -1.200094223022461
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.94348,
+        "measuredCorrectionPx": [
+          -5.617467403411865,
+          -1.832826852798462
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.9557,
+        "measuredCorrectionPx": [
+          1.0493743419647217,
+          -0.7039577960968018
+        ],
+        "accepted": true
+      }
+    ]
+  }
+}

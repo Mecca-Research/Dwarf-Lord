@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "inputs": [
+    {
+      "id": "compact47",
+      "file": "authoring-inputs/strip-compact47.png",
+      "sha256": "f5a77643551e123b4373f6b365e23279472fab92e1294a7532f56747b6179f76",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          457
+        ],
+        [
+          444,
+          0,
+          887,
+          456
+        ],
+        [
+          887,
+          0,
+          1330,
+          456
+        ],
+        [
+          1330,
+          0,
+          1774,
+          447
+        ],
+        [
+          0,
+          457,
+          444,
+          887
+        ],
+        [
+          444,
+          456,
+          887,
+          887
+        ],
+        [
+          887,
+          456,
+          1330,
+          887
+        ],
+        [
+          1330,
+          447,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        233.0,
+        677.0,
+        1101.0,
+        1562.0,
+        242.0,
+        674.0,
+        1101.0,
+        1579.0
+      ],
+      "rootYs": [
+        450.5,
+        450.5,
+        450.5,
+        450.5,
+        867.0,
+        867.0,
+        867.0,
+        867.0
+      ],
+      "bodyHeights": [
+        406.5,
+        406.5,
+        406.5,
+        406.5,
+        406.5,
+        406.5,
+        406.5,
+        406.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "compact47",
+      "pose": 0
+    },
+    {
+      "input": "compact47",
+      "pose": 1
+    },
+    {
+      "input": "compact47",
+      "pose": 2
+    },
+    {
+      "input": "compact47",
+      "pose": 3
+    },
+    {
+      "input": "compact47",
+      "pose": 4
+    },
+    {
+      "input": "compact47",
+      "pose": 5
+    },
+    {
+      "input": "compact47",
+      "pose": 6
+    },
+    {
+      "input": "compact47",
+      "pose": 7
+    }
+  ],
+  "review": "One common whole-strip physical height and row floor; torso-center source registration is an explicit estimate, not foot-contact proof. Authoring guide targets are not observations."
+}

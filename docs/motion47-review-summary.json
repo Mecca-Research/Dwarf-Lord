@@ -1,0 +1,75 @@
+{
+  "checkpoint": "motion47",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 19,
+    "referenceActionsWithoutMapping": 46
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 46
+    }
+  ],
+  "completed": {
+    "character": "Blacksmith",
+    "action": "walk",
+    "direction": "left",
+    "authoredFrames": 8,
+    "acceptance": "fixed-view flat-ground loop",
+    "physicalBodyTarget": 520,
+    "sourceAuthoringSteps": 7,
+    "analyticalMaxSoleHandoffPx": 1.048,
+    "renderedStrides": 3,
+    "renderedBoundaryCount": 24,
+    "heldMaterialSamples": 229,
+    "renderedMaxBoundaryPx": 5.7784559147810235,
+    "renderedMaxHeldDriftPx": 0.3144864233233179,
+    "strideBodyRatio": 1.267308,
+    "loopApproved": true,
+    "familyApproved": false,
+    "runtimeMappingsAdded": 0
+  },
+  "validation": {
+    "nodeTests": 210,
+    "pythonTests": 78,
+    "typecheck": true,
+    "pagesBuild": true,
+    "mainGallerySequences": 153,
+    "mainGalleryFrames": 1224,
+    "headedStartupAndMovement": true,
+    "skillClientErrors": 0,
+    "priorAcceptedFrozenCyclesUnchanged": 56,
+    "priorDerivedActorsUnchanged": 8,
+    "gameRuntimeUnchanged": true,
+    "activeReferenceMappings": 19,
+    "approvedStationVariants": 15,
+    "physicalActiveProps": 10
+  },
+  "note": "One individual walk closes against native material, all eight original-bound handoffs and actual shipped rendering.103 frozen reviews remain:62walk/24directional/17fixed;all11 families and46 inactive references remain open. Left/right physical stride and anatomical-phase agreement at turns remain family gates; no threshold or frozen denominator changes."
+}

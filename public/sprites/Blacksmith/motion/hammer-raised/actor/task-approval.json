@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+    "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+    "frameSha256": [
+      "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c",
+      "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958",
+      "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37",
+      "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8",
+      "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211",
+      "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d",
+      "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d",
+      "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+    ],
+    "atlasSha256": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        280,
+        592
+      ],
+      "targetBodyHeight": 496,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      100,
+      80,
+      60,
+      90,
+      100,
+      150,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-raised",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Finite stationary original-pixel Blacksmith raised-hammer edge tap over the unchanged independent anvil, visible near-boot/billet support and real steel-face/edge adjacency reviewed. Hidden sole, traveling stride, centered striking face, forces, economic result, direction continuity and repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Original bald Blacksmith, short split dark beard with two brass bands, cream sleeves, leather apron and stocky body. Literal original opaque0-7 source pixels, single496/[280,592] opaque crown/near-boot basis and integer whole-pose[0,-12] registration. No local painting, warped limb, per-pose scale, mirror, duplicate pose or synthetic in-between. Far leg remains occluded and unobserved.",
+    "station-and-foot-contact": "Visible stationary near-boot material minimum correlation0.979021, maximum travel2.448547px and adjacent1.715515px pass unchanged.94/6/6 limits. Actual opaque body markers and four actual opaque steel-face corners are separately checked. This is not hidden anatomical sole, traveling foot or direction-family approval.",
+    "hand-and-tool-contact": "One hammer stays in the same working hand through overhead readiness, controlled lowering, a visible edge tap at4, rebound and overhead held finish. Tongs stay in the opposite hand around the same orange billet. All8 actually opaque lower orange points sit inside the independent projected steel face at0px outside. Visible gray lower/front hammer corner and orange left-edge material at4 are3.162278px apart, below6px. This is edge adjacency; hidden centered striking-face/underside, joint forces and volumetric collision are excluded.",
+    "prop-continuity": "Actor owns original body, visible near boot, hammer, hands, tongs and billet. The unchanged independent anvil/stump remains at the existing world site and520/[320,616] physical basis. Original painted anvil is excluded, narrow source-pixel foreground tools stay in front of fixed steel, and the hardy hole/background is excluded from actor ownership. No duplicate anvil, completed forging state, material transfer or reward claim.",
+    "completion-and-reset": "Six actual forge days show every authored-duration raised-hammer frame, one completion at7 and an unchanged5-second finish. Ordinary camera rotation preserves held task state. Cancel releases actor; anvil persists after departure. Explicit return resets0; day resolution releases motion and day6 restores first forging operation. This derived actor is one finite edge-tap sequence; overhead7-to0 seamless repeat is not approved."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-0.png",
+      "sha256": "c3cfdfdcc0a4c413f9eeb1fa16aeb7e584d04a09945783cf6f27cb8e7116fa3f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-5.png",
+      "sha256": "32bd9050d13f3f5e5831ba03e7a61019e64c8c6b936536f1e702699047080eeb"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/visible-tap-edge55.json",
+      "sha256": "4337e7acab3acd959898c4976cfce9d096d8c58147a27868154ae91dd96ab4af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-5.png",
+      "sha256": "c30a153b5f3e5af7d23208857b6df061a099c43b1105ba848642b20721ec51bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-7.png",
+      "sha256": "dc9267f3662293bafff33991ad29a55202622ee35470a2369fcb5193b458599a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-rotated.png",
+      "sha256": "305dffae8c496f5d5ee39958d2861d3bd151c1d6b84ba07423b61f564f25e090"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-4.png",
+      "sha256": "c3d3334a831e2747964f71119f22f57f1df8fb27413d13f67fb69e988be125f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-3.png",
+      "sha256": "3bf9ba2677289c8a27da498c0f487135b277ab19e95f6b2300297fe7b79d8d36"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layered-native55.jpg",
+      "sha256": "8435eadcc79ce809cdb91fa75d6c3321a2d3accaf791c84940d8a43ce8eae191"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-4.png",
+      "sha256": "06620f42efdcd7f95b2f32c9e4f71fad8208e7722d9b03a144e77bc57468bb78"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-2.png",
+      "sha256": "9c1cde50f5b067cfb3b4881916348b97c7d39bac476fcbccab2570436428fa31"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-1.png",
+      "sha256": "9b490bf3584a5fb96bdf5d8efdc87c6b494af647c929ba0e7c516ca391904a2a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-departed.png",
+      "sha256": "e40931b4fc6272f992387b7708c429f166cd6eabc11750e01343d9068a5116b2"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/visual-review55.json",
+      "sha256": "eeb55a12a35bfa6423486c76cb36fceb73663030e289ff78478c9b30f220cb37"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/actor-review55.json",
+      "sha256": "6e452269df016d6d0635a37373f78929f016db8fb32888c98d4f6acc3586effb"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-2.png",
+      "sha256": "e6f20c48cd654ff3b28965ab4a01bf59c65bc6d2049e5c261af759b7ea096f5e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/billet-real-surface-contact55.json",
+      "sha256": "87a558bcab06c8383ed19ce1c7c72c009a017acfc1c4436ea3632ce349b85666"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/source-body-basis55.json",
+      "sha256": "3f8a1cfdb2fecbad1b87052a471835b2bf94abf160e5b7e5b2c50c5ec1de4562"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/native-hand-billet-contact55.jpg",
+      "sha256": "c14b4d51bc689ad8a1df751c72302dba3abd80de1e63c5642bb8d91f1f3b2731"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/layer-6.png",
+      "sha256": "0c42d1fc0fdb838480964597715bb5b2d5eeabaae2a8625ae90aa69e4b9b1a24"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-6.png",
+      "sha256": "d6f69c532238eef9fa45123bcc7f1617d932879d7c75f9aee63a45289b00b06f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/registered-prop55.png",
+      "sha256": "f13bf6a8616273b9ef96734bde641f9ab4d2df8872885237a10c9743f8882834"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/stationary-boots55.json",
+      "sha256": "07741b764e8ac938aeee1c3b7c56395e0b2814e510423e93a4625567bcf16262"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-0.png",
+      "sha256": "1dd0c8a24c3e00714bae66816b8a1630e11828512d835992cd382789bb302fdd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-7.png",
+      "sha256": "040effa7a4a7feac7a3b7884de6e2241370360018ec56a8921b72ceb98b1dd2c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-eight-diagnostic55.jpg",
+      "sha256": "14d09ae44b6c035e1915b3c9f6931432b377b4118407d2696242f6c9d4254f69"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/source-pixel-identity55.json",
+      "sha256": "50b0784835da8a125ce735bcf79346e9465dab260ca30dac51ff7a05784a38b0"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-3.png",
+      "sha256": "d678f0ae0a71ef35c24b80ec3c9c52e1ce0ad1ad11dde632304c02e999167862"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/blacksmith-raised/game-1.png",
+      "sha256": "6a5686422930c6deead0a4fa995e2202f810e4780a63e7a72a1eb22488277eb9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "9ef7560ee8de5ec25c06e6ee2b506ac5e618ef9b9a385b9a7734a86080a8bbe5"
+    },
+    {
+      "file": "generation.json",
+      "sha256": "c519a9c3fff0e3e83ffc091bba9a5e372a981ed26958675de0b0f74d244663d2"
+    },
+    {
+      "file": "motion-polish.json",
+      "sha256": "36a50a1693101c127191362b5ae8c10ed28ad9bf1850d124d68c5ce0366305dc"
+    },
+    {
+      "file": "../../../../workstations/anvil/source.png",
+      "sha256": "0e92b63e4e42dbd3c26e644e84ed25ea530c278c70b11299e7b0d9e30dc375bd"
+    },
+    {
+      "file": "../../../../workstations/anvil/sprite.png",
+      "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+    },
+    {
+      "file": "../../../../workstations/anvil/work-review.jpg",
+      "sha256": "214421fbc6a710ef6f9be5b3279b80f73d54d16d68dc2ff7a5f0a21244cf4c3e"
+    },
+    {
+      "file": "../../../../workstations/anvil/work-preview.png",
+      "sha256": "a9d4d303c7a13e76f3504ebc5ccd5c4bfdcf2b170bd575f881bb49ee2840ea16"
+    },
+    {
+      "file": "../../../../workstations/anvil/generation.json",
+      "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+    },
+    {
+      "file": "../../../../../../src/game/store.ts",
+      "sha256": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
+    },
+    {
+      "file": "../../../../../../src/game/world/scene.tsx",
+      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+    },
+    {
+      "file": "../../../../../../src/game/world/sprites.tsx",
+      "sha256": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-completion.ts",
+      "sha256": "716283d346f669bc85e4e6a20f8c577f15ce006b858f0148b3d9c2b0cce087ca"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/smith-work-check.mjs",
+      "sha256": "84faa57ad565360f2d85da8761a1ecf971295ef27c3d34788b37e7aeba8cb30e"
+    },
+    {
+      "file": "../../../../../../scripts/workstation-review-check.mjs",
+      "sha256": "e8d67159e79242ff4bc0ccf23b33ae549f28b00cdbaeb6994e7c8676e2438c7f"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+    },
+    {
+      "file": "../reference/00.png",
+      "sha256": "6c830aba25ed2bb4b1bac664be3f2098d061e7d301424816052a6c250e47b935"
+    },
+    {
+      "file": "../reference/01.png",
+      "sha256": "620d4a96c90f880f24d25bf5578d6071621e961ab583ee13ee7a2e04e5f69b46"
+    },
+    {
+      "file": "../reference/02.png",
+      "sha256": "d1ae1d044e420141c75cda825cd9228d8b90265cadf8283b3526c4f5c0e96866"
+    },
+    {
+      "file": "../reference/03.png",
+      "sha256": "3da2a90fe4f80360a43898ea864eb1139b4d65c26d53ca43a86c8f25a61d2510"
+    },
+    {
+      "file": "../reference/04.png",
+      "sha256": "3c2ed705bdcfb6ba8210d50352e30d59d8ab937703299e98460ec03f43d6c10d"
+    },
+    {
+      "file": "../reference/05.png",
+      "sha256": "d37b31821874535d4cc95228293759559562b84649283339ebce196b5fad34b4"
+    },
+    {
+      "file": "../reference/06.png",
+      "sha256": "e56876acbe462350cd1e180faed697ae95dd31fbf1e012ac662b960a46142eab"
+    },
+    {
+      "file": "../reference/07.png",
+      "sha256": "b385fa61f3c2e8f8790b31a70b03515d1f39c65e198b6a2bff0de1d3e8003c0f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/raised-actual-steel-recheck56.json",
+      "sha256": "2c53002d11a609374f3a10977ba0f7dc5a4f6e18a922701c395f707cba973bfd"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    }
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion58",
+    "files": [
+      "src/game/world/work-activities.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+    "scope": "Earlier selected art/timing and action calibration entries exact. Six actual consultant days and22 variants verify additive standing explanation/one local crate clearance only. Other gameplay/native observation dates and limited scopes retained. Source-pixel test addition replays all prior actors without changing helper semantics."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "checkpoint": "motion39",
+  "method": "Current runtime annotation and exact deterministic diagnostic regeneration after additive forge dispatch. Existing walking implementation is unchanged apart from importing forge selection; selected gait pixels, material points, durations, body ratios and diagnostic thresholds are unchanged. No new walking/foot/cane approval.",
+  "files": [
+    {
+      "file": "docs/laborer-back-left-whole-stride-observations.json",
+      "sha256": "b75a542c58b7c285284a9e3d10acd4ee7c0cc1c7997533134a69d4795f741a54"
+    },
+    {
+      "file": "docs/laborer-back-left-whole-stride-measurement.json",
+      "sha256": "44a651ef3fec8561dfb0108519ed18fcdc284863071ebe1a0d9850681f6646eb"
+    },
+    {
+      "file": "docs/laborer-back-left-whole-stride-candidate.json",
+      "sha256": "94476ea326cd4376ae1f6464b98e02ad295e476385ec3d4eea60f4ece17fb0f1"
+    },
+    {
+      "file": "docs/blacksmith-right-held-stance-measurement.json",
+      "sha256": "b2b902968b61772e6db875339076fcde3f57c38815016c146121817ec9c95e56"
+    },
+    {
+      "file": "docs/elder-back-contact-measurement.json",
+      "sha256": "ba16c5085c01324f847ef08d93a1e649654b04c1c5842938f1a8c9d4bab28279"
+    },
+    {
+      "file": "docs/elder-back-joint-contact-measurement.json",
+      "sha256": "00dbb23dbb3c30027864238279d0773c2f01602c2e2daff84ae0333be52d30a9"
+    },
+    {
+      "file": "docs/blacksmith-right-whole-stride-candidate.json",
+      "sha256": "9100bb8f60e6b27b47532aa41209e1b400537fd1359d643b84fae2333c3df937"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json",
+      "sha256": "1c36d63939615bddd2940e84f13449722dd5cd8cf235c7e9f10f9b37fb2bfebb"
+    }
+  ],
+  "Laborer": {
+    "maxContactJumpPx": 63.079,
+    "approved": false
+  },
+  "Elder": {
+    "maxCanePlantDriftPx": 18.057,
+    "maxJointRootDisagreementPx": 14.009,
+    "approved": false
+  },
+  "BlacksmithRight": {
+    "maxAnalyticalContactJumpPx": 1.032,
+    "scope": "Earlier isolated scoped loop is revalidated by fresh rendered stride evidence; diagnostic itself grants no final approval."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "sourceSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -5.5,
+      2
+    ],
+    [
+      -7,
+      1
+    ]
+  ],
+  "note": "Fixed prop translation only. Does not approve painted geometry, anatomy, tool grip or loop transitions.",
+  "playbackMode": "once-hold",
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      455,
+      300,
+      565,
+      450
+    ],
+    "minimumCorrelation": 0.93,
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "measuredCorrectionPx": [
+          1.2094574231014121e-07,
+          1.305019168285071e-07
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97887,
+        "measuredCorrectionPx": [
+          0.6262201070785522,
+          0.806508481502533
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.98244,
+        "measuredCorrectionPx": [
+          4.1163010597229,
+          -0.16499736905097961
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97863,
+        "measuredCorrectionPx": [
+          -0.08229683339595795,
+          0.7461755275726318
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.95181,
+        "measuredCorrectionPx": [
+          -2.2482500076293945,
+          0.4247056245803833
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97609,
+        "measuredCorrectionPx": [
+          -2.5466785430908203,
+          0.5987875461578369
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97393,
+        "measuredCorrectionPx": [
+          -4.911051273345947,
+          1.9722003936767578
+        ],
+        "accepted": true
+      },
+      {
+        "correlation": 0.97253,
+        "measuredCorrectionPx": [
+          -7.420382022857666,
+          0.6179739832878113
+        ],
+        "accepted": true
+      }
+    ],
+    "integerPlacementRefinement": {
+      "method": "Bounded whole-pose placement after raster rounding; fractional offset selects the nearest integer exported placement. Original region and limits unchanged.",
+      "measurements": [
+        {
+          "frame": 6,
+          "beforeResidualPx": 0.8242011666297913,
+          "wholePoseTranslationPx": [
+            -1,
+            0
+          ],
+          "predictedResidualPx": 0.20578882098197937,
+          "correlation": 0.9734417012421632,
+          "exportOffsetRoundingCorrectionPx": 0.5
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "sourceSha256": "a62bf53c07689e717a87bc411b65215ef92863e63fb65547935e94ea9d1fc978",
+  "spriteSha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+  "prompt": "Reference image: Cook dwarf's wooden cutting workstation in this sprite sheet. Generate ONE isolated empty workstation, no dwarf or body parts. Reproduce the exact thick scarred rectangular wooden butcher table/cutting block: same perspective looking slightly down at front and right, heavy warm brown end-grain top, four stout square legs, dark iron reinforcement bands and visible pegs. Same bowl of sliced carrots on tabletop left, carrots and sliced pieces in center-right, small onion and garlic and leafy greens on far right. Table width/depth/proportions and semi-realistic textures must match reference. Show entire table and all four complete legs in one centered image, with generous transparent margin. No person, no hands, no knife, no floor, no cast shadow, no text. Genuine transparent alpha background. This is a separately rendered persistent game workstation prop.",
+  "reference": "../../Cook/motion/chop-vegetables/reference/source-sheet.png",
+  "referenceSha256": "d9fb3654e0fd4c916be0116bdc1798cdf5e68bfaf44812a38121561a3c40ef09",
+  "placement": {
+    "crop": "alpha >=128 bounds",
+    "width": 432,
+    "x": 128,
+    "y": 293,
+    "canvas": [
+      640,
+      640
+    ],
+    "alphaThreshold": 128
+  },
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "placementReview": "Replaces faint-alpha fringe bounds with solid silhouette bounds, preserving apparent station position and scale within one atlas pixel; prevents clipping of the old crop rectangle."
+}

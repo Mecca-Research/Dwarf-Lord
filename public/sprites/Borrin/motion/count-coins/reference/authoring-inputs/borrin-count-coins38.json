@@ -1,0 +1,13 @@
+{
+  "checkpoint": "motion38",
+  "input": "authoring-inputs/borrin-count-coins38.png",
+  "sha256": "ac95f6c0d3fed6a117ac1d91dd050ee0cd229b64eb83e30cfecb1b0013fc8adf",
+  "references": [
+    {
+      "file": "authoring-inputs/borrin-count-coins38-reference-0.png",
+      "sha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Edit target: this eight-pose 4-column by 2-row transparent game animation sheet of Borrin seated at an administrative desk counting coins. Preserve the exact elderly stocky dwarf, bronze spectacles, receding swept-back grey hair, two short brass-bound grey beard braids, cream sleeves, navy waistcoat, burgundy scarf, chair, desk perspective, boots, open ledger, ink pot/quill, money bag, silver coin stacks and eight ordered poses. Correct the ownership of ONE COPPER coin through the right-hand counting motion, frames numbered left-to-right, top then bottom. Frame0: his right thumb/index touch the upper copper coin of the leftmost stack. Frame1: fingers pinch and lift that coin just off the stack. Frame2: the same clearly copper-colored coin is raised for inspection in the fingertips, leftmost stack now missing its top coin. Frame3: same coin and hand travel rightwards toward an EMPTY small spot beside the silver stacks and immediately left of the open ledger. Frame4: right fingers put the copper coin FLAT on that desk spot. Frame5: right hand lifts away EMPTY; that placed copper coin stays clearly visible lying flat on the desk spot. Frame6: EMPTY right hand returns toward the original copper stack, while placed coin remains on the desk spot. Frame7: EMPTY right hand hovers above original stack, ready for a different coin; placed coin remains on the desk spot. Never give the returning hand a coin; never delete the placed coin; never add a duplicate of the carried coin during transit. Preserve all other coin positions and sizes. This is a finite one-coin counting action ending with the deposited coin retained, not a repeating reset. Clean transparent RGBA without colored edge fringe, no background, no text, eight separated complete scene cutouts. Detailed semi-realistic painted/3D fantasy game standard of the input. Do not alter his identity or invent props.",
+  "decision": "rejected: bottom-row frame5 and7 still retain a duplicate copper coin in returning fingertips; desk deposit retained but ownership not yet valid."
+}

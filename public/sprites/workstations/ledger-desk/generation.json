@@ -1,0 +1,48 @@
+{
+  "sourceSha256": "cf3e452ffaf431d1522244716e86ad740bed9171e953c258e7804f54760659ae",
+  "prompt": "Create ONE independent workstation sprite of the EXACT wooden administrative desk from this Borrin reference. Keep its same three-quarter overhead camera, dark weathered wood, two drawers with brass rings, four chunky legs and stretchers. Keep the same OPEN ledger on the top center with two pale pages and red ribbon; black brass-rimmed inkwell at top left, small brass coin, two stacked closed leather books at top right. Remove dwarf, head, hands, quill, boots and chair entirely, transparently reconstruct all visible desk parts behind removed dwarf. Entire desk centered, margins around all legs and tabletop. Genuine transparent background, detailed semi-realistic rendered game prop consistent with reference. Single desk only, no scene or labels. Ledger lies flat and remains open.",
+  "reference": "../../Borrin/motion/desk-writing/reference/00.png",
+  "referenceSha256": "a08c1a87bda79b036feb395ec42c4c4c95fd77e63173ce7fc81e51d45933eecd",
+  "placement": {
+    "crop": "alpha >=128 bounds",
+    "width": 500,
+    "x": 35,
+    "y": 262,
+    "canvas": [
+      640,
+      640
+    ],
+    "alphaThreshold": 128
+  },
+  "targetBodyHeight": 650,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "productionReady": false,
+  "spriteSha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6",
+  "composition46": {
+    "version": 1,
+    "source": "authoring-inputs/receipt46.png",
+    "sourceSha256": "d2118bd932ceb8f6c27202bd95be49250041886831d7f67991553845192a2070",
+    "prompt": "Create one isolated narrow rectangular aged parchment receipt, viewed from the same elevated three-quarter isometric camera as a semi-realistic medieval dwarf administrative desk. Only the loose receipt sheet, no desk, dwarf, hand, tool, quill, scenery or other object. Warm ivory fibrous paper, subtly worn edges, thin realistic thickness, a few faint nonlegible bookkeeping pen strokes without readable text or logos. Its long horizontal front edge slopes gently downward toward image right, the receding right edge slopes up and right. Very narrow landscape page, width about five times its projected height, as a small receipt would lie flat on the front strip of a wooden desk. Entire receipt visible with clear margins, transparent background. Detailed rendered realism consistent with Dwarf Lord's book/desk sprites. One paper asset, no shadow outside its tiny contact rim.\n",
+    "method": "Built-in independently authored receipt, one uniform normalization onto the actual empty tabletop strip. Original desk pixels unchanged outside paper alpha. No limb edits or motion synthesis.",
+    "sourceBounds": [
+      51,
+      67,
+      2125,
+      701
+    ],
+    "uniformScale": 0.052073288331726135,
+    "placement": [
+      230,
+      350
+    ],
+    "widthPx": 108,
+    "sprite": "receipt.png",
+    "spriteSha256": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e",
+    "baseSprite": "authoring-inputs/base-sprite46.png",
+    "baseSpriteSha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba",
+    "scope": "Persistent loose receipt in front of open ledger, present before and after a single cosmetic seal press. No ink-mark state, transfer or accounting mutation."
+  }
+}

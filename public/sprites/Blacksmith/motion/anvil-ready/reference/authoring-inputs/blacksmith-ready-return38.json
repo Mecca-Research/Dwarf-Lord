@@ -1,0 +1,21 @@
+{
+  "id": "blacksmith-ready-return38",
+  "character": "Blacksmith",
+  "action": "anvil-ready",
+  "frame": 6,
+  "refs": [
+    {
+      "file": "authoring-inputs/blacksmith-ready-return38-reference-0.png",
+      "sha256": "a5b92929177347a2dd59267910c858bb4cbcab5306319b0bdf31f9dac31f7ab4"
+    },
+    {
+      "file": "authoring-inputs/blacksmith-ready-return38-reference-1.png",
+      "sha256": "669a026e3d674546c36052929dbf38efdfccfbd1f20af26a180d5597fe94bafc"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. FIRST image is the ONE pose to edit, a Blacksmith in front of his fixed anvil. SECOND image is the immediately preceding pose, used only for motion/identity continuity. Correct the first image's wrong overhead hammer gesture into a downward recovery toward a quiet low ready stance. Keep the bald face, two brass-bound black beard braids, cream sleeves, leather apron/straps, trousers, boots, torso, left arm, left fingers gripping the same tongs, orange hot billet, anvil, stump and the entire framing exactly fixed. Edit ONLY the right arm and its single hammer: right elbow settles near his ribs; right forearm angles downward and forwards; right hand approximately at the upper thigh/waist region viewer-left of the anvil, about halfway down from the preceding hand position toward the low thigh rest. The hammer's head is BELOW HIS WAIST, at roughly the elevation of the anvil's lower neck, wooden handle gripped with visible fingers, head/handle connected and rigid. He is lowering the hammer, not raising or striking. No overhead arm, no head above shoulder, no duplicate hammer, do not alter the other hand/tongs or billet. Same scale and orthographic view, high detail semi-realistic game sprite. Whole dwarf and full anvil on genuine transparent RGBA, no new floor or text. One pose only, preserve canvas framing.",
+  "output": "authoring-inputs/blacksmith-ready-return38.png",
+  "outputSha256": "8f91131cef8d699e3153cb3c76c981a4dd778e34f91fdf720bf27856070f0a5e",
+  "method": "Built-in image generation; single full-pose edit after inspecting source and adjacent authored pose. No synthesized or warped body pixels.",
+  "decision": "rejected: hammer recovery corrected, but new fixed anvil/stump geometry has0.9351 correlation after its measured translation is resolved, below existing0.94 minimum. Keep original unapproved cycle; do not trade prop stability for a corrected arm."
+}

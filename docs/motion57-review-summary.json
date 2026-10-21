@@ -1,0 +1,74 @@
+{
+  "checkpoint": "motion57",
+  "recordedAt": "2026-10-06T13:47:55.687780+00:00",
+  "baseline": "4e1b64b9808434145efce67577071fe3909e7235",
+  "mergeReady": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 25,
+    "referenceActionsWithoutMapping": 40
+  },
+  "scopedSourceSets": 71,
+  "derivedActorsOutsideFrozenScope": 14,
+  "independentVariants": 21,
+  "physicalProps": 14,
+  "activatedReferenceActions": [],
+  "selectedRuntimeChanged": false,
+  "newAuthoringGuides": {
+    "directions": 8,
+    "completeVolumes": 64,
+    "noClipping": true,
+    "geometrySource": "scripts/motion-volume-guide.mjs",
+    "role": "authoring-constraint-only"
+  },
+  "laborerRearLeft": {
+    "builtinAttempts": 7,
+    "selectedByGame": false,
+    "latestRawContactJumpPx": 82.968,
+    "latestFixedDurationFittedJumpPx": 62.922,
+    "latestBounded1000msIntegerJumpPx": 9.931111386419717,
+    "materialCorrespondenceReviewed": false,
+    "wholeStrideApproved": false,
+    "loopApproved": false,
+    "scope": "Original-source whole8-pose strip, opposite passing2, complete push-off3 and counter-arm candidates. Seven prior native poses preserved literally in final assembly; actual support geometry remains rejected. Composition anchors are not measured anatomical roots."
+  },
+  "validation": {
+    "freshNodeTests": 222,
+    "volumeGuideBrowserViews": 8,
+    "unchangedRuntimePublicFiles": 4932,
+    "currentScopedAcceptances": 71,
+    "retainedMotion56": {
+      "pythonTests": 104,
+      "typecheck": true,
+      "pagesBuild": true,
+      "forgeDays": 7,
+      "approvedPreviewVariants": 21,
+      "headedCaptures": 2,
+      "scope": "Original observation dates/scopes; exact code/public asset/dependency audit."
+    }
+  },
+  "remaining": {
+    "walking": 62,
+    "directionalToolsCarry": 24,
+    "fixedReferences": 17,
+    "directionFamilies": 11,
+    "inactiveReferences": 40,
+    "categoriesOverlap": true,
+    "unknownRedrawCount": true
+  },
+  "scope": "Offline authoring constraints and honestly rejected source-bound motion trials. No new gait, cane, directional/contact, workstation activation or loop/family approval."
+}

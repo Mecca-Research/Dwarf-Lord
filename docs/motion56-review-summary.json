@@ -1,0 +1,114 @@
+{
+  "checkpoint": "motion56",
+  "recordedAt": "2026-10-06T12:24:04.953402+00:00",
+  "baseline": "8121a63e81ec5794e650bb6fcfac89007ecf9ec4",
+  "mergeReady": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 25,
+    "referenceActionsWithoutMapping": 40
+  },
+  "scopedSourceSets": 71,
+  "derivedActorsOutsideFrozenScope": 14,
+  "independentVariants": 21,
+  "physicalProps": 14,
+  "activatedReferenceActions": [
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge"
+    }
+  ],
+  "native": {
+    "commonBodyBasisPx": 533,
+    "root": [
+      320,
+      616
+    ],
+    "sourcePixelsExact": true,
+    "maximumIntegerWholePoseOffsetPx": 4,
+    "nearBootMinimumCorrelation": 0.9824509259308034,
+    "nearBootMaximumTravelPx": 3.6882126331329346,
+    "nearBootAdjacentMaximumPx": 3.1400628537096424,
+    "maximumActiveFileCuttingArcDistancePx": 5.881285544050303,
+    "activePressureFrames": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "recoveryFramesExcludedFromPressure": [
+      5,
+      6,
+      7
+    ],
+    "wholePropUniformScale": 0.5103668261562998,
+    "fixedWholePropOffsetPx": [
+      0,
+      -7
+    ]
+  },
+  "actualGameplay": {
+    "forgeDays": 7,
+    "allEightFilingFrames": true,
+    "naturalArrival": true,
+    "oneCompletionHeld5Seconds": true,
+    "cameraCancelPersistentBenchDepartureReturnResetDayRelease": true,
+    "stationVariants": 21,
+    "earlierIdentityComparisons": 136,
+    "retainedNonForgeEvidence": {
+      "checkpoint": "motion55",
+      "mealDays": 6,
+      "originalNPCJobPassiveRoles": true,
+      "reason": "Exact retained runtime/assets/sites. Original dates/scopes retained."
+    }
+  },
+  "unchangedEarlierScopedSets": 70,
+  "narrowlyRevalidatedApprovals": 23,
+  "offlineNormalization": {
+    "allAuthoredStationOutputsExact": 15,
+    "additionalKneadingHelperRevalidation": true,
+    "newNegativeTests": 3
+  },
+  "validation": {
+    "nodeTests": 219,
+    "pythonTests": 104,
+    "typecheck": true,
+    "pagesBuild": true,
+    "whitespace": true,
+    "headedClient": {
+      "iterations": 2,
+      "characters": 18,
+      "physicalProps": 14,
+      "exitCode": 0
+    },
+    "approvedLayerCheck": {
+      "variants": 21,
+      "exitCode": 0
+    }
+  },
+  "remaining": {
+    "walking": 62,
+    "directionalToolsCarry": 24,
+    "fixedReferences": 17,
+    "directionFamilies": 11,
+    "inactiveReferences": 40,
+    "categoriesOverlap": true,
+    "unknownRedrawCount": true
+  },
+  "scope": "Finite original-pixel visible filing stroke/recovery and persistent independent vise bench. No hidden far body/sole, force, material removal, economy, pickup/put-down transition, moving gait, directions or seamless-repeat approval."
+}

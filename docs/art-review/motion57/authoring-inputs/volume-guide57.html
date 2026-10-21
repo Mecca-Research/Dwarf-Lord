@@ -1,0 +1,41 @@
+<!doctype html><html><head><style>body{margin:0;background:transparent}canvas{display:block}</style></head><body><script type="module">
+import * as T from '/node_modules/three/build/three.module.js';
+const renderer=new T.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true});renderer.setPixelRatio(1);renderer.setSize(2560,1280);document.body.appendChild(renderer.domElement);renderer.setScissorTest(true);
+const mat=(color)=>new T.MeshStandardMaterial({color,roughness:.87,metalness:0});const skin=mat(0xb9b2a7),cloth=mat(0x777e79),boot=mat(0x4d5558),trim=mat(0x9ea3a0);
+function ellipsoid(group,p,s,m){const g=new T.Mesh(new T.SphereGeometry(1,24,16),m);g.position.set(...p);g.scale.set(...s);group.add(g);return g;}
+function box(group,p,s,m){const g=new T.Mesh(new T.BoxGeometry(...s),m);g.position.set(...p);group.add(g);return g;}
+function limb(group,a,b,r,m){const d=new T.Vector3().subVectors(b,a),g=new T.Mesh(new T.CapsuleGeometry(r,Math.max(0,d.length()-2*r),8,16),m);g.position.copy(a).add(b).multiplyScalar(.5);g.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),d.clone().normalize());group.add(g);}
+function knee(hip,ankle){const dir=ankle.clone().sub(hip),dist=dir.length(),unit=dir.clone().normalize();const forward=new T.Vector3(0,0,-1);forward.addScaledVector(unit,-forward.dot(unit)).normalize();return hip.clone().add(ankle).multiplyScalar(.5).addScaledVector(forward,Math.sqrt(Math.max(.012,.37**2-(dist/2)**2)));}
+const foot=[{z:-.35,lift:0,roll:.24},{z:-.175,lift:0,roll:0},{z:0,lift:0,roll:0},{z:.175,lift:0,roll:-.20},{z:.35,lift:0,roll:-.32},{z:.19,lift:.15,roll:.12},{z:-.05,lift:.24,roll:.20},{z:-.34,lift:.11,roll:.04}];
+const observations=[];
+for(let i=0;i<8;i++){
+ const scene=new T.Scene();scene.add(new T.HemisphereLight(0xffffff,0x41474c,2.6));const key=new T.DirectionalLight(0xffffff,3);key.position.set(-4,6,4);scene.add(key);
+ const figure=new T.Group();scene.add(figure);
+ ellipsoid(figure,[0,1.25,0],[.38,.39,.25],cloth);ellipsoid(figure,[0,.89,0],[.32,.20,.24],cloth);
+ box(figure,[0,1.04,.245],[.62,.075,.035],boot);
+ ellipsoid(figure,[0,1.67,0],[.15,.15,.16],skin);ellipsoid(figure,[0,1.82,-.025],[.25,.255,.225],skin);
+ ellipsoid(figure,[0,1.79,-.245],[.09,.075,.08],skin);
+ ellipsoid(figure,[-.25,1.80,-.02],[.04,.085,.055],skin);ellipsoid(figure,[.25,1.80,-.02],[.04,.085,.055],skin);
+ ellipsoid(figure,[0,1.55,-.22],[.19,.27,.10],boot);
+ const phase=[1,.75,0,-.7,-1,-.75,0,.7][i];
+ for(const sign of [-1,1]){
+  const shoulder=new T.Vector3(sign*.34,1.49,0),elbow=new T.Vector3(sign*.46,1.20,sign*.08*phase),hand=new T.Vector3(sign*.45,.99,sign*.29*phase);
+  limb(figure,shoulder,elbow,.13,cloth);limb(figure,elbow,hand,.105,skin);ellipsoid(figure,hand.toArray(),[.09,.11,.10],skin);
+ }
+ const row={pose:i,coordinates:'World3D procedural guide only; not source-material observations',feet:{}};
+ for(const [name,x,j]of [['right',.18,i],['left',-.18,(i+4)%8]]){
+  const f=foot[j],g=new T.Group();figure.add(g);g.rotation.x=f.roll;g.position.set(x,f.lift+(f.roll>=0?.14*Math.sin(f.roll):-.30*Math.sin(f.roll)),f.z);
+  box(g,[0,.032,-.08],[.235,.064,.44],boot);ellipsoid(g,[0,.12,-.09],[.12,.115,.22],boot);ellipsoid(g,[0,.26,0],[.11,.19,.105],boot);
+  box(g,[0,.305,.105],[.22,.045,.032],trim);box(g,[0,.19,.112],[.22,.045,.032],trim);
+  g.updateMatrixWorld(true);const ankle=g.localToWorld(new T.Vector3(0,.37,0));const hip=new T.Vector3(x,.94,0),k=knee(hip,ankle);
+  limb(figure,hip,k,.145,cloth);limb(figure,k,ankle,.10,cloth);
+  row.feet[name]={heel:g.localToWorld(new T.Vector3(0,0,.14)).toArray(),toe:g.localToWorld(new T.Vector3(0,0,-.30)).toArray(),lift:f.lift,roll:f.roll};
+ }
+ const elevation=.6,up=new T.Vector3(Math.SQRT1_2*Math.sin(elevation),Math.cos(elevation),-Math.SQRT1_2*Math.sin(elevation)),target=up.clone().multiplyScalar(.82);
+ const camera=new T.OrthographicCamera(-1.05,1.05,1.05,-1.05,.01,100);camera.position.copy(target).add(new T.Vector3(-Math.SQRT1_2*Math.cos(elevation),Math.sin(elevation),Math.SQRT1_2*Math.cos(elevation)).multiplyScalar(6));camera.lookAt(target);camera.updateMatrixWorld();
+ for(const f of Object.values(row.feet))for(const landmark of ['heel','toe']){const p=new T.Vector3(...f[landmark]).project(camera);f[landmark+'GuidePixel']=[(p.x+1)*320,(1-p.y)*320];}
+ observations.push(row);
+ const x=i%4*640,y=(1-Math.floor(i/4))*640;renderer.setViewport(x,y,640,640);renderer.setScissor(x,y,640,640);renderer.render(scene,camera);
+}
+window.guideObservations=observations;window.guideReady=true;
+</script></body></html>

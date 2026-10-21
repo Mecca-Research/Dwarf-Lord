@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Cook",
+  "action": "chop-vegetables",
+  "title": "Chop vegetables",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../work-references/00-chop-vegetables.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "knife poised above vegetables on wooden cutting block",
+      "durationMs": 140,
+      "sourceBounds": [
+        135,
+        94,
+        533,
+        600
+      ],
+      "sourceAnchor": [
+        185.0,
+        506.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        128,
+        90
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from knife poised above vegetables on wooden cutting block toward lift knife a little",
+      "durationMs": 140,
+      "sourceBounds": [
+        773,
+        94,
+        1183,
+        600
+      ],
+      "sourceAnchor": [
+        187.0,
+        506.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        126,
+        90
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lift knife a little",
+      "durationMs": 105,
+      "sourceBounds": [
+        1410,
+        93,
+        1816,
+        600
+      ],
+      "sourceAnchor": [
+        190.0,
+        507.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        122,
+        89
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lift knife a little toward chop down onto vegetable with other hand safely clear",
+      "durationMs": 115,
+      "sourceBounds": [
+        2057,
+        94,
+        2450,
+        599
+      ],
+      "sourceAnchor": [
+        183.0,
+        506.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        130,
+        90
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "chop down onto vegetable with other hand safely clear",
+      "durationMs": 140,
+      "sourceBounds": [
+        129,
+        740,
+        533,
+        1240
+      ],
+      "sourceAnchor": [
+        191.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        121,
+        96
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from chop down onto vegetable with other hand safely clear toward lift knife and nudge next slice into position",
+      "durationMs": 140,
+      "sourceBounds": [
+        774,
+        747,
+        1185,
+        1238
+      ],
+      "sourceAnchor": [
+        186.0,
+        493.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        127,
+        103
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift knife and nudge next slice into position",
+      "durationMs": 105,
+      "sourceBounds": [
+        1407,
+        747,
+        1819,
+        1241
+      ],
+      "sourceAnchor": [
+        193.0,
+        493.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        119,
+        103
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from lift knife and nudge next slice into position toward knife poised above vegetables on wooden cutting block",
+      "durationMs": 115,
+      "sourceBounds": [
+        2057,
+        747,
+        2465,
+        1241
+      ],
+      "sourceAnchor": [
+        183.0,
+        493.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        130,
+        103
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "loopApproved": true,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "345c06ac1a1fbda04669b02e97e879550474b375447e2670257db71545b620a6",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Visual loop review recorded for the exact artifacts and scope in loop-approval.json. Task playback and overall production readiness are unchanged.",
+  "loopReview": {
+    "status": "approved",
+    "record": "loop-approval.json",
+    "scope": "Fixed-camera independent cutting-block vegetable chopping only; once-hold task playback. No food consumption/accounting, other preparation actions, hidden blade geometry or other directions are certified."
+  }
+}

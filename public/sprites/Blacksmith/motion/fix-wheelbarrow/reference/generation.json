@@ -4,14 +4,14 @@
   "title": "Fix wheelbarrow",
   "reference": "public/sprites/Blacksmith/animation/01-front-right.png",
   "beats": [
-    "inspect wheel axle",
-    "grip loose axle with left hand",
-    "position hammer in right hand",
-    "raise hammer slightly",
-    "tap securing wedge",
-    "rebound hammer",
-    "turn wheel by hand to test",
-    "inspect repaired hub"
+    "inspect axle with already gripped low hammer",
+    "bring hammer toward axle; left hand steadies wheel",
+    "hold hammer at chest ready",
+    "raise hammer overhead",
+    "tap axle fastening",
+    "rebound gripped hammer",
+    "lower hammer beside wheel while left hand checks",
+    "hold completed repair; retain hammer low in right hand"
   ],
   "kind": "new-work",
   "direction": "reference",
@@ -19,6 +19,21 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: Fix wheelbarrow. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. inspect wheel axle | 2. grip loose axle with left hand | 3. position hammer in right hand | 4. raise hammer slightly | 5. tap securing wedge | 6. rebound hammer | 7. turn wheel by hand to test | 8. inspect repaired hub",
-  "sourceName": "exec-90b828c1-1e6a-4b9f-b665-78a32b59a6d1.png"
+  "prompt": "Edit this exact eight-pose Blacksmith wheelbarrow repair animation, retaining its detailed semi-realistic quality, exact bald stocky blacksmith identity, forked dark brass-bound beard, cream rolled sleeves, leather apron, boots, same camera and all fixed furniture. Correct the single carried HAMMER ownership only. REMOVE the brown hammer lying on the ground next to his boots from ALL8 cells. Instead equip the dwarf with ONE SAME small square steel hammer with ONE wood handle already securely gripped in his anatomical RIGHT hand in every frame0 through7; it never appears from nowhere, disappears, duplicates, switches hand or clips. Frame0 inspect wheel axle with hammer held low beside right thigh, left hand steadies axle/wheel. Frame1 raise gripped hammer slightly toward axle. Frame2 hammer ready near chest as existing. Frame3 hammer overhead as existing. Frame4 hammer taps wheel axle as existing, complete head/handle and hand grip. Frame5 rebounds as existing. Frame6 lowers hammer beside wheel, still gripped, while LEFT hand checks repaired wheel axle. Frame7 rests with SAME hammer held low in RIGHT hand beside right thigh and LEFT hand on barrow edge, a completed held pose; don't put hammer on floor or invent a pickup/drop. Other toolbox tools stay fixed and are visibly distinct from this one carried hammer. Retain same anvil and stump, raised wheelbarrow/wheel geometry, stand, toolkit, cloth and other props in all8, identically placed and viewed. Retain body scale/boots/pose0-7 and natural arms, editing right grip only where necessary; do not swap the existing stride/feet or wardrobe. Eight complete poses, four columns two rows, exact order, same generous gutters as reference, all faces/hammer heads/boots visible. Genuine transparent background, no labels/text/new scenery. Do NOT change stationary station geometry or replace wheel with a different view; the same wheel/hub and barrow/handles persist.\n",
+  "sourceName": "exec-f114ecf6-e068-4d89-8a8f-b4e4c6e6e7e8.png",
+  "originalPrompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Blacksmith. Action: Fix wheelbarrow. Direction: reference. Create a complete appropriate workstation and tools for this occupational action, retain exact character identity. Physically plausible two-handed action. Fixed station across all frames. Full character AND entire workstation visible in EVERY cell, tools completely inside frame. Reduce figure size to fit generous empty transparent borders, especially above raised tools. Exactly eight sequential images in 4 columns 2 rows, each action a coherent cycle. Eight poses: 1. inspect wheel axle | 2. grip loose axle with left hand | 3. position hammer in right hand | 4. raise hammer slightly | 5. tap securing wedge | 6. rebound hammer | 7. turn wheel by hand to test | 8. inspect repaired hub",
+  "editInputSha256": "352a94649b613a1381d0ae51210167a741b454af13be16a06022ef7893f4429b",
+  "correction": "complete-prop-framing",
+  "editHistory": [
+    {
+      "key": "Blacksmith-wheel-hammer40",
+      "input": "authoring-inputs/wheel-before40.png",
+      "sha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
+      "output": "authoring-inputs/wheel-hammer40.png",
+      "outputSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
+      "prompt": "Edit this exact eight-pose Blacksmith wheelbarrow repair animation, retaining its detailed semi-realistic quality, exact bald stocky blacksmith identity, forked dark brass-bound beard, cream rolled sleeves, leather apron, boots, same camera and all fixed furniture. Correct the single carried HAMMER ownership only. REMOVE the brown hammer lying on the ground next to his boots from ALL8 cells. Instead equip the dwarf with ONE SAME small square steel hammer with ONE wood handle already securely gripped in his anatomical RIGHT hand in every frame0 through7; it never appears from nowhere, disappears, duplicates, switches hand or clips. Frame0 inspect wheel axle with hammer held low beside right thigh, left hand steadies axle/wheel. Frame1 raise gripped hammer slightly toward axle. Frame2 hammer ready near chest as existing. Frame3 hammer overhead as existing. Frame4 hammer taps wheel axle as existing, complete head/handle and hand grip. Frame5 rebounds as existing. Frame6 lowers hammer beside wheel, still gripped, while LEFT hand checks repaired wheel axle. Frame7 rests with SAME hammer held low in RIGHT hand beside right thigh and LEFT hand on barrow edge, a completed held pose; don't put hammer on floor or invent a pickup/drop. Other toolbox tools stay fixed and are visibly distinct from this one carried hammer. Retain same anvil and stump, raised wheelbarrow/wheel geometry, stand, toolkit, cloth and other props in all8, identically placed and viewed. Retain body scale/boots/pose0-7 and natural arms, editing right grip only where necessary; do not swap the existing stride/feet or wardrobe. Eight complete poses, four columns two rows, exact order, same generous gutters as reference, all faces/hammer heads/boots visible. Genuine transparent background, no labels/text/new scenery. Do NOT change stationary station geometry or replace wheel with a different view; the same wheel/hub and barrow/handles persist.\n",
+      "method": "Built-in whole-sheet edit, retaining one gripped hammer0-7 and removing the spare ground hammer. No limb/boot warping, interpolation or local pixel painting.",
+      "decision": "Selected visible tool-ownership correction after native eight-pose inspection and bounded fixed furniture registration. Exact finite-task acceptance requires separate playback proof."
+    }
+  ]
 }

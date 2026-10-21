@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Blacksmith",
   "action": "anvil-ready",
   "title": "Anvil ready",
@@ -7,7 +7,7 @@
   "kind": "work",
   "reference": "../../../work-references/00-anvil-ready.png",
   "source": "source-sheet.png",
-  "sourceSha256": "63e93cf21eb77ad0cbb1675ef47f2f589aec4493f61500f22c75310427242d56",
+  "sourceSha256": "3a1929d393c90c1fecca77d651ce9b62d501f407989498442952b9a72fa59804",
   "sourceSize": [
     1774,
     887
@@ -16,23 +16,23 @@
     640,
     640
   ],
-  "sharedScale": 1.3214285714285714,
+  "sharedScale": 1.3155555555555556,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
       "description": "rest hammer low",
-      "durationMs": 125,
+      "durationMs": 140,
       "sourceBounds": [
-        90,
-        18,
-        398,
-        427
+        89,
+        16,
+        400,
+        429
       ],
       "sourceAnchor": [
-        156.0,
-        409
+        156.5,
+        413.0
       ],
       "groundAnchor": [
         320,
@@ -40,177 +40,187 @@
       ],
       "placement": [
         114,
-        76
+        73
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
       "description": "continuous midway transition from rest hammer low toward slight inhale and draw hammer hand back at hip",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        507,
-        17,
-        840,
-        427
+        506,
+        16,
+        842,
+        429
       ],
       "sourceAnchor": [
-        176.5,
-        410
+        182.32094594594594,
+        413.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        87,
-        74
+        80,
+        73
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
       "description": "slight inhale and draw hammer hand back at hip",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        952,
-        17,
-        1282,
-        427
+        951,
+        16,
+        1284,
+        429
       ],
       "sourceAnchor": [
-        175.0,
-        410
+        179.30067567567568,
+        413.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        89,
-        74
+        84,
+        73
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
       "description": "continuous midway transition from slight inhale and draw hammer hand back at hip toward adjust tongs on billet",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        1434,
-        18,
-        1726,
-        427
+        1433,
+        17,
+        1729,
+        429
       ],
       "sourceAnchor": [
-        136.5,
-        409
+        141.5608108108108,
+        412.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        140,
-        76
+        134,
+        74
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
       "description": "adjust tongs on billet",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        98,
-        463,
-        398,
-        871
+        97,
+        462,
+        400,
+        873
       ],
       "sourceAnchor": [
-        142.0,
-        408
+        148.32094594594594,
+        411.76013513513516
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        132,
-        77
+        125,
+        74
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
       "description": "continuous midway transition from adjust tongs on billet toward settle into ready stance",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        530,
-        463,
-        840,
-        871
+        529,
+        462,
+        842,
+        873
       ],
       "sourceAnchor": [
-        153.5,
-        408
+        159.82094594594594,
+        411.76013513513516
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        117,
-        77
+        110,
+        74
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
       "description": "settle into ready stance",
-      "durationMs": 125,
+      "durationMs": 120,
       "sourceBounds": [
-        952,
+        951,
         423,
-        1283,
-        871
+        1285,
+        873
       ],
       "sourceAnchor": [
-        174.5,
-        448
+        179.30067567567568,
+        450.76013513513516
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        89,
-        24
+        84,
+        23
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "continuous midway transition from settle into ready stance toward rest hammer low",
-      "durationMs": 125,
+      "description": "lower hammer from overhead to shoulder/chest recovery; tongs retain billet",
+      "durationMs": 140,
       "sourceBounds": [
-        1419,
+        1417,
         463,
-        1726,
-        871
+        1729,
+        873
       ],
       "sourceAnchor": [
-        156.5,
-        408
+        158.76013513513513,
+        410.76013513513516
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        113,
-        77
+        111,
+        76
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,117 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      140,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      140
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "939fd6d7990aa1937a5d1bf1aa74f1a39f8e47fb2b524bf491532fb07ee9362f",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        250,
+        440,
+        475,
+        600
+      ],
+      "minimumCorrelation": 0.94,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -2.009933552926668e-09,
+            4.3026837648341143e-10
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95637,
+          "measuredCorrectionPx": [
+            -6.68612813949585,
+            -0.020204156637191772
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97659,
+          "measuredCorrectionPx": [
+            -5.304349899291992,
+            0.007966841571033001
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9558,
+          "measuredCorrectionPx": [
+            -6.404788970947266,
+            0.12619513273239136
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95823,
+          "measuredCorrectionPx": [
+            -7.121712684631348,
+            -1.1039435863494873
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.94481,
+          "measuredCorrectionPx": [
+            -6.667656421661377,
+            -1.1404231786727905
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.96042,
+          "measuredCorrectionPx": [
+            -5.3807373046875,
+            -1.0727574825286865
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95318,
+          "measuredCorrectionPx": [
+            -0.7841695547103882,
+            -1.063035249710083
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Motion39 Blacksmith anvil-ready: exact eight combined-reference poses and finite held task. No translating gait, cross-direction, independent furniture, standing scale, economy or live activation approval."
   }
 }

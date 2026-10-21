@@ -1,0 +1,200 @@
+{
+  "binding": {
+    "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+    "settingsSha256": "12d1df30983a41121036b67e1ad4a4fbd8b25e6baf2d56c442aff333afa1ad1f",
+    "frameSha256": [
+      "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e",
+      "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8",
+      "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64",
+      "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd",
+      "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc",
+      "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373",
+      "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91",
+      "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ]
+  },
+  "dependencies": [
+    {
+      "file": "public/sprites/workstations/stew-cauldron/sprite.png",
+      "sha256": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9"
+    },
+    {
+      "file": "public/sprites/Cook/motion/render-calibration.json",
+      "sha256": "06adea86361785f77a49e1ac3c7ff703ddbda633b9b33841fa071279be3381e6"
+    }
+  ],
+  "samples": [
+    {
+      "frame": 0,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        175,
+        136,
+        105,
+        254
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 1,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        111,
+        74,
+        49,
+        253
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 2,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        173,
+        138,
+        107,
+        254
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 3,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        108,
+        81,
+        55,
+        254
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 4,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        172,
+        140,
+        107,
+        254
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 5,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        121,
+        80,
+        52,
+        253
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 6,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        163,
+        131,
+        98,
+        254
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    },
+    {
+      "frame": 7,
+      "visibleHandClothPoint": [
+        461,
+        317
+      ],
+      "actorRgba": [
+        115,
+        88,
+        61,
+        253
+      ],
+      "fixedRimRgba": [
+        51,
+        38,
+        31,
+        180
+      ],
+      "opaqueProjectedOverlap": true
+    }
+  ],
+  "scope": "Native hand/held-towel silhouette overlaps the fixed iron rim in all8 poses. Spoon/towel hand ownership and connected shafts are manually inspected. This point is a projected overlap sample, not a verified corresponding material track, concealed grip force or moving tool-contact calibration.",
+  "approval": false
+}

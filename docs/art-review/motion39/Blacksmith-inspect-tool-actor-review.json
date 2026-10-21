@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+    "settingsSha256": "4c817efa06348a3c8ef67f5c50c45b72eae24a04b09d4f7a397dd1369aa2f53a",
+    "frameSha256": [
+      "155c427f587850e0ec661f7f4855ff1887d7cf584b8d495b78f197669f9ccff0",
+      "52450280a0d1d092cc8380e11ad1bbce2f171e621980620ea90f1d31a04356e4",
+      "ad181b7130e4b9634fe9ffd54a2f486681f2de8060a479470d5ded56646fbf81",
+      "9456581aa330d4524f2098718a135f5401a51b39ca0fc0fb8c609cf5fbf8a78d",
+      "3744280d76edd422f54993fa8133a6cace220dba4a1a7c9dbb323996b513d050",
+      "7623f16490c34e7b75368c2c578ffe0d36aa8ee1cee4e4f5d158a8bac6f5071f",
+      "e884097e43a13d694cfa60914be251be60db0da01968ea4667a10daf6fdb4c85",
+      "4321228c74b9114b7e6dd49687fcb501fb13b1b47647205fd2755c7974379168"
+    ],
+    "atlasSha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "4c817efa06348a3c8ef67f5c50c45b72eae24a04b09d4f7a397dd1369aa2f53a",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "inspect-tool",
+    "direction": "actor"
+  },
+  "checks": {
+    "identity-and-scale": "All eight native and layered poses retain the same bald stocky smith, dark forked brass-bound beard, cream sleeves, leather apron, olive trousers and boots. Source-bound520px standing basis and root320/616 match the existing anvil actor. Actual in-game standing registration is reviewed at the fixed station; other views and translating contacts excluded.",
+    "station-and-foot-contact": "The independent anvil/stump stays fixed across all eight poses and after cancellation/day completion. Visible standing boots keep the local base; the nearer supporting region is partially occluded by the stump, with no claim for hidden geometry. Actor has no painted anvil. The raised hand/tool remains above the station, so no foreground copy is needed.",
+    "hand-and-tool-contact": "Same small steel/wood tool stays in the raised gripping hand through chest hold0/1, lift2/3, wrist rotation4/5 and lower6/7. Opposite empty arm remains connected. This is inspection, not striking or metallurgical workpiece replacement.",
+    "prop-continuity": "One independent anvil remains at the forge, with no duplicate anvil or carried spare hammer. The same held tool remains present from0 through7; body and props do not switch direction during the finite task.",
+    "completion-and-reset": "Exact live renderer and authored durations expose0-7, complete once, hold7 for5000ms and reset only on explicit assignment/day change. A day chooses one operation; completion does not trigger another operation. Repair routing walks naturally to its distinct bench. Renderer never grants inventory or building rewards; existing day resolution retains economic ownership."
+  },
+  "scope": "Fixed-view local task, independent station placement/occlusion and controlled live lifecycle. No seamless repeat, direction continuity, moving sole contact or hidden geometry approval."
+}

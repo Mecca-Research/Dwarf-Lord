@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source": "authoring-inputs/stamp-page46.png",
+  "sourceSha256": "4ae4560d7697ea9f3ec7d8062af82c33adf1c9e40fe07aa29ecd6d01face094d",
+  "references": [
+    {
+      "file": "authoring-inputs/stamp-reach46.png",
+      "sha256": "55c116b8f57a4270340a82c7f2ba7221f2db9f8b78f148dd4a6055c870ff9c40"
+    },
+    {
+      "file": "authoring-inputs/page-guide46.jpg",
+      "sha256": "d62861130437f56b91a2695bce3fa07f10a5a701d4be381203efe44263adeb0b"
+    },
+    {
+      "file": "authoring-inputs/reference46-0.png",
+      "sha256": "4d1df97eda38e2cbcdb3d6de8309b4aa90ccea5968b57d1e120d3553492cb537"
+    }
+  ],
+  "prompt": "Correct the FIRST image's eight actor poses for a brass seal press ON THE OPEN PAPER PAGE. SECOND image is a diagnostic showing why the stamp currently misses: it is too far IMAGE LEFT and a little too LOW, over bare wood. Its cyan ellipse shows the true page target in bottom-row contact poses. THIRD image is the same actor's approved page-pointing reference; its index finger already points at the proper paper entry. Draw the seal stamp's flat base exactly where that index fingertip points, with the closed-grip fist above it. This requires his IMAGE-LEFT right forearm to reach ACROSS toward his CENTER BELT BUCKLE, then the seal face is in front of the buckle ON THE PAGE, not to the left of his waist. Move the stamp and hand roughly35 source pixels toward IMAGE RIGHT and raise it slightly, with a naturally connected right elbow/forearm. Preserve one same upright seal stamp and continuous enclosed grip.\n\nOutput ONLY the full4-column2-row transparent actor sheet like FIRST image; do NOT paint the diagnostic desk/book/cyan marks/labels into the output. Keep exact same dwarf, scale/camera, identity, chair, grey short double beard/spectacles/red cravat, knees/boots and opposite resting hand. Draw all8 right-hand/tool poses: ready just above the pointed paper entry, lift, apex, midway descent, bottom-first page contact at the THIRD image fingertip and SECOND cyan ellipse, bottom-second gentle press ON THE SAME PAGE SPOT, recovery lift, finished hold slightly above that entry. Right forearm reaches toward center in every pose so stamp remains above the ledger rather than bare wood. Feet/chair/body remain fixed, no hand/tool switch, no duplicate stamp, no missing tool, no ink-mark effect. The tool's lower flat rim in the two press poses must visibly be ON PAPER, not lower than its front edge. Genuine eight smooth authored poses with transparent background and full margins.\n",
+  "method": "Built-in edit of the whole eight-pose strip; no local limb transform.",
+  "selected": false,
+  "review": "Desk painted into the candidate: extra owner remains unselected."
+}

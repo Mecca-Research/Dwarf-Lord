@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "attempts": [
+    {
+      "name": "initial cooper station offset3",
+      "status": "not accepted",
+      "reason": "Both finite lifecycles passed, but native game capture showed overlap with persistent forestry trunk. Moved station to offset6; old captures supply no placement acceptance."
+    },
+    {
+      "name": "cooper offset6 before clearance",
+      "status": "placement correction required",
+      "reason": "Forestry trunk separated, but decorative front pine hid the barrel base. Expanded the existing5-unit timber clearance to both independently owned timber stations. New built-game visual capture and lifecycle required before approval."
+    },
+    {
+      "name": "initial headed startup capture",
+      "status": "not accepted as final smoke proof",
+      "reason": "First short-pause capture occurred before the software renderer displayed the scene; second displayed the camp. Rerun with a7-second startup pause and inspect both full-scene captures before recording final smoke."
+    }
+  ]
+}

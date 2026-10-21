@@ -1,0 +1,15 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "captures": 2,
+  "client": "Bundled develop-web-game client, headed browser, short movement bursts and pauses.",
+  "verdict": "passed",
+  "inspected": [
+    "Player moves between the two snapshots.",
+    "Camp, buildings, characters, original persistent stations and Borrin desk remain visible.",
+    "No client error artifact produced."
+  ],
+  "scope": "Game rendering/movement regression only; no open motion or direction family approval."
+}

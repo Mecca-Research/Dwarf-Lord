@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "fafd7766e54adbf7c0af975d23035b026eda234a3e281026b7a9e55f99e96a31",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "e7946b4b97deba0ab81c62572cf2cce8adc2ccba8f6c1c6af43050b2c0b92c91",
+      "ae9a94457f62e4cb81ff47e7e6949b3d7a0604a25c501e97206244068f0c3b5a",
+      "f03663e99a579ef15626ed4fed94adc0831935cb62d93096168088d319b5f66b",
+      "e32612dbd6334c65350232dcd4340be56c532e2e0ced0cfc79ac75e60d09edd9",
+      "bdf20c3711679446c94cb13e773edf996a97a6b4ae4779e14b389e1e229eb148",
+      "f9756c1dccfec60de2a59f41455b0bea09977078211a0c619a92016a496b68f6",
+      "a0edda14ad4be2e102012aa41a8a01cfb7091f1f9fd39c64b82d9d03bdd75545",
+      "6a44903cb08310529a00704114de7186a3e4427084cbcb98a27c336c96cc33ab"
+    ],
+    "atlasSha256": "268a1345cdbd0cba8bcdd4999f11247a15586ea79f50d3def60a999736dfb941",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Helga",
+    "action": "shovel-stone",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "Bucket is clipped or fragmented in1/3 and changes position. The loaded shovel becomes empty5 before the stone cascade6, losing material ownership. Need one complete stationary bucket and shovel load retained until visible discharge."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "888da847c3db3bf9b36c89b6803faa123ba917c2e6fea6357155c88e523d735e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-shovel-stone-review.json",
+      "sha256": "dd1fc44eb299a250348235953b300b77d9599471e8f82d9ee1198f311dfb3ac5"
+    }
+  ]
+}

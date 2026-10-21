@@ -1,0 +1,47 @@
+{
+  "actorOnly": true,
+  "prompt": "Edit image1's COMPLETE eight-pose Borrin explaining actor-only sheet together. Preserve every pose's exact head, torso, clothing, chair, seated boot positions, camera, body size, order and four-column/two-row layout. Fix hand/page height ONLY. The pointing anatomical RIGHT index finger (image-left hand) is currently35 pixels TOO LOW at640-frame scale, below imaginary desk/page. Raise its forearm in ALL8 poses by a modest natural elbow bend until downward fingertip is clearly ABOVE belt (around(298,340) in640-frame body registration), not on thigh/below buckle. Keep finger extended and steady above that imagined book entry. No tools or book in hand.\nThe free anatomical LEFT hand (image-right) still performs the same moderate explanatory lift, open-palm gesture and return. Its LOW contact poses1,7,8 need the palm/fingers raised about30pixels too, to sit at imagined cream book RIGHT page around(398,347), not on thigh. Middle gesture poses2-6 retain small smooth outward/return motion and same modest arc; don't add a second gesture. Image2 shows actual independent desk/open ledger in matching640-frame placement; use page surface as contact guide but do NOT include it in any actor frame. Image3 is approved seated writing actor identity/materials. Do not move the whole character up, move boots, change chair/pelvis/root or resize body to fix hands. Only flex elbows and raise low forearms/hands a little. Preserve exact Borrin swept grey hair, spectacles, twin short grey beard tips, scarf and vest. All8 fully visible, generous margins/gutters so every extended hand belongs wholly to its own pose. No desk, ledger, quill, props, shadows, labels or scenery. True transparent alpha, high-quality semi-realistic rendering, fixed view, one coherent eight-pose finite explanatory action.\n",
+  "reference": "../reference/source-sheet.png",
+  "referenceSha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc",
+  "editHistory": [
+    {
+      "version": 1,
+      "prompt": "Use case: precise-object-edit. Convert this EXACT complete eight-pose Borrin explain-at-desk animation into the corresponding ACTOR-only layer. Preserve eight distinct poses, order, four-column/two-row layout and existing isometric camera/character identity. Remove the complete desk including tabletop, drawers/legs, open ledger, stacked books and quill/inkwell from every cell. Retain Borrin's wooden chair and stocky seated body; reconstruct trousers/boots where desk concealed them. Image2 is the same Borrin's current approved seated actor proportions/materials, to keep body and chair consistent.\n\nKeep identical short swept grey hair, bronze spectacles, two short brass-bound grey beard tips, red cravat, dark patterned waistcoat, cream rolled sleeves and weathered boots. Same head/body sizes and neutral semi-realistic rendered lighting in all8. Keep both hand positions at their ORIGINAL imagined tabletop height. Right anatomical hand (image LEFT) points at imaginary open ledger entry throughout. Left anatomical hand (image RIGHT) raises toward listener, opens palm as he explains, then lowers and rests on imaginary page again. Do not add any object in his fingers, move the pointing fingertip to his lap, or turn hand into a fist. One measured small conversational gesture:\n1 pointing to entry and free hand low at tabletop;\n2 free left hand begins rise;\n3 free hand elevated palm opens;\n4 free hand opens a little more outward;\n5 full modest explanatory gesture toward listener;\n6 smoothly lowers free hand;\n7 free hand returns to imagined open page;\n8 both hands settle at original low pointing/page level.\nSeated boots stay still and chair dimensions/camera don't change. Eight connected authored whole poses, not duplicates. Transparent alpha background with generous gutters. NO desk, book, paper, coins, quill, food, props, shadows, text or scenery. No borders or colored matte. Preserve high-quality render exactly; this is a finite explaining action, not a standing/walking motion. Author the full8 sheet together.\n",
+      "source": "authoring-inputs/explain44.png",
+      "sourceSha256": "2e6917e7922551b4835dc260b14a65b43545ac869c16bd278fe1a1fc2070ad91",
+      "references": [
+        {
+          "file": "authoring-inputs/reference44-0.png",
+          "sha256": "58d46793a8951224c2dfb7076da1ec4253825277e522a2a0c251f85ae2dcb9dc"
+        },
+        {
+          "file": "authoring-inputs/reference44-1.png",
+          "sha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05"
+        }
+      ],
+      "method": "Built-in whole eight-pose edit, fixed camera and one shared physical scale; approved seated identity reference. Whole-cell extraction only.",
+      "scope": "Candidate seated reference action at independently owned original desk. Native finger/page and stationary boot checks plus actual finite playback are required before approval."
+    },
+    {
+      "version": 1,
+      "prompt": "Edit image1's COMPLETE eight-pose Borrin explaining actor-only sheet together. Preserve every pose's exact head, torso, clothing, chair, seated boot positions, camera, body size, order and four-column/two-row layout. Fix hand/page height ONLY. The pointing anatomical RIGHT index finger (image-left hand) is currently35 pixels TOO LOW at640-frame scale, below imaginary desk/page. Raise its forearm in ALL8 poses by a modest natural elbow bend until downward fingertip is clearly ABOVE belt (around(298,340) in640-frame body registration), not on thigh/below buckle. Keep finger extended and steady above that imagined book entry. No tools or book in hand.\nThe free anatomical LEFT hand (image-right) still performs the same moderate explanatory lift, open-palm gesture and return. Its LOW contact poses1,7,8 need the palm/fingers raised about30pixels too, to sit at imagined cream book RIGHT page around(398,347), not on thigh. Middle gesture poses2-6 retain small smooth outward/return motion and same modest arc; don't add a second gesture. Image2 shows actual independent desk/open ledger in matching640-frame placement; use page surface as contact guide but do NOT include it in any actor frame. Image3 is approved seated writing actor identity/materials. Do not move the whole character up, move boots, change chair/pelvis/root or resize body to fix hands. Only flex elbows and raise low forearms/hands a little. Preserve exact Borrin swept grey hair, spectacles, twin short grey beard tips, scarf and vest. All8 fully visible, generous margins/gutters so every extended hand belongs wholly to its own pose. No desk, ledger, quill, props, shadows, labels or scenery. True transparent alpha, high-quality semi-realistic rendering, fixed view, one coherent eight-pose finite explanatory action.\n",
+      "source": "authoring-inputs/explain-height44.png",
+      "sourceSha256": "4d1df97eda38e2cbcdb3d6de8309b4aa90ccea5968b57d1e120d3553492cb537",
+      "references": [
+        {
+          "file": "authoring-inputs/explain44.png",
+          "sha256": "2e6917e7922551b4835dc260b14a65b43545ac869c16bd278fe1a1fc2070ad91"
+        },
+        {
+          "file": "authoring-inputs/desk-reference44.png",
+          "sha256": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba"
+        },
+        {
+          "file": "authoring-inputs/reference44-1.png",
+          "sha256": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05"
+        }
+      ],
+      "method": "Built-in whole eight-pose arm contact-height edit. Whole-figure component ownership removes cell-neighbor fragments without changing source art."
+    }
+  ]
+}

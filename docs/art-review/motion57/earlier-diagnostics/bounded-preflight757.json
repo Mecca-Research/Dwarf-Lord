@@ -1,0 +1,185 @@
+{
+  "sourceBoundObservedHypotheses": {
+    "feasible": true,
+    "continuousErrorComponentPx": 6.570246655809771,
+    "continuousOffsets": [
+      [
+        -4.245593324140228,
+        -0.22742016855159175
+      ],
+      [
+        12.0,
+        -12.0
+      ],
+      [
+        5.061526006867361,
+        -12.0
+      ],
+      [
+        -12.0,
+        4.175866388274546
+      ],
+      [
+        12.0,
+        12.0
+      ],
+      [
+        -12.0,
+        4.493607955294051
+      ],
+      [
+        -11.435294572670742,
+        -12.0
+      ],
+      [
+        -12.0,
+        4.807952908103427
+      ]
+    ],
+    "proposedIntegerOffsets": [
+      [
+        -4,
+        0
+      ],
+      [
+        12,
+        -12
+      ],
+      [
+        5,
+        -12
+      ],
+      [
+        -12,
+        4
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        -12,
+        4
+      ],
+      [
+        -11,
+        -12
+      ],
+      [
+        -12,
+        5
+      ]
+    ],
+    "proposedDurationsMs": [
+      273,
+      73,
+      167,
+      40,
+      93,
+      106,
+      208,
+      40
+    ],
+    "proposedStrideRatio": 0.7699749197509964,
+    "roundedMaxContactJumpPx": 9.931111386419717,
+    "minimumHoldMs": 40,
+    "adoptedByRuntime": false,
+    "materialCorrespondenceReviewed": false,
+    "wholeStrideApproved": false,
+    "loopApproved": false
+  },
+  "unobservedWholePose3AuthoringTarget": {
+    "feasible": true,
+    "continuousErrorComponentPx": 3.8212841842521517,
+    "continuousOffsets": [
+      [
+        -1.126986918992328,
+        4.424381116725263
+      ],
+      [
+        12.0,
+        -12.0
+      ],
+      [
+        -5.515581449511984,
+        -12.0
+      ],
+      [
+        -12.0,
+        -1.2181872517790424
+      ],
+      [
+        -12.0,
+        6.306785885873438
+      ],
+      [
+        -12.0,
+        9.763899345202088
+      ],
+      [
+        -12.0,
+        -8.245346781665951
+      ],
+      [
+        -12.0,
+        12.0
+      ]
+    ],
+    "proposedIntegerOffsets": [
+      [
+        -1,
+        4
+      ],
+      [
+        12,
+        -12
+      ],
+      [
+        -6,
+        -12
+      ],
+      [
+        -12,
+        -1
+      ],
+      [
+        -12,
+        6
+      ],
+      [
+        -12,
+        10
+      ],
+      [
+        -12,
+        -8
+      ],
+      [
+        -12,
+        12
+      ]
+    ],
+    "proposedDurationsMs": [
+      253,
+      43,
+      40,
+      93,
+      182,
+      110,
+      239,
+      40
+    ],
+    "proposedStrideRatio": 0.7951073939881271,
+    "roundedMaxContactJumpPx": 5.802696143513652,
+    "minimumHoldMs": 40,
+    "adoptedByRuntime": false,
+    "materialCorrespondenceReviewed": false,
+    "wholeStrideApproved": false,
+    "loopApproved": false
+  },
+  "target": [
+    300,
+    549
+  ],
+  "scope": "Strictly private numerical constraints at12px/6px/40ms bounds; no source changed, generated pose assumed, material correspondence, native anatomy, arm or final loop approval."
+}

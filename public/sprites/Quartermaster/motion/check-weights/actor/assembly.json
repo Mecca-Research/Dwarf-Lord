@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "actor",
+      "file": "authoring-inputs/actor-sheet.png",
+      "poseCount": 8,
+      "sha256": "1a897e2c522aa94c6f40fe92a3e115375cdf5ac03f964d4bb837c94606fd3048",
+      "reference": "authoring-inputs/reference.png",
+      "referenceSha256": "ecf5f62b67746c9871ba92884d0c4e4e06e294435f3478fe6a59213323069f3f",
+      "prompt": "Use case: identity-preserve. Reference is exact Quartermaster Fenn: receding slick blond hair, forked blond beard with two brass-ended braids, weathered broad face, olive waistcoat, cream rolled sleeves, leather pouches, stocky dwarf build. Create EIGHT actor-only full-body poses in 4 columns 2 rows, neutral orthographic elevated front three-quarter camera exactly reference, same identity/materials/scale, true transparent background. Remove all table, scale, books, coins, bags, furniture. Reconstruct complete lower body naturally: dark trousers and same wide buckle boots, planted feet same baseline. Right hand (viewer LEFT) holds ONE small cylindrical brass calibration weight throughout at waist height; left hand (viewer RIGHT) rests near imaginary ledger at waist height. Sequence:0weight pinched upright just above imagined scale pan at viewerleft;1 lift weight slightly;2 hold higher inspect bottom with subtle wrist turn;3 lower toward pan;4 weight just above pan without release;5 raise slightly reconsider;6 return forearm toward initial placement;7 near initialready, finish closes to0. Small controlled connected motions, no exaggerated arms, eight distinct poses, tool remains same hand, no extra weights in hands, no clipboard. Arms/hands visible and consistent, opaque face and body, boots fixed. Detailed semi-realistic fantasy render matching reference. NO scale/table/background/text/shadows."
+    }
+  ],
+  "poses": [
+    {
+      "input": "actor",
+      "pose": 0
+    },
+    {
+      "input": "actor",
+      "pose": 1
+    },
+    {
+      "input": "actor",
+      "pose": 2
+    },
+    {
+      "input": "actor",
+      "pose": 3
+    },
+    {
+      "input": "actor",
+      "pose": 4
+    },
+    {
+      "input": "actor",
+      "pose": 5
+    },
+    {
+      "input": "actor",
+      "pose": 6
+    },
+    {
+      "input": "actor",
+      "pose": 7
+    }
+  ],
+  "review": "Actor-only fixed-view calibration-weight inspection; pan contact and loop unapproved."
+}

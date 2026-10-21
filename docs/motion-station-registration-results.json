@@ -1,0 +1,114 @@
+{
+  "method": "Fixed station region translation against pose 0, measured with ECC. This does not measure redraw, anatomy or hand-contact quality.",
+  "baselineCommit": "09129505a7db60bc642abf3a012fd94a63193272",
+  "sequences": [
+    {
+      "character": "Blacksmith",
+      "action": "anvil-ready",
+      "before": {
+        "meanTranslationPx": 5.254,
+        "maxTranslationPx": 6.632
+      },
+      "after": {
+        "meanTranslationPx": 0.363,
+        "maxTranslationPx": 0.443
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-contact",
+      "before": {
+        "meanTranslationPx": 0.822,
+        "maxTranslationPx": 1.33
+      },
+      "after": {
+        "meanTranslationPx": 0.411,
+        "maxTranslationPx": 0.699
+      }
+    },
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "before": {
+        "meanTranslationPx": 0.954,
+        "maxTranslationPx": 1.345
+      },
+      "after": {
+        "meanTranslationPx": 0.38,
+        "maxTranslationPx": 0.6
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "count-coins",
+      "before": {
+        "meanTranslationPx": 0.577,
+        "maxTranslationPx": 0.927
+      },
+      "after": {
+        "meanTranslationPx": 0.385,
+        "maxTranslationPx": 0.506
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "desk-writing",
+      "before": {
+        "meanTranslationPx": 1.771,
+        "maxTranslationPx": 2.916
+      },
+      "after": {
+        "meanTranslationPx": 0.376,
+        "maxTranslationPx": 0.49
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-at-desk",
+      "before": {
+        "meanTranslationPx": 1.318,
+        "maxTranslationPx": 1.898
+      },
+      "after": {
+        "meanTranslationPx": 0.433,
+        "maxTranslationPx": 0.561
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "review-open-ledger",
+      "before": {
+        "meanTranslationPx": 1.458,
+        "maxTranslationPx": 2.367
+      },
+      "after": {
+        "meanTranslationPx": 0.406,
+        "maxTranslationPx": 0.511
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "stamp-paperwork",
+      "before": {
+        "meanTranslationPx": 0.665,
+        "maxTranslationPx": 1.769
+      },
+      "after": {
+        "meanTranslationPx": 0.358,
+        "maxTranslationPx": 0.616
+      }
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "before": {
+        "meanTranslationPx": 0.912,
+        "maxTranslationPx": 1.24
+      },
+      "after": {
+        "meanTranslationPx": 0.341,
+        "maxTranslationPx": 0.499
+      }
+    }
+  ]
+}

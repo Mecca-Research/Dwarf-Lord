@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Cook",
+  "action": "knead-dough",
+  "title": "Knead dough",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../../../public/sprites/Cook/work-references/02-knead-dough.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "palms rest on dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        92,
+        27,
+        426,
+        592
+      ],
+      "sourceAnchor": [
+        228.0,
+        589.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from palms rest on dough toward lean forward pressing dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        732,
+        34,
+        1066,
+        591
+      ],
+      "sourceAnchor": [
+        228.0,
+        582.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        34
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "lean forward pressing dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        1373,
+        58,
+        1711,
+        592
+      ],
+      "sourceAnchor": [
+        227.0,
+        558.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        58
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from lean forward pressing dough toward fold dough back over itself",
+      "durationMs": 125,
+      "sourceBounds": [
+        2014,
+        28,
+        2346,
+        592
+      ],
+      "sourceAnchor": [
+        226.0,
+        588.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        94,
+        28
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "fold dough back over itself",
+      "durationMs": 125,
+      "sourceBounds": [
+        93,
+        671,
+        428,
+        1231
+      ],
+      "sourceAnchor": [
+        227.0,
+        585.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        31
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from fold dough back over itself toward pull hands back to kneading start",
+      "durationMs": 125,
+      "sourceBounds": [
+        732,
+        671,
+        1067,
+        1231
+      ],
+      "sourceAnchor": [
+        228.0,
+        585.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        31
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "pull hands back to kneading start",
+      "durationMs": 125,
+      "sourceBounds": [
+        1373,
+        666,
+        1707,
+        1230
+      ],
+      "sourceAnchor": [
+        227.0,
+        590.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        93,
+        26
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from pull hands back to kneading start toward palms rest on dough",
+      "durationMs": 125,
+      "sourceBounds": [
+        2012,
+        672,
+        2346,
+        1232
+      ],
+      "sourceAnchor": [
+        228.0,
+        584.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        92,
+        32
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 562,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "51d3456a1bd4962a50cada7c63e244e32268a340e684ce9a09cd6e80701ee3e5",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Finite stationary source-only Cook kneading, independent fixed dough block and cosmetic finished-dough handoff. No traveling feet, family continuity, baking/economic output or seamless repeat approval."
+  }
+}

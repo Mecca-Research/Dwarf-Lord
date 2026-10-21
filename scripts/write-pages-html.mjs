@@ -30,7 +30,7 @@ if (!css || !indexJs || !routesJs) {
 
 const base = "/Dwarf-Lord";
 const html = `<!DOCTYPE html>
-<html lang="en" class="antialiased">
+<html lang="en" class="antialiased" data-client-shell="true">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>

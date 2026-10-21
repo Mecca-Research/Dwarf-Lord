@@ -1,0 +1,29 @@
+{
+  "method": "standalone physical whole-pose stage first with identity portrait only",
+  "sourceSha256": "6017b11f0a0d973fc8a56a4e7f1543297d824a8b4d739d495808d485004fb7e2",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "opaqueSourceBounds": [
+    307,
+    43,
+    1033,
+    1207
+  ],
+  "fullCanvasUniformDiagnosticNormalization": [
+    640,
+    640
+  ],
+  "manualCorrespondenceReviewed": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "selected": false,
+  "status": "changes-required",
+  "findings": [
+    "The new pose changes the leg arrangement, but enlarges/recenters the upper body compared with the retained seven poses and supplied physical stage.",
+    "Its head/torso and sole material cannot be registered as the existing common source basis by guessing per-pose scale.",
+    "Whole leg/arm phase ownership and all eight contact handoffs still need verified actual source material."
+  ],
+  "scope": "Unapproved full-pose research only, no limb paint, warp, mirror, fit approval or selected-runtime change."
+}

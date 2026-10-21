@@ -1,0 +1,71 @@
+{
+  "checkpoint": "motion49",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 20,
+    "referenceActionsWithoutMapping": 45
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 45
+    }
+  ],
+  "completed": {
+    "newFrozenCycleApprovals": 0,
+    "newFamilyApprovals": 0,
+    "newLiveMappings": [],
+    "selectedRuntimeUnchanged": true,
+    "baseline": "c8ff9bd95f504492fad535ab9412fe4436148937"
+  },
+  "privateResearch": {
+    "character": "Blacksmith",
+    "direction": "back-right",
+    "attempts": 5,
+    "candidateSelected": false,
+    "anatomicalSoleCorrespondenceVerified": false,
+    "observedBoundary": [
+      3,
+      4
+    ],
+    "minimumPerpendicularResidualsPx": [
+      8.323979380670146,
+      67.27500173405163
+    ],
+    "originalSoleBoundPx": 6,
+    "wholeStrideApproved": false,
+    "loopApproved": false
+  },
+  "validation": {
+    "reproducibleContactPreflight": "both provisional hypotheses fail unchanged bounds",
+    "selectedSourceAndRuntimeAudit": true,
+    "fullTechnicalAndActualGameCheckpoint": "motion48",
+    "exactHeadCi": "verified separately"
+  },
+  "note": "No adopted gait, acceptance upgrade or reduced scope. Five methods are useful archived research but do not close any of the103 reviews,11 direction families or45 activation gates."
+}

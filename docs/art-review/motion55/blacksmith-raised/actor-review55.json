@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-06",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+    "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+    "frameSha256": [
+      "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c",
+      "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958",
+      "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37",
+      "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8",
+      "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211",
+      "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d",
+      "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d",
+      "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+    ],
+    "atlasSha256": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        280,
+        592
+      ],
+      "targetBodyHeight": 496,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      100,
+      80,
+      60,
+      90,
+      100,
+      150,
+      140
+    ],
+    "character": "Blacksmith",
+    "action": "hammer-raised",
+    "direction": "actor"
+  },
+  "scope": "Finite stationary original-pixel Blacksmith raised-hammer edge tap over the unchanged independent anvil, visible near-boot/billet support and real steel-face/edge adjacency reviewed. Hidden sole, traveling stride, centered striking face, forces, economic result, direction continuity and repeat excluded.",
+  "checks": {
+    "identity-and-scale": "Original bald Blacksmith, short split dark beard with two brass bands, cream sleeves, leather apron and stocky body. Literal original opaque0-7 source pixels, single496/[280,592] opaque crown/near-boot basis and integer whole-pose[0,-12] registration. No local painting, warped limb, per-pose scale, mirror, duplicate pose or synthetic in-between. Far leg remains occluded and unobserved.",
+    "station-and-foot-contact": "Visible stationary near-boot material minimum correlation0.979021, maximum travel2.448547px and adjacent1.715515px pass unchanged.94/6/6 limits. Actual opaque body markers and four actual opaque steel-face corners are separately checked. This is not hidden anatomical sole, traveling foot or direction-family approval.",
+    "hand-and-tool-contact": "One hammer stays in the same working hand through overhead readiness, controlled lowering, a visible edge tap at4, rebound and overhead held finish. Tongs stay in the opposite hand around the same orange billet. All8 actually opaque lower orange points sit inside the independent projected steel face at0px outside. Visible gray lower/front hammer corner and orange left-edge material at4 are3.162278px apart, below6px. This is edge adjacency; hidden centered striking-face/underside, joint forces and volumetric collision are excluded.",
+    "prop-continuity": "Actor owns original body, visible near boot, hammer, hands, tongs and billet. The unchanged independent anvil/stump remains at the existing world site and520/[320,616] physical basis. Original painted anvil is excluded, narrow source-pixel foreground tools stay in front of fixed steel, and the hardy hole/background is excluded from actor ownership. No duplicate anvil, completed forging state, material transfer or reward claim.",
+    "completion-and-reset": "Six actual forge days show every authored-duration raised-hammer frame, one completion at7 and an unchanged5-second finish. Ordinary camera rotation preserves held task state. Cancel releases actor; anvil persists after departure. Explicit return resets0; day resolution releases motion and day6 restores first forging operation. This derived actor is one finite edge-tap sequence; overhead7-to0 seamless repeat is not approved."
+  }
+}

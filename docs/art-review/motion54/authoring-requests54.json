@@ -1,0 +1,217 @@
+[
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-3.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-constraint-guide.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-5.png"
+      ],
+      "prompt": "Precise-object-edit for an authored dwarf walking animation, ONE full-body pose only. Use image 1 as the exact primary sprite to edit. This is a stocky bald dwarf Laborer viewed from behind-left, facing and walking toward upper-left, wearing engraved worn brown leather vest, cream rolled sleeves, dark beard, grey-brown trousers and tall brown buckle boots. Preserve his head, torso, clothing details, camera, lighting, arm counter-swing and physical size/placement on the same 1280x1280 transparent canvas. Do not mirror, rotate, enlarge or recenter the dwarf. Image 2 shows authoring constraints, not scenery. Remove ALL guide text/lines/circles from output. Convert the airborne FORWARD NEAR ANATOMICAL LEFT boot at image LEFT into the LEFT HEEL-CONTACT pose: its rear heel-lower edge must meet the pink target at approximately x512 y1058; toe remains raised and ahead upper-left, heel strikes the projected ground plane. Place the complete leading boot in that location with a naturally connected left shin; show the same near-side outer brass buckle. This is a leading LEFT leg, clearly separated upper-left of pelvis. The FAR ANATOMICAL RIGHT leg continues trailing toward image RIGHT, heel lifted with actual distal toe sole still at approximately x862 y1220, cyan constraint. Keep that complete far boot/leg and its material at its original placement. Keep near left arm back and far right arm forward as image1. Image3 is identity/next left-support phase reference only, do not copy its leg pose; output is the preceding left-heel contact phase. The two sole contacts obey the same upper-left / lower-right projected ground direction at this rear-left camera. Crucial: preserve correct left-leading versus right-trailing anatomy; do not revert to a right-leading pose. Detailed semi-realistic high quality sprite, two connected legs, two arms, two boots, entire original dwarf visible, genuine transparent alpha, no ground/shadow, no tools or additional objects. No sheet, no multiple figures."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-3.png",
+        "archive": "authoring-files/landing-reference-3.png",
+        "sha256": "460e3f4fedfa02dca537422dd43245db2ef13e44634c944f6611c712b20a60c1"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-constraint-guide.png",
+        "archive": "authoring-files/landing-constraint-guide.png",
+        "sha256": "c4a3fc31e9d75ef8b0c3a9e329842748846dba1658d18d88e5763c19478724cb"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-5.png",
+        "archive": "authoring-files/landing-reference-5.png",
+        "sha256": "3bacb2d237b33c4416a17f9c02d20d566daed9433dedbfa27307c504712ef473"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/landing-attempt1.png",
+      "sha256": "0890c4b4244516f3973e5df7e7f04f7ef831c694226592da70881a223d0b4aa3"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-3.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-constraint-guide.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-5.png"
+      ],
+      "prompt": "Precise-object-edit. Edit IMAGE 1 ONLY into one next walking pose. Images2/3 are constraints/reference. Keep the original entire head/neck/torso/waist/arms/pelvis, original physical size and exact placement on its original 1280x1280 transparent canvas. Original bald crown is near y190, belt near y650, pelvis near y790. Do not enlarge or vertically stretch/recenter figure. SAME rear-left view, walking toward upper-left. The near anatomical LEFT leg is leading toward image LEFT, the far RIGHT leg trails toward image RIGHT. Required local pose change: move the COMPLETE NEAR LEFT leading boot approximately80px RIGHT and70px UP from its original position, with a naturally shortened/foreshortened left shin from the unchanged thigh. This is an intentional UPWARD and RIGHTWARD placement in projection, NOT downward. Rotate that leading boot into HEEL CONTACT with toe raised: actual low heel sole edge meets x512 y1058 in the guide, toe projects upper-left. Show same near-side brass buckle and leather detail. Leading LEFT boot MUST remain on image LEFT ahead of pelvis; do not swap the leg to trailing. Retain the far trailing RIGHT boot with toe at x862 y1220 and heel lifted, original size/position. Retain near left arm backward and far right arm forward. Image2 is ONLY projected-ground placement constraint; no guide pixels/text/scenery may be in the output. Image3 shows next left support identity, not the target pose. A single entire semi-realistic detailed dwarf with the original high quality finish, original canvas margin above crown, exact original physical body proportions. Preserve shirt, forearms, intricate leather vest and trousers. Two boots, two connected legs. True transparent alpha, no shadow/ground/tools, no duplicated figures, no animation sheet."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-3.png",
+        "archive": "authoring-files/landing-reference-3.png",
+        "sha256": "460e3f4fedfa02dca537422dd43245db2ef13e44634c944f6611c712b20a60c1"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-constraint-guide.png",
+        "archive": "authoring-files/landing-constraint-guide.png",
+        "sha256": "c4a3fc31e9d75ef8b0c3a9e329842748846dba1658d18d88e5763c19478724cb"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/landing-reference-5.png",
+        "archive": "authoring-files/landing-reference-5.png",
+        "sha256": "3bacb2d237b33c4416a17f9c02d20d566daed9433dedbfa27307c504712ef473"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/landing-attempt2.png",
+      "sha256": "1ad4be6d530f22d912e0cd1567a4b0ae7aa291978403d2c6ba9b452cff9f3151"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/replant-reference-7.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/replant-constraint-guide.png"
+      ],
+      "prompt": "Precise-object-edit of one existing walking pose, not a new design. Use IMAGE1 as the exact full-body Laborer sprite: stocky bald dark-bearded dwarf in engraved worn leather waistcoat, rolled cream sleeves, grey-brown trousers, tall buckled brown boots. Keep exact rear-left camera facing upper-left, identity, lighting, materials, original torso/head/arms and entire figure scale/placement on original1280x1280 canvas. Original crown near y190, belt near y650. Keep far RIGHT forward-reaching boot on IMAGE LEFT airborne exactly unchanged. Keep both arm counter-swing positions unchanged. Only the trailing NEAR ANATOMICAL LEFT boot on IMAGE RIGHT needs a ground-depth correction: move this entire large buckled boot exactly40pixels DOWN, keeping its original horizontal location, original size and toe/heel orientation. Naturally extend its connected trailing shin from the unchanged thigh to the lower ankle. The near left heel remains raised and distal toe supports at the lower projected ground plane; toe-region moves from approximately x726 y1190 to x726 y1230 on this1280canvas. This is a DOWNWARD40px shift, not an upward shift or opposite-leg swap, and not a second leading/heel-contact pose. Image2 shows only which boot and target displacement; remove every guide mark/text/rectangle in final. Keep original margin above head and full boots inside canvas with a small bottom margin. Do NOT enlarge, stretch, recenter, mirror or rotate the dwarf. One connected complete full body, two arms/two legs/two feet, detailed semi-realistic sprite, genuine transparent alpha, no ground/shadow/text/scenery/tools, no sheet or multiple figures."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/replant-reference-7.png",
+        "archive": "authoring-files/replant-reference-7.png",
+        "sha256": "b4735b00fc571ca7632e63693869fed7b0f7aa17c0f34e12371299be91e00352"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/replant-constraint-guide.png",
+        "archive": "authoring-files/replant-constraint-guide.png",
+        "sha256": "7d1ba2bdbb8998307e9af01e70bb9fbdc53279e095570a1514cea9632cf37e3a"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/replant-attempt1.png",
+      "sha256": "ef7fd3c269703813f0cd46dd18018535b03a7f7ad50412c8b31a81b275bc8562"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-reference-1.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-constraint-guide-1.png"
+      ],
+      "prompt": "Precise-object-edit for ONE whole authored walking pose. IMAGE1 is the original full-body stocky bald dwarf Laborer, rear-left camera facing/walking upper-left, engraved worn brown leather waistcoat, cream rolled sleeves, dark beard, grey-brown trousers and tall leather buckle boots. Keep original identity, original physical body size and original head/torso/pelvis/arms and canvas placement. Do NOT recenter, enlarge, mirror or change camera. Required correction is ONLY the PLANTED FAR anatomical RIGHT boot at the lower LEFT of image. Its current flat shoe points nearly screen-left, which is a wrong ground perspective. TURN THAT COMPLETE PLANTED BOOT on the HORIZONTAL GROUND PLANE about its rear heel, so its toe points UPPER-LEFT and away from camera. This is a yaw/perspective turn of a FLAT weight-bearing boot, NOT a toe lift, NOT heel lift, NOT airborne, NOT a downward/upward translation of whole foot. Image2 shows the required projected flat sole footprint quadrilateral: actual rear heel-lower sole point remains at x674 y1154, front toe-lower sole point becomes x490 y1050. The rear heel stays fixed; the complete boot is foreshortened/turned toward upper-left on the ground. Adjust the supporting ankle naturally to this orientation, keep supporting thigh/shin and all other body placements. Show upper boot leather and correctly foreshortened sole edge; no sole underside because this boot is planted flat. Keep far inner side plain as in the original; do not add a near-side outer buckle. Keep the other near LEFT boot on image RIGHT exactly unchanged, returning airborne with heel raised and visible sole. Keep both existing arm counter-swing poses and exact original head/vest silhouette. One original detailed semi-realistic connected entire dwarf at original canvas scale with margin above crown, full both boots visible. Image2 marks are ONLY placement constraints, NOT observed material; omit all guides/text/circles/ground from final. Genuine transparent alpha, no shadow, no tools/scenery, no extra figure or sheet."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-reference-1.png",
+        "archive": "authoring-files/flat-reference-1.png",
+        "sha256": "652e6db6fd8e85d836fab090e9a0c014f39a2a94878688781d3627cccf7b2637"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-constraint-guide-1.png",
+        "archive": "authoring-files/flat-constraint-guide-1.png",
+        "sha256": "921603bf1f637c132e1452b761b2338f28ef92a7692e83c5c591dea1089e090e"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/flat-1-attempt1.png",
+      "sha256": "5ba9813e2746439bceb57959c7ab8e39d8994cd1663f5b844dbf49e68a11213f"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-reference-5.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-constraint-guide-5.png"
+      ],
+      "prompt": "Precise-object-edit for ONE whole authored walking pose. IMAGE1 is the original full-body stocky bald dwarf Laborer, rear-left camera facing/walking upper-left, engraved worn brown leather waistcoat, cream rolled sleeves, dark beard, grey-brown trousers and tall leather buckle boots. Keep original identity, original physical body size and original head/torso/pelvis/arms and canvas placement. Do NOT recenter, enlarge, mirror or change camera. Required correction is ONLY the PLANTED NEAR anatomical LEFT boot at the lower LEFT of image. Its current flat shoe points nearly screen-left, which is a wrong ground perspective. TURN THAT COMPLETE PLANTED BOOT on the HORIZONTAL GROUND PLANE about its rear heel, so its toe points UPPER-LEFT and away from camera. This is a yaw/perspective turn of a FLAT weight-bearing boot, NOT a toe lift, NOT heel lift, NOT airborne, NOT a downward/upward translation of whole foot. Image2 shows the required projected flat sole footprint quadrilateral: actual rear heel-lower sole point remains at x730 y1186, front toe-lower sole point becomes x530 y1072. The rear heel stays fixed; the complete boot is foreshortened/turned toward upper-left on the ground. Adjust the supporting ankle naturally to this orientation, keep supporting thigh/shin and all other body placements. Show upper boot leather and correctly foreshortened sole edge; no sole underside because this boot is planted flat. Preserve its near-side brass outer buckle. Keep the other far RIGHT boot on image RIGHT exactly unchanged, returning airborne with heel raised and visible sole. Keep both existing arm counter-swing poses and exact original head/vest silhouette. One original detailed semi-realistic connected entire dwarf at original canvas scale with margin above crown, full both boots visible. Image2 marks are ONLY placement constraints, NOT observed material; omit all guides/text/circles/ground from final. Genuine transparent alpha, no shadow, no tools/scenery, no extra figure or sheet."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-reference-5.png",
+        "archive": "authoring-files/flat-reference-5.png",
+        "sha256": "3bacb2d237b33c4416a17f9c02d20d566daed9433dedbfa27307c504712ef473"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-constraint-guide-5.png",
+        "archive": "authoring-files/flat-constraint-guide-5.png",
+        "sha256": "0043459f1405f30a1cf5801c5610c32d8322409ff1b6169e45d86bccba682dea"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/flat-5-attempt1.png",
+      "sha256": "b7e08615ff34481c042be92a9cace6475a48d800b42238dac633a548697159ec"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-1-source-stencil.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-1-physical-guide.png"
+      ],
+      "prompt": "Complete ONE high-quality dwarf Laborer sprite using image1's exact retained source pixels/body pose. Image1 is an INPUT STENCIL with only the incorrectly oriented supporting boot omitted; restore that one missing boot and its ankle connection. Preserve original bald head, dark beard, muscular stocky body, engraved brown leather vest, cream rolled sleeves, trousers, original upper-body/arms and other airborne boot, camera and original physical size/placement on1280x1280 canvas. Image2 supplies a precise three-dimensional PLACEMENT PRISM for the missing boot on the horizontal ground plane, NOT an actual asset or scenery. Replace that grey prism with the original richly detailed worn brown leather dwarf boot, thick dark sole and proper connection to its retained upper shaft. The PLANTED far anatomical RIGHT boot must follow that prism's UPPER-LEFT toe direction and ground perspective. Match the prism's lower sole plane: rear heel material centered at x674 y1154, distal toe material centered at x490 y1050. Actual boot sole-toe is farther away/UPPER-LEFT of heel on the same flat projected ground plane; visible sole edge slopes diagonally down-right from toe to heel by about115pixels over200pixels, not nearly horizontal. Boot planted flat, both heel and toe on the same ground plane, no raised toe or airborne heel, no sole underside. Show correctly foreshortened top toe leather and sidewalls. Round the toe, do not keep rectangular prism shape. Retain far-side inner shaft, no added outer buckle. Preserve the other returning anatomical LEFT boot at image RIGHT AIRBORNE with its sole visible, and exact existing arm counter-swing. Do not restore the old screen-left flat boot perspective. Keep crown near originaly190 and torso/waist original placement; do not enlarge, shrink, shift, mirror or rotate character. Entire detailed semi-realistic dwarf with both connected feet visible and original margins. All grey geometry/text/circles must disappear. Genuine transparent alpha, no ground, no shadow, no props, no guides, one full-body figure only."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-1-source-stencil.png",
+        "archive": "authoring-files/flat-1-source-stencil.png",
+        "sha256": "b3f813c1425c17761ffaff90e881e0f743bbf97eee4584381cd068924388228d"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-1-physical-guide.png",
+        "archive": "authoring-files/flat-1-physical-guide.png",
+        "sha256": "8330d30e6bfa1cc2f34c0baa1a41b27ea2a09ed6968a999af0f5db1055ff3263"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/flat-1-attempt2.png",
+      "sha256": "1269c03270b21de27fde5b885d57cfb250d95e77d27e14ed88a5dc312d1a6b47"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  },
+  {
+    "tool": "image_gen__imagegen",
+    "arguments": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-5-source-stencil.png",
+        "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-5-physical-guide.png"
+      ],
+      "prompt": "Complete ONE high-quality dwarf Laborer sprite using image1's exact retained source pixels/body pose. Image1 is an INPUT STENCIL with only the incorrectly oriented supporting boot omitted; restore that one missing boot and its ankle connection. Preserve original bald head, dark beard, muscular stocky body, engraved brown leather vest, cream rolled sleeves, trousers, original upper-body/arms and other airborne boot, camera and original physical size/placement on1280x1280 canvas. Image2 supplies a precise three-dimensional PLACEMENT PRISM for the missing boot on the horizontal ground plane, NOT an actual asset or scenery. Replace that grey prism with the original richly detailed worn brown leather dwarf boot, thick dark sole and proper connection to its retained upper shaft. The PLANTED near anatomical LEFT boot must follow that prism's UPPER-LEFT toe direction and ground perspective. Match the prism's lower sole plane: rear heel material centered at x730 y1186, distal toe material centered at x530 y1072. Actual boot sole-toe is farther away/UPPER-LEFT of heel on the same flat projected ground plane; visible sole edge slopes diagonally down-right from toe to heel by about115pixels over200pixels, not nearly horizontal. Boot planted flat, both heel and toe on the same ground plane, no raised toe or airborne heel, no sole underside. Show correctly foreshortened top toe leather and sidewalls. Round the toe, do not keep rectangular prism shape. Retain near-side outer brass buckle. Preserve the other returning anatomical RIGHT boot at image RIGHT AIRBORNE with its sole visible, and exact existing arm counter-swing. Do not restore the old screen-left flat boot perspective. Keep crown near originaly190 and torso/waist original placement; do not enlarge, shrink, shift, mirror or rotate character. Entire detailed semi-realistic dwarf with both connected feet visible and original margins. All grey geometry/text/circles must disappear. Genuine transparent alpha, no ground, no shadow, no props, no guides, one full-body figure only."
+    },
+    "orderedReferences": [
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-5-source-stencil.png",
+        "archive": "authoring-files/flat-5-source-stencil.png",
+        "sha256": "802455c856e204b009f640d623b9a82f6d5ace43b5fa3a306a3111f43d385632"
+      },
+      {
+        "originalPath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion54/flat-5-physical-guide.png",
+        "archive": "authoring-files/flat-5-physical-guide.png",
+        "sha256": "fc06f4fd98b78189f991e0b270a93c7dc19f2cdaf67a7a0732fa16304f01bf7a"
+      }
+    ],
+    "output": {
+      "archive": "authoring-files/flat-5-attempt2.png",
+      "sha256": "fe614133ff662c167c6eb2959457bc2c35721f6eb74209417d928e22a48e4399"
+    },
+    "selectedByRuntime": false,
+    "approved": false
+  }
+]

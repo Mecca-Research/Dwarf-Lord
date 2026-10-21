@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "config": {
+    "actor": "public/sprites/Blacksmith/motion/hammer-raised/actor",
+    "binding": {
+      "sourceSha256": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+      "settingsSha256": "8001876b2d4a6b0d73cc966a7d74b95168bed22e67e1f0c89ecd11a840113f7e",
+      "frameSha256": [
+        "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c",
+        "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958",
+        "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37",
+        "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8",
+        "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211",
+        "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d",
+        "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d",
+        "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5"
+      ],
+      "durationsMs": [
+        160,
+        100,
+        80,
+        60,
+        90,
+        100,
+        150,
+        140
+      ]
+    },
+    "dependencies": [
+      {
+        "file": "public/sprites/workstations/anvil/sprite.png",
+        "sha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30"
+      },
+      {
+        "file": "public/sprites/workstations/anvil/generation.json",
+        "sha256": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b"
+      },
+      {
+        "file": "docs/art-review/motion55/blacksmith-raised/registered-prop55.png",
+        "sha256": "f13bf6a8616273b9ef96734bde641f9ab4d2df8872885237a10c9743f8882834"
+      },
+      {
+        "file": "public/sprites/Blacksmith/motion/render-calibration.json",
+        "sha256": "22608ba7cce573b9bfb433e90c36ed05ee8dd4ada1e99eea192941288bf31b5b"
+      },
+      {
+        "file": "public/workstation-registration.mjs",
+        "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+      }
+    ],
+    "workingFacePolygon": [
+      [
+        211.32307692307694,
+        368.79999999999995
+      ],
+      [
+        387.7846153846154,
+        333.5076923076923
+      ],
+      [
+        413.53846153846155,
+        361.16923076923075
+      ],
+      [
+        225.63076923076923,
+        380.24615384615385
+      ]
+    ],
+    "points": [
+      [
+        347,
+        364
+      ],
+      [
+        347,
+        364
+      ],
+      [
+        347,
+        364
+      ],
+      [
+        347,
+        366
+      ],
+      [
+        347,
+        364
+      ],
+      [
+        347,
+        364
+      ],
+      [
+        347,
+        363
+      ],
+      [
+        347,
+        364
+      ]
+    ],
+    "scope": "Actual opaque lower orange billet/rim material lies on the traced independent opaque anvil top face in all8 poses. Same common496/[280,592] actor and520/[320,616] prop physical bases, one integer whole-pose vertical correction. No hidden jaw, submerged underside, far sole, force, economic result or repeat approval."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 1,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "point": [
+        347.0,
+        366.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "point": [
+        347.0,
+        363.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "point": [
+        347.0,
+        364.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0,
+  "lastToFirstToolTravelPx": 0.0,
+  "scope": "Actual opaque lower orange billet/rim material lies on the traced independent opaque anvil top face in all8 poses. Same common496/[280,592] actor and520/[320,616] prop physical bases, one integer whole-pose vertical correction. No hidden jaw, submerged underside, far sole, force, economic result or repeat approval.",
+  "approval": false,
+  "actualSourceFace": {
+    "file": "public/sprites/workstations/anvil/sprite.png",
+    "vertices": [
+      [
+        248,
+        382
+      ],
+      [
+        433,
+        345
+      ],
+      [
+        460,
+        374
+      ],
+      [
+        263,
+        394
+      ]
+    ],
+    "vertexAlpha": [
+      250,
+      250,
+      253,
+      252
+    ]
+  },
+  "actualSourceSamples": [
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        379.0645161290323
+      ],
+      "rgba": [
+        101,
+        94,
+        94,
+        251
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        375.9193548387097
+      ],
+      "rgba": [
+        112,
+        95,
+        91,
+        252
+      ]
+    },
+    {
+      "sourcePoint": [
+        390.241935483871,
+        376.9677419354839
+      ],
+      "rgba": [
+        87,
+        77,
+        76,
+        252
+      ]
+    }
+  ]
+}

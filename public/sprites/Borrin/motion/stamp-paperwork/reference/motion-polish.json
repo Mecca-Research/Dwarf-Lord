@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "sourceSha256": "020c6f0fa71e41820fa274b645e45b57fa5bf17ccf40860d20d2f8bfeb42c0d5",
+  "offsetsPx": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "stationRegistration": {
+    "method": "bounded-translation-ECC",
+    "referenceSourcePose": 0,
+    "outputRegion": [
+      40,
+      370,
+      595,
+      600
+    ],
+    "maxCorrectionPx": 12,
+    "results": [
+      {
+        "correlation": 1.0,
+        "accepted": true,
+        "measuredTranslationPx": [
+          -0.0,
+          0.0
+        ]
+      },
+      {
+        "correlation": 0.9946,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.17,
+          -0.12
+        ]
+      },
+      {
+        "correlation": 0.9964,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.32,
+          -0.26
+        ]
+      },
+      {
+        "correlation": 0.9931,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.8,
+          -0.14
+        ]
+      },
+      {
+        "correlation": 0.994,
+        "accepted": true,
+        "measuredTranslationPx": [
+          -0.09,
+          1.77
+        ]
+      },
+      {
+        "correlation": 0.9893,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.17,
+          0.35
+        ]
+      },
+      {
+        "correlation": 0.9922,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.24,
+          0.3
+        ]
+      },
+      {
+        "correlation": 0.9869,
+        "accepted": true,
+        "measuredTranslationPx": [
+          0.53,
+          0.42
+        ]
+      }
+    ],
+    "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+  },
+  "note": "Align the fixed desk or anvil base to source pose 0 using bounded translation only. No perspective warp, limb synthesis or replacement prop pixels. Residual redraw and hand contact still require review."
+}

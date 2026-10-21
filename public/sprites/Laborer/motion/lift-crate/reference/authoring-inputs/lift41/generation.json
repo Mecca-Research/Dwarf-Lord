@@ -1,0 +1,77 @@
+{
+  "character": "Laborer",
+  "action": "lift-crate",
+  "title": "Lift crate",
+  "reference": "public/sprites/Laborer/work-references/00-lift-crate.png",
+  "beats": [
+    "bend with hands gripping crate sides",
+    "continuous midway transition from bend with hands gripping crate sides toward lift crate to knee height",
+    "lift crate to knee height",
+    "continuous midway transition from lift crate to knee height toward straighten with crate at waist",
+    "straighten with crate at waist",
+    "first controlled lowering; crate still clear of floor",
+    "deeper lowering while same two grips persist",
+    "completed floor placement with both hands still gripping crate"
+  ],
+  "kind": "work",
+  "direction": "reference",
+  "notes": "Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout.",
+  "frameCount": 8,
+  "status": "pending",
+  "destination": "public/sprites/Laborer/motion/lift-crate/reference",
+  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Laborer. Action: Lift crate. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. bend with hands gripping crate sides | 2. continuous midway transition from bend with hands gripping crate sides toward lift crate to knee height | 3. lift crate to knee height | 4. continuous midway transition from lift crate to knee height toward straighten with crate at waist | 5. straighten with crate at waist | 6. continuous midway transition from straighten with crate at waist toward settle weight while holding crate | 7. settle weight while holding crate | 8. continuous midway transition from settle weight while holding crate toward bend with hands gripping crate sides",
+  "sourceName": "exec-3bd0404d-04b0-459c-91e4-21292fbb8e2b.png",
+  "editHistory": [
+    {
+      "frame": 5,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. First lowering intermediate: crate moves down by about one quarter of the total waist-to-floor distance, bottom near lower knee height. Knees bend moderately, chest leans slightly forward, head still noticeably higher than crouched destination. Fingers remain attached to side edges. Crate remains above floor.",
+      "source": "authoring-inputs/pose-5.png",
+      "sourceSha256": "4c4484ee710a9be498220e0c0d883703a941facd84cb23972fe4d91d426605d1",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 6,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. Second lowering intermediate: crate moves down by about two thirds of the total waist-to-floor distance, bottom a hand-span above floor. Knees clearly flex and torso bends more than first intermediate, head above low destination. Both grips stay fixed on same sides, no release or foot travel.",
+      "source": "authoring-inputs/pose-6.png",
+      "sourceSha256": "7b1787c73343ecb6b500d51d4e6a9a89ec2293ffeddf89af25b4be5c28a2cbd2",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": false
+    },
+    {
+      "frame": 7,
+      "prompt": "Edit the FIRST reference into ONE full-body game sprite, genuine transparent RGBA background. Keep the exact bald stocky dwarf Laborer, two long dark-brown brass-bound beard braids, ivory rolled sleeves, brown leather vest/pouches, trousers and capped brown boots. Same fixed orthographic front-right camera as first reference. First reference is the waist-high crate hold; second is the low destination stance for the lowering. Same ONE wooden crate, same square proportions, two visible faces, X/diagonal board bracing, same corner steel straps and rivets, no change in material or orientation. Exactly two arms/hands continuously gripping the same crate sides. Both boots remain planted at exactly the first reference's ground positions and orientation; no step or lifted heel. Preserve lighting/style/body proportions. Change only full body pose for controlled lowering with flexed knees and hips. No extra props, text, background, extra hands, pen or tool. Entire figure and crate inside the canvas, no clipping. Final controlled lowering: crate bottom now rests on the floor, complete crouched stance similar to second reference, with hips/knees flexed while maintaining exactly first reference's foot locations. Both hands remain visibly gripping its sides. No unshown release; finish held in this low settled position.",
+      "source": "authoring-inputs/pose-7.png",
+      "sourceSha256": "bb2927eb3bbfb728ccf1a6898638ef323d72b5ba9c6a4a72af4e96ac49e79259",
+      "references": [
+        {
+          "file": "authoring-inputs/standing-reference.png",
+          "sha256": "6f673d6783c39a10ca04e9339bf25c727d6ed7e6e10cc61af98302734ffa8ac7"
+        },
+        {
+          "file": "authoring-inputs/pose-0.png",
+          "sha256": "75d97260b150e303e05f75f1c9e91d9e1a1dfb46b4c24990eca74bcb81039a98"
+        }
+      ],
+      "selected": false
+    }
+  ]
+}

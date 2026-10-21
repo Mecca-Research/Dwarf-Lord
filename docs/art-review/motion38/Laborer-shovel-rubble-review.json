@@ -1,0 +1,53 @@
+{
+  "character": "Laborer",
+  "action": "shovel-rubble",
+  "direction": "reference",
+  "destination": "public/sprites/Laborer/motion/shovel-rubble/reference",
+  "sourceSha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7",
+  "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "nativeReviewSha256": "703fdca0aee90d443fd38f923f06fb83470f9e2ad040053fb19e1a5d792908b5",
+  "verdict": "changes-required",
+  "issues": [
+    "Rubble pours visibly into the barrow6, but terminal7 makes the barrow empty again. Need the deposited load retained during the empty-shovel return and held completion; repeat cannot regenerate the source pile."
+  ],
+  "binding": {
+    "sourceSha256": "eb35873055be0579fdad49ba9a50dc7015b58d748ff2530e67eb2325754054c7",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "22cf5677a342f220af503344d1b30cf27edc67faffdec461cec16f5a89e94476",
+      "49508193bbfeb5c68ca2839308b138febef7e9cbe2c23401b941e12c2aa98a67",
+      "c0e683a674aca6d5d6d3a03e94811148ac8deb4999da450cd5fce60436876c16",
+      "9eabfc5fb0d407669906bc8bcb821ba9f5a9e8bc0dc98159914970dea75a9bc6",
+      "92a6ab961ac1af361cfee4c15ef4d1180afe68e6edcdc2013cc391a7d0907de7",
+      "362528efe2732129c9ac990c59dd699578f3bb1c24b4d81ddc457470e812d0b8",
+      "f58104820850718db90eb2f85fcd3a18d0d5f69a9a67894de426acc977e3e8f2",
+      "b8f02069144395bc371d8aff3bca90eba3befc673c8d90aa1641655e5bccb852"
+    ],
+    "atlasSha256": "2bd423a207546af732d074e1e55489dba9d1a50a2bf1a20a03f2679b4a257a85",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "shovel-rubble",
+    "direction": "reference"
+  }
+}

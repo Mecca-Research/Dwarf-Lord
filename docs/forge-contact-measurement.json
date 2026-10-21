@@ -1,0 +1,110 @@
+{
+  "config": {
+    "actor": "public/sprites/Blacksmith/motion/hammer-contact/actor",
+    "prop": "public/sprites/workstations/anvil/sprite.png",
+    "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+    "propSha256": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+    "billetRegion": [
+      330,
+      330,
+      410,
+      410
+    ],
+    "workingFacePolygon": [
+      [
+        245,
+        382
+      ],
+      [
+        436,
+        343
+      ],
+      [
+        467,
+        375
+      ],
+      [
+        258,
+        398
+      ]
+    ],
+    "review": "Manually traced anvil top in 640-pixel render after final y=343 placement. Billet selector isolates bright orange material, not hand or hammer."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "frameSha256": "ad06a7c99e18f787db6a5f0cac209081f983cecfe585eab488f27a96e8bf40ee",
+      "billetBottom": [
+        351.0,
+        388.0
+      ],
+      "outsideWorkingFacePx": 0.233
+    },
+    {
+      "frame": 1,
+      "frameSha256": "63f1faba9c79a1430645692cf34217ddeb733749da5472621e7daf7ab2349d4e",
+      "billetBottom": [
+        352.0,
+        383.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "frameSha256": "6771fff7b9156ed3f0a69210ab62a67f9e7f92236b12a9fb2f6cf59ed63f2ff8",
+      "billetBottom": [
+        353.0,
+        383.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "frameSha256": "29be0df96cc2e8eefe478779e1df760fcef134be0ce83647dcf7d76764872453",
+      "billetBottom": [
+        353.0,
+        382.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "frameSha256": "8b77fdac93295aef2f88f0a09d33cc3972356ce432e70b7c02e96cb288f098dc",
+      "billetBottom": [
+        354.0,
+        383.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "frameSha256": "827ba2345896889f88e6d5e730c92e32a478edc896b9b360dbd61801cc1ccdc5",
+      "billetBottom": [
+        355.0,
+        382.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "frameSha256": "68b37ef7d11e4736b012c86e94375d0d4b91ac650c2e0890faace702ff19a779",
+      "billetBottom": [
+        354.0,
+        382.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "frameSha256": "2555b38e986d9813ebceb5b4e6a28f50c8f6d99bf82b647e8e7cf1855a856ee5",
+      "billetBottom": [
+        352.0,
+        384.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0.233,
+  "approval": false,
+  "scope": "Visible hot billet bottom against manually traced projected anvil top; does not prove 3D load, hammer force, grip continuity or loop quality."
+}

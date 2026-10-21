@@ -1,0 +1,136 @@
+{
+  "character": "Borrin",
+  "action": "desk-writing",
+  "direction": "reference",
+  "destination": "public/sprites/Borrin/motion/desk-writing/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe",
+  "settingsSha256": "f1af109284b66f04f72535c7af80b8719e7ac5bc865720603be25e7cbb753ac3",
+  "nativeReviewSha256": "f93e339ab6951eb67b132361df230737bb80514be34c28835ec68f2169f19f85",
+  "checks": {
+    "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right fingers keep the same feather quill and connected shaft. Tip approaches the left open page0/1/2, lifts3/4, moves to a second stroke5/6 and lowers7. Left hand rests on the other open page throughout. Book never closes; ink pot and two stacked books stay on the combined desk.",
+    "prop-continuity": "Right fingers keep the same feather quill and connected shaft. Tip approaches the left open page0/1/2, lifts3/4, moves to a second stroke5/6 and lowers7. Left hand rests on the other open page throughout. Book never closes; ink pot and two stacked books stay on the combined desk.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "0b224d323acc5b14d60028eb55a96313361f18164d14162253e42948a67b3abe",
+    "settingsSha256": "f1af109284b66f04f72535c7af80b8719e7ac5bc865720603be25e7cbb753ac3",
+    "frameSha256": [
+      "a08c1a87bda79b036feb395ec42c4c4c95fd77e63173ce7fc81e51d45933eecd",
+      "e3179e21b838829ed001760281bc11d63e8fda4f8ee09fa6ba4181ca0ab59759",
+      "833f57c88e5c7ed794986cab64b80c3769e63085480e24234921424da6cb42dd",
+      "30048640e8ea224f46682b19b1bbe627ce9cc042c4ee213d611e20b690e15b22",
+      "db31fb7a651cf035b65cc80cc2b35810dbeab20e3a8cc1f9c8829d0e9154524c",
+      "538840f14b138575c471150199d414b9287655416cee997288f0fbdc0d0c485a",
+      "1bc191c382eab5ffc62ed307c209e5c3d47ecde3eddd7ec5ed98231b544fd20b",
+      "ed3e33b9d6f4a6ef3f500e2b10ae43cb7d7733b57ce5f837bd173a1c413c1289"
+    ],
+    "atlasSha256": "a7df76dee498ab8777ac46c70f57c77d0b08629b53eff9412858df775c5e4af3",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "f1af109284b66f04f72535c7af80b8719e7ac5bc865720603be25e7cbb753ac3",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          40,
+          370,
+          595,
+          600
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.0,
+              -0.0
+            ]
+          },
+          {
+            "correlation": 0.9916,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.32,
+              0.0
+            ]
+          },
+          {
+            "correlation": 0.9952,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.17,
+              0.06
+            ]
+          },
+          {
+            "correlation": 0.9916,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.56,
+              0.22
+            ]
+          },
+          {
+            "correlation": 0.9741,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.34,
+              -2.89
+            ]
+          },
+          {
+            "correlation": 0.9713,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.46,
+              -2.88
+            ]
+          },
+          {
+            "correlation": 0.9704,
+            "accepted": true,
+            "measuredTranslationPx": [
+              -0.26,
+              -2.86
+            ]
+          },
+          {
+            "correlation": 0.9707,
+            "accepted": true,
+            "measuredTranslationPx": [
+              0.17,
+              -2.6
+            ]
+          }
+        ],
+        "rasterization": "Round measured shifts to whole pixels before applying them to existing raster placement."
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "desk-writing",
+    "direction": "reference"
+  }
+}

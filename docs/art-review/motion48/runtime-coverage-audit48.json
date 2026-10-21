@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "checkpoint": "motion48",
+  "baseline": "e11f33545db2b0b348308f16bb2004e5594ac01f",
+  "addedMappings": [
+    {
+      "character": "Cook",
+      "action": "knead-dough"
+    }
+  ],
+  "revalidatedDependencyChanges": [
+    {
+      "file": "src/game/world/work-activities.ts",
+      "beforeSha256": "c6011cf7c7891d8dbc05d999342476b3ea44ac430c035ffa6b6ebce213538836",
+      "sha256": "8397cd8be6fcd08f556b0501b7c8d6851d6e99ee28e9dc130ef7db2a378bc75a"
+    },
+    {
+      "file": "src/game/world/workstation-sites.ts",
+      "beforeSha256": "31a29c18425e69d347496472c5847d0df5e83814c7618fca617e4f909c27e4e0",
+      "sha256": "9317c7adedcdcd2d155c3874037a620d24899aa798402ad625654a1931965a82"
+    },
+    {
+      "file": "docs/runtime-motion-additions.json",
+      "beforeSha256": "e3703c131b098ba00b72c5c9e9ad68d5c268dc17ba674dd85cd81b2297d1ca6d",
+      "sha256": "87b1de79a4ba51d1f240af2160a30461bcefa5ef1557a58d547b2d9e74669451"
+    },
+    {
+      "file": "public/workstation-library.json",
+      "beforeSha256": "aecf6824c1fdbefd93fedeb646c0f682a8d70eed1e2900876d65249ddb54ef45",
+      "sha256": "6764d6e25ba2a30f646c118c23789bfc008ac99c70e98276b3ca4e2045030230"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "beforeSha256": "bce95083fe1f777a3937e43473b2fad40a378e80f8276c026e6a4c2ec16504b4",
+      "sha256": "0882c67de8ddbbef579997e54c96f7eb12747de246b77bce5001ae1a09a398d1"
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "beforeSha256": "a61b2b45ee632e9e3437c5b0dc6bc7b8c07dfc6b823902080efbbea08546e235",
+      "sha256": "f873bbc319e65fe0dc56b2f89c1832c4bdbe1b128dc1412ac52e0d41c3c1428d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/render-calibration.json",
+      "beforeSha256": "d3ca4bf7783940f0f2ac514a5dc3a76d78c84949795dffe72bc3b7dde2f046bc",
+      "sha256": "43f1af8a7e2a36147b31cac920d90253b58e3d52c877eb352b89f264a36d1c95"
+    },
+    {
+      "file": "scripts/cooking-work-check.mjs",
+      "beforeSha256": "df1209ff4b437e08dd77ab2dbdc8f497a44cdc6cb938f2b11ac3b203b0d04a8c",
+      "sha256": "f7b2b364d0613ad5515ac5bed038ba1d0c4ee54d47e9c466cacd2fa371c9db7d"
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "beforeSha256": "4fc221127fb187ab56dff3361f2fc8d14a61d7a85a3e2380adecf95dff8cdae6",
+      "sha256": "152e21e1c6faaea15a9549db328a04c8aaa710e138fbb7e78d77ca0fc765ee8e"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "beforeSha256": "54d3f8ffa3367ce0917a57b0afeffc47de92ad44ba0b888be89fd4d9fa9b61f0",
+      "sha256": "bfab240f38f45cb0765a57a5095d4b6fb5631f723a1f251ea9e26853ffb96568"
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "beforeSha256": "e16eccb47ec528aaa37a267d6cec224ac1547513450511850a210244814a968e",
+      "sha256": "2bbdf513cc27281eb136933fadde01fe17e6ce2826ed23ab6257a23bc42e3a72"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "beforeSha256": "9d4e583b011635eabc8f0627b7824946e0f55f6112f537f8b996ae21dd336b10",
+      "sha256": "cbb491911ea479fb42898f610a3b3b2af16e021d9d38bc5e20722f72011313b2"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "beforeSha256": "f476d37cf3ad69d1d259868791bf7a79753f96cbb07400fb74e2622388674dec",
+      "sha256": "1b95fad3daf73222dbd228e00d25a9652ea1b8df9f808434f177823b82a7c40a"
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "beforeSha256": "e11308d7a577d967402ee013c4f3a74c8f22d96e8f9c089c3dd20e0df6423cde",
+      "sha256": "04f3b605f85316c4b713db9131f4a9895375ae69f380bacd0391e0a4441d1980"
+    }
+  ],
+  "runtimeAudit": {
+    "file": "docs/art-review/motion48/runtime-revalidation48.json",
+    "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+  },
+  "scope": "One finite cosmetic kneading activation, exact source-only actor, independent fixed block and completed dough ownership. Frozen160,50 main/7 original acceptances and11 open direction families are unchanged. Nine derived actors remain separately reviewed. No economic award or repeatable loop inferred."
+}

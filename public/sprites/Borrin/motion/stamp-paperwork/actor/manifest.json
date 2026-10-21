@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Borrin",
+  "action": "stamp-paperwork",
+  "title": "Stamp paperwork",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../../../public/sprites/Borrin/work-references/05-stamp-paperwork.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "708a1a7bbf8f2c602da2d39360d618c8e2c563d23b7b1bd9a0b141bb258cc8c0",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "stamp already held just above entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        154,
+        98,
+        531,
+        600
+      ],
+      "sourceAnchor": [
+        166.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        147,
+        94
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "begin a modest lift",
+      "durationMs": 140,
+      "sourceBounds": [
+        793,
+        96,
+        1171,
+        600
+      ],
+      "sourceAnchor": [
+        167.0,
+        504.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        92
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "stamp at modest apex",
+      "durationMs": 140,
+      "sourceBounds": [
+        1427,
+        96,
+        1812,
+        600
+      ],
+      "sourceAnchor": [
+        173.0,
+        504.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        92
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "controlled midpoint descent",
+      "durationMs": 140,
+      "sourceBounds": [
+        2076,
+        98,
+        2452,
+        600
+      ],
+      "sourceAnchor": [
+        164.0,
+        502.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        149,
+        94
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "base contacts entry",
+      "durationMs": 160,
+      "sourceBounds": [
+        153,
+        741,
+        531,
+        1240
+      ],
+      "sourceAnchor": [
+        167.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        97
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "gentle retained-grip press",
+      "durationMs": 160,
+      "sourceBounds": [
+        793,
+        740,
+        1171,
+        1239
+      ],
+      "sourceAnchor": [
+        167.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        96
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lift stamp clear",
+      "durationMs": 140,
+      "sourceBounds": [
+        1433,
+        739,
+        1811,
+        1240
+      ],
+      "sourceAnchor": [
+        167.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        95
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "finished retained-stamp hold",
+      "durationMs": 160,
+      "sourceBounds": [
+        2074,
+        740,
+        2451,
+        1240
+      ],
+      "sourceAnchor": [
+        166.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        147,
+        96
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1200,
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      160,
+      160,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "e7a106bfea8c091b1d9dc7745cb6fcee4fa18e9c5faa17bdf9ba68514df4759b",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Finite seated retained-seal press on independently owned receipt at Borrin original desk, original-pixel foreground and consultant lifecycle. No ink-mark state, ledger/economic mutation, hidden sole, moving gait, other direction family or continuous-loop approval."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "history": [
+    {
+      "requestedPose": 0,
+      "prompt": "Edit this ONE full seated Borrin actor sprite. Preserve the same face, opaque spectacles, swept grey hair, two brass-bound grey beard tips, red scarf, white sleeves, dark vest, belt, stocky patterned trousers, same wooden chair, and both complete capped boots. Preserve the exact3/4 camera, chair/boot placement, seated body scale and canonical lighting/materials. Edit ONLY his right arm/hand and held coin. The current input has a clean ordinary thumb/index PINCH holding ONE shallow round copper coin. Keep that exact clean grip: no shaft, quill, pen, stem, point, stick, tool handle or other object anywhere in the right hand or below the fingers. Let the remaining three fingers curl naturally; show clean rounded knuckle/fingertip edges. The copper disk remains visibly pinched only between thumb/index. Coin is a round shallow disk, never on a stick. Same relaxed left hand. No desk, books, ledger, floor/shadow, labels or extra props. One complete seated dwarf and same chair, transparent background, large clear margins. Full body and feet visible. Lower the connected coin/hand from its current chest-height position to lower chest/upper waist level, about50px lower on the input640px image; keep forearm supported comfortably, coin facing viewer and unmistakably pinched. This is an initial low-held coin pose, not writing.",
+      "output": "authoring-inputs/low-request-0-41.png",
+      "outputSha256": "25a8f384bab5a5d8ab3fdabefd9c141595d9b2ca7b26b8074fee1df523aa5339",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "selected": true,
+      "scope": "Whole actor image authored from clean pinched-disk pose5, not locally painted fingers. Native body/desk and final gameplay acceptance remain pending."
+    },
+    {
+      "requestedPose": 6,
+      "prompt": "Edit this ONE full seated Borrin actor sprite. Preserve the same face, opaque spectacles, swept grey hair, two brass-bound grey beard tips, red scarf, white sleeves, dark vest, belt, stocky patterned trousers, same wooden chair, and both complete capped boots. Preserve the exact3/4 camera, chair/boot placement, seated body scale and canonical lighting/materials. Edit ONLY his right arm/hand and held coin. The current input has a clean ordinary thumb/index PINCH holding ONE shallow round copper coin. Keep that exact clean grip: no shaft, quill, pen, stem, point, stick, tool handle or other object anywhere in the right hand or below the fingers. Let the remaining three fingers curl naturally; show clean rounded knuckle/fingertip edges. The copper disk remains visibly pinched only between thumb/index. Coin is a round shallow disk, never on a stick. Same relaxed left hand. No desk, books, ledger, floor/shadow, labels or extra props. One complete seated dwarf and same chair, transparent background, large clear margins. Full body and feet visible. Lower the same pinched coin/hand about35px below the current chest-height position, with a slight natural wrist outward turn. This is intermediate lowering toward a held completed rest. Do not grip as if writing or leave any pointed extension under the hand.",
+      "output": "authoring-inputs/low-request-6-41.png",
+      "outputSha256": "38bbb20baa21afef874ac0dbf3b428119678bacb66093fc9e7f62b7bbae4d76d",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "selected": true,
+      "scope": "Whole actor image authored from clean pinched-disk pose5, not locally painted fingers. Native body/desk and final gameplay acceptance remain pending."
+    },
+    {
+      "requestedPose": 7,
+      "prompt": "Edit this ONE full seated Borrin actor sprite. Preserve the same face, opaque spectacles, swept grey hair, two brass-bound grey beard tips, red scarf, white sleeves, dark vest, belt, stocky patterned trousers, same wooden chair, and both complete capped boots. Preserve the exact3/4 camera, chair/boot placement, seated body scale and canonical lighting/materials. Edit ONLY his right arm/hand and held coin. The current input has a clean ordinary thumb/index PINCH holding ONE shallow round copper coin. Keep that exact clean grip: no shaft, quill, pen, stem, point, stick, tool handle or other object anywhere in the right hand or below the fingers. Let the remaining three fingers curl naturally; show clean rounded knuckle/fingertip edges. The copper disk remains visibly pinched only between thumb/index. Coin is a round shallow disk, never on a stick. Same relaxed left hand. No desk, books, ledger, floor/shadow, labels or extra props. One complete seated dwarf and same chair, transparent background, large clear margins. Full body and feet visible. Lower the same pinched coin/hand about55px below the current position to a relaxed completed low inspection hold; coin stays visibly held between thumb/index. Remaining fingers loosely curled, rounded finger edges with nothing protruding beneath. Slightly lean gaze down to coin; body/chair/feet unchanged.",
+      "output": "authoring-inputs/low-request-7-41.png",
+      "outputSha256": "4369d4220c351fb11b220653af17f8a33ae1428d7442198eb8db3547499d3022",
+      "reference": "authoring-inputs/low-source-reference41.png",
+      "referenceSha256": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+      "selected": true,
+      "scope": "Whole actor image authored from clean pinched-disk pose5, not locally painted fingers. Native body/desk and final gameplay acceptance remain pending."
+    }
+  ],
+  "frameInputSelection": [
+    {
+      "input": "low6",
+      "pose": 0
+    },
+    {
+      "input": "count41",
+      "pose": 1
+    },
+    {
+      "input": "count41",
+      "pose": 2
+    },
+    {
+      "input": "count41",
+      "pose": 3
+    },
+    {
+      "input": "count41",
+      "pose": 4
+    },
+    {
+      "input": "count41",
+      "pose": 5
+    },
+    {
+      "input": "low7",
+      "pose": 0
+    },
+    {
+      "input": "low0",
+      "pose": 0
+    }
+  ],
+  "rejectedSheetPoses": [
+    0,
+    6,
+    7
+  ],
+  "reason": "Both complete-sheet attempts retain a pointed quill remnant below the low grip; these three original source cells are not selected."
+}

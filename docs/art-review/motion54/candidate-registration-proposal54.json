@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "folder": "work/expanded-cycles/motion54/candidate/Laborer/motion/walk/back-left",
+  "binding": {
+    "sourceSha256": "2cd29cdfd64c64e1cc573f87c4779479cf2f1de4cf241b81f898ba3947ccdef5",
+    "settingsSha256": "bdd5b8e6ad7b593e965c2f9ab109174a0cc10be560b56d90605c35dbbf556e60",
+    "frameSha256": [
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
+      "afc8cf755967f92ef7de69cd3e664052bc9ad8b19c200131745bc4a61db07477",
+      "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "fe3fd25478bd7f93ec1cdefc1d11c9ed3b93f9059dd019d1c1946a5f64617294",
+      "44033c82b190087b63a644e2c40a1e100e149b11a4b5a98e52f76a10c5d53f2a",
+      "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "c49c9432c4007bfc54be184a61953141b598167bef7be745c8ded56650fe0cf2"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "bdd5b8e6ad7b593e965c2f9ab109174a0cc10be560b56d90605c35dbbf556e60",
+    "atlasSha256": "6433a4b85175cb30f7292efc03cd3133689984a9c135f0c32b3d7077c75f30d0",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "bdd5b8e6ad7b593e965c2f9ab109174a0cc10be560b56d90605c35dbbf556e60",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "adoptedByRuntime": false,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Numerical candidate from unapproved material landmarks. Requires visual contact correspondence, registered re-export and live travel proof before adoption.",
+  "candidateAvailable": false,
+  "reason": "A support landmark travels opposite the projected stance direction; timing cannot repair the authored phase.",
+  "reversedBoundaries": [
+    3
+  ]
+}

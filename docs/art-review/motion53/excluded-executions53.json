@@ -1,0 +1,18 @@
+{
+  "checkpoint": "motion53",
+  "excluded": [
+    {
+      "execution": "First directly attached headed skill-client run",
+      "exitCode": 143,
+      "scope": "Two captures written but overall process terminated. Not used as completed-run validation; detached rerun completed independently with exit0."
+    },
+    {
+      "execution": "First acceptance-script preflight",
+      "scope": "Stopped before any approval change because retained audit filename still ended52. Filename corrected; all source/proof checks then reran successfully."
+    },
+    {
+      "execution": "First Node test run",
+      "scope": "217/219 passed; two outdated day-five recipe/mock fixtures failed. Fixtures expanded to cover actual mixing and persistent bowl lifecycle; rerun219/219 passed."
+    }
+  ]
+}

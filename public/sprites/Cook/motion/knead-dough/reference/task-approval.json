@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "9a5d6350ed06f3ba0c238ce1aede134c4a3097be2a6589da49808aa6ed1578ab",
+    "settingsSha256": "574f81dd2f67282348ddff9907811db70e91561e30e031005845d4e95675d3aa",
+    "frameSha256": [
+      "ba338df3b78500558331a84fb59892f5ac44e935e81e4623a3ac8d080168fca6",
+      "763aa69d8b5de5324e556c652f87ceb37998cfbd569f5340c2e394d8a6073c0e",
+      "697e67cc28ba35cb68dfe852d7e79a3db8e4eb61f94b8589d6c37d1a10e7f935",
+      "540ce71c768fff0326cc9d4f62f6148d692ef66d899c9153b539eab0fbaa119c",
+      "83b22b8bcef054208d8779515f99e83d0db99cc772f569c4f455b8ec34ef8a36",
+      "f5330264edaf42de2837824ce975b38b821efdaf406fc4e5fd2556e7800c7387",
+      "69224938011bdfa9bdb78f336c15f8f199603517215ce20a97174380b724ebc1",
+      "0aa3b99e377cd4ddfd167b61b7069dc03fe1a9feac4baefd405914c7045a2464"
+    ],
+    "atlasSha256": "ea08a5447214d6dadfdec67a30bfd2c5adc3128c73dd050ea17eb6cbe0cffaeb",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "574f81dd2f67282348ddff9907811db70e91561e30e031005845d4e95675d3aa",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              4.0545170776340456e-08,
+              -2.779935073249362e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99082,
+            "measuredCorrectionPx": [
+              -0.20535312592983246,
+              0.3806953430175781
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98673,
+            "measuredCorrectionPx": [
+              -0.04501047730445862,
+              0.8254007697105408
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98739,
+            "measuredCorrectionPx": [
+              1.2576051950454712,
+              0.5042130947113037
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9895,
+            "measuredCorrectionPx": [
+              0.7396932244300842,
+              1.093139886856079
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9828,
+            "measuredCorrectionPx": [
+              1.2871497869491577,
+              0.2892441153526306
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98601,
+            "measuredCorrectionPx": [
+              0.4627911448478699,
+              1.352336049079895
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99163,
+            "measuredCorrectionPx": [
+              0.23081448674201965,
+              0.8558533787727356
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "knead-dough",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Cook knead-dough fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Both palms contact one dough mass0/1, press2, fold3/4, return5/6 and settle7. Fingers remain connected to their wrists; pliable dough changes shape under them. Same flour bowl, cloth, block and boots. No rigid-prop motion is imposed on the dough.",
+    "prop-continuity": "Both palms contact one dough mass0/1, press2, fold3/4, return5/6 and settle7. Fingers remain connected to their wrists; pliable dough changes shape under them. Same flour bowl, cloth, block and boots. No rigid-prop motion is imposed on the dough.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "ef67d47dcf9733d88cc6fe7287640109116f2709e6378e630dd0c032144e8944"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-knead-dough-review.json",
+      "sha256": "9a945bcc026998d341c9504ec907ea7345045894063315652ce80f4bbf7b9c31"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-knead-dough-playback.json",
+      "sha256": "063db101b300125289efbbe6ecd4380b3e74f13eef051cb3d983fec0ebd2f789"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-knead-dough-0.png",
+      "sha256": "a143e3ad355311654852ac0231f6563358c436ab80d276a5bbfe62e43d93d649"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-knead-dough-4.png",
+      "sha256": "38c4cdf61e7444d74bb235d50647a69047eb72585e7b43845190c5609149f008"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Cook-knead-dough-7.png",
+      "sha256": "3d4390049f7ae0e9a55171d34790f9d8ce358cb114928a14c44c70223cf33a8d"
+    }
+  ]
+}

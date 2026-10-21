@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Laborer",
+  "action": "walk",
+  "title": "Walking cycle",
+  "direction": "back-left",
+  "kind": "walk",
+  "reference": "../../../../../../../../../../../public/sprites/Laborer/animation/05-back-left.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "0445933dfc202e49ed7e304054c8ce81b1ab4e573c88fa2a1be66438c578e484",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.04,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "Unverified intended phase: far-right leading heel; authored near-left trailing toe advances into return; full contact review pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        165,
+        99,
+        489,
+        596
+      ],
+      "sourceAnchor": [
+        155.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        159,
+        95
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "Unverified intended phase: far-right support; near-left heel lifts; near-left arm counters forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        807,
+        103,
+        1104,
+        600
+      ],
+      "sourceAnchor": [
+        153.0,
+        497.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        161,
+        99
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "Unverified intended phase: near-left airborne passing beside far-right support calf; sole-depth calibration pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        1457,
+        97,
+        1731,
+        599
+      ],
+      "sourceAnchor": [
+        143.0,
+        503.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        171,
+        93
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "Unverified intended phase: near-left airborne reach; near-left arm back, far-right arm forward; trailing sole-depth correction pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        2093,
+        100,
+        2383,
+        597
+      ],
+      "sourceAnchor": [
+        147.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        167,
+        96
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "Unverified intended phase: authored near-left heel contact in projected depth; opposing arms; full contact review pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        178,
+        741,
+        476,
+        1236
+      ],
+      "sourceAnchor": [
+        142.0,
+        499.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        172,
+        97
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "Unverified intended phase: near-left support with authored depth and returning back arm; full sole correspondence pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        810,
+        740,
+        1112,
+        1235
+      ],
+      "sourceAnchor": [
+        150.0,
+        500.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        164,
+        96
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "Unverified intended phase: far-right airborne passing beside near-left supporting calf; neutral arms; support-depth correction pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        1454,
+        742,
+        1739,
+        1244
+      ],
+      "sourceAnchor": [
+        146.0,
+        498.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        168,
+        98
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "Unverified intended phase: far-right airborne reach; authored near-left trailing heel/toe; full return contact review pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        2073,
+        739,
+        2405,
+        1233
+      ],
+      "sourceAnchor": [
+        167.0,
+        501.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        146,
+        95
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "loop-candidate",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "28a81413aeba4ce3992931d2e24bb4067288bcfc6eff313883a2acefbff8942c",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Historical unselected export snapshot. Frame descriptions were intended targets, not verified limb/support observations. See candidate-findings.json and actual native material measurements; frames have no selected/runtime approval."
+}

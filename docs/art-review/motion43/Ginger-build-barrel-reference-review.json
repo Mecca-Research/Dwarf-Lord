@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-04",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "character": "Ginger",
+  "action": "build-barrel",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/build-barrel/reference",
+  "sourceSha256": "8447a76795af9cdce674bec2b42c1a5ed983846875e816d33c8ce4e9a0d4b4a5",
+  "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
+  "binding": {
+    "sourceSha256": "8447a76795af9cdce674bec2b42c1a5ed983846875e816d33c8ce4e9a0d4b4a5",
+    "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
+    "frameSha256": [
+      "37d7347263bd270fdae960dd0608517bd5dc93871bb7970a24bbd5091f9abd21",
+      "26c9724fd99f31b48bc40b983255f3b520ba2964f570dda3cbab9adae58ce0fb",
+      "6b50eacea7a9ec4518fbe3312de43b08b3ac13d7617b8b65c0a1131d921e437b",
+      "88295c57bfb9189884a7b85f8befb9e70325df1f56411658e0aefdee84d57ed6",
+      "a5a540ecfe05173369f1ba36b350e6c89c70cdc4dfc79e22533ae17c8acf8fb7",
+      "b14f360103a11e7ad1abb29997a1645e0c0a8a0f0041c0031a5056d11d7ec7e9",
+      "53297c93163208dbe3e89df879140badbebdfaf870f58067bd7da9a649c42240",
+      "4bd13c33d3c5323318c28e41f14ef1a297dcea8fe3c7f4984716b9ff197d3001"
+    ],
+    "atlasSha256": "38b81396c8aeb41fea9389c1ac3d0f5d184938e3fb023414f449dd50b9d0d767",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "92a83abba94dbb4105abb6c4f37fb3c1338cc502df5da4f2aae7044e71e5e7ed",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      160,
+      120,
+      100,
+      120,
+      140,
+      160
+    ],
+    "character": "Ginger",
+    "action": "build-barrel",
+    "direction": "reference"
+  },
+  "checks": {
+    "identity-and-scale": "Eight native full poses retain Ginger's curly orange hair and broad unbraided orange beard, cream rolled sleeves, brown vest/belt, green trousers and capped brown boots. Original common physical source basis and measured91px boot cap basis for new individual poses avoid using raised mallet or crouched height as body extent. Fixed520/[320,616] actor/prop basis and small whole-pose offsets leave limb anatomy unchanged.",
+    "station-and-foot-contact": "Both actual visible boot-cap/riveted-rim regions are independently tracked in the actor0-7. Near minimum correlation0.956651/max travel4.6912/max adjacent4.4916px; far minimum0.957494/max travel3.4915/max adjacent4.5072px. Original .94/6/6 bounds remain unchanged. Main reference is the exact composed actor, independent260px barrel/jig and original-pixel foreground contours. Static prop pixels stay fixed. This measures visible actor material, not an invisible heel or moving world contact.",
+    "hand-and-tool-contact": "Exactly one mallet remains in the near hand throughout low hold, raising1/2, descent3, first settling tap4, rebound5, second low settling tap6 and completed low hold7. Native lower wood-head rims4[449,392] and6[428,390] lie inside the traced original fixed upper-hoop face. The opposite fingers brace the same rim at4/5/6; preparation/completion palm lies above it, with no falsely claimed brace during those poses. Foreground contours reuse source hand/mallet pixels and exclude vest/trouser wedges.",
+    "prop-continuity": "One independent open barrel, upper hoop, stave arrangement, rigid cradle/base, toolbox and spare hoop remain identical in all eight compositions. Two light taps reseat the existing upper hoop. This finite construction/maintenance step does not represent complete barrel fabrication, an unshown new material state, object creation or an economic reward. The mallet remains held at7.",
+    "completion-and-reset": "Actual shared gallery verifies each authored hold and boundary for160/140/160/120/100/120/140/160ms, exactly one completed7, an unchanged10000ms terminal hold and explicit restart0. The completed low-tool posture is a finite finish;7-to0 is not approved as a seamless repeat. Gameplay activation is reviewed separately."
+  },
+  "scope": "Fixed-view finite two-tap existing upper-hoop seating and held finish. Native actor identity/scale, visible boot-cap material, source-pixel hand/tool contacts and gallery completion/reset only. No hidden sole, traveling gait, other direction, complete barrel fabrication, seamless repeat or live activation approval."
+}

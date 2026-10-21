@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 500,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    140,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    140
+  ],
+  "note": "Full-pose extraction, uniform input scale and translation only. The bodyHeight500 field is a canvas registration scale, not a verified physical standing-height or gait calibration. Gameplay requires separate render calibration. Single-pose translation is anchored to the unchanged anvil/stump region; measured initial shift28.726px was resolved in assembly before bounded residual registration.",
+  "inputs": [
+    {
+      "id": "baseline",
+      "file": "authoring-inputs/baseline38.png",
+      "sha256": "ffe889be3e8167cfe8a813ddda4711c7ea2eda389573b69a34333fd5b26f0642",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          640,
+          640
+        ],
+        [
+          640,
+          0,
+          1280,
+          640
+        ],
+        [
+          1280,
+          0,
+          1920,
+          640
+        ],
+        [
+          1920,
+          0,
+          2560,
+          640
+        ],
+        [
+          0,
+          640,
+          640,
+          1280
+        ],
+        [
+          640,
+          640,
+          1280,
+          1280
+        ],
+        [
+          1280,
+          640,
+          1920,
+          1280
+        ],
+        [
+          1920,
+          640,
+          2560,
+          1280
+        ]
+      ],
+      "rootXs": [
+        320,
+        960,
+        1600,
+        2240,
+        320,
+        960,
+        1600,
+        2240
+      ],
+      "rootYs": [
+        616,
+        616,
+        616,
+        616,
+        1256,
+        1256,
+        1256,
+        1256
+      ],
+      "bodyHeights": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "id": "blacksmith-ready-return38",
+      "file": "authoring-inputs/blacksmith-ready-return38.png",
+      "sha256": "8f91131cef8d699e3153cb3c76c981a4dd778e34f91fdf720bf27856070f0a5e",
+      "poseCount": 1,
+      "cells": [
+        [
+          0,
+          0,
+          1254,
+          1254
+        ]
+      ],
+      "rootXs": [
+        666
+      ],
+      "rootYs": [
+        1211
+      ],
+      "bodyHeights": [
+        1000
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "baseline",
+      "pose": 0
+    },
+    {
+      "input": "baseline",
+      "pose": 1
+    },
+    {
+      "input": "baseline",
+      "pose": 2
+    },
+    {
+      "input": "baseline",
+      "pose": 3
+    },
+    {
+      "input": "baseline",
+      "pose": 4
+    },
+    {
+      "input": "baseline",
+      "pose": 5
+    },
+    {
+      "input": "blacksmith-ready-return38",
+      "pose": 0
+    },
+    {
+      "input": "baseline",
+      "pose": 7
+    }
+  ]
+}

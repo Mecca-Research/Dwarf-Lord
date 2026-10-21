@@ -1,0 +1,153 @@
+{
+  "character": "Blacksmith",
+  "action": "fix-wheelbarrow",
+  "direction": "reference",
+  "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
+  "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
+  "nativeReviewSha256": "ced17956d05a88d1ea85b2fd3128939b3248b0f2e4e8ae1905f61c016714118d",
+  "binding": {
+    "sourceSha256": "4417e6899a02da6a5df036cd29e93a95009a819b2849ac8c45a758d60b26a998",
+    "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
+    "frameSha256": [
+      "5120def62f2c3ec109c215cdd769b449bb30910176bdcd05a6b90120fca64db9",
+      "d6e5d717a1be5bc9fbd06aa20f839141441c29080192efc4eb98c805fd1e5810",
+      "8314a1f1cc814e3f00e74f1ff04e6b7eee3d6196aa07e582f71bba67b7f70f38",
+      "9cca262f48d4590f7f89a49673e3198c9aa73a5466efad0d31cd380f99262815",
+      "ed0e767b7fac860a8004700f3a8257a84dd0e4548fe56343ad092802d45ea397",
+      "ce354ed90aa0cf65e9de818533f903da01f97aab6cdecbfa21f54184138bfd2b",
+      "667572bf4292a302b0c7e6689a30acbcc4e432d4f4f7d7354b1d364e261d54e3",
+      "1120da21284fb3f9815a3f2086a81b53c007640c83616938ccae89a64ff90c83"
+    ],
+    "atlasSha256": "cb8406384aa1e1d416e490a56d6545bcc02c25b745fa4c260106107e4ed9fd51",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "5415aaf75a2bb2763005bdadf68136c564fab526b512a9ba50005de845d179d0",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          455,
+          300,
+          565,
+          450
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              1.2094574231014121e-07,
+              1.305019168285071e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97887,
+            "measuredCorrectionPx": [
+              0.6262201070785522,
+              0.806508481502533
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98244,
+            "measuredCorrectionPx": [
+              4.1163010597229,
+              -0.16499736905097961
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97863,
+            "measuredCorrectionPx": [
+              -0.08229683339595795,
+              0.7461755275726318
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95181,
+            "measuredCorrectionPx": [
+              -2.2482500076293945,
+              0.4247056245803833
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97609,
+            "measuredCorrectionPx": [
+              -2.5466785430908203,
+              0.5987875461578369
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97393,
+            "measuredCorrectionPx": [
+              -4.911051273345947,
+              1.9722003936767578
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97253,
+            "measuredCorrectionPx": [
+              -7.420382022857666,
+              0.6179739832878113
+            ],
+            "accepted": true
+          }
+        ],
+        "integerPlacementRefinement": {
+          "method": "Bounded whole-pose placement after raster rounding; fractional offset selects the nearest integer exported placement. Original region and limits unchanged.",
+          "measurements": [
+            {
+              "frame": 6,
+              "beforeResidualPx": 0.8242011666297913,
+              "wholePoseTranslationPx": [
+                -1,
+                0
+              ],
+              "predictedResidualPx": 0.20578882098197937,
+              "correlation": 0.9734417012421632,
+              "exportOffsetRoundingCorrectionPx": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "fix-wheelbarrow",
+    "direction": "reference"
+  },
+  "checks": {
+    "identity-and-scale": "All eight registered native poses retain bald muscular smith, forked dark brass-bound beard, rolled cream sleeves, brown leather apron, olive trousers and capped boots. Common local sequence scale retained; no standing-height, translating sole or other direction approval.",
+    "station-and-foot-contact": "Same raised wheelbarrow, hub/spokes, repair stand, anvil/stump, toolbox/cloth remain fixed across0-7. Original right toolbox region455/300/565/450, minimum correlation.93 and12px correction limit retained; fresh bounded registration passes at.9518 minimum. Local visible boots remain supported with no gait claim. Painted furniture is not an independent-station approval. Final whole-pose raster rounding correction preserves original pixels; measured maximum residual0.595px satisfies unchanged.71px bound.",
+    "hand-and-tool-contact": "Same wood-handled square steel hammer is already gripped in anatomical right hand at low ready0, approaches axle1, chest ready2, overhead3, hub tap4, rebound5, lowered near hub6 and low completed hold7. One continuous grip and complete head/shaft, no tool introduction, disappearing hammer, hand switch or clipped tips. Left hand steadies wheel/hub0-5, then barrow edge6-7. This is a finite cosmetic fastening/inspection; wheel rotation and inventory/tool pickup simulation are not certified.",
+    "prop-continuity": "The old hammer on ground is removed in all eight poses. Only one matching carried hammer remains0-7, with distinct other fixed toolbox implements. Actor enters and ends already holding it, so no implied pickup/drop or spontaneously duplicated tool. Same barrow/wheel and fixed props persist;7 holds the completed repair pose.",
+    "completion-and-reset": "Actual shared gallery playback exposes all eight authored 125ms holds and boundaries, completes once at7, sustains its final pose for10000ms and returns to0 only on explicit restart. No seamless repeat, independent furniture, moving contacts, economy or live activation acceptance."
+  },
+  "scope": "Exact eight combined-reference poses, local fixed-prop/grip ownership and finite held task only; no loop, movement, direction, independent station or gameplay activation approval."
+}

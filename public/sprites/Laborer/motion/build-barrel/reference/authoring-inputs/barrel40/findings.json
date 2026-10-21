@@ -1,0 +1,154 @@
+{
+  "character": "Laborer",
+  "action": "build-barrel",
+  "selected": false,
+  "method": "Two generated complete eight-pose finishing edits; whole-pose export and bounded translation registration only.",
+  "candidates": [
+    {
+      "file": "candidate-1.png",
+      "sha256": "f9fbe548b5329211bc2e097586393014b5701174db00bd7cc44bb245a19f5019",
+      "prompt": "Reauthor this exact Laborer dwarf barrel-building reference into an eight-pose FINITE finishing operation: tapping an ALREADY-MOUNTED upper iron hoop on an assembled wooden barrel. Keep the exact character identity, head/beard/hair, clothes, stocky proportions, camera, fixed furniture, tools crate/bench, barrel brace, bucket and semi-realistic detailed wood/leather/steel rendering of the supplied sheet. Preserve the 4-column2-row layout, make every figure/tool/prop complete with generous transparent margins. The barrel has all the same vertical wooden staves and SAME lower AND upper iron hoops from frame0 onward. No stave insertion or hoop pickup is depicted: they are already assembled when task begins. Upper hoop exists in every frame and never appears, disappears or jumps. One SAME short wooden-headed mallet is ALREADY GRIPPED in anatomical RIGHT hand/viewer LEFT in frame0 and retained there through frame7. Remove any duplicate matching mallet from the fixed tool crate/bench in ALL8; other tools remain fixed. Anatomical LEFT hand/viewer RIGHT steadies the barrel rim throughout; no hand switch. Eight distinct stages in reading order:0 low ready mallet beside upper hoop;1 lift mallet to chest;2 raise mallet overhead ready to tap;3 partial downward shoulder-height descent;4 mallet face contacts the UPPER HOOP rim on the left side with wrist still visibly gripping handle;5 short upward rebound;6 lower mallet to chest/beside hoop, visibly retained;7 relaxed low completed hold beside barrel, right fingers still grip mallet, left hand still steadies rim. Smooth connected raising, impact and recovery, no tool placement or unshown transfer to the bench at the end. The same fixed assembled barrel remains in its support braces with upper hoop present0-7; this is a finite finishing/fastening gesture, no material creation or repeat reset. Do not vary barrel staves, hoop thickness/height, support geometry or tabletop layout across poses. No floor, cast shadow, text or background; genuine transparent alpha. Exactly8 different whole poses with fine realistic rendering, complete raised mallet heads and boots, ample gutters so no pose clips or overlaps.",
+      "immediateEditReferences": [
+        "/opt/codex-work/dwarf-lord/public/sprites/Laborer/motion/build-barrel/reference/source-sheet.png"
+      ]
+    },
+    {
+      "file": "candidate-2.png",
+      "sha256": "28ffff1af8240dc8bf30e197756053c4fc53ab3bcdbf8f22e9932897a251f7f8",
+      "prompt": "Edit ONLY the FIXED FURNITURE in this exact eight-frame Laborer barrel-finishing animation sheet. Preserve EVERY actor pose, all8 different mallet/hand positions, clothes, body/boot sizes, head/face, camera, lighting, cell layout and transparent margins. The action is correct; static props are drifting/redrawing and need to be identical. Make frames1..7's barrel, upper/lower steel hoops, vertical stave seams/knots/grain, wooden support braces with iron bolts and bottom crossbeam, nearby bench/tool crate, bucket and spare tools an EXACT repeat of frame0's fixed prop geometry and material texture, in the corresponding same cell coordinates. Barrel does not rotate or sway. Freeze the SAME stave front-face texture, wood-knot locations, hoop nails, brace bolts, lower hoop height/width and base shape across ALL8. Do not clone actor0: retain all8 original purposeful mallet stages and same hands on rim. The worker already grips ONE mallet throughout0..7, with no second matching mallet on furniture. Fixed furniture can be covered naturally by the moving hand/mallet; never delete the hand or move tools into another hand to expose a prop. Maintain the upper hoop already present0..7, fully assembled staves, complete raised mallet head with a little transparent space above it, exactly8 full whole poses. No new objects, background, floor, labels or shadows. Genuine transparent alpha background. Keep the semi-realistic original details; correct static registration/texture continuity only.",
+      "immediateEditReferences": [
+        "/mnt/c/Users/Tariq/.codex/generated_images/01a07177-1a07-7d81-99be-76028c15c836/exec-e6d84428-dc60-44d3-b061-c20450f6d033.png"
+      ]
+    }
+  ],
+  "firstMinimumCorrelation": 0.8934,
+  "secondMeasurements": [
+    {
+      "frame": "00.png",
+      "sha256": "86c1555a1284b45394879757223c83eef9f4d40544ebfed1edb81032e326bed6",
+      "correlation": 1.0000000623555716,
+      "requiredCorrectionPx": [
+        1.277627559304051e-09,
+        1.871130983488456e-08
+      ]
+    },
+    {
+      "frame": "01.png",
+      "sha256": "dcfe677c830b76299d22f7b3e906092f2b105b0505ce76e19c4bdb61df66536f",
+      "correlation": 0.9458215261936614,
+      "requiredCorrectionPx": [
+        5.317175388336182,
+        -0.19425460696220398
+      ]
+    },
+    {
+      "frame": "02.png",
+      "sha256": "0cb06978c60ff7074d893dd7812f7eee036d97ec992c5769d9d0fb97f7bf8de2",
+      "correlation": 0.940588526538066,
+      "requiredCorrectionPx": [
+        -1.9778624773025513,
+        0.2642141282558441
+      ]
+    },
+    {
+      "frame": "03.png",
+      "sha256": "93b43e2691be21c78d478ac98d8b3ff0b64814667a0bda0ba7608e94757cc5dd",
+      "correlation": 0.9674944537032788,
+      "requiredCorrectionPx": [
+        4.592545986175537,
+        -0.8645300269126892
+      ]
+    },
+    {
+      "frame": "04.png",
+      "sha256": "fc78e9f252f9433335b46c28aea6760f89a8bb5f48336367173efc391dde638e",
+      "correlation": 0.9480437617852852,
+      "requiredCorrectionPx": [
+        1.752152681350708,
+        -3.1186399459838867
+      ]
+    },
+    {
+      "frame": "05.png",
+      "sha256": "a684bd5ccfd96566eae4cf85ec353eb9fef2ee287268afeb7ccc2ad994fe3693",
+      "correlation": 0.913855015294218,
+      "requiredCorrectionPx": [
+        4.62253475189209,
+        -1.8983979225158691
+      ]
+    },
+    {
+      "frame": "06.png",
+      "sha256": "ccaf90514df1cf3e04e41eefde855776306395bc916fcf9fe6357b24b8f0c8ed",
+      "correlation": 0.932377884247477,
+      "requiredCorrectionPx": [
+        0.8705145716667175,
+        -2.4277429580688477
+      ]
+    },
+    {
+      "frame": "07.png",
+      "sha256": "cc0afa6a3b934e95c7ce6246b0a5ad3f81ab3f90eea5e1fdc8e3673ddc2998a7",
+      "correlation": 0.9329445313285929,
+      "requiredCorrectionPx": [
+        2.496307849884033,
+        -2.462953567504883
+      ]
+    }
+  ],
+  "secondMinimumCorrelation": 0.913855015294218,
+  "nativeFindings": "Both candidates keep one mallet in the working hand through completed hold and retain already-mounted hoops from0. They change barrel stave/grain/brace geometry across frames below the existing fixed-region correlation bound. No stationary contact, full prop continuity or final acceptance is claimed. Full-sheet overhead tool margin remains a review concern.",
+  "selectedArtifactsUnchanged": [
+    {
+      "file": "source-sheet.png",
+      "sha256": "14fdd05b224291bca562ef0874a1be9391a87974bd8c8f8d49fb9d95e8e7dbe7",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "atlas.png",
+      "sha256": "9b6d5d318de5316b5a74e5bc2731d5d2e36d41d78a435d35813aa074d480861d",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "00.png",
+      "sha256": "4f548f87b6a2f1c1a9a11a44f6a662db54a98fe6d0af23632a8bd76daaa72c38",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "01.png",
+      "sha256": "0167b71a544e02dc96957977ade500b64c45fc2fb8849f041e5780b94cca340a",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "02.png",
+      "sha256": "e624fe27a2820ed61cc0c79f9b35556d7335b41607fb08f07ce1ad10c6df47bf",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "03.png",
+      "sha256": "679908670f57157d2815da7116d83fbfa2b58bc0082ee9ac50658387dca2de12",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "04.png",
+      "sha256": "5fce910fd004815c7024a548ad273505458ebb67d79536b1c751b89bd0a088ed",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "05.png",
+      "sha256": "d1c500e3dc1e70997a3829d9457c040cdbba3fa475cd824f0e424a3ce2703aea",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "06.png",
+      "sha256": "4e4eb04df9ac6551b5909523133ce606b38b91d0a522f447c5e9c1a1ce98ce13",
+      "identicalTo": "1358d36"
+    },
+    {
+      "file": "07.png",
+      "sha256": "5a3b747806278746e363ddefde6659a3a4ccd796ab4309541c2a30145e77fad6",
+      "identicalTo": "1358d36"
+    }
+  ],
+  "nextMethod": "Use separately authored worker-only poses and a persistent independent barrel/brace station, then prove visible hand/hoop contact. Do not repeat broad-sheet rerolls, lower correlation thresholds or locally warp/draw limbs."
+}

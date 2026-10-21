@@ -1,0 +1,135 @@
+{
+  "character": "Cook",
+  "action": "mix-ingredients",
+  "direction": "reference",
+  "destination": "public/sprites/Cook/motion/mix-ingredients/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa",
+  "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+  "nativeReviewSha256": "0a3108b9c4ad7e46b42a001326e6af46d6c421d9a089e7aeefe480e2d696c683",
+  "checks": {
+    "identity-and-scale": "Same stocky balding brown-bearded cook in burgundy rolled sleeves, stained cream apron and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand keeps one wooden spoon throughout a bowl-stirring pass0-7. Left fingers stay on the bowl rim. Flour bag/scoop, three eggs, cup, thick bowl and cutting block persist. The spoon enters the batter during the pass; no ingredient addition or output release occurs.",
+    "prop-continuity": "Right hand keeps one wooden spoon throughout a bowl-stirring pass0-7. Left fingers stay on the bowl rim. Flour bag/scoop, three eggs, cup, thick bowl and cutting block persist. The spoon enters the batter during the pass; no ingredient addition or output release occurs.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "f04b3a25081a2162ce2e101a2389b6e128fb9979f1ef9d7b709284a701ba5afa",
+    "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+    "frameSha256": [
+      "170b8974fbcd34364976084b9d1d1b2dc784e99e66f3999c853b73f557e98af7",
+      "c293aa0a3941fc6a46faa33c45894913e6dbfba445c3b7d8207fca5226523022",
+      "4877f42c42e1b412ac3dca6c08e3710f8aaefe61e55d340da05d48938d14b92f",
+      "cfd5b1c755519d094fa62ef4584534c7c2ec5b214644187f7dd6c8a97b2d49e6",
+      "fa13d37c837583f5cc8aeebd66c3cdf12705c24f09738b9fd91b484fc7ed772e",
+      "eefa462bbfae522e0e51f890944990fd59d1ed0356e78fe6ef6ad947732b0f05",
+      "9f4431710fdf4b7589481f781f3ed8ac2e2a4a3b67e3424f312d18135b48c2f3",
+      "3b0899e2e9360f77144cbaec16c25adc7a5fd2ec0d3f9a9186209d7bfb9ad87a"
+    ],
+    "atlasSha256": "77f58194b356e75c9d64f566058bade52ee9771078201334b6ff23628061c402",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "60cc5d65739c12d1439c2faa6395f6a7aee820abe61fc359baa775cfa6610cf0",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          100,
+          435,
+          570,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              1.5416128817946628e-08,
+              2.396969023266138e-07
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.9939,
+            "measuredCorrectionPx": [
+              -0.7357139587402344,
+              0.2988557517528534
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99387,
+            "measuredCorrectionPx": [
+              0.2806544899940491,
+              0.38692590594291687
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99224,
+            "measuredCorrectionPx": [
+              -0.882234513759613,
+              0.37846216559410095
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99355,
+            "measuredCorrectionPx": [
+              -0.3310006558895111,
+              0.3653590977191925
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99057,
+            "measuredCorrectionPx": [
+              -0.7244405746459961,
+              0.47421544790267944
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99435,
+            "measuredCorrectionPx": [
+              -0.6029764413833618,
+              0.6008631587028503
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98949,
+            "measuredCorrectionPx": [
+              -0.8549366593360901,
+              0.45969173312187195
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "mix-ingredients",
+    "direction": "reference"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "094a5277bdb112c7963fb63e098173d907bdd656250f87cc304d9b58f1dec402",
+    "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+    "frameSha256": [
+      "2c819e12f79ea62d79be2d123c88a76a3635d5ddec84d9dc5906e4cd08767ae1",
+      "c748773542606bb58d00d1f54b97fe5eb318f8c68d5d933ac5ab631f71ea187d",
+      "2ec25e203a2bc1e70a3d510daed0349520e294316ae7c1602a6328c444960f12",
+      "89517d68bab67737c74901668182caddbd9ed901163721b0765c79cad095f937",
+      "333cd9dfb7209993d47fd28728d1cf054e3e532e83ef9619e776bcc085be7b22",
+      "0c098918f788653f1ed4925f0aa9906c5025c1e609bbed9cf83a78207fc68eac",
+      "ab0e9c15915ccd15085ae5304471f061b9b4c062fabe7bae46254a73480c26e0",
+      "88cf55cd806c6efa9736b045a1c71a3d3c228ba80e06bfa8bad5971872c02ef1"
+    ],
+    "atlasSha256": "774f8ece92c4e0f2eb6915dbd761b89325e18240e1db187921857d80daf35ffe",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "555e3e3f3f899c14e63359d032125ad1fbd87055518e54a130a0d1177703b1d0",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          455,
+          300,
+          565,
+          450
+        ],
+        "minimumCorrelation": 0.93,
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              3.637423873215084e-08,
+              3.357946454229932e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97784,
+            "measuredCorrectionPx": [
+              1.6158318519592285,
+              -0.7439188957214355
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98697,
+            "measuredCorrectionPx": [
+              5.019732475280762,
+              -0.29708972573280334
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98087,
+            "measuredCorrectionPx": [
+              -0.9594030380249023,
+              0.8385468125343323
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.93219,
+            "measuredCorrectionPx": [
+              -1.2636456489562988,
+              -1.4111850261688232
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97031,
+            "measuredCorrectionPx": [
+              -3.5489139556884766,
+              0.7215408086776733
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97063,
+            "measuredCorrectionPx": [
+              -4.469050884246826,
+              0.46269840002059937
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96845,
+            "measuredCorrectionPx": [
+              -8.755480766296387,
+              -0.8266808390617371
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Blacksmith",
+    "action": "fix-wheelbarrow",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "Hammer appears in right hand2 without a pickup and disappears by6/7 while a ground hammer remains throughout. Need an explicit pickup, retained single carried hammer and final placement; cannot certify prop ownership from this set."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "468404e7bca637d4d4266b4f7d62529e338149f965523cb83e4d750f264d996d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Blacksmith-fix-wheelbarrow-review.json",
+      "sha256": "2dcf19428a607ec857a020a617254f9103f34b38a95b3c93df2eae03ae819581"
+    }
+  ]
+}

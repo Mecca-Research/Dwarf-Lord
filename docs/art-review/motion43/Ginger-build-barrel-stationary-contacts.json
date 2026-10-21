@@ -1,0 +1,217 @@
+[
+  {
+    "character": "Ginger",
+    "version": 1,
+    "selected": true,
+    "approval": false,
+    "scope": "Actual visible boot cap and riveted rim regions in independent actor poses0-7, original regional .94 correlation and6px travel/adjacent bounds. Does not track hidden heel, moving gait or certify continuous loop.",
+    "sourceSha256": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+    "settingsSha256": "931d672076e7bbca71b817fe2dcb2b37a4c8d9bb67234c41c249f27671709ac6",
+    "frameSha256": [
+      "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac",
+      "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb",
+      "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc",
+      "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0",
+      "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd",
+      "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d",
+      "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3",
+      "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068"
+    ],
+    "bounds": {
+      "minimumCorrelation": 0.94,
+      "maxMaterialTravelPx": 6,
+      "maxAdjacentChangePx": 6
+    },
+    "regions": [
+      {
+        "name": "near",
+        "box": [
+          175,
+          565,
+          274,
+          620
+        ],
+        "referenceFrame": 0,
+        "results": [
+          {
+            "frame": 0,
+            "correlation": 0.9999999461021248,
+            "translation": [
+              -1.9583028532110802e-09,
+              6.857169410068309e-08
+            ],
+            "driftPx": 6.859965395733525e-08,
+            "passed": true
+          },
+          {
+            "frame": 1,
+            "correlation": 0.989911676032892,
+            "translation": [
+              -1.513040542602539,
+              0.7726747393608093
+            ],
+            "driftPx": 1.6989166736602783,
+            "passed": true
+          },
+          {
+            "frame": 2,
+            "correlation": 0.9899135861527391,
+            "translation": [
+              -3.8783860206604004,
+              -0.04435393214225769
+            ],
+            "driftPx": 3.8786396980285645,
+            "passed": true
+          },
+          {
+            "frame": 3,
+            "correlation": 0.9807783588356941,
+            "translation": [
+              0.6058129668235779,
+              0.21388642489910126
+            ],
+            "driftPx": 0.6424614787101746,
+            "passed": true
+          },
+          {
+            "frame": 4,
+            "correlation": 0.9673297221224355,
+            "translation": [
+              2.2258143424987793,
+              -0.1522035002708435
+            ],
+            "driftPx": 2.2310121059417725,
+            "passed": true
+          },
+          {
+            "frame": 5,
+            "correlation": 0.9566513956954383,
+            "translation": [
+              4.6722307205200195,
+              -0.4214426279067993
+            ],
+            "driftPx": 4.691199779510498,
+            "passed": true
+          },
+          {
+            "frame": 6,
+            "correlation": 0.9756719494917364,
+            "translation": [
+              0.7325286865234375,
+              0.12115761637687683
+            ],
+            "driftPx": 0.7424806356430054,
+            "passed": true
+          },
+          {
+            "frame": 7,
+            "correlation": 0.9828199904802336,
+            "translation": [
+              -1.5066485404968262,
+              0.7546936273574829
+            ],
+            "driftPx": 1.685097098350525,
+            "passed": true
+          }
+        ],
+        "maxAdjacentChangePx": 4.491628729242565,
+        "passed": true
+      },
+      {
+        "name": "far",
+        "box": [
+          394,
+          558,
+          501,
+          617
+        ],
+        "referenceFrame": 0,
+        "results": [
+          {
+            "frame": 0,
+            "correlation": 1.0000000394436865,
+            "translation": [
+              -4.3818467077016976e-08,
+              -3.0670335604554566e-08
+            ],
+            "driftPx": 5.3485770479255734e-08,
+            "passed": true
+          },
+          {
+            "frame": 1,
+            "correlation": 0.9878382891740858,
+            "translation": [
+              2.2844300270080566,
+              -0.25845614075660706
+            ],
+            "driftPx": 2.299004316329956,
+            "passed": true
+          },
+          {
+            "frame": 2,
+            "correlation": 0.9905109182513633,
+            "translation": [
+              3.0674102306365967,
+              -0.8170554637908936
+            ],
+            "driftPx": 3.174363613128662,
+            "passed": true
+          },
+          {
+            "frame": 3,
+            "correlation": 0.9759363304019325,
+            "translation": [
+              1.0182219743728638,
+              0.12076246738433838
+            ],
+            "driftPx": 1.0253582000732422,
+            "passed": true
+          },
+          {
+            "frame": 4,
+            "correlation": 0.9638654085720909,
+            "translation": [
+              -3.488919496536255,
+              0.13482831418514252
+            ],
+            "driftPx": 3.4915237426757812,
+            "passed": true
+          },
+          {
+            "frame": 5,
+            "correlation": 0.9574935872748441,
+            "translation": [
+              -3.4562175273895264,
+              -0.18217329680919647
+            ],
+            "driftPx": 3.461015224456787,
+            "passed": true
+          },
+          {
+            "frame": 6,
+            "correlation": 0.971684055611509,
+            "translation": [
+              -0.11169940233230591,
+              -0.11137909442186356
+            ],
+            "driftPx": 0.1577404886484146,
+            "passed": true
+          },
+          {
+            "frame": 7,
+            "correlation": 0.9844918016418719,
+            "translation": [
+              2.912268877029419,
+              -0.2825337052345276
+            ],
+            "driftPx": 2.9259417057037354,
+            "passed": true
+          }
+        ],
+        "maxAdjacentChangePx": 4.50716341914014,
+        "passed": true
+      }
+    ],
+    "measurementPassed": true
+  }
+]

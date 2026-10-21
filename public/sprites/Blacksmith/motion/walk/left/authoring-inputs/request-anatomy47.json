@@ -1,0 +1,13 @@
+{
+  "prompt": "Use case: precise-object-edit. Anatomical continuity correction to the complete eight-pose LEFT-facing Blacksmith walk in image1. Keep its detailed semi-realistic rendering, stocky identity, bald head, black two-braided beard, cream shirt, layered leather apron, all eight complete poses and transparent4-column2-row layout. Image2 is the explicit pose guide, not style. IMPORTANT: both mid-passing poses currently have the SAME leg planted; correct this. Top-third pose2 must have the NEAR anatomical RIGHT thigh bending FORWARD toward screen LEFT in FRONT of the other thigh, knee lifted, its heavy boot AIRBORNE in front of the far planted shin. The FAR LEFT leg stays straight and planted under the pelvis, behind the lifted near leg. Bottom-third pose6 keeps the NEAR RIGHT leg planted under the pelvis and has FAR LEFT knee/boot airborne passing in front. The near leg must always overlap the far leg where they cross. Never swap leg ownership mid-step.\nMake boot-side anatomy unambiguous: NEAR RIGHT boot shows its brass SQUARE OUTER CALF BUCKLE and round ankle stud in every pose. FAR LEFT boot shows its plain INNER CALF leather straps, with its outer buckle naturally hidden on its opposite side. These are the same two matching boots viewed on their different surfaces, not different footwear. Top0: SQUARE near boot behind, PLAIN far heel contacting forward. Top1: SQUARE near boot raised behind, PLAIN far boot flat ahead. Top2: SQUARE near boot raised passing FORWARD, PLAIN far boot flat under hip. Top3: SQUARE near boot reaching forward airborne, PLAIN far toe pushing behind. Bottom4: SQUARE near heel contacting ahead, PLAIN far toe behind. Bottom5: SQUARE near foot flat ahead, PLAIN far boot raised behind. Bottom6: SQUARE near foot flat under hip, PLAIN far boot raised passing forward. Bottom7: SQUARE near toe pushes behind, PLAIN far heel reaches forward airborne. Arms swing opposite their anatomical legs and remain as in the current corrected sheet, neutral near passing. Preserve same true LEFT side camera in all cells, no turns. Subtle bob only, no floor, shadow, labels or colors from the guide. Both sole edges and all boots complete, zero extra limbs, same physical scale across all eight.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-passing47.png",
+      "sha256": "8eaa721bb4e106d54cbd14159d0eba2777c4420b970430d5ed620d23de14d290"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/phase-guide47.png",
+      "sha256": "72e4feb6dd0c30329dad64a57c32cf897325202cb7fcf062b400b4c9b3ea4a29"
+    }
+  ]
+}

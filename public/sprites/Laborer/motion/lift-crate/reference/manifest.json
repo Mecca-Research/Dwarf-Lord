@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Laborer",
   "action": "lift-crate",
   "title": "Lift crate",
@@ -7,210 +7,220 @@
   "kind": "work",
   "reference": "../../../work-references/00-lift-crate.png",
   "source": "source-sheet.png",
-  "sourceSha256": "947ba76025489dfe54e6a05199b89c51f2bf9eced8b190d1009827d1f62f3f35",
+  "sourceSha256": "3b3ef95e8abd969770dac65d452658f1d662e81a9d7cbafe50e2ad471c1e0a94",
   "sourceSize": [
-    1774,
-    887
+    2560,
+    1280
   ],
   "frameSize": [
     640,
     640
   ],
-  "sharedScale": 1.4128878281622912,
+  "sharedScale": 1.04,
   "frameCount": 8,
   "frames": [
     {
       "id": "key-00",
       "file": "00.png",
-      "description": "bend with hands gripping crate sides",
-      "durationMs": 125,
+      "description": "bend with both hands already gripping crate sides",
+      "durationMs": 160,
       "sourceBounds": [
-        82,
-        104,
-        381,
-        430
+        177,
+        237,
+        535,
+        628
       ],
       "sourceAnchor": [
-        149.0,
-        326
+        143.0,
+        363.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        109,
-        155
+        171,
+        196
       ]
     },
     {
       "id": "key-01",
       "file": "01.png",
-      "description": "continuous midway transition from bend with hands gripping crate sides toward lift crate to knee height",
-      "durationMs": 125,
+      "description": "begin lift with both grips retained",
+      "durationMs": 130,
       "sourceBounds": [
-        531,
-        68,
-        821,
-        409
+        818,
+        194,
+        1165,
+        602
       ],
       "sourceAnchor": [
-        145.0,
-        341
+        142.0,
+        406.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        115,
-        134
+        172,
+        152
       ]
     },
     {
       "id": "key-02",
       "file": "02.png",
-      "description": "lift crate to knee height",
-      "durationMs": 125,
+      "description": "raise crate to knee height",
+      "durationMs": 130,
       "sourceBounds": [
-        979,
-        35,
-        1265,
-        407
+        1457,
+        196,
+        1781,
+        600
       ],
       "sourceAnchor": [
-        143.0,
-        372
+        146.84615384615384,
+        404.96153846153845
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        118,
-        90
+        167,
+        153
       ]
     },
     {
       "id": "key-03",
       "file": "03.png",
-      "description": "continuous midway transition from lift crate to knee height toward straighten with crate at waist",
-      "durationMs": 125,
+      "description": "highest braced hold below waist",
+      "durationMs": 130,
       "sourceBounds": [
-        1427,
-        7,
-        1712,
-        410
+        2098,
+        173,
+        2420,
+        600
       ],
       "sourceAnchor": [
-        142.0,
-        403
+        142.96153846153845,
+        426.03846153846155
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        119,
-        47
+        171,
+        131
       ]
     },
     {
       "id": "key-04",
       "file": "04.png",
-      "description": "straighten with crate at waist",
-      "durationMs": 125,
+      "description": "begin controlled lowering while retaining both grips",
+      "durationMs": 160,
       "sourceBounds": [
-        101,
-        440,
-        369,
-        859
+        179,
+        828,
+        482,
+        1240
       ],
       "sourceAnchor": [
-        114.0,
-        419
+        138.1153846153846,
+        412.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        159,
-        24
+        176,
+        146
       ]
     },
     {
       "id": "key-05",
       "file": "05.png",
-      "description": "continuous midway transition from straighten with crate at waist toward settle weight while holding crate",
-      "durationMs": 125,
+      "description": "continue lowering with knees braced",
+      "durationMs": 150,
       "sourceBounds": [
-        555,
-        440,
-        814,
-        859
+        819,
+        825,
+        1131,
+        1240
       ],
       "sourceAnchor": [
-        113.5,
-        419
+        138.1153846153846,
+        415.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        160,
-        24
+        176,
+        142
       ]
     },
     {
       "id": "key-06",
       "file": "06.png",
-      "description": "settle weight while holding crate",
-      "durationMs": 125,
+      "description": "deeper lowering retaining both crate-side grips",
+      "durationMs": 150,
       "sourceBounds": [
-        1004,
-        441,
-        1258,
-        859
+        1459,
+        829,
+        1771,
+        1240
       ],
       "sourceAnchor": [
-        114.0,
-        418
+        138.1153846153846,
+        411.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        159,
-        25
+        176,
+        147
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "continuous midway transition from settle weight while holding crate toward bend with hands gripping crate sides",
-      "durationMs": 125,
+      "description": "completed floor placement; both hands remain gripping",
+      "durationMs": 170,
       "sourceBounds": [
-        1414,
-        550,
-        1712,
-        868
+        2098,
+        899,
+        2441,
+        1267
       ],
       "sourceAnchor": [
-        148.5,
-        318
+        142.0,
+        341.0
       ],
       "groundAnchor": [
         320,
-        616
+        574
       ],
       "placement": [
-        110,
-        167
+        172,
+        219
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,40 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1180,
+    "durationsMs": [
+      160,
+      130,
+      130,
+      130,
+      160,
+      150,
+      150,
+      170
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      574
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "c233eee703344ecc8348c1dae9089ea4f1150b0ab51458f65b52db3d9fb8eac9",
+    "exportVersion": 2,
+    "stationRegistration": null
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Finite stationary crate lift and complete controlled lowering, same retained two-hand grip, native identity/scale and visible near sole0-7/far sole2-6 only. Hidden heels/occluded far foot, gait, direction family, seamless loop and live activation are excluded."
   }
 }

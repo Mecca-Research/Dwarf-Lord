@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "character": "Ginger",
   "action": "chop-downed-log",
   "title": "Chop downed log",
@@ -7,7 +7,7 @@
   "kind": "new-work",
   "reference": "../../../animation/01-front-right.png",
   "source": "source-sheet.png",
-  "sourceSha256": "e1ce0e8fb5433495e4365caf72cfe98293aef7b8e7b24c21004af9f25368e8fc",
+  "sourceSha256": "21a2f19e57037ce1813f18a9d174449ad59cd490cf7bb6ee5dab8d39730a603e",
   "sourceSize": [
     1774,
     887
@@ -16,7 +16,7 @@
     640,
     640
   ],
-  "sharedScale": 1.3546910755148742,
+  "sharedScale": 1.3454545454545455,
   "frameCount": 8,
   "frames": [
     {
@@ -25,14 +25,14 @@
       "description": "axe low over log",
       "durationMs": 125,
       "sourceBounds": [
-        74,
-        103,
-        441,
-        440
+        72,
+        102,
+        442,
+        441
       ],
       "sourceAnchor": [
-        183.5,
-        337
+        185.0,
+        339.0
       ],
       "groundAnchor": [
         320,
@@ -40,7 +40,7 @@
       ],
       "placement": [
         71,
-        159
+        160
       ]
     },
     {
@@ -49,22 +49,22 @@
       "description": "grip axe securely",
       "durationMs": 125,
       "sourceBounds": [
-        515,
+        514,
         102,
-        884,
-        440
+        885,
+        441
       ],
       "sourceAnchor": [
-        184.5,
-        338
+        184.75675675675674,
+        339.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        70,
-        158
+        71,
+        160
       ]
     },
     {
@@ -73,21 +73,21 @@
       "description": "raise axe overhead",
       "durationMs": 125,
       "sourceBounds": [
-        956,
-        3,
-        1327,
-        440
+        954,
+        1,
+        1329,
+        441
       ],
       "sourceAnchor": [
-        185.5,
-        437
+        189.72972972972974,
+        440.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        69,
+        65,
         24
       ]
     },
@@ -98,20 +98,20 @@
       "durationMs": 125,
       "sourceBounds": [
         1391,
-        113,
-        1770,
-        440
+        112,
+        1771,
+        441
       ],
       "sourceAnchor": [
-        189.5,
-        327
+        194.45945945945945,
+        329.0
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        63,
+        58,
         173
       ]
     },
@@ -121,22 +121,22 @@
       "description": "strike log",
       "durationMs": 125,
       "sourceBounds": [
-        67,
-        543,
-        441,
+        66,
+        541,
+        443,
         874
       ],
       "sourceAnchor": [
-        187.0,
-        331
+        190.72972972972974,
+        334.4864864864865
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        67,
-        168
+        63,
+        166
       ]
     },
     {
@@ -145,21 +145,21 @@
       "description": "pull head free",
       "durationMs": 125,
       "sourceBounds": [
-        512,
-        536,
-        884,
+        511,
+        534,
+        885,
         874
       ],
       "sourceAnchor": [
-        186.0,
-        338
+        188.48648648648648,
+        340.7432432432432
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        68,
+        66,
         158
       ]
     },
@@ -169,48 +169,58 @@
       "description": "recover axe",
       "durationMs": 125,
       "sourceBounds": [
-        950,
-        535,
-        1327,
+        949,
+        534,
+        1329,
         874
       ],
       "sourceAnchor": [
-        188.5,
-        339
+        194.45945945945945,
+        341.4864864864865
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        65,
+        58,
         157
       ]
     },
     {
       "id": "key-07",
       "file": "07.png",
-      "description": "ready next strike",
+      "description": "lower axe beside retained split log halves",
       "durationMs": 125,
       "sourceBounds": [
-        1403,
-        547,
-        1770,
-        883
+        1402,
+        546,
+        1771,
+        884
       ],
       "sourceAnchor": [
-        183.5,
-        336
+        183.75675675675674,
+        338.7432432432432
       ],
       "groundAnchor": [
         320,
         616
       ],
       "placement": [
-        71,
-        161
+        73,
+        160
       ]
     }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "atlas": {
     "file": "atlas.png",
@@ -221,7 +231,7 @@
   "status": "authored-keyframe-variations",
   "productionReady": false,
   "playback": {
-    "mode": "repeat-preview",
+    "mode": "once-hold",
     "order": [
       0,
       1,
@@ -232,19 +242,117 @@
       6,
       7
     ],
-    "fps": 8
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "6f513cf5aeb7ac656246e1e3c1bdb3a2e5e69b194596a02b3c3a7622a80459e6",
+    "exportVersion": 2,
+    "stationRegistration": {
+      "method": "bounded-translation-ECC",
+      "referenceSourcePose": 0,
+      "outputRegion": [
+        310,
+        480,
+        580,
+        610
+      ],
+      "minimumCorrelation": 0.93,
+      "maxCorrectionPx": 12,
+      "results": [
+        {
+          "correlation": 1.0,
+          "measuredCorrectionPx": [
+            -2.0699311154004363e-09,
+            1.2891643308421408e-09
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97044,
+          "measuredCorrectionPx": [
+            1.0340121984481812,
+            0.0165398046374321
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.97031,
+          "measuredCorrectionPx": [
+            -3.411461353302002,
+            -0.1699560433626175
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95698,
+          "measuredCorrectionPx": [
+            -5.82098913192749,
+            -0.10468818992376328
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9644,
+          "measuredCorrectionPx": [
+            -3.1298458576202393,
+            -1.7418208122253418
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.95036,
+          "measuredCorrectionPx": [
+            -1.8983503580093384,
+            -1.200094223022461
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.94348,
+          "measuredCorrectionPx": [
+            -5.617467403411865,
+            -1.832826852798462
+          ],
+          "accepted": true
+        },
+        {
+          "correlation": 0.9557,
+          "measuredCorrectionPx": [
+            1.0493743419647217,
+            -0.7039577960968018
+          ],
+          "accepted": true
+        }
+      ]
+    }
   },
   "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
-  "review": {
-    "status": "needs-visual-review",
-    "issues": [],
-    "poseCaptions": "intended-poses-not-verified",
-    "requiredChecks": [
-      "character identity",
-      "frame order and loop seam",
-      "foot and hand contacts",
-      "prop continuity",
-      "direction and scale continuity"
-    ]
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Fixed-reference eight-pose finite task and sustained material result. No seamless repeat, translating gait, hidden anatomy, gameplay activation, independent furniture ownership or economic output certification."
   }
 }

@@ -1,0 +1,18 @@
+{
+  "prompt": "Use case: precise-object-edit. Correct this WHOLE eight-pose Laborer walk strip together, keeping the same semi-realistic dwarf, outfit, head/body scale, rear-left camera, eight distinct complete poses and4-column2-row layout. Reference1 is the current art; reference2 is a physical gait guide only, not final colors/art. Main required corrections:\n1) Top2 and bottom6: the RECOVERING foot must PASS FORWARD next to the supporting shin, toward image upper-left. Currently both recovery boots remain curled up BEHIND on image right. Redraw the connected recovery hip/knee/shin/boot as one natural chain: in top2 it is near anatomical LEFT, in bottom6 far anatomical RIGHT. Keep the other leg actually grounded.\n2) Top3 and bottom7: the supporting boot must continue down/right from its prior stance sole on the SAME diagonal ground line, while the OPPOSITE leg extends upper-left for its new heel landing. Do not replace support with the recovering leg. The trailing heel lifts, forefoot stays down. Top3 near LEFT arm swings BACK against its advancing leg; bottom7 near LEFT arm FORWARD against its trailing supporting leg. The source top3 near arm incorrectly remains forward. Fix the complete arm chain.\n3) Top0/1/2/3 far RIGHT stance, bottom4/5/6/7 near LEFT stance. Their actual lower heel/toe curves must progress down/right consistently relative to stationary hips, including near LEFT toe7-to0. Maintain separate boot shape, brass buckle and lower rubber sole continuity. Do not use a repeated stance, swapped thigh/boot, crossed legs, or two floating feet. Follow the eight connected physical guide poses. Preserve stable head/torso size and fixed pelvic center, modest bob only. Complete boots fit their cells with a little padding.\n4) Remove ALL accidental red/yellow edge fringes, speckles and ghost outlines copied from the old identity reference. This is a clean high-quality rendered game sprite sheet on genuine transparent alpha, without scenery, floor shadow, labels, numbers, colored skeleton strokes or marker dots. Natural antialiased material edge colors only. Preserve bald head, brown beard, cream rolled sleeves, brown leather waistcoat with belt/paneled hem, olive-grey trousers and heavy brown buckled boots. No tools, new costume, camera rotation or zoom. Author all8 whole coherent poses in a single image, not isolated separately generated limbs. The guide is an authoring target; final actual sole material will be independently measured.",
+  "referenced_image_paths": [
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion52/laborer-back-left/strip52.png",
+    "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion52/laborer-back-left/physical-guide52.png"
+  ],
+  "transparent_background": true,
+  "orderedReferences": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion52/laborer-back-left/strip52.png",
+      "sha256": "517342b84048e51ae3ead80f6ff7d26504bb6a3e94d2b2f3383342470315552e"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion52/laborer-back-left/physical-guide52.png",
+      "sha256": "75c7d7d673eab7c160b9c282ee3d2ac01c9be522a9fb0748a9c47417967e33dc"
+    }
+  ]
+}

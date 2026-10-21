@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "config": {
+    "actor": "public/sprites/Cook/motion/mix-ingredients/actor",
+    "binding": {
+      "sourceSha256": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c",
+      "settingsSha256": "d71cf03d907ccf9eb294436fba8a868e69929a6f497bc0d1657cb2bad2805245",
+      "frameSha256": [
+        "4fa40f36de86b7e1444b45855200a63e0055b376670ec0e7fd40814380c742d8",
+        "85545b90d42e1526534831e30ab044bcb182c4bad862db3c5a890f56f4eb4d95",
+        "1f80cbfd663f6037387766c24c76d75f13890beb970bfc22ad133a220f509736",
+        "474513b4eb523b2ad2ae16ef21196d11f8981cba037eefa1216630f37f319379",
+        "d8e9a572e750f6a4bfcb4568107129cece535c834a676bd7ad33075f2e983a3b",
+        "7dd5d0ff1301600527f5b0f3455d14d2d6458fd65d99706f5d6a11d1c2f2b7e2",
+        "f7f13cac0734baa514174cad856a2de5e512b93de4a43fc637367c06d260e9ef",
+        "50ac49eea3235af782cafb7dada9f2ca1f1c069711117ac05c5b1a96aff8b11d"
+      ],
+      "durationsMs": [
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125
+      ]
+    },
+    "dependencies": [
+      {
+        "file": "public/sprites/workstations/mixing-block/sprite.png",
+        "sha256": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1"
+      },
+      {
+        "file": "public/sprites/workstations/mixing-block/generation.json",
+        "sha256": "e62acae5a0a1508bf13cd9bb39afdfe70954afaa3874c4ab65b05270c2e97689"
+      },
+      {
+        "file": "public/sprites/workstations/mixing-block/completion-source.png",
+        "sha256": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1"
+      },
+      {
+        "file": "public/sprites/workstations/mixing-block/completed-mixture.png",
+        "sha256": "ef6d3424ba7f0ac5d740c7435b5b5967a1cd4164e6509b8e60cbc1daee8fc55d"
+      },
+      {
+        "file": "public/sprites/Cook/motion/render-calibration.json",
+        "sha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf"
+      }
+    ],
+    "workingFacePolygon": [
+      [
+        88,
+        333
+      ],
+      [
+        403,
+        264
+      ],
+      [
+        558,
+        330
+      ],
+      [
+        221,
+        396
+      ]
+    ],
+    "points": [
+      [
+        318,
+        346
+      ],
+      [
+        319,
+        346
+      ],
+      [
+        319,
+        346
+      ],
+      [
+        318,
+        346
+      ],
+      [
+        319,
+        346
+      ],
+      [
+        318,
+        346
+      ],
+      [
+        318,
+        347
+      ],
+      [
+        318,
+        346
+      ]
+    ],
+    "scope": "Actual opaque lower wooden bowl edge on the uniformly normalized independent tabletop. Spoon and opposite hand visibly remain with the same bowl. Hidden spoon tip, underside, force, contents transfer, unseen far leg and repeat are excluded."
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "point": [
+        318.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 1,
+      "point": [
+        319.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 2,
+      "point": [
+        319.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 3,
+      "point": [
+        318.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 4,
+      "point": [
+        319.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 5,
+      "point": [
+        318.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 6,
+      "point": [
+        318.0,
+        347.0
+      ],
+      "outsideWorkingFacePx": 0
+    },
+    {
+      "frame": 7,
+      "point": [
+        318.0,
+        346.0
+      ],
+      "outsideWorkingFacePx": 0
+    }
+  ],
+  "maxOutsideWorkingFacePx": 0,
+  "lastToFirstToolTravelPx": 0.0,
+  "scope": "Actual opaque lower wooden bowl edge on the uniformly normalized independent tabletop. Spoon and opposite hand visibly remain with the same bowl. Hidden spoon tip, underside, force, contents transfer, unseen far leg and repeat are excluded.",
+  "approval": false
+}

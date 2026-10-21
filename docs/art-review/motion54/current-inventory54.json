@@ -1,0 +1,926 @@
+{
+  "version": 1,
+  "scopeDate": "2026-09-30",
+  "reviewGatesComplete": false,
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 42
+    }
+  ],
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 23,
+    "referenceActionsWithoutMapping": 42
+  },
+  "runtimeCoverageBindingCurrent": true,
+  "scopeSha256": "b588b5bb6a1690bd145ee3c4297db34f618af71a96450c2c03625c2206a4b71e",
+  "remainingCycles": [
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Borrin",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Cook",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Elder",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "walk",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-contact",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-ore",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Female Miner",
+      "action": "push-ore-barrow",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Helga",
+      "action": "shovel-stone",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "direction": "reference",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "push-stone-barrow",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Laborer",
+      "action": "pull-supply-sled",
+      "direction": "reference",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Ginger",
+      "action": "haul-firewood",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Ginger",
+      "action": "carry-supplies",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Ginger",
+      "action": "load-logs-cart",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Laborer",
+      "action": "roll-barrel",
+      "direction": "reference",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-crate",
+      "direction": "reference",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-barrel",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-large-stone-ore",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Laborer",
+      "action": "repair-boardwalk",
+      "direction": "reference",
+      "reviewStatus": "reviewed-changes-required"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-swing",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-cycle",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back-right",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "back-left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "left",
+      "reviewStatus": "not-reviewed"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "direction": "front-left",
+      "reviewStatus": "not-reviewed"
+    }
+  ],
+  "families": [
+    {
+      "id": "Blacksmith/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Borrin/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Cook/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Elder/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Female Miner/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Ginger/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Helga/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Laborer/walk",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Female Miner/pickaxe-swing",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Female Miner/shovel-cycle",
+      "status": "reviewed-changes-required"
+    },
+    {
+      "id": "Helga/carry-mine-timber",
+      "status": "reviewed-changes-required"
+    }
+  ],
+  "referenceActionsWithoutMapping": [
+    {
+      "character": "Blacksmith",
+      "action": "hammer-raised",
+      "destination": "public/sprites/Blacksmith/motion/hammer-raised/reference"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "file-tool-edge",
+      "destination": "public/sprites/Blacksmith/motion/file-tool-edge/reference"
+    },
+    {
+      "character": "Borrin",
+      "action": "turn-ledger-page",
+      "destination": "public/sprites/Borrin/motion/turn-ledger-page/reference"
+    },
+    {
+      "character": "Cook",
+      "action": "serve-stew",
+      "destination": "public/sprites/Cook/motion/serve-stew/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-ready",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-ready/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "pickaxe-contact",
+      "destination": "public/sprites/Female Miner/motion/pickaxe-contact/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "shovel-ore",
+      "destination": "public/sprites/Female Miner/motion/shovel-ore/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "examine-sample",
+      "destination": "public/sprites/Female Miner/motion/examine-sample/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "push-ore-barrow",
+      "destination": "public/sprites/Female Miner/motion/push-ore-barrow/reference"
+    },
+    {
+      "character": "Female Miner",
+      "action": "repair-pickaxe",
+      "destination": "public/sprites/Female Miner/motion/repair-pickaxe/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-ready",
+      "destination": "public/sprites/Helga/motion/pickaxe-ready/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "pickaxe-contact",
+      "destination": "public/sprites/Helga/motion/pickaxe-contact/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "inspect-mineral",
+      "destination": "public/sprites/Helga/motion/inspect-mineral/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "shovel-stone",
+      "destination": "public/sprites/Helga/motion/shovel-stone/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "carry-mine-timber",
+      "destination": "public/sprites/Helga/motion/carry-mine-timber/reference"
+    },
+    {
+      "character": "Helga",
+      "action": "bind-tool-handle",
+      "destination": "public/sprites/Helga/motion/bind-tool-handle/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "lift-crate",
+      "destination": "public/sprites/Laborer/motion/lift-crate/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-sack",
+      "destination": "public/sprites/Laborer/motion/carry-sack/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "push-stone-barrow",
+      "destination": "public/sprites/Laborer/motion/push-stone-barrow/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "pull-supply-sled",
+      "destination": "public/sprites/Laborer/motion/pull-supply-sled/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-crate",
+      "destination": "public/sprites/Laborer/motion/build-crate/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "sweep-wood-chips",
+      "destination": "public/sprites/Laborer/motion/sweep-wood-chips/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "saw-timber",
+      "destination": "public/sprites/Ginger/motion/saw-timber/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "build-timber-crate",
+      "destination": "public/sprites/Ginger/motion/build-timber-crate/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "stack-firewood",
+      "destination": "public/sprites/Ginger/motion/stack-firewood/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "haul-firewood",
+      "destination": "public/sprites/Ginger/motion/haul-firewood/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-hatchet",
+      "destination": "public/sprites/Ginger/motion/sharpen-hatchet/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "carry-supplies",
+      "destination": "public/sprites/Ginger/motion/carry-supplies/reference"
+    },
+    {
+      "character": "Blacksmith",
+      "action": "fix-wheelbarrow",
+      "destination": "public/sprites/Blacksmith/motion/fix-wheelbarrow/reference"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-closed-ledger",
+      "destination": "public/sprites/Borrin/motion/explain-closed-ledger/reference"
+    },
+    {
+      "character": "Borrin",
+      "action": "explain-open-ledger",
+      "destination": "public/sprites/Borrin/motion/explain-open-ledger/reference"
+    },
+    {
+      "character": "Cook",
+      "action": "cut-boar-meat",
+      "destination": "public/sprites/Cook/motion/cut-boar-meat/reference"
+    },
+    {
+      "character": "Cook",
+      "action": "fillet-fish",
+      "destination": "public/sprites/Cook/motion/fillet-fish/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "chop-downed-log",
+      "destination": "public/sprites/Ginger/motion/chop-downed-log/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "load-logs-cart",
+      "destination": "public/sprites/Ginger/motion/load-logs-cart/reference"
+    },
+    {
+      "character": "Ginger",
+      "action": "sharpen-axe",
+      "destination": "public/sprites/Ginger/motion/sharpen-axe/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "roll-barrel",
+      "destination": "public/sprites/Laborer/motion/roll-barrel/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-crate",
+      "destination": "public/sprites/Laborer/motion/carry-crate/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "build-barrel",
+      "destination": "public/sprites/Laborer/motion/build-barrel/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "carry-large-stone-ore",
+      "destination": "public/sprites/Laborer/motion/carry-large-stone-ore/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "shovel-rubble",
+      "destination": "public/sprites/Laborer/motion/shovel-rubble/reference"
+    },
+    {
+      "character": "Laborer",
+      "action": "repair-boardwalk",
+      "destination": "public/sprites/Laborer/motion/repair-boardwalk/reference"
+    }
+  ],
+  "unchangedFullStatus": {
+    "file": "docs/motion-completion-status.json",
+    "sha256": "d9c111b42561bcf193a2d6e546daab3782614e78ce28281b36b9e8484a4f3557"
+  },
+  "unchangedFullInventory": {
+    "file": "docs/motion-completion-inventory.md",
+    "sha256": "908cff3c58ed3bc880640a40ce38adb0fd9bbbe499efe3d7f951ce5b3b9ec1cf"
+  }
+}

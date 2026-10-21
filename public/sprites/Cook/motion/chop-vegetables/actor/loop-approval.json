@@ -1,0 +1,343 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+    "settingsSha256": "345c06ac1a1fbda04669b02e97e879550474b375447e2670257db71545b620a6",
+    "frameSha256": [
+      "d8e2d9296152c6e312d3214aebfd6f8042a44f998eb46828584f8e39ab62ff67",
+      "6cac54fedc18adb41f78983153105a68746cea0cca95faa90c7888fbbc17f1ca",
+      "bc21c4e722fff0bc686cf1dd1c3504b7b867f63d63da33d21b22e6079302622a",
+      "e2871e39c85d7ec6f2d9da16be34bbf7e10c79a341f8bb7e15f6b93290cd683d",
+      "d0a2863ccaf0978f6b68f97d105987e7347ba0b5a3df755d81244c8119d43876",
+      "1a9e016d79031fa17ed9e822bd3685e6f21e76e9b697bc8e3b84d6417c87db4b",
+      "769355e8e6cef97d3517120a5dc434902b8e5d8cd0c9e314263b683d4165b8e8",
+      "260db51b39c899b7720b0e8761a6a722b356c56e95df89d88688369848239d69"
+    ],
+    "atlasSha256": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "345c06ac1a1fbda04669b02e97e879550474b375447e2670257db71545b620a6",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      140,
+      140,
+      105,
+      115,
+      140,
+      140,
+      105,
+      115
+    ],
+    "character": "Cook",
+    "action": "chop-vegetables",
+    "direction": "actor"
+  },
+  "scope": "Fixed-camera independent cutting-block vegetable chopping only; once-hold task playback. No food consumption/accounting, other preparation actions, hidden blade geometry or other directions are certified.",
+  "checks": {
+    "identity-and-scale": "All eight actor and composited poses inspected; same broad Cook, brown hair/beard, red sleeves, apron and boots. Same520px body calibration and fixed view. Final layered browser capture inspected.",
+    "station-and-foot-contact": "Independent wood cutting block and ingredients remain fixed. Visible boots keep their ground baseline across all eight poses; parts behind the block are occluded and are not separately measured.",
+    "hand-and-tool-contact": "Knife stays in the same hand through lift, downward chop and low return. The other hand remains on the far side of the food. Original blade pixels pass over the near carrot/work face with the reviewed foreground contours. This is projected visible contact, not penetration or force proof.",
+    "prop-continuity": "Same separate block, bowl, vegetables and source knife through all eight poses. Ingredient counts are static cosmetic art; the animation never issues inventory output.",
+    "last-to-first-transition": "All eight layered frames and repeat/return inspected. Pose7 returns the knife to the low ready position near0 without changing station or held tool. Actual job playback completes once on7; cancellation leaves the cutting block independently visible."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "4600a4077df2e85b9a078d376af23028e90370126150c7ccb6a6945dde5312cf"
+    },
+    {
+      "file": "../../../../workstations/cutting-block/sprite.png",
+      "sha256": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe"
+    },
+    {
+      "file": "../../../../workstations/cutting-block/generation.json",
+      "sha256": "28637e86c8696b5e86581095d8878049096c830809e78b28c2beb328528e3d9a"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
+      "sha256": "5b7b3635565b9d85b2aaf6dc8f357a0a6c63a1091323ec5a6b5d5b158eeea59c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/npc-lifecycle-results.json",
+      "sha256": "f4e35f053325158f23f0ad3d9f532c5f91f16ca7088f5dad33b44f7b492f351f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
+      "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/runtime-revalidation.json",
+      "sha256": "a44c4f1dc17b59fb1d41312e982b29f9ce989c6d4a380021a880eb8100b7bf51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/npc-lifecycle-results.json",
+      "sha256": "6de0cbce3aae45d05d7ad4b7a2c47c2d56d29bec5b5114a4b6ca05a7a4f6848d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/smith-gameplay.json",
+      "sha256": "c4c153387e62dafe36731d2ecdda356e081938c79d4796304ce88d837f9bfa1d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/station-layer-results.json",
+      "sha256": "9818670221a57df8b6728c292fa452128e7ada1514d2e2a0c313fceb9d6afce9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/runtime-revalidation.json",
+      "sha256": "11ace8cb82b1b9b7aafaf02bd80775779d272443942c951d132fdb95a4c97f42"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/npc-lifecycle-results.json",
+      "sha256": "e6eec5449b2e2872fd1f30f7a20393549b68842a4e5d63e1293d3e579afc5bbf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/smith-gameplay.json",
+      "sha256": "8e033aad1e59302c202730afdf7b109ecbe0d5e092f8c02faf341b02ca1f34f3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/blacksmith-right-rendered-stride.json",
+      "sha256": "0fd55a94db2e708f5e698f2519fe4b97d6216c13fab2bcef703c51942de54a4c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/station-layer-results.json",
+      "sha256": "43760a4d64120654d9a7161e48538ec641747429b61ee063732e3063462c9816"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
+      "sha256": "9de495e924f1897b8d9ce273e4bb4fc7611649be83b4213b44e6eaf449684b15"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/smith-gameplay.json",
+      "sha256": "b2905cff824676494021054245fff438476fa72fa492fd65bd3d30d7c09a5c51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/station-layer-results.json",
+      "sha256": "e567b82f3a9a8ad7bda2c20bb3683ac6c02820e30b12604b72da8b9cb58b2267"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
+      "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+      "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/retained-assets-audit48.json",
+      "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+      "sha256": "be0d75f350680a016783e3a3fe9ce476050f7ad33903fffcc5e62caaaa372071"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/retained-assets-audit50.json",
+      "sha256": "d860b2654bf676fc01e06e22ce00da70cdff559ae98f9753248c9e311c6dc3c1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/npc-gameplay50.json",
+      "sha256": "e33b2533e52422f4d0679fd20a82e6ac470e6ac4acab559f234d81093b41f774"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/consultant-gameplay50.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-right-gameplay50.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-left-gameplay50.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/runtime-revalidation53.json",
+      "sha256": "a63fac4c57f9e1e87a6223b29abd4cfe42d4ae48a0a3e3ffdccd8573aa1478f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/retained-assets-audit53.json",
+      "sha256": "84b99dafbf65abca1905b86931fa41349795c57b017ca62b60347779d0403c39"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cooking-gameplay53.json",
+      "sha256": "3e48d4f9a38e1a533e341cdd1258932ef77d22b6246bc782cdf3ce99f9902151"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/smith-gameplay53.json",
+      "sha256": "b0b9fd011c3c940f22053c8d52b151639baa34f7e01c8147f426c1b9c7e2fc19"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/npc-gameplay53.json",
+      "sha256": "831691c1251ad14f5e5a5c652824e2bfa6824a1e5da8f2c3fee0a7416e62e5aa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/station-layer-authoring53.json",
+      "sha256": "69c49e7b628a2d38adbb75d7c47a1a61c36c714ab75d9fe6ce54a76562e87f06"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    }
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion56",
+    "files": [
+      "src/game/world/workstation-sites.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+    "scope": "Earlier selected art and calibration actions exact. Seven forge days/21 variants verify only additive sixth operation/site; same actual anvil points rechecked. Non-forge meals/roles keep55 actual provenance and exact code/sites/art. Prior native dates/scopes and unresolved gait/cane/family verdicts retained."
+  }
+}

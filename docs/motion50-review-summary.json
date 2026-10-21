@@ -1,0 +1,119 @@
+{
+  "checkpoint": "motion50",
+  "date": "2026-10-05",
+  "productionReady": false,
+  "reviewGatesComplete": false,
+  "counts": {
+    "mainCycles": 153,
+    "mainFrames": 1224,
+    "walkCycles": 64,
+    "nonFrontWalkCycles": 56,
+    "directionalToolCarryCycles": 24,
+    "fixedWorkCycles": 65,
+    "actorCycles": 7,
+    "actorFrames": 56,
+    "mainScopedReviewsApproved": 50,
+    "actorScopedReviewsApproved": 7,
+    "cycleReviewsRemaining": 103,
+    "directionFamilies": 11,
+    "directionFamiliesEvaluated": 11,
+    "directionFamiliesChangesRequired": 11,
+    "directionFamiliesReviewed": 0,
+    "referenceActionsMapped": 21,
+    "referenceActionsWithoutMapping": 44
+  },
+  "mergeBlockers": [
+    {
+      "gate": "final-cycle-reviews",
+      "remaining": 103
+    },
+    {
+      "gate": "direction-continuity",
+      "remaining": 11
+    },
+    {
+      "gate": "runtime-action-activation",
+      "remaining": 44
+    }
+  ],
+  "completed": {
+    "newFrozenCycleApprovals": 0,
+    "newFamilyApprovals": 0,
+    "newLiveMappings": [
+      {
+        "character": "Cook",
+        "action": "stir-cauldron"
+      }
+    ],
+    "derivedFiniteActors": 10,
+    "approvedActorStationVariants": 17,
+    "physicalActiveProps": 12,
+    "priorAcceptedSourcesRetained": 66,
+    "affectedApprovalsNarrowlyRevalidated": 18
+  },
+  "stirring": {
+    "originalPixelPoses": 8,
+    "bodyHeight": 547,
+    "anchor": [
+      320,
+      616
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "finiteOnceHold": true,
+    "loopApproved": false,
+    "nearBootMinimumCorrelation": 0.9900378836,
+    "nearBootMaxTravelPx": 1.0137188435,
+    "nearBootMaxAdjacentPx": 1.0181469938,
+    "visibleShaftOutsideStewFacePx": 0,
+    "excluded": "Hidden far sole, submerged spoon bowl, grip/ fluid forces, serving, automatic production and seamless repeat."
+  },
+  "validation": {
+    "checkpoint": "motion50",
+    "nodeTests": 215,
+    "pythonTests": 88,
+    "typecheck": true,
+    "pagesBuild": true,
+    "mainGallery": {
+      "cycles": 153,
+      "frames": 1224,
+      "controlsRaceMobile": true
+    },
+    "approvedStationVariants": 17,
+    "staticReferences": 103,
+    "angleStanceImages": 166,
+    "fiveMealDays": true,
+    "fiveConsultantDays": true,
+    "originalNpcAndJobs": true,
+    "rightStride": {
+      "boundaries": 24,
+      "heldSamples": 152,
+      "maxBoundaryPx": 1.9003717812156378,
+      "maxHeldPx": 0.2651430147233448
+    },
+    "leftStride": {
+      "boundaries": 24,
+      "heldSamples": 229,
+      "maxBoundaryPx": 5.7784559147810235,
+      "maxHeldPx": 0.3144864233233179
+    },
+    "headedSmoke": {
+      "captures": 2,
+      "dwarves": 18,
+      "persistentStations": 12,
+      "playerMoved": true,
+      "clientErrors": 0
+    },
+    "excludedAttempts": "Setup failures, interrupted wrapper and initial pot/barrel occlusion are archived separately; none provide acceptance. Native gait drafts remain unselected. Technical success is not a full motion approval."
+  },
+  "privateResearch": "Two additional unselected, changes-required Blacksmith rear-right single-pose methods retained separately as motion51.",
+  "note": "One real gameplay activation closes. Frozen cycle count and direction-family approvals do not change. Technical checks are green; full-motion gates remain open."
+}

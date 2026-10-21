@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Preserve the complete LEFT-facing Blacksmith8-pose strip in image1, identity, outfit, arms, scale, camera,4\u00d72 layout and real transparent alpha. Correct the TRAILING anatomical RIGHT leg in the TOP-LEFT pose0 ONLY: extend it farther BACK toward screen RIGHT, with its toe still lightly touching the same ground plane. Keep his pelvis and the far left leading heel unchanged. Move the whole trailing boot/shin farther to the right, naturally extending that leg behind the body, with the toe about one-third of a boot length farther right than its current location. The trailing toe in pose0 must finish farther BEHIND the pelvis than the right support toe in bottom-right pose7, so the7-to0 supporting toe travels smoothly backward during forward walking. Currently pose0's right trailing toe is farther FORWARD than7, which creates a reverse foot slide. Redraw that complete leg naturally at the same boot size, keep full heel/shin/boot within the cell, no pelvis drift, no body shrink, no clipping. Retain the other seven poses and their near/far leg ownership; particularly2 right raised passing with left planted and6 left raised passing with right planted. Keep matching heavy iron-toed boots and unchanged square outer right buckle. In the far left boot of pose1, show the same inner plain strap surface as the far left boot in pose0; its outer buckle is on the hidden side, not suddenly visible on the inner face. No extra limbs, symbols, labels, color coding, floor or shadow.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion47/blacksmith-left/strip-anatomy47.png",
+      "sha256": "66900d330f002079709c713804f9ae2c5060f68c14ed2687cc9b58b27c8292f6"
+    }
+  ],
+  "output": "strip-return47.png",
+  "outputSha256": "7b7136eb7d5b2d23f1c2f135bd21ae338781a34c0c6bae2916e277bb1469f7d7"
+}

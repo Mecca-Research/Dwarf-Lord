@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    160,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    160
+  ],
+  "inputs": [
+    {
+      "id": "paring40",
+      "file": "authoring-inputs/paring40.png",
+      "poseCount": 8,
+      "sha256": "7fc0d9f2e6693b07c79ace86f42bcc88d6ba6b84f0f190bc658295268e9ffcb3",
+      "reference": "authoring-inputs/reference40-0.png",
+      "referenceSha256": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        229.0,
+        653.0,
+        1085.0,
+        1513.5,
+        229.0,
+        653.0,
+        1085.0,
+        1514.0
+      ],
+      "rootYs": [
+        421,
+        421,
+        421,
+        421,
+        866,
+        866,
+        866,
+        866
+      ],
+      "bodyHeights": [
+        408.5,
+        408.5,
+        408.5,
+        408.5,
+        408.5,
+        408.5,
+        408.5,
+        408.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "paring40",
+      "pose": 0
+    },
+    {
+      "input": "paring40",
+      "pose": 1
+    },
+    {
+      "input": "paring40",
+      "pose": 2
+    },
+    {
+      "input": "paring40",
+      "pose": 3
+    },
+    {
+      "input": "paring40",
+      "pose": 4
+    },
+    {
+      "input": "paring40",
+      "pose": 5
+    },
+    {
+      "input": "paring40",
+      "pose": 6
+    },
+    {
+      "input": "paring40",
+      "pose": 7
+    }
+  ],
+  "review": "Native source cells have irregular horizontal gutters. Each visible stationary boot stance midpoint and front sole baseline is recorded in source coordinates. One common body scale; only whole-pose placement changes. No walking contacts, limb transformations or independent direction approval."
+}

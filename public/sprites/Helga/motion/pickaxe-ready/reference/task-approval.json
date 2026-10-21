@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "binding": {
+    "sourceSha256": "a3550f8abdb19d004945bc497740437e08978e0a89a054c92748a674887b1da7",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "fc65abcacda22ea3ee377cb4c8d56dd1194af8081a7f58ad8a806a93066837bc",
+      "0fa0f64be537d10cea6d128f56dc821d847766ce921339842ab5409e7c220681",
+      "f12dde0ddf62d4b67fbcee6b7a22ecaad1ecf642c101205a1ba808e0d798f2ad",
+      "beceb57a76c84808219501d6b40c8384b7f2378aa21142c3250772fc8de31d3f",
+      "4bdae4c2c23410aa9bce53f0d2a8a8a47e1d028601a1a3c81dfe4c9439a274a9",
+      "39c3fee62cd0f3e85de3b2ddcfa5d93270dcd451acf75ea545f8dbc62493549b",
+      "e8b077ac8b1dd742cf8893ef811a5b9a8a915ae2f48a6eb362499500cf75c6c5",
+      "43fbd0cc86d651bc0a600844c350461550ccf420b85b72243c860e906293be5b"
+    ],
+    "atlasSha256": "96cf93112dfd143dfe1672484aee3a9c60b772796e858dcded5806acf9751cb1",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Helga",
+    "action": "pickaxe-ready",
+    "direction": "reference"
+  },
+  "scope": "Motion38 Helga pickaxe-ready fixed reference finite once-hold task: native poses0-7, local sequence identity/scale, visible grip and combined painted prop continuity plus exact gallery timing accepted. Translating sole/cane contacts, physical standing-height calibration, cross-direction/cross-action seams, independent workstation ownership, gameplay activation and economic output remain separate unapproved gates.",
+  "checks": {
+    "identity-and-scale": "Same stocky beardless woman, red twin braids, iron helmet, blue sleeves, brown apron and heavy boots in0-7. Native sequence scale only; no cross-direction gait calibration.",
+    "station-and-foot-contact": "Station-free fixed ready stance. Visible boots retain their local baseline; no translating sole or gait claim.",
+    "hand-and-tool-contact": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+    "prop-continuity": "Both hands retain one connected pickaxe while adjusting low shoulder-height grip2, raising3/4 and settling5/6/7. No rock, carried load, release or economic strike is implied.",
+    "completion-and-reset": "Every authored pose0-7 held for its full duration; finite task completes once, holds7 and resets only explicitly. Gallery/shared playback acceptance only; gameplay task activation and economy effects remain separate gates."
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "d09aa80d6bfd599bd4cf581baf6cb57a68aba2e6e80db350bddd559942f81b63"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-pickaxe-ready-review.json",
+      "sha256": "67acca9cba857b69d1588512038a04094dbeb8e6ba205cc8ad4e7d811737b6f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-pickaxe-ready-playback.json",
+      "sha256": "8d932a4edeadb91ad030b041d7c102f921d3b560aacddeb143576646f931192d"
+    },
+    {
+      "file": "../../../../../../scripts/fixed-cycle-review-check.mjs",
+      "sha256": "5347cb83dfd088f63d77e2c38a057367fdced3127f0929169f75f72763e99b49"
+    },
+    {
+      "file": "../../../../../motion-review.html",
+      "sha256": "ee4b62ce2af24b13ec79daefee246bf360230c95fa992129c1941934d99341dc"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-pickaxe-ready-0.png",
+      "sha256": "47f41dc45456e61bac7b0cb01728499c3b1caa3f111f5161741600feed0949ab"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-pickaxe-ready-4.png",
+      "sha256": "0b0451915733780d45f989a17fefb5a45667b32ec892ec9eaad7e6c36e0b2232"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Helga-pickaxe-ready-7.png",
+      "sha256": "ec1cf3ae956f83e128b6af539c00de6906cb1445d377bfda854684cc83b6dddf"
+    }
+  ]
+}

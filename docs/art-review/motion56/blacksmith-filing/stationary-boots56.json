@@ -1,0 +1,138 @@
+{
+  "sourceSha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+  "binding": {
+    "sourceSha256": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+    "settingsSha256": "f49ad8d81f41a71ed2f37a3f1269ba85303b26130aba98aba7eb1116fb1e94ab",
+    "frameSha256": [
+      "639cafcba1ab0a5d278e639303c0ef393028f1b0daeca58bc155f87fa8efd6a4",
+      "3a8124b02f6a51cdb3aabd8fcd10f0284e64f8405b308681061a50a18dc83ba2",
+      "d7398101521658530d46dcbd850aa5201d736f46262d35b66631fab8ce9f73c4",
+      "abd2369eded97a4b15576c6c83fd83bb450050b35264d276ee5bb27895dfd538",
+      "6e72831d9d572641baca098d79e01c03dc2e6a8925b30614e66c6e11825fb842",
+      "ada691acd724d6a840bb1ae86f5f39ea5cb7a6726ffa32c8605bde333584f557",
+      "b9725e7a10665476800591eb49954112e81c07d9ab636824cb9e588232ebe32a",
+      "769a6d2baf16b753568db7d791275511f6fe687b0e22a4825f1f7efe97cf58f1"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ]
+  },
+  "bounds": {
+    "minCorrelation": 0.94,
+    "maxDriftPx": 6,
+    "maxAdjacentPx": 6
+  },
+  "regions": [
+    {
+      "name": "near-visible-boot-cap-rim",
+      "box": [
+        77,
+        491,
+        159,
+        561
+      ],
+      "results": [
+        {
+          "frame": 0,
+          "correlation": 0.999999975763756,
+          "translationPx": [
+            -5.000944547361996e-09,
+            5.203163677691691e-09
+          ],
+          "driftPx": 7.216810704591126e-09,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "correlation": 0.9891473037376401,
+          "translationPx": [
+            0.020846372470259666,
+            -0.1407899409532547
+          ],
+          "driftPx": 0.14232490956783295,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "correlation": 0.9915534075538205,
+          "translationPx": [
+            0.04721130430698395,
+            -1.213132381439209
+          ],
+          "driftPx": 1.2140506505966187,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "correlation": 0.9856538864696326,
+          "translationPx": [
+            -0.48408952355384827,
+            -2.3393476009368896
+          ],
+          "driftPx": 2.3889098167419434,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "correlation": 0.9824509259308034,
+          "translationPx": [
+            0.05554793402552605,
+            -3.6877944469451904
+          ],
+          "driftPx": 3.6882126331329346,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "correlation": 0.9845494238949476,
+          "translationPx": [
+            -0.16764026880264282,
+            -0.5556734800338745
+          ],
+          "driftPx": 0.5804104208946228,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "correlation": 0.9850382434651679,
+          "translationPx": [
+            -0.38592958450317383,
+            0.40094193816185
+          ],
+          "driftPx": 0.556503415107727,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "correlation": 0.9849874465424913,
+          "translationPx": [
+            0.21716876327991486,
+            0.3051161766052246
+          ],
+          "driftPx": 0.3745105564594269,
+          "passed": true
+        }
+      ],
+      "adjacentDriftPx": [
+        0.14232491135566927,
+        1.0726664995692405,
+        1.2452474815528898,
+        1.452417805637367,
+        3.1400628537096424,
+        0.9812050161300577,
+        0.6106637320789557
+      ],
+      "passed": true
+    }
+  ],
+  "approval": false,
+  "scope": "Stationary visible near boot cap/rim source material only. Hidden far sole, anatomical underside, moving gait, ground force and seamless repeat excluded.",
+  "measurementPassed": true
+}

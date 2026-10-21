@@ -1,0 +1,28 @@
+{
+  "prompt": "Create an ACTOR-ONLY version of the FIRST image's eight tool-inspection poses. SECOND image defines the exact same stocky bald blacksmith's canonical body, long charcoal forked beard brass ties, muscular cream rolled sleeves, worn dark leather apron, olive trousers and capped boots, render quality and constant scale. Preserve eight FIRST poses in exact order 4columns by2rows, same right-hand wooden-handled steel tool: chest hold0; raise1; inspect near eye2; rotate wrist3; examine other face4; lower5; return6; low stable hold7. Same anatomical right hand retains one connected tool, left arm relaxed at side. REMOVE all eight anvils, stumps, all laid-down spare hammers and furniture entirely, leaving transparent space. Reconstruct naturally any obscured lower body and boots. Only one complete dwarf and his ONE right-hand held tool in each cell. Keep fixed standing boots, stable root, identical body proportions, consistent floor, lighting and elevated 3/4 right-facing camera. No duplicate spare tools, no extra hands, no furniture. Transparent background, generous cell gutters, no text.",
+  "reference": "public/sprites/Blacksmith/motion/inspect-tool/reference/source-sheet.png",
+  "referenceSha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7",
+  "actorOnly": true,
+  "editHistory": [
+    {
+      "key": "Blacksmith-inspect-actor39",
+      "character": "Blacksmith",
+      "action": "inspect-tool",
+      "refs": [
+        {
+          "file": "authoring-inputs/reference39-0.png",
+          "sha256": "70be61ee5d685964b404538a8f62737cdb65230c405c998bf0c6411d76a6b3d7"
+        },
+        {
+          "file": "authoring-inputs/reference39-1.png",
+          "sha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8"
+        }
+      ],
+      "prompt": "Create an ACTOR-ONLY version of the FIRST image's eight tool-inspection poses. SECOND image defines the exact same stocky bald blacksmith's canonical body, long charcoal forked beard brass ties, muscular cream rolled sleeves, worn dark leather apron, olive trousers and capped boots, render quality and constant scale. Preserve eight FIRST poses in exact order 4columns by2rows, same right-hand wooden-handled steel tool: chest hold0; raise1; inspect near eye2; rotate wrist3; examine other face4; lower5; return6; low stable hold7. Same anatomical right hand retains one connected tool, left arm relaxed at side. REMOVE all eight anvils, stumps, all laid-down spare hammers and furniture entirely, leaving transparent space. Reconstruct naturally any obscured lower body and boots. Only one complete dwarf and his ONE right-hand held tool in each cell. Keep fixed standing boots, stable root, identical body proportions, consistent floor, lighting and elevated 3/4 right-facing camera. No duplicate spare tools, no extra hands, no furniture. Transparent background, generous cell gutters, no text.",
+      "output": "authoring-inputs/source39.png",
+      "outputSha256": "03304d4cdc31119bf5e89503bf4f13e4e5c08688bbc535063af498d6e5f29b92",
+      "method": "Built-in authored actor-only layer, whole poses; no limb synthesis, warping or manual redraw.",
+      "decision": "Selected pending native tool, layer and actual-renderer lifecycle review."
+    }
+  ]
+}

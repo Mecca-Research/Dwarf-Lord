@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "ed6cc4fa5d681eb370b205cfde453b472687df348530a7653e91fa528f654ad0",
+    "settingsSha256": "cbae98f7326f3d0be35baeeb51cadc6c7c9437a81f94e32f35b32efab891be63",
+    "frameSha256": [
+      "14807b5912de57672c669b401e95ad9d7c3b00614253480e724a152316891a82",
+      "1e9d851624d911153054e61e341dfbd2d280d4668509be10ef614d247cfcafa1",
+      "b5ea9194668ee8fec10ae12c233919c4c46eaca373f9484b099cdbb28e394144",
+      "d8553726e4e2f342b4bcabbce55745e7ba1e38d4e5f5db529d050521b706cecc",
+      "fcb699e6211882dd80f016447fa85064eef6dd97dde02520232b3e0753f821bf",
+      "3d2217747af76cb5ac99b0bd215decb127ef44ee1987574b4014aa6156ae67f0",
+      "80445953c5bd90774b8183259c55ed55f5efc62c4f94be2c99ee37e70aecc27e",
+      "97c9db1713315fd9b639c7bbb5c181228f45a74b7760d8705608945125b03980"
+    ],
+    "atlasSha256": "f176b47787d8c978b40f26f29accd90fea259d9acad87b273cdb50434a749cc8",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 534,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "cbae98f7326f3d0be35baeeb51cadc6c7c9437a81f94e32f35b32efab891be63",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "explain-closed-ledger",
+    "direction": "actor"
+  },
+  "playback": {
+    "mode": "once-hold",
+    "endFrame": 7
+  },
+  "scope": "Finite original-pixel standing explanation with an already held closed ledger beside the independently owned desk. Visible stationary boots and book/hand continuity only; no seamless repeat, moving gait, hidden anatomy, seated-standing transfer, pickup/put-down or economic production.",
+  "checks": {
+    "identity-and-scale": "Borrin retains his grey bound beard, spectacles, swept hair, cravat, vest and key ring. Eight distinct original poses0-7 are extracted with literal positive/negative furniture stencils. One actual opaque534px crown-to-visible near-boot-rim basis and common[320,616] source datum; no per-pose scale/offset, body warp, painted repair, mirror, duplicate pose or synthetic tween. No hidden sole/root/body reconstruction.",
+    "station-and-foot-contact": "Both inspected visible boot cap/rim regions pass unchanged.94/6/6 stationary limits. Near minimum correlation0.957996, max drift1.233744px, adjacent1.535480px; far minimum correlation0.970601, drift0.974086px, adjacent0.605940px. Original source furniture removed; unchanged independent desk normalized650-to534 at the same root. Blocking crate moved aside and actual0-7 boots inspected. No moving sole/material tracking, ground force or direction-height approval.",
+    "hand-and-tool-contact": "The same closed ledger stays under the left arm and supported in its original hand through all8 poses. Free right hand changes from relaxed to palm-up extension, curled emphasis, outward gesture, chest gesture and nod, then lowers. Original fingers/wrist and cover/page-block relationships inspected; no book-opening, pressure, handwriting or hidden joint certification.",
+    "prop-continuity": "Actor owns the held closed ledger, complete body and free gesture. Independent desk owns a separate open ledger, ink/paper/receipt and book stacks; all prior desk sprite layers and fixed placement exact. There is one held closed book and one separate desk book, no duplicate furniture or in-cycle transfer. Desk persists after departure. Original kneegap furniture fragments removed with source-only negative stencil; no new body material painted.",
+    "completion-and-reset": "Six actual consultant days verify all8 authored125ms poses. New explanation completes once at7 and holds unchanged5 seconds; ordinary camera rotation preserves state. Forbidden forge assignment has no production effect. Departure releases actor and desk persists. Explicit return resets0; day resolution retains cosmetic consultant work; next morning advances and day7 restores writing. No seamless loop, seat-to-stand, pickup/put-down or spontaneous book refill approved."
+  },
+  "dependencies": [
+    {
+      "file": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/source-pixel-identity58.json",
+      "sha256": "62e76a765d253e60bb7b2ecb711934ca734021a44da054f3334592c10051c1e8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/stationary-boots58.json",
+      "sha256": "889c7ff6ef05ce63fce17ecb43c055d78b56de9437240bc691e53cde912e3695"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/source-body-basis58.json",
+      "sha256": "3bbbe12d7759363f4d8f2683a2da90292e4ebad9a5eed2b560794b7d995144df"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/layer-config58.json",
+      "sha256": "c0002bbd5ff0c7ffa41227eeb4fd923ab6d3bcfcbd3f78ab67dd95f50ab9c987"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/visual-review58.json",
+      "sha256": "5339f10bd3395c8ade185a8a3ffc3bbd6563151945b9e68338101c5166ee03ba"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/layered-native58.jpg",
+      "sha256": "5ab735d8bac8b5360a98fa7893ad092962c8f7b4119f5a2f659185470a030d14"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-eight-diagnostic58.jpg",
+      "sha256": "97d6194bd4aecf9cd2972a7083f5542db312c0ace6391b4473c931623d1be399"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-0.png",
+      "sha256": "30009fdbe594e222a1854c11755a6764e5e75e5c59091501cdcb92fa9655c63a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-1.png",
+      "sha256": "ca5040f298a6abd6fb01a14a7ce2d49cf57d472bf79e81ca903229fca3af4b5c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-2.png",
+      "sha256": "83bad27e3fa22cafcfc28d0488b2826d15c6a7dfae33e2632b8eb9656eb59218"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-3.png",
+      "sha256": "ac6fd8035f012adc19acaa189f957270ff3988a7cc3dd61b896c4c9e316fac06"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-4.png",
+      "sha256": "6f5b1f75497688cb678b0aecfacca7a516f78eaddf39e9d8240fa85c9c46d7de"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-5.png",
+      "sha256": "3b85c17d28dda579ddb49b91d34e20f1aab51e351872b07d1330ad77c8dcc7d4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-6.png",
+      "sha256": "c53fdfd681bc2158a00438e08ecbd504df25e45f9ac62ac448ccd8b5a4de4c53"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-7.png",
+      "sha256": "09d2baaf108536b60d7d99e8057ea8acde9a904a238725df1ba3df4165682468"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-rotated.png",
+      "sha256": "6c97f8b48ba117331afbb235a1e1ed306d58beb139c42a0bc3e01d4f2977c3fc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/borrin-standing/game-departed.png",
+      "sha256": "d6b0d9fb4b77fd7059baa4a8f5c66db5a62c68aad1f46503cda0078b3d2aa7b0"
+    },
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "11ac4b14b115d91cd79cbda50a32faa03edab180aaea1eb2c75acec0dd681d3a"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/generation.json",
+      "sha256": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3"
+    },
+    {
+      "file": "../../../../workstations/ledger-desk/sprite.png",
+      "sha256": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6"
+    },
+    {
+      "file": "../../../../../workstation-registration.mjs",
+      "sha256": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
+    },
+    {
+      "file": "../../../../../../src/game/world/environment.tsx",
+      "sha256": "17128a014a0c637c0b84d087df2cf2ef24b964843f7016b6833bb70dde2db986"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstation-sites.ts",
+      "sha256": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503"
+    },
+    {
+      "file": "../../../../../../src/game/world/workstations.tsx",
+      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/motion-playback.ts",
+      "sha256": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b"
+    },
+    {
+      "file": "../../../../../../scripts/consultant-work-check.mjs",
+      "sha256": "136e808201a76534aa9d7eb93339aa50b4091d0665f01e14fbe164b1ca0a4123"
+    },
+    {
+      "file": "../../../../../../scripts/source_pixel_actor_test.py",
+      "sha256": "241e5c26c7f00372ef272dc0bdb558c2937c3132f212b023f177460f478759ac"
+    },
+    {
+      "file": "../../../../../workstation-review.html",
+      "sha256": "00fd3ff09bd9c9c9cb64af69dcecb6dd77eb19b63366ad2cb8586a06eb1d6563"
+    },
+    {
+      "file": "../reference/00.png",
+      "sha256": "4b9a94948e9a1fe88e9e075dbcff15c51f4ad292c8f7c7eef497f0233911aafb"
+    },
+    {
+      "file": "../reference/01.png",
+      "sha256": "cf075dbda2b74c8379d2d802957ded148e3f6fcd4fe5de9105d8a5925acdd61c"
+    },
+    {
+      "file": "../reference/02.png",
+      "sha256": "2c490cd7659f79f78d9855910670f360117a8423a51225785312b6087020bdf8"
+    },
+    {
+      "file": "../reference/03.png",
+      "sha256": "454de38a7250b577682fa32c1ae80c0eed630e3bdfc8f29ff9a4d99489a0a030"
+    },
+    {
+      "file": "../reference/04.png",
+      "sha256": "2c715f32f0f0b54f55eccb30df15c4ffa32a88f42ef488280b064c7fb3869437"
+    },
+    {
+      "file": "../reference/05.png",
+      "sha256": "23b99c666cc7714b0d56943fcf2214eff5de279e3d3c71a8be20db33d31718f8"
+    },
+    {
+      "file": "../reference/06.png",
+      "sha256": "549d13c3817438dee00fbca6cb3b78d6c82ff2a9d961ab339613d3cca1915711"
+    },
+    {
+      "file": "../reference/07.png",
+      "sha256": "8b203760a9083ef3252f4b954c7d6e7e1a190635234629b0b69414bb7af2a2dd"
+    }
+  ]
+}

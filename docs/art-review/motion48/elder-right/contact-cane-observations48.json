@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "binding": {
+    "sourceSha256": "0ff74727876ed7fd55ad67591787ceaa8f1dbb86ff16b78b9c0058bb2edf10a5",
+    "settingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+    "frameSha256": [
+      "dc26ea688a3cd5889e81d05f85ec0fa2167e36bdf2cd768db2c5dfb8a0753dfb",
+      "7cd3a6fd2f2b8e4d7cbd825fba8579a662eedb2f18b2981c26664d3568c6fe89",
+      "bc0c805ba5d54ef8e2210e021f701283a075968cf32eff39358e44cf178cdb46",
+      "1aac7bde77d5afd2d79d9615d6321f971c441bb83e3f87162b88874577b8cb23",
+      "cb05cdfb06ae90153b6f878706cd758130aae6af06a57b153aa3a8bcd3834de3",
+      "ceb914b814d33ab5b9150539325f20bedcc56dc32cb67815271ba43e0984175a",
+      "076c4ce94bbbf36ee4e0c0da8e75dd9e6ff161ec150c21fc3fab3e914c0220c2",
+      "1f2a050f05d87168bc62867219d0be69fd10e3bff795c9f30dacfeac6582f75b"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+    "atlasSha256": "e961e4cf5bddb3e00ec30f493974816e05c1375e348f42e6fd02bb8dae4ee9db",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "f8aac341211211fa814b533b41911a9f20b59ffcf2490fe1eb5ab93a8c81b218",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "right",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "footObservationsSha256": "0f37e83ea0a590f6efea11fcf375e0a7522ff9bc0d0d37241cef287200f4173e",
+  "cane": {
+    "tipPoints": [
+      [
+        532,
+        614
+      ],
+      [
+        490,
+        614
+      ],
+      [
+        447,
+        614
+      ],
+      [
+        400,
+        615
+      ],
+      [
+        541,
+        542
+      ],
+      [
+        537,
+        552
+      ],
+      [
+        547,
+        554
+      ],
+      [
+        531,
+        590
+      ]
+    ],
+    "collarPoints": [
+      [
+        519,
+        351
+      ],
+      [
+        479,
+        351
+      ],
+      [
+        439,
+        351
+      ],
+      [
+        400,
+        351
+      ],
+      [
+        486,
+        340
+      ],
+      [
+        483,
+        342
+      ],
+      [
+        489,
+        350
+      ],
+      [
+        482,
+        367
+      ]
+    ],
+    "plantFrames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "recoveryFrames": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "tipMaterialReviewed": false,
+    "sameArmAndGripReviewed": true,
+    "rigidShaftReviewed": false,
+    "liftRecoveryReplantReviewed": false
+  },
+  "review": "Actual unselected source tip/collar pixels; diagnostic only. Collars and recovery not yet certified as rigid 3D correspondences. Far free arm still points backward in poses4/5."
+}

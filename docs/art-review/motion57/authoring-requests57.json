@@ -1,0 +1,264 @@
+{
+  "checkpoint": "motion57",
+  "requests": [
+    {
+      "attempt": 1,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-1.json",
+        "sha256": "60f94f3b4688fba97903689ac9ff542aebbbcf3bfe9621379ccd60f493f935e7"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/identity-upper57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/identity-upper57.png",
+          "sha256": "327c76a8e717565a6ffe9fc9ce55c419c2e4d9ebf53cc32384940bb03fddeb84"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/public/sprites/Laborer/motion/walk/back-left/04.png",
+          "file": "public/sprites/Laborer/motion/walk/back-left/04.png",
+          "sha256": "e4f12f5576c4c37167abfc437fd62f8618d2571203ab4768d5d295bafcf76ddd"
+        },
+        {
+          "index": 2,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride-constraint57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride-constraint57.png",
+          "sha256": "b11c2cbec117461a665dd8db7ca01351acf156b470b0c6f44ad00aac03d60f03"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt1.png",
+        "sha256": "76cab41416c9a10e83aabc6eace73410835873609af0f5e99d0659855193c490",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Repeated older airborne-boot/partial-phase geometry; unselected.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 2,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-2.json",
+        "sha256": "5147eed89815af9832ec746be2d77f6203cfa31054973351b2d2b3839bc6c3df"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride-constraint57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride-constraint57.png",
+          "sha256": "b11c2cbec117461a665dd8db7ca01351acf156b470b0c6f44ad00aac03d60f03"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/identity-upper57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/identity-upper57.png",
+          "sha256": "327c76a8e717565a6ffe9fc9ce55c419c2e4d9ebf53cc32384940bb03fddeb84"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt2.png",
+        "sha256": "be6667831e04ffb837f20d3f7feab45b2c3a496a8af7ff22cc37e719d4117d74",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Counter-arms improve, but depth/support geometry and material correspondence remain unreviewed.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 3,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-3.json",
+        "sha256": "af7887e500fcd8baf0dd22b55aa70b6c28626e6083c5a456954fe23ee408fb6f"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/volume-guide57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/volume-guide57.png",
+          "sha256": "7e94505320135adbf28e24203cb500e8b3ba9d32a13ec8132324998b27104798"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/identity-upper57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/identity-upper57.png",
+          "sha256": "327c76a8e717565a6ffe9fc9ce55c419c2e4d9ebf53cc32384940bb03fddeb84"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt3.png",
+        "sha256": "d865de8afadc459360d50db8b883c446f6308e674d12d147c7c4ea22bf1f1dcb",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Shaded guide improves depth, but source slot2 repeats the wrong passing leg; unselected full strip.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 4,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-4.json",
+        "sha256": "79d4935a60f64a7f31f946e5b6a3d055d44a326ed59cb6462f4c59f1d7d4a53c"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride57-attempt3.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt3.png",
+          "sha256": "d865de8afadc459360d50db8b883c446f6308e674d12d147c7c4ea22bf1f1dcb"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/volume-guide57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/volume-guide57.png",
+          "sha256": "7e94505320135adbf28e24203cb500e8b3ba9d32a13ec8132324998b27104798"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt4.png",
+        "sha256": "e37357f29c0fa9f78179b8bb0f7ac690e09330b02b079682706b0ece92f08a1d",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Whole source slot2 now has the opposite passing leg. Seven previous native figures retained literally; no stride approval.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 5,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-5.json",
+        "sha256": "fb36c924b413154d4f7a635ec2c2fce6199e5c139c311f8702dc6447a09d2fca"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride57-attempt4.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt4.png",
+          "sha256": "e37357f29c0fa9f78179b8bb0f7ac690e09330b02b079682706b0ece92f08a1d"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt5.png",
+        "sha256": "d9e0c445116c1f86fcefa88916abddb0db5fc3f4190cd93506c12c45d75ee357",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Compact full pose3 has the wrong near-arm phase and fails necessary3-to4 depth bounds.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 6,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-6.json",
+        "sha256": "836aba6e8081c20c3986f8c7b4cc1acd52738551d1793dbcccc866a79855482b"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride57-attempt5.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt5.png",
+          "sha256": "d9e0c445116c1f86fcefa88916abddb0db5fc3f4190cd93506c12c45d75ee357"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/pose3-correct-arm-reference57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/pose3-correct-arm-reference57.png",
+          "sha256": "bdccf42678f6e0eb0c34471bfc11d0e78c4b7d3a97ac179ce83aef4f41b10ed4"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt6.png",
+        "sha256": "e21bc711f144be63da1b1d47f29723c4233a464d27109501cedf3cf69bec83cc",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Whole pose3 still has the wrong near-arm phase and lowered supporting boot;3-to4 necessary minimum8.257453px exceeds6px on unreviewed opaque material hypotheses.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    },
+    {
+      "attempt": 7,
+      "provider": "builtin-imagegen",
+      "request": {
+        "file": "docs/art-review/motion57/authoring-inputs/request57-7.json",
+        "sha256": "59b8d1451ef478205efb428af5f4724811a97d86aad16e5c35514ca7f613bd1f"
+      },
+      "orderedReferences": [
+        {
+          "index": 0,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/pose3-volume-constraint57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/pose3-volume-constraint57.png",
+          "sha256": "56345703f43b74693d4b240ab72883cd14b4c8d6c880b62ada41a45d5457ab59"
+        },
+        {
+          "index": 1,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/identity-upper57.png",
+          "file": "docs/art-review/motion57/authoring-inputs/identity-upper57.png",
+          "sha256": "327c76a8e717565a6ffe9fc9ce55c419c2e4d9ebf53cc32384940bb03fddeb84"
+        },
+        {
+          "index": 2,
+          "originalAbsolutePath": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion57/laborer-back-left/full-stride57-attempt6.png",
+          "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt6.png",
+          "sha256": "e21bc711f144be63da1b1d47f29723c4233a464d27109501cedf3cf69bec83cc"
+        }
+      ],
+      "raw": {
+        "file": "docs/art-review/motion57/authoring-inputs/full-stride57-attempt7.png",
+        "sha256": "26b6bc2ca769f10902b05244d2718fd76d8c580a2c4bd7827533579030ce4c98",
+        "size": [
+          1774,
+          887
+        ],
+        "mode": "RGBA"
+      },
+      "finding": "Tool changes source slot2 despite requested slot3. Its complete new figure is imported as phase3, preserving seven earlier native frames exactly. Counter-arm phase improves; actual foot material/sole plane and complete stride are unapproved. Bounded1000ms integer fit leaves9.931111px, above6px.",
+      "selectedByGame": false,
+      "materialCorrespondenceReviewed": false,
+      "wholeStrideApproved": false,
+      "loopApproved": false
+    }
+  ],
+  "scope": "Exact ordered builtin full-strip generation/edit history. Role targets are constraints, not sole observations. No attempt is selected by runtime."
+}

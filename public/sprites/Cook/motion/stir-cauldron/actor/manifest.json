@@ -1,0 +1,281 @@
+{
+  "version": 2,
+  "character": "Cook",
+  "action": "stir-cauldron",
+  "title": "Stir cauldron",
+  "direction": "actor",
+  "kind": "work",
+  "reference": "../../../../../public/sprites/Cook/work-references/03-stir-cauldron.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "spoon at near side of cauldron",
+      "durationMs": 125,
+      "sourceBounds": [
+        141,
+        27,
+        521,
+        569
+      ],
+      "sourceAnchor": [
+        179.0,
+        589.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        27
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "continuous midway transition from spoon at near side of cauldron toward stir spoon to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        781,
+        27,
+        1162,
+        570
+      ],
+      "sourceAnchor": [
+        179.0,
+        589.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        27
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "stir spoon to right",
+      "durationMs": 125,
+      "sourceBounds": [
+        1420,
+        27,
+        1802,
+        569
+      ],
+      "sourceAnchor": [
+        180.0,
+        589.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        27
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "continuous midway transition from stir spoon to right toward stir spoon to far side",
+      "durationMs": 125,
+      "sourceBounds": [
+        2060,
+        27,
+        2441,
+        569
+      ],
+      "sourceAnchor": [
+        180.0,
+        589.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        27
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "stir spoon to far side",
+      "durationMs": 125,
+      "sourceBounds": [
+        140,
+        666,
+        521,
+        1210
+      ],
+      "sourceAnchor": [
+        180.0,
+        590.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        26
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "continuous midway transition from stir spoon to far side toward stir spoon to left completing circular motion",
+      "durationMs": 125,
+      "sourceBounds": [
+        781,
+        666,
+        1162,
+        1210
+      ],
+      "sourceAnchor": [
+        179.0,
+        590.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        141,
+        26
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "stir spoon to left completing circular motion",
+      "durationMs": 125,
+      "sourceBounds": [
+        1420,
+        666,
+        1802,
+        1210
+      ],
+      "sourceAnchor": [
+        180.0,
+        590.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        26
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "continuous midway transition from stir spoon to left completing circular motion toward spoon at near side of cauldron",
+      "durationMs": 125,
+      "sourceBounds": [
+        2060,
+        668,
+        2441,
+        1210
+      ],
+      "sourceAnchor": [
+        180.0,
+        588.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        140,
+        28
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": true
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 547,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "12d1df30983a41121036b67e1ad4a4fbd8b25e6baf2d56c442aff333afa1ad1f",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish.",
+  "taskReview": {
+    "status": "approved",
+    "record": "task-approval.json",
+    "scope": "Finite stationary original-pixel Cook stirring at one independent persistent stew cauldron. No hidden sole, moving contact, fluid/boiling simulation, serving/rewards, family continuity or seamless repeat approval."
+  }
+}

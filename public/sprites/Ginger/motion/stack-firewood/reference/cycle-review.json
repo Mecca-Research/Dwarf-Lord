@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-05",
+  "verdict": "changes-required",
+  "character": "Ginger",
+  "action": "stack-firewood",
+  "binding": {
+    "sourceSha256": "bc5cb7efe3adce0f3908784a8b8582927171513d63f97a546ab864fb533e1cc4",
+    "settingsSha256": "2555f6371a20a29d9ac24decdc43d139245c1ff3afff8bf88f203db1725dfd8c",
+    "frameSha256": [
+      "18dc6d6c64cc3f46f17f1530b66577ce0b1d2a8a205117e4ff010a95e31dee70",
+      "cfabfc2b4f28b87931c61c684cae2f432bfe5aff41a7564a1b9f5970d588603f",
+      "033270a0d18a5d3265311dffac79275e5beae779b1bd4bd108163dbf3b2c1eb7",
+      "bdbe754b10566a7fa3a3741201e4dee8feaacaacfff01f70f2de2fcbef39c46d",
+      "89c6c95d76c557cc426a9425e31dce13d64e7889e7c3f3c03daff33bd8a5fc91",
+      "0aa23402e63c0e8f4180a4afa68e8789d700a56a51a1387e70eb914ebf1b9a37",
+      "2c4f8d0dbbe8ddaef89adf364243a58b733a133a5d49f66283f141596b405f16",
+      "fad15a75b263ea80e3dd2bb3872ac4e7326f5cc1ad2de44b2623a77d8cb456eb"
+    ],
+    "atlasSha256": "6695a7a873cba83c222d7d959c3a1e5689e12036f0b7da469368a2fcce688fb6",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 592,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "2555f6371a20a29d9ac24decdc43d139245c1ff3afff8bf88f203db1725dfd8c",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      160,
+      140,
+      140,
+      140,
+      160,
+      140,
+      140,
+      180
+    ],
+    "character": "Ginger",
+    "action": "stack-firewood",
+    "direction": "reference"
+  },
+  "scope": "Motion45 native eight-pose reference ownership improvements selected. Remaining contact/geometry failures explicitly retain changes-required; neither a finite-task acceptance nor a continuous-loop, moving-foot, independent runtime station, gameplay or economic approval.",
+  "fixed": [
+    "One carried split log is lowered onto the rack through0-6.",
+    "Delivered log remains on rack in7; both hands withdraw empty instead of taking the log back."
+  ],
+  "issues": [
+    "Final pose7 retains delivered log and empty hands, but the painted rack front-base region changes relative to both planted boots. Measured whole-prop displacement reaches17.647px with current fixed source registration, above the unchanged12px correction bound. A whole-pose shift cannot simultaneously correct the rack and both foot locations.",
+    "Visible boot-region translations are below6px in this selected equal-cell export, but correlations below.94 do not establish automatic material correspondence. Native/source inspection and proper sole correspondence remain required; no planted-foot approval is claimed."
+  ],
+  "reviewedFrames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "49327facbf488f62ad6f235bc9b19a70c81de28796d91f87ca7da6a2593cad4d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/Ginger-stack-firewood-review.json",
+      "sha256": "a5e364648dff71226acfd6aefa3ff88ac58fd5597b06400f6e0905a8e8135e55"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/ginger-visible-supports.json",
+      "sha256": "76e2a178a5c76724a973bba3edd2337a7830f880a6f7662894f247d5dd8f1fad"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion45/ginger-visible-supports.jpg",
+      "sha256": "90a64a51f4a00b7d35fe7d707780b2ca6527ee200e8e69eee03fcb55258efcff"
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "method": "Controlled clock, actual Three renderer and job/day controls. No direct animation frame mutation.",
+  "seen": [
+    {
+      "day": 1,
+      "action": "hammer-contact",
+      "x": 6,
+      "sourceSha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+      "atlasSha256": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a",
+      "naturalArrival": false,
+      "arrival": {
+        "id": "grit",
+        "x": 6,
+        "z": -7,
+        "yaw": -1.8,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 0.0704,
+        "workMotion": {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "hammer-contact",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "hammer-contact",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "action": "inspect-tool",
+      "x": 6,
+      "sourceSha256": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+      "atlasSha256": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715",
+      "naturalArrival": false,
+      "arrival": {
+        "id": "grit",
+        "x": 6,
+        "z": -7,
+        "yaw": -1.8,
+        "facing": 3,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 0.7061999999999996,
+        "workMotion": {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "inspect-tool",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "inspect-tool",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "action": "repair-pickaxe-handle",
+      "x": 3,
+      "sourceSha256": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656",
+      "atlasSha256": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843",
+      "naturalArrival": true,
+      "arrival": {
+        "id": "grit",
+        "x": 3.480000000000002,
+        "z": -7,
+        "yaw": 1.5707963267948966,
+        "facing": 7,
+        "speed": 0,
+        "anim": "work",
+        "dest": null,
+        "bob": 15.551599999999965,
+        "workMotion": {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        }
+      },
+      "samples": [
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 0,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 1,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 2,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 3,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 4,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 5,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 6,
+          "completed": false,
+          "completions": 0
+        },
+        {
+          "action": "repair-pickaxe-handle",
+          "direction": "actor",
+          "frame": 7,
+          "completed": false,
+          "completions": 0
+        }
+      ],
+      "completed": {
+        "action": "repair-pickaxe-handle",
+        "direction": "actor",
+        "frame": 7,
+        "completed": true,
+        "completions": 1
+      },
+      "stations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Three daily cosmetic forge operations. Resource and building rewards remain in existing day resolution, outside the animation controller."
+}

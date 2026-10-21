@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Laborer",
+  "action": "walk",
+  "title": "Walking cycle",
+  "direction": "back-left",
+  "kind": "walk",
+  "reference": "../../../../../../../../public/sprites/Laborer/animation/05-back-left.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "d8cce54bacd80436b7e737a43879595599478a1d6d106ce78bb8188f718d692d",
+  "sourceSize": [
+    2560,
+    1280
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.0,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "far-right leading heel; authored near-left trailing toe advances into return; full contact review pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        153,
+        96,
+        491,
+        614
+      ],
+      "sourceAnchor": [
+        167.0,
+        520.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        153,
+        96
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "far-right support; near-left heel lifts; near-left arm counters forward",
+      "durationMs": 125,
+      "sourceBounds": [
+        797,
+        95,
+        1156,
+        614
+      ],
+      "sourceAnchor": [
+        163.0,
+        521.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        157,
+        95
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "near-left airborne passing beside far-right support calf; sole-depth calibration pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        1459,
+        98,
+        1745,
+        610
+      ],
+      "sourceAnchor": [
+        141.0,
+        518.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        179,
+        98
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "near-left airborne reach; near-left arm back, far-right arm forward; trailing sole-depth correction pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        2051,
+        96,
+        2394,
+        608
+      ],
+      "sourceAnchor": [
+        189.0,
+        520.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        131,
+        96
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "near-left leading heel; near-left arm back and far right arm forward; unapproved contact trial",
+      "durationMs": 125,
+      "sourceBounds": [
+        167,
+        735,
+        476,
+        1249
+      ],
+      "sourceAnchor": [
+        153.0,
+        521.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        167,
+        95
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "near-left support with authored depth and returning back arm; full sole correspondence pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        813,
+        733,
+        1114,
+        1223
+      ],
+      "sourceAnchor": [
+        147.0,
+        523.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        173,
+        93
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "far-right airborne passing beside near-left supporting calf; neutral arms; support-depth correction pending",
+      "durationMs": 125,
+      "sourceBounds": [
+        1500,
+        736,
+        1740,
+        1256
+      ],
+      "sourceAnchor": [
+        100.0,
+        520.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "far-right airborne reach; near-left trailing toe at revised depth; unapproved return-contact trial",
+      "durationMs": 125,
+      "sourceBounds": [
+        2049,
+        736,
+        2457,
+        1266
+      ],
+      "sourceAnchor": [
+        191.0,
+        520.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        129,
+        96
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "loop-candidate",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1000,
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loopApproved": false,
+    "endBehavior": "review-seam",
+    "rootMotion": "external",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "source-landmarks",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": 520,
+    "scaleScope": "directional-body-height",
+    "landmarksVerified": false,
+    "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

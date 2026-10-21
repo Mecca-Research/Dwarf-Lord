@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "method": "select-authored-full-body-poses",
+  "inputs": [
+    {
+      "id": "original",
+      "file": "authoring-inputs/original-sheet.png",
+      "poseCount": 8,
+      "generation": "authoring-inputs/original-generation.json",
+      "sha256": "2696b3882f4476ad24edd06ba85b1e0fbfd3490cc1746a5808ed59cc1861da99"
+    },
+    {
+      "id": "correction",
+      "file": "authoring-inputs/correction-sheet.png",
+      "poseCount": 8,
+      "prompt": "Use case: identity-preserve. Edit the provided Ginger FRONT walking sprite sheet. Lock original identity, face, beard/hair, body proportions, clothing, materials and high-quality semi-realistic render. Make EIGHT CHRONOLOGICAL full-body poses arranged 4 columns by 2 rows on transparent RGBA. ONE complete TWO-STEP walk in place, same frontal camera, same body size and centered pelvis throughout. Explicit order: 1 LEFT boot (screen RIGHT) heel lands forward; 2 same LEFT boot planted supporting weight, RIGHT trailing heel rises; 3 RIGHT knee (screen LEFT) bent and passing airborne alongside planted LEFT leg, NOT a high forward kick; 4 RIGHT leg reaches forward preparing heel landing, left heel begins rising; 5 RIGHT boot heel lands forward, OPPOSITE contact to frame1; 6 RIGHT boot planted supporting weight, LEFT trailing heel rises; 7 LEFT knee (screen RIGHT) bent and passing airborne alongside RIGHT support leg; 8 LEFT leg reaches forward preparing heel landing, matching transition back to1. Both empty hands swing naturally opposite advancing legs; preserve all existing belt equipment. Free arm reaches forward when OPPOSITE leg reaches forward, recedes during down phase, neutral at passing phase. No two feet airborne, no duplicated stride throughout the sheet, no extra limbs, no mirrored costumes. Same horizontal torso axis, modest weight shift. Keep existing face crisp and opaque, no holes. Transparent background without scenery or floor shadows. Large gutters and complete head/boot margins; no clipping. Preserve this exact character, not a redesign.",
+      "sha256": "0c4d71d7512cd8514e004f203dc53560e170343540a7b6db40b989cb62ff616e"
+    }
+  ],
+  "poses": [
+    {
+      "input": "correction",
+      "pose": 4
+    },
+    {
+      "input": "correction",
+      "pose": 5
+    },
+    {
+      "input": "correction",
+      "pose": 2
+    },
+    {
+      "input": "correction",
+      "pose": 3
+    },
+    {
+      "input": "correction",
+      "pose": 0
+    },
+    {
+      "input": "correction",
+      "pose": 1
+    },
+    {
+      "input": "original",
+      "pose": 2
+    },
+    {
+      "input": "original",
+      "pose": 7
+    }
+  ],
+  "note": "Each selected pose was authored as a complete image. Assembly only extracts, uniformly scales, registers and arranges existing poses; no interpolation, mirroring or limb editing."
+}

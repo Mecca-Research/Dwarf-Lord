@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-05",
+  "verdict": "accepted",
+  "acceptance": "finite-task",
+  "binding": {
+    "sourceSha256": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63",
+    "settingsSha256": "51d3456a1bd4962a50cada7c63e244e32268a340e684ce9a09cd6e80701ee3e5",
+    "frameSha256": [
+      "b6bc03419c4c6f207f9396bae6f5586e5d781587a8e9904a1cd25871845de1f5",
+      "186e03561ca8f45009eccfc66717418a62d881f73b6507a23dbe0ba56969997f",
+      "59371a2243611ac5c77551b3324b15527a96ed9e83223ecba29433155c0b4cb9",
+      "898677a62daff8ed6b9b551580fcb618096290fd562a97ed7806bf7330af2904",
+      "fa1799b3f1356976819aadb06b6b987d438f542bd52a77e3b1229a31afd2196c",
+      "5b0773358b6637f1d82279c9c29cedc43299362be49665c484aae3f52141177c",
+      "e28b87898d15385eabfd4f5f95c87e70b2ae4e1c1db0e031c04b461ede7b6728",
+      "2bbf6df49705a5647fa0789a77da68bb562d755b052cabc1d4100d8ef4f72476"
+    ],
+    "atlasSha256": "c52bb366181eaa84b87b0da385c26c5c3dfd984e8bc082e654cb71075dd17ed5",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 562,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "51d3456a1bd4962a50cada7c63e244e32268a340e684ce9a09cd6e80701ee3e5",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Cook",
+    "action": "knead-dough",
+    "direction": "actor"
+  },
+  "scope": "Finite stationary source-only Cook kneading, independent fixed dough block and cosmetic finished-dough handoff. No traveling feet, family continuity, baking/economic output or seamless repeat approval.",
+  "checks": {
+    "identity-and-scale": "The same balding brown-haired stocky Cook, brown beard, maroon rolled sleeves, stained cream apron, trousers and strapped boots in all eight original poses. Literal source pixels retain original640 coordinates: shared562 body basis/[320,616] anchor, source order and125ms durations. No new actor rendering, per-pose resize, limb warp, mirrors, duplicate poses, local paint or synthetic tween.",
+    "station-and-foot-contact": "near visible boot: minimum correlation 0.988774, maximum drift 1.856598px, adjacent 1.789088px; far visible boot: minimum correlation 0.976400, maximum drift 0.920747px, adjacent 0.851175px. Both visible regions pass unchanged.94 correlation/6px travel/6px adjacent bounds. The independently authored block remains fixed and uses the same562 registration; hidden boots/soles behind furniture are not inferred. Finite stationary task only, no moving stride certification.",
+    "hand-and-tool-contact": "All eight original hand/dough contours remain visible above the fixed flour face. Manually inspected lower dough surface points lie inside the projected working face in every pose (maximum outside0px). Dough deforms, so these are visible projected surface contacts, not a rigid material track, hidden palm pressure or3D contact-force proof. Native and actual-game0-7 reviewed.",
+    "prop-continuity": "Actor owns body, palms and deforming dough while active. Persistent independent block owns four timber legs, iron bands, flour bowl, flour face and striped towel. After completed actor departure, separately authored previously hidden dough top occupies the same registered footprint. Synchronous per-station ownership avoids a duplicate one-frame workpiece on return, including later-mounted subscribers; abandoned unfinished kneading creates no completed prop. No bread, resource output or baking state is invented.",
+    "completion-and-reset": "Actual Three game exercises day1 vegetables, day2 potatoes, day3 kneading and day4 vegetables, with natural arrivals for recipe changes. Kneading displays0-7, completes once at7 and holds5000ms. Camera rotation preserves completion, departure leaves fixed dough, explicit return resets0 and hides the finished layer immediately, cancellation before completion creates no layer, reassignment/day resolution and next morning preserve existing economic ownership. Finite once-hold task; no seamless7-to0 approval."
+  }
+}

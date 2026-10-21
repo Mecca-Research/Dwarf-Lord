@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "character": "Laborer",
+  "action": "build-barrel",
+  "title": "Build barrel",
+  "direction": "reference",
+  "kind": "new-work",
+  "reference": "../../../../../../../../../../public/sprites/Laborer/animation/01-front-right.png",
+  "source": "source-sheet.png",
+  "sourceSha256": "28ffff1af8240dc8bf30e197756053c4fc53ab3bcdbf8f22e9932897a251f7f8",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "frameSize": [
+    640,
+    640
+  ],
+  "sharedScale": 1.3243847874720358,
+  "frameCount": 8,
+  "frames": [
+    {
+      "id": "key-00",
+      "file": "00.png",
+      "description": "mallet already gripped low beside mounted upper hoop",
+      "durationMs": 160,
+      "sourceBounds": [
+        46,
+        43,
+        447,
+        451
+      ],
+      "sourceAnchor": [
+        200.5,
+        408.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        54,
+        76
+      ]
+    },
+    {
+      "id": "key-01",
+      "file": "01.png",
+      "description": "lift mallet to chest",
+      "durationMs": 140,
+      "sourceBounds": [
+        477,
+        44,
+        871,
+        451
+      ],
+      "sourceAnchor": [
+        197.0,
+        407.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        77
+      ]
+    },
+    {
+      "id": "key-02",
+      "file": "02.png",
+      "description": "raise mallet ready to tap",
+      "durationMs": 150,
+      "sourceBounds": [
+        908,
+        5,
+        1306,
+        452
+      ],
+      "sourceAnchor": [
+        199.0,
+        447.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        56,
+        24
+      ]
+    },
+    {
+      "id": "key-03",
+      "file": "03.png",
+      "description": "partial shoulder-height descent",
+      "durationMs": 100,
+      "sourceBounds": [
+        1339,
+        58,
+        1734,
+        451
+      ],
+      "sourceAnchor": [
+        197.5,
+        393.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        58,
+        96
+      ]
+    },
+    {
+      "id": "key-04",
+      "file": "04.png",
+      "description": "tap already-mounted upper hoop rim",
+      "durationMs": 100,
+      "sourceBounds": [
+        41,
+        479,
+        441,
+        872
+      ],
+      "sourceAnchor": [
+        200.0,
+        393.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        55,
+        96
+      ]
+    },
+    {
+      "id": "key-05",
+      "file": "05.png",
+      "description": "small upward rebound",
+      "durationMs": 140,
+      "sourceBounds": [
+        477,
+        481,
+        871,
+        871
+      ],
+      "sourceAnchor": [
+        197.0,
+        390.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        59,
+        99
+      ]
+    },
+    {
+      "id": "key-06",
+      "file": "06.png",
+      "description": "lower mallet beside hoop",
+      "durationMs": 140,
+      "sourceBounds": [
+        909,
+        478,
+        1306,
+        872
+      ],
+      "sourceAnchor": [
+        198.5,
+        394.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        57,
+        94
+      ]
+    },
+    {
+      "id": "key-07",
+      "file": "07.png",
+      "description": "completed low hold retaining mallet and same barrel",
+      "durationMs": 160,
+      "sourceBounds": [
+        1339,
+        480,
+        1736,
+        871
+      ],
+      "sourceAnchor": [
+        198.5,
+        391.0
+      ],
+      "groundAnchor": [
+        320,
+        616
+      ],
+      "placement": [
+        57,
+        98
+      ]
+    }
+  ],
+  "sourceFrameOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 8,
+    "rows": 1
+  },
+  "preview": "preview.png",
+  "status": "authored-keyframe-variations",
+  "productionReady": false,
+  "playback": {
+    "mode": "once-hold",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 8,
+    "durationMs": 1090,
+    "durationsMs": [
+      160,
+      140,
+      150,
+      100,
+      100,
+      140,
+      140,
+      160
+    ],
+    "loopApproved": false,
+    "endBehavior": "hold-last",
+    "rootMotion": "stationary-or-task-driven",
+    "taskApproved": false
+  },
+  "registration": {
+    "method": "lower-silhouette-estimate",
+    "targetAnchor": [
+      320,
+      616
+    ],
+    "targetBodyHeight": null,
+    "scaleScope": "sequence",
+    "landmarksVerified": false,
+    "settingsSha256": "a9e1e7d7f57c118fe14ef69a5bbf264dfeef5c3dce23e0d9bc56b3c12bc86cb6",
+    "exportVersion": 2,
+    "stationRegistration": null
+  },
+  "note": "Eight authored frames for this action. Repeat is a review aid, not certification of a seamless production loop. Station/body redraw drift and contact timing need production polish."
+}

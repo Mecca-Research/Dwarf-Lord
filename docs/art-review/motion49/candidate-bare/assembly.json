@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "normalizedHeight": 500,
+  "targetBodyHeight": 520,
+  "targetAnchor": [
+    320,
+    616
+  ],
+  "durationsMs": [
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "inputs": [
+    {
+      "id": "bare49",
+      "file": "authoring-inputs/strip-bare-arms49.png",
+      "sha256": "fddf188e34cb33c3c816bc3a26a1da43d3f7c9a78a1008bfb9b51c5e24610767",
+      "poseCount": 8,
+      "cells": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          887,
+          444
+        ],
+        [
+          887,
+          0,
+          1330,
+          444
+        ],
+        [
+          1330,
+          0,
+          1774,
+          444
+        ],
+        [
+          0,
+          444,
+          444,
+          887
+        ],
+        [
+          444,
+          444,
+          887,
+          887
+        ],
+        [
+          887,
+          444,
+          1330,
+          887
+        ],
+        [
+          1330,
+          444,
+          1774,
+          887
+        ]
+      ],
+      "rootXs": [
+        243.0,
+        693.0,
+        1134.0,
+        1580.0,
+        249.0,
+        691.0,
+        1137.0,
+        1586.0
+      ],
+      "rootYs": [
+        440.0,
+        440.0,
+        440.0,
+        440.0,
+        876.0,
+        876.0,
+        876.0,
+        876.0
+      ],
+      "bodyHeights": [
+        430.5,
+        430.5,
+        430.5,
+        430.5,
+        430.5,
+        430.5,
+        430.5,
+        430.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "input": "bare49",
+      "pose": 0
+    },
+    {
+      "input": "bare49",
+      "pose": 1
+    },
+    {
+      "input": "bare49",
+      "pose": 2
+    },
+    {
+      "input": "bare49",
+      "pose": 3
+    },
+    {
+      "input": "bare49",
+      "pose": 4
+    },
+    {
+      "input": "bare49",
+      "pose": 5
+    },
+    {
+      "input": "bare49",
+      "pose": 6
+    },
+    {
+      "input": "bare49",
+      "pose": 7
+    }
+  ],
+  "review": "Source-only eight distinct complete poses, one common physical height and row floor. Torso-root estimates are provisional; no contact observations, limb edits, per-pose scale or synthetic poses. Not selected."
+}

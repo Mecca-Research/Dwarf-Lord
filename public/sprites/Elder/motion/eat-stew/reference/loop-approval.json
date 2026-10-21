@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-02",
+  "binding": {
+    "sourceSha256": "794736354cc68dec859ec90060b552476962b55883af7594a0283eadcf8a2e30",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "22111bd2615b486c8450ce8371f7e61e7771a2318803447c3ed0b9ef1cf01a5e",
+      "54729f5710701f8d8051cafae6e2a73a4c0593f7680156dc40f19b2219e2d950",
+      "8091f72e011049ef3750268813f035f8383564eb7f7706d50ffb84a05ac41998",
+      "baea78c028d7e681abc5f716691398daeca31bd4e891d0e2436f8291ddc7aca6",
+      "2399c43875d5b7776ec9ce1cfcf169191aa531f9193ec26c9653db47d0284ea5",
+      "c3bd9c2b7e50b22c7cc009510367c3ff3054cd940d6e833b5ee7f05e58564eec",
+      "1b1cd2ea6c2daaa16dc67571acb1ac4454a4269ac0ff5b2cc29c223ce61cd5bc",
+      "2de9da6ec626619bc2a0fc6dbcd677001344d3bab9c9a6c530443f9e7a2b91a8"
+    ],
+    "atlasSha256": "8fa16ac763f9b13e2ef0688ac9adf5bfa7609c651d8aa89ef9b07f73ca0dcb1f",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Elder",
+    "action": "eat-stew",
+    "direction": "reference"
+  },
+  "scope": "Fixed-view seated Elder eat-stew cosmetic camp cycle and once-hold playback only. No food accounting, walking sole/cane contact, other direction or seamless change between distinct activities is approved.",
+  "checks": {
+    "identity-and-scale": "All eight exported poses and all eight poses in the actual controlled-clock camp renderer inspected. Same bald Elder, white beard, embroidered olive coat, belt, pouches and boots. Source-bound740px standing-equivalent seated placement preserves his scale; breathing and head motion do not resize the body.",
+    "station-and-foot-contact": "Both boots, stool and seated pelvis retain their fixed ground baseline throughout0-7 and7-to0. The camp root does not move. This is a seated appearance review, not material sole/cane contact calibration during travel.",
+    "hand-and-tool-contact": "Left hand supports the bowl throughout the cycle. Right hand retains the spoon shaft while lifting from bowl0-1 to face2-4 and lowering5-7. The bowl stays near his lap; spoon/bowl and spoon/mouth contact positions were checked in the native exports and live frames. No hidden liquid or ingestion simulation is certified.",
+    "prop-continuity": "Same wooden bowl, spoon and stool across all eight poses. No independent workstation is duplicated. Small changes in depicted food contents are cosmetic, with no resource consumption or inventory mutation.",
+    "last-to-first-transition": "Frame7 lowers the spoon into the bowl and returns close to0. Spoon grip and bowl ownership remain continuous; no prop appears on the7-to0 return. Actual gameplay completes once on7, holds for two seconds and advances to a separate activity. The controlled browser review observed0-7, one completion, held handoff, terminal sequence and departure reset."
+  },
+  "dependencies": [
+    {
+      "file": "../../render-calibration.json",
+      "sha256": "2b4ebd6016c84f849efbb9d1ca9a47dbc33980e1f038ee6939eaf9b4998c5737"
+    },
+    {
+      "file": "../../../../../../src/game/world/npc-motion.ts",
+      "sha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a"
+    },
+    {
+      "file": "../../../../../../src/game/world/work-activities.ts",
+      "sha256": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/runtime-revalidation.json",
+      "sha256": "5b7b3635565b9d85b2aaf6dc8f357a0a6c63a1091323ec5a6b5d5b158eeea59c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/npc-lifecycle-results.json",
+      "sha256": "f4e35f053325158f23f0ad3d9f532c5f91f16ca7088f5dad33b44f7b492f351f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/smith-gameplay.json",
+      "sha256": "bb900df5adf0e7230539f60bdd4a22ace122b6b720b861a810c3b0b06127e302"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/station-layer-results.json",
+      "sha256": "9bf154d2378847908d2a65d6a309de2489c98938b222e397bd7a4dedaf14baf7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion39/blacksmith-right-rendered-stride.json",
+      "sha256": "a4880f828f7c5f814fd5b8a5b0f1b576c600e620cd7f7e39b1bd05cf79ff6482"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/runtime-revalidation.json",
+      "sha256": "a44c4f1dc17b59fb1d41312e982b29f9ce989c6d4a380021a880eb8100b7bf51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/npc-lifecycle-results.json",
+      "sha256": "6de0cbce3aae45d05d7ad4b7a2c47c2d56d29bec5b5114a4b6ca05a7a4f6848d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/smith-gameplay.json",
+      "sha256": "c4c153387e62dafe36731d2ecdda356e081938c79d4796304ce88d837f9bfa1d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/station-layer-results.json",
+      "sha256": "9818670221a57df8b6728c292fa452128e7ada1514d2e2a0c313fceb9d6afce9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion40/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/runtime-revalidation.json",
+      "sha256": "11ace8cb82b1b9b7aafaf02bd80775779d272443942c951d132fdb95a4c97f42"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/npc-lifecycle-results.json",
+      "sha256": "e6eec5449b2e2872fd1f30f7a20393549b68842a4e5d63e1293d3e579afc5bbf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/smith-gameplay.json",
+      "sha256": "8e033aad1e59302c202730afdf7b109ecbe0d5e092f8c02faf341b02ca1f34f3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/blacksmith-right-rendered-stride.json",
+      "sha256": "0fd55a94db2e708f5e698f2519fe4b97d6216c13fab2bcef703c51942de54a4c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/cooking-gameplay.json",
+      "sha256": "78dadcda434adab89cadf893898255a531d1a32fa17653d12e8a7e9ef172afb6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/station-layer-results.json",
+      "sha256": "43760a4d64120654d9a7161e48538ec641747429b61ee063732e3063462c9816"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion41/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/runtime-revalidation.json",
+      "sha256": "9de495e924f1897b8d9ce273e4bb4fc7611649be83b4213b44e6eaf449684b15"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/smith-gameplay.json",
+      "sha256": "b2905cff824676494021054245fff438476fa72fa492fd65bd3d30d7c09a5c51"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/consultant-gameplay.json",
+      "sha256": "c9f0ad17665383effe308f68f1f1f59ad19d724a5cc3b53ceb8c746fef699af8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/elder-activity-results.json",
+      "sha256": "9dcbe154ccc473a8512bb25009138bf143142f0149ec565513f0a6e62ee355bf"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/blacksmith-right-rendered-stride.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/station-layer-results.json",
+      "sha256": "e567b82f3a9a8ad7bda2c20bb3683ac6c02820e30b12604b72da8b9cb58b2267"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion43/cooper-gameplay.json",
+      "sha256": "e5687381049dfd5618a26aa8118da4069a37a1d22ecdf86d5283f0ecb33496f4"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/runtime-revalidation.json",
+      "sha256": "23b2627eca1e0cfa15d98a0ab7ed8a9cc92d2cc0fecd27faaca332cd76b0deef"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/npc-lifecycle-results.json",
+      "sha256": "2a702ee1d47d370c20485e01bc53a3b9489344d90e051bb097d5867ff0d5590f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/smith-gameplay.json",
+      "sha256": "5ed34fa5dd95373abe86a57f7549e7d137354bf67c8abaa5ffc49ba053f9aba6"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/cooking-gameplay.json",
+      "sha256": "2d5ea01fb7161eb6366dfc5b7b55c501dc7de92a8fa70ea43fc04d86af12fb72"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/consultant-gameplay.json",
+      "sha256": "f928774fa1ee2d8dc9d150bcc200e4313245a46e278894286bbfb4b474a21af9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion44/station-layer-authoring-results.json",
+      "sha256": "35b9bf5f36cbc8439fa53b550d408d28173625f4e6aec90ee5e10a6eba188ae8"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/runtime-revalidation.json",
+      "sha256": "fe51d864edab2c2a1448f7c3cee16a14e41d92d1de31876f742f87db2030e1db"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/consultant-gameplay.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/station-layer-authoring-results.json",
+      "sha256": "a6915a5cece89a8c092546dc2e8309f95d214264175c4973810295aec40a5885"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion46/Borrin-retained-ledger-contact.json",
+      "sha256": "bec7a38929ea36a5ab0329c6bdb2f39833106f0f5eea0e70d347a1c0ea2b935d"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
+      "sha256": "d5da7a3724c9b599c0ffbca9b9eca34ee68d57713c6531e9728146928213cd87"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/retained-assets-audit48.json",
+      "sha256": "f4bc29c3cd6b58e1e5e6f724b0f6ca1ecd53eec3f960bf1815b1390d6210893b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/npc-gameplay48.json",
+      "sha256": "27fd0788b64366a24c075b9981a0c570c72cdbfabe3f58eb3de7c52c86815907"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-right-gameplay48.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/blacksmith-left-gameplay48.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/consultant-gameplay48.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
+      "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/runtime-revalidation50.json",
+      "sha256": "be0d75f350680a016783e3a3fe9ce476050f7ad33903fffcc5e62caaaa372071"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/retained-assets-audit50.json",
+      "sha256": "d860b2654bf676fc01e06e22ce00da70cdff559ae98f9753248c9e311c6dc3c1"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/npc-gameplay50.json",
+      "sha256": "e33b2533e52422f4d0679fd20a82e6ac470e6ac4acab559f234d81093b41f774"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/consultant-gameplay50.json",
+      "sha256": "9787f72b75e528a26670604732033bf6e75b904d4afb4301020753067866b6d3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-right-gameplay50.json",
+      "sha256": "9ad4d04cc3263896b1a855bb657bcc28fe3b713093cc25f75dceb38a72b4916e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/blacksmith-left-gameplay50.json",
+      "sha256": "46ede5bad737fe9eea74c825c46e872335acad83776690740b6eaf1ebda1996f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion50/cooking-gameplay50.json",
+      "sha256": "d7ab5500b6c03a38bc465f730ae99f8c8ce20d524abd3a64668df14281e3f6b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/runtime-revalidation52.json",
+      "sha256": "96fafc1fa65b09f4d6e989131317b30c0f59abfd66ccd683b373a38192e3a32c"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/retained-assets-audit52.json",
+      "sha256": "ecbe94ca028073a24f681b016ddb3aee25efa125444f7ef260142349c9a7df92"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/smith-gameplay52.json",
+      "sha256": "d38a15662a259859ffd8690daeb0e4c51afcda1e8a7bf8e765b24e15f9e0c429"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/npc-gameplay52.json",
+      "sha256": "f8878aa49552ee5baed512d3f2fd8de79d8e0d82fb4482d30315143ece8522af"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion52/station-layer-authoring52.json",
+      "sha256": "577c5dc323543334394b961930918add8e4db71ef4d8ced0e5b2dfb591a9a2c9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/runtime-revalidation53.json",
+      "sha256": "a63fac4c57f9e1e87a6223b29abd4cfe42d4ae48a0a3e3ffdccd8573aa1478f5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/retained-assets-audit53.json",
+      "sha256": "84b99dafbf65abca1905b86931fa41349795c57b017ca62b60347779d0403c39"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/cooking-gameplay53.json",
+      "sha256": "3e48d4f9a38e1a533e341cdd1258932ef77d22b6246bc782cdf3ce99f9902151"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/smith-gameplay53.json",
+      "sha256": "b0b9fd011c3c940f22053c8d52b151639baa34f7e01c8147f426c1b9c7e2fc19"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/npc-gameplay53.json",
+      "sha256": "831691c1251ad14f5e5a5c652824e2bfa6824a1e5da8f2c3fee0a7416e62e5aa"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion53/station-layer-authoring53.json",
+      "sha256": "69c49e7b628a2d38adbb75d7c47a1a61c36c714ab75d9fe6ce54a76562e87f06"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/runtime-revalidation55.json",
+      "sha256": "1c32b5e803551670ef9250bdebc6e9560325f2c034e39497442d4a507ac08672"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/retained-assets-audit55.json",
+      "sha256": "43a0fd07c70fb5096aaf07ba34b1a423634ebb6ab8413a60fa8637308c501280"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/smith-gameplay55.json",
+      "sha256": "05d7c8af12679f87f46aeeed495565c1efaced7394839cd94b19d1232a5bdfcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/cooking-gameplay55.json",
+      "sha256": "8edcac18f6ec0cb9d5eaecf11dc413c59ad4667fec12675bee7631f27d3bd8b3"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/npc-gameplay55.json",
+      "sha256": "58ec04ec9fd4c9d07d83a8b428ee1d35fb2414e4d75d0b00256468624e3e808f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion55/station-layer-authoring55.json",
+      "sha256": "4cae085cc8379ff621b947bd40921dee25fda8c03b17fde27e3e386f416e949a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/runtime-revalidation56.json",
+      "sha256": "3838c56fd25fe07ca45b0550727fa05ca4353cd1cc3cf4305f469052e2ea984b"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/retained-assets-audit56.json",
+      "sha256": "a3532330a8443f5d992ba1a38659f2da11e168ddbe322764ed3510d3a974142a"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/smith-gameplay56.json",
+      "sha256": "c2998403160818f803383a5d73721cdfe4ef96e48e53c66d310b7c0e5cd062a5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion56/station-layer-authoring56.json",
+      "sha256": "b0210ad3bd5453ac4faa5c7ae7e32185a27e631b1cdd2ce7077e486ef2e53bcc"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+      "sha256": "237cd672114a04247b124680dbc942c7a8a39bdde3f44ac76f54684942fdbfa5"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/retained-assets-audit58.json",
+      "sha256": "0365dc23ae43b3e412af39711108180fd9105c74f3f42749921ed63a3dbf445e"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/source-pixel-tests58.txt",
+      "sha256": "7c2b294db188bc2ac66e33717a90b453baf85bde0018d547c2ae01818a798af7"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/consultant-gameplay58.json",
+      "sha256": "8439ae1e22210a72c26958c6e8c179dd2928cb3671630a38ddbc336d51b10c5f"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
+      "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    }
+  ],
+  "runtimeRevalidation": {
+    "checkpoint": "motion58",
+    "files": [
+      "src/game/world/work-activities.ts"
+    ],
+    "audit": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
+    "scope": "Earlier selected art/timing and action calibration entries exact. Six actual consultant days and22 variants verify additive standing explanation/one local crate clearance only. Other gameplay/native observation dates and limited scopes retained. Source-pixel test addition replays all prior actors without changing helper semantics."
+  }
+}

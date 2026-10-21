@@ -1,0 +1,108 @@
+{
+  "prompt": "Create ACTOR-ONLY eight-pose seated repair animation from FIRST image, same stocky blacksmith identity and detailed semi-realistic rendering as SECOND image. Exact 4columns2rows, eight distinct poses in original order. Preserve chair, seated posture, muscular bald head, charcoal forked brass-bound beard, cream sleeves, dark leather apron, olive pants, boots. REMOVE the entire front WORKBENCH and ALL tools laid on bench, cloth, nail drawer and furniture except his chair; everything removed is transparent. Preserve ONE upright pickaxe shaft securely supported by his anatomical LEFT hand below its steel eye and ONE short hammer held in his RIGHT hand. Pickaxe shaft and steel head stay connected, straight and same length/height in all8 cells. Right hammer near eye0/1, raise2, approach3, wedge contact4, rebound5, controlled lower6, return7. No tool release or duplicated hammer; no other floating objects. Reconstruct occluded lower body naturally at unchanged seated root. Exact fixed chair floor, boots and body scale all8. Arms/tool relative positions from FIRST source; independent table will render separately in gameplay. Transparent background, no text, complete silhouettes.",
+  "reference": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/reference/source-sheet.png",
+  "referenceSha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d",
+  "actorOnly": true,
+  "editHistory": [
+    {
+      "key": "Blacksmith-repair-actor39",
+      "character": "Blacksmith",
+      "action": "repair-pickaxe-handle",
+      "refs": [
+        {
+          "file": "authoring-inputs/reference39-0.png",
+          "sha256": "9d4beae34d76061d88bf2d193015f9245f64592992271514d485425c709b2d0d"
+        },
+        {
+          "file": "authoring-inputs/reference39-1.png",
+          "sha256": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8"
+        }
+      ],
+      "prompt": "Create ACTOR-ONLY eight-pose seated repair animation from FIRST image, same stocky blacksmith identity and detailed semi-realistic rendering as SECOND image. Exact 4columns2rows, eight distinct poses in original order. Preserve chair, seated posture, muscular bald head, charcoal forked brass-bound beard, cream sleeves, dark leather apron, olive pants, boots. REMOVE the entire front WORKBENCH and ALL tools laid on bench, cloth, nail drawer and furniture except his chair; everything removed is transparent. Preserve ONE upright pickaxe shaft securely supported by his anatomical LEFT hand below its steel eye and ONE short hammer held in his RIGHT hand. Pickaxe shaft and steel head stay connected, straight and same length/height in all8 cells. Right hammer near eye0/1, raise2, approach3, wedge contact4, rebound5, controlled lower6, return7. No tool release or duplicated hammer; no other floating objects. Reconstruct occluded lower body naturally at unchanged seated root. Exact fixed chair floor, boots and body scale all8. Arms/tool relative positions from FIRST source; independent table will render separately in gameplay. Transparent background, no text, complete silhouettes.",
+      "output": "authoring-inputs/first-attempt39.png",
+      "outputSha256": "010488f45d1f7c9631a71317ef32fbd3f5efd67acebb85ae474512513d136531",
+      "method": "Built-in authored actor-only layer, whole poses; no limb synthesis, warping or manual redraw.",
+      "decision": "Rejected original actor-only edit because raised hammer clipped the authored row. Follow-up padding correction selected."
+    },
+    {
+      "key": "repair-padding39",
+      "prompt": "Correct this exact transparent 4x2 sprite sheet so every dwarf AND tool is complete with generous transparent borders. In particular the raised hammer in TOP THIRD pose currently touches/crosses the top edge; redraw the missing uppermost part of its steel hammer head and leave at least 25px transparent margin above it. Uniformly reduce all eight complete poses very slightly if needed to fit them into equal cells with 25px outside margins and wide row gutters. Exact same eight repair-pickaxe poses, stocky bald Blacksmith identity, brass-bound charcoal beard, leather apron, olive trousers, boots, wooden chair, left hand supporting ONE straight upright complete pickaxe, right hand gripping ONE connected hammer. Preserve root plane and physical body scale consistently in all8. No furniture except chair, no workbench, no spare tools, no text. Hammer raised2 now fully visible, then descending3, contact4, controlled rebound5, lower6, return7; no tool vanishing or swapping hands. Transparent background.\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/first-attempt39.png",
+          "sha256": "010488f45d1f7c9631a71317ef32fbd3f5efd67acebb85ae474512513d136531"
+        }
+      ],
+      "output": "authoring-inputs/source39.png",
+      "outputSha256": "666e69e24a66044f6858fb0062f49ec0fbf6deb038525d981f99450f06587d57",
+      "decision": "Accepted whole-sheet padding correction; selected base poses0/2/4/5/7 after native, layered and live reviews."
+    },
+    {
+      "key": "repair-descent-sheet39",
+      "prompt": "Make exact local motion corrections to this transparent 4x2 eight-pose repair sprite sheet. Preserve exact canonical Blacksmith, chair, boots, body size, root, clothing, every left-hand supported straight upright pickaxe, and all poses EXCEPT TOP FOURTH and BOTTOM SECOND/THIRD. TOP FOURTH (frame3) needs the MISSING DESCENT between TOP THIRD's overhead raised hammer and BOTTOM FIRST's joint contact: put the same right-hand short hammer midway down, steel head at the dwarf's eye/chin level, at least 70px ABOVE pickaxe's steel eye, wooden handle diagonal down-right toward the hammerhead. Right hand remains tightly wrapped around handle, forearm slopes upward from elbow. Hammer is no longer touching the pickaxe in this pose, but clearly descending toward it. BOTTOM SECOND (frame5) is a small visible rebound with hammerhead 25px ABOVE the pickaxe eye, with connected right-hand grip. BOTTOM THIRD (frame6) settles to 12px ABOVE eye, ready to return to original low contact frame7. Preserve other FIVE complete poses pixel-aligned. One held hammer per pose, one left-hand pickaxe, no duplicated spare tools. Neither tool disappears, changes owner or changes length. Entire tools visible with transparent margins, no workbench or extra furniture, 4columns2rows exact same sheet dimensions and positions. Do not redraw chair/body identity/feet.\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/source39.png",
+          "sha256": "666e69e24a66044f6858fb0062f49ec0fbf6deb038525d981f99450f06587d57"
+        }
+      ],
+      "output": "authoring-inputs/descent-sheet39.png",
+      "outputSha256": "99533c623935da39701c256a864226d1174c0b8a4d2240da090ba9ee4dd3fda4",
+      "decision": "Rejected as descent pose3: hammer already too low. Whole pose3 is instead selected only as the distinct preliminary raise at final frame1; reviewed in that role."
+    },
+    {
+      "key": "repair-descent-sheet-b39",
+      "prompt": "EDIT ONLY TOP-RIGHT (frame3) of this exact transparent eight-frame 4x2 repair animation. Its hammer is still too low. This must be a HALF-DESCENDED overhead swing, not joint contact. Raise his RIGHT HAND to temple height beside his bald head, and put the STEEL HAMMER HEAD beside or just ABOVE THE TOP OF HIS BALD SKULL, in midair at least 100px ABOVE the upright pickaxe's metal head. The right forearm points diagonally UP, hand firmly holds the wooden handle with steel head above the hand. This half-swing is visibly BETWEEN top-third overhead pose and bottom-first low contact pose. Keep body, chair, feet, long straight supported pickaxe and left gripping hand at EXACT supplied positions. Do NOT move his head or torso downward to compensate. Preserve the other SEVEN poses exactly, including small visible rebound and recovery at bottom2/3. Complete tool within existing transparent margins. Same canonical dwarf, same skull height and beard/clothes, unchanged scale, root, chair and lighting. Transparent background, no workbench, no duplicates or text.\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/source39.png",
+          "sha256": "666e69e24a66044f6858fb0062f49ec0fbf6deb038525d981f99450f06587d57"
+        }
+      ],
+      "output": "authoring-inputs/descent-sheet-b39.png",
+      "outputSha256": "92415a08c2116219f215748162df8ea6dc4cb61136926676954489beff4a445b",
+      "decision": "Unselected: requested shoulder-height descent remained too low. No approval from this attempted edit."
+    },
+    {
+      "key": "repair-single-descent39",
+      "prompt": "Edit this ONE seated Blacksmith frame, preserving the entire dwarf, bald skull, dark forked beard, brass beard rings, leather apron, cream sleeves, trousers, boots, chair, left hand and straight supported upright pickaxe exactly. Only change his RIGHT arm and hammer to a true middle point of the descending overhead strike. His right elbow stays high and outward, right hand moves down to beside his RIGHT EAR at temple level, wooden hammer handle tilts diagonally upward, and steel hammer head is beside the top of his skull, between this overhead endpoint and pickaxe contact. Keep the hammer at least one steel head length above the pickaxe socket. This must be visibly lower than the reference overhead hand and head but visibly higher than the chest-level pickaxe. Do not create a second hammer or another hand. Preserve the entire pickaxe including both steel ends, all chair legs and both boots, no crop. Same full body dimensions and camera, not a different dwarf. Transparent background, no desk, no text, no other poses. Output one whole figure, using generous margins above and at both sides.\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/descent-single39-reference.png",
+          "sha256": "ba0e3c0e92dbba1fea2fc3bdf5882f903fe86f9fb92d72de0df3deaac6522f1a"
+        }
+      ],
+      "output": "authoring-inputs/descent-single39.png",
+      "outputSha256": "f69a5b3480f5711bc080c6668915e4a7fa35de1cc1babd6070af792b3d71ea34",
+      "decision": "Selected entire authored pose as frame3 after native/layer/live descent and tool continuity reviews."
+    },
+    {
+      "key": "repair-raise-rebound-pair39",
+      "prompt": "Create ONLY TWO complete full-body animation poses side-by-side on one transparent canvas, no text. References show the exact same seated Blacksmith (bald head, dark forked brass-bound beard, cream sleeves, leather apron, olive trousers, steel-capped leather boots), chair and upright pickaxe. All proportions, skull, legs, chair, LEFT hand gripping the upright shaft, and pickaxe stay matched to those references. Do not introduce other props. LEFT pose: an intermediate RAISING hammer pose: his right elbow rises outward, right hand beside the cheek at eye level, hammer head above the forehead with wooden handle tilted up. It must be clearly higher than the first reference's low contact but lower than the second reference's overhead endpoint. RIGHT pose: a small hammer REBOUND after the tap. Right hand holds the same hammer with handle at chest height, hammer head visibly 10cm ABOVE the pickaxe's central socket, separated from it; right forearm nearly horizontal, wrist flexed upward. It must be clearly above contact but much lower than overhead. Preserve visible right fingers wrapped around the handle, no double hammer, no changed handedness. Same rigid straight pickaxe, left grip, ground-supported shaft and both steel ends. Both poses complete, all chair legs and both boots, generous transparent margins with no neighbor fragments. High quality semi-realistic rendered game character, same fixed front-right camera and light. Two side-by-side whole figures, exactly two poses.\n",
+      "inputs": [
+        {
+          "file": "authoring-inputs/rebound-pair39-reference-0.png",
+          "sha256": "85a2f5a00f28c6a906689b69a84ad533a692f01f6136a233f105ca9e788539ac"
+        },
+        {
+          "file": "authoring-inputs/rebound-pair39-reference-2.png",
+          "sha256": "ba0e3c0e92dbba1fea2fc3bdf5882f903fe86f9fb92d72de0df3deaac6522f1a"
+        }
+      ],
+      "output": "authoring-inputs/rebound-pair39.png",
+      "outputSha256": "e9b5ce30bdff6f6c1ecf4ca6ffc00cfce8eb162f8d157c24d8dbac783b269455",
+      "selectedCrop": {
+        "file": "authoring-inputs/rebound-single39.png",
+        "sha256": "62e6e634e8bcbf69520d76a3443838e28d4c5292844c3822506264a68d438d81",
+        "bounds": [
+          887,
+          0,
+          1774,
+          887
+        ]
+      },
+      "decision": "Right whole pose selected as lower rebound frame6. Left candidate unselected because it repeats the overhead silhouette too closely for a distinct preliminary raise."
+    }
+  ],
+  "authoringMethod": "Whole authored poses, exact source-cell extraction, uniform body scale and root registration only. No interpolated limbs, warped boots or target points substituted for visible material landmarks."
+}

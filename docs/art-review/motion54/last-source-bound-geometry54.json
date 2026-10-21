@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "folder": "docs/art-review/motion54/last-trial",
+  "binding": {
+    "sourceSha256": "d8cce54bacd80436b7e737a43879595599478a1d6d106ce78bb8188f718d692d",
+    "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "frameSha256": [
+      "f2a47ebf89dcac5cc95fe8ad58b314073d3076f740920d40d6ce63bbfddc2125",
+      "05492e78224717f5f5434274270411aed68578eb9c30280a8ef1f1e3ab2f7876",
+      "d6f5e3b1a9c38fb275b49e2e873ca0b5e50e49abbbcabafd0eb821595342c4de",
+      "2e49aab4cb7ea32d22c9136c7f191ec1141dfb93f2f81c5ec2592a554706e24d",
+      "fe3fd25478bd7f93ec1cdefc1d11c9ed3b93f9059dd019d1c1946a5f64617294",
+      "6c29439d7cf0361c7fde4fce6abedd817f8aa3591b9b099d349dfc9bb34ee578",
+      "4ad1fcf9c98fdd48fdc20e5546a974f27b418eeaec9b23b09adf353cd3c683d0",
+      "c49c9432c4007bfc54be184a61953141b598167bef7be745c8ded56650fe0cf2"
+    ],
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "actualSettingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+    "atlasSha256": "8b1d74985cd73d3b3aeee10865a5ed52df8a24163001b9bf79aecc4e4cdbde98",
+    "registration": {
+      "method": "source-landmarks",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": 520,
+      "scaleScope": "directional-body-height",
+      "landmarksVerified": false,
+      "settingsSha256": "c184dfa4f17d0cd1ce02f473044c7bfed4025c3438f5aacb26634782395f628f",
+      "exportVersion": 2,
+      "stationRegistration": null
+    },
+    "direction": "back-left",
+    "sourceFrameOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "runtimeSha256": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+  "cameraElevationRadians": 0.6,
+  "projectedTravelAxis": [
+    -0.707107,
+    -0.399263
+  ],
+  "normal": [
+    0.49167812720058335,
+    -0.8707770203861187
+  ],
+  "wholePoseComponentLimitPx": 12,
+  "contactLimitPx": 6,
+  "boundaries": [
+    {
+      "from": 0,
+      "to": 1,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 5.91849003873514,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 12.615994536215702,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 27.226094272921788,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 1.3624551475867022,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 17.819839986158062,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 22.2841123156658,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 27.26745546406218,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "correspondenceReviewed": false,
+      "perpendicularMismatchPx": 15.242021943218084,
+      "largestBoundedRelativeCorrectionPx": 32.69892354208085,
+      "minimumBoundaryResidualPx": 0,
+      "requiresSourceOrMaterialCorrection": false
+    }
+  ],
+  "closedCycle": {
+    "netContactDeltaPx": [
+      -444,
+      -185
+    ],
+    "minimumPossibleMaxResidualPx": 7.15141746320338,
+    "translationScope": "Even unlimited whole-pose translations cancel at the closed return.",
+    "requiresSourceOrMaterialCorrection": true
+  },
+  "materialCorrespondenceReviewed": false,
+  "numericallyExcludedByNecessaryBounds": true,
+  "wholeStrideApproved": false,
+  "loopApproved": false,
+  "scope": "Necessary geometry bounds on current source-bound material observations only. Unreviewed points remain hypotheses. Passing these bounds is insufficient for contact, anatomy, arm, held-frame, cane, renderer, cross-direction or loop acceptance."
+}

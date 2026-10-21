@@ -1,0 +1,15 @@
+{
+  "prompt": "Create one coherent high-quality semi-realistic Blacksmith sprite in the exact physical whole-body pose in reference1. This first image is only a shape/position diagram: use its head, hips, knee, ankle and complete boot locations. Do not copy its gray/blue/gold colors, dots or labels. Reference2 supplies ONLY identity/costume/material for the upper body; it intentionally has no legs so you must author the complete correct legs from the physical diagram. The bald stocky dwarf has thick black beard, cream rolled-sleeve shirt, bare forearms, crossed brown leather back straps, dark brown leather apron with brass ring, trousers and two sturdy brown brass-buckled boots. Rear three-quarter view facing upper-right; match the portrait head, sleeves, back strap and apron detail, lighting and realistic texture. Pose4 is double support: anatomical RIGHT nearer leg trails down toward its grounded forefoot at[354,619], heel a little raised. Anatomical LEFT farther leg leads forward to its new heel contact at[407,559], complete boot pointing image upper-right. No crossed legs, detached feet, upside-down sole, floating recovery boot, extra hand or equipment. Near RIGHT arm counter-swings forward to image right; far LEFT arm backward. Precisely retain the first diagram's640x640 stage proportions, crown aroundy100, pelvisy451, the two separate intended ground contacts. Both feet and whole head fully visible, no zoom/recenter. Render an entire newly authored coherent dwarf pose, natural connected bones/joints, no labels, guide strokes, colors or visible marker dots. Transparent alpha, no floor shadow. One sprite only. The diagram is not proof of material contact; output will be independently measured.",
+  "references": [
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion51/blacksmith-back-right/standalone-contact-guide51.png",
+      "sha256": "1c93e42763c47f8c852231c620e827b85a9e65118d303fc7a5e1298d05614ea7"
+    },
+    {
+      "file": "/opt/codex-work/dwarf-lord/work/expanded-cycles/motion51/blacksmith-back-right/upper-body-only51.png",
+      "sha256": "05d3899366e07dc4189cf9ecbdc804edb90017b52780ac0e7e28fb1e11da179f"
+    }
+  ],
+  "transparent_background": true,
+  "scope": "New constrained input method: physical contact-stage diagram first; identity upper body only. Unapproved candidate, no runtime selection, measured correspondence or cycle closure."
+}

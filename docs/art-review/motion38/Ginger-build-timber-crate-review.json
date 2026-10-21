@@ -1,0 +1,135 @@
+{
+  "character": "Ginger",
+  "action": "build-timber-crate",
+  "direction": "reference",
+  "destination": "public/sprites/Ginger/motion/build-timber-crate/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993",
+  "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+  "nativeReviewSha256": "ce02b179b15f96bdab36b3012cc3e8328a770243b000602f7300e5b72336ca37",
+  "checks": {
+    "identity-and-scale": "Same curly bright ginger hair, long pointed ginger beard, cream sleeves, leather waistcoat, green trousers and heavy brown boots across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Right hand retains one hammer through low0, raise1/2, descent3, nail contact4, rebound5/6 and return7. Left palm braces the corner of the same assembled crate. One exposed nail stays at the top board. Cosmetic finite nail-driving pass, not creation of a whole new crate.",
+    "prop-continuity": "Right hand retains one hammer through low0, raise1/2, descent3, nail contact4, rebound5/6 and return7. Left palm braces the corner of the same assembled crate. One exposed nail stays at the top board. Cosmetic finite nail-driving pass, not creation of a whole new crate.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "8a9446f77416edb191c277c64f7314f2a369985fea91d75a789dd4ffeaee3993",
+    "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+    "frameSha256": [
+      "d87931983eee819f9af495f3fc23088f5988491b3809b6662e93716545d1263d",
+      "2646c46ad4a99be758fa6221b26373fe644875dada7017959e3c5072e0e71368",
+      "663c49951f24343bacab01306edbb4747148b871b058fc64697fdb0078f18582",
+      "135c5fe6fb0882bbe4e2f78cce8a2b10938237f582ce8d4303a866b6a4f290ac",
+      "af3d2d4f08814390ffe6b5e6b2f471af6d19e27735a2138d377ce6579b3a527b",
+      "30542b7ae5a62af84f6a0d70863010bf5eab3ee57bbfde138bf28eb8571169c0",
+      "0077255d026a3b33ecbba3500c23c5811e51b8f022405fadeecf241c35d4066d",
+      "a56e494eeb4af7980079398fa5205d70cf544f15d581d102ce7caa4b6780aa75"
+    ],
+    "atlasSha256": "d72a3faedfbab459d190f56939e10a900ccc2f190cfdbb5258f3ff9886e8873c",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "443c0fa87225017213a3c1b7fd9b8b17c946d3a80edf8659fa1acd3bb4f1d5a8",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          155,
+          460,
+          470,
+          595
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              -4.108202489305768e-08,
+              -3.668817072366437e-08
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99453,
+            "measuredCorrectionPx": [
+              0.8720181584358215,
+              0.5257211923599243
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96082,
+            "measuredCorrectionPx": [
+              1.4873666763305664,
+              -1.8653349876403809
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99386,
+            "measuredCorrectionPx": [
+              1.3438299894332886,
+              0.6730087399482727
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99499,
+            "measuredCorrectionPx": [
+              0.1288674771785736,
+              2.5627593994140625
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99095,
+            "measuredCorrectionPx": [
+              0.4144124686717987,
+              2.299128532409668
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98954,
+            "measuredCorrectionPx": [
+              2.15183687210083,
+              2.3869214057922363
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.99308,
+            "measuredCorrectionPx": [
+              0.7840907573699951,
+              2.505256175994873
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Ginger",
+    "action": "build-timber-crate",
+    "direction": "reference"
+  }
+}

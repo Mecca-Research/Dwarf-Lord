@@ -1,0 +1,135 @@
+{
+  "character": "Borrin",
+  "action": "explain-closed-ledger",
+  "direction": "reference",
+  "destination": "public/sprites/Borrin/motion/explain-closed-ledger/reference",
+  "verdict": "accepted",
+  "acceptance": "task",
+  "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435",
+  "settingsSha256": "367fe7a2c2e1c72476bba8a5ee4c53e4252fad63f6b0f473c6e00d93dcab837b",
+  "nativeReviewSha256": "feeafd0cb7a7875e17b89820741ccbdefaac5ef27c667310b4134666907402ce",
+  "checks": {
+    "identity-and-scale": "Same second-oldest manager: combed receding grey hair, bronze spectacles, two-ended brass-bound grey beard, burgundy scarf, navy waistcoat and cream sleeves across all eight poses. Native registered0-7 reviewed using one sequence scale; this is not a walking or cross-direction body calibration.",
+    "station-and-foot-contact": "All eight combined-reference poses reviewed. The fixed furniture base and visible stationary boots/knees/chair stay at their local baseline; bounded existing station registration is retained. These painted props are not certified as independent scene stations. Translating foot contacts are excluded.",
+    "hand-and-tool-contact": "Left arm retains the same closed leather ledger across0-7. Right hand rises palm-up1, extends2, curls emphasis3, gestures4, returns to chest5, nods6 and lowers7. Same bronze spectacles and brass-bound forked beard throughout. Combined desk/stool supplies persist; no book opening or release occurs.",
+    "prop-continuity": "Left arm retains the same closed leather ledger across0-7. Right hand rises palm-up1, extends2, curls emphasis3, gestures4, returns to chest5, nods6 and lowers7. Same bronze spectacles and brass-bound forked beard throughout. Combined desk/stool supplies persist; no book opening or release occurs.",
+    "completion-and-reset": "Gallery must expose every authored held pose0-7, complete once, hold7 without replay, and return to0 only on explicit restart. This finite-task review excludes continuous replay and transitions into a different activity. Gameplay activation, prop ownership on departure and economy completion remain separate requirements."
+  },
+  "binding": {
+    "sourceSha256": "4b2f918bb58765c29a45a1589244293e3147bfbf866e77c89151223e5c375435",
+    "settingsSha256": "367fe7a2c2e1c72476bba8a5ee4c53e4252fad63f6b0f473c6e00d93dcab837b",
+    "frameSha256": [
+      "4b9a94948e9a1fe88e9e075dbcff15c51f4ad292c8f7c7eef497f0233911aafb",
+      "cf075dbda2b74c8379d2d802957ded148e3f6fcd4fe5de9105d8a5925acdd61c",
+      "2c490cd7659f79f78d9855910670f360117a8423a51225785312b6087020bdf8",
+      "454de38a7250b577682fa32c1ae80c0eed630e3bdfc8f29ff9a4d99489a0a030",
+      "2c715f32f0f0b54f55eccb30df15c4ffa32a88f42ef488280b064c7fb3869437",
+      "23b99c666cc7714b0d56943fcf2214eff5de279e3d3c71a8be20db33d31718f8",
+      "549d13c3817438dee00fbca6cb3b78d6c82ff2a9d961ab339613d3cca1915711",
+      "8b203760a9083ef3252f4b954c7d6e7e1a190635234629b0b69414bb7af2a2dd"
+    ],
+    "atlasSha256": "cde644a8d6d6a20866adae908715dd1a1dab6254ef647f3fe527ebc931409a3c",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "367fe7a2c2e1c72476bba8a5ee4c53e4252fad63f6b0f473c6e00d93dcab837b",
+      "exportVersion": 2,
+      "stationRegistration": {
+        "method": "bounded-translation-ECC",
+        "referenceSourcePose": 0,
+        "outputRegion": [
+          60,
+          390,
+          250,
+          585
+        ],
+        "maxCorrectionPx": 12,
+        "results": [
+          {
+            "correlation": 1.0,
+            "measuredCorrectionPx": [
+              1.4657711711052457e-09,
+              -3.552475813517475e-10
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97167,
+            "measuredCorrectionPx": [
+              -0.12670385837554932,
+              -0.11774801462888718
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.98282,
+            "measuredCorrectionPx": [
+              0.6877574324607849,
+              -0.08739542961120605
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96961,
+            "measuredCorrectionPx": [
+              0.3354274034500122,
+              -0.035139068961143494
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.97004,
+            "measuredCorrectionPx": [
+              -0.9567372798919678,
+              1.2450999021530151
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95919,
+            "measuredCorrectionPx": [
+              -0.1288546621799469,
+              1.1793198585510254
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.96417,
+            "measuredCorrectionPx": [
+              -0.398711234331131,
+              1.184624195098877
+            ],
+            "accepted": true
+          },
+          {
+            "correlation": 0.95742,
+            "measuredCorrectionPx": [
+              0.3812202215194702,
+              1.267998218536377
+            ],
+            "accepted": true
+          }
+        ]
+      }
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Borrin",
+    "action": "explain-closed-ledger",
+    "direction": "reference"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "checkpoint": "motion47",
+  "reviewedAt": "2026-10-05",
+  "scope": "Blacksmith LEFT-view eight-pose empty-handed walking loop at0.6-radian elevation on flat ground. Individual opposite-leg/arm phases, visible sole material, held-frame travel, all eight boundary handoffs and7-to0 loop return are reviewed. Cross-direction phase/stride/costume continuity, camera turns, uneven terrain, tools/cane, other walking views and whole-library readiness are excluded.",
+  "checks": {
+    "identity-and-scale": "All eight native/exported poses retain the bald stocky Blacksmith, black beard with brass bands, cream shirt, leather apron and heavy capped boots. One common source height and520px target retain body scale. Per-column empty gutters preserve all boots; no local limb transform, mirror, per-pose scale or generated tween. Cross-view costume and camera continuity remains a family gate.",
+    "station-and-foot-contact": "Native posterior bottom heel corners at0-to1/4-to5 and distal lower fore-sole curves in the other six handoffs follow the two separately opposed supporting legs. Cap/buckle, cloth, ground shadow, transparent outline and rig targets are excluded. All eight including7-to0 measured1.048px; actual three strides24 boundaries max5.778456px,229 held samples max0.314486px. Original6px/.5px contact bounds,40ms minimum hold and12px maximum whole-pose correction retained.",
+    "hand-and-tool-contact": "Empty hands. Near arm forward while near leg trails in0/1/7; near arm back while near leg leads3/4/5; opposing passing2/6 approach neutral. Newly authored3 is a compact far support push-off, with near knee/boot reaching ahead. No tool or cane is claimed.",
+    "prop-continuity": "No held prop, painted workstation, environment or ground shadow. Both heavy leather/metal boots stay on their respective near/far leg through the independently reviewed fixed-view stride. Small far-side strap/buckle rendering variation is retained for cross-view costume review rather than used as a material landmark.",
+    "last-to-first-transition": "Far leading pre-contact7 flows into leading heel contact0, with the near trailing toe moving backward rather than reversing. The final selected build covers three7-to0 returns among its24 handoffs. Direction changes, terrain elevation changes and other camera views remain unapproved."
+  },
+  "actualRenderedStrides": 3,
+  "materialContactMeasurementPassed": true,
+  "loopApproved": true
+}

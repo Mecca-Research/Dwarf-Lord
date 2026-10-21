@@ -1,0 +1,11 @@
+# Motion55: finite raised-hammer work and actual steel contacts
+
+The new Blacksmith actor performs one controlled edge-tap sequence at the unchanged independent anvil. Its derived `task-approval.json` applies only to the exact source pixels, common body basis, visible stationary support, projected billet/steel face, visible edge adjacency and actual finite task lifecycle. Hidden far sole, centered striking-face underside, forces, traveling gait, economic outputs, alternate directions and seamless repeat are excluded. The existing main reference review is unchanged.
+
+`blacksmith-raised/` contains all eight native layered compositions, the fixed registered prop, actual game frames0–7, camera/departure captures, the original-pixel audit, opaque body markers, boot correlation/travel, actual billet-on-steel observations and explicit native/game visual review. The diagnostic crop is a uniform enlargement of actual game pixels, never a selected asset edit.
+
+`ready-real-surface-recheck55.json` retains the exact earlier preparation points and binding while freshly testing them on four actual opaque steel corners. The earlier52 outline included two transparent vertices; the historical record remains intact. Both preparation and the new edge-tap points have0px outside the corrected face. Tests read the real prop and body pixels and catch discarded transparent measurement endpoints.
+
+`retained-assets-audit55.json` compares all69 earlier accepted source/frames/atlas/registration/timing sets, existing props and prior Blacksmith calibration actions witha52cf5b. `runtime-revalidation55.json` and `runtime-coverage-audit55.json` bind the additive fifth forge operation to six actual forge days, six meal days, original job/passive roles and20 layered variants. Earlier17 shared-basis variants remain pixel-identical over136 frame comparisons. Physical anvil-ready/mixing registration stays unchanged.
+
+Frozen scope is still160;50 main and seven original actors are scoped accepted. Thirteen derived finite actors are counted separately. There are24/65 live reference actions and41 inactive,103 open individual reviews and11 open direction families. This checkpoint is not approval to merge PR9.

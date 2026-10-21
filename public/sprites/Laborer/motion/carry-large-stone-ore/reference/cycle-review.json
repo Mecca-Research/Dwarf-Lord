@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "verdict": "changes-required",
+  "binding": {
+    "sourceSha256": "2505d95187c025e4e03e0a31dfb56a78cef001641889e4efa24926f36a637ac0",
+    "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "frameSha256": [
+      "7cae3feae463442425fdf9161eda6170f71cb0deaae925a501089059862ef0f1",
+      "90a26049070ddfa8bff55527a84f6eaae120b467ee088e8a6d1457c1b4bed85b",
+      "92ff755771bb69e3817a337945cefc1a0f225d0f619c04987dac5c1db3b1482e",
+      "bb4ffd710bc0f91d27ee1916c2aaf0275891b98036080cf1c315181be9a32c4f",
+      "486eb9382e46f765b1016dfcfb79079ccd49641c51596b8984b561781d52d011",
+      "33b731d5536c333b2a9ff4925c5b504391d394c5526f692482aa2f5604d50b55",
+      "e2609f440dc72a419539104c4fb5f90f6e9b6d92b2f9166dcad2ddcd5abd6343",
+      "bfdd4980e3cf2a562a29dcd6325738ff56fa577663a0cfeb74838dab558e18d2"
+    ],
+    "atlasSha256": "7984120103987d136bc9467b5498355a0e6fa43d5e028c4e6bc015ce66862c47",
+    "registration": {
+      "method": "lower-silhouette-estimate",
+      "targetAnchor": [
+        320,
+        616
+      ],
+      "targetBodyHeight": null,
+      "scaleScope": "sequence",
+      "landmarksVerified": false,
+      "settingsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "exportVersion": 2
+    },
+    "durationsMs": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "character": "Laborer",
+    "action": "carry-large-stone-ore",
+    "direction": "reference"
+  },
+  "scope": "Motion38 native eight-pose review. Specific visible defects below prevent cycle approval. No timing, gameplay or production approval is implied.",
+  "issues": [
+    "Frame2 has clipped ore-bin edges and a detached pickaxe/bin fragment at the left of3. Painted stationary bin is also embedded beside a translating carry gait. Need complete prop-free carry poses and verified planted soles before moving use."
+  ],
+  "dependencies": [
+    {
+      "file": "review.jpg",
+      "sha256": "6fb772ddeb6a71ae663250d30c591faf9369c16f25cda2fa1e61b89575f72cf9"
+    },
+    {
+      "file": "../../../../../../docs/art-review/motion38/Laborer-carry-large-stone-ore-review.json",
+      "sha256": "6bd7bfde06c750fe6147d4c077f3a8959d9435dde99ca2065526a53dd0447f6f"
+    }
+  ]
+}

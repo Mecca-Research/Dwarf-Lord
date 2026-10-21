@@ -1,0 +1,26 @@
+{
+  "verdict": "accepted-standalone-prop",
+  "firstAttempt": {
+    "file": "rejected-bowl-perspective53.png",
+    "sha256": "fd89e3d7aa521deb8d861fcc9bd4419d781955bd7523e218ee7849e3dabc8e95",
+    "selected": false,
+    "finding": "Opening viewed too far overhead; total bowl was too tall relative to the original wide, low oval mouth."
+  },
+  "selected": {
+    "source": "public/sprites/workstations/mixing-block/completion-source.png",
+    "sha256": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1",
+    "uniformWidthPx": 178,
+    "placement": [
+      235,
+      247
+    ],
+    "solidOutputBounds": [
+      235,
+      247,
+      413,
+      347
+    ],
+    "review": "Corrected lower camera angle and broad wooden bowl, no fingers or spoon. Native completed-table composition inspected. Source and normalized output retained; no local warp or nonuniform stretch."
+  },
+  "scope": "Independent completed cosmetic workpiece only, not corresponding original wood material, ingredient simulation, traveling handoff or cycle approval."
+}

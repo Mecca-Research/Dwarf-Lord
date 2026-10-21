@@ -1,0 +1,635 @@
+import { EffectComposer, Bloom, Vignette, SMAA } from "@react-three/postprocessing";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Suspense, useEffect, useMemo, useRef } from "react";
+import * as THREE from "three";
+import { WORLD_STAGES } from "../data/catalog";
+import type { Dwarf } from "../types";
+import {
+  camBasis,
+  facingFromMove,
+  facingOctant,
+  groundHeight,
+  resolveMove,
+  runtime,
+  setPlayerDest,
+  zoneAt,
+} from "../runtime";
+import { useGame } from "../store";
+import { npcMotionDiagnostics, npcWorkDiagnostics } from "./npc-motion";
+import { spritePointReviewers, type SpritePointReview } from "./motion-review-points";
+import { DwarfSprite, SpriteBankProvider } from "./sprites";
+import { Workstations, workstationDiagnostics } from "./workstations";
+import { activeWorkstation, passiveWorkstation, workAssignmentTarget } from "./workstation-sites";
+import { dwarfAppearance } from "./dwarf-appearances";
+import { Environment } from "./environment";
+import { WorldMatsProvider } from "./materials";
+
+const _look = new THREE.Vector3();
+const _cam = new THREE.Vector3();
+const _hit = new THREE.Vector3();
+const plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+const ray = new THREE.Raycaster();
+const ndc = new THREE.Vector2();
+
+function bindKeys() {
+  const down = (e: KeyboardEvent) => {
+    runtime.keys.add(e.code);
+    if (
+      [
+        "KeyW",
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "Space",
+      ].includes(e.code)
+    ) {
+      e.preventDefault();
+    }
+  };
+  const up = (e: KeyboardEvent) => runtime.keys.delete(e.code);
+  const blur = () => runtime.keys.clear();
+  window.addEventListener("keydown", down, { passive: false });
+  window.addEventListener("keyup", up);
+  window.addEventListener("blur", blur);
+  return () => {
+    window.removeEventListener("keydown", down);
+    window.removeEventListener("keyup", up);
+    window.removeEventListener("blur", blur);
+  };
+}
+
+function IsoCamera() {
+  const { camera, size } = useThree();
+  const stage = useGame((s) => s.settlement);
+
+  useFrame((_, dt) => {
+    const d = Math.min(dt, 0.1);
+    const p = runtime.player;
+    const keys = runtime.keys;
+    if (keys.has("KeyQ")) runtime.cameraAzimuth += 0.7 * d;
+    if (keys.has("KeyR")) runtime.cameraAzimuth -= 0.7 * d;
+
+    const zone = zoneAt(p.x, p.z);
+    runtime.zone = zone;
+    const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
+    const targetZoom =
+      (zone === "mine" ? spec.cameraZoom * 0.72 : spec.cameraZoom) + runtime.zoomBias;
+    runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-d * 3));
+
+    const dist = 38;
+    const az = runtime.cameraAzimuth;
+    const el = runtime.cameraElev;
+    _cam.set(
+      p.x + dist * Math.sin(az) * Math.cos(el),
+      dist * Math.sin(el) + 2,
+      p.z + dist * Math.cos(az) * Math.cos(el),
+    );
+    camera.position.lerp(_cam, 1 - Math.exp(-d * 4));
+    _look.set(p.x, 1.15, p.z);
+    camera.lookAt(_look);
+    const cam = camera as THREE.OrthographicCamera;
+    cam.zoom = runtime.zoom * (size.height / 720);
+    cam.near = 0.1;
+    cam.far = 280;
+    cam.updateProjectionMatrix();
+  });
+  return null;
+}
+
+function Systems() {
+  const dwarves = useGame((s) => s.dwarves);
+  const dialogue = useGame((s) => s.dialogue);
+  const joy = useGame((s) => s.mobileJoy);
+  const talk = useGame((s) => s.talk);
+  const inspect = useGame((s) => s.inspect);
+  const setSelected = useGame((s) => s.setSelected);
+  const setPrompt = useGame((s) => s.setPrompt);
+  const discover = useGame((s) => s.discover);
+  const buildings = useGame((s) => s.buildings);
+  const playing = useGame((s) => s.playing);
+  const expedition = useGame((s) => s.expedition);
+  const dayResolved = useGame((s) => s.dayResolved);
+  const acc = useRef(0);
+  const promptAcc = useRef(0);
+  const stepRef = useRef(step);
+  useEffect(() => {
+    stepRef.current = step;
+  });
+
+  useEffect(() => bindKeys(), []);
+
+  useEffect(() => {
+    const probe = {
+      getYaw: () => runtime.player.yaw,
+      getFacing: () => runtime.player.facing,
+      getSpeed: () => runtime.player.speed,
+      getPos: () => ({ x: runtime.player.x, z: runtime.player.z, zone: runtime.zone }),
+      setKeys: (codes: string[]) => {
+        runtime.keys.clear();
+        for (const c of codes) runtime.keys.add(c);
+      },
+      setDest: (x: number, z: number) => setPlayerDest(x, z),
+      teleport: (x: number, z: number) => {
+        runtime.player.x = x;
+        runtime.player.z = z;
+        runtime.player.dest = null;
+        runtime.player.speed = 0;
+        runtime.player.anim = "idle";
+      },
+      assignJob: (id: string, job: string | null) => useGame.getState().assignJob(id, job),
+      resolveDay: () => useGame.getState().resolveDay(),
+      nextMorning: () => useGame.getState().nextMorning(),
+      setDwarfDest: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) body.dest = { x, z };
+      },
+      teleportDwarf: (id: string, x: number, z: number) => {
+        const body = runtime.dwarves.get(id);
+        if (body) { body.x = x; body.z = z; body.dest = null; body.anim = "idle"; body.speed = 0; }
+      },
+      setZoomBias: (z: number) => {
+        runtime.zoomBias = z;
+      },
+      getCameraAngles: () => ({ azimuth: runtime.cameraAzimuth, elevation: runtime.cameraElev }),
+      projectDwarfSprite: (id: string, point: [number, number], reference?: [number, number, number]) =>
+        spritePointReviewers.get(id)?.(point, reference) ?? null,
+    };
+    window.__controlsTest = probe;
+    window.render_game_to_text = () =>
+      JSON.stringify({
+        workstations: [...workstationDiagnostics.values()],
+        coordinates: "x east, z south, y up",
+        player: runtime.player,
+        zone: runtime.zone,
+        prompt: useGame.getState().prompt,
+        dialogue: useGame.getState().dialogue,
+        dwarves: useGame
+          .getState()
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), workMotion: npcWorkDiagnostics.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
+      });
+    window.advanceTime = (ms: number) => {
+      if (!useGame.getState().playing || useGame.getState().dialogue) return;
+      for (let i = 0; i < Math.max(1, Math.round(ms / (1000 / 60))); i++) stepRef.current(1 / 60);
+    };
+    return () => {
+      if (window.__controlsTest === probe) delete window.__controlsTest;
+      delete window.render_game_to_text;
+      delete window.advanceTime;
+    };
+  }, []);
+
+  useFrame((state, dt) => {
+    if (!playing || dialogue) {
+      runtime.player.speed = 0;
+      return;
+    }
+    const d = Math.min(dt, 0.1);
+    acc.current += d;
+    while (acc.current >= 1 / 60) {
+      step(1 / 60);
+      acc.current -= 1 / 60;
+    }
+
+    promptAcc.current += d;
+    if (promptAcc.current > 0.12) {
+      promptAcc.current = 0;
+      const p = runtime.player;
+      let best = 9;
+      let id: string | null = null;
+      let kind: "dwarf" | "building" | null = null;
+      for (const dw of dwarves) {
+        const b = runtime.dwarves.get(dw.id);
+        if (!b) continue;
+        const dist = Math.hypot(p.x - b.x, p.z - b.z);
+        if (dist < best && dist < 3.6) {
+          best = dist;
+          id = dw.id;
+          kind = "dwarf";
+        }
+      }
+      for (const bld of buildings) {
+        const dist = Math.hypot(p.x - bld.x, p.z - bld.z);
+        if (dist < best && dist < 3.2) {
+          best = dist;
+          id = bld.id;
+          kind = "building";
+        }
+      }
+      runtime.interactId = id;
+      runtime.interactKind = kind;
+      let nextPrompt = useGame.getState().prompt;
+      if (kind === "dwarf") {
+        const dw = dwarves.find((x) => x.id === id);
+        nextPrompt = `${dw?.name ?? "Dwarf"} — ${dw?.title ?? ""}. Press E or tap Interact.`;
+      } else if (kind === "building") {
+        const bld = buildings.find((x) => x.id === id);
+        nextPrompt = `${bld?.name ?? "Ruin"}. Press E to inspect.`;
+      } else if (runtime.zone === "mine") {
+        nextPrompt = "The shallow mine. Timber, limestone, a rumor of iron.";
+      } else if (runtime.zone === "road") {
+        nextPrompt = "The outer road. This is how you arrived.";
+      } else if (runtime.zone === "forest") {
+        nextPrompt = "Forest edge. Timber, if anyone will cut it.";
+      } else if (runtime.zone === "camp") {
+        nextPrompt = "The camp. This is the company.";
+        if (!useGame.getState().discoveries.camp) discover("camp");
+      }
+      if (nextPrompt !== useGame.getState().prompt) setPrompt(nextPrompt);
+    }
+
+    if (runtime.keys.has("KeyE") || runtime.keys.has("Enter")) {
+      runtime.keys.delete("KeyE");
+      runtime.keys.delete("Enter");
+      interact();
+    }
+    void state;
+  });
+
+  function interact() {
+    const id = runtime.interactId;
+    const kind = runtime.interactKind;
+    if (!id || !kind) return;
+    if (kind === "dwarf") {
+      const dw = useGame.getState().dwarves.find((x) => x.id === id);
+      if (!dw) return;
+      setSelected(dw.id);
+      talk(dw.talkKey, dw.id);
+    } else {
+      inspect(id);
+    }
+  }
+
+  function step(dt: number) {
+    const p = runtime.player;
+    const { forwardX, forwardZ, rightX, rightZ } = camBasis(runtime.cameraAzimuth);
+    let mx = 0;
+    let mz = 0;
+    const keys = runtime.keys;
+    if (keys.has("KeyW") || keys.has("ArrowUp")) {
+      mx += forwardX;
+      mz += forwardZ;
+    }
+    if (keys.has("KeyS") || keys.has("ArrowDown")) {
+      mx -= forwardX;
+      mz -= forwardZ;
+    }
+    if (keys.has("KeyD") || keys.has("ArrowRight")) {
+      mx += rightX;
+      mz += rightZ;
+    }
+    if (keys.has("KeyA") || keys.has("ArrowLeft")) {
+      mx -= rightX;
+      mz -= rightZ;
+    }
+    mx += joy.x * rightX + joy.y * forwardX;
+    mz += joy.x * rightZ + joy.y * forwardZ;
+
+    const usingStick = Math.hypot(mx, mz) > 0.12;
+    if (usingStick) p.dest = null;
+
+    if (!usingStick && p.dest) {
+      const dx = p.dest.x - p.x;
+      const dz = p.dest.z - p.z;
+      const dist = Math.hypot(dx, dz);
+      if (dist < 0.35) p.dest = null;
+      else {
+        mx = dx / dist;
+        mz = dz / dist;
+      }
+    }
+
+    const mag = Math.hypot(mx, mz);
+    if (mag > 0.05) {
+      mx /= mag;
+      mz /= mag;
+      p.yaw = Math.atan2(-mx, -mz);
+      const nextFace = facingFromMove(mx, mz, runtime.cameraAzimuth);
+      if (nextFace >= 0 && nextFace !== p.facing) {
+        const curAng = ((4 - p.facing) * Math.PI) / 4;
+        const { forwardX, forwardZ, rightX, rightZ } = camBasis(runtime.cameraAzimuth);
+        const sx = mx * rightX + mz * rightZ;
+        const sy = mx * forwardX + mz * forwardZ;
+        const ang = Math.atan2(sx, sy);
+        let diff = ang - curAng;
+        while (diff > Math.PI) diff -= Math.PI * 2;
+        while (diff < -Math.PI) diff += Math.PI * 2;
+        if (Math.abs(diff) > 0.52) p.facing = nextFace;
+      } else if (nextFace >= 0) {
+        p.facing = nextFace;
+      }
+      p.bob += dt * 5.2;
+      const speed = 2.7;
+      p.speed = speed;
+      const moved = resolveMove(p.x, p.z, mx * speed * dt, mz * speed * dt, 0.5);
+      p.x = moved.x;
+      p.z = moved.z;
+      p.anim = "walk";
+    } else {
+      p.speed = 0;
+      p.anim = "idle";
+      const idleFace = facingFromMove(-Math.sin(p.yaw), -Math.cos(p.yaw), runtime.cameraAzimuth);
+      if (idleFace >= 0) p.facing = idleFace;
+    }
+
+    for (const dw of dwarves) {
+      const b = runtime.dwarves.get(dw.id);
+      if (!b) continue;
+      b.facing = facingOctant(b.yaw, runtime.cameraAzimuth);
+      if (dw.isSteward || dw.narrativeOnly) {
+        b.anim = "sit";
+        b.speed = 0;
+        continue;
+      }
+      if (dayResolved && dw.assignedJobId && !(expedition?.status === "out" && expedition.dwarfIds.includes(dw.id))) {
+        b.dest = null; b.speed = 0; b.anim = dw.sitOnStart ? "sit" : "idle";
+        continue;
+      }
+      if (expedition?.status === "out" && expedition.dwarfIds.includes(dw.id)) {
+        b.dest = { x: 8, z: -42 };
+      }
+      if (dw.assignedJobId && !b.dest) {
+        const job = workAssignmentTarget(dwarfAppearance(dw.id), dw.assignedJobId, useGame.getState().day);
+        if (job) b.dest = { x: job.targetX, z: job.targetZ };
+      }
+      if (b.dest) {
+        const dx = b.dest.x - b.x;
+        const dz = b.dest.z - b.z;
+        const dist = Math.hypot(dx, dz);
+        if (dist < 0.5) {
+          b.dest = null;
+          b.anim = dw.assignedJobId ? "work" : dw.sitOnStart ? "sit" : "idle";
+          b.speed = 0;
+        } else {
+          const vx = dx / dist;
+          const vz = dz / dist;
+          const moved = resolveMove(b.x, b.z, vx * 2.4 * dt, vz * 2.4 * dt, 0.45);
+          b.speed = Math.hypot(moved.x - b.x, moved.z - b.z) / Math.max(dt, 1e-6);
+          b.x = moved.x;
+          b.z = moved.z;
+          b.yaw = Math.atan2(-vx, -vz);
+          b.facing = facingFromMove(vx, vz, runtime.cameraAzimuth);
+          b.anim = "walk";
+        }
+      } else if (dw.sitOnStart) {
+        b.anim = "sit";
+        b.speed = 0;
+      } else if (dw.assignedJobId) {
+        b.anim = "work";
+        b.speed = 0;
+      } else {
+        b.anim = b.anim === "walk" || b.anim === "work" ? "idle" : b.anim;
+        b.speed = 0;
+      }
+    }
+  }
+
+  return null;
+}
+
+function GroundPick() {
+  const { camera, gl } = useThree();
+  useEffect(() => {
+    const el = gl.domElement;
+    const onClick = (ev: PointerEvent) => {
+      if (useGame.getState().dialogue) return;
+      if (useGame.getState().overlay) return;
+      const rect = el.getBoundingClientRect();
+      ndc.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
+      ndc.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
+      ray.setFromCamera(ndc, camera);
+      const ok = ray.ray.intersectPlane(plane, _hit);
+      if (!ok) return;
+      const dwarves = useGame.getState().dwarves;
+      let nearest: string | null = null;
+      let nd = 2.2;
+      for (const dw of dwarves) {
+        const b = runtime.dwarves.get(dw.id);
+        if (!b) continue;
+        const dist = Math.hypot(_hit.x - b.x, _hit.z - b.z);
+        if (dist < nd) {
+          nd = dist;
+          nearest = dw.id;
+        }
+      }
+      const buildings = useGame.getState().buildings;
+      let bnear: string | null = null;
+      let bd = 2.4;
+      for (const bld of buildings) {
+        const dist = Math.hypot(_hit.x - bld.x, _hit.z - bld.z);
+        if (dist < bd) {
+          bd = dist;
+          bnear = bld.id;
+        }
+      }
+      if (nearest && nd < 1.6) {
+        const dw = dwarves.find((d) => d.id === nearest);
+        if (dw) {
+          useGame.getState().setSelected(dw.id);
+          const p = runtime.player;
+          if (
+            Math.hypot(
+              p.x - (runtime.dwarves.get(dw.id)?.x ?? 0),
+              p.z - (runtime.dwarves.get(dw.id)?.z ?? 0),
+            ) < 3
+          ) {
+            useGame.getState().talk(dw.talkKey, dw.id);
+          } else {
+            setPlayerDest(runtime.dwarves.get(dw.id)!.x, runtime.dwarves.get(dw.id)!.z);
+          }
+        }
+        return;
+      }
+      if (bnear && bd < 2) {
+        const p = runtime.player;
+        const bld = buildings.find((b) => b.id === bnear);
+        if (bld && Math.hypot(p.x - bld.x, p.z - bld.z) < 3.4) {
+          useGame.getState().inspect(bld.id);
+        } else if (bld) {
+          setPlayerDest(bld.x, bld.z);
+        }
+        return;
+      }
+      setPlayerDest(_hit.x, _hit.z);
+    };
+    el.addEventListener("pointerdown", onClick);
+    const onWheel = (ev: WheelEvent) => {
+      ev.preventDefault();
+      runtime.zoomBias = Math.max(-16, Math.min(18, runtime.zoomBias - ev.deltaY * 0.02));
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => {
+      el.removeEventListener("pointerdown", onClick);
+      el.removeEventListener("wheel", onWheel);
+    };
+  }, [camera, gl]);
+  return null;
+}
+
+function Actors() {
+  const dwarves = useGame((s) => s.dwarves);
+  const settlement = useGame((s) => s.settlement);
+  const spec = WORLD_STAGES.find((w) => w.id === settlement) ?? WORLD_STAGES[0];
+  const playerBody = runtime.player;
+  const group = useRef<THREE.Group>(null);
+
+  useFrame(() => {
+    const g = group.current;
+    if (!g) return;
+    const y = groundHeight(playerBody.x, playerBody.z);
+    g.position.set(playerBody.x, y, playerBody.z);
+    g.rotation.y = 0;
+  });
+
+  const dwarfNodes = useMemo(() => dwarves, [dwarves]);
+
+  return (
+    <>
+      <group ref={group}>
+        <DwarfSprite
+          isPlayer
+          scale={runtime.zone === "mine" ? spec.mineScale * 1.15 : spec.townScale}
+          body={playerBody}
+          dwarf={{
+            id: "player",
+            clothes: "#241c18",
+            beard: "#6a3a28",
+            skin: "#c4a07a",
+            helmet: false,
+          }}
+        />
+      </group>
+      <Workstations scale={spec.townScale} mineScale={spec.mineScale} />
+      {dwarfNodes.map((d) => (
+        <DwarfActor key={d.id} dwarf={d} specScale={spec} />
+      ))}
+    </>
+  );
+}
+
+function DwarfActor({
+  dwarf,
+  specScale,
+}: {
+  dwarf: Dwarf;
+  specScale: (typeof WORLD_STAGES)[number];
+}) {
+  const ref = useRef<THREE.Group>(null);
+  useFrame(() => {
+    const b = runtime.dwarves.get(dwarf.id);
+    const g = ref.current;
+    if (!b || !g) return;
+    const y = groundHeight(b.x, b.z);
+    const state = useGame.getState();
+    const assignedJob = state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId;
+    const consulting = Boolean(passiveWorkstation(dwarfAppearance(dwarf.id), assignedJob, b));
+    const station = activeWorkstation(dwarfAppearance(dwarf.id),
+      assignedJob, b.anim === "work" || consulting, state.dayResolved, state.day)?.target;
+    // Register the actor to the persistent station, independent of approach tolerance.
+    g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
+      station ? station.targetZ : b.z);
+    g.rotation.y = b.yaw;
+    const mine = zoneAt(b.x, b.z) === "mine";
+    const s = mine ? specScale.mineScale : specScale.townScale;
+    g.scale.setScalar(s);
+  });
+  const body = runtime.dwarves.get(dwarf.id);
+  if (!body) return null;
+  return (
+    <group ref={ref}>
+      <DwarfSprite dwarf={dwarf} body={body} scale={1} />
+    </group>
+  );
+}
+
+function Lights() {
+  return (
+    <>
+      <color attach="background" args={["#202936"]} />
+      <fog attach="fog" args={["#252d39", 65, 150]} />
+      <hemisphereLight args={["#bbcbdc", "#665745", 1.65]} />
+      <ambientLight intensity={0.65} color="#8d8175" />
+      <directionalLight
+        position={[-36, 38, 20]}
+        intensity={2.5}
+        color="#fff0d9"
+        castShadow
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+        shadow-bias={-0.00035}
+        shadow-normalBias={0.04}
+        shadow-camera-near={2}
+        shadow-camera-far={140}
+        shadow-camera-left={-32}
+        shadow-camera-right={32}
+        shadow-camera-top={32}
+        shadow-camera-bottom={-32}
+      />
+      <directionalLight position={[22, 18, -18]} intensity={0.65} color="#74859f" />
+    </>
+  );
+}
+
+export function GameCanvas() {
+  return (
+    <Canvas
+      orthographic
+      shadows
+      dpr={[1, 1.6]}
+      camera={{ position: [-25.7, 23.45, 27.6], zoom: 34, near: 0.1, far: 280 }}
+      gl={{ antialias: false, powerPreference: "high-performance" }}
+      onCreated={({ gl, scene }) => {
+        gl.setClearColor("#202936");
+        gl.toneMapping = THREE.ACESFilmicToneMapping;
+        gl.toneMappingExposure = 1.18;
+        gl.shadowMap.enabled = true;
+        gl.shadowMap.type = THREE.PCFSoftShadowMap;
+        gl.outputColorSpace = THREE.SRGBColorSpace;
+        scene.fog = new THREE.Fog("#252d39", 65, 150);
+      }}
+      style={{ width: "100%", height: "100%", touchAction: "none" }}
+    >
+      <Lights />
+      <IsoCamera />
+      <Systems />
+      <GroundPick />
+      <Suspense fallback={null}>
+        <WorldMatsProvider>
+          <SpriteBankProvider>
+            <Environment />
+            <Actors />
+          </SpriteBankProvider>
+        </WorldMatsProvider>
+      </Suspense>
+      <EffectComposer multisampling={0} enableNormalPass={false}>
+        <SMAA />
+        <Bloom luminanceThreshold={0.58} intensity={0.35} mipmapBlur luminanceSmoothing={0.22} />
+        <Vignette eskil={false} offset={0.2} darkness={0.28} />
+      </EffectComposer>
+    </Canvas>
+  );
+}
+
+declare global {
+  interface Window {
+    render_game_to_text?: () => string;
+    advanceTime?: (ms: number) => void;
+    __controlsTest?: {
+      getYaw: () => number;
+      getFacing?: () => number;
+      getSpeed: () => number;
+      getPos?: () => { x: number; z: number; zone: string };
+      setKeys?: (codes: string[]) => void;
+      setDest?: (x: number, z: number) => void;
+      teleport?: (x: number, z: number) => void;
+      setDwarfDest?: (id: string, x: number, z: number) => void;
+      teleportDwarf?: (id: string, x: number, z: number) => void;
+      setZoomBias?: (z: number) => void;
+      getCameraAngles?: () => { azimuth: number; elevation: number };
+      projectDwarfSprite?: (id: string, point: [number, number], reference?: [number, number, number]) => SpritePointReview | null;
+    };
+  }
+}

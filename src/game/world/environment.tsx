@@ -41,7 +41,8 @@ export function Environment() {
       <Terrain />
       <PathClutter />
       <Crate x={-7} z={0} s={0.65} />
-      <Crate x={10} z={10} s={0.8} />
+      {/* Keep Borrin's desk position clear for seated and standing consultation. */}
+      <Crate x={12} z={10.5} s={0.8} />
 
       <Dorm x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
       <Forge x={10} z={-7} rot={-0.2} condition={forge?.condition ?? 0.22} />
@@ -73,7 +74,7 @@ export function Environment() {
       <Crate x={7.15} z={8.55} s={0.72} rot={0.25} />
       <Crate x={7.5} z={8.95} s={0.6} rot={0.25} />
       <Crate x={7.2} z={-3.2} s={0.6} rot={0.5} />
-      <Barrel x={-9.4} z={4.8} />
+      <Barrel x={-11.8} z={6.8} />
       <Barrel x={15.2} z={5.2} />
       <Sack x={4.8} z={5.4} rot={0.4} />
       <Sack x={-7.4} z={5.5} rot={-0.2} />

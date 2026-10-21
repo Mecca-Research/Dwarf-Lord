@@ -4,14 +4,14 @@
   "title": "Count coins",
   "reference": "public/sprites/Borrin/work-references/04-count-coins.png",
   "beats": [
-    "hand reaches for copper coin stack",
-    "continuous midway transition from hand reaches for copper coin stack toward pick up one coin",
-    "pick up one coin",
-    "continuous midway transition from pick up one coin toward place coin beside counted silver stack",
-    "place coin beside counted silver stack",
-    "continuous midway transition from place coin beside counted silver stack toward return hand toward uncounted coins",
-    "return hand toward uncounted coins",
-    "continuous midway transition from return hand toward uncounted coins toward hand reaches for copper coin stack"
+    "already-gripped copper coin held low near stacks",
+    "lift coin midway toward chest",
+    "inspect raised coin",
+    "rotate wrist to inspect edge",
+    "lower held coin beside ledger",
+    "rotate coin near ledger while reading value",
+    "finish counting with coin above tabletop",
+    "completed hold retaining one counted coin"
   ],
   "kind": "work",
   "direction": "reference",
@@ -19,6 +19,28 @@
   "frameCount": 8,
   "status": "pending",
   "destination": "public/sprites/Borrin/motion/count-coins/reference",
-  "prompt": "Use case: identity-preserve. Create EIGHT consecutive animation frames in FOUR columns and TWO rows, equal cells, row-major order. Genuine transparent RGBA background. Prefer 2560x1280. Exactly eight full-body complete sprites, no labels or scenery. Preserve exact reference character face, hair, clothing, physique, camera, tools. Same scale in every cell; large transparent gutters. Detailed semi-realistic game render. Fixed orthographic camera. Exactly TWO arms and TWO hands, coherent joints. Character: Borrin. Action: Count coins. Direction: reference. Preserve reference workstation and tool. Fixed camera; stationary furniture. True intermediate poses, not duplicates. For inspection/repair continue purposeful hand movement throughout. Eight poses: 1. hand reaches for copper coin stack | 2. continuous midway transition from hand reaches for copper coin stack toward pick up one coin | 3. pick up one coin | 4. continuous midway transition from pick up one coin toward place coin beside counted silver stack | 5. place coin beside counted silver stack | 6. continuous midway transition from place coin beside counted silver stack toward return hand toward uncounted coins | 7. return hand toward uncounted coins | 8. continuous midway transition from return hand toward uncounted coins toward hand reaches for copper coin stack",
-  "sourceName": "exec-a9dedc00-eb2f-4365-85a9-105435e4eee6.png"
+  "prompt": "Reauthor this exact Borrin count-coins reference into a FINITE ONE-COIN COUNT/INSPECTION action. Replace the ambiguous pickup/deposit story with ONE already-gripped copper coin retained throughout all eight frames. Keep the same senior grey dwarf with spectacles, two grey beard braids, ivory rolled sleeves, dark embroidered waistcoat and red scarf, fixed seated pose, camera, desk/chair, open ledger, quill/inkpot, purse and all static stacks exactly the same. One coin, gripped in anatomical RIGHT hand/viewer LEFT from start to finish; no depositing, picking up, dropping, hand switch, extra coin or stack-count change anywhere. The copper-colored coin is a small round disk, same size and color every frame, always physically between right thumb/index. Eight distinct phases in a 4column/2row transparent sheet, generous clear margins, identical body scale:0 low coin hold near source stacks,1 lift halfway toward chest,2 raised copper coin inspection,3 rotate wrist to see the coin edge,4 bring still-gripped coin lower beside ledger,5 small careful rotation near ledger while reading its value,6 finish counting and lower the still-gripped coin nearer the tabletop without touching it down,7 relaxed completed hold still retaining ONE copper coin above the table beside the ledger. Right hand clearly holds coin in every pose; left hand remains on ledger throughout. Distinct purposeful wrist, elbow and coin orientation changes, stable shoulders/feet and fixed furniture. Do not place any extra copper coin on the ledger or next to the silver piles. The desk layout and number of static coins remain invariant. Render all8 complete dwarves and desks with exact same semi-realistic detailed materials and fixed camera as input. Genuine transparent alpha background, no labels or shadows. This is one finite cosmetic counting/inspection gesture, not a repeat deposit, spending, minting or currency conversion.\n",
+  "sourceName": "exec-a9dedc00-eb2f-4365-85a9-105435e4eee6.png",
+  "editHistory": [
+    {
+      "key": "borrin-coin-deposit40",
+      "input": "authoring-inputs/coin-before40.png",
+      "sha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+      "output": "authoring-inputs/coin-deposit40-rejected.png",
+      "outputSha256": "1f3007e3522a8c0db67bb07b146aff4243e327f2488ff08b50a220b7d65ad7fd",
+      "prompt": "Correct ONLY the coin and right-hand ownership in this exact eight-pose Borrin seated count-coins animation sheet, keeping all eight existing distinct arm positions, character appearance, camera, scale, chairs, fixed desk geometry, ledger pages, inkpot/quill, purse, silver piles and 4columns/2rows layout. Old grey senior dwarf with spectacles, twin grey beard tips, ivory sleeves, dark embroidered waistcoat and red scarf. Maintain the same desk/book/coin locations across every pose. Reading order indices0..7. Anatomical RIGHT hand is viewer LEFT and handles just ONE copper coin.0 reaches toward uncounted copper pile,1 grasps its top coin,2 raises that ONE coin,3 brings it toward the empty spot immediately left of the ledger and right of the silver stacks,4 PLACES the one coin flat on that tabletop spot and opens fingers. In5 fingers lift visibly EMPTY from above the newly deposited coin;6 returns visibly EMPTY toward source pile without touching or lifting a second coin;7 hovers visibly EMPTY above source pile, final held completed pose. Crucial bottom row5/6/7 have NO coin attached to, under or between the fingertips. Render clearly separated open thumb/index/middle fingertips in5/6/7, without any gold/copper disks in those hands. The deposited ONE copper coin remains flat at the identical destination position in4,5,6,7, never duplicates, moves or vanishes. Source pile is one coin lower after pickup, not replenished. Left hand stays on the ledger, book stays open. Distinct purposeful phases, fixed furniture, no redraw of clothes, head, boots, desk items or camera. Complete bodies, desks and coins with wide transparent gutters, no labels or shadows, genuine transparent alpha background.",
+      "decision": "unselected",
+      "reason": "Bottom returning fingers still retain a copper-colored disk after the apparent placement. No deposit continuity acceptance."
+    },
+    {
+      "key": "borrin-coin-held40",
+      "input": "authoring-inputs/coin-before40.png",
+      "sha256": "b823b017c9974b385937b36e8491b0ce312f26063b1aa2a1a51da9859fa62109",
+      "output": "authoring-inputs/coin-held40.png",
+      "outputSha256": "d7f3906a90aee645e417a1aec02366cd5caefb472c579d85f4a4f221495dd8fa",
+      "prompt": "Reauthor this exact Borrin count-coins reference into a FINITE ONE-COIN COUNT/INSPECTION action. Replace the ambiguous pickup/deposit story with ONE already-gripped copper coin retained throughout all eight frames. Keep the same senior grey dwarf with spectacles, two grey beard braids, ivory rolled sleeves, dark embroidered waistcoat and red scarf, fixed seated pose, camera, desk/chair, open ledger, quill/inkpot, purse and all static stacks exactly the same. One coin, gripped in anatomical RIGHT hand/viewer LEFT from start to finish; no depositing, picking up, dropping, hand switch, extra coin or stack-count change anywhere. The copper-colored coin is a small round disk, same size and color every frame, always physically between right thumb/index. Eight distinct phases in a 4column/2row transparent sheet, generous clear margins, identical body scale:0 low coin hold near source stacks,1 lift halfway toward chest,2 raised copper coin inspection,3 rotate wrist to see the coin edge,4 bring still-gripped coin lower beside ledger,5 small careful rotation near ledger while reading its value,6 finish counting and lower the still-gripped coin nearer the tabletop without touching it down,7 relaxed completed hold still retaining ONE copper coin above the table beside the ledger. Right hand clearly holds coin in every pose; left hand remains on ledger throughout. Distinct purposeful wrist, elbow and coin orientation changes, stable shoulders/feet and fixed furniture. Do not place any extra copper coin on the ledger or next to the silver piles. The desk layout and number of static coins remain invariant. Render all8 complete dwarves and desks with exact same semi-realistic detailed materials and fixed camera as input. Genuine transparent alpha background, no labels or shadows. This is one finite cosmetic counting/inspection gesture, not a repeat deposit, spending, minting or currency conversion.\n",
+      "method": "Built-in whole-sheet reauthoring; complete poses, no limb or coin pixel edits.",
+      "decision": "Selected finite count/inspection story with one already-gripped coin retained0-7. No deposit, minting, spending or stack conversion is depicted or certified."
+    }
+  ]
 }

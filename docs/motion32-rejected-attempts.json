@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "character": "Laborer",
+      "file": "public/sprites/Laborer/motion/walk/back-left/authoring-inputs/rejected-motion32.png",
+      "sha256": "58c9da4e94b76e48f528f4c418e15a9203b6c67d21b240ae59af3bd5b44110aa",
+      "reference": "public/sprites/Laborer/motion/walk/back-left/authoring-inputs/rejected-motion32-reference.png",
+      "referenceSha256": "d13d616e8fb18c931e93746da1659466253a771cce6a29fb2701612ad5945921",
+      "prompt": "Use case: identity-preserve. Edit target is this exact detailed bald dwarf Laborer rear-left walking pose. Generate ONE complete full-body transparent sprite, same camera facing upper-left, same leather waistcoat, rolled cream sleeves, dark trousers and buckle boots, same body proportions and render quality. Correct the second-half heel-contact: the near anatomical LEFT leg (the leg emerging toward the left edge of the image from left hip) must extend forward toward upper-left, knee slightly straight, boot toe aimed upper-left with heel contacting ground ahead of torso. The far RIGHT leg trails back toward lower-right with heel raised and toe touching behind. The current near leg instead trails lower-right and must change. Separate the two feet visibly: near left boot at image-left forward, far right boot at image-right rear. Far right arm swings slightly forward upper-left, near left arm slightly back lower-right, opposite the leading left leg. Preserve head, torso, face identity, stocky dwarven proportions, materials and lighting. No scenery, floor, shadow, text, tools, extra limbs. Genuine alpha transparency.",
+      "selected": false,
+      "reason": "Repeated the existing leading leg rather than reversing the near/far contact; superseded by accepted contact32."
+    },
+    {
+      "character": "Elder",
+      "file": "public/sprites/Elder/motion/walk/back/authoring-inputs/rejected-motion32.png",
+      "sha256": "0daead27e8113811be052d432e568ba282d0d30cb5d18cb5de1830bbb502fdb3",
+      "reference": "public/sprites/Elder/motion/walk/back/authoring-inputs/rejected-motion32-reference.png",
+      "referenceSha256": "f238e2c423e408efb961b428592fcac52b9b6234748ccfcc37f33fb4a992e014",
+      "prompt": "Use case identity-preserve. Edit this exact Elder rear-facing walking sprite sheet to correct planted FOOT travel together with rigid cane. Preserve exact bald Elder, leather crossed shoulder straps and satchel, olive fur-trim coat, boots, wood cane in RIGHT hand (image right), orthographic rear view, eight poses 4 columns2rows, true transparent background, no labels/scenery. Maintain upper-body camera and proportions. Critical first half top row:0 anatomical LEFT boot forward away from camera, heel at higher image depth roughly y520 on a640-high cell, right trailing toe near floor y610; cane tip also forward away at y500.1 left supports near y560 while right heel lifts and foot passes airborne, cane point y550;2 left planted foot behind torso near y600, right foot airborne reaching forward at y510, cane point y600.3 RIGHT foot reaches forward airborne y510, left heel lifts with toe at y610, cane releases rising. Opposite half bottomrow:4 RIGHT boot heel contacts ahead highery520, LEFT trailing toe y610, cane lifts and begins forward recovery;5 right supports near y560 left heel lifted, cane swings forward low elbow;6 right supports near y600 left foot airborne ahead y510, cane tip is forward airborne at y480;7 LEFT foot reaches ahead AIRBORNE y510 right trailing toe supports y610, cane settles toward first planty500. The foot that supports does NOT remain at same screen height: it travels from distant forward high image position to near rear low image position as body moves over it. No repeated same leading leg in both halves, no floating planted foot, cane stays same length and grip, no elevated elbow above shoulder. Eight distinct complete full-body silhouettes, raised legs visibly airborne. Same semi-realistic detailed rendered identity, feet fit within cells.",
+      "selected": false,
+      "reason": "Repeated leading-leg patterns and insufficient coordinated foot/cane travel. No authored pose from this sheet selected."
+    }
+  ],
+  "additionalUnselectedAttempt": {
+    "file": "exec-47cb722b-4813-4e42-8431-c7a30b9a78fb.png",
+    "sha256": "6e65eb2a6166d8a92175e68e5bea1647b24348a0ecbe1af726301b7379eddfe1",
+    "reason": "Near-left airborne reach improved, but arm swings with leading leg and is exaggerated. Not selected; first-half reach remains unfinished."
+  }
+}
