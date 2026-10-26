@@ -23,7 +23,7 @@ import { activeWorkstation, passiveWorkstation, workAssignmentTarget } from "./w
 import { dwarfAppearance } from "./dwarf-appearances";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
-import { navigationTarget, buildingApproach, buildingCenter } from "./landscape";
+import { navigationTarget } from "./landscape";
 
 const _look = new THREE.Vector3();
 const _cam = new THREE.Vector3();
@@ -35,15 +35,7 @@ const ndc = new THREE.Vector2();
 function bindKeys() {
   const down = (e: KeyboardEvent) => {
     runtime.keys.add(e.code);
-    // Keep a tap until the next frame, even when keyup arrives first.
-    if (
-      (e.code === "KeyE" || e.code === "Enter") &&
-      !e.repeat &&
-      !useGame.getState().dialogue &&
-      !useGame.getState().overlay
-    )
-      runtime.interactRequested = true;
-    if (e.code === "KeyV" && !e.repeat) runtime.valleyView = !runtime.valleyView;
+    if(e.code==="KeyV"&&!e.repeat)runtime.valleyView=!runtime.valleyView;
     if (
       [
         "KeyW",
@@ -61,10 +53,7 @@ function bindKeys() {
     }
   };
   const up = (e: KeyboardEvent) => runtime.keys.delete(e.code);
-  const blur = () => {
-    runtime.keys.clear();
-    runtime.interactRequested = false;
-  };
+  const blur = () => runtime.keys.clear();
   window.addEventListener("keydown", down, { passive: false });
   window.addEventListener("keyup", up);
   window.addEventListener("blur", blur);
@@ -89,25 +78,13 @@ function IsoCamera() {
     const zone = zoneAt(p.x, p.z);
     runtime.zone = zone;
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
-    const vista = runtime.valleyView && zone !== "mine",
-      cameraDt = Math.min(dt, 0.5);
-    const targetZoom = vista
-      ? 2.55
-      : (zone === "mine" ? spec.cameraZoom * 0.84 : spec.cameraZoom) + runtime.zoomBias;
-    runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-cameraDt * 3));
-    const dist = vista ? 360 : 38,
-      az = vista ? runtime.cameraAzimuth * 0.55 : runtime.cameraAzimuth,
-      el = vista ? 0.45 : runtime.cameraElev;
-    const focusX = vista ? 5 : p.x + 2,
-      focusZ = vista ? -65 : p.z - 8,
-      focusY = vista ? 62 : 2.0;
-    _cam.set(
-      focusX + dist * Math.sin(az) * Math.cos(el),
-      focusY + dist * Math.sin(el) + 1,
-      focusZ + dist * Math.cos(az) * Math.cos(el),
-    );
-    camera.position.lerp(_cam, 1 - Math.exp(-cameraDt * 4));
-    _look.set(focusX, focusY, focusZ);
+    const vista=runtime.valleyView&&zone!=="mine",cameraDt=Math.min(dt,.5);
+    const targetZoom=vista?3.7:(zone==="mine"?spec.cameraZoom*.84:spec.cameraZoom)+runtime.zoomBias;
+    runtime.zoom+=(targetZoom-runtime.zoom)*(1-Math.exp(-cameraDt*3));
+    const dist=vista?300:38,az=vista?runtime.cameraAzimuth*.55:runtime.cameraAzimuth,el=vista?.48:runtime.cameraElev;
+    const focusX=vista?5:p.x,focusZ=vista?-57:p.z,focusY=vista?37:1.15;
+    _cam.set(focusX+dist*Math.sin(az)*Math.cos(el),focusY+dist*Math.sin(el)+1,focusZ+dist*Math.cos(az)*Math.cos(el));
+    camera.position.lerp(_cam,1-Math.exp(-cameraDt*4));_look.set(focusX,focusY,focusZ);
     camera.lookAt(_look);
     const cam = camera as THREE.OrthographicCamera;
     cam.zoom = runtime.zoom * (size.height / 720);
@@ -119,7 +96,6 @@ function IsoCamera() {
 }
 
 function Systems() {
-  const getThree = useThree((s) => s.get);
   const dwarves = useGame((s) => s.dwarves);
   const dialogue = useGame((s) => s.dialogue);
   const joy = useGame((s) => s.mobileJoy);
@@ -147,20 +123,6 @@ function Systems() {
       getFacing: () => runtime.player.facing,
       getSpeed: () => runtime.player.speed,
       getPos: () => ({ x: runtime.player.x, z: runtime.player.z, zone: runtime.zone }),
-      getCampaignState: () => {
-        const s = useGame.getState();
-        return {
-          day: s.day,
-          treasury: s.treasury,
-          settlement: s.settlement,
-          inventory: s.inventory,
-        };
-      },
-      projectWorld: (x: number, y: number, z: number) => {
-        const { camera, size } = getThree(),
-          point = new THREE.Vector3(x, y, z).project(camera);
-        return { x: ((point.x + 1) * size.width) / 2, y: ((1 - point.y) * size.height) / 2 };
-      },
       setKeys: (codes: string[]) => {
         runtime.keys.clear();
         for (const c of codes) runtime.keys.add(c);
@@ -182,26 +144,15 @@ function Systems() {
       },
       teleportDwarf: (id: string, x: number, z: number) => {
         const body = runtime.dwarves.get(id);
-        if (body) {
-          body.x = x;
-          body.z = z;
-          body.dest = null;
-          body.anim = "idle";
-          body.speed = 0;
-        }
+        if (body) { body.x = x; body.z = z; body.dest = null; body.anim = "idle"; body.speed = 0; }
       },
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
       },
-      setValleyView: (value: boolean) => {
-        runtime.valleyView = value;
-      },
+      setValleyView: (value:boolean) => {runtime.valleyView=value;},
       getCameraAngles: () => ({ azimuth: runtime.cameraAzimuth, elevation: runtime.cameraElev }),
-      projectDwarfSprite: (
-        id: string,
-        point: [number, number],
-        reference?: [number, number, number],
-      ) => spritePointReviewers.get(id)?.(point, reference) ?? null,
+      projectDwarfSprite: (id: string, point: [number, number], reference?: [number, number, number]) =>
+        spritePointReviewers.get(id)?.(point, reference) ?? null,
     };
     window.__controlsTest = probe;
     window.render_game_to_text = () =>
@@ -212,12 +163,9 @@ function Systems() {
         zone: runtime.zone,
         prompt: useGame.getState().prompt,
         dialogue: useGame.getState().dialogue,
-        dwarves: useGame.getState().dwarves.map((d) => ({
-          id: d.id,
-          ...runtime.dwarves.get(d.id),
-          workMotion: npcWorkDiagnostics.get(d.id),
-          motion: npcMotionDiagnostics.get(d.id),
-        })),
+        dwarves: useGame
+          .getState()
+          .dwarves.map((d) => ({ id: d.id, ...runtime.dwarves.get(d.id), workMotion: npcWorkDiagnostics.get(d.id), motion: npcMotionDiagnostics.get(d.id) })),
       });
     window.advanceTime = (ms: number) => {
       if (!useGame.getState().playing || useGame.getState().dialogue) return;
@@ -233,7 +181,6 @@ function Systems() {
   useFrame((state, dt) => {
     if (!playing || dialogue) {
       runtime.player.speed = 0;
-      runtime.interactRequested = false;
       return;
     }
     const d = Math.min(dt, 0.1);
@@ -261,8 +208,7 @@ function Systems() {
         }
       }
       for (const bld of buildings) {
-        const approach = buildingApproach(bld);
-        const dist = Math.hypot(p.x - approach.x, p.z - approach.z);
+        const dist = Math.hypot(p.x - bld.x, p.z - bld.z);
         if (dist < best && dist < 3.2) {
           best = dist;
           id = bld.id;
@@ -291,8 +237,7 @@ function Systems() {
       if (nextPrompt !== useGame.getState().prompt) setPrompt(nextPrompt);
     }
 
-    if (runtime.interactRequested || runtime.keys.has("KeyE") || runtime.keys.has("Enter")) {
-      runtime.interactRequested = false;
+    if (runtime.keys.has("KeyE") || runtime.keys.has("Enter")) {
       runtime.keys.delete("KeyE");
       runtime.keys.delete("Enter");
       interact();
@@ -343,11 +288,10 @@ function Systems() {
     if (usingStick) p.dest = null;
 
     if (!usingStick && p.dest) {
-      const waypoint = navigationTarget(p.x, p.z, p.dest);
-      const dx = waypoint.x - p.x,
-        dz = waypoint.z - p.z;
+      const waypoint=navigationTarget(p.x,p.z,p.dest);
+      const dx=waypoint.x-p.x,dz=waypoint.z-p.z;
       const dist = Math.hypot(dx, dz);
-      if (Math.hypot(p.dest.x - p.x, p.dest.z - p.z) < 0.35) p.dest = null;
+      if (Math.hypot(p.dest.x-p.x,p.dest.z-p.z)<.35) p.dest=null;
       else {
         mx = dx / dist;
         mz = dz / dist;
@@ -377,10 +321,9 @@ function Systems() {
       const speed = 2.7;
       p.speed = speed;
       const moved = resolveMove(p.x, p.z, mx * speed * dt, mz * speed * dt, 0.5);
-      p.speed = Math.hypot(moved.x - p.x, moved.z - p.z) / Math.max(dt, 1e-6);
       p.x = moved.x;
       p.z = moved.z;
-      p.anim = p.speed > 0.05 ? "walk" : "idle";
+      p.anim = "walk";
     } else {
       p.speed = 0;
       p.anim = "idle";
@@ -397,33 +340,22 @@ function Systems() {
         b.speed = 0;
         continue;
       }
-      if (
-        dayResolved &&
-        dw.assignedJobId &&
-        !(expedition?.status === "out" && expedition.dwarfIds.includes(dw.id))
-      ) {
-        b.dest = null;
-        b.speed = 0;
-        b.anim = dw.sitOnStart ? "sit" : "idle";
+      if (dayResolved && dw.assignedJobId && !(expedition?.status === "out" && expedition.dwarfIds.includes(dw.id))) {
+        b.dest = null; b.speed = 0; b.anim = dw.sitOnStart ? "sit" : "idle";
         continue;
       }
       if (expedition?.status === "out" && expedition.dwarfIds.includes(dw.id)) {
         b.dest = { x: 8, z: -42 };
       }
       if (dw.assignedJobId && !b.dest) {
-        const job = workAssignmentTarget(
-          dwarfAppearance(dw.id),
-          dw.assignedJobId,
-          useGame.getState().day,
-        );
+        const job = workAssignmentTarget(dwarfAppearance(dw.id), dw.assignedJobId, useGame.getState().day);
         if (job) b.dest = { x: job.targetX, z: job.targetZ };
       }
       if (b.dest) {
-        const waypoint = navigationTarget(b.x, b.z, b.dest);
-        const dx = waypoint.x - b.x,
-          dz = waypoint.z - b.z;
+        const waypoint=navigationTarget(b.x,b.z,b.dest);
+        const dx=waypoint.x-b.x,dz=waypoint.z-b.z;
         const dist = Math.hypot(dx, dz);
-        if (Math.hypot(b.dest.x - b.x, b.dest.z - b.z) < 0.5) {
+        if (Math.hypot(b.dest.x-b.x,b.dest.z-b.z)<.5) {
           b.dest = null;
           b.anim = dw.assignedJobId ? "work" : dw.sitOnStart ? "sit" : "idle";
           b.speed = 0;
@@ -455,54 +387,18 @@ function Systems() {
 }
 
 function GroundPick() {
-  const { camera, gl, scene } = useThree();
+  const { camera, gl } = useThree();
   useEffect(() => {
     const el = gl.domElement;
     const onClick = (ev: PointerEvent) => {
       if (useGame.getState().dialogue) return;
-      if (
-        useGame.getState().overlay ||
-        (runtime.valleyView && zoneAt(runtime.player.x, runtime.player.z) !== "mine")
-      )
-        return;
+      if (useGame.getState().overlay || (runtime.valleyView && zoneAt(runtime.player.x, runtime.player.z) !== "mine")) return;
       const rect = el.getBoundingClientRect();
       ndc.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
       ndc.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
       ray.setFromCamera(ndc, camera);
-      const underground = zoneAt(runtime.player.x, runtime.player.z) === "mine";
-      if (!underground) {
-        const mouth = scene.getObjectByName("mine-entry-hit");
-        if (mouth && ray.intersectObject(mouth).length) {
-          setPlayerDest(8, -30);
-          return;
-        }
-        const roots: THREE.Object3D[] = [];
-        scene.traverse((object) => {
-          if (object.userData.buildingId) roots.push(object);
-        });
-        const hit = ray.intersectObjects(roots, true)[0];
-        if (hit) {
-          let object: THREE.Object3D | null = hit.object;
-          while (object && !object.userData.buildingId) object = object.parent;
-          const bld = useGame
-            .getState()
-            .buildings.find((b) => b.id === object?.userData.buildingId);
-          if (bld) {
-            const point = buildingApproach(bld);
-            if (Math.hypot(runtime.player.x - point.x, runtime.player.z - point.z) < 3.4)
-              useGame.getState().inspect(bld.id);
-            else setPlayerDest(point.x, point.z);
-            return;
-          }
-        }
-      }
-      const ground = scene.getObjectByName(
-        underground ? "mine-excavated-floor" : "continuous-alpine-valley",
-      );
-      const groundHit = ground && ray.intersectObject(ground)[0];
-      if (groundHit) _hit.copy(groundHit.point);
-      else if (!ray.ray.intersectPlane(plane, _hit)) return;
-      if (!underground && _hit.z < -26) return;
+      const ok = ray.ray.intersectPlane(plane, _hit);
+      if (!ok) return;
       const dwarves = useGame.getState().dwarves;
       let nearest: string | null = null;
       let nd = 2.2;
@@ -519,8 +415,7 @@ function GroundPick() {
       let bnear: string | null = null;
       let bd = 2.4;
       for (const bld of buildings) {
-        const center = buildingCenter(bld);
-        const dist = Math.hypot(_hit.x - center.x, _hit.z - center.z);
+        const dist = Math.hypot(_hit.x - bld.x, _hit.z - bld.z);
         if (dist < bd) {
           bd = dist;
           bnear = bld.id;
@@ -547,11 +442,10 @@ function GroundPick() {
       if (bnear && bd < 2) {
         const p = runtime.player;
         const bld = buildings.find((b) => b.id === bnear);
-        if (bld && Math.hypot(p.x - buildingApproach(bld).x, p.z - buildingApproach(bld).z) < 3.4) {
+        if (bld && Math.hypot(p.x - bld.x, p.z - bld.z) < 3.4) {
           useGame.getState().inspect(bld.id);
         } else if (bld) {
-          const approach = buildingApproach(bld);
-          setPlayerDest(approach.x, approach.z);
+          setPlayerDest(bld.x, bld.z);
         }
         return;
       }
@@ -567,7 +461,7 @@ function GroundPick() {
       el.removeEventListener("pointerdown", onClick);
       el.removeEventListener("wheel", onWheel);
     };
-  }, [camera, gl, scene]);
+  }, [camera, gl]);
   return null;
 }
 
@@ -626,24 +520,16 @@ function DwarfActor({
     if (!b || !g) return;
     const y = groundHeight(b.x, b.z);
     const state = useGame.getState();
-    const assignedJob = state.dwarves.find((d) => d.id === dwarf.id)?.assignedJobId;
+    const assignedJob = state.dwarves.find(d => d.id === dwarf.id)?.assignedJobId;
     const consulting = Boolean(passiveWorkstation(dwarfAppearance(dwarf.id), assignedJob, b));
-    const station = activeWorkstation(
-      dwarfAppearance(dwarf.id),
-      assignedJob,
-      b.anim === "work" || consulting,
-      state.dayResolved,
-      state.day,
-    )?.target;
+    const station = activeWorkstation(dwarfAppearance(dwarf.id),
+      assignedJob, b.anim === "work" || consulting, state.dayResolved, state.day)?.target;
     // Register the actor to the persistent station, independent of approach tolerance.
-    g.position.set(
-      station ? station.targetX : b.x,
-      station ? groundHeight(station.targetX, station.targetZ) : y,
-      station ? station.targetZ : b.z,
-    );
+    g.position.set(station ? station.targetX : b.x, station ? groundHeight(station.targetX, station.targetZ) : y,
+      station ? station.targetZ : b.z);
     g.rotation.y = b.yaw;
     const mine = zoneAt(b.x, b.z) === "mine";
-    g.visible = mine === (zoneAt(runtime.player.x, runtime.player.z) === "mine");
+    g.visible=mine===(zoneAt(runtime.player.x,runtime.player.z)==="mine");
     const s = mine ? specScale.mineScale : specScale.townScale;
     g.scale.setScalar(s);
   });
@@ -657,57 +543,27 @@ function DwarfActor({
 }
 
 function Lights() {
-  const { scene } = useThree();
-  const hemisphere = useRef<THREE.HemisphereLight>(null),
-    ambient = useRef<THREE.AmbientLight>(null);
-  const sun = useRef<THREE.DirectionalLight>(null),
-    fill = useRef<THREE.DirectionalLight>(null),
-    blend = useRef(0);
-  const outside = useMemo(() => new THREE.Color("#a1b1ba"), []),
-    inside = useMemo(() => new THREE.Color("#080c11"), []);
-  useFrame((_, dt) => {
-    const target = zoneAt(runtime.player.x, runtime.player.z) === "mine" ? 1 : 0;
-    blend.current = THREE.MathUtils.damp(blend.current, target, 5, Math.min(dt, 0.5));
-    const t = blend.current;
-    hemisphere.current!.intensity = THREE.MathUtils.lerp(1.45, 0.32, t);
-    ambient.current!.intensity = THREE.MathUtils.lerp(0.32, 0.2, t);
-    sun.current!.intensity = THREE.MathUtils.lerp(2.65, 0.06, t);
-    fill.current!.intensity = THREE.MathUtils.lerp(0.55, 0.08, t);
-    const fog = scene.fog as THREE.Fog,
-      vista = runtime.valleyView && target === 0;
-    if (fog) {
-      fog.color.copy(outside).lerp(inside, t);
-      fog.near = vista ? 330 : THREE.MathUtils.lerp(95, 38, t);
-      fog.far = vista ? 650 : THREE.MathUtils.lerp(290, 105, t);
-    }
-    if (scene.background instanceof THREE.Color) scene.background.copy(outside).lerp(inside, t);
+  const {scene}=useThree();
+  const hemisphere=useRef<THREE.HemisphereLight>(null),ambient=useRef<THREE.AmbientLight>(null);
+  const sun=useRef<THREE.DirectionalLight>(null),fill=useRef<THREE.DirectionalLight>(null),blend=useRef(0);
+  const outside=useMemo(()=>new THREE.Color("#a1b1ba"),[]),inside=useMemo(()=>new THREE.Color("#080c11"),[]);
+  useFrame((_,dt)=>{
+    const target=zoneAt(runtime.player.x,runtime.player.z)==="mine"?1:0;
+    blend.current=THREE.MathUtils.damp(blend.current,target,5,Math.min(dt,.5));const t=blend.current;
+    hemisphere.current!.intensity=THREE.MathUtils.lerp(1.45,.32,t);ambient.current!.intensity=THREE.MathUtils.lerp(.32,.2,t);
+    sun.current!.intensity=THREE.MathUtils.lerp(2.65,.06,t);fill.current!.intensity=THREE.MathUtils.lerp(.55,.08,t);
+    const fog=scene.fog as THREE.Fog,vista=runtime.valleyView&&target===0;
+    if(fog){fog.color.copy(outside).lerp(inside,t);fog.near=vista?330:THREE.MathUtils.lerp(95,38,t);fog.far=vista?650:THREE.MathUtils.lerp(290,105,t);}
+    if(scene.background instanceof THREE.Color)scene.background.copy(outside).lerp(inside,t);
   });
-  return (
-    <>
-      <color attach="background" args={["#a1b1ba"]} />
-      <fog attach="fog" args={["#a1b1ba", 95, 290]} />
-      <hemisphereLight ref={hemisphere} args={["#c6dbe7", "#6a654d", 1.45]} />
-      <ambientLight ref={ambient} intensity={0.32} color="#a3aba8" />
-      <directionalLight
-        ref={sun}
-        position={[-36, 48, 14]}
-        intensity={2.65}
-        color="#fff0d4"
-        castShadow
-        shadow-mapSize-width={1024}
-        shadow-mapSize-height={1024}
-        shadow-bias={-0.00035}
-        shadow-normalBias={0.04}
-        shadow-camera-near={2}
-        shadow-camera-far={190}
-        shadow-camera-left={-66}
-        shadow-camera-right={66}
-        shadow-camera-top={66}
-        shadow-camera-bottom={-66}
-      />
-      <directionalLight ref={fill} position={[22, 18, -18]} intensity={0.55} color="#839eb2" />
-    </>
-  );
+  return <>
+    <color attach="background" args={["#a1b1ba"]}/><fog attach="fog" args={["#a1b1ba",95,290]}/>
+    <hemisphereLight ref={hemisphere} args={["#c6dbe7","#6a654d",1.45]}/><ambientLight ref={ambient} intensity={.32} color="#a3aba8"/>
+    <directionalLight ref={sun} position={[-36,48,14]} intensity={2.65} color="#fff0d4" castShadow
+      shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-bias={-.00035} shadow-normalBias={.04}
+      shadow-camera-near={2} shadow-camera-far={190} shadow-camera-left={-66} shadow-camera-right={66} shadow-camera-top={66} shadow-camera-bottom={-66}/>
+    <directionalLight ref={fill} position={[22,18,-18]} intensity={.55} color="#839eb2"/>
+  </>;
 }
 
 export function GameCanvas() {
@@ -725,7 +581,7 @@ export function GameCanvas() {
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFSoftShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#a1b1ba", 95, 290);
+        scene.fog = new THREE.Fog("#a1b1ba",95,290);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -759,20 +615,15 @@ declare global {
       getFacing?: () => number;
       getSpeed: () => number;
       getPos?: () => { x: number; z: number; zone: string };
-      projectWorld?: (x: number, y: number, z: number) => { x: number; y: number };
       setKeys?: (codes: string[]) => void;
       setDest?: (x: number, z: number) => void;
       teleport?: (x: number, z: number) => void;
       setDwarfDest?: (id: string, x: number, z: number) => void;
       teleportDwarf?: (id: string, x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
-      setValleyView?: (value: boolean) => void;
+      setValleyView?: (value:boolean) => void;
       getCameraAngles?: () => { azimuth: number; elevation: number };
-      projectDwarfSprite?: (
-        id: string,
-        point: [number, number],
-        reference?: [number, number, number],
-      ) => SpritePointReview | null;
+      projectDwarfSprite?: (id: string, point: [number, number], reference?: [number, number, number]) => SpritePointReview | null;
     };
   }
 }

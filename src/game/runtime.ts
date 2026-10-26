@@ -1,5 +1,5 @@
 import type { ZoneId } from "./types";
-import { inMine, surfaceHeight, walkable } from "./world/landscape";
+import {inMine,surfaceHeight,walkable} from "./world/landscape";
 
 export interface Body {
   x: number;
@@ -32,7 +32,6 @@ export const runtime = {
   },
   dwarves: new Map<string, Body>(),
   keys: new Set<string>(),
-  interactRequested: false,
   cameraAzimuth: -0.72,
   cameraElev: 0.6,
   valleyView: false,
@@ -53,20 +52,19 @@ export const OBSTACLES: Obstacle[] = [
   { x: 12.5, z: 1.5, r: 2.4 },
   { x: 4, z: -16, r: 1.8 },
   { x: 14, z: -22, r: 2.2 },
-  { x: -9, z: 15, r: 2.5 },
-  { x: -2, z: 17, r: 2.2 },
-  { x: 7, z: 18, r: 2.4 },
+  { x: -6, z: 7, r: 1.6 },
+  { x: -3, z: 10, r: 1.5 },
   { x: 2, z: 6.5, r: 1.4 },
 ];
 
-export function groundHeight(x: number, z: number) {
-  if (inMine(x, z)) return 0;
-  if (x > -33 && x < -22 && Math.abs(z - 11) < 1.9) return 0;
-  return surfaceHeight(x, z);
+export function groundHeight(x:number,z:number) {
+  if(inMine(x,z))return 0;
+  if(x>-33&&x<-22&&Math.abs(z-11)<1.9)return 0;
+  return surfaceHeight(x,z);
 }
 
 export function zoneAt(x: number, z: number): ZoneId {
-  if (inMine(x, z)) return "mine";
+  if (inMine(x,z)) return "mine";
   if (z < -16) return "periphery";
   if (x < -34) return "forest";
   if (x < -22) return "road";
@@ -93,10 +91,10 @@ export function resolveMove(
       nz += vz * push;
     }
   }
-  if (walkable(nx, nz, radius)) return { x: nx, z: nz };
-  if (walkable(nx, z, radius)) return { x: nx, z };
-  if (walkable(x, nz, radius)) return { x, z: nz };
-  return { x, z };
+  if(walkable(nx,nz,radius))return {x:nx,z:nz};
+  if(walkable(nx,z,radius))return {x:nx,z};
+  if(walkable(x,nz,radius))return {x,z:nz};
+  return {x,z};
 }
 
 export function camBasis(azimuth: number) {

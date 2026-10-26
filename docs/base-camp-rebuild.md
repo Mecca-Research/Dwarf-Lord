@@ -1,39 +1,39 @@
-# The mountain expedition camp
+# Alpine base camp
 
-The first stage now has a new settlement layout and full-size camp architecture: three guyed canvas sleeping tents, a larger ledger pavilion, a ruined timber barracks with exposed rafters, an open stone forge, covered stores, a canvas preparation shelter and a timber loading hoist. Broken roof sections, bedding, supplies, banners and tools make the clearing feel occupied before repairs begin.
+The opening world follows the supplied references: a small, worn camp beneath a much larger alpine range, forested lower slopes and exposed rock above the tree line. The mine begins as a rough opening with timber bracing. Its first level is a dark, open working chamber with warm pools of lantern light.
 
-The mountain foot is a continuous, fractured escarpment with a rough opening cut into the face. The primitive timber mouth and rail apron leave room for a later constructed gate. Beyond the camp, a connected alpine ridge rises above a mixed belt of spruce, fir, pine and larch. Packed slate earth, stone terraces, a creek and the timber crossing establish the base camp's surroundings.
+## Play the new area
 
-## Explore
+Walk around the existing dorm, tents, cookfire, forge, office and stores. Follow the worn northern approach past the cart and flooded shaft into the mountain. The existing limestone, iron and shaft-clearing jobs now occupy the first chamber. West of camp, the timber bridge carries the forestry route across the creek.
 
-Walk north past the damaged cart and flooded shaft, then click the black mine opening or walk through it. The same simulation continues in a substantially larger, dark first chamber. Lantern pools mark the route past braced headings, rails, the original productive workstations, an abandoned supply bay, wet ground and deeper rock faces. Rotate with **Q/R** to inspect the cutaway walls. Camera-facing upper walls lower to keep workers visible.
+Press **V** or use the mountain button for the valley overview. Press it again to return to the player. **Q/R**, wheel zoom, keyboard walking and mobile controls retain their existing roles. The entrance has an open apron for a future constructed gate; gate construction is not added in this pass.
 
-Press **V** or the mountain button for the valley overview. Press it again to return to the player. Keyboard walking, wheel zoom and mobile controls remain available. Building clicks route to a clear approach; **E** inspects nearby structures. Brief interaction taps are buffered until the next render frame.
+## World construction
 
-The rebuild applies to both a new ruins operation and a resumed camp. Old saved tent coordinates resolve to the new building approaches. Progress, condition, treasury and inventory stay in the existing save. The optional `/Dwarf-Lord-preview/` build uses a separate save slot.
+- One continuous heightfield replaces the detached ground and background mountain pieces. Blended earth, meadow, exposed bedrock and high snow use world-space mapping. Seeded conifers, talus, small camp stones and grass keep the travel lanes and station aprons clear.
+- `landscape.ts` defines the same creek, crossing, terrain heights and mine polygon for rendering and movement. Mine and forestry destinations route through the mouth and bridge. Steep estate edges, creek banks and unexcavated rock bound movement.
+- Entering the adit switches to a cutaway chamber in the same simulation. Near walls lower with camera rotation; the exterior and its occupants hide while underground. Lighting and fog change with the layer.
+- The chamber has rough walls, bracing, rail stubs, ore faces, salvage and supplies. Decorative ore and props do not create extra inventory or jobs. Procedural excavation, deeper levels and a constructed gate remain later work.
+- Original actor roots, station calibration, task playback and economic simulation remain in place. The existing 22 independent workstation variants and 14 persistent props are rechecked through six game days.
 
-## Construction and scope
+## Validation
 
-`landscape.ts` shares terrain heights, the creek crossing, mine outline and navigable approaches between the renderer and movement. The expanded first level is about 2,500 square metres, with the three original mining destinations retained. Steep estate edges, creek banks and unexcavated rock bound movement.
+`node --test scripts/world-layout.test.mjs scripts/work-assignment.test.mjs` checks all mining destinations, return routes, bridge crossings, rock/water boundaries and level station foundations. `npm test`, `npm run typecheck` and `npm run build:pages` are the repository checks.
 
-The new architecture is authored geometry, with batched timber and stone parts and gently moving canvas. Two generated WebP assets add compacted alpine earth and four conifer species; prompts, dimensions, encodings and hashes are recorded beside them in `public/art`. The earlier bedrock material remains in use.
+After a static build, run `node scripts/base-camp-playtest.mjs` with an installed Playwright Chromium. `WORLD_CHROMIUM` can select a compatible executable; `WORLD_REVIEW_OUTPUT` selects the evidence directory. The checker serves the actual Pages output, walks four routes with the game simulation, observes all 22 work variants finishing once on frame 7, checks all 14 persistent stations, and captures desktop/mobile views. Software-rendered QA is not a frame-rate benchmark.
 
-The existing character art, workstation roots, calibration, animation state machine and economic simulation are retained. New decorative ore faces do not add inventory or jobs. Gate construction, procedural excavation and additional mine levels remain future work.
+Evidence lives in [world-review/base-camp-v1](world-review/base-camp-v1). The environment dependency audit preserves the earlier animation review dates, scopes, checks, art, calibration and approval flags. It does not approve unresolved gaits, hidden contact or additional animation families.
 
-## Validation and evidence
+![Camp terrace](world-review/base-camp-v1/base-camp.webp)
 
-Run `npm test`, `npm run typecheck` and `npm run build:pages`. The layout tests cover every original mining destination, deep chamber round trips, bridge crossings, rock/water boundaries, level station foundations and all nine building approaches. Save tests check isolation of the optional preview and continuity of the main save slot.
+![Mountain basin](world-review/base-camp-v1/valley-overview.webp)
 
-After a static build, `node scripts/base-camp-playtest.mjs` exercises six routes through real game movement, a mouse click on the mine mouth, an E-key barracks inspection, all 22 workstation variants over six days, all 14 persistent stations, mobile overflow and resuming a camp with old tent coordinates. Set `WORLD_CHROMIUM` for an installed Chromium executable. `WORLD_REVIEW_MODE=visual` is a separate screenshot-only diagnostic and does not count as the full playtest.
+![Primitive entrance](world-review/base-camp-v1/mountain-entrance.webp)
 
-`node scripts/base-camp-stride-playtest.mjs` retains the original lateral contact checker and bounds for three Blacksmith strides in each direction. `node scripts/revalidate-world-v2.mjs` rebinds changed world dependencies only after those checks pass. Earlier motion scopes, dates, approval flags, art and calibration remain unchanged; this does not approve unresolved animation work.
+![First mining chamber](world-review/base-camp-v1/first-mining-level.webp)
 
-The current evidence is in [world-review/world-foundation-v2](world-review/world-foundation-v2). Earlier evidence remains in [world-review/base-camp-v1](world-review/base-camp-v1). Headless Chromium uses software rendering; these checks are not a hardware frame-rate benchmark.
+## New art
 
-![Expedition camp](world-review/world-foundation-v2/base-camp.webp)
+`public/art/alpine-spruce-v1.webp` is an alpha cutout generated with OpenAI's built-in image tool, then encoded as a 375,060-byte WebP for repeated forest instances. Its prompt, dimensions, encoding settings and SHA-256 are recorded in the adjacent JSON file. Existing character and workstation art is unchanged.
 
-![Alpine range](world-review/world-foundation-v2/valley-overview.webp)
-
-![Mountain opening](world-review/world-foundation-v2/mountain-entrance.webp)
-
-![First mining chamber](world-review/world-foundation-v2/first-mining-level.webp)
+`public/art/alpine-bedrock-v1.webp` adds scanned-looking granite/slate fractures and mineral streaks to the mountain material. Its built-in generation prompt, encoding and SHA-256 are recorded alongside it.

@@ -2,11 +2,10 @@ import { useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { runtime, zoneAt } from "../runtime";
-import { MINE_OUTLINE, random, inMine } from "./landscape";
+import { MINE_OUTLINE, random } from "./landscape";
 import { rockGeo, useTiledMat } from "./geom";
 import { Barrel, Crate, OrePile, Pickaxe, Rail, Rubble, Sack, Woodpile } from "./kit";
 import { useMats } from "./materials";
-import { useBedrockMaterial } from "./mountain-base";
 function MineLantern({ x, z }: { x: number; z: number }) {
   const m = useMats();
   return (
@@ -50,93 +49,75 @@ function floorGeometry() {
   for (let i = 0; i < p.count; i++) uv.setXY(i, p.getX(i) * 0.035, p.getZ(i) * 0.035);
   return g;
 }
-function wallGeometry(
-  a: readonly [number, number],
-  b: readonly [number, number],
-  upper: boolean,
-  seed: number,
-) {
-  const p: number[] = [],
-    uv: number[] = [],
-    ix: number[] = [];
-  const dx = b[0] - a[0],
-    dz = b[1] - a[1],
-    length = Math.hypot(dx, dz),
-    n = Math.ceil(length / 1.3);
-  for (let j = 0; j <= n; j++)
-    for (let row = 0; row < 3; row++) {
-      const t = j / n,
-        y = (upper ? 1.15 : 0) + ((upper ? 5.4 + random(seed + j) * 2.8 : 1.2) * row) / 2;
-      const inset = (row === 1 ? 0.45 : 0) + Math.sin(j * 1.7 + seed) * 0.2;
-      p.push(a[0] + dx * t - (dz / length) * inset, y, a[1] + dz * t + (dx / length) * inset);
-      uv.push(t * length * 0.08, y * 0.08);
-      if (j < n && row < 2) {
-        const q = j * 3 + row;
-        ix.push(q, q + 3, q + 1, q + 1, q + 3, q + 4);
+function ChamberWalls() {
+  const m = useMats(),
+    high = useRef<THREE.InstancedMesh>(null),
+    low = useRef<THREE.InstancedMesh>(null);
+  const geometry = useMemo(() => rockGeo(1, 19), []),
+    object = useMemo(() => new THREE.Object3D(), []);
+  const blocks = useMemo(() => {
+    const result: {
+      x: number;
+      z: number;
+      nx: number;
+      nz: number;
+      height: number;
+      width: number;
+    }[] = [];
+    MINE_OUTLINE.forEach(([ax, az], i) => {
+      if (i === 0) return;
+      const [bx, bz] = MINE_OUTLINE[(i + 1) % MINE_OUTLINE.length],
+        length = Math.hypot(bx - ax, bz - az),
+        n = Math.ceil(length / 1.6);
+      for (let j = 0; j < n; j++) {
+        const t = (j + 0.5) / n;
+        result.push({
+          x: ax + (bx - ax) * t,
+          z: az + (bz - az) * t,
+          nx: -(bz - az) / length,
+          nz: (bx - ax) / length,
+          height: 4.4 + random(i * 23 + j) * 2,
+          width: (length / n) * 1.1,
+        });
       }
-    }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute("position", new THREE.Float32BufferAttribute(p, 3));
-  g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
-  g.setIndex(ix);
-  g.computeVertexNormals();
-  return g;
-}
-function WallSection({ index }: { index: number }) {
-  const material = useBedrockMaterial(),
-    high = useRef<THREE.Mesh>(null);
-  const a = MINE_OUTLINE[index],
-    b = MINE_OUTLINE[(index + 1) % MINE_OUTLINE.length];
-  const lowGeo = useMemo(() => wallGeometry(a, b, false, index * 37), [a, b, index]);
-  const highGeo = useMemo(() => wallGeometry(a, b, true, index * 37), [a, b, index]);
+    });
+    return result;
+  }, []);
+  useLayoutEffect(() => {
+    blocks.forEach((b, i) => {
+      object.position.set(b.x, 0.36, b.z);
+      object.rotation.y = Math.atan2(b.nx, b.nz);
+      object.scale.set(b.width, 0.85, 1.65);
+      object.updateMatrix();
+      low.current!.setMatrixAt(i, object.matrix);
+    });
+    low.current!.instanceMatrix.needsUpdate = true;
+    low.current!.computeBoundingSphere();
+  }, [blocks, object]);
   useFrame(() => {
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]),
-      nx = -(b[1] - a[1]) / length,
-      nz = (b[0] - a[0]) / length;
-    if (high.current)
-      high.current.visible =
-        nx * Math.sin(runtime.cameraAzimuth) + nz * Math.cos(runtime.cameraAzimuth) < 0.12;
+    const cx = Math.sin(runtime.cameraAzimuth),
+      cz = Math.cos(runtime.cameraAzimuth);
+    blocks.forEach((b, i) => {
+      const h = b.nx * cx + b.nz * cz > 0.12 ? 0.2 : b.height;
+      object.position.set(b.x, 0.65 + h * 0.34, b.z);
+      object.rotation.y = Math.atan2(b.nx, b.nz);
+      object.scale.set(b.width, h, 1.8);
+      object.updateMatrix();
+      high.current!.setMatrixAt(i, object.matrix);
+    });
+    high.current!.instanceMatrix.needsUpdate = true;
   });
   return (
-    <group>
-      <mesh geometry={lowGeo} material={material} receiveShadow />
-      <mesh ref={high} geometry={highGeo} material={material} receiveShadow />
+    <group name="camera-cutaway-chamber-walls">
+      <instancedMesh ref={low} args={[geometry, m.rock, blocks.length]} receiveShadow />
+      <instancedMesh
+        ref={high}
+        args={[geometry, m.cliff, blocks.length]}
+        frustumCulled={false}
+        receiveShadow
+      />
     </group>
   );
-}
-function ChamberWalls() {
-  return (
-    <group name="continuous-excavated-rock-walls">
-      {MINE_OUTLINE.map((_, i) => (i === 0 ? null : <WallSection key={i} index={i} />))}
-    </group>
-  );
-}
-function QuarryScatter() {
-  const m = useMats(),
-    ref = useRef<THREE.InstancedMesh>(null),
-    geometry = useMemo(() => rockGeo(1, 83), []);
-  const stones = useMemo(
-    () =>
-      Array.from({ length: 700 }, (_, i) => ({
-        x: -20 + random(i * 11) * 55,
-        z: -88 + random(i * 17 + 6) * 55,
-        size: 0.02 + random(i * 19) * 0.08,
-      })).filter((p) => inMine(p.x, p.z)),
-    [],
-  );
-  useLayoutEffect(() => {
-    const o = new THREE.Object3D();
-    stones.forEach((s, i) => {
-      o.position.set(s.x, 0.02, s.z);
-      o.scale.set(s.size * 1.4, s.size * 0.3, s.size);
-      o.rotation.y = i * 2.399;
-      o.updateMatrix();
-      ref.current!.setMatrixAt(i, o.matrix);
-    });
-    ref.current!.instanceMatrix.needsUpdate = true;
-    ref.current!.computeBoundingSphere();
-  }, [stones]);
-  return <instancedMesh ref={ref} args={[geometry, m.stoneDark, stones.length]} />;
 }
 function TimberSupport({ x, z, width = 6 }: { x: number; z: number; width?: number }) {
   const m = useMats();
@@ -167,7 +148,7 @@ function TimberSupport({ x, z, width = 6 }: { x: number; z: number; width?: numb
   );
 }
 function OreFace({ x, z, color }: { x: number; z: number; color: string }) {
-  const stone = useBedrockMaterial(),
+  const m = useMats(),
     g = useMemo(() => rockGeo(1, 43), []);
   return (
     <group position={[x, 0, z]}>
@@ -175,7 +156,7 @@ function OreFace({ x, z, color }: { x: number; z: number; color: string }) {
         <mesh
           key={i}
           geometry={g}
-          material={stone}
+          material={m.rock}
           position={[(i - 2) * 0.7, 0.6 + random(i) * 0.3, random(i + 10) * 0.6]}
           scale={[1.1, 1.3 + random(i + 17), 1]}
           rotation-y={i * 1.3}
@@ -221,57 +202,23 @@ export function MineInterior() {
         <planeGeometry args={[360, 360]} />
         <meshBasicMaterial color="#080b0e" />
       </mesh>
-      <mesh name="mine-excavated-floor" geometry={floor} material={floorMat} receiveShadow />
+      <mesh geometry={floor} material={floorMat} receiveShadow />
       <ChamberWalls />
-      <QuarryScatter />
       <TimberSupport x={8} z={-29.8} />
       <TimberSupport x={8} z={-34.5} width={8} />
-      <TimberSupport x={19} z={-54} width={8} />
-      <TimberSupport x={3} z={-69} width={10} />
-      <TimberSupport x={13} z={-80} width={8} />
+      <TimberSupport x={17} z={-52} width={6.5} />
       <Rail x={8} z={-32} len={11} />
-      <group position={[6, 0, -40]} rotation-y={0.3}>
-        <Rail x={0} z={0} len={10} />
-      </group>
-      <Rail x={3} z={-53} len={14} />
-      <Rail x={3} z={-69} len={10} />
+      <Rail x={8} z={-41} len={6} />
       <MineLantern x={4} z={-34} />
       <MineLantern x={19} z={-43} />
       <MineLantern x={14} z={-59} />
-      <MineLantern x={-8} z={-47} />
-      <MineLantern x={-14} z={-64} />
-      <MineLantern x={23} z={-66} />
-      <MineLantern x={2} z={-83} />
-      <MineLantern x={17} z={-77} />
-      <OreFace x={10} z={-48} color="#a3724d" />
-      <OreFace x={7} z={-40.5} color="#b6b3a1" />
-      <OreFace x={-16} z={-56} color="#626d77" />
-      <OrePile x={12.5} z={-48} color="iron" />
+      <MineLantern x={-3} z={-49} />
+      <OreFace x={19.5} z={-45} color="#a3724d" />
+      <OreFace x={7} z={-62} color="#b6b3a1" />
+      <OreFace x={-4} z={-49} color="#626d77" />
+      <OrePile x={10.5} z={-48} color="iron" />
       <OrePile x={6.5} z={-39.8} />
       <Woodpile x={17.8} z={-36} rot={0.3} />
-      <Woodpile x={-9} z={-61} rot={1.57} />
-      <Barrel x={-12} z={-63} />
-      <Barrel x={-13} z={-63.7} />
-      <Barrel x={-12.5} z={-65} />
-      <Crate x={-9} z={-66} s={1.1} />
-      <Crate x={-8.5} z={-65} s={0.8} />
-      <Sack x={-11} z={-65.8} />
-      <OreFace x={31.5} z={-71} color="#996b48" />
-      <OreFace x={5} z={-88} color="#b9b5a1" />
-      <Rubble x={24} z={-80} n={18} />
-      <Rubble x={17} z={-34} n={16} />
-      <Woodpile x={17.5} z={-34} rot={0.5} />
-      <mesh rotation-x={-Math.PI / 2} position={[-8, 0.012, -73]} scale={[4.5, 8, 1]}>
-        <circleGeometry args={[1, 24]} />
-        <meshStandardMaterial
-          color="#283b3d"
-          roughness={0.22}
-          metalness={0.35}
-          transparent
-          opacity={0.4}
-          depthWrite={false}
-        />
-      </mesh>
       <Barrel x={17} z={-37.5} />
       <Barrel x={18} z={-38} />
       <Crate x={3} z={-39} s={0.95} />
@@ -280,8 +227,8 @@ export function MineInterior() {
       <Pickaxe x={15} z={-39} rot={0.7} />
       <Rubble x={-2.5} z={-55} n={10} />
       <Rubble x={19} z={-56} n={8} />
-      <mesh position={[19, 2.8, -82.5]}>
-        <planeGeometry args={[5.5, 5.6]} />
+      <mesh position={[13, 1.5, -64.7]}>
+        <planeGeometry args={[3.5, 3]} />
         <meshBasicMaterial color="#050608" side={THREE.DoubleSide} />
       </mesh>
     </group>
