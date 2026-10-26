@@ -232,7 +232,7 @@
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
-      "sha256": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e"
+      "sha256": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
     },
     {
       "file": "../../../../../../src/game/world/sprites.tsx",
@@ -325,14 +325,18 @@
     {
       "file": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
       "sha256": "14cab8b7702cd5bcf11fb7d573f9dc2b9aaa6a4b33ce260e0f977dbf2aca95b2"
+    },
+    {
+      "file": "../../../../../../docs/world-review/camp-commons-v3/runtime-revalidation.json",
+      "sha256": "91e6157592e72d310974cb0f254ce1c3d619da1d48e6618528bf87028cd6fdf8"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "world-foundation-v2",
+    "checkpoint": "camp-commons-v3",
     "files": [
       "src/game/world/scene.tsx"
     ],
-    "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
-    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+    "audit": "../../../../../../docs/world-review/camp-commons-v3/runtime-revalidation.json",
+    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; expanded camp commons, tents, well, wagon, stockyard, entrance, waterfall, tarn, terrain, camera and click approaches. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
   }
 }

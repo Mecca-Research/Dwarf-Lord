@@ -74,7 +74,7 @@ test("cliffs, creek banks and unexcavated rock bound the playable area", () => {
     [-30, -55],
     [0, -100],
     [-63, 12],
-    [32, 10],
+    [40, 10],
     [landscape.creekX(20), 20],
   ]) {
     assert.equal(landscape.walkable(x, z, 0.45), false);
@@ -129,4 +129,23 @@ test("every rebuilt camp building has a reachable inspection approach", () => {
     travel(camp, point);
     assert.ok(landscape.walkable(point.x, point.z, 0.5), id);
   }
+});
+
+test("new commons, well, wagon yard, tents and southern entrance have clear round-trip street routes", () => {
+  for (const [id, site] of Object.entries(landscape.CAMP_ADDITIONS)) {
+    assert.ok(landscape.walkable(site.approach.x, site.approach.z, 0.55), id);
+    assert.equal(groundHeight(site.x, site.z), 0, id + " has a level foundation");
+    travel(camp, site.approach);
+    travel(site.approach, camp);
+  }
+  for (const a of Object.values(landscape.CAMP_ADDITIONS))
+    for (const b of Object.values(landscape.CAMP_ADDITIONS)) travel(a.approach, b.approach);
+});
+
+test("the tarn is recessed below its waterline outside the playable mine and camp", () => {
+  const t = landscape.TARN;
+  assert.ok(landscape.surfaceHeight(t.x, t.z) < t.waterY);
+  assert.equal(landscape.walkable(t.x, t.z), false);
+  assert.equal(landscape.inMine(t.x, t.z), false);
+  assert.ok(landscape.surfaceHeight(t.x + t.rx, t.z) > t.waterY);
 });

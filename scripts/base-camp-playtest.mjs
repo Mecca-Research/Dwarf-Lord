@@ -7,7 +7,7 @@ import { createHash } from "node:crypto";
 import { chromium } from "playwright";
 import ts from "typescript";
 
-const output = process.env.WORLD_REVIEW_OUTPUT ?? "artifacts/world-foundation-v2";
+const output = process.env.WORLD_REVIEW_OUTPUT ?? "artifacts/camp-commons-v3";
 const visualOnly = process.env.WORLD_REVIEW_MODE === "visual";
 mkdirSync(output, { recursive: true });
 const sourceFiles = [
@@ -33,6 +33,9 @@ const sourceFiles = [
   "src/game/world/camp-buildings.tsx",
   "src/game/world/mountain-base.tsx",
   "src/game/world/conifers.tsx",
+  "src/game/world/camp-commons.tsx",
+  "src/game/world/valley-water.tsx",
+  "scripts/asset-routing.test.mjs",
   "public/art/camp-earth-v2.webp",
   "public/art/alpine-conifers-v2.webp",
 ];
@@ -170,6 +173,10 @@ try {
     console.log(`Captured ${name}`);
   };
   await capture("base-camp", -3, 4);
+  await capture("camp-commons", 4, 16, -4);
+  await capture("mess-and-well", 21, 28, 0);
+  await capture("camp-entrance", 8, 37, -2);
+  await capture("waterfall", -20, -20, 0);
   await capture("valley-overview", -2, -2, 0, true);
   await capture("mountain-entrance", 8, -22, 2);
   await capture("first-mining-level", 8, -44, -3);
@@ -189,6 +196,11 @@ try {
     { x: -3, z: 4 },
     { x: 5, z: -82 },
     { x: -3, z: 4 },
+    { x: 21, z: 28 },
+    { x: 25, z: 24 },
+    { x: 8, z: 38 },
+    { x: 26, z: 5 },
+    { x: -3, z: 4 },
   ]) {
     await page.evaluate((p) => {
       window.__controlsTest.setDest(p.x, p.z);
@@ -201,7 +213,7 @@ try {
     );
     report.navigationChecks.push({ destination, reached: p });
   }
-  console.log("Passed six live navigation routes");
+  console.log("Passed eleven live navigation routes");
   if (!visualOnly) {
     await page.waitForTimeout(3500);
     const portal = await page.evaluate(() => window.__controlsTest.projectWorld(8, 2, -26));
@@ -240,6 +252,25 @@ try {
     await capture("barracks-inspection", -10, -0.3);
     await page.getByRole("button", { name: "Note it.", exact: true }).click();
     await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dialogue === null);
+    await page.evaluate(() => {
+      window.__controlsTest.teleport(22, 21);
+      window.__controlsTest.setZoomBias(0);
+    });
+    await page.waitForTimeout(3500);
+    const well = await page.evaluate(() => window.__controlsTest.projectWorld(28, 3.2, 24));
+    await page.mouse.click(well.x, well.y);
+    assert.deepEqual(
+      (await state()).player.dest,
+      { x: 25, z: 24 },
+      "well click routes to its clear approach",
+    );
+    await page.evaluate(() => window.advanceTime(30000));
+    const atWell = (await state()).player;
+    assert.ok(Math.hypot(atWell.x - 25, atWell.z - 24) < 0.5);
+    report.controlChecks.push({
+      check: "click the well and reach its clear approach",
+      passed: true,
+    });
   }
 
   const workers = [

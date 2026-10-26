@@ -9,6 +9,7 @@ import {
   StoresLeanTo,
 } from "./camp-buildings";
 import { MountainEscarpment, RockyTerraces } from "./mountain-base";
+import { CampCommons } from "./camp-commons";
 import {
   Barrel,
   Bucket,
@@ -43,6 +44,7 @@ export function Environment() {
       <PathClutter />
       <MountainEscarpment />
       <RockyTerraces />
+      <CampCommons />
       <Crate x={-7} z={0} s={0.65} />
       {/* Keep Borrin's desk position clear for seated and standing consultation. */}
       <Crate x={12} z={10.5} s={0.8} />

@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
-import { creekX, noise, random, surfaceHeight } from "./landscape";
+import { campClearing, creekX, noise, random, surfaceHeight, TARN } from "./landscape";
 import { workstationSites } from "./workstation-sites";
 
 type Tree = { x: number; y: number; z: number; scale: number; variant: number };
@@ -111,6 +111,11 @@ export function ConiferBelt() {
         y = surfaceHeight(x, z);
       if ((x > -28 && x < 33 && z > -32 && z < 30) || y > 43 || Math.abs(x - creekX(z)) < 4.5)
         continue;
+      if (
+        campClearing(x, z) > 0.1 ||
+        Math.hypot((x - TARN.x) / TARN.rx, (z - TARN.z) / TARN.rz) < 1.16
+      )
+        continue;
       if (z < -24 && z > -37 && x > -37 && x < 43) continue;
       if (random(i + 777) > 0.35 + noise(x * 0.07, z * 0.07) * 0.65) continue;
       if (workstationSites.some((s) => Math.hypot(x - s.target.targetX, z - s.target.targetZ) < 5))
@@ -131,7 +136,8 @@ export function ConiferBelt() {
       [24, 23, 2],
       [-20, 27, 1],
     ])
-      result.push({ x, z, y: surfaceHeight(x, z), scale: 7.6, variant });
+      if (campClearing(x, z) < 0.3)
+        result.push({ x, z, y: surfaceHeight(x, z), scale: 7.6, variant });
     return result;
   }, []);
   const groups = useMemo(
