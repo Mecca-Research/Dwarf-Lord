@@ -1,14 +1,14 @@
+import { FloodedShaft, Kitchen, MineAdit, MineCart } from "./buildings";
 import {
-  CanvasTent,
-  Dorm,
-  FloodedShaft,
-  Forge,
-  Kitchen,
-  MineAdit,
-  MineCart,
-  Office,
-  StorageShed,
-} from "./buildings";
+  CampBanner,
+  CookShelter,
+  ExpeditionTent,
+  FieldForge,
+  MineYard,
+  RuinedBarracks,
+  StoresLeanTo,
+} from "./camp-buildings";
+import { MountainEscarpment, RockyTerraces } from "./mountain-base";
 import {
   Barrel,
   Bucket,
@@ -41,21 +41,35 @@ export function Environment() {
     <SurfaceWorld>
       <Terrain />
       <PathClutter />
+      <MountainEscarpment />
+      <RockyTerraces />
       <Crate x={-7} z={0} s={0.65} />
       {/* Keep Borrin's desk position clear for seated and standing consultation. */}
       <Crate x={12} z={10.5} s={0.8} />
 
-      <Dorm x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
-      <Forge x={10} z={-7} rot={-0.2} condition={forge?.condition ?? 0.22} />
-      <Office x={12.5} z={1.5} rot={0} />
-      <StorageShed x={17} z={8} rot={0.4} condition={storage?.condition ?? 0.12} />
-      <CanvasTent x={-5.8} z={8.15} rot={0.2} scale={1.15} />
-      <CanvasTent x={-2.2} z={10.4} rot={-0.3} scale={0.95} />
-      <CanvasTent x={6.55} z={9.05} rot={-0.3} scale={0.95} />
+      <RuinedBarracks x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
+      <FieldForge x={10} z={-7} condition={forge?.condition ?? 0.22} />
+      <ExpeditionTent x={12.5} z={1.5} width={6} length={5.7} height={4.5} color="#c7b994" />
+      <StoresLeanTo x={17} z={8} rot={0.4} condition={storage?.condition ?? 0.12} />
+      <ExpeditionTent x={-9} z={15} rot={-0.15} />
+      <ExpeditionTent x={-2} z={17} rot={0.14} width={4.4} length={5.5} height={3.5} />
+      <ExpeditionTent
+        x={7}
+        z={18}
+        rot={-0.08}
+        width={4.6}
+        length={6}
+        height={3.8}
+        color="#aaa68d"
+      />
+      <CookShelter />
+      <CampBanner x={-16.5} z={6} />
+      <CampBanner x={22} z={12} height={4.7} color="#4d5e65" />
       <Kitchen x={2} z={6.5} />
       <MineCart x={4} z={-16} rot={0.6} condition={cart?.condition ?? 0.15} />
       <FloodedShaft x={14} z={-22} />
       <MineAdit x={8} z={-26} />
+      <MineYard />
 
       {/* Fire circle seating */}
       <Crate x={3.45} z={7.55} s={0.78} rot={0.2} />

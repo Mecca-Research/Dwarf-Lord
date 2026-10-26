@@ -79,10 +79,10 @@ function IsoCamera() {
     runtime.zone = zone;
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
     const vista=runtime.valleyView&&zone!=="mine",cameraDt=Math.min(dt,.5);
-    const targetZoom=vista?3.7:(zone==="mine"?spec.cameraZoom*.84:spec.cameraZoom)+runtime.zoomBias;
+    const targetZoom=vista?3.1:(zone==="mine"?spec.cameraZoom*.84:spec.cameraZoom)+runtime.zoomBias;
     runtime.zoom+=(targetZoom-runtime.zoom)*(1-Math.exp(-cameraDt*3));
-    const dist=vista?300:38,az=vista?runtime.cameraAzimuth*.55:runtime.cameraAzimuth,el=vista?.48:runtime.cameraElev;
-    const focusX=vista?5:p.x,focusZ=vista?-57:p.z,focusY=vista?37:1.15;
+    const dist=vista?360:38,az=vista?runtime.cameraAzimuth*.55:runtime.cameraAzimuth,el=vista?.45:runtime.cameraElev;
+    const focusX=vista?5:p.x+2,focusZ=vista?-65:p.z-8,focusY=vista?55:2.0;
     _cam.set(focusX+dist*Math.sin(az)*Math.cos(el),focusY+dist*Math.sin(el)+1,focusZ+dist*Math.cos(az)*Math.cos(el));
     camera.position.lerp(_cam,1-Math.exp(-cameraDt*4));_look.set(focusX,focusY,focusZ);
     camera.lookAt(_look);
@@ -560,7 +560,7 @@ function Lights() {
     <color attach="background" args={["#a1b1ba"]}/><fog attach="fog" args={["#a1b1ba",95,290]}/>
     <hemisphereLight ref={hemisphere} args={["#c6dbe7","#6a654d",1.45]}/><ambientLight ref={ambient} intensity={.32} color="#a3aba8"/>
     <directionalLight ref={sun} position={[-36,48,14]} intensity={2.65} color="#fff0d4" castShadow
-      shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-bias={-.00035} shadow-normalBias={.04}
+      shadow-mapSize-width={1024} shadow-mapSize-height={1024} shadow-bias={-.00035} shadow-normalBias={.04}
       shadow-camera-near={2} shadow-camera-far={190} shadow-camera-left={-66} shadow-camera-right={66} shadow-camera-top={66} shadow-camera-bottom={-66}/>
     <directionalLight ref={fill} position={[22,18,-18]} intensity={.55} color="#839eb2"/>
   </>;

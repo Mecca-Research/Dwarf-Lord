@@ -64,11 +64,12 @@ test('forestry routes cross the creek on the timber bridge in both directions', 
 });
 
 test('cliffs, creek banks and unexcavated rock bound the playable area', () => {
-  for (const [x, z] of [[28, -42], [-12, -50], [0, -70], [-63, 12], [32, 10], [landscape.creekX(20), 20]]) {
+  for (const [x, z] of [[40, -42], [-30, -55], [0, -100], [-63, 12], [32, 10], [landscape.creekX(20), 20]]) {
     assert.equal(landscape.walkable(x, z, 0.45), false);
   }
   assert.equal(landscape.walkable(NaN, 0), false);
-  assert.deepEqual(resolveMove(8, -66.2, 0, -0.5), { x: 8, z: -66.2 });
+  assert.equal(landscape.walkable(4, -27, 0.45), false, 'the cliff is solid beside the real mouth');
+  assert.deepEqual(resolveMove(5, -91.15, 0, -0.8), { x: 5, z: -91.15 });
 });
 
 test('workstation foundations stay level while the landscape rises into alpine peaks', () => {
@@ -79,4 +80,10 @@ test('workstation foundations stay level while the landscape rises into alpine p
     for (let z = -140; z <= 80; z += 5) assert.ok(Number.isFinite(landscape.surfaceHeight(x, z)));
   }
   assert.ok(landscape.surfaceHeight(7, -91) > 70);
+});
+
+test('the larger first mine has reachable deep working space and a mountain-scale crest', () => {
+  const deep = {x:5,z:-82};travel(camp,deep);travel(deep,camp);
+  assert.ok(landscape.surfaceHeight(13,-114)>130);
+  assert.ok(landscape.cliffHeight(8)>12);
 });
