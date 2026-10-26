@@ -79,10 +79,10 @@ function IsoCamera() {
     runtime.zone = zone;
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
     const vista=runtime.valleyView&&zone!=="mine",cameraDt=Math.min(dt,.5);
-    const targetZoom=vista?4.7:(zone==="mine"?spec.cameraZoom*.72:spec.cameraZoom)+runtime.zoomBias;
+    const targetZoom=vista?3.7:(zone==="mine"?spec.cameraZoom*.84:spec.cameraZoom)+runtime.zoomBias;
     runtime.zoom+=(targetZoom-runtime.zoom)*(1-Math.exp(-cameraDt*3));
-    const dist=vista?300:38,az=runtime.cameraAzimuth,el=vista?.38:runtime.cameraElev;
-    const focusX=vista?5:p.x,focusZ=vista?-60:p.z,focusY=vista?35:1.15;
+    const dist=vista?300:38,az=vista?runtime.cameraAzimuth*.55:runtime.cameraAzimuth,el=vista?.48:runtime.cameraElev;
+    const focusX=vista?5:p.x,focusZ=vista?-57:p.z,focusY=vista?37:1.15;
     _cam.set(focusX+dist*Math.sin(az)*Math.cos(el),focusY+dist*Math.sin(el)+1,focusZ+dist*Math.cos(az)*Math.cos(el));
     camera.position.lerp(_cam,1-Math.exp(-cameraDt*4));_look.set(focusX,focusY,focusZ);
     camera.lookAt(_look);
@@ -392,7 +392,7 @@ function GroundPick() {
     const el = gl.domElement;
     const onClick = (ev: PointerEvent) => {
       if (useGame.getState().dialogue) return;
-      if (useGame.getState().overlay || runtime.valleyView) return;
+      if (useGame.getState().overlay || (runtime.valleyView && zoneAt(runtime.player.x, runtime.player.z) !== "mine")) return;
       const rect = el.getBoundingClientRect();
       ndc.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
       ndc.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
@@ -552,8 +552,8 @@ function Lights() {
     blend.current=THREE.MathUtils.damp(blend.current,target,5,Math.min(dt,.5));const t=blend.current;
     hemisphere.current!.intensity=THREE.MathUtils.lerp(1.45,.32,t);ambient.current!.intensity=THREE.MathUtils.lerp(.32,.2,t);
     sun.current!.intensity=THREE.MathUtils.lerp(2.65,.06,t);fill.current!.intensity=THREE.MathUtils.lerp(.55,.08,t);
-    const fog=scene.fog as THREE.Fog,offset=runtime.valleyView&&target===0?180:0;
-    if(fog){fog.color.copy(outside).lerp(inside,t);fog.near=THREE.MathUtils.lerp(95,38,t)+offset;fog.far=THREE.MathUtils.lerp(290,105,t)+offset;}
+    const fog=scene.fog as THREE.Fog,vista=runtime.valleyView&&target===0;
+    if(fog){fog.color.copy(outside).lerp(inside,t);fog.near=vista?330:THREE.MathUtils.lerp(95,38,t);fog.far=vista?650:THREE.MathUtils.lerp(290,105,t);}
     if(scene.background instanceof THREE.Color)scene.background.copy(outside).lerp(inside,t);
   });
   return <>

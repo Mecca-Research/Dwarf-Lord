@@ -46,7 +46,7 @@ function floorGeometry() {
   g.rotateX(-Math.PI / 2);
   const p = g.attributes.position,
     uv = g.attributes.uv;
-  for (let i = 0; i < p.count; i++) uv.setXY(i, p.getX(i) * 0.27, p.getZ(i) * 0.27);
+  for (let i = 0; i < p.count; i++) uv.setXY(i, p.getX(i) * 0.035, p.getZ(i) * 0.035);
   return g;
 }
 function ChamberWalls() {
@@ -181,8 +181,18 @@ export function MineInterior() {
   const m = useMats(),
     root = useRef<THREE.Group>(null),
     floor = useMemo(floorGeometry, []);
-  const floorMat = useTiledMat(m.dirt, 1, 1);
-  floorMat.color.set("#ada89b");
+  const baseFloorMat = useTiledMat(m.dirt, 1, 1);
+  const floorMat = useMemo(() => {
+    baseFloorMat.onBeforeCompile = (shader) => {
+      shader.fragmentShader = shader.fragmentShader.replace(
+        "#include <map_fragment>",
+        `float quarry=dot(texture2D(map,vMapUv).rgb,vec3(.2126,.7152,.0722));
+         diffuseColor.rgb=vec3(.19,.21,.22)*(.45+quarry*3.5);`,
+      );
+    };
+    baseFloorMat.customProgramCacheKey = () => "first-chamber-gravel-v1";
+    return baseFloorMat;
+  }, [baseFloorMat]);
   useFrame(() => {
     if (root.current) root.current.visible = zoneAt(runtime.player.x, runtime.player.z) === "mine";
   });

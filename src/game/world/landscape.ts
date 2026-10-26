@@ -57,9 +57,12 @@ export function surfaceHeight(x: number, z: number) {
     peak(-87, -40, 48, 80, 41),
     peak(94, -29, 56, 86, 47),
   );
-  const detail = (noise(x * 0.12, z * 0.12) - 0.5) * 6 + (noise(x * 0.42, z * 0.42) - 0.5) * 2;
+  const detail =
+    (noise(x * 0.065, z * 0.065) - 0.5) * 7 +
+    (noise(x * 0.17, z * 0.17) - 0.5) * 2.4 +
+    (noise(x * 0.43, z * 0.43) - 0.5) * 0.6;
   let h = Math.min(45, side * 0.32 + side * side * 0.0016) + Math.min(11, north * 1.8) + ridges;
-  h += detail * smooth(0, 10, Math.max(north, side)) * (1 + ridges * 0.04);
+  h += detail * smooth(0, 10, Math.max(north, side)) * (1 + ridges * 0.025);
   h += Math.max(0, z - 25) * 0.09;
   h -= (1 - smooth(0.8, 3.1, Math.abs(x - creekX(z)))) * 1.2 * (1 - smooth(-26, -34, z));
   const terrace =

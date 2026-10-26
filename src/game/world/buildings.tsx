@@ -1,6 +1,6 @@
 import { TimberHall, RidgeTent } from "./reference-assets";
 import { groundHeight, runtime, zoneAt } from "../runtime";
-import { useMemo,useRef } from "react";
+import { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 import type { Group } from "three";
@@ -386,27 +386,76 @@ export function FloodedShaft({ x, z }: { x: number; z: number }) {
   );
 }
 
-export function MineAdit({x,z}:{x:number;z:number}) {
-  const m=useMats(),shell=useRef<Group>(null),darkness=useRef<THREE.Mesh>(null);
-  const arch=useMemo(()=>{
-    const s=new THREE.Shape();s.moveTo(-4.6,-.5);s.lineTo(-4.3,2.1);s.lineTo(-3.5,4.5);s.lineTo(-1.5,5.3);
-    s.lineTo(.8,5.5);s.lineTo(3.3,4.1);s.lineTo(4.4,2.2);s.lineTo(4.8,-.5);s.closePath();
-    const h=new THREE.Path();h.moveTo(-2.25,-.35);h.lineTo(2.15,-.35);h.lineTo(2.1,2.35);h.lineTo(1.45,3.35);
-    h.lineTo(.2,3.8);h.lineTo(-1.5,3.35);h.lineTo(-2.25,2.25);h.closePath();s.holes.push(h);return s;
-  },[]);
-  useFrame(()=>{
-    const mine=zoneAt(runtime.player.x,runtime.player.z)==="mine";
-    if(shell.current)shell.current.visible=!mine;
-    if(darkness.current)darkness.current.visible=!mine&&Math.hypot(runtime.player.x-x,runtime.player.z-z)>5;
+export function MineAdit({ x, z }: { x: number; z: number }) {
+  const m = useMats(),
+    shell = useRef<Group>(null);
+  const arch = useMemo(() => {
+    const s = new THREE.Shape();
+    s.moveTo(-4.6, -0.5);
+    s.lineTo(-4.3, 2.1);
+    s.lineTo(-3.5, 4.5);
+    s.lineTo(-1.5, 5.3);
+    s.lineTo(0.8, 5.5);
+    s.lineTo(3.3, 4.1);
+    s.lineTo(4.4, 2.2);
+    s.lineTo(4.8, -0.5);
+    s.closePath();
+    const h = new THREE.Path();
+    h.moveTo(-2.25, -0.35);
+    h.lineTo(2.15, -0.35);
+    h.lineTo(2.1, 2.35);
+    h.lineTo(1.45, 3.35);
+    h.lineTo(0.2, 3.8);
+    h.lineTo(-1.5, 3.35);
+    h.lineTo(-2.25, 2.25);
+    h.closePath();
+    s.holes.push(h);
+    return s;
+  }, []);
+  useFrame(() => {
+    const mine = zoneAt(runtime.player.x, runtime.player.z) === "mine";
+    if (shell.current) shell.current.visible = !mine;
   });
-  return <group position={[x,0,z]} name="rough-mountain-adit"><group ref={shell}>
-    <mesh position={[0,0,-2.5]} material={m.cliff} castShadow receiveShadow><extrudeGeometry args={[arch,{depth:2.5,bevelEnabled:false,curveSegments:1}]}/></mesh>
-    <mesh ref={darkness} position={[0,2,-.6]} material={m.black}><planeGeometry args={[4.5,4]}/></mesh>
-    {[-1,1].map(side=><mesh key={side} position={[side*1.92,1.6,.22]} rotation-z={side*.045} material={m.woodDark}><boxGeometry args={[.2,3.2,.23]}/></mesh>)}
-    <mesh position={[0,3.15,.2]} rotation-z={.025} material={m.woodDark}><boxGeometry args={[4.2,.24,.28]}/></mesh>
-    <mesh position={[-2.7,1.9,.4]} material={m.iron}><boxGeometry args={[.2,.3,.2]}/></mesh>
-    <mesh position={[-2.7,1.9,.51]} material={m.ember}><planeGeometry args={[.11,.18]}/></mesh>
-    <pointLight position={[-2.7,2,.8]} color="#ffbf76" intensity={14} distance={9} decay={2}/>
-    <Rubble x={-3.4} z={1.2} n={6}/><Rubble x={3.6} z={.8} n={5}/>
-  </group><Rail x={0} z={1.5} len={5}/></group>;
+  return (
+    <group position={[x, 0, z]} name="rough-mountain-adit">
+      <group ref={shell}>
+        <mesh position={[0, 0, -2.5]} material={m.cliff} castShadow receiveShadow>
+          <extrudeGeometry args={[arch, { depth: 2.5, bevelEnabled: true, bevelThickness: 0.12, bevelSize: 0.18, bevelSegments: 1, curveSegments: 1 }]} />
+        </mesh>
+        <mesh position={[0, 1.9, -0.6]}>
+          <planeGeometry args={[4.8, 4.2]} />
+          <meshBasicMaterial color="#080b0e" side={THREE.DoubleSide} />
+        </mesh>
+        {[-1, 1].map((side) => (
+          <mesh
+            key={side}
+            position={[side * 1.92, 1.6, 0.22]}
+            rotation-z={side * 0.045}
+            material={m.woodDark}
+          >
+            <boxGeometry args={[0.2, 3.2, 0.23]} />
+          </mesh>
+        ))}
+        <mesh position={[0, 3.15, 0.2]} rotation-z={0.025} material={m.woodDark}>
+          <boxGeometry args={[4.2, 0.24, 0.28]} />
+        </mesh>
+        <mesh position={[-2.7, 1.9, 0.4]} material={m.iron}>
+          <boxGeometry args={[0.2, 0.3, 0.2]} />
+        </mesh>
+        <mesh position={[-2.7, 1.9, 0.51]} material={m.ember}>
+          <planeGeometry args={[0.11, 0.18]} />
+        </mesh>
+        <pointLight
+          position={[-2.7, 2, 0.8]}
+          color="#ffbf76"
+          intensity={14}
+          distance={9}
+          decay={2}
+        />
+        <Rubble x={-3.4} z={1.2} n={6} />
+        <Rubble x={3.6} z={0.8} n={5} />
+      </group>
+      <Rail x={0} z={1.5} len={5} />
+    </group>
+  );
 }

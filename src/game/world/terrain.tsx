@@ -23,7 +23,7 @@ function valleyGeometry() {
     if (z < -140) z = -140 + (z + 140) * 4;
     if (z > 75) z = 75 + (z - 75) * 4;
     p.setXYZ(i, x, surfaceHeight(x, z), z);
-    uv.setXY(i, x * 0.27, z * 0.27);
+    uv.setXY(i, x * 0.035, z * 0.035);
   }
   const index = g.index!,
     indices: number[] = [];
@@ -65,6 +65,8 @@ function ValleyFloor() {
           `#include <common>
         uniform sampler2D valleyRock;varying vec3 valleyPosition;varying vec3 valleyNormal;
         float track(vec2 p,vec2 a,vec2 b){vec2 q=p-a,v=b-a;return length(q-v*clamp(dot(q,v)/dot(v,v),0.,1.));}
+        float valleyHash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+        float valleyNoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(valleyHash(i),valleyHash(i+vec2(1.,0.)),f.x),mix(valleyHash(i+vec2(0.,1.)),valleyHash(i+vec2(1.,1.)),f.x),f.y);}
       `,
         )
         .replace(
@@ -72,24 +74,23 @@ function ValleyFloor() {
           `
         vec3 wp=valleyPosition;
         vec3 weights=pow(abs(normalize(valleyNormal)),vec3(5.));weights/=max(.0001,weights.x+weights.y+weights.z);
-        vec3 rock=texture2D(valleyRock,wp.zy*.21).rgb*weights.x+texture2D(valleyRock,wp.xz*.21).rgb*weights.y+texture2D(valleyRock,wp.xy*.21).rgb*weights.z;
-        vec3 soil=texture2D(map,wp.xz*.27).rgb;
-        float variation=sin(wp.x*.29+sin(wp.z*.19))*sin(wp.z*.27)*.5+.5;
+        vec3 rock=texture2D(valleyRock,wp.zy*.055).rgb*weights.x+texture2D(valleyRock,wp.xz*.055).rgb*weights.y+texture2D(valleyRock,wp.xy*.055).rgb*weights.z;
+        vec3 soil=texture2D(map,wp.xz*.035).rgb;
+        float variation=valleyNoise(wp.xz*.12)*.65+valleyNoise(wp.xz*.47)*.35;
         float path=min(track(wp.xz,vec2(-65.,11.),vec2(-12.,11.)),min(track(wp.xz,vec2(-12.,11.),vec2(-3.,3.)),track(wp.xz,vec2(-3.,3.),vec2(8.,-27.))));
-        float clearing=1.-smoothstep(.62,1.12,length((wp.xz-vec2(2.,1.))/vec2(24.,18.)));
+        float clearing=1.-smoothstep(.68,.96,length((wp.xz-vec2(2.,1.))/vec2(24.,18.))+variation*.17);
         float dirt=max(clearing,1.-smoothstep(1.1,2.8,path))*(1.-smoothstep(1.,7.,wp.y));
-        vec3 meadow=mix(vec3(.10,.17,.055),vec3(.19,.25,.1),variation);
-        float grain=dot(soil,vec3(.2126,.7152,.0722));
-        vec3 ground=mix(meadow,vec3(.24,.195,.135),dirt)*(.45+grain*4.2);
+        vec3 meadow=mix(vec3(.075,.12,.045),vec3(.19,.23,.095),variation);
+        float grain=clamp(dot(soil,vec3(.2126,.7152,.0722))*8.,.15,1.6);
+        vec3 ground=mix(meadow,mix(vec3(.14,.107,.073),vec3(.25,.20,.135),variation),dirt)*(.32+grain*.9);
         float exposed=max(1.-smoothstep(.45,.82,abs(valleyNormal.y)),smoothstep(8.,22.,wp.y));
-        vec3 bedrock=vec3(.13,.145,.16)*(.65+dot(rock,vec3(.2126,.7152,.0722))*2.2);
-        bedrock*=.86+.14*sin(wp.y*1.35+sin(wp.x*.28+wp.z*.19));
-        float snow=smoothstep(43.+variation*12.,57.+variation*12.,wp.y)*smoothstep(.35,.75,abs(valleyNormal.y));
+        vec3 bedrock=rock*vec3(.5,.53,.56)*(.7+variation*.6);
+        float snow=smoothstep(67.+variation*14.,83.+variation*14.,wp.y)*smoothstep(.4,.78,abs(valleyNormal.y));
         diffuseColor.rgb*=mix(mix(ground,bedrock,exposed),vec3(.83,.89,.9),snow);
       `,
         );
     };
-    mat.customProgramCacheKey = () => "alpine-valley-v1";
+    mat.customProgramCacheKey = () => "alpine-valley-v2";
     return mat;
   }, [m]);
   useEffect(
@@ -213,6 +214,30 @@ function Talus() {
       if (Math.abs(x - 8) < 4.4) continue;
       const z = -28 - random(i + 43) * 3.5;
       result.push({ x, z, y: surfaceHeight(x, z), size: 1.3 + random(i + 55) * 1.3 });
+    }
+    // Small embedded stones break up the worked earth, with clear station aprons.
+    for (let i = 0; i < 260; i++) {
+      const x = -21 + random(i * 19 + 601) * 47,
+        z = -24 + random(i * 29 + 703) * 45;
+      if (
+        workstationSites.some((s) => Math.hypot(x - s.target.targetX, z - s.target.targetZ) < 2.2)
+      )
+        continue;
+      if (
+        [
+          [-11, -5, 4.5],
+          [10, -7, 3.5],
+          [12.5, 1.5, 3],
+          [17, 8, 4],
+        ].some(([bx, bz, radius]) => Math.hypot(x - bx, z - bz) < radius)
+      )
+        continue;
+      result.push({
+        x,
+        z,
+        y: surfaceHeight(x, z) - 0.025,
+        size: 0.025 + random(i * 31) ** 2 * 0.09,
+      });
     }
     return result;
   }, []);
