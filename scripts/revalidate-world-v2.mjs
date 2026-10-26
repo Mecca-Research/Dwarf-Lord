@@ -60,6 +60,7 @@ const screenshots = json(`${folder}/screenshots.json`);
 assert.equal(screenshots.length, 10);
 for (const screenshot of screenshots) assert.equal(hash(`${folder}/${screenshot.file}`), screenshot.sha256);
 const retainedFiles = ['src/game/world/npc-motion.ts', 'src/game/world/sprites.tsx',
+  'src/game/world/workstations.tsx',
   'src/game/world/workstation-sites.ts', 'src/game/world/work-activities.ts',
   'src/game/world/motion-review-points.ts', 'src/game/motion-playback.ts', 'public/motion-playback.mjs',
   'public/workstation-registration.mjs', 'src/game/store.ts', 'src/game/sim.ts'];
@@ -100,7 +101,7 @@ for (const file of walk('public/sprites').filter(p => /\/(loop|task)-approval\.j
   approvals.push({ file, originalSha256: digest(native), priorRuntimeRevalidation: approval.runtimeRevalidation ?? null,
     changedDependencies: changes, approval });
 }
-assert.equal(approvals.length, 18, '16 changed workstation dependency bundles and two retained lateral gaits');
+assert.equal(approvals.length, 17, '15 changed work dependency bundles and two retained lateral gaits; workstation geometry is unchanged');
 const propFiles = walk('public/sprites/workstations');
 for (const file of propFiles) {
   assert.equal(hash(file), digest(original(file)), `changed persistent prop: ${file}`);
