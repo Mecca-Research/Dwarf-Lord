@@ -1,0 +1,5677 @@
+{
+  "passed": true,
+  "viewport": [
+    400,
+    280
+  ],
+  "sampleStepMs": 32,
+  "checker": {
+    "file": "scripts/directional-stride-renderer-check.mjs",
+    "sha256": "79086769695fa10a1e5cdbf85a82c9cd850acad5b87116e2928aaf92938bac31"
+  },
+  "wrapper": {
+    "file": "scripts/base-camp-stride-playtest.mjs",
+    "sha256": "2a9c21ed5aa8bf434bb0714032e08fffc93d900bb69e83d73777a50bfb8e1bc8"
+  },
+  "reports": [
+    {
+      "direction": "right",
+      "observationsSha256": "64ba55dceedf085b3f5dc6dbf25a6d0942b45459ecc6e80f8ed8380b92329102",
+      "result": {
+        "method": "Actual rendered mesh matrices and camera, matching visible material marks. Camera movement compensated by reprojecting the prior world contact.",
+        "sourceBinding": {
+          "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+          "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+          "frameSha256": [
+            "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+            "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+            "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+            "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+            "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+            "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+            "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+            "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e"
+          ],
+          "durationsMs": [
+            109,
+            232,
+            135,
+            46,
+            164,
+            118,
+            111,
+            85
+          ],
+          "actualSettingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+          "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "direction": "right",
+          "sourceFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "assets": [
+          {
+            "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+            "atlasSha256": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
+            "travelCalibration": {
+              "version": 1,
+              "sourceSha256": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+              "settingsSha256": "6f236d81bdba3af969316b25fce579e9fd5284fd17361a9432c7dfa04b32b15a",
+              "direction": "right",
+              "durationsMs": [
+                109,
+                232,
+                135,
+                46,
+                164,
+                118,
+                111,
+                85
+              ],
+              "strideBodyRatio": 0.880769,
+              "scope": "Reviewed sole-material boundaries at this fixed view on flat ground. Turning, uneven terrain, equipment and final cycle approval are separate."
+            }
+          }
+        ],
+        "holds": [
+          {
+            "frame": 0,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.17688764380475208
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.32294756075222636
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.2861335820259023
+          },
+          {
+            "frame": 1,
+            "moved": 0.03999999999999978,
+            "contactDriftSpritePx": 0.2532974386988453
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.22406051586159179
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.19806770320419897
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.17498937706968756
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.024253311313721975
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.021400366256499544
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.01887645184762077
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.040889532965662646
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.036029131664727994
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.03174088309446842
+          },
+          {
+            "frame": 4,
+            "moved": 0.03999999999999978,
+            "contactDriftSpritePx": 0.027958707714705048
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.03043770415547456
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.026801197062148785
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.023596980888695936
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.008337366505312771
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.0073390319713522835
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.0014435087752566193
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.0052809068866042684
+          },
+          {
+            "frame": 0,
+            "moved": 0.03999999999999978,
+            "contactDriftSpritePx": 0.004647551905311802
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.00409003763117506
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.007339703146224435
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.00645879451802223
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.005683513627200795
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.005001217185053575
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999956,
+            "contactDriftSpritePx": 0.0044007702192306875
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0006062682796961606
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0005334638177476295
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0004693982940113955
+          },
+          {
+            "frame": 3,
+            "moved": 0.03999999999999949,
+            "contactDriftSpritePx": 0.0007509549933085181
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0008892881344663793
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0007824674074334987
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0006884753551919719
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0006057718928414658
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0006582928621992661
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.0005792106729722745
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00020443077270795304
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00017987112027981444
+          },
+          {
+            "frame": 6,
+            "moved": 0.03999999999999949,
+            "contactDriftSpritePx": 0.0001582617711501944
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00003110446071118354
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00011373019684881285
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00010006641992835493
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00017950891048622988
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00015794207798994016
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00013896630157751868
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00012227030334525967
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00010758019713571252
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 0.00009465499996559459
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000013038175255442103
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000011471699472820696
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000010093427396859313
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000021729542615609808
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000019118827221448786
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00001682177621648427
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000014800704876999055
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000016083320064199755
+          },
+          {
+            "frame": 5,
+            "moved": 0.03999999999999982,
+            "contactDriftSpritePx": 0.000014150969243215417
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000012450782154159392
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00000439435436578818
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000003866388402463267
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 7.598800358444081e-7
+          }
+        ],
+        "boundaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 1.2569422647356963,
+            "before": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -7.770618848179325,
+                0.056840466866454165,
+                2.1633477921641378
+              ],
+              "screen": [
+                132.1892935956672,
+                165.04144115238918
+              ],
+              "bodyPixels": 23.04077811352272,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -7.770618848179325,
+                  0.056840466866454165,
+                  2.1633477921641378
+                ],
+                "screen": [
+                  132.1892935956672,
+                  165.04144115238918
+                ],
+                "bodyPixels": 23.04077811352272,
+                "referenceScreen": [
+                  132.19128992281398,
+                  165.04902039848568
+                ]
+              },
+              "x": -7.819566625006187,
+              "z": 2.158252321273154,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.8850897931656452,
+                "distance": 0.559999999999997,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.984000020352042,
+                  2.014033068547875
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -7.325269051966205,
+                0.05678053453493059,
+                2.570228979836059
+              ],
+              "screen": [
+                137.44201698200143,
+                164.8146204178702
+              ],
+              "bodyPixels": 23.039150776408945,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -7.763709496634694,
+                  0.05678053453493059,
+                  2.1549396993593084
+                ],
+                "screen": [
+                  132.0366777613824,
+                  164.8146204178702
+                ],
+                "bodyPixels": 23.039150776408945,
+                "referenceScreen": [
+                  132.04353200009828,
+                  164.86988716330856
+                ]
+              },
+              "x": -7.759422166674916,
+              "z": 2.211003095030872,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.0981127941059057,
+                "distance": 0.6399999999999965,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.798218423258106,
+                  2.176976143746448
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 0.25913182086406683,
+            "before": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -7.3171584077509335,
+                0.056546334360900286,
+                2.5602993801287264
+              ],
+              "screen": [
+                136.87333700970711,
+                164.11248150928694
+              ],
+              "bodyPixels": 23.03207903694235,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -7.3171584077509335,
+                  0.056546334360900286,
+                  2.5602993801287264
+                ],
+                "screen": [
+                  136.87333700970711,
+                  164.11248150928694
+                ],
+                "bodyPixels": 23.03207903694235,
+                "referenceScreen": [
+                  136.8741896844822,
+                  164.1201851740082
+                ]
+              },
+              "x": -7.428627645852926,
+              "z": 2.5011323506983207,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.9346670797797474,
+                "distance": 1.0799999999999939,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.798218423258106,
+                  2.176976143746448
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -7.311755622413326,
+                0.052484805293268044,
+                2.555996441536454
+              ],
+              "screen": [
+                136.82603617088782,
+                164.03809317149324
+              ],
+              "bodyPixels": 23.0312479783627,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -7.311755622413326,
+                  0.052484805293268044,
+                  2.555996441536454
+                ],
+                "screen": [
+                  136.82603617088782,
+                  164.03809317149324
+                ],
+                "bodyPixels": 23.0312479783627,
+                "referenceScreen": [
+                  136.8160441667599,
+                  164.0437398803712
+                ]
+              },
+              "x": -7.368483187521655,
+              "z": 2.5538831244560387,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.1491121724919715,
+                "distance": 1.1599999999999935,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.4027933725627575,
+                  2.523790762517722
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 0.3994174164846196,
+            "before": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -7.311545825076086,
+                0.052432344638470685,
+                2.5554840869470112
+              ],
+              "screen": [
+                136.6917901112804,
+                163.87337289967058
+              ],
+              "bodyPixels": 23.02918401738995,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -7.311545825076086,
+                  0.052432344638470685,
+                  2.5554840869470112
+                ],
+                "screen": [
+                  136.6917901112804,
+                  163.87337289967058
+                ],
+                "bodyPixels": 23.02918401738995,
+                "referenceScreen": [
+                  136.69227869777538,
+                  163.87405123939277
+                ]
+              },
+              "x": -7.188049812527843,
+              "z": 2.7121354457291926,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.933276189770078,
+                "distance": 1.3999999999999924,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.4027933725627575,
+                  2.523790762517722
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -7.310186175109578,
+                0.05241890254645343,
+                2.5526075825914813
+              ],
+              "screen": [
+                136.64991406756317,
+                163.81554191417158
+              ],
+              "bodyPixels": 23.028617957273525,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -7.310186175109578,
+                  0.05241890254645343,
+                  2.5526075825914813
+                ],
+                "screen": [
+                  136.64991406756317,
+                  163.81554191417158
+                ],
+                "bodyPixels": 23.028617957273525,
+                "referenceScreen": [
+                  136.65799861091583,
+                  163.83127480791342
+                ]
+              },
+              "x": -7.127905354196572,
+              "z": 2.7648862194869106,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.57129709557555,
+                "distance": 1.479999999999992,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.172696899097792,
+                  2.7256009932682477
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 0.9283679140649015,
+            "before": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -7.310186175109578,
+                0.05241890254645343,
+                2.5526075825914813
+              ],
+              "screen": [
+                136.64991406756317,
+                163.81554191417158
+              ],
+              "bodyPixels": 23.028617957273525,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -7.310186175109578,
+                  0.05241890254645343,
+                  2.5526075825914813
+                ],
+                "screen": [
+                  136.64991406756317,
+                  163.81554191417158
+                ],
+                "bodyPixels": 23.028617957273525,
+                "referenceScreen": [
+                  136.65799861091583,
+                  163.83127480791342
+                ]
+              },
+              "x": -7.127905354196572,
+              "z": 2.7648862194869106,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.57129709557555,
+                "distance": 1.479999999999992,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.172696899097792,
+                  2.7256009932682477
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -6.826158521998554,
+                0.020156570399563867,
+                3.0143024855570326
+              ],
+              "screen": [
+                142.60134954283114,
+                164.12936891416487
+              ],
+              "bodyPixels": 23.02810371202682,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -7.3114533818598835,
+                  0.048375768958953236,
+                  2.55446418699455
+                ],
+                "screen": [
+                  136.62289954067032,
+                  163.81937521034916
+                ],
+                "bodyPixels": 23.02810371202682,
+                "referenceScreen": [
+                  136.62030297586844,
+                  163.77834468724586
+                ]
+              },
+              "x": -7.067760895865301,
+              "z": 2.8176369932446286,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.094921019353598,
+                "distance": 1.5599999999999916,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.094293656287507,
+                  2.7943659607832414
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 0.24407409013945636,
+            "before": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -6.825410392881401,
+                0.020143246761629596,
+                3.013388454536697
+              ],
+              "screen": [
+                142.51349032429258,
+                164.0249817570542
+              ],
+              "bodyPixels": 23.026476298656746,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -6.825410392881401,
+                  0.020143246761629596,
+                  3.013388454536697
+                ],
+                "screen": [
+                  142.51349032429258,
+                  164.0249817570542
+                ],
+                "bodyPixels": 23.026476298656746,
+                "referenceScreen": [
+                  142.51357778258088,
+                  164.02621672279298
+                ]
+              },
+              "x": -6.857255291705853,
+              "z": 3.0022647013966415,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.848005365215193,
+                "distance": 1.8399999999999903,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -7.094293656287507,
+                  2.7943659607832414
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -6.432424725963216,
+                0.040281710442716445,
+                3.339465446595733
+              ],
+              "screen": [
+                147.06367902359705,
+                163.7761143000418
+              ],
+              "bodyPixels": 23.026158092238745,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -6.823771040762825,
+                  0.020140855221358223,
+                  3.0123538557834877
+                ],
+                "screen": [
+                  142.50272847840358,
+                  163.99751966631334
+                ],
+                "bodyPixels": 23.026158092238745,
+                "referenceScreen": [
+                  142.49787967283405,
+                  164.00717880602312
+                ]
+              },
+              "x": -6.797110833374582,
+              "z": 3.0550154751543595,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.087798819261071,
+                "distance": 1.91999999999999,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.814769051485623,
+                  3.0395280188801768
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 0.8966915989742487,
+            "before": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -6.431991419909123,
+                0.04027054768836269,
+                3.338913769632554
+              ],
+              "screen": [
+                147.02706777023838,
+                163.734560300934
+              ],
+              "bodyPixels": 23.025367816265373,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -6.431991419909123,
+                  0.04027054768836269,
+                  3.338913769632554
+                ],
+                "screen": [
+                  147.02706777023838,
+                  163.734560300934
+                ],
+                "bodyPixels": 23.025367816265373,
+                "referenceScreen": [
+                  147.02717345562314,
+                  163.7355998060629
+                ]
+              },
+              "x": -6.616677458380769,
+              "z": 3.2132677964275134,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.984935618689411,
+                "distance": 2.1599999999999886,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.814769051485623,
+                  3.0395280188801768
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -6.43315097761174,
+                0.03624091585601952,
+                3.340540820821486
+              ],
+              "screen": [
+                147.0196516339808,
+                163.76443105813976
+              ],
+              "bodyPixels": 23.025151075873765,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -6.43315097761174,
+                  0.03624091585601952,
+                  3.340540820821486
+                ],
+                "screen": [
+                  147.0196516339808,
+                  163.76443105813976
+                ],
+                "bodyPixels": 23.025151075873765,
+                "referenceScreen": [
+                  147.01780552802535,
+                  163.72476926963716
+                ]
+              },
+              "x": -6.556533000049498,
+              "z": 3.2660185701852313,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.301889943989777,
+                "distance": 2.2399999999999882,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.613647689494022,
+                  3.2159251094621184
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 0.17403906759308768,
+            "before": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -6.433072289530883,
+                0.036236654585085626,
+                3.340428010201954
+              ],
+              "screen": [
+                147.0042289985551,
+                163.7475147227999
+              ],
+              "bodyPixels": 23.024775297693253,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -6.433072289530883,
+                  0.036236654585085626,
+                  3.340428010201954
+                ],
+                "screen": [
+                  147.0042289985551,
+                  163.7475147227999
+                ],
+                "bodyPixels": 23.024775297693253,
+                "referenceScreen": [
+                  147.00429403766128,
+                  163.7478331083661
+                ]
+              },
+              "x": -6.436244083386956,
+              "z": 3.3715201177006673,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.9376986066477,
+                "distance": 2.3999999999999875,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.613647689494022,
+                  3.2159251094621184
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -6.433340741420491,
+                0.036234900181943974,
+                3.339508931732753
+              ],
+              "screen": [
+                146.99072093505248,
+                163.73815786880152
+              ],
+              "bodyPixels": 23.024612794072112,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -6.433340741420491,
+                  0.036234900181943974,
+                  3.339508931732753
+                ],
+                "screen": [
+                  146.99072093505248,
+                  163.73815786880152
+                ],
+                "bodyPixels": 23.024612794072112,
+                "referenceScreen": [
+                  146.9979555321893,
+                  163.74081208847713
+                ]
+              },
+              "x": -6.376099625055685,
+              "z": 3.4242708914583853,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.333787366063641,
+                "distance": 2.479999999999987,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.4244572557561614,
+                  3.3818579658569954
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 0.9715852087921365,
+            "before": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -6.433348531071248,
+                0.036233356772723324,
+                3.339509245920593
+              ],
+              "screen": [
+                146.98516368278626,
+                163.73228983939788
+              ],
+              "bodyPixels": 23.024465165379866,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -6.433348531071248,
+                  0.036233356772723324,
+                  3.339509245920593
+                ],
+                "screen": [
+                  146.98516368278626,
+                  163.73228983939788
+                ],
+                "bodyPixels": 23.024465165379866,
+                "referenceScreen": [
+                  146.9852141376361,
+                  163.73225060307766
+                ]
+              },
+              "x": -6.3159551667244145,
+              "z": 3.4770216652161032,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.748933022269696,
+                "distance": 2.5599999999999867,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.4244572557561614,
+                  3.3818579658569954
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -6.059674474037156,
+                0.05636088727207467,
+                3.6486430750282794
+              ],
+              "screen": [
+                151.31638401435072,
+                163.50432372468492
+              ],
+              "bodyPixels": 23.02433105002521,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -6.435339305677423,
+                  0.03220622129832873,
+                  3.341240104352348
+                ],
+                "screen": [
+                  146.9771831626152,
+                  163.76998908295445
+                ],
+                "bodyPixels": 23.02433105002521,
+                "referenceScreen": [
+                  146.98032914763058,
+                  163.7270848470813
+                ]
+              },
+              "x": -6.255810708393144,
+              "z": 3.529772438973821,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.12795126303154958,
+                "distance": 2.6399999999999864,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.279581698389331,
+                  3.508923666699919
+                ]
+              }
+            }
+          },
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 0.0837581219039172,
+            "before": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -6.059607443892742,
+                0.05635595604928989,
+                3.648539509556095
+              ],
+              "screen": [
+                151.30497838904586,
+                163.4926699735963
+              ],
+              "bodyPixels": 23.023997970186258,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -6.059607443892742,
+                  0.05635595604928989,
+                  3.648539509556095
+                ],
+                "screen": [
+                  151.30497838904586,
+                  163.4926699735963
+                ],
+                "bodyPixels": 23.023997970186258,
+                "referenceScreen": [
+                  151.30502544773233,
+                  163.4928448467305
+                ]
+              },
+              "x": -6.105449562564966,
+              "z": 3.661649373368116,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.9372948588461086,
+                "distance": 2.839999999999985,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.279581698389331,
+                  3.508923666699919
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -5.606062936224044,
+                0.056354690690051834,
+                4.046686080574325
+              ],
+              "screen": [
+                156.70037206894395,
+                163.48858812212944
+              ],
+              "bodyPixels": 23.023906620003288,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -6.059743168289838,
+                  0.056354690690051834,
+                  3.6481017644845846
+                ],
+                "screen": [
+                  151.2986093619432,
+                  163.48858812212944
+                ],
+                "bodyPixels": 23.023906620003288,
+                "referenceScreen": [
+                  151.30210572426628,
+                  163.48982452671245
+                ]
+              },
+              "x": -6.045305104233695,
+              "z": 3.714400147125834,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.1226401741023302,
+                "distance": 2.919999999999985,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.093800101295396,
+                  3.6718667418984916
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 1.0050263089464926,
+            "before": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -5.605909879381092,
+                0.05635031103727495,
+                4.046487488529552
+              ],
+              "screen": [
+                156.6902682699676,
+                163.47867896299456
+              ],
+              "bodyPixels": 23.023561001400708,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -5.605909879381092,
+                  0.05635031103727495,
+                  4.046487488529552
+                ],
+                "screen": [
+                  156.6902682699676,
+                  163.47867896299456
+                ],
+                "bodyPixels": 23.023561001400708,
+                "referenceScreen": [
+                  156.69029011964403,
+                  163.47887258289458
+                ]
+              },
+              "x": -5.744582812577341,
+              "z": 3.978154015914424,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.8831440701694593,
+                "distance": 3.319999999999983,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -6.093800101295396,
+                  3.6718667418984916
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -5.60670239316172,
+                0.05232474385637054,
+                4.049307779960313
+              ],
+              "screen": [
+                156.70025691758175,
+                163.52055149706243
+              ],
+              "bodyPixels": 23.02350964958552,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -5.60670239316172,
+                  0.05232474385637054,
+                  4.049307779960313
+                ],
+                "screen": [
+                  156.70025691758175,
+                  163.52055149706243
+                ],
+                "bodyPixels": 23.02350964958552,
+                "referenceScreen": [
+                  156.68894308527547,
+                  163.47751528077438
+                ]
+              },
+              "x": -5.68443835424607,
+              "z": 4.0309047896721415,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.0605689263468827,
+                "distance": 3.399999999999982,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.698375050600047,
+                  4.018681360669765
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 0.17048485412663977,
+            "before": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -5.606697408428491,
+                0.05232347136330384,
+                4.049295030334762
+              ],
+              "screen": [
+                156.69713223233185,
+                163.5177683893954
+              ],
+              "bodyPixels": 23.02338211568471,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -5.606697408428491,
+                  0.05232347136330384,
+                  4.049295030334762
+                ],
+                "screen": [
+                  156.69713223233185,
+                  163.5177683893954
+                ],
+                "bodyPixels": 23.02338211568471,
+                "referenceScreen": [
+                  156.69714440002477,
+                  163.517785238088
+                ]
+              },
+              "x": -5.504004979252257,
+              "z": 4.189157110945293,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.8447329436249826,
+                "distance": 3.6399999999999797,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.698375050600047,
+                  4.018681360669765
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -5.607281464242211,
+                0.05232314480097,
+                4.048682836131106
+              ],
+              "screen": [
+                156.68880690934742,
+                163.51667867431112
+              ],
+              "bodyPixels": 23.02334713834955,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -5.607281464242211,
+                  0.05232314480097,
+                  4.048682836131106
+                ],
+                "screen": [
+                  156.68880690934742,
+                  163.51667867431112
+                ],
+                "bodyPixels": 23.02334713834955,
+                "referenceScreen": [
+                  156.6963452714764,
+                  163.51706647991554
+                ]
+              },
+              "x": -5.443860520920986,
+              "z": 4.24190788470301,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.31144191667146,
+                "distance": 3.719999999999979,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.468278577135079,
+                  4.22049159142029
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 1.000711347259286,
+            "before": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -5.607286030243404,
+                0.05232285747910592,
+                4.048686442878234
+              ],
+              "screen": [
+                156.68810700180825,
+                163.51609177659316
+              ],
+              "bodyPixels": 23.02331536269918,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -5.607286030243404,
+                  0.05232285747910592,
+                  4.048686442878234
+                ],
+                "screen": [
+                  156.68810700180825,
+                  163.51609177659316
+                ],
+                "bodyPixels": 23.02331536269918,
+                "referenceScreen": [
+                  156.6881164234216,
+                  163.5160598904145
+                ]
+              },
+              "x": -5.413788291755351,
+              "z": 4.268283271581868,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.695000403383574,
+                "distance": 3.7599999999999785,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.468278577135079,
+                  4.22049159142029
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -5.119913824051534,
+                0.020124078723826377,
+                4.506950419497536
+              ],
+              "screen": [
+                162.66770276092916,
+                163.8696804384591
+              ],
+              "bodyPixels": 23.023286495664223,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -5.608925035193809,
+                  0.04829778893718295,
+                  4.051063413288784
+                ],
+                "screen": [
+                  156.69050338224713,
+                  163.5597515817867
+                ],
+                "bodyPixels": 23.023286495664223,
+                "referenceScreen": [
+                  156.68750119438363,
+                  163.51554636473045
+                ]
+              },
+              "x": -5.35364383342408,
+              "z": 4.3210340453395855,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.129618288616823,
+                "distance": 3.8399999999999777,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.3898753343247945,
+                  4.289256558935283
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 0.11204103422845905,
+            "before": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -5.119897757291718,
+                0.020123793419097424,
+                4.506930520027957
+              ],
+              "screen": [
+                162.66588957064178,
+                163.86819329372247
+              ],
+              "bodyPixels": 23.02319514120063,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -5.119897757291718,
+                  0.020123793419097424,
+                  4.506930520027957
+                ],
+                "screen": [
+                  162.66588957064178,
+                  163.86819329372247
+                ],
+                "bodyPixels": 23.02319514120063,
+                "referenceScreen": [
+                  162.66589148119266,
+                  163.86822004636574
+                ]
+              },
+              "x": -5.113066000098996,
+              "z": 4.532037140370454,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.99028611245864,
+                "distance": 4.159999999999974,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.3898753343247945,
+                  4.289256558935283
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -4.726677113605398,
+                0.0402474843068108,
+                4.832658380403495
+              ],
+              "screen": [
+                167.23088417417853,
+                163.64636284588337
+              ],
+              "bodyPixels": 23.023177278758823,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -5.119454751601855,
+                  0.02012374215340529,
+                  4.507265775859895
+                ],
+                "screen": [
+                  162.67052405934746,
+                  163.86773955048682
+                ],
+                "bodyPixels": 23.023177278758823,
+                "referenceScreen": [
+                  162.66556778875892,
+                  163.86794806849306
+                ]
+              },
+              "x": -5.052921541767725,
+              "z": 4.584787914128171,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.285544942548571,
+                "distance": 4.239999999999974,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.110350729522907,
+                  4.534418617032216
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 0.9984125174364606,
+            "before": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -4.72667052176587,
+                0.040247314722118954,
+                4.832649922956284
+              ],
+              "screen": [
+                167.23034534851627,
+                163.645958883983
+              ],
+              "bodyPixels": 23.023146309377296,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -4.72667052176587,
+                  0.040247314722118954,
+                  4.832649922956284
+                ],
+                "screen": [
+                  167.23034534851627,
+                  163.645958883983
+                ],
+                "bodyPixels": 23.023146309377296,
+                "referenceScreen": [
+                  167.23034795157602,
+                  163.64598439624504
+                ]
+              },
+              "x": -4.9326326251051835,
+              "z": 4.690289461643605,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.883636142167461,
+                "distance": 4.399999999999972,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -5.110350729522907,
+                  4.534418617032216
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -4.728392923535586,
+                0.03622252039750662,
+                4.834943271189031
+              ],
+              "screen": [
+                167.23207184498784,
+                163.68997646204699
+              ],
+              "bodyPixels": 23.023132916804485,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -4.728392923535586,
+                  0.03622252039750662,
+                  4.834943271189031
+                ],
+                "screen": [
+                  167.23207184498784,
+                  163.68997646204699
+                ],
+                "bodyPixels": 23.023132916804485,
+                "referenceScreen": [
+                  167.23012665611293,
+                  163.64581431127235
+                ]
+              },
+              "x": -4.872488166773913,
+              "z": 4.743040235401322,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.194202212191666,
+                "distance": 4.479999999999971,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.909229367531307,
+                  4.710815707614155
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 0.16204640369582352,
+            "before": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -4.728390212540368,
+                0.03622237363047387,
+                4.8349393643873
+              ],
+              "screen": [
+                167.23155865403191,
+                163.68961323176552
+              ],
+              "bodyPixels": 23.02309965591499,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -4.728390212540368,
+                  0.03622237363047387,
+                  4.8349393643873
+                ],
+                "screen": [
+                  167.23155865403191,
+                  163.68961323176552
+                ],
+                "bodyPixels": 23.02309965591499,
+                "referenceScreen": [
+                  167.2315600581845,
+                  163.68962009670463
+                ]
+              },
+              "x": -4.722127020945735,
+              "z": 4.874917169795615,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.988963040514064,
+                "distance": 4.679999999999969,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.909229367531307,
+                  4.710815707614155
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -4.728985946659623,
+                0.03622233596391777,
+                4.834402155211005
+              ],
+              "screen": [
+                167.2242546115168,
+                163.68946829524293
+              ],
+              "bodyPixels": 23.023090533812763,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -4.728985946659623,
+                  0.03622233596391777,
+                  4.834402155211005
+                ],
+                "screen": [
+                  167.2242546115168,
+                  163.68946829524293
+                ],
+                "bodyPixels": 23.023090533812763,
+                "referenceScreen": [
+                  167.23142901664156,
+                  163.68952544425318
+                ]
+              },
+              "x": -4.661982562614464,
+              "z": 4.927667943553332,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.400732685583243,
+                "distance": 4.759999999999968,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.720038933793444,
+                  4.876748564009031
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 1.0017833479703473,
+            "before": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -4.728986114574693,
+                0.03622230282296912,
+                4.834402162340545
+              ],
+              "screen": [
+                167.22413983720716,
+                163.68939161108418
+              ],
+              "bodyPixels": 23.023082246711084,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -4.728986114574693,
+                  0.03622230282296912,
+                  4.834402162340545
+                ],
+                "screen": [
+                  167.22413983720716,
+                  163.68939161108418
+                ],
+                "bodyPixels": 23.023082246711084,
+                "referenceScreen": [
+                  167.22414092426888,
+                  163.68939076559468
+                ]
+              },
+              "x": -4.6018381042831935,
+              "z": 4.980418717311049,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.815878341789296,
+                "distance": 4.839999999999967,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.720038933793444,
+                  4.876748564009031
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -4.355050517518164,
+                0.05634575903268635,
+                5.143215609114408
+              ],
+              "screen": [
+                171.55990355933295,
+                163.4679178787247
+              ],
+              "bodyPixels": 23.023074718177497,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -4.731143185125602,
+                  0.0321975765901068,
+                  4.836335712971567
+                ],
+                "screen": [
+                  167.22093947783026,
+                  163.7335687408575
+                ],
+                "bodyPixels": 23.023074718177497,
+                "referenceScreen": [
+                  167.22404014674152,
+                  163.68932315138434
+                ]
+              },
+              "x": -4.541693645951923,
+              "z": 5.033169491068766,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.18015632871196924,
+                "distance": 4.919999999999966,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.575163376426612,
+                  5.003814264851953
+                ]
+              }
+            }
+          },
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 0.07803896607241025,
+            "before": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -4.355049497780117,
+                0.056345684010018715,
+                5.143214029272985
+              ],
+              "screen": [
+                171.55973548714206,
+                163.4678122255232
+              ],
+              "bodyPixels": 23.023061665425104,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -4.355049497780117,
+                  0.056345684010018715,
+                  5.143214029272985
+                ],
+                "screen": [
+                  171.55973548714206,
+                  163.4678122255232
+                ],
+                "bodyPixels": 23.023061665425104,
+                "referenceScreen": [
+                  171.55973663892965,
+                  163.46781650364144
+                ]
+              },
+              "x": -4.421404729289381,
+              "z": 5.1386710385842,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.8276312053636118,
+                "distance": 5.0799999999999645,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.575163376426612,
+                  5.003814264851953
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -3.9013287521397038,
+                0.05634565311504014,
+                5.541166661546151
+              ],
+              "screen": [
+                176.9577757115193,
+                163.4677419770709
+              ],
+              "bodyPixels": 23.023056020819695,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -4.3553360422838745,
+                  0.05634565311504014,
+                  5.14295492076501
+                ],
+                "screen": [
+                  171.55621256817312,
+                  163.4677419770709
+                ],
+                "bodyPixels": 23.023056020819695,
+                "referenceScreen": [
+                  171.55966761957205,
+                  163.46777220535222
+                ]
+              },
+              "x": -4.36126027095811,
+              "z": 5.191421812341917,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.071117164492018,
+                "distance": 5.159999999999964,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.389381779332676,
+                  5.166757340050524
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 1.0316555460065437,
+            "before": {
+              "frame": 1,
+              "direction": "right",
+              "world": [
+                -3.901324512704857,
+                0.05634553183251012,
+                5.54116115351173
+              ],
+              "screen": [
+                176.95750248615872,
+                163.46758186102736
+              ],
+              "bodyPixels": 23.02303149168057,
+              "contact": {
+                "frame": 1,
+                "direction": "right",
+                "world": [
+                  -3.901324512704857,
+                  0.05634553183251012,
+                  5.54116115351173
+                ],
+                "screen": [
+                  176.95750248615872,
+                  163.46758186102736
+                ],
+                "bodyPixels": 23.02303149168057,
+                "referenceScreen": [
+                  176.9575029563278,
+                  163.46758602542573
+                ]
+              },
+              "x": -4.000393520970484,
+              "z": 5.50792645488822,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 1,
+                "phase": 1.983721839772566,
+                "distance": 5.639999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -4.389381779332676,
+                  5.166757340050524
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -3.9022687790082315,
+                0.05232083927692366,
+                5.544159246543516
+              ],
+              "screen": [
+                176.96880758914128,
+                163.51181693497327
+              ],
+              "bodyPixels": 23.023028609058628,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -3.9022687790082315,
+                  0.05232083927692366,
+                  5.544159246543516
+                ],
+                "screen": [
+                  176.96880758914128,
+                  163.51181693497327
+                ],
+                "bodyPixels": 23.023028609058628,
+                "referenceScreen": [
+                  176.95747482152123,
+                  163.46756853704645
+                ]
+              },
+              "x": -3.9703212918048485,
+              "z": 5.534301841767078,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.102719683081428,
+                "distance": 5.679999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.993956728637324,
+                  5.513571958821795
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 0.17002150464541219,
+            "before": {
+              "frame": 2,
+              "direction": "right",
+              "world": [
+                -3.9022686719447597,
+                0.05232081193166849,
+                5.5441589723855955
+              ],
+              "screen": [
+                176.9687424474507,
+                163.51178414736196
+              ],
+              "bodyPixels": 23.023021449973356,
+              "contact": {
+                "frame": 2,
+                "direction": "right",
+                "world": [
+                  -3.9022686719447597,
+                  0.05232081193166849,
+                  5.5441589723855955
+                ],
+                "screen": [
+                  176.9687424474507,
+                  163.51178414736196
+                ],
+                "bodyPixels": 23.023021449973356,
+                "referenceScreen": [
+                  176.9687427090985,
+                  163.5117845096441
+                ]
+              },
+              "x": -3.789887916811033,
+              "z": 5.69255416304023,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 2,
+                "phase": 2.8868837003595353,
+                "distance": 5.919999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.993956728637324,
+                  5.513571958821795
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -3.9029003311245387,
+                0.052320804913685626,
+                5.543602816094605
+              ],
+              "screen": [
+                176.96119838173308,
+                163.51176758544761
+              ],
+              "bodyPixels": 23.023019486528938,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -3.9029003311245387,
+                  0.052320804913685626,
+                  5.543602816094605
+                ],
+                "screen": [
+                  176.96119838173308,
+                  163.51176758544761
+                ],
+                "bodyPixels": 23.023019486528938,
+                "referenceScreen": [
+                  176.9687260856059,
+                  163.5117759225406
+                ]
+              },
+              "x": -3.7297434584797613,
+              "z": 5.745304936797947,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.4351452244793936,
+                "distance": 5.999999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.7638602551723555,
+                  5.715382189572317
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 1.0022699272549644,
+            "before": {
+              "frame": 3,
+              "direction": "right",
+              "world": [
+                -3.9029003311245387,
+                0.052320804913685626,
+                5.543602816094605
+              ],
+              "screen": [
+                176.96119838173308,
+                163.51176758544761
+              ],
+              "bodyPixels": 23.023019486528938,
+              "contact": {
+                "frame": 3,
+                "direction": "right",
+                "world": [
+                  -3.9029003311245387,
+                  0.052320804913685626,
+                  5.543602816094605
+                ],
+                "screen": [
+                  176.96119838173308,
+                  163.51176758544761
+                ],
+                "bodyPixels": 23.023019486528938,
+                "referenceScreen": [
+                  176.9687260856059,
+                  163.5117759225406
+                ]
+              },
+              "x": -3.7297434584797613,
+              "z": 5.745304936797947,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 3,
+                "phase": 3.4351452244793936,
+                "distance": 5.999999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.7638602551723555,
+                  5.715382189572317
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -3.415456385568665,
+                0.020123384130343203,
+                6.001792564671094
+              ],
+              "screen": [
+                182.94132389377182,
+                163.8659588427762
+              ],
+              "bodyPixels": 23.023017702810307,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -3.9045472791979403,
+                  0.04829612191282351,
+                  5.545990985456238
+                ],
+                "screen": [
+                  176.9641942978499,
+                  163.55603360446915
+                ],
+                "bodyPixels": 23.023017702810307,
+                "referenceScreen": [
+                  176.96118404249574,
+                  163.51176028877467
+                ]
+              },
+              "x": -3.6695990001484895,
+              "z": 5.798055710555664,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.056732079899798,
+                "distance": 6.079999999999959,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.6854570123620696,
+                  5.78414715708731
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 0.11197945109921698,
+            "before": {
+              "frame": 4,
+              "direction": "right",
+              "world": [
+                -3.4154559930878787,
+                0.020123377161327394,
+                6.001792078421397
+              ],
+              "screen": [
+                182.94128016674733,
+                163.86593989990826
+              ],
+              "bodyPixels": 23.023012057940463,
+              "contact": {
+                "frame": 4,
+                "direction": "right",
+                "world": [
+                  -3.4154559930878787,
+                  0.020123377161327394,
+                  6.001792078421397
+                ],
+                "screen": [
+                  182.94128016674733,
+                  163.86593989990826
+                ],
+                "bodyPixels": 23.023012057940463,
+                "referenceScreen": [
+                  182.94128021343542,
+                  163.8659405535445
+                ]
+              },
+              "x": -3.4290211668234023,
+              "z": 6.009058805586532,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 4,
+                "phase": 4.917399903741623,
+                "distance": 6.3999999999999595,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.6854570123620696,
+                  5.78414715708731
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -3.022230319062204,
+                0.040246751818102666,
+                6.327512444962829
+              ],
+              "screen": [
+                187.50655747637853,
+                163.64455677885755
+              ],
+              "bodyPixels": 23.023010954205034,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -3.4150386232991465,
+                  0.020123375909051333,
+                  6.002156838180772
+                ],
+                "screen": [
+                  182.94623030660333,
+                  163.86593188418647
+                ],
+                "bodyPixels": 23.023010954205034,
+                "referenceScreen": [
+                  182.94127241666416,
+                  163.86593697844552
+                ]
+              },
+              "x": -3.3688767084921305,
+              "z": 6.061809579344249,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.18424546602662,
+                "distance": 6.47999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.405932407560182,
+                  6.02930921518424
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 1.0009120027811598,
+            "before": {
+              "frame": 5,
+              "direction": "right",
+              "world": [
+                -3.022230091723159,
+                0.04024674596965805,
+                6.327512153231737
+              ],
+              "screen": [
+                187.50653886084697,
+                163.6445499114875
+              ],
+              "bodyPixels": 23.023008213042203,
+              "contact": {
+                "frame": 5,
+                "direction": "right",
+                "world": [
+                  -3.022230091723159,
+                  0.04024674596965805,
+                  6.327512153231737
+                ],
+                "screen": [
+                  187.50653886084697,
+                  163.6445499114875
+                ],
+                "bodyPixels": 23.023008213042203,
+                "referenceScreen": [
+                  187.50653891680713,
+                  163.64455045989837
+                ]
+              },
+              "x": -3.218515562663951,
+              "z": 6.193686513738542,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 5,
+                "phase": 5.931859465550239,
+                "distance": 6.67999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.405932407560182,
+                  6.02930921518424
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -3.023966282471789,
+                0.03622207002182232,
+                6.329821880146672
+              ],
+              "screen": [
+                187.5084815831834,
+                163.68882116511085
+              ],
+              "bodyPixels": 23.023007461253314,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -3.023966282471789,
+                  0.03622207002182232,
+                  6.329821880146672
+                ],
+                "screen": [
+                  187.5084815831834,
+                  163.68882116511085
+                ],
+                "bodyPixels": 23.023007461253314,
+                "referenceScreen": [
+                  187.5065341587254,
+                  163.6445485819474
+                ]
+              },
+              "x": -3.158371104332679,
+              "z": 6.246437287496259,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.245466646058046,
+                "distance": 6.75999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.2048110455685794,
+                  6.205706305766178
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 0.16201400481002826,
+            "before": {
+              "frame": 6,
+              "direction": "right",
+              "world": [
+                -3.0239662412002137,
+                0.03622206778749004,
+                6.329821820663253
+              ],
+              "screen": [
+                187.50847375689418,
+                163.68881854398765
+              ],
+              "bodyPixels": 23.023006157823602,
+              "contact": {
+                "frame": 6,
+                "direction": "right",
+                "world": [
+                  -3.0239662412002137,
+                  0.03622206778749004,
+                  6.329821820663253
+                ],
+                "screen": [
+                  187.50847375689418,
+                  163.68881854398765
+                ],
+                "bodyPixels": 23.023006157823602,
+                "referenceScreen": [
+                  187.5084737911989,
+                  163.68881871169955
+                ]
+              },
+              "x": -3.0380821876701356,
+              "z": 6.351938835011693,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 6,
+                "phase": 6.881275308715971,
+                "distance": 6.91999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.2048110455685794,
+                  6.205706305766178
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -3.024568988180005,
+                0.036222066867370284,
+                6.3292928112844145
+              ],
+              "screen": [
+                187.50129740705844,
+                163.68881618834854
+              ],
+              "bodyPixels": 23.023005594161162,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -3.024568988180005,
+                  0.036222066867370284,
+                  6.3292928112844145
+                ],
+                "screen": [
+                  187.50129740705844,
+                  163.68881618834854
+                ],
+                "bodyPixels": 23.023005594161162,
+                "referenceScreen": [
+                  187.5084705787285,
+                  163.68881758446918
+                ]
+              },
+              "x": -2.977937729338864,
+              "z": 6.40468960876941,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.260105176999853,
+                "distance": 6.99999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.015620611830716,
+                  6.371639162161052
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 1.0024314882055712,
+            "before": {
+              "frame": 7,
+              "direction": "right",
+              "world": [
+                -3.0245689922821932,
+                0.036222066057800095,
+                6.329292811458778
+              ],
+              "screen": [
+                187.50129459309142,
+                163.6888153476965
+              ],
+              "bodyPixels": 23.023005082094073,
+              "contact": {
+                "frame": 7,
+                "direction": "right",
+                "world": [
+                  -3.0245689922821932,
+                  0.036222066057800095,
+                  6.329292811458778
+                ],
+                "screen": [
+                  187.50129459309142,
+                  163.6888153476965
+                ],
+                "bodyPixels": 23.023005082094073,
+                "referenceScreen": [
+                  187.50129461964815,
+                  163.68881532704128
+                ]
+              },
+              "x": -2.917793271007592,
+              "z": 6.457440382527127,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 7,
+                "phase": 7.675250833205911,
+                "distance": 7.07999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -3.015620611830716,
+                  6.371639162161052
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "right",
+              "world": [
+                -2.650627790929498,
+                0.05634543498188416,
+                6.638099383164688
+              ],
+              "screen": [
+                191.83714329304723,
+                163.467438808418
+              ],
+              "bodyPixels": 23.02300461689964,
+              "contact": {
+                "frame": 0,
+                "direction": "right",
+                "world": [
+                  -3.026729625929891,
+                  0.03219739141821987,
+                  6.331230711415055
+                ],
+                "screen": [
+                  187.49819242293927,
+                  163.73308886168994
+                ],
+                "bodyPixels": 23.02300461689964,
+                "referenceScreen": [
+                  187.50129214853231,
+                  163.68881457479768
+                ]
+              },
+              "x": -2.85764881267632,
+              "z": 6.5101911562848445,
+              "motion": {
+                "loaded": true,
+                "direction": "right",
+                "frame": 0,
+                "phase": 0.07049267522951587,
+                "distance": 7.15999999999996,
+                "strideBodyRatio": 0.880769,
+                "visualRoot": [
+                  -2.870745054463884,
+                  6.498704863003973
+                ]
+              }
+            }
+          }
+        ],
+        "errors": [],
+        "maxHeldDriftSpritePx": 0.32294756075222636,
+        "maxBoundaryJumpSpritePx": 1.2569422647356963,
+        "scope": "Blacksmith right-view flat-ground material contacts across three complete strides; camera turns, terrain and other views are separate."
+      }
+    },
+    {
+      "direction": "left",
+      "observationsSha256": "032e209f17945f83972443abd20e0bfbdc08ef4f09f8bb1a9801699841ccc68b",
+      "result": {
+        "method": "Actual rendered mesh matrices and camera, matching visible material marks. Camera movement compensated by reprojecting the prior world contact.",
+        "sourceBinding": {
+          "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+          "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+          "frameSha256": [
+            "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0",
+            "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b",
+            "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619",
+            "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6",
+            "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570",
+            "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88",
+            "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e",
+            "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d"
+          ],
+          "durationsMs": [
+            103,
+            205,
+            91,
+            46,
+            121,
+            176,
+            159,
+            99
+          ],
+          "actualSettingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+          "atlasSha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
+          "registration": {
+            "method": "source-landmarks",
+            "targetAnchor": [
+              320,
+              616
+            ],
+            "targetBodyHeight": 520,
+            "scaleScope": "directional-body-height",
+            "landmarksVerified": false,
+            "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+            "exportVersion": 2,
+            "stationRegistration": null
+          },
+          "direction": "left",
+          "sourceFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "assets": [
+          {
+            "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+            "atlasSha256": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
+            "travelCalibration": {
+              "version": 1,
+              "sourceSha256": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+              "settingsSha256": "4367d42ac0c4a1dd2040d5eea6501e4a70085af3b8cd3eff1fc252bfd75a9232",
+              "direction": "left",
+              "durationsMs": [
+                103,
+                205,
+                91,
+                46,
+                121,
+                176,
+                159,
+                99
+              ],
+              "strideBodyRatio": 1.267308,
+              "scope": "Reviewed sole-material boundaries at this fixed view on flat ground. Turning, uneven terrain, equipment and final cycle approval are separate."
+            }
+          }
+        ],
+        "holds": [
+          {
+            "frame": 0,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.2799730223062131
+          },
+          {
+            "frame": 0,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.24828544745933204
+          },
+          {
+            "frame": 1,
+            "moved": 0.04000000000000041,
+            "contactDriftSpritePx": 0.33726953479062693
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.29832610667426745
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.2637069255558943
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.23297191626621594
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.20571615515357378
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.18156956811322003
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.16019580865468278
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.14129059715650624
+          },
+          {
+            "frame": 2,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.02313389766378555
+          },
+          {
+            "frame": 2,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.02038770626517099
+          },
+          {
+            "frame": 3,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.015592457892852662
+          },
+          {
+            "frame": 3,
+            "moved": 0.04000000000000041,
+            "contactDriftSpritePx": 0.013734844447671223
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.02767421031117412
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.024367703803675235
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.02145429633513916
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.018887698788396814
+          },
+          {
+            "frame": 5,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.02562727703818933
+          },
+          {
+            "frame": 5,
+            "moved": 0.08000000000000064,
+            "contactDriftSpritePx": 0.022557239369664306
+          },
+          {
+            "frame": 5,
+            "moved": 0.08000000000000064,
+            "contactDriftSpritePx": 0.019854025680743712
+          },
+          {
+            "frame": 5,
+            "moved": 0.08000000000000072,
+            "contactDriftSpritePx": 0.017474021794941823
+          },
+          {
+            "frame": 5,
+            "moved": 0.08000000000000064,
+            "contactDriftSpritePx": 0.015378750134633273
+          },
+          {
+            "frame": 5,
+            "moved": 0.04000000000000032,
+            "contactDriftSpritePx": 0.01353427592647955
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.002855388146211773
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00251272879211501
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0022111471352990763
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000072,
+            "contactDriftSpritePx": 0.0019457285317628522
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000072,
+            "contactDriftSpritePx": 0.001712144139994306
+          },
+          {
+            "frame": 6,
+            "moved": 0.08000000000000072,
+            "contactDriftSpritePx": 0.0015065815924428883
+          },
+          {
+            "frame": 7,
+            "moved": 0.08000000000000078,
+            "contactDriftSpritePx": 0.0018155437641180978
+          },
+          {
+            "frame": 7,
+            "moved": 0.08000000000000072,
+            "contactDriftSpritePx": 0.0015975197423937267
+          },
+          {
+            "frame": 7,
+            "moved": 0.08000000000000078,
+            "contactDriftSpritePx": 0.00140566630838845
+          },
+          {
+            "frame": 0,
+            "moved": 0.04000000000000038,
+            "contactDriftSpritePx": 0.0015694213317145032
+          },
+          {
+            "frame": 0,
+            "moved": 0.08000000000000076,
+            "contactDriftSpritePx": 0.001380915460099377
+          },
+          {
+            "frame": 0,
+            "moved": 0.08000000000000078,
+            "contactDriftSpritePx": 0.0012150455541913444
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000078,
+            "contactDriftSpritePx": 0.0016294097336932304
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000079,
+            "contactDriftSpritePx": 0.001433675775499233
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0012614508866996413
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0011099122699942024
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0009765758892658404
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000078,
+            "contactDriftSpritePx": 0.0008592558487819282
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0007560286485416717
+          },
+          {
+            "frame": 1,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.0006652017029940293
+          },
+          {
+            "frame": 2,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00010847468563863517
+          },
+          {
+            "frame": 2,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00009544253163684792
+          },
+          {
+            "frame": 2,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00008397598597689055
+          },
+          {
+            "frame": 3,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00006407373976046756
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000082,
+            "contactDriftSpritePx": 0.00012883331821105437
+          },
+          {
+            "frame": 4,
+            "moved": 0.08000000000000024,
+            "contactDriftSpritePx": 0.00011335482574977217
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00009973593314286362
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00008775323466503653
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00011895106941347297
+          },
+          {
+            "frame": 5,
+            "moved": 0.03999999999999982,
+            "contactDriftSpritePx": 0.00010465969252502259
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00009208533368727024
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00008102170666675113
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00007128731308445494
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.0000627224515782366
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000013227535666816182
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000011638301168505783
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00001024000501186415
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000009009707842536585
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000007927226767288844
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.00000697480003885272
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000008403912231704967
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000007394212410547675
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.0000065058249949372516
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000007262985915905831
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000006390363492318526
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000005622583719747779
+          },
+          {
+            "frame": 0,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000004947050000403216
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000006633750363571226
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.0000058367283175787595
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.0000051354666358235926
+          },
+          {
+            "frame": 1,
+            "moved": 0.03999999999999982,
+            "contactDriftSpritePx": 0.000004518456741393221
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000003975580153815139
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.0000034979275773956135
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000003077663905454138
+          },
+          {
+            "frame": 1,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 0.000002707893197452435
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 4.4156850336846333e-7
+          },
+          {
+            "frame": 2,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 3.885156133128062e-7
+          },
+          {
+            "frame": 3,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 2.9643484650245784e-7
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 5.960380646340372e-7
+          },
+          {
+            "frame": 4,
+            "moved": 0.03999999999999982,
+            "contactDriftSpritePx": 5.244259042302757e-7
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 4.61417593509539e-7
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 4.059806169707328e-7
+          },
+          {
+            "frame": 4,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 3.5720233818214343e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 4.841924087297472e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 4.26019596791694e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999964,
+            "contactDriftSpritePx": 3.748328809950038e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 3.297996437078239e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 2.9017485178508507e-7
+          },
+          {
+            "frame": 5,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 2.553110610911313e-7
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 5.3842720253493315e-8
+          },
+          {
+            "frame": 6,
+            "moved": 0.03999999999999949,
+            "contactDriftSpritePx": 4.737302572076251e-8
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 4.168170807333552e-8
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 3.667394960790417e-8
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 3.2267329514039814e-8
+          },
+          {
+            "frame": 6,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 2.8390847202113807e-8
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 3.420735980610076e-8
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 3.0097849028844156e-8
+          },
+          {
+            "frame": 7,
+            "moved": 0.07999999999999897,
+            "contactDriftSpritePx": 2.6481028486518377e-8
+          }
+        ],
+        "boundaries": [
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 2.3843361905110054,
+            "before": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                2.211087838149722,
+                0.05267589334600231,
+                10.885556079595421
+              ],
+              "screen": [
+                250.480544296335,
+                162.32039406601348
+              ],
+              "bodyPixels": 23.037672399199124,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  2.211087838149722,
+                  0.05267589334600231,
+                  10.885556079595421
+                ],
+                "screen": [
+                  250.480544296335,
+                  162.32039406601348
+                ],
+                "bodyPixels": 23.037672399199124,
+                "referenceScreen": [
+                  250.48207515222552,
+                  162.30950126816882
+                ]
+              },
+              "x": 2.284702374647443,
+              "z": 11.020382312569748,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.9657609172655016,
+                "distance": 0.5600000000000058,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  2.5286537106403313,
+                  11.234344198500693
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                1.7152075385590377,
+                0.07692507127958281,
+                10.416591884246134
+              ],
+              "screen": [
+                244.2700363685708,
+                162.24719794403327
+              ],
+              "bodyPixels": 23.03632934670179,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  2.2015344290917347,
+                  0.04858425554499979,
+                  10.896705606408183
+                ],
+                "screen": [
+                  250.38352377211862,
+                  162.55730237754656
+                ],
+                "bodyPixels": 23.03632934670179,
+                "referenceScreen": [
+                  250.378093116768,
+                  162.45181447028523
+                ]
+              },
+              "x": 2.2245579163161713,
+              "z": 10.967631538812029,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.1024284097778219,
+                "distance": 0.6400000000000067,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  2.276053577800391,
+                  11.012796730482659
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 1.8733078061869382,
+            "before": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                1.7042748999769024,
+                0.07663188831776457,
+                10.427030000222842
+              ],
+              "screen": [
+                243.76344090643207,
+                162.8849810080803
+              ],
+              "bodyPixels": 23.02918401738998,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  1.7042748999769024,
+                  0.07663188831776457,
+                  10.427030000222842
+                ],
+                "screen": [
+                  243.76344090643207,
+                  162.8849810080803
+                ],
+                "bodyPixels": 23.02918401738998,
+                "referenceScreen": [
+                  243.76416411402198,
+                  162.87876562050596
+                ]
+              },
+              "x": 1.7734744788316328,
+              "z": 10.572000735629137,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.9996643680500228,
+                "distance": 1.2400000000000126,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  2.276053577800391,
+                  11.012796730482659
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                1.697047272723749,
+                0.07258001891047394,
+                10.434346933831801
+              ],
+              "screen": [
+                243.72416521813872,
+                163.005680865997
+              ],
+              "bodyPixels": 23.028617957273553,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  1.697047272723749,
+                  0.07258001891047394,
+                  10.434346933831801
+                ],
+                "screen": [
+                  243.72416521813872,
+                  163.005680865997
+                ],
+                "bodyPixels": 23.028617957273553,
+                "referenceScreen": [
+                  243.72873905771223,
+                  162.92284610353852
+                ]
+              },
+              "x": 1.713330020500361,
+              "z": 10.519249961871418,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.2687433513885877,
+                "distance": 1.3200000000000134,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.7733057405946846,
+                  10.571852740738029
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 1.2420530838564017,
+            "before": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                1.6967814696842523,
+                0.0725492624589752,
+                10.434478432811526
+              ],
+              "screen": [
+                243.66522236881264,
+                163.07004084376513
+              ],
+              "bodyPixels": 23.02763653872472,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  1.6967814696842523,
+                  0.0725492624589752,
+                  10.434478432811526
+                ],
+                "screen": [
+                  243.66522236881264,
+                  163.07004084376513
+                ],
+                "bodyPixels": 23.02763653872472,
+                "referenceScreen": [
+                  243.66568731197077,
+                  163.0692669177788
+                ]
+              },
+              "x": 1.5930411038378174,
+              "z": 10.41374841435598,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.8077422420722544,
+                "distance": 1.4800000000000149,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.7733057405946846,
+                  10.571852740738029
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                1.693599596724721,
+                0.06850679547376659,
+                10.438230467809351
+              ],
+              "screen": [
+                243.6422384366114,
+                163.1508731520106
+              ],
+              "bodyPixels": 23.02721212859055,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  1.693599596724721,
+                  0.06850679547376659,
+                  10.438230467809351
+                ],
+                "screen": [
+                  243.6422384366114,
+                  163.1508731520106
+                ],
+                "bodyPixels": 23.02721212859055,
+                "referenceScreen": [
+                  243.64121978326324,
+                  163.09588062448242
+                ]
+              },
+              "x": 1.5328966455065456,
+              "z": 10.360997640598262,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.1528042077104774,
+                "distance": 1.5600000000000156,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.5501347494448343,
+                  10.376116628217241
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 1.1144256275952937,
+            "before": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                1.6937087552500412,
+                0.06848703898954023,
+                10.437999605258522
+              ],
+              "screen": [
+                243.6016451541752,
+                163.19249869980354
+              ],
+              "bodyPixels": 23.026476298656718,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  1.6937087552500412,
+                  0.06848703898954023,
+                  10.437999605258522
+                ],
+                "screen": [
+                  243.6016451541752,
+                  163.19249869980354
+                ],
+                "bodyPixels": 23.026476298656718,
+                "referenceScreen": [
+                  243.601944677477,
+                  163.1930280347967
+                ]
+              },
+              "x": 1.4426799580096379,
+              "z": 10.281871479961683,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.952514518344396,
+                "distance": 1.6800000000000168,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.5501347494448343,
+                  10.376116628217241
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                1.126471690503715,
+                0.040281710442716445,
+                9.963671304480663
+              ],
+              "screen": [
+                236.97308325489593,
+                163.52306755318983
+              ],
+              "bodyPixels": 23.026158092238774,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  1.6902432582961253,
+                  0.06445073670834622,
+                  10.439527974096901
+                ],
+                "screen": [
+                  243.5709631697874,
+                  163.25738111366402
+                ],
+                "bodyPixels": 23.026158092238774,
+                "referenceScreen": [
+                  243.58511838988744,
+                  163.21010690101522
+                ]
+              },
+              "x": 1.382535499678366,
+              "z": 10.229120706203965,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.184629069173132,
+                "distance": 1.7600000000000176,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.4373230396328223,
+                  10.27717309881113
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 1.154599625921495,
+            "before": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                1.1259289865787743,
+                0.040267684284466254,
+                9.964208548382588
+              ],
+              "screen": [
+                236.92380250038053,
+                163.57195101629856
+              ],
+              "bodyPixels": 23.02515107587371,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  1.1259289865787743,
+                  0.040267684284466254,
+                  9.964208548382588
+                ],
+                "screen": [
+                  236.92380250038053,
+                  163.57195101629856
+                ],
+                "bodyPixels": 23.02515107587371,
+                "referenceScreen": [
+                  236.92389612690602,
+                  163.5711199425298
+                ]
+              },
+              "x": 1.1419576663532789,
+              "z": 10.01811761117309,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.9953546733419545,
+                "distance": 2.080000000000021,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.4373230396328223,
+                  10.27717309881113
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                0.5916851287151139,
+                0.06442426464374273,
+                9.47181200157804
+              ],
+              "screen": [
+                230.4174860907845,
+                163.3198612901093
+              ],
+              "bodyPixels": 23.024954175027176,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  1.1242870371875693,
+                  0.03623864886210537,
+                  9.968013496088595
+                ],
+                "screen": [
+                  236.92646352103256,
+                  163.62981259631158
+                ],
+                "bodyPixels": 23.024954175027176,
+                "referenceScreen": [
+                  236.91498034155552,
+                  163.57999468543005
+                ]
+              },
+              "x": 1.081813208022007,
+              "z": 9.96536683741537,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.13614980113911,
+                "distance": 2.160000000000022,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.1405791942577472,
+                  10.016908597547225
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 1.076501715957552,
+            "before": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                0.5910165444169504,
+                0.06440845062932277,
+                9.472484199317782
+              ],
+              "screen": [
+                230.38256172698377,
+                163.35168270603876
+              ],
+              "bodyPixels": 23.024098524728117,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  0.5910165444169504,
+                  0.06440845062932277,
+                  9.472484199317782
+                ],
+                "screen": [
+                  230.38256172698377,
+                  163.35168270603876
+                ],
+                "bodyPixels": 23.024098524728117,
+                "referenceScreen": [
+                  230.38262294073547,
+                  163.35108658204467
+                ]
+              },
+              "x": 0.7510186872000131,
+              "z": 9.675237581747917,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.902538848829947,
+                "distance": 2.6000000000000254,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  1.1405791942577472,
+                  10.016908597547225
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                0.5887426014818405,
+                0.06038138148138206,
+                9.475182913223968
+              ],
+              "screen": [
+                230.37961841732724,
+                163.4021165514782
+              ],
+              "bodyPixels": 23.02399797018623,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  0.5887426014818405,
+                  0.06038138148138206,
+                  9.475182913223968
+                ],
+                "screen": [
+                  230.37961841732724,
+                  163.4021165514782
+                ],
+                "bodyPixels": 23.02399797018623,
+                "referenceScreen": [
+                  230.37896274763307,
+                  163.35445688192874
+                ]
+              },
+              "x": 0.6908742288687415,
+              "z": 9.622486807990198,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.046360295095456,
+                "distance": 2.680000000000026,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.7089517828030923,
+                  9.638342050254273
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 1.0480913046355496,
+            "before": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                0.5886645686558556,
+                0.060375333254223174,
+                9.475238194545286
+              ],
+              "screen": [
+                230.36521009857393,
+                163.41349423105424
+              ],
+              "bodyPixels": 23.023561001400736,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  0.5886645686558556,
+                  0.060375333254223174,
+                  9.475238194545286
+                ],
+                "screen": [
+                  230.36521009857393,
+                  163.41349423105424
+                ],
+                "bodyPixels": 23.023561001400736,
+                "referenceScreen": [
+                  230.3652335229886,
+                  163.41343177367747
+                ]
+              },
+              "x": 0.33000747888111104,
+              "z": 9.305982165443885,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.97181122060892,
+                "distance": 3.1600000000000303,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.7089517828030923,
+                  9.638342050254273
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                0.5874367436720624,
+                0.0563497241530142,
+                9.478276689508347
+              ],
+              "screen": [
+                230.3733988288109,
+                163.46000201013652
+              ],
+              "bodyPixels": 23.02350964958552,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  0.5874367436720624,
+                  0.0563497241530142,
+                  9.478276689508347
+                ],
+                "screen": [
+                  230.3733988288109,
+                  163.46000201013652
+                ],
+                "bodyPixels": 23.02350964958552,
+                "referenceScreen": [
+                  230.36372377330676,
+                  163.414616523901
+                ]
+              },
+              "x": 0.26986302054983935,
+              "z": 9.253231391686166,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.202448824271971,
+                "distance": 3.240000000000031,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.31901565540939825,
+                  9.296341589915754
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 1.0361619868523348,
+            "before": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                0.5874606553403512,
+                0.056348353775865334,
+                9.478241830539071
+              ],
+              "screen": [
+                230.3698689724839,
+                163.46240699742944
+              ],
+              "bodyPixels": 23.02338211568474,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  0.5874606553403512,
+                  0.056348353775865334,
+                  9.478241830539071
+                ],
+                "screen": [
+                  230.3698689724839,
+                  163.46240699742944
+                ],
+                "bodyPixels": 23.02338211568474,
+                "referenceScreen": [
+                  230.3698820748213,
+                  163.462467839533
+                ]
+              },
+              "x": 0.08942964555602417,
+              "z": 9.09497907041301,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.945613961426721,
+                "distance": 3.4800000000000333,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.31901565540939825,
+                  9.296341589915754
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                -0.2525320413866252,
+                0.05232314480097,
+                8.745083074729788
+              ],
+              "screen": [
+                220.3962636907408,
+                163.5076911753878
+              ],
+              "bodyPixels": 23.02334713834952,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  0.5846196824912283,
+                  0.05232314480097,
+                  9.479668708749633
+                ],
+                "screen": [
+                  230.35828889483435,
+                  163.5076911753878
+                ],
+                "bodyPixels": 23.02334713834952,
+                "referenceScreen": [
+                  230.3689714818606,
+                  163.4630754855422
+                ]
+              },
+              "x": 0.02928518722475245,
+              "z": 9.04222829665529,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.1858274923043903,
+                "distance": 3.5600000000000342,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.0762252364661544,
+                  9.08339790706347
+                ]
+              }
+            }
+          },
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 1.0140695202450363,
+            "before": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                -0.2525565845764455,
+                0.052322382260578504,
+                8.745106808353365
+              ],
+              "screen": [
+                220.39417153012178,
+                163.5089962648152
+              ],
+              "bodyPixels": 23.023260271001675,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  -0.2525565845764455,
+                  0.052322382260578504,
+                  8.745106808353365
+                ],
+                "screen": [
+                  220.39417153012178,
+                  163.5089962648152
+                ],
+                "bodyPixels": 23.023260271001675,
+                "referenceScreen": [
+                  220.39417882473552,
+                  163.50894296491907
+                ]
+              },
+              "x": -0.12107595860342689,
+              "z": 8.910351362260993,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.7810811215788276,
+                "distance": 3.7600000000000366,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  0.0762252364661544,
+                  9.08339790706347
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                -0.7542293304027694,
+                0.07647088805618307,
+                8.282055284397742
+              ],
+              "screen": [
+                214.28906561855595,
+                163.24392232808648
+              ],
+              "bodyPixels": 23.023236446839462,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  -0.25403673039593727,
+                  0.04829740298285268,
+                  8.747715944253423
+                ],
+                "screen": [
+                  220.3990783679095,
+                  163.55385051102473
+                ],
+                "bodyPixels": 23.023236446839462,
+                "referenceScreen": [
+                  220.39363960535664,
+                  163.50928275130173
+                ]
+              },
+              "x": -0.18122041693469862,
+              "z": 8.857600588503274,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.0096380734084198,
+                "distance": 3.8400000000000376,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.17637489637378573,
+                  8.861850439045435
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 1.008561412082436,
+            "before": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                -0.7542802099307516,
+                0.07646954581916288,
+                8.282105821023986
+              ],
+              "screen": [
+                214.28655925794166,
+                163.24531586246525
+              ],
+              "bodyPixels": 23.02310969715171,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  -0.7542802099307516,
+                  0.07646954581916288,
+                  8.282105821023986
+                ],
+                "screen": [
+                  214.28655925794166,
+                  163.24531586246525
+                ],
+                "bodyPixels": 23.02310969715171,
+                "referenceScreen": [
+                  214.28656262727688,
+                  163.2452866038821
+                ]
+              },
+              "x": -0.6623760835848729,
+              "z": 8.435594398441523,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.9666897622321007,
+                "distance": 4.480000000000045,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.17637489637378573,
+                  8.861850439045435
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                -0.7565570762976085,
+                0.07244474726094796,
+                8.283987710035095
+              ],
+              "screen": [
+                214.282181953232,
+                163.28983772675096
+              ],
+              "bodyPixels": 23.023099655914933,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  -0.7565570762976085,
+                  0.07244474726094796,
+                  8.283987710035095
+                ],
+                "screen": [
+                  214.282181953232,
+                  163.28983772675096
+                ],
+                "bodyPixels": 23.023099655914933,
+                "referenceScreen": [
+                  214.28639250731896,
+                  163.24538243167737
+                ]
+              },
+              "x": -0.6924483127505088,
+              "z": 8.409219011562664,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.0597101760509235,
+                "distance": 4.520000000000045,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.6791227335794922,
+                  8.420906449300803
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 1.001469133576823,
+            "before": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                -0.7565588275018142,
+                0.07244454732773997,
+                8.283988594656012
+              ],
+              "screen": [
+                214.2817847166077,
+                163.2900025168673
+              ],
+              "bodyPixels": 23.023074718177497,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  -0.7565588275018142,
+                  0.07244454732773997,
+                  8.283988594656012
+                ],
+                "screen": [
+                  214.2817847166077,
+                  163.2900025168673
+                ],
+                "bodyPixels": 23.023074718177497,
+                "referenceScreen": [
+                  214.28178662953536,
+                  163.28999932867112
+                ]
+              },
+              "x": -0.8728816877443242,
+              "z": 8.250966690289507,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.868208512076423,
+                "distance": 4.760000000000048,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.6791227335794922,
+                  8.420906449300803
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                -0.758349391902332,
+                0.06841980179326113,
+                8.286262335188628
+              ],
+              "screen": [
+                214.2830543797618,
+                163.3343605600124
+              ],
+              "bodyPixels": 23.023067878775578,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  -0.758349391902332,
+                  0.06841980179326113,
+                  8.286262335188628
+                ],
+                "screen": [
+                  214.2830543797618,
+                  163.3343605600124
+                ],
+                "bodyPixels": 23.023067878775578,
+                "referenceScreen": [
+                  214.2816841775285,
+                  163.29004155947916
+                ]
+              },
+              "x": -0.933026146075596,
+              "z": 8.198215916531788,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.27242226358829,
+                "distance": 4.840000000000049,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.9022937247293423,
+                  8.225170336780016
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 1.0484493220400646,
+            "before": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                -0.7583491576397048,
+                0.06841975915502285,
+                8.28626183097148
+              ],
+              "screen": [
+                214.2829643168024,
+                163.33439223624654
+              ],
+              "bodyPixels": 23.023061665425104,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  -0.7583491576397048,
+                  0.06841975915502285,
+                  8.28626183097148
+                ],
+                "screen": [
+                  214.2829643168024,
+                  163.33439223624654
+                ],
+                "bodyPixels": 23.023061665425104,
+                "referenceScreen": [
+                  214.2829657154091,
+                  163.3343947043925
+                ]
+              },
+              "x": -0.9931706044068678,
+              "z": 8.14546514277407,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.8055624706775686,
+                "distance": 4.92000000000005,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -0.9022937247293423,
+                  8.225170336780016
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                -1.3273053350817419,
+                0.04024689508217172,
+                7.814063449436403
+              ],
+              "screen": [
+                207.67199120245957,
+                163.6443617503249
+              ],
+              "bodyPixels": 23.023056020819723,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  -0.7614197383143342,
+                  0.06439503213147457,
+                  8.28740524069114
+                ],
+                "screen": [
+                  214.26898225457904,
+                  163.3787111039308
+                ],
+                "bodyPixels": 23.023056020819723,
+                "referenceScreen": [
+                  214.28288619456293,
+                  163.33442209805324
+                ]
+              },
+              "x": -1.0533150627381396,
+              "z": 8.09271436901635,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.1287630014650825,
+                "distance": 5.000000000000051,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.0151054345413546,
+                  8.126226807373904
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 1.0340536900851252,
+            "before": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                -1.327307847968593,
+                0.04024683032601062,
+                7.814065954288644
+              ],
+              "screen": [
+                207.67176266886244,
+                163.6444350077955
+              ],
+              "bodyPixels": 23.023038157540896,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  -1.327307847968593,
+                  0.04024683032601062,
+                  7.814065954288644
+                ],
+                "screen": [
+                  207.67176266886244,
+                  163.6444350077955
+                ],
+                "bodyPixels": 23.023038157540896,
+                "referenceScreen": [
+                  207.67176310268633,
+                  163.64443114681058
+                ]
+              },
+              "x": -1.2938928960632268,
+              "z": 7.88171127398548,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.939488605633896,
+                "distance": 5.320000000000052,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.0151054345413546,
+                  8.126226807373904
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                -1.8619849441691079,
+                0.06439490990380259,
+                7.322115336369664
+              ],
+              "screen": [
+                201.17484164463454,
+                163.378819770069
+              ],
+              "bodyPixels": 23.023034664752856,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  -1.328240107732899,
+                  0.03622213682088882,
+                  7.817087951202549
+                ],
+                "screen": [
+                  207.6832764440935,
+                  163.6887452367099
+                ],
+                "bodyPixels": 23.023034664752856,
+                "referenceScreen": [
+                  207.67172189035384,
+                  163.64444448385967
+                ]
+              },
+              "x": -1.3540373543944986,
+              "z": 7.828960500227763,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.097741879589817,
+                "distance": 5.400000000000052,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.3118492799164325,
+                  7.865962306110003
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 1.000481211621008,
+            "before": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                -1.86198803841005,
+                0.06439483681684388,
+                7.322118457754215
+              ],
+              "screen": [
+                201.17468385730953,
+                163.37885702603282
+              ],
+              "bodyPixels": 23.02301948652891,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  -1.86198803841005,
+                  0.06439483681684388,
+                  7.322118457754215
+                ],
+                "screen": [
+                  201.17468385730953,
+                  163.37885702603282
+                ],
+                "bodyPixels": 23.02301948652891,
+                "referenceScreen": [
+                  201.17468414064922,
+                  163.37885426348623
+                ]
+              },
+              "x": -1.6848318752164935,
+              "z": 7.538831244560319,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.864130927280643,
+                "distance": 5.840000000000052,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.3118492799164325,
+                  7.865962306110003
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                -1.863830788608952,
+                0.060370152391029164,
+                7.32433933153391
+              ],
+              "screen": [
+                201.1753745934617,
+                163.4231489594735
+              ],
+              "bodyPixels": 23.023017702810307,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  -1.863830788608952,
+                  0.060370152391029164,
+                  7.32433933153391
+                ],
+                "screen": [
+                  201.1753745934617,
+                  163.4231489594735
+                ],
+                "bodyPixels": 23.023017702810307,
+                "referenceScreen": [
+                  201.17466768894906,
+                  163.37885826070672
+                ]
+              },
+              "x": -1.7449763335477653,
+              "z": 7.486080470802602,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.003845866210689,
+                "distance": 5.920000000000052,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.7434766913710948,
+                  7.487395758817057
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 1.0238070503287764,
+            "before": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                -1.8638311497853515,
+                0.060370124421696536,
+                7.324339587768183
+              ],
+              "screen": [
+                201.17531010479382,
+                163.42315547839024
+              ],
+              "bodyPixels": 23.02300995150108,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  -1.8638311497853515,
+                  0.060370124421696536,
+                  7.324339587768183
+                ],
+                "screen": [
+                  201.17531010479382,
+                  163.42315547839024
+                ],
+                "bodyPixels": 23.02300995150108,
+                "referenceScreen": [
+                  201.1753102132241,
+                  163.423155189243
+                ]
+              },
+              "x": -2.105843083535396,
+              "z": 7.169575828256299,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.9292967917241395,
+                "distance": 6.400000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -1.7434766913710948,
+                  7.487395758817057
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                -1.8649170931338805,
+                0.05634544674582065,
+                7.327221557442817
+              ],
+              "screen": [
+                201.18499849619863,
+                163.4674359472337
+              ],
+              "bodyPixels": 23.023009040580632,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  -1.8649170931338805,
+                  0.05634544674582065,
+                  7.327221557442817
+                ],
+                "screen": [
+                  201.18499849619863,
+                  163.4674359472337
+                ],
+                "bodyPixels": 23.023009040580632,
+                "referenceScreen": [
+                  201.1753034891428,
+                  163.4231557950854
+                ]
+              },
+              "x": -2.135915312701032,
+              "z": 7.143200441377441,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.0103072186584985,
+                "distance": 6.440000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.1334128187647954,
+                  7.145395298478545
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 1.0286691830843835,
+            "before": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                -1.864916982529223,
+                0.056345440407285396,
+                7.327221396081364
+              ],
+              "screen": [
+                201.18498281717342,
+                163.46743558274903
+              ],
+              "bodyPixels": 23.02300677828012,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  -1.864916982529223,
+                  0.056345440407285396,
+                  7.327221396081364
+                ],
+                "screen": [
+                  201.18498281717342,
+                  163.46743558274903
+                ],
+                "bodyPixels": 23.02300677828012,
+                "referenceScreen": [
+                  201.1849828778231,
+                  163.46743586433706
+                ]
+              },
+              "x": -2.3163486876948474,
+              "z": 6.984948120104289,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.753472355813239,
+                "distance": 6.680000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.1334128187647954,
+                  7.145395298478545
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                -2.7050371308119403,
+                0.05232076458193036,
+                6.594210882804657
+              ],
+              "screen": [
+                191.21243014758545,
+                163.51171228151478
+              ],
+              "bodyPixels": 23.023006157823602,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  -1.8677142952738452,
+                  0.05232076458193036,
+                  7.328601467974732
+                ],
+                "screen": [
+                  201.17430781202836,
+                  163.51171228151478
+                ],
+                "bodyPixels": 23.023006157823602,
+                "referenceScreen": [
+                  201.18497884455962,
+                  163.46743569634083
+                ]
+              },
+              "x": -2.376493146026119,
+              "z": 6.932197346346572,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.001147696617641548,
+                "distance": 6.760000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.376203237708043,
+                  6.932451615626263
+                ]
+              }
+            }
+          },
+          {
+            "from": 0,
+            "to": 1,
+            "contactJumpSpritePx": 1.0075606958295467,
+            "before": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                -2.7050372735041406,
+                0.05232076014934095,
+                6.594211020842837
+              ],
+              "screen": [
+                191.2124191768298,
+                163.51171100871056
+              ],
+              "bodyPixels": 23.023004194287182,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  -2.7050372735041406,
+                  0.05232076014934095,
+                  6.594211020842837
+                ],
+                "screen": [
+                  191.2124191768298,
+                  163.51171100871056
+                ],
+                "bodyPixels": 23.023004194287182,
+                "referenceScreen": [
+                  191.21241920652568,
+                  163.51171079170228
+                ]
+              },
+              "x": -2.6170709793512064,
+              "z": 6.721194251315704,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.9535535034567278,
+                "distance": 7.080000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.376203237708043,
+                  6.932451615626263
+                ]
+              }
+            },
+            "after": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                -3.206736876375323,
+                0.07646880213107377,
+                6.131187535682404
+              ],
+              "screen": [
+                185.10791130237993,
+                163.2460617033194
+              ],
+              "bodyPixels": 23.023003810358944,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  -2.7064799353419593,
+                  0.048296085556467805,
+                  6.596779120108872
+                ],
+                "screen": [
+                  191.2178623135906,
+                  163.55598675461272
+                ],
+                "bodyPixels": 23.023003810358944,
+                "referenceScreen": [
+                  191.21241724346893,
+                  163.51171055730538
+                ]
+              },
+              "x": -2.677215437682478,
+              "z": 6.668443477557987,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.096294928693412,
+                "distance": 7.160000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.628803370547987,
+                  6.710904147608234
+                ]
+              }
+            }
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "contactJumpSpritePx": 1.0045219770864036,
+            "before": {
+              "frame": 1,
+              "direction": "left",
+              "world": [
+                -3.206737083483031,
+                0.07646879666786344,
+                6.131187741432522
+              ],
+              "screen": [
+                185.1079027399756,
+                163.24605961835272
+              ],
+              "bodyPixels": 23.023001767778027,
+              "contact": {
+                "frame": 1,
+                "direction": "left",
+                "world": [
+                  -3.206737083483031,
+                  0.07646879666786344,
+                  6.131187741432522
+                ],
+                "screen": [
+                  185.1079027399756,
+                  163.24605961835272
+                ],
+                "bodyPixels": 23.023001767778027,
+                "referenceScreen": [
+                  185.1079027536907,
+                  163.2460594992478
+                ]
+              },
+              "x": -3.1282988751670167,
+              "z": 6.272812674375109,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 1,
+                "phase": 1.9935308869656003,
+                "distance": 7.760000000000054,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -2.628803370547987,
+                  6.710904147608234
+                ]
+              }
+            },
+            "after": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                -3.2089910201311436,
+                0.07244412281052459,
+                6.1330441816988115
+              ],
+              "screen": [
+                185.1036946016159,
+                163.29033508487575
+              ],
+              "bodyPixels": 23.02300160596269,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  -3.2089910201311436,
+                  0.07244412281052459,
+                  6.1330441816988115
+                ],
+                "screen": [
+                  185.1036946016159,
+                  163.29033508487575
+                ],
+                "bodyPixels": 23.02300160596269,
+                "referenceScreen": [
+                  185.1079021911966,
+                  163.24605934865315
+                ]
+              },
+              "x": -3.1884433334982885,
+              "z": 6.220061900617392,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.254926168725874,
+                "distance": 7.840000000000054,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.1315512077537004,
+                  6.269960157863611
+                ]
+              }
+            }
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "contactJumpSpritePx": 1.0004845100114206,
+            "before": {
+              "frame": 2,
+              "direction": "left",
+              "world": [
+                -3.208991025180315,
+                0.07244412223410013,
+                6.133044184249634
+              ],
+              "screen": [
+                185.10369368238,
+                163.29033465663514
+              ],
+              "bodyPixels": 23.023001325412054,
+              "contact": {
+                "frame": 2,
+                "direction": "left",
+                "world": [
+                  -3.208991025180315,
+                  0.07244412223410013,
+                  6.133044184249634
+                ],
+                "screen": [
+                  185.10369368238,
+                  163.29033465663514
+                ],
+                "bodyPixels": 23.023001325412054,
+                "referenceScreen": [
+                  185.10369369123012,
+                  163.29033464188495
+                ]
+              },
+              "x": -3.308732250160832,
+              "z": 6.1145603531019574,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 2,
+                "phase": 2.793925059409533,
+                "distance": 8.000000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.1315512077537004,
+                  6.269960157863611
+                ]
+              }
+            },
+            "after": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                -3.2107759253263675,
+                0.06841944855246052,
+                6.1353118664123265
+              ],
+              "screen": [
+                185.10506518800327,
+                163.33460966672257
+              ],
+              "bodyPixels": 23.023001204089184,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  -3.2107759253263675,
+                  0.06841944855246052,
+                  6.1353118664123265
+                ],
+                "screen": [
+                  185.10506518800327,
+                  163.33460966672257
+                ],
+                "bodyPixels": 23.023001204089184,
+                "referenceScreen": [
+                  185.1036933153623,
+                  163.2903344614469
+                ]
+              },
+              "x": -3.368876708492104,
+              "z": 6.06180957934424,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.1254702159211734,
+                "distance": 8.080000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.354722198903554,
+                  6.074224045342828
+                ]
+              }
+            }
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "contactJumpSpritePx": 1.0481429326989016,
+            "before": {
+              "frame": 3,
+              "direction": "left",
+              "world": [
+                -3.210775924242643,
+                0.06841944835520652,
+                6.135311864079585
+              ],
+              "screen": [
+                185.10506486046953,
+                163.33460947985515
+              ],
+              "bodyPixels": 23.023001093871642,
+              "contact": {
+                "frame": 3,
+                "direction": "left",
+                "world": [
+                  -3.210775924242643,
+                  0.06841944835520652,
+                  6.135311864079585
+                ],
+                "screen": [
+                  185.10506486046953,
+                  163.33460947985515
+                ],
+                "bodyPixels": 23.023001093871642,
+                "referenceScreen": [
+                  185.10506486694015,
+                  163.33460949127388
+                ]
+              },
+              "x": -3.4290211668233757,
+              "z": 6.009058805586523,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 3,
+                "phase": 3.658610423010445,
+                "distance": 8.160000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.354722198903554,
+                  6.074224045342828
+                ]
+              }
+            },
+            "after": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                -3.7797400514292656,
+                0.0402467342245012,
+                5.663123380288506
+              ],
+              "screen": [
+                178.4941866131184,
+                163.64453439996507
+              ],
+              "bodyPixels": 23.02300099374304,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  -3.213844676002384,
+                  0.06439477475920197,
+                  6.136453485721071
+                ],
+                "screen": [
+                  185.091161897864,
+                  163.37888438849882
+                ],
+                "bodyPixels": 23.02300099374304,
+                "referenceScreen": [
+                  185.10506458002126,
+                  163.33460932228994
+                ]
+              },
+              "x": -3.4891656251546475,
+              "z": 5.956308031828806,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.072896933756917,
+                "distance": 8.240000000000054,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.467533908715567,
+                  5.975280515936718
+                ]
+              }
+            }
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "contactJumpSpritePx": 1.0334967823609071,
+            "before": {
+              "frame": 4,
+              "direction": "left",
+              "world": [
+                -3.779740065143644,
+                0.040246733871091456,
+                5.663123393959473
+              ],
+              "screen": [
+                178.49418575219804,
+                163.64453374684624
+              ],
+              "bodyPixels": 23.023000614911695,
+              "contact": {
+                "frame": 4,
+                "direction": "left",
+                "world": [
+                  -3.779740065143644,
+                  0.040246733871091456,
+                  5.663123393959473
+                ],
+                "screen": [
+                  178.49418575219804,
+                  163.64453374684624
+                ],
+                "bodyPixels": 23.023000614911695,
+                "referenceScreen": [
+                  178.4941857539639,
+                  163.64453373113
+                ]
+              },
+              "x": -3.7598156876453706,
+              "z": 5.718929549919079,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 4,
+                "phase": 4.984963238446826,
+                "distance": 8.600000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.467533908715567,
+                  5.975280515936718
+                ]
+              }
+            },
+            "after": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                -4.314419167042663,
+                0.06439477411796402,
+                5.171174844089479
+              ],
+              "screen": [
+                171.99731540216655,
+                163.37888373793268
+              ],
+              "bodyPixels": 23.023000558625114,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  -3.780669039431679,
+                  0.036222060441354564,
+                  5.666141756599147
+                ],
+                "screen": [
+                  178.50574056008557,
+                  163.68880874545263
+                ],
+                "bodyPixels": 23.023000558625114,
+                "referenceScreen": [
+                  178.49418564352294,
+                  163.64453363982278
+                ]
+              },
+              "x": -3.8199601459766424,
+              "z": 5.666178776161362,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.129005689648706,
+                "distance": 8.680000000000053,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.7642777540906476,
+                  5.715016014672818
+                ]
+              }
+            }
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "contactJumpSpritePx": 1.0001289813082554,
+            "before": {
+              "frame": 5,
+              "direction": "left",
+              "world": [
+                -4.31441917963766,
+                0.06439477382046777,
+                5.17117485679516
+              ],
+              "screen": [
+                171.99731506054871,
+                163.37888330199132
+              ],
+              "bodyPixels": 23.023000314026916,
+              "contact": {
+                "frame": 5,
+                "direction": "left",
+                "world": [
+                  -4.31441917963766,
+                  0.06439477382046777,
+                  5.17117485679516
+                ],
+                "screen": [
+                  171.99731506054871,
+                  163.37888330199132
+                ],
+                "bodyPixels": 23.023000314026916,
+                "referenceScreen": [
+                  171.99731506170204,
+                  163.37888329074642
+                ]
+              },
+              "x": -4.1808268959642705,
+              "z": 5.34967413361506,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 5,
+                "phase": 5.9650664689477875,
+                "distance": 9.160000000000048,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -3.7642777540906476,
+                  5.715016014672818
+                ]
+              }
+            },
+            "after": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                -4.316259933802291,
+                0.060370100427687756,
+                5.1733935161479145
+              ],
+              "screen": [
+                171.99802218227816,
+                163.42315830771665
+              ],
+              "bodyPixels": 23.023000285282166,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  -4.316259933802291,
+                  0.060370100427687756,
+                  5.1733935161479145
+                ],
+                "screen": [
+                  171.99802218227816,
+                  163.42315830771665
+                ],
+                "bodyPixels": 23.023000285282166,
+                "referenceScreen": [
+                  171.99731503006817,
+                  163.37888324340517
+                ]
+              },
+              "x": -4.240971354295541,
+              "z": 5.296923359857343,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.11557325824476,
+                "distance": 9.240000000000046,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -4.195905165545308,
+                  5.336449467379873
+                ]
+              }
+            }
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "contactJumpSpritePx": 1.0236946801776479,
+            "before": {
+              "frame": 6,
+              "direction": "left",
+              "world": [
+                -4.316259935272448,
+                0.060370100313839936,
+                5.173393517190914
+              ],
+              "screen": [
+                171.99802207331624,
+                163.42315807519287
+              ],
+              "bodyPixels": 23.023000160369207,
+              "contact": {
+                "frame": 6,
+                "direction": "left",
+                "world": [
+                  -4.316259935272448,
+                  0.060370100313839936,
+                  5.173393517190914
+                ],
+                "screen": [
+                  171.99802207331624,
+                  163.42315807519287
+                ],
+                "bodyPixels": 23.023000160369207,
+                "referenceScreen": [
+                  171.9980220737576,
+                  163.4231580740159
+                ]
+              },
+              "x": -4.571765875117531,
+              "z": 5.006794104189899,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 6,
+                "phase": 6.963903273298752,
+                "distance": 9.680000000000037,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -4.195905165545308,
+                  5.336449467379873
+                ]
+              }
+            },
+            "after": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                -4.317345221854125,
+                0.05634542694853484,
+                5.176274762021148
+              ],
+              "screen": [
+                172.00771716274804,
+                163.46743306943978
+              ],
+              "bodyPixels": 23.02300014568968,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  -4.317345221854125,
+                  0.05634542694853484,
+                  5.176274762021148
+                ],
+                "screen": [
+                  172.00771716274804,
+                  163.46743306943978
+                ],
+                "bodyPixels": 23.02300014568968,
+                "referenceScreen": [
+                  171.998022064431,
+                  163.42315804825876
+                ]
+              },
+              "x": -4.631910333448802,
+              "z": 4.954043330432182,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.189748181622302,
+                "distance": 9.760000000000035,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -4.585841292939005,
+                  4.994449007041358
+                ]
+              }
+            }
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "contactJumpSpritePx": 1.0286344962070602,
+            "before": {
+              "frame": 7,
+              "direction": "left",
+              "world": [
+                -4.317345221403913,
+                0.05634542692273414,
+                5.176274761364331
+              ],
+              "screen": [
+                172.00771714372723,
+                163.4674330003424
+              ],
+              "bodyPixels": 23.023000109232527,
+              "contact": {
+                "frame": 7,
+                "direction": "left",
+                "world": [
+                  -4.317345221403913,
+                  0.05634542692273414,
+                  5.176274761364331
+                ],
+                "screen": [
+                  172.00771714372723,
+                  163.4674330003424
+                ],
+                "bodyPixels": 23.023000109232527,
+                "referenceScreen": [
+                  172.0077171439741,
+                  163.46743300148856
+                ]
+              },
+              "x": -4.812343708442615,
+              "z": 4.79579100915903,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 7,
+                "phase": 7.932913318777039,
+                "distance": 10.00000000000003,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -4.585841292939005,
+                  4.994449007041358
+                ]
+              }
+            },
+            "after": {
+              "frame": 0,
+              "direction": "left",
+              "world": [
+                -5.157465959640245,
+                0.05232075356496191,
+                4.443264934454454
+              ],
+              "screen": [
+                162.03517112032674,
+                163.5117079895579
+              ],
+              "bodyPixels": 23.023000099233798,
+              "contact": {
+                "frame": 0,
+                "direction": "left",
+                "world": [
+                  -4.320142332046777,
+                  0.05232075356496191,
+                  5.177654616553622
+                ],
+                "screen": [
+                  171.99704616326443,
+                  163.5117079895579
+                ],
+                "bodyPixels": 23.023000099233798,
+                "referenceScreen": [
+                  172.0077171398436,
+                  163.46743298296286
+                ]
+              },
+              "x": -4.872488166773886,
+              "z": 4.743040235401313,
+              "motion": {
+                "loaded": true,
+                "direction": "left",
+                "frame": 0,
+                "phase": 0.17362007849546723,
+                "distance": 10.080000000000028,
+                "strideBodyRatio": 1.267308,
+                "visualRoot": [
+                  -4.82863171188225,
+                  4.781505324189076
+                ]
+              }
+            }
+          }
+        ],
+        "errors": [],
+        "maxHeldDriftSpritePx": 0.33726953479062693,
+        "maxBoundaryJumpSpritePx": 2.3843361905110054,
+        "scope": "Blacksmith left-view flat-ground material contacts across three complete strides; camera turns, terrain and other views are separate."
+      }
+    }
+  ]
+}

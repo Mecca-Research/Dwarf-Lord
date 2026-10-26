@@ -24,6 +24,7 @@ const allowed = new Set(['src/game/world/scene.tsx', 'src/game/world/terrain.tsx
 const report = json(`${folder}/results.json`);
 const strides = json(`${folder}/stride-results.json`);
 assert.equal(strides.passed, true);
+assert.deepEqual(strides.reports.map(r => r.direction), ['right', 'left']);
 for (const { result } of strides.reports) {
   assert.equal(result.boundaries.length, 24);
   assert.ok(result.maxHeldDriftSpritePx < 0.5);
@@ -51,6 +52,9 @@ for (const day of report.stationChecks) {
 }
 for (const [file, sha] of Object.entries(report.sourceBindings)) assert.equal(hash(file), sha, `stale playtest: ${file}`);
 assert.match(readFileSync(`${folder}/route-tests.txt`, 'utf8'), /fail 0/);
+const screenshots = json(`${folder}/screenshots.json`);
+assert.equal(screenshots.length, 7);
+for (const screenshot of screenshots) assert.equal(hash(`${folder}/${screenshot.file}`), screenshot.sha256);
 const retainedFiles = ['src/game/world/npc-motion.ts', 'src/game/world/sprites.tsx',
   'src/game/world/workstation-sites.ts', 'src/game/world/work-activities.ts',
   'src/game/world/motion-review-points.ts', 'src/game/motion-playback.ts', 'public/motion-playback.mjs',
@@ -104,6 +108,8 @@ const audit = {
   browserReport: { file: `${folder}/results.json`, sha256: hash(`${folder}/results.json`) },
   routeTests: { file: `${folder}/route-tests.txt`, sha256: hash(`${folder}/route-tests.txt`) },
   strideReport: { file: `${folder}/stride-results.json`, sha256: hash(`${folder}/stride-results.json`) },
+  reviewImages: { file: `${folder}/screenshots.json`, sha256: hash(`${folder}/screenshots.json`) },
+  verifier: { file: 'scripts/revalidate-world-dependencies.mjs', sha256: hash('scripts/revalidate-world-dependencies.mjs') },
   retainedCore: Object.fromEntries(retainedFiles.map(p => [p, hash(p)])),
   worldFiles: report.sourceBindings,
   unchangedArt: Object.fromEntries(art),

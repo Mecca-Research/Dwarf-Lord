@@ -1,0 +1,46 @@
+{
+  "tests": {
+    "command": "npm test",
+    "passed": 227,
+    "failed": 0
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0
+  },
+  "productionBuild": {
+    "command": "npm run build:pages",
+    "exitCode": 0,
+    "bundles": {
+      "index-Dq0cttv0.js": "aba78fbab86dcbf200669e917a1e473c4e7eab4437d712aa420e31977c195d06",
+      "scene-C7dyOiQ9.js": "a627f768d647226d3b9a939c4234ceecc62e4c758f8cab2b285edb1b600f5efe",
+      "routes-DzHA51AF.js": "4d470e106d1b01a0aefc1ad702d713852d759595f7cbb2da319107f6dd02ebfb",
+      "styles-B1uDUrb8.css": "ed483aeee74ae870fb6ebebabb464b3150f3d77c279cc14d6675f075697620c7"
+    }
+  },
+  "browser": {
+    "desktop": [
+      1280,
+      800
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "workVariants": 22,
+    "persistentStations": 14,
+    "navigationRoutes": 4,
+    "pageErrors": 0,
+    "failedRequests": 0
+  },
+  "retainedGaits": {
+    "views": [
+      "right",
+      "left"
+    ],
+    "stridesPerView": 3,
+    "orderedBoundariesPerView": 24,
+    "maxHeldContactBoundSpritePx": 0.5,
+    "maxBoundaryJumpBoundSpritePx": 6
+  }
+}

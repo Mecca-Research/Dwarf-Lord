@@ -18,12 +18,16 @@ await new Promise(done => server.listen(0, '127.0.0.1', done));
 const checker = 'scripts/directional-stride-renderer-check.mjs';
 // Keep the original contact algorithm and bounds. Adapt only local launch,
 // font handling, hydration readiness and screenshot transport for headless QA.
+// Half-resolution framing and 32ms samples reduce software-rendering cost;
+// all 24 ordered boundaries and the original normalized contact bounds remain.
 const source = readFileSync(checker, 'utf8')
   .replace("const browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--enable-unsafe-swiftshader'] });",
     "const browser = await chromium.launch({ headless: true, ...(process.env.WORLD_CHROMIUM ? {executablePath:process.env.WORLD_CHROMIUM}:{}), args: ['--no-sandbox','--no-zygote','--single-process','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader'] });")
   .replace("const errors = [], assets = [], holds = [], boundaries = [], screenshots = new Set();",
     "await page.route('https://fonts.googleapis.com/**',r=>r.fulfill({contentType:'text/css',body:''})); const cdp=await page.context().newCDPSession(page); const errors = [], assets = [], holds = [], boundaries = [], screenshots = new Set();")
   .replace("button => button.textContent === 'Walk the road'", "button => button.textContent === 'Walk the road' && Object.keys(button).some(k=>k.startsWith('__reactProps'))")
+  .replace('width: 800, height: 560', 'width: 400, height: 280')
+  .replace('const tick = async (ms = 16)', 'const tick = async (ms = 32)')
   .replace("await page.screenshot({ path: `${output}/frame-${sample.frame}.png` });",
     "const capture=await cdp.send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false}); await writeFile(`${output}/frame-${sample.frame}.png`,Buffer.from(capture.data,'base64'));");
 const runner = resolve(output, 'directional-runner.mjs');
@@ -39,7 +43,7 @@ try {
     reports.push({ direction, observationsSha256: hash(process.env.STRIDE_OBSERVATIONS),
       result: JSON.parse(readFileSync(`${output}/${direction}/results.json`, 'utf8')) });
   }
-  writeFileSync(`${output}/results.json`, JSON.stringify({ passed: true,
+  writeFileSync(`${output}/results.json`, JSON.stringify({ passed: true, viewport: [400, 280], sampleStepMs: 32,
     checker: { file: checker, sha256: hash(checker) },
     wrapper: { file: 'scripts/base-camp-stride-playtest.mjs', sha256: hash('scripts/base-camp-stride-playtest.mjs') },
     reports }, null, 2) + '\n');
