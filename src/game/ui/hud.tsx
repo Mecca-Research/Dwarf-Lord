@@ -155,6 +155,7 @@ export function Hud() {
           <IconBtn label="Mute" onClick={() => { setAudioMuted(!muted); setMuted(!muted); }}>
             {muted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
           </IconBtn>
+          <IconBtn label="Valley view (V)" onClick={() => { runtime.valleyView = !runtime.valleyView; }}><Mountain className="size-4" /></IconBtn>
           {discoveries.workforce ? (
             <>
               <IconBtn label="Labor" onClick={() => setOverlay(overlay === "labor" ? null : "labor")}>

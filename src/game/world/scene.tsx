@@ -23,6 +23,7 @@ import { activeWorkstation, passiveWorkstation, workAssignmentTarget } from "./w
 import { dwarfAppearance } from "./dwarf-appearances";
 import { Environment } from "./environment";
 import { WorldMatsProvider } from "./materials";
+import { navigationTarget } from "./landscape";
 
 const _look = new THREE.Vector3();
 const _cam = new THREE.Vector3();
@@ -34,6 +35,7 @@ const ndc = new THREE.Vector2();
 function bindKeys() {
   const down = (e: KeyboardEvent) => {
     runtime.keys.add(e.code);
+    if(e.code==="KeyV"&&!e.repeat)runtime.valleyView=!runtime.valleyView;
     if (
       [
         "KeyW",
@@ -76,25 +78,18 @@ function IsoCamera() {
     const zone = zoneAt(p.x, p.z);
     runtime.zone = zone;
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
-    const targetZoom =
-      (zone === "mine" ? spec.cameraZoom * 0.72 : spec.cameraZoom) + runtime.zoomBias;
-    runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-d * 3));
-
-    const dist = 38;
-    const az = runtime.cameraAzimuth;
-    const el = runtime.cameraElev;
-    _cam.set(
-      p.x + dist * Math.sin(az) * Math.cos(el),
-      dist * Math.sin(el) + 2,
-      p.z + dist * Math.cos(az) * Math.cos(el),
-    );
-    camera.position.lerp(_cam, 1 - Math.exp(-d * 4));
-    _look.set(p.x, 1.15, p.z);
+    const vista=runtime.valleyView&&zone!=="mine",cameraDt=Math.min(dt,.5);
+    const targetZoom=vista?4.7:(zone==="mine"?spec.cameraZoom*.72:spec.cameraZoom)+runtime.zoomBias;
+    runtime.zoom+=(targetZoom-runtime.zoom)*(1-Math.exp(-cameraDt*3));
+    const dist=vista?300:38,az=runtime.cameraAzimuth,el=vista?.38:runtime.cameraElev;
+    const focusX=vista?5:p.x,focusZ=vista?-60:p.z,focusY=vista?35:1.15;
+    _cam.set(focusX+dist*Math.sin(az)*Math.cos(el),focusY+dist*Math.sin(el)+1,focusZ+dist*Math.cos(az)*Math.cos(el));
+    camera.position.lerp(_cam,1-Math.exp(-cameraDt*4));_look.set(focusX,focusY,focusZ);
     camera.lookAt(_look);
     const cam = camera as THREE.OrthographicCamera;
     cam.zoom = runtime.zoom * (size.height / 720);
     cam.near = 0.1;
-    cam.far = 280;
+    cam.far = 1200;
     cam.updateProjectionMatrix();
   });
   return null;
@@ -154,6 +149,7 @@ function Systems() {
       setZoomBias: (z: number) => {
         runtime.zoomBias = z;
       },
+      setValleyView: (value:boolean) => {runtime.valleyView=value;},
       getCameraAngles: () => ({ azimuth: runtime.cameraAzimuth, elevation: runtime.cameraElev }),
       projectDwarfSprite: (id: string, point: [number, number], reference?: [number, number, number]) =>
         spritePointReviewers.get(id)?.(point, reference) ?? null,
@@ -292,10 +288,10 @@ function Systems() {
     if (usingStick) p.dest = null;
 
     if (!usingStick && p.dest) {
-      const dx = p.dest.x - p.x;
-      const dz = p.dest.z - p.z;
+      const waypoint=navigationTarget(p.x,p.z,p.dest);
+      const dx=waypoint.x-p.x,dz=waypoint.z-p.z;
       const dist = Math.hypot(dx, dz);
-      if (dist < 0.35) p.dest = null;
+      if (Math.hypot(p.dest.x-p.x,p.dest.z-p.z)<.35) p.dest=null;
       else {
         mx = dx / dist;
         mz = dz / dist;
@@ -356,10 +352,10 @@ function Systems() {
         if (job) b.dest = { x: job.targetX, z: job.targetZ };
       }
       if (b.dest) {
-        const dx = b.dest.x - b.x;
-        const dz = b.dest.z - b.z;
+        const waypoint=navigationTarget(b.x,b.z,b.dest);
+        const dx=waypoint.x-b.x,dz=waypoint.z-b.z;
         const dist = Math.hypot(dx, dz);
-        if (dist < 0.5) {
+        if (Math.hypot(b.dest.x-b.x,b.dest.z-b.z)<.5) {
           b.dest = null;
           b.anim = dw.assignedJobId ? "work" : dw.sitOnStart ? "sit" : "idle";
           b.speed = 0;
@@ -396,7 +392,7 @@ function GroundPick() {
     const el = gl.domElement;
     const onClick = (ev: PointerEvent) => {
       if (useGame.getState().dialogue) return;
-      if (useGame.getState().overlay) return;
+      if (useGame.getState().overlay || runtime.valleyView) return;
       const rect = el.getBoundingClientRect();
       ndc.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
       ndc.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
@@ -533,6 +529,7 @@ function DwarfActor({
       station ? station.targetZ : b.z);
     g.rotation.y = b.yaw;
     const mine = zoneAt(b.x, b.z) === "mine";
+    g.visible=mine===(zoneAt(runtime.player.x,runtime.player.z)==="mine");
     const s = mine ? specScale.mineScale : specScale.townScale;
     g.scale.setScalar(s);
   });
@@ -546,31 +543,27 @@ function DwarfActor({
 }
 
 function Lights() {
-  return (
-    <>
-      <color attach="background" args={["#202936"]} />
-      <fog attach="fog" args={["#252d39", 65, 150]} />
-      <hemisphereLight args={["#bbcbdc", "#665745", 1.65]} />
-      <ambientLight intensity={0.65} color="#8d8175" />
-      <directionalLight
-        position={[-36, 38, 20]}
-        intensity={2.5}
-        color="#fff0d9"
-        castShadow
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
-        shadow-bias={-0.00035}
-        shadow-normalBias={0.04}
-        shadow-camera-near={2}
-        shadow-camera-far={140}
-        shadow-camera-left={-32}
-        shadow-camera-right={32}
-        shadow-camera-top={32}
-        shadow-camera-bottom={-32}
-      />
-      <directionalLight position={[22, 18, -18]} intensity={0.65} color="#74859f" />
-    </>
-  );
+  const {scene}=useThree();
+  const hemisphere=useRef<THREE.HemisphereLight>(null),ambient=useRef<THREE.AmbientLight>(null);
+  const sun=useRef<THREE.DirectionalLight>(null),fill=useRef<THREE.DirectionalLight>(null),blend=useRef(0);
+  const outside=useMemo(()=>new THREE.Color("#a1b1ba"),[]),inside=useMemo(()=>new THREE.Color("#080c11"),[]);
+  useFrame((_,dt)=>{
+    const target=zoneAt(runtime.player.x,runtime.player.z)==="mine"?1:0;
+    blend.current=THREE.MathUtils.damp(blend.current,target,5,Math.min(dt,.5));const t=blend.current;
+    hemisphere.current!.intensity=THREE.MathUtils.lerp(1.45,.32,t);ambient.current!.intensity=THREE.MathUtils.lerp(.32,.2,t);
+    sun.current!.intensity=THREE.MathUtils.lerp(2.65,.06,t);fill.current!.intensity=THREE.MathUtils.lerp(.55,.08,t);
+    const fog=scene.fog as THREE.Fog,offset=runtime.valleyView&&target===0?180:0;
+    if(fog){fog.color.copy(outside).lerp(inside,t);fog.near=THREE.MathUtils.lerp(95,38,t)+offset;fog.far=THREE.MathUtils.lerp(290,105,t)+offset;}
+    if(scene.background instanceof THREE.Color)scene.background.copy(outside).lerp(inside,t);
+  });
+  return <>
+    <color attach="background" args={["#a1b1ba"]}/><fog attach="fog" args={["#a1b1ba",95,290]}/>
+    <hemisphereLight ref={hemisphere} args={["#c6dbe7","#6a654d",1.45]}/><ambientLight ref={ambient} intensity={.32} color="#a3aba8"/>
+    <directionalLight ref={sun} position={[-36,48,14]} intensity={2.65} color="#fff0d4" castShadow
+      shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-bias={-.00035} shadow-normalBias={.04}
+      shadow-camera-near={2} shadow-camera-far={190} shadow-camera-left={-66} shadow-camera-right={66} shadow-camera-top={66} shadow-camera-bottom={-66}/>
+    <directionalLight ref={fill} position={[22,18,-18]} intensity={.55} color="#839eb2"/>
+  </>;
 }
 
 export function GameCanvas() {
@@ -579,16 +572,16 @@ export function GameCanvas() {
       orthographic
       shadows
       dpr={[1, 1.6]}
-      camera={{ position: [-25.7, 23.45, 27.6], zoom: 34, near: 0.1, far: 280 }}
+      camera={{ position: [-25.7, 23.45, 27.6], zoom: 27, near: 0.1, far: 1200 }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
         gl.setClearColor("#202936");
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        gl.toneMappingExposure = 1.18;
+        gl.toneMappingExposure = 1.03;
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFSoftShadowMap;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        scene.fog = new THREE.Fog("#252d39", 65, 150);
+        scene.fog = new THREE.Fog("#a1b1ba",95,290);
       }}
       style={{ width: "100%", height: "100%", touchAction: "none" }}
     >
@@ -628,6 +621,7 @@ declare global {
       setDwarfDest?: (id: string, x: number, z: number) => void;
       teleportDwarf?: (id: string, x: number, z: number) => void;
       setZoomBias?: (z: number) => void;
+      setValleyView?: (value:boolean) => void;
       getCameraAngles?: () => { azimuth: number; elevation: number };
       projectDwarfSprite?: (id: string, point: [number, number], reference?: [number, number, number]) => SpritePointReview | null;
     };
