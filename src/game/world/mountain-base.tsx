@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from "react";
 import * as THREE from "three";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { cliffHeight, random, surfaceHeight } from "./landscape";
 import { useMats } from "./materials";
 import { Parts } from "./reference-assets";
@@ -98,10 +99,32 @@ export function MountainEscarpment() {
     }
     return result;
   }, []);
+  const ribs = useMemo(() => {
+    const matrix = new THREE.Matrix4(),
+      q = new THREE.Quaternion(),
+      e = new THREE.Euler();
+    const pieces = shelves.map((part, i) => {
+      const g = new THREE.IcosahedronGeometry(1, 1),
+        p = g.attributes.position;
+      for (let v = 0; v < p.count; v++) {
+        const f = 0.82 + random(v + i * 43) * 0.28;
+        p.setXYZ(v, p.getX(v) * f, p.getY(v) * f, p.getZ(v) * f);
+      }
+      e.set(...part.r);
+      q.setFromEuler(e);
+      matrix.compose(new THREE.Vector3(...part.p), q, new THREE.Vector3(...part.s));
+      g.applyMatrix4(matrix);
+      return g;
+    });
+    const g = mergeGeometries(pieces)!;
+    pieces.forEach((p) => p.dispose());
+    g.computeVertexNormals();
+    return g;
+  }, [shelves]);
   return (
     <group name="mountain-foot-escarpment">
       <mesh geometry={geometry} material={material} castShadow receiveShadow />
-      <Parts parts={shelves} material={material} />
+      <mesh geometry={ribs} material={material} castShadow receiveShadow />
     </group>
   );
 }

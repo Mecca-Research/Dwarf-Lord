@@ -49,10 +49,26 @@ export function Environment() {
 
       <RuinedBarracks x={-11} z={-5} rot={0.18} condition={dorm?.condition ?? 0.18} />
       <FieldForge x={10} z={-7} condition={forge?.condition ?? 0.22} />
-      <ExpeditionTent x={12.5} z={1.5} width={6} length={5.7} height={4.5} color="#c7b994" />
+      <ExpeditionTent
+        buildingId="office"
+        x={12.5}
+        z={1.5}
+        width={6}
+        length={5.7}
+        height={4.5}
+        color="#c7b994"
+      />
       <StoresLeanTo x={17} z={8} rot={0.4} condition={storage?.condition ?? 0.12} />
-      <ExpeditionTent x={-9} z={15} rot={-0.15} />
-      <ExpeditionTent x={-2} z={17} rot={0.14} width={4.4} length={5.5} height={3.5} />
+      <ExpeditionTent buildingId="tent-a" x={-9} z={15} rot={-0.15} />
+      <ExpeditionTent
+        buildingId="tent-b"
+        x={-2}
+        z={17}
+        rot={0.14}
+        width={4.4}
+        length={5.5}
+        height={3.5}
+      />
       <ExpeditionTent
         x={7}
         z={18}

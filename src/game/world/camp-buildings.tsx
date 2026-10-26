@@ -152,6 +152,7 @@ export function ExpeditionTent({
   length = 6.2,
   height = 3.8,
   color = "#d4c6a7",
+  buildingId,
 }: {
   x: number;
   z: number;
@@ -160,9 +161,18 @@ export function ExpeditionTent({
   length?: number;
   height?: number;
   color?: string;
+  buildingId?: string;
 }) {
   const m = useMats(),
     roof = useMemo(() => tentRoof(width, length, height), [width, length, height]);
+  const endPanel = useMemo(() => {
+    const shape = new THREE.Shape();
+    shape.moveTo(-width / 2, 0.15);
+    shape.lineTo(0, height);
+    shape.lineTo(width / 2, 0.15);
+    shape.closePath();
+    return new THREE.ShapeGeometry(shape);
+  }, [width, height]);
   const frame = useMemo(
     () => [
       box([0, height / 2, -length / 2], [0.14, height, 0.14]),
@@ -182,18 +192,27 @@ export function ExpeditionTent({
     [width, height, length],
   );
   return (
-    <group name="weathered-expedition-tent" position={[x, groundHeight(x, z), z]} rotation-y={rot}>
+    <group
+      name="weathered-expedition-tent"
+      userData={{ buildingId }}
+      position={[x, groundHeight(x, z), z]}
+      rotation-y={rot}
+    >
       <Parts parts={frame} material={m.woodDark} />
       <CanvasCloth geometry={roof} color={color} />
       <TentFlaps width={width} length={length} height={height} color={color} />
-      <mesh position={[0, 0.8, 0]}>
-        <boxGeometry args={[width - 0.8, 1.5, length - 0.5]} />
-        <meshStandardMaterial color="#332e24" roughness={1} />
+      <group position={[0, 0, -length / 2]}>
+        <CanvasCloth geometry={endPanel} color={color} />
+      </group>
+      <mesh geometry={endPanel} position={[0, 0, -length / 2 + 0.025]}>
+        <meshBasicMaterial color="#25271f" side={THREE.DoubleSide} />
       </mesh>
-      <mesh position={[0, height * 0.48, length / 2 + 0.03]}>
-        <planeGeometry args={[1.5, height * 0.8]} />
-        <meshBasicMaterial color="#171915" side={THREE.DoubleSide} />
-      </mesh>
+      {[-1, 1].map((side) => (
+        <mesh key={side} position={[side * width * 0.22, 0.14, -0.1]}>
+          <boxGeometry args={[1, 0.16, 2.6]} />
+          <meshStandardMaterial color="#756d54" roughness={1} />
+        </mesh>
+      ))}
       {[-1, 1].flatMap((side) =>
         [-1, 1].map((end) => (
           <Rope
@@ -290,7 +309,12 @@ export function RuinedBarracks({
   }, [repaired]);
   const patch = useMemo(() => tentRoof(3.4, 3.5, 1.3), []);
   return (
-    <group name="ruined-timber-barracks" position={[x, 0, z]} rotation-y={rot}>
+    <group
+      name="ruined-timber-barracks"
+      userData={{ buildingId: "dorm" }}
+      position={[x, 0, z]}
+      rotation-y={rot}
+    >
       <Parts parts={model.stone} material={m.stoneDark} />
       <Parts parts={model.dark} material={m.woodDark} />
       <Parts parts={model.wood} material={m.wood} />
@@ -344,7 +368,7 @@ export function FieldForge({ x, z, condition }: { x: number; z: number; conditio
     return { stone, wood, roof };
   }, []);
   return (
-    <group name="open-field-forge" position={[x, 0, z]}>
+    <group name="open-field-forge" userData={{ buildingId: "forge" }} position={[x, 0, z]}>
       <Parts parts={model.stone} material={m.stoneDark} />
       <Parts parts={model.wood} material={m.woodDark} />
       <Parts parts={model.roof} material={m.roof} />
@@ -399,7 +423,12 @@ export function StoresLeanTo({
     return { frame, boards };
   }, [condition]);
   return (
-    <group name="stores-timber-lean-to" position={[x, 0, z]} rotation-y={rot}>
+    <group
+      name="stores-timber-lean-to"
+      userData={{ buildingId: "storage" }}
+      position={[x, 0, z]}
+      rotation-y={rot}
+    >
       <Parts parts={model.frame} material={m.woodDark} />
       <Parts parts={model.boards} material={m.wood} />
       {[
@@ -426,7 +455,7 @@ export function CookShelter() {
     () =>
       [-13.7, -6.5, 0.7].flatMap((x) => [
         box([x, 2.15, 1.5], [0.17, 4.3, 0.17]),
-        box([x, 1.65, 3.2], [0.17, 3.3, 0.17]),
+        ...(x === -6.5 ? [] : [box([x, 1.65, 3.2], [0.17, 3.3, 0.17])]),
         beam([x, 4.3, 1.5], [x, 3.3, 3.2], 0.14),
       ]),
     [],

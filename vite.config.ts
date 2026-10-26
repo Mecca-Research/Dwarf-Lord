@@ -146,7 +146,10 @@ function authPopupPlugin(): Plugin {
 // The dev server starts once `src/router.tsx` and `src/routes/` exist — see
 // AGENTS.md § "First scaffold".
 export default defineConfig(({ command, isPreview }) => ({
-  base: process.env.GITHUB_PAGES === "1" || process.env.NITRO_PRESET === "github_pages" ? "/Dwarf-Lord/" : "/",
+  base:
+    process.env.GITHUB_PAGES === "1" || process.env.NITRO_PRESET === "github_pages"
+      ? process.env.GITHUB_PAGES_BASE || "/Dwarf-Lord/"
+      : "/",
   server: {
     host: "0.0.0.0",
     port: 8080,
@@ -158,6 +161,15 @@ export default defineConfig(({ command, isPreview }) => ({
     strictPort: true,
   },
   resolve: { tsconfigPaths: true },
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [{ name: "three-engine", test: /[\\/]node_modules[\\/]three[\\/]/ }],
+        },
+      },
+    },
+  },
   plugins: [
     pgliteBootstrapPlugin(),
     // Before tanstackStart so /auth/popup never falls through to the SPA.

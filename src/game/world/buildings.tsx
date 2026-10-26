@@ -388,17 +388,50 @@ export function FloodedShaft({ x, z }: { x: number; z: number }) {
 
 export function MineAdit({ x, z }: { x: number; z: number }) {
   const m = useMats();
-  return <group position={[x, 0, z]} name="primitive-timber-mine-mouth">
-    <mesh position={[0, 2.35, -1]}><planeGeometry args={[5, 5.1]} /><meshBasicMaterial color="#080b0e" side={THREE.DoubleSide} /></mesh>
-    {[-1, 1].map(side => <group key={side}>
-      <mesh position={[side * 2.08, 1.98, 0.25]} rotation-z={side * 0.035} material={m.woodDark} castShadow><boxGeometry args={[0.3, 3.96, 0.34]} /></mesh>
-      <mesh position={[side * 1.52, 3.55, 0.25]} rotation-z={-side * 0.72} material={m.woodDark}><boxGeometry args={[0.2, 1.65, 0.24]} /></mesh>
-    </group>)}
-    <mesh position={[0, 4.02, 0.25]} material={m.woodDark} castShadow><boxGeometry args={[4.85, 0.34, 0.4]} /></mesh>
-    <mesh position={[-2.85, 2.4, 0.7]} material={m.iron}><boxGeometry args={[0.25, 0.38, 0.25]} /></mesh>
-    <mesh position={[-2.85, 2.4, 0.84]} material={m.ember}><planeGeometry args={[0.15, 0.23]} /></mesh>
-    <pointLight position={[-2.85, 2.4, 1]} color="#ffba70" intensity={22} distance={11} decay={2} />
-    <Rubble x={-3.3} z={1} n={6} /><Rubble x={3.4} z={0.8} n={4} />
-    <Rail x={0} z={1.5} len={5} />
-  </group>;
+  return (
+    <group position={[x, 0, z]} name="primitive-timber-mine-mouth">
+      <mesh name="mine-entry-hit" position={[0, 2.35, -0.4]}>
+        <planeGeometry args={[5, 5.1]} />
+        <meshBasicMaterial color="#080b0e" side={THREE.DoubleSide} />
+      </mesh>
+      {[-1, 1].map((side) => (
+        <group key={side}>
+          <mesh
+            position={[side * 2.08, 1.98, 0.25]}
+            rotation-z={side * 0.035}
+            material={m.woodDark}
+            castShadow
+          >
+            <boxGeometry args={[0.3, 3.96, 0.34]} />
+          </mesh>
+          <mesh
+            position={[side * 1.52, 3.55, 0.25]}
+            rotation-z={-side * 0.72}
+            material={m.woodDark}
+          >
+            <boxGeometry args={[0.2, 1.65, 0.24]} />
+          </mesh>
+        </group>
+      ))}
+      <mesh position={[0, 4.02, 0.25]} material={m.woodDark} castShadow>
+        <boxGeometry args={[4.85, 0.34, 0.4]} />
+      </mesh>
+      <mesh position={[-2.85, 2.4, 0.7]} material={m.iron}>
+        <boxGeometry args={[0.25, 0.38, 0.25]} />
+      </mesh>
+      <mesh position={[-2.85, 2.4, 0.84]} material={m.ember}>
+        <planeGeometry args={[0.15, 0.23]} />
+      </mesh>
+      <pointLight
+        position={[-2.85, 2.4, 1]}
+        color="#ffba70"
+        intensity={22}
+        distance={11}
+        decay={2}
+      />
+      <Rubble x={-3.3} z={1} n={6} />
+      <Rubble x={3.4} z={0.8} n={4} />
+      <Rail x={0} z={1.5} len={5} />
+    </group>
+  );
 }

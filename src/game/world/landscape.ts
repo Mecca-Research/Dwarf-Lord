@@ -21,6 +21,27 @@ export const MINE_OUTLINE: readonly (readonly [number, number])[] = [
   [5.6, -31],
 ];
 export const MINE_ENTRY = { x: 8, z: -25 };
+const LANDMARKS: Record<
+  string,
+  { center: { x: number; z: number }; approach: { x: number; z: number } }
+> = {
+  dorm: { center: { x: -11, z: -5 }, approach: { x: -10, z: -0.3 } },
+  forge: { center: { x: 10, z: -7 }, approach: { x: 6, z: -7 } },
+  storage: { center: { x: 17, z: 8 }, approach: { x: 13, z: 8 } },
+  office: { center: { x: 12.5, z: 1.5 }, approach: { x: 12.5, z: 6.5 } },
+  "tent-a": { center: { x: -9, z: 15 }, approach: { x: -9, z: 19.2 } },
+  "tent-b": { center: { x: -2, z: 17 }, approach: { x: -2, z: 21.1 } },
+  shaft: { center: { x: 14, z: -22 }, approach: { x: 14, z: -18.7 } },
+  cart: { center: { x: 4, z: -16 }, approach: { x: 4, z: -13 } },
+  kitchen: { center: { x: 2, z: 6.5 }, approach: { x: -0.5, z: 4.5 } },
+};
+/** Canonical approaches also keep older saved building positions inspectable. */
+export function buildingApproach(building: { id: string; x: number; z: number }) {
+  return LANDMARKS[building.id]?.approach ?? building;
+}
+export function buildingCenter(building: { id: string; x: number; z: number }) {
+  return LANDMARKS[building.id]?.center ?? building;
+}
 export const random = (seed: number) => {
   const n = Math.sin(seed * 127.1 + 311.7) * 43758.5453;
   return n - Math.floor(n);
@@ -53,16 +74,19 @@ export function inMine(x: number, z: number) {
 export const creekX = (z: number) => -28 + Math.sin(z * 0.065) * 2.7 + Math.sin(z * 0.19) * 0.7;
 /** A connected crest, with long spurs and glacial gullies rather than isolated cones. */
 const MAIN_CREST: readonly (readonly [number, number, number])[] = [
-  [-128, -102, 91],
-  [-98, -112, 116],
-  [-72, -94, 87],
-  [-45, -121, 143],
-  [-17, -101, 107],
-  [13, -114, 151],
-  [40, -100, 111],
-  [68, -126, 156],
-  [98, -108, 112],
-  [131, -130, 137],
+  [-150, -128, 76],
+  [-115, -140, 108],
+  [-90, -126, 95],
+  [-65, -148, 128],
+  [-41, -142, 119],
+  [-20, -127, 103],
+  [3, -140, 148],
+  [20, -142, 156],
+  [35, -129, 130],
+  [55, -133, 119],
+  [80, -151, 142],
+  [110, -143, 108],
+  [147, -160, 126],
 ];
 function ridge(
   x: number,
@@ -79,7 +103,7 @@ function ridge(
     const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz)));
     const distance = Math.hypot(x - ax - dx * t, z - az - dz * t);
     const profile = Math.max(0, 1 - distance / width);
-    height = Math.max(height, (ah + (bh - ah) * t) * Math.pow(profile, 1.22));
+    height = Math.max(height, (ah + (bh - ah) * t) * Math.pow(profile, 0.95));
   }
   return height;
 }
@@ -93,7 +117,7 @@ export function surfaceHeight(x: number, z: number) {
   const north = Math.max(0, -z - 27),
     side = Math.max(0, Math.abs(x - 3) - 28);
   const ridges = Math.max(
-    ridge(x, z, MAIN_CREST, 77),
+    ridge(x, z, MAIN_CREST, 103),
     ridge(
       x,
       z,
@@ -124,8 +148,7 @@ export function surfaceHeight(x: number, z: number) {
   const gullies = Math.abs(Math.sin(x * 0.17 + Math.sin(z * 0.052) * 2.4));
   let h = Math.max(ridges, cliffHeight(x) * smooth(0, 8, -z - 26));
   h +=
-    Math.min(18, side * 0.22) +
-    detail * smooth(0, 10, Math.max(north, side)) * (1 + ridges * 0.035);
+    Math.min(18, side * 0.22) + detail * smooth(0, 10, Math.max(north, side)) * (1 + ridges * 0.01);
   h -= gullies * smooth(15, 70, ridges) * 5.5;
   h += Math.max(0, z - 25) * 0.09;
   h -= (1 - smooth(0.8, 3.1, Math.abs(x - creekX(z)))) * 1.2 * (1 - smooth(-26, -34, z));

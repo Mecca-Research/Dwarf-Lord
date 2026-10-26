@@ -117,10 +117,10 @@ function QuarryScatter() {
     geometry = useMemo(() => rockGeo(1, 83), []);
   const stones = useMemo(
     () =>
-      Array.from({ length: 1300 }, (_, i) => ({
+      Array.from({ length: 700 }, (_, i) => ({
         x: -20 + random(i * 11) * 55,
         z: -88 + random(i * 17 + 6) * 55,
-        size: 0.025 + random(i * 19) * 0.12,
+        size: 0.02 + random(i * 19) * 0.08,
       })).filter((p) => inMine(p.x, p.z)),
     [],
   );
@@ -136,7 +136,7 @@ function QuarryScatter() {
     ref.current!.instanceMatrix.needsUpdate = true;
     ref.current!.computeBoundingSphere();
   }, [stones]);
-  return <instancedMesh ref={ref} args={[geometry, m.rock, stones.length]} />;
+  return <instancedMesh ref={ref} args={[geometry, m.stoneDark, stones.length]} />;
 }
 function TimberSupport({ x, z, width = 6 }: { x: number; z: number; width?: number }) {
   const m = useMats();
@@ -167,7 +167,7 @@ function TimberSupport({ x, z, width = 6 }: { x: number; z: number; width?: numb
   );
 }
 function OreFace({ x, z, color }: { x: number; z: number; color: string }) {
-  const m = useMats(),
+  const stone = useBedrockMaterial(),
     g = useMemo(() => rockGeo(1, 43), []);
   return (
     <group position={[x, 0, z]}>
@@ -175,7 +175,7 @@ function OreFace({ x, z, color }: { x: number; z: number; color: string }) {
         <mesh
           key={i}
           geometry={g}
-          material={m.rock}
+          material={stone}
           position={[(i - 2) * 0.7, 0.6 + random(i) * 0.3, random(i + 10) * 0.6]}
           scale={[1.1, 1.3 + random(i + 17), 1]}
           rotation-y={i * 1.3}
@@ -221,7 +221,7 @@ export function MineInterior() {
         <planeGeometry args={[360, 360]} />
         <meshBasicMaterial color="#080b0e" />
       </mesh>
-      <mesh geometry={floor} material={floorMat} receiveShadow />
+      <mesh name="mine-excavated-floor" geometry={floor} material={floorMat} receiveShadow />
       <ChamberWalls />
       <QuarryScatter />
       <TimberSupport x={8} z={-29.8} />
@@ -230,9 +230,11 @@ export function MineInterior() {
       <TimberSupport x={3} z={-69} width={10} />
       <TimberSupport x={13} z={-80} width={8} />
       <Rail x={8} z={-32} len={11} />
-      <Rail x={8} z={-41} len={6} />
-      <Rail x={8} z={-53} len={14} />
-      <Rail x={8} z={-69} len={10} />
+      <group position={[6, 0, -40]} rotation-y={0.3}>
+        <Rail x={0} z={0} len={10} />
+      </group>
+      <Rail x={3} z={-53} len={14} />
+      <Rail x={3} z={-69} len={10} />
       <MineLantern x={4} z={-34} />
       <MineLantern x={19} z={-43} />
       <MineLantern x={14} z={-59} />
@@ -254,7 +256,7 @@ export function MineInterior() {
       <Crate x={-9} z={-66} s={1.1} />
       <Crate x={-8.5} z={-65} s={0.8} />
       <Sack x={-11} z={-65.8} />
-      <OreFace x={26} z={-70} color="#996b48" />
+      <OreFace x={31.5} z={-71} color="#996b48" />
       <OreFace x={5} z={-88} color="#b9b5a1" />
       <Rubble x={24} z={-80} n={18} />
       <Rubble x={17} z={-34} n={16} />

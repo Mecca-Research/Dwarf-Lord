@@ -32,7 +32,6 @@ function valleyGeometry() {
       c = index.getX(i + 2);
     const x = (p.getX(a) + p.getX(b) + p.getX(c)) / 3,
       z = (p.getZ(a) + p.getZ(b) + p.getZ(c)) / 3;
-    if (x > 5.4 && x < 10.6 && z < -26 && z > -35) continue;
     indices.push(a, b, c);
   }
   g.setIndex(indices);
@@ -84,7 +83,7 @@ function ValleyFloor() {
         vec3 ground=mix(meadow*(.65+grain*.2),soil*vec3(.78,.72,.62),dirt);
         float exposed=max(1.-smoothstep(.45,.82,abs(valleyNormal.y)),smoothstep(8.,22.,wp.y));
         vec3 bedrock=rock*vec3(.5,.53,.56)*(.7+variation*.6);
-        float snow=smoothstep(67.+variation*14.,83.+variation*14.,wp.y)*smoothstep(.4,.78,abs(valleyNormal.y));
+        float snow=smoothstep(75.+variation*8.,99.+variation*8.,wp.y)*smoothstep(.18,.62,abs(valleyNormal.y));
         diffuseColor.rgb*=mix(mix(ground,bedrock,exposed),vec3(.83,.89,.9),snow);
       `,
         );
