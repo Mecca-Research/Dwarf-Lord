@@ -24,7 +24,7 @@ const activities = load('src/game/world/work-activities.ts', { '../data/catalog'
 const stations = load('src/game/world/workstation-sites.ts', {
   '../data/catalog': catalog, './work-activities': activities,
 });
-const runtimeModule = load('src/game/runtime.ts');
+const runtimeModule = load('src/game/runtime.ts', { './world/landscape': load('src/game/world/landscape.ts') });
 const sim = load('src/game/sim.ts', { './data/catalog': catalog });
 const { useGame } = load('src/game/store.ts', {
   zustand: { create: createStore }, './data/catalog': catalog,

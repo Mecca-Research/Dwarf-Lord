@@ -1,4 +1,5 @@
 import type { ZoneId } from "./types";
+import {inMine,surfaceHeight,walkable} from "./world/landscape";
 
 export interface Body {
   x: number;
@@ -33,6 +34,7 @@ export const runtime = {
   keys: new Set<string>(),
   cameraAzimuth: -0.72,
   cameraElev: 0.6,
+  valleyView: false,
   zoom: 40,
   zoomBias: 0,
   zone: "road" as ZoneId,
@@ -55,35 +57,14 @@ export const OBSTACLES: Obstacle[] = [
   { x: 2, z: 6.5, r: 1.4 },
 ];
 
-export function groundHeight(x: number, z: number) {
-  const onRoad = x > -58 && x < -6 && z > 7.2 && z < 15.5;
-  const onMine = x > 2 && x < 14 && z < -24 && z > -72;
-  const onCamp = x > -16.5 && x < 19.5 && z > -11.5 && z < 12.6;
-  const onWalk = x > -9 && x < 4.5 && z > 8 && z < 16.2;
-  const onForest = x < -34 && z > 6 && z < 28;
-
-  const basin = Math.max(0, Math.hypot(x, z + 2) - 28);
-  const mountain = Math.max(0, -z - 18);
-  let h = mountain * 0.42 + mountain * mountain * 0.012;
-  h += Math.sin(x * 0.11) * Math.sin(z * 0.09) * (0.4 + mountain * 0.08);
-  if (z > 16) h += Math.max(0, z - 16) * 0.08;
-  if (x < -36) h += Math.max(0, -36 - x) * 0.05;
-  h += basin * 0.01;
-  if (onMine) {
-    const tunnel = 1 - Math.min(1, Math.abs(x - 8) / 6);
-    h = Math.min(h, 0.15 + (1 - tunnel) * mountain * 0.3);
-    return Math.max(0, h);
-  }
-  if (onRoad || onCamp || onForest || onWalk) return Math.max(0, h);
-
-  const dx = x < -16.5 ? -16.5 - x : x > 19.5 ? x - 19.5 : 0;
-  const dz = z < -11.5 ? -11.5 - z : z > 12.6 ? z - 12.6 : 0;
-  const drop = Math.max(dx, dz);
-  return Math.max(-11, h - drop * 1.35 - 1.8);
+export function groundHeight(x:number,z:number) {
+  if(inMine(x,z))return 0;
+  if(x>-33&&x<-22&&Math.abs(z-11)<1.9)return 0;
+  return surfaceHeight(x,z);
 }
 
 export function zoneAt(x: number, z: number): ZoneId {
-  if (x > 2 && x < 14 && z < -26) return "mine";
+  if (inMine(x,z)) return "mine";
   if (z < -16) return "periphery";
   if (x < -34) return "forest";
   if (x < -22) return "road";
@@ -110,9 +91,10 @@ export function resolveMove(
       nz += vz * push;
     }
   }
-  nx = Math.max(-62, Math.min(36, nx));
-  nz = Math.max(-68, Math.min(32, nz));
-  return { x: nx, z: nz };
+  if(walkable(nx,nz,radius))return {x:nx,z:nz};
+  if(walkable(nx,z,radius))return {x:nx,z};
+  if(walkable(x,nz,radius))return {x,z:nz};
+  return {x,z};
 }
 
 export function camBasis(azimuth: number) {

@@ -11,7 +11,7 @@ That URL is live. The game is a static build hosted on GitHub Pages.
 ## Play
 
 - **Walk the road** into the camp. You do not start with a clean company UI — you learn what you own by walking it.
-- **WASD** or click-to-move. **E** talks / inspects. **Q / R** rotate. Scroll zooms. On a phone: stick + Interact.
+- **WASD** or click-to-move. **E** talks / inspects. **Q / R** rotate. Scroll zooms. **V** or the mountain button opens the valley view. On a phone: stick + Interact.
 - Find **Borrin** in the chair. He opens the pit board.
 - You have **82 capability** and jobs that need **126**. You cannot do everything.
 - Send the first haul. Wages, food, tools, the dorm, and the cart eat revenue first.
@@ -19,6 +19,8 @@ That URL is live. The game is a static build hosted on GitHub Pages.
 ## World stages
 
 Town stays a short walk with larger dwarves. The mine is sectioned and long, with characters shrunk into the sprawl.
+
+The opening estate now sits in an alpine basin: snow-capped ridges, conifer slopes, a snowmelt creek and timber crossing, a worked camp terrace, and a rough adit leading into the first mining chamber. See [the base-camp rebuild and playtest evidence](docs/base-camp-rebuild.md).
 
 | Stage | What you see |
 | --- | --- |

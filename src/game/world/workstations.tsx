@@ -1,9 +1,10 @@
 import { Billboard, useTexture } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
 import { workstationSites } from "./workstation-sites";
-import { groundHeight, zoneAt } from "../runtime";
+import { groundHeight, runtime, zoneAt } from "../runtime";
 import { workstationTaskStates } from "./npc-motion";
 
 
@@ -16,10 +17,12 @@ export function Workstations({ scale, mineScale = scale }: { scale: number; mine
 }
 
 function Workstation({ site, scale }: { site: typeof workstationSites[number]; scale: number }) {
+  const root=useRef<THREE.Group>(null);
   const texture = useTexture(asset(`/sprites/workstations/${site.id}/sprite.png`));
   texture.colorSpace = THREE.SRGBColorSpace;
   const pixel = 1.95 / site.bodyHeight;
   const { targetX: x, targetZ: z } = site.target;
+  useFrame(()=>{if(root.current)root.current.visible=(zoneAt(x,z)==="mine")===(zoneAt(runtime.player.x,runtime.player.z)==="mine");});
   useEffect(() => {
     const state = workstationTaskStates.get(site.id);
     workstationDiagnostics.set(site.id, { id: site.id, x, z, persistent: true,
@@ -27,7 +30,7 @@ function Workstation({ site, scale }: { site: typeof workstationSites[number]; s
     return () => { workstationDiagnostics.delete(site.id); };
   }, [site, x, z]);
   return (
-    <group position={[x, groundHeight(x, z), z]} scale={scale}>
+    <group ref={root} position={[x, groundHeight(x, z), z]} scale={scale}>
       <Billboard follow>
         <mesh position={[(320 - site.anchor[0]) * pixel, (site.anchor[1] - 320) * pixel, .005]} scale={[640 * pixel, 640 * pixel, 1]} renderOrder={2}>
           <planeGeometry args={[1, 1]} />

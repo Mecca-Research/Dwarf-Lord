@@ -1,6 +1,7 @@
 import { TimberHall, RidgeTent } from "./reference-assets";
 import { groundHeight, runtime, zoneAt } from "../runtime";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
+import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 import type { Group } from "three";
 import {
@@ -361,7 +362,7 @@ export function FloodedShaft({ x, z }: { x: number; z: number }) {
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.04, 0]} material={m.stoneDark}>
         <ringGeometry args={[1.15, 2.25, 20]} />
       </mesh>
-      <mesh rotation-x={-Math.PI / 2} position={[0, -0.08, 0]} material={m.water}>
+      <mesh rotation-x={-Math.PI / 2} position={[0, 0.025, 0]} material={m.water}>
         <circleGeometry args={[1.2, 20]} />
       </mesh>
       {/* Broken collar timbers */}
@@ -386,160 +387,75 @@ export function FloodedShaft({ x, z }: { x: number; z: number }) {
 }
 
 export function MineAdit({ x, z }: { x: number; z: number }) {
-  const m = useMats();
-  const rockShell = useRef<Group>(null), tunnelShell = useRef<Group>(null);
+  const m = useMats(),
+    shell = useRef<Group>(null);
+  const arch = useMemo(() => {
+    const s = new THREE.Shape();
+    s.moveTo(-4.6, -0.5);
+    s.lineTo(-4.3, 2.1);
+    s.lineTo(-3.5, 4.5);
+    s.lineTo(-1.5, 5.3);
+    s.lineTo(0.8, 5.5);
+    s.lineTo(3.3, 4.1);
+    s.lineTo(4.4, 2.2);
+    s.lineTo(4.8, -0.5);
+    s.closePath();
+    const h = new THREE.Path();
+    h.moveTo(-2.25, -0.35);
+    h.lineTo(2.15, -0.35);
+    h.lineTo(2.1, 2.35);
+    h.lineTo(1.45, 3.35);
+    h.lineTo(0.2, 3.8);
+    h.lineTo(-1.5, 3.35);
+    h.lineTo(-2.25, 2.25);
+    h.closePath();
+    s.holes.push(h);
+    return s;
+  }, []);
   useFrame(() => {
-    const atEntrance = Math.hypot(runtime.player.x - x, runtime.player.z - z) < 9;
-    const exterior = zoneAt(runtime.player.x, runtime.player.z) !== "mine" && !atEntrance;
-    if (rockShell.current) rockShell.current.visible = exterior;
-    if (tunnelShell.current) tunnelShell.current.visible = exterior;
+    const mine = zoneAt(runtime.player.x, runtime.player.z) === "mine";
+    if (shell.current) shell.current.visible = !mine;
   });
   return (
-    <group position={[x, 0, z]}>
-      <group ref={rockShell}>
-        {/* Cut away near the entrance too, so shaft-clearing workers remain visible. */}
-        <mesh
-          position={[-2.2, 3.2, -1.4]}
-          scale={[3.4, 2.8, 2.2]}
-          rotation={[0.15, 0.4, -0.1]}
-          material={m.rock}
-          castShadow
-          receiveShadow
-        >
-          <icosahedronGeometry args={[2.2, 1]} />
+    <group position={[x, 0, z]} name="rough-mountain-adit">
+      <group ref={shell}>
+        <mesh position={[0, 0, -2.5]} material={m.cliff} castShadow receiveShadow>
+          <extrudeGeometry args={[arch, { depth: 2.5, bevelEnabled: true, bevelThickness: 0.12, bevelSize: 0.18, bevelSegments: 1, curveSegments: 1 }]} />
         </mesh>
-        <mesh
-          position={[2.6, 3.0, -1.6]}
-          scale={[3.2, 2.6, 2.4]}
-          rotation={[0.1, -0.5, 0.08]}
-          material={m.rock}
-          castShadow
-          receiveShadow
-        >
-          <icosahedronGeometry args={[2.3, 1]} />
+        <mesh position={[0, 1.9, -0.6]}>
+          <planeGeometry args={[4.8, 4.2]} />
+          <meshBasicMaterial color="#080b0e" side={THREE.DoubleSide} />
         </mesh>
-        <mesh
-          position={[0.2, 5.2, -2.2]}
-          scale={[4.2, 2.2, 2.6]}
-          rotation={[0.2, 0.2, 0]}
-          material={m.rock}
-          castShadow
-        >
-          <icosahedronGeometry args={[2.4, 1]} />
+        {[-1, 1].map((side) => (
+          <mesh
+            key={side}
+            position={[side * 1.92, 1.6, 0.22]}
+            rotation-z={side * 0.045}
+            material={m.woodDark}
+          >
+            <boxGeometry args={[0.2, 3.2, 0.23]} />
+          </mesh>
+        ))}
+        <mesh position={[0, 3.15, 0.2]} rotation-z={0.025} material={m.woodDark}>
+          <boxGeometry args={[4.2, 0.24, 0.28]} />
         </mesh>
-        <mesh
-          position={[-5.4, 4.2, -1.2]}
-          rotation-y={0.4}
-          scale={[2.2, 2.8, 1.8]}
-          material={m.rock}
-          castShadow
-        >
-          <icosahedronGeometry args={[2.1, 1]} />
+        <mesh position={[-2.7, 1.9, 0.4]} material={m.iron}>
+          <boxGeometry args={[0.2, 0.3, 0.2]} />
         </mesh>
-        <mesh
-          position={[5.6, 3.8, -1]}
-          rotation-y={-0.35}
-          scale={[2.4, 2.6, 1.7]}
-          material={m.rock}
-          castShadow
-        >
-          <icosahedronGeometry args={[2.0, 1]} />
+        <mesh position={[-2.7, 1.9, 0.51]} material={m.ember}>
+          <planeGeometry args={[0.11, 0.18]} />
         </mesh>
+        <pointLight
+          position={[-2.7, 2, 0.8]}
+          color="#ffbf76"
+          intensity={14}
+          distance={9}
+          decay={2}
+        />
+        <Rubble x={-3.4} z={1.2} n={6} />
+        <Rubble x={3.6} z={0.8} n={5} />
       </group>
-      {/* Tunnel mouth */}
-      <mesh position={[0, 1.7, 0.15]} material={m.black}>
-        <boxGeometry args={[3.4, 3.5, 2.8]} />
-      </mesh>
-      {/* Timber portal */}
-      <mesh position={[-1.85, 1.8, 0.55]} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.32, 3.6, 0.32]} />
-      </mesh>
-      <mesh position={[1.85, 1.8, 0.55]} material={m.woodDark} castShadow>
-        <boxGeometry args={[0.32, 3.6, 0.32]} />
-      </mesh>
-      <mesh position={[0, 3.55, 0.55]} material={m.wood} castShadow>
-        <boxGeometry args={[4.1, 0.32, 0.36]} />
-      </mesh>
-      {/* Diagonal braces */}
-      <mesh position={[-1.1, 3.05, 0.55]} rotation-z={0.7} material={m.woodDark} castShadow>
-        <boxGeometry args={[1.4, 0.16, 0.16]} />
-      </mesh>
-      <mesh position={[1.1, 3.05, 0.55]} rotation-z={-0.7} material={m.woodDark} castShadow>
-        <boxGeometry args={[1.4, 0.16, 0.16]} />
-      </mesh>
-      {/* Lanterns */}
-      <mesh position={[-1.7, 2.7, 0.8]} material={m.iron}>
-        <boxGeometry args={[0.12, 0.2, 0.12]} />
-      </mesh>
-      <mesh position={[-1.7, 2.55, 0.8]} material={m.ember}>
-        <sphereGeometry args={[0.07, 6, 6]} />
-      </mesh>
-      <pointLight
-        position={[-1.6, 2.55, 0.9]}
-        color="#ffb060"
-        intensity={5}
-        distance={8}
-        decay={2}
-      />
-      <mesh position={[1.7, 2.7, 0.8]} material={m.iron}>
-        <boxGeometry args={[0.12, 0.2, 0.12]} />
-      </mesh>
-      <pointLight
-        position={[1.6, 2.55, 0.9]}
-        color="#ffb060"
-        intensity={4}
-        distance={7}
-        decay={2}
-      />
-
-      <Rail x={0} z={-1.2} len={5} />
-
-      {Array.from({ length: 8 }).map((_, i) => {
-        const tz = -4.2 - i * 4.4;
-        return (
-          <group key={i} position={[0, 0, tz]}>
-            <mesh position={[-1.7, 1.6, 0]} material={m.woodDark}>
-              <boxGeometry args={[0.22, 3.2, 0.22]} />
-            </mesh>
-            <mesh position={[1.7, 1.6, 0]} material={m.woodDark}>
-              <boxGeometry args={[0.22, 3.2, 0.22]} />
-            </mesh>
-            <mesh position={[0, 3.2, 0]} material={m.wood}>
-              <boxGeometry args={[3.7, 0.22, 0.22]} />
-            </mesh>
-            {i % 2 === 0 ? (
-              <mesh position={[1.45, 0.45, -1]} material={m.lime} castShadow>
-                <boxGeometry args={[0.55, 0.7, 0.8]} />
-              </mesh>
-            ) : (
-              <mesh position={[-1.35, 0.4, -0.8]} material={m.iron} castShadow>
-                <boxGeometry args={[0.5, 0.4, 0.55]} />
-              </mesh>
-            )}
-            {i % 3 === 0 ? (
-              <pointLight
-                position={[0, 2.4, 0]}
-                color="#d4894a"
-                intensity={1.6}
-                distance={5}
-                decay={2}
-              />
-            ) : null}
-          </group>
-        );
-      })}
-      <group ref={tunnelShell}>
-        {/* Tunnel ceiling / walls */}
-        <mesh position={[0, 3.5, -22]} material={m.rock}>
-          <boxGeometry args={[6.2, 0.8, 36]} />
-        </mesh>
-        <mesh position={[-2.4, 1.6, -22]} material={m.rock}>
-          <boxGeometry args={[0.8, 3.6, 36]} />
-        </mesh>
-        <mesh position={[2.4, 1.6, -22]} material={m.rock}>
-          <boxGeometry args={[0.8, 3.6, 36]} />
-        </mesh>
-      </group>
+      <Rail x={0} z={1.5} len={5} />
     </group>
   );
 }

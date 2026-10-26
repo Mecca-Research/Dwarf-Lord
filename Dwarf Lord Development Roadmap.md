@@ -219,6 +219,8 @@ Minting is allowed to be profitable—that is part of the reward for discovering
 
 ### Phase 03 — Finish the surface estate and ruined camp
 
+**Opening foundation pass:** The [alpine base-camp rebuild](docs/base-camp-rebuild.md) establishes continuous mountain terrain, a creek/bridge route to forestry, the camp terrace, a primitive adit and the first cutaway mining chamber. It retains the existing camp buildings and registered animation stations. This is a foundation for 03.1/03.3/03.6/03.7/03.8; the full estate, buildability tags, prop manifest and Phase 03 gate remain open.
+
 - [ ] **03.1** Build the finite estate plan: road gate, forest fringe, Pit Yard, camp, industrial periphery, mountain entrance, water source, drainage and future expansion land.
 - [ ] **03.2** Give terrain gameplay tags: flat earth, packed gravel, bedrock, forest, slope, steep rock, wet ground, rubble, cliff and mountain wall. Visual boundaries must agree with buildability and navigation.
 - [ ] **03.3** Replace broad uniform ground scatter with authored/seeded clusters: worn travel lanes, rubble near damage, stones at cliffs, compacted work areas, drainage channels and sparse vegetation where walked.

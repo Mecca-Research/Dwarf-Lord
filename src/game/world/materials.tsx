@@ -54,7 +54,7 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     wood: asset("/textures/wood.jpg"),
     stone: asset("/textures/stone.jpg"),
     rock: asset("/textures/rock.jpg"),
-    cliff: asset("/textures/cliff.jpg"),
+    cliff: asset("/art/alpine-bedrock-v1.webp"),
     canvas: asset("/textures/canvas.jpg"),
     roof: asset("/textures/roof.jpg"),
     iron: asset("/textures/iron.jpg"),

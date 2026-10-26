@@ -88,11 +88,11 @@
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
-      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+      "sha256": "cb4691bb726bcaf6b69ebe7a97e4668ef907f2c2daf504f2dd77f6aa3611389d"
     },
     {
       "file": "../../../../../../src/game/runtime.ts",
-      "sha256": "c1934ecffe8f27d4a8f6da82de4f11d647a346f2889f89fb25e286454ac66eae"
+      "sha256": "6c61a39946639473fc600b89f4731e6d745f1ffd6848f920cd5895553cd399ef"
     },
     {
       "file": "../../../../../../docs/art-review/motion37/blacksmith-right-rendered-stride.json",
@@ -245,16 +245,19 @@
     {
       "file": "../../../../../../docs/art-review/motion48/cooking-gameplay48.json",
       "sha256": "1527ae9cc0819266ac1a1f9370483086f5a757d5265fe223d0ee87846e1c303c"
+    },
+    {
+      "file": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
+      "sha256": "dc220ced91ef06066ac8570a320147ee1071205d19fca848ebf28a8e3687683e"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion48",
+    "checkpoint": "alpine-base-camp-v1",
     "files": [
-      "public/sprites/Blacksmith/motion/walk/right/travel-calibration.json",
-      "src/game/world/npc-motion.ts",
-      "docs/blacksmith-right-whole-stride-observations.json"
+      "src/game/world/scene.tsx",
+      "src/game/runtime.ts"
     ],
-    "audit": "../../../../../../docs/art-review/motion48/runtime-revalidation48.json",
-    "scope": "Exact prior limited art/registration/timing with audited task routing and synchronous finished prop ownership; fresh actual task and gait checks. No new art, contact scope or family approval."
+    "audit": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
+    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; new terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
   }
 }

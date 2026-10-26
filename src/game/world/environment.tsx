@@ -28,6 +28,7 @@ import {
 
 import { PathClutter, Terrain } from "./terrain";
 import { useGame } from "../store";
+import { SurfaceWorld } from "./world-visibility";
 
 export function Environment() {
   const buildings = useGame((s) => s.buildings);
@@ -37,7 +38,7 @@ export function Environment() {
   const storage = buildings.find((b) => b.id === "storage");
 
   return (
-    <group>
+    <SurfaceWorld>
       <Terrain />
       <PathClutter />
       <Crate x={-7} z={0} s={0.65} />
@@ -54,7 +55,7 @@ export function Environment() {
       <Kitchen x={2} z={6.5} />
       <MineCart x={4} z={-16} rot={0.6} condition={cart?.condition ?? 0.15} />
       <FloodedShaft x={14} z={-22} />
-      <MineAdit x={8} z={-28} />
+      <MineAdit x={8} z={-26} />
 
       {/* Fire circle seating */}
       <Crate x={3.45} z={7.55} s={0.78} rot={0.2} />
@@ -103,6 +104,6 @@ export function Environment() {
       <Shovel x={1.8} z={3.4} rot={0.3} />
       <Hammer x={-7.5} z={5.8} rot={0.8} />
       <Pickaxe x={7.4} z={-12.2} rot={2.1} />
-    </group>
+    </SurfaceWorld>
   );
 }

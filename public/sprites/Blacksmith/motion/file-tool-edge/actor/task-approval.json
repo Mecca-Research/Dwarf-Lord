@@ -232,7 +232,7 @@
     },
     {
       "file": "../../../../../../src/game/world/scene.tsx",
-      "sha256": "118adafafad2d3eccb8bd1a6c0f0a6fa5a8e978288408d1c51e43ce5c4389c7d"
+      "sha256": "cb4691bb726bcaf6b69ebe7a97e4668ef907f2c2daf504f2dd77f6aa3611389d"
     },
     {
       "file": "../../../../../../src/game/world/sprites.tsx",
@@ -240,7 +240,7 @@
     },
     {
       "file": "../../../../../../src/game/world/workstations.tsx",
-      "sha256": "73ecbdf6fb319b35fd5b8933990825e1cc9a3559b438eb4d5546ce387f4f5686"
+      "sha256": "15b417ab433f4135b5343b7e8b50dd7570c9b8ad716ebdccfa560cb73e8bac4c"
     },
     {
       "file": "../../../../../../src/game/world/workstation-completion.ts",
@@ -317,14 +317,19 @@
     {
       "file": "../../../../../../docs/art-review/motion58/station-layer-authoring58.json",
       "sha256": "05c3614ffe99e18a0717ec838a7f6ddffa906d07074d3f8332d18289ee57034a"
+    },
+    {
+      "file": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
+      "sha256": "dc220ced91ef06066ac8570a320147ee1071205d19fca848ebf28a8e3687683e"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "motion58",
+    "checkpoint": "alpine-base-camp-v1",
     "files": [
-      "src/game/world/work-activities.ts"
+      "src/game/world/scene.tsx",
+      "src/game/world/workstations.tsx"
     ],
-    "audit": "../../../../../../docs/art-review/motion58/runtime-revalidation58.json",
-    "scope": "Earlier selected art/timing and action calibration entries exact. Six actual consultant days and22 variants verify additive standing explanation/one local crate clearance only. Other gameplay/native observation dates and limited scopes retained. Source-pixel test addition replays all prior actors without changing helper semantics."
+    "audit": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
+    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; new terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
   }
 }
