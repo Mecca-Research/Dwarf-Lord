@@ -79,7 +79,8 @@ try {
     b.textContent.includes('Walk the road') && Object.keys(b).some(k => k.startsWith('__reactProps'))));
   await page.getByRole('button', { name: 'Walk the road', exact: true }).click();
   await page.waitForFunction(() => window.__controlsTest && window.render_game_to_text && document.querySelector('canvas'));
-  await page.waitForTimeout(6500);
+  await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).workstations.length === 14);
+  await page.waitForTimeout(3500);
   const state = () => page.evaluate(() => JSON.parse(window.render_game_to_text()));
   const capture = async (name, x, z, zoom = 0, vista = false) => {
     await page.evaluate(({ x, z, zoom, vista }) => {

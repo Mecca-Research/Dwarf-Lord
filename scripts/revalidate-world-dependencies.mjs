@@ -1,6 +1,6 @@
 /** Rebind only changed environment dependencies after the shipped-world playtest. */
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { dirname, relative, resolve } from 'node:path';
@@ -12,7 +12,13 @@ const auditFile = `${folder}/runtime-revalidation.json`;
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const hash = file => digest(readFileSync(file));
 const original = file => execFileSync('git', ['show', `${baseCommit}:${file}`], { maxBuffer: 30 * 1024 * 1024 });
+const originalPaths = new Set(execFileSync('git', ['ls-tree', '-r', '--name-only', baseCommit], { encoding: 'utf8' }).trim().split('\n'));
 const json = file => JSON.parse(readFileSync(file, 'utf8'));
+function authoredFiles(root, manifest) {
+  return ['manifest.json', 'motion-polish.json', 'generation.json',
+    ...((originalPaths.has(`${root}/assembly.json`) || existsSync(`${root}/assembly.json`)) ? ['assembly.json'] : []),
+    manifest.source, manifest.atlas.file, ...manifest.frames.map(f => f.file)];
+}
 const allowed = new Set(['src/game/world/scene.tsx', 'src/game/world/terrain.tsx',
   'src/game/world/environment.tsx', 'src/game/world/workstations.tsx', 'src/game/runtime.ts']);
 const report = json(`${folder}/results.json`);
@@ -54,6 +60,16 @@ function walk(path) {
   return readdirSync(path, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(`${path}/${e.name}`) : [`${path}/${e.name}`]);
 }
 const approvals = [], art = new Map();
+const workEntries = [...json('docs/runtime-motion-layers.json').entries, ...json('docs/runtime-motion-additions.json').entries];
+assert.equal(workEntries.length, 22);
+for (const entry of workEntries) {
+  const root = entry.destination, manifest = json(`${root}/manifest.json`);
+  for (const name of authoredFiles(root, manifest)) {
+    const path = `${root}/${name}`;
+    assert.equal(hash(path), digest(original(path)), `changed workstation art: ${path}`);
+    art.set(path, hash(path));
+  }
+}
 for (const file of walk('public/sprites').filter(p => /\/(loop|task)-approval\.json$/.test(p))) {
   const native = original(file), approval = JSON.parse(native);
   const changes = [];
@@ -68,8 +84,7 @@ for (const file of walk('public/sprites').filter(p => /\/(loop|task)-approval\.j
   }
   if (!changes.length) continue;
   const root = dirname(file), manifest = json(`${root}/manifest.json`);
-  for (const name of ['manifest.json', 'motion-polish.json', 'assembly.json', 'generation.json',
-    manifest.source, manifest.atlas.file, ...manifest.frames.map(f => f.file)]) {
+  for (const name of authoredFiles(root, manifest)) {
     const path = `${root}/${name}`;
     assert.equal(hash(path), digest(original(path)), `changed authored motion: ${path}`);
     art.set(path, hash(path));
