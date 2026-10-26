@@ -153,6 +153,7 @@ export function ExpeditionTent({
   height = 3.8,
   color = "#d4c6a7",
   buildingId,
+  approach,
 }: {
   x: number;
   z: number;
@@ -162,6 +163,7 @@ export function ExpeditionTent({
   height?: number;
   color?: string;
   buildingId?: string;
+  approach?: { x: number; z: number };
 }) {
   const m = useMats(),
     roof = useMemo(() => tentRoof(width, length, height), [width, length, height]);
@@ -194,7 +196,7 @@ export function ExpeditionTent({
   return (
     <group
       name="weathered-expedition-tent"
-      userData={{ buildingId }}
+      userData={{ buildingId, worldApproach: approach }}
       position={[x, groundHeight(x, z), z]}
       rotation-y={rot}
     >

@@ -95,12 +95,12 @@ function IsoCamera() {
       ? 2.35
       : (zone === "mine" ? spec.cameraZoom * 0.84 : spec.cameraZoom) + runtime.zoomBias;
     runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-cameraDt * 3));
-    const dist = vista ? 360 : 38,
+    const dist = vista ? 360 : 140,
       az = vista ? runtime.cameraAzimuth * 0.55 : runtime.cameraAzimuth,
       el = vista ? 0.45 : runtime.cameraElev;
     const focusX = vista ? 5 : p.x + 2,
       focusZ = vista ? -58 : p.z - 8,
-      focusY = vista ? 62 : 2.0;
+      focusY = vista ? 62 : groundHeight(p.x, p.z) + 2;
     _cam.set(
       focusX + dist * Math.sin(az) * Math.cos(el),
       focusY + dist * Math.sin(el) + 1,
@@ -478,12 +478,18 @@ function GroundPick() {
         }
         const roots: THREE.Object3D[] = [];
         scene.traverse((object) => {
-          if (object.userData.buildingId) roots.push(object);
+          if (object.userData.buildingId || object.userData.worldApproach) roots.push(object);
         });
         const hit = ray.intersectObjects(roots, true)[0];
         if (hit) {
           let object: THREE.Object3D | null = hit.object;
-          while (object && !object.userData.buildingId) object = object.parent;
+          while (object && !object.userData.buildingId && !object.userData.worldApproach)
+            object = object.parent;
+          if (object?.userData.worldApproach) {
+            const point = object.userData.worldApproach;
+            setPlayerDest(point.x, point.z);
+            return;
+          }
           const bld = useGame
             .getState()
             .buildings.find((b) => b.id === object?.userData.buildingId);
@@ -677,8 +683,8 @@ function Lights() {
       vista = runtime.valleyView && target === 0;
     if (fog) {
       fog.color.copy(outside).lerp(inside, t);
-      fog.near = vista ? 330 : THREE.MathUtils.lerp(95, 38, t);
-      fog.far = vista ? 650 : THREE.MathUtils.lerp(290, 105, t);
+      fog.near = vista ? 330 : THREE.MathUtils.lerp(197, 140, t);
+      fog.far = vista ? 650 : THREE.MathUtils.lerp(392, 207, t);
     }
     if (scene.background instanceof THREE.Color) scene.background.copy(outside).lerp(inside, t);
   });

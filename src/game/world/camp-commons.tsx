@@ -128,7 +128,11 @@ function MessShelter() {
   const roof = useMemo(() => tentRoof(20, 5.5, 1.5), []);
   useEffect(() => () => roof.dispose(), [roof]);
   return (
-    <group name="camp-mess-pavilion" position={[site.x, 0, site.z]}>
+    <group
+      name="camp-mess-pavilion"
+      userData={{ worldApproach: site.approach }}
+      position={[site.x, 0, site.z]}
+    >
       <Parts parts={frame} material={m.woodDark} />
       {/* The uncovered front bay keeps tables and their walking aisles visible. */}
       <group position={[0, 3.5, -1.6]}>
@@ -194,7 +198,11 @@ function CampWell() {
     return p;
   }, []);
   return (
-    <group name="camp-stone-well" position={[site.x, 0, site.z]}>
+    <group
+      name="camp-stone-well"
+      userData={{ worldApproach: site.approach }}
+      position={[site.x, 0, site.z]}
+    >
       <Parts parts={stone} material={m.stone} />
       <Parts parts={timber} material={m.woodDark} />
       <mesh position={[0, 0.18, 0]} rotation-x={-Math.PI / 2} material={m.water}>
@@ -290,7 +298,11 @@ function Wagon() {
     [],
   );
   return (
-    <group name="covered-supply-wagon" position={[site.x, 0, site.z]}>
+    <group
+      name="covered-supply-wagon"
+      userData={{ worldApproach: site.approach }}
+      position={[site.x, 0, site.z]}
+    >
       <Parts parts={model} material={m.wood} />
       <CanvasCloth geometry={roof} color="#b7b4a0" />
       {hoops.map((points, i) => (
@@ -348,11 +360,17 @@ function Stockyard() {
     return p;
   }, []);
   return (
-    <group name="timber-and-stone-stockyard" position={[site.x, 0, site.z]}>
+    <group
+      name="timber-and-stone-stockyard"
+      userData={{ worldApproach: site.approach }}
+      position={[site.x, 0, site.z]}
+    >
       <Parts parts={rack} material={m.woodDark} />
       <Parts parts={blocks} material={m.stone} />
-      <Woodpile x={0} z={-0.6} rot={Math.PI / 2} />
-      <Woodpile x={0} z={1.1} rot={Math.PI / 2} />
+      <group position-y={0.8}>
+        <Woodpile x={0} z={-0.6} rot={Math.PI / 2} />
+        <Woodpile x={0} z={1.1} rot={Math.PI / 2} />
+      </group>
       <Crate x={-2.7} z={4} s={1.0} />
       <Crate x={-1.5} z={4.4} s={0.75} />
       <Sack x={-2.2} z={5.2} />
@@ -433,6 +451,7 @@ export function CampCommons() {
       <Laundry />
       <ExpeditionTent
         x={CAMP_ADDITIONS.tentWest.x}
+        approach={CAMP_ADDITIONS.tentWest.approach}
         z={CAMP_ADDITIONS.tentWest.z}
         width={5}
         length={6.2}
@@ -442,6 +461,7 @@ export function CampCommons() {
       />
       <ExpeditionTent
         x={CAMP_ADDITIONS.tentSouth.x}
+        approach={CAMP_ADDITIONS.tentSouth.approach}
         z={CAMP_ADDITIONS.tentSouth.z}
         width={4.5}
         length={5.8}

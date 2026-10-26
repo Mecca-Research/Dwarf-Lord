@@ -22,7 +22,7 @@ function SnowmeltFalls() {
         positions.push(
           x + side * width + Math.sin(t * 8) * 0.12,
           height * (1 - t) - 0.55,
-          -25.35 + Math.sin(t * Math.PI) * 0.2,
+          -23.8 + Math.sin(t * Math.PI) * 0.2,
         );
         uv.push((side + 1) / 2, t);
         if (i < 24 && side === -1) {
@@ -47,8 +47,12 @@ function SnowmeltFalls() {
         vertexShader:
           "varying vec2 v;void main(){v=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}",
         fragmentShader: `uniform float fallTime;varying vec2 v;
-    void main(){float edge=pow(sin(v.x*3.14159),.4);float streak=sin(v.x*59.+sin(v.y*16.-fallTime*4.))*sin(v.y*90.-fallTime*17.);
-      float foam=smoothstep(-.2,.7,streak);vec3 c=mix(vec3(.22,.37,.4),vec3(.75,.83,.81),foam);
+    float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+    float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1.,0.)),f.x),mix(hash(i+vec2(0.,1.)),hash(i+vec2(1.,1.)),f.x),f.y);}
+    void main(){float edge=pow(max(0.,sin(v.x*3.14159)),.4);
+      float streak=noise(vec2(v.x*28.+sin(v.y*5.)*.4,v.y*7.-fallTime*2.4));
+      float fine=noise(vec2(v.x*71.,v.y*23.-fallTime*5.));
+      float foam=smoothstep(.23,.78,streak*.75+fine*.25);vec3 c=mix(vec3(.26,.42,.44),vec3(.83,.88,.85),foam);
       gl_FragColor=vec4(c,edge*(.68+foam*.25));
       #include <tonemapping_fragment>
       #include <colorspace_fragment>

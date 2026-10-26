@@ -175,6 +175,7 @@ try {
   await capture("base-camp", -3, 4);
   await capture("camp-commons", 4, 16, -4);
   await capture("mess-and-well", 21, 28, 0);
+  await capture("camp-entrance", 8, 37, -2);
   await capture("waterfall", -20, -20, 0);
   await capture("valley-overview", -2, -2, 0, true);
   await capture("mountain-entrance", 8, -22, 2);
@@ -251,6 +252,25 @@ try {
     await capture("barracks-inspection", -10, -0.3);
     await page.getByRole("button", { name: "Note it.", exact: true }).click();
     await page.waitForFunction(() => JSON.parse(window.render_game_to_text()).dialogue === null);
+    await page.evaluate(() => {
+      window.__controlsTest.teleport(22, 21);
+      window.__controlsTest.setZoomBias(0);
+    });
+    await page.waitForTimeout(3500);
+    const well = await page.evaluate(() => window.__controlsTest.projectWorld(28, 3.2, 24));
+    await page.mouse.click(well.x, well.y);
+    assert.deepEqual(
+      (await state()).player.dest,
+      { x: 25, z: 24 },
+      "well click routes to its clear approach",
+    );
+    await page.evaluate(() => window.advanceTime(30000));
+    const atWell = (await state()).player;
+    assert.ok(Math.hypot(atWell.x - 25, atWell.z - 24) < 0.5);
+    report.controlChecks.push({
+      check: "click the well and reach its clear approach",
+      passed: true,
+    });
   }
 
   const workers = [

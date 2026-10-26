@@ -19,9 +19,9 @@ function valleyGeometry() {
   for (let i = 0; i < p.count; i++) {
     let x = p.getX(i),
       z = p.getZ(i);
-    if (Math.abs(x) > 100) x = Math.sign(x) * (100 + (Math.abs(x) - 100) * 4);
-    if (z < -140) z = -140 + (z + 140) * 4;
-    if (z > 75) z = 75 + (z - 75) * 4;
+    if (Math.abs(x) > 100) x = Math.sign(x) * (100 + (Math.abs(x) - 100) * 8);
+    if (z < -140) z = -140 + (z + 140) * 8;
+    if (z > 75) z = 75 + (z - 75) * 8;
     p.setXYZ(i, x, surfaceHeight(x, z), z);
     uv.setXY(i, x * 0.035, z * 0.035);
   }
@@ -105,29 +105,6 @@ function ValleyFloor() {
   );
   return (
     <mesh name="continuous-alpine-valley" geometry={geometry} material={material} receiveShadow />
-  );
-}
-function AlpineSky() {
-  return (
-    <mesh position={[0, 0, -20]}>
-      <sphereGeometry args={[650, 32, 16]} />
-      <shaderMaterial
-        side={THREE.BackSide}
-        depthWrite={false}
-        uniforms={{
-          zenith: { value: new THREE.Color("#637f99") },
-          horizon: { value: new THREE.Color("#c3cccb") },
-        }}
-        vertexShader={`varying vec3 skyDirection;void main(){skyDirection=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`}
-        fragmentShader={`uniform vec3 zenith;uniform vec3 horizon;varying vec3 skyDirection;
-        void main(){vec3 d=normalize(skyDirection);float h=pow(max(0.,d.y),.55);
-          float cloud=smoothstep(.35,.8,sin(d.x*17.+d.z*11.)*sin(d.z*31.-d.x*8.))*.12*(1.-h);
-          gl_FragColor=vec4(mix(horizon,zenith,h)+cloud,1.);
-          #include <tonemapping_fragment>
-          #include <colorspace_fragment>
-        }`}
-      />
-    </mesh>
   );
 }
 function Talus() {
@@ -326,7 +303,6 @@ function Creek() {
 export function Terrain() {
   return (
     <group>
-      <AlpineSky />
       <ValleyFloor />
       <Creek />
       <ValleyWater />
