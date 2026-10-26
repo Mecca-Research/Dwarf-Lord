@@ -1,0 +1,2019 @@
+{
+  "build": "npm run build:pages",
+  "viewport": [
+    1280,
+    800
+  ],
+  "renderer": "headless Chromium / SwiftShader",
+  "note": "Google Fonts CSS intercepted for offline QA. Frame rate is not a hardware benchmark.",
+  "sourceBindings": {
+    "src/game/world/scene.tsx": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+    "src/game/world/terrain.tsx": "8c41f8379d8eb21796e7e445bfaf87375babf7540fef623938c7d18c11d5bde0",
+    "src/game/world/environment.tsx": "4535916646ba1518049100845c6203800d4d192c09ac81fa8760dbaa402cf2c1",
+    "src/game/world/workstations.tsx": "15b417ab433f4135b5343b7e8b50dd7570c9b8ad716ebdccfa560cb73e8bac4c",
+    "src/game/world/buildings.tsx": "ad562e8c96ca45bb1babac8dacee9c483fd2ebec03ef10fc5734e264baa1ce9b",
+    "src/game/runtime.ts": "bde0053c024727a3f66924bd2eee44499932a7be854c125bdb9b76290f8181ab",
+    "src/game/world/landscape.ts": "b99b41090b228e63c80d5cf08f2ad6a51faa033c0a3e8ce088c9f692c9e9bdd1",
+    "src/game/world/mine.tsx": "052a50bdb58dd4e154a0b0a878d5952ddeeebd3dd1229770876641c7be9d82ca",
+    "src/game/world/world-visibility.tsx": "a63adc05e4e2092f91fec950e9c95bdd6f802d900ff29b5a91c64ad263e2408b",
+    "src/game/data/catalog.ts": "89a20f58d123786e8dd3b1cf8d304c715835de69b5af8720ce702b3d9ce44cc0",
+    "src/game/ui/hud.tsx": "ec9652e8765ab7c97f96c756429d4c888726941f827e09026f585563487757a2",
+    "src/game/world/materials.tsx": "d14a955298ddb349c037564c8b2765d6b8ee5195812e85b7afd86765967c4a10",
+    "public/art/alpine-spruce-v1.webp": "cae49f04af800c5ad5a63ab569abfe04cf5bfbceb54e64425b7a70204e318b84",
+    "public/art/alpine-bedrock-v1.webp": "ee21d300ef8c8648ad6054f497224bee1f962b45903670c1ed4afc39e0e9154a",
+    "scripts/base-camp-playtest.mjs": "b2fa5f3a5e4ba3f5b0341ca7be3ecab050e06132e894d5544a04ac2f94c93f51",
+    "src/lib/asset.ts": "597f956a0dde3e58f36da76155cf0c889dcd967b15501ae65c9ceb4a17779679",
+    "src/game/save.ts": "7b764df20b3e46a780b02fd1e5fa3f4ce1b9794ef9c186deb4c760b8e646f19b",
+    "vite.config.ts": "d83278e3c2c74042f3b4bcbfc7cace16791dd1b3f97ce14c60e42943bf7840ea",
+    "scripts/write-pages-html.mjs": "4a7a9d693b25f1019baa5913fa55456351fcf71c5da50ce7747ef4269a953c75",
+    "src/game/world/camp-buildings.tsx": "3c4ddfd68b921e142d2f4a619ddbf669db7b30218280725ebf3480c73eb29dc0",
+    "src/game/world/mountain-base.tsx": "08b038b4d99e9f8662c3f9e8ce53f81ca35f9c4f862d122ccc1f9a8a28282a03",
+    "src/game/world/conifers.tsx": "39ec590508a40bb85884928e732fe1797525a9e5ac74bdc0ba2cd2cb84859d73",
+    "public/art/camp-earth-v2.webp": "7ce208e50f09168153d33a5f6e043711e8373c0de2df36fc667eed1d9fade6f7",
+    "public/art/alpine-conifers-v2.webp": "579e1e1feb9c3c2e1157f95750ce69b2576ea70c0e4a71e86eb74d6b3ec9ff45"
+  },
+  "navigationChecks": [
+    {
+      "destination": {
+        "x": 8,
+        "z": -38
+      },
+      "reached": {
+        "x": 7.996004110083358,
+        "z": -37.65466572787895,
+        "zone": "mine"
+      }
+    },
+    {
+      "destination": {
+        "x": -3,
+        "z": 4
+      },
+      "reached": {
+        "x": -2.849773598985124,
+        "z": 3.6853445114654177,
+        "zone": "mine"
+      }
+    },
+    {
+      "destination": {
+        "x": -42,
+        "z": 18
+      },
+      "reached": {
+        "x": -41.70220995742398,
+        "z": 17.861056959377358,
+        "zone": "mine"
+      }
+    },
+    {
+      "destination": {
+        "x": -3,
+        "z": 4
+      },
+      "reached": {
+        "x": -3.3265156064623778,
+        "z": 4.104861867595708,
+        "zone": "mine"
+      }
+    },
+    {
+      "destination": {
+        "x": 5,
+        "z": -82
+      },
+      "reached": {
+        "x": 5.015990607587663,
+        "z": -81.68711278703012,
+        "zone": "mine"
+      }
+    },
+    {
+      "destination": {
+        "x": -3,
+        "z": 4
+      },
+      "reached": {
+        "x": -2.8655925590218896,
+        "z": 3.718479423698896,
+        "zone": "mine"
+      }
+    }
+  ],
+  "controlChecks": [
+    {
+      "check": "click the actual mine opening",
+      "passed": true
+    },
+    {
+      "check": "walk to barracks approach and inspect with E",
+      "passed": true
+    }
+  ],
+  "stationChecks": [
+    {
+      "day": 1,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "chop-vegetables",
+          "site": "cutting-block",
+          "x": -0.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "hammer-contact",
+          "site": "anvil",
+          "x": 6,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "fell-tree",
+          "site": "forestry-trunk",
+          "x": -42,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "desk-writing",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "desk-writing",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -42,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "fell-tree",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 6,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "hammer-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -0.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "chop-vegetables",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 5.164279999999794,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "peel-potatoes",
+          "site": "potato-block",
+          "x": -3.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "inspect-tool",
+          "site": "anvil",
+          "x": 6,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "build-barrel",
+          "site": "cooper-barrel",
+          "x": -36,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "count-coins",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "count-coins",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -36,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "build-barrel",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 6,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "inspect-tool",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -3.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "peel-potatoes",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 7.309279999999783,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "knead-dough",
+          "site": "dough-block",
+          "x": -6.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "repair-pickaxe-handle",
+          "site": "repair-bench",
+          "x": 3,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "fell-tree",
+          "site": "forestry-trunk",
+          "x": -42,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "review-open-ledger",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "review-open-ledger",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -42,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "fell-tree",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 3,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "repair-pickaxe-handle",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -6.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "knead-dough",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.475279999999776,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "stir-cauldron",
+          "site": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "anvil-ready",
+          "site": "anvil",
+          "x": 6,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "build-barrel",
+          "site": "cooper-barrel",
+          "x": -36,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "explain-at-desk",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "explain-at-desk",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -36,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "build-barrel",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 6,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "anvil-ready",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -9.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "stir-cauldron",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.695279999999775,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "mix-ingredients",
+          "site": "mixing-block",
+          "x": -12.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "hammer-raised",
+          "site": "anvil",
+          "x": 6,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "fell-tree",
+          "site": "forestry-trunk",
+          "x": -42,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "stamp-paperwork",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "stamp-paperwork",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -42,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "fell-tree",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 6,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "hammer-raised",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -12.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "mix-ingredients",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 8.915279999999774,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "targets": [
+        {
+          "id": "kori",
+          "job": "meals",
+          "action": "chop-vegetables",
+          "site": "cutting-block",
+          "x": -0.5,
+          "z": 4.5
+        },
+        {
+          "id": "grit",
+          "job": "forge",
+          "action": "file-tool-edge",
+          "site": "vise-bench",
+          "x": 0,
+          "z": -7
+        },
+        {
+          "id": "brokk",
+          "job": "timber",
+          "action": "build-barrel",
+          "site": "cooper-barrel",
+          "x": -36,
+          "z": 18
+        },
+        {
+          "id": "tam",
+          "job": "storage",
+          "action": "stack-crates",
+          "site": "storage-pallet",
+          "x": 8,
+          "z": 8
+        },
+        {
+          "id": "stig",
+          "job": "limestone",
+          "action": "chisel-contact",
+          "site": "masonry-bench",
+          "x": 8,
+          "z": -38
+        },
+        {
+          "id": "borrin",
+          "job": null,
+          "action": "explain-closed-ledger",
+          "site": "ledger-desk",
+          "x": 10,
+          "z": 10
+        },
+        {
+          "id": "fenn",
+          "job": null,
+          "action": "check-weights",
+          "site": "weighing-table",
+          "x": -28,
+          "z": 12
+        }
+      ],
+      "workstations": [
+        {
+          "id": "cutting-block",
+          "x": -0.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "potato-block",
+          "x": -3.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "dough-block",
+          "x": -6.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "stew-cauldron",
+          "x": -9.5,
+          "z": 4.5,
+          "persistent": true
+        },
+        {
+          "id": "mixing-block",
+          "x": -12.5,
+          "z": 4.5,
+          "persistent": true,
+          "completedProp": true
+        },
+        {
+          "id": "anvil",
+          "x": 6,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "vise-bench",
+          "x": 0,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "repair-bench",
+          "x": 3,
+          "z": -7,
+          "persistent": true
+        },
+        {
+          "id": "forestry-trunk",
+          "x": -42,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "cooper-barrel",
+          "x": -36,
+          "z": 18,
+          "persistent": true
+        },
+        {
+          "id": "storage-pallet",
+          "x": 8,
+          "z": 8,
+          "persistent": true,
+          "completedProp": false
+        },
+        {
+          "id": "masonry-bench",
+          "x": 8,
+          "z": -38,
+          "persistent": true
+        },
+        {
+          "id": "ledger-desk",
+          "x": 10,
+          "z": 10,
+          "persistent": true
+        },
+        {
+          "id": "weighing-table",
+          "x": -28,
+          "z": 12,
+          "persistent": true
+        }
+      ],
+      "dwarves": [
+        {
+          "id": "borrin",
+          "x": 10,
+          "z": 10,
+          "yaw": -1.5707963267948966,
+          "facing": 3,
+          "speed": 0,
+          "anim": "sit",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "explain-closed-ledger",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "brokk",
+          "x": -36,
+          "z": 18,
+          "yaw": 2.23,
+          "facing": 7,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "build-barrel",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "tam",
+          "x": 8,
+          "z": 8,
+          "yaw": 1.1,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "stack-crates",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "grit",
+          "x": 0,
+          "z": -7,
+          "yaw": -1.8,
+          "facing": 2,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "file-tool-edge",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "fenn",
+          "x": -28,
+          "z": 12,
+          "yaw": 0.3,
+          "facing": 5,
+          "speed": 0,
+          "anim": "idle",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "check-weights",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "kori",
+          "x": -0.5,
+          "z": 4.5,
+          "yaw": 0.86,
+          "facing": 6,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "chop-vegetables",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        },
+        {
+          "id": "stig",
+          "x": 8,
+          "z": -38,
+          "yaw": -0.4,
+          "facing": 4,
+          "speed": 0,
+          "anim": "work",
+          "dest": null,
+          "bob": 9.135279999999772,
+          "workMotion": {
+            "action": "chisel-contact",
+            "direction": "actor",
+            "frame": 7,
+            "completed": true,
+            "completions": 1
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "base-camp",
+      "player": {
+        "x": -3,
+        "z": 4,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.72,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "valley-overview",
+      "player": {
+        "x": -2,
+        "z": -2,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.72,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "mountain-entrance",
+      "player": {
+        "x": 8,
+        "z": -22,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.72,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "first-mining-level",
+      "player": {
+        "x": 8,
+        "z": -44,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.72,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "mine-camera-turn",
+      "player": {
+        "x": 8,
+        "z": -44,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "barracks-inspection",
+      "player": {
+        "x": -10,
+        "z": -0.3,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "camp-workstations-day-1",
+      "player": {
+        "x": -2,
+        "z": 1,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "forestry-day-1",
+      "player": {
+        "x": -42,
+        "z": 18,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "mining-workstation",
+      "player": {
+        "x": 8,
+        "z": -38,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "forestry-day-2",
+      "player": {
+        "x": -42,
+        "z": 18,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "camp-workstations-day-6",
+      "player": {
+        "x": -2,
+        "z": 1,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "base-camp-mobile",
+      "player": {
+        "x": -3,
+        "z": 4,
+        "yaw": 2.4043213639626346,
+        "facing": 0,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 835.9000000000792
+      },
+      "camera": {
+        "azimuth": -0.4400000000000001,
+        "elevation": 0.6
+      }
+    },
+    {
+      "name": "resumed-camp",
+      "player": {
+        "x": -3,
+        "z": 4,
+        "yaw": -1.5707963267948966,
+        "facing": 3,
+        "speed": 0,
+        "anim": "idle",
+        "dest": null,
+        "bob": 0
+      },
+      "camera": {
+        "azimuth": -0.72,
+        "elevation": 0.6
+      }
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "distinctWorkVariants": 22,
+  "horizontalOverflow": false,
+  "savedCampCheck": {
+    "passed": true,
+    "day": 6,
+    "treasuryPreserved": true,
+    "inventoryPreserved": true,
+    "legacyTentCoordinates": true
+  },
+  "mode": "full",
+  "passed": true
+}

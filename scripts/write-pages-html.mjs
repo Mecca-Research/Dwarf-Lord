@@ -28,7 +28,7 @@ if (!css || !indexJs || !routesJs) {
   process.exit(1);
 }
 
-const base = "/Dwarf-Lord";
+const base = (process.env.GITHUB_PAGES_BASE || "/Dwarf-Lord").replace(/\/$/, "");
 const html = `<!DOCTYPE html>
 <html lang="en" class="antialiased" data-client-shell="true">
 <head>

@@ -1,14 +1,13 @@
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
-import { asset } from "@/lib/asset";
 import { workstationSites } from "./workstation-sites";
 import { rockGeo } from "./geom";
 import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
 import { creekX, random, surfaceHeight } from "./landscape";
+import { ConiferBelt } from "./conifers";
 
 function valleyGeometry() {
   const g = new THREE.PlaneGeometry(300, 300, 240, 240);
@@ -33,7 +32,6 @@ function valleyGeometry() {
       c = index.getX(i + 2);
     const x = (p.getX(a) + p.getX(b) + p.getX(c)) / 3,
       z = (p.getZ(a) + p.getZ(b) + p.getZ(c)) / 3;
-    if (x > 5.5 && x < 10.5 && z < -26 && z > -27.8) continue;
     indices.push(a, b, c);
   }
   g.setIndex(indices);
@@ -78,19 +76,19 @@ function ValleyFloor() {
         vec3 soil=texture2D(map,wp.xz*.035).rgb;
         float variation=valleyNoise(wp.xz*.12)*.65+valleyNoise(wp.xz*.47)*.35;
         float path=min(track(wp.xz,vec2(-65.,11.),vec2(-12.,11.)),min(track(wp.xz,vec2(-12.,11.),vec2(-3.,3.)),track(wp.xz,vec2(-3.,3.),vec2(8.,-27.))));
-        float clearing=1.-smoothstep(.68,.96,length((wp.xz-vec2(2.,1.))/vec2(24.,18.))+variation*.17);
+        float clearing=1.-smoothstep(.76,1.08,max(abs(wp.x-2.)/26.,abs(wp.z+2.)/27.)+variation*.15);
         float dirt=max(clearing,1.-smoothstep(1.1,2.8,path))*(1.-smoothstep(1.,7.,wp.y));
         vec3 meadow=mix(vec3(.075,.12,.045),vec3(.19,.23,.095),variation);
         float grain=clamp(dot(soil,vec3(.2126,.7152,.0722))*8.,.15,1.6);
-        vec3 ground=mix(meadow,mix(vec3(.14,.107,.073),vec3(.25,.20,.135),variation),dirt)*(.32+grain*.9);
+        vec3 ground=mix(meadow*(.65+grain*.2),soil*vec3(.78,.72,.62),dirt);
         float exposed=max(1.-smoothstep(.45,.82,abs(valleyNormal.y)),smoothstep(8.,22.,wp.y));
         vec3 bedrock=rock*vec3(.5,.53,.56)*(.7+variation*.6);
-        float snow=smoothstep(67.+variation*14.,83.+variation*14.,wp.y)*smoothstep(.4,.78,abs(valleyNormal.y));
+        float snow=smoothstep(75.+variation*8.,99.+variation*8.,wp.y)*smoothstep(.18,.62,abs(valleyNormal.y));
         diffuseColor.rgb*=mix(mix(ground,bedrock,exposed),vec3(.83,.89,.9),snow);
       `,
         );
     };
-    mat.customProgramCacheKey = () => "alpine-valley-v2";
+    mat.customProgramCacheKey = () => "alpine-valley-v3";
     return mat;
   }, [m]);
   useEffect(
@@ -125,70 +123,6 @@ function AlpineSky() {
         }`}
       />
     </mesh>
-  );
-}
-function Forest() {
-  const atlas = useTexture(asset("/art/alpine-spruce-v1.webp")),
-    ref = useRef<THREE.InstancedMesh>(null);
-  const previous = useRef(new THREE.Quaternion(0, 0, 0, 0)),
-    object = useMemo(() => new THREE.Object3D(), []);
-  const geometry = useMemo(() => {
-    const g = new THREE.PlaneGeometry(2 / 3, 1);
-    g.translate(0, 0.474, 0);
-    return g;
-  }, []);
-  const trees = useMemo(() => {
-    const result: { x: number; z: number; y: number; scale: number }[] = [];
-    for (let i = 0; i < 1300; i++) {
-      const x = -112 + random(i * 11 + 4) * 224,
-        z = -90 + random(i * 13 + 9) * 170,
-        h = surfaceHeight(x, z);
-      if (
-        !(Math.abs(x - 2) > 30 || z > 29 || z < -34) ||
-        h > 31 ||
-        Math.abs(x - creekX(z)) < 4 ||
-        workstationSites.some((s) => Math.hypot(x - s.target.targetX, z - s.target.targetZ) < 5.2)
-      )
-        continue;
-      if (z > 18 && x > -19 && x < 31) continue;
-      result.push({ x, z, y: h, scale: 4.5 + random(i * 17) * 4.4 });
-    }
-    for (const [x, z] of [
-      [-25, -9],
-      [-23, -15],
-      [25, -4],
-      [26, 12],
-      [22, -19],
-    ])
-      result.push({ x, z, y: surfaceHeight(x, z), scale: 5.2 });
-    return result;
-  }, []);
-  useLayoutEffect(() => {
-    atlas.colorSpace = THREE.SRGBColorSpace;
-    const c = new THREE.Color();
-    trees.forEach((_, i) => {
-      c.set(["#d4d8cb", "#b6c7b7", "#d7d3bb"][i % 3]);
-      ref.current!.setColorAt(i, c);
-    });
-    if (ref.current!.instanceColor) ref.current!.instanceColor.needsUpdate = true;
-  }, [atlas, trees]);
-  useFrame(({ camera }) => {
-    if (1 - Math.abs(camera.quaternion.dot(previous.current)) < 0.000001) return;
-    previous.current.copy(camera.quaternion);
-    trees.forEach((t, i) => {
-      object.position.set(t.x, t.y, t.z);
-      object.quaternion.copy(camera.quaternion);
-      object.scale.set(t.scale * (0.9 + random(i) * 0.22), t.scale, 1);
-      object.updateMatrix();
-      ref.current!.setMatrixAt(i, object.matrix);
-    });
-    ref.current!.instanceMatrix.needsUpdate = true;
-    ref.current!.computeBoundingSphere();
-  });
-  return (
-    <instancedMesh name="alpine-conifer-belt" ref={ref} args={[geometry, undefined, trees.length]}>
-      <meshBasicMaterial map={atlas} alphaTest={0.42} side={THREE.DoubleSide} />
-    </instancedMesh>
   );
 }
 function Talus() {
@@ -389,7 +323,7 @@ export function Terrain() {
       <AlpineSky />
       <ValleyFloor />
       <Creek />
-      <Forest />
+      <ConiferBelt />
       <Talus />
       <Meadow />
     </group>

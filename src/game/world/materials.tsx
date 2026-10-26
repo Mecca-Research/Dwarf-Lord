@@ -50,7 +50,7 @@ function prep(t: THREE.Texture, repeatX = 1, repeatY = 1) {
 
 export function WorldMatsProvider({ children }: { children: ReactNode }) {
   const maps = useTexture({
-    dirt: asset("/textures/dirt.jpg"),
+    dirt: asset("/art/camp-earth-v2.webp"),
     wood: asset("/textures/wood.jpg"),
     stone: asset("/textures/stone.jpg"),
     rock: asset("/textures/rock.jpg"),

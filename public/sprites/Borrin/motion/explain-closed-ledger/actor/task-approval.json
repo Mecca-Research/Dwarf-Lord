@@ -164,7 +164,7 @@
     },
     {
       "file": "../../../../../../src/game/world/environment.tsx",
-      "sha256": "c6ef1f20195b4ea5aec45ab9a73f07f01a804de536b454e69d7fced0c6830a97"
+      "sha256": "4535916646ba1518049100845c6203800d4d192c09ac81fa8760dbaa402cf2c1"
     },
     {
       "file": "../../../../../../src/game/world/workstation-sites.ts",
@@ -229,15 +229,18 @@
     {
       "file": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
       "sha256": "dc220ced91ef06066ac8570a320147ee1071205d19fca848ebf28a8e3687683e"
+    },
+    {
+      "file": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+      "sha256": "14cab8b7702cd5bcf11fb7d573f9dc2b9aaa6a4b33ce260e0f977dbf2aca95b2"
     }
   ],
   "runtimeRevalidation": {
-    "checkpoint": "alpine-base-camp-v1",
+    "checkpoint": "world-foundation-v2",
     "files": [
-      "src/game/world/environment.tsx",
-      "src/game/world/workstations.tsx"
+      "src/game/world/environment.tsx"
     ],
-    "audit": "../../../../../../docs/world-review/base-camp-v1/runtime-revalidation.json",
-    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; new terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+    "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+    "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
   }
 }
