@@ -32,6 +32,7 @@ export const runtime = {
   },
   dwarves: new Map<string, Body>(),
   keys: new Set<string>(),
+  interactRequested: false,
   cameraAzimuth: -0.72,
   cameraElev: 0.6,
   valleyView: false,

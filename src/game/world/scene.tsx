@@ -35,6 +35,14 @@ const ndc = new THREE.Vector2();
 function bindKeys() {
   const down = (e: KeyboardEvent) => {
     runtime.keys.add(e.code);
+    // Keep a tap until the next frame, even when keyup arrives first.
+    if (
+      (e.code === "KeyE" || e.code === "Enter") &&
+      !e.repeat &&
+      !useGame.getState().dialogue &&
+      !useGame.getState().overlay
+    )
+      runtime.interactRequested = true;
     if (e.code === "KeyV" && !e.repeat) runtime.valleyView = !runtime.valleyView;
     if (
       [
@@ -53,7 +61,10 @@ function bindKeys() {
     }
   };
   const up = (e: KeyboardEvent) => runtime.keys.delete(e.code);
-  const blur = () => runtime.keys.clear();
+  const blur = () => {
+    runtime.keys.clear();
+    runtime.interactRequested = false;
+  };
   window.addEventListener("keydown", down, { passive: false });
   window.addEventListener("keyup", up);
   window.addEventListener("blur", blur);
@@ -222,6 +233,7 @@ function Systems() {
   useFrame((state, dt) => {
     if (!playing || dialogue) {
       runtime.player.speed = 0;
+      runtime.interactRequested = false;
       return;
     }
     const d = Math.min(dt, 0.1);
@@ -279,7 +291,8 @@ function Systems() {
       if (nextPrompt !== useGame.getState().prompt) setPrompt(nextPrompt);
     }
 
-    if (runtime.keys.has("KeyE") || runtime.keys.has("Enter")) {
+    if (runtime.interactRequested || runtime.keys.has("KeyE") || runtime.keys.has("Enter")) {
+      runtime.interactRequested = false;
       runtime.keys.delete("KeyE");
       runtime.keys.delete("Enter");
       interact();

@@ -335,10 +335,20 @@ try {
       value.buildings = value.buildings.map((b) =>
         b.id === "tent-a" ? { ...b, x: -6, z: 7 } : b.id === "tent-b" ? { ...b, x: -3, z: 10 } : b,
       );
-      localStorage.setItem(key, JSON.stringify(value));
-      return { day: value.day, treasury: value.treasury, inventory: value.inventory };
+      return { key, value, day: value.day, treasury: value.treasury, inventory: value.inventory };
     });
+    // Install after the outgoing game's pagehide autosave, before the new app boots.
+    await page.addInitScript(
+      ({ key, value }) => localStorage.setItem(key, JSON.stringify(value)),
+      saved,
+    );
     await page.reload({ waitUntil: "domcontentloaded" });
+    await page.waitForFunction(() =>
+      [...document.querySelectorAll("button")].some(
+        (b) =>
+          b.textContent === "Continue" && Object.keys(b).some((k) => k.startsWith("__reactProps")),
+      ),
+    );
     await page.getByRole("button", { name: "Continue", exact: true }).click();
     await page.waitForFunction(
       () =>
