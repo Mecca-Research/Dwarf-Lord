@@ -6,8 +6,9 @@ import { workstationSites } from "./workstation-sites";
 import { rockGeo } from "./geom";
 import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
-import { creekX, random, surfaceHeight } from "./landscape";
+import { campClearing, creekX, random, surfaceHeight, TARN } from "./landscape";
 import { ConiferBelt } from "./conifers";
+import { ValleyWater } from "./valley-water";
 
 function valleyGeometry() {
   const g = new THREE.PlaneGeometry(300, 300, 240, 240);
@@ -77,6 +78,10 @@ function ValleyFloor() {
         float variation=valleyNoise(wp.xz*.12)*.65+valleyNoise(wp.xz*.47)*.35;
         float path=min(track(wp.xz,vec2(-65.,11.),vec2(-12.,11.)),min(track(wp.xz,vec2(-12.,11.),vec2(-3.,3.)),track(wp.xz,vec2(-3.,3.),vec2(8.,-27.))));
         float clearing=1.-smoothstep(.76,1.08,max(abs(wp.x-2.)/26.,abs(wp.z+2.)/27.)+variation*.15);
+        float commons=1.-smoothstep(.84,1.12,max(abs(wp.x-8.)/30.,abs(wp.z-27.)/18.)+variation*.07);
+        float yard=1.-smoothstep(.78,1.12,max(abs(wp.x-29.)/13.,abs(wp.z-4.)/28.)+variation*.07);
+        clearing=max(clearing,max(commons,yard));
+        path=min(path,min(track(wp.xz,vec2(22.,-17.),vec2(22.,37.)),track(wp.xz,vec2(-20.,37.),vec2(22.,37.))));
         float dirt=max(clearing,1.-smoothstep(1.1,2.8,path))*(1.-smoothstep(1.,7.,wp.y));
         vec3 meadow=mix(vec3(.075,.12,.045),vec3(.19,.23,.095),variation);
         float grain=clamp(dot(soil,vec3(.2126,.7152,.0722))*8.,.15,1.6);
@@ -88,7 +93,7 @@ function ValleyFloor() {
       `,
         );
     };
-    mat.customProgramCacheKey = () => "alpine-valley-v3";
+    mat.customProgramCacheKey = () => "alpine-valley-v4-commons";
     return mat;
   }, [m]);
   useEffect(
@@ -134,7 +139,8 @@ function Talus() {
     for (let i = 0; i < 1200; i++) {
       const x = -70 + random(i * 7 + 8) * 140,
         z = -60 + random(i * 11 + 3) * 115;
-      if (Math.abs(x - 2) < 24 && z > -26 && z < 20) continue;
+      if (campClearing(x, z) > 0.65) continue;
+      if (Math.hypot((x - TARN.x) / TARN.rx, (z - TARN.z) / TARN.rz) < 1.1) continue;
       if ((Math.abs(z - 11) < 2.4 && x < -18) || Math.abs(x - creekX(z)) < 1.7) continue;
       if (
         workstationSites.some((s) => Math.hypot(x - s.target.targetX, z - s.target.targetZ) < 4.5)
@@ -228,7 +234,7 @@ function Meadow() {
         return { x, z, y: surfaceHeight(x, z) };
       }).filter(
         (p) =>
-          (Math.abs(p.x - 2) > 23 || p.z > 20 || p.z < -26) &&
+          campClearing(p.x, p.z) < 0.3 &&
           p.y < 18 &&
           Math.abs(p.x - creekX(p.z)) > 2.6 &&
           !(Math.abs(p.z - 11) < 2.6 && p.x < -12) &&
@@ -323,6 +329,7 @@ export function Terrain() {
       <AlpineSky />
       <ValleyFloor />
       <Creek />
+      <ValleyWater />
       <ConiferBelt />
       <Talus />
       <Meadow />

@@ -43,7 +43,7 @@ function Rope({ a, b, sag = 0.12 }: { a: V3; b: V3; sag?: number }) {
   return <mesh geometry={geometry} material={m.straw} />;
 }
 
-function CanvasCloth({
+export function CanvasCloth({
   geometry,
   color = "#d7c9a7",
 }: {
@@ -78,7 +78,7 @@ function CanvasCloth({
   useEffect(() => () => material.dispose(), [material]);
   return <mesh geometry={geometry} material={material} castShadow receiveShadow />;
 }
-function tentRoof(width: number, length: number, height: number) {
+export function tentRoof(width: number, length: number, height: number) {
   const positions: number[] = [],
     uv: number[] = [],
     indices: number[] = [];

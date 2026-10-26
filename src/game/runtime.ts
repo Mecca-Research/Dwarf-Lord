@@ -1,5 +1,5 @@
 import type { ZoneId } from "./types";
-import { inMine, surfaceHeight, walkable } from "./world/landscape";
+import { CAMP_OBSTACLES, inMine, surfaceHeight, walkable } from "./world/landscape";
 
 export interface Body {
   x: number;
@@ -46,18 +46,7 @@ export const runtime = {
   dayPulse: 0,
 };
 
-export const OBSTACLES: Obstacle[] = [
-  { x: -11, z: -5, r: 3.4 },
-  { x: 10, z: -7, r: 3.0 },
-  { x: 17, z: 8, r: 3.2 },
-  { x: 12.5, z: 1.5, r: 2.4 },
-  { x: 4, z: -16, r: 1.8 },
-  { x: 14, z: -22, r: 2.2 },
-  { x: -9, z: 15, r: 2.5 },
-  { x: -2, z: 17, r: 2.2 },
-  { x: 7, z: 18, r: 2.4 },
-  { x: 2, z: 6.5, r: 1.4 },
-];
+export const OBSTACLES: Obstacle[] = CAMP_OBSTACLES;
 
 export function groundHeight(x: number, z: number) {
   if (inMine(x, z)) return 0;

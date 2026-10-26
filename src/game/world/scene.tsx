@@ -92,14 +92,14 @@ function IsoCamera() {
     const vista = runtime.valleyView && zone !== "mine",
       cameraDt = Math.min(dt, 0.5);
     const targetZoom = vista
-      ? 2.55
+      ? 2.35
       : (zone === "mine" ? spec.cameraZoom * 0.84 : spec.cameraZoom) + runtime.zoomBias;
     runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-cameraDt * 3));
     const dist = vista ? 360 : 38,
       az = vista ? runtime.cameraAzimuth * 0.55 : runtime.cameraAzimuth,
       el = vista ? 0.45 : runtime.cameraElev;
     const focusX = vista ? 5 : p.x + 2,
-      focusZ = vista ? -65 : p.z - 8,
+      focusZ = vista ? -58 : p.z - 8,
       focusY = vista ? 62 : 2.0;
     _cam.set(
       focusX + dist * Math.sin(az) * Math.cos(el),
