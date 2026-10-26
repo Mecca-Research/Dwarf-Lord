@@ -1,0 +1,852 @@
+{
+  "checkpoint": "camp-commons-v3",
+  "baseCommit": "17cb5dca4dee90f1a977a607e5de2a6b70c37b77",
+  "nativeScopeExpanded": false,
+  "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; expanded camp commons, tents, well, wagon, stockyard, entrance, waterfall, tarn, terrain, camera and click approaches. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed.",
+  "browserReport": {
+    "file": "docs/world-review/camp-commons-v3/results.json",
+    "sha256": "3f8bdcdf219eb6c2c1f63ca3cc9897d6fbc33e764513af13e088a1d20a204ea6"
+  },
+  "routeTests": {
+    "file": "docs/world-review/camp-commons-v3/route-tests.txt",
+    "sha256": "0f214da02c2dd41668d823babca24c8ba0014abfdf20d53588a9c073cc6f4818"
+  },
+  "assetTests": {
+    "file": "docs/world-review/camp-commons-v3/asset-tests.txt",
+    "sha256": "5c7fae4391767ad195d569c2515d6120a1de01bc7aecf3b1e23b90ed0d45d75c"
+  },
+  "strideReport": {
+    "file": "docs/world-review/camp-commons-v3/stride-results.json",
+    "sha256": "3f7b24002446131a6720111e8762caa1c58d0c1910d462efbb5283567735d871"
+  },
+  "reviewImages": {
+    "file": "docs/world-review/camp-commons-v3/screenshots.json",
+    "sha256": "86562df20a01608d1f66a5770edacf4d09c8eb362097c1d879dc2841bb43b758"
+  },
+  "verifier": {
+    "file": "scripts/revalidate-world-v3.mjs",
+    "sha256": "2118be31d546cdc80ef5ff8b15c004a7949ddeaf9d55b4041b718d2c185c74cd"
+  },
+  "retainedCore": {
+    "src/game/world/npc-motion.ts": "8a6b836ad15e8bbbee3c418dbaf13384e676f3e6ddc44dbd706d93e60522814a",
+    "src/game/world/sprites.tsx": "d10056b02bdeda535cf772ac1a9a2476d72c193193b71aab0be1dda05b2ec2e6",
+    "src/game/world/workstations.tsx": "15b417ab433f4135b5343b7e8b50dd7570c9b8ad716ebdccfa560cb73e8bac4c",
+    "src/game/world/workstation-sites.ts": "1f12420a3c5dd0f30a2a957997acd4880737f1de42af4ad4dc85505aab127503",
+    "src/game/world/work-activities.ts": "044aa720abd96973492d54a3016b0b62875686b97744caf14ba374dc821e6104",
+    "src/game/world/motion-review-points.ts": "1afe39788475275d0dc6cf6a5f47862c552c80bbe068a9a14007f381f6540343",
+    "src/game/motion-playback.ts": "55a9d6ab4852f1f1477a1bd0e23769665445b04cb16b819028d179f068c23a1b",
+    "public/motion-playback.mjs": "5e9ecac8529e82b28848b5cd6f52aada17f744bbed2049d7a403049dc9f67632",
+    "public/workstation-registration.mjs": "74fb95158491d242f164e4d133f4710ea0b3d4d4ff3dd8a202cd790141562cd8",
+    "src/game/store.ts": "acaacb359744ce7ca2ccdbf803c98aee440ff6e795e5dd6739e4cd32adace098",
+    "src/game/sim.ts": "63dba550fc56036f19677e1be877bb465a0340668f1dedf44432177bbe9b6cc1"
+  },
+  "worldFiles": {
+    "src/game/world/scene.tsx": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4",
+    "src/game/world/terrain.tsx": "d14bfff751d6e6dc7231c526da58865a0e34baef834676586099de01688ea976",
+    "src/game/world/environment.tsx": "e55e623c5d8cd39d58309fb52838a2abf31e479094a23e44d8ba097f22174931",
+    "src/game/world/workstations.tsx": "15b417ab433f4135b5343b7e8b50dd7570c9b8ad716ebdccfa560cb73e8bac4c",
+    "src/game/world/buildings.tsx": "ad562e8c96ca45bb1babac8dacee9c483fd2ebec03ef10fc5734e264baa1ce9b",
+    "src/game/runtime.ts": "2e8cdc3dc77c0b7e1205bfd164454626300d2b78084ee79ff9db82783254358a",
+    "src/game/world/landscape.ts": "7313abecaf8c11d40092f2e490beeba196219b1aef44e0f18bb9251bcce89085",
+    "src/game/world/mine.tsx": "052a50bdb58dd4e154a0b0a878d5952ddeeebd3dd1229770876641c7be9d82ca",
+    "src/game/world/world-visibility.tsx": "a63adc05e4e2092f91fec950e9c95bdd6f802d900ff29b5a91c64ad263e2408b",
+    "src/game/data/catalog.ts": "d2bc201a54e50947759971fbf8c1c3fcc5daa5fe950ec7c358c389e8a9338e3f",
+    "src/game/ui/hud.tsx": "ec9652e8765ab7c97f96c756429d4c888726941f827e09026f585563487757a2",
+    "src/game/world/materials.tsx": "d14a955298ddb349c037564c8b2765d6b8ee5195812e85b7afd86765967c4a10",
+    "public/art/alpine-spruce-v1.webp": "cae49f04af800c5ad5a63ab569abfe04cf5bfbceb54e64425b7a70204e318b84",
+    "public/art/alpine-bedrock-v1.webp": "ee21d300ef8c8648ad6054f497224bee1f962b45903670c1ed4afc39e0e9154a",
+    "scripts/base-camp-playtest.mjs": "bd8597c8531a209eb38c32090abd34be433ab68b88dd8d44ecd626743d7c8498",
+    "src/lib/asset.ts": "2f98b34c789e739fe76b36385e6a4bc50ea5c12ac22580a74d97e4d69030ce07",
+    "src/game/save.ts": "7b764df20b3e46a780b02fd1e5fa3f4ce1b9794ef9c186deb4c760b8e646f19b",
+    "vite.config.ts": "d83278e3c2c74042f3b4bcbfc7cace16791dd1b3f97ce14c60e42943bf7840ea",
+    "scripts/write-pages-html.mjs": "4a7a9d693b25f1019baa5913fa55456351fcf71c5da50ce7747ef4269a953c75",
+    "src/game/world/camp-buildings.tsx": "a15c549207e6bff8f7878993fb5923ac4007e5207fed099055291b76125ae0bb",
+    "src/game/world/mountain-base.tsx": "08b038b4d99e9f8662c3f9e8ce53f81ca35f9c4f862d122ccc1f9a8a28282a03",
+    "src/game/world/conifers.tsx": "f5b965b08e1b317f56b3e40ff7e808c512f5d852c5a6efb7b856fc090fde4e4f",
+    "src/game/world/camp-commons.tsx": "3369aa3353d078691114bb936be65d21739b4d82c95c33236c00b51ee3325eff",
+    "src/game/world/valley-water.tsx": "ff8d3c85db0c88227f4dbb1769faaef297cbaf74f5c52abf47f389438612811b",
+    "scripts/asset-routing.test.mjs": "0ed3311d425cd07fc95c6344817447664d9ed2218feb8d434a3e0c6e5e410b8d",
+    "public/art/camp-earth-v2.webp": "7ce208e50f09168153d33a5f6e043711e8373c0de2df36fc667eed1d9fade6f7",
+    "public/art/alpine-conifers-v2.webp": "579e1e1feb9c3c2e1157f95750ce69b2576ea70c0e4a71e86eb74d6b3ec9ff45"
+  },
+  "unchangedArt": {
+    "public/sprites/Cook/motion/chop-vegetables/actor/manifest.json": "3febdbd19ffafc4344725c74c0901328d1ee8ac1e811fedd8d59ad9bac19a0b3",
+    "public/sprites/Cook/motion/chop-vegetables/actor/motion-polish.json": "64d5cd66a1f56183c786c545bb76dbb6dc6d96f1449d693b43db99d25dc0e75f",
+    "public/sprites/Cook/motion/chop-vegetables/actor/generation.json": "af2e53b752e8fea4c44f8f12446fc8b732085c8cef56aa2f5417e7454ae76db9",
+    "public/sprites/Cook/motion/chop-vegetables/actor/assembly.json": "aae31e89382a152b63319d5600a43d5feff64cb6a2ac60bf3577f4911a5509d5",
+    "public/sprites/Cook/motion/chop-vegetables/actor/source-sheet.png": "8a901eab870d8c76368c1bfecf6705eab716c9fdea7706fa7f2206b28d2b4e74",
+    "public/sprites/Cook/motion/chop-vegetables/actor/atlas.png": "bd8b336a31653e2cdd19c27de4b91430dfef2688e045b55a74f0febacdf2bb1f",
+    "public/sprites/Cook/motion/chop-vegetables/actor/00.png": "d8e2d9296152c6e312d3214aebfd6f8042a44f998eb46828584f8e39ab62ff67",
+    "public/sprites/Cook/motion/chop-vegetables/actor/01.png": "6cac54fedc18adb41f78983153105a68746cea0cca95faa90c7888fbbc17f1ca",
+    "public/sprites/Cook/motion/chop-vegetables/actor/02.png": "bc21c4e722fff0bc686cf1dd1c3504b7b867f63d63da33d21b22e6079302622a",
+    "public/sprites/Cook/motion/chop-vegetables/actor/03.png": "e2871e39c85d7ec6f2d9da16be34bbf7e10c79a341f8bb7e15f6b93290cd683d",
+    "public/sprites/Cook/motion/chop-vegetables/actor/04.png": "d0a2863ccaf0978f6b68f97d105987e7347ba0b5a3df755d81244c8119d43876",
+    "public/sprites/Cook/motion/chop-vegetables/actor/05.png": "1a9e016d79031fa17ed9e822bd3685e6f21e76e9b697bc8e3b84d6417c87db4b",
+    "public/sprites/Cook/motion/chop-vegetables/actor/06.png": "769355e8e6cef97d3517120a5dc434902b8e5d8cd0c9e314263b683d4165b8e8",
+    "public/sprites/Cook/motion/chop-vegetables/actor/07.png": "260db51b39c899b7720b0e8761a6a722b356c56e95df89d88688369848239d69",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/manifest.json": "621bf2dbce118ab1d234631da35215900fc4e4ef1707300963651d8b25b61a09",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/motion-polish.json": "21fed3ab2d1af43a0ddaabe4a29324d1bdb39dea7b74ab0b06175a99d57fe9dd",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/generation.json": "16d67a7221863b67a5dadb6d8f94297807f1f999cc6ef5daf2afe99ef20abfd9",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/assembly.json": "5237f7ef9198b87811717675b6e8e14e98de537014652c4d1f1fcf7116121e2a",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/source-sheet.png": "b8deea14787b51f0dcef1bacfaadd70eaac8831b590191758dcefd65778c65e8",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/atlas.png": "61d508cf00289fc7b18ce7edee6da581eaea589e6adcc0518099e933ffc6285a",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/00.png": "ad06a7c99e18f787db6a5f0cac209081f983cecfe585eab488f27a96e8bf40ee",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/01.png": "63f1faba9c79a1430645692cf34217ddeb733749da5472621e7daf7ab2349d4e",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/02.png": "6771fff7b9156ed3f0a69210ab62a67f9e7f92236b12a9fb2f6cf59ed63f2ff8",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/03.png": "29be0df96cc2e8eefe478779e1df760fcef134be0ce83647dcf7d76764872453",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/04.png": "8b77fdac93295aef2f88f0a09d33cc3972356ce432e70b7c02e96cb288f098dc",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/05.png": "827ba2345896889f88e6d5e730c92e32a478edc896b9b360dbd61801cc1ccdc5",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/06.png": "68b37ef7d11e4736b012c86e94375d0d4b91ac650c2e0890faace702ff19a779",
+    "public/sprites/Blacksmith/motion/hammer-contact/actor/07.png": "2555b38e986d9813ebceb5b4e6a28f50c8f6d99bf82b647e8e7cf1855a856ee5",
+    "public/sprites/Ginger/motion/fell-tree/actor/manifest.json": "b664bfa1b56bdd9f011b8aecc5ca3bd434d21aa4687a04f3dba86a9d80d141c2",
+    "public/sprites/Ginger/motion/fell-tree/actor/motion-polish.json": "4082947e5be9daa4303d95a1f516ba854ede9046778c9e4ceffa55243f9772b3",
+    "public/sprites/Ginger/motion/fell-tree/actor/generation.json": "4099e92bb9488e8be310a9dfee99f2ea5e3a35fe88fab2da698396f8deb1b641",
+    "public/sprites/Ginger/motion/fell-tree/actor/assembly.json": "f67ac571102ea5518097b6a76626028ae90930cb50b404334624cd6d6a94ddb1",
+    "public/sprites/Ginger/motion/fell-tree/actor/source-sheet.png": "d3ec703c0e45e05ec2ad9599acca465eb5a4484c1a5d48ea9be1660b38dff468",
+    "public/sprites/Ginger/motion/fell-tree/actor/atlas.png": "11e76e35d4ede1a1e51b2397d1377b55a6a99ec122dd16a3800732d7f26d89c4",
+    "public/sprites/Ginger/motion/fell-tree/actor/00.png": "2cab24c455d92cfc312262f1366937f74d3521ae8de3af2b03929eac08aef5bc",
+    "public/sprites/Ginger/motion/fell-tree/actor/01.png": "4cbc15d74dd93519d607cd7773eb83a584bf991428c283a59a5c762e9cbf6c90",
+    "public/sprites/Ginger/motion/fell-tree/actor/02.png": "5b921db850a532556e1615f969a8229ed5b0adc6c312c85df4fde2d458395b26",
+    "public/sprites/Ginger/motion/fell-tree/actor/03.png": "3ad751fde46eb5e4ccc7ed888d763de380b1b531d8dcf2dbe4f1bd149cc748b2",
+    "public/sprites/Ginger/motion/fell-tree/actor/04.png": "808567fe289fb77fb3d615e0a9d2a1c04a7a4fd35b8dd48735254c11866afa81",
+    "public/sprites/Ginger/motion/fell-tree/actor/05.png": "afc4936417ffe84577dd99f71ca4b22ebf90763fbfdbbb1a957267ab20f293eb",
+    "public/sprites/Ginger/motion/fell-tree/actor/06.png": "7cb866e8df8b25b62c2accdf1bcc49ffefbd8d2498093220bed087707edd08f2",
+    "public/sprites/Ginger/motion/fell-tree/actor/07.png": "43c284845682fca523e7e6d243796a58ebef4d27710049fc0692945df2311c86",
+    "public/sprites/Laborer/motion/stack-crates/actor/manifest.json": "d308d2c53c79c916bd72c483e73c359bd5457d054fd848de9ae4aadee5862823",
+    "public/sprites/Laborer/motion/stack-crates/actor/motion-polish.json": "c61b121d99a9f6b770162a9228ddabb722c42041860724b5c7569057142fa0f3",
+    "public/sprites/Laborer/motion/stack-crates/actor/generation.json": "afdd78f5e1991665d21e28e6431a575fcf51f6f7720aca703fa1631d5cf589bf",
+    "public/sprites/Laborer/motion/stack-crates/actor/assembly.json": "ecf81e83d003ac851af2b68990b07a4e0421194cc6a5f34e5919501208a0755b",
+    "public/sprites/Laborer/motion/stack-crates/actor/source-sheet.png": "add68891f07d7f3a702806a2a3508f1f55546c345a9b1381cad2e273ac38973a",
+    "public/sprites/Laborer/motion/stack-crates/actor/atlas.png": "7b594de37516c077dc74adb3c63c85d1ab22c59beeeb032cde68b08b5e4a5ac8",
+    "public/sprites/Laborer/motion/stack-crates/actor/00.png": "6d37df525537f2781253b3052892aaf89b6101d523e770d9eff49b58cb0dd133",
+    "public/sprites/Laborer/motion/stack-crates/actor/01.png": "0a1d21109afaff680f497d3c4d4dd5c8fddc966e73d3a59a4ee768ceb49f7ce6",
+    "public/sprites/Laborer/motion/stack-crates/actor/02.png": "f90520acdcdf1139caced4e9649ca1f76f8fb9668252b5dbfb11cfed42695681",
+    "public/sprites/Laborer/motion/stack-crates/actor/03.png": "aac8577ec1f0ccb9bfc9898182cdc6c0576d5ee7de62a62217705216f50f05ab",
+    "public/sprites/Laborer/motion/stack-crates/actor/04.png": "69f7348b5593aea1ce3584e8740b71a3a9f2114bc10a834513a3e2229f186aad",
+    "public/sprites/Laborer/motion/stack-crates/actor/05.png": "0a68e427f8e07be1717b087be7c79f1c4c0de0d25f9354bb7339befcc5682658",
+    "public/sprites/Laborer/motion/stack-crates/actor/06.png": "98bbdc483a5fab20e3bf8d011391e0b5ae3d2f5c1e68f85c92cb871b9cf33c6f",
+    "public/sprites/Laborer/motion/stack-crates/actor/07.png": "f8cca9485b9494c257df3b79ffcb70d879342a66073420488d6e513a5a915fbd",
+    "public/sprites/Borrin/motion/desk-writing/actor/manifest.json": "0ea389a250f581dcd7bd6b997fe35377cb5fcb7f4cd04c027bae6a870a21eaab",
+    "public/sprites/Borrin/motion/desk-writing/actor/motion-polish.json": "17cb7456f58ab0b86d6821aaa1427047afb9efd1ab6a7fb86ee39e0fe74b14a5",
+    "public/sprites/Borrin/motion/desk-writing/actor/generation.json": "94da8f4faef664473b2c4c60a436d67d39353c115476b8e05c81f7a9f28189a4",
+    "public/sprites/Borrin/motion/desk-writing/actor/assembly.json": "5650e00a54de69a29db193447f72136c201b60f3341b8e58ef173d4a6c1fb53e",
+    "public/sprites/Borrin/motion/desk-writing/actor/source-sheet.png": "6f122e08f1965493235f7f4385d743bf63d85248e3efe184931ade041454cc05",
+    "public/sprites/Borrin/motion/desk-writing/actor/atlas.png": "552494c5e5e97d7a6e379971e9d303723ba04992d2acebafec1779b43e22149d",
+    "public/sprites/Borrin/motion/desk-writing/actor/00.png": "7e908ce0645dc1ef368e8a2bf3242489306a545d65ad935895d8e82a72f4e6de",
+    "public/sprites/Borrin/motion/desk-writing/actor/01.png": "d913a7f3d91a572ac0ccbf002f8ca28018976460d23eabf54a0d820372c69ae9",
+    "public/sprites/Borrin/motion/desk-writing/actor/02.png": "750adc5759aaf5c532c5a00161ea6ba63598bc046a7bfa9cc646eb9839a23f31",
+    "public/sprites/Borrin/motion/desk-writing/actor/03.png": "b368effa4d28125193a50b3f16b7fbd4743784706b60916ffffcb5504189e82f",
+    "public/sprites/Borrin/motion/desk-writing/actor/04.png": "f1abd0e87710ed2fbe1ee4598440137ad4a237e9d84159a8d11f95f4424e2901",
+    "public/sprites/Borrin/motion/desk-writing/actor/05.png": "69236d50e53b57185f4e70c23b4a49c5ab689cb9ae821a5ec1fd1bf2ac2ed16b",
+    "public/sprites/Borrin/motion/desk-writing/actor/06.png": "1a7ad67195f353fcbd7134f80c2b4af2047c1af8f1d3dcfdba95554db5f96cd2",
+    "public/sprites/Borrin/motion/desk-writing/actor/07.png": "0227ed28b0bfdfa038223380eef4187c0c62c85f2c1f6ac899980f1d8bb1cffc",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/manifest.json": "6c94ed92bb2abb96a150c274cd2fdcddf930dff20ea7aa2234b64a2539a5998c",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/motion-polish.json": "90c840b50a7a889b54b6cb936df259026b820d8cb3f2e981b41ec4276a82da22",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/generation.json": "80b033a13507dfc7b414c5cf535da15f82a5908bc74d9a98df1d2a8b202712aa",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/assembly.json": "f3639358ca26d08303f5e7ffe48f72499b2c1bd01165ca193fbe6d65fca71ec2",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/source-sheet.png": "d8a4ba0057e14c600608be46f9cae44a95c8a0eb02fc9db5993f352ffdfcf755",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/atlas.png": "f5cab789cbbd6f1d5952eaf18a67f9a271480a0cc9787f5c8b812ac6eb3cc7a7",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/00.png": "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/01.png": "bc413fad7f071c50b140caded8bc688941c1139e12738183de32cce53023b979",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/02.png": "3e90fd0b62ac1ec8f82e3632e86fb508ea263db2207552262716b1584730018a",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/03.png": "d1296212e7b557d754a9c52ee6aa18bf8ba116713328ec4ab6bbc63a6b7eea1b",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/04.png": "255d78b2e73edcdeb46573ff4bd6b64f7de5e79e13211e6d6ccede61e126d164",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/05.png": "59acd2ed5f17b87a6d37d0a2183e2796b19a929361afcff65c0b79106951f20c",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/06.png": "2a0cd78474c95116d3ec94649c7c44b7e169c32e4e807a1ed30849c3fbbeec17",
+    "public/sprites/Stoneworker/motion/chisel-contact/actor/07.png": "d038cd8993b672741df330383da5f36e2b5dd105c96b2c5aa205885cb2c60aa2",
+    "public/sprites/Quartermaster/motion/check-weights/actor/manifest.json": "bf27e3ef757e315d309893f18d71a8272f39a84b998b33df6e92dbf86fd97903",
+    "public/sprites/Quartermaster/motion/check-weights/actor/motion-polish.json": "323bba381f10af9ae4bd75601f55891edac6d30f01179d4f6e68398b89be3454",
+    "public/sprites/Quartermaster/motion/check-weights/actor/generation.json": "10ee6d8c335d86457e0b2dc146a76f602211f1bcb76d5466eed5cf2787046b85",
+    "public/sprites/Quartermaster/motion/check-weights/actor/assembly.json": "fdbe70af4b60148798dac2678af8be5f54642d516112caa9d93d31527e2d2df8",
+    "public/sprites/Quartermaster/motion/check-weights/actor/source-sheet.png": "4449f2bb45e430a8157c84627a67922a56f29c26f34a695bdb79df95caa96e46",
+    "public/sprites/Quartermaster/motion/check-weights/actor/atlas.png": "7df425aa9ef232937dc22f0e99955df9000a35d08c265cb85c9c4f34733ab222",
+    "public/sprites/Quartermaster/motion/check-weights/actor/00.png": "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a",
+    "public/sprites/Quartermaster/motion/check-weights/actor/01.png": "ad1f0c3bd1b178532f2e73ae739965c5fc8b7fa1021365fa083c5315f5039cb4",
+    "public/sprites/Quartermaster/motion/check-weights/actor/02.png": "4ccd3e2bda0550293ddb8c512d77e22445a2c72356f3c728cc289768c925c6af",
+    "public/sprites/Quartermaster/motion/check-weights/actor/03.png": "6ef49212238e57f41cda5a334787130a06a4977c63b9bada8e105582db09f760",
+    "public/sprites/Quartermaster/motion/check-weights/actor/04.png": "2cb81eac19fb248bc8f17459bf69bec7db972a808bc5cf6946e75ac2bc8c030b",
+    "public/sprites/Quartermaster/motion/check-weights/actor/05.png": "c16496fbf3cdcf418fed01e51f78ecb81ea4c14d02dbd60e0f0a2d4d3b5c48e6",
+    "public/sprites/Quartermaster/motion/check-weights/actor/06.png": "79c92be25704e6afdc2d4dc2be37f5628b128139561ebcf65934cc36a50e35d2",
+    "public/sprites/Quartermaster/motion/check-weights/actor/07.png": "48d30a013fb3d477b1b0228061f63ee7a7c1aa0731a26a6f1a3771de0042fb16",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/manifest.json": "75debed254dcd3454c0d61182039bb9f942d5821874fde8175f212de79310fd0",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/motion-polish.json": "5f96e5b5192ad14227eed328c223aacfd4b7b935ca0cae38a83251fe380338e0",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/generation.json": "4449d4a25d799f888e3231ddc6bcdaa50d488294503ce5bea8e255803c487be3",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/assembly.json": "69c60b63de10e0638689b757bd2fbef21a3cc087e2761fc3992ba2b889a21f8a",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/source-sheet.png": "d18ed928ad4f79da9e3b7b21899c5da39427200a3704dd352160b95dde4966a2",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/atlas.png": "53661528a1bfcd9d6cf0ea37834f65f528c0a4782a514845a5993e7cd1da9715",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/00.png": "155c427f587850e0ec661f7f4855ff1887d7cf584b8d495b78f197669f9ccff0",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/01.png": "52450280a0d1d092cc8380e11ad1bbce2f171e621980620ea90f1d31a04356e4",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/02.png": "ad181b7130e4b9634fe9ffd54a2f486681f2de8060a479470d5ded56646fbf81",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/03.png": "9456581aa330d4524f2098718a135f5401a51b39ca0fc0fb8c609cf5fbf8a78d",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/04.png": "3744280d76edd422f54993fa8133a6cace220dba4a1a7c9dbb323996b513d050",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/05.png": "7623f16490c34e7b75368c2c578ffe0d36aa8ee1cee4e4f5d158a8bac6f5071f",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/06.png": "e884097e43a13d694cfa60914be251be60db0da01968ea4667a10daf6fdb4c85",
+    "public/sprites/Blacksmith/motion/inspect-tool/actor/07.png": "4321228c74b9114b7e6dd49687fcb501fb13b1b47647205fd2755c7974379168",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/manifest.json": "25c7c482b22476378375794b17961989c84320b26541e3e734314142e04b845b",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/motion-polish.json": "afd5f0c037ffa79709903f2d8d0331f4c47d1c77a886f3a83e419f88cd32c6e9",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/generation.json": "e1bdc5daab410aaf0a59ff67c09c0cd3bc755cad51dd10e7b7275aff3c5840a8",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/assembly.json": "da44bc7c46894befd4fd855c014372c2aeca81177451c941ebff6da3d0d5c501",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/source-sheet.png": "03ac0d6ecec494b6f1f58a712fd2a578d095a6fc226cb64c890a49cb9fa9a656",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/atlas.png": "a6864fd05c2086a931549ed79c87fea5957a48d63bb6f4ef9eb2516a89ad0843",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/00.png": "0d0bfb4923c55439fe2799c263cf18b21a4930222baddfb62d7b9584225622bd",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/01.png": "1520af748fec5d33ab7aebb506ac8dbe1761a05ba5e1e609a2308b79a76a3b0a",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/02.png": "6b1d447735ccb89dbd97049b65d710075ec0600893a3e2b87f9ef0d90e648e52",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/03.png": "11552ac82aabdcd08498da830c48a86ebbf8090688a2cc881ad945795501ebb9",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/04.png": "1d9ec1bdab5363d27afa7e1d64c5c769467ebfea29eef1136682b1cff2d1f357",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/05.png": "1f1f70e6e9bb0834ebe494395aa45ee69e1f01899b29b1d99969bec7fd69e8b1",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/06.png": "ac8c06684eab330f9d61ec7b638eee927daa2b6516b2ab05d89234d93a7469c6",
+    "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/07.png": "eb8dbe7412f426b8c67ebff20b6ae476f0f9cb5744b4ceae8a45cf38ca5ddeda",
+    "public/sprites/Cook/motion/peel-potatoes/actor/manifest.json": "162413cfb4b137a4b712df5347fc7a2adb33c42daa83379dafd1593c5e0cec4a",
+    "public/sprites/Cook/motion/peel-potatoes/actor/motion-polish.json": "67e3ac201733bce3501b3b11553ccc6f7fb5f1a1c2100bc48bf820bf71e389d5",
+    "public/sprites/Cook/motion/peel-potatoes/actor/generation.json": "ed75b5f2a1f115402bca103f7d6c40375f4813da236ca1493ffb2be55f1412a4",
+    "public/sprites/Cook/motion/peel-potatoes/actor/assembly.json": "57e49050120742a3af4a2b55de033ce62468c1d88663d00da334f568bd6e2004",
+    "public/sprites/Cook/motion/peel-potatoes/actor/source-sheet.png": "09fb264d458a2845da5cd24a0b563ca36a1bc74156ed403bf62c2883ad2b49b5",
+    "public/sprites/Cook/motion/peel-potatoes/actor/atlas.png": "dbf870497a5484c0b328d3bb2c9b29943da4c4cc45b3777756c8f47527aba11c",
+    "public/sprites/Cook/motion/peel-potatoes/actor/00.png": "926276d44d5ae8a35beaa01b30e7090cdb85b8f9d2429734a94be24a2b161122",
+    "public/sprites/Cook/motion/peel-potatoes/actor/01.png": "1750132a34ef3922189591d2c3482b11230ac97b51fa509c00b42747316a3e37",
+    "public/sprites/Cook/motion/peel-potatoes/actor/02.png": "73e097891393b8da95569dcb405c3ed376439cf6989a33ff94f3e5ff3d8875c4",
+    "public/sprites/Cook/motion/peel-potatoes/actor/03.png": "58d3e836fbb3e40499a8b6d1d380c3a2a4c9e4c9dae66729a70116666480a0fd",
+    "public/sprites/Cook/motion/peel-potatoes/actor/04.png": "9a9f77bd425c6a1cf2c345d3b83c139e08a578327d9406a10e023ab558e7fe87",
+    "public/sprites/Cook/motion/peel-potatoes/actor/05.png": "abfb27866de5e005dae2bce5b53472a16aeba1f4d307990e53a6bc568aecb5da",
+    "public/sprites/Cook/motion/peel-potatoes/actor/06.png": "e198166b4cc096fbdc0475fc51970acb2aabda4a6f8334c8d1a782506652097d",
+    "public/sprites/Cook/motion/peel-potatoes/actor/07.png": "70e303c7979dedd2a229f2a2489e2fc520a87d539d0db22f2850e4ba21cb4453",
+    "public/sprites/Borrin/motion/count-coins/actor/manifest.json": "a1319fdae7e1a5f7d3da8fbab4a82445245e96c7f28e911ebe254aadcf8e4a00",
+    "public/sprites/Borrin/motion/count-coins/actor/motion-polish.json": "efccbdcc1a6a9a189db056b931c9ae1bc6eda58ffe24297c1f6da55e64abcd0a",
+    "public/sprites/Borrin/motion/count-coins/actor/generation.json": "01bf5fab500a461959789b4b614d6ed742c5a965722fd56388e98b0ccff1cb84",
+    "public/sprites/Borrin/motion/count-coins/actor/assembly.json": "6b45f458297e746330e527e74c8b19f8af5b4c0a0f3d3c87274a5c00b1ed6997",
+    "public/sprites/Borrin/motion/count-coins/actor/source-sheet.png": "67ed4826b90e000a640e0acb4d19f7849064014ca0821d700113e0efcc72fae6",
+    "public/sprites/Borrin/motion/count-coins/actor/atlas.png": "2ebc2cad6d91a8d285e483146cd97f3b3a1ae6039b97e02c196199a2a4e86c3e",
+    "public/sprites/Borrin/motion/count-coins/actor/00.png": "637c14868642823a5c1a13c522e0906a2490c2fa2e5c691bd769ba5f8fceab10",
+    "public/sprites/Borrin/motion/count-coins/actor/01.png": "d3f2f84339a0b1bfc776bfd8df29ed15662d24ca78afe7870bebb7f14a3c4126",
+    "public/sprites/Borrin/motion/count-coins/actor/02.png": "8aa472eed6289113b271e6474c37dfe8d90fedb52b34d216c46c401f46eb5557",
+    "public/sprites/Borrin/motion/count-coins/actor/03.png": "c7c4477952d434d2662399f01c7d52d81eb8dec34111837b3fba29d53d5ead5d",
+    "public/sprites/Borrin/motion/count-coins/actor/04.png": "fa3836f5c12cd87dfa1da97344de7a75434bc1a00854647eee979dcb2a9c9e40",
+    "public/sprites/Borrin/motion/count-coins/actor/05.png": "e2fb42a1ea7afe2694fe312057386714fb8ef354423dd899f1d54dee6bd230e5",
+    "public/sprites/Borrin/motion/count-coins/actor/06.png": "d2db26cbb94fe710428b625a406ded8cd1f5b1d21798da5b297711d72dfe4dcf",
+    "public/sprites/Borrin/motion/count-coins/actor/07.png": "48a145c435b6ca36081558006407488dc579449f2ddd9655304876948fe7ab6c",
+    "public/sprites/Ginger/motion/build-barrel/actor/manifest.json": "ddbeeb11daa4febe887007944c71c3f747c2fa8930e79e3b7886323ed48f3e2c",
+    "public/sprites/Ginger/motion/build-barrel/actor/motion-polish.json": "c40fdd89967d031d458db5d820600b299b1ddbb2478ed1ff8c7abb1fcadab77c",
+    "public/sprites/Ginger/motion/build-barrel/actor/generation.json": "272742f6dff66b606ee8fad522cf60b645597f4f0ee92b499e6296d337dac346",
+    "public/sprites/Ginger/motion/build-barrel/actor/assembly.json": "dc3ce5a810ae7f15dc7cf5db99881b5ca42319b3fe2fc5bbf647839dfac0ec35",
+    "public/sprites/Ginger/motion/build-barrel/actor/source-sheet.png": "7381e398db7b7e2c282caaefa80118ba1dc281868be29f95f500f57262684899",
+    "public/sprites/Ginger/motion/build-barrel/actor/atlas.png": "1c64f0f533e4cfa79fa9de359de5c8ebd729dae807098b6b40635856b434e7b1",
+    "public/sprites/Ginger/motion/build-barrel/actor/00.png": "27d9e824ba1c35a5f9a7d87bff4ae262a2e4494fb865599e79582af4e123feac",
+    "public/sprites/Ginger/motion/build-barrel/actor/01.png": "a3b2f05d3cfba87d4c2021a1f97e3e6ff7e489e2c605ad1112d33985504bdcdb",
+    "public/sprites/Ginger/motion/build-barrel/actor/02.png": "79b5aee0b9a2658c9f108da7e16933c538f61e8a4aee92813ab086c6820560bc",
+    "public/sprites/Ginger/motion/build-barrel/actor/03.png": "415a3e9df8d9777153585558cde2e5e8db84373ef6372515904b01f3bf5250a0",
+    "public/sprites/Ginger/motion/build-barrel/actor/04.png": "6829219f2e69b1e4fc1a10c8746d1fc9f7a919e78d5615226d14a17064b1e2bd",
+    "public/sprites/Ginger/motion/build-barrel/actor/05.png": "95e9537022a9a4c938b4bdb170f019f9a4fc3903befb335cbf6da946087c1f2d",
+    "public/sprites/Ginger/motion/build-barrel/actor/06.png": "1f7e66bcbccefc06fd6014b72a622b6b364b28964a147194724f0429507505d3",
+    "public/sprites/Ginger/motion/build-barrel/actor/07.png": "7877cc1ab4e767b4ea11652848dae881c37c6a6fdf3b6de558d3d1c664166068",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/manifest.json": "5be7b15109c7a2fa1deced1c7db84b6e4cead6a2c44c46ac8e5a59ba5ba83e29",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/motion-polish.json": "330bf34dd6c1f05237823c88f6d93bc62f5217956b50275b98fc5f4070fca194",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/generation.json": "b9dc74d5aafa69e64e4bc5511a92f6d3b3904dde1f5b4b8d903cb3735c04ad26",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/assembly.json": "9a92ec05915b349cfbb7d5345d44513e9a62a27b2349870d2d55d31ea1acbf95",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/source-sheet.png": "f9a8c79b4131bb07367e61235d81fc8cfba4b10f9b3b19e933284bb7d0742e1a",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/atlas.png": "a510e4ecd866a9fc8a62911251a0561ce02406608a6b3e87612eb82fa0c47d45",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/00.png": "0c999e1b9f459dbccf1838b8cc85d1380cfbd41b351326b08869346a35fef90e",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/01.png": "c808ba8266b0066006fb6071c1d21c5ee5df8e04034a76648e0cc742ab39d11d",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/02.png": "476252650bb5d38c8489184b49f455c4dacb3866a4213d337d9b5577f9edb213",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/03.png": "09dbff3db0d998a9ce360d81984e1eb8546f9e5993514e32c573fd6dcfabceb9",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/04.png": "68e0c58ab32f4be4474c6e8b5c4b6bf7bf190402def5815a42677e1ef38b8549",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/05.png": "02165e5eac3557ab43b00529e76788594abb5865ac4ac8c357bbde3961c1710e",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/06.png": "8cc5bafe5bb39b69a82ddb57f07d9bf9291293f82eb549d98a09810d2c29df02",
+    "public/sprites/Borrin/motion/review-open-ledger/actor/07.png": "d197c064ec7c42ab2d038af8e12582da37b507fe8a5b519c5dfe31ca984146df",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/manifest.json": "473c5104f3a1f7d0bd1c60597eb5e76a058627cbe5a4567878b1ebee5cc95c9f",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/motion-polish.json": "d6e72aad4e87b5f38b0f4b44459cecea141608579e9927a331ae5faa236fe223",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/generation.json": "383b7f49b0c912c2fc36c0c88c7ba38594d7d41f130386bf74ae2adbd96d0cb8",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/assembly.json": "6a94478fc1ad712b788aeca5dd7b3d2cccc55bb07cf86cc22360b3df9957cf3f",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/source-sheet.png": "097f47aef963216e272cf6a94e46de2c3e2c99a88ba273acc2cd07169174a4ba",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/atlas.png": "cd070ff4aad539b034ea752dac38cf6601236369c5605c22fbedcc428307837f",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/00.png": "369b49365f3919da60bc1a7af0aa03ec2b1737e12b18023817d4eca4c93034cc",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/01.png": "fd0a040a478236a8d648e21273e381b40fc25ad4991c4c9dbdf790b28da21aee",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/02.png": "048b97f29a6a9fb11ed5319e6d787acbea0c50b7b05dc2c32d657afc0b6bcc43",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/03.png": "e254be8d11f4d75882abcb201e1e886a90761db7e73b08cf04e659b72a0e15ae",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/04.png": "2c919cfa79b343219408d5ccf8c60653e89fe2f469be627ac3307696d98e9123",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/05.png": "95df6ef561341b71caa52b79daa080e328529272b4f9752bd841b2af154f2931",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/06.png": "c4c7943b9f6d451ad398c8c045b89618b4859dec2852b3bf157e9207d7e7c94c",
+    "public/sprites/Borrin/motion/explain-at-desk/actor/07.png": "bf4f666957aca08545588a91cd2806edac8bdb04716818984899decc3a6c13b6",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/manifest.json": "b40dc0f85e6b2362b4dfcf2093d113435cc28401da051001b8664f5689d3722a",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/motion-polish.json": "e7951dda400d5fbbd67a6cad610038bbfee95710ce507e65f2c6c3843c1a9353",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/generation.json": "158794bd46afe691ce6a1b49bc535f6ea960e41bd54ddb48093241772c4943b4",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/assembly.json": "d6acc7069422d1719a2f8464e9fb77cf67900a830efba715972dc85707ffddac",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/source-sheet.png": "708a1a7bbf8f2c602da2d39360d618c8e2c563d23b7b1bd9a0b141bb258cc8c0",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/atlas.png": "a4146d45c81efa21330b1cf25dd4d8c134d0d162f4062e10bd3d3d8d4efdb3f8",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/00.png": "77b3bfd387916abb58afe405ba250ef39c605612c64be4b3e9fbb6e24b94d157",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/01.png": "c345a45149e103effa05df1ec6c6e8df2c8bcafada2488299d938f1a0a8ff2fa",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/02.png": "ee55fec9d0cd94fce3bf47420d70c59feea0821e59e0e29a08d82eed1f5d6022",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/03.png": "95efbdd766640fbe6a2c0a43e339619c29bc03495ecafad3e86d2f6ebfc2c7ea",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/04.png": "1cdf7534bc5f9cbcc9f609641d738b0c3eca2e38f87bde56dd02b65b37529d79",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/05.png": "adc1de57f4a1189d2ce2728afb905dda07da81296f03ddfd765d6c9b9cdb8eeb",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/06.png": "24ca1925d7ea02ab87752fc0cae8c721cefaa8a2a05e5e8111ce148c7fd081ca",
+    "public/sprites/Borrin/motion/stamp-paperwork/actor/07.png": "4d8e53f6c56e12e1be2c1763d7898ff054f51dd41652b9485555ca8998d0d574",
+    "public/sprites/Cook/motion/knead-dough/actor/manifest.json": "809565639b88a9a31fd5d9a0efe5083e63dc22de079d6ad90a47d150f66ee6e0",
+    "public/sprites/Cook/motion/knead-dough/actor/motion-polish.json": "26a0f89bcfdcb8eba6169df4dbb9d93f4abe3d51b687f0a9c5989c49e86fb171",
+    "public/sprites/Cook/motion/knead-dough/actor/generation.json": "5bf1b299401afd2c20507525faa6b50eb86eb1653a689cd6290ff548e2cace32",
+    "public/sprites/Cook/motion/knead-dough/actor/source-sheet.png": "b88a9052a19da2c74272772c220e1aa75ef110448b84804cedc8eee126732d63",
+    "public/sprites/Cook/motion/knead-dough/actor/atlas.png": "c52bb366181eaa84b87b0da385c26c5c3dfd984e8bc082e654cb71075dd17ed5",
+    "public/sprites/Cook/motion/knead-dough/actor/00.png": "b6bc03419c4c6f207f9396bae6f5586e5d781587a8e9904a1cd25871845de1f5",
+    "public/sprites/Cook/motion/knead-dough/actor/01.png": "186e03561ca8f45009eccfc66717418a62d881f73b6507a23dbe0ba56969997f",
+    "public/sprites/Cook/motion/knead-dough/actor/02.png": "59371a2243611ac5c77551b3324b15527a96ed9e83223ecba29433155c0b4cb9",
+    "public/sprites/Cook/motion/knead-dough/actor/03.png": "898677a62daff8ed6b9b551580fcb618096290fd562a97ed7806bf7330af2904",
+    "public/sprites/Cook/motion/knead-dough/actor/04.png": "fa1799b3f1356976819aadb06b6b987d438f542bd52a77e3b1229a31afd2196c",
+    "public/sprites/Cook/motion/knead-dough/actor/05.png": "5b0773358b6637f1d82279c9c29cedc43299362be49665c484aae3f52141177c",
+    "public/sprites/Cook/motion/knead-dough/actor/06.png": "e28b87898d15385eabfd4f5f95c87e70b2ae4e1c1db0e031c04b461ede7b6728",
+    "public/sprites/Cook/motion/knead-dough/actor/07.png": "2bbf6df49705a5647fa0789a77da68bb562d755b052cabc1d4100d8ef4f72476",
+    "public/sprites/Cook/motion/stir-cauldron/actor/manifest.json": "3aa0670b18f3925bbc14e1fbf202b18942f667087d4fa87a165244fde0ce2f6d",
+    "public/sprites/Cook/motion/stir-cauldron/actor/motion-polish.json": "43e82d00ad0fdd5a4b6879fb35f18f56b8536bc3ea93be97bb565fb6d34ed1ad",
+    "public/sprites/Cook/motion/stir-cauldron/actor/generation.json": "719d8e91a660f31843dbed62b7cef7af8a075598f308d67e9d9dbc3746556003",
+    "public/sprites/Cook/motion/stir-cauldron/actor/source-sheet.png": "06e53a3e310670f3cd7a9023382f36368d8c49fbf64da6a07a99afc6a050476d",
+    "public/sprites/Cook/motion/stir-cauldron/actor/atlas.png": "1c7deac6f3a281a892daed4725498c5aff19281d75265f02d9d69ccf66cf8967",
+    "public/sprites/Cook/motion/stir-cauldron/actor/00.png": "b028ce925ec304476b76816f7842018d4dc1f4e547040785739d2d024b70c41e",
+    "public/sprites/Cook/motion/stir-cauldron/actor/01.png": "02a43ce5c546b3b5f49d4ef2742123cbb147533966a2ecf4e2d4c1c28849c6a8",
+    "public/sprites/Cook/motion/stir-cauldron/actor/02.png": "678b8b35db1cd73348d15e46bcdcf8bc2d58a067ea937ecd03d5f87a9c316a64",
+    "public/sprites/Cook/motion/stir-cauldron/actor/03.png": "e7d2ad3283aeb94f4d8e81bbc5d9be4e5f245c5d025ad1247a886879a7c5a0dd",
+    "public/sprites/Cook/motion/stir-cauldron/actor/04.png": "304eb5bbaf3e990b83371aaf4b09bd4d078338d396354ed1e6235115d92b42fc",
+    "public/sprites/Cook/motion/stir-cauldron/actor/05.png": "485c9c9c6e96e1310b4ab6a0bbfb0adb873e4a7998583269f72f857a3604f373",
+    "public/sprites/Cook/motion/stir-cauldron/actor/06.png": "8d3ea9a760917885c1f8d9849962f1cfdbf7d3e92ef5f5beee0ea4bb52a20c91",
+    "public/sprites/Cook/motion/stir-cauldron/actor/07.png": "b2bf92d769b3f6bedb62dc47837d3b10324a7f487690b7869b5e55888fcca795",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/manifest.json": "9b3c7f9434c2601cba37b37df0c3b450c10a2cb1b23def2c19b34d504aff4015",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/motion-polish.json": "bb95420e192ce60b5ffe90d18cd20a68d4523bb60034357e469a2d9d9e28a064",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/generation.json": "7be10cf663ebc8b573f4422116fc281689d1f161544a76968a5d92a3ee812c62",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/source-sheet.png": "59c8462b3442375a33829c1e461952cc6781cbce37e0325e95fcacd0311669b2",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/atlas.png": "dcc5b78d9d2afb88ef15c41b6e2637861fde5d5f57d99d04681372b0d18399a3",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/00.png": "f5cd4f5a10d0e14919a6d0aa71e274eba2f8ee1ed2225ed42c423a22f4472490",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/01.png": "08d833bfed2e5c3bd562c13ec69b2260b47559ba5a4e72a652256355f7b64ed6",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/02.png": "80797ed4db882a145da6604955adb76112610f1e72e649a25c84a4c4e72aaa9d",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/03.png": "f0d7667a8d0f52bbd4d61a4f628bf4b66e9b440b10d705588679fa18372b3a18",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/04.png": "38c82ce8fcbf704ed66d768dd530ee806b1cea880cff025fe70fd34b73215a62",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/05.png": "341041dbfe268c052b56d9c5823c35f8fe89e36a2cb47ab40571564a2c3042d7",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/06.png": "e04388add13e53044aca51fbc33d1bfb4fbdabc7422bbead22ff6536d054ecc2",
+    "public/sprites/Blacksmith/motion/anvil-ready/actor/07.png": "4d8e4dd865a2e9ed7e76a942db954b558714434f6307c13dc915b82cb85226a6",
+    "public/sprites/Cook/motion/mix-ingredients/actor/manifest.json": "3739a0fa10404bd81645d9eaeb9c068d0757970511217228fa89f3a068e80256",
+    "public/sprites/Cook/motion/mix-ingredients/actor/motion-polish.json": "40558ff749144f5329be3edf26eb5ba2e5c95dcfc8207b23f73dd38e7f29a929",
+    "public/sprites/Cook/motion/mix-ingredients/actor/generation.json": "43ae0310637a954b563827996ce43df87b7bdfeda44f1752c9dd9cf7dc65657f",
+    "public/sprites/Cook/motion/mix-ingredients/actor/source-sheet.png": "ac9d29e416da9ab179c334e3041d276b51d4ec8862675e35fc67b0508928a07c",
+    "public/sprites/Cook/motion/mix-ingredients/actor/atlas.png": "90ae6011dd645a7823a59ea5b59fc64c213a17cca8cc2913f48520e298dfe39f",
+    "public/sprites/Cook/motion/mix-ingredients/actor/00.png": "4fa40f36de86b7e1444b45855200a63e0055b376670ec0e7fd40814380c742d8",
+    "public/sprites/Cook/motion/mix-ingredients/actor/01.png": "85545b90d42e1526534831e30ab044bcb182c4bad862db3c5a890f56f4eb4d95",
+    "public/sprites/Cook/motion/mix-ingredients/actor/02.png": "1f80cbfd663f6037387766c24c76d75f13890beb970bfc22ad133a220f509736",
+    "public/sprites/Cook/motion/mix-ingredients/actor/03.png": "474513b4eb523b2ad2ae16ef21196d11f8981cba037eefa1216630f37f319379",
+    "public/sprites/Cook/motion/mix-ingredients/actor/04.png": "d8e9a572e750f6a4bfcb4568107129cece535c834a676bd7ad33075f2e983a3b",
+    "public/sprites/Cook/motion/mix-ingredients/actor/05.png": "7dd5d0ff1301600527f5b0f3455d14d2d6458fd65d99706f5d6a11d1c2f2b7e2",
+    "public/sprites/Cook/motion/mix-ingredients/actor/06.png": "f7f13cac0734baa514174cad856a2de5e512b93de4a43fc637367c06d260e9ef",
+    "public/sprites/Cook/motion/mix-ingredients/actor/07.png": "50ac49eea3235af782cafb7dada9f2ca1f1c069711117ac05c5b1a96aff8b11d",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/manifest.json": "f859ec3765f6e1c0ea82a516c68fb5311d0ce4ded4dcba33a2f22d6bb0e90519",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/motion-polish.json": "36a50a1693101c127191362b5ae8c10ed28ad9bf1850d124d68c5ce0366305dc",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/generation.json": "c519a9c3fff0e3e83ffc091bba9a5e372a981ed26958675de0b0f74d244663d2",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/source-sheet.png": "4faec15391748ee4974f8e456fcd9d9585df7ad1538cb1dd4f90710cc2953cfc",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/atlas.png": "ca2ecd39924cfb8c67c4daa59524b6d05de8095c4a0bad6e7a64be7a606b52cc",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/00.png": "33ab7d36a964e15623c4a2f72c7904e21801127decb4b4361f0fd2c7beeb2d1c",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/01.png": "5ca8ceb86aa418b62eb950615b7d2f4d89fd41707840a19041246d3789b03958",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/02.png": "a944ab796c3f07eb2d2e02d04a4e14a805c7e9dd68d62f1b96103aae26168f37",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/03.png": "c46e4361e28e57205bcc30600a833a499ddf0e485d45e574690814302d6828f8",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/04.png": "951481ba4dae2d72300e9616601b8568e892aa542c42880d95373b87e93f1211",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/05.png": "1c816501a5272b8bfa684ef0190e1415ac2fa15afef47743f1a66f7d7b903a2d",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/06.png": "67925205227fde3cf49aff4bddf42a1f9e3d76b93570599d39b823dc5f57ce6d",
+    "public/sprites/Blacksmith/motion/hammer-raised/actor/07.png": "02db3a0729613595788c126e3b38928066f08876deaf6ba2928893d43ee04fd5",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/manifest.json": "14be21b1083424d876dcb4afb8be25baf782cdeb158df9321d37f2fb612675ad",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/motion-polish.json": "9f898b6cc2e17752f9223fa74c92486c635d416b2c914ecf6257b5ad4cc8c75a",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/generation.json": "a243fadc1cfcbea2463d6dbdb7fa2f0d12c6cea95d584f306cdb365f8001e5f1",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/source-sheet.png": "26afe14855a9f050aac26a6860178d819fcf6d042f23f695c6a3d5bd0910ec76",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/atlas.png": "74a6a436ec4eb9650cb96e2f3edb799d96b1cff45db20034dcc9a2f1c34b1d9b",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/00.png": "639cafcba1ab0a5d278e639303c0ef393028f1b0daeca58bc155f87fa8efd6a4",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/01.png": "3a8124b02f6a51cdb3aabd8fcd10f0284e64f8405b308681061a50a18dc83ba2",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/02.png": "d7398101521658530d46dcbd850aa5201d736f46262d35b66631fab8ce9f73c4",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/03.png": "abd2369eded97a4b15576c6c83fd83bb450050b35264d276ee5bb27895dfd538",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/04.png": "6e72831d9d572641baca098d79e01c03dc2e6a8925b30614e66c6e11825fb842",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/05.png": "ada691acd724d6a840bb1ae86f5f39ea5cb7a6726ffa32c8605bde333584f557",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/06.png": "b9725e7a10665476800591eb49954112e81c07d9ab636824cb9e588232ebe32a",
+    "public/sprites/Blacksmith/motion/file-tool-edge/actor/07.png": "769a6d2baf16b753568db7d791275511f6fe687b0e22a4825f1f7efe97cf58f1",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/manifest.json": "d2e91d18b8b7f639e06af3b90ef8f094cfeae38fd6443099407b4a1914bbdd5c",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/motion-polish.json": "3fa8c95d15922a5bc9d5f8f0312d6090a714933c0247679c6629e3b2d6497b91",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/generation.json": "a97b87e7e0e2f389a0014fab44d40eb5d2a54197abefe0ebed3b61984bdb212e",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/source-sheet.png": "ed6cc4fa5d681eb370b205cfde453b472687df348530a7653e91fa528f654ad0",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/atlas.png": "f176b47787d8c978b40f26f29accd90fea259d9acad87b273cdb50434a749cc8",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/00.png": "14807b5912de57672c669b401e95ad9d7c3b00614253480e724a152316891a82",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/01.png": "1e9d851624d911153054e61e341dfbd2d280d4668509be10ef614d247cfcafa1",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/02.png": "b5ea9194668ee8fec10ae12c233919c4c46eaca373f9484b099cdbb28e394144",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/03.png": "d8553726e4e2f342b4bcabbce55745e7ba1e38d4e5f5db529d050521b706cecc",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/04.png": "fcb699e6211882dd80f016447fa85064eef6dd97dde02520232b3e0753f821bf",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/05.png": "3d2217747af76cb5ac99b0bd215decb127ef44ee1987574b4014aa6156ae67f0",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/06.png": "80445953c5bd90774b8183259c55ed55f5efc62c4f94be2c99ee37e70aecc27e",
+    "public/sprites/Borrin/motion/explain-closed-ledger/actor/07.png": "97c9db1713315fd9b639c7bbb5c181228f45a74b7760d8705608945125b03980",
+    "public/sprites/Blacksmith/motion/walk/left/manifest.json": "f09d01c716a979aa789009043bf58465a3f06e136ad3461765743560e66a8902",
+    "public/sprites/Blacksmith/motion/walk/left/motion-polish.json": "cbad54d024a55803410003cb83bf74ed1197b0f5badb852e896be433a29c95a4",
+    "public/sprites/Blacksmith/motion/walk/left/generation.json": "3b458d728a0782f7e5c585717753414bf87b20b0174fec51f61cb8c2c48a000c",
+    "public/sprites/Blacksmith/motion/walk/left/assembly.json": "5cfb35ed2a3b11bc3a44691dfe7850038f2bb2eefb1876b74b6ee9d3f1d1b9b3",
+    "public/sprites/Blacksmith/motion/walk/left/source-sheet.png": "01f9b3c0d0096a5690d691084f15d5e6066a167a4031f48caf0d9fbed27f12cd",
+    "public/sprites/Blacksmith/motion/walk/left/atlas.png": "f7c1878ae6864bd046adb188609098e287415f073ad501a8c318e0ea3f3e9210",
+    "public/sprites/Blacksmith/motion/walk/left/00.png": "8dcd514902f8839bc2b50fabebf5784cbe1478abe00e429e1cd4aedfe33edad0",
+    "public/sprites/Blacksmith/motion/walk/left/01.png": "228012c8c96b4c96127f2ee5ffe0bc573bab01a6b51a7500af15166684a4545b",
+    "public/sprites/Blacksmith/motion/walk/left/02.png": "32a3bdb62e90665f0c1441833a7a20ab4d809fe85fbee30cfac21425f98f6619",
+    "public/sprites/Blacksmith/motion/walk/left/03.png": "383d35227af4706950e2519ed31b3e99133320449fd81534fb9885cc34ee20d6",
+    "public/sprites/Blacksmith/motion/walk/left/04.png": "fd0bafb5c2243ac7537274049d473c928eee6b6fb0667d258d13e27af12ce570",
+    "public/sprites/Blacksmith/motion/walk/left/05.png": "6ab839ff98eb8126fce3185be22ac9c7b78fed2b6e3c307e15266c8970aeba88",
+    "public/sprites/Blacksmith/motion/walk/left/06.png": "3451179f7cfcd7f0ad2ff610501f1b1c1ce0a0c1b7db76f0712040faa5f5593e",
+    "public/sprites/Blacksmith/motion/walk/left/07.png": "b9d7b7e6846271217d8894c90bc54a8ad18505d0056a890c343f5a4351446c1d",
+    "public/sprites/Blacksmith/motion/walk/right/manifest.json": "b859e95f0367d49c421946d0bfb4a5a9bae1e1b2a2a4601cf9b75b3fbd4df2bf",
+    "public/sprites/Blacksmith/motion/walk/right/motion-polish.json": "6f6ff40e2392775c5929efdf7f240121997eddcda6254fdb26432b2dc5f40b6a",
+    "public/sprites/Blacksmith/motion/walk/right/generation.json": "a847e1e7b1ae8c74e3b906c88a73434c62f33d266d1a35d587b5ea85f9d30bf4",
+    "public/sprites/Blacksmith/motion/walk/right/assembly.json": "605ce1a10eaf68cb40e42e90705962d9625e195a82e4b3b027e3e99e2883af14",
+    "public/sprites/Blacksmith/motion/walk/right/source-sheet.png": "fe26205614df3877b0ae2ffa25ffbd401ebc6583a31311808bea40883ffd2e94",
+    "public/sprites/Blacksmith/motion/walk/right/atlas.png": "ddb3eb60e16d040fbe5b210585204b056d7a3aaa1f97af89d0a6ff7ce3ffdc22",
+    "public/sprites/Blacksmith/motion/walk/right/00.png": "fb3849228d519ae78b01a3b9f4c99e69fcd7bfb404e03fa5bef19c860ee28674",
+    "public/sprites/Blacksmith/motion/walk/right/01.png": "016a0a89519d9f86b708c7098938ea0cb5b3eb525e73a335c03d426c622a85ee",
+    "public/sprites/Blacksmith/motion/walk/right/02.png": "be165f1af53e62a6bf5f26abcfebf4e2c75812d48c6167e2b8d74bb8d3602687",
+    "public/sprites/Blacksmith/motion/walk/right/03.png": "97de5582d17b6a41d7bdabd24605236e8a71a121e43ed4954581081e29293719",
+    "public/sprites/Blacksmith/motion/walk/right/04.png": "b9d443799ef781f7419bdc7e8dd461ffc68f4ac1be34ab79de33aeae85325bfd",
+    "public/sprites/Blacksmith/motion/walk/right/05.png": "84ecb4e9b07008bd78cffb01e8cdc7915a200eb43e48e68be6b2d2a61bd14b7c",
+    "public/sprites/Blacksmith/motion/walk/right/06.png": "1e14e4bf68657d7b32747b1f7ef8c8b9632e7ede06e1de8280452462ff34a167",
+    "public/sprites/Blacksmith/motion/walk/right/07.png": "61a3456fbe3ec4e01f529cdc3b8b455fdbb645a2ffd75511588a4c0529a01f2e",
+    "public/sprites/workstations/anvil/generation.json": "198d81d3b02db4fb119b2f7732c3fe78e32da260841326a86d8fa52c21806d4b",
+    "public/sprites/workstations/anvil/source.png": "0e92b63e4e42dbd3c26e644e84ed25ea530c278c70b11299e7b0d9e30dc375bd",
+    "public/sprites/workstations/anvil/sprite.png": "cfd009f818b439c3e6a0d3f4c9d57d42a699c2c75323ff055546d746e20ffc30",
+    "public/sprites/workstations/anvil/work-preview.png": "a9d4d303c7a13e76f3504ebc5ccd5c4bfdcf2b170bd575f881bb49ee2840ea16",
+    "public/sprites/workstations/anvil/work-review.jpg": "214421fbc6a710ef6f9be5b3279b80f73d54d16d68dc2ff7a5f0a21244cf4c3e",
+    "public/sprites/workstations/cooper-barrel/generation.json": "1fbd9c4be29dcc892decd0756574edd6eb210ad3e3e974c16a764a73dfa8c5f9",
+    "public/sprites/workstations/cooper-barrel/source.png": "945672ceeaa053f4a49d6c1160e408ffc81494d355cf235dd3d46d5fd077ce5e",
+    "public/sprites/workstations/cooper-barrel/sprite.png": "7e56ae010b5897b62fb2691b9db30a12a03c726bb611230db882b9d3b9efe81a",
+    "public/sprites/workstations/cutting-block/generation.json": "28637e86c8696b5e86581095d8878049096c830809e78b28c2beb328528e3d9a",
+    "public/sprites/workstations/cutting-block/source.png": "a62bf53c07689e717a87bc411b65215ef92863e63fb65547935e94ea9d1fc978",
+    "public/sprites/workstations/cutting-block/sprite.png": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+    "public/sprites/workstations/cutting-block/work-preview.png": "b06f559f77e90e29d44480c7351e0857d39657f2edbb7c6466bb777855a8368a",
+    "public/sprites/workstations/cutting-block/work-review.jpg": "598cc5ec22a20d8253d3851a2136ffe549d7556016c74939eea48a75a4b0f0cb",
+    "public/sprites/workstations/dough-block/authoring-inputs/dough48.png": "0e0d00015f1c0640c8f0e433a5b18f77485ecf525f9f3460fad4c06ed862561c",
+    "public/sprites/workstations/dough-block/completed-dough.png": "31382dd073af1bab58458aea8f3f2c7b7c1b2bba28f322ef5c5af68b9e7ad119",
+    "public/sprites/workstations/dough-block/generation.json": "53dcaa46070c110565bfc0a4f688f5b3c8c940fd548c5913b91c1f5b7e546500",
+    "public/sprites/workstations/dough-block/source.png": "96118cb487d52c9e3457d99baf7929825cf6e930dc6ac1495f2be82f6234adb8",
+    "public/sprites/workstations/dough-block/sprite.png": "1ccbd2aeaff546c2b8f8b63048f3d1d29094d8a034cd9d73559e773f0a8fbdfe",
+    "public/sprites/workstations/firewood-rack/authoring-inputs/reference.png": "18dc6d6c64cc3f46f17f1530b66577ce0b1d2a8a205117e4ff010a95e31dee70",
+    "public/sprites/workstations/firewood-rack/generation.json": "7139c2c032946aba0e337d435d26812c4caaf7b9a602c06fcb82d935e34159e5",
+    "public/sprites/workstations/firewood-rack/prompt.txt": "8cbd03449d8dfdd5acd90cab8e3c9d50d7ef7b697ffaa22a0afd85a280effa3c",
+    "public/sprites/workstations/firewood-rack/source.png": "f07b4497aaa66044c5b77000e61418f6b1ef453b2effa29790b846359c087899",
+    "public/sprites/workstations/firewood-rack/sprite.png": "61dc6acd85793b1caadb76aaac5a8b4e9e4f64e2d6f70806c102dbc7fc959424",
+    "public/sprites/workstations/forestry-trunk/generation.json": "7a0d0fb47277f64398588332f13bdda5d12a02b1614c20113fb1140b87f89502",
+    "public/sprites/workstations/forestry-trunk/source.png": "829cd970135aa71743b5576d266e0508971c1fbb1dc6e816c2c527105696cb57",
+    "public/sprites/workstations/forestry-trunk/sprite.png": "dcf23ff916144fe3772a7704567f7c2679e2e8813e7ee1cbcc5b53a099a5d3eb",
+    "public/sprites/workstations/forestry-trunk/work-preview.png": "e36586c23a45251f9ba58577277fb7b00300a6c043d0ffd855b1ceeb016cfa26",
+    "public/sprites/workstations/forestry-trunk/work-review.jpg": "71918bc55c5896694bf7da48a9186f2102563e8550383cf49d8a9c13acbf00f8",
+    "public/sprites/workstations/ledger-desk/authoring-inputs/base-generation46.json": "3b5c3d8e3c936f04cc8749973508fe9b0813f956552fe915f5328e97b8cc5cfc",
+    "public/sprites/workstations/ledger-desk/authoring-inputs/base-sprite46.png": "915fd76e3afdb8f43772da30558d5e67237de038573d920f00f2627c75487eba",
+    "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.json": "de32d5908b3ef858edec5f8295d9915a3ad05a541120f7201e6cd06d3022ad66",
+    "public/sprites/workstations/ledger-desk/authoring-inputs/receipt46.png": "d2118bd932ceb8f6c27202bd95be49250041886831d7f67991553845192a2070",
+    "public/sprites/workstations/ledger-desk/generation.json": "1c90f30e61ba89d59909a75e1389f4f96c7fe038cf23ab9a05219453195cffb3",
+    "public/sprites/workstations/ledger-desk/receipt.png": "0c8a5415a46efff186964b0eb04bfc5505e5b74a66e155b99c802073becf107e",
+    "public/sprites/workstations/ledger-desk/source.png": "cf3e452ffaf431d1522244716e86ad740bed9171e953c258e7804f54760659ae",
+    "public/sprites/workstations/ledger-desk/sprite.png": "0717b0a85c94778bccf3850ac5404f25d90a2511322acef9ea320a9550c926d6",
+    "public/sprites/workstations/ledger-desk/work-preview.png": "6767afc94a3e3b5bc48c3528f820857552c02789bb92c895a27d77541f5dceb0",
+    "public/sprites/workstations/ledger-desk/work-review.jpg": "219b27cb373c74d626106f06e5be5d3220a01ddfda4d9df7d57a5e85875f3ef9",
+    "public/sprites/workstations/masonry-bench/authoring-inputs/actor-reference.png": "1574563ac83ae2a50f5ffe3965a840b994191398452132f33f6fa460f71bb457",
+    "public/sprites/workstations/masonry-bench/authoring-inputs/tall-generation.json": "9e6a2167037908da28ebf24248404986bc5d57f54d2e4b4816db61d7edfe7c2c",
+    "public/sprites/workstations/masonry-bench/authoring-inputs/tall-source.png": "6ca1b395321d8133a6bd7b969187453f4227bdd71a159ad918d733ad9227e813",
+    "public/sprites/workstations/masonry-bench/authoring-inputs/tall-sprite.png": "d89756b0bd2603c0e3a9f2825e902017f0edad27e5236aa61860ebfee8280d10",
+    "public/sprites/workstations/masonry-bench/generation.json": "ed124586d5a19ce4c1b35be9639fcdcfc5a964c6a52d0f7df13bbb43f062884e",
+    "public/sprites/workstations/masonry-bench/source.png": "0ea573ee039bb91a81acf2160fb8fc8ddde07d291d8cd1412c3137d5695db2ca",
+    "public/sprites/workstations/masonry-bench/sprite.png": "2a861206fefd929e98f39968ca13a6c0ae7a0cf1336b7740d2a4de5c8704f4aa",
+    "public/sprites/workstations/masonry-bench/work-preview.png": "d1340c776de94618e5d1c84f7ddf46e60e761a3380f803e0ea6328837c2d8bcf",
+    "public/sprites/workstations/masonry-bench/work-review.jpg": "e36ce7338ed02a111a5aeebac4efb6b1ddb52d3e0cc8fb4d8c95fb433b38e04a",
+    "public/sprites/workstations/mixing-block/completed-mixture.png": "ef6d3424ba7f0ac5d740c7435b5b5967a1cd4164e6509b8e60cbc1daee8fc55d",
+    "public/sprites/workstations/mixing-block/completion-request53.json": "91ae93569da279716f1125e4ce30cfab759cd953da0dd93d4577dd2e9175858f",
+    "public/sprites/workstations/mixing-block/completion-source.png": "dd5e99615d7ee2001be8479bb93ecae913b560a2d5707d08672367913b27d2c1",
+    "public/sprites/workstations/mixing-block/generation.json": "e62acae5a0a1508bf13cd9bb39afdfe70954afaa3874c4ab65b05270c2e97689",
+    "public/sprites/workstations/mixing-block/request53.json": "214048c912d9023c6f36236d78bb0b23836f79bb9eb10c54ca18936afc132aa6",
+    "public/sprites/workstations/mixing-block/source.png": "043e9d5073bebb182909fcce9c34d63cf3f1ec0492c234270bafca85f498fc39",
+    "public/sprites/workstations/mixing-block/sprite.png": "dd98a1d3185ca8103551e7c5e5b689e60f9f016a6ba84dbd237b8c9baca771b1",
+    "public/sprites/workstations/potato-block/generation.json": "0761749748fdaaa6fee75cabc6c9c85d04496d86b2df82725390f92cf518f44f",
+    "public/sprites/workstations/potato-block/prompt.txt": "633d2e381bda6a810ed0bc6f33b91a814866b307e7204a4cda5381b01fba985a",
+    "public/sprites/workstations/potato-block/reference40.png": "8462811352caea422c0a7805ca06b78f280b162158cfe0ef7287866c20793cbe",
+    "public/sprites/workstations/potato-block/source.png": "e35df199344d5ff7e6e9dc917c6518ed0e2f8d16d44a8b92d02936c4ed9bcaaa",
+    "public/sprites/workstations/potato-block/sprite.png": "27eae57cb33890a6829a569ed5cf54f42aab387371c30ceefa2bcc6fa912b1e6",
+    "public/sprites/workstations/repair-bench/generation.json": "5b1709cd5dcd93895e769966d14f4cd51fc67695c9229506d2d5a43dc3b6eb01",
+    "public/sprites/workstations/repair-bench/prompt.txt": "3c48c0dba8d3bf03398284aec6b0ce086d25bee3c9874e6e068465c400c7abe5",
+    "public/sprites/workstations/repair-bench/source.png": "dd1a47e18d16f8d95d107956b744512222afd1a73959423904ee0af643abc0dc",
+    "public/sprites/workstations/repair-bench/sprite.png": "30390b0998f51248ed39fcbf05d92fd29d2983136b7ea7c912351bbd853466e3",
+    "public/sprites/workstations/stew-cauldron/generation.json": "03f8a959dc9463e091793c24b5597f52c495ae7003deeb72aec464a570315d10",
+    "public/sprites/workstations/stew-cauldron/source.png": "d1e536cebd380fb8a9a6d6e10d2d46ddb43d616268c8d9be2afa9d66db046135",
+    "public/sprites/workstations/stew-cauldron/sprite.png": "9706b150004770fe519f0bb0c752f8fe9ca9b878886942cf8ef95dd3c6237de9",
+    "public/sprites/workstations/storage-pallet/completed-crate.png": "17a66555fe09747e5d95afb3b24c2eddc5cd4e8345cd5e487bbbbc8b862e18d8",
+    "public/sprites/workstations/storage-pallet/generation.json": "1ab3f694e2b3457ae36a14629037717c687cf78c0913f6562110863663c83f01",
+    "public/sprites/workstations/storage-pallet/source.png": "f52f355b0b83817583b3dc97627b610e23771fe43a85a730c56e78f7b33f8059",
+    "public/sprites/workstations/storage-pallet/sprite.png": "1092fd2b3e984bb211dc5a906665073a9b67cb7110bd9599c4c452bc29e6f815",
+    "public/sprites/workstations/storage-pallet/work-preview.png": "66d06d6a621df126daac6a07b5e4929e5719cadaafba18b0f1020862fba88da3",
+    "public/sprites/workstations/storage-pallet/work-review.jpg": "24505035b5cc0480bde41c2db248b5792ee7f7166d0a68033619a23286b07c72",
+    "public/sprites/workstations/vise-bench/generation.json": "edb259029e05be25467e3c6989dfd44d97faf8507584de922c96bfb65f55322e",
+    "public/sprites/workstations/vise-bench/source.png": "7c1ebe8201c29f680a38f07e6b91c6dac682f4b484accba44b7e5755599b51ab",
+    "public/sprites/workstations/vise-bench/sprite.png": "3cd4d11a9a90ad4398c05b3e1b4ee5094514a60cbb7a1737c15d55c3ba4df3bd",
+    "public/sprites/workstations/weighing-table/authoring-inputs/actor-reference.png": "189f5ae4bba64fe49af5ff98b3495aff870d175234a04f0c0df2915c94c9125a",
+    "public/sprites/workstations/weighing-table/authoring-inputs/initial-table.png": "f328b9c4369a0e4b55dbadf8dca910819b35cfc79d402652c469109d65c31d7b",
+    "public/sprites/workstations/weighing-table/generation.json": "bc5dc99c0b3c9f1aa883007e275df48a0833f082324bd24cd7904e83d2c8ba6a",
+    "public/sprites/workstations/weighing-table/source.png": "78efe03c914be2c03de40dd570ec436b7d48ff6d2f37d478d1ec317302a1dc74",
+    "public/sprites/workstations/weighing-table/sprite.png": "994c204bef369b0d46b979c0982d4c679e5d65d14dd2893572cacd51e77a1bf9",
+    "public/sprites/workstations/weighing-table/work-preview.png": "2e7b8c4b5966b8852e558bf4fbe9b7eb58faacc45a57fca6f92f270de4b523b7",
+    "public/sprites/workstations/weighing-table/work-review.jpg": "2cdc4c27fe6011c491b27e59c31c3f5a558b922303c09b3c8c6965b73e81a477"
+  },
+  "approvals": [
+    {
+      "file": "public/sprites/Blacksmith/motion/anvil-ready/actor/task-approval.json",
+      "originalSha256": "9de7b4f2895baafb7aa5adb8a9dfa2663a9485cb3721528ab86181d3ee24c4f6",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/file-tool-edge/actor/task-approval.json",
+      "originalSha256": "73af502ccd4b383515ff4ae7ffdbfa76362f48539ad5ff50dfcbac4bcac84df2",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/hammer-raised/actor/task-approval.json",
+      "originalSha256": "9eef630480761b943b42a36d25271364547716a92acb2f6f6dbfb48f7d2ae323",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/inspect-tool/actor/task-approval.json",
+      "originalSha256": "89c5010e016b3bfb2afb38ee8f80a6659db9b23c7259f6c002907886b4e6758d",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/repair-pickaxe-handle/actor/task-approval.json",
+      "originalSha256": "3bbddde7634b20ef15606be0e9b5f42c6248e8e5fca3892aee109fe2c04d6270",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/left/loop-approval.json",
+      "originalSha256": "c3f6f9cb8a235beebf5f4eeff71163903e401477f43ca178c64a214cb53eaf05",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/runtime.ts"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/runtime.ts",
+          "before": "bde0053c024727a3f66924bd2eee44499932a7be854c125bdb9b76290f8181ab",
+          "after": "2e8cdc3dc77c0b7e1205bfd164454626300d2b78084ee79ff9db82783254358a"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Blacksmith/motion/walk/right/loop-approval.json",
+      "originalSha256": "18b223bda6dc5c513acb5f29ca2f5b823bb2c4e578c027b65a7f133a1b9f3dea",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/runtime.ts"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/runtime.ts",
+          "before": "bde0053c024727a3f66924bd2eee44499932a7be854c125bdb9b76290f8181ab",
+          "after": "2e8cdc3dc77c0b7e1205bfd164454626300d2b78084ee79ff9db82783254358a"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Borrin/motion/count-coins/actor/task-approval.json",
+      "originalSha256": "f34e86d5abe989b488bc465084d6f4b2c8f0bd1e0671e38ebcca6f6fe1fb749a",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-at-desk/actor/task-approval.json",
+      "originalSha256": "51e770a1586d3dfbf674c45101c4d0784403755a564ce7c722e6307f43cf9423",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/world/terrain.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/world/terrain.tsx",
+          "before": "8c41f8379d8eb21796e7e445bfaf87375babf7540fef623938c7d18c11d5bde0",
+          "after": "d14bfff751d6e6dc7231c526da58865a0e34baef834676586099de01688ea976"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Borrin/motion/explain-closed-ledger/actor/task-approval.json",
+      "originalSha256": "7422639d65928ad78307694d5202040e15155e90f7d78a5891823bf42b6b2157",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/environment.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/environment.tsx",
+          "before": "4535916646ba1518049100845c6203800d4d192c09ac81fa8760dbaa402cf2c1",
+          "after": "e55e623c5d8cd39d58309fb52838a2abf31e479094a23e44d8ba097f22174931"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Borrin/motion/review-open-ledger/actor/task-approval.json",
+      "originalSha256": "1470d5ee683c6f35fb4bf729e1273ffd822f9b234f6585c281613b3b578c525f",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/world/terrain.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/world/terrain.tsx",
+          "before": "8c41f8379d8eb21796e7e445bfaf87375babf7540fef623938c7d18c11d5bde0",
+          "after": "d14bfff751d6e6dc7231c526da58865a0e34baef834676586099de01688ea976"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Borrin/motion/stamp-paperwork/actor/task-approval.json",
+      "originalSha256": "1a2f71467a9dd3afe2b86beb1c8d64777fa2c58c0fe380f518cf0cca659d0502",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/world/terrain.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/world/terrain.tsx",
+          "before": "8c41f8379d8eb21796e7e445bfaf87375babf7540fef623938c7d18c11d5bde0",
+          "after": "d14bfff751d6e6dc7231c526da58865a0e34baef834676586099de01688ea976"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Cook/motion/knead-dough/actor/task-approval.json",
+      "originalSha256": "c73ee37d3ba74fe879d87fd96b764274cc9bcedbcd60fb9e3911824526119bc3",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Cook/motion/mix-ingredients/actor/task-approval.json",
+      "originalSha256": "5f743f71c7b3494e285e50a00c653efb86e3450fce7a2fc542343d5c2c2c4f24",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Cook/motion/peel-potatoes/actor/task-approval.json",
+      "originalSha256": "41f59a3c1fbae953bb293ee52a89574ba33814fea2523af8632d0271568222cb",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Cook/motion/stir-cauldron/actor/task-approval.json",
+      "originalSha256": "83ef3b56ebada7c81af1100e8188cd2eaaf9cd78a258c8b15004f1fdcd0880db",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/world/environment.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/world/environment.tsx",
+          "before": "4535916646ba1518049100845c6203800d4d192c09ac81fa8760dbaa402cf2c1",
+          "after": "e55e623c5d8cd39d58309fb52838a2abf31e479094a23e44d8ba097f22174931"
+        }
+      ]
+    },
+    {
+      "file": "public/sprites/Ginger/motion/build-barrel/actor/task-approval.json",
+      "originalSha256": "a057e1c52ff219bd3e85cebdc2cf758e1b293f7b325514a8224aa6d804de821a",
+      "priorRuntimeRevalidation": {
+        "checkpoint": "world-foundation-v2",
+        "files": [
+          "src/game/world/scene.tsx",
+          "src/game/world/terrain.tsx"
+        ],
+        "audit": "../../../../../../docs/world-review/world-foundation-v2/runtime-revalidation.json",
+        "scope": "Environment-only replay of the previously approved 22 workstation variants and 14 props, plus three flat-ground strides in each retained Blacksmith lateral view. Same art, calibration, task state and motion core; rebuilt expedition architecture, mountain escarpment, larger chamber, terrain, portal, camera, visibility and lighting. Original native scopes, dates, checks and approval flags are retained. No unresolved animation gate is closed."
+      },
+      "changedDependencies": [
+        {
+          "file": "src/game/world/scene.tsx",
+          "before": "90e7cc52ad0e4556693c331abc40d2da816c46d4a73bcbe9d336e808bb30b90e",
+          "after": "f9e2dca3c9f7cd4398094b92229eee4b94757b7aa58b950cc5c2cc0bd4c6f9c4"
+        },
+        {
+          "file": "src/game/world/terrain.tsx",
+          "before": "8c41f8379d8eb21796e7e445bfaf87375babf7540fef623938c7d18c11d5bde0",
+          "after": "d14bfff751d6e6dc7231c526da58865a0e34baef834676586099de01688ea976"
+        }
+      ]
+    }
+  ]
+}
