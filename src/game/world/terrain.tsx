@@ -127,7 +127,7 @@ function AlpineSky() {
   );
 }
 function Forest() {
-  const atlas = useTexture(asset("/art/alpine-spruce-v1.png")),
+  const atlas = useTexture(asset("/art/alpine-spruce-v1.webp")),
     ref = useRef<THREE.InstancedMesh>(null);
   const previous = useRef(new THREE.Quaternion(0, 0, 0, 0)),
     object = useMemo(() => new THREE.Object3D(), []);
