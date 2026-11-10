@@ -1,0 +1,85 @@
+{
+  "baseline": false,
+  "viewport": [
+    2048,
+    1024
+  ],
+  "network": {
+    "downloadMbps": 24,
+    "latencyMs": 75,
+    "fontCssDelayMs": 1500
+  },
+  "errors": [],
+  "failedRequests": [],
+  "views": [
+    {
+      "name": "max-wheel",
+      "coverage": {
+        "hits": 35,
+        "samples": 35
+      }
+    },
+    {
+      "name": "valley-overview",
+      "coverage": {
+        "hits": 35,
+        "samples": 35
+      }
+    },
+    {
+      "name": "ultrawide-rotated",
+      "coverage": {
+        "hits": 35,
+        "samples": 35
+      }
+    }
+  ],
+  "titleReadyMs": 471,
+  "camp": {
+    "walkToCampMs": 12221,
+    "firstContentfulPaintMs": 236,
+    "artRequests": 31,
+    "artBytes": 8889034,
+    "fetchWindows": {
+      "engine": [
+        26,
+        233
+      ],
+      "terrain": [
+        363,
+        3459
+      ],
+      "cast": [
+        364,
+        2895
+      ],
+      "stations": [
+        365,
+        3323
+      ]
+    },
+    "largestArt": [
+      [
+        "/Dwarf-Lord/sprites/startup/lord.webp",
+        695400
+      ],
+      [
+        "/Dwarf-Lord/art/alpine-conifers-v2.webp",
+        649630
+      ],
+      [
+        "/Dwarf-Lord/art/camp-earth-v2.webp",
+        541816
+      ],
+      [
+        "/Dwarf-Lord/art/alpine-bedrock-v1.webp",
+        508472
+      ],
+      [
+        "/Dwarf-Lord/sprites/startup/cast.webp",
+        450558
+      ]
+    ]
+  },
+  "passed": true
+}

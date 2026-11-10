@@ -1,4 +1,4 @@
-/** Rebind changed scene and loading dependencies after the shipped-world and cold-start playtests. */
+/** Verify the replay and report the existing motion bindings that need review. */
 import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -124,7 +124,7 @@ function walk(path) {
     e.isDirectory() ? walk(`${path}/${e.name}`) : [`${path}/${e.name}`],
   );
 }
-const approvals = [],
+const bindingsNeedingReview = [],
   art = new Map();
 const workEntries = [
   ...json("docs/runtime-motion-layers.json").entries,
@@ -143,6 +143,7 @@ for (const entry of workEntries) {
 for (const file of walk("public/sprites").filter((p) => /\/(loop|task)-approval\.json$/.test(p))) {
   const native = original(file),
     approval = JSON.parse(native);
+  assert.equal(hash(file), digest(native), `approval record changed: ${file}`);
   const changes = [];
   for (const dependency of approval.dependencies ?? []) {
     const path = relative(process.cwd(), resolve(dirname(file), dependency.file));
@@ -155,7 +156,6 @@ for (const file of walk("public/sprites").filter((p) => /\/(loop|task)-approval\
       `not the original reviewed dependency: ${path}`,
     );
     changes.push({ file: path, before: dependency.sha256, after: sha });
-    dependency.sha256 = sha;
   }
   if (!changes.length) continue;
   const root = dirname(file),
@@ -165,15 +165,13 @@ for (const file of walk("public/sprites").filter((p) => /\/(loop|task)-approval\
     assert.equal(hash(path), digest(original(path)), `changed authored motion: ${path}`);
     art.set(path, hash(path));
   }
-  approvals.push({
+  bindingsNeedingReview.push({
     file,
     originalSha256: digest(native),
-    priorRuntimeRevalidation: approval.runtimeRevalidation ?? null,
     changedDependencies: changes,
-    approval,
   });
 }
-assert.equal(approvals.length, 18, "16 work dependency bundles and two lateral gaits");
+assert.equal(bindingsNeedingReview.length, 18, "16 work dependency bundles and two lateral gaits");
 const propFiles = walk("public/sprites/workstations");
 for (const file of propFiles) {
   assert.equal(hash(file), digest(original(file)), `changed persistent prop: ${file}`);
@@ -182,7 +180,7 @@ for (const file of propFiles) {
 const audit = {
   checkpoint,
   baseCommit,
-  nativeScopeExpanded: false,
+  status: "review-required",
   scope:
     "Runtime replay after wider terrain, camera clearance, compact static character sheets and batched workstation loading. Replayed 22 work variants, 14 persistent props and three rendered strides per Blacksmith lateral view. Authored task and gait art, actor compositor, calibration, task state, original approval scopes, dates and flags remain bound to their previous evidence.",
   startupBefore: {
@@ -213,19 +211,7 @@ const audit = {
   retainedCore: Object.fromEntries(retainedFiles.map((p) => [p, hash(p)])),
   worldFiles: report.sourceBindings,
   unchangedArt: Object.fromEntries(art),
-  approvals: approvals.map(({ approval, ...record }) => record),
+  bindingsNeedingReview,
 };
 writeFileSync(auditFile, JSON.stringify(audit, null, 2) + "\n");
-for (const record of approvals) {
-  const { approval, file } = record;
-  const auditPath = relative(dirname(file), auditFile);
-  approval.dependencies.push({ file: auditPath, sha256: hash(auditFile) });
-  approval.runtimeRevalidation = {
-    checkpoint,
-    files: record.changedDependencies.map((d) => d.file),
-    audit: auditPath,
-    scope: audit.scope,
-  };
-  writeFileSync(file, JSON.stringify(approval, null, 2) + "\n");
-}
-console.log(`Revalidated ${approvals.length} runtime dependency bindings after replay.`);
+console.log(`Replay verified. ${bindingsNeedingReview.length} motion bindings need review.`);
