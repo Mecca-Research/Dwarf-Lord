@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
+import { Suspense, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
@@ -6,39 +6,69 @@ import { workstationSites } from "./workstation-sites";
 import { rockGeo } from "./geom";
 import { Boardwalk } from "./kit";
 import { useMats } from "./materials";
-import { campClearing, creekX, random, surfaceHeight, TARN } from "./landscape";
+import {
+  campClearing,
+  creekHalfWidth,
+  creekLevel,
+  creekX,
+  random,
+  surfaceHeight,
+  TARN,
+  VALLEY_ROAD,
+} from "./landscape";
 import { ConiferBelt } from "./conifers";
 import { ValleyWater } from "./valley-water";
 
+function terrainAxis(start: number, sections: readonly (readonly [number, number])[]) {
+  const samples: number[] = [];
+  for (const [end, step] of sections) {
+    for (let point = start; point < end; point += step) samples.push(point);
+    start = end;
+  }
+  samples.push(start);
+  return samples;
+}
+
 function valleyGeometry() {
-  const g = new THREE.PlaneGeometry(300, 300, 240, 240);
+  // Keep metre-scale detail near camp and the river, with wider triangles beyond the ridges.
+  const xs = terrainAxis(-1500, [
+    [-480, 60],
+    [-220, 20],
+    [-100, 8],
+    [100, 1.25],
+    [220, 8],
+    [480, 20],
+    [1500, 60],
+  ]);
+  const zs = terrainAxis(-1500, [
+    [-480, 60],
+    [-220, 20],
+    [-140, 5],
+    [75, 1.25],
+    [315, 4],
+    [535, 5],
+    [1500, 60],
+  ]);
+  const g = new THREE.PlaneGeometry(1, 1, xs.length - 1, zs.length - 1);
   g.rotateX(-Math.PI / 2);
-  g.translate(0, 0, -35);
   const p = g.attributes.position,
     uv = g.attributes.uv;
   for (let i = 0; i < p.count; i++) {
-    let x = p.getX(i),
-      z = p.getZ(i);
-    if (Math.abs(x) > 100) x = Math.sign(x) * (100 + (Math.abs(x) - 100) * 8);
-    if (z < -140) z = -140 + (z + 140) * 8;
-    if (z > 75) z = 75 + (z - 75) * 8;
+    const x = xs[i % xs.length];
+    const z = zs[Math.floor(i / xs.length)];
     p.setXYZ(i, x, surfaceHeight(x, z), z);
     uv.setXY(i, x * 0.035, z * 0.035);
   }
-  const index = g.index!,
-    indices: number[] = [];
-  for (let i = 0; i < index.count; i += 3) {
-    const a = index.getX(i),
-      b = index.getX(i + 1),
-      c = index.getX(i + 2);
-    const x = (p.getX(a) + p.getX(b) + p.getX(c)) / 3,
-      z = (p.getZ(a) + p.getZ(b) + p.getZ(c)) / 3;
-    indices.push(a, b, c);
-  }
-  g.setIndex(indices);
   g.computeVertexNormals();
   return g;
 }
+
+const roadTracks = VALLEY_ROAD.slice(1)
+  .map(([x, z], i) => {
+    const [px, pz] = VALLEY_ROAD[i];
+    return `road=min(road,track(wp.xz,vec2(${px.toFixed(1)},${pz.toFixed(1)}),vec2(${x.toFixed(1)},${z.toFixed(1)})));`;
+  })
+  .join("\n");
 function ValleyFloor() {
   const m = useMats(),
     geometry = useMemo(valleyGeometry, []);
@@ -86,14 +116,21 @@ function ValleyFloor() {
         vec3 meadow=mix(vec3(.075,.12,.045),vec3(.19,.23,.095),variation);
         float grain=clamp(dot(soil,vec3(.2126,.7152,.0722))*8.,.15,1.6);
         vec3 ground=mix(meadow*(.65+grain*.2),soil*vec3(.78,.72,.62),dirt);
+        if(wp.z>37.&&wp.z<335.){
+          float road=1000.;
+          ${roadTracks}
+          float gravel=(1.-smoothstep(.9,2.6,road+variation*.6))*(1.-smoothstep(18.,42.,wp.y));
+          ground=mix(ground,soil*vec3(.69,.60,.47),gravel*.82);
+        }
         float exposed=max(1.-smoothstep(.45,.82,abs(valleyNormal.y)),smoothstep(8.,22.,wp.y));
         vec3 bedrock=rock*vec3(.5,.53,.56)*(.7+variation*.6);
-        float snow=smoothstep(75.+variation*8.,99.+variation*8.,wp.y)*smoothstep(.18,.62,abs(valleyNormal.y));
+        float southernRim=smoothstep(45.,130.,wp.z);
+        float snow=smoothstep(mix(75.,103.,southernRim)+variation*8.,mix(99.,141.,southernRim)+variation*8.,wp.y)*smoothstep(.18,.62,abs(valleyNormal.y));
         diffuseColor.rgb*=mix(mix(ground,bedrock,exposed),vec3(.83,.89,.9),snow);
       `,
         );
     };
-    mat.customProgramCacheKey = () => "alpine-valley-v4-commons";
+    mat.customProgramCacheKey = () => "alpine-valley-southern-rim";
     return mat;
   }, [m]);
   useEffect(
@@ -249,14 +286,18 @@ function Creek() {
     const p: number[] = [],
       uv: number[] = [],
       ix: number[] = [];
-    for (let i = 0; i <= 120; i++) {
-      const z = -25 + i * 0.95,
-        x = creekX(z);
+    const samples = terrainAxis(-25, [
+      [75, 0.95],
+      [400, 3],
+      [1460, 8],
+    ]);
+    for (const [i, z] of samples.entries()) {
+      const x = creekX(z);
       for (const side of [-1, 1]) {
-        p.push(x + side * 1.1, -0.66, z);
-        uv.push((side + 1) / 2, i / 8);
+        p.push(x + side * creekHalfWidth(z), creekLevel(z), z);
+        uv.push((side + 1) / 2, (z + 25) / 8);
       }
-      if (i < 120) {
+      if (i < samples.length - 1) {
         const a = i * 2;
         ix.push(a, a + 2, a + 1, a + 1, a + 2, a + 3);
       }
@@ -268,6 +309,7 @@ function Creek() {
     g.computeVertexNormals();
     return g;
   }, []);
+  useEffect(() => () => geometry.dispose(), [geometry]);
   useFrame(({ clock }) => {
     flow.value = clock.elapsedTime;
   });
@@ -306,7 +348,9 @@ export function Terrain() {
       <ValleyFloor />
       <Creek />
       <ValleyWater />
-      <ConiferBelt />
+      <Suspense fallback={null}>
+        <ConiferBelt />
+      </Suspense>
       <Talus />
       <Meadow />
     </group>

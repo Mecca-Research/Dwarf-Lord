@@ -5,7 +5,6 @@ import * as THREE from "three";
 
 export type WorldMats = {
   dirt: THREE.MeshStandardMaterial;
-  dirtRoad: THREE.MeshStandardMaterial;
   wood: THREE.MeshStandardMaterial;
   woodDark: THREE.MeshStandardMaterial;
   stone: THREE.MeshStandardMaterial;
@@ -28,7 +27,6 @@ export type WorldMats = {
   gold: THREE.MeshStandardMaterial;
   flame: THREE.Texture;
   smokeTex: THREE.Texture;
-  sky: THREE.Texture;
 };
 
 const Ctx = createContext<WorldMats | null>(null);
@@ -56,14 +54,11 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     rock: asset("/textures/rock.jpg"),
     cliff: asset("/art/alpine-bedrock-v1.webp"),
     canvas: asset("/textures/canvas.jpg"),
-    roof: asset("/textures/roof.jpg"),
     iron: asset("/textures/iron.jpg"),
     forest: asset("/textures/forest.jpg"),
-    cobble: asset("/textures/cobble.jpg"),
     bark: asset("/textures/bark.jpg"),
     flame: asset("/textures/flame.png"),
     smoke: asset("/textures/smoke.png"),
-    sky: asset("/art/sky-dusk.jpg"),
   });
 
   const mats = useMemo(() => {
@@ -73,15 +68,11 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
     prep(maps.rock, 1, 1);
     prep(maps.cliff, 1, 1);
     prep(maps.canvas, 1, 1);
-    prep(maps.roof, 1, 1);
     prep(maps.iron, 1, 1);
     prep(maps.forest, 1, 1);
-    prep(maps.cobble, 1, 1);
     prep(maps.bark, 1, 1);
     maps.flame.colorSpace = THREE.SRGBColorSpace;
     maps.smoke.colorSpace = THREE.SRGBColorSpace;
-    maps.sky.colorSpace = THREE.SRGBColorSpace;
-    maps.sky.wrapS = maps.sky.wrapT = THREE.ClampToEdgeWrapping;
 
     const std = (map: THREE.Texture, color: string, roughness: number, metalness = 0) =>
       new THREE.MeshStandardMaterial({
@@ -96,7 +87,6 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
 
     const value: WorldMats = {
       dirt: std(maps.dirt, "#e0d2bd", 0.98),
-      dirtRoad: std(maps.cobble, "#b6aa97", 0.96),
       wood: std(maps.wood, "#c9c4b6", 0.9, 0.01),
       woodDark: std(maps.wood, "#82796d", 0.94, 0.01),
       stone: std(maps.stone, "#bfc3c3", 0.92, 0.03),
@@ -144,7 +134,6 @@ export function WorldMatsProvider({ children }: { children: ReactNode }) {
       }),
       flame: maps.flame,
       smokeTex: maps.smoke,
-      sky: maps.sky,
     };
     return value;
   }, [maps]);

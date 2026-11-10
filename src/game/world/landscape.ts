@@ -105,7 +105,39 @@ export function inMine(x: number, z: number) {
   }
   return inside;
 }
-export const creekX = (z: number) => -28 + Math.sin(z * 0.065) * 2.7 + Math.sin(z * 0.19) * 0.7;
+const valleyCenter = (z: number) => 15 + 26 * Math.sin((z - 66) * 0.012) + 10 * Math.sin(z * 0.039);
+export const valleyHalfWidth = (z: number) => 26 + 54 * smooth(48, 192, z);
+export function creekX(z: number) {
+  const upper = -28 + Math.sin(z * 0.065) * 2.7 + Math.sin(z * 0.19) * 0.7;
+  return upper + (valleyCenter(z) - upper) * smooth(48, 105, z);
+}
+export const creekHalfWidth = (z: number) => 1.1 + 3.6 * smooth(58, 195, z);
+export const creekLevel = (z: number) => -0.66 - 4.1 * smooth(62, 380, z);
+export const VALLEY_ROAD: readonly (readonly [number, number])[] = [
+  [8, 38],
+  [12, 50],
+  [25, 67],
+  [43, 91],
+  [62, 121],
+  [73, 151],
+  [64, 187],
+  [81, 230],
+  [102, 279],
+  [93, 330],
+];
+
+export function valleyRoadDistance(x: number, z: number) {
+  let distance = Infinity;
+  for (let i = 1; i < VALLEY_ROAD.length; i++) {
+    const [ax, az] = VALLEY_ROAD[i - 1],
+      [bx, bz] = VALLEY_ROAD[i];
+    const dx = bx - ax,
+      dz = bz - az;
+    const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz)));
+    distance = Math.min(distance, Math.hypot(x - ax - dx * t, z - az - dz * t));
+  }
+  return distance;
+}
 /** A connected crest, with long spurs and glacial gullies rather than isolated cones. */
 const MAIN_CREST: readonly (readonly [number, number, number])[] = [
   [-150, -128, 76],
@@ -122,6 +154,62 @@ const MAIN_CREST: readonly (readonly [number, number, number])[] = [
   [110, -143, 108],
   [147, -160, 126],
 ];
+const WEST_SPUR = [
+  [-113, -4, 29],
+  [-91, -36, 51],
+  [-78, -67, 69],
+  [-72, -94, 87],
+] as const;
+const EAST_SPUR = [
+  [121, 14, 35],
+  [99, -29, 55],
+  [84, -67, 72],
+  [98, -108, 112],
+] as const;
+const WEST_VALLEY_RIM = [
+  [-115, 27, 38],
+  [-147, 76, 72],
+  [-162, 110, 90],
+  [-188, 145, 112],
+  [-181, 167, 96],
+  [-196, 194, 137],
+  [-170, 228, 121],
+  [-144, 248, 143],
+  [-113, 278, 108],
+  [-85, 292, 84],
+  [-45, 312, 62],
+  [-10, 334, 35],
+] as const;
+const EAST_VALLEY_RIM = [
+  [124, 31, 45],
+  [151, 74, 69],
+  [173, 111, 92],
+  [193, 134, 104],
+  [209, 167, 134],
+  [191, 186, 111],
+  [216, 218, 148],
+  [178, 257, 116],
+  [150, 279, 129],
+  [109, 309, 83],
+  [78, 338, 59],
+  [43, 352, 35],
+] as const;
+const OUTER_VALLEY_RIM = [
+  [-348, 72, 78],
+  [-326, 173, 109],
+  [-267, 284, 140],
+  [-229, 354, 116],
+  [-174, 406, 151],
+  [-91, 443, 110],
+  [-29, 470, 91],
+  [29, 486, 65],
+  [103, 465, 103],
+  [170, 424, 145],
+  [227, 367, 123],
+  [296, 283, 155],
+  [328, 194, 110],
+  [349, 85, 79],
+] as const;
 function ridge(
   x: number,
   z: number,
@@ -136,10 +224,29 @@ function ridge(
       dz = bz - az;
     const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz)));
     const distance = Math.hypot(x - ax - dx * t, z - az - dz * t);
-    const profile = Math.max(0, 1 - distance / width);
+    if (distance >= width) continue;
+    const profile = 1 - distance / width;
     height = Math.max(height, (ah + (bh - ah) * t) * Math.pow(profile, 0.95));
   }
   return height;
+}
+
+function lowerValleyHeight(x: number, z: number, detail: number) {
+  const distance = Math.abs(x - valleyCenter(z));
+  const width = valleyHalfWidth(z);
+  const flank = smooth(width * 0.55, width + 23, distance);
+  const floor = creekLevel(z) + 1.9 + 3.1 * noise(x * 0.027, z * 0.023);
+  const foothills = flank * (8 + 21 * noise(x * 0.014, z * 0.012));
+  const ridges = Math.max(
+    ridge(x, z, WEST_VALLEY_RIM, 90),
+    ridge(x, z, EAST_VALLEY_RIM, 94),
+    ridge(x, z, OUTER_VALLEY_RIM, 118),
+  );
+  const gullies = Math.abs(Math.sin(x * 0.104 + Math.sin(z * 0.071) * 2));
+  return (
+    Math.max(floor + foothills, ridges * flank) +
+    flank * (detail - 7 * gullies * smooth(26, 84, ridges))
+  );
 }
 export function cliffHeight(x: number) {
   return (
@@ -159,28 +266,8 @@ export function surfaceHeight(x: number, z: number) {
     side = Math.max(0, Math.abs(x - 3) - 28);
   const ridges = Math.max(
     ridge(x, z, MAIN_CREST, 103),
-    ridge(
-      x,
-      z,
-      [
-        [-113, -4, 29],
-        [-91, -36, 51],
-        [-78, -67, 69],
-        [-72, -94, 87],
-      ],
-      48,
-    ),
-    ridge(
-      x,
-      z,
-      [
-        [121, 14, 35],
-        [99, -29, 55],
-        [84, -67, 72],
-        [98, -108, 112],
-      ],
-      51,
-    ),
+    ridge(x, z, WEST_SPUR, 48),
+    ridge(x, z, EAST_SPUR, 51),
   );
   const detail =
     (noise(x * 0.065, z * 0.065) - 0.5) * 7 +
@@ -205,8 +292,16 @@ export function surfaceHeight(x: number, z: number) {
   const terraceSteps =
     (1 - smooth(2, 4, Math.abs(x + 20))) * smooth(10, 18, -z) * (1 - smooth(21, 25, -z));
   h = Math.max(h, terraceSteps * 2.4);
-  if (Math.abs(x - creekX(z)) < 2 && z > -24)
-    h = Math.min(h, -0.9 * (1 - smooth(0.8, 2, Math.abs(x - creekX(z)))));
+  const creekDistance = Math.abs(x - creekX(z));
+  if (z <= 43 && creekDistance < 2 && z > -24)
+    h = Math.min(h, -0.9 * (1 - smooth(0.8, 2, creekDistance)));
+  if (z > 43) {
+    h += (lowerValleyHeight(x, z, detail) - h) * smooth(43, 82, z);
+    const width = creekHalfWidth(z);
+    const bank = smooth(width + 0.5, width + 3.6, creekDistance);
+    const bed = creekLevel(z) - 0.28;
+    h = Math.min(h, bed + (h - bed) * bank);
+  }
   const lakeRadius = Math.hypot((x - TARN.x) / TARN.rx, (z - TARN.z) / TARN.rz);
   if (lakeRadius < 1.4) {
     const bed = TARN.waterY - 1.7 + Math.min(1.5, lakeRadius) ** 3 * 1.9;

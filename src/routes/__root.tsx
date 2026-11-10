@@ -1,10 +1,27 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { asset } from "@/lib/asset";
 import appCss from "../styles.css?url";
 
 const APP_NAME = "Dwarf Lord";
+
+function DeferredFonts() {
+  useEffect(() => {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href =
+      "https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap";
+    stylesheet.media = "print";
+    stylesheet.onload = () => {
+      stylesheet.media = "all";
+    };
+    document.head.append(stylesheet);
+    return () => stylesheet.remove();
+  }, []);
+  return null;
+}
 
 export const Route = createRootRoute({
   head: () => ({
@@ -23,12 +40,6 @@ export const Route = createRootRoute({
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: asset("/__grok/manifest.webmanifest") },
       { rel: "apple-touch-icon", href: asset("/__grok/icon-180.png") },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap",
-      },
     ],
   }),
   component: () => (
@@ -38,6 +49,7 @@ export const Route = createRootRoute({
       </head>
       <body>
         <PreviewHostBridge />
+        <DeferredFonts />
         <AuthProvider>
           <Outlet />
         </AuthProvider>

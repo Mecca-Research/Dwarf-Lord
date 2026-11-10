@@ -3,7 +3,17 @@ import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { asset } from "@/lib/asset";
-import { campClearing, creekX, noise, random, surfaceHeight, TARN } from "./landscape";
+import {
+  campClearing,
+  creekHalfWidth,
+  creekX,
+  noise,
+  random,
+  surfaceHeight,
+  TARN,
+  valleyHalfWidth,
+  valleyRoadDistance,
+} from "./landscape";
 import { workstationSites } from "./workstation-sites";
 
 type Tree = { x: number; y: number; z: number; scale: number; variant: number };
@@ -138,6 +148,17 @@ export function ConiferBelt() {
     ])
       if (campClearing(x, z) < 0.3)
         result.push({ x, z, y: surfaceHeight(x, z), scale: 7.6, variant });
+    for (let i = 0; i < 1000; i++) {
+      const seed = 6100 + i * 17;
+      const z = 56 + random(seed) * 277;
+      const offset = (random(seed + 1) - 0.5) * 3.8 * valleyHalfWidth(z);
+      const x = creekX(z) + offset;
+      if (Math.abs(offset) < creekHalfWidth(z) + 5 || valleyRoadDistance(x, z) < 3.4) continue;
+      const y = surfaceHeight(x, z);
+      const cluster = noise(x * 0.035, z * 0.045);
+      if (y > 61 || cluster < 0.46 || random(seed + 2) > cluster) continue;
+      result.push({ x, y, z, scale: 5.5 + 5.6 * random(seed + 3), variant: i % 4 });
+    }
     return result;
   }, []);
   const groups = useMemo(
@@ -146,7 +167,7 @@ export function ConiferBelt() {
   );
   return (
     <group name="clustered-alpine-forest">
-      <RootShadows trees={trees.filter((t) => t.y < 5)} />
+      <RootShadows trees={trees.filter((t) => t.y < 5 && t.z < 75)} />
       {groups.map((group, variant) => (
         <TreeCards
           key={variant}

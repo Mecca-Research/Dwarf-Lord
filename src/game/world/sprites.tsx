@@ -10,108 +10,55 @@ import { useGame } from "../store";
 import { groundHeight } from "../runtime";
 import type { Body } from "../runtime";
 import type { Dwarf } from "../types";
+import startupFrames from "./startup-sprite-frames.json";
 
-export type SpriteBank = {
+type SpriteBank = {
   appearances: Record<DwarfAppearance, THREE.Texture>;
   lordIdle: THREE.Texture[];
   lordGait: THREE.Texture[][];
-  tent: THREE.Texture;
-  leanto: THREE.Texture;
-  crate: THREE.Texture;
-  barrel: THREE.Texture;
 };
 
 const Ctx = createContext<SpriteBank | null>(null);
+const STARTUP_TEXTURES = [asset("/sprites/startup/cast.webp"), asset("/sprites/startup/lord.webp")];
 
-const gaitUrls: Record<string, string> = {};
-for (let d = 0; d < 8; d++) {
-  for (let f = 0; f < 4; f++)
-    gaitUrls[`g${d}${f}`] = asset(`/sprites/Lord/lord-gait-${d}-${f}.png`);
+function prepSpriteTexture(texture: THREE.Texture) {
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.anisotropy = 8;
+  texture.minFilter = THREE.LinearMipmapLinearFilter;
+  texture.magFilter = THREE.LinearFilter;
+  texture.needsUpdate = true;
+  return texture;
+}
+
+function atlasFrame(atlas: THREE.Texture, [x, y, w, h]: readonly number[]) {
+  const { width, height } = atlas.image as HTMLImageElement;
+  const texture = atlas.clone();
+  texture.offset.set(x / width, 1 - (y + h) / height);
+  texture.repeat.set(w / width, h / height);
+  return prepSpriteTexture(texture);
 }
 
 export function SpriteBankProvider({ children }: { children: ReactNode }) {
-  const maps = useTexture({
-    elder: asset("/sprites/Elder/idle.png"),
-    helga: asset("/sprites/Helga/stand.png"),
-    femaleMiner: asset("/sprites/Female Miner/stand.png"),
-    blacksmith: asset("/sprites/Blacksmith/stand.png"),
-    redMiner: asset("/sprites/Red Miner/stand.png"),
-    quartermaster: asset("/sprites/Quartermaster/stand.png"),
-    stoneworker: asset("/sprites/Stoneworker/stand.png"),
-    cook: asset("/sprites/Cook/idle.png"),
-    veteran: asset("/sprites/Veteran/idle.png"),
-    ginger: asset("/sprites/Ginger/idle.png"),
-    silver: asset("/sprites/Silver/idle.png"),
-    borrin: asset("/sprites/Borrin/idle.png"),
-    standLabor: asset("/sprites/Laborer/stand.png"),
-    idle0: asset("/sprites/Lord/lord-idle-0.png"),
-    idle1: asset("/sprites/Lord/lord-idle-1.png"),
-    idle2: asset("/sprites/Lord/lord-idle-2.png"),
-    idle3: asset("/sprites/Lord/lord-idle-3.png"),
-    idle4: asset("/sprites/Lord/lord-idle-4.png"),
-    idle5: asset("/sprites/Lord/lord-idle-5.png"),
-    idle6: asset("/sprites/Lord/lord-idle-6.png"),
-    idle7: asset("/sprites/Lord/lord-idle-7.png"),
-    tent: asset("/sprites/tent.png"),
-    leanto: asset("/sprites/leanto.png"),
-    crate: asset("/sprites/crate.png"),
-    barrel: asset("/sprites/barrel.png"),
-    ...gaitUrls,
-  });
-
+  const [cast, lord] = useTexture(STARTUP_TEXTURES);
   const bank = useMemo(() => {
-    const list = Object.values(maps);
-    for (const t of list) {
-      t.colorSpace = THREE.SRGBColorSpace;
-      t.anisotropy = 8;
-      t.minFilter = THREE.LinearMipmapLinearFilter;
-      t.magFilter = THREE.LinearFilter;
-      t.premultiplyAlpha = false;
-      t.needsUpdate = true;
-    }
-    const lordGait: THREE.Texture[][] = [];
-    for (let d = 0; d < 8; d++) {
-      lordGait.push([
-        maps[`g${d}0` as keyof typeof maps] as THREE.Texture,
-        maps[`g${d}1` as keyof typeof maps] as THREE.Texture,
-        maps[`g${d}2` as keyof typeof maps] as THREE.Texture,
-        maps[`g${d}3` as keyof typeof maps] as THREE.Texture,
-      ]);
-    }
-    return {
-      appearances: {
-        ginger: maps.ginger,
-        silver: maps.silver,
-        borrin: maps.borrin,
-        laborer: maps.standLabor,
-        elder: maps.elder,
-        helga: maps.helga,
-        femaleMiner: maps.femaleMiner,
-        blacksmith: maps.blacksmith,
-        redMiner: maps.redMiner,
-        quartermaster: maps.quartermaster,
-        stoneworker: maps.stoneworker,
-        cook: maps.cook,
-        veteran: maps.veteran,
-      },
-      lordIdle: [
-        maps.idle0,
-        maps.idle1,
-        maps.idle2,
-        maps.idle3,
-        maps.idle4,
-        maps.idle5,
-        maps.idle6,
-        maps.idle7,
-      ],
-      lordGait,
-      tent: maps.tent,
-      leanto: maps.leanto,
-      crate: maps.crate,
-      barrel: maps.barrel,
-    } satisfies SpriteBank;
-  }, [maps]);
-
+    const appearances = Object.fromEntries(
+      Object.entries(startupFrames.cast).map(([name, frame]) => [name, atlasFrame(cast, frame)]),
+    ) as SpriteBank["appearances"];
+    const lordFrames: Record<string, number[]> = startupFrames.lord;
+    const lordIdle = Array.from({ length: 8 }, (_, d) => atlasFrame(lord, lordFrames[`idle${d}`]));
+    const lordGait = Array.from({ length: 8 }, (_, d) =>
+      Array.from({ length: 4 }, (_, f) => atlasFrame(lord, lordFrames[`gait${d}${f}`])),
+    );
+    return { appearances, lordIdle, lordGait };
+  }, [cast, lord]);
+  useEffect(
+    () => () => {
+      for (const frame of [...Object.values(bank.appearances), ...bank.lordIdle, ...bank.lordGait.flat()]) {
+        frame.dispose();
+      }
+    },
+    [bank],
+  );
   return <Ctx.Provider value={bank}>{children}</Ctx.Provider>;
 }
 
@@ -294,8 +241,8 @@ export function IllustratedProp({
   height: number;
   rot?: number;
 }) {
-  const bank = useBank();
-  const tex = bank[kind];
+  const texture = useTexture(asset(`/sprites/${kind}.png`));
+  const tex = useMemo(() => prepSpriteTexture(texture), [texture]);
   const img = tex.image as { width: number; height: number } | undefined;
   const aspect = img ? img.width / img.height : 1;
   const ww = height * aspect;
