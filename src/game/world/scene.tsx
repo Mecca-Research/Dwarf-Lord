@@ -31,6 +31,10 @@ const _hit = new THREE.Vector3();
 const plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
 const ray = new THREE.Raycaster();
 const ndc = new THREE.Vector2();
+const SURFACE_CAMERA_DISTANCE = 620;
+const CAMP_CAMERA_DISTANCE = 140;
+const OVERVIEW_CAMERA_DISTANCE = 360;
+const CAMERA_FAR = 2500;
 
 function bindKeys() {
   const down = (e: KeyboardEvent) => {
@@ -78,6 +82,7 @@ function bindKeys() {
 function IsoCamera() {
   const { camera, size } = useThree();
   const stage = useGame((s) => s.settlement);
+  const positioned = useRef(false);
 
   useFrame((_, dt) => {
     const d = Math.min(dt, 0.1);
@@ -91,11 +96,17 @@ function IsoCamera() {
     const spec = WORLD_STAGES.find((w) => w.id === stage) ?? WORLD_STAGES[0];
     const vista = runtime.valleyView && zone !== "mine",
       cameraDt = Math.min(dt, 0.5);
+    const underground = zone === "mine";
     const targetZoom = vista
       ? 2.35
-      : (zone === "mine" ? spec.cameraZoom * 0.84 : spec.cameraZoom) + runtime.zoomBias;
+      : Math.max(
+          underground ? 6 : 2,
+          (underground ? spec.cameraZoom * 0.84 : spec.cameraZoom) + runtime.zoomBias,
+        );
     runtime.zoom += (targetZoom - runtime.zoom) * (1 - Math.exp(-cameraDt * 3));
-    const dist = vista ? 360 : 140,
+    // The lowest orthographic rays must start above the foreground slopes at full zoom-out.
+    const dist = underground ? CAMP_CAMERA_DISTANCE : SURFACE_CAMERA_DISTANCE,
+      originalDist = vista ? OVERVIEW_CAMERA_DISTANCE : CAMP_CAMERA_DISTANCE,
       az = vista ? runtime.cameraAzimuth * 0.55 : runtime.cameraAzimuth,
       el = vista ? 0.45 : runtime.cameraElev;
     const focusX = vista ? 5 : p.x + 2,
@@ -103,16 +114,20 @@ function IsoCamera() {
       focusY = vista ? 62 : groundHeight(p.x, p.z) + 2;
     _cam.set(
       focusX + dist * Math.sin(az) * Math.cos(el),
-      focusY + dist * Math.sin(el) + 1,
+      focusY + dist * (Math.sin(el) + 1 / originalDist),
       focusZ + dist * Math.cos(az) * Math.cos(el),
     );
-    camera.position.lerp(_cam, 1 - Math.exp(-cameraDt * 4));
+    if (positioned.current) camera.position.lerp(_cam, 1 - Math.exp(-cameraDt * 4));
+    else {
+      camera.position.copy(_cam);
+      positioned.current = true;
+    }
     _look.set(focusX, focusY, focusZ);
     camera.lookAt(_look);
     const cam = camera as THREE.OrthographicCamera;
     cam.zoom = runtime.zoom * (size.height / 720);
     cam.near = 0.1;
-    cam.far = 1200;
+    cam.far = CAMERA_FAR;
     cam.updateProjectionMatrix();
   });
   return null;
@@ -160,6 +175,23 @@ function Systems() {
         const { camera, size } = getThree(),
           point = new THREE.Vector3(x, y, z).project(camera);
         return { x: ((point.x + 1) * size.width) / 2, y: ((1 - point.y) * size.height) / 2 };
+      },
+      lowerViewCoverage: () => {
+        const { camera, scene } = getThree();
+        const terrain = scene.getObjectByName("continuous-alpine-valley");
+        const view = camera as THREE.OrthographicCamera;
+        const probe = new THREE.Raycaster(undefined, undefined, view.near, view.far);
+        const point = new THREE.Vector2();
+        let hits = 0;
+        let samples = 0;
+        for (const y of [-0.03, -0.27, -0.51, -0.75, -0.99]) {
+          for (const x of [-0.99, -0.66, -0.33, 0, 0.33, 0.66, 0.99]) {
+            samples++;
+            probe.setFromCamera(point.set(x, y), view);
+            if (terrain && probe.intersectObject(terrain).length) hits++;
+          }
+        }
+        return { hits, samples };
       },
       setKeys: (codes: string[]) => {
         runtime.keys.clear();
@@ -610,7 +642,6 @@ function Actors() {
           }}
         />
       </group>
-      <Workstations scale={spec.townScale} mineScale={spec.mineScale} />
       {dwarfNodes.map((d) => (
         <DwarfActor key={d.id} dwarf={d} specScale={spec} />
       ))}
@@ -683,8 +714,11 @@ function Lights() {
       vista = runtime.valleyView && target === 0;
     if (fog) {
       fog.color.copy(outside).lerp(inside, t);
-      fog.near = vista ? 330 : THREE.MathUtils.lerp(197, 140, t);
-      fog.far = vista ? 650 : THREE.MathUtils.lerp(392, 207, t);
+      const offset = vista
+        ? SURFACE_CAMERA_DISTANCE - OVERVIEW_CAMERA_DISTANCE
+        : (SURFACE_CAMERA_DISTANCE - CAMP_CAMERA_DISTANCE) * (1 - t);
+      fog.near = offset + (vista ? 330 : THREE.MathUtils.lerp(197, 140, t));
+      fog.far = offset + (vista ? 650 : THREE.MathUtils.lerp(392, 207, t));
     }
     if (scene.background instanceof THREE.Color) scene.background.copy(outside).lerp(inside, t);
   });
@@ -716,13 +750,34 @@ function Lights() {
   );
 }
 
-export function GameCanvas() {
+function CampStations() {
+  const settlement = useGame((s) => s.settlement);
+  const spec = WORLD_STAGES.find((stage) => stage.id === settlement) ?? WORLD_STAGES[0];
+  return <Workstations scale={spec.townScale} mineScale={spec.mineScale} />;
+}
+
+function FirstFrame({ onFrame }: { onFrame: () => void }) {
+  const reported = useRef(false);
+  useFrame(() => {
+    if (reported.current) return;
+    reported.current = true;
+    onFrame();
+  });
+  return null;
+}
+
+export function GameCanvas({ onReady }: { onReady?: () => void }) {
+  const drawn = useRef(new Set<"terrain" | "cast" | "stations">());
+  const markDrawn = (part: "terrain" | "cast" | "stations") => {
+    drawn.current.add(part);
+    if (drawn.current.size === 3) onReady?.();
+  };
   return (
     <Canvas
       orthographic
       shadows
       dpr={[1, 1.6]}
-      camera={{ position: [-25.7, 23.45, 27.6], zoom: 27, near: 0.1, far: 1200 }}
+      camera={{ position: [-25.7, 23.45, 27.6], zoom: 27, near: 0.1, far: CAMERA_FAR }}
       gl={{ antialias: false, powerPreference: "high-performance" }}
       onCreated={({ gl, scene }) => {
         gl.setClearColor("#202936");
@@ -741,11 +796,19 @@ export function GameCanvas() {
       <GroundPick />
       <Suspense fallback={null}>
         <WorldMatsProvider>
-          <SpriteBankProvider>
-            <Environment />
-            <Actors />
-          </SpriteBankProvider>
+          <Environment />
+          <FirstFrame onFrame={() => markDrawn("terrain")} />
         </WorldMatsProvider>
+      </Suspense>
+      <Suspense fallback={null}>
+        <SpriteBankProvider>
+          <Actors />
+          <FirstFrame onFrame={() => markDrawn("cast")} />
+        </SpriteBankProvider>
+      </Suspense>
+      <Suspense fallback={null}>
+        <CampStations />
+        <FirstFrame onFrame={() => markDrawn("stations")} />
       </Suspense>
       <EffectComposer multisampling={0} enableNormalPass={false}>
         <SMAA />
@@ -766,6 +829,7 @@ declare global {
       getSpeed: () => number;
       getPos?: () => { x: number; z: number; zone: string };
       projectWorld?: (x: number, y: number, z: number) => { x: number; y: number };
+      lowerViewCoverage?: () => { hits: number; samples: number };
       setKeys?: (codes: string[]) => void;
       setDest?: (x: number, z: number) => void;
       teleport?: (x: number, z: number) => void;

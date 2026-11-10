@@ -149,3 +149,16 @@ test("the tarn is recessed below its waterline outside the playable mine and cam
   assert.equal(landscape.inMine(t.x, t.z), false);
   assert.ok(landscape.surfaceHeight(t.x + t.rx, t.z) > t.waterY);
 });
+
+test("the southern valley has a widening river bed and elevated mountain rims", () => {
+  assert.ok(landscape.creekHalfWidth(190) > 3 * landscape.creekHalfWidth(40));
+  for (const z of [90, 150, 210, 275, 330]) {
+    const x = landscape.creekX(z);
+    const level = landscape.creekLevel(z);
+    assert.ok(landscape.surfaceHeight(x, z) < level);
+    assert.ok(landscape.surfaceHeight(x + landscape.creekHalfWidth(z) + 3, z) > level);
+    assert.equal(landscape.walkable(x + 12, z, 0.45), false);
+  }
+  assert.ok(landscape.surfaceHeight(-196, 194) > 95);
+  assert.ok(landscape.surfaceHeight(216, 218) > 95);
+});

@@ -41,3 +41,11 @@ The current evidence is in [world-review/camp-commons-v3](world-review/camp-comm
 ![Snowmelt waterfall](world-review/camp-commons-v3/waterfall.webp)
 
 ![First mining chamber](world-review/camp-commons-v3/first-mining-level.webp)
+
+## Southern valley and startup
+
+The southern valley opens beyond the camp gate into a forested river basin with a road and two surrounding mountain rims. The outside orthographic camera sits behind the foreground slopes at both wheel zoom and valley overview. The river and distant terrain continue beyond the visible viewport.
+
+The Pages document displays a loading screen immediately, and the font stylesheet loads after the game mounts. The title backdrop and the initial cast and Lord frames use WebP browser copies. `node scripts/pack-startup-sprites.mjs` regenerates these copies and their frame coordinates with ImageMagick. Terrain, character sheets and persistent station textures load in parallel.
+
+`node scripts/valley-startup-playtest.mjs` measures cold startup and checks terrain coverage at maximum wheel zoom, in the valley overview and in a rotated ultrawide view. Set `WORLD_BUILD_ROOT` and `VALLEY_BASELINE=1` to record the previous Pages build. The [comparison and replay evidence](world-review/southern-valley-startup) includes the browser timings, screenshots and the renewed motion dependency bindings.

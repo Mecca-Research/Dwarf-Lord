@@ -41,16 +41,24 @@ const html = `<!DOCTYPE html>
   <meta property="og:type" content="x:game"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <link rel="icon" type="image/svg+xml" href="${base}/favicon.svg"/>
-  <link rel="preload" as="image" href="${base}/art/camp-vista.jpg" crossorigin=""/>
+  <style>
+    html,body{margin:0;background:#0e0d0b;color:#e6dcc8}
+    #dwarf-boot{min-height:100vh;display:grid;place-items:center;padding:1.5rem;box-sizing:border-box;
+      background:radial-gradient(ellipse at 50% 70%,#302416,#0e0d0b 70%);text-align:center;font-family:Georgia,serif}
+    #dwarf-boot h1{margin:0;font-size:clamp(2.25rem,7vw,4rem);font-weight:normal;letter-spacing:.04em}
+    #dwarf-boot p{color:#c8ac8c}
+  </style>
   <link rel="stylesheet" href="${base}/assets/${css}"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap"/>
   <link rel="modulepreload" href="${base}/assets/${indexJs}"/>
   <link rel="modulepreload" href="${base}/assets/${routesJs}"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
 </head>
 <body>
-  <div id="root"></div>
+  <main id="dwarf-boot">
+    <div>
+      <h1>Dwarf Lord</h1>
+      <p role="status">Preparing the road…</p>
+    </div>
+  </main>
   <script>
     (self.$R = self.$R || {})["tsr"] = [];
     self.$_TSR = {

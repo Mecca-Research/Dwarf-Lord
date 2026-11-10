@@ -89,16 +89,17 @@ export function TitleScreen() {
   const [saved, setSaved] = useState(false);
   useEffect(() => setSaved(hasSave()), []);
 
-  async function start(fn: () => void) {
-    await unlockAudio();
+  function start(fn: () => void) {
     fn();
+    void unlockAudio().catch(() => {});
   }
 
   return (
     <div className="relative flex min-h-dvh flex-col items-center justify-end overflow-hidden bg-bg">
       <img
-        src={asset("/art/camp-vista.jpg")}
+        src={asset("/art/camp-vista.webp")}
         alt=""
+        decoding="async"
         className="absolute inset-0 h-full w-full object-cover"
         crossOrigin="anonymous"
       />
